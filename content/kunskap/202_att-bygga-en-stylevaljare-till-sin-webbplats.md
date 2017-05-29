@@ -87,6 +87,10 @@ $name = substr(preg_replace('/[^a-z\d]/i', '', __DIR__), -30);
 
 Nu blir det enklare och dina sessioner i dina olika exempelprogram krockar inte på studentservern.
 
+[INFO]Felmeddelandet "A session had already been started..."
+
+Om du får det här felmeddelandet på studentservern kan du kontrollera innehållet i `$name` för att se om det innehåller ditt akronym eller inte. Ibland är sökvägen så lång att max 30 tecken inte räcker till och då får man ändra på koden så att det fungerar.[/INFO]
+
 
 
 ###Hämta och sätt värden i sessionen {#set}

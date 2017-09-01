@@ -36,7 +36,7 @@ Spara redovisningstexten enligt följande.
 | kmom04     | `me/kmom04/me4/report.php` |
 | kmom05     | `me/kmom05/me5/report.php` |
 | kmom06     | `me/kmom06/me6/report.php` |
-| kmom10     | `me/kmom06/me6/report.php` |
+| kmom10     | `me/kmom07/me7/report.php` |
 
 När du är klar innehåller filen `me/kmom06/me6/report.php` samtliga redovisningstexter från alla kursmoment.
 

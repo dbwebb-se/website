@@ -74,7 +74,6 @@ Skillnaden är att den ärvande klassen kan få tillgång till medlemsvariabler 
 När variabeln är protected så skulle min metod kunna uppdateras till följande.
 
 ```php
-```php
 /**
  * Get a graphic value of the last rolled dice.
  *

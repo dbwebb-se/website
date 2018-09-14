@@ -285,7 +285,7 @@ Låt oss gå igenom multisidans olika delar för att förklara dess syften.
 Navigering till en multisida {#navigering}
 --------------------------------------
 
-En multisida representeras av en sidkontroller, en fil, till exempel `multipage.php`. Man kan alltid gå till en mutlisida genom att ange dess filnamn som länk.
+En multisida representeras av en sidkontroller, en fil, till exempel `multipage.php`. Man kan alltid gå till en multisida genom att ange dess filnamn som länk.
 
 En multisida består av flera undersidor. När man navigerar till en multisida kan man ange vilken undersida man vill se. I min multisida innebär det att man sätter GET-variabeln till `?page=page-reference` där värdet "page-reference" pekar ut en viss undersida.
 

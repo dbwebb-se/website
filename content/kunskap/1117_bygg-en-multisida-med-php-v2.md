@@ -242,7 +242,7 @@ Jag flyttar tunt koden i multisidan och slutresultatet blir så här.
 // Get what subpage to show, defaults to index
 $pageReference = $_GET["page"] ?? "index";
 
-// Get the filename of this multipage, exkluding the file suffix of .php
+// Get the filename of this multipage, excluding the file suffix of .php
 $base = basename(__FILE__, ".php");
 
 // Create the collection of valid sub pages.

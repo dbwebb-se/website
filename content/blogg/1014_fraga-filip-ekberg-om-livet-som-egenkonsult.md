@@ -25,7 +25,7 @@ Så, låt oss prata med Filip Ekberg som gick ut ett av våra program inom Progr
 Introduktion {#intro}
 -----------------------------------
 
-Min relation till Filip var lärare och programansvarig för det programmet han gick. En del studenter tar lite extra plats och är lättare att minnas, Filip är en sådan då han visade både energi, vilja och kraft när det gällde studier och närliggande saker som att arbete vid sidan av studierna.
+Min relation till Filip var lärare och programansvarig för det programmet han gick. En del studenter tar lite extra plats och är lättare att minnas, Filip är en sådan då han visade både energi, vilja och kraft när det gällde studier och närliggande saker som att arbeta vid sidan av studierna.
 
 Efter studierna har vi hållit kontakten och jag har haft förmånen att följa Filip i hans karriär som utvecklare, författare, föredragshållare och jag har följt hans utlandsvistelse i Australien samt nu när han återvänt till Sverige som egenföretagare.
 

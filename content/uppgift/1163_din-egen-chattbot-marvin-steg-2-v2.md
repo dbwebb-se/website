@@ -103,7 +103,7 @@ Strängen ska hämtas från en textfil som du själv skapar och formateras med o
 ```python
 input: "anagram", "ana", "agr", "am"        output: "Match"
 input: "isogram", "is", "gra", "m"          output: "Match"
-input: "Palindrom", "par", "ind", "rom"     output: "No natch"
+input: "Palindrom", "par", "ind", "rom"     output: "No match"
 ```
 
 

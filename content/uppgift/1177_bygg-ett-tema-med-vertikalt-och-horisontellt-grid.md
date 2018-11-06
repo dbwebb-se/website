@@ -111,7 +111,7 @@ Krav {#krav}
 
 1. Gör en `dbwebb publishpure redovisa` och kontrollera att allt fungerar på studentservern.
 
-1. Committa alla filer, inklusive temats filer och lägg till en (ny) tagg (2.0.\*).
+1. Committa alla filer, inklusive temats filer och lägg till en (ny) tagg (3.0.\*).
 
 1. Pusha repot till GitHub, inklusive taggarna.
 

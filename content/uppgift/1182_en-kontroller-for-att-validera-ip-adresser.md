@@ -40,7 +40,7 @@ Följande steg hjälper dig att komma igång med uppgiften.
 Installera testverktygen som krävs.
 
 ```php
-# Stå i redovisa/me
+# Stå i me/redovisa
 make install
 ```
 
@@ -48,7 +48,7 @@ Verifiera att du kan köra testsuiten via `make test`, du skall inte få några 
 
 
 ```php
-# Stå i redovisa/me
+# Stå i me/redovisa
 make test
 ```
 
@@ -59,7 +59,7 @@ make test
 När du växlar mellan att köra Anax i webbservern och via CLI så blir det olika ägare av filerna under cachen. Du kan därför behöva rensa cachen när du får felmeddelande om filrättigheter på filer i cachen.
 
 ```php
-# Stå i redovisa/me
+# Stå i me/redovisa
 make clean-cache
 ```
 

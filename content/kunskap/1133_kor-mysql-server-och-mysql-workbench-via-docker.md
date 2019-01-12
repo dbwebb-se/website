@@ -166,7 +166,7 @@ services:
             - ./sql:/docker-entrypoint-initdb.d
 ```
 
-För att testa så skapar vi en fil `sql/init.sql` som skapar en databas, en användare och en tabell med innehåll.
+För att testa så skapar vi en fil `sql.d/init.sql` som skapar en databas, en användare och en tabell med innehåll.
 
 ```sql
 CREATE USER 'doe'@'%' IDENTIFIED BY 'pass';

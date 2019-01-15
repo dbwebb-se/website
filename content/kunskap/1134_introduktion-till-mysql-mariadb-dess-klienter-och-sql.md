@@ -80,7 +80,7 @@ I en fil kan man också kommentera vad man gör, det kan göra det enklare att m
 
 Vissa SQL-kommandon skapar användare och rättigheter för att jobba i databasen. Detta är administrativa åtgärder som måste köras av användare som har priviligier, till exempel root-användare.
 
-Andra SQL-kommandon skapar databasens struktur med tabeller. Detta kallas också databasens schema. Ett samlingsnamn för dessa operationer är DDL, Data Definition Language. Dessa SQL-kommnandon är främst CREATE, ALTER och DROP.
+Andra SQL-kommandon skapar databasens struktur med tabeller. Detta kallas också databasens schema. Ett samlingsnamn för dessa operationer är DDL, Data Definition Language. Dessa SQL-kommanandon är främst CREATE, ALTER och DROP.
 
 De vanligaste SQL-kommandona kallas DML, Data Manipulation Language. De handlar om att fylla databasens struktur med innehåll och söka information och visa upp rapporter. Dessa SQL-kommandon är till exempel SELECT, INSERT, UPDATE och DELETE.
 

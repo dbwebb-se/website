@@ -367,7 +367,7 @@ MySQL/MariaDB klienter {#klienter}
 
 Det finns tre olika typer av klienter, om vi gör en grov indelning. Det är webbaserade klienter som körs via webbläsare, desktopklienter som har ett grafiskt användargränssnitt och körs i ett fönstersystem lokalt hos användaren och det finns terminalklienter som är textbaserade och körs i terminalen.
 
-Oavsett val av klient som kan man normalt utföra samma saker mot databasen. Att välja klient handlar mer om vilket arbetssätt man känner sig hemma med.
+Oavsett val av klient så kan man normalt utföra samma saker mot databasen. Att välja klient handlar mer om vilket arbetssätt man känner sig hemma med.
 
 I vissa fall kan det vara så att man inte har möjlighet att använda olika klienter utan man måste förhålla sig till någon som erbjuds. Därför bör man bekanta sig med de olika klienterna och lära känna dess för- och nackdelar.
 

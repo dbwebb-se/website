@@ -10,7 +10,7 @@ Introduktion
 
 Denna guide/övning/laboration handlar om att komma igång med SQL mot databasen MySQL/MariaDB. Den består av övningar där du får börja skapa tabeller, fylla dem med innehåll och därefter ställa SQL-frågor för att söka ut och bearbeta innehållet. Övningen tar dig igenom de vanliga förekommande konstruktionerna som du behöver känna till. Lär dig dem och du kommer att ha en god grund för att behärska databaser. De första övningarna är enkla och övningarna mot slutet lite mer utmanande.
 
-Övningen är utvecklad för MySQL och kompatibel med MariaDB och visar både på standard SQL och på databasspecifika frågar av mer databasadministrativ karaktär.
+Övningen är utvecklad för MySQL och kompatibel med MariaDB och visar både på standard SQL och på databasspecifika frågor av mer databasadministrativ karaktär.
 
 När det finns hänvisningar till referensmanualen så avses [referensmanualen för MySQL](http://dev.mysql.com/doc/refman/8.0/en/).
 

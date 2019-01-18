@@ -22,15 +22,6 @@ Kursen **Programmering och Problemlösning i Python**, a.k.a. *python*, lär ut 
 
 <!--more-->
 
-[WARNING]
-
-** Kursutveckling pågår till kurs python v2 **
-
-Kursstart hösten 2018.
-
-[/WARNING]
-
-
 
 Detta är en grundkurs i programmering vilket innebär att vi startar med att skapa rutiner för problemlösning och felsökning via enkla grundkonstruktioner i Python. Vi bygger en utvecklingsmiljö som hjälper oss med utveckling och felsökning. Efterhand bygger vi mer och mer avancerade konstruktioner i Python, men fortfarande på en rimlig nivå som passar en nybörjare i programmering.
 

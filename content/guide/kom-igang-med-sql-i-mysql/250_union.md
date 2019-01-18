@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2019-01-15": "(C, mos) Uppdaterade SQL-koden med namngivning."
     "2018-02-09": "(B, mos) Genomgången, mindre typo."
     "2017-12-29": "(A, mos) Första versionen, uppdelad av större dokument."
 ...
@@ -13,35 +14,45 @@ Spara den SQL-kod du skriver i filen `dml_union.sql`.
 
 Vi jobbar vidare med lönerevisionen och vi vill granska utfallet.
 
+Som en inledningen så kikar du i [refmanualen om UNION](https://dev.mysql.com/doc/refman/8.0/en/union.html).
+
 
 
 Visa alla rader med UNION {#union}
 ----------------------------------
 
-Säg vi vill jämföra värdet i respektive tabell genom att slå ihop dem i en rapport. Det kan vi göra med UNION.
+Säg vi vill jämföra värdet i två tabeller som har samma struktur. Det kan vi göra genom att slå ihop alla rader från respektive tabell, in i en rapport. Vi gör det med UNION.
 
-UNION kan slå samman två olika resultset, förutsatt att de delar samma struktur på kolumnerna.
+UNION kan slå samman två olika tabeller, eller resultset, förutsatt att de delar samma struktur på kolumnerna.
+
+Här slår vi samman raderna från tabellerna som innehåller lönerna före och efter lönerevisionen.
 
 ```sql
 --
 -- UNION
 --
-SELECT *, 'src' AS "Källa" FROM larare
+SELECT
+	*,
+	'after' AS origin FROM larare
 UNION
-SELECT *, 'pre' AS "Källa" FROM larare_pre
+SELECT
+	*,
+	'before' AS origin FROM larare_pre
 ORDER BY akronym
 ;
 ```
 
-I ovan så slår jag samman resultatet från två källor, med källans namn som extra kolumn, och sorterar per akronym
+Fråga mig inte varför jag nu använder engelska benämningar ovan. Troligen är det enklast som programmerare att hålla sig till engelska. Låt det vara så och skyll på att läraren kör lite svengelska.
 
-Säg att jag bara vill skriva ut delar av resultatet, och kanske begränsa vilka rader som skrivs ut, då kan jag omringa frågan med `()` och använda resultatet som ett implicit resultset, eller [_derived table_](https://dev.mysql.com/doc/refman/5.7/en/derived-tables.html) som är en form av _subquery_, en fråga i en fråga.
+I ovan så slår jag samman resultatet från två källor, med källans namn som extra kolumn, och sorterar per akronym. Jag behöver källans namn som en extra kolumn för att kunna skapa rapporter som jämför ny och gammal lön, jag behöver veta vilken lön som är gammal och vilken som är ny.
 
-Jag kan då skapa en fråga som ser ut så här.
+Säg att jag bara vill skriva ut delar av resultatet, och kanske begränsa vilka rader som skrivs ut, då kan jag omringa frågan med `()` och använda resultatet som ett implicit resultset, eller [_derived table_](https://dev.mysql.com/doc/refman/8.0/en/derived-tables.html) som är en form av _subquery_, en fråga i en fråga.
+
+Jag kan då skapa en fråga som ser ut så här. I mitt fall blir min UNION ett resultset, ett derived table, som jag omringar med `()` och ger namnet `lon` och då kan använda som en vanlig tabell.
 
 ```sql
 SELECT
-	l.kalla,
+	lon.origin,
     akronym,
     fornamn,
     efternamn,
@@ -50,13 +61,18 @@ SELECT
     lon
 FROM
 (
-	SELECT *, 'src' AS 'kalla' FROM larare
+	SELECT
+		*,
+		'after' AS origin FROM larare
 	UNION
-	SELECT *, 'pre' AS 'kalla' FROM larare_pre
-) AS l
+	SELECT
+		*,
+		'before' AS origin FROM larare_pre
+	ORDER BY akronym
+) AS lon
 WHERE
 	akronym IN ('ala', 'dum')
-ORDER BY akronym, l.kalla
+ORDER BY akronym, origin
 ;
 ```
 
@@ -68,7 +84,7 @@ Så här ser det ut om vi kör frågan.
 
 ```text
 mysql> SELECT
-    ->     l.kalla,
+    ->     lon.origin,
     ->     akronym,
     ->     fornamn,
     ->     efternamn,
@@ -77,22 +93,27 @@ mysql> SELECT
     ->     lon
     -> FROM
     -> (
-    ->     SELECT *, 'src' AS 'kalla' FROM larare
+    ->     SELECT
+    ->         *,
+    ->         'after' AS origin FROM larare
     ->     UNION
-    ->     SELECT *, 'pre' AS 'kalla' FROM larare_pre
-    -> ) AS l
+    ->     SELECT
+    ->         *,
+    ->         'before' AS origin FROM larare_pre
+    ->     ORDER BY akronym
+    -> ) AS lon
     -> WHERE
     ->     akronym IN ('ala', 'dum')
-    -> ORDER BY akronym, l.kalla
+    -> ORDER BY akronym, origin
     -> ;
-+-------+---------+---------+------------+------+-----------+-------+
-| kalla | akronym | fornamn | efternamn  | kon  | kompetens | lon   |
-+-------+---------+---------+------------+------+-----------+-------+
-| pre   | ala     | Alastor | Moody      | M    |         1 | 30000 |
-| src   | ala     | Alastor | Moody      | M    |         1 | 27594 |
-| pre   | dum     | Albus   | Dumbledore | M    |         1 | 80000 |
-| src   | dum     | Albus   | Dumbledore | M    |         7 | 85000 |
-+-------+---------+---------+------------+------+-----------+-------+
++--------+---------+---------+------------+------+-----------+-------+
+| origin | akronym | fornamn | efternamn  | kon  | kompetens | lon   |
++--------+---------+---------+------------+------+-----------+-------+
+| after  | ala     | Alastor | Moody      | M    |         1 | 27594 |
+| before | ala     | Alastor | Moody      | M    |         1 | 30000 |
+| after  | dum     | Albus   | Dumbledore | M    |         7 | 85000 |
+| before | dum     | Albus   | Dumbledore | M    |         1 | 80000 |
++--------+---------+---------+------------+------+-----------+-------+
 4 rows in set (0.00 sec)
 ```
 

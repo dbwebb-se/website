@@ -278,4 +278,4 @@ Kursplan {#kursplan}
 
 Kursplanen är kursens formella dokument som fastställts av högskolan. När kursen utvärderas görs det mot kursplanen. I kursplanen kan du läsa om kursens klassificering, syfte, innehåll, mål, generella förmågor, lärande och undervisning, bedömning och examination, litteratur, mm.
 
-Kursens namn är "Informationssäkerhet med webbtillämpningar". Du hittar [kursplanen genom att söka på kurskoden DVXXXX via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=PA1441).
+Kursens namn är "Informationssäkerhet med webbtillämpningar". Du hittar [kursplanen genom att söka på kurskoden DV1616 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1616).

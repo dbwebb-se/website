@@ -2,6 +2,7 @@
 author: aar
 category: labbmiljo
 revision:
+  "2019-01-12": (B, aar) Tog bort dbwebb venv kommandot.
   "2018-11-21": (A, aar) första utgåva för oopython kursen.
 ...
 Python pakethantering med venv
@@ -22,7 +23,7 @@ När man använder pip installeras paket globalt vilket bl.a. innebär att om vi
 
 Lösningen på detta är [Virtual environment](https://docs.python.org/3/tutorial/venv.html) även kallat **venv**. Venv är ett sätt att isolera paket från övriga paket installerade på resten av ett system. Detta gör att vi kan installera paket för specifika projekt utan att det krockar med globala installationer eller andra projekts installationer.
 
-Jag använder paketen från kursen OOPython som exempel. Vi har lagt in kommandon i dbwebb-cli för att förenkla arbetet med venv i kurserna, jag kommer visa hur man gör både med dbwebb-cli och utan.
+Jag använder paketen från kursen OOPython som exempel.
 
 
 
@@ -35,13 +36,6 @@ För att skapa en virtuell miljö behöver man bestämma var man vill placera de
 $ python3 -m venv .venv
 ```
 
-Alternativ med dbwebb-cli.
-
-```bash
-# Stå i valfri mapp i en kursmapp
-$ dbwebb venv install
-```
-
 Om man inte har `venv` installerat på Linux kan man få upp följande meddelande:
 ```bash
 The virtual environment was not created successfully because ensurepip is not
@@ -51,8 +45,6 @@ package using the following command.
     apt-get install python3-venv
 ```
 Gör som står och installerar `venv` och kör sen kommandot igen.
-
-Om man använder dbwebb-cli kommandot behöver man inte stå roten för projektet utan man kan stå i undermappar. Använder man det "riktiga" måste man stå i roten.
 
 Nu har det skapats en ny mapp som heter `.venv` i roten och det har lagts till en mängd filer och mappar i den.
 
@@ -64,28 +56,13 @@ Nu har det skapats en ny mapp som heter `.venv` i roten och det har lagts till e
 
 När vi har en virtuell miljö skapad behöver vi aktivera den för att använda den. Att aktivera den virtuella miljön innebär att när vi använder pip/python3 kommer det jobba mot filerna som ligger i `.venv` mappen. När vi t.ex. installerar paket med pip läggs det i en undermapp till `.venv`. 
 
-Om man använder dbwebb-cli kommandot behöver man inte stå roten för projektet utan man kan stå i undermappar. Använder man det "riktiga" måste du stå i roten.
-
-Hur det ser ut med det riktiga kommandot, `source .venv/bin/activate`.
+Vi använder kommandot `source .venv/bin/activate` för att aktivera den virtuella miljön.
 
 ```bash
 # Stå i roten av ditt projekt
 $ which python3
 /usr/bin/python3
 $ source .venv/bin/activate
-(.venv) $ which python3
-/home/aar/dbwebb-kurser/oopython/.venv/bin/python3
-(.venv) $ which pip3
-/home/aar/dbwebb-kurser/oopython/.venv/bin/pip3
-```
-
-Alternativ med dbwebb-cli kommandot, `dbwebb venv activate`.
-
-```bash
-# Stå i valfri mapp i en kursmapp
-$ which python3
-/usr/bin/python3
-$ dbwebb venv activate
 (.venv) $ which python3
 /home/aar/dbwebb-kurser/oopython/.venv/bin/python3
 (.venv) $ which pip3
@@ -107,16 +84,7 @@ $ which python3
 /usr/bin/pip3
 ```
 
-Alternativ med dbwebb-cli.
-
-```bash
-# Stå i valfri mapp
-(.venv) $ dbwebb venv deactivate
-$ which python3
-/usr/bin/python3
-```
-
-Både det riktiga och dbwebb-cli kommandot för deaktivering kan köras från vilken mapp som helst på datorn, man måste inte stå i roten.
+Kommandot för deaktivering kan köras från vilken mapp som helst på datorn, man måste inte stå i roten.
 
 
 
@@ -163,6 +131,3 @@ Avslutningsvis {#avslutning}
 Kika på hemsidan för venv och requirement.txt för att lära dig mer om hur det fungerar.
 
 Har du frågor kring venv så finns det en särskild [forumtråd kopplad till denna artikeln](t/7008).
-
-
-

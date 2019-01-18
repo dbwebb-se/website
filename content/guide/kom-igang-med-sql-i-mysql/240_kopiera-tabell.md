@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2019-01-15": "(E, mos) Genomgången och testad."
     "2018-03-27": "(D, mos) Uppdaterad med dml_update_lonerevision.sql."
     "2018-02-09": "(C, mos) Fixade återställningen och hur man kör alla filerna i sekvens."
     "2018-02-05": "(B, mos) Uppdaterade vilka lönesummor som gäller efter olika steg, fix #63."
@@ -13,14 +14,14 @@ Vi skall skapa en ny tabell genom att kopiera en befintlig tabell.
 
 Spara den SQL-kod du skriver i filen `ddl_copy.sql`.
 
-När vi utförde [lönerevisionen](./../uppdatera-varden-lonerevision) så var det ett par frågor vi inte kunde svara på.
+När vi utförde [lönerevisionen](./../uppdatera-varden-lonerevision#ej) så var det ett par frågor vi inte kunde svara på.
 
 1. Visa de lärare som inte har fått en löneökning om minst 3%.
 1. Gör en rapport som visar hur många % respektive lärare fick i löneöning.
 
 Men, om vi hade tagit en backup av tabellen och tabellens data, innan vi utförde lönerevisionens alla UPDATE-satser, så hade vi haft en möjlighet att besvara frågorna.
 
-Låt se om vi kan lösa det nu.
+Låt se om vi kan lösa det nu. Nu gäller det att du har ordning på dina filer.
 
 
 
@@ -57,6 +58,8 @@ $ mysql -uuser -ppass skolan -e "SELECT SUM(lon) AS 'Lönesumma', SUM(kompetens)
 
 Bra, då är vi i läget precis innan lönerevisionen där alla lärare har en grundlön. Det är alltid bra att veta hur man kan återställa en databas till ett önskat läge.
 
+Ett tips är att du redigerar ditt skript `reset_part1.bash` och skapar ett skript `reset_pre_lonerevision.bash` som utför ovan åtgärder. Då blir det enkelt att återställa databasen till önskat läge.
+
 
 
 Kopiera tabell {#copy}
@@ -78,6 +81,12 @@ SELECT SUM(lon) AS 'Lönesumma', SUM(kompetens) AS Kompetens FROM larare_pre;
 ```
 
 Principen är att skapa en ny tabell med den gamla som mall. Sedan kan man lägga till rader i den nya tabellen genom att selecta dem från den gamla tabellen.
+
+Följande kopierar värden från ena tabellen till den andra.
+
+```sql
+INSERT INTO larare_pre SELECT * FROM larare;
+```
 
 Vi kan dubbelkolla att lönesumman i vår kopierade tabell är densamma som i orginaltabellen.
 
@@ -123,7 +132,7 @@ Bra, då har vi en tabell med värden innan lönerevisionen, och en tabell med v
 Kontrollera filen {#filen}
 ----------------------------------
 
-Låt oss kontroller att våra filer fungerar som de ska. För att återskapa denna övningen, med backup-tabellen, gör vi följande.
+Låt oss kontroller att våra filer fungerar som de ska. För att återskapa denna övningen, inklusive backup-tabellen, gör vi följande.
 
 Du kan göra det genom att köra följande kommandon.
 
@@ -159,6 +168,8 @@ mysql -uuser -ppass skolan -e "SELECT SUM(lon) AS 'Lönesumma', SUM(kompetens) A
 |     305000 |         8 |
 +------------+-----------+
 ```
+
+Allt som allt så handlade det alltså om att ta en backup på tabellens data, innan vi utförde lönerevisionen. Det är en variant av hur man kan hantera nyare och äldre data i samma databas.
 
 Nu vore det trevligt om vi kunde slå samman raderna från de båda tabellerna och få en visuell översikt av resultatet för lönerevisionen, hur många % fick varje lärare i löneökning?
 

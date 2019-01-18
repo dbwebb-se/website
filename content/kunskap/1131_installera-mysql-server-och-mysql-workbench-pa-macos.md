@@ -5,6 +5,7 @@ category:
     - mysql
     - macOS
 revision:
+    "2019-01-17": "(C, mos) Bytte från .bash_profile till .bash_profile."
     "2019-01-09": "(B, mos) Nu enbart för macOS."
     "2018-01-12": "(A, mos) Första utgåvan."
 ...
@@ -149,7 +150,7 @@ Då vet vi att terminalklienten fungerar som den ska.
 
 Du kan lägga till alla terminalkommandon för MySQL till din PATH. Då blir det enklare att starta programmet, oavsett vilken katalog du står i.
 
-Det du behöver göra är att uppdatera din startupfil `.profile` så att sökvägen till terminalprogram för MySQL finns med i din PATH. Det handlar om att lägga till följande rad i `.profile`.
+Det du behöver göra är att uppdatera din startupfil `.bash_profile` så att sökvägen till terminalprogram för MySQL finns med i din PATH. Det handlar om att lägga till följande rad i `.bash_profile`.
 
 Glöm inte byta ut `[mysql]` mot din exakta sökväg.
 
@@ -157,16 +158,16 @@ Glöm inte byta ut `[mysql]` mot din exakta sökväg.
 PATH="/usr/local/[mysql]/bin:$PATH"
 ```
 
-Du kan redigera din fil `~/.profile` i en texteditor eller så kan du exekvera följande kommando som utför åtgärden.
+Du kan redigera din fil `~/.bash_profile` i en texteditor eller så kan du exekvera följande kommando som utför åtgärden.
 
 ```text
-echo 'PATH="/usr/local/[mysql]/bin:$PATH"' >> ~/.profile
+echo 'PATH="/usr/local/[mysql]/bin:$PATH"' >> ~/.bash_profile
 ```
 
-När du är klar så kan du aktivera sökvägen genom att läsa in din fil `~/.profile`.
+När du är klar så kan du aktivera sökvägen genom att läsa in din fil `~/.bash_profile`.
 
 ```text
-source ~/.profile
+source ~/.bash_profile
 ```
 
 Du kan kontrollera att det fungerar genom att se vilket program som motsvaras av `mysql`. Tecknet `$` är en del av prompten och inte en del av kommandot.

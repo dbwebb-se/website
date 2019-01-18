@@ -12,6 +12,8 @@ category:
     - windows
     - bash
 revision:
+    "2019-01-16": "(C, mos) Förydligande om var filer bör sparas och hur atom startas, bort med stycket om atom."
+    "2019-01-13": "(B, mos) Lade till installation av nödvändiga paket."
     "2019-01-08": "(A, mos) Uppdaterad installationsprocess för 1803."
 ...
 Installera Debian/Bash i Windows 10 (v 1803)
@@ -98,17 +100,70 @@ Pakethantering {#paket}
 
 För att installera program så använder du en pakethanterare som heter `apt-get`. Med den kan du installera paket, tjänster och programvaror i din terminal.
 
-De grundläggande paket som du behöver för kurserna finns redan installerade.
 
-För att testa pakethanteraren kan du installera paketet `cowsay` som är ett litet skoj-paket.
 
-Vi börjar med att uppdatera installationen med senaste informationen om de paket som finns.
+### Uppdatera och uppgradera {#update}
+
+Vi börjar med att uppdatera installationen med senaste informationen om de paket som finns och vi uppgraderar systemet till att använda senaste versionen av paketen.
 
 ```text
-sudo apt-get update
+sudo apt-get update && sudo apt-get -y upgrade
 ```
 
-Nu kan vi installera paketet `cowsay`.
+Det tar en liten stund att uppgradera.
+
+
+
+### Installera nödvändiga paket {#nodvandig}
+
+Vi skall installera ett par paket som gör din vardag enklare. Det är paket som används i kurserna och vi vill försäkra oss om att de är installerade.
+
+```text
+sudo apt-get install wget curl ssh rsync git vim
+```
+
+Här är en kort förklaring till de olika kommandona.
+
+| Kommando | Förklaring |
+|----------|------------|
+| wget     | Ladda ned resurser från nätet/webben. |
+| curl     | Alternativ till wget. |
+| ssh      | SSH klient och server, används för att koppla upp mot externa servrar. |
+| rsync    | Kopiera/synka innehåll i kataloger, lokalt och mellan servrar. |
+| git      | Klient till versionshanteringssystemet git. |
+| vim      | Texteditor för terminalen, alternativ till vi. |
+
+
+
+### Manualsidor och man man {#man}
+
+Manualsidor är källan till kunskap i en linux terminal.
+
+```text
+man curl
+```
+
+Om programmet `man` inte finns installerat så installerar du det.
+
+```text
+sudo apt-get install man
+```
+
+Man kan söka efter de programpaket som går att installera.
+
+```text
+sudo apt-cache search curl
+```
+
+Vänd dig till manualsidan för att veta hur du använder ett kommando.
+
+Du kan också använda optionen `--help` alternativt `-h`, många kommandon stödjer den switchen för att visa hur man använder kommandot.
+
+
+
+### Installera cowsay {#cowsay}
+
+För att testa pakethanteraren kan du installera paketet `cowsay` som är ett litet skoj-paket.
 
 ```text
 sudo apt-get install cowsay
@@ -122,25 +177,67 @@ cowsay "Hej alla webbprogrammerare!"
 
 [FIGURE src=image/snapvt19/windows-cowsay.png?w=w3 caption="Nu är du redo för Linux med en bash-terminal på Windows."]
 
-Vill du vet mer om programmet så öppnar du dess manualsida. Manualsidor är källan till kunskap i en linux terminal.
+Vill du vet mer om programmet så öppnar du dess manualsida.
+
+
+
+Var finns Windows hemma-katalog? {#winhome}
+------------------------------
+
+Du kör Linux i ett eget system där du har speciella Linux-användare och ett filsystem för Linux. Din installation fungerar som ett eget system, ett subsystem inuti Windows. Därav namnet "Windows Subsystem for Linux (WSL)".
+
+Du kan komma åt ditt vanliga Windows filsystem, din "vanliga" `C:`, och på det sättet dela filer mellan Linux och Windows. Du hittar dina Windows-filsystem under `/mnt`.
+
+Du kan använda kommandot `ls` för att lista de kataloger som ligger under katalogen `/mnt`. I mitt fall ligger där katalogen `c` som innehåller alla filerna på min `C:`.
 
 ```text
-man cowsay
+$ ls -l /mnt
+total 0
+drwxrwxrwx 1 mos mos 512 Jan  8 02:27 c
 ```
 
-Om programmet `man` inte finns installerat så installerar du det.
+Sökvägen till min hemmakatalog i Windows blir då `/mnt/c/Users/mos/` där min Windowsanvändare heter "mos".
+
+För att göra det enkelt att nå filerna i din Windows hemma-katalog så kan du skapa en symbolisk länk i din hemmakatalog.
 
 ```text
-sudo apt-get install main
+$ cd && ln -s /mnt/c/Users/mos/ winhome
+$ ls -l
+total 0
+lrwxrwxrwx 1 mos mos 17 Jan  8 03:53 winhome -> /mnt/c/Users/mos/
 ```
 
-Man kan söka efter de programpaket som går att installera.
+Nu kan jag enkelt nå mina filer som ligger hos min Windows-användare.
 
 ```text
-sudo apt-cache search cowsay
+# Flytta till min windows home, när jag står i min Linux hemmakatalog
+cd winhome
+
+# Flytta till min hemmakatalog i Linux
+cd
 ```
 
-Det var grunderna i pakethantering och installation av paket i Linux och terminalen.
+Det rekommenderas att du sparar dina egna filer under din Windows-användare. Det gör det enklast att nå dem via både WSL och dina vanliga Windows-applikationer.
+
+
+<!--
+Öppna Atom {#atom}
+------------------------------
+
+Om du har installerat texteditorn Atom i Windows så kan du nu öppna den via terminalen i WSL. WSL är byggt för att du skall kunna öppna applikationer som du installerat i Windows.
+
+Du kan öppna texteditorn Atom inuti WSL, i godtycklig katalog, med kommandot `atom .`. Punkten står för nuvarande katalog och det är den katalogen som öppnas i Atom.
+
+Dock, du kan inte öppna atom så att den hanterar filer inuti din WSL. Applikationen atom kan endast hantera filer som ligger på ditt Windows filsystem. Behöver du redigera filer inuti din wsl så får du använda en terminaltexteditor likt vi, vim eller nano.
+
+Öppna atom i med nuvarande katalog som bas (under Winhome).
+
+```text
+atom .
+```
+
+Får du problem kan du se om lösningen finns i forumtråden "[Vanliga problem med Atom i Windows](t/8194)". Där beskrivs till exempel hur du lägger till Atom i din PATH.
+-->
 
 
 
@@ -165,6 +262,8 @@ Följande kommandorad skapar en sådan fil för din användare.
 sudo bash -c "echo '$USER ALL=NOPASSWD: ALL' > /etc/sudoers.d/$USER && cat /etc/sudoers.d/$USER"
 ```
 
+Pröva nu att köra sudo, till exempel `sudo ls /`, så bör det fungera utan att du behöver ange lösenord.
+
 Här är en forumtråd som hanterar [sudo utan lösenord](t/4327).
 
 
@@ -174,37 +273,6 @@ Här är en forumtråd som hanterar [sudo utan lösenord](t/4327).
 När du är i terminalen kan du markera ett textstycke med musen och högerklicka. Sedan kan du göra paste genom att högerklicka igen. Detta fungerar även om du vill göra paste till ett fönster utanför Bash, alternativt så trycker du `ctrl-v` för att pasta till ett annat fönster.
 
 Vill du kopiera från ett annat fönster till terminalen så markerar du texten och lägger den i copy-bufferten (via `ctrl-c` eller högerklickmenyn) och du gör paste i terminalen via högerklick.
-
-
-
-### Var finns Windows hemma-katalog? {#winhome}
-
-Du kör Linux i ett eget system där du har speciella Linux-användare och ett filsystem för Linux. Din installation fungerar som ett eget system, ett subsystem inuti Windows. Därav namnet "Windows Subsystem for Linux (WSL)".
-
-Du kan komma åt ditt vanliga filsystem, din "vanliga" `C:` och på det sättet dela filer mellan Linux och Windows. Du hittar dina Windows-kataloger under `/mnt`.
-
-Du kan använda kommandot `ls` för att lista de kataloger som ligger under katalogen `/mnt`. I mitt fall ligger där katalogen `c` som innehåller alla filerna på min `C:`.
-
-```text
-$ ls -l /mnt
-total 0
-drwxrwxrwx 1 mos mos 512 Jan  8 02:27 c
-```
-
-Sökvägen till min hemmakatalog i Windows blir då `/mnt/c/Users/mos/` där min Windowsanvändare heter "mos".
-
-För att göra det enkelt att nå filerna i din Windows hemma-katalog så kan du skapa en symbolisk länk i din hemmakatalog.
-
-```text
-$ cd && ln -s /mnt/c/Users/mos/ winhome
-$ ls -l
-total 0
-lrwxrwxrwx 1 mos mos 17 Jan  8 03:53 winhome -> /mnt/c/Users/mos/
-```
-
-Nu kan jag enkelt nå mina filer som ligger hos min Windows-användare.
-
-Det rekommenderas att du sparar dina egna filer under din Windows-användare. Det gör det enklast att nå dem både via WSL och via vanliga Windows-applikationer.
 
 
 

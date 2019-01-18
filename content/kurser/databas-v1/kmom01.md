@@ -7,6 +7,7 @@ views:
             src: "image/snapvt19/client-mysql-copy.png?w=1100&h=300&cf&a=0,0,66,0"
 author: mos
 revision:
+    "2019-01-16": "(F, mos) Bort referens BTH labbmiljö."
     "2019-01-11": "(E, mos) Uppdaterat inför vt19."
     "2018-12-19": "(D, mos) Uppdaterat läsanvisning utgåva 2 av kursbok."
     "2018-03-22": "(C, mos) Bort 404 länk till labbmiljön."
@@ -90,12 +91,13 @@ Kika igenom följande videor för att få grepp om grunderna i Databaser och SQL
 1. Kursen innehåller föreläsningar som streamas och därefter läggs i en spellista. Du kan nå spellistan på "[databas streams vt19](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8JaLBnz0TszCXc_eCVpmOh)".
 
 
-
+<!--
 ### Läsvärt {#lastips}
 
 Följande kan du studera om du har tid, intresse och kraft över.
 
 1. Vi kommer inte att använda BTH's labbmiljö för MySQL i denna kursen, men om du vill så kan du bekanta dig med den via dokumentet "[MySQL / MariaDB i BTH’s labbmiljö](labbmiljo/mysql-bth-labbmiljo)". Se hur du kan använda BTH's databasserver för MySQL och hur du kan använda de olika klienterna för att koppla upp dig inifrån skolans nätverk och utanför skolans nätverk. Spara dina eventuella testfiler i `me/kmom01/klient`.
+-->
 
 
 
@@ -123,8 +125,10 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Jobba igenom artikeln "[Introduktion till databasen MySQL/MariaDB, dess klienter och SQL](kunskap/introduktion-till-mysql-mariadb-dess-klienter-och-sql)". I artikeln får du träna på att använda klienterna och du får träna på ett arbetssätt som du kan ha under kursen. Det finn SQL-kod som du skall köra för att konfigurera upp din databas med en användare. Spara de filerna du använder i katalogen `me/kmom01/klient`, filerna är bra att ha om du senare behöver återskapa databasen.
 
-1. Jobba igenom första delen av guiden "[Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql)". I guiden ombeds du göra övningar och spara din SQL-kod i filer. Lägg dem i katalogen `me/kmom01/skolan1` som din redovisning. I nästa kmom fortsätter du med nästa del i guiden.
+1. Jobba igenom första delen av guiden "[Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql)". I guiden ombeds du göra övningar och spara din SQL-kod i filer. Lägg dem i katalogen `me/skolan` som din redovisning. I nästa kmom fortsätter du med nästa del i guiden.
     * [Första delen: Grunderna](guide/kom-igang-med-sql-i-mysql/grunderna)
+
+Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för hand. Även om du tjuvkikar för att hitta bra lösningar så är det en stor skillnad att skriva koden själv jämfört med att kopiera från någon.
 
 <!--
 IMPROVE: Gör någon enkel labb som kontrollerar att studenten har koll på vad guiden går igenom. Använd databasen som finns i guiden.

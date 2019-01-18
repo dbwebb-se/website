@@ -88,6 +88,8 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 1. Gör uppgiften "[Integrera en testmiljö med JavaScript i me-sida och Express](uppgift/integrera-en-testmiljo-med-javascript-i-me-sida-och-express)". Det handlar om att integrera enhetstester, kodtäckning och en CI-kedja i ditt me-api. Spara allt i dina befintliga repon.
 
+1. Gör uppgiften "[Skriva redovisningstexter i frontend](uppgift/skriva-redovisningstexter-i-frontend)". Du skapar ett formulär för redovisningstexter i frontend som användaren kommer åt efter att ha autentiserad sig.
+
 
 
 Resultat & Redovisning  {#resultat_redovisning}

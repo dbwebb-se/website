@@ -93,7 +93,7 @@ Titta på följande video:
 
 Genomför följande övningar för att träna dig.
 
-1. Läs igenom artikeln om UML-diagram "[Vad är UML?](kunskap/vad-ar-uml)".
+1. Läs igenom artikeln om UML-diagram "[Introduktion till UML?](kunskap/intro_till_uml)". Ni behöver förstå hur man gör egna klassdiagram. Sekvens och use case diagram behöver ni bara läsa om och förstå syftet med.
 
 2. Läs igenom artikeln som handlar om enhetstester "[Att skriva unittester](kunskap/unittest-i-python)".
 

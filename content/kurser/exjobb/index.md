@@ -3,6 +3,8 @@ title: exjobb
 author:
     - mos
 revision:
+    "2019-01-16": "(J, mos) Uppdaterade rätt poäng för ladokmoment."
+    "2018-12-19": "(I, mos) Ny struktur med guide för infon."
     "2018-04-19": "(H, mos) Instruktioner för opponering."
     "2018-02-12": "(G, mos) 3v i samband med topic."
     "2017-12-18": "(F, mos) In roller, bort nästan-dbwebb-kurs."
@@ -126,7 +128,7 @@ Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens k
 
 | Kursens moment   | Ladok moment enligt kursplan  | Betyg |
 |------------------|-------------------------------|-------|
-| Topic + Proposal | Projektförslag á 2.5hp        | G-U   |
+| Topic + Proposal | Projektförslag á 3hp          | G-U   |
 | Rapport, presentation samt opponering | Uppsats á 12hp | A-F   |
 
 Den sista inlämningen bestämmer kursens slutbetyg vilket utfärdas när samtliga moment godkänts.

@@ -11,14 +11,6 @@ revision:
 Kmom01: Backend
 ==================================
 
-[WARNING]
-
-** Kursutveckling pågår till kurs ramverk2 v2 **
-
-Kursstart våren 2019.
-
-[/WARNING]
-
 Först ser vi till att skaffa oss en server där vi under kursens gång ska driftsätta ett antal olika micro-services och klienter. Vi installerar en webbserver och skapar ett första utkast till en service för redovisningstexter.
 
 Vi utvärderar ett antal JavaScript-ramverk för att bygga REST API:er och väljer det som passar vår kravspecifikation.

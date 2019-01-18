@@ -112,7 +112,7 @@ Svårt göra övning per distans.
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Jobba igenom delen "Koppla tabeller" av guiden "[Kom igång med SQL i MySQL (Koppla tabeller)](guide/kom-igang-med-sql-i-mysql/koppla-tabeller)". Spara all SQL-kod i filer i katalogen `me/kmom03/skolan3`. Du behöver kopiera alla skript du redan sparat i `me/kmom02/skolan2` och utgå från dem och bygga vidare.
+1. Jobba igenom delen "Koppla tabeller" av guiden "[Kom igång med SQL i MySQL (Koppla tabeller)](guide/kom-igang-med-sql-i-mysql/koppla-tabeller)". Fortsätt spara all SQL-kod i filer i katalogen `me/skolan`.
 
 1. Gör uppgiften "[Node.js terminalprogram mot MySQL med kommandoloop](uppgift/nodejs-terminalprogram-mot-mysql-med-kommandoloop)". Spara alla filer i `me/kmom03/terminal2`.
 

@@ -20,6 +20,8 @@ Vi tittar på hur vi kan använda JavaScript ramverk på klientsidan för att sk
 
 Vi utvärderar vilka möjligheter vi har vid val av ramverk och väljer det ramverk, som efter noggrant studerande står som vinnare.
 
+Vi fortsätter även att bygga vidare på vår backend och lägger till möjligheten för att autentisera sig med hjälp av JSON Web Tokens (JWT) och skapa redovisningstexter med hjälp av API anrop.
+
 
 
 <!--more-->
@@ -82,7 +84,9 @@ Gör följande övningar, de behövs normalt för att klara uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
-1. Gör uppgiften "[Me-sida i ditt valda ramverk](uppgift/me-sida-i-ditt-valda-ramverk)". Där du bygger en frontend till API:t du skapade i föregående kursmoment.
+1. Gör uppgiften "[Autentisering med JWT och bcrypt](uppgift/autentisering-med-jwt-och-bcrypt)" för att bekanta dig med tekniker för autentisering och möjlighet till att skapa redovisningstexter med hjälp av API anrop.
+
+1. Gör uppgiften "[Me-sida i ditt valda ramverk](uppgift/me-sida-i-ditt-valda-ramverk)". Där du bygger en frontend till API:t du skapade i detta och föregående kursmoment.
 
 
 

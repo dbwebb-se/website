@@ -26,6 +26,8 @@ Styr upp så redovsiningstexten är separat för projektet och för examinatione
 
 Egentligen borde det finnas ytterligare ett ladokmoment för projektet (kanske).
 
+Använd HAVING i examinationsuppgiften, samt union.
+
 -->
 
 

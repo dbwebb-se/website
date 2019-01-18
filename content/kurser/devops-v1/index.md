@@ -28,4 +28,4 @@ Det formella förkunskapskravet är:
 Kursplan {#kursplan}
 -----------------------------------------------------
 
-Kursens namn är "Kontinuerlig integration och driftsättning i molnet". Du hittar [kursplanen genom att söka på kurskoden DV16XX via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV16XX).
+Kursens namn är "Kontinuerlig integration och driftsättning i molnet". Du hittar [kursplanen genom att söka på kurskoden DV1617 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1617).

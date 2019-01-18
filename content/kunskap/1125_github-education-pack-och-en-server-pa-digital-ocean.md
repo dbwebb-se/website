@@ -192,16 +192,22 @@ För att använda namecheap tryck på länken "Get access by connecting your Git
 
 När du har kopplat din användare kommer du till en sida där du skapar ditt domännamn. Skriv in din text i kommande bilder har jag använt det domännamn jag valda 'jsramverk.me'.
 
-[FIGURE src=/image/ramverk2/namecheap-nameservers.png?w=w3]
-[FIGURE src=/image/ramverk2/do-domains.png?w=w3]
-[FIGURE src=/image/ramverk2/do-domain-names.png?w=w3]
+[FIGURE src=/image/ramverk2/namecheap-nameservers.png?w=w3 caption="Fyll i nameservers hos namecheap."]
+
+Gå sedan till Digital Ocean och välj Networking>Domains. Här Väljer du att skapa den valda domänen.
+
+[FIGURE src=/image/ramverk2/do-domains.png?w=w3 caption="Skapa domän på Digital Ocean."]
+
+Vi vill sedan peka domänen till vår droplet och för att komma åt root-domänen anger vi @. Vill vi ange en subdomän anger vi subdomänen.
+
+[FIGURE src=/image/ramverk2/do-domain-names.png?w=w3 caption="Peka domän till droplet på Digital Ocean."]
 
 
 
 Installera nginx {#nginx}
 --------------------------------------
 
-Vi installerar webbservern nginx med hjälp av kommandot `sudo apt-get install nginx`. Du ska nu kunna gå till din domän-adress och där se Welcome to nginx!
+Vi installerar webbservern nginx med hjälp av kommandot `sudo apt-get install nginx`. Du ska nu kunna gå till din domän-adress och där se Welcome to nginx! Ibland kan det ta en liten stund innan alla ändringar slå igenom, så nu är att bra tillfälle att hämta kaffe eller gå en runda om det inte fungerar direkt.
 
 
 

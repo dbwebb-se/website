@@ -9,14 +9,6 @@ revision:
 Kmom01: Linux som server
 ==================================
 
-[WARNING]
-
-**Kursutveckling pågår**
-
-Kursen uppdateras. Kursmomenten kan komma att ändras innan läsperiod 3 startar. Information kan hittas i [forumtråden](https://dbwebb.se/forum/viewtopic.php?f=46&t=8124). 
-
-[/WARNING]
-
 Det första vi behöver är en Linux-server. På något sätt.
 
 Jag kommer visa hur du installerar Linux i VirtualBox, en virtualiseringsmiljö. Du kan välja att göra som jag gör eller så installerar du på en annan server. Kanske har du en gammal dator till övers, eller är du bekväm med virtuella servrar, eller investerar du i en Raspberry Pi för ett par hundralappar.

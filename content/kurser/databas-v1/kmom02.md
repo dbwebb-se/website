@@ -4,7 +4,7 @@ views:
         region: flash
         template: default/image
         data:
-            src: "image/snapvt18/guide-skolan-select.png?w=1100&h=300&cf&a=0,0,55,0&f=grayscale"
+            src: "image/snapvt18/nodejs-mysql-search.png?w=1100&h=300&cf&a=0,0,55,0&f=grayscale"
 author: mos
 revision:
     "2018-12-19": "(prel, mos) Gulmarkerat inför vt18."
@@ -24,7 +24,7 @@ Kursmomentet är under översyn inför vårterminen 2019.
 
 Vi jobbar vidare med SQL och tränar på enklare konstruktionerna och mer utmanande saker som vyer, subqueries, UNION och JOIN.
 
-Du kommer även jobba med JavaScript och Node.js för att se hur du kan koppla dig till en MySQL databas via ett applikationsspråk. Det innebär att du behöver installera en labbmiljö med Node.js och pakethanteraren npm.
+Du kommer även börja jobba med JavaScript och Node.js för att se hur du kan koppla dig till en MySQL databas via ett applikationsspråk. Det innebär att du behöver installera en labbmiljö med Node.js och pakethanteraren npm samt att du kommer igång med grunderna i programmeringsspråket JavaScript och specifikt hur JavaScript används tillsammans med Node.js.
 
 <!--more-->
 
@@ -77,33 +77,16 @@ Det finns ytterligare ett kapitel i boken som är relaterat till SQL, det går u
 
 Läs följande som är relaterat till programmeringsspråket JavaScript och Node.js.
 
-1. Bekanta dig med boken [Speaking JavaScript: An In-Depth Guide for Programmers](kunskap/boken-speaking-javascript) genom att översiktligt läsa igenom följande kapitel som ger dig en introduktion till grundkonstruktioner i programmeringsspråket JavaScript.
-    * [Ch 1: Basic JavaScript](http://speakingjs.com/es5/ch01.html) (läs till och med stycket om "Strict Mode")
-    * [Ch 13: Statements](http://speakingjs.com/es5/ch13.html)
+1. Bekanta dig med boken "[Boken: JavaScript for impatient programmers](https://dbwebb.se/kunskap/boken-javascript-for-impatient-programmers)" och se den som en resurs och uppslagsverk för programmeringsspråket JavaScript. Använd dina kunskaper om programmeringsspråk i allmänhet och se hur det relaterar till programmeringsspråket JavaScript.
 
-1. Bekanta dig med boken [Exploring ES6](kunskap/boken-exploring-es6). Skumläs ett av de inledande kapitlen för att få en grov känsla av ES6 kontra ES5.
-    * [Ch 4: Core ES6 features](http://exploringjs.com/es6/ch_core-features.html)
-
-
-
-### MDN dokumentation {#mdn}
-
-I kursen används [Mozilla Developers Network (MDN)](https://developer.mozilla.org/) som en resurs generellt för webbresurser och specifikt för referensmanual till programmeringsspråket JavaScript.
-
-Vill du hamna på rätt manualsida så lägger du alltid till "mdn" till din googling. Det finns många versioner av JavaScript och du behöver ofta gå tillbaka till källan i referensmanualen för att veta vad som är rätt (eller fel).
-
-1. För en snabb introduktion till konstruktionerna i språket JavaScript kan jag rekommendera dokumentet "[MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)" och de inledande kapitlen som kompletterar det du läst i kurslitteraturen.
+1. Webbplatsen "Mozilla Developers Network (MDN)" är en allmän resurs för webbutveckling och där finns en referensmanual för språket JavaScript. För en snabb introduktion till konstruktionerna i språket JavaScript kan jag rekommendera dokumentet "[MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)" och följande inledande kapitel.
     * Introduction
     * Grammar and types
     * Expressions and operators
 
+1. Node.js låter dig köra JavaScript utan en webbläsare. Via webbplatsen för Node.js finner du [referensdokumentationen](https://nodejs.org/en/docs/) till de delar och moduler som är specifika för Node.js/JavaScript. Node.js innehåller ett API som bland annat ger dig tillgång till operativsystemets resurser och låter dig skriva terminalprogram.
 
-
-### Node.js dokumentation {#nodejs}
-
-[Node.js](https://nodejs.org/) låter dig köra JavaScript utan en webbläsare. Via webbplatsen för Node.js finner du referensdokumentationen med de delar och moduler som är specifika för JavaScript i sammanhanget Node.js. Node.js innehåller ett API som bland annat ger dig tillgång till operativsystemets resurser och låter dig skriva terminalprogram.
-
-1. Bekanta dig med [dokumentationen till Node.js](https://nodejs.org/en/docs/). Kika översiktligt på API dokumentationen för den senaste LTS-versionen (Long Time Support).
+1. Som ett alternativ kan du kika på guiden "[Programmering med grunderna i JavaScript](https://dbwebb.se/guide/javascript1/introduktion)". Guiden är på svenska och främst skriven för JavaScript i webbläsaren, men den kan ge dig viss grundläggande kunskap i språket JavaScript som hjälper dig att komma igång med språkets byggstenar.
 
 
 
@@ -126,11 +109,9 @@ Läs följande:
 
 Genomför följande övning för att förbereda inför uppgifterna.
 
-<!--
-Någon övning som ger grunderna i Node.js och JavaScript på servern? Till någon som redan kan programmera. Kanske labbverktyget, kombinera labbarna i js1 och node, enkla till någon som kan programmera men inte kan js?
+1. Jobba igenom artikeln "[JavaScript och Node.js](kunskap/javascript-och-nodejs)" som visar hur du kommer igång med programmeringsspråket JavaScript i miljön Node.js. Spara dina exempelprogram under `me/kmom02/js`.
 
-1. Gör laborationen "[Introduktion till nodejs (node1)](uppgift/introduktion-till-nodejs)" för att öva på grunderna i nodejs. Spara koden i `me/kmom03/node1`.
--->
+1. Jobba igenom artikeln "[JavaScript och Node.js med async och await](kunskap/javascript-och-nodejs-med-async-och-await)" som presenterar begrepp kring den asynkrona programmeringsmodell som är grunden i Node.js. Spara dina exempelprogram under `me/kmom02/js`.
 
 1. Jobba igenom artikeln "[MySQL och Node.js (v2)](kunskap/mysql-och-nodejs-v2)" som visar hur du kommer igång med programmeringsspråket JavaScript i miljön Node.js och hur du kopplar ett program till databasen MySQL. Spara dina exempelprogram under `me/kmom02/search`.
 
@@ -140,14 +121,20 @@ Någon övning som ger grunderna i Node.js och JavaScript på servern? Till någ
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Jobba igenom delen "Mer SQL" av guiden "[Kom igång med SQL i MySQL (Mer SQL)](guide/kom-igang-med-sql-i-mysql/mer-sql)". Spara all SQL-kod i filer i katalogen `me/kmom02/skolan2`. Du behöver kopiera alla skript du redan sparat i `me/kmom01/skolan1` och utgå från dem och bygga vidare.
+Båda uppgifterna bygger på att du klarat av första delen av SQL-guiden från kmom01. Du kan välja i vilken ordning du gör uppgifterna, de är inte beroende av varandra.
 
 1. Lös uppgiften "[Node.js terminalprogram mot MySQL (v2)](uppgift/nodejs-terminalprogram-mot-mysql-v2)". Spara alla filer i `me/kmom02/terminal1`.
+
+1. Jobba igenom delen "Mer SQL" av guiden "[Kom igång med SQL i MySQL (Mer SQL)](guide/kom-igang-med-sql-i-mysql/mer-sql)". Fortsätt spara all SQL-kod i filer i katalogen `me/skolan`.
+
 
 <!--
 Enkel SQL laboration som visar att studenten kan göra joins/subquery.
 
 1. Gör laborationen "[SQL lab, fortsättning med SQL (sql2)](uppgift/sql-lab-fortsattning-med-sql)" som låter dig fortsätta träna på SQL med SQLite. Spara koden i `me/kmom03/sql2`.
+
+1. Gör laborationen "[Introduktion till nodejs (node1)](uppgift/introduktion-till-nodejs)" för att öva på grunderna i nodejs. Spara koden i `me/kmom03/node1`.
+
 -->
 
 
@@ -155,8 +142,6 @@ Enkel SQL laboration som visar att studenten kan göra joins/subquery.
 ### Extra {#extra}
 
 Gör följande extrauppgifter om du har tid och lust.
-
-1. I nästa kmom kommer du att göra nästa del av guiden "[Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql)". Du kan redan nu tjuvkika på guidens kommande delar.
 
 1. Jobba igenom guiden "[Kom igång med tmux och terminalen](kunskap/kom-igang-med-tmux-och-terminalen)" för att lära dig hur du jobbar mer effektivt i terminalen med tmux. Tmux ger dig möjlighet att dela in din terminal i olika flikar och varje flik i olika delar.
 
@@ -171,7 +156,8 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i redovisningstexten.
 
-* Du har nu repeterat SQL ett par gånger, börjar det sätta sig, är det något du finner extra utmanande?
-* Är detta den första bekantskap med JavaScript på serversidan och Node.js, hur känns det?
-* Gick det smärtfritt att koppla ihop JavaScript, Node.js med MySQL?
+* Du har nu använt både UNION och JOIN för att slå samman tabeller i SQL, vilken är din uppfattning om databaser och SQL så här långt?
+* Är detta den första bekantskap med JavaScript på serversidan och Node.js, hur känns det och vilken uppfattning, eller förutfattade meningar, har du om detta?
+* Hur kändes konceptet med async och await och asynkron programmering?
+* Hur gick det att koppla ihop JavaScript, Node.js med SQL och databasen?
 * Vilken är din TIL för detta kmom?

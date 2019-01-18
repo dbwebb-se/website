@@ -1,28 +1,99 @@
 ---
 author: mos
 revision:
+    "2019-01-15": "(B, mos) Uppdelad i två delar då HAVING fick mer material."
     "2017-12-28": "(A, mos) Första versionen, uppdelad av större dokument."
 ...
 Aggregerande funktioner
 ==================================
 
-Vi jobbar med inbyggda funktioner som kan beräkna värdet över många rader.
+Vi jobbar med inbyggda aggregerande funktioner som kan beräkna värdet över många rader.
 
 Spara dina konstruktioner i filen `dml_agg.sql`.
 
 
 
-MIN och MAX {#minmax}
+Om aggregerande funktioner {#om}
 ----------------------------------
 
-Använd `MIN()` och `MAX()` för att besvara följande.
+Vi kan se vilken lärare som har högst eller minst lön. För att göra det behöver vi gå igenom alla rader i tabellen och se vilken rad som innehåller det minsta respektive det högsta värdet.
+
+Med aggregerande funktioner kan vi lösa detta. Du har tidigare summerat lönesumman med den aggregerande funktionen `SUM()` som summerar lönesumman för alla rader.
+
+```sql
+mysql> SELECT SUM(lon) FROM larare;
++----------+
+| SUM(lon) |
++----------+
+|   330242 |
++----------+
+1 row in set (0.00 sec)
+```
+
+Du kan läsa om [aggregerande funktioner i MySQL manualen](https://dev.mysql.com/doc/refman/8.0/en/group-by-functions.html).
+
+
+
+Uppgifter MIN och MAX {#minmax}
+----------------------------------
+
+Använd nu `MIN()` och `MAX()` för att besvara följande.
 
 1. Hur mycket är den högsta lönen som en lärare har?
 2. Hur mycket är den lägsta lönen som en lärare har?
 
 
 
-GROUP BY {#groupby}
+Om GROUP BY {#omgroupby}
+----------------------------------
+
+När man använder aggregerande funktioner så arbetar de på samtliga rader. Vi kan till exempel räkna ut medelkompetensen på skolan.
+
+```sql
+mysql> SELECT AVG(kompetens) FROM larare;
++----------------+
+| AVG(kompetens) |
++----------------+
+|         2.3750 |
++----------------+
+1 row in set (0.00 sec)
+```
+
+Men, om vi vill se kompetensen per avdelning, så behöver vi gruppera den aggregerande funktionen per avdelning. Det gör vi med GROUP BY.
+
+```sql
+SELECT
+    avdelning,
+    AVG(kompetens)
+FROM larare
+GROUP BY avdelning
+;
+```
+
+Det kan då se ut så här.
+
+```text
+mysql> SELECT
+    ->     avdelning,
+    ->     AVG(kompetens)
+    -> FROM larare
+    -> GROUP BY avdelning
+    -> ;
++-----------+----------------+
+| avdelning | AVG(kompetens) |
++-----------+----------------+
+| DIPT      |         1.3333 |
+| ADM       |         4.0000 |
+| DIDD      |         1.5000 |
++-----------+----------------+
+3 rows in set (0.00 sec)
+```
+
+Nu ser vi medelkompetensen per avdelning och kan till exempel se vilken avdelning där vi främst behöver höja kompetensen.
+
+
+
+Uppgifter GROUP BY {#groupby}
 ----------------------------------
 
 Använd de inbyggda aggregerande funktionerna `SUM()`, `COUNT()`, och `AVG()` tillsammans med `GROUP BY`, för att räkna ut  följande:
@@ -68,57 +139,6 @@ Gör ytterligare en rapport.
 +-----------+-----------+-----------+
 7 rows in set (0.00 sec)
 ```
-
-
-
-HAVING {#having}
-----------------------------------
-
-Låt oss titta på snittlönen och säg vi vill räkna ut snittlönen på en avdelning för alla som har en kompetens av en viss nivå. Det gjorde vi ovan. Säg att vi vill se för alla kompetenser som inte är 2. Säg sedan att vi enbart vill visa de rader där snittlönen är större än 30 000.
-
-WHERE väljer ut raderna innan den aggregerande funktionen börjar räkna ut snittlönen. Det kan vi använda till _alla kompetenser som inte är 2_.
-
-HAVING kan jobba på det aggregerade värdet. Det gör ett urval efter att snittlönen räknats ut. Det kan vi använda till _snittlön större än 30 000_.
-
-Ett exempel kan se ut så här.
-
-```sql
-mysql> SELECT avdelning, kompetens, ROUND(AVG(lon)) as Snittlön
-    -> FROM larare
-    -> WHERE kompetens != 2
-    -> GROUP BY avdelning, kompetens
-    -> HAVING Snittlön > 30000
-    -> ORDER BY avdelning, Snittlön DESC
-    -> ;
-+-----------+-----------+-----------+
-| avdelning | kompetens | Snittlön  |
-+-----------+-----------+-----------+
-| ADM       |         7 |     85000 |
-| DIDD      |         1 |     37580 |
-+-----------+-----------+-----------+
-2 rows in set (0.00 sec)
-```
-
-Se hur WHERE ligger i SELECT-satsen, innan GROUP BY som innebär att den aggregerande funktionen AVG styrs av, efter att snittlönen är uträknad kan HAVING göra sitt urval.
-
-Gör nu en egen rapport.
-
-1. Visa per avdelning de kompetenser som finns och hur många anställda det finns per kompetens samt gruppens snittlön, men visa bara för kompetenser som är lägre än 7 bara om gruppens snittlön är mellan 30 000 - 45 000. Sortera per kompetens i sjunkande ordning.
-
-Ditt svar bör se ut så här.
-
-```sql
-+-----------+-----------+-------+-----------+
-| avdelning | kompetens | Antal | Snittlön  |
-+-----------+-----------+-------+-----------+
-| ADM       |         2 |     1 |     30000 |
-| DIPT      |         2 |     1 |     45000 |
-| DIDD      |         1 |     1 |     37580 |
-+-----------+-----------+-------+-----------+
-3 rows in set (0.00 sec)
-```
-
-Alltså, HAVING är till för att göra urval på aggregerad data och enbart visa de rader som matchar villkoret. WHERE gör urvalet innan det aggregerade datat beräknas.
 
 
 

@@ -8,6 +8,7 @@ category:
     - mariadb
     - mysql workbench
 revision:
+    "2019-01-15": "(B, mos) Fixa #länkarna till styckena."
     "2019-01-10": "(A, mos) Ersätter tidigare variant av artikel, installationen flyttad till egna dokument."
 ...
 Introduktion till databasen MySQL/MariaDB, dess klienter och SQL
@@ -92,7 +93,7 @@ Här följer SQL-koden, separerad i filer. Du hittar alla filerna i kursrepot f�
 
 
 
-### Skapa användare och databas {#setup}
+### Skapa användare och databas {#setup1}
 
 Jag skapar en användare, en databas och ger användaren fulla rättigheter mot denna databas. Jag lägger allt i filen `01_setup.sql`. Siffran är mest till för att visa vilken ordning filerna kan köras i.
 
@@ -123,7 +124,7 @@ Om du kör MariaDB kan du se varianter av hur du kan skapa användaren, se de bo
 
 
 
-### Skapa databasens schema (DDL) {#ddl}
+### Skapa databasens schema (DDL) {#ddl1}
 
 I filen `02_ddl.sql` skapar jag tre tabeller, det handlar om studenter som går kurser och får betyg på kurserna. I koden ser du exempel på hur tabeller skapas, hur kolumner anges med sin datatyp och hur man anger primärnyckel och främmande nyckel.
 
@@ -201,7 +202,7 @@ När man har en aktiv databas kan man skapa en backup av databasen som är en st
 
 
 
-### Skapa innehåll i databasen (DML) {#dml}
+### Skapa innehåll i databasen (DML) {#dml1}
 
 Då lägger vi till innehåll i tabellerna enligt följande.
 
@@ -422,7 +423,7 @@ Standardporten för MySQl/MariaDB är 3306, men man kan välja att koppla sig ti
 
 
 
-### Initiera databasen (setup.sql) {#setup}
+### Initiera databasen (setup.sql) {#setup2}
 
 Det första vi vill göra är att skapa databasen och dess användare, det handlar om att köra kommandona i filen `01_setup.sql`. För att göra detta måste vi vara en root-användare eller en annan användare som har rättigheter att skapa databaser och nya användare. Du får välja den root-användare som du har tillgång till.
 
@@ -444,7 +445,7 @@ Det kan se ut så här när du är uppkopplad. I mitt exempel använde jag även
 
 
 
-### Skapa tabellerna (ddl.sql) {#ddl}
+### Skapa tabellerna (ddl.sql) {#ddl2}
 
 Vi kan nu skapa tabellerna. De SQL-kommandon vi behöver ligger i filen `02_ddl.sql` och vi kan köra alla kommandon direkt från den filen.
 
@@ -466,7 +467,7 @@ Det kan se ut så här.
 
 
 
-### Skapa innehåll i tabellerna (dml.sql) {#dml}
+### Skapa innehåll i tabellerna (dml.sql) {#dml2}
 
 Då gör vi på samma sätt med filen som innehåller SQL för att fylla tabellerna med innehåll, filen `03_dml.sql`.
 
@@ -533,7 +534,7 @@ Då kan vi börja jobba. Vi gör samma sak som vi gjorde i terminalklienten, det
 
 
 
-### Initiera databasen (setup.sql) {#setup}
+### Initiera databasen (setup.sql) {#setup3}
 
 Börja med att använda uppkopplingen för root-användaren. Vi skall initiera databasen via filen `01_setup.sql`.
 
@@ -551,7 +552,7 @@ Varningar visas och det är bra att vara uppmärksam på dem. Ibland kan man ign
 
 
 
-### Skapa tabellerna (ddl.sql) {#ddl}
+### Skapa tabellerna (ddl.sql) {#ddl3}
 
 Nu kan vi öppna kopplingen för user:pass och öppna filen `02_ddl.sql` som hjälper oss att skapa databasens schema. Man kan ha flera kopplingar uppe samtidigt, så det är bara att öppna en ny koppling.
 
@@ -565,7 +566,7 @@ Vi kan öppna en ny flik med `ctrl-t` och därefter kan vi skriva in ett kommand
 
 
 
-### Skapa innehåll i tabellerna (dml.sql) {#dml}
+### Skapa innehåll i tabellerna (dml.sql) {#dml3}
 
 Vi fortsätter i kopplingen för user:pass och öppnar en ny flik med filen `03_dml.sql`. Vi exekverar alla kommandon.
 
@@ -596,7 +597,7 @@ Att markera ett visst avsnitt är ofta hjälpfullt om det är ett antal SQL-komm
 
 
 
-### Jobba med databasen (report.sql) {#report}
+### Jobba med databasen (report.sql) {#report3}
 
 Det sista vi gör i Workbench är att öppna filen `04_report.sql` och exekverar samtliga kommandon i den.
 

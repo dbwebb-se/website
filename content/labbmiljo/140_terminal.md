@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2019-01-16": "(C, mos) Cygwin standardval med tanke på SE och databaskurs, bash som standardval inför ht19."
     "2019-01-08": "(B, mos) Debian/Bash för Windows är nu standard terminal på Windows."
     "2016-01-01": "(A, mos) Första versionen."
 ...
@@ -19,8 +20,8 @@ Här är guider för hur du kommer igång med terminalen och installation av lab
 
 I Windows har du två alternativ till terminal, välj den som passar din installation.
 
-* Windows 10: [Installera Bash i Windows 10 (v 1803)](kunskap/installera-bash-i-windows-10-v2) (rekommenderas)
-* Windows (alla): [Installera Unix-terminalen Cygwin på Windows](kunskap/installera-unix-terminalen-cygwin-pa-windows) (alternativ)
+* Windows (alla): [Installera Unix-terminalen Cygwin på Windows](kunskap/installera-unix-terminalen-cygwin-pa-windows) (standardval)
+* Windows 10: [Installera Bash i Windows 10 (v 1803)](kunskap/installera-bash-i-windows-10-v2) (alternativ, standardval från och med hösten 2019)
 * Mac OS: [Terminalen och pakethantering med Brew på Mac OS](kunskap/terminalen-och-pakethantering-med-brew-pa-mac-os)
 * Unix/Linux: [Terminalen och pakethantering i Unix/Linux](kunskap/terminalen-och-pakethantering-i-unix-linux)
 

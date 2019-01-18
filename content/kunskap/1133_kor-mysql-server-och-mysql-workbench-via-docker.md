@@ -163,7 +163,7 @@ version: "3"
 services:
     mysql:
         volumes:
-            - ./sql:/docker-entrypoint-initdb.d
+            - ./sql.d:/docker-entrypoint-initdb.d
 ```
 
 För att testa så skapar vi en fil `sql.d/init.sql` som skapar en databas, en användare och en tabell med innehåll.

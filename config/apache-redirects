@@ -241,6 +241,7 @@ Redirect /forum/utbildning/ramverk1 /forum/viewforum.php?f=59
 
 # ramverk2
 Redirect /ramverk2                  /kurser/ramverk2
+Redirect /kurser/ramverk2                  /kurser/ramverk2-v2
 Redirect /forum/utbildning/ramverk2 /forum/viewforum.php?f=60
 
 

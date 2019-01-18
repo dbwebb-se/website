@@ -64,6 +64,8 @@ npm install express cors morgan --save
 
 Vi använder oss av `cors` för att hantera Cross-Origin Sharing problematik och `morgan` för loggning av händelser i API:t.
 
+Då vi inte vill ha `node_modules` katalogen versionshanterad i git skapar vi filen `.gitignore` och lägger "node_modules/" som första rad i den filen.
+
 
 
 Verifiera att Express fungerar {#verifiera}

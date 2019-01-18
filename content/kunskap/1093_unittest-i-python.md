@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+    "2019-01-12": (B, aar) Uppdaterade koden för phone och testerna.
     "2017-12-12": (A, lew) Updated for v2.
 category:
     - oopython
@@ -10,9 +11,7 @@ Att skriva enhetstester
 
 [FIGURE src=/image/oopython/kmom02/test_top.png class="right"]
 
-Enhetstester, eller *unittester*, används för att testa så enskilda metoder eller funktioner gör det de ska. Till exempel om en metod ska returnera bool-värdet `True`, så ska den aldrig kunna returnera `False`.  
-
-Det var det enklaste fallet av ett enhetstest, men poängen går nog fram.
+Enhetstester, eller *unittester*, används för att testa att enskilda metoder eller funktioner gör vad vi förväntar oss. Till exempel om en metod ska returnera bool-värdet `True`, så ska den aldrig kunna returnera `False`.  
 
 Vi ska titta lite närmare på de olika delarna av pythons inbyggda testramverk *unittest*. Vi hoppar inte i den djupa delen av bassängen, utan vi håller oss vid det grundläggande delarna.
 Vill du läsa mer kan du kika på [docs.python.org](https://docs.python.org/3/library/unittest.html).
@@ -31,8 +30,24 @@ Du kan grunderna i Python och du vet vad variabler, typer och funktioner innebä
 Varför ska man skriva enhetstester? {#varfor-ska-man-skriva-enhetstester}
 ------------------------------
 
-Enhetstester skrivs som sagt av anledningen att minimera risken för "trasig" kod och för att validera funktionaliteten. I många lägen handlar det inte bara om att enbart du ska förstå koden, utan det kan finnas andra utvecklare som tar över ditt projekt eller bara ska hjälpa till. Då är det bra om det är testat ordentligt. Har man bra tester som går igenom så har man bra kod.
+Enhetstester skrivs som sagt av anledningen att minimera risken för "trasig" kod och för att validera funktionaliteten. I många lägen handlar det inte enbart om att du ska förstå koden, utan det kan finnas andra utvecklare som tar över ditt projekt eller bara ska hjälpa till. Då är det bra om det är testat ordentligt. Om man har svårt att förstå vad en funktion gör enbart av att läsa koden hjälper det ofta om det finns tester man kan köra och kolla vad olika inputs får för output.
 
+Du vill även skriva tester för din egna skull, att ha bra tester på plats gör att när du skriver om kod eller lägger till ny kan du försäkra dig om att den gamla koden fortfarande gör vad vi förväntar oss. Det är också ett bra sätt att ha koll på buggar, varje gång du hittar en bugg i din kod skapar du ett testfall so kollar att buggen inte introduceras på nytt.
+
+
+
+Vad är ett enhetstest? {#vad-ar-enhetstest}
+------------------------------
+
+Man kan säga att ett enhetstest är en metod som testar en liten del av en applikation för att verifiera delens beteende oberoende från andra delar av applikationen. Ett enhetstest har oftast tre delar:
+
+* **Arrange** - Initiera en del av applikation till ett eftersökt tillståndet, t.ex. skapa variabler eller initiera objekt. För enklare tester behöver man inte denna delen.
+
+* **Act** - Utför handlingen som vi vill testa, t.ex. anropar en metod.
+
+* **Assert** - Sist kontrollerar vi att handlingen vi utförde genomfördes som vi förväntade oss. Oftast genom att göra en "assert" på en funktions returvärde eller kolla värdet på ett objekts attribut.
+
+Om det observerade genomförandet är vad vi förväntade oss passerar testet, annars fallerar det. Om det fallerade indikerar det att något är fel i koden.
 
 
 ###Pythons testramverk {#pythons-testramverk}
@@ -57,13 +72,13 @@ Då så. Vi tittar på grundstrukturen i `test.py`:
 
 import unittest
 
-class Testcase(unittest.TestCase):
+class TestPhone(unittest.TestCase):
     """ Submodule for unittests, derives from unittest.TestCase """
 
     # omitted code in explanation purpose
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=3)
 ```
 
 Vi importerar modulen och skapar en subklass av _unittest.TestCase_. Blocket med _unittest.main()_ kör igång ett interface för testskriptet och producerar en bra utskrift. Notera att vi har med docstrings nu. Docstrings som används i metoderna kommer skrivas ut när testfilen körs.
@@ -82,10 +97,11 @@ class Testcase(unittest.TestCase):
 
     def test_upper(self):
         """ Test builtin uppercase """
-        self.assertEqual('programmering'.upper(), 'PROGRAMMERING')
+        result = 'programmering'.upper()# Act
+        self.assertEqual(result, 'PROGRAMMERING')# Assert
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=3)
 ```
 
 Vi använder metoden _assertEqual_ för att jämföra om två värden är lika. Följande tabell är hämtad från [docs.python.org](https://docs.python.org/3/library/unittest.html) och visar överskådligt de vanligaste typerna av enhetstester.
@@ -134,66 +150,84 @@ Med flaggan `-v` ser vi att vi får en tydligare utskrift, där testerna skrivs 
 
 Nu är det dags att titta på hur vi skriver några enhetstester för vår klass, _Phone_. Klassen ligger i filen `phone.py`.
 
-Vi öppnar `test.py` och kikar några delar av koden. Om du undrar varför testerna är döpta med en bokstäverna a-l så är anledningen att testerna exekveras i bokstavsordning och man vill ha kontroll på när exekveringen ska ske. Med hjälp av _doc-strings_ får vi som sagt bättre utskrifter:
+Vi öppnar `test.py` och kikar några delar av koden. Med hjälp av _doc-strings_ får vi som sagt bättre utskrifter:
+
+En viktig del av att skriva enhetstester är att olika tester inte ska vara beroende av varandra. Med vetskapen att testerna exekverar i bokstavsordning vill vi *inte* döpa tester till specifika namn för att få dem att exekveras i en viss ordning. T.ex. att i ett test lägga till en kontakt och i nästa test testa en annan metod som har ett beroende på kontakten från förra testet. Då är testerna inte oberoende av varandra, vilket vi vill att de ska vara. Om vi vill att något ska ha skett innan ett test ska vi använda "arrange" fasen för att skapa rätt förutsättningar för testet. I exemplet med Phone klassen behöver vi t.ex. alltid ha ett Phone objekt skapat innan vi kan testa dess metoder. Istället för att skapa ett Phone objekt överst i test filen och låta alla tester använda det objektet ska vi skapa ett nytt Phone objekt till varje testfall.
+
+När det finns gemensamma steg för alla testfall kan vi använda en `setUp()` metod som körs före varje testmetod exekveras. I den kan vi utföra de steg som alla har gemensamt, i vårt fall skapa ett Phone objekt. Sen kan vi använda metoden `tearDwon()`, som exekveras efter varje testmetod, för att städa upp efter varje test så det inte finns något kvar från ett tidigare test som kan påverka nästa.
 
 ```python
-#!/usr/bin/env python3
-"""
-Unittest file for Phone
-"""
-
 import unittest
 from phone import Phone
 
-class Testcase(unittest.TestCase):
+class TestPhone(unittest.TestCase):
     """Submodule for unittests, derives from unittest.TestCase"""
-    # Create instances to use in the tests
-    phone = Phone("Samsung", "Galaxy S8", "Android")
-    phone_two = Phone("Apple", "iPhone 8", "iOS")
 
-    # Tests if the objects are the same
-    def test_a_equal_objects(self):
-        """ Should return True, they are not the same """
-        self.assertIsNot(self.phone, self.phone_two)
+    def setUp(self):
+        """ Create object for all tests """
+        self.phone = Phone("Samsung", "Galaxy S8", "Android")
 
-    # Tests if the objects are instances of Person
-    def test_b_are_object_instance_of(self):
-        """ Should return True, is is instance of Phone """
-        self.assertIsInstance(self.phone, Phone)
+    def tearDown(self):
+        """ Remove dependencies after test """
+        self.phone = None
 
-    # Tests if owner returns correct when none is set
-    def test_c_no_owner(self):
-        """Should return 'No owner yet' if correct"""
+
+
+    def test_default_owner(self):
+        """Test that default value if correct for owner"""
         self.assertEqual(self.phone.get_owner(), "No owner yet")
 
-    ########## Omitted test d-g ##########
+    def test_set_owner(self):
+        """Test changing owner of a Phone"""
+        self.phone.change_owner("Pelle")
+        self.assertEqual(self.phone.get_owner(), "Pelle")
 
-    # Test if phonebook is empty
-    def test_h_empty_phonebook(self):
-        """Should return False if phonebook is empty"""
+    def test_empty_phonebook(self):
+        """Test that contacts are empty"""
         self.assertFalse(self.phone.has_contacts())
 
-    # Test if phonebook is not empty
-    def test_i_not_empty_phonebook(self):
-        """Should return True if phonebook has contacts"""
-        self.phone.add_contact("Andreas", 12345)
-        self.phone.add_contact("Emil", 67890)
-        self.assertTrue(self.phone.has_contacts())
+    def test_validate_valid_numbers(self):
+        """Test validating valid numbers"""
+        valid = self.phone.validate_number("070-354 78 00")
+        self.assertTrue(valid)
 
-    # Test phonebook length
-    def test_j_phonebook_length(self):
-        """Should return the number 2"""
+        valid = self.phone.validate_number("153-222 78 00")
+        self.assertTrue(valid)
+
+    def test_validate_non_valid_numbers(self):
+        """Test validating non valid numbers"""
+        not_valid = Phone.validate_number("xxx-xxx xx xx")
+        self.assertFalse(not_valid)
+
+        not_valid = Phone.validate_number("073456129-")
+        self.assertFalse(not_valid)
+
+        not_valid = Phone.validate_number("073-456 12 9a")
+        self.assertFalse(not_valid)
+
+    def test_add_contacts(self):
+        """Test adding contacts"""
+        self.phone.add_contact("Andreas", "070-354 78 00")
+        self.phone.add_contact("Emil", "073-456 12 99")
+
+        self.assertTrue(self.phone.has_contacts())
         self.assertEqual(self.phone.get_contacts_length(), 2)
 
-    # Test get contact that not exists
-    def test_k_faulty_contact(self):
-        """Should return None"""
-        self.assertIsNone(self.phone.get_contact("Kenneth"))
+    def test_get_contact(self):
+        """Test that can get added contact"""
+        self.phone.add_contact("Andreas", "079-244 07 80")
+        self.assertEqual(self.phone.get_contact("Andreas"),
+                         ("Andreas", "079-244 07 80"))
 
-    # Test get contact that exists
-    def test_l_get_contact(self):
-        """Should return tuple with contact name and number"""
-        self.assertEqual(self.phone.get_contact("Andreas"), ("Andreas", 12345))
+    def test_get_contact_not_exist(self):
+        """
+        Test that correct value is returned
+        when getting contact that does not exist
+        """
+        self.assertFalse(self.phone.get_contact("Kenneth"))
+
+        self.phone.add_contact("Andreas", "079-244 07 80")
+        self.assertFalse(self.phone.get_contact("Emil"))
 
 
 
@@ -201,41 +235,62 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-Ett exempel på varför metoderna är skrivna med a-l kan vi se i testet `test_l_get_contact`. Om testerna inte styrdes med bokstäverna hade testet inte exekverats i rätt läge. Personerna läggs till i `test_i_not_empty_phonebook`, vilken kommer efter `test_l_get_contact` (om vi tar bort bokstaven) och personen hade då inte funnits i testet. Detta går såklart att motverka på fler sätt, till exempel med att skapa utgångsläget i varje deltest, eller lägga till personerna överst, efter instansieringen. Välj själv väg och ha i åtanke vad det är du vill testa och vilket sätt som hade fungerat bäst.
+Vi vill bara skriva värdefulla tester, så även om vi har en metod `get_model(self)` i Phone klassen så har vi inget testfall för den. Metoden bara returnerar ett attribut, det utförs egentligen inget i den och vi kan inte påverka vad som sker i metoden på något sätt. Så då finns det inget jätte stort värde i att ha ett test för den. Phone innehåller tre metoder av större värde att testa, det är `add_contact()`, `validate_number()` och `get_contact()`. Det är i dem vi har kod som faktiskt utför något.
 
-Kör vi alla test i testfilen får vi resultatet:
+Vi kan ta `get_contact()` som exempel:
 
-```text
+```python
+def get_contact(self, name):
+    """ Returns tuple with name and number """
+    for person in self.phonebook:
+        if person[0] == name:
+            return person
+    return False
+```
+
+Vad kan påverka resultatet av den metoden? Den innehållet en for-loop vilket kan bete sig olika beroende på om listan är tom eller inte och if-satsen kan vara True eller False. För att testa metoden skapar vi två test metoder, en som testar att allt går bra och en där det går dåligt. Först ett test när listan är tom och ett när listan har innehåll men vi skriver fel namn. 
+
+```python
+    def test_get_contact(self):
+        """Test that can get added contact"""
+        self.phone.add_contact("Andreas", "079-244 07 80")
+        self.assertEqual(self.phone.get_contact("Andreas"),
+                         ("Andreas", "079-244 07 80"))
+
+    def test_get_contact_not_exist(self):
+        """
+        Test that correct value is returned
+        when getting contact that does not exist
+        """
+        self.assertFalse(self.phone.get_contact("Kenneth"))
+
+        self.phone.add_contact("Andreas", "079-244 07 80")
+        self.assertFalse(self.phone.get_contact("Emil"))
+```
+
+Om vi kör alla tester i testfilen får vi resultatet:
+
+```bash
 >>> python3 test.py -v
 
-test_a_equal_objects (__main__.Testcase)
-Should return True, they are not the same ... ok
-test_b_are_object_instance_of (__main__.Testcase)
-Should return True, is is instance of Phone ... ok
-test_c_no_owner (__main__.Testcase)
-
-Should return 'No owner yet' if correct ... ok
-test_d_set_owner (__main__.Testcase)
-Should return 'Pelle' if correct ... ok
-test_e_prop_manufacturer (__main__.Testcase)
-Should return 'Samsung' if correct ... ok
-test_f_prop_model (__main__.Testcase)
-Should return 'S8' if correct ... ok
-test_g_prop_os (__main__.Testcase)
-Should return 'Android' if correct ... ok
-test_h_empty_phonebook (__main__.Testcase)
-Should return False if phonebook is empty ... ok
-test_i_not_empty_phonebook (__main__.Testcase)
-Should return True if phonebook has contacts ... ok
-test_j_phonebook_length (__main__.Testcase)
-Should return the number 2 ... ok
-test_k_faulty_contact (__main__.Testcase)
-Should return None ... ok
-test_l_get_contact (__main__.Testcase)
-Should return tuple with contact name and number ... ok
+test_add_contacts (__main__.TestPhone)
+Test adding contacts ... ok
+test_default_owner (__main__.TestPhone)
+Test that default value if correct for owner ... ok
+test_empty_phonebook (__main__.TestPhone)
+Test that contacts are empty ... ok
+test_get_contact (__main__.TestPhone)
+Test that can get added contact ... ok
+test_get_contact_empty (__main__.TestPhone) ... ok
+test_set_owner (__main__.TestPhone)
+Test changing owner of a Phone ... ok
+test_validate_non_valid_numbers (__main__.TestPhone)
+Test validating non valid numbers ... ok
+test_validate_valid_numbers (__main__.TestPhone)
+Test validating valid numbers ... ok
 
 ----------------------------------------------------------------------
-Ran 12 tests in 0.001s
+Ran 8 tests in 0.000s
 
 OK
 ```
@@ -254,7 +309,7 @@ from phone import Phone
 class Testcase(unittest.TestCase):
     """Submodule for unittests, derives from unittest.TestCase"""
 
-    phone = Phone("Samsung", "Galaxy S8", "Android")
+    ...
 
     # Tests if the objects are the same
     def test_error(self):

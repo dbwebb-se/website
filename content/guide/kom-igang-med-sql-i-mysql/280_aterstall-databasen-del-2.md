@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2019-01-15": "(C, mos) Genomgången och uppdaterad med felutskrifter och saknad v_lon."
     "2018-03-27": "(B, mos) Add function to bash reset."
     "2018-02-09": "(A, mos) Tillagd för att fokusera på hur man återställer databasen efter andra delen."
 ...
@@ -24,7 +25,9 @@ Vilka filer behövs köras? {#filer}
 
 Vi utgår från [filen som återskapar databasen efter första delen av guiden](./../aterstall-databasen-del-1), `reset_part1.bash`. Jag tar en kopia av den och modifierar så att den fungerar för både del 1 del och del 2 av guiden.
 
-Här är filerna som behövs, och ordningen de körs i. Ordningen är viktig. Man behöver ha koll på sin datamängd.
+Det gäller nu att hålla ordning på vilka filer som jag gjort DDL i under denna delen.
+
+Här är filerna som behövs, och ordningen de körs i. Ordningen är viktig. Man behöver ha koll på sin datamängd och vad som gör vad.
 
 | Fil               | Vad gör den?         |
 |-------------------|----------------------|
@@ -35,16 +38,23 @@ Här är filerna som behövs, och ordningen de körs i. Ordningen är viktig. Ma
 | `dml_update.sql`  | Förbered lönerevisionen, alla lärare har grundlön. |
 | `dml_copy.sql`    | Kopiera till larare_pre innan lönerevisionen. |
 | `dml_update_lonerevision.sql`  | Utför lönerevisionen. |
-| `dml_view.sql`    | Skapa vyerna VNamnAlder och Vlarare. |
+| `dml_view.sql`    | Skapa vyerna v_namn_alder och v_larare. |
+| `dml_join.sql`    | Skapa vyn v_lonerevision. |
 
 Därefter kan vi testa datamängden, till exempel genom att dubbelkolla lönesumman och kompetensen i tabellerna larare och larare_pre.
 
-Låt oss samla allt i ett bash-skript.
+När du har modifierat ditt skript så kan du testlöra det.
+
+När vi ändå håller på så kan vi träna lite på att skriva mer bash-skript.
 
 
 
 Komplett skript för att återställa databasen del 2 {#reset}
 ----------------------------------
+
+Jag valde att göra skriptet lite annrolunda, med en funktion som tar argumenten och sedan utför kommandot mot databasen.
+
+Du kan hålla fast i ditt gamla skript, eller så prövar du min nya konstruktion som kan vara mer lämpad när det blir allt fler filer att ha koll på.
 
 Följande bash-skript innehåller allt som återställer databasen till och med del 2 i guiden.
 
@@ -52,28 +62,33 @@ Följande bash-skript innehåller allt som återställer databasen till och med 
 #!/usr/bin/env bash
 
 #
-# Load a SQL file into skolan using user:pass
+# Load a SQL file into skolan
 #
 function loadSqlIntoSkolan
 {
-    echo ">>> $2 ($1)"
-    mysql -uuser -ppass skolan < $1 > /dev/null
+    echo ">>> $4 ($3)"
+    mysql -u$1 -p$2 skolan < $3 > /dev/null
+    if [ $? -ne 0 ]; then
+        echo "The command failed, you may have issues with your SQL code."
+        echo "Verify that all SQL commands can be exeucted in sequence in the file:"
+        echo " '$3'"
+        exit 1
+    fi
 }
 
 #
 # Recreate and reset the database to be as after part II.
 #
 echo ">>> Reset skolan to after part 2"
-echo ">>> Recreate the database (as root)"
-mysql -uroot -p skolan < setup.sql > /dev/null
-
-loadSqlIntoSkolan "ddl.sql"         "Create tables"
-loadSqlIntoSkolan "dml_insert.sql"  "Insert into larare"
-loadSqlIntoSkolan "ddl_migrate.sql" "Alter table larare"
-loadSqlIntoSkolan "dml_update.sql"  "Grundlön larare"
-loadSqlIntoSkolan "ddl_copy.sql"    "Kopiera till larare_pre"
-loadSqlIntoSkolan "dml_update_lonerevision.sql" "Utför lönerevision"
-loadSqlIntoSkolan "dml_view.sql"    "Skapa vyer VNamnAlder och Vlarare"
+loadSqlIntoSkolan "root" "" "setup.sql" "Initiera database och användare"
+loadSqlIntoSkolan "user" "pass" "ddl.sql" "Create tables"
+loadSqlIntoSkolan "user" "pass" "dml_insert.sql" "Insert into larare"
+loadSqlIntoSkolan "user" "pass" "ddl_migrate.sql" "Alter table larare"
+loadSqlIntoSkolan "user" "pass" "dml_update.sql" "Grundlön larare"
+loadSqlIntoSkolan "user" "pass" "ddl_copy.sql" "Kopiera till larare_pre"
+loadSqlIntoSkolan "user" "pass" "dml_update_lonerevision.sql" "Utför lönerevision"
+loadSqlIntoSkolan "user" "pass" "dml_view.sql" "Skapa vyer för larare"
+loadSqlIntoSkolan "user" "pass" "dml_join.sql" "Skapa vy för lönerevisionen"
 
 echo ">>> Check larare_pre: Lönesumman = 305000, Kompetens = 8."
 mysql -uuser -ppass skolan -e "SELECT SUM(lon) AS 'Lönesumma', SUM(kompetens) AS Kompetens FROM larare_pre;"
@@ -85,17 +100,18 @@ mysql -uuser -ppass skolan -e "SELECT SUM(lon) AS 'Lönesumma', SUM(kompetens) A
 När jag kör mitt program får jag följande utskrift, du bör få motsvarande.
 
 ```text
-$ bash reset_part2.bash
+$ bash reset_part2.bash 
 >>> Reset skolan to after part 2
->>> Recreate the database (as root)
-Enter password:
+>>> Initiera database och användare (setup.sql)
+Enter password: 
 >>> Create tables (ddl.sql)
 >>> Insert into larare (dml_insert.sql)
 >>> Alter table larare (ddl_migrate.sql)
->>> Förbered lönerevision, grundlön larare (dml_update.sql)
+>>> Grundlön larare (dml_update.sql)
 >>> Kopiera till larare_pre (ddl_copy.sql)
 >>> Utför lönerevision (dml_update_lonerevision.sql)
->>> Skapa vyer VNamnAlder och Vlarare (dml_view.sql)
+>>> Skapa vyer för larare (dml_view.sql)
+>>> Skapa vy för lönerevisionen (dml_join.sql)
 >>> Check larare_pre: Lönesumman = 305000, Kompetens = 8.
 +------------+-----------+
 | Lönesumma  | Kompetens |
@@ -103,7 +119,6 @@ Enter password:
 |     305000 |         8 |
 +------------+-----------+
 >>> Check larare: Lönesumman = 330242, Kompetens = 19.
-Warning: Using a password on the command line interface can be
 +------------+-----------+
 | Lönesumma  | Kompetens |
 +------------+-----------+
@@ -112,3 +127,7 @@ Warning: Using a password on the command line interface can be
 ```
 
 Du får gärna modifiera och vidarutveckla ditt bash-skript. Men det räcker om det fungerar som jag visar ovan och återställer databasen så här långt i guiden.
+
+Om du får varningen så kan du se hur du [löste det tidigare](./../aterstall-databasen-del-1#warning).
+
+> _"Warning: Using a password on the command line interface can be insecure."_

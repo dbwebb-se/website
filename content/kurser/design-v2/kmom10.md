@@ -23,6 +23,13 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
+<!--
+Beskriv mer på Om-sidan eller egentligen i en egen rapport på redovisa sidan, om site/tema, om alt tema och om kodstruktur. Dela i olika rapporter.
+
+Fundera över bloggens vara i projketet.
+
+Kanske passar nåt om produktsidor i projektet, eller inte.
+-->
 
 
 Bedömning och betygsättning {#bedomning}

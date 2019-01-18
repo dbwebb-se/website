@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2019-01-15": "(B, mos) Manuallänk till 8.0 samt flyttad från 'Mer SQL'."
     "2018-01-02": "(A, mos) Första versionen, uppdelad av större dokument."
 ...
 Teckenkodning
@@ -14,7 +15,7 @@ En installation av databasen MySQL har (kan ha) en förvald teckenkodning på sy
 
 Låt oss se ett fall där det är absolut nödvändigt att ange teckenkodningen.
 
-Innan du börjar kan du ta en kort titt i [manualen om teckenkodning](https://dev.mysql.com/doc/refman/5.7/en/charset-mysql.html).
+Innan du börjar kan du ta en kort titt i [manualen om teckenkodning](https://dev.mysql.com/doc/refman/8.0/en/charset-mysql.html).
 
 
 

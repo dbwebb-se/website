@@ -5,6 +5,7 @@ category:
     - mysql
     - windows
 revision:
+    "2019-01-15": "(C, mos) Förtydliga hur man skapar my.cnf på WSL."
     "2019-01-08": "(B, mos) Nu enbart för Windows."
     "2018-01-12": "(A, mos) Första utgåvan för Windows, macOS och Linux."
 ...
@@ -279,13 +280,32 @@ På Bash och Cygwin kan du skapa filen så här.
 touch $HOME/.my.cnf && chmod 600 $HOME/.my.cnf
 ```
 
-Öppna filen i din texteditor och lägg till följande.
+Sedan kan du fylla filen med innehåll, så här. `$HOME` är samma sak som `~`, båda pekar på din användares hemmakatalog.
+
+```text
+echo -e "[client]\nhost=127.0.0.1\nprotocol=tcp" >> ~/.my.cnf
+```
+
+Du kan nu titta på filen med följande kommandon. Först lista filen för att se dess storlek och rättigheter och sedan göra cat för att visa filens innehåll.
+
+```text
+ls -l ~/.my.cnf
+cat ~/.my.cnf
+```
+
+Filen skall innehålla följande.
 
 ```text
 [client]
 host=127.0.0.1
 protocol=tcp
 ```
+
+Så här kan det se ut när du kör kommandona.
+
+[FIGURE src=image/snapvt19/wsl-create-mycnf-without-editor.png?w=w3 caption="Du har nu skapat en konfigurationsfil som terminalklienten läser in."]
+
+Alternativt kan du använda en texteditor för att skapa och redigera filen, [dock fungerar texteditorn inte så bra med filsystemet på WSL](t/8203).
 
 Nu kan du testa att starta terminalklienten, utan att ange host.
 

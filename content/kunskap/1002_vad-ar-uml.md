@@ -85,22 +85,22 @@ En klass i ett klass diagram representeras med en ruta som är indelad i tre fac
 
 
 
-Attribut måste åtminstone visas med namnet men det kan även stå med vilken datatyp de har, som i bilden ovan. Bilden visar även om de är publika eller privata:
+Attribut måste åtminstone visas med namnet men det kan även stå vilken datatyp de har, som i bilden ovan. Bilden visar även om de är publika eller privata:
 
-* \+ Betyder publikt attribut.
+* **\+** Betyder publikt attribut.
 
-* \- Betyder privat attribut.
+* **\-** Betyder privat attribut.
 
-* <u>attributnamn</u> Betyder att attributet är statiskt. Gäller även för understrukna metodnamn
+* **<u>attributnamn</u>** Betyder att attributet är statiskt. Gäller även för understrukna metodnamn
 
-För metoder måste man skriva med namnet, det är att föredra att även visa parametrar och returtyp som bilden ovan. Det funkar likadant för metoder och attribut med +- för privata/publika.
+För metoder måste man skriva med namnet, det är att föredra att även visa parametrar och returtyp som bilden ovan. Det funkar likadant för metoder och attribut med **+-** för privata/publika.
 
 
 
 ####Relationer {#relationer}
 
 Klasser har relationer, t.ex. arv, komposition och aggregation, detta ska visas i diagrammet. För att visa relationer används olika sorters pilar mellan klasserna. Tillsammans med de pilarna använder man positiva tal och
-asterisks(**\***), betyder oändligt, för att visa antalet instanser av varje klass som kan vara sammankopplade. Antalet visas som en intervall [minimum..maximum].
+asterisks(**\***, betyder oändligt), för att visa antalet instanser av varje klass som kan vara sammankopplade. Antalet visas som en intervall [minimum..maximum].
 
 
 
@@ -108,15 +108,15 @@ asterisks(**\***), betyder oändligt, för att visa antalet instanser av varje k
 
 [FIGURE src=/image/oopython/kmom02/FlightPlaneAssociation.png caption="Klasserna Flight och Plane."]
 
-Vi har två klasser, `Flight` och `Plane`, som använder varandra. Vi ser att i Flight finns variabeln `assigned_plane` som är av typen Plane och i Plane finns variabeln `assigned_flights` som är av typen List men innehåller Flight. För att tydliggöra kopplingen som finns här kan vi lägga till en **associations** pil.
+Vi har två klasser, `Flight` och `Plane`, som använder varandra. Vi ser att i klassen **Flight** finns variabeln `assigned_plane` som är av typen **Plane** och i klassen **Plane** finns variabeln `assigned_flights` som är av typen List, listan innehåller Flight objekt. För att tydliggöra beroende som finns mellan de två klasserna kan vi lägga till en **associations** pil.
 
 [FIGURE src=/image/oopython/kmom02/FlightPlaneAssociationModded.png caption="Association mellan Flight och Plane."]
  
-Det vi ser nu är en **bi-directional association**, Vi har två klasser som är medvetna om varandra. Flight är associerad med ett specifikt Plane, och Plane klassen är associerad med Flight. Vi har flyttat ut attributnamnen och lagt dem på pilen. Flight använder Plane i variabeln `assigned_plane` och den variabel kan innehålla noll eller ett Plane (ett plan har kanske inte blivit tilldelat än). Vi kan se att Plane klassen använder Flight klassen i attributet `assigned_flights` och den variabeln kan innehålla noll (nytt plan som inte har blivit tilldelad några flygningar än) till oändligt många.
+Det vi ser nu är en **bi-directional association**. Vi har två klasser som är medvetna om varandra, Flight använder Plane och Plane använder Flight. Ett Flight objekt är associerad med ett specifikt Plane objekt, och ett Plane objekt kan vara associerad med flera Flight objekt. Vi har dessutom flyttat ut attributnamnen och lagt dem på pilen. Flight använder Plane i variabeln `assigned_plane` och den variabel kan innehålla noll eller ett Plane (ett plan har kanske inte blivit tilldelat än). Vi kan se att Plane klassen använder Flight klassen i attributet `assigned_flights` och den variabeln kan innehålla noll (nytt plan som inte har blivit tilldelad några flygningar än) till oändligt många.
 
 [FIGURE src=/image/oopython/kmom02/uniDirectional.png caption="Association mellan BannedAccounts och Account."]
 
-På bilden ovanför kan vi se en till association, mellan `BannedAccounts` och `Account`. Nu har vi en **Uni-directional association**, alltså en association där bara en av klasserna är medveten om det. I detta fallet är det BannedAccounts som använder Account i variabeln `accounts` och den kan innehålla en till oändligt många.
+På bilden ovanför kan vi se en till association, mellan `BannedAccounts` och `Account`. Nu har vi en **Uni-directional association**, alltså en association där bara en av klasserna är medveten om kopplingen som finns. I detta fallet är det **BannedAccounts** som använder **Account** i variabeln `accounts` och den kan innehålla en till oändligt många.
 
 
 

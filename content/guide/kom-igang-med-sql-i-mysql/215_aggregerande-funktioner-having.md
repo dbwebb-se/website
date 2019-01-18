@@ -56,7 +56,7 @@ mysql> SELECT
 
 Vi har nu beräknat snittlönen per avdelning, vi kan se hur många lärare det är per avdelning under "Antal".
 
-Låt oss nu beräkna snittlönen igen, denna gången vill vi se snittlönenm per avdelning, för alla som har kompetens 1. Kanske vill vi göra en extra insats på lönen för de som har låg kompetens. Nåja.
+Låt oss nu beräkna snittlönen igen, denna gången vill vi se snittlönen per avdelning, för alla som har kompetens 1. Kanske vill vi göra en extra insats på lönen för de som har låg kompetens. Nåja.
 
 Vi lägger till `WHERE kompetens = 1`.
 

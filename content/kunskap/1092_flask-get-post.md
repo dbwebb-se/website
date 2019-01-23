@@ -92,7 +92,7 @@ def internal_server_error(e):
 if __name__ == "__main__":
     app.run(debug=True)
 ```
-Vi kikar lite snappt på `index.html` också. Kolla i "[Flask med Jinja2](kunskap/flask-med-jinja2)" för innehållet i header.html, footer.html och style.css.
+Vi kikar lite snabbt på `index.html` också. Kolla i "[Flask med Jinja2](kunskap/flask-med-jinja2)" för innehållet i header.html, footer.html och style.css.
 
 ```
 {% include 'header.html' %}

@@ -119,7 +119,7 @@ Sedan tittar vi enbart på kompetensen.
 ```sql
 mysql> SELECT
     -> akronym, fornamn, efternamn, prekomp, nukomp, diffkomp
-    -> FROM Vlonerevision
+    -> FROM v_lonerevision
     -> ORDER BY nukomp DESC, diffkomp DESC
     -> ;
 +---------+-----------+------------+---------+--------+----------+

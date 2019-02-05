@@ -134,7 +134,7 @@ Krav {#krav}
 
 1. Inloggningsdetaljer till databasen skall sparas i `config.json` och läsas in av respektive fil/main-program.
 
-1. Skapa filen `teacher.js` som skall visa information om lärare, inklusive akronym, namn, avdelning, lön, kompetens och födelsedatum (YYY-MM-DD).
+1. Skapa filen `teacher.js` som skall visa information om lärare, inklusive akronym, namn, avdelning, lön, kompetens och födelsedatum (YYYY-MM-DD).
 
 1. Skapa filen `search.js` som visar samma information som `teacher.js`, men man kan söka/filtrera i alla fält (utom nödvändigtvis datumfältet) på en söksträng som matas in från tangentbordet.
 

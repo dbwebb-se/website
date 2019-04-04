@@ -50,7 +50,7 @@ Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut s
 Extrauppgift {#extra}
 -----------------------
 
-* Använd swipe event för att blädra mellan dina olika vyer. GitHub repo [detect-swipe-event](https://github.com/mosbth/detect-swipe-event) kan hjälpa en bit på vägen.
+* Använd swipe event för att bläddra mellan dina olika vyer. GitHub repo [detect-swipe-event](https://github.com/mosbth/detect-swipe-event) kan hjälpa en bit på vägen.
 
 * Din app ska visa sin navigation i botten om det är en liten mobil enhet, annars visas navigationen längst upp.
 

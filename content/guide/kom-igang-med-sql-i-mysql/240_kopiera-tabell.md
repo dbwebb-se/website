@@ -17,7 +17,7 @@ Spara den SQL-kod du skriver i filen `ddl_copy.sql`.
 När vi utförde [lönerevisionen](./../uppdatera-varden-lonerevision#ej) så var det ett par frågor vi inte kunde svara på.
 
 1. Visa de lärare som inte har fått en löneökning om minst 3%.
-1. Gör en rapport som visar hur många % respektive lärare fick i löneöning.
+1. Gör en rapport som visar hur många % respektive lärare fick i löneökning.
 
 Men, om vi hade tagit en backup av tabellen och tabellens data, innan vi utförde lönerevisionens alla UPDATE-satser, så hade vi haft en möjlighet att besvara frågorna.
 

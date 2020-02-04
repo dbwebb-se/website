@@ -86,7 +86,7 @@ Rapport från lönerevisionen {#proc}
 
 Nu är det egentligen rätt enkelt. Nu behöver vi bara jämföra och räkna ut förhållandet mellan den gamla och den nya lönen. Det vore trevligt att se både den procentuella höjningen och höjningen i kronor samt ett varningstecken om löneökningen inte uppnår lägsta nivån om 3%.
 
-Dessutom vill man kunna se nuvarande och gamla kompetensen samt skillnanden mellan dem.
+Dessutom vill man kunna se nuvarande och gamla kompetensen samt skillnaden mellan dem.
 
 1. Skapa rapporten som visar resultatet enligt nedan.
 1. Spara rapporten som en vy `v_lonerevision`.

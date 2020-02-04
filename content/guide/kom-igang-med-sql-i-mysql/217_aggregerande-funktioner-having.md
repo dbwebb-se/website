@@ -258,7 +258,7 @@ Uppgifter HAVING {#having}
 
 Gör nu en egen rapport med GROUP BY och HAVING.
 
-1. Visa per avdelning hur många anställda det finns gruppens snittlön, sortera per avdelning och snittlön.
+1. Visa per avdelning hur många anställda det finns, gruppens snittlön, sortera per avdelning och snittlön.
 2. Visa samma sak som i 1), men visa nu även de kompetenser som finns. Du behöver gruppera på avdelning och per kompetens, sortera per avdelning och per kompetens.
 3. Visa samma sak som i 2), men ignorera de kompetenser som är större än 3.
 4. Visa samma sak som i 3), men exkludera de grupper som har fler än 1 i Antal och snittlön mellan 30 000 - 45 000. Sortera per snittlön.

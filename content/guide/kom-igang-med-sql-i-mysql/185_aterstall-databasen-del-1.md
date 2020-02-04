@@ -174,7 +174,7 @@ Bli av med varningen för lösenord i klartext {#warning}
 
 Troligen får du en irriterande varning av att inte ange lösenord i klartext. Visst är det en fullt rimlig varning, men i sammanhanget så är den mest störande.
 
-Du kan bli av med den om du lägger in användaren user med lösenorder pass i din konfigurationsfil `~/.my.cnf`. Följande konstruktion i den filen anger ett defaultlösenord för en användare.
+Du kan bli av med den om du lägger in användaren user med lösenordet pass i din konfigurationsfil `~/.my.cnf`. Följande konstruktion i den filen anger ett defaultlösenord för en användare.
 
 ```text
 [client]
@@ -198,4 +198,4 @@ Nu kan du koppla dig mot databasen utan att ange lösenordet som hämtas från f
 mysql -uuser skolan
 ```
 
-Om du nu uppdaterat ditt bash-skript, ta bort optionen `-ppass`, så kan du bli av med varingen. Den är ju lite irriterande.
+Om du nu uppdaterat ditt bash-skript, ta bort optionen `-ppass`, så kan du bli av med varningen. Den är ju lite irriterande.

@@ -45,7 +45,7 @@ Här är filerna som behövs, och ordningen de körs i. Ordningen är viktig. Ma
 
 Därefter kan vi testa datamängden, till exempel genom att dubbelkolla lönesumman och kompetensen i tabellerna larare och larare_pre.
 
-När du har modifierat ditt skript så kan du testlöra det.
+När du har modifierat ditt skript så kan du testköra det.
 
 När vi ändå håller på så kan vi träna lite på att skriva mer bash-skript.
 
@@ -54,7 +54,7 @@ När vi ändå håller på så kan vi träna lite på att skriva mer bash-skript
 Komplett skript för att återställa databasen del 2 {#reset}
 ----------------------------------
 
-Jag valde att göra skriptet lite annrolunda, med en funktion som tar argumenten och sedan utför kommandot mot databasen.
+Jag valde att göra skriptet lite annorlunda, med en funktion som tar argumenten och sedan utför kommandot mot databasen.
 
 Du kan hålla fast i ditt gamla skript, eller så prövar du min nya konstruktion som kan vara mer lämpad när det blir allt fler filer att ha koll på.
 

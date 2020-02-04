@@ -44,7 +44,7 @@ ALTER
 DROP
 ```
 
-Konstruktionerna CREATE, ALTER, DROP brukar benämnas SQL Data Definition Language (DDL), eller SQL DDL, då de definerar databasens schema och struktur.
+Konstruktionerna CREATE, ALTER, DROP brukar benämnas SQL Data Definition Language (DDL), eller SQL DDL, då de definierar databasens schema och struktur.
 
 Pröva att finna informationen om dessa SQL-kommandon i refmanualen. Ju bättre du blir på det desto enklare och snabbare kommer du igenom övningen.
 

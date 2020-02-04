@@ -78,7 +78,7 @@ DROP USER IF EXISTS 'user'@'%';
 Konstruktionen nedan skapar användaren "user" med lösenordet "pass" och användaren kan logga in från godtycklig host "@'%'"
 
 ```sql
--- Skapa en användare user med lösenorder pass och ge tillgång oavsett
+-- Skapa en användare user med lösenordet pass och ge tillgång oavsett
 -- hostnamn. 
 CREATE USER IF NOT EXISTS 'user'@'%'
 IDENTIFIED
@@ -145,7 +145,7 @@ Jag testar genom att starta kommandoradsklienten och ange användare, lösenord 
 ```text
 $ mysql -uuser -ppass skolan
 
-... utskrifter från inloggingen
+... utskrifter från inloggningen
 
 mysql>
 ```
@@ -154,7 +154,7 @@ Det kan se ut så här.
 
 [ASCIINEMA src=220805 caption="Logga in mot en databas med angiven användare och lösenord."]
 
-Om inget felmedelande visas och prompten för kommandoradsklienten visas så gick det bra att logga in med vald användare och lösenord.
+Om inget felmeddelande visas och prompten för kommandoradsklienten visas så gick det bra att logga in med vald användare och lösenord.
 
 
 
@@ -189,7 +189,7 @@ USE skolan;
 -- som heter något i stil med *skolan*
 SHOW DATABASES LIKE "%skolan%";
 
--- Skapa en användare user med lösenorder pass och ge tillgång oavsett
+-- Skapa en användare user med lösenordet pass och ge tillgång oavsett
 -- hostnamn. 
 CREATE USER IF NOT EXISTS 'user'@'%'
     IDENTIFIED BY 'pass'

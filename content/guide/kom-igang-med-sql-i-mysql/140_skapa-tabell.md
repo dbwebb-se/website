@@ -22,7 +22,7 @@ Lägg SQL-koden i filen `ddl.sql` och inled filen med en header som berättar ve
 
 Skall man skriva kommentarer på engelska eller svenska? I programmeringssammanhang föredrar vi att kommentarer skrivs på engelska. Det är utgångsläget. Men i databassammanhang kan databasens schema, dess tabeller och kolumnnamn även vara på svenska, då kan vi tänka oss att även kommentarerna är på svenska. I detta exempelt har vi en svensk databas, med svenska namn på tabeller och kolumner, här kan du välja om du vill skriva kommentarerna på svenska eller engelska.
 
-Dö börjar vi.
+Då börjar vi.
 
 En skola har lärare, skapa en tabell för lärare enligt följande:
 
@@ -101,7 +101,7 @@ Slå upp syntaxen för `CREATE TABLE` i refmanualen, skumma igenom den för att 
 
 > *Kom ihåg vem som är din bästa vän -- referensmanualen.*
 
-Innan du avslutar, dubblekolla att du kan köra hela filen `ddl.sql` i en sekvens. Antingen markerar du all kod i Workbench och kör den, eller så kör du hela filen via terminalen.
+Innan du avslutar, dubbelkolla att du kan köra hela filen `ddl.sql` i en sekvens. Antingen markerar du all kod i Workbench och kör den, eller så kör du hela filen via terminalen.
 
 Så här kan du köra via terminalen.
 

@@ -189,7 +189,7 @@ mysql> SELECT
 Återställ databasen efter lönerevision {#aterstall-igen}
 ----------------------------------
 
-Jag vet att jag tjatar om att återställa databasen med dina skriptfiler. Men det är en viktig självkontroll som du kan göra. Om du kan köra ala dina skript i sekvens, och få samma resultat som jag, så visar det att du har "rätt" så här långt i övningen. En självkontroll som visar att man är på rätt väg.
+Jag vet att jag tjatar om att återställa databasen med dina skriptfiler. Men det är en viktig självkontroll som du kan göra. Om du kan köra alla dina skript i sekvens, och få samma resultat som jag, så visar det att du har "rätt" så här långt i övningen. En självkontroll som visar att man är på rätt väg.
 
 Här är de skript du nu behöver köra för att återställa databasen. Du kan markera allihop och kopiera till din terminal, de körs automatiskt efter varandra.
 

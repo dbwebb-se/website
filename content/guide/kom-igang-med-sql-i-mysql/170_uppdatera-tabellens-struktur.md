@@ -27,7 +27,7 @@ Gör nu följande steg på egen hand, läs refmanualen vid behov.
 
 1. Lägg till kolumnen `kompetens` (integer) i tabellen lärare med hjälp av kommandot `ALTER TABLE`.
 2. Ta bort samma kolumn med kommandot `ALTER TABLE DROP COLUMN`.
-3. Lägg till samma kolumn igen, modifiera så att kolumnen defineras med default-värdet 1 (`DEFAULT`) och att den inte kan innehålla `NULL`-värden (`NOT NULL`).
+3. Lägg till samma kolumn igen, modifiera så att kolumnen definieras med default-värdet 1 (`DEFAULT`) och att den inte kan innehålla `NULL`-värden (`NOT NULL`).
 
 Ledtråd till 3:an är att titta i refman för `ALTER TABLE` och för `CREATE TABLE`.
 

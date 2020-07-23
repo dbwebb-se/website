@@ -1,8 +1,9 @@
 ---
 data:
-    meta: 
+    meta:
         type: toc
         items: 5
-
+        orderby: publishTime
+        orderorder: desc
 ...
-####[Bloggen](blogg)
+#### [Bloggen](blogg)

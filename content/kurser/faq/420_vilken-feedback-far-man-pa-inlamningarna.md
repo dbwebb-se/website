@@ -35,13 +35,13 @@ Om du missat något så blir du ombedd att åtgärda det, antingen till nästa k
 Kan jag fortsätta med nästa kursmoment {#nasta}
 ------------------------------------------
 
-Du behöver inte invänta feedback för att få fortsätta med nästa kursmoment. Du kan påbörja nästa kursmoment innan du fått feedback på föregående. 
+Du behöver inte invänta feedback för att få fortsätta med nästa kursmoment. Du kan påbörja nästa kursmoment innan du fått feedback på föregående.
 
 
 
 Fråga för att få mer feedback {#fraga}
 ------------------------------------------
 
-Ställ frågor i forumet för att få mer feedback. Har du en fundering? En direkt fråga? Ett påstående du vill ha utrett? Har mos skrivit konstig kod? Eller vill du kanske diskutera olika möjliga lösningar på ett problem? Ställ då en fråga i forumet.
+Ställ frågor i forumet för att få mer feedback. Har du en fundering? En direkt fråga? Ett påstående du vill ha utrett? Har läraren skrivit konstig kod? Eller vill du kanske diskutera olika möjliga lösningar på ett problem? Ställ då en fråga i kursens forum.
 
-På detta sätt får du ut mer av kursen, mer feedback och mer svar på dina funderingar. Fråga mycket, man lär sig av att fråga. 
+På detta sätt får du ut mer av kursen, mer feedback och mer svar på dina funderingar. Fråga mycket, man lär sig av att fråga.

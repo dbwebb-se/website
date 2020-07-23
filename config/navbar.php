@@ -46,7 +46,7 @@ return [
         // Use for styling the menu
         "wrapper" => null,
         "class" => "rm-default rm-desktop",
-     
+
         // Here comes the menu strcture
         "items" => [
 
@@ -68,11 +68,11 @@ return [
                 "title" => "Delta i communityn"
             ],
 
-            "utbildning" => [
-                "text"  =>"<i class=\"icon fa fa-university\"></i> Utbildning",
-                "url"   => $this->di->get("url")->create("utbildning"),
-                "title" => "Läs om de utbildningar vi erbjuder inom webbprogrammering och webbutveckling",
-            ],
+            // "utbildning" => [
+            //     "text"  =>"<i class=\"icon fa fa-university\"></i> Utbildning",
+            //     "url"   => $this->di->get("url")->create("utbildning"),
+            //     "title" => "Läs om de utbildningar vi erbjuder inom webbprogrammering och webbutveckling",
+            // ],
         ],
     ],
 
@@ -84,7 +84,7 @@ return [
         "id" => "rm-menu",
         "wrapper" => null,
         "class" => "rm-default rm-mobile",
-     
+
         // Here comes the menu strcture
         "items" => [
 
@@ -239,45 +239,45 @@ return [
                 ],
             ],
 
-            "utbildning" => [
-                "text"  =>"<i class=\"fa fa-university\"></i> Utbildning",
-                "url"   => $this->di->get("url")->create("utbildning"),
-                "title" => "Läs om de utbildningar vi erbjuder inom webbprogrammering och webbutveckling",
+            // "utbildning" => [
+            //     "text"  =>"<i class=\"fa fa-university\"></i> Utbildning",
+            //     "url"   => $this->di->get("url")->create("utbildning"),
+            //     "title" => "Läs om de utbildningar vi erbjuder inom webbprogrammering och webbutveckling",
+            //
+            //     "submenu" => [
+            //         "items" => [
+            //             "180hp"  => [
+            //                 "text"  => "Webbprogrammering 180hp campus",
+            //                 "url"   => $this->di->get("url")->create("utbildning/webbprogrammering-180hp-campus"),
+            //                 "title" => "Läs om programmet Webbprogrammering 180hp på campus",
+            //             ],
+            //
+            //             "120hp"  => [
+            //                 "text"  => "Webbprogrammering 120hp distans",
+            //                 "url"   => $this->di->get("url")->create("utbildning/webbprogrammering-120hp-distans"),
+            //                 "title" => "Läs om programmet Webbprogrammering 120hp på distans",
+            //             ],
+            //
+            //             "webutv"  => [
+            //                 "text"  => "Webbutveckling och Programmering 30hp distans",
+            //                 "url"   => $this->di->get("url")->create("utbildning/webbutveckling-och-programmering-30hp"),
+            //                 "title" => "Läs om kurspaketet Webbutveckling och Programmering 30hp",
+            //             ],
+            //
+            //             "webprog"  => [
+            //                 "text"  => "Webbprogrammering och Databaser 30hp distans",
+            //                 "url"   => $this->di->get("url")->create("utbildning/webbprogrammering-och-databaser-30hp"),
+            //                 "title" => "Läs om kurspaketet Webbprogrammering och Databaser 30hp",
+            //             ],
+            //         ],
+            //     ],
+            // ],
 
-                "submenu" => [
-                    "items" => [
-                        "180hp"  => [
-                            "text"  => "Webbprogrammering 180hp campus",
-                            "url"   => $this->di->get("url")->create("utbildning/webbprogrammering-180hp-campus"),
-                            "title" => "Läs om programmet Webbprogrammering 180hp på campus",
-                        ],
-           
-                        "120hp"  => [
-                            "text"  => "Webbprogrammering 120hp distans",
-                            "url"   => $this->di->get("url")->create("utbildning/webbprogrammering-120hp-distans"),
-                            "title" => "Läs om programmet Webbprogrammering 120hp på distans",
-                        ],
-
-                        "webutv"  => [
-                            "text"  => "Webbutveckling och Programmering 30hp distans",
-                            "url"   => $this->di->get("url")->create("utbildning/webbutveckling-och-programmering-30hp"),
-                            "title" => "Läs om kurspaketet Webbutveckling och Programmering 30hp",
-                        ],
-
-                        "webprog"  => [
-                            "text"  => "Webbprogrammering och Databaser 30hp distans",
-                            "url"   => $this->di->get("url")->create("utbildning/webbprogrammering-och-databaser-30hp"),
-                            "title" => "Läs om kurspaketet Webbprogrammering och Databaser 30hp",
-                        ],
-                    ],
-                ],
-            ],
-
-            "om" => [
-                "text"  =>"Om",
-                "url"   => $this->di->get("url")->create("om"),
-                "title" => "Läs om webbplatsen, de som står bakom och dess syfte",
-            ],
+            // "om" => [
+            //     "text"  =>"Om",
+            //     "url"   => $this->di->get("url")->create("om"),
+            //     "title" => "Läs om webbplatsen, de som står bakom och dess syfte",
+            // ],
 
         ],
     ]

@@ -7,11 +7,12 @@ views:
             src: "image/snapvt19/windows-cowsay.png?c=800,200,0,0&w=1100&sharpen"
 author:
     - mos
-category: 
+category:
     - labbmiljo
     - windows
     - bash
 revision:
+    "2020-04-29": "(E, mos) Lade till unzip som kommando att installera (krävs av composer)."
     "2019-08-22": "(D, aurora) Översedd inför HT19 och Windows 10 v1903."
     "2019-01-16": "(C, mos) Förtydligande om var filer bör sparas och hur atom startas, bort med stycket om atom."
     "2019-01-13": "(B, mos) Lade till installation av nödvändiga paket."
@@ -126,7 +127,7 @@ Det tar en liten stund att uppgradera.
 Vi skall installera ett par paket som gör din vardag enklare. Det är paket som används i kurserna och vi vill försäkra oss om att de är installerade.
 
 ```text
-sudo apt-get install wget curl ssh rsync git vim
+sudo apt-get install wget curl ssh rsync git vim unzip
 ```
 
 Här är en kort förklaring till de olika kommandona.

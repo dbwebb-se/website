@@ -1,4 +1,4 @@
-Copyright &copy; 2008 -- 2019 [Mikael Roos](https://mikaelroos.se) (mos@dbwebb.se)
+Copyright &copy; 2008 -- 2020 [Mikael Roos](https://mikaelroos.se) (mos@dbwebb.se)
 
 * [Licens](om/licens-och-rattigheter)
 * [Cookies](om/cookies)

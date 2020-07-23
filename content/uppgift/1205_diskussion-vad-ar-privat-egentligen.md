@@ -3,37 +3,24 @@ author: nik
 category:
     - kurs/itsec
 revision:
-    "2019-11-13": (A, aurora) Fler frågor, tydligare struktur på reflektion.
-    "2019-08-07": (A, aurora) Första utgåvan.
+    "2020-05-27": (C, nik) Uppdaterad med bland annat LaTeX mall
+    "2019-11-13": (B, nik) Fler frågor, tydligare struktur på reflektion.
+    "2019-08-07": (A, nik) Första utgåvan.
 ...
 Vad är privat egentligen?
 ===================================
 
 Ni skall fundera och diskutera kring vilken information som klassas som privat samt argumentera varför just den informationen borde vara privat. Som utmaning, ställ er gärna i företagens skor och fundera på varför de *"behöver"* den informationen de frågar efter.
 
-<!-- Du skriver reflektionen i ett format som kan benämnas "akademiskt format". Det är för att träna på strukturen inför kommande större skrivuppgifter såsom examensjobb. -->
+Ni skall jobba i grupp (2-4 personer) när ni löser diskussionsuppgiften. Reflektionen är självständig.
 
-Ni ska jobba i grupp (2-4 personer) när ni löser diskussionsuppgiften. Reflektionen är självständig.
-
-<!--more-->
-
-<!-- Förkunskaper {#forkunskaper}
------------------------ -->
-
-<!-- Du har läst kurslitteraturen och skaffat dig kunskaper om grundläggande färgteori. -->
-
-<!-- Du har din redovisa-sida där du skall skriva din artikel. -->
-
-<!-- Du har tillgång till kommandot `dbwebb` och har möjlighet att publicera rapporten tillsammans med din me-sida på studentservern. -->
-
-<!-- Introduktion {#intro}
+Nice-to-have länkar {#nice-to-have}
 -----------------------
 
-Jobba igenom denna introduktion för att förbereda inför uppgiften. -->
-
-
-
-
+* [Get a summary of data in your Google Account](https://support.google.com/accounts/answer/162744)
+* [Get a copy of the data associated with your Apple ID account](https://support.apple.com/en-us/HT208502)
+* [What categories of my Facebook data are available to me?](https://www.facebook.com/help/930396167085762)
+* [Have I been pwned?](https://haveibeenpwned.com/)
 
 Diskussion (grupp) {#disk}
 -----------------------
@@ -55,18 +42,21 @@ För varje fråga, skrev ner lite minnesanteckningar som hjälper dig att skriva
 Reflektion (självständig) {#reflektion}
 -----------------------
 
-1. Skriv en egen reflektion där du tänker igenom över vad ni diskuterat i gruppen och vad du själv tycker/tänker. Kanske har du fått en annan syn på vilken information som ligger ute eller så har du stenkoll på din data.
-    - Reflektionen ska ha ett försättsblad med titel (Vad är privat egentligen?), datum och namn/studentakronym.
-    - Reflektionen ska vara ca 1-2 sidor (exklusive försättsbladet).
-    - Texten kan skrivas som punktform, men uppmuntras att skrivas som en sammanhängande text.
-    - Om diskussionen har fått er att fundera kring hur ni hanterar er data (både privat och som utvecklare), lyft gärna detta.
+Skriv en egen reflektion där du tänker igenom över vad ni diskuterat i gruppen och vad du själv tycker/tänker. Kanske har du fått en annan syn på vilken information som ligger ute eller så har du stenkoll på din data.
 
-1. I slutet av reflektionen skriver du ett stycke med namnen på dina gruppmedlemmar.
+- Reflektionen ska ha ett försättsblad med titel (Vad är privat egentligen?), datum och namn/studentakronym.
+- Reflektionen ska vara ca 1-2 sidor (exklusive försättsbladet).
+- Texten kan skrivas på svenska eller engelska.
+- Använd stycken för att dela upp texten och försök att skriva det som en sammanhängande text.
+- Om diskussionen har fått er att fundera kring hur ni hanterar er data (både privat och som utvecklare), lyft gärna detta.
+- I slutet av reflektionen skriver du ett stycke med namnen på dina gruppmedlemmar.
 
-1. Spara din reflektion som `me/kmom02/reflektion.pdf`.
+Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/qfdtffsgbspf) som ni kan använda. Länken är till en read-only version, för att skapa er egna så trycker ni "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller kraven ovan.
 
-<!-- 1. I din egna text, reflektera över om privacy är något du kommer tänka på/argumentera för när du kommer ut i arbetslivet? Varför/varför inte? -->
+Publicera {#publicera}
+-----------------------
 
+Spara din reflektion som `me/kmom02/reflektion.pdf` och kör
 
 ```bash
 # Flytta till kurskatalogen

@@ -23,13 +23,10 @@ Jag kommer att installera endast det nödvändigaste för att få tillgång till
 
 Installera Java {#java}
 --------------------------------------
-Du kan behöva Java JDK, på linux installeras detta lättast genom att använda `apt-get`. Följande kommandon installerar Java JDK 8 på en debian eller ubuntu maskin.
+Vi använder oss av openjdk i denna kursen och på linux installeras detta lättast genom att använda `apt-get`. Följande kommandon installerar openJDK 8 på en debian eller ubuntu maskin. Om du har en annan version av Java installerat sedan tidigare kan du ta bort med följande kommando: `sudo apt-get purge --auto-remove openjdk*`.
 
 ```bash
-sudo apt-get install software-properties-common
-sudo add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
+sudo apt-get install openjdk-8-jdk
 javac -version
 ```
 
@@ -60,21 +57,21 @@ Android Studio avslutar nu installationen bekräfta de val som kommer upp. Jag h
 
 [FIGURE src=/image/webapp/screenshot-android-studio.png caption="Android Studio startfönster."]
 
-Välj i fönstret som kommer upp 'Android 8.0 API Level 26' och bocka av 'API Level 27' tryck sedan Apply för att installera rätt SDK. Godkänna License Agreement och låt Android Studio Installera SDK:n.
+Välj i fönstret som kommer upp 'Android 8.1 API Level 27' och bocka av alla andra versioner tryck sedan Apply för att installera rätt SDK. Godkänna License Agreement och låt Android Studio Installera SDK:n.
 
-[FIGURE src=/image/webapp/screenshot-android-studio-sdk.png caption="Android Studio SDK Manager."]
+[FIGURE src=/image/webapp/android-studio-sdk-27.png caption="Android Studio SDK Manager."]
 
 
 
 Installera byggsystemet gradle {#gradle}
 --------------------------------------
-Cordova använder via Android Studio gradle för att bygga apparna på Linux behöver vi installera gradle manuellt. Vi laddar ner [senaste version (4.6)](https://services.gradle.org/distributions/gradle-4.6-bin.zip) från Gradles hemsida. Vi skapar sedan katalogen `/opt/gradle` och packar upp den nerladdade zip-filen. Vi lägger även till gradle i vår PATH.
+Cordova använder via Android Studio gradle för att bygga apparna på Linux behöver vi installera gradle manuellt. Vi laddar ner [senaste version (6.3)](https://services.gradle.org/distributions/gradle-6.3-bin.zip) från Gradles hemsida. Vi skapar sedan katalogen `/opt/gradle` och packar upp den nerladdade zip-filen. Vi lägger även till gradle i vår PATH.
 
 ```bash
 # Stå i $HOME/Downloads
 sudo mkdir /opt/gradle
-sudo unzip gradle-4.6-bin.zip -d /opt/gradle
-echo export PATH=$PATH:/opt/gradle/gradle-4.6/bin >> ~/.profile
+sudo unzip gradle-6.3-bin.zip -d /opt/gradle
+echo export PATH=$PATH:/opt/gradle/gradle-6.3/bin >> ~/.profile
 source ~/.profile
 ```
 
@@ -82,7 +79,19 @@ source ~/.profile
 
 Installera en virtuell enhet {#avd}
 --------------------------------------
-Starta ett nytt Android Studio project från startfönstret i Android Studio. Klicka dig igenom guiden för att skapa ett projekt. De förifyllda värden som finns fungerar bra och enda anledningen till att vi skapar ett projekt är för att få möjlighet för att skapa en virtuell enhet. Du kommer troligen få ett fel att byggverktygen för Android inte fungerar. Trycka på länken i felet och byggverktygen ska nu installeras.
+
+Börja med att välja Configure > AVD Manager från startfönstret i Android Studio.
+
+[FIGURE src=/image/webapp/avd-manager.png caption="Android Studio AVD Manager."]
+
+Sedan trycker du på "Create Virtual Device", välj någon telefon, jag valde en Pixel 3, men spelar ingen större roll vilken telefon du väljer. Se till att installera rätt disk image som stämmer överens med den SDK API level 27 som vi installerade tidigare. Min virtuella enhet ser ut på detta sättet när jag är klar.
+
+[FIGURE src=/image/webapp/avd-manager-done.png caption="Android Studio AVD Manager efter installation."]
+
+Du kan behöva tillåta tillgång för din användare till katalogen `/dev/kvm` det kan du göra med kommandot `sudo chown efo:efo /dev/kvm`. Byt ut 'efo' mot ditt användarnamn.
+
+
+<!-- Starta ett nytt Android Studio project från startfönstret i Android Studio. Klicka dig igenom guiden för att skapa ett projekt. De förifyllda värden som finns fungerar bra och enda anledningen till att vi skapar ett projekt är för att få möjlighet för att skapa en virtuell enhet. Du kommer troligen få ett fel att byggverktygen för Android inte fungerar. Trycka på länken i felet och byggverktygen ska nu installeras.
 
 [FIGURE src=/image/webapp/screenshot-android-studio-gradle.png caption="Android Studio byggverktygen."]
 
@@ -90,17 +99,17 @@ I nedanstående video visas hur man skapar en virtuell enhet, som vi sedan kan a
 
 Se till att göra samma val som Emil gör i videon nedan. Välj alltså API 26 (Oreo) när du ombeds välja API för din virtuella enhet.
 
-[YOUTUBE src=KWAsnLTClzo caption="Emil skapar en virtuell Android enhet."]
+[YOUTUBE src=KWAsnLTClzo caption="Emil skapar en virtuell Android enhet."] -->
 
 
 
 Lägga till i pathen {#path}
 --------------------------------------
-För att Cordova ska hitta Android behövs det i PATH. Vi lägger till det med följande kommandon.
+För att Cordova ska hitta Java och Android behövs det i PATH. Vi lägger till det med följande kommandon.
 
 ```bash
+echo export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64" >> ~/.profile
 echo export ANDROID_HOME="$HOME/Android/Sdk" >> ~/.profile
-source ~/.profile
 echo export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools >> ~/.profile
 source ~/.profile
 echo $PATH
@@ -129,7 +138,7 @@ Failed to execute shell command "getprop,dev.bootcomplete" on device: Error: adb
 error: device still authorizing
 ```
 
-Detta problemet kan lösas genom att öppna Android Studio och starta den virtuella enheten från AVD Manager. Detta görs genom trycka på gröna play-knappen i AVD Manager. Den gröna play-knappen syns längst till höger under de sista 20 sekunder av installationsvideon ovan. När enheten har startas kör du kommandot `cordova run android` i terminalen och din app ska nu kunna köras i din virtuella enhet.
+Detta problemet kan lösas genom att öppna Android Studio och starta den virtuella enheten från AVD Manager. Detta görs genom trycka på gröna play-knappen i AVD Manager. Den gröna play-knappen syns längst till höger under de sista 20 sekunder av installationsvideon ovan. När enheten har startas kör du kommandot `cordova run android` i terminalen och din app ska nu kunna köras i din virtuella enhet. Ett annat sätt är att använda sig av en 'Cold Boot', det brukar lösa en del problem. Du gör det genom att klicka på lilla vita pilen och välja 'Cold Boot Now'.
 
 
 

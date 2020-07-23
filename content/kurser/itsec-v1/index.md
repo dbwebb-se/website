@@ -17,13 +17,13 @@ Kursen **Informationssäkerhet med webbtillämpningar**, a.k.a. *itsec*, lär ut
 
 <!--more-->
 
-[WARNING]
+<!-- [WARNING]
 
 **Kursutveckling pågår**
 
 Kursstart hösten 2019.
 
-[/WARNING]
+[/WARNING] -->
 
 
 

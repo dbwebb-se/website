@@ -1,6 +1,8 @@
 ---
 author: mos
 revision:
+    "2020-06-25": "(G, mos) Excelark för kp till 2019, 2020."
+    "2020-05-18": "(F, mos) Länk till kurs-excel för 2021 + utbplaner för 2020."
     "2019-11-19": "(E, mos) Länk till kurs-excel för 2020."
     "2019-02-04": (D, mos) Länk till utbildningsplan för 2018, 2019 samt uppföljning av status och tog bort äldre studieplaner.
     "2018-05-21": (C, mos) Lade till antagningsomgång 2019 för programmen.
@@ -32,6 +34,7 @@ Kurser per antagningsomgång {#kurserantagen}
 
 ### Webbprogrammering 120hp distans {#kurser120}
 
+* [Antagen HT2020](utbildning/webbprogrammering-120hp/2020/kurser)
 * [Antagen HT2019](utbildning/webbprogrammering-120hp/2019/kurser)
 * [Antagen HT2018](utbildning/webbprogrammering-120hp/2018/kurser)
 * [Antagen HT2017](utbildning/webbprogrammering-120hp/2017/kurser)
@@ -41,6 +44,7 @@ Kurser per antagningsomgång {#kurserantagen}
 
 ### Webbprogrammering 180hp campus {#kurser180}
 
+* [Antagen HT2020](utbildning/webbprogrammering-180hp/2020/kurser)
 * [Antagen HT2019](utbildning/webbprogrammering-180hp/2019/kurser)
 * [Antagen HT2018](utbildning/webbprogrammering-180hp/2018/kurser)
 * [Antagen HT2017](utbildning/webbprogrammering-180hp/2017/kurser)
@@ -57,21 +61,36 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 
 ### Webbprogrammering 120hp distans {#followup120}
 
+* [Antagen 2021](https://docs.google.com/spreadsheets/d/1pKlRPVwqxpAyfaDdi-ERQC_jq5bxxdjEgEh1FPLC6Zo/edit?usp=sharing)
 * [Antagen 2020](https://docs.google.com/spreadsheets/d/1mIseONfKc2mM0u__o2-bOXY5zEnvcAtk5KjXPWqxLj4/edit?usp=sharing)
 * [Antagen 2019](https://docs.google.com/spreadsheets/d/1N4zZNRkPcaOH7a4Eco_kUpXymJF3s9Z6C3TFbbufajE/edit?usp=sharing)
 * [Antagen 2018](https://docs.google.com/spreadsheets/d/1CMt1SIhO8CaB5R5k2RbEfsbL0daqZhjPpbQJri3k5QM/edit?usp=sharing)
-* [Antagen 2017](https://docs.google.com/spreadsheets/d/1a_qFW8QfP1tGPI87bW-NJvXeCu99aQEC48jLx7h2gGs/edit?usp=sharing) 
-* [Antagen 2016](https://docs.google.com/spreadsheets/d/1mgY1z7FLi-tJBJ5er14YYOhPrCxr_u95H7ogAnZj4YA/edit?usp=sharing) 
+* [Antagen 2017](https://docs.google.com/spreadsheets/d/1a_qFW8QfP1tGPI87bW-NJvXeCu99aQEC48jLx7h2gGs/edit?usp=sharing)
+* [Antagen 2016](https://docs.google.com/spreadsheets/d/1mgY1z7FLi-tJBJ5er14YYOhPrCxr_u95H7ogAnZj4YA/edit?usp=sharing)
 
 
 
 ### Webbprogrammering 180hp campus {#followup180}
 
+* [Antagen 2021](https://docs.google.com/spreadsheets/d/1SiiXMBWIxBRUIBW7y56qEccrVZBOxLyWwaibyScB87Y/edit?usp=sharing)
 * [Antagen 2020](https://docs.google.com/spreadsheets/d/1-j2Tg90kRGwCN97wqljachAyZDsN6ct-9l6an1D2ehg/edit?usp=sharing)
 * [Antagen 2019](https://docs.google.com/spreadsheets/d/1Q9hQuoQ2J6cfZ0JGiGUU-mDr9iHZXgIN3qG5mRcNGxo/edit?usp=sharing)
 * [Antagen 2018](https://docs.google.com/spreadsheets/d/1uISBfMsOfx2fXWd8XSj3VIKbU4lmghRVKBjNyZ1OmJY/edit?usp=sharing)
 * [Antagen 2017](https://docs.google.com/spreadsheets/d/15wU6btyWTsK9F3I2TJINgduu_IfmCRbf2Wy46ayR9_0/edit?usp=sharing)
 * [Antagen 2016](https://docs.google.com/spreadsheets/d/1MXVzuA9VIw8hpDcIKl8zIhvyxx3mzOqB0aT5wD7jAWI/edit?usp=sharing)
+
+
+
+### Webbprogrammering och databaser 30hp {#webprog}
+
+* [Antagen 2020](https://docs.google.com/spreadsheets/d/17ROz2yigWiVgD4qpJcAQVl7ME_1kOIMt8pv8QOLbu7I/)
+* [Antagen 2019](https://docs.google.com/spreadsheets/d/1k4bW2SvbgrwxQmSE5iZ2Vrf9fYnkqObpY_D6WvRh-f4/edit?usp=sharing)
+
+
+
+### Webbutveckling och programmering 30hp {#webutv}
+
+* [Antagen 2020](https://docs.google.com/spreadsheets/d/1Y050giCqTqFJXM2MkrRREXfudAoJuKFOf2Hc3bAvz54/)
 
 
 
@@ -84,6 +103,7 @@ Utbildningsplanen är det formella dokumentet som styr upplägget för en antagn
 
 ### Webbprogrammering 120hp distans {#uplan120}
 
+* [Utbildningsplan PAGWG antagen HT2020](http://edu.bth.se/utbildningsplaner/PAGWG_HT-20.pdf)
 * [Utbildningsplan PAGWG antagen HT2019](http://edu.bth.se/utbildningsplaner/PAGWG_HT-19.pdf)
 * [Utbildningsplan PAGWG antagen HT2018](http://edu.bth.se/utbildningsplaner/PAGWG_HT-18.pdf)
 * [Utbildningsplan PAGWG antagen HT2017](http://edu.bth.se/utbildningsplaner/PAGWG_HT-17.pdf)
@@ -93,6 +113,7 @@ Utbildningsplanen är det formella dokumentet som styr upplägget för en antagn
 
 ### Webbprogrammering 180hp campus {#uplan180}
 
+* [Utbildningsplan PAGWE antagen HT2020](http://edu.bth.se/utbildningsplaner/PAGWE_HT-20.pdf)
 * [Utbildningsplan PAGWE antagen HT2019](http://edu.bth.se/utbildningsplaner/PAGWE_HT-19.pdf)
 * [Utbildningsplan PAGWE antagen HT2018](http://edu.bth.se/utbildningsplaner/PAGWE_HT-18.pdf)
 * [Utbildningsplan PAGWE antagen HT2017](http://edu.bth.se/utbildningsplaner/PAGWE_HT-17.pdf)

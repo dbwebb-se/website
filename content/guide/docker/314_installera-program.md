@@ -6,7 +6,7 @@ revision:
 Installera program
 =======================
 
-Vi vet att vi kan exekvera kommandon via nyckelordet `RUN`. Vi använder det för att köra ytterligare kommandon i containern. Låt säga att vi vill installera *nano*, *cowsay* och *fortune*.
+Vi vet att vi kan exekvera kommandon via instruktionen `RUN`. Vi använder det för att köra ytterligare kommandon i containern. Låt säga att vi vill installera *nano*, *cowsay* och *fortune*.
 
 ```
 FROM debian:buster-slim

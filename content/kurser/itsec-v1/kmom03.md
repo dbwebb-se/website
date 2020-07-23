@@ -12,13 +12,13 @@ Kmom03: Sårbarhetsanalys
 
 Risk- och sårbarhetsanalysmomentet omfattar en introduktion till olika metoder för att modellera applikationers beteende, metoder för att genomföra sårbarhetsanalyser och attackscenarier. Vidare introduceras även riskanalys och riskhantering för att sätta sårbarheter i kontext.
 
-[WARNING]
+<!-- [WARNING]
 
 **Kursutveckling pågår**
 
 Kursen planeras ge hösten 2019.
 
-[/WARNING]
+[/WARNING] -->
 
 
 

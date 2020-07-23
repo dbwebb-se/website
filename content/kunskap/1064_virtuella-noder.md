@@ -28,14 +28,14 @@ Det traditionella sättet att skapa ett DOM-träd är genom att definera noderna
 </main>
 ```
 
-I mithril bygger vi upp detta genom att använda `m()`-funktionen och samma DOM-träd ser ut enligt nedan. Vi använder arrayer för att definera nodernas barn. Den stora fördelen med ett virtuellt DOM-träd är att det är frikopplat från HMTL-dokumentet och man dynamisk och snabbt ändra noder. I mithril ritas hela vyn om varje gång vyn `state` ändras. Hela vyn ritas om av prestanda skäl då uppritandet av noder går oerhört snabbt i moderna javascript motorer.
+I mithril bygger vi upp detta genom att använda `m()`-funktionen och samma DOM-träd ser ut enligt nedan. Vi använder arrayer för att definera nodernas barn. Den stora fördelen med ett virtuellt DOM-träd är att det är frikopplat från HMTL-dokumentet och man dynamisk och snabbt ändra noder. I mithril ritas hela vyn om varje gång vyn `state` ändras. Hela vyn ritas om av prestanda skäl då uppritandet av noder går oerhört snabbt i moderna JavaScript motorer.
 
 ```javascript
 m("main.main", [
     m("article.news-item", [
         m("h1", "Rubrik"),
         m("p.ingress", "Brödtext"),
-        m("a", { href : "/news/2", oncreate : m.route.link }, "Läs mer")
+        m("a", { href : "#!/news/2" }, "Läs mer")
     ])
 ])
 ```

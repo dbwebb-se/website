@@ -162,6 +162,7 @@ Notera att jag bytte från `0.0.0.0` till `localhost` i gunicorn kommandot. Nu v
 Vi behöver skapa mappen `/var/log/microblog` för loggarna.
 ```bash
 sudo mkdir /var/log/microblog
+sudo chmod -R 777 /var/log/microblog
 ```
 
 När konfig filen är på plats kör vi `sudo supervisorctl reload` för att aktivera den. Om det fungerar borde du få liknande utskrift om du kör `sudo supervisorctl status`:
@@ -231,7 +232,7 @@ location / {
 }
 ```
  och lägg till vart statiska filer finns. Vi lägger till en egen route för det så att Flask appen slipper hantera statiska request utan kan fokusera på det dynamiska:
- 
+
  ```bash
  location /static {
     # handle static files directly, without forwarding to the application

@@ -4,6 +4,7 @@ author:
     - efo
 category: python
 revision:
+    "2020-05-07": (F, aar) La till videor.
     "2019-05-24": (E, efo, aar) La till stycke om isinstance.
     "2018-06-21": (D, efo) Genomgång inför HT18 med fler exempel.
     "2017-06-09": (C, efo, aar) Gemensam genomgång innan publish.
@@ -81,6 +82,9 @@ Vi ser alltså här att vi som förväntat kan skriva in vanliga heltal och att 
 
 Notera att den tredje beräkningen i exemplet ovan använder sig av modulusoperatorn `%`. Modulus är resten som är kvar vid heltalsdivision. Vår beräkning av `5 % 2` får resultatet 1, dvs om vi gör en heltalsdivision med 5 och 2 är resten 1. Detta kan till exempel användas om vi vill avgöra siffran är jämn eller udda. Får vi resultatet 1 vet vi att siffran är udda och är resultatet av uttrycket 0, dvs ingen rest i heltalsdivisionen, är talet ett jämnt tal.
 
+[YOUTUBE src=tDl04edpj5w caption="Hur Python exekverar operationer och matteregler."]
+
+
 
 
 ### Decimaltal (Float) {#decimaltal}
@@ -121,8 +125,10 @@ I koden nedan visas vårt första felmeddelande. Felmeddelanden visas när någo
 ```python
 >>> "3.14"
 '3.14'
+
 >>> "It's Learning"
 "It's Learning"
+
 >>> 'It"s Learning'
 'It"s Learning'
 
@@ -315,6 +321,9 @@ Precis som med värden kan vi med variabler utföra matematiska operationer i oc
 
 [FIGURE src=/image/python/variable-memory8.png caption="Flera variabler refererar vill värden i minnet."]
 
+[YOUTUBE src=6Ru8gJOV4bo caption="Hur variabler kopplas till värden i minnet"]
+
+
 
 
 ## Namngivning och Keywords {#namngivning_keywords}
@@ -460,7 +469,7 @@ Kom ihåg att koden exekveras uppifrån och ner och en rad åt gången. När vi 
 
 [ASCIINEMA src=250775]
 
-Om du testade köra koden själv märkte du att du inte får någon utskrift när du ska mata in en sträng, jag skrev 'hej hej hej' som inmatning. I fall du vill få en utskrift när du ska skriva in kan du skicka en sträng som ett argument till "input()" funktionen som skrivs ut när användaren ska skriva in. Låt oss testa.
+Om du testade köra koden själv märkte du att du inte får någon utskrift när du ska mata in en sträng, jag skrev 'test' som inmatning. I fall du vill få en utskrift när du ska skriva in kan du skicka en sträng som ett argument till "input()" funktionen som skrivs ut när användaren ska skriva in. Låt oss testa.
 
 ```python
 """
@@ -563,6 +572,9 @@ Hej Bo Burnham, du är 27 år gammal.
 ```
 
 [FIGURE src=/image/python/variable-memory6.png class="right" caption="Variablerna 'name' och 'greeting' har värden i minnet."]
+
+[YOUTUBE src=zH8j_GZkkT4 caption="Hur input() och string konkatenering exkeveras i Python"]
+
 
 Nu börjar det likna något, vi har kvar att räkna ut året då personen föddes och lägga till det i utskriften.
 
@@ -690,6 +702,9 @@ Hej Bo Burnham, du är 27 år gammal och föddes år 1991
 ```
 
 [FIGURE src=/image/python/variable-memory7.png caption="Variabler refererar till värden i minnet."]
+
+[YOUTUBE src=BZRYlIlH0vw caption="Typkonvertering och korta ner rad i Python"]
+
 
 
 

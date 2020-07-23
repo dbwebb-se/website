@@ -5,7 +5,7 @@ revision:
     "2017-09-04": (B, mos) Rättade länkar.
     "2017-06-12": (A, mos) Första utgåvan.
 ...
-Labbmiljö och Verktyg
+Labbmiljö och verktyg
 ==================================
 
 I dessa kurser används en labbmiljö och vissa verktyg som du behöver installera som en del av din första kurs.
@@ -26,7 +26,7 @@ De flesta studenter startar med kursen python eller htmlphp och du finner instru
 Labbmiljö samtliga kurser {#laballa}
 ---------------------------------
 
-När du går samtliga dbwebb-kurser så finns en [översikt av all labbmiljö](labbmiljo) som kan förekomma på kurserna.
+När du går samtliga dbwebb-kurser så finns en [översikt av all labbmiljö](labbmiljo/inledning) som kan förekomma på kurserna.
 
 Alla verktyg är fria programvaror och många är opensource alternativ som dessutom går att installera på de vanliga operativsystemen som Windows, Mac OS och Linux.
 

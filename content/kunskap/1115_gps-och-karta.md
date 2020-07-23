@@ -254,7 +254,7 @@ import { OpenStreetMapProvider } from "leaflet-geosearch";
 function showMap() {
     ...
 
-    var geocoder = new geosearch.OpenStreetMapProvider();
+    var geocoder = new OpenStreetMapProvider();
 
     var addresses = [
         "Bastionsgatan 1, Karlskrona",

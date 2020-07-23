@@ -21,7 +21,7 @@ I denna övning tittar vi på hur vi med hjälp av Postman registrerar en använ
 
 Registrering och inloggning {#login}
 --------------------------------------
-Vi börjar med att registrera en användare i Lager API:t genom att skicka en `POST` till URL'en `/register` med 3 parametrar: `api_key`, `email` och `password`.
+Vi börjar med att registrera en användare i Lager API:t genom att skicka en `POST` till URL'en `/v2/auth/register` med 3 parametrar i `body`: `api_key`, `email` och `password`.
 
 Vi får följande svar från Lager API:t:
 
@@ -33,7 +33,7 @@ Vi får följande svar från Lager API:t:
 }
 ```
 
-När vi sedan vill logga in som den nyss registrerade användaren gör vi det genom att skicka en `POST` till URL'en `/login` med de samma 3 parametrar: `api_key`, `email` och `password`.
+När vi sedan vill logga in som den nyss registrerade användaren gör vi det genom att skicka en `POST` till URL'en `/v2/auth/login` med de samma 3 parametrar i `body`: `api_key`, `email` och `password`.
 
 Vi får följande svar från Lager API:t. `token` i det nedanstående data objektet är den JSON web token vi har fått tillbaka från API:t.
 
@@ -65,7 +65,7 @@ let token = "...";
 
 m.request({
     method: "GET",
-    url: "/invoices?api_key=[YOUR_API_KEY]",
+    url: "/v2/invoices?api_key=[YOUR_API_KEY]",
     headers: {
         "x-access-token": token
     }

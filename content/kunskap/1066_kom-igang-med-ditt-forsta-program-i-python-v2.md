@@ -124,7 +124,7 @@ Så här ser det ut när Kenneth kör igenom övningen från början till slut.
 
 [YOUTUBE src=Qw57psOiLio width=630 caption="Kenneth kör igenom det första exempelprogrammet med Python med sitt namn."]
 
-Observera kommentaren längst upp i filen `hello.py`. Detta kallas en `module docstring`. Du skapar en `module docstring ` genom att lägga en kommentar inkapslat i `"""` längst upp i din fil. Nedan syns ett exempel på en `module docstring`.
+Observera kommentaren längst upp i filen `hello.py`. Detta kallas en `module docstring`. Kommentarer/docstring påverkar inte koden eller exekvering. Kommentarer är det ända i filen som inte är till för datorn att läsa, kommentarer finns för utvecklaren. Du skapar en `module docstring ` genom att lägga en kommentar inkapslat i `"""` längst upp i din fil. Nedan syns ett exempel på en `module docstring`.
 
 ```python
 """

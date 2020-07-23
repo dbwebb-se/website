@@ -45,7 +45,7 @@ Krav {#krav}
 
 1. Dubbelkolla så scriptet är körbart inuti kontainern.
 
-1. Vid uppstart ska kommandot `commands.bash all` köras.
+1. Vid uppstart ska kommandot `commands.bash all` köras. Det är inte säkert att kommandot `cal` finns installerat från start. Du kan då installera det med `apt-get install bsdmainutils` i din Dockerfile.
 
 1. Bygg din image med namnet *username/vlinux-commands:latest* där du använder ditt egna användarnamn.
 

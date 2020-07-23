@@ -157,7 +157,7 @@ Kurslitteratur {#litteratur}
 
 ### Kurslitteratur {#kurslitteratur}
 
-Som kurslitteratur har jag valt följande böcker, tillsammans med ett antal artiklar som finns tillgängliga på nätet. 
+Som kurslitteratur har jag valt följande böcker, tillsammans med ett antal artiklar som finns tillgängliga på nätet.
 
 Det finns läsanvisningar i samband med varje kursmoment.
 
@@ -230,7 +230,7 @@ Läs om [lärarstöd och handledning](kurser/faq/lararstod-och-handledning).
 Betygsättning {#betyg}
 ------------------------
 
-Det finns ett särskilt dokument som beskriver [hur bedömning och betygsättning sker](kurser/faq/bedomning-och-betygsattning). 
+Det finns ett särskilt dokument som beskriver [hur bedömning och betygsättning sker](kurser/faq/bedomning-och-betygsattning).
 
 
 
@@ -274,6 +274,8 @@ Versioner av kursen {#versioner}
 
 Om du påbörjat den äldre version av kursen så skall du också slutföra denna versionen av kursen (eller göra om den nya kursen från start). Alternativt rådgör du med den som är kursansvarig.
 
-För tillfällen från höstterminen 2018 så [finns kursmaterialet till design (v2) här](kurser/design-v2). 
+För tillfällen från höstterminen 2020 så [används kursmaterialet till design (v3)](kurser/design-v3).
+
+För tillfällen från höstterminen 2018 till och med hösten 2019 så [finns kursmaterialet till design (v2) här](kurser/design-v2).
 
 För tillfällen fram till och med höstterminen 2017, så [finns kursmaterialet till den kursen i design (v1)](kurser/design-v1).

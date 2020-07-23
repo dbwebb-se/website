@@ -78,7 +78,7 @@ Det finns inga extra lästips.
 
 
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
 
 
 
@@ -88,7 +88,7 @@ Det finns inga extra lästips.
 
 
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
@@ -98,9 +98,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 
 
-###Extra {#extra}
+### Extra {#extra}
 
-* Skapa ett offline-läge för din app med hjälp artikeln "[Läsa en lokal fil med Cordova](kunskap/lasa-lokal-fil-med-cordova)".
+* Skapa ett offline-läge för din app med hjälp artikeln "[Filer i Cordova](kunskap/filer-i-cordova)" och Cordova pluginen "[Network information](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-network-information/)".
 
 
 

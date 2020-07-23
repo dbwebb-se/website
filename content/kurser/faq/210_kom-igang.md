@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2020-06-17": "(J, mos) Ny struktur inför ht20."
     "2019-08-07": "(I, mos) Genomgången inför ht19."
     "2017-06-12": (H, mos) Genomgången inför ht17.
     "2015-12-22": (F, mos) Länk välkomstbrev inför VT16.
@@ -12,15 +13,14 @@ revision:
 Kom igång med kurserna
 ==================================
 
-Så, du är **ny student** och har kommit in på dessa kurser? Bra, då är det dax att sätta igång att börja jobba. Tiden går snabbt när man har kul. I denna artikel finner du det viktigaste som du behöver veta för att komma igång.
+Så, du är **ny student** och har kommit in på dessa kurser? Bra, då är det dax att sätta igång att börja jobba. Tiden går snabbt när man har kul. Här finner du det viktigaste som du behöver veta för att komma igång.
 
 En kort sammanfattning av vad du skall göra:
 
 1. Läs välkomstbrevet.
 2. Registrera dig på kursen via studentportalen.
 3. Bekanta dig med kursmaterialet på läroplattformen.
-4. Skaffa konto på dbwebb.se.
-5. Skaffa konto på Gitter.
+4. Gå med i kursernas community.
 
 <!--more-->
 
@@ -57,27 +57,18 @@ Allt kursmaterial är tillgängligt via läroplattformen.
 
 
 
-Skaffa konto på dbwebb.se (valfritt) {#konto-dwbebb}
+Community, lärarkontakt och handledning {#community}
 -----------------------------------------------------------
 
-En stor del av kursmaterialet finns även tillgängligt direkt via webbplatsen [dbwebb.se](/) (denna webbplats). Här finns även kursens diskussionsforum. För att komma åt all information i forumet behöver du ett konto som du måste skaffa manuellt. Klicka uppe i högra hörnet av denna sidan för att skapa ett konto.
+Varje kurs har normalt sett någon form av community som består av chatt(er) och forumliknande verktyg. Här kan du kommunicera med med-studenter, lärare. Du kan få hjälp av med-studenter, äldre studenter och lärare. Samtidigt kan du hjälpa dina med-studenter och påtala oklarheter för lärarna.
+
+Informationen om dessa verktyg och kommunikationskanaler finns beskrivet i respektive kurs via läroplattformen. Vissa kommunikationskanaler ligger utanför BTH och kan kräva att du skapar extra konton för att få behörighet till verktyget.
 
 
 
-Skaffa konto på Gitter (valfritt) {#konto-gitter}
+Klar {#klar}
 -----------------------------------------------------------
 
-Din kurs har en chatt i Gitter som du kommer åt via app eller [gitter.im](https://gitter.im). Där kan du chatta med med-studenter, gamla studenter och lärare. Du behöver ett konto för att kunna chatta.
-
-Får du inget svar i chatten så tar du din fråga och lägger i dbwebb-forumet, där får du alltid svar.
-
-
-
-Klar -- då kör vi {#klar}
------------------------------------------------------------
-
-Härligt. Då kan vi börja jobba. Det finns mycket mer att läsa och information att inhämta men det ***bästa sättet att komma i gång är att göra det första kursmomentet i din första kurs***. Då faller det mesta på plats.
-
-Du hittar kursmaterial till samtliga kurser via [/kurser](/kurser).
+Då kan vi börja jobba. Det finns mycket mer att läsa och information att inhämta men det ***bästa sättet att komma i gång är att göra det första kursmomentet i din första kurs***. Då faller det mesta på plats.
 
 **Varmt välkommen hit!**

@@ -2,6 +2,7 @@
 author: lew
 category: python
 revision:
+  "2020-05-11": (B, aar) La till video inför HT20.
   "2017-05-29": (A, lew) Första utgåvan inför kursen python H17.
 ...
 Jämförelseoperatorer och booleska värden
@@ -152,4 +153,8 @@ False                   # Värdet i variabeln 'oranges' är samma som värdet i 
 
 Avslutningsvis {#avslutning}
 --------------------------------------
+
+[YOUTUBE src=alJu3Co5hWQ caption="Andreas visar hur jämförelseoperatorerna exekveras."]
+
+
 Vi har lärt oss om booleska värden och jämförelseoperatorer. Booleska värden skrivs som `True` eller `False`. Viktigt att tänka på är att även värdena `1` och `0` kan tolkas som booleska värden. De operatorer som artikeln har tagit upp är generella och kan användas i de flesta programmeringsspråk. Jämförelseoperatorer är även en viktig del i villkorshantering, loopar och if-satser som [nästa artikel](kunskap/villkor-och-loopar) handlar om.

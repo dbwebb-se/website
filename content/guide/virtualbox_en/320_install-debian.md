@@ -11,7 +11,9 @@ Set up a virtual machine in VirtualBox for Debian {#init}
 
 Now we create a virtual machine in VirtualBox where we can install Debian.
 
-[YOUTUBE src=UgVdcrXVojA width=630 caption="Kenneth creates a virtuell machine (VM) in VirtualBox."]
+[INFO]Note that I increase the size of the virtual disk. It is important that it is increased to 25-30Gb.[/INFO]
+
+[YOUTUBE src=02EXUbLy248 width=630 caption="Kenneth creates a virtual machine (VM) in VirtualBox."]
 
 In my case, I was able to install 64-bit OS so I chose the image called *amd64*. If I could only install 32-bit OS then I would have chosen the image for *i386*.
 

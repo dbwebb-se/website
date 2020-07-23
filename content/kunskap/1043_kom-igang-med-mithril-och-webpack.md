@@ -234,7 +234,7 @@ Om du manuellt skriver in `/hobby` efter `index.html#!` i din webbläsares adres
 Vi vill inte skriva in adresser manuellt, så vi ska nu titta på hur vi kan skapa navigering för vår app. Vi kan skapa länkar precis som vi har skapat andra virtuella noder tidigare, så vi lägger till en länk längst upp i vårt me-vy med följande kod. Vi kan nu gå från vårt Me-vy till hobby-vyn.
 
 ```javascript
-m("a", {href: "/hobby", oncreate: m.route.link}, "Hobby")
+m("a", { href: "#!/hobby" }, "Hobby")
 ```
 
 Mithrils route funktion är användbar för mer än bara vår huvudrouter. Vi kan till exempel göra omdirigeringar, hämta nuvarande route och mycket annat. [Dokumentationen för `m.route()`](http://mithril.js.org/route.html).
@@ -254,11 +254,11 @@ var m = require("mithril");
 module.exports = {
     view: function() {
         return [
-            m("a", {href: "/hobby", oncreate: m.route.link}, "Hobby"),
+            m("a", { href: "#!/hobby" }, "Hobby"),
             m("div", [
                 m("h1", "Emil Folino"),
                 m("p", "My name is Emil, I'm originally from Denmark, but now I live in Sweden."),
-                m("p", "I run orienteering and drive an old Saab.")
+                m("p", "I run orienteering and drive an old Skoda.")
             ])
         ];
     }
@@ -284,8 +284,8 @@ module.exports = {
                 m("div.container", [
                     m("h2.brand", "Emil Folino"),
                     m("ul.nav", [
-                        m("li", [m("a", {href: "/", oncreate: m.route.link}, "Me")]),
-                        m("li", [m("a", {href: "/hobby", oncreate: m.route.link}, "Hobby")])
+                        m("li", [m("a", { href: "#!/" }, "Me")]),
+                        m("li", [m("a", { href: "#!/hobby" }, "Hobby")])
                     ])
                 ])
             ]),

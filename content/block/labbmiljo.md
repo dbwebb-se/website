@@ -1,9 +1,10 @@
-####[Labbmiljö](labbmiljo)
+#### [Labbmiljö](labbmiljo)
 
 Vår labbmiljö fungerar på Windows, Mac OS och Unix/Linux.
 
 [Läs om labbmiljön »](labbmiljo)
 
+<!--
 Installera labbmiljö för respektive kurs.
 
 [python](kurser/python/labbmiljo)
@@ -15,3 +16,5 @@ Installera labbmiljö för respektive kurs.
 [webapp](kurser/webapp/labbmiljo)
 [oophp](kurser/oophp/labbmiljo)
 [webgl](kurser/webgl/labbmiljo)
+
+-->

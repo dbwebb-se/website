@@ -39,6 +39,8 @@ I filmen nedan pratar Emil om hur man kan tänka vid val av datakällor och reko
 
 Om du upplever problem med Cross-Origin Access kan en API-proxy vara lösningen på problemet. I GitHub repot [emilfolino/api-proxy](https://github.com/emilfolino/api-proxy) finns källkod och instruktioner för hur man kan använda sig av en API-proxy på studentservern.
 
+Om du hittar ett XML-API du vill använda kan du göra om XML data till JSON med hjälp av en proxy. Med hjälp av tjänsten [https://xml-proxy.emilfolino.se/](https://xml-proxy.emilfolino.se/) kan du göra om XML till JSON.
+
 Du funderar och väljer en ansats för din webapp, fråga i forumet om du känner dig osäker.
 
 
@@ -133,7 +135,7 @@ Använd dina kunskaper om Cordova plugins från kursmoment 5 & 6 och pluginen [c
 
 När du ansluter till ett api och hämtar data ska du spara den till en fil som du hämtar datan ifrån om det inte finns någon internetuppkoppling. Cordova pluginen [cordova-plugin-network-information](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-network-information/) kan användas för att kolla status om internetuppkoppling
 
-Övningen [Läsa en lokal fil med Cordova](kunskap/lasa-lokal-fil-med-cordova) och exempel programmet `example/readFile` ([repo](https://github.com/dbwebb-se/webapp/tree/master/example/readFile)) hjälper en bit på vägen med att läsa från fil.
+Övningen [Filer i Cordova](kunskap/filer-i-cordova) och exempel programmet `example/file` ([repo](https://github.com/dbwebb-se/webapp/tree/master/example/file)) hjälper en bit på vägen.
 
 
 

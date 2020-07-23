@@ -7,6 +7,7 @@ views:
             src: "image/snapvt18/bank2-account-actions.png?w=1100&h=300&cf&c=600,270,0,0&f=edgedetect"
 author: mos
 revision:
+    "2020-05-20": "(J, mos) Lade till övningstenta från 2020 mars."
     "2020-03-25": "(I, mos) Förtydligande om redovisningsvideo."
     "2020-02-19": "(H, mos) Lade till tentor för 2020."
     "2019-06-04": "(G, mos) Lade till övningstenta bibliotek."
@@ -99,6 +100,9 @@ Du kan träna på tidigare tentamen för att få övning och en känsla av vilke
 Det finns ingen garanti för att nya tentamen kommer att följa exakt samma upplägg som tidigare tentamen. Oavsett det så bedömmer läraren att de tidigare tentamen som finns tillgängliga nedan är relevanta övningsobjekt.
 
 Följande gamla tentor finns tillgängliga, de senaste tentorna är ofta mest relevanta.
+
+* 2020
+    * [Rock](./tentamen/rock)
 
 * 2019
     * [Pingis](./tentamen/pingis)

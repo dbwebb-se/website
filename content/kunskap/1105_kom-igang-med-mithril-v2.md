@@ -202,9 +202,9 @@ I ovanstående kod skapar vi först en virtuell nod `m("main.container")`, som r
 
 Nästa del är att skapa listan med årtal, vi använder en `while`-loop för att iterera från 2010 till och med 2017. För varje år lägger vi till en virtuell nod i arrayen `years`. Vi lägger till den virtuella noden `<a class="button blue-button"></a>`, som har värdet för ett av åren mellan 2010 och 2017.
 
-Vi vill även att knappen ska kunna ta oss till en annan sida så vi skickar även med ett objekt med konfiguration: `{ href: "/year/" + startYear, oncreate: m.route.link }`. Objektet består av två attribut: `href` och `oncreate`. `href` känner vi igen från HTML som hyperlink reference dvs länkadressen vi vill gå till. I detta fallet blir det '/year' följd av årtalen 2010 till 2017. Vi ska senare i guiden titta på hur vi kan fånga upp specifika årtalet i vår router.
+Vi vill även att knappen ska kunna ta oss till en annan sida så vi skickar även med ett objekt med konfiguration: `{ href: "#!/year/" + startYear }`. Objektet består av ett attribut: `href`. `href` känner vi igen från HTML som hyperlink reference dvs länkadressen vi vill gå till. I detta fallet blir det '#!/year' följd av årtalen 2010 till 2017. Vi ska senare i guiden titta på hur vi kan fånga upp specifika årtalet i vår router. Innan `/year` har vi en _hashbang_: `#!`. En _hashbang_ används för att berätta för mithril att detta är en route som vi vill att ramverket ska ta hand och inte en extern länk. Om vi inte anger `#!` framför länken fångar mithril inte upp länken och vi hamnar inte på den route vi har tänkt.
 
-Det andra attributet i objektet är `oncreate` och är en av [mithrils inbyggda livscykel metoder](https://mithril.js.org/lifecycle-methods.html). Livscykel metoder är funktioner som anropas när en händelse inträffar. Livscykel metoder kan liknas med EventListeners, som vi känner igen från JavaScript. I detta fallet använder vi livscykel metoden `oncreate` som anropas när ett element har skapats. Vi skickar med den inbyggda funktionen `m.route.link` ([Dokumentation](https://mithril.js.org/api.html#mroutelink---)) som kopplar länken till routern vi kommer skapa i `js/index.js`.
+<!-- Det andra attributet i objektet är `oncreate` och är en av [mithrils inbyggda livscykel metoder](https://mithril.js.org/lifecycle-methods.html). Livscykel metoder är funktioner som anropas när en händelse inträffar. Livscykel metoder kan liknas med EventListeners, som vi känner igen från JavaScript. I detta fallet använder vi livscykel metoden `oncreate` som anropas när ett element har skapats. Vi skickar med den inbyggda funktionen `m.route.link` ([Dokumentation](https://mithril.js.org/api.html#mroutelink---)) som kopplar länken till routern vi kommer skapa i `js/index.js`. -->
 
 ```javascript
 "use strict";
@@ -218,9 +218,11 @@ let list = {
 
         while (startYear <= endYear) {
             years.push(
-                m("a.button.blue-button",
-                { href: "#!/year/" + startYear, oncreate: m.route.link },
-                startYear)
+                m(
+                    "a.button.blue-button",
+                    { href: "#!/year/" + startYear },
+                    startYear
+                )
             );
             startYear++;
         }
@@ -531,7 +533,7 @@ let layout = {
                 [
                     m.route.get().split("/")[1] == "year" ?
                         m("span", [
-                            m("a", { href: "/", oncreate: m.route.link }, "Alla år")
+                            m("a", { href: "#!/" }, "Alla år")
                         ]) : null
                 ]),
             m("main.container", vnode.children)

@@ -4,6 +4,7 @@ author:
     - aar
     - efo
 revision:
+    "2020-06-02": (M, aar) Try3.
     "2019-11-25": (L, aar) Ändrade datum för omexamination.
     "2018-12-10": (k, efo, aar) Översyn och släpp inför python-v2 try3.
     "2018-12-10": (j, efo, aar) Översyn och släpp inför python-v2 try2.
@@ -24,7 +25,7 @@ Kmom10: Individuell examination
 
 Detta kursmoment avslutar och examinerar kursen.
 
-<!-- ctr+d efter "try1" och "2018-10-30" för ny examination -->
+<!-- ctr+d efter "try3" och "2020-06-10" för ny examination -->
 
 Upplägg {#upplagg}
 --------------------------------------------------------------------
@@ -42,14 +43,15 @@ Lärarteamet finns tillgängliga i gitter för hjälp med tekniska problem samt 
 Nedanför beskriver vi upplägget för de olika studentgrupperna:
 
 ### Campus studenter {#campus}
-Examination sker i sal H429, H430 och G404 mellan 8:00 och 13:00.
+Examination sker på valfri plats, det går att ladda ner examination från kl 8:00 till 23:59. När du har hämtat hem examinationen har du fem timmar på dig att göra klart den och lämna in.
+<!-- Examination sker i sal H429, H430 och G404 mellan 8:00 och 13:00. -->
 
 ### Distansprogram och kurspakets studenter {#distans}
 Examination sker på valfri plats, det går att ladda ner examination från kl 8:00 till 23:59. När du har hämtat hem examinationen har du fem timmar på dig att göra klart den och lämna in.
 
 
 
-Hämta examinationstillfälle 2019-10-28 (try1) {#hamta}
+Hämta examinationstillfälle 2020-06-10 (try3) {#hamta}
 ----------------------------------------------------------------------
 
 I [Om examination med dbwebb exam](kurser/python-v2/kmom10/om) finns mer information om `dbwebb exam`-verktyget.
@@ -67,10 +69,10 @@ dbwebb init
 För att skapa din individuella examination skriv in följande kommando.
 
 ```
-dbwebb exam checkout try1
+dbwebb exam checkout try3
 ```
 
-Materialet till din individuella examination ligger nu i din kurskatalog i `me/kmom10/try1` enligt följande.
+Materialet till din individuella examination ligger nu i din kurskatalog i `me/kmom10/try3` enligt följande.
 
 | Fil                | Innehåll                                                              |
 |--------------------|-----------------------------------------------------------------------|
@@ -79,13 +81,13 @@ Materialet till din individuella examination ligger nu i din kurskatalog i `me/k
 
 
 
-Rätta din examination (try1) {#ratta}
+Rätta din examination (try3) {#ratta}
 ----------------------------------------------------------------------
 
 För att rätta din individuella examination och visa hur många uppgifter du har klarat och dina poäng använd följande kommando.
 
 ```bash
-dbwebb exam correct try1
+dbwebb exam correct try3
 ```
 
 Längst upp i utskriften finns en sammanfattning av vilka uppgifter du har löst och hur många poäng du har.
@@ -94,20 +96,20 @@ Under sammanfattningen finns en utskrift från testprogrammet som körs när exa
 Du kan ignorera fel från uppgifter du inte utfört.
 
 
-Validera din examination (try1) {#validera}
+Validera din examination (try3) {#validera}
 ----------------------------------------------------------------------
 
-Precis som tidigare inlämningar i kursen ska koden validera. `dbwebb validate try1` validerar din individuella examination och visar vilka valideringsfel du har i koden. Din individuella examination skall validera när den lämnas in inom tidsramen för den individuella examinationen.
+Precis som tidigare inlämningar i kursen ska koden validera. `dbwebb validate try3` validerar din individuella examination och visar vilka valideringsfel du har i koden. Din individuella examination skall validera när den lämnas in inom tidsramen för den individuella examinationen.
 
 
 
-Lämna in din examination (try1) {#lamna}
+Lämna in din examination (try3) {#lamna}
 ----------------------------------------------------------------------
 
 För att  lämna in din individuella examination använd följande kommando.
 
 ```bash
-dbwebb exam seal try1
+dbwebb exam seal try3
 ```
 
 Kommandot publicerar hela din me-katalog till studentservern.
@@ -115,7 +117,7 @@ Kommandot publicerar hela din me-katalog till studentservern.
 Du kan när som helst hämta ett kvitto på din pågående examination och se detaljer om den, till exempel hur länge du hållit på.
 
 ```bash
-dbwebb exam receipt try1
+dbwebb exam receipt try3
 ```
 
 
@@ -125,7 +127,7 @@ Bedömning och betygsättning {#bedomning}
 
 Det finns ett särskilt dokument som beskriver hur [bedömning och betygsättning sker](kurser/faq/bedomning-och-betygsattning-individuell).
 
-Under hela examinationen kan du köra kommandot `dbwebb exam correct try1` för att rätta dina lösningar och se hur många poäng du har uppnått.
+Under hela examinationen kan du köra kommandot `dbwebb exam correct try3` för att rätta dina lösningar och se hur många poäng du har uppnått.
 
 
 
@@ -140,7 +142,7 @@ Efter din individuella examination lämna in en redovisningstext på din me-sida
 
 3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-5. <u><b>Distansprogram- och Kurspaket studenter</b></u> kompletterar redovisningstexten med att spela in en kort video där de visar kod och berättar om de tekniska implementationerna de gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
+4. <u><b>Detta gäller alla studenter!</b></u> Kompletterar redovisningstexten med att spela in en kort video där de visar kod och berättar om de tekniska implementationerna de gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
 
 
 

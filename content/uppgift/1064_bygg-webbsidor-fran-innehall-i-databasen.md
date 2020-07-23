@@ -7,6 +7,7 @@ category:
     - anax-lite
     - sql
 revision:
+    "2020-05-11": "(C, mos) Rätta länk till databas-artikeln."
     "2018-04-30": "(B, mos) Genomgången inför oophp-v4."
     "2017-04-18": "(A, mos) Första utgåvan."
 ...
@@ -26,7 +27,7 @@ Det du skapar är egentligen ett litet CMS (Content Management System).
 Förkunskaper {#forkunskaper}
 -----------------------
 
-Du har jobbat igenom artikeln "[Lagra innehåll i databas för webbsidor och bloggposter (v2)](kunskap/kom-igang-med-php-pdo-och-mysql-v2)".
+Du har jobbat igenom artikeln "[Lagra innehåll i databas för webbsidor och bloggposter (v2)](kunskap/lagra-innehall-i-databas-for-webbsidor-och-bloggposter-v2)".
 
 Du har löst uppgiften "[Skapa en klass för textfiltrering och formattering (v2)](uppgift/skapa-en-klass-for-textfiltrering-och-formattering-v2)".
 

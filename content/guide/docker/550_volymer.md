@@ -15,7 +15,7 @@ Utgångsläget är att vi har en mapp med filerna som ska servas, `example-site/
 
 
 
-### Dockerfile {#dockefile}
+### Dockerfile {#dockerfile}
 
 Dockerfilen kan se ut "som vanligt". Vi sköter volymen när vi kör containern.
 

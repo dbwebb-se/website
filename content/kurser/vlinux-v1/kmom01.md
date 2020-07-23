@@ -76,7 +76,7 @@ Titta på följande:
 
 Det finns videos kopplade till installationsanvisningarna.
 
-1. Till kursen finns en videoserie, "[vlinux](https://www.youtube.com/playlist?list=PLKtP9l5q3ce__96JmUrXLdfgGiXy_OQ_m)", kika på de videor som börjar på 01.
+1. Till kursen finns en videoserie, "[vlinux](https://www.youtube.com/watch?v=a2P26Zgy_mE&list=PLKtP9l5q3ce_WHGUiZfo9wr1C3aWaSYa7)", kika på de videor som börjar på 01.
 
 
 
@@ -93,7 +93,9 @@ Det finns videos kopplade till installationsanvisningarna.
 
 1. Installera [Guest Additions](guide/virtualbox/guest-additions) om du inte gjorde det under labbmiljön. Det kommer underlätta arbetet framöver.
 
-1. Gör första delen i guiden "[SSH](guide/unix-tools/ssh)". **SSH-nycklar tar vi i nästa kursmoment så det kan du vänta med.**
+1. I kursen kommer vi använda en guide ["unix-tools"](guide/unix-tools). För detta kursmoment gör du delen [Kom igång med SSH](guide/unix-tools/ssh).  
+
+[INFO]SSH-nycklar tar vi i nästa kursmoment så det kan du vänta med.[/INFO]
 
 
 

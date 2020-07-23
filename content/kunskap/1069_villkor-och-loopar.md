@@ -2,6 +2,7 @@
 author: efo
 category: python
 revision:
+  "2020-05-12": (B, aar) Uppdaterad inför H20.
   "2017-05-29": (A, efo) Första utgåvan inför kursen python H17.
 ...
 Villkor och loopar
@@ -137,6 +138,8 @@ Ytterligare ett bra sätt att förstå hur en if-sats exekveras är att använda
 
 <a href="https://www.pythontutor.com/visualize.html#code=number_of_apples%20%3D%209%0A%0Aif%20number_of_apples%20%3E%2010%3A%0A%20%20%20%20print%28%22Du%20har%20mer%20%C3%A4n%2010%20%C3%A4pplen%22%29%0Aelse%3A%0A%20%20%20%20print%28%22Du%20har%20nog%20varit%20hungrig%20och%20%C3%A4tit%20upp%20dina%20%C3%A4pplen%22%29%0A%0Aprint%28%22Nu%20%C3%A4r%20vi%20klara%20med%20if-satsen%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">Exemplet i fullskärm</a>.
 
+[YOUTUBE src=LfzF3frs3AY caption="Andreas visar hur if-else exekveras."]
+
 
 
 For-loop {#for}
@@ -200,6 +203,18 @@ for letter in "räksmörgås":
 
 Notera att vi använder `in` konstruktionen även i en `if`-sats för att kolla om bokstaven finns i en annan sträng. `in` kan alltså användas på olika sätt tillsammans med både villkor och loopar. Vi kommer under kursens gång tillbaka till `in` flertalet gånger och ser många användningsområden. Så om det känns lite magiskt nu kommer det att sätta sig under kursens gång.
 
+[YOUTUBE src=CKvtLiRIK_s caption="Andreas visar hur for-loopar exekveras."]
+
+
+
+#### For-loop med input {#for-inp}
+
+Försök själv att skriva ett program som gör följande. Be användaren skriva en ett ord, skapa en ny sträng som innehåller ordet användaren skrev in fast med en punkt efter varje bokstav och skriv sen ut den nya strängen. T.ex. om användaren skriver in "apa" ska programmet skriva ut "a.p.a.".
+
+Om du undrar hur man kan lösa den eller har fastnat kan du kolla på videon där Andreas löser uppgiften.
+
+[YOUTUBE src=huygMa6EbU0 caption="Andreas löser problemställningen."]
+
 
 
 While-loop {#while}
@@ -219,6 +234,9 @@ while number < 20:
 Det viktiga med en `while`-loop är att vi någon gång avslutar loopen för annars kommer den fortsätta i all oändlighet eller tills datorn stängs av. Vi avslutar loopen genom att ändra så att villkoret är falskt. I exemplet ovan avslutar vi alltså loopen när `number` blir 20 eller större.
 
 `while`-loopar kan även användas för att ta emot indata från användaren. Om vi vill ta emot indata tills användaren skriver in ett specifikt värde kan vi använda `break` när användaren skriver in detta värde.
+
+[YOUTUBE src=auOg4s3pJU8 caption="Andreas visar hur while-loopar fungerar."]
+
 
 Vi har tidigare sett hur vi använder `input` och hur vi konverterar data från en sträng till ett heltal. I `while`-loopen bryter vi mot regeln ovan att vi skulle ha ett villkor som någon gång avslutas. Villkoret `True` blir aldrig falskt och då avslutas while-loopen aldrig, men vi använder konstruktionen `break` för att avsluta. Inne i loopen är det första vi gör att kolla om användaren har skrivit in värdet för avslut (q), om användaren har gjort det avslutar vi programmet. Annars skriver vi ut ett meddelande baserat på de `if`-satser vi har sett tidigare.
 
@@ -286,6 +304,29 @@ while True:
 
 <a href="https://www.pythontutor.com/visualize.html#code=while%20True%3A%0A%20%20%20%20user_input%20%3D%20input%28%22Skriv%20in%20antal%20%C3%A4pplen%20%28eller%20q%20f%C3%B6r%20avslut%29%3A%20%22%29%0A%20%20%20%20if%20user_input%20%3D%3D%20%22q%22%3A%0A%20%20%20%20%20%20%20%20print%28%22Du%20%C3%A4r%20nu%20klar%20med%20att%20%C3%A4ta%20%C3%A4pplen.%22%29%0A%20%20%20%20%20%20%20%20print%28%22Hej%20d%C3%A5!%22%29%0A%20%20%20%20%20%20%20%20break%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20try%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20number_of_apples%20%3D%20int%28user_input%29%0A%20%20%20%20%20%20%20%20except%20ValueError%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Oj!%20Du%20skrev%20inte%20in%20en%20siffra.%22%29%0A%20%20%20%20%20%20%20%20%20%20%20%20continue%0A%0A%20%20%20%20%20%20%20%20if%20number_of_apples%20%3E%2010%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Du%20har%20mer%20%C3%A4n%2010%20%C3%A4pplen%22%29%0A%20%20%20%20%20%20%20%20elif%20number_of_apples%20%3C%3D%2010%20and%20number_of_apples%20%3E%205%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Du%20blev%20snabbt%20m%C3%A4tt%20och%20%C3%A5t%20bara%20upp%20n%C3%A5gra%20av%20dina%20%C3%A4pplen%22%29%0A%20%20%20%20%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20print%28%22Du%20har%20nog%20varit%20hungrig%20och%20%C3%A4tit%20upp%20dina%20%C3%A4pplen%22%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" target="_blank">Exemplet i fullskärm</a>.
 
+
+
+#### Ett simpelt tärningsspel {#dice_game}
+
+Skapa ett litet program som slår två tärningar och skriver ut dess värden, tills användaren säger till programmet att sluta. Du kan använda dig av modulen `random` för att representera tärningarna. Du kan slumpa fram ett värde mellan 1 och 6 på fölajnde sätt.
+
+```python
+import random
+
+MIN = 1
+MAX = 6
+
+dice_value1 = random.randint(MIN, MAX)
+print(dice_value1)
+```
+
+Första raden inkluderar färdig kod för att slumpa värden. `random.randint(MIN, MAX)` anropar funktionen `randint` som ligger i random modulen, den returnerar ett slumpmässigttal mellan de två heltalen som skickas in till funktionen. I vårt fall 1 och 6.
+
+Gör detta två gången i en loop och skriv ut de slumpade värdena fram tills användaren indikerar att programmet ska avslutas.
+
+Om du fastnar eller bara vill se en lösning kan du kolla på videon nedanför där Andreas skriver koden för programmet.
+
+[YOUTUBE src=vZh_PPiLvS4 caption="Andreas visar hur man kan skapa ett simpelt tärningsspel."]
 
 
 

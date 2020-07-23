@@ -38,12 +38,16 @@ var m = require("mithril");
 var list = {
     view: function() {
         return m("div.list", [
-            m("a.list-item", {
-                href: "/detail/1", oncreate: m.route.link
-            }, "Siffran 1"),
-            m("a.list-item", {
-                href: "/detail/2", oncreate: m.route.link
-            }, "Siffran 2")
+            m(
+                "a.list-item",
+                { href: "#!/detail/1" },
+                "Siffran 1"
+            ),
+            m(
+                "a.list-item",
+                { href: "#!/detail/2" },
+                "Siffran 2"
+            )
         ]);
     }
 };
@@ -59,9 +63,7 @@ var m = require("mithril");
 module.exports = {
     view: function(vnode) {
         return m("div.slide-in.detail-" + vnode.attrs.id, [
-            m("a", {
-                href: "/list", oncreate: m.route.link
-            }, "Tillbaka"),
+            m("a", { href: "#!/list" }, "Tillbaka"),
             m("h1", "Detaljer om " + vnode.attrs.id)
         ]);
     }
@@ -114,7 +116,7 @@ module.exports = {
     },
     view: function(vnode) {
         return m("div.slide-in.detail-" + vnode.attrs.id, [
-            m("a", { href: "/list", oncreate: m.route.link }, "Tillbaka"),
+            m("a", { href: "#!/list" }, "Tillbaka"),
             m("h1", "Detaljer om " + vnode.attrs.id)
         ]);
     }

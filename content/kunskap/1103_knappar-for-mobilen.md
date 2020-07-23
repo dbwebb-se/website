@@ -18,7 +18,7 @@ Introduktion {#intro}
 --------------------------------------
 Knappar är en viktig del av de flesta CSS ramverk och kanske en av de mera omdiskuterade delar. Speciellt introduktionen av Flat Design i Apples iOS 7 och Googles Material Design visade på hur bra decor ibland kan vara dålig design. Problemet med Flat Design är att användaren ofta har problem att urskilja vad som går att klicka på och inte. I dessa två artiklar kan intresserade läsa mer: [The Problem with Flat Design According to a UX Expert](https://www.fastcodesign.com/3058094/the-problem-with-flat-design-according-to-a-ux-expert) och [Tablet Usability](https://www.nngroup.com/articles/tablet-usability/).
 
-En annan utmaning när man designar för små mobila enheter är att man inte har samma precision när man använder händerna, som med en gammal hederlig dator mus. Därför är det viktigt att designa knappar och andra komponenter så de är lätta att interagera med trots avsaknaden av precision.
+En annan utmaning när man designar för små mobila enheter är att man inte har samma precision när man använder händerna, som med en gammal hederlig datormus. Därför är det viktigt att designa knappar och andra komponenter så de är lätta att interagera med trots avsaknaden av precision.
 
 Exempelprogrammet från denna övning finns i kursrepot [example/sass-examples](https://github.com/dbwebb-se/webapp/tree/master/example/sass-examples) och i `example/sass-examples`.
 
@@ -103,7 +103,7 @@ För att få mer yta att trycka på i knapparna lägger vi till `padding` och vi
 }
 ```
 
-Nu har vi nått som liknar knapparna på iOS och Android, men viss kritik riktas mot design filosofin Flat Design, som vi såg ovan. Om man vill designa sin webb-app specifikt för ett mobil operativsystem kan det vara bra att följa designriktlinjer från det operativsystemet. [Design - Apple Developer](https://developer.apple.com/design/) och [Design | Android Developers](https://developer.android.com/design/index.html) är två dokument med riktlinjer för design för iOS respektive android.
+Nu har vi nått som liknar knapparna på iOS och Android, men viss kritik riktas mot design filosofin Flat Design, som vi såg ovan. Om man vill designa sin webb-app specifikt för ett mobiloperativsystem kan det vara bra att följa designriktlinjer för det operativsystemet. [Design - Apple Developer](https://developer.apple.com/design/) och [Design | Android Developers](https://developer.android.com/design/index.html) är två dokument med riktlinjer för design för iOS respektive Android.
 
 Vi kommer dock fortsätta med vår design då vi vill ha knappar, som ser ut som de går att trycka på och vi vill även lägga till färg. Vi lägger en gradient i knapparna som får det att se ut som knappen är i 3D.
 
@@ -234,7 +234,7 @@ $blue: #0074d9;
 }
 ```
 
-För att strukturera CSS-koden börjar vi med att skapa en fil `base.scss`. I filen `base.scss` importerar vi alla moduler med hjälp av till exempel `@import 'navigation'`. Det är denna fil vi använder när vi sedan ska kompilera SASS till CSS. Jag använder `.scss`-filer då jag gillar syntaxen då den påminner om CSS och ger möjlighet för att återanvända befintlig CSS. Men det är fritt fram att använda `.sass` syntax, om ni tycker om den. Som ni ser nedan har jag även flyttat in `normalize.min.css` i style katalogen och utnyttjar att jag kan skriva CSS kod i scss filer. Vi döper om `normalize.min.css` till `style/normalize.min.scss` og filen blir en del av den resulterande CSS filen istället för att ligga som ett beroende utanför.
+För att strukturera CSS-koden börjar vi med att skapa en fil `base.scss`. I filen `base.scss` importerar vi alla moduler med hjälp av till exempel `@import 'navigation'`. Det är denna fil vi använder när vi sedan ska kompilera SASS till CSS. Jag använder `.scss`-filer då jag gillar syntaxen då den påminner om CSS och ger möjlighet för att återanvända befintlig CSS. Men det är fritt fram att använda `.sass` syntax, om ni tycker om den. Som ni ser nedan har jag även flyttat in `normalize.min.css` i style katalogen och utnyttjar att jag kan skriva CSS kod i scss filer. Vi döper om `normalize.min.css` till `style/normalize.min.scss` och filen blir en del av den resulterande CSS filen istället för att ligga som ett beroende utanför.
 
 ```scss
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro');
@@ -268,7 +268,7 @@ Om man istället vill skapa en komprimerad version av CSS koden kan man använda
 
 Avslutningsvis {#avslutning}
 --------------------------------------
-Vi har i denna artikeln skapat knappar som är lätta att klicka på och samtidigt inbjuder till att bli klickade på. Vi designade först en grund knapp och med hjälp av andra klasser designade vi knappar som fyller hela skärmens bredd och knappar med andra färger för olika funktioner. Vi har även tittat på ett sätt att strukturera vår CSS kod med CSS-preprocessorn SASS.
+Vi har i denna artikeln skapat knappar som är lätta att klicka på och samtidigt inbjuder till att bli klickade på. Vi designade först en grundknapp och med hjälp av andra klasser designade vi knappar som fyller hela skärmens bredd och knappar med andra färger för olika funktioner. Vi har även tittat på ett sätt att strukturera vår CSS kod med CSS-preprocessorn SASS.
 
 Om du har frågor eller tips så finns det en särskild [tråd i forumet](t/7314) om denna artikeln.
 

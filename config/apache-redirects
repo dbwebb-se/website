@@ -123,9 +123,9 @@ Redirect /htmlphp/lektionsplan /kurser/htmlphp/lektionsplan
 Redirect /kurser/htmlphp/lektionsplan		https://docs.google.com/spreadsheets/d/1VxuFjmhGakKyE4kwKqpLNr6VGvLRgNnVeU3dyQTvVUI/edit?usp=sharing
 
 # python
-Redirect /python/studieplan /kurser/python/studieplan
-Redirect /kurser/python/studieplan         https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDY1amxWYU1ZMVYyQkNxRU1TaTRoZ3c&usp=sharing
-Redirect /kurser/python/lektionsplan https://docs.google.com/spreadsheets/d/1zFmphWE90vxLCFEhH60QEZ4I8p8pq3-XKWBLLQguOXM/edit?usp=sharing
+#Redirect /python/studieplan /kurser/python/studieplan
+#Redirect /kurser/python/studieplan         https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDY1amxWYU1ZMVYyQkNxRU1TaTRoZ3c&usp=sharing
+#Redirect /kurser/python/lektionsplan https://docs.google.com/spreadsheets/d/1zFmphWE90vxLCFEhH60QEZ4I8p8pq3-XKWBLLQguOXM/edit?usp=sharing
 
 # phpmvc
 Redirect /phpmvc/studieplan			https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdGxWWmZwUE9oNGdiRDlFUDdaNzFPN1E
@@ -172,7 +172,9 @@ Redirect /javascript/kmom06/forelasning.pdf     https://dl.dropbox.com/u/2431521
 #
 
 # python
-Redirect /python            /kurser/python
+Redirect /python                        /kurser/python
+Redirect /kurser/python/studieplan      https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDY1amxWYU1ZMVYyQkNxRU1TaTRoZ3c&usp=sharing
+Redirect /kurser/python/lektionsplan    https://docs.google.com/spreadsheets/d/1zFmphWE90vxLCFEhH60QEZ4I8p8pq3-XKWBLLQguOXM/edit?usp=sharing
 
 
 # htmlphp
@@ -188,6 +190,15 @@ Redirect /kurser/javascript1/repo   /repo/javascript1
 Redirect /javascript1               /kurser/javascript1
 Redirect /kurser/javascript1/studieplan    https://docs.google.com/spreadsheets/d/1e1YHhdBPYqSZMG2g7xQE_7gu4ejobCre9F53F43KGDo/edit?usp=sharing
 Redirect /kurser/javascript1/lektionsplan    https://docs.google.com/spreadsheets/d/1m87jwckTiSHc9ty57laBa7rKiMGq9EXJ-xa4mjSEs3E/edit?usp=sharing
+
+
+
+# js
+Redirect /kurser/js/repo   /repo/js
+Redirect /js               /kurser/js
+Redirect /kurser/js/studieplan    https://docs.google.com/spreadsheets/d/1mExz9YdaeETN56eq9_UiGktMLcdkPcB8tpK5FJC1ryI/edit?usp=sharing
+Redirect /kurser/js/lektionsplan    https://docs.google.com/spreadsheets/d/1WBUlAf-iLID_UNMQloAXlO9Mkxdvx-YhkFPKqR566Zs/edit?usp=sharing
+
 
 
 # design

@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2020-06-17": "(J, mos) Genomgången inför HT20."
     "2018-09-25": (I, efo) Bytte från ITs till Canvas.
     "2017-06-12": (H, mos) Bytte institution och länk till utbildningsförening.
     "2016-08-04": (G, mos) Justerade länkar.
@@ -25,14 +26,16 @@ Via webbtjänsten [studentportalen](http://studentportal.bth.se/)  administrerar
 
 Du kan registrera dig på kurser och du kan se när dina poäng är registrerade i Ladok genom att ta ut ett studieintyg. Här kan du även skaffa ett konto och lösenord till databasen MySQL.
 
+Här finner du också information och kontaktdetaljer till övriga delar av BTH och studieadministrativa saker.
+
 
 
 Studentcentrum {#studentcentrum}
 --------------------------------------------------------------------
 
-På campus finns [expeditionen studentcentrum](https://studentportal.bth.se/web/studentportal.nsf/web.xsp/studentcentrum) som hjälper dig med studieadministrativ hantering.
+På campus finns expeditionen för studentcentrum som hjälper dig med studieadministrativ hantering.
 
-Det kan röra sig om intyg, omregistreringar och de kan svara på allmänna frågor om dina registreringar. Du kan maila eller ringa till dem.
+Det kan röra sig om intyg, omregistreringar och de kan svara på allmänna frågor om dina registreringar. Du kan besöka dem fysiskt eller maila och ringa till dem.
 
 
 
@@ -43,14 +46,12 @@ Läroplattformen Canvas {#its}
 
 När du har registrerad dig på kursen så får du automatisk tillgång till dina kurstillfällen på Canvas.
 
-<!-- Vill du inte vänta så får du själv leta upp kurstillfället på Canvas och anmäla dig till det. -->
-
 
 
 IT-helpdesk {#ithelpdesk}
 --------------------------------------------------------------------
 
-Får du problem med ditt studentkonto eller IT-tjänsterna så [vänder du dig till IT-helpdesken](https://studentportal.bth.se/web/studentportal.nsf/web.xsp/it-stod).
+Får du problem med ditt studentkonto eller IT-tjänsterna så vänder du dig till IT-helpdesken. Du kan ringa och maila dem.
 
 
 
@@ -64,14 +65,17 @@ Biblioteket {#biblioteket}
 Institutionen DIDD {#inst}
 --------------------------------------------------------------------
 
-Det lärarteam som undervisar på dbwebb-kurserna tillhör institutionen DIDD, [Institutionen för Datalogi och Datorsystemteknik]https://www.bth.se/om-bth/organisation/fakulteten-for-datavetenskaper/didd/).
+Det lärarteam som undervisar på dbwebb-kurserna tillhör institutionen DIDA, [Institutionen för datavetenskap]https://www.bth.se/om-bth/organisation/fakulteten-for-datavetenskaper/dida/).
+
+
+Som student vid BTH Webbprogrammering kommer du även i kontakt med lärare från andra institutioner, du läser till exempel flera kurser från institutionen DIPT, [Institutionen för programvaruteknik]https://www.bth.se/om-bth/organisation/fakulteten-for-datavetenskaper/dipt/).
 
 
 
 Studie- och karriärvägledning {#studievagledning}
 --------------------------------------------------------------------
 
-[Studievägledare](https://studentportal.bth.se/web/studentportal.nsf/web.xsp/bth_gemensam) guidar dig om du behöver råd och tips i dina studier. Om du hamnar efter kan de ge dig råd om studietekniker.
+Studievägledare guidar dig om du behöver råd och tips i dina studier. Om du hamnar efter kan de ge dig råd om studietekniker och hur du bör planera dina studier för att nå en examen.
 
 
 

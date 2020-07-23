@@ -1,7 +1,5 @@
-####<i class="fa fa-university"></i> Sök Webbprogrammering
+#### <i class="fa fa-university"></i> Sök Webbprogrammering
 
-Ansök till BTH utbildningar för hösten 2020. Anmälan öppnar den 15:e mars, 2020.
+Nästa möjlighet att ansöka till utbildningar i BTH Webbprogrammering är till hösten 2021. Anmälan öppnar den 15:e mars 2021.
 
 Ansök i tid! Sök med både betyg och högskoleprov för att maximera dina chanser att komma in.
-
-Vi erbjuder inga utbildningar att söka till våren 2020.

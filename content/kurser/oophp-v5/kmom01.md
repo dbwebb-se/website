@@ -9,6 +9,7 @@ author:
     - mos
     - lew
 revision:
+    "2020-04-29": "(H, mos) Lade till not om PSR-12."
     "2020-03-30": "(G, mos) Strukturerad med info om git/github och anax-moduler."
     "2020-03-10": "(F, mos) Förberedd med länk till streams vt20 youtube."
     "2019-03-13": "(E, mos) Uppdaterad till v5."
@@ -109,9 +110,12 @@ I kursen jobbar vi med Git och GitHub som du lärde dig om i design-kursen. Git 
 
 Följande gäller för kodstandard och valideringsverktyg.
 
-1. Vi skriver PHP enligt kodstandarden [PSR-1: Basic Coding Standard](http://www.php-fig.org/psr/psr-1/) och [PSR-2: Coding Style Guide](http://www.php-fig.org/psr/psr-2/). Dessa är standardiserade av PHP communityn och standardiseringen hanteras av organisationen [PHP-FIG](https://www.php-fig.org/) vars syfte är att standardisera komponenter så att de går att använda mellan olika ramverk.
+1. Vi skriver PHP enligt kodstandarden [PSR-1: Basic Coding Standard](http://www.php-fig.org/psr/psr-1/) och [PSR-2: Coding Style Guide](http://www.php-fig.org/psr/psr-2/). Dessa är standardiserade av PHP communityn och standardiseringen hanteras av organisationen [PHP-FIG](https://www.php-fig.org/) vars syfte är att standardisera komponenter så att de går att använda mellan olika ramverk.  
+_PSR-2 är på väg att ersättas av [PSR-12: Extended Coding Style](https://www.php-fig.org/psr/psr-12/), så även den delen kan vara av intresse att studera._
 
 1. Vi använder valideringsverktygen [phpcs](https://github.com/squizlabs/PHP_CodeSniffer/wiki) och [phpmd](https://phpmd.org/). Det går att installera dem som linters i Atom och se valideringsfelen direkt i texteditorn.
+
+<!-- phpstan? -->
 
 
 

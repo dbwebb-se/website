@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2002-04-08": "(B, mos) Förtydligade vilka filer man jobbar i."
     "2018-03-27": "(A, mos) Första versionen, uppdelad av större dokument och uppdaterad."
 ...
 Namespace
@@ -15,7 +16,7 @@ Spara koden du skriver i denna övningen i `index_namespace.php`, `src/Person/Pe
 Namespace i PHP {#name}
 ----------------------------------
 
-I PHP kan vi deklarera en namnrymd, ett _namespace_, med kommandot `namespace`. 
+I PHP kan vi deklarera en namnrymd, ett _namespace_, med kommandot `namespace`.
 
 De variabler, funktioner och klasser som definieras inom denna namnrymd är endast synliga där. Vinsten är att man kan deklarera enheter som har samma namn, men om de befinner sig i olika namespace så krockar de inte.
 
@@ -26,7 +27,7 @@ När man använder moduler som kommer från olika leverantörer så kan de nu an
 Klassen Person i egen namnrymd {#person}
 ----------------------------------
 
-Vi tar klassen Person och deklarerar ett namespace överst i filen.
+Vi tar klassen Person och deklarerar ett namespace överst i klassfilen `src/Person/Person.php`.
 
 ```php
 
@@ -41,7 +42,7 @@ class Person
 
 Deklarationen av namespace ligger alltid överst i filen.
 
-I min deklaration av namespace så användare jag strukturen `<vendor>/<namespace>`.
+I min deklaration av namespace så användare jag strukturen `<vendor>\<namespace>`.
 
 I mitt fall är `Mos` vendor, leverantören av koden. Jag väljer att lägga vendor-namnet i mitt namespace, då kan alla klasser jag själv skriver ligga under mitt eget namespace och undvika krockar med andra vendor, leverantörer.
 
@@ -52,7 +53,7 @@ Mitt `<namespace>` är `Person` som är ett rimligt namn på modulen (klassen) j
 Skapa objekt av klassen Person {#skapaperson}
 ----------------------------------
 
-När vi nu vill skapa ett objekt av klassen Person så måste det ske med klassens absoluta namn, det finns ett par alternativ att göra detta.
+När vi nu vill skapa ett objekt av klassen Person, i filen `index_namespace.php`, så måste det ske med klassens absoluta namn, det finns ett par alternativ att göra detta.
 
 Ett alternativ är att skapa ett objekt genom att ange hela namespacet till klassen.
 
@@ -62,7 +63,7 @@ $person = new \Mos\Person\Person();
 
 Ovan är den absoluta _sökvägen_ till klassen.
 
-Vi skulle också kunna använda samma namespace i filen där jag jobbar, då hade det kunnat sett ut så här.
+Ett annat alternativ är att använda samma namespace som klassen har, i filen där jag jobbar, då hade det kunnat sett ut så här.
 
 ```php
 namespace Mos\Person;
@@ -72,7 +73,7 @@ $person = new Person();
 
 All kod som skrivs i filen är deklarerad under namespacet `Mos/Person` så när jag skapar objektet så är sökvägen till objektet relativ det namespace jag jobbar i. När jag gör `new Person()` blir det alltså `new \Mos\Person\Person()` eftersom jag jobbar under namespace `Mos/Person`.
 
-Jag kan också använda `use \Mos\Person\Person` för att berätta vilken hela sökvägen är till klassen `Person`.
+Ytterligare ett alternativ är att använda `use \Mos\Person\Person` för att berätta vilken sökvägen, namespacet, är till klassen `Person`.
 
 ```php
 use \Mos\Person\Person;

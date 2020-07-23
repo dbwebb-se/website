@@ -287,7 +287,7 @@ var computer = {
         return m.request({
             method: "PUT",
             url: "www.api-url.com/save",
-            data: computer.current
+            body: computer.current
         }).then(function() {
             m.route.set("/computers");
         });

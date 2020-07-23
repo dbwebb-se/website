@@ -13,13 +13,13 @@ Kmom02: Privacy
 
 Kursmomentet ger en introduktion till konceptet privacy genom att förklara centrala definitioner. Särskilt belyses avvägningen mellan privacy och att som slutanvändare dela med sig av sin information för att möjliggöra diverse IT-baserade tjänster. Därutöver kommer exempel på vanliga privacy-förbättrande tekniker förklaras. Slutligen ges exempel på omfattande attacker som påverkat slutanvändarnas privacy negativt samt förslag på relevanta mekanismer för att försvåra dessa attacker.
 
-[WARNING]
+<!-- [WARNING]
 
 **Kursutveckling pågår**
 
 Kursen planeras ge hösten 2019.
 
-[/WARNING]
+[/WARNING] -->
 
 
 

@@ -2,6 +2,7 @@
 title: Kurser
 author: mos
 revision:
+    "2020-06-25": "(C, mos) Läsår 2020/21."
     "2019-08-23": "(B, mos) Läsår 2019/20."
     "2018-06-16": "(A, mos) Flyttade innehåll från .meta.md och nytt inför ht18."
 
@@ -11,7 +12,7 @@ views:
         template: default/columns
         sort: 10
         data:
-            title: Webbprogrammering läsår 1
+            title: Webbprogrammering läsår 1 (inkl kurspaketen)
             class: col4
             classes: no-bullet
             meta:
@@ -54,12 +55,14 @@ views:
                         data:
                             meta:
                                 type: content
-                                route: kurser/htmlphp-v3/block-kurser-kmom
+                                # ht19 htmlphp-v3
+                                route: kurser/htmlphp-v4/block-kurser-kmom
                     column-2:
                         data:
                             meta:
                                 type: content
-                                route: kurser/design-v2/block-kurser-kmom
+                                # ht19 design-v2
+                                route: kurser/design-v3/block-kurser-kmom
                     column-3:
                         data:
                             meta:
@@ -76,9 +79,9 @@ views:
     webbprogrammering-termin3:
         region: columns-above
         template: default/columns
-        sort: 30
+        sort: 40
         data:
-            title: Webbprogrammering läsår 2 (campus)
+            title: Webbprogrammering läsår 2 (180hp campus)
             class: col4
             classes: no-bullet
             meta:
@@ -108,7 +111,7 @@ views:
     webbprogrammering-termin4:
         region: columns-above
         template: default/columns
-        sort: 31
+        sort: 41
         data:
             class: col4
             classes: no-bullet
@@ -139,9 +142,9 @@ views:
     webbprogrammering-termin3-distans:
         region: columns-above
         template: default/columns
-        sort: 32
+        sort: 20
         data:
-            title: Webbprogrammering läsår 2 (distans)
+            title: Webbprogrammering läsår 2 (120hp distans)
             class: col4
             classes: no-bullet
             meta:
@@ -171,7 +174,7 @@ views:
     webbprogrammering-termin4-distans:
         region: columns-above
         template: default/columns
-        sort: 33
+        sort: 21
         data:
             class: col4
             classes: no-bullet
@@ -199,45 +202,12 @@ views:
                                 type: content
                                 route: kurser/exjobb/block-kurser-kmom
 
-    webprog:
-        region: columns-above
-        template: default/columns
-        sort: 21
-        data:
-            title: Kurspaket webprog
-            class: col4
-            classes: no-bullet
-            meta:
-                type: columns
-                columns:
-                    column-1:
-                        data:
-                            meta:
-                                type: content
-                                route: kurser/htmlphp-v3/block-kurser-kmom
-                    column-2:
-                        data:
-                            meta:
-                                type: content
-                                route: kurser/design-v2/block-kurser-kmom
-                    column-3:
-                        data:
-                            meta:
-                                type: content
-                                route: kurser/databas-v1/block-kurser-kmom
-                    column-4:
-                        data:
-                            meta:
-                                type: content
-                                route: kurser/oophp-v5/block-kurser-kmom
-
-
     webbprogrammering31campus:
         region: columns-above
         template: default/columns
-        sort: 40
+        sort: 80
         data:
-            title: Webbprogrammering läsår 3 (campus)
+            title: Webbprogrammering läsår 3 (180hp campus)
             class: col4
             classes: no-bullet
             meta:
@@ -267,7 +237,7 @@ views:
     webbprogrammering32campus:
         region: columns-above
         template: default/columns
-        sort: 41
+        sort: 81
         data:
             class: col4
             classes: no-bullet
@@ -294,41 +264,6 @@ views:
                             meta:
                                 type: content
                                 route: kurser/exjobb-kandidat/block-kurser-kmom
-
-
-    ovrigt:
-        region: columns-above
-        template: default/columns
-        sort: 91
-        data:
-            title: Fler kurser
-            class: col4
-            classes: no-bullet
-            meta:
-                type: columns
-                columns:
-                    column-1:
-                        data:
-                            meta:
-                                type: content
-                                route: block/empty
-                    column-2:
-                        data:
-                            meta:
-                                type: content
-                                route: kurser/webgl/block-kurser-kmom
-                    column-3:
-                        data:
-                            meta:
-                                type: content
-                                route: block/empty
-                    column-4:
-                        data:
-                            meta:
-                                type: content
-                                route: block/empty
-
-
 
     columnsXtra:
         region: columns-above

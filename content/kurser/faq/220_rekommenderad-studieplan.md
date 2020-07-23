@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2020-06-17": "(G, mos) Genomgången inför ht20."
     "2016-04-22": (F, mos) Enbart om rekommenderad studieplan.
     "2015-08-14": (E, mos) Kommenterade bort stycke om fristående kurser.
     "2015-01-08": (D, mos) Länkade till studieplanerna för respektive kurspaket.
@@ -19,12 +20,18 @@ Här kan du läsa om planering för kurserna och vilka typer av hållpunkter du 
 Planera dina studier {#studieplan}
 --------------------------------------
 
-I varje kurs finns en rekommenderad studieplan som visar när du bör vara färdig med respektive kursmoment.
+I varje kurs finns en rekommenderad studieplan som visar när du bör jobba och vara färdig med respektive kursmoment.
 
-I studieplanen hittar du viktiga datum för treveckors upprop och sista datum för att lämna in kursens moment.
+I studieplanen hittar du viktiga datum för treveckors upprop och sista datum för att lämna in kursens moment. Du hittar även datum för möjlighet till restinlämningar och omexaminationer.
 
 Den rekommenderade studieplanen visar också när du kan förvänta dig att dina inlämningar blir rättade. Varje kurs har så kallade rättningsfönster när rättningar sker.
 
+Den rekommenderade studiplanen visar när du bör jobba med kursens olika delar, för att vara i fas, det är en rekommendation.
+
+Det finns datum på läroplattformen som säger när det är sista inlämningsdatum för en specifik uppgift, dessa datum är hårda och sen inlämning kan ha konsekvenser. En vanlig konsekvens är att man missar rätten att få sin inlämning rättad under rättningsfönstret.
+
 [YOUTUBE src=DWBzjBXCVyM width=630 caption="Mikael visar hur man tolkar studieplanen."]
 
-Studieplanerna hjälper dig att själv planera dina studier. Om du har - av olika skäl - en personligt anpassad studietakt så kan du utgå från studieplanerna och lägga upp din egen plan. Studieplanerna ger dig ramen som du behöver hålla dig inom.
+Här är ett exempel på en rekommenderad studieplan.
+
+* [htmlphp](https://dbwebb.se/kurser/htmlphp/studieplan)

@@ -56,10 +56,10 @@ m.route(document.body, "/", {
 
 ```javascript
 // js/views/layout.js
-m("li", [m("a", {href: "/days", oncreate: m.route.link}, "Namnsdag")])
+m("li", [m("a", { href: "#!/days" }, "Namnsdag")])
 ```
 
-Vi skapar sedan vyn `js/views/days.js` där vi först initierar en array `days`, som vi fyller med dagens datum och nio dagar fram. Vi skriver ut dessa datum, som en lista av länkar. Som vanligt använder vi `oncreate : m.route.link` när vi skapar länkar för att länkarna använder sig av vår router i `js/index.js`. Datum i javascript är inte alltid helt enkla att komma överens med, därför har jag skapat två stycken hjälpfunktioner.
+Vi skapar sedan vyn `js/views/days.js` där vi först initierar en array `days`, som vi fyller med dagens datum och nio dagar fram. Vi skriver ut dessa datum, som en lista av länkar. Som vanligt använder vi en _hashbang_ (#!) när vi skapar länkar för att länkarna använder sig av vår router i `js/index.js`. Datum i JavaScript är inte alltid helt enkla att komma överens med, därför har jag skapat två stycken hjälpfunktioner.
 
 
 ```javascript
@@ -92,7 +92,7 @@ module.exports = {
         return [
             m("h1", "Namnsdagar"),
             m("ul.days", days.map(function (day) {
-                return m("li", [m("a", {href: "/nameday/" + format_date(day), oncreate: m.route.link}, format_date(day))]);
+                return m("li", [m("a", { href: "#!/nameday/" + format_date(day) }, format_date(day))]);
             }))
         ];
     }

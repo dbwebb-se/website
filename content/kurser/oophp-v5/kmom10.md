@@ -2,6 +2,8 @@
 author:
     - mos
 revision:
+    "2020-05-26": "(G, mos) Information om produkter och blogginlägg skall sparas i databasen."
+    "2020-05-05": "(F, mos) Genomgång och mindre justeringar i text samt lade till krav om redovisningsvideo."
     "2019-05-17": "(E, mos) Bort med del i krav 3 om redigera footer."
     "2019-05-10": "(D, mos) Uppdaterad till v5, optionella uppdaterade till flexibelt admin-interface och regga användare."
     "2018-05-08": "(C, mos) Ny inför oophp v4."
@@ -36,7 +38,7 @@ Projektidé och upplägg {#upplagg}
 
 Ryktet har spritt sig att du är en högst kompetent programutvecklare vilket resulterat i att en välkänd IT-profil, låt oss kalla honom Matt Mullvägg, har bett dig utveckla nästa generations bloggverktyg.
 
-Du accepterar uppdraget, väl medveten om att du redan har en god grund till lösningen. 
+Du accepterar uppdraget, väl medveten om att du redan har en god grund till lösningen.
 
 Du tar din grund `me/redovisa` och skapar ett helt nytt projekt i `me/kmom10/proj`. Om du väljer att göra ett Git-repo av projektet och väljer att lägga det på GitHub/Bitbucket så behöver det vara privat. Eftersom detta är det avslutande projektet så vill vi undvika att någon hittar och lånar dina affärshemligheter.
 
@@ -73,7 +75,7 @@ Bygg stöd för följande sidor på din webbplats.
 
 * Hem, en förstasida som ger en översikt av webbplatsens innehåll.
 * En produktsida som visar upp dina produkter (jämför uppgiften filmdatabas).
-* En blogg med nyheter om produkter, erbjudande och din verksamhet.
+* En blogg med nyheter om produkter, erbjudande och din verksamhet (jämför uppgiften i kmom06).
 * En om-sida med information om webbplatsens fokus, dig själv och din verksamhet.
 * Gemensam header med logo och titel, eller din egen personliga variant av header.
 * Gemensam footer, med text om Copyright med företagsnamnet.
@@ -81,7 +83,9 @@ Bygg stöd för följande sidor på din webbplats.
 
 På produktsidan ser man en översikt av alla produktvarianter och erbjudande som finns. Du kan välja att visa översikten av produkterna i en tabell, eller visa upp dem mer som en traditionell Eshop kunde gjort (välj själv). Visa upp minst 5 produkter. Man kan klicka på en produkt för att se den i sin helhet på en produktsida med bild(er) och information om produkten.
 
-I nyhetsbloggen presenterar du nyheter och allmän information om produkter och erbjudande. I översikten skall det visas inledningen till minst 5 blogginlägg. Man kan klicka på rubriken för att komma till en egen sida där blogginlägget visas i sin helhet. Använd minst en bild till varje blogginlägg. 
+I nyhetsbloggen presenterar du nyheter och allmän information om produkter och erbjudande. I översikten skall det visas inledningen till minst 5 blogginlägg. Man kan klicka på rubriken för att komma till en egen sida där blogginlägget visas i sin helhet. Använd minst en bild till varje blogginlägg.
+
+Information om produkter och blogginlägg skall sparas i databasen.
 
 Fyll din webbplats med relevanta bilder och texter.
 
@@ -93,13 +97,13 @@ Ditt system driftas på studentservern.
 
 Du vill dokumentera ditt system så att en likasinnad programmerare kan förstå vad du gjort.
 
-Lägg till ytterligare en sida på webbplatsen som heter "doc" där du förklarar den kodstruktur som du har i din lösning. Vilka klasser är centrala, vilka kontroller har du och vilka route-pather finns det. Var kortfattad och tänk att du förklarar din kod för en likasinnad programmerare. Skriv ett stycke om 15 rader eller så. Lägg till sidan i navbaren.
+Lägg till ytterligare en sida på webbplatsen som heter "doc" där du förklarar den kodstruktur som du har i din lösning. Vilka klasser är centrala, vilka kontroller har du och vilka övriga klasser som är viktiga. Var kortfattad och tänk att du förklarar din kod för en likasinnad programmerare. Skriv ett stycke om 15-30 rader eller så. Lägg till en bild som visar ett översiktligt klasssdiagram. Lägg till sidan i navbaren.
 
-Du skapar ett ER-diagram av din färdiga databas och sparar i `htdocs/img/er.png`. Det är okey att automatgenerera en översikt av tabellerna. Länka gärna till ER-diagrammet i din "doc" och nämn något om dina tabeller med en rad eller två.
+Du skapar ett ER-diagram av din färdiga databas och sparar i `htdocs/img/er.png`. Det är okey att automatgenerera en översikt av tabellerna. Skapa rubriken "Databas" i din "doc" och infoga ER-diagrammet som bild samt nämn något om dina tabeller och din databasstruktur.
 
-Ditt projekt innehåller en makefil som kan köra enhetstester med phpunit och generera kodtäckning via `make phpunit`. Det finns inga speciella krav på kodtäckningen, men ange i korthet din ambitionsnivå i sidan "doc" och berätta vilken kodtäckning du nådde.
+Ditt projekt skall innehålla en Makefile som kan köra enhetstester med phpunit och generera kodtäckning via `make phpunit`. Det finns inga speciella krav på kodtäckningen, men ange i korthet din ambitionsnivå i sidan "doc", under rubriken "Testning" och berätta vilken kodtäckning du nådde.
 
-Du kan även köra `make test` och validera koden i ditt projekt, försök städa bort så mycket valideringsfel du kan och kommentera övriga i sidan "doc". 
+Du kan även köra `make test` och validera koden i ditt projekt, försök städa bort så mycket valideringsfel du kan och kommentera övriga i sidan "doc".
 
 Ditt projekt kan generera dokumentation med phpdoc via `make doc`. Vid problem med installation av phpdoc så berättar du om problemen i sidan "doc" och sen går du vidare och lägger tiden på annat.
 
@@ -114,11 +118,7 @@ När man är inloggad (och har behörighet som "administratör") kan man via ett
 * Hantera nyhetsbloggen (lägga till, ta bort och redigera inlägg).
 * Administrera produkterna (lägga till, ta bort och redigera informationen).
 
-<!--
-* Administrera innehållet i "om"-sidan och footern.
--->
-
-När du skriver texten till sidorna så skriver du den i Markdown och använder en textfilter-klass för att formattera den.
+När du skriver texten till blogg- och produktsidor så skriver du den i Markdown och använder en textfilter-klass för att formattera den.
 
 
 
@@ -130,11 +130,11 @@ Du kan dela in sidan i regioner/block (gör som du vill) och presentera extra in
 
 * De tre senaste inläggen från din nyhetsblogg. Visa inledningen och en länk för att läsa hela blogginlägget.
 * Ett "featured" blogginlägg, visa titel och inledningen semt en länk till hela blogginlägget.
-* Senaste inkomna produkter
+* Senaste inkomna produkter.
 * Veckans erbjudande(n) som länk till en produkt eller blogginlägg.
-* Rekommenderad produkt(er)
+* Rekommenderad produkt(er).
 
-Du kan uppdatera förstasidans innehåll genom att använda information från databasen, eller så kan du uppdatera innehållet för hand via ditt administrativa gränssnitt, eller en kombination.
+Du kan uppdatera förstasidans innehåll genom att använda information från databasen.
 
 
 
@@ -154,7 +154,7 @@ De användare som lägger till sig själva har inte rättigheter att nå ditt ad
 
 ### Krav 6: Ett flexibelt admingränssnitt (optionell) {#k6}
 
-I admingränssnittet visar du innehållet (pages, posts eller motsvarande) och användarna i tabellform.
+I admingränssnittet visar du innehållet (produkter, pages, posts eller motsvarande) och användarna i tabellform.
 
 Du har möjlighet till CRUD för dem.
 
@@ -176,11 +176,13 @@ Redovisning {#redovisning}
 
     1. För varje krav du implementerat, dvs 1-6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 
+    1. Spela in en redovisningsvideo om 5-7 minuter där du visar upp ditt projekt och går igenom dess delar. Utgå gärna från hur du löste kraven. Kombinera med en snabb översikt av någon utvald del i din kod och avsluta med en summering om du är nöjd med din insats och om du hade gjort annorlunda om du hade gjort om projektet.
+
     1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
     1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte länka till din me-sida med projektet. 
+2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte länka till din me-sida med projektet.
 
 ```bash
 # Ställ dig i kursrepot

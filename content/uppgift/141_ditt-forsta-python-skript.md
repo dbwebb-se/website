@@ -2,6 +2,7 @@
 author: mos
 category: python
 revision:
+  "2020-05-07": (F, aar) La till förkunskapskrav och fixade copy kommandot.
   "2017-06-31": (E, efo) Rensade uppgiften så den inte är .cgi.
   "2016-03-17": (D, mos) hur man kopierar plane.py.
   "2015-08-25": (C, mos) Uppdaterade till dbwebb v2.
@@ -21,7 +22,7 @@ Skriv ett av dina första enklare program i Python genom att konvertera mellan o
 Förkunskaper {#forkunskaper}
 -----------------------
 
-Du har jobbat igenom artikeln "[Installera en labbmiljö till Python](kunskap/installera-en-labbmiljo-till-python)".
+Du har jobbat igenom artikeln "[Installera en labbmiljö till Python](kunskap/installera-en-labbmiljo-till-python)" och "[Introduktion till variabler och datatyper](kunskap/introduktion-till-variabler-och-datatyper)".
 
 <!-- Du har även skapat en me-sida enligt ["En me-sida i python som cgi-skript"](uppgift/en-me-sida-i-python-som-cgi-skript). -->
 
@@ -65,23 +66,12 @@ Krav {#krav}
 
 ```bash
 # Ställ dig i roten av kurskatalogen python
-cd me/kmom01/
-cp -i hello/greeting.py plane/plane.py
-cd plane
+cp -i example/hello/hello.py me/kmom01/plane/plane.py
+cd me/kmom01/plane
 ls
 ```
 
 2. Skriv programmet så att det fungerar enligt introduktionen ovan.
-
-<!-- 3. Ta en kopia av `plane.py` och spara som `plane1.py`.
-
-Gör så att `plane1.py` fungerar utan att användaren skriver in något. Använd följande hårdkodade värden.
-
-* Höjd över havet 1100 meter
-* Hastighet 1000 km/h
-* Temperatur utanför flygplanet -50 grader Celsius -->
-
-<!-- 1. Kopiera filen `plane1.py` till `plane1.cgi` och modifiera den så att den det kan köras över webben. -->
 
 3. Ladda upp och publicera uppgiften genom att göra följande kommandon i kurskatalogen i terminalen.
 

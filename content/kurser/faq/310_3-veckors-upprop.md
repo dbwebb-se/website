@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2020-06-24": (F, mos) Mindre justeringar inför ht20.
     "2016-08-04": (E, mos) Justerade vissa länkar.
     "2016-04-22": (D, mos) Överflyttad till ny webbplats.
     "2014-09-22": (C, mos) Inför hösten 2014.
@@ -10,7 +11,7 @@ revision:
 3-veckors upprop
 ==================================
 
-Efter tre veckors halvtidsstudier görs ett 3-veckors upprop för att kontrollera att du är aktiv i kursen. Du visar att du är aktiv genom att lämna in redovisningarna för kursmomenten. 
+Efter tre veckors halvtidsstudier görs ett 3-veckors upprop för att kontrollera att du är aktiv i kursen. Du visar att du är aktiv genom att lämna in redovisningarna för kursmomenten.
 
 
 > *Syftet med 3-veckors uppropet att avregistrera de studenter som inte är aktiva i kurserna, de som inte har presterat något.*
@@ -24,14 +25,14 @@ För att klara uppropet så skall du ha lämnat in redovisning av kursmoment 01 
 När sker ditt 3-veckors uppropet? {#3v-nar}
 ------------------------------------------------------------
 
-Kontrollera [din studieplan](rekommenderad-studieplan) för att se när du har 3-veckors upprop i din kurs. 
+Kontrollera [din studieplan](rekommenderad-studieplan) för att se när du har 3-veckors upprop i din kurs.
 
 
 
 Vad händer om jag inte klarar det? {#3v-miss}
 ------------------------------------------------------------
 
-Om du inte klarar kraven för 3-veckors uppropet så får du ett *tidigt avbrott* i kursen. Det tidiga avbrottet dateras tre veckor in i kursen. Om du har [CSN kan detta innebära ett problem för dig](/t/2365). 
+Om du inte klarar kraven för 3-veckors uppropet så får du ett *tidigt avbrott* i kursen. Det tidiga avbrottet dateras tre veckor in i kursen. Om du har CSN kan detta innebära ett problem för dig då även CSN blir informerad om ditt studieavbrott.
 
 Har du fått ett tidigt avbrott kan du inte *kräva* att få tillbaka din studieplats, men har något fel skett så brukar det lösas i god anda.
 
@@ -49,11 +50,11 @@ Vi brukar vara flexibla med att ge mer tid till de som är aktiva på kurserna. 
 Felaktigt avregistrerad? {#3v-fel}
 ------------------------------------------------------------
 
-Kanske har du fått ett mail från CSN som säger att du avbrutit dina studier eller så kommer du inte längre åt kurserna på ITs. Då är sannolikheten stor att du blivit avregistrerad från kursen/kurserna i samband med en avstämning i enlighet med 3 veckors uppropet. Via [studentportalen](bth-stodfunktioner#studentportalen) kan du kolla din [registreringsstatus på kurserna](/t/1135). Är du registrerad eller ej?
+Kanske har du fått ett mail från CSN som säger att du avbrutit dina studier eller så kommer du inte längre åt kurserna på lärplattformen. Då är sannolikheten stor att du blivit avregistrerad från kursen/kurserna i samband med en avstämning i enlighet med 3 veckors uppropet.
 
 Har du blivit felaktigt avregistrerad? **Om det har blivit fel så går det att göra "undo"**. Om du visar att du verkligen är aktiv på kursen så kan du bli återregistrerad, förutsatt att du uppfyller kriterierna för 3-veckors uppropet.
 
-Kontakta oss för att reda ut läget.
+Kontakta den kursansvarige läraren för att reda ut läget.
 
 
 
@@ -82,6 +83,6 @@ Taktik-inlämning kan vara bra om man går flera kurser och behöver lite andrum
 Hjälp mig tillbaka {#help}
 ------------------------------------------------------------
 
-När du blivit avregistrerad, kontaktar oss och undrar vad som händer, då kommer du i första hand att bli hänvisad hit. Det är för att du skall veta om grunderna i hanteringen.
+När du blivit avregistrerad och undrar vad som händer, då kommer du i första hand att bli hänvisad hit. Det är för att du skall veta om grunderna i hanteringen.
 
-Om något är oklart så frågar du oss.
+Om något är oklart så frågar du.

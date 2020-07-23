@@ -38,7 +38,9 @@ DV1563 Read the guide under *General tip*.
 
 1. You have the guide [get started with regex](guide/get-started-with-regex). Use it as reference.
 
-1. Use the website [regex101](https://regex101.com/) to test your regex.
+1. Check out the videos starting with "regex-" in the [playlist](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_RqTYGCSbOMk4KFyHxfuFh).
+
+1. Use the website [regex101](https://regex101.com/) to test your expressions.
 
 
 
@@ -51,13 +53,22 @@ Exercises & Assignments {#ovningar_uppgifter}
 
 ### Exercises {#exercise}
 
-1. Follow the guide [get started with regex](guide/get-started-with-regex) and code along with it.
+1. Follow the guide [get started with regex](guide/get-started-with-regex).
 
 
 
-### Assignment {#assignment}
+### Assignments {#assignments}
 
-1. Read the [instructions](uppgift/unix-lab) and do the lab `sed1`.
+1. Read the [instructions](uppgift/unix-lab#lab3) and do the lab `regex`.
+
+1. Read the [instructions](uppgift/unix-lab#lab4) and do the lab `sed1`.
+
+1. Read the [instructions](uppgift/unix-lab#lab5) and do the lab `jq`.
+
+
+### Extra assignment {#extra_assignment}
+
+There are no extra assignments.
 
 
 
@@ -82,10 +93,10 @@ Then on the education platform Canvas do a hand in for assignment 3 with a text 
 Your grade on this assignment and points towards the final grade is given based on the following criteria:
 
 | Grade | Final grade points | Assignments | Reflective answers | Extra assignments in labs |
-|-------|----------|------|------ |------|
-| A     | 20       | X    | X     | X
-| C     | 15       | X    | X  OR | X
-| E     | 10       | X    |       |
-| F     | 0        |      |       |
+|-------|--------------------|-------------|------------------- |---------------------------|
+| A     | 20                 | X           | X                  | X
+| C     | 15                 | X           | X  OR              | X
+| E     | 10                 | X           |                    |
+| F     | 0                  |             |                    |
 
 As a last text describe what you have done in this assignment and make an argument for the grade you deserve. The grading of your assignment will use this text as the starting point.

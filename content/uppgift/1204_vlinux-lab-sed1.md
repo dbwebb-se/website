@@ -8,10 +8,10 @@ category:
 revision:
     "2019-05-24": (A, lew) Ny inför HT19.
 ...
-VLinux lab 3, reguljära uttryck
+VLinux lab 4, reguljära uttryck
 ==================================
 
-Laboration för att träna grunderna i regex. Du kommer jobba med verktyget sed och diverse textfiler. Till din hjälp har du en [regex guide](guide/kom-igang-med-regex/intro).
+Laboration för att träna grunderna i regex med verktyget sed. Du kommer jobba med verktyget sed och diverse textfiler. Till din hjälp har du en [regex guide](guide/kom-igang-med-regex/sed).
 
 <!--more-->
 

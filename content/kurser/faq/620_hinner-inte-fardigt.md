@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2020-06-25": (E, mos) Uppdaterad med mer info inför ht20 om när man hamnat efter, kopierat från forumet.
     "2016-10-24": (D, mos) Bara projektet kvar samt Är inte klar.
     "2016-08-04": (C, mos) Genomgången och det långa svaret togs bort.
     "2012-08-04": (B, mos) Överflyttad till dbwebb hösten 2012.
@@ -23,9 +24,11 @@ Fortsätt att göra kursmomenten i din egen takt och sikta på att bli klar så 
 
 Det finns inga garantier för att man kan bli omregistrerad utan det gäller *i mån av plats*.
 
-Du måste själv ha koll på när du kan lämna in dina redovisningar och att du lämnar in dem på ett aktivt kurstillfälle, annars blir de inte rättade.
+Du måste själv ha koll på när du kan lämna in dina redovisningar och att du lämnar in dem på ett aktivt kurstillfälle, annars riskerar de att inte bli rättade.
 
+<!--
 Du läser mer om de kurstillfällen som finns och hur du omregistrerar dig i artikeln om "[Omregistrering på kurs och kurstillfälle](omregistrering)".
+-->
 
 
 
@@ -53,3 +56,36 @@ Mitt förslag är då att du tar en paus i de kurserna du håller på med och sa
 De nuvarande kurserna lägger du på hyllan och försöker lösa så fort du får en stund över. Eller så planerar du att lösa dem under julen, eller över sommaren.
 
 Allt eftersom du blir mer erfaren student, desto lättare kommer du tycka de inledande kurserna är och desto enklare blir det att fixa dem.
+
+
+
+Restinlämningar och omregistrering {#d}
+----------------------------------
+
+Ett kurstillfälle har normalt ett par tillfällen för restinlämningar. Exakt hur det fungerar skiljer mellan kurser. Flera av kurserna i ettan har två möjligheter till restinlämningar och missar man dem får man omregistrera sig på nästa kurstillfälle.
+
+Du kan titta i den rekommenderade studieplanen för att se när tillfällen för restinlämningar är.
+
+
+
+Hamnat efter i min utbildning... {#e}
+----------------------------------
+
+Det bästa är att du själv börjar med att fylla i ditt studieläge i ett excelark, så att du kan visa läget för dig själv och någon annan.
+
+Det är din antagningsomgång som bestämmer vilka kurser du skall gå, välj den du är antagen till och fyll i status. Fundera på läget, gör din egen plan och prata med studievägledningen eller programansvarige för rådgivning.
+
+Här kan du finna [excelark du kan kopiera och fylla i](/program/webbprogrammering/#followup), för respektive antagningsomgång.
+
+
+
+Om jag inte klarar kurserna, söka om eller gå om? {#f}
+----------------------------------
+
+Hur gör man som student, om man inte hängt med i kurserna och funderar på att börja om från början? Det beror lite av hur många poäng du tagit och i vilka kurser.
+
+När du sedan skall bestämma dig för hur du går vidare så finns följande alternativ, normalt sett.
+
+1. Studenten söker omregistrering på kurser hen varit registrerad på och fortsätter kämpa på med de vanliga kurserna. Försök pussla dig fram till en examen.
+2. När omregistrering inte fungerar så kan man ansöka om en anpassad utbildningsplan, en AUP, via studentportalen. Via en AUP kan man få tillgång till kurstillfällen utanför ditt antagningstillfälles normala studieplanen.
+3. Studenten har endast ett fåtal poäng tagna termin 1 – sök om programmet via Antagning.se och börja om från början.

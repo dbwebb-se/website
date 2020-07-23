@@ -36,4 +36,4 @@ Kursens namn är "JavaScript-baserade webbramverk". Du hittar [kursplanen genom 
 Kursmaterial {#kursmaterial}
 -----------------------------------------------------
 
-Kursens material finns på [jsramverk.me](https://jsramverk.me/). På webbplatsen finns material om de tekniker och verktyg som används i kursen, samt information om inlämningsuppgifter och hur du redovisar.
+Kursens material finns på [jsramverk.se](https://jsramverk.se/). På webbplatsen finns material om de tekniker och verktyg som används i kursen, samt information om inlämningsuppgifter och hur du redovisar.

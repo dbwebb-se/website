@@ -4,6 +4,7 @@ category:
     - webbprogrammering
     - webapp
 revision:
+  "2020-04-20": (B, aar) Uppdatera för hur Android installeras.
   "2018-02-20": (A, efo) Första utgåvan inför kursen webapp-v3.
 ...
 Installera Android utvecklingsmiljö på Windows
@@ -22,9 +23,25 @@ Jag kommer att installera endast det nödvändigaste för att få tillgång till
 
 Installera Java {#java}
 --------------------------------------
-Ladda ner och installera Java JDK från [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Ladda ner rätt paket beroende på processorarkitektur: Windows x64 för 64-bits arkitektur eller Windows x86 för 32-bits arkitektur. Kör `.exe` filen som laddas ner och följ instruktionerna i guiden.
+Ladda ner och installera Java JDK 8 från [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Ladda ner rätt paket beroende på processorarkitektur: Windows x64 för 64-bits arkitektur eller Windows x86 för 32-bits arkitektur. Kör `.exe` filen som laddas ner och följ instruktionerna i guiden. Det behöver vara JDK 8, Cordova funkar inte med nyare versioner.
 
 Du kan behöva registrera och logga in för att få ladda ner Java 8 då Oracle har ändrat sina rättigheter för gamla JDK.
+
+Kolla att Java finns tillgängligt från terminalen, start en ny terminal och skriv `java -version`. Du borde få något som ser ut som här.
+
+```
+java version "1.8.0_212"
+Java(TM) SE Runtime Environment (build 1.8.0_212-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.212-b10, mixed mode)
+```
+
+Om kommandot inte finns behöver du lägga till Javas `bin` i din PATH, för mig är det `C:\Program Files\Java\jdk1.8.0_212\bin`.
+
+
+
+Installera Gradle {#gradle}
+--------------------------------------
+Ladda ner och installera Gradle från [Gradle](https://gradle.org/releases/). Du behöver även lägga till Gradles bin mapp i din PATH, för mig är det `C:\Program Files\gradle-6.3\bin`
 
 
 
@@ -38,9 +55,31 @@ Android Studio avslutar nu installationen bekräfta de val som kommer upp. Jag h
 
 [FIGURE src=/image/webapp/screenshot-android-studio.png caption="Android Studio startfönster."]
 
-Välj i fönstret som kommer upp 'Android 8.0 API Level 26' och bocka av 'API Level 27' tryck sedan Apply för att installera rätt SDK. Godkänna License Agreement och låt Android Studio Installera SDK:n.
+I fönstret som kommer upp kan du välja vilken Android version du vill utveckla mot. Jag har valt 'Android 8.1 API Level 27' och 'Android 9.0 API Level 28', bocka i de du vill ha och bocka av övriga. Tryck sedan Apply för att installera rätt SDK. Godkänna License Agreement och låt Android Studio Installera SDK:n.
 
-[FIGURE src=/image/webapp/screenshot-android-studio-sdk.png caption="Android Studio SDK Manager."]
+[FIGURE src=/image/webapp/screenshot-android-studio-sdk-platforms.png caption="Android Studio SDK Manager."]
+
+Gå sen till SDK Tools i SDK managern och bocka i `Android SDK Command-line Tools (latest)`, tryck sedan Apply för att installera rätt SDK. Godkänna License Agreement och låt Android Studio Installera SDK:n.
+
+Kopiera värdet för `Android SDK Location` för nästa steg.
+
+[FIGURE src=/image/webapp/screenshot-android-studio-sdk-cmdline-tools.png caption="Android Studio SDK Manager commandline-tools."]
+
+
+
+### Android i PATH {#android_path}
+
+När du har installerat allt behöver vi lägga till flera av Androids mappar i pathen.
+
+Först behöver du lägga till sökvägen till Android SDK som en miljövariable med namnet `ANDROID_HOME`. Du kan hitta sökvägen i längst upp i Android SDK managern under namnet `Android SDK Location`.
+
+[FIGURE src=/image/webapp/screenshot-android-home-variable.png caption="ANDROID_HOME som miljövariabel."]
+
+Nästa steg är att lägga till undermappar i ANDROID_HOME i din PATH.
+
+[FIGURE src=/image/webapp/screenshot-android-home-paths.png caption="ANDROID_HOME undermappar i PATH."]
+
+Nu ska Cordova klara av att hitta allt det behöver för att bygga Android appar.
 
 
 
@@ -51,8 +90,6 @@ Starta ett nytt Android Studio project från startfönstret i Android Studio. Kl
 [FIGURE src=/image/webapp/screenshot-android-studio-gradle.png caption="Android Studio byggverktygen."]
 
 I nedanstående video visas hur man skapar en virtuell enhet, som vi sedan kan använda för att köra vår HelloWorld Cordova app i. Du kan under installationen få frågan om du vill installera Intel HAXM, gör detta då det snabba upp Emulatorn avsevärt.
-
-Se till att göra samma val som Emil gör i videon nedan. Välj alltså API 26 (Oreo) när du ombeds välja API för din virtuella enhet.
 
 [YOUTUBE src=KWAsnLTClzo caption="Emil skapar en virtuell Android enhet."]
 

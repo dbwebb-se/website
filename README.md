@@ -84,7 +84,7 @@ Install Composer and YAML.
 
 ### Apache virtual host
 
-You need a a Apache virtual host as local.dbwebb.se.
+You need a Apache virtual host as local.dbwebb.se.
 
 1) Clone the website to `~/git/dbwebb.se`.
 

@@ -1,4 +1,4 @@
-Sitemap: https://dbwebb.se/sitemap.xml
+Sitemap: https://dbwebb.se/sitemap.xml.com
 
 User-Agent: *
 Disallow:

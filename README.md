@@ -25,7 +25,7 @@ This creates the `cache/` directory where the website stores it cached files.
 Remember to clean the Anax cache when making updates to files in the `content/` directory.
 
 ```
-make clean-anax-cache
+make clean-cache-anax
 ```
 
 You can now can start the website container.

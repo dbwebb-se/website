@@ -90,7 +90,7 @@ Kraven är uppdelade i sektioner.
 
 Följande bör du klara av på egen hand. Om du av någon anledning får ont om tid eller inte klarar av detta så kan du hoppa över denna delen för tillfället och ändå lämna in ditt kursmoment. Men du bör notera eventuella problem och hinder och skapa issue om det i kursrepot.
 
-1. Kopiera din `Makefile` till ramverket och döp den till `Makefile.mvc`. Namnbytet är så att den inte krockar med någon annan Makefile som eventuellt redan ligger på plats.
+1. Kopiera din `Makefile` till ramverket och döp den till `Makefile.mvc`. Namnbytet är så att den inte krockar med någon annan Makefile som eventuellt redan ligger på plats. OBS! Om du vill använda den här filen med `make`-kommandot måste du ange filnamnet på det här sättet: `make -f Makefile.mvc phpunit`.
 
 1. Kopiera över alla konfigurationsfiler för validatorerna, men se till så att du inte skriver över någon fil som redan ligger i ramverket. Konfigurationsfilerna är de som heter `.php*` i din katalog `me/game`.
 

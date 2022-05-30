@@ -34,4 +34,4 @@ Det finns datum på läroplattformen som säger när det är sista inlämningsda
 
 Här är ett exempel på en rekommenderad studieplan.
 
-* [htmlphp](https://dbwebb.se/kurser/htmlphp/studieplan)
+* [webtec](https://dbwebb.se/kurser/webtec/studieplan)

@@ -42,9 +42,9 @@ Kika i lektionsplanen för att se när det finns inbokade tillfällen i ditt kur
 
 Kurser som inte använder lektionsplan har ofta motsvarande information via schemasystemet och via Canvas.
 
-Här är ett exempel på en lektionsplan.
+Här är ett exempel på en lektionsplan. Just denna innehåller även veckoplan.
 
-* [htmlphp](https://dbwebb.se/kurser/htmlphp/lektionsplan)
+* [webtec](https://dbwebb.se/kurser/webtec/lektionsplan)
 
 
 
@@ -56,3 +56,7 @@ En veckoplan ger dig mer detaljerad information om vad du bör studera vecka fö
 Här är ett exempel på en veckoplan.
 
 * [htmlphp](https://dbwebb.se/kurser/htmlphp-v4/veckoplan/ht20lp1)
+
+Ibland körs lektionsplan och veckoplan ihop.
+
+* [webtec](https://dbwebb.se/kurser/webtec/lektionsplan)

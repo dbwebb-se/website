@@ -16,10 +16,10 @@ Om du är ovan vid att installera programvaror och om du är ovan vid terminalen
 
 
 
-Labbmiljö i htmlphp och python {#sect1}
+Labbmiljö i webtec och python {#sect1}
 ---------------------------------
 
-De flesta studenter startar med kursen python eller htmlphp och du finner instruktionen i [kmom01 för python](python/kmom01) eller [kmom01 för htmlphp](htmlphp/kmom01).
+De flesta studenter startar med kursen python eller webtec och du finner instruktionen i [kmom01 för python](python/kmom01) eller [kmom01 för webtec](webtec/kmom01).
 
 
 

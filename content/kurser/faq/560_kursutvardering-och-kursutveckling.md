@@ -21,7 +21,7 @@ All feedback är oerhört viktig för kursens kvalitet och vidare utveckling. F�
 * Löpande i foruminlägg och chat.
 * Läser extra sista redovisningen med feedback och studentens betyg på kursen.
 * Diskussioner i sal (campus).
-* BTH's kursutvärdering.
+* BTH's kursvärdering.
 
 
 
@@ -50,7 +50,7 @@ Ibland blir det spontana diskussioner i chatten där vi kan diskutera innehåll 
 
 
 
-BTH's kursutvärderingssystem {#bth}
+BTH's kursvärderingssystem {#bth}
 -----------------------------------
 
 Ett formulär som mailas ut i slutet av kursen och besvaras anonymt. Resultatet är framförallt viktigt för att det används till att jämföra BTH's kurser mot varandra. På det sättet är den utvärderingen viktig för mig. Jag kan också få fingervisning om det är något som inte dykt upp under kursens gång.
@@ -60,7 +60,7 @@ Ett formulär som mailas ut i slutet av kursen och besvaras anonymt. Resultatet 
 Löpande kursutveckling {#utveckling}
 ---------------------------
 
-Jag försöker hålla kursmaterialet uppdaterat, villket dessutom är en extra utmaning när det händer så mycket inom detta området. Men försöka kan man. Jag försöker göra så mycket som möjligt löpande under kursernas gång.
+Jag försöker hålla kursmaterialet uppdaterat, vilket dessutom är en extra utmaning när det händer så mycket inom detta området. Men försöka kan man. Jag försöker göra så mycket som möjligt löpande under kursernas gång.
 
 Men jämna mellanrum, säg 2-3 års intervaller, så blir det dax för en större genomsyn av varje kurs, då brukar jag gå igenom varje kursmoment och i stort sett skriva om dem. Ibland händer det att en kurs går ur tiden och ersätts med en ny kurs.
 

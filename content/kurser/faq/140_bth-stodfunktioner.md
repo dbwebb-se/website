@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2022-05-30": "(K, grm) Genomgången inför HT22."
     "2020-06-17": "(J, mos) Genomgången inför HT20."
     "2018-09-25": (I, efo) Bytte från ITs till Canvas.
     "2017-06-12": (H, mos) Bytte institution och länk till utbildningsförening.
@@ -27,6 +28,8 @@ Via webbtjänsten [studentportalen](http://studentportal.bth.se/)  administrerar
 Du kan registrera dig på kurser och du kan se när dina poäng är registrerade i Ladok genom att ta ut ett studieintyg. Här kan du även skaffa ett konto och lösenord till databasen MySQL.
 
 Här finner du också information och kontaktdetaljer till övriga delar av BTH och studieadministrativa saker.
+
+Om du behöver studievägledning, samtalsstöd eller hjälp med språk på språkverkstaden så tittar du in på [studentstöd](https://studentportal.bth.se/genomfor-studierna/studentstod/). Studentsstödet kan också hjälpa dig med en varaktig funktionsnedsättning med stöd i dina studier.
 
 
 
@@ -62,7 +65,7 @@ Biblioteket {#biblioteket}
 
 
 
-Institutionen DIDD {#inst}
+Institutionen DIDA {#inst}
 --------------------------------------------------------------------
 
 Det lärarteam som undervisar på dbwebb-kurserna tillhör institutionen DIDA, [Institutionen för datavetenskap]https://www.bth.se/om-bth/organisation/fakulteten-for-datavetenskaper/dida/).

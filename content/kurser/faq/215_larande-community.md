@@ -64,7 +64,7 @@ Gitter är en publik chatt som är löst kopplad till GitLab/GitHub och utveckli
 Här är två exempel på kurschatter på Gitter.
 
 * [python](https://gitter.im/dbwebb-se/python)
-* [htmlphp](https://gitter.im/dbwebb-se/htmlphp)
+* [htmlphp föregångare till webtec](https://gitter.im/dbwebb-se/htmlphp)
 
 Här kan du få snabba svar och hjälp med felsökning.
 
@@ -79,7 +79,7 @@ En kurs har ofta ett kursrepo med material och exempelprogram. Kopplat till dett
 
 Här är två kurser som använder sig av GitHub issues som diskussionsforum.
 
-* [htmlphp](https://github.com/dbwebb-se/htmlphp/issues)
+* [webtec](https://github.com/dbwebb-se/webtec/issues)
 * [oophp](https://github.com/dbwebb-se/oophp/issues)
 
 Tanken med issues är att "leva som man lär", ett issue-verktyg är vanligt att använda i team som jobbar med mjuvaruutveckling.

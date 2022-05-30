@@ -142,6 +142,12 @@ Det finns ingen garanti för att nya tentamen kommer att följa exakt samma uppl
 
 Följande gamla tentor finns tillgängliga.
 
+<!--
+* 2022
+    * [Fiskodling](./tentamen/fiskodling)
+    * [Förmögenhet](./tentamen/formogenhet)
+-->
+
 * 2021
     * [Hund](./tentamen/hund)
     * [Vaccin](./tentamen/vaccin)
@@ -167,7 +173,7 @@ Här följer en del äldre tentor från 2017-18. De är relevanta som övningste
 
 -->
 
-Du kan checka ut övningstentor via `dbwebb exam checkout prep`, de sparas då i katalogen `me/kmom10/prep` och du kan använda `dbwebb exam` som vid en vanlig tentamen.
+Du kan checka ut ett par övningstentor via `dbwebb exam checkout prep`, de sparas då i katalogen `me/kmom10/prep` och du kan använda `dbwebb exam` som vid en vanlig tentamen.
 
 Förbered dig till tentorna genom att läsa om [hur du checkar ut och lämnar in din tentamen med `dbwebb exam`](./tentamen). Pröva sedan att göra en eller flera övningstentor för att se vad som väntar dig. Rekommendationen är att göra minst två övningstentor.
 

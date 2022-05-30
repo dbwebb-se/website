@@ -48,7 +48,7 @@ Krav {#krav}
 1. Skapa följande webbsidor, använd templatefiler och en templatemotor.
 
     1. Skapa en route `/` som ger en presentation av dig själv inklusive en bild. Det är okey att vara anonym och hitta på en figur att presentera.
-    1. Skapa en route `/about` som berättar om kursen mvc och dess syfte. Länka till kursens Git-repo. Lägg till en representativ bild.
+    1. Skapa en route `/about` som berättar om kursen mvc och dess syfte. Länka till kursens Git-repo. Lägg till en representativ bild. Skapa ytterligare en länk som leder till ditt egna GitHub-repo.
     1. Skapa en route `/report` där du samlar dina redovisningstexter för kursens kmom.
         1. Skapa även så att länken `/report#kmom01` leder direkt till kursmomentets redovisningstext.
 

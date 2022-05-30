@@ -34,7 +34,7 @@ Här är de kurser du normalt läser under tredje året, givet att du är klar m
     * devops 7,5hp
     * itsec 7,5hp
 * lp34
-    * Stort gruppprojekt 15hp
+    * Stort grupprojekt 15hp
     * Examensjobb 15hp
 
 Kurserna är på campus och det finns inget givet sätt att läsa samma kurser på distans.
@@ -46,7 +46,7 @@ Byta från distans till campus eller vice versa {#byt}
 
 Förutsatt att man har uppfyllt studierna på det program man går så kan man byta från distans till campus eller vice versa. Sådana byten tillåts i den mån det finns plats på utbildningen man vill byta till.
 
-Man kan tidigast byta program till termin 2.
+Man kan tidigast byta program inför termin 2.
 
 
 

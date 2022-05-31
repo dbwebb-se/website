@@ -30,22 +30,19 @@ Nu vet vi hur vi bygger en egen image med hjälp av Docker. Vi har också gått 
 
 Det finns inga läsanvisningar kopplade till kursmomentet.
 
+ -->
 
+### Video {#video}
 
-### Video  {#video}
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 04.
 
-Titta på följande:
-
-Det finns inga videor kopplade till kursmomentet. -->
-
-<!-- 1. Till kursen finns en videoserie, "[vlinux](https://www.youtube.com/playlist?list=PLKtP9l5q3ce__96JmUrXLdfgGiXy_OQ_m)", kika på de videor som börjar på 04. -->
 
 
 
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 
-<!-- *(ca: 15-20 studietimmar)* -->
+*(ca: 15-20 studietimmar)*
 
 ### Övningar {#ovningar}
 

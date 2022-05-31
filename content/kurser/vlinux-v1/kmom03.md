@@ -41,11 +41,10 @@ Läs följande:
 
 
 
-### TBD: Video  {#video}
+### Video {#video}
 
-Titta på följande:
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 03.
 
-<!-- 1. Till kursen finns en videoserie, "[vlinux](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_oeXQlDtKv51tVM4Y8UtkF)", kika på de videor som börjar på 3. -->
 
 
 

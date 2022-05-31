@@ -37,29 +37,15 @@ Läs följande:
 
 1. [The Linux Command Line](kunskap/boken-the-linux-command-line)
     * Kapitel 1-4, repetera grundläggande kommandon
-
-<!-- I referenslitteraturen, är följande kapitel relevanta. -->
-
-<!-- 1. [The Debian Administrator's Handbook](kunskap/boken-the-debian-administrator-s-handbook).
-    * Ch 6: Maintenance and Updates: The APT Tools (speciellt om `apt-get`, annars översiktligt)
-    * Ch 7: Solving Problems and Finding Relevant Information (översiktligt) -->
-
-
-
-### Artiklar {#artiklar}
-
-1. [The Linux Command Line](kunskap/boken-the-linux-command-line)
     * Kapitel 6 Redirection
     * Kapitel 24 Writing Your First Script
 
 
 
-###  TBD!! Video  {#video}
+### Video {#video}
 
-<!-- Titta på följande:
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 02.
 
-1. Till kursen finns en videoserie, "[vlinux](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_oeXQlDtKv51tVM4Y8UtkF)", kika på de videor som börjar på 02.
- -->
 
 
 Övningar & Uppgifter  {#ovningar_uppgifter}
@@ -102,13 +88,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Skapa Docker image](uppgift/skapa-docker-image)". Du fortsätter arbeta i mappen `kmom02/script`.
 
-<!-- 1. Gör uppgiften "[Skapa en webbplats på en Apache Virtual Host](uppgift/skapa-en-webbplats-pa-en-apache-virtual-host)". -->
-
 1. Lägg till redovisningstexten i din me-sida.
 
-<!--
-1. Gör uppgiften "[Strukturera filer, kataloger och rättigheter i en webbplats](uppgift/strukturera-filer-kataloger-och-rattigheter-i-en-webbplats)".
--->
+
 
 ### Testa din inlämning {#test}
 

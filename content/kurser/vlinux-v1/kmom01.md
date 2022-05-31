@@ -16,7 +16,7 @@ Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att bö
 
 Det första vi behöver är en Linuxmiljö. På något sätt.
 
-Vi har alla redan tillgång till en unixmiljö i form av Cygwin eller WSL för windows, terminalen på en Mac, eller kanske har du rent av redan Linux som operativsystem. För att förutsättningarna ska vara lika oberoende av underliggande operativsystem så kommer vi installera Docker och köra linuxdistributionen Ubuntu och versionen 22.04.
+Vi har alla redan tillgång till en Linuxmiljö i form av Cygwin eller WSL för windows, terminalen på en Mac, eller kanske har du rent av redan Linux som operativsystem. För att förutsättningarna ska vara lika oberoende av underliggande operativsystem så kommer vi installera Docker och köra Linuxdistributionen Ubuntu och versionen 22.04.
 
 För att lyckas med kursmomentet så behöver du bekanta dig med grunderna i terminalen och lära dig ett par av de viktigaste kommandona som utförs i terminalen.
 
@@ -69,12 +69,6 @@ Läs följande:
     * Ch4 Manipulating Files And Directories (översiktligt)
 
 
-<!-- I referenslitteraturen, är följande kapitel relevanta.
-
-1. [The Debian Administrator's Handbook](kunskap/boken-the-debian-administrator-s-handbook).
-    * Ch 1: The Debian Project (översiktligt)
-    * Ch 4: Installation (översiktligt, detaljerat vid behov) -->
-
 
 ### Lästips {#lastips}
 
@@ -84,13 +78,9 @@ Läs följande:
 
 
 
-### Video  TBD -> Ny spellista {#video}
+### Video {#video}
 
-Titta på följande:
-
-<!-- Det finns videos kopplade till installationsanvisningarna.
-
-1. Till kursen finns en videoserie, "[vlinux](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_oeXQlDtKv51tVM4Y8UtkF)", kika på de videor som börjar på 01. -->
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 01.
 
 
 
@@ -123,8 +113,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Skapa en me-sida till vlinux-kursen](uppgift/skapa-en-me-sida-till-vlinux-kursen)". Här fyller du på din redovisningstext efter varje kursmoment.
 
 
-TBD: Dubbelkolla med [videon](#) så du fått med alla delar.
-<!-- [YOUTUBE src=6a_q5YojE0s width=639 caption="Har du fått med alla delar?"] -->
+[YOUTUBE src=GLRRsziU2xU width=639 caption="Har du fått med alla delar?"]
 
 
 

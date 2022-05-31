@@ -116,6 +116,12 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 1. Lös uppgiften "[Bygg kort och kortlek i PHP och Symfony enligt MVC](uppgift/bygg-kort-och-kortlek-i-php-och-symfony-enligt-mvc)". Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 
+<!--
+Överväg om pokerpatiens är ett bättre spel där det är enklare att låta datorn spelar "smartare" eller dummare.
+
+Inkludera joker?
+-->
+
 <!-- generera UML diagram -->
 
 

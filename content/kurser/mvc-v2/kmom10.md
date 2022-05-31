@@ -224,6 +224,14 @@ Om du inte uppfyller detta kravet till fullo kan du berätta om varför i din re
 Krav 4: Snygg kod (optionellt) {#k4}
 --------------------------------------------------------------------
 
+<!--
+Med tanke på metrics, kanske denna inte skall vara kvar?
+Försök hitta annat eventuellt optionellt krav som finns tidigare i kmomen?
+
+Bättre fokusera på implementationen kanske?
+Blir mer splittrat annars?
+-->
+
 För att visa dina goda förmågor i att relatera till konceptet "Snygg och god kod" så presenterar du din egen syn på detta i en (A) artikel eller (B) presentation.
 
 Du kan inleda så här:
@@ -244,7 +252,7 @@ Avsluta med din egen personliga syn.
 
 Du skriver din artikel på routen `proj/cleancode` och länkar till den från din about-sida.
 
-Din artikel bör vara omfångsmässigt som en extra stor redovisningstext. Vi pratar alltså om cirka 30-60 meningar text, cirka 3.500-5000 tecken, 1-2 A4-sidor.
+Din artikel bör vara omfångsmässigt som en extra stor redovisningstext. Vi pratar alltså om cirka 30-60 meningar text, cirka 3.500-5.000 tecken, 1-2 A4-sidor.
 
 
 
@@ -318,6 +326,9 @@ Avsluta och redovisa din projektinlämning enligt följande.
 1. Driftsätt din applikation på studentservern. Dubbelkolla att alla delar fungerar, inklusive nollställningen av databasen.
 
 1. På din me/report sida, skriv följande:
+
+    <!-- Förtydliga så att man får bättre rättningsunderlag med text per krav.
+    Eventuellt lägg in att man skriver det i about-sidan? -->
 
     1. För varje krav du implementerat, dvs 1-3, 4, 5, 6, skriver du ett textstycke om ca 5-10 meningar där du beskriver hur du löste kravet. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 

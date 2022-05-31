@@ -53,4 +53,4 @@ Man kan tidigast byta program inför termin 2.
 Ansök via studentportalen {#ansok}
 ----------------------------------
 
-På studentportalen finns möjlighet att ansöka till "antagning till senare del av utbildningsprogram". Det är blanketten man kan använda.
+I [Studentportalen](https://studentportal.bth.se/) under [Blanketter](https://studentportal.bth.se/genomfor-studierna/blanketter/) finns möjlighet att ansöka om "antagning till senare del av program". Tänk på att sista ansökningsdag är 15 maj inför kommande hösttermin och 15 november inför kommande vårtermin.

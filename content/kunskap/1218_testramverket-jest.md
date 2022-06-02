@@ -62,7 +62,7 @@ Nedan visas den relevanta delen av `package.json`.
 Vårt första test {#first-test}
 --------------------------------------
 
-För att våra testkod ska knytas till funktionen av våra app väljer vi att skriva ett use-case för varje test vi implementerar. Vi kan sedan använda denna texten direkt i våra test så vi kopplar detta hårt. Ett use-case är ett avgränsat och tydligt definierat sätt att beskriva hur appen används. Det kan till exempel vara vad som förväntas finnas på skärmen eller vad som händer när man trycker på en knapp. Use-cases kan skrivas av både tekniskt kunniga personer, men även av kravställare eller beställare och ska vara formulerat med ett icke-tekniskt språk.
+För att vår testkod ska knytas till funktionen av våra app väljer vi att skriva ett use-case för varje test vi implementerar. Vi kan sedan använda denna texten direkt i våra test så vi kopplar detta hårt. Ett use-case är ett avgränsat och tydligt definierat sätt att beskriva hur appen används. Det kan till exempel vara vad som förväntas finnas på skärmen eller vad som händer när man trycker på en knapp. Use-cases kan skrivas av både tekniskt kunniga personer, men även av kravställare eller beställare och ska vara formulerat med ett icke-tekniskt språk.
 
 Vi tar ett väldigt enkelt exempel som vi kommer testa mot längre ner i denna artikel.
 

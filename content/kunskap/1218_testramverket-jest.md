@@ -20,7 +20,7 @@ Vi tar en titt på Jest som är en "test-runner" för JavaScript. Jest låter os
 Enhetstester {#unit}
 --------------------------------------
 
-I tidigare kurser har vi [Iintroducerats till enhetstester](https://dbwebb.se/kunskap/unittest-i-python_1). Enhetstester är ett sätt att säkerställa att varje enskild del av koden fungerar som den ska. I många sammanhang räcker det inte hela vägen då vi även vill säkerställa att olika delar "samverkar" på rätt sätt.
+I tidigare kurser har vi [introducerats till enhetstester](https://dbwebb.se/kunskap/unittest-i-python_1). Enhetstester är ett sätt att säkerställa att varje enskild del av koden fungerar som den ska. I många sammanhang räcker det inte hela vägen då vi även vill säkerställa att olika delar "samverkar" på rätt sätt.
 
 Ett sätt att testa detta är integrationstestning där vi testar om enheter fungerar tillsammans på rätt sätt.
 

@@ -203,7 +203,7 @@ test('List should contain three items', async () => {
 Fler render funktioner {#more-renders}
 --------------------------------------
 
-Vi har i denna övning enbart tittat på funktionen `getByText` som returneras av `render` från React Native Testing Library. `render` kan returnera många andra funktioner och alla är [dokumenterad](https://callstack.github.io/react-native-testing-library/docs/api-queries).
+Vi har i denna övning enbart tittat på funktionen `getByText` som returneras av `render` från React Native Testing Library. `render` kan returnera många andra funktioner och alla är [dokumenterade](https://callstack.github.io/react-native-testing-library/docs/api-queries).
 
 Vi kommer under föreläsningen titta på hur vi kan använda Jest och React Native Testing Library för att till exempel simulera klick på knappar eller att fylla i data i formulärfält.
 

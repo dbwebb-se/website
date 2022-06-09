@@ -40,7 +40,7 @@ De tre första kraven är obligatoriska och måste lösas för att få godkänt 
 
 Krav 1-3 (Grundkraven) ger max 10 poäng styck, totalt är det 30 poäng.  
 Krav 4 (Optionellt) ger max 10 poäng.  
-Krav 5 (Optionellt) ger max 10 poäng.
+Krav 5 (Optionellt) ger max 10 poäng.   
 Krav 6 (Optionellt) ger max 10 poäng.
 
 

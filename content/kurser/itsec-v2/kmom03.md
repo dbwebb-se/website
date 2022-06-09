@@ -16,6 +16,10 @@ revision:
 Kmom03: Attacker
 ==================================
 
+[WARNING]
+Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
+[/WARNING]
+
 När man som webbprogrammerare blir utsatt för en attack så är det lätt att hålla sig för skratt. En attack kan vara lättsam som en skämtsam och lekfull XSS där någon bara vill säga att de "ägde din webbplats". I artikeln "[Grundregel 1A i Cross Site Scripting (XSS) - Lita inte på någon](https://dbwebb.se/blogg/grundregel-1a-i-cross-site-scripting-xss-lita-inte-pa-nagon)" visas effekten av ett sådant exempel där någon litade på någon och det slutade med att studentföreningens webbplats gjordes till ett litet skämt.
 
 [YOUTUBE src=CYMR4BjHIeM width=700 caption="Studentföreningens sida som en XSS:ad variant."]

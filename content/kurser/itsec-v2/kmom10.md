@@ -4,7 +4,9 @@ author:
     - mbo
     - mos
     - nik
+    - grm
 revision:
+    "2022-06-01": "(C, grm) Uppdaterad inför HT22."
     "2020-12-10": "(B, nik) Uppdaterad inför HT20."
     "2019-12-09": "(A, lew) Första versionen."
     "2018-12-04": "(PA1, mos) Arbetskopia."
@@ -37,8 +39,9 @@ Utveckla och leverera projektet enligt följande specifikationen. Saknas info i 
 De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De två sista kraven är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg. Om grundkraven inte når 30 poäng får man komplettera sin inlämning. Man kan inte komplettera sig till ett högre betyg.
 
 Krav 1-3 (Grundkraven) ger max 10 poäng styck, totalt är det 30 poäng.  
-Krav 4 (Optionellt) ger max 15 poäng.  
-Krav 5 (Optionellt) ger max 15 poäng.  
+Krav 4 (Optionellt) ger max 10 poäng.  
+Krav 5 (Optionellt) ger max 10 poäng.
+Krav 6 (Optionellt) ger max 10 poäng.
 
 
 
@@ -84,11 +87,15 @@ Sätt er in i situationen att ni sitter på ett företag som får följande uppd
 
 Kunden *Infopedia* har insett att de börjat tappa användare för deras bristande fokus på privacy. De anlitar er för att göra en förberedande rapport som går igenom vad som är viktigt att tänka på inom privacy, varför det är viktigt och hur man kan gå tillväga för att uppnå det.
 
-De vill gärna att samtliga inom företaget ska gå igenom dokumentet och vill därför att längden på det ska vara **1-2 sidor**. De vill även att det som står i dokumentet ska styrkas av **vetenskapliga källor (minst 2)** och gärna ha referenser till ytterligare information inom ämnet. 
+De vill gärna att samtliga inom företaget ska gå igenom dokumentet och vill därför att längden på det ska vara **1-2 sidor**. De vill även att det som står i dokumentet ska styrkas av **vetenskapliga källor (minst 2)** och gärna ha referenser till ytterligare information inom ämnet.
 
 *Infopedia* jobbar huvudsakligen med projekt/kunder i Europa så rapporten måste täcka GDPR.
 
 Spara rapporten i `kmom10/privacy.pdf`.
+
+### Krav 6: Quiz (optionell) {#k6}
+
+Gör Kmom07/10 quiz enligt instruktionerna i quizet.
 
 <!-- ### Krav 5 Säkerhet (optionell) {#k5}
 

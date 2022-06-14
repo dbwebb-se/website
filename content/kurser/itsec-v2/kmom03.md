@@ -165,7 +165,7 @@ Skriv en rapport på två till fyra sidor text, exklusive försättssida och exk
 Extrauppgifter  {#extra}
 -------------------------------------------
 
-1) Fortsätt gör utmaningar in Juice shop. Redovisa dina framgångar med en ny skärmdump.
+1) Fortsätt gör utmaningar i Juice shop. Redovisa dina framgångar med en ny skärmdump.
 
 2) Träna på lösenordshantering genom att förbättra lösenordshanteringen i appen [Super Secure User Storage](/uppgift/losenordshantering). Redovisa dina framgångar genom att berätta om dem i en fil.
 
@@ -177,10 +177,11 @@ Resultat & Redovisning  {#resultat_redovisning}
 
 På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha besvarat quizen.
 
-1. Gör uppgifterna.
-1. Gör kursmomentets quiz. Här redovisar du Hackeruppgiften.
+1. Gör uppgifterna.   
+1. Gör kursmomentets quiz.   
 1. Ladda upp din fil, report.pdf, på Canvas Kmom03 Rapport.
 1. Resultatet (skärmdump) från utmaningarna i Juice shop laddar du upp på Canvas Kmom03.
+1. Hackeruppgiften redovisar du på Canvas Kmom03.
 1. Resultatet (filerna) från extra uppgifterna laddar du upp på Canvas Kmom03. (OBS valfritt)
 
 <!-- Gör en gruppinlämning på Canvas, om ni jobbade i grupp och ladda upp rapporten som pdf, senast fredagen veckan efter att kmomet är avslutat. Svara på följande frågor i textfältet på Canvas (ge ett svar som grupp, såg ni olika filmer så ger ni två svar på den delen):

@@ -68,6 +68,7 @@ Uppgifter  {#uppgifter}
 *(ca: 6-10 studietimmar)*
 
 1. Gör uppgiften "[Vad är privat egentligen?](uppgift/diskussion-vad-ar-privat-egentligen)" i sal (eller virtuellt). Ni ska i grupp diskutera frågorna och anteckna vad ni kommer fram till.
+1. Gör uppgiften "[Knäck lösenord](uppgift/john-the-ripper)" 
 1. Gör Kmom02 quiz.
 
 <!-- 1. Fyll på med redovisningstexten i din me-sida. -->

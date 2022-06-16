@@ -30,14 +30,19 @@ $ rsync -ravd example/password-files/ me/kmom02/password-files/
 
 ### John the Ripper - lokalt
 
+#### Information
+
+Gå till "[John the Ripper Packages](https://github.com/openwall/john-packages)" och läs om hur du installerar Windows package eller Linux package med hjälp av Snap eller Flatpack för Linux. Information för Mac finns på nedladdningssidan för macosx.
+
+#### Ladda ner
+
 Gå till "[John the Ripper (JtR)](https://download.openwall.net/pub/projects/john/contrib/)" och installera enligt instruktionen i `README.txt` för din plattform; windows, macosx eller linux.
 
 Lägg programvaran i itsec/me/kmom02 eller på det ställe du önskar. Titta runt bland filerna och bekanta dig med dem.
 
-
 #### John the Ripper - molnet
 
-Om du inte vill installera John the Ripper lokal, så finns det en "[John the Ripper i molnet](https://www.openwall.com/john/cloud/)".
+Om du inte vill installera John the Ripper lokal, så finns det en "[John the Ripper i molnet](https://www.openwall.com/john/cloud/)" tjänst.
 
 #### Crackstation - online
 
@@ -66,8 +71,6 @@ $./john --show ../../password-files/password1.txt
 $./john --list=formats
 ```
 
-
--->
 
 Redovisa {#redovisa}
 -----------------------

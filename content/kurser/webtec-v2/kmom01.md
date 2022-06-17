@@ -44,7 +44,16 @@ Följande är förslag till en grov och övergripande studieplan för att genomf
 
 <small><i>Kursmomentet omfattar cirka **20 + 20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke.</i></small>
 
+<!--
+Intro till webbprogrammering
+https://www.youtube.com/watch?v=erEgovG9WBs
 
+Google it like a SE
+https://www.youtube.com/watch?v=cEBkvm0-rg0
+
+PHP 100 secs
+https://www.youtube.com/watch?v=a7_WFUlFS94
+-->
 
 ### Introveckan {#introveckan}
 

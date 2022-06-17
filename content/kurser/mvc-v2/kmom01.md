@@ -51,6 +51,8 @@ Titta igenom följande föreläsningar.
 
 1. [Kursintro](./../forelasning/kursintroduktion) som ger en introduktion till kursens struktur och upplägg samt en översikt av kursens innehåll.
 
+<!-- Går det förklara kursens syfte på ett tydligt sätt? Så att stud upplever en rödare tråd? -->
+
 1. [Introduktion till klasser och objekt i PHP](./../forelasning/klasser-och-objekt-i-php), för att komma igång med grunderna i hur man skapar en klass och instansierar ett objekt. Koncept som objekt i sessioner, namespace och autoloader hanteras.
 
 
@@ -69,6 +71,12 @@ Läs enligt följande.
 
     * [Intro till guiden](guide/kom-igang-med-objektorienterad-programmering-i-php/intro-till-guiden)
     * [Objekt och Klass](guide/kom-igang-med-objektorienterad-programmering-i-php/objekt-och-klass)
+
+
+<!--
+About design patterns.
+https://www.youtube.com/watch?v=tv-_1er1mWI
+-->
 
 
 

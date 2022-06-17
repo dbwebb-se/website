@@ -31,9 +31,9 @@ Läs-/videoanvisningar  {#anvisningar}
 *(ca: 8-12 studietimmar)*
 
 
-### Kurslitteratur  {#kurslitteratur}
+<!-- ### Kurslitteratur  {#kurslitteratur}
 
-Läs följande:
+Läs följande: -->
 
 <!-- 1. [The Linux Command Line](kunskap/boken-the-linux-command-line)
     * Kapitel 6 Redirection

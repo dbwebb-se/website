@@ -70,9 +70,9 @@ Läs följande:
 
 
 
-### Lästips {#lastips}
+### Övrigt material {#material}
 
-1. Bekanta dig med [dokumentationen för Docker](https://docs.docker.com/).
+1. [Dokumentationen för Docker](https://docs.docker.com/).
 
 1. Interaktiv förklaring till kommandon: [Explain shell](https://explainshell.com/).
 

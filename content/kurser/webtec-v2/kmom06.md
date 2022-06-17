@@ -12,7 +12,7 @@ revision:
     "2021-10-03": "(B, mos) Delar (uppgift och övning) av materialet släppt för vecka 2."
     "2021-09-26": "(A, mos) Släppt material för vecka 1."
 ...
-Kmom05: SQL
+Kmom06: SQL
 ==================================
 
 [WARNING]

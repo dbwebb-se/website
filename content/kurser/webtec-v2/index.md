@@ -5,18 +5,22 @@ views:
         template: default/image
         data:
             src: "image/webtec/logo.png"
-title: webtec (v1)
+title: webtec (v2)
 author:
     - mos
 revision:
-    "2021-08-19": "(C, grm) La till kmom05/06 i Ladoktabellen."
-    "2021-08-18": "(B, mos) Video kursintro inspelad."
-    "2021-05-28": "(A, mos) Första revisionen inför kursstart HT2021."
+    "2022-06-17": "(A, mos) Första revisionen inför kursstart HT22."
 ...
-Kursen webtec (v1)
+Kursen webtec (v2)
 ==================================
 
-Kursen **Webbteknologier**, a.k.a. *webtec* (f.d. *htmlphp*), lär ut webbutveckling där teknikerna  HTML, CSS, PHP och SQL används för att tillsammans bygga en databasdriven webbplats.
+Kursen **Webbteknologier**, a.k.a. *webtec*, lär ut webbutveckling där teknikerna  HTML, CSS, PHP och SQL används för att tillsammans bygga en databasdriven webbplats.
+
+[WARNING]
+
+**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+
+[/WARNING]
 
 <!--more-->
 
@@ -36,6 +40,8 @@ Kursintro {#pres}
 ------------------------
 
 Här är en video som "pratar" dig igenom kursens upplägg och delar av innehållet i detta dokumentet.
+
+**En uppdaterad video spelas in augusti 2022.**
 
 [YOUTUBE src="RvCFLObcJUk" width=700 caption="Kursintroduktion till kursen webtec med Mikael."]
 
@@ -99,29 +105,55 @@ Kursen avslutas med ett större avslutande moment som examinerar kursen.
 
 
 
-### Kmom01/02: HTML & CSS {#kmom01}
+### Kmom01: HTML & CSS {#kmom01}
 
 Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den så studerar vi HTML och CSS för att se hur de bidrar när vi bygger en webbplats. HTML står för strukturen och innehållet på webbplatsen och CSS bidrar med utseende och layout.
 
-[Instruktion till kursmoment 01/02](./kmom01).
+[Instruktion till kursmoment 01](./kmom01).
 
 
 
-### Kmom03/04: PHP {#kmom03}
+### Kmom02: HTML & CSS {#kmom02}
+
+Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den så studerar vi HTML och CSS för att se hur de bidrar när vi bygger en webbplats. HTML står för strukturen och innehållet på webbplatsen och CSS bidrar med utseende och layout.
+
+[Instruktion till kursmoment 02](./kmom02).
+
+
+
+### Kmom03: PHP {#kmom03}
 
 Vi lär oss programmeringsspråket PHP och hur man programmerar i det via vanliga programmeringskonstruktioner som variabler, if-satser, loopar, datastrukturer som arrayer och vi organiserar koden i filer och funktioner. När vi kan grunderna går vi vidare och använder PHP för att bygga en webbplats. Vi berör olika koncept som HTML formulär, GET/POST och SESSION/COOKIE som ofta används när man utvecklar webbplatser.
 
-[Instruktion till kursmoment 03/04](./kmom03).
+[Instruktion till kursmoment 03](./kmom03).
 
 
 
-### Kmom05/06: SQL {#kmom05}
+### Kmom04: PHP {#kmom04}
+
+Vi lär oss programmeringsspråket PHP och hur man programmerar i det via vanliga programmeringskonstruktioner som variabler, if-satser, loopar, datastrukturer som arrayer och vi organiserar koden i filer och funktioner. När vi kan grunderna går vi vidare och använder PHP för att bygga en webbplats. Vi berör olika koncept som HTML formulär, GET/POST och SESSION/COOKIE som ofta används när man utvecklar webbplatser.
+
+[Instruktion till kursmoment 04](./kmom04).
+
+
+
+### Kmom05: SQL {#kmom05}
 
 Vi skall titta på databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen eftersom databasen ligger i en enda fil och det finns inga användare eller behörigheter att konfigurera.
 
 I en databas, en relationsdatabas som SQLite, så pratar vi SQL med databasen. Vi skriver SQL uttryck för att skapa tabeller och för att lägga till, uppdatera, visa och radera data från databasen.
 
-[Instruktion till kursmoment 05/06](./kmom05).
+[Instruktion till kursmoment 05](./kmom05).
+
+
+
+### Kmom06: SQL {#kmom06}
+
+Vi skall titta på databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen eftersom databasen ligger i en enda fil och det finns inga användare eller behörigheter att konfigurera.
+
+I en databas, en relationsdatabas som SQLite, så pratar vi SQL med databasen. Vi skriver SQL uttryck för att skapa tabeller och för att lägga till, uppdatera, visa och radera data från databasen.
+
+[Instruktion till kursmoment 06](./kmom06).
 
 
 
@@ -189,7 +221,11 @@ Här kan du se en översikt av hur kurstillfället har valt att strukturera lär
 
 Här finner du även länkar till aktuella video streams och spellistor samt chatter och forum för handledning.
 
+* [Läromaterial ht22, lp1](./laromaterial-ht22lp1)
+
+<!--
 * [Läromaterial ht21, lp1](./laromaterial-ht21lp1)
+-->
 
 
 
@@ -198,7 +234,11 @@ Lärarteam och intressenter {#team}
 
 Här kan du hitta detaljer om ett kurstillfälle och se lärarteamet som utför kurstillfället, deras roller och kontaktuppgifter tillsammans med de som "äger" kursen och kurstillfället och vilka studentgrupper som läser kursen samt övriga intressenter till kurstillfället.
 
+* [Lärarteam och intressenter ht22, lp1](./team-ht22lp1)
+
+<!--
 * [Lärarteam och intressenter ht21, lp1](./team-ht21lp1)
+-->
 
 
 
@@ -227,9 +267,9 @@ Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens k
 
 | Kursens                     | Ladok moment enligt kursplan  | Betygsskala |
 |-----------------------------|-------------------------------|:-----------:|
-| Kmom01/02                   | Inlämningsuppgift 1 á 2.5hp   | U-G         |
-| Kmom03/04                   | Inlämningsuppgift 2 á 2.5hp   | U-G         |
-| Kmom05/06 - Kmom07/10       | Individuellt projekt á 2.5hp  | A-F, Fx     |
+| kmom01 + kmom02             | Inlämningsuppgift 1 á 2.5hp   | U-G         |
+| kmom03 + kmom04             | Inlämningsuppgift 2 á 2.5hp   | U-G         |
+| kmom05 - Kmom10             | Individuellt projekt á 2.5hp  | A-F, Fx     |
 
 Den sista inlämningen bestämmer kursens slutbetyg vilket utfärdas när samtliga moment godkänts.
 
@@ -271,7 +311,9 @@ Versioner av kursen {#versioner}
 
 Om du påbörjat den äldre version av kursen så skall du också slutföra denna versionen av kursen (eller göra om den nya kursen från start). Alternativt rådgör du med den som är kursansvarig.
 
-För tillfället från höstterminen 2021 så [finns kursmaterialet till webtec (v1) här](kurser/webtec-v1).
+För tillfället från och med höstterminen 2022 så [finns kursmaterialet till webtec (v2) här](kurser/webtec-v2).
+
+För tillfället under höstterminen 2021 så [finns kursmaterialet till webtec (v1) här](kurser/webtec-v1).
 
 Tidigare kursomgångar gick kursen under smeknamnet htmlphp.
 

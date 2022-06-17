@@ -242,9 +242,9 @@ Här finner du även länkar till aktuella video streams och spellistor samt cha
 
 * [Läromaterial vt22, lp4](./laromaterial-vt22lp4)
 
-Arkivet.
-
+<!--
 * [Läromaterial vt21, lp4](./laromaterial-vt21lp4)
+-->
 
 
 
@@ -255,9 +255,9 @@ Här kan du hitta detaljer om ett kurstillfälle och se lärarteamet som utför 
 
 * [Lärarteam och intressenter vt22, lp4](./team-vt22lp4)
 
-Arkivet.
-
+<!--
 * [Lärarteam och intressenter vt21, lp4](./team-vt21lp4)
+-->
 
 
 

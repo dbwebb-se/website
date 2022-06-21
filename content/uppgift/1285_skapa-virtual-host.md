@@ -43,7 +43,7 @@ De filer du skapar och använder i denna uppgiften skall du spara i ditt kursrep
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb publish vhosts
+$ dbwebb publish vhosts
 ```
 
 Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut så är du klar.

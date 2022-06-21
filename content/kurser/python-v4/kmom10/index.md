@@ -10,6 +10,12 @@ revision:
 Kmom10: Individuell examination
 ==================================
 
+[WARNING]
+
+**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+
+[/WARNING]
+
 Detta kursmoment avslutar och examinerar kursen.
 
 <!-- ctr+d efter "try3" och "2022-06-01" för ny examination -->

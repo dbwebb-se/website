@@ -25,6 +25,12 @@ revision:
 Kmom04: Listor
 ==================================
 
+[WARNING]
+
+**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+
+[/WARNING]
+
 Lär dig grunderna i datastrukturen listor. En *lista* är en linjär datastruktur som är inbyggd i Python. Värdena i en lista behöver inte vara av samma typ, utan kan variera, beroende på vilket användningsområde den används i. Du använder sedan dina kunskaper och praktiska färdigheter för att utöka funktionaliteten i Marvin.
 
 Så här kan det se ut när du bekantar dig med listor.

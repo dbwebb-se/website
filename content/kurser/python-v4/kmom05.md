@@ -23,6 +23,12 @@ revision:
 Kmom05: Dictionaries och Tupler
 ==================================
 
+[WARNING]
+
+**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+
+[/WARNING]
+
 Lär dig mer om datastrukturer i Python, nu handlar det om dictionaries och tupler. Dictionaries sparar data som ett nyckel-värde par och tupler strukturer vår data i mindre enheter med ett sammanhang. Vi använder våra kunskaper om dictionaries för att utveckla Marvin med verktyg för att analysera koldioxidutsläpp.
 
 

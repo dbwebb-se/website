@@ -120,6 +120,8 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 Överväg om pokerpatiens är ett bättre spel där det är enklare att låta datorn spelar "smartare" eller dummare.
 
 Inkludera joker?
+
+Enklare än att blanda in usability när man spelar ett kortspel mot datorn.
 -->
 
 <!-- generera UML diagram -->

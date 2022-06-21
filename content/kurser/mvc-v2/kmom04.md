@@ -127,6 +127,12 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 1. Det finns en övning "[Get going with phpunit](https://github.com/dbwebb-se/mvc/tree/main/example/phpunit)" i ditt kursrepo under `example/phpunit` som hjälper dig att komma igång med phpunit och enhetstestning. Jobba igenom den och försök nå 100% kodtäckning samtidigt som du lär dig grunderna i enhetstestning.
 
+<!--
+how to mock session & request
+
+how to test controller
+-->
+
 
 
 ### Uppgifter {#uppgifter}

@@ -19,6 +19,12 @@ revision:
 Kmom10: Projekt och examination
 ==================================
 
+[WARNING]
+
+**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+
+[/WARNING]
+
 Detta kursmoment avslutar och examinerar kursen.
 
 Upplägget är enligt följande:

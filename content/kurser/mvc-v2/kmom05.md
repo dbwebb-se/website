@@ -114,6 +114,10 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 * Re-init databasen i uppgiften.
 
+* How to unit test database
+
+* How to link to other tables, one-to-one, one-to-many, many-to-many
+
 Search engine
 https://symfony.com/blog/the-new-symfony-documentation-search-engine
 -->

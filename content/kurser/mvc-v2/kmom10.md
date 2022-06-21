@@ -134,6 +134,10 @@ Krav 1, 2, 3: Webbplats {#k123}
 Din nya webbplats skall minst uppfylla följande krav.
 
 
+<!--
+Går det minska omfånget på texten?
+-->
+
 ### Projektfokus {#p}
 
 Välj ditt fokus för ditt projekt.

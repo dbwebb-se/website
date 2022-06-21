@@ -177,7 +177,7 @@ Redirect /kurser/mvc                /kurser/mvc-v2
 Redirect /webtec                       /kurser/webtec
 Redirect /kurser/webtec/studieplan     https://docs.google.com/spreadsheets/d/1ohdubYpmJQ095Z4BTgADIh98LkgcZion3AbpuS1pXvA/edit?usp=sharing
 Redirect /kurser/webtec/lektionsplan   https://docs.google.com/spreadsheets/d/1HW5prIQffx8hHbW8JUEgfodSr2yOCV7sHScW8DDl0QY/edit?usp=sharing
-Redirect /kurser/webtec                /kurser/webtec-v1
+Redirect /kurser/webtec                /kurser/webtec-v2
 
 # pattern
 Redirect /pattern                       /kurser/pattern

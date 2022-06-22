@@ -2,6 +2,7 @@
 title: Kurser
 author: mos
 revision:
+    "2022-06-22": "(F, mos) Kopierad och uppdaterad inför ht22."
     "2021-06-22": "(E, mos) Kopierad och uppdaterad inför ht21."
     "2020-06-25": "(D, mos) Kopierad och uppdaterad inför ht20."
     "2019-02-04": "(C, mos) Nytt upplägg för hösten termin 3."
@@ -56,7 +57,7 @@ views:
                         data:
                             meta:
                                 type: content
-                                route: kurser/webtec-v1/block-kurser-kmom
+                                route: kurser/webtec-v2/block-kurser-kmom
                     column-2:
                         data:
                             meta:

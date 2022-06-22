@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2022-06-22": "(C, mos) Omarbetad med ny video/guide för dbwebb-cli inför ht22."
     "2020-06-11": "(B, mos) Justerade länk till sektion av dbwebb-cli dokumentation."
     "2018-06-19": "(A, mos) Första utgåvan, kopierad från databas-kursen."
 ...
@@ -22,38 +23,39 @@ Det första du behöver göra är att installera en labbmiljö för kursen. Om d
 
 
 
-Installera/uppdatera kommandot dbwebb {#dbwebbcli}
+Kom igång med kommandot dbwebb {#dbwebbcli}
 ----------------------------------
 
 Kommandot, eller verktyget, dbwebb, är ett terminalprogram, skrivet i Bash, som hjälper dig att ha koll på dina filer i kursen. Det hjälper dig också att lämna in resultatet så att lärarna kan rätta och det hjälper dig att publicera till en webbplats för studenter.
 
-Om du redan har installerat kommandot dbwebb så gör du en selfupdate för att vara säker på att du har senaste versionen. Sedan kan du fortsätta till nästa stycke.
+Det finns en guide som visar hur du kommer igång, [guiden om dbwebb-cli](https://dbwebb.se/dbwebb-cli).
 
-```text
-dbwebb selfupdate
-```
+Kenneth visar dig hur du kan jobba igenom guiden.
 
-Annars utför du följande steg för att göra en fräsch installation av kommandot dbwebb.
+[YOUTUBE src=ttxe_6Vyvss width=700 caption="Kenneth visar hur du kommer igång med dbwebb-cli som en del av labbmiljön."]
 
-1. [Installera kommandot `dbwebb`](dbwebb-cli/kom-igang-och-installera). Kommandot används under hela kursen för att jobba med kursmaterialet.
+De steg som är viktiga för att komma igång är följande.
 
-1. När du har installerat kommandot så fortsätter du med sektionen för att [konfigurera kommandot `dbwebb`](dbwebb-cli/konfiguration).
+1. "[Kom igång och installera](https://dbwebb.se/dbwebb-cli/kom-igang-och-installera)" som visar dig de första stegen hur du installerar verktyget dbwebb.
 
-Om du vill ha en introduktion till installationen av dbwebb-kommandot, så kikar du på följande video.
+1. "[Konfiguration](https://dbwebb.se/dbwebb-cli/konfiguration)" visar hur du konfigurerar verktyget och anpassar det till din användare och hur du genererar SSH-nycklar för inloggning.
 
+1. "[Kursrepo](https://dbwebb.se/dbwebb-cli/kursrepo)" visar hur du "klonar ett kursrepo" och laddar hem den miljö du skall jobba i. Kursrepot för denna kursen heter "webtec".
+
+1. "[Ladda upp, validera och publicera](https://dbwebb.se/dbwebb-cli/upload-validate-publish)" detta stycke kan du bara kort kika igenom, det visar hur du kommer att jobba med ditt kursrepo genom kursen.
+
+<!--
 [YOUTUBE src=vlZRW2OZamE width=639 caption="Mikael installerar dbwebb-cli som en del av labbmiljön"]
+-->
 
 
 
-
-Klona och initiera kursrepot {#clona}
+Sammanfattningsvis {#sammanfattning}
 ----------------------------------
 
-Kursrepot innehåller en viss del av kursmaterialet och det ger en struktur där du skriver kod för att lösa övningar och uppgifter i kursen. Du hämtar det med hjälp av kommandot dbwebb. Vi kallar det för att du klonar ditt kursrepo. Klona är ett begrepp som används i versionshanteringssystemet Git och betyder gör en exakt kopia av.
+När du är klar så har du ditt kursrepo för kursen klonad och klart på din lokala dator. Du bär också kunna ladda upp det till studentservern.
 
-1. Läs sektionen om hur du [laddar ned (klona) och initierar ditt lokala kursrepo](dbwebb-cli/kursrepo) som innehåller kursmaterial för kursen.
-
-Den snabba vägen.
+Om du är osäker om du har klonat rätt kursrepo så är här den korta varianten.
 
 ```text
 # Gå till din katalog för dbwebb-kurser
@@ -62,10 +64,4 @@ cd webtec
 dbwebb init
 ```
 
-Kursrepot finns publikt på GitHub. Du kan hitta länken till det genom att skriva följande kommando i din terminal.
-
-```text
-dbwebb github webtec
-```
-
-Bra, det var grunden som behövs. Nu kan du sätta igång "på riktigt" med det första kursmomentet.
+Bra, det var grunden som behövs. Nu kan du fortsätta med det första kursmomentet.

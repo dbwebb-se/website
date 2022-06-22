@@ -21,15 +21,15 @@ Nu tar vi reda på vilka kursrepon som finns.
 $ dbwebb clone
 ```
 
-Sen väljer du det kursrepo som matchar din kurs. Till exempel så här för htmlphp-kursen.
+Sen väljer du det kursrepo som matchar din kurs. Till exempel så här för webtec-kursen.
 
 ```bash
-$ dbwebb clone htmlphp
-$ cd htmlphp
+$ dbwebb clone webtec
+$ cd webtec
 $ ls
 ```
 
-Kursmaterialet laddas nu ned och sparas i katalogen `htmlphp`.
+Kursmaterialet laddas nu ned och sparas i katalogen `webtec`. På samma sätt kan du klona andra kurser, till exempel python. Bara byt ut "webtec" mot "python" så hamnar det kursrepot i en egen katalog.
 
 
 Så här kan det se ut.

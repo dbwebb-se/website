@@ -55,8 +55,9 @@ views:
                         data:
                             meta:
                                 type: content
-                                # ht21 kurser/htmlphp-v4/block-kurser-kmom
-                                route: kurser/webtec-v1/block-kurser-kmom
+                                # ht20 kurser/htmlphp-v4/block-kurser-kmom
+                                # ht21 mvc-v1
+                                route: kurser/webtec-v2/block-kurser-kmom
                     column-2:
                         data:
                             meta:

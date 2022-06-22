@@ -8,9 +8,9 @@ views:
 author:
     - mos
 revision:
-    "2021-09-02": "(A, mos) Första utgåvan."
+    "2022-06-28": "(A, mos) Första utgåvan."
 ...
-Kmom01: HTML & CSS
+Kmom01: Bygg en webbplats
 ==================================
 
 [WARNING]
@@ -18,6 +18,127 @@ Kmom01: HTML & CSS
 **Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
 
 [/WARNING]
+
+Kom igång med HTML & CSS och bygg en webbplats.
+
+
+<small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20-40 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
+
+
+
+Kom igång med kursen  {#kursintro}
+---------------------------------
+
+*(ca: 1-2 studietimmar)*
+
+Bekanta dig med kursens upplägg, struktur och innehåll.
+
+1. Titta på föreläsning "[Kursintroduktion](./../forelasning/kursintro)" med introduktion till kursen, innehållet och upplägget.
+1. Du kan också skumma/läsa igenom [kursens introsida](kurser/webtec-v2) som har samlat all viktig information om kursen.
+
+<!--
+* Titta på den korta videon om "[Strukturen av ett kursmoment](...)" för att få inblick i hur läraren har lagt upp kursens olika moment.
+-->
+
+
+
+Labbmiljö  {#labbmiljo}
+---------------------------------
+
+*(ca: 2-4 studietimmar)*
+
+Se till att du har kursens labbmiljö installerad.
+
+1. Jobba igenom "[Installera kursens labbmiljö](./../installera-labbmiljo)" för att komma igång med din labb- och utvecklingsmiljö för kursen.
+
+
+
+Läs & Studera  {#lasanvisningar}
+---------------------------------
+
+*(ca: 2-4 studietimmar)*
+
+Här kan du på egen hand studera och förbereda dig inför övningar och uppgifter.
+
+
+
+### Föreläsning {#flas}
+
+Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
+
+1. [Webbteknologier](./../forelasning/webbteknologier)
+1. [HTML](./../forelasning/html)
+1. [CSS](./../forelasning/css)
+
+
+
+### Litteratur  {#litteratur}
+
+Läs enligt följande.
+
+1. ...
+
+
+
+Övningar & Uppgifter  {#ovningar_uppgifter}
+-------------------------------------------
+
+*(ca: 8-12 studietimmar)*
+
+Övningar är träning inför uppgifterna, det är ofta klokt att jobba igenom övningarna. Uppgifter skall utföras och redovisas.
+
+Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för hand. Även om du tjuvkikar för att hitta bra lösningar så är det en stor skillnad att skriva koden själv jämfört med att kopiera från någon.
+
+
+
+### Övningar {#ovningar}
+
+Jobba igenom övningarna, de förbereder dig inför uppgifterna.
+
+
+<!--
+* I lektionen "[Skapa en One-page-website](./../forelasning/onepage)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
+-->
+
+
+
+### Uppgifter {#uppgifter}
+
+Följande uppgifter skall utföras och resultatet skall redovisas.
+
+1. Gör uppgiften "[Skapa en rapportsida till webtec-kursen](uppgift/skapa-en-rapport-sida-till-webtec-kursen)".
+
+2. Gör uppgiften "[Skapa en One-page-website](uppgift/skapa-en-one-page-website)".
+
+<!--
+Extrauppgift responsiv?
+-->
+
+
+
+Resultat & Redovisning  {#resultat_redovisning}
+-----------------------------------------------
+
+*(ca: 1-2 studietimmar)*
+
+Läs [instruktionen om hur du skall redovisa](./../redovisa).
+
+Glöm inte att testa din inlämning med `dbwebb test kmom01`.
+
+Se till att följande frågor besvaras i din redovisningstext.
+
+* Vilken utvecklingsmiljö använder du?
+* Gick det bra att installera labbmiljön eller var det något som krånglade?
+* Är du bekant med terminalen och Unix-kommandon sedan tidigare?
+* Är du bekant med HTML, CSS och PHP sedan tidigare eller har du kanske jobbat med liknande tekniker?
+* Gick det bra att komma i gång med kursmomentet rent allmänt?
+* Vilken är din TIL för detta kmom?
+
+TIL är en akronym för "Today I Learned" vilket leksamt anspelar på att det finns alltid nya saker att lära sig, varje dag. Man brukar lyfta upp saker man lärt sig och där man kanske hajade till lite extra över dess nyttighet eller enkelhet, eller så var det bara en ny lärdom för dagen som man vill notera.
+
+
+
+<!--stop-->
 
 Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den så studerar vi HTML och CSS för att se hur de bidrar när vi bygger en webbplats. HTML står för strukturen och innehållet på webbplatsen och CSS bidrar med utseende och layout.
 
@@ -29,7 +150,9 @@ Vi behöver förstå flödet mellan webbläsare, webbserver och källkodsfiler f
 
 När man bygger en webbplats underlättar det om man har en god katalogstruktur för alla de resurser som bygger upp webbplatsen. Det blir en viktig startpunkt för vårt arbete.
 
+<!--
 Dagens webbplatser behöver fungera på olika stora skärmar. Det är vanliga datorskärmar, bärbara datorer, läsplattor, olika storlekar av mobiler och sen stora och breda widescreen-skärmar. Vi ser hur responsiv webbdesign kan underlätta detta arbetet.
+-->
 
 <!--more-->
 

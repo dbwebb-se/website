@@ -8,9 +8,7 @@ views:
 author:
     - mos
 revision:
-    "2021-10-06": "(C, mos) Justerade fråga som refererade till utgånget terminalprogram."
-    "2021-10-03": "(B, mos) Delar (uppgift och övning) av materialet släppt för vecka 2."
-    "2021-09-26": "(A, mos) Släppt material för vecka 1."
+    "2022-06-28": "(A, mos) Första utgåvan."
 ...
 Kmom05: SQL
 ==================================
@@ -20,6 +18,112 @@ Kmom05: SQL
 **Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
 
 [/WARNING]
+
+Databas, SQL.
+
+
+<small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
+
+
+
+Labbmiljö  {#labbmiljo}
+---------------------------------
+
+*(ca: 2-4 studietimmar)*
+
+Komplettera din labbmiljö med följande.
+
+* [En kommandoradsklient för SQLite](labbmiljo/sqlite3).
+
+
+
+Läs & Studera  {#lasanvisningar}
+---------------------------------
+
+*(ca: 2-4 studietimmar)*
+
+Här kan du på egen hand studera och förbereda dig inför övningar och uppgifter.
+
+
+
+### Föreläsning {#flas}
+
+Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
+
+* [SQLite, en filbaserad databas](./../forelasning/sqlite-en-filbaserad-databas)
+* [SQL med SQLite](./../forelasning/sql-med-sqlite)
+
+<!--
+Ta bort fokus från responsiv webbplats.
+In med PHP, något enklare.
+-->
+
+
+
+### Litteratur  {#litteratur}
+
+Läs enligt följande.
+
+1. ...
+
+
+
+Övningar & Uppgifter  {#ovningar_uppgifter}
+-------------------------------------------
+
+*(ca: 8-12 studietimmar)*
+
+Övningar är träning inför uppgifterna, det är ofta klokt att jobba igenom övningarna. Uppgifter skall utföras och redovisas.
+
+Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för hand. Även om du tjuvkikar för att hitta bra lösningar så är det en stor skillnad att skriva koden själv jämfört med att kopiera från någon.
+
+
+
+### Övningar {#ovningar}
+
+Jobba igenom övningarna, de förbereder dig inför uppgifterna.
+
+* [Kom igång med SQL och databasen SQLite med terminalklienten sqlite3](kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3)
+
+<!--
+* I lektionen "[Bygg en databas med SQL](./../forelasning/bygg-en-databas-med-sql)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
+
+Sökformulär mot databasen?
+-->
+
+
+
+### Uppgifter {#uppgifter}
+
+Följande uppgifter skall utföras och resultatet skall redovisas.
+
+* Gör uppgiften "[Bygg en databas med SQL](uppgift/bygg-en-databas-med-sql)".
+
+<!--
+Byt uppgift, kalender ish? med GET
+
+-->
+
+
+
+Resultat & Redovisning  {#resultat_redovisning}
+-----------------------------------------------
+
+*(ca: 1-2 studietimmar)*
+
+Läs [instruktionen om hur du skall redovisa](./../redovisa).
+
+Se till att följande frågor besvaras i din redovisningstext.
+
+* Hur kändes det att bygga en databasdriven webbplats?
+* Var det svårt att komma in i hur du jobbar med SQL mot databasen och sedan SQL mot databasen via PHP eller kändes det som logiskt? Fanns det något som gav dig bekymmer?
+* Vilken är din TIL för detta kmom?
+
+Glöm inte att testa din inlämning med `dbwebb test kmom05`.
+
+
+
+<!--stop-->
 
 Låt oss börja med databaser. Vi skall titta på databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen eftersom databasen ligger i en enda fil och det finns inga användare eller behörigheter att konfigurera.
 
@@ -41,6 +145,15 @@ Så här kan det se ut när du är klar med kursmomentet.
 
 <small><i>Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.</i></small>
 
+
+<!--
+Namndatabasen, en "sökmotor".
+Månens faser?
+Helgdagar?
+Koppla till kalendern och lägg in namnsdag på varje dag.
+
+Extrauppgift minnessaker från fil till databasen.
+-->
 
 
 Studieplan & Upplägg {#studieplan}

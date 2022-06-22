@@ -33,6 +33,11 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20 studietimmar. Du kan själv styra din arbetsinsats genom att välja vilka optionella delar du utför.
 
+<!--
+Responsiv sida som ett optionellt krav, via optionella delar i kmomen?
+
+-->
+
 
 
 Förutsättning {#pre}

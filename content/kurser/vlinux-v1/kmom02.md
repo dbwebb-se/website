@@ -1,11 +1,11 @@
 ---
 author:
-    - lew
+  - lew
 revision:
-    "2022-04-11": (A, lew) Ny inför HT22.
+  "2022-04-11": (A, lew) Ny inför HT22.
 ...
-Kmom02: Dockerfile och Bash
-==================================
+
+# Kmom02: Dockerfile och Bash
 
 [WARNING]
 Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
@@ -13,47 +13,32 @@ Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att bö
 
 Nu har vi fått Dockermiljön på plats och vi vet hur vi startar en container samt hur vi navigerar i den. Vi ska nu titta på hur vi kan skapa en egen image utifrån en så kallad Dockerfile så vi slipper installera om allt varje gång vi stänger ner containern. Vi ska också lära oss hur vi kan skapa bashscript som vi exekverar i containern.
 
-
 <!--more-->
 
 [FIGURE src=/image/vlinux/bashlogo.png caption="Bash."]
 
-
-
-
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
+## Läsanvisningar {#lasanvisningar}
 
+_(ca: 4-10 studietimmar)_
 
-Läsanvisningar  {#lasanvisningar}
----------------------------------
-
-*(ca: 4-10 studietimmar)*
-
-
-### Kurslitteratur  {#kurslitteratur}
+### Kurslitteratur {#kurslitteratur}
 
 Läs följande:
 
 1. [The Linux Command Line](kunskap/boken-the-linux-command-line)
-    * Kapitel 1-4, repetera grundläggande kommandon
-    * Kapitel 6 Redirection
-    * Kapitel 24 Writing Your First Script
-
-
+   - Kapitel 1-4, repetera grundläggande kommandon
+   - Kapitel 6 Redirection
+   - Kapitel 24 Writing Your First Script
 
 ### Video {#video}
 
 Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 02.
 
+## Övningar & Uppgifter {#ovningar_uppgifter}
 
-
-Övningar & Uppgifter  {#ovningar_uppgifter}
--------------------------------------------
-
-*(ca: 6-10 studietimmar)*
-
-
+_(ca: 6-10 studietimmar)_
 
 ### Övningar {#ovningar}
 
@@ -64,8 +49,6 @@ Genomför följande övningar.
 1. Jobba igenom artikeln ["Skapa script med options, command och arguments"](kunskap/skapa-bash-skript-med-options-command-och-arguments). Den ger dig en struktur till hur du kan skapa Bash-script.
 
 1. Kika i guiden [kom igång med Bash](guide/kom-igang-med-bash), där du hittar beskrivningar om de vanligaste konstruktionerna.
-
-
 
 ### Uppgifter {#uppgifter}
 
@@ -79,7 +62,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lägg till redovisningstexten i din me-sida.
 
+### dockerhub.bash {#dockerhub-bash}
 
+1. Skapa ett script `kmom02/dockerhub.bash` som vid exekvering kör din publicerade image. Se till så filen är exekverbar.
 
 ### Testa din inlämning {#test}
 
@@ -89,18 +74,16 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 $ dbwebb test kmom02
 ```
 
+## Resultat & Redovisning {#resultat_redovisning}
 
-Resultat & Redovisning  {#resultat_redovisning}
------------------------------------------------
-
-*(ca: 1-2 studietimmar)*
+_(ca: 1-2 studietimmar)_
 
 Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i redovisningstexten.
 
-* Är detta din första bekantskap med scriptprogrammering i Bash?
-* Berätta om din uppfattning om Bash som programmeringsmiljö, relatera till andra programspråk du kan.
-* Vilka möjligheter/utmaningar ser du med denna typen av scriptprogrammering?
-* Var det något som var extra svårt eller utmanande i uppgifterna?
-* Reflektera över hur du känner inför ett Unix-liknande operativsystem så här långt?
+- Är detta din första bekantskap med scriptprogrammering i Bash?
+- Berätta om din uppfattning om Bash som programmeringsmiljö, relatera till andra programspråk du kan.
+- Vilka möjligheter/utmaningar ser du med denna typen av scriptprogrammering?
+- Var det något som var extra svårt eller utmanande i uppgifterna?
+- Reflektera över hur du känner inför ett Unix-liknande operativsystem så här långt?

@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2022-06-22": (B, lew) Uppdaterad inför HT22.
   "2019-04-11": (A, lew) Första utgåvan inför HT19.
 ...
 
@@ -43,19 +44,11 @@ Du ska i den här uppgiften mestadels jobba i mappen `kmom04/server/`.
 
 1. Bygg en server som kan svara på "routsen" ovan. Alla svar ska vara JSON.
 
-1. Skapa en Dockerfile `Dockerfile` och lägg till din server i arbetsmappen `/server`.
+1. Skapa en Dockerfile `Dockerfile` och lägg till din server i arbetsmappen `/server`. JSON-filen ska inte kopieras in, utan ska läggas till som en volym.
 
 1. Publicera din image med namnet _username/vlinux-server:1.0_ där du använder ditt egna användarnamn. Se till så imagen är publik.
 
 1. Publicera imagen till Docker Hub.
-
-1. Skapa ett Bash-script, `kmom04/dockerhub.bash`, som kör din publicerade image. Mappen med JSON-filen ska servas via en volym där sökvägen tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Du ska till exempel kunna stå i mappen `kmom04` och köra kommandot: `$ bash dockerhub.bash "server/data"`.
-
-1. Containern ska kunna nås via port 8080 (-p).
-
-1. Containern ska köras i bakgrunden (-d).
-
-1. Containern ska ha namnet "myserver" (--name).
 
 1. Publicera uppgiften enligt följande.
 

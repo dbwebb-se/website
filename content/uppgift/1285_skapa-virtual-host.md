@@ -29,16 +29,6 @@ De filer du skapar och använder i denna uppgiften skall du spara i ditt kursrep
 
 1. Publicera din image med namnet _username/vlinux-vhost:1.0_ där du använder ditt egna användarnamn. Se till så imagen är publik.
 
-1. Skapa ett Bash-script, `dockerhub.bash` som kör din publicerade image. Filerna ska servas via en volym där sökvägen tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Mappa sökvägen mot din valda `DocumentRoot` i config-filen.
-
-1. Containern ska kunna nås via port 8080 (-p).
-
-1. Containern ska köras i bakgrunden (-d).
-
-1. Containern ska ha namnet "mysite" (--name).
-
-1. Lägg till hosten via `docker run`. Den ska heta `mysite.vlinux.se`.
-
 1. Publicera uppgiften enligt följande.
 
 ```bash

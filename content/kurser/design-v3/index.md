@@ -1,6 +1,8 @@
 ---
 title: design (v3)
-author: nik
+author:
+    - efo
+    - nik
 views:
    flash:
        region: flash
@@ -57,7 +59,6 @@ Kursen omfattar följande områden:
 * CSS-konstruktioner för style med CSS/SASS
 * Bygga tema till webbplats
 * Använda PHP-ramverk för att skapa och designa webbplats
-<!-- * Sökmotoroptimering -->
 
 
 

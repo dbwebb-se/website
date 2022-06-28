@@ -45,10 +45,12 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 * Om innehåll i webbplatsen?
 * [Responsiv webbdesign](./../forelasning/responsiv-webbdesign) (TA BORT)
 
+* CSS
+
 <!--
 In med PHP, något enklare.
 
-* Include config.php med variabler.
+
 -->
 
 
@@ -83,6 +85,27 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 En vy med kalendern som en tabell?
 
 * I lektionen "[Skapa en responsiv webbplats med HTML och CSS](./../forelasning/htmlcss)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
+
+kanske en onepage för att tvinga fram olika konstruktioner och få övning på responsivitet?
+variabler i css, sidans och kolumnernas bredd
+1, 2, 3 kolumners layout.
+clearfloat?
+clearfix
+footer i tre delar
+header i delar
+navbar
+navbar responsiv
+byline
+text med bilder, figure, figcaption
+style med klasser
+
+PHP med variabler, inbyggda funktioner, if och loop
+kalender på svenska, plocka fram detaljer om dagens datum och ett visst datum.
+sidans laddningstid, antal resurser/filer/minne som laddas
+
+Kalendern kan vara en månadskalender 1-31 vilket ger endast en loop, vecka/månadskalendern ger ju två loopar...
+
+Is it friday?
 -->
 
 
@@ -91,10 +114,27 @@ En vy med kalendern som en tabell?
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-* Gör uppgiften "[Skapa en responsiv webbplats med HTML och CSS](uppgift/skapa-en-responsiv-webbplats-med-html-och-css)". BYT UPPGIFT
+1. Gör uppgiften "[Skapa en responsiv webbplats med HTML och CSS](uppgift/skapa-en-responsiv-webbplats-med-html-och-css)". BYT UPPGIFT
+
+2. Gör uppgiften "[Skapa en One-page-website](uppgift/skapa-en-one-page-website)".
 
 <!--
 Byt uppgift, kalender ish? med GET
+
+En onepage website?
+-->
+
+
+### Överkurs och extra uppgifter {#extra}
+
+Följande uppgifter skall utföras och resultatet skall redovisas.
+
+* Markdown?
+
+<!--
+Extrauppgift responsiv?
+
+Meny som responsiv?
 -->
 
 

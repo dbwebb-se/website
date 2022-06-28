@@ -1,6 +1,6 @@
 #### Kursmoment instruktioner
 
-* [01: HTML & CSS](kurser/webtec-v2/kmom01)
+* [01: Bygg en webbplats](kurser/webtec-v2/kmom01)
 * [02: HTML & CSS...](kurser/webtec-v2/kmom02)
 * [03: PHP](kurser/webtec-v2/kmom03)
 * [04: PHP...](kurser/webtec-v2/kmom04)

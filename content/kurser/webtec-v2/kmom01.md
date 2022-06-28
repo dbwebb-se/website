@@ -19,8 +19,11 @@ Kmom01: Bygg en webbplats
 
 [/WARNING]
 
-Kom igång med HTML & CSS och bygg en webbplats.
+Vi inleder kursen med att bygga en webbpalts som baseras på HTMl, CSS och PHP. Vi försöker kommer underfunde med en god struktur och uppdelning av filer och kataloger och de grundeläggande begrepp som används när man bygger en webbplats.
 
+Vi tar hjälp av validatorer för att kontrolelra att vi skriver HTML och CSS på rätt sätt. Vi använder PHP för att dela in webbsidorna i delar så det blir enkelt att återanvända koden.
+
+Samtidigt som vi bygger webbplatsen försöker vi bekanta oss med en del resurser som är bra för att lära sig mer om HTML, CSS och PHP.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20-40 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
@@ -69,6 +72,9 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 1. [Webbteknologier](./../forelasning/webbteknologier)
 1. [HTML](./../forelasning/html)
 1. [CSS](./../forelasning/css)
+1. [PHP introduktion](./../forelasning/php-introduktion)
+
+(minska antalet föreläsningar eller minska omfånget på varje fläsning?)
 
 
 
@@ -76,7 +82,32 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 Läs enligt följande.
 
-1. ...
+1. Bekanta dig kort och översiktligt med strukturen av referensmanualen till programmeringsspråket [PHP](https://www.php.net/). Letar du efter en specifik PHP-konstruktion så är detta rätt plats. Du hittar manualen under [PHP Manual](https://www.php.net/manual/en/).
+
+1. Kika snabbt igenom de resurser som finns om [HTML HyperText Markup Language på webbplatsen MDN](https://developer.mozilla.org/en-US/docs/Web/HTML).
+
+1. Kika snabbt igenom de resurser som finns om [CSS Cascading Style Sheets på webbplatsen MDN](https://developer.mozilla.org/en-US/docs/Web/CSS).
+
+Ovan webbsidor är bra referens att använda. Försök gärna landa på någon av dessa webbpaltser när du googlar efter information.
+
+Vill du ha lite enklare material att komma igång med så finns det ett par enklare tutorials på W3Schools.
+
+* [HTML Tutorial](https://www.w3schools.com/html/)
+* [CSS Tutorial](https://www.w3schools.com/css/)
+* [PHP Tutorial](https://www.w3schools.com/php/)
+
+
+
+### Video för orientering {#video}
+
+Titta på följande videor/filmer. Filmerna är tänkta att ge dig en allmän orientering i det område som behandlas i kursmomentet.
+
+* [Vad är webben? (med Emil)](https://www.youtube.com/watch?v=rILqpl0P-Fs) (15 min)
+* [A brief history of the World Wide Web](https://www.youtube.com/watch?v=sSqZ_hJu9zA) (3 min)
+* [Evolution of Web Design 1990-2019](https://www.youtube.com/watch?v=XYTwYmOjqQs) (8 min)
+* [Bad Web Design: A Look At The Most Hilariously Terrible Websites From Around The Web](https://www.youtube.com/watch?v=6befMTTTTRQ) (11 min)
+
+Videorna ovan finner du även i spellistan "[Om webbutveckling (HTML, CSS, PHP, SQL)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-Qp6DTS_2s6q-Br66ufoWc)".
 
 
 
@@ -95,10 +126,7 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-
-<!--
-* I lektionen "[Skapa en One-page-website](./../forelasning/onepage)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
--->
+1. Jobba igenom övningen "[Skapa en webbsida med HTML, CSS och PHP (v2)](kunskap/skapa-en-webbsida-med-html-css-och-php-v2)" som hjälper dig bygga en webbplats med HTML, CSS och PHP. Spara koden du skriver under `me/kmom01`.
 
 
 
@@ -106,13 +134,16 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. Gör uppgiften "[Skapa en rapportsida till webtec-kursen](uppgift/skapa-en-rapport-sida-till-webtec-kursen)".
+1. Gör uppgiften "[Skapa en rapportsida till webtec-kursen (v2)](uppgift/skapa-en-rapport-sida-till-webtec-kursen-v2)" och spara alla filer under `me/report`.
 
-2. Gör uppgiften "[Skapa en One-page-website](uppgift/skapa-en-one-page-website)".
+
 
 <!--
-Extrauppgift responsiv?
+### Överkurs och extra uppgifter {#extra}
+
+Följande uppgifter skall utföras och resultatet skall redovisas.
 -->
+
 
 
 
@@ -127,11 +158,11 @@ Glöm inte att testa din inlämning med `dbwebb test kmom01`.
 
 Se till att följande frågor besvaras i din redovisningstext.
 
-* Vilken utvecklingsmiljö använder du?
+* Vilken utvecklingsmiljö använder du (operativsystem, texteditor, terminal, mm)?
 * Gick det bra att installera labbmiljön eller var det något som krånglade?
 * Är du bekant med terminalen och Unix-kommandon sedan tidigare?
-* Är du bekant med HTML, CSS och PHP sedan tidigare eller har du kanske jobbat med liknande tekniker?
-* Gick det bra att komma i gång med kursmomentet rent allmänt?
+* Är du bekant med HTML, CSS och PHP sedan tidigare eller har du jobbat med liknande tekniker?
+* Gick det bra att komma i gång med kursmomentet rent allmänt eller var det något som var lurigt, svårt eller utmanande?
 * Vilken är din TIL för detta kmom?
 
 TIL är en akronym för "Today I Learned" vilket leksamt anspelar på att det finns alltid nya saker att lära sig, varje dag. Man brukar lyfta upp saker man lärt sig och där man kanske hajade till lite extra över dess nyttighet eller enkelhet, eller så var det bara en ny lärdom för dagen som man vill notera.

@@ -79,7 +79,7 @@ cd me/report
 ls -al
 ```
 
-Då skapar jag ett par kataloger för att ge en grundstruktur till webbplatsen. Tanken är att katalogen `public/` innehåller allt som behöver vara publikt och tillgängligt på webbplatsen och övriga kataloger är sådant som inte behöver vara tillgängligt via webbservern. Det är en bra start.
+Nus skapar jag ett par kataloger för att ge en grundstruktur till webbplatsen. Tanken är att katalogen `public/` innehåller allt som behöver vara publikt och tillgängligt på webbplatsen och övriga kataloger är sådant som inte behöver vara tillgängligt via webbservern. Det är en bra start.
 
 ```text
 # Skapa kataloger för den publika delen
@@ -149,7 +149,7 @@ När vi är klara så ser strukturen ut så här. Du kan själv kolla din egen s
 5 directories, 13 files     
 ```
 
-Vi har nu en grundstruktur i vår webbplats. Du kan nu prova att öppna filerna via din webbläsare och din lokala webbserver. De flesta filerna är ännu tomma, men du bör kunna se bilderna om du klickar på dem.
+Vi har nu en grundstruktur i vår webbplats. Du kan prova att öppna filerna via din webbläsare och din lokala webbserver. De flesta filerna är ännu tomma, men du bör kunna se bilderna om du klickar på dem.
 
 Starta din texteditor och öppna katalogen så den syns. Jag använder Visual Studio Code som jag kan starta direkt från terminalen och punkten säger att editorn skall visa innehållet i den katalog där jag befinner mig.
 
@@ -200,14 +200,14 @@ Titta nu på koden ovan och skriv om den i din fil `public/me.php`. Öppna den s
 
 [FIGURE src=image/webtec/html-css-php/webbsida1.png?w=w3 caption="Första ansatsen till en webbsida."]
 
-Webbsidan är enbart HTML-kod, det finns ännu inga inslag av PHP i koden.
+Webbsidan är enbart HTML-kod, det finns ännu inget inslag av PHP i koden.
 
 
 
 Källkoden för en webbsida {#kallkod}
 --------------------------------------
 
-När webbläsaren hämtar webbsidan från webbservern så levereras den som källkod, den kod som skall användas av webbläsaren för att rendera och visa själva webbsidan..
+När webbläsaren hämtar webbsidan från webbservern så levereras den som källkod, den kod som skall användas av webbläsaren för att rendera och visa själva webbsidan.
 
 Vi kan hitta källkoden till webbsidan genom att högerklicka på musen i webbläsarens fönster och välja menyvalet "View Page Source", eller "Visa källkod".
 
@@ -225,11 +225,11 @@ När vi senare börjar använda PHP så kommer källkoden att skilja sig åt, de
 Developer tools och inspect {#inspect}
 --------------------------------------
 
-När webbläsaren hämtar webbsidan från webbservern så kommer den som källkod. Därefter tar webbläsaren och parsar (läser igenom) källkoden och renderar webbsidan för att slutligen visa upp den.
+När webbläsaren hämtar webbsidan från webbservern så kommer den som källkod. Därefter tar webbläsaren och "parsar" (läser igenom) källkoden och renderar webbsidan för att slutligen visa upp den.
 
 Vid renderingen kan källkoden till sidan ibland modifieras av webbläsaren. Detta händer till exempel om källkoden inte stämmer överens med givna riktlinjer och standarder. Vi kan säga att webbläsaren "patchar" (försöker laga) källkoden så att den fungerar.
 
-Den patchade varianten av källkod kan man se via "devtools" eller "inspect". Om du tar musen över webbsidan och högerklickar så brukar menyvalet ligga längst ned och heter "Inspect". Du kan också öppnaverktyget via funktionstangenten F12.
+Den patchade varianten av källkod kan man se via "devtools" eller "inspect". Om du tar musen över webbsidan och högerklickar så brukar menyvalet ligga längst ned och heter "Inspect". Du kan också öppna verktyget via funktionstangenten F12.
 
 [FIGURE src=image/webtec/html-css-php/webbsida1_inspect.png?w=w3 caption="Källkoden för sidan finns alltid tillgänglig."]
 
@@ -365,7 +365,7 @@ Sedan kopierar vi in den nedre delen till filen `view/footer.php`. Det handlar o
 
 Nu skall vi knyta samma dessa två delar i en ny webbsida i `about.php`. Vi gör detta genom att använda PHP konstruktionen `include()` som inkluderar en fil. Här inkluderar vi också konfigfilen vi nyss skapade, den som skall visa om vi får fel i vår kod.
 
-Kom ihåg att alltid inkludera konfigfilen först, annars kan det hända att du inte ser felmeddelanden för den kos som körs.
+Kom ihåg att alltid inkludera konfigfilen först, annars kan det hända att du inte ser felmeddelanden för den kod som körs.
 
 ```html
 <?php include('../config/config.php') ?>
@@ -453,7 +453,7 @@ Organisationen W3C arbetar med standardiseringar av webbteknologier, bland annat
 Sidans titel med variabel {#title}
 --------------------------------------
 
-En sak du kanske märkt nu är att alla sidor har samma titel eftersom `<title></title>` har samma värde i `view/header.php` oavsett vilken sida vi visar.
+En sak som du kanske märkt är att alla sidor har samma titel eftersom `<title></title>` har samma värde i `view/header.php` oavsett vilken sida vi visar.
 
 Låt oss lösa det genom att skapa en variabel `$title` i varje sidkontroller och sedan skriver vi ut den variabeln i `view/header.php`. Vi kan ta sidan `about.php` som exempel. Koden vi vill lägga till, innan vi inkluderar headern, är följande.
 
@@ -467,7 +467,7 @@ $title = 'Om kurs och webbplatsen';
 <?php include('../view/header.php') ?>
 ```
 
-Eftersom vi nu har tre PHP-konstruktioner i följd så kan vi skriva om koden så att vi enbart har ett PHP-stycke. Det ser bättre ut.
+Eftersom vi nu har tre PHP-konstruktioner i följd så kan vi skriva om koden så att vi enbart har ett PHP-stycke med en öppnande tag och en stängande tag. Det ser bättre ut.
 
 ```html
 <?php
@@ -479,9 +479,9 @@ include('../view/header.php');
 ?>
 ```
 
-Glöm inte ett semikolon efter varje rad/konstruktion.
+Glöm inte ett semikolon efter varje rad/konstruktion, annars får du fel.
 
-Glöm heller inte att konfigfilen måste inkluderas först av allt.
+Glöm heller inte att konfigfilen måste inkluderas först av allt så att alla felmeddelanden verkligen visas.
 
 När jag har uppdaterat min sidkontroller enligt ovan så har jag nu en variabel `$title` som kan skrivas ut i filen `view/header.php`, det kan se ut så här i inledningen av den filen.
 
@@ -508,14 +508,14 @@ En favicon till webbplatsen {#favicon}
 
 En webbplats kan ha en *favicon*, en liten bild som visas tillsammans med webbplatsen uppe i webbläsarens flik.
 
-Det är något vi kan lägga till i sidas `<head>`-del med följande konstruktion.
+Det är något vi kan lägga till i sidans `<head>`-del med följande konstruktion.
 
 ```html
     <link rel="shortcut icon" href="img/favicon.png"/>
 </head>
 ```
 
-Du gör alltså ändringen i filen `view/header.php` och det påverkar alla dina sidor/sidkontrollers.
+Du gör ändringen i filen `view/header.php` och det påverkar alla dina sidor/sidkontrollers.
 
 Sedan laddar du om och kan se ikonen, *faviconen*, i webbläsarens flik.
 
@@ -566,7 +566,7 @@ Prova så att alla interna länkar fungerar. Om sidan inte är så lång så bli
 En PHP-sida med PHP-kod {#php}
 --------------------------------------
 
-Låt oss då lägga till lite PHP-kod som exekveras och skriver ut dagens datum. Det får bli en liten övning i hur vi kan jobba mer med PHP-koden.
+Låt oss nu lägga till lite PHP-kod som exekveras och skriver ut dagens datum. Det får bli en liten övning i hur vi kan jobba mer med PHP-koden.
 
 PHP-koden nedan löser detta via den [inbyggda PHP-funktionen `date()`](https://www.php.net/manual/en/function.date.php).
 
@@ -683,7 +683,7 @@ Färgerna lånade jag från PHPs webbplats.
 Developer tools flik Elements {#elements}
 --------------------------------------
 
-om du nu öppnar upp developer tools och väljer fliken "Elements" så kan du se HTML-koden för den renderade sidan. Du kan också klicka på olika delar av HTML-koden och se vilken CSS-kod som ligger bakom. Du kan även uppdatera CSS-konstruktionerna för att testa dig fram med olika konstruktioner och du kan lägga till eller avaktivera andra konstruktioner. Detta är ett bra sätt att utveckla och debugga sin webbsida, man kan se hur CSS-konstruktioner påverka elementet och sin omgivning. När du laddar om sidan så försvinner dina temporära ändringar.
+Om du nu öppnar upp developer tools och väljer fliken "Elements" så kan du se HTML-koden för den renderade sidan. Du kan också klicka på olika delar av HTML-koden och se vilken CSS-kod som ligger bakom. Du kan även uppdatera CSS-konstruktionerna för att testa dig fram med olika konstruktioner och du kan lägga till eller avaktivera andra konstruktioner. Detta är ett bra sätt att utveckla och debugga sin webbsida, man kan se hur CSS-konstruktioner påverka elementet och sin omgivning. När du laddar om sidan så försvinner dina temporära ändringar.
 
 Här använder jag devtools för att prova en alternativ färg på typsnittet.
 
@@ -896,6 +896,8 @@ Det finns flera olika typer av stödverktyg som kan vara bra att ha när man utv
 * [Mät sidans prestanda](https://web.dev/measure/), mät och analysera webbsidans tekniska kvalitet, prestanda och tillgänglighet.
 * [CanIUse](https://caniuse.com/), en webbplats som visar vilke HTML & CSS konstruktioner som stöds av olika versioner av webbläsare.
 * [CodePen](https://codepen.io/), ett utvecklingsverktyg där du kan skriva HTML och CSS för att testa konstruktioner som du även kan dela med din kompis. Det finns även ett stort utbud av konstruktioner som du kan låna eller hämta inspiration ifrån.
+
+Placera länkarna i din footer så tappar du inte bort dem.
 
 
 

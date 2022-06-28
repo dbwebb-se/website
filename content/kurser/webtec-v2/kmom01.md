@@ -19,9 +19,9 @@ Kmom01: Bygg en webbplats
 
 [/WARNING]
 
-Vi inleder kursen med att bygga en webbpalts som baseras på HTMl, CSS och PHP. Vi försöker kommer underfunde med en god struktur och uppdelning av filer och kataloger och de grundeläggande begrepp som används när man bygger en webbplats.
+Vi inleder kursen med att bygga en webbplats som baseras på HTML, CSS och PHP. Vi försöker kommer skapa en god struktur och uppdelning av filer och kataloger samt komma igång med de grundeläggande begrepp som används när man bygger en webbplats.
 
-Vi tar hjälp av validatorer för att kontrolelra att vi skriver HTML och CSS på rätt sätt. Vi använder PHP för att dela in webbsidorna i delar så det blir enkelt att återanvända koden.
+Vi tar hjälp av validatorer för att kontrollera att vi skriver HTML och CSS på korrekt sätt. Vi använder PHP för att dela in webbsidorna i delar så det blir enklare att återanvända koden.
 
 Samtidigt som vi bygger webbplatsen försöker vi bekanta oss med en del resurser som är bra för att lära sig mer om HTML, CSS och PHP.
 

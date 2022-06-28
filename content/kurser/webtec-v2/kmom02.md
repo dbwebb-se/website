@@ -10,7 +10,7 @@ author:
 revision:
     "2022-06-28": "(A, mos) Första utgåvan."
 ...
-Kmom02: Bygg ut din webbplats
+Kmom02: Styla din webbplats
 ==================================
 
 [WARNING]
@@ -19,7 +19,8 @@ Kmom02: Bygg ut din webbplats
 
 [/WARNING]
 
-Bygg fler sidor till webbplatsen och kom igång med enklare konstruktioner i PHP.
+Fokusera på stilen men lägg till mer HTML och PHP.
+
 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>

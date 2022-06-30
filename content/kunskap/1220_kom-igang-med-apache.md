@@ -55,7 +55,7 @@ ServerName 127.0.0.1
 
 Ipadressen pekar på `localhost`.
 
-När du kör `$ apachectl status` kan du felet:
+När du kör `$ apachectl status` kan du stöta på felet:
 
 ```console
 /usr/sbin/apachectl: 113: www-browser: not found

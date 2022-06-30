@@ -70,6 +70,19 @@ Byt typsnitt.
 
 Styla byline med text bild och ram. Byline skall även finnas på report.php Placera i `view/byline.php`
 
+Styla till "Its friday!" Kanske med en if-sats?
+
+Sidan report skall stylas som artikel och med byline. Delen med innehållsförteckningen skall stylas som två kolumner där toc är vänstra kolumnen (och skall stylas som flytande eller med en kolumn).
+
+Sidan about.php skall ha en två kolumners layout, aside med kolumn till höger.
+
+
+Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
+
+Flytta hela kalendergreejen till nästa kmom eller lägg in table här? Kanske hitta en bild på en månadskalender och be att göra exakt samma?
+
+Samma/liknande sidlayout för alla sidor.
+
 -->
 
 Utför följande krav.

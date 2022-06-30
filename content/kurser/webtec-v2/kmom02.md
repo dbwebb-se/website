@@ -132,8 +132,8 @@ En onepage website?
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-* Markdown?
-* Markera valt värde i navbaren
+* Markdown (> kmom03)?
+* Markera valt värde i navbaren (if-sats och SERVER)
 
 <!--
 Extrauppgift responsiv?

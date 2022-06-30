@@ -91,6 +91,13 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 <!--
 * Programmera något med PHP, som en övningssida i report?
 
+table
+
+
+ Låt artikeln innehålla ett par övningar där man också kan se ett facit.
+
+Olika varianter på kalender
+
 * Övning om olika formulärelement.
 
 * I lektionen "[Programmera med PHP](./../forelasning/programmera-med-php)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
@@ -107,7 +114,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 <!--
 Byt uppgift, kalender ish? med GET
 
-Formulär, till kalender?
+Formulär, till kalender, GET?
 -->
 
 

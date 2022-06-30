@@ -66,7 +66,7 @@ Du hittar spellistan för videoserien under "[Skapa en webbsida med HTML, CSS oc
 
 
 
-Små avgränsade exempelprogram {#exempel}
+Små och väl avgränsade exempelprogram {#exempel}
 ---------------------------------
 
 Här är ett exempel på ett väl avgränsat exempelprogram som visar en grundkonstruktion med HTML elementen `<div>` och `<span>` tillsammans med ett par CSS-konstruktioner och där HTML binds till CSS via klassattributet.
@@ -103,6 +103,8 @@ Du kan också se samma exempel i ditt kursrepo under `example/css/hello-world`.
 
 [FIGURE src=image/webtec/style-it/hello.png?w=w3 caption="Ett väl avgränsat kodeexempel via egen kod."]
 
+Ta för vana att alltid skapa små och väl avgränsade testprogram när du lär dig nya saker. Du kan spara en hel del tid på det.
+
 
 
 Ostylad webbplats {#ostylad}
@@ -110,9 +112,9 @@ Ostylad webbplats {#ostylad}
 
 Vi har alltså en struktur att utgå ifrån där HTML-koden finns på plats.
 
-[FIGURE src=image/webtec/style-it/code.png?w=w3 caption="En ostylad webbplats."]
+[FIGURE src=image/webtec/style-it/start.png?w=w3 caption="En ostylad webbplats att utgå ifrån."]
 
-För att lyckas att styla hela webbpaltsen så kommer vi behöva en hel del CSS-kod men vi kommer också behöva lära oss lite mer om HTML och även justera innehållet i HTML-koden så att det blir enklare att styla som vi vill. Vi kan se det som att vi balanserar "rätt" HTML-konstruktioner och matchar dem mot "rätt" CSS-konstruktioner så att vi gör "rätt sak på rätt plats". Exakt vad som är rätt och riktigt är dock aningen flytande. Det finns olika sätt att lösa en viss konstruktion. Vi försöker hålla oss i att göra det enkelt och koden läsbar, det burkar leda till bra kod som är enkel att underhålla och vidarutveckla.
+För att lyckas att styla hela webbplatsen så kommer vi behöva en hel del CSS-kod och vi kommer också behöva lära oss lite mer om HTML och även justera innehållet i HTML-koden så att det blir enklare att styla som vi vill. Vi kan se det som att vi balanserar "rätt" HTML-konstruktioner och matchar dem mot "rätt" CSS-konstruktioner så att vi gör "rätt sak på rätt plats". Exakt vad som är rätt och riktigt är dock aningen flytande. Det finns olika sätt att lösa en viss konstruktion. Vi försöker hålla oss i att göra det enkelt och koden läsbar, det burkar leda till bra kod som är enkel att underhålla och vidarutveckla.
 
 Då börjar vi.
 
@@ -166,11 +168,9 @@ Därefter inkluderar jag filen ovan i min stylesheet `public/css/style.css`.
 
 Att dela upp filerna i delar kan underlätta för att återanvända, felsöka och utveckla koden. Du slipper få all kod i en och samma fil.
 
-Om du vill använda den riktiga `normalize.css` så kan du läsa om den i artikeln "[About normalize.css](https://nicolasgallagher.com/about-normalize-css/)". [Källkoden till `normalize.css`](https://github.com/necolas/normalize.css/blob/master/normalize.css) innehåller kommentarer som visar vad varje konstruktion gör.
+Om du vill använda den riktiga `normalize.css` så kan du läsa om den i artikeln "[About normalize.css](https://nicolasgallagher.com/about-normalize-css/)". [Källkoden till `normalize.css`](https://github.com/necolas/normalize.css/blob/master/normalize.css) innehåller kommentarer som visar vad varje konstruktion gör. Men se det som ren överkurs.
 
-Här kan du, vid intresse, fördjupa dig idiskussionen om "[What is the difference between Normalize.css and Reset CSS?](https://stackoverflow.com/questions/6887336/what-is-the-difference-between-normalize-css-and-reset-css)".
-
-
+Här kan du, vid intresse och mer överkurs, fördjupa dig diskussionen om "[What is the difference between Normalize.css and Reset CSS?](https://stackoverflow.com/questions/6887336/what-is-the-difference-between-normalize-css-and-reset-css)".
 
 
 
@@ -179,7 +179,7 @@ Styla en navbar {#navbar}
 
 Jag börjar med att jobba mig igenom den översta HTML koden och först hittar jag en navbar.
 
-Eftersom jag i princip alltid vill ha klasser att jobba emot så uppdaterar jag HTML-koden och lägger in en klass som jag kan styla.
+Eftersom jag i princip alltid vill ha klasser att jobba emot så uppdaterar jag HTML-koden och lägger in en klass `class="navbar"` som jag kan styla.
 
 HTML-koden ser nu ut så här.
 
@@ -460,7 +460,7 @@ Stylen placerar jag i `public/css/footer.css`. Jag börjar med att skapa färg o
 }
 ```
 
-När du senare skall styla flexbox på egen hand så hjälper det att till exempel ha kikat igenom artikeln "[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)", det är en bra referens för att lära sig flexbox.
+När du senare skall styla flexbox på egen hand så hjälper det att till exempel läsa igenom artikeln "[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)", det är en bra referens för att lära sig flexbox. Men för tillfället är det överkurs att läsa igenom artikeln.
 
 [FIGURE src=image/webtec/style-it/footer.png?w=w3 caption="Footern är klar, precis enligt planen."]
 
@@ -483,7 +483,7 @@ Om du har svårt att visualisera delarna och vad som är vad så kan det underl�
 }
 ```
 
-[FIGURE src=image/webtec/style-it/footer_plan.png?w=w3 caption="Färglägg de olika divarna för att visualisera sidans byggstenar."]
+[FIGURE src=image/webtec/style-it/footer_debug.png?w=w3 caption="Färglägg de olika divarna för att visualisera sidans byggstenar."]
 
 Nu kan det bli enklare att se raderna och kolumnerna och vad som är vad.
 
@@ -594,6 +594,10 @@ Jag väljer att placera stilen i filen `public/css/figure.css`.
     border: 1px solid #ccc;
 }
 
+.figure img {
+    max-width: 100%;
+}
+
 .figure figcaption {
     caption-side: bottom;
     font-style: italic;
@@ -605,6 +609,7 @@ Style påverkar så att figurtexten hamnar under bilden. Så här blev det.
 
 [FIGURE src=image/webtec/style-it/figure.png?w=w3 caption="En bild som nu ingår i en figure och figcaption."]
 
+Nu vill jag kunna få texten att flyta runt bilden, låt se hur man löser det.
 
 
 
@@ -682,7 +687,7 @@ Exakt hur jag strukturerar och stylar en byline lämnar jag som en liten övning
 
 Så här blev resultatet på min byline, jag höll det rätt enkelt.
 
-[FIGURE src=image/webtec/style-it/byline.png?w=w3 caption="Nu har min artikel en snygg byline."]
+[FIGURE src=image/webtec/style-it/byline.png?w=w3 caption="Nu har min artikel en snygg byline, kan du skapa en egen liknande och kanske snyggare?"]
 
 Då har vi stylat sidans innehåll och gjort oss redo för att skriva fler artiklar.
 
@@ -699,7 +704,7 @@ Detta löses med en så kallad "clearfix" som är en påhittad CSS-konstruktion 
 
 Jag väljer att lösa det med konstruktionen `overflow: auto;`. Så här ser det ut.
 
-[FIGURE src=image/webtec/style-it/byline_clearfix.png?w=w3 caption="Med hjälp av min clearfix så räknar förälderdiven om sin storlek och omsluter hela dess innehåll."]
+[FIGURE src=image/webtec/style-it/byline_overflow.png?w=w3 caption="Med hjälp av min clearfix så räknar förälderdiven om sin storlek och omsluter hela dess innehåll."]
 
 Vid intresse, läs mer om "[What is a clearfix?](https://stackoverflow.com/questions/8554043/what-is-a-clearfix)" och "[What methods of ‘clearfix’ can I use?](https://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use?rq=1)".
 
@@ -714,16 +719,18 @@ Ett annat bekymmer som kan inträffa när man jobbar med float är hur man "stä
 
 Jag löser det genom att lägga till konstruktionen `clear: both;` på det element som inte längre skall flyta. Resultatet blir då så här.
 
-[FIGURE src=image/webtec/style-it/byline_float_issue.png?w=w3 caption="Så här ser det ut när du har behov av att stänga av flytande element."]
+[FIGURE src=image/webtec/style-it/byline_clear_both.png?w=w3 caption="Nu stängdes flytandet av från bilden och min byline hamnade på rätt plats."]
+
+De båda "fixarna" clearfix och clearfloat kan vid första anblicken se liknande ut men tittar man nogare så är det två olika type av problem.
 
 
 
-Tips om felsökning {#felsök}
+Tips om felsökning {#felsok}
 --------------------------------------
 
 CSS är ibland ett trixigt språk och det kan vara klurigt att se hur stylen på olika element påverkar varandra.
 
-[FIGURE src=image/webtec/style-it/css_is_fun.png?w=w3 caption="CSS är kul och ibland lite lurigt och utmanande."]
+[FIGURE src=image/webtec/style-it/css_is_fun.jpg?w=200 class="center" caption="CSS är kul och ibland lite skrämmande, lurigt och utmanande."]
 
 När du felsöker, tänk på följande.
 
@@ -733,38 +740,253 @@ När du felsöker, tänk på följande.
 * Använd devtools för att sätta på och stänga av olika CSS-konstruktioner och se hur de påverkar varandra.
 * Tänk på att element påverkar varandra. Är du osäker så provar du dina konstruktioner i ett isolerat testprogram, innan du försöker lägga in det i ett större sammanhang.
 
+Glöm inte att "prata med ankan". Det handlar om att formulera en enkel fråga på ditt problem. Formulera minsta möjliga fråga som kan ta dig ett steg framåt. Om du gör det så kommer du att bli förvånad hur många gånger du själv faktiskt kan besvara din fråga.
+
+Du behöver alltså översätta din reaktion av "HJÄLP!" eller "det funkar inte", till en fråga som din kompis eller lärare kan besvara. Deras första motfrågor blir annars vanligen följande.
+
+1. Vad försöker du göra?
+1. Vad blir resultatet?
+1. Kan du återupprepa det?
+1. Vad har du gjort för att avgränsa problemet till en teknik, fil, kodsektion, kodrad?
+1. Har du validerat?
+1. Har du publicerat och länkat till sidan med problemet och förklarat hur man återskapar problemet?
+
+
+
+Fixa till sidan about {#about}
+--------------------------------------
+
+Sidan `about.php` har nu ett par saker som jag vill lösa. Låt oss titta på sidan så skall jag förklara.
+
+[FIGURE src=image/webtec/style-it/about_start.png?w=w3 caption="Här finns ett par saker som jag vill fixa till."]
+
+Jag förklarar och fixar till sakerna samtidigt.
+
+När jag ändå håller på så tar jag även och lägger in samma sidstruktur i `about.php` med en artikel, på det viset jag har i `me.php`. Det udnerlättar om alla sidkontrollers har en liknande layout så jag vet att den stil jag skriver kan påverka dem alla.
+
+
+
+### (1) Alltid visa scrollbar {#scroll}
+
+När sidans innehåll inte täcker hela webbläsarens höjd så visas inte skrollbaren vilket gör att de olika sidorna me och report kontra about får olika bredd. Det kan ge upphov till ett "hoppande" utseende när man växlar mellan sidorna.
+
+En lösning på detta är att alltid visa scrollbaren, oavsett om den behövs eller inte. Här är konstruktionen som löser det.
+
+```css
+body {
+    overflow-y: scroll;    /* Always display scrollbar, avoid hopping pages */
+}
+```
+
+Du kan till exempel lägga konstruktionen i din `public/css/init.css`.
+
+
+
+### (2) Footer samma färg till webbläsarens slut {#footerfarg}
+
+I mitt fall när sidan inte sträcker sig hela vägen ner så blir det inte samma färg som footern på den nedersta delen. Det är för att html-dokumentet tar slut, eller mer korrekt så är det dess body som tar slut och html-dokumentet sträcker sig hela vägen ned till slutet.
+
+En variant är då att färglägga html-elementet med en bakgrundsfärg som är samma som footern. Det kan se ut så här när jag uppdaterar den style jag har för min footer i `public/css/footer.php`.
+
+```css
+/*
+ * Set colors and size.
+ */
+.footer {
+    background: linear-gradient(to bottom, #666, #000);
+    color: #FFF;
+    padding: 0 1em;
+}
+
+html {
+    background-color: #000;
+}
+```
+
+Det är alltså delen med `html { }` som är tillagd.
+
+
+
+### (3) Minsta höjd på sidan {#minheight}
+
+I nuläget har about-sidan inte så mycket innehåll och den tar inte så mycket plats. Eventuellt vill man dock ändå att webbsidan skall sträcka sig en större del av webbläsarens höjd för att det "ser bättre ut" som helhet.
+
+En variant är att lösa detta med en minsta höjd på main-elementet så att även de sidor med minst innehåll har en minsta gemensamma höjd.
+
+Här är en sådan konstruktion som jag väljer att placera i `public/css/main.css`. Här kan du själv välja hur hög sidan skall vara.
+
+```css
+.main,
+.main .article {
+    min-height: 20em;
+}
+```
+
+
+
+### About fixad {#aboutfix}
+
+Då var vi klara med att förbereda sidan `about.php` för att inehålla lite mer saker.
+
+[FIGURE src=image/webtec/style-it/about_fixed.png?w=w3 caption="Nu har jag fixat så att även sidor med litet innehåll ser helt okey ut."]
+
+Nu har about-sidan samma innehållsmäsiga struktur som me-sidan.
+
 
 
 Två kolumner {#kolumn2}
 --------------------------------------
 
+Jag vill nu göra så att about-sidan har två kolumner. En kolumn för det huvudskliga innehållet (`<main>`) och en kolumn för annat relaterat innehåll (`<aside>`). Det spelar inte så mycket roll om kolumnerna justeras vänster höger eller tvärtom. Det går att justera. Jag börjar med att justera min aside till vänster och jag utgår från följande struktur i min `public/about.php`.
 
-Flera bilder? {#kolumn2}
---------------------------------------
+```html
+<div class="two-col-layout">
+    <main class="main">
+        <article class="article">
+            INNEHÅLL I MAIN, VIA EN ARTICLE
+        </article>
+    </main>
+
+    <aside class="aside">
+        INNEHÅLL I ASIDE
+    </aside>
+</div>
+```
+
+När man bygger en kolumn layout finns ett antal olika tekniker att välja bland. Jag väljer flexbox och samma upplägg som vi såg tidigare i footern.
+
+Min huvudsakliga class är `two-col-layout` och där har jag en "kontainer-div" som omsluter de två kolumnerna. Du kan jämföra med strukturen i footern där vi valde att kalla det "rader" och "kolumner". Principen är densamma här, bara andra namn och ett annat sammanhang.
+
+Det jag behöver styla är kontainern till flex och de två kolumnernas bredd. Jag har också en max bredd och centrerar kotnainern i mitten av sidan. Jag väljer att placera koden i `public/css/two_column_layout.css`.
+
+```css
+/** two_column_layout.css */
+
+.two-col-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:900px;
+    margin: 0 auto;
+}
+
+.two-col-layout > .main {
+    width: calc(100% / 16 * 12); /* 12/16 width */
+}
+
+.two-col-layout > .aside {
+    width: calc(100% / 16 * 4); /* 4/16 width */
+}
+```
+
+Jag väljer att tänka att hela bredden är 16 delar och asiden blir 4 delar och main blir 12 delar. Ibland underlättar det att tänka i den formen av "grid-baserad" utforming av sidan.
+
+Jag behöver också styla till själva asiden. Den stlen liknar rätt mycket den jag har i `main.css` så jag lånar så att det passar ihop med den stil som `.main` har.
+
+```css
+.aside {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 24px;
+}
+
+.aside h4 {
+    border-bottom: 1px solid #ccc;
+}
+```
+
+Troligen behöver jag justera stylen beroende av om jag har asiden till vänster eller höger om main. Men det är ju små saker.
+
+[FIGURE src=image/webtec/style-it/about_2col.png?w=w3 caption="Nu är min about-sida uppdaterad med en två kolumners layout."]
+
+Då börjar vi nära oss slutet.
+
 
 
 Responsivitet {#responsive}
 --------------------------------------
+
+Som en sista aktivitet skall vi titta på sidans responsivitet. Att bygga sin webbplats så att den fungerar på olika enheter och skärmbredder kan vara en liten utmaning. Men det finns små enkla sätt att komma igång. Principen handlar om att webbplatsen skall vara användbar på både en vanlig datorskärm typ 1920x1080, en extra bred skärm, en bärbar, en läsplatta och en mobil och dessutom skall det fungera både i porträtt och landskapsläge för de enheter som stödjer det.
+
+Om du publicerar din webbsida till studentservern så kan du försöka nå den med din mobil och en läsplatta, om du har tillgång till det. Ett annat sätt är att använda inspect och devtools med dess inbyggda mobila utvecklingsverktyg där man kan simulera hur webbläsaren visar upp webbplatsen när skärmen är mindre.
+
+[FIGURE src=image/webtec/style-it/responsive.png?w=w3 caption="Hmmm, vilka delar skall vi nu satsa på att göra responsiva?"]
+
+Om du minskar bredden på webbläsaren så kan du ana att två kolumners layouten och footern med tre delar kanske kunde hanterats annorlunda. Ett vanligt sätt att göra en sådan kolumnlayout till mer responsiv är att "stacka" kolumnerna ovanpå varandra. När de inte får tillräckligt med plats bredvis varandra så placerar man dem istället ovanpå varandra.
+
+Låt oss se om vi kan hitta ett enkelt sätt att göra detta via media queries. Det blir en första enklare ansats till en responsiv webbplats.
+
+Tanken är att vi skall klara oss utan att ändra i HTML-strukturen, eller ja, en viss uppdatering skall vi börja med i `<head>` elementet. Fixa till så att din `<head>` inkluderar följande HTML konstruktioner som förbereder sidan rent allmänt för ett responsivt beteende.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Jag skapar filen `public/css/responsive.css` och inleder arbetet.
+
+Det första jag gör är att försäkra mig om att alla bilder har en maxbredd, det gör att bilderna kan skala och bli mindre när dess förälderelement får mindre utrymme.
+
+```css
+/** responsive.css */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+```
+
+Därefter gör jag mins första "media query" som säger att när webbläsarens bredd blir smalare än ett visst antal pixlar så skall ett antal CSS-konstruktioner gälla. Jag ser till att dessa konstruktioner hamnar längst ned av alla CSS-konstruktioner så att de får högst specificitet.
+
+Jag startar med min två kolumners layout.
+
+```css
+@media (max-width: 700px) {
+    .two-col-layout {
+        flex-wrap: wrap;
+    }
+
+    .two-col-layout > .main,
+    .two-col-layout > .aside {
+        width: calc(var(--box-max-width));
+        margin-right: 0;
+    }
+}
+```
+
+Regeln ovan säger att de två kolumnerna skall stackas ovanpå varandra när sidans bredd är mindre än 700 pixlar. Det kan se ut så här precis vid brytpunkten om man inspekterar det i devtools.
+
+[FIGURE src=image/webtec/style-it/responsive_701.png?w=w3 caption="Ännu har inte brytpunkten inträffat, layouten är densamma som tidigare."]
+
+Så här blir det när brytpunkten passerats.
+
+[FIGURE src=image/webtec/style-it/responsive_699.png?w=w3 caption="Nu har brytpunktens CSS-regler gått in och med hjälp av flex-konstruktioner så har innehållet stackats."]
+
+Vi kan göra enligt samma princip för footern. Jag lägger till en ny regel som bryter när sidan är 650 pixlar eller mindre.
+
+```css
+@media (max-width: 650px) {
+    .footer .row {
+        flex-wrap: wrap;
+    }
+
+    .footer .row > .col3 {
+        width: 100%;
+    }
+}
+```
+
+Här kan vi se när regeln slår in på en sidobredd av 649 pixlar.
+
+[FIGURE src=image/webtec/style-it/responsive_699.png?w=w3 caption="Nu har brytpunktens CSS-regler gått in och med hjälp av flex-konstruktioner så har innehållet stackats."]
+
+Detta är grundprincipen i en responsiv webbplats, man justerar hur innehållet presenteras vid olika bredder av sidan.
 
 
 
 Avslutningsvis {#avslutning}
 --------------------------------------
 
-Nu har du kommit igång och du har grunden till en webbplats som bygger på HTML, CSS och PHP. Som du kanske märker så kan det vara klurigt att se hur dessa tekniker samverkar med varandra. Men kortfattat har vi alltså följande.
 
-* HTML för att strukturera innehållet i sidan.
-* CSS för att ge de olika elementen i sidan utseende och style.
-* PHP körs på serversidan och renderar HTML och innehåll i sidan.
-
-När det gäller felsökning så är det bra att ha följande i minnet.
-
-* Webbläsaren tar en url och försöker hämta den, normalt via en webbserver.
-* Webbservern tar resurser, eventuellt exekveras PHP-koden, och svaret skickas tillbaka till webbläsaren.
-* Webbläsaren får källkoden till sidan (högerklicka och visa källkod).
-* Webbläsaren hämtar hem alla övriga resurser som sidan refererar till, i vårt fall är det bilder och stylesheet (se devtools networks-fliken).
-* Webbläsaren parsar sidan (se den parsade HTML och CSS strukturen i devtools elements-fliken).
-
-Försök vara strukturerad när du felsöker och ha alltid ovan flöde i minnet. Det är bra om du själv kan avgränsa och se vad i flödet som felet eventuellt inträffar.
-
-Lycka till i din framtida karriär som (webb) programmerare.
+Lycka till i din framtida karriär som CSS guru.

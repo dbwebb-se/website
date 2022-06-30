@@ -3,9 +3,11 @@ author: mos
 category:
     - kurs webtec
 revision:
-    "2022-06-28": "(A, mos) Första utgåvan."
+    "2022-06-28": "(C, mos) Uppdaterad inför ht22."
+    "2021-09-10": "(B, mos) Byt rsync till cp -ri."
+    "2021-06-15": "(A, mos) Första utgåvan."
 ...
-Skapa en rapportsida till webtec-kursen (v2)
+Styla din rapportsida till webtec-kursen
 ===================================
 
 Du skall skapa mallen till din rapport-sida som följer dig genom kursen. I rapportsidan skriver du redovisningstexter för de uppgifter och kursmoment som du utför och du sparar undan alla uppgiftern som du utför.
@@ -60,61 +62,14 @@ Kommandot `cp` tar en kopia av alla filerna i katalogen `example/report` och spa
 
 
 
-### Validera och publicera {#validate}
-
-Koden som du skriver skall laddas upp på studentservern med kommandot `dbwebb`. Det gör du på följande sätt.
-
-```text
-# Gå till roten av kursrepot
-dbwebb validate report
-dbwebb publish report
-```
-
-Kommandot `dbwebb validate` kör igenom ett antal valideringsverktyg som kontrollerar hur din kod ser ut. Om valideringsverktygen anser att du skriver felaktig kod så får du varningar som du behöver rätta till.
-
-Om du inte förstår varningarna så försöker du hitta svar till dem. Eller så frågar du. Denna typen av verktyg som gör statisk kodvalidering är viktiga verktyg för en professionell utvecklare.
-
-Kommandot `dbwebb publish` gör samma sak som `dbwebb validate` samt att det dessutom publicerar din webbplats på studentservern. När din webbplats publiceras så minifieras också dess innehåll. Minifiering innebär att koden komprimeras och onödiga delar som kommentarer tas bort.
-
-Kör dessa kommandon ofta, så slipper du få en lång lista med varningar, precis när du trodde du var klar.
-
-Nu kan du köra igång med själva uppgiften. Du hittar kraven nedan.
-
-
-
-### Snabb publicering {#publish}
-
-Ibland vill du göra en snabb publicering av din kod, eller så vill du publicera din kod utan att den modifieras. Detta kan till exempel vara bra när du vill felsöka PHP-kod och du vill vara säker på vilket radnummer som felet pekar på.
-
-Du kan då publicera så här.
-
-```text
-dbwebb publishpure report
-```
-
-
-
-### Testa din inlämning {#test}
-
-Förutom validate och publish så kan du även testa din inlämning med `dbwebb test kmom01`. Testerna som körs dubbelkollar om du har alla förväntade filer på rätt plats. Även om din körning av dbwebb test går igenom så är det inte en garanti för att allt är rätt, men det är ett hjälpmedel som hjälper dig att testa att du har med de mest uppenbara filerna.
-
-Du kan testa så här.
-
-```text
-dbwebb test kmom01
-```
-
-
-
 Krav {#krav}
 -----------------------
 
 <!--
-Lokala länka med # i rapportsidan.
+Byt typsnitt.
 
-Validering skall fungera.
+Styla byline med text bild och ram. Byline skall även finnas på report.php Placera i `view/byline.php`
 
-Today is som egen sida med någn extra uppgift
 -->
 
 Utför följande krav.

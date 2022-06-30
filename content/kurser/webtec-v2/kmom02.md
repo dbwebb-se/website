@@ -46,7 +46,7 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 * Om innehåll i webbplatsen?
 * [Responsiv webbdesign](./../forelasning/responsiv-webbdesign) (TA BORT)
 
-* CSS
+* CSS (flytta från kmom01?)
 
 <!--
 In med PHP, något enklare.
@@ -79,6 +79,7 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
+1. Jobba igenom övningen "[Styla din webbsida med HTML och CSS](kunskap/style-din-webbsida-med-html-och-css)" som hjälper dig bygga en webbplats med HTML, CSS och PHP. __Spara koden du skriver under `me/kmom02`.___
 
 <!--
 * Programmera något med PHP, som en övningssida i report?
@@ -106,6 +107,7 @@ sidans laddningstid, antal resurser/filer/minne som laddas
 
 Kalendern kan vara en månadskalender 1-31 vilket ger endast en loop, vecka/månadskalendern ger ju två loopar...
 
+kalender print with style
 Is it friday?
 -->
 
@@ -115,9 +117,9 @@ Is it friday?
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. Gör uppgiften "[Skapa en responsiv webbplats med HTML och CSS](uppgift/skapa-en-responsiv-webbplats-med-html-och-css)". BYT UPPGIFT
+1. Gör uppgiften "[Styla din rapportsida till webtec-kursen](uppgift/styla-din-rapport-sida-till-webtec-kursen)".
 
-2. Gör uppgiften "[Skapa en One-page-website](uppgift/skapa-en-one-page-website)".
+2. Gör uppgiften "[PHP cal](uppgift/skapa-en-one-page-website)".
 
 <!--
 Byt uppgift, kalender ish? med GET
@@ -131,6 +133,7 @@ En onepage website?
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
 * Markdown?
+* Markera valt värde i navbaren
 
 <!--
 Extrauppgift responsiv?

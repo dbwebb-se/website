@@ -27,7 +27,7 @@ Förutsättningar {#pre}
 
 Du har installerat en labbmiljö likt den som beskrivs i dokumentet om [labbmiljö för kursen webtec](kurser/webtec-v2/installera-labbmiljo). Det innefattar bland annat en webbserver med stöd för PHP.
 
-Du kan hitta koden som används i denna artikel, i ditt kursrepo under `example/me/kmom01`.
+Du kan hitta koden som används i denna artikel, i ditt kursrepo under `example/me/kmom01`, använd den som referens om du fastnar.
 
 
 

@@ -311,7 +311,7 @@ Följande CSS-kod visar hur du kan jobba med positionering och utseende av din h
 
     position: relative;
     top: -90px;
-    left: 50px;
+    left: 200px;
 }
 
 /*
@@ -326,7 +326,7 @@ Följande CSS-kod visar hur du kan jobba med positionering och utseende av din h
 
     position: relative;
     top: -70px;
-    left: 100px;
+    left: 200px;
 }
 ```
 

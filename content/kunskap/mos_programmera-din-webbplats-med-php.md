@@ -9,7 +9,7 @@ category:
 revision:
     "2022-06-28": "(A, mos) Första utgåvan inför webtec-v2."
 ...
-Bygg en månadskalender med PHP
+Programmera din webbplats med PHP
 ==================================
 
 [FIGURE src=image/webtec/html-css-php/style_php_me.png?w=c5 class="right" caption="En webbplats, en me-sida."]

@@ -52,6 +52,8 @@ In med PHP, något enklare.
 -->
 
 
+* Om innehåll i webbplatsen?
+
 
 ### Litteratur  {#litteratur}
 

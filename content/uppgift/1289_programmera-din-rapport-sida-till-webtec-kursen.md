@@ -37,12 +37,20 @@ Här är en video som "pratar" dig igenom uppgiftens upplägg och visar hur du k
 Introduktion och förberedelse {#intro}
 -----------------------
 
-Om du har jobbat igenom övningen så är du förberedd för uppgiften. Övningen ger dig i princip ett "facit" till uppgiften. Du bör dock satsa på att bygga din egen style så att du inte efterliknar övningens style. Ta ut svängarna och prova CSS-konstruktioner, färg och form. Det behöver inte nödvändigtvis vara snyggt, men gör så gott du kan.
+Om du har jobbat igenom övningen så är du förberedd för uppgiften.
 
 
 
 Krav {#krav}
 -----------------------
+
+<!--
+Styla till "Its friday!" Kanske med en if-sats?
+
+Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
+
+Flytta hela kalendergreejen till nästa kmom eller lägg in table här? Kanske hitta en bild på en månadskalender och be att göra exakt samma?
+-->
 
 Utför följande krav.
 
@@ -70,10 +78,6 @@ Utför följande krav.
 
 1. Kontrollera att dina sidkontroller passerar Unicorn validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
 
-<!--
-Mer jobb? Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
--->
-
 
 
 Publicera {#publicera}
@@ -85,4 +89,4 @@ Avsluta uppgiften så här.
 
 1. När du är klar kan du publicera resultatet med `dbwebb publish report`.
 
-1. Testa ditt resultat så att det passerar de automatiska testerna med `dbwebb test kmom02`.
+1. Testa ditt resultat så att det passerar de automatiska testerna med `dbwebb test kmom03`.

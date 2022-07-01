@@ -23,7 +23,7 @@ Förkunskaper {#forkunskaper}
 
 Du har en installerat en labbmiljö för kursen webtec.
 
-Du har jobba igenom övningen "[Skapa en webbsida med HTML, CSS och PHP (v2)](kunskap/skapa-en-webbsida-med-html-css-och-php-v2)" och du har därmed grundstrukturen klar.
+Du har jobbat igenom övningen "[Skapa en webbsida med HTML, CSS och PHP (v2)](kunskap/skapa-en-webbsida-med-html-css-och-php-v2)" och du har därmed grundstrukturen klar.
 
 
 
@@ -144,7 +144,7 @@ Publicera {#publicera}
 
 Avsluta uppgiften så här.
 
-1. Kontrollera för dig själv att du har utfört samligta krav.
+1. Kontrollera för dig själv att du har utfört samtliga krav.
 
 1. När du är klar kan du publicera resultatet med `dbwebb publish report`.
 

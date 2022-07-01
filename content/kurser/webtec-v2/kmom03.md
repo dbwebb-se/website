@@ -10,7 +10,7 @@ author:
 revision:
     "2022-06-28": "(A, mos) Första utgåvan."
 ...
-Kmom03: PHP
+Kmom03: Programmera en webbplats
 ==================================
 
 [WARNING]
@@ -54,13 +54,9 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
-* [PHP introduktion](./../forelasning/php-introduktion)
-* PHP grundläggande konstruktioner och variabler
-* [PHP sidkontroller och vyer](./../forelasning/php-sidkontroller-vyer)?
+1. [PHP introduktion](./../forelasning/php-introduktion)
 
-<!--
-In med PHP, något enklare.
--->
+* [PHP sidkontroller och vyer](./../forelasning/php-sidkontroller-vyer) för att beskriva flödet när en websida produceras med PHP och koppla till MVC?
 
 
 
@@ -87,8 +83,22 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
+1. Jobba igenom övningen "[programmera din webbsida](kunskap/styla-din-webbsida-med-html-och-css)" som hjälper dig att komma igång med CSS konstruktioner för att styla din webbplats. Spara koden du skriver under `me/report`, om du skriver extra test- och exempelprogram kan du spara dem under `me/kmom02`.
 
 <!--
+* Programmera något med PHP, som en övningssida i report?
+
+En vy med kalendern som en tabell?
+
+PHP med variabler, inbyggda funktioner, if och loop
+kalender på svenska, plocka fram detaljer om dagens datum och ett visst datum.
+sidans laddningstid, antal resurser/filer/minne som laddas
+
+Kalendern kan vara en månadskalender 1-31 vilket ger endast en loop, vecka/månadskalendern ger ju två loopar...
+
+kalender print with style
+Is it friday?
+
 * Programmera något med PHP, som en övningssida i report?
 
 table
@@ -109,13 +119,31 @@ Olika varianter på kalender
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
+1. Gör uppgiften "[Programmera din rapportsida till webtec-kursen](uppgift/programmera-din-rapport-sida-till-webtec-kursen)" och spara alla filer under `me/report`.
+
+<!--
 * Gör uppgiften "[Programmera med PHP](uppgift/programmera-med-php)".
+
+2. Gör uppgiften "[PHP cal](uppgift/skapa-en-one-page-website)".
+
+<!--
+Byt uppgift, kalender ish? med GET
+-->
 
 <!--
 Byt uppgift, kalender ish? med GET
 
 Formulär, till kalender, GET?
 -->
+
+
+
+### Överkurs och extra uppgifter {#extra}
+
+Följande uppgifter skall utföras och resultatet skall redovisas.
+
+* Markera valt värde i navbaren (if-sats och SERVER)
+* Markdown (> kmom03)?
 
 
 

@@ -1,7 +1,7 @@
 ---
 author: mos
 revision:
-    "2021-09-02": "(A, mos) Första utgåva inför kursstart VT2021."
+    "2021-09-02": "(A, mos) Första utgåva inför kursstart HT2021."
 ...
 Responsiv webbdesign
 ====================

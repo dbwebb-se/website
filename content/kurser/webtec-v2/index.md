@@ -109,7 +109,7 @@ Kursen avslutas med ett större avslutande moment som examinerar kursen.
 
 
 
-### Kmom01: HTML & CSS {#kmom01}
+### Kmom01: Bygg en webbplats {#kmom01}
 
 Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den så studerar vi HTML och CSS för att se hur de bidrar när vi bygger en webbplats. HTML står för strukturen och innehållet på webbplatsen och CSS bidrar med utseende och layout.
 
@@ -117,7 +117,7 @@ Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den s�
 
 
 
-### Kmom02: HTML & CSS {#kmom02}
+### Kmom02: Styla en webbplats {#kmom02}
 
 Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den så studerar vi HTML och CSS för att se hur de bidrar när vi bygger en webbplats. HTML står för strukturen och innehållet på webbplatsen och CSS bidrar med utseende och layout.
 
@@ -125,7 +125,7 @@ Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den s�
 
 
 
-### Kmom03: PHP {#kmom03}
+### Kmom03: Programmera en webbplats {#kmom03}
 
 Vi lär oss programmeringsspråket PHP och hur man programmerar i det via vanliga programmeringskonstruktioner som variabler, if-satser, loopar, datastrukturer som arrayer och vi organiserar koden i filer och funktioner. När vi kan grunderna går vi vidare och använder PHP för att bygga en webbplats. Vi berör olika koncept som HTML formulär, GET/POST och SESSION/COOKIE som ofta används när man utvecklar webbplatser.
 

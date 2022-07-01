@@ -6,14 +6,14 @@ category:
     - css
     - kurs webtec
 revision:
-    "2022-06-28": "(A, mos) Första utgåvan inför webtec-v2."
+    "2022-07-01": "(A, mos) Första utgåvan inför webtec-v2."
 ...
 Styla din webbsida med HTML och CSS
 ==================================
 
 [FIGURE src=image/webtec/style-it/start.png?w=c5 class="right" caption="En ostylad webbplats."]
 
-Vi skall styla en ostylad webbplats med CSS för att lära oss grunderna i hur man jobbar med CSS konstruktioner för att styla en webbplats. Vi kommer utgå från en webbplats som enbart innehåller HTML-kod och en del innehåll, sedan stylar vi del för del där vi börjar med navbaren, headern och footern för att sedan gå vidare och se hur man kan styla innehållet i en artikel och hur man kan dela upp webbsidan i 2 eller tre kolumner.
+Vi skall styla en ostylad webbplats med CSS för att lära oss grunderna i hur man jobbar med CSS konstruktioner för att styla en webbplats. Vi kommer utgå från en webbplats som enbart innehåller HTML-kod och en del innehåll, sedan stylar vi del för del där vi börjar med navbaren, headern och footern för att sedan gå vidare och se hur man kan styla innehållet i en artikel och hur man kan dela upp webbsidan i 2 eller tre kolumner. Vi avslutar med inslag av en responsiv webbplats.
 
 Det är bra om du har en CSS-resurs vid sidan när du jobbar igenom artikeln, det underlättar om du kan slå upp de konstruktioner som används.
 
@@ -26,7 +26,7 @@ Förutsättningar {#pre}
 
 Du har jobbat igenom övningen "[Skapa en webbsida med HTML, CSS och PHP (v2)](kunskap/skapa-en-webbsida-med-html-css-och-php-v2)" och du har en motsvarande webbplats. Det är den webbplatsen vi nu skall styla.
 
-Du kan hitta koden som används i denna artikel, i ditt kursrepo under `example/me/kmom02`.
+Du kan hitta koden som används i denna artikel, i ditt kursrepo under `example/me/kmom02`, använd den som referens om du fastnar.
 
 
 
@@ -103,7 +103,7 @@ Du kan också se samma exempel i ditt kursrepo under `example/css/hello-world`.
 
 [FIGURE src=image/webtec/style-it/hello.png?w=w3 caption="Ett väl avgränsat kodeexempel via egen kod."]
 
-Ta för vana att alltid skapa små och väl avgränsade testprogram när du lär dig nya saker. Du kan spara en hel del tid på det.
+Ta för vana att alltid skapa små och väl avgränsade testprogram när du lär dig nya saker. Du kan spara en hel del tid på det. Utgå gärna från exemplet `example/css/hello-world` så har du en snabb start.
 
 
 
@@ -267,7 +267,7 @@ Jag börjar med att uppdatera HTML-koden och lägger till klasser som jag kan an
 </header>
 ```
 
-Följande CSS-kod visar hur du kan jobba med positionering och utseende av din header.
+Följande CSS-kod visar hur du kan jobba med positionering och utseende av din header, jag placerar den i `public/css/header.css`.
 
 ```css
 /** header.css */
@@ -685,7 +685,7 @@ Exakt hur din egen byline ser ut får du själv bestämma. Min egen lägger jag 
 
 Exakt hur jag strukturerar och stylar en byline lämnar jag som en liten övning som du själv kan utföra. Du kan till exempel använda tekniker för att flyta, positioner eller flexbox - om du vill positionera elementen i din byline.
 
-Så här blev resultatet på min byline, jag höll det rätt enkelt.
+Så här blev resultatet på min byline, jag höll det rätt enkelt och försökte "flasha" till det med enkla medel.
 
 [FIGURE src=image/webtec/style-it/byline.png?w=w3 caption="Nu har min artikel en snygg byline, kan du skapa en egen liknande och kanske snyggare?"]
 
@@ -949,8 +949,7 @@ Jag startar med min två kolumners layout.
 
     .two-col-layout > .main,
     .two-col-layout > .aside {
-        width: calc(var(--box-max-width));
-        margin-right: 0;
+        width: 100%;
     }
 }
 ```
@@ -979,7 +978,7 @@ Vi kan göra enligt samma princip för footern. Jag lägger till en ny regel som
 
 Här kan vi se när regeln slår in på en sidobredd av 649 pixlar.
 
-[FIGURE src=image/webtec/style-it/responsive_699.png?w=w3 caption="Nu har brytpunktens CSS-regler gått in och med hjälp av flex-konstruktioner så har innehållet stackats."]
+[FIGURE src=image/webtec/style-it/responsive_649.png?w=w3 caption="Nu har brytpunktens CSS-regler gått in och med hjälp av flex-konstruktioner så har innehållet stackats."]
 
 Detta är grundprincipen i en responsiv webbplats, man justerar hur innehållet presenteras vid olika bredder av sidan.
 
@@ -988,5 +987,8 @@ Detta är grundprincipen i en responsiv webbplats, man justerar hur innehållet 
 Avslutningsvis {#avslutning}
 --------------------------------------
 
+Det var en genomgång av ett antal CSS konstruktioner som är bra att ha när man bygger upp och stylar en webbplats olika delar.
 
-Lycka till i din framtida karriär som CSS guru.
+Du bör nu ha en bas att utgå ifrån och du kan anan hur saker hänger ihop och påverkar varandra.
+
+Ett bra steg att gå vidare är att fördjupa sig i de CSS konstruktioner som finns rent allmänt. Använd någon av de resurser som nämndes i inledningen av artikeln.

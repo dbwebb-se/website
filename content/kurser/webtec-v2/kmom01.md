@@ -71,11 +71,10 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 1. [Webbteknologier](./../forelasning/webbteknologier)
 1. [HTML](./../forelasning/html)
-1. [CSS](./../forelasning/css)
-1. [PHP introduktion](./../forelasning/php-introduktion)
 
-(minska antalet föreläsningar eller minska omfånget på varje fläsning?)
-
+<!--
+* [Protokollet HTTP](./../forelasning/protokollet-http) löses dock delvis av Emils lilla video.
+-->
 
 
 ### Litteratur  {#litteratur}
@@ -88,7 +87,7 @@ Läs enligt följande.
 
 1. Kika snabbt igenom de resurser som finns om [CSS Cascading Style Sheets på webbplatsen MDN](https://developer.mozilla.org/en-US/docs/Web/CSS).
 
-Ovan webbsidor är bra referens att använda. Försök gärna landa på någon av dessa webbpaltser när du googlar efter information.
+Ovan webbsidor är bra referens att använda. Försök gärna landa på någon av dessa webbplatser när du googlar efter information.
 
 Vill du ha lite enklare material att komma igång med så finns det ett par enklare tutorials på W3Schools.
 
@@ -104,8 +103,6 @@ Titta på följande videor/filmer. Filmerna är tänkta att ge dig en allmän or
 
 * [Vad är webben? (med Emil)](https://www.youtube.com/watch?v=rILqpl0P-Fs) (15 min)
 * [A brief history of the World Wide Web](https://www.youtube.com/watch?v=sSqZ_hJu9zA) (3 min)
-* [Evolution of Web Design 1990-2019](https://www.youtube.com/watch?v=XYTwYmOjqQs) (8 min)
-* [Bad Web Design: A Look At The Most Hilariously Terrible Websites From Around The Web](https://www.youtube.com/watch?v=6befMTTTTRQ) (11 min)
 
 Videorna ovan finner du även i spellistan "[Om webbutveckling (HTML, CSS, PHP, SQL)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-Qp6DTS_2s6q-Br66ufoWc)".
 
@@ -141,7 +138,8 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 <!--
 ### Överkurs och extra uppgifter {#extra}
 
-Följande uppgifter skall utföras och resultatet skall redovisas.
+Här följer extra uppgifter som du kan utföra för att lära dig mer, om du har tid, lust och energi.
+
 -->
 
 

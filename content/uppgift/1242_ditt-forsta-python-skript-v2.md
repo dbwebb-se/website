@@ -70,7 +70,7 @@ cd me/kmom01/plane
 ls
 ```
 
-2. `plane.py` skall innehålla kod för att omvandla tre värden, som beskrivs i texten ovanför, höjd, hastighet och temperatur.
+2. `plane.py` skall innehålla kod för att omvandla tre värden, som beskrivs i texten ovanför, höjd, hastighet och temperatur. 
 
 3. Gör ett `input()` anrop för att omvandla höjd från meter till feet.
 
@@ -89,7 +89,7 @@ ls
 
     ```python
 
-    input: "200"       output: "124.27"
+    input: "23.23"       output: "14.43"
     ```
 
     - Tags: `speed`
@@ -100,7 +100,7 @@ ls
 
     ```python
 
-    input: "30"       output: "86.0"
+    input: "135.205"       output: "275.37"
     ```
 
     - Tags: `temp`

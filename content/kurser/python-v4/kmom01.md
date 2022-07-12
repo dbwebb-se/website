@@ -94,11 +94,7 @@ Kursens huvudbok ger förståelse och bakgrunden till att klara övningar och up
 
 Efterhand som du lär dig Python kommer du att märka att du referensmanualen är en bra källa till kunskap. Bekanta dig därför med strukturen som finns på Pythons webbplats och gå igenom följande.
 
-1. Bekanta dig översiktligt med [dokumentationen som finns på Pythons webbplats](https://www.python.org/doc/). Kika runt och orientera dig. Vi använder Python 3.
-
 1. Se översikten av referensdokumentation för [Python 3.x Doc](https://docs.python.org/3/). Bekanta dig översiktligt med strukturen och se vilken typ av information som du kan hitta.
-
-1. Läs första kapitlet i [The Python Tutorial](https://docs.python.org/3/tutorial/index.html). Det är mest för att du skall se vilken typ av information som finns i tutorialen och för att bekanta dig med den typen av material.
 
 
 
@@ -171,7 +167,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 ### Extra {#extra}
 
-Det finns inga extra uppgifter.
+Det finns inga extra uppgifter för denna veckan.
+
+För er som vill öva mer, ni kan använda er av sidor som [leetcode.com](https://leetcode.com/problemset/all/?listId=79h8rn6&page=1&difficulty=EASY) och [hackerrank.com](https://www.hackerrank.com/auth/signup) för att hitta uppgifter att öva på.
 
 
 

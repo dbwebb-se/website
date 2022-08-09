@@ -6,7 +6,7 @@ author:
     - nik
     - grm
 revision:
-    "2022-05-20": "(E, grm) Komplettering HT22."
+    "2022-08-09": "(E, grm) Komplettering HT22."
     "2021-11-10": "(D, grm) Komplettering HT21."
     "2021-10-01": "(C, lew) Uppdaterad inför LP2 HT21."
     "2020-05-27": "(B, nik) Uppdaterad inför LP2 HT20."
@@ -87,7 +87,8 @@ Uppgifter {#uppgifter}
 *(ca: 4-6 studietimmar)*
 
 <!-- 1. Gör uppgiften "[Skapa en me-sida till itsec-kursen](uppgift/skapa-en-me-sida-till-itsec-kursen)". -->
-1. Gör uppgiften "[Skriv ett referat](uppgift/skriv-ett-referat)".   
+
+1. Gör uppgiften "[Skriv ett referat](uppgift/skriv-ett-referat)".
 1. Gör Kmom01 quiz.
 
 

@@ -32,7 +32,7 @@ Labbmiljön  {#labbmiljo}
 
 *(ca: 2-4 studietimmar)*
 
-I kursen tillkommer det inget nytt till labbmiljö, men studenten förväntas ha följande installerat:
+I kursen tillkommer det inget nytt till labbmiljön, men studenten förväntas ha följande installerat:
 
 * PHP (tillsammans med Composer)
 * Node/npm

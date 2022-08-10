@@ -4,7 +4,7 @@ author:
     - grm
 category: itsec
 revision:
-    "2022-05-24": (C, grm) Uppdaterad inför ht22
+    "2022-08-10": (C, grm) Uppdaterad inför ht22
     "2020-12-02": (B, nik) Uppdaterad inför ht20
     "2019-10-11": (A, lew, aurora) First edition.
 ...
@@ -59,13 +59,13 @@ Börja med att kopiera in mappen med applikationen till er me-katalog:
 $ rsync -ravd example/bank-app me/kmom04/
 ```
 
-Starta applikationen med `docker-compose up -d`. Du kan också välja att köra den lokalt med `npm install && npm start`.
+Köra applikationen lokalt med `npm install && npm start`. Eller om du vill använda docker, så starta applikationen med `docker-compose up -d`. 
 
 ### Lämna in
 
-1. Analysera applikationen efter sårbarheter enligt de metoder som nämndes under föreläsningen ([se här](https://bth.instructure.com/courses/3047/files/402543)). Du bör hitta minst 3 sårbarheter med väldigt god förståelse eller 5–6 med god förståelse.
+1. Analysera applikationen efter sårbarheter enligt de metoder som nämndes under föreläsningen som  attack träd, penetrationstestning etc. Dokumentera gärna hur du gjorde när du hittade sårbarheten. Du bör hitta minst 3 sårbarheter med väldigt god förståelse eller 5–6 med god förståelse.
 
-1. Döp analysen till `me/kmom04/analys.pdf`.
+1. Döp analysen till `analys.pdf` och ladda upp på Canvas.
 
 <!-- ```bash
 # Flytta till kurskatalogen
@@ -75,6 +75,6 @@ $ dbwebb publish me
 Tips från coachen {#tips}
 -----------------------
 
-Gå igenom applikationen som en vanlig användare och bygg upp en visuell bild av hur flödet är. Det är lättare att leta säkerhetsbrister när man vet var de troligen finns.
+Gå igenom applikationen som en vanlig användare och bygg upp en visuell bild av hur flödet är. Det är lättare att leta säkerhetsbrister när man vet var de troligen finns. Använd dig gärna av någon eller några av metoderna från föreläsningen som Data flow diagram, Process flow diagram, aktivitetsmatris etc.
 
 Lycka till och hojta till i Discord om du behöver hjälp!

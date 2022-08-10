@@ -7,16 +7,16 @@ category:
     - php
     - kurs webtec
 revision:
-    "2022-06-28": "(A, mos) Första utgåvan inför webtec-v2."
+    "2022-08-10": "(A, mos) Första utgåvan inför webtec-v2."
 ...
 Programmera din webbplats med PHP
 ==================================
 
-[FIGURE src=image/webtec/html-css-php/style_php_me.png?w=c5 class="right" caption="En webbplats, en me-sida."]
+[FIGURE src=image/webtec/programmera/html_form_2.png?w=c5 class="right" caption="Programmera webbsidan med PHP."]
 
-Vill man bli webbprogrammerare så behöver man lära sig flera tekniker och hur de samverkar. Låt oss därför, steg för steg, skapa en liten webbplats med HTML, CSS och PHP.
+Vi skall gå igenom ett antal grundläggande PHP-konstruktioner som hjälper oss att använda PHP som ett programmeringsspråk och skapa dynamiska webbsidor. "Dynamiska" webbsidor innebär att man skriver en PHP-fil som kan generera olika webbsidor med olika innehåll. Webbsidan kan ändra sitt innehåll baserat på vilken dag det är eller visa upp sökresultat när man söker i en databas eller visa upp alla sidorna i en bok.
 
-Webbplatsen får innehålla ett par sidor med header och footer, några bilder, länkar och en meny för att navigera mellan sidorna. Det blir en bra start. Dessutom lär vi oss att validera sidorna så att de stämmer med de standarder vi använder.
+Vi börjar med att övergripande och kortfattat gå igenom olika konstruktioner och därefter använder vi dem för att skapa webbsidor och träna på PHP.
 
 <!--more-->
 
@@ -27,7 +27,15 @@ Förutsättningar {#pre}
 
 Du har installerat en labbmiljö likt den som beskrivs i dokumentet om [labbmiljö för kursen webtec](kurser/webtec-v2/installera-labbmiljo). Det innefattar bland annat en webbserver med stöd för PHP.
 
-Du kan hitta koden som används i denna artikel, i ditt kursrepo under `example/me/kmom01`, använd den som referens om du fastnar.
+Du har jobbat igenom kmom02 i kursen webtec och du är bevandrar i det sätt som används för att skapa webbsidor med PHP där du har en katalogstruktur.
+
+Du har jobbat igenom kmom02 och du har en motsvarande webbplats som du kan bygga vidare på.
+
+Du har använt begreppet sidkontroller som inkluderar olika vyer för att generera en webbsida.
+
+Du har läst på om grunderna i PHP i boken och du har sett en introduktionsföreläsning om PHP och dess konstruktioner.
+
+Du kan hitta koden som används i denna artikel, i ditt kursrepo under `example/me/kmom03`, använd den som referens om du fastnar.
 
 
 
@@ -44,857 +52,709 @@ Du hittar spellistan för videoserien under "[Skapa en webbsida med HTML, CSS oc
 
 
 
-Webbplatsens innehåll {#innehall}
+Skriv egen kod {#skrivkod}
 ---------------------------------
 
-Låt oss skapa en webbplats med ett par webbsidor. Vi tar enklaste möjliga struktur men vi försöker ändå täcka in hur teknikerna HTML, CSS och PHP samverkar för skapa webbsidorna. Vi försöker också skapa en god katalogstruktur till webbplatsen.
+När du jobbar igenom denna artikeln så är tanken att du skriver din egen kod utifrån de exempel som finns. De första exemplen är enklare och de kan du skriva av för att komma igång, längre ned i artikeln får du möjlighet att skriva egen kod, men du kommer också se lösningen på uppgiften.
 
-Vi skapar tre sidor och sidorna får innehålla en presentation om mig (dig), en sida för redovisningar (bra att ha i kursen) och en om-sida som berättar om själva webbplatsen och kursen.
-
-Det kan se ut så här när det är klart.
-
-[FIGURE src=image/webtec/html-css-php/style_php_me.png?w=w3 caption="Nu är jag klar och stylade till min egen webbplats med inspiration från PHPs webbplats."]
-
-Det är kanske inte en jättesnygg webbplats, men denna artikel handlar mest om hur man bygger upp koden bakom webbsidan med hjälp av HTML, CSS och PHP.
+Det är också bättre att skriva av koden och inte kopiera. Det gör att du tränar upp dig på att skriva koden och du får troligen med ett par fel som du kommer tvingas felsöka.
 
 
 
-Katalogstruktur {#struktur}
+Inledning {#inledning}
 ---------------------------------
 
-Vi sparar allt vårt arbete i kursrepot i katalogen `me/kmom01`. Låt mig visa hur du kan göra för att skapa grundstrukturen för webbplatsen.
+När vi bygger webbsidor med HTML och CSS blir det statiska sidor som inte kan ändra sig, de visar samma innehåll varje gång man visar sidan. För varje nytt innehåll vi vill visa upp så behöver vi skapa en ny fil och en ny webbsida. Om vi skall visa innehållet i en bok så behöver vi en webbsida för varje sida i boken (eller så lägger vi hela boken i en webbsida...).
 
-Öppna din terminal och gå till ditt kursrepo.
+Ett sätt att göra mer dynamiska webbsidor är att använda programmeringsspråket PHP. Då kan vi bygga en PHP-fil som genererar olika webbsidor för varje boksida. Genom att skapa sådana dynamiska webbsidor kan det räcka med en PHP-fil för att generera oändligt antal webbsidor som till exempel läser sitt innehåll från en databas, eller sidorna i en bok.
 
-```text
-# Ställ dig i rooten av kursrepot
 
-# Gå till arbetskatalogen
-cd me/report
 
-# Visa de filer som finns i katalogen (det bör vara tomt inledningsvis)
-ls -al
-```
+Sidkontroller och vyer {#sidkontroller}
+---------------------------------
 
-Nus skapar jag ett par kataloger för att ge en grundstruktur till webbplatsen. Tanken är att katalogen `public/` innehåller allt som behöver vara publikt och tillgängligt på webbplatsen och övriga kataloger är sådant som inte behöver vara tillgängligt via webbservern. Det är en bra start.
+Vi bygger vidare på den webbplatsen vi har och skapar en ny sidkontroller i filen `public/play.php` där vi kan träna på att programmera PHP-kod och generera webbsidor.
 
-```text
-# Skapa kataloger för den publika delen
-mkdir public/img
-mkdir public/css
-
-# Skapa övriga kataloger
-mkdir config
-mkdir view
-```
-
-Nu tänker jag skapa ett par tomma filer, det är dessa filer som vi senare skall fylla med innehåll.
-
-```text
-# Skapa tomma filer som är blivande webbsidor, sidkontroller
-touch public/me.php
-touch public/about.php
-touch public/report.php
-
-# Skapa en tom stylesheet
-touch public/css/style.css
-
-# Skapa en tom konfigurationsfil som sidkontrollers kan inkludera
-touch config/config.php
-
-# Skapa tomma vyer (byggstenar till webbsidan)
-touch view/header.php
-touch view/byline.php
-touch view/footer.php
-```
-
-Bra, då är vi nästan klara. Jag tänkte ladda hem ett par bilder först. För din egen del så kan du använda dessa bilder först, senare kan du själv ersätta dem med andra bilder.
-
-```text
-# Hämta hem bilder från nätet via en webblänk och spara lokalt
-wget -O public/img/favicon.png https://dbwebb.se/bth-leaf.png
-wget -O public/img/me.png https://dbwebb.se/img/prata-med-ankan.png
-wget -O public/img/me_small.jpg https://dbwebb.se/img/mikael-roos/mos-tjaro-square.jpg
-wget -O public/img/background.jpg https://dbwebb.se/img/mos-desktop-kaprifolen.jpg
-```
-
-Kommandot `mkdir` skapar nya kataloger, kommandot `touch` skapar nya tomma filer och kommandot `wget` laddar hem filer från nätet.
-
-När vi är klara så ser strukturen ut så här. Du kan själv kolla din egen struktur via kommandot `ls -lR` eller om du installerar kommandot `tree` med din pakethanterare, tex `apt install tree` eller `brew install tree`.
-
-```text
-.                           
-├── config                  
-│   └── config.php          
-├── public                  
-│   ├── about.php           
-│   ├── css                 
-│   │   └── style.css       
-│   ├── img                 
-│   │   ├── background.jpg  
-│   │   ├── favicon.png     
-│   │   ├── me.png          
-│   │   └── me_small.jpg    
-│   ├── me.php              
-│   └── report.php          
-├── setup.bash              
-└── view                    
-    ├── byline.php          
-    ├── footer.php          
-    └── header.php          
-
-5 directories, 13 files     
-```
-
-Vi har nu en grundstruktur i vår webbplats. Du kan prova att öppna filerna via din webbläsare och din lokala webbserver. De flesta filerna är ännu tomma, men du bör kunna se bilderna om du klickar på dem.
-
-Starta din texteditor och öppna katalogen så den syns. Jag använder Visual Studio Code som jag kan starta direkt från terminalen och punkten säger att editorn skall visa innehållet i den katalog där jag befinner mig.
-
-```text
-code .
-```
-
-Så här ser det ut för mig.
-
-[FIGURE src=image/webtec/html-css-php/step1-code.png?w=w3 caption="Strukturen för min webbplats som den ser ut i texteditorn Code."]
-
-Vi fortsätter raskt att skapa en första webbsida.
-
-
-
-En första ansats till en webbsida {#ansats1}
---------------------------------------
-
-Då börjar vi med att göra vår första webbsida. Här kan du se standardstrukturen på en webbsida med lite innehåll.
-
-```html
-<!doctype html>
-<html lang="sv">
-<head>
-    <meta charset="utf-8">
-    <title>En sida om mig | Me-sidan</title>
-</head>
-<body>
-    <header>
-        <p>Här kan jag placera en fin header till webbsidan.</p>
-    </header>
-
-    <main>
-        <h1>Om Mig Själv</h1>
-        <p>Här kommer snart min egen fina me-sida.</p>
-        <img src="img/me.png" width="300" class="me" alt="Bild på mig">
-    </main>
-
-    <footer>
-        <hr>
-        <p>Denna sidan är Copyright &copy; av mig.</p>
-    </footer>
-</body>
-</html>
-```
-
-Titta nu på koden ovan och skriv om den i din fil `public/me.php`. Öppna den sedan i en webbläsare via din webbserver. Det kan se ut så här.
-
-[FIGURE src=image/webtec/html-css-php/webbsida1.png?w=w3 caption="Första ansatsen till en webbsida."]
-
-Webbsidan är enbart HTML-kod, det finns ännu inget inslag av PHP i koden.
-
-
-
-Källkoden för en webbsida {#kallkod}
---------------------------------------
-
-När webbläsaren hämtar webbsidan från webbservern så levereras den som källkod, den kod som skall användas av webbläsaren för att rendera och visa själva webbsidan.
-
-Vi kan hitta källkoden till webbsidan genom att högerklicka på musen i webbläsarens fönster och välja menyvalet "View Page Source", eller "Visa källkod".
-
-Du får då upp en sida som visar källkoden för sidan.
-
-[FIGURE src=image/webtec/html-css-php/webbsida1_src.png?w=w3 caption="Källkoden för sidan finns alltid tillgänglig."]
-
-I detta fallet är källkoden som ligger i filen `me.php` exakt samma som webbläsaren ser. Men mer om detta när vi snart börjar med PHP.
-
-
-När vi senare börjar använda PHP så kommer källkoden att skilja sig åt, den filen som ligger på servern ser annorlunda ut än den som webbläsaren ser. Det är alltså en viktig skillnad på källkoden i servern och källkoden i webbläsaren. Denna skillnad vill du bemästra när du senare ska felsöka i dina webbsidor. Men, vi kan ta mer om det senare.
-
-
-
-Developer tools och inspect {#inspect}
---------------------------------------
-
-När webbläsaren hämtar webbsidan från webbservern så kommer den som källkod. Därefter tar webbläsaren och "parsar" (läser igenom) källkoden och renderar webbsidan för att slutligen visa upp den.
-
-Vid renderingen kan källkoden till sidan ibland modifieras av webbläsaren. Detta händer till exempel om källkoden inte stämmer överens med givna riktlinjer och standarder. Vi kan säga att webbläsaren "patchar" (försöker laga) källkoden så att den fungerar.
-
-Den patchade varianten av källkod kan man se via "devtools" eller "inspect". Om du tar musen över webbsidan och högerklickar så brukar menyvalet ligga längst ned och heter "Inspect". Du kan också öppna verktyget via funktionstangenten F12.
-
-[FIGURE src=image/webtec/html-css-php/webbsida1_inspect.png?w=w3 caption="Källkoden för sidan finns alltid tillgänglig."]
-
-Vi har alltså följande steg för att visa upp en webbsida.
-
-1. Källkoden som ligger i filen `me.php` på webbservern.
-1. Källkoden som webbläsaren hämtar från webbservern, den data som skickas över nätet från webbservern till webbläsaren. Se den genom att "högerklicka och visa källkod".
-1. Den parsade och eventuellt patchade källkoden. Se den via "inspect" och "devtools".
-
-
-
-Validera enligt HTML {#validera-html}
---------------------------------------
-
-För att kontrollera att det verkligen är korrekt HTML-kod som webbläsaren får så kör vi koden genom [W3C’s Markup Validation Service](http://validator.w3.org/). Välj fliken "Validate by direct input" och kopiera in koden för din webbsida.
-
-Bäst är att kopiera in koden som den kommer i webbläsaren, via högerklicka och "View Page Source".
-
-[FIGURE src=image/webtec/html-css-php/webbsida1_validate.png?w=w3 caption="Kopiera in källkoden för webbsidan för att validera den."]
-
-Klicka på knappen för att validera webbsidan.
-
-Så här ska det se ut när du validerar, grönt är bra och säger att webbsidan klarar valideringen och därmed uppfyller kraven på strukturen för HTML elementen.
-
-[FIGURE src=image/webtec/html-css-php/webbsida1_validerar.png?w=w3 caption="Min webbsida validerar och visar grönt."]
-
-Om du fick fel så försöker du rätta till felen. Läs även vad varningarna betyder. Det är bra att ha lite koll.
-
-Valideringsverktyg är viktiga för den som utvecklar webbplatser. Din webbsida behöver följa de standarder som finns, annars kan webbsidan visas upp på ett felaktigt sätt i webbläsaren.
-
-
-
-Länka till valideringsverktyget {#linkval}
---------------------------------------
-
-För att förenkla framtida kontroller så lägger vi till en länk till validatorn, direkt i me-sidan. Det gör att vi hela tiden kan validera dokumentet med ett litet klick.
-
-I din footer, mellan `<footer>` och `</footer>`, kan du lägga in en länk till valideringsverktyget. När du senare visar upp din webbsida på en publikt webbplats (ej localhost) kan du klicka på den länken och valideringsverktyget kommer att direkt validera sidan.
-
-För att det skall fungera behöver du lägga in en länk till valideringsverktyget, lägg den i din footer.
-
-```html
-<p>Validering: <a href="http://validator.w3.org/check/referer">HTML</a><p>
-```
-
-För att det skall fungera behöver du även lägga till en meta-konstruktion i din `<head>` av sidan. Lägg följande konstruktion direkt efter sidans `</tile>` och innan `</head>`.
-
-```html
-<meta name="referrer" content="unsafe-url">
-```
-
-Du behöver köra din webbplats på en publik webbplats, till exempel på studentservern. Om du publiserar din webbplats dit så kan du se att det fungerar.
-
-Så här blev det för mig.
-
-Först publicerar jag sidan.
-
-```text
-dbwebb publish kmom01
-```
-
-Sen öppnar jag sidan på studentservern.
-
-[FIGURE src=image/webtec/html-css-php/webbsida1_studservern.png?w=w3 caption="Sidan är nu publicerad på studentservern, en publik webbplats."]
-
-Sedan klickar jag på valideringslänken "HTML" så kommer man till validatorn som direkt validerar den sidan som du klickade på.
-
-[FIGURE src=image/webtec/html-css-php/webbsida1_stud_html.png?w=w3 caption="Sidan valideras direkt."]
-
-Nu blir det enkelt att alltid dubbelkolla att webbsidan följer de riktlinjer som finns.
-
-
-
-Visa felmeddelanden i PHP {#felmeddelanden}
---------------------------------------
-
-Då ska vi snart börja med PHP, men innan det så förbereder vi så att PHP konfigureras till att visa felmeddelanden. Vi gör detta i en separat fil `config/config.php` som vi tänker inkludera i varje sidkontroller.
-
-En sidkontroller i vårt sammanhang är `me.php`, `about.php` och `report.php`. Det är de sidor som vi hämtar med webbläsaren och det är där som allting startar. Det allra första vi vill göra är att de sidorna, sidkontrollerna, skall läga in konfigureringen av PHP.
-
-Vi lägger in följande innehåll i filen `config/config.php`. Koden säger att felmeddelanden skall visas.
+Innehållet i `play.php` kan se ut så här. Det bör likna de webbsidor du har sedan tidigare.
 
 ```html
 <?php
 
-// Report all type of errors
-error_reporting(-1);
+include('../config/config.php');
 
-// Display all errors
-ini_set('display_errors', '1');
-```
+$title = 'Träna på PHP';
 
-Vi låter filen vara så länge, vi skall snart börja använda den.
+include('../view/header.php');
+?>
 
+<main class="main">
+    <h1><?= $title ?></h1>
 
-
-Dela upp sidan i delar {#php-delar}
---------------------------------------
-
-Vår nuvarande sida består av tre delar, en övre del (fram tom `<body> <header>`), en undre del (från `<footer>` och framåt) och så själva innehållet i sidan `main`.
-
-När vi skapar nya webbsidor vill vi ofta återanvända den övre delan och den undre delen och bara förända det som ligger i `<main>`. Då kan vi använda PHP för att skapa en sådan struktur som återanvänder koden.
-
-Vi börjar med att från `me.php` kopiera in den övre delen av koden till filen `view/header.php`. Det är följande kod vi pratar om.
-
-```html
-<!doctype html>
-<html lang="sv">
-<head>
-    <meta charset="utf-8">
-    <title>En sida om mig | Me-sidan</title>
-    <meta name="referrer" content="unsafe-url">
-</head>
-<body>
-    <header>
-        <p>Här kan jag placera en fin header till webbsidan.</p>
-    </header>
-
-```
-
-Sedan kopierar vi in den nedre delen till filen `view/footer.php`. Det handlar om följande kod.
-
-```html
-
-    <footer>
-        <hr>
-        <p>Denna sidan är Copyright &copy; av mig.</p>
-        <p>Validering: <a href="http://validator.w3.org/check/referer">HTML</a><p>
-    </footer>
-</body>
-</html>
-```
-
-Nu skall vi knyta samma dessa två delar i en ny webbsida i `about.php`. Vi gör detta genom att använda PHP konstruktionen `include()` som inkluderar en fil. Här inkluderar vi också konfigfilen vi nyss skapade, den som skall visa om vi får fel i vår kod.
-
-Kom ihåg att alltid inkludera konfigfilen först, annars kan det hända att du inte ser felmeddelanden för den kod som körs.
-
-```html
-<?php include('../config/config.php') ?>
-<?php include('../view/header.php') ?>
-
-<main>
-    <h1>Om kursen och webbplatsen</h1>
-    <p>Här tänkte jag skriva lite om denna webbplatsen och om kursen.</p>
+    <p>Här bygger vi kod för att träna på PHP och dess olika konstruktioner som skall hjälpa oss att generera webbsidor.</p>
 </main>
 
 <?php include('../view/footer.php') ?>
 ```
 
-Så här blir det när jag öppnar webbsidan `about.php` i min webbläsare, den är sammanslagen av de olika delarna ovan.
+Vår sidkontroller har till uppgift att generera grunden till webbsidan genom att inkludera en konfigurationsfil och vyer för header och footer.
 
-[FIGURE src=image/webtec/html-css-php/about.png?w=w3 caption="Den nya about-sidan visas i webbläsaren."]
+För att undvika att skriva all PHP-kod direkt i sidkontrollern så lägger vi varje exempel i en vy. Det kan vara ett rimligt sätt att dela upp koden i olika filer. En god uppdelning gör det enklare att felsöka och vidarutveckla koden.
 
-Jag kan också öppna "visa källkod" så ser jag källkoden som webbläsaren får. Här kan du notera att det inte finns några inslag av PHP. PHP-koden exekveras enbart på servern och har som uppdrag att generera den HTML-kod som webbservern lämnar till webbläsaren.
+Vi skapar vyn `view/php/hello_world.php` och inkluderar den i sidkontrollern.
 
-[FIGURE src=image/webtec/html-css-php/about_src.png?w=w3 caption="Källkoden för about-sidan är bara HTML, ingen PHP på denna sidan webbservern."]
-
-Nu har vi en struktur som gör att vi kan återanvända delar av koden så vi slipper duplicerad kod. Det gör att det blir enklare att utveckla och underhålla en webbplats.
-
-
-
-En navbar för navigation mellan sidor {#navbar}
---------------------------------------
-
-Nu när vi har två sidor så behöver vi kunna navigera mellan dem genom att klicka i webbplatsen. Det kan vi lösa med en samling länkar som vi förslagsvis placerar i filen `view/header.php`. Vi kan placera den ovan eller under `<header>`, det kan vi välja. Det handlar mest om utseende om vi vill placera vår navbar överst i sidan eller under sidans blivande header.
+Först uppdaterar vi delen i sidkontrollern som inkluderar vyn.
 
 ```html
-<nav>
-    <ul>
-        <li><a href="me.php">Me</a></li>
-        <li><a href="report.php">Report</a></li>
-        <li><a href="about.php">About</a></li>
-    </ul>
-</nav>
+<main class="main">
+    <h1><?= $title ?></h1>
+
+    <p>Här bygger vi kod för att träna på PHP och dess olika konstruktioner som skall hjälpa oss att generera webbsidor.</p>
+
+    <?php include('../view/php/hello.php') ?>
+</main>
 ```
 
-Jag väljer att placera in navbar överst på sidan. Så här blev det för mig.
-
-[FIGURE src=image/webtec/html-css-php/navbar.png?w=w3 caption="Nu visas en navbar överst i sidan och jag kan nå webbplatsens alla sidor."]
-
-För att det verkligen skall fungera så behöver jag nu uppdatera sidorna `me.php` och `report.php` så att de har samma grundläggande mall som sidokontrollern skall ha.
-
-Gör det. Du kan därefter navigera mellan alla sidorna genom att klicka i navbaren.
-
-
-
-Länkar till dokumentation {#docs}
---------------------------------------
-
-Låt oss uppdatera footern med ett par bra att ha länkar till resurser där vi kan lära oss HTML, CSS och PHP. Du kan placera samtliga i din footer.
+Därefter skapar vi vyn som genererar sin del av webbsidan och säger "Hej" med hjälp av en PHP variabel `$message = "Hej världen!";` och en konstruktion "PHP short echo tag" `<?= $message ?>` som skriver ut variabeln. Läs gärna kort och översiktligt om [PHP och olika taggar](https://www.php.net/manual/en/language.basic-syntax.phptags.php).
 
 ```html
-<p>Manualer:</p>
-<ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN: HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN: CSS</a></li>
-    <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
-    <li><a href="https://www.w3.org/2009/cheatsheet/">Cheat Sheet</a></li>
-    <li><a href="https://www.php.net/manual/en/">PHP</a></li>
-</ul>
-```
-
-Lägg gärna till fler länkar som du tycker är bra att ha. Här kommer ett par förslag.
-
-Resurser på W3Schools.
-
-* [HTML Tutorial](https://www.w3schools.com/html/)
-* [CSS Tutorial](https://www.w3schools.com/css/)
-
-Organisationen WHATWG arbetar med standardiseringar av webbteknologier, bland annat HTML och DOM.
-
-* [WHATWG Standardiseringsorgan](https://whatwg.org/) för standardisering av HTML och DOM.
-
-Organisationen W3C arbetar med standardiseringar av webbteknologier, bland annat HTML och CSS.
-
-* [W3C Standardiseringsorgan](https://www.w3.org/) standardiseringar av HTML och CSS.
-* [W3C Web design and Applications](https://www.w3.org/standards/webdesign/) omfattar bland annat HTML och CSS.
-
-
-
-Sidans titel med variabel {#title}
---------------------------------------
-
-En sak som du kanske märkt är att alla sidor har samma titel eftersom `<title></title>` har samma värde i `view/header.php` oavsett vilken sida vi visar.
-
-Låt oss lösa det genom att skapa en variabel `$title` i varje sidkontroller och sedan skriver vi ut den variabeln i `view/header.php`. Vi kan ta sidan `about.php` som exempel. Koden vi vill lägga till, innan vi inkluderar headern, är följande.
-
-```html
-<?php include('../config/config.php') ?>
-
 <?php
-$title = 'Om kurs och webbplatsen';
+
+/**
+ * Divide your view files into "two stages", start by coding PHP and preparing 
+ * the content into variables (1),  then output the content/variables together
+ * with HTML elements (2).
+ * It is good practice to keep this in two stages, it makes your code cleaner
+ * and easier to read, edit and develop.
+ */
+
+$message = "Hej världen!";
+
 ?>
 
-<?php include('../view/header.php') ?>
+<h2>Hello world</h2>
+
+<p>
+    PHP säger: <strong><?= $message ?></strong>
+</p>
 ```
 
-Eftersom vi nu har tre PHP-konstruktioner i följd så kan vi skriva om koden så att vi enbart har ett PHP-stycke med en öppnande tag och en stängande tag. Det ser bättre ut.
+Tanken med att dela upp vyn i två delar handlar om att först skriver vi PHP-kod och sparar undan innehåll i variabler, därefter "går vi över" till HTML läge och skriver HTML elementen och skriver ut innehållet i PHP-variablerna. Det är ett bra sätt att strukturera sin kod. När koden är liten kanske strukturen inte spelar så stor roll, men koden växer snabbt och då är strukturen väldigt viktig.
+
+Det kan se ut så här när det är klart.
+
+[FIGURE src=image/webtec/programmera/play_php.png?w=w3 caption="Vår första PHP-kod som genereras från en sidkontroller med hjälp av en vy."]
+
+Nu har vi en struktur där vi kan skriva fler exempelprogram. Då kan vi börja träna på grunderna i PHP.
+
+
+
+Små enkla testprogram {#testprog}
+---------------------------------
+
+När man vill lära sig nya saker kan det vara bra att testa dem isolerade från annan kod. Små enkla testprogram är ett bra sätt att lära sig, då vet man att man inte är beroende av någon annan kod, mer än den lilla kodsekvens man vill testa.
+
+I exemplet ovan skapade vi en sidkontroller och en vy som var uppdelad i två delar. Vi var också beroende av en konfigurationsfil och vyer för header och footer. Men, säg om vi nu hade velat göra ett liknande testprogram som skapade en variabel och skrev ut dess värde, kan vi inte göra det på något enklare och snabbare sätt och utan att generera hela webbsidans struktur? Klart vi kan.
+
+Det vi behöver är en PHP-fil där vi kan skriva koden. Vi kan skapa den i `public/play1.php` för att testa. Den viktiga koden är denna som kommer från vyn.
 
 ```html
 <?php
+
+$message = "Hej världen!";
+
+?>
+
+<h2>Hello world</h2>
+
+<p>
+    PHP säger: <strong><?= $message ?></strong>
+</p>
+```
+
+Om du skapar filen med koden ovan och öppnar filen i din webbläsare (via webbservern) så bör du se utskriften så här.
+
+[FIGURE src=image/webtec/programmera/small.png?w=w3 caption="Ett enklare testprogram utan beroende av andra saker."]
+
+Som ett tips så kan det vara bra att inkludera din konfigfil i dina små testprogram. Då vet du att felutskrifter skrivs ut.
+
+```html
+<?php
+
 include('../config/config.php');
 
-$title = 'Om kurs och webbplatsen';
+$message = "Hej världen!";
 
-include('../view/header.php');
 ?>
+
+<h2>Hello world</h2>
+
+<p>
+    PHP säger: <strong><?= $message ?></strong>
+</p>
 ```
 
-Glöm inte ett semikolon efter varje rad/konstruktion, annars får du fel.
 
-Glöm heller inte att konfigfilen måste inkluderas först av allt så att alla felmeddelanden verkligen visas.
 
-När jag har uppdaterat min sidkontroller enligt ovan så har jag nu en variabel `$title` som kan skrivas ut i filen `view/header.php`, det kan se ut så här i inledningen av den filen.
+Felutskrifter {#felutskrift}
+---------------------------------
 
-```html
-<!doctype html>
-<html lang="sv">
-<head>
-    <meta charset="utf-8">
-    <title><?= $title ?> | Me-sidan</title>
-```
+Om du skriver något fel i koden så kan du få ett felmeddelande. Felmeddelanden kan presenteras på olika sätt men det finns alltid med ett meddelande som säger vad som är fel. Man läser meddelandet och sedan tittar man på den kodraden som anges och försöker se om man "håller med" om felet.
 
-Det är den sista raden med konstruktionen `<?= $title ?>` som skriver ut innehållet i variabeln. På detta sättet kan vi i varje sidkontroller definera vilket värde vi vill ha på sidans titel.
+Oftast har felmeddelandet rätt så det är bäst att lita på det.
 
-Uppdatera alla dina sidkontroller och dubbelkolla att de nu visar olika titlar.
+[FIGURE src=image/webtec/programmera/error.png?w=w3 caption="Ett felmeddelande som säger att jag har använt en variabel som inte är definierad."]
 
-[FIGURE src=image/webtec/html-css-php/about.png?w=w3 caption="Här kan du se sidans titel."]
+I koden ovan hade jag stavat fel på variabeln när jag skulle skriva ut den.
 
-Får du problem eller felmeddelanden så kan du alltid "högerklicka och visa källkod" för att se om det ser rätt ut eller inte.
+Om du får flera fel så rättar du det översta, det som har lägst radnummer. Därefter kör du koden igen och rättar nästa fel. När man får ett fel så kan det komma följdfel och de försvinner om man rättar det första felet.
 
 
 
-En favicon till webbplatsen {#favicon}
---------------------------------------
+Variabler och typer {#variabler}
+---------------------------------
 
-En webbplats kan ha en *favicon*, en liten bild som visas tillsammans med webbplatsen uppe i webbläsarens flik.
+Variabler är en konstruktion som startar med ett dollar `$` tecken följt av en sekvens av tecken, siffror och underscore. Använd variabelnamn som beskriver sitt innehåll och är lagom långa. Här är exempel på två variabler som sparar strängar och skriver ut dess innehåll.
 
-Det är något vi kan lägga till i sidans `<head>`-del med följande konstruktion.
-
-```html
-    <link rel="shortcut icon" href="img/favicon.png"/>
-</head>
-```
-
-Du gör ändringen i filen `view/header.php` och det påverkar alla dina sidor/sidkontrollers.
-
-Sedan laddar du om och kan se ikonen, *faviconen*, i webbläsarens flik.
-
-[FIGURE src=image/webtec/html-css-php/favicon.png?w=w3 caption="Här kan du se sidans favicon."]
-
-Formatet för en favicon är vanligen filformatet ICO, men de flesta webbläsare klarar även vanliga PNG-bilder.
-
-Om du inte ser bilden kan du behöva ladda om sidan utan cachen, ett vanligt sätt att göra det är att klicka `shift ctrl r` (Windows, Linux) eller `shift cmd r` på Mac. Då laddas sidan om inklusive alla cachade resurser.
-
-
-
-Skapa en ny webbsida {#php}
---------------------------------------
-
-Vi har sett hur man kan länka mellan webbsidor med `<a>` men man kan också länka internt i en websida med konstruktionen `#id`. Låt oss ta ett exempel.
-
-I sidan/sidkontrollern `report.php` vill vi förbereda oss för att skriva redovisningstexter till de kommande kursmomenten. Vi skapar då följande HTML struktur.
-
-```
-<h1>Redovisning</h1>
-
-<ul>
-    <li><a href="#kmom01">kmom01</a></li>
-    <li><a href="#kmom02">kmom02</a></li>
-</ul>
-
-
-<h2 id="kmom01">kmom01</h2>
-
-<p>Här kommer redovisningstexten för detta kursmoment.</p>
-
-
-<h2 id="kmom02">kmom02</h2>
-
-<p>Här kommer redovisningstexten för detta kursmoment.</p>
-```
-
-Du kan själv fylla på med kmom03, kmom04, kmom05, kmom06 och kmom10.
-
-Du kan koppla ihop konstruktionen `<a href="#kmom01">` där brädgården följs av ett id som är unikt inom en webbsida. Jag har sedan angett id på de element som jag vill direktlänka till via `<h2 id="kmom01">`. På detta sättet jag skapa interna länkar i ett dokument och direktlänka till en viss del av sidan. I vårt fall har vi skapat en liten innehållsförteckning för dokumentet.
-
-[FIGURE src=image/webtec/html-css-php/report.png?w=w3 caption="En sida med en innehållsförteckning som leder till olika delar av sidans innehåll."]
-
-Prova så att alla interna länkar fungerar. Om sidan inte är så lång så blir det ingen skillnad, som när du klickar på kmom10 så visas hela sidan och den rubriken hamnar alltså inte överst på sidan på grud av det.
-
-
-
-En PHP-sida med PHP-kod {#php}
---------------------------------------
-
-Låt oss nu lägga till lite PHP-kod som exekveras och skriver ut dagens datum. Det får bli en liten övning i hur vi kan jobba mer med PHP-koden.
-
-PHP-koden nedan löser detta via den [inbyggda PHP-funktionen `date()`](https://www.php.net/manual/en/function.date.php).
-
-Du kan skapa en ny sidkontroller för detta, eller bara modifiera `me.php` som redan finns.
-
-Placera PHP-koden överst i filen. Det är en bra idé att lägga PHP-koden överst i filen och förbereda inför utskriften genom att spara undan innehåll i variabler `$today` och `$weekday`.
-
-```html
+```php
 <?php
-// Set the timezone to use
-date_default_timezone_set('Europe/Stockholm');
-
-// The date of today
-$today = date('Y-m-d H:i:s');
-
-// Name of the week day
-$weekday = date('l');
+$name = "Mikael";
+$city = "Bankeryd";
 ?>
+
+<p>
+    Jag har hört talas om <?= $name ?> som bor i <?= $city ?>. Vet du vem det är?
+</p> 
 ```
 
-Koden ovan placerar dagens datum och namnet på veckodagen i två variabler. Dessa kan sedan skrivas ut som en del i webbsidan, på samma sätt som du gjorde med sidans titel tidigare.
+När vi jobbar med strängar så använder vi dubbelfnutt eller enkelfnutt runt strängen. Om vi jobbar med siffror som heltal eller flyttal så anger vi värdet direkt. Så här.
 
-Följande kod placerar du tillsammans med HTML-koden på den plats där du vill skriva ut den i webbsidan.
-
-```html
-<p>Dagens datum är <?= $today ?> och idag är det <?= $weekday ?>.</p>
-```
-
-Så här blev det för mig. Jag nöjer mig med den engelska utskriften, att göra det på svenska kan vi ta en annan dag.
-
-[FIGURE src=image/webtec/html-css-php/date.png?w=w3 caption="Dagens datum och namnet på veckodagen skrivs ut som en del av webbsidan."]
-
-Det är viktigt att du har rätt flöde i filen. De olika konstruktionerna beror på varandra. I min fil ser det ut så här i inledningen av filen.
-
-1. Starta med att inkludera konfigfilen.
-1. Skapar de variabler som behövs för att sidan skall kunna renderas.
-1. Rendera sidan, börja med headern och fortsätt sedan med main och footern.
-
-```html
+```php
 <?php
-include('../config/config.php');
+// Integer
+$age = 42;
+$birthDay = 7;
+$birthMonth = 3;
 
-$title = 'Om mig själv';
-
-// Set the timezone to use
-date_default_timezone_set('Europe/Stockholm');
-
-// The date of today
-$today = date('Y-m-d H:i:s');
-
-// Name of the week day
-$weekday = date('l');
-
-include('../view/header.php');
 ?>
 
-<main>
-    <h1>Om Mig Själv</h1>
-
-    <p>Dagens datum är <?= $today ?> och idag är det <?= $weekday ?>.</p>
+<p>
+    Jag föddes den <?= $birthDay ?>/<?= $birthMonth ?> och jag är <?= $age ?> år gammal. Kan du räkna ut vilket år jag föddes?
+</p>
 ```
 
+Vi kan avvakta lite med att räkna ut när jag föddes. När vi gör det vill vi dra nytta av inbyggda funktioner som kan berätta vilket år det är just nu.
+
+Man kan räkna med variabler som du troligen är van vid från matematiken i skolan.
+
+```php
+<?php
+// Float/double
+$radius = 7.0;
+$pi = 3.14159;
+
+$circumference = 2 * $radius * $pi;
+$area = $pi * $radius * $radius;
+?>
+
+<p>
+    Cirkelns radie är <?= $radius ?> enheter, dess omkrets är <?= $circumference ?> enheter och dess area är <?= $area ?> enheter i kvadrat.
+</p>
+```
+
+Så här blir utskriften från mitt exempelprogram när jag är klar.
+
+[FIGURE src=image/webtec/programmera/variable.png?w=w3 caption="Utskrift av variabler och beräkningar."]
+
+Hmmm, sjuan skrevs ut utan sitt kommatecken och det var lite väl många siffror efter komma tecknet. Ska vi se om vi kan uppdatera exempelprogrammet en aning och kanske även räkna ut vilket år jag föddes?
 
 
-Styla sidan med CSS {#css}
+
+Inbyggda funktioner i PHP {#inbyggdafunk}
 --------------------------------------
 
-Med CSS kan vi ge sidan färg och form. Vi kan styla HTML-elementen och bestämma var de skall visas på sidan och hur de skall se ut. CSS-koden lägger vi i en separat fil och länkar till från HTML-koden.
+Låt oss se om vi kan formattera siffrorna och räkna ut födelseåret med hjälp av några av de inbyggda funktioner som finns i PHP.
 
-Börja med att öppna filen `css/style.css` och lägg in följande kod för att ge din sidan en bakgrund och en lagom storlek på bilden.
 
-```css
-html {
-    background-color: #9C9;
-    border: 8px solid #696;
+
+### Datum {#datum}
+
+När det gäller datum och tid så finns det ett [stycke i PHP-manualen](https://www.php.net/manual/en/ref.datetime.php) som beskriver de funktionerna. Funktionen `date()` kan användas för att formattera ett datum till en sträng och en variant är att använda det till att plocka fram nuvarande år.
+
+```php
+// Extract the year only
+$currentYear = date('Y');
+
+// Calculate the birth year from the age
+$birthYear = $currentYear - $age;
+```
+
+
+
+### Formattera ett tal {#numberformat}
+
+Ibland vill vi styra hur man formatterar utskriften av ett tal och då är [funktionen `number_format()`](https://www.php.net/manual/en/function.number-format.php) behjälplig.
+
+Om vi till exempel vill styra så att utskriften av radien, omkretsen och arean har ett visst antal decimaler så kan vi styra det med funktionen.
+
+```php
+// Format number for output
+$formattedRadius = number_format($radius, 1);
+$formattedCircumference = number_format($circumference, 2);
+$formattedArea = number_format($area, 2);
+```
+
+
+
+### Matematiska funktioner {#matfunk}
+
+PHP har flertalet matematiska funktioner inbyggt i språket, du kan se en [översikt i manualen](https://www.php.net/manual/en/ref.math.php).
+
+Det finns till exempel en funktion som ger dig talet PI, prova funktionen `pi()` istället för att själv räkna fram talet.
+
+Vill du avrunda ett tal för att spara i en variabel eller använda i en matematisk beräkning så kan du använda funktionen `round()`. Det kan vara bra att skilja denna funktionen från `number_format()` som är till för utskrifter.
+
+
+
+### Fler inbyggda funktioner {#inbyggdafler}
+
+Du kan kika kort i manualen på [översikten av de olika inbyggda funktioner som finns i PHP](https://www.php.net/manual/en/funcref.php).
+
+Prova att leta reda på stycket om strängar och dess inbyggda funktioner. Kika snabbt igenom listan för att se vilken typ av inbyggda funktioner som du kan förvänta dig.
+
+
+
+### Använd inbyggda funktioner {#anvandinbygdfunk}
+
+Ta nu och använd de inbyggda funktionerna, för att lära dig hur de fungerar och för att prova att hitta i manualen. Du kan försöka att uppdatera ditt exempelprogram så att det genererar en utskrift likt följande.
+
+[FIGURE src=image/webtec/programmera/inbyggd.png?w=w3 caption="Uppdaterad utskrift med hjälp av inbyggda funktioner."]
+
+
+
+### Utmaning med inbyggda funktioner {#utmaninginbygdfunk}
+
+Är du redo att anta en utmaning som tvingar dig att leta runt i manualen?
+
+Här är en sträng som jag vill att du tolkar och skriver ut i klartext.
+
+```php
+$messageAsRot13 = "Xhqbf! Qh svknqr rkgenhcctvsgra!";
+```
+
+Utmaningen är att via manualen hitta en funktion som hjälper dig att konvertera och skriva ut texten så att den är läsbar för alla. 
+
+Du kan behöva ett tips och det är att strängen är "krypterad" enligt ROT13 ([läs om ROT13](https://en.wikipedia.org/wiki/ROT13)).
+
+
+
+Villkor med if-satser {#if}
+--------------------------------------
+
+En villkorssats styr vilken kod som exekveras genom att testa ett villkor. Vi kan testa innehållet i en eller flera variabler och kombinera enkla till avancerade uttryck. Villkorssatser är en grundpelare i många programmeringsspråk. If-satsen är en del av de [PHP kontrollstrukturer som beskrivs i manualen](https://www.php.net/manual/en/language.control-structures.php).
+
+Vi kan till exempel kolla om det är fredag i dag och isåfall skriva ut texten "Äntligen fredag!" och för alla andra dagar kan vi skriva ut "Ännu är det inte fredag...".
+
+```php
+<?php
+// Extract details about the day
+$dayNum = date('N');
+$dayStr = date('l');
+
+// For testing, extract details from a day that is certain to be a Friday
+// Comment out when no testing
+// $dateStr = '2022-08-26';
+// $timestamp = strtotime($dateStr);
+// $dayNum = date('N', $timestamp);
+// $dayStr = date('l', $timestamp);
+
+// Set the message with a default text
+$message = "Today it is $dayStr, it is NOT yet Friday!!! Carpe Diem.";
+
+// Check if it is friday, day 5 in the week
+if ($dayNum == 5) {
+    // Change the message if it is Friday
+    $message = "Hurray!!! Today it is $dayStr!!! Carpe Diem!";
 }
 
-body {
-    background-color: #8892BF;
-    border: 4px solid #4F5B93;
-}
+?>
 
-main {
-    margin: 0 auto;
-    max-width: 800px;
+<h2>Villkor med if</h2>
 
-    padding: 0.5em;
+<p><?= $message ?></p> 
+```
 
-    border: 4px solid #CCC;
-    background-color: #F2F2F2;
-    color: #333;
+I manualen kan vi via funktionen [`date()`](https://www.php.net/manual/en/function.date.php) hitta till den sidan för [`date_format()`](https://www.php.net/manual/en/datetime.format.php) som visar alla bokstavskonstruktioner som kan anvädas tillsammans med date. Titta till exempel på skillnaden mellan `D` och `l` samt skillnaden mellan `N` och `w`.
+
+Låt oss nu uppdatera vårt program och försöka räkna ut hur många dagar det är kvar tills det blir fredag. Det bör vi kunna göra med någon variant av if-sats. Låt oss skriva ut ett visst meddelande för måndag till torsdag och ett annat meddelande för lördag till söndag. Följande kod kan ge dig en idé om hur du kan uppdatera ditt kodexempel.
+
+```php
+// How many days left to Friday?
+$daysLeft = 0;
+if ($dayNum < 5) {
+    $daysLeft = 5 - $dayNum;
+    $message = "$message It is $daysLeft days left to Friday, hang on...";
+} elseif ($dayNum > 5) {
+    $daysLeft = 7 - $dayNum + 5;
+    $message = "$message It was just Friday but it will come again in $daysLeft days.";
+} else {
+    $message = "$message Horrayyy Friday!!!";
 }
 ```
 
-Därefter går du till filen `view/header.php` och lägger in följande rad så att stylesheeten refereras från webbsidan.
+När du är klar så bör du se till att testa din kod. I min kod lade jag till ett par rader som jag använder enbart för test och när jag är klar så kommenterar jag ut dem.
+
+```php
+// For testing, extract details from a day that is certain to be a Friday
+// Comment out when no testing
+// $dateStr = '2022-08-26';
+// $timestamp = strtotime($dateStr);
+// $dayNum = date('N', $timestamp);
+// $dayStr = date('l', $timestamp);
+```
+
+Tanken med det är att det kan vara svårt att följa alla villkor i if-satserna genom att bara titta på dem, man behöver exekvera koden med olika villkor innan man är säker på att det ger rätt svar. Dessutom är detta ett sätt att underlätta felsökning som snabbt kan bli lurigt när if-satserna blir fler och villkoren som testas blir allt större.
+
+Så här ser min utskrift ut.
+
+[FIGURE src=image/webtec/programmera/if_friday.png?w=w3 caption="Ännu är det inte fredag hos mig."]
+
+Nu kan vi grunden i if-satser.
+
+
+
+Loopar med for och while {#loop}
+--------------------------------------
+
+Loopkonstruktioner med `for` och `while` är andra exempel på PHP kontrollstrukturer. En loop kan exekvera ett kodstycke ett godtyckligt antal gånger. For-loopen används när man har en variabel som man räknar upp för varje loop-runda. While-loopen används när man har ett villkor som man vill testa inför varje loop-runda.
+
+
+
+### while-loop {#whileloop}
+
+Vi börjar med ett exempelprogram som bygger en while loop som summerar alla udda tal som finns. Vi börjar på talet 1 och vi slutar när summan har kommit upp i, eller är över, talet 42. mellan 1 till och med talet 42. Du kanske själv kan klura ut hur det kan fungera? Om man strukturerar programmet med kommentarer, som en del av problemlösningen, så kan det se ut så här.
+
+```php
+// Prepare variables before loop
+$sum = 0;
+$number = 1;
+
+// Do the loop and sum odd numbers
+while (some condition so the sum does not exceed 42) {
+    // Add to the sum, if the number is odd
+}
+
+// Print the sum
+```
+
+Att skissa sin kod, innan man börjar koda, kan vara ett bra sätt att jobba med sin problemlösning. Det innebär att man tänker igenom hur koden skall vara, utan att veta ett komplett facit, fördelen är att man delar in koden i mindre delar och många små problem är ofta enklare att ett och ett, än att lösa ett stor och kanske komplext problem. Förenkla problemet tills koden uppenbarar sig. Att skriva kod på detta sättet kan ibland kallas [pseudokod](https://en.wikipedia.org/wiki/Pseudocode).
+
+När jag är klar ser min kod ut så här.
+
+```php
+// Prepare variables before loop
+$sum = 0;
+$number = 1;
+$oddStr = "";
+
+// Do the loop and sum odd numbers
+while ($sum <= 42) {
+    // Add to the sum, if the number is odd
+    if ($number % 2 === 1) {
+        $sum += $number;
+        $oddStr .= "Adding $number, sum is $sum.<br>";
+    }
+    $number++;
+}
+```
+
+Sedan får jag skriva ut resultatet i slutet av vyn.
 
 ```html
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<h2>Loopar med for och while</h2>
+
+<p>Calculating the sum of odd numbers, until the sum is 42 or more.</p>
+
+<p><?= $oddStr ?></p> 
 ```
 
-När det är klart så kan du ladda om sidan. Glöm inte möjligheten att forcera omladdning och ladda in även cachade resurser. Det kan behövas eftersom stylesheeten (och bilder) ofta cachas av webbläsaren.
+Exemplet använder konstruktionen `.=` som är strängkonkatenering, man "plussar" ihop strängar med operatorn `.`. Skriver man `+=` så är det en aritmetisk beräkning med siffror och `.=` är en "addering", eller konkatenering, av strängar. Läs kort om "[PHP och String Operators](https://www.php.net/manual/en/language.operators.string.php)"
 
-Så här blev det för mig.
+Exemplet använder [modulo operatorn `%`](https://www.php.net/manual/en/language.operators.arithmetic.php) för att kontrollera om talet är udda.
 
-[FIGURE src=image/webtec/html-css-php/css.png?w=w3 caption="Nu fick vi lite färg och form till webbsidan."]
+Så här blir resultatet när man kör det.
 
-Du kan kanske ana att webbsidan är uppbyggd av HTML elementen, man kan nästan se dem som block som ligger på sidan ovanpå varandra. I min style gav jag en ram (border) till några av elementen för att göra det tydligare att de placeras ovanpå varandra.
+[FIGURE src=image/webtec/programmera/odd_loop.png?w=w3 caption="En sammanställning av alla udda tal, tills summan av dem är 42 eller mer."]
 
-Färgerna lånade jag från PHPs webbplats.
+Det var while loopen, bra att använda när man har ett villkor som styr hur länge man skall loopa.
 
-
-
-Developer tools flik Elements {#elements}
---------------------------------------
-
-Om du nu öppnar upp developer tools och väljer fliken "Elements" så kan du se HTML-koden för den renderade sidan. Du kan också klicka på olika delar av HTML-koden och se vilken CSS-kod som ligger bakom. Du kan även uppdatera CSS-konstruktionerna för att testa dig fram med olika konstruktioner och du kan lägga till eller avaktivera andra konstruktioner. Detta är ett bra sätt att utveckla och debugga sin webbsida, man kan se hur CSS-konstruktioner påverka elementet och sin omgivning. När du laddar om sidan så försvinner dina temporära ändringar.
-
-Här använder jag devtools för att prova en alternativ färg på typsnittet.
-
-[FIGURE src=image/webtec/html-css-php/devtools_elements.png?w=w3 caption="Nu fick vi lite färg och form till webbsidan."]
-
-Prova gärna att aktivera, avvaktivera och modifiera olika konstruktioner för att lära dig mer om hur CSS påverkar webbsidans utseende.
+Ett tips är att det kan vara bra att ha utskrifter inuti loopen, när man vill testa sin kod. Ibland är man osäker på om koden verkligen går in i en if-sats eller loop, då kan man lägga till en echo-sats för att skriva ut ledande text eller visa innehållet i en variabel. Det kan vara ett bra sätt att jobba med test och felsökning av sin kod.
 
 
 
-En större stylesheet {#cssstor}
---------------------------------------
+### For-loop {#forloop}
 
-Som en liten övning valde jag ut en webbplats och jag försökte återskapa vissa delar av dess CSS-kod till min egen webbplats. Ibland är det enklare att ha ett exempel att titta på och låna idéer av.
+Låt oss bygga ut vårt testprogram till att skriva ut alla veckans dagar med deras datum och veckonummer med en for-loop. Vi utgår fran dagens datum men vi bör kunna testa så att programmet fungerar med alla godtyckliga datum.
 
-Jag valde webbplatsen för PHP som såg ut så här.
+Prova gärna på egen hand, din utskrift kan se ut så här. Men annars ser du min kod nedanför bilden.
 
-[FIGURE src=image/webtec/html-css-php/style_php.png?w=w3 caption="Här är webbplatsen för PHP som jag tänkte låna lite style ifrån."]
+[FIGURE src=image/webtec/programmera/week_loop.png?w=w3 caption="Information om veckans dagar och datum med loopar."]
 
-Genom att inspektera webbplatsen i devtools kan jag se vilka CSS-konstruktioner de använder och sedan kan jag testa dem i min egen stylesheet.
+Programmering handlar mycket om problemlösning och inför en sådan här liten programmeringsutmaning kan det underlätta att stolpa upp, dela upp, problemet i mindre beståndsdelar. En enkel lista kan vara en start.
 
-Så här blev min webbplats när jag var "klar".
+1. Ta reda på vilken dag det är idag och hämta tidsstämpeln för det.
+1. Samla information om dagens datum och skriv ut det.
+1. Spola tillbaka tidsstämpeln till måndagen i veckan.
+1. Använd den nya tidsstämpeln för att loopa genom veckans alla dagar och skriv ut information om varje dag.
 
-[FIGURE src=image/webtec/html-css-php/style_php_me.png?w=w3 caption="Nu är jag klar och stylade till min egen webbplats med inspiration från PHPs webbplats."]
+Ju mer man kan om programmering och om PHP, ju lättare är det att problemlösa. Ju mindre man kan så kan man ta problemet i små små bitar till att börja med. Är du nybörjare så finns inga förväntningar på att du skulle kunna lösa denna problemlösning på egen hand, se den bara som ett exempel på hur man kan tänka.
 
-Den stylesheet jag använde ser ut så här. Du kan studera de olika konstruktionerna och försöka gissa dig fram till hur de kan påverka sidans utseende.
+Då kan vi kika på koden. Läs kommentarerna så ser du att de matchar mot problemlösningen ovan.
 
-```css
-html {
-    margin: 0;
-    background-color: #333;
+```php
+// Extract details about the current day
+$timestampToday = time();
+$dateStrToday = date('Y-m-d', $timestampToday);
+$week = date('W', $timestampToday);
+$dayToday = date('l', $timestampToday);
+$todayMessage = "Today is $dayToday in week $week and the date is $dateStrToday.";
+
+// Calculate the first day of the week
+// When we loop through the week we need to have the timestamp from the
+// first day in the week
+$dayNum = date('N');
+$timeStampWeekStart = $timestampToday - ($dayNum - 1) * 60 * 60 * 24;
+
+// Loop through each day in the week and build up the result as a string
+$weekStr = "<ul>\n";
+for ($i = 0; $i <= 6; $i++) {
+    $timestamp = $timeStampWeekStart + $i * 60 * 60 * 24;
+    $dateStr = date('Y-m-d', $timestamp);
+    $dayStr = date('l', $timestamp);
+
+    $isToday = "";
+    if ($dateStrToday === $dateStr) {
+        $isToday = " (today)";
+    }
+
+    $weekStr .= "<li>$dayStr $dateStr $isToday</li>\n";
 }
-
-body {
-    margin: 0;
-    font-family: "Fira Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
-}
-
-nav {
-    background-color: #8892BF;
-    border-bottom: 4px solid #4F5B93;
-    color: #EEEEEE;
-    overflow: auto;
-}
-
-nav a {
-    color: #EEEEEE;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #4F5B93;
-    text-decoration: underline;
-}
-
-header {
-    background-color: #9C9;
-    border-bottom: 2px solid #696;
-    color: #EEEEEE;
-    overflow: auto;
-}
-
-main {
-    margin: 0 auto;
-    max-width: 800px;
-
-    padding: 0.5em;
-
-    background-color: #F2F2F2;
-    color: #333;
-}
-
-footer {
-    color: #FFF;
-}
-
-footer a:link {
-    color: #FFF;
-}
-
-footer a:visited {
-    color: #CCC;
-}
-
-footer a:hover {
-    color: #9C9;
-}
+$weekStr .= "</ul>\n"
 ```
 
-Detta får räcka med CSS kod för denna gången, det blir en kort introduktion. Vi kan återkomma till mer CSS en annan gång.
+Ovan ser vi endast PHP-koden till lösningen. om det är någon funktion du inte sett tidigare så kan du slå upp den i manualen, till exempel genom att googla `php time`. 
 
-
-
-Validera CSS-kod {#validatecss}
---------------------------------------
-
-W3C har en [validator för CSS](https://jigsaw.w3.org/css-validator/). Pröva att kopiera in din kod från stylesheeten och validera den via "Direct input"-metoden.
-
-Det bör se ut ungefär så här.
-
-[FIGURE src=image/webtec/html-css-php/css_validator.png?w=w3 caption="Kopiera in din stylesheet i validatorn."]
-
-Nu kan jag klicka så att stylesheeten valideras.
-
-[FIGURE src=image/webtec/html-css-php/css_validated.png?w=w3 caption="Stylesheeten validerade."]
-
-Du kan också ladda upp din sida på studentservern och validera den genom att ge validatorn länken till din me-sida. Du tar alltså länken till din egen sida och kopiera in den i validatorn.
-
-Så här kan det se ut.
-
-[FIGURE src=image/webtec/html-css-php/css_validate_by_url.png?w=w3 caption="Här kan jag validera stylesheeten via länken till webbsidan."]
-
-Nu bör din stylesheet valideras på samma sätt som tidigare med samma resultat. Denna varianten fungerar inte när du kör din webbplats på localhost, du måste ha din webbplats publicerad på en publik webbserver för att validatorn skall kunna nå den.
-
-
-
-Validera CSS via länk {#validatecsslink}
---------------------------------------
-
-För att underlätta validering av sidorna så lägger vi till en direktlänk till CSS-validatorn. Vi gör på liknande sätt som vi gjorde med HTML-validatorn. Lägg till följande länk i din footer tillsammans med HTML validatorn.
+Vi får inte glömma att skriva ut resultat-strängarna till webbsidan.
 
 ```html
-<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+<p><?= $todayMessage ?></p> 
+
+<?= $weekStr ?>
 ```
 
-Ladda upp sidorna på driftsservern för att testa att länken till CSS-validatorn fungerar. Klicka på den och se om din sida validerar.
 
 
-
-Unicorn, ett valideringsverktyg för flera tekniker {#unicorn}
+Skicka parameter till sidan med querysträngen {#querystring}
 --------------------------------------
 
-Det finns ett valideringsverktyg som heter Unicorn som kör både HTML och CSS testerna i en körning. Dessutom kan det köra ytterligare kompletterande tester. Länka även till detta verktyget från din me-sida.
+Om du skriver in följande länk i din webbsida, så kommer den att söka efter "php get". 
 
-Länken till Unicorn som passar i din footer ser ut så här.
+* `https://www.google.com/search?q=php+get`
+
+Det är delen med `?q=php+get` som gör det möjligt att skicka parametrar till en webbsida. Den delen som inleds med `?` kallas för querysträng och den följs sedan av en sekvens av `key=value`. Om man har flera värden så separeras de av ett `&`-tecken, så här `key=value&key2=value2`.
+
+Detta kallas querystring och är en del av URL:en, som om du kan hitta en enkel förklaring till query/querystring i [Wikipedias sida om URL](https://en.wikipedia.org/wiki/URL).
+
+I PHP finns det en speciell variabel som heter [`$_GET`](https://www.php.net/manual/en/reserved.variables.get.php) och där samlas all information om querysträngen. Man kan hämta värden från `$_GET` på följande sätt.
+
+```php
+echo $_GET['q']; // Detta ger "php get" i första exemplet
+
+echo $_GET['key']; // Detta ger "value" i andra exemplet
+
+echo $_GET['key2']; // Detta ger "value2" i tredje exemplet
+```
+
+Vi kan också kontrollera om ett värde är satt i querysträngen.
+
+```php
+if (isset($_GET['key'])) {
+    // Yes, the key is set and has a value that can be retrieved
+}
+```
+
+Vi kan nu skapa ett exempel där vi skickar in ett datum via querysträngen och sedan skriver vi ut detaljer om datumet. Konstruktionen vi tänker oss med querysträngen kan alltså se ut så här `?date=2022-08-23` eller `?date=2029-12-24`.
+
+I exemplet behöver vi då följande kod för att använda oss av det inkommande argumentet, förutsatt att det är definierat i querystringen.
+
+Först kollar vi om det finns ett inkommande argument och isåfall läser vi in det till en variabel.
+
+```php
+// Get incoming arguments from querystring
+$date = null;
+if isset($_GET['date']) {
+    $date = $_GET['date'];
+}
+```
+
+Det finns en enklare konstruktion som vi kan använda som tar upp färre kodrader, den kallas "null coalesce operator" och stavas `??`. Den fungerar så att den tar det första värdet som inte är null, i en kedja av värden.
+
+```php
+// Get incoming arguments from querystring
+$date = $_GET['date'] ?? null;
+```
+
+Nu har vi värdet i en variabel. Om det inte kom ett inkommande argument så innehåller variabeln `null`, annars förutsätter vi att det innehåller ett datum. Ja, förutsatter är kanske inte helt bra, värdet kommer från användaren och en del användare är elaka och skickar in felaktiga värden för att förstöra våra program. Så, rent säkerhetsmässigt måste vi vara försiktiga med alla värden och inkommande parametrar som en utomstående kan påverka och vi själva inte har full koll på. Vi kan till exempel inte skriva ut variabelns värde direkt i webbsidan, det är samma sak som att ge användaren möjlighet att lägga in kod i vår webbsida och det vill vi undvika. 
+
+Nu när vi har värdet så kan vi hoppas att det är ett datum och använda det för att skapa ett timestamp och sedan plocka fram detaljer om datumet.
+
+```php
+// Extract details about the date, if it is a valid date
+$date = $_GET['date'] ?? null;
+
+// Extract details about the date, if it is a valid date
+$timestamp = null;
+if ($date) {
+    $timestamp = strtotime($date);
+}
+
+if ($timestamp) {
+    $dateStr = date('Y-m-d', $timestamp);
+    $monthStr = date('F', $timestamp);
+    $monthDaysStr = date('t', $timestamp);
+    $weekStr = date('W', $timestamp);
+    $dayStr = date('l', $timestamp);   
+}
+```
+
+Nu handlar det mest om att skriva ut informationen. Här tänker jag använda mig av något som kallas "[PHP alternativ syntax för kontrollstrukturer](https://www.php.net/manual/en/control-structures.alternative-syntax.php)" som gör att jag kan skriva en if-sats på ett litet annorlunda sätt när jag skapar html-koden. Man kan också skriva loopar på liknande sätt.
 
 ```html
-<a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a>
+<h2>Skicka parameter till webbsidan med querystring och GET</h2>
+
+<?php if ($date) : ?>
+    <p>
+        The incoming date argument is <code><?= htmlentities($date) ?></code>.
+    </p>
+
+    <?php if ($timestamp) : ?>
+        <p>
+            The date is <?= $dateStr ?> and that is/was a <?= $dayStr ?> in the 
+            week <?= $weekStr ?> in the month <?= $monthStr ?> that has 
+            <?= $monthDaysStr ?> days.
+        </p>
+    <?php else : ?>
+        <p>The incoming date is not a valid date.</p>
+    <?php endif; ?>
+
+<?php else : ?>
+    <p>
+        You did not send a date through the querystring, do that by adding this 
+        to the url: <code>?date=2022-08-23</code>
+    </p>
+<?php endif; ?>
 ```
 
-Så här kan det se ut när du klickar på länken och validerar både HTML och CSS enligt Unicorns validator.
+Man kan tänka att man skriver sin kod i antingen PHP-läge eller i HTML-läge. När man skriver i PHP-läge använder man den vanliga if-satsen eller loopen, men när det passar bättre att vara i HTML-läge så använder man den alternativa syntaxen som ger mer läsbar HTML-kod.
 
-[FIGURE src=image/webtec/html-css-php/unicorn.png?w=w3 caption="Unicorn validerar HTML, CSS och om sidan innehåller ett _feed_ (vilket sidan inte gör)."]
+Om du följer koden kan du se två nästlade if-satser som skriver ut olika meddelanden beroende av om datumet är giltigt eller ej.
 
-Kom nu ihåg att alltid dubbelkolla att din sida validerar. Hamnar du i trubbel så kollar du alltid först om sidan validerar. Det är ofta första steget i felsökningen, kontrollera att HTML och CSS validerar.
+Du kan också se att jag skriver ut innehållet i `$date` trots att det är en farlig variabel som innehåller det som snvändaren skickat till sidan. Men jag löser säkerheten genom att använda [funktionen `htmlentities()`](https://www.php.net/manual/en/function.htmlentities.php) som hjälper mig att koda om alla farliga tecken i den strängen, på det viset skyddar jag sidan och kan skriva ut variabelns innehåll.
+
+Så här ser min sida ut när jag skickar in ett giltigt datum.
+
+[FIGURE src=image/webtec/programmera/get_date.png?w=w3 caption="Skicka argument till webbsidan med GET och querystring."]
 
 
-
-Om HTML-entiteter {#htmlentities}
+Ett GET formulär {#getform}
 --------------------------------------
 
-Varför används `&amp;` istället för tecknet `&` när vi länkar till Unicorn ovan?
-Du kan testa att ändra din kod och enbart skriva `&`. Validera den sedan i Unicorn. Du får då ett felmeddelande som säger:
+Nu när vi kan querysträngen och GET så kan vi skapa ett HTML formulär där vi som användare kan mata in ett datum och skicka till webbsidan, så slipper vi manuellt redigera länken direkt och lägga till querysträngen.
 
-> **`&` did not start a character reference. (`&` probably should have been escaped as `&amp;`.)**
-
-Tecknet `&` har en speciell betydelse i HTML och därför kan det ibland behöva ersättas med sin motsvarande HTML entitet `&amp;`. Annars validerar inte HTML-koden, den är inte helt korrekt.
-
-I tabellen nedan är ett par tecken som är reserverade i HTML, de har speciell betydelse. Om man vill att respektive tecken skall skrivas ut i text, eller vara en del av en länk, så behöver man byta ut tecknet mot dess _entity_, eller HTML entitet som det också kallas.
-
-| Tecken | Entity   | Kommentar |
-|--------|--------  |-----------|
-| `&`    | `&amp;`  | Början på en entitet eller teckensekvens. |
-| `<`    | `&lt;`   | Start på en HTML-tagg. |
-| `>`    | `&gt;`   | Slut på en HTML-tagg. |
-| `"`    | `&quot;` | Start och slut på ett attributs värde. |
-
-Det finns fler tecken som kan konstrueras med HTML entiter. Du kan till exempel skapa ett copyright-tecken &copy; `&copy;` eller ett euro-tecken &euro; `&euro;` med dem.
-
-
-
-Link checker {#linkcheck}
---------------------------------------
-
-Ett annat användbart verktyg för att testa och kvalitetskontrollera din webbplats är W3C link Checker som kontroller att alla länkar fungerar på din webbplats, det är både interna länka och externa länker. Verktyget kontrollerar att länkarna leder till en korrekt webbsida eller del av webbsida.
-
-Du kan prova verktyget genom att gå till [W3C Link Checker](https://validator.w3.org/checklink) och sedan kopiera in en länk till den webbsidan på din webbplats som du vill testa. Det tar ett tag för verktyget att testa alla dina länkar och då får ett resultat om alla leder till en giltig sida.
-
-Du kan placera in länken till verktyget i din footer, så att du kommer ihåg den.
+Här behöver vi först skapa ett HTML formulär med ett textfält där vi kan skriva in en datum. HTML-koden för ett sådant formulär kan se ut så här.
 
 ```html
-<a href="https://validator.w3.org/checklink">Link checker</a>
+<h2>HTML formulär med GET</h2>
+
+<form action="" method="get">
+    <p>
+        Datum:
+        <input type="text" value="<?= $dateStr ?>" name="date" placeholder="Skriv in ett datum">
+    </p>
+
+    <p>
+        <input type="submit" value="Skicka" name="doit">
+        <input type="reset" value="Rensa">
+    </p>
+</form>
 ```
 
+Formuläret kommer visa upp ett textfält där användaren kan skriva in godtycklig text. Det visas också en knapp där användaren kan klicka för att skicka (submitta) formuläret så att dess data skickas till servern. Det finns också en knapp som rensar formuläret till sitt ursprungliga läge.
+
+Jag har angett `method="GET"` vilket innebär att formulärets data kommer att skickas via querysträngen.
+
+Jag har angett `action=""` vilket innebär att formuläret postas till samma url som formuläret är på. Det kallas självpostande formulär, "self-submitting form" då det går till samma sida som formuläret visas på. Hade jag velat posta resultatet till en annan sida så hade jag kunnat ange till exempel `action="me.php"`.
+
+När formuläret postas så skickas dess inneåll till den webbsidan som har angivits. Där får vi ta emot argumentet på samma sätt som vi gjorde i förra övningen. Så här kan det se ut. Jämför variabelnamnen med de namn som används i formuläret ovan.
+
+```php
+// Get incoming arguments from querystring
+$date = $_GET['date'] ?? null;
+
+$dateStr = "";
+if ($date) {
+    $dateStr = htmlentities($date);
+}
+```
+
+Innan jag är klar så väljer jag att utöka min kod med lite utskrifter via `<output>` och via `var_dump()` för att skapa möjligheten att debugga innehållet i `$_GET`.
+
+```html
+<h2>HTML formulär med GET</h2>
+
+<form action="" method="get">
+    <p>
+        Datum:
+        <input type="text" value="<?= $dateStr ?>" name="date" placeholder="Skriv in ett datum">
+    </p>
+
+    <p>
+        <input type="submit" value="Skicka" name="doit">
+        <input type="reset" value="Rensa">
+    </p>
+
+    <output>
+        <?php if ($dateStr) : ?>
+            <p>You have submitted the date: <code><?= $dateStr ?></code>.</p>
+        <?php endif; ?>
+    </output>
+</form>
+
+<p>This is how you can debug the content of the incoming <code>$_GET</code> variable.</p>
+<pre><?= var_dump($_GET) ?></pre>
+```
+
+Nu är i klara, då kan vi köra sidan som ser ut så här i sitt första skede när det inte finns en querysträng som är postad.
+
+[FIGURE src=image/webtec/programmera/html_form_1.png?w=w3 caption="Ett HTML formulär för att skicka in datumet till sidan via querysträngen."]
+
+När jag matar in ett datum och klickar på "Skicka" så postas formulärets innehåll till den sidan jag angett via querysträngen. Det kan se ut så här.
+
+[FIGURE src=image/webtec/programmera/html_form_2.png?w=w3 caption="Formuläret är postat och sidan tar emot argumentet via querysträngen och visar upp det."]
+
+Prova gärna att byta till en annan typ av formulärelement, till exempel ett som är anpassat till datum, prova med `type="date"`.
+
+Som du kan se så fungerar även vårt föregående exempel där vi skrev ut detaljer om datumet tillsammans med vårt formulärexempel, de båda exemplen jobbar mot samma `$_GET['date']`.
 
 
-Devtools och de resurser som laddas {#network}
+
+Bra att veta {#resurser}
 --------------------------------------
 
-När webbsidan laddas av din webbläsare så laddas först källkoden till webbsidan. I källkoden kan det sedan finnas fler resurser som också behöver laddas hem, det kan vara till exempel stylesheeten, faviconen och bilder. Det är alltså en samling av resurser som laddas när en enda webbsida skall visas.
+Manualen
 
-Inuti devtools kan du välja fliken "Network" för att kontrollera vilka resurser som laddas, hur lång tid de tar att laddas, deras storlek och vilken status respektive HTTP request fick.
+Felsök på studentservern pure
 
-I bilden nedan visas Network-fliken tillsammans med de resurser som laddas för sidan, vilken HTTP status requesten har, vilken typ av resurs det är och om resursen hämtas från källan eller om den är cachad.
-
-[FIGURE src=image/webtec/html-css-php/inspect_network.png?w=w3 caption="Devtools och networksfliken visar vilka resurser som laddats till sidan."]
-
-En bra sak att notera kan vara att vissa resurser cachas av webbläsaren och laddas inte när man gör reload på sidan. Prova att göra reload på din sida, förutsatt att du har resurser som är cachade, gör sedan en tvingad reload via `shift ctrl r` (`shift cmd r` på Mac) och se att statusen ändras och visar resursens storlek. Det visar att resursen laddades från sin källa och var inte cachad.
-
-[FIGURE src=image/webtec/html-css-php/inspect_network_reload.png?w=w3 caption="Men en tvingande omladdning så laddas alla cachade resurser om."]
-
-Detta verktyg kan vara bra vid felsökning när du vill se vilka resurser som laddas till sidan.
-
-
-
-Fler bra resurser att lägga i footern {#resurser}
---------------------------------------
-
-Det finns flera olika typer av stödverktyg som kan vara bra att ha när man utvecklare webbsidor. Här följer ett par som du bör lägga till i din footer.
-
-* [Mät sidans prestanda](https://web.dev/measure/), mät och analysera webbsidans tekniska kvalitet, prestanda och tillgänglighet.
-* [CanIUse](https://caniuse.com/), en webbplats som visar vilke HTML & CSS konstruktioner som stöds av olika versioner av webbläsare.
-* [CodePen](https://codepen.io/), ett utvecklingsverktyg där du kan skriva HTML och CSS för att testa konstruktioner som du även kan dela med din kompis. Det finns även ett stort utbud av konstruktioner som du kan låna eller hämta inspiration ifrån.
-
-Placera länkarna i din footer så tappar du inte bort dem.
+Kodvalidering
 
 
 

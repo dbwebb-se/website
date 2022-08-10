@@ -56,7 +56,7 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 1. [PHP introduktion](./../forelasning/php-introduktion)
 
-* [PHP sidkontroller och vyer](./../forelasning/php-sidkontroller-vyer) för att beskriva flödet när en websida produceras med PHP och koppla till MVC?
+1. [PHP sidkontroller och vyer](./../forelasning/php-sidkontroller-vyer) för att beskriva flödet när en websida produceras med PHP och koppla till MVC?
 
 
 
@@ -64,7 +64,13 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 Läs enligt följande.
 
-1. ...
+1. Boken
+
+1. Manualen https://www.php.net/manual/en/langref.php
+
+1. Guiden?
+
+1. Videoserie 2019?
 
 
 
@@ -83,35 +89,7 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. Jobba igenom övningen "[programmera din webbsida](kunskap/styla-din-webbsida-med-html-och-css)" som hjälper dig att komma igång med CSS konstruktioner för att styla din webbplats. Spara koden du skriver under `me/report`, om du skriver extra test- och exempelprogram kan du spara dem under `me/kmom02`.
-
-<!--
-* Programmera något med PHP, som en övningssida i report?
-
-En vy med kalendern som en tabell?
-
-PHP med variabler, inbyggda funktioner, if och loop
-kalender på svenska, plocka fram detaljer om dagens datum och ett visst datum.
-sidans laddningstid, antal resurser/filer/minne som laddas
-
-Kalendern kan vara en månadskalender 1-31 vilket ger endast en loop, vecka/månadskalendern ger ju två loopar...
-
-kalender print with style
-Is it friday?
-
-* Programmera något med PHP, som en övningssida i report?
-
-table
-
-
- Låt artikeln innehålla ett par övningar där man också kan se ett facit.
-
-Olika varianter på kalender
-
-* Övning om olika formulärelement.
-
-* I lektionen "[Programmera med PHP](./../forelasning/programmera-med-php)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
--->
+1. Jobba igenom övningen "[Programmera din webbplats med PHP](kunskap/programmera-din-webbplats-med-php)" som hjälper dig att komma igång med PHP och dess olika konstruktioner och begrepp för att införa dynamiskt beteende i dina webbsidor. Spara koden du skriver under `me/report`, om du skriver extra test- och exempelprogram kan du spara dem under `me/kmom03`.
 
 
 
@@ -128,22 +106,36 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 <!--
 Byt uppgift, kalender ish? med GET
+
+Formulär, till kalender, GET?
 -->
 
 <!--
-Byt uppgift, kalender ish? med GET
+Kalender, månadens babe
+-->
 
-Formulär, till kalender, GET?
+<!--
+En vy med kalendern som en tabell?
+
+Kalendern kan vara en månadskalender 1-31 vilket ger endast en loop, vecka/månadskalendern ger ju två loopar...
+
+kalender print with style
+Is it friday?
+
+table
+
+Olika varianter på kalender
+
+* I lektionen "[Programmera med PHP](./../forelasning/programmera-med-php)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
 -->
 
 
 
 ### Överkurs och extra uppgifter {#extra}
 
-Följande uppgifter skall utföras och resultatet skall redovisas.
+Här följer extra uppgifter som du kan utföra för att lära dig mer, om du har tid, lust och energi.
 
 * Markera valt värde i navbaren (if-sats och SERVER)
-* Markdown (> kmom03)?
 
 
 
@@ -183,9 +175,7 @@ När du är klar med detta kursmoment så har du grundläggande kunskap i hur ma
 
 <small><i>Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.</i></small>
 
-<!--
-Kalender, månadens babe
--->
+
 
 Studieplan & Upplägg {#studieplan}
 ---------------------------------

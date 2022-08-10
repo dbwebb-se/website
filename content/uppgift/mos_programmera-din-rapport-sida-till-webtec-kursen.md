@@ -5,7 +5,7 @@ category:
 revision:
     "2022-07-01": "(A, mos) Första utgåvan."
 ...
-Styla din rapportsida till webtec-kursen
+Programmera din rapportsida till webtec-kursen
 ===================================
 
 Du skall jobba vidare med stylen på din rapportsida i kursen och styla upp webbsidan med navbar, header, footer, article, aside, kolumnlayout och responsivitet.

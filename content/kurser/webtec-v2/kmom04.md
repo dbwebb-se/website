@@ -46,10 +46,6 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 Ovan föreläsningar ersätts av en längre lektion.
 
-<!--
-Ta bort fokus från responsiv webbplats.
-In med PHP, något enklare.
--->
 
 
 * Om innehåll i webbplatsen?
@@ -103,6 +99,17 @@ Som uppgift?
 https://arkiv.dbwebb.se/kod-exempel/business-card-generator/
 
 -->
+
+
+
+### Överkurs och extra uppgifter {#extra}
+
+Här följer extra uppgifter som du kan utföra för att lära dig mer, om du har tid, lust och energi.
+
+<!--
+* Markdown, läs in fil och konvertera, kräver composer och PHP i pathen (låt vara tills design-kursen)
+-->
+
 
 
 

@@ -56,7 +56,11 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 1. [PHP introduktion](./../forelasning/php-introduktion)
 
+<!--
 1. [PHP sidkontroller och vyer](./../forelasning/php-sidkontroller-vyer) för att beskriva flödet när en websida produceras med PHP och koppla till MVC?
+
+eller gör detta i zoom-sessionen.
+-->
 
 
 
@@ -71,6 +75,17 @@ Läs enligt följande.
 1. Guiden?
 
 1. Videoserie 2019?
+
+
+
+### Video för orientering {#video}
+
+Titta på följande videor/filmer. Filmerna är tänkta att ge dig en liten orientering i det område som behandlas i kursmomentet.
+
+* [The GAMECHANGING features of PHP 8!](https://www.youtube.com/watch?v=f_cwnwaEwaY) (13 min)
+* [Rasmus Lerdorf – 25 years of PHP](https://www.youtube.com/watch?v=Qa_xVjTiOUw) (55 min)
+
+Videorna ovan finner du även i spellistan "[ Om webbutveckling (HTML, CSS, PHP, SQL)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-Qp6DTS_2s6q-Br66ufoWc)".
 
 
 
@@ -127,6 +142,8 @@ table
 Olika varianter på kalender
 
 * I lektionen "[Programmera med PHP](./../forelasning/programmera-med-php)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
+
+Byt till nästa månad med länk
 -->
 
 
@@ -136,6 +153,10 @@ Olika varianter på kalender
 Här följer extra uppgifter som du kan utföra för att lära dig mer, om du har tid, lust och energi.
 
 * Markera valt värde i navbaren (if-sats och SERVER)
+https://dbwebb.se/guide/kom-igang-med-programmering-i-php/styla-nuvarande-lank-i-en-navbar
+
+* Mät sidans exekveringstid
+https://dbwebb.se/guide/kom-igang-med-programmering-i-php/mata-en-sidas-beteende
 
 
 
@@ -149,8 +170,9 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 Se till att följande frågor besvaras i din redovisningstext.
 
 * Hur är din uppfattning om programmeringsspråket PHP så här långt?
-* Är du bekväm med att använda GET, POST, SESSION och COOKIE i din webbutveckling?
-* Hur kändes det att bygga webbplatsen med sidkontroller och vyer?
+* Hur känns det att bygga webbplatsen med strukturen av sidkontroller och vyer?
+* Kan du säga hur bekväm du är med att använda grundkonstruktionerna i PHP med variabler, if, loopar och formulär med GET och querysträngen med mera, eller var ser du de svåra passagerna?
+* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet.
 * Vilken är din TIL för detta kmom?
 
 Glöm inte att testa din inlämning med `dbwebb test kmom03`.
@@ -328,16 +350,6 @@ Webbplatsen W3Schools har en guide som är lättilgänglig när man vill komma i
 
 * [PHP Tutorial](https://www.w3schools.com/php/)
 
-
-
-### Video för orientering {#video}
-
-Titta på följande videor/filmer. Filmerna är tänkta att ge dig en liten orientering i det område som behandlas i kursmomentet.
-
-* [The GAMECHANGING features of PHP 8!](https://www.youtube.com/watch?v=f_cwnwaEwaY) (13 min)
-* [Rasmus Lerdorf – 25 years of PHP](https://www.youtube.com/watch?v=Qa_xVjTiOUw) (55 min)
-
-Videorna ovan finner du även i spellistan "[ Om webbutveckling (HTML, CSS, PHP, SQL)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-Qp6DTS_2s6q-Br66ufoWc)".
 
 
 

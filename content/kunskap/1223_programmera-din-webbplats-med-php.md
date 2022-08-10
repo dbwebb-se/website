@@ -665,6 +665,7 @@ Så här ser min sida ut när jag skickar in ett giltigt datum.
 [FIGURE src=image/webtec/programmera/get_date.png?w=w3 caption="Skicka argument till webbsidan med GET och querystring."]
 
 
+
 Ett GET formulär {#getform}
 --------------------------------------
 
@@ -747,34 +748,113 @@ Som du kan se så fungerar även vårt föregående exempel där vi skrev ut det
 
 
 
-Bra att veta {#resurser}
+$_SERVER och inkommande värden för requesten {#server}
 --------------------------------------
 
-Manualen
+Likt `$_GET` finns det en annan variabel som heter `$_SERVER`. Dessa båda variabler är exempel på "[super globals](https://www.php.net/manual/en/language.variables.superglobals.php)" och det finns fler liknande variabler som man har tillgång till när man skriver sin PHP-kod.
 
-Felsök på studentservern pure
+Låt oss titta lite på [`$_SERVER`](https://www.php.net/manual/en/reserved.variables.server.php) och vilken information vi kan finna i den. Låt oss bygga ett testprogram där vi skriver ut värden från variabeln i en HTML tabell.
 
-Kodvalidering
+PS. Om du är intresserad av vad hela variabeln `$_SERVER` innehåller så kan du debugga den på samma sätt som vi gjorde med `$_GET`.
+
+```html
+<p>This is how you can debug the content of the incoming <code>$_SERVER</code> variable.</p>
+<pre><?= var_dump($_SERVER) ?></pre>
+```
+
+Vi börjar med grundstrukturen av en HTML tabell, sedan lägger vi till rader för de värden vi vill visa.
+
+```html
+<h2>Detaljer om requesten med SERVER</h2>
+
+<table>
+    <tr>
+        <th>Nyckel</th>
+        <th>Värde</th>
+    </tr>
+
+    <tr>
+        <td>Rad 1, kolumn 1</td>
+        <td>Rad 1, kolumn 2</td>
+    </tr>
+
+    <tr>
+        <td>Rad 2, kolumn 1</td>
+        <td>Rad 2, kolumn 2</td>
+    </tr>
+</table>
+```
+
+För att snygga till tabellen så kan vi lägga till lite CSS-kod i en stylesheet.
+
+```css
+table {
+    border: 1px solid #666;
+}
+
+th {
+    border-bottom: 1px solid #666;
+    background-color: #ccc;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+tr:hover {
+    background-color: #ccc;
+}
+```
+
+För att visa ett värde ur `$_SERVER` så kan jag lägga till en ny rad till tabellen med följande kod.
+
+```html
+    <tr>
+        <td>SERVER_SOFTWARE</td>
+        <td><?= htmlentities($_SERVER['SERVER_SOFTWARE']) ?></td>
+    </tr>
+
+    <tr>
+        <td>SERVER_ADDR</td>
+        <td><?= htmlentities($_SERVER['SERVER_ADDR']) ?></td>
+    </tr>
+```
+
+Därefter följer vi upp med att lägga till även detaljer om REQUEST_TIME_FLOAT, REQUEST_METHOD, REQUEST_URI och SCRIPT_NAME.
+
+När vi är klara kan en utskrift se ut så här.
+
+[FIGURE src=image/webtec/programmera/server_1.png?w=w3 caption="Vissa delar av $_SERVER är nu utskrivna i en HTML tabell."]
+
+Innehållet i `$_SERVER` kan ibland vara användningsbart. Vi kan till exempel läsa av namnet på den sidkontroller som vi befinner oss i och vi skulle kunna räkna ut hur lång tid det har tagit att ladda sidan. Här är kod som visar hur du kan göra.
+
+```php
+ // Calculate the time it took to process this page
+$timestampFirst = $_SERVER["REQUEST_TIME_FLOAT"];
+$timestampLast = microtime(true);
+$diff = $timestampLast - $timestampFirst;
+$loadTime = round($diff * 1000, 3);
+
+// Get name of the current pagecontroller
+$requestUri = $_SERVER["SCRIPT_NAME"];
+$pageController = basename($requestUri);
+```
+
+Om vi skriver ut informationen kan det se ut så här.
+
+[FIGURE src=image/webtec/programmera/server_2.png?w=w3 caption="Detaljer om sidans request är hämtade från $_SERVER och bearbetade."]
 
 
 
 Avslutningsvis {#avslutning}
 --------------------------------------
 
-Nu har du kommit igång och du har grunden till en webbplats som bygger på HTML, CSS och PHP. Som du kanske märker så kan det vara klurigt att se hur dessa tekniker samverkar med varandra. Men kortfattat har vi alltså följande.
+Nu hoppas jag att du har kommit igång med grunderna i PHP och att du har en struktur som du kan följa för att skapa fler dynamiska PHP-sidor.
 
-* HTML för att strukturera innehållet i sidan.
-* CSS för att ge de olika elementen i sidan utseende och style.
-* PHP körs på serversidan och renderar HTML och innehåll i sidan.
+Glöm inte bort att "problemlösa" innan du sätter igång att programmera, så att du iallafall har en grov plan.
 
-När det gäller felsökning så är det bra att ha följande i minnet.
+Glöm heller inte bort att det är bra att skapa små testprogram när man lär sig nya saker.
 
-* Webbläsaren tar en url och försöker hämta den, normalt via en webbserver.
-* Webbservern tar resurser, eventuellt exekveras PHP-koden, och svaret skickas tillbaka till webbläsaren.
-* Webbläsaren får källkoden till sidan (högerklicka och visa källkod).
-* Webbläsaren hämtar hem alla övriga resurser som sidan refererar till, i vårt fall är det bilder och stylesheet (se devtools networks-fliken).
-* Webbläsaren parsar sidan (se den parsade HTML och CSS strukturen i devtools elements-fliken).
+Använd echo och var_dump eller liknande för att skriva ut innehållet i en variabel, det underlättar när man felsöker.
 
-Försök vara strukturerad när du felsöker och ha alltid ovan flöde i minnet. Det är bra om du själv kan avgränsa och se vad i flödet som felet eventuellt inträffar.
-
-Lycka till i din framtida karriär som (webb) programmerare.
+Nu kan du behöver programmera lite på egen hand för att se om det du lärt dig har fastnat.

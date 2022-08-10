@@ -42,14 +42,19 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 * [PHP och arrayer](./../forelasning/php-arrayer)
 * [PHP och funktioner](./../forelasning/php-funktioner)
+
+<!--
+Finns ej
+
 * [PHP och HTML formulär](./../forelasning/php-html-formular)
 * [PHP, cookies och sessioner](./../forelasning/php-cookie-session)
 
 Ovan föreläsningar ersätts av en längre lektion.
+-->
 
 
+* Om innehåll i webbplatsen? (markdown kanske, som en filbaserad databas)
 
-* Om innehåll i webbplatsen?
 
 
 ### Litteratur  {#litteratur}
@@ -77,6 +82,11 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 
 <!--
+* Arrayer
+* (Funktioner)
+* POST med processingsida
+* Session
+
 * Programmera något med PHP, som en övningssida i report?
 
 * I lektionen "[Bygg en webbplats med PHP](./../forelasning/bygg-en-webbplats-med-php)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
@@ -91,10 +101,16 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 * Gör uppgiften "[Bygg en webbplats med PHP](uppgift/bygg-en-webbplats-med-php)".
 
 <!--
-Byt uppgift, kalender ish? med GET
+Kalender samt bytta månad med länk.
+
+Galleri med bilder, klicka runt, läsa av filer i katalog. Next
 
 Bygg formulär. (som övning?)
 https://jonkopingenergi.se/privat/fiber/serviceavgift (använd även till databasen)
+
+Session, formulär med POST
+
+Inloggning av användare med lösenord.
 
 Som uppgift?
 https://arkiv.dbwebb.se/kod-exempel/business-card-generator/

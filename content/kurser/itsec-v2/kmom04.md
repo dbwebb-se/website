@@ -4,7 +4,7 @@ author:
     - nik
     - grm
 revision:
-    "2022-05-24": "(D, grm) Komplettering HT22."
+    "2022-08-10": "(D, grm) Komplettering HT22."
     "2021-11-10": "(C, grm) Komplettering HT21."
     "2021-10-01": "(B, lew) Uppdatering för ht21"
     "2020-11-02": "(A, nik) Uppdatering för ht20"
@@ -45,7 +45,7 @@ Läs &amp; Studera  {#lasanvisningar}
 *(ca: 8-10 studietimmar)*
 
 * Läs i boken [Computer Security](/kunskap/boken-computer-security)
-    * Kapitel 9
+    * Kapitel 9 Databassäkerhet
 * Läs artikeln om riskanalys, [Texten hittar du här](/kursmaterial/itsec/doc/riskanalys.pdf).
 * Material kring Penetration Studies finns tillgängligt på Canvas [här](https://bth.instructure.com/courses/3047/files/364211)
 

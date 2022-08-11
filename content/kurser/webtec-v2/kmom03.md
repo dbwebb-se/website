@@ -152,11 +152,29 @@ Byt till nästa månad med länk
 
 Här följer extra uppgifter som du kan utföra för att lära dig mer, om du har tid, lust och energi.
 
-* Markera valt värde i navbaren (if-sats och SERVER)
-https://dbwebb.se/guide/kom-igang-med-programmering-i-php/styla-nuvarande-lank-i-en-navbar
 
-* Mät sidans exekveringstid
-https://dbwebb.se/guide/kom-igang-med-programmering-i-php/mata-en-sidas-beteende
+
+#### Markera valt värde i navbaren {#navbarcurrent}
+
+Markera valt värde i navbaren för att visa på vilket menyval du är för närvarande. Trixet är att hämta namnet på nuvarande sidkontroller från `$_SERVER` och jämföra det med de sidkontroller som du har i din navbar, när de är lika så lägger du till en css-klass som du stylar så att navbaren visar nuvarande aktuella val.
+
+Det kan till exempel se ut så här.
+
+[FIGURE src=image/webtec/programmera/navbar_current.png?w=w3 caption="Nu visas aktuellt val i navbaren med en annan style."]
+
+Du kan få vissa tips om du går till sidan "[Styla nuvarande länk i en navbar](https://dbwebb.se/guide/kom-igang-med-programmering-i-php/styla-nuvarande-lank-i-en-navbar)".
+
+
+
+#### Statistik om resurser som används {#stats}
+
+Längst ned i din footer kan du lägga till detaljer om sidans prestanda såsom laddningstid, antal filer som inkluderats och hur mycket minne som processingen av sidan använder.
+
+Det kan till exempel se ut så här.
+
+[FIGURE src=image/webtec/programmera/stats.png?w=w3 caption="Statistik om resurser som krävs för att processa sidan."]
+
+Du kan få vissa tips om du går till sidan "[Mäta en sidas beteende](https://dbwebb.se/guide/kom-igang-med-programmering-i-php/mata-en-sidas-beteende)".
 
 
 
@@ -172,7 +190,7 @@ Se till att följande frågor besvaras i din redovisningstext.
 * Hur är din uppfattning om programmeringsspråket PHP så här långt?
 * Hur känns det att bygga webbplatsen med strukturen av sidkontroller och vyer?
 * Kan du säga hur bekväm du är med att använda grundkonstruktionerna i PHP med variabler, if, loopar och formulär med GET och querysträngen med mera, eller var ser du de svåra passagerna?
-* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet.
+* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. Berätta även om du försökte på någon av extrauppgifterna.
 * Vilken är din TIL för detta kmom?
 
 Glöm inte att testa din inlämning med `dbwebb test kmom03`.

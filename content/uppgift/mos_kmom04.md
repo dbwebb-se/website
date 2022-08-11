@@ -3,14 +3,14 @@ author: mos
 category:
     - kurs webtec
 revision:
-    "2022-07-01": "(A, mos) Första utgåvan."
+    "2022-08-11": "(A, mos) Första utgåvan till webtec-v2."
 ...
 Programmera din rapportsida till webtec-kursen
 ===================================
 
-Du skall jobba vidare med stylen på din rapportsida i kursen och styla upp webbsidan med navbar, header, footer, article, aside, kolumnlayout och responsivitet.
+Du skall programmera ett par webbsidor med PHP och grundläggande konstruktioner såsom variabler, if-satser, loopar, inbyggda funktioner samt använda dig av HTML form och GET via querysträngen.
 
-När du är klar har du förhoppningvis en snyggare webbplats än tidigare. Du har iallafall en hel del med CSS-kod och du bör ha lärt dig en hel del nyttiga CSS konstruktioner.
+Du jobbar i din tidigare struktur av sidkontrollers och vyer och bygger ut din befintliga webbplats.
 
 <!--more-->
 
@@ -19,7 +19,7 @@ När du är klar har du förhoppningvis en snyggare webbplats än tidigare. Du h
 Förkunskaper {#forkunskaper}
 -----------------------
 
-Du har jobbat igenom övningen "[Styla din webbsida med HTML och CSS](kunskap/styla-din-webbsida-med-html-och-css)" och du har därmed grundstrukturen klar.
+Du har jobbat igenom övningen "[Programmera din webbplats med PHP](kunskap/programmera-din-webbplats-med-php)" och du har därmed fått en bra start inför uppgiften.
 
 
 
@@ -37,15 +37,42 @@ Här är en video som "pratar" dig igenom uppgiftens upplägg och visar hur du k
 Introduktion och förberedelse {#intro}
 -----------------------
 
-Om du har jobbat igenom övningen så är du förberedd för uppgiften.
+Om du har jobbat igenom övningen så är du förberedd för uppgiften och du har tränat på de begrepp som används för att lösa uppgiften.
+
+
+
+### Är det fredag? {#fredag}
+
+I uppgiften kommer du bygga en webbsida för att kolla om det är fredag idag och isåfall skrivs det ut ett trevligt meddelande, annars skrivs det ut hur många dagar det är kvar till fredag. 
+
+Tanken är att du gör en riktigt galen sida med hjälp av CSS, stort och annorlunda typsnitt, någon fredags bild och kanske inkluderar en fredagsvideo om det är fredag.
+
+
+
+### Månadskalender {#manadskal}
+
+Du skall göra en månadskalender som har ett liknande utseende som följande kalender.
+
+[FIGURE src=image/webtec/programmera/month_cal.jpg?w=w3 caption="En månadskalender."]
+
+Den skall göras i en HTML tabell och försök likna ovan kalender så gott det går.
 
 
 
 Krav {#krav}
 -----------------------
 
+Utför följande krav.
+
+1. Skapa en sidkontroller `public/friday.php` som gör en riktigt galen sida genom att styla den med CSS på alla möjligt galna sätt. Placera sidan i navbaren. Sidan skall kontrollera om det är fredag idag. Om det är fredag skrivs det ut i stora tecken, galna färger kompletterade med bilder och videor. Om det inte är fredag skrivs det ut hur många dagar det är tills fredag.
+
+1. Lägg till möjligheten att skicka in ett datum via querysträngen till fredags-sidan via `friday.php?date=2022-08-27` för att på det viset kunna testa sidan med olika datum och se vad som händer när det är fredag, även när det inte är fredag.
+
+
+
+
+
 <!--
-Styla till "Its friday!" Kanske med en if-sats?
 
 Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
 

@@ -62,6 +62,8 @@ Ovan föreläsningar ersätts av en längre lektion.
 Läs enligt följande.
 
 1. ...
+1. Läs igenom följande sektioner i guiden "[Kom igång med programmering i PHP](guide/kom-igang-med-programmering-i-php)".
+    * [Egenskapade funktioner](guide/kom-igang-med-programmering-i-php/egenskapade-funktioner)
 
 
 
@@ -101,6 +103,8 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 * Gör uppgiften "[Bygg en webbplats med PHP](uppgift/bygg-en-webbplats-med-php)".
 
 <!--
+Kalender, månadens babe
+
 Kalender samt bytta månad med länk.
 
 Galleri med bilder, klicka runt, läsa av filer i katalog. Next
@@ -115,8 +119,18 @@ Inloggning av användare med lösenord.
 Som uppgift?
 https://arkiv.dbwebb.se/kod-exempel/business-card-generator/
 
--->
+1. Jobba igenom övningen "[Att bygga en styleväljare till sin webbplats](kunskap/att-bygga-en-stylevaljare-till-sin-webbplats)".
 
+
+Inför labbarna (kmom04-06) om det känns som det behövs och om det känns att det finns utrymme (koppla till guiden?)
+
+1. Gör uppgiften "[PHP lab 3: Arrayer](uppgift/php-lab3-arrayer)". Spara alla filerna i katalogen `me/kmom03/lab3`.
+
+1. Gör uppgiften "[PHP lab 4: skapa egna funktioner](uppgift/php-lab4-skapa-egna-funktioner)". Spara alla filerna i katalogen `me/kmom04/lab4`.
+
+1. Gör uppgiften "[PHP lab 5: utforska inbyggda funktioner](uppgift/php-lab5-utforska-inbyggda-funktioner)". Spara filerna i katalogen `me/kmom05/lab5`.
+
+-->
 
 
 ### Överkurs och extra uppgifter {#extra}

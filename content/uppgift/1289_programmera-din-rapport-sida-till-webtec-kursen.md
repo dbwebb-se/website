@@ -47,6 +47,20 @@ Glöm inte att använda strukturen med sidkontrollers och vyer när du löser up
 
 
 
+### Validering av PHP kod {#validering}
+
+Kör `dbwebb validate report` för att validera din PHP-kod så att den har rätt kodstil och att du har skrivit "god kod". Rätta de fel som du får. I början kan det vara bra att validera ofta, så slipper man en större felmängd i slutet.
+
+
+
+### Felsök på studentservern {#felsok}
+
+När du vill felsöka PHP-kod på studentservern så behöver du publicera med `dbwebb publishpure report` för att du skall få rätt radnummer.
+
+Om du gör en vanlig publish så komemr din kod att modiferas så att alla kommentarer tas bort och alla radbrytningar och tabbar försvinner. De felmeddelanden du får kommer alltså ge dig ett annat radnummer än det som du ser i din texteditor.
+
+
+
 ### Är det fredag? {#fredag}
 
 I uppgiften kommer du bygga en webbsida för att kolla om det är fredag idag och isåfall skrivs det ut ett trevligt meddelande, annars skrivs det ut hur många dagar det är kvar till fredag. 
@@ -74,9 +88,9 @@ Utför följande krav.
 
 1. Lägg till möjligheten att skicka in ett datum via querysträngen till fredags-sidan via `friday.php?date=2022-08-27` för att på det viset kunna testa sidan med olika datum och se vad som händer när det är fredag, även när det inte är fredag.
 
-1. Skapa en sidkontroller `public/month.php` som visar en månadskalender i en HTML tabell. Styla sidan så att den ser tilltalande ut, använd din egen stil. Överst i sidan skapar du ett HTML GET formulär som ger möjligheten att skriva in ett datum, när man postar formuläret så visas en månadskalender för den månaden som datumet tillhör.
+1. Skapa en sidkontroller `public/month.php` som visar en månadskalender i en HTML tabell enligt beskrivningen och bild ovan. Placera sidan i navbaren. Styla sidan så att den ser tilltalande ut, använd din egen stil. Överst i sidan skapar du ett HTML GET formulär som ger möjligheten att skriva in ett datum, när man postar formuläret så visas en månadskalender för den månaden som datumet tillhör. Använd "self submitting" formulär.
 
-1. Månadskalendern skall innehålla en rubrik där år och månad skrivs ut. På varje rad skrivs datum ut tillsammans med vilken dag det är. Söndagar markeras med rött. Veckonumret skrivs ut på varje måndag. Skriv även ut vilken dag det är för året där året har 365/366 dagar.
+1. Månadskalendern skall innehålla en rubrik där år och månad skrivs ut. På varje rad skrivs datum ut tillsammans med vilken dag det är. Söndagar markeras med rött. Veckonumret skrivs ut på varje måndag. För varje dag, skriv ut vilket dagnummer det är för året (1-365/366).
 
 1. Skriv alltid ut veckonumret på första dagen i månaden, även om det inte är en måndag.
 
@@ -103,6 +117,8 @@ Avsluta uppgiften så här.
 
 1. Kontrollera för dig själv att du har utfört samtliga krav.
 
-1. När du är klar kan du publicera resultatet med `dbwebb publish report`.
+1. Validera din PHP-kod med `dbwebb validate report`, rätta de valideringsfel du har.
+
+1. När du är klar kan du publicera resultatet med `dbwebb publish report`. Se till att du inte har några valideringsfel.
 
 1. Testa ditt resultat så att det passerar de automatiska testerna med `dbwebb test kmom03`.

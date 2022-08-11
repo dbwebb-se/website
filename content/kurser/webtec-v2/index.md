@@ -127,7 +127,7 @@ Vi börjar med en labbmiljö för att bygga webbplatser och med hjälp av den s�
 
 ### Kmom03: Programmera en webbplats {#kmom03}
 
-Vi lär oss programmeringsspråket PHP och hur man programmerar i det via vanliga programmeringskonstruktioner som variabler, if-satser, loopar, datastrukturer som arrayer och vi organiserar koden i filer och funktioner. När vi kan grunderna går vi vidare och använder PHP för att bygga en webbplats. Vi berör olika koncept som HTML formulär, GET/POST och SESSION/COOKIE som ofta används när man utvecklar webbplatser.
+Vi lär oss programmeringsspråket PHP och hur man kan skapa dynamiska webbsidor via programmeringskonstruktioner som variabler, if-satser, och loopar. Vi använder inbyggda variabler som $_GET och $_SERVER tillsammans med querysträng och HTML formulär provar vi att skicka argument till en webbsida.
 
 [Instruktion till kursmoment 03](./kmom03).
 
@@ -135,7 +135,7 @@ Vi lär oss programmeringsspråket PHP och hur man programmerar i det via vanlig
 
 ### Kmom04: PHP {#kmom04}
 
-Vi lär oss programmeringsspråket PHP och hur man programmerar i det via vanliga programmeringskonstruktioner som variabler, if-satser, loopar, datastrukturer som arrayer och vi organiserar koden i filer och funktioner. När vi kan grunderna går vi vidare och använder PHP för att bygga en webbplats. Vi berör olika koncept som HTML formulär, GET/POST och SESSION/COOKIE som ofta används när man utvecklar webbplatser.
+TBD.
 
 [Instruktion till kursmoment 04](./kmom04).
 

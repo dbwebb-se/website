@@ -352,7 +352,7 @@ views:
                         data:
                             meta:
                                 type: content
-                                route: ./block-studieplaner
+                                route: ./block-empty
                     column-3:
                         data:
                             meta:

@@ -5,14 +5,14 @@ author:
     - grm
 category: itsec
 revision:
-    "2022-05-24": (B, grm) Uppdaterad inför HT22.
+    "2022-08-11": (B, grm) Uppdaterad inför HT22.
     "2019-12-06": (A, lew, aurora) First edition.
 ...
 
 Sårbarhetsanalys - Del 2 {#analys}
 ========================================
 
-Uppgiften går ut på att du ska, utifrån eran tidigare sårbarhetsanalys och dess prioritering, välja ut sårbarheter och åtgärda dem i den mån av tid som finns för kursmomentet.
+Uppgiften går ut på att du ska, utifrån din tidigare sårbarhetsanalys och dess prioritering, välja ut sårbarheter och åtgärda dem i den mån av tid som finns för kursmomentet.
 
 <!--more-->
 
@@ -46,6 +46,13 @@ Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återuppr
 
 Genom att titta igenom koden tar du reda på funktionaliteten/flödet i systemet, Bankappen, och fyller i kapitel 3 i rapporten. Gör gärna ett flödesschema eller någon annan bild som beskriver funktionaliteten/flödet. Fortsätt att jobba med din analysfil från kmom04.
 
+### Uppdatera rapport med testmetod {#uppdatera_metod}
+
+I kapitlet Metod lägger du ett stycke eller ett underkapitel där du beskriver din testmetod, vilken eller vilka testtekniker du använt.
+
+### Uppdatera rapport med testfall {#uppdatera_testfall}
+
+Dokumentera dina tester i ett eget kapitel. Berätta vilka testfall du gjorde och varför.
 
 ### Skriv testfall {#testfall}
 
@@ -53,20 +60,17 @@ Skriv godtyckligt antal testfall (3+) per sårbarhet som demonstrerar hur man ka
 
 Testerna ska gå att köras via `npm test`. Om testerna körs på ett annat sätt så dokumenterar du det så att det enkel går att köra dina tester.
 
-### Uppdatera rapport med testmetod {#uppdatera_metod}
+### Uppdatera rapport med åtgärder {#uppdatera_atgarder}
 
-I kapitlet Metod lägger du ett stycke eller ett underkapitel där du beskriver din testmetod, vilken eller vilka testtekniker du använt. Berätta vilka testfall du gjorde och varför.
+Lägg till ett nytt kapitel i din rapport ifrån kmom04 där du noterar för varje sårbarhet vilka ändringar du gör och i vilka filer. Inled med ett kort stycke där du berättar hur många sårbarheter du åtgärdade. Var det någon sårbarhet som var svår att lösa antingen att testa eller åtgärda? Skriv en kommentar om det.   
+Skapa en ny tabell som noterar vilka sårbarheter du åtgärdat, vad din ursprungliga estimation var och hur lång tid det faktiskt tog att åtgärda. Kommentera dina estimat.
 
 ### Åtgärda sårbarheterna {#atgarda}
 
-Börja åtgärda sårbarheten och se till att dina tester blir gröna. Om du märker av att det behövs fler tester så skriver du dit fler testfall. Glöm inte att dokumentera åtgärderna under tiden du åtgärdar sårbarheterna, för då blir det enklare att fylla i rapporten.
+Åtgärda sårbarheterna. Om du märker av att det behövs fler tester så skriver du dit fler testfall. Kör gärna om alla dina tester när du åtgärdat en sårbarhet så att du inte "lagar sönder" något annat.
 
 Se till att era tester blir gröna med `npm test`.
 
-### Uppdatera rapport med åtgärder {#uppdatera_atgarder}
-
-Lägg till ett nytt kapitel i din rapport ifrån kmom04 där du noterar vilka ändringar du gör och i vilka filer. Inled med ett kort stycke där du berättar hur många sårbarheter du åtgärdade. Var det någon sårbarhet som var svår att lösa antingen att testa eller åtgärda? Skriv en kommentar om det.   
-Skapa en ny tabell som noterar vilka sårbarheter du åtgärdat, vad din ursprungliga estimation var och hur lång tid det faktiskt tog att åtgärda. Kommentera dina estimat. 
 
 Publicera {#Publicera}
 ---------------------------------

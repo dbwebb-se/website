@@ -39,7 +39,7 @@ Läs &amp; Studera  {#lasanvisningar}
 *(ca: 1-2 studietimmar)*
 
 * Läs i boken [Computer Security](/kunskap/boken-computer-security)
-    * Kapitel 10
+    * Kapitel 10 Software Security
 
 
 Förkunskapskrav {#forkunskapskrav}
@@ -65,8 +65,6 @@ Laboration  {#laboration}
 ---------------------------------
 
 *(ca: 2 studietimmar)*
-
-Du ska medverka på laborationen:
 
 * 10.00 (2021-12-10) H430 Säkerhetstestning, se uppgiften nedan
 

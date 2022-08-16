@@ -13,7 +13,7 @@ Python
 
 I python kursen använder vi `dbwebb test` för att automaträtta alla inlämningar i kursen. Alla tester som körs måste gå igenom för att ni ska få godkänt.
 
-[YOUTUBE src=K8aqrH-eFOk caption="Andreas visar upp dbwebb test"]
+[YOUTUBE src=OKrYTZrxbBE caption="Andreas visar upp dbwebb test"]
 
 För att se hur ni kan använda kommandot i kursen kan ni använda hjälp kommandot.
 
@@ -34,7 +34,7 @@ OPTIONAL
                     Example usage: --tags=speed,temp or --tags=height
     -s, --showtags  Show what tags are available for the tests. Won't run any tests!
     -f, --failfast  Stop executing tests on the first error or failure.
-    --trace:       Adds traceback output for assertion errors.
+    --trace:        Adds traceback output for assertion errors.
 
 -----------------------
 Alternative scripts

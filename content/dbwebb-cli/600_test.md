@@ -23,4 +23,5 @@ Följande kurser har stöd för dbwebb test:
 
 - python
 - webtec
+- oopython
 - mvc

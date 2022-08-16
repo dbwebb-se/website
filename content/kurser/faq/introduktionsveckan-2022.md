@@ -125,17 +125,24 @@ Efter lunch mellan 13-14 följer en "Högskoleintro (svensk version)" i Multisal
 
 Här följer en planering för introveckans kurs aktiviteter där syftet är att starta kurserna och komma igång med labbmiljön.
 
+PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den generella labbmiljön som gäller för både [python](/kurser/python/labbmiljo) och [webtec](/kurser/webtec/labbmiljo).
+
+* Ett uppdaterat operativsystem (Windows, Mac, Linux)
+* En texteditor (förslaget är Visueal Studio Code)
+* En bash terminal med pakethanterare (Mac & Linux har redan en, Windows rekommenderar vi WSL/Ubuntu).
+* Versionshanteringssystemet Git. 
+
 | Dag | Tid | Vem | Grupp | Vad | Var |
 |-----|-----|-----|-------|-----|-----|
-| 23/8 Tis | mos | 10-11 | webtec | Kursintroduktion | Inspelad, online|
-| 23/8 Tis | aar | 11-12 | python | Kursintroduktion | Inspelad, online|
-| 24/8 Ons | aar | 08-09 | python | Intro till Python | Campus, stream |
-| 24/8 Ons | klw | 09-10 | alla   | Introduktion till terminalen | Campus, stream |
-| 24/8 Ons | klw | 10-11 | alla   | Labbmiljö dbwebb-cli | Campus, stream |
-| 24/8 Ons | efo | 11-12 | alla   | Introduktion till datavetenskap | Campus, stream |
-| 25/8 Tor | grm | 09-10 | webtec | Labbmiljö webb | Campus, stream |
-| 25/8 Tor | grm | 10-11 | webtec | Skapa webbsida | Campus, stream |
-| 25/8 Tor | grm | 11-12 | webtec | Publicera webbsida | Campus, stream |
+| 23/8 Tis | mos | 10-11 | webtec | Kursintroduktion | Inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
+| 23/8 Tis | aar | 11-12 | python | Kursintroduktion | Inspelad, [zoom](...) |
+| 24/8 Ons | klw | 08-09 | alla   | Introduktion till terminalen | Multisalen, stream |
+| 24/8 Ons | klw | 09-10 | alla   | Labbmiljö dbwebb-cli | Multisalen, stream |
+| 24/8 Ons | aar | 10-11 | python | Intro till Python | Multisalen, stream |
+| 24/8 Ons | efo | 11-12 | alla   | Introduktion till datavetenskap | Multisalen, stream |
+| 25/8 Tor | grm, mos | 09-10 | webtec | Labbmiljö webb | H430, inspelad, Discord |
+| 25/8 Tor | grm, mos | 10-11 | webtec | Skapa webbsida | H430, inspelad, Discord |
+| 25/8 Tor | grm, mos | 11-12 | webtec | Publicera webbsida | H430, inspelad, Discord |
 
 Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2022](https://www.youtube.com/playlist?list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)".
 
@@ -143,7 +150,7 @@ Videor och streams från introduktionsveckan kan komma att sparas i spellistan "
 
 ### Fredag: Campusvandring {#campusvandring}
 
-På fredag kan du följa med Kenneth och Marie på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med Kenneth och Marie och ställa frågor.
+På fredag kan du följa med Kenneth och Andreas och kanske Emil på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor.
 
 Samling receptionen, hus A, även kallad "badtunnan".
 

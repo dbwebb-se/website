@@ -128,7 +128,7 @@ Här följer en planering för introveckans kurs aktiviteter där syftet är att
 PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den generella labbmiljön som gäller för både [python](/kurser/python/labbmiljo) och [webtec](/kurser/webtec/labbmiljo).
 
 * Ett uppdaterat operativsystem (Windows, Mac, Linux)
-* En texteditor (förslaget är Visueal Studio Code)
+* En texteditor (förslaget är Visual Studio Code)
 * En bash terminal med pakethanterare (Mac & Linux har redan en, Windows rekommenderar vi WSL/Ubuntu).
 * Versionshanteringssystemet Git. 
 

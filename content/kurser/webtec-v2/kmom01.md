@@ -125,7 +125,9 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 1. Jobba igenom övningen "[Skapa en webbsida med HTML, CSS och PHP (v2)](kunskap/skapa-en-webbsida-med-html-css-och-php-v2)" som hjälper dig bygga en webbplats med HTML, CSS och PHP. Spara koden du skriver under `me/kmom01`.
 
-
+<!--
+* Använda guiden? Kanske som en del i genomgången? https://dbwebb.se/guide/kom-igang-med-html-och-css
+-->
 
 ### Uppgifter {#uppgifter}
 

@@ -114,7 +114,7 @@ Det tar en liten stund att uppgradera.
 
 När du vill kopiera från Windows till terminalen kan du markera texten i Windows-applikationen och trycka `ctrl-c`, för att pasta texten till terminalen kan du klicka på högerknappen på musen.
 
-Ett annat bra alternativ är att använda `shift-ctrl-c` och `shift-ctrl-v` där du kan kopiera text i terminalen och pasta till terminalen eller till en Windows applikation, tex webbläsaren. Du sätter på det genom att högerklicka på terminalfönstrets övre del, du får du fram följande ruta och du skall klicka i 
+Ett annat bra alternativ är att använda `shift-ctrl-c` och `shift-ctrl-v` där du kan kopiera text i terminalen och pasta till terminalen eller till en Windows applikation, tex webbläsaren. Du sätter på det genom att högerklicka på terminalfönstrets övre del och väljer "Properties" i menyn. Du får då fram följande ruta och du skall klicka i för "shift-ctrl-c / v". Gör även ändringen i menyvalet för "Defaults" så behåller du ändringen till nästa terminalfönster som du öppnar.
 
 [FIGURE src=image/snap22/ubuntu_copy_paste.png caption="Klicka för valet med shift-ctrl-c och v för copy och paste."]
 

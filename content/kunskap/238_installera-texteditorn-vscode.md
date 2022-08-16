@@ -110,6 +110,8 @@ Vi kan också ändra detta smidigt fil-för-fil, genom att klicka på "Spaces: 4
 
 [FIGURE src=/image/vscode/tabsize_menu.png caption="Tab Size menu"]
 
+
+
 ### Radslut enligt Unix-style {#lineending}
 
 Vi vill använda radslut enligt Unix-style (`\n`), också kallad LF. Det blir enklast så, för en webbprogrammerare.
@@ -148,10 +150,12 @@ Ute till höger har vi en meny som ser ut som byggklossar där vi kan se vilka t
 Allt eftersom du blir varm i kläderna så är det en bra idé att se vilka tillägg som finns som kan underlätta din vardag som programmerare. Men till att börja med så nöjer vi oss med att konstatera att det finns möjligheter att anpassa sin editor.
 
 
+
 Konfigurationsfiler {#config}
 --------------------------------------
 
 Visual Studio Code sparar sina konfigurationsfiler som `.json`. Beroende på vilket system du sitter på ligger dessa filer på olika ställen, men det kan vara bra att veta att de finns. Det är ett mer avancerat sätt att arbeta med inställningar, för oss duger det grafiska gränssnittet i editorn.
+
 
 
 Avslutningsvis {#avslutning}

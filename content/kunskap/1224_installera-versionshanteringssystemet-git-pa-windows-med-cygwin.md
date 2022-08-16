@@ -5,18 +5,18 @@ category:
     - labbmiljö
     - webbprogrammering
 revision:
-    "2022-08-16": (C, mos) Uppdaterad inför ht22 ändrar cygwin till wsl/ubuntu.
+    "2022-08-16": (C, mos) Flyttad till egen artikel då cygwin inte längre är rekommenderat val.
     "2017-05-30": (B, mos) Genomgången inför ht17.
     "2015-03-27": (A, mos) Första utgåvan.
 ...
-Installera versionshanteringssystemet Git
+Installera versionshanteringssystemet Git på Windows med Cygwin
 ==================================
 
 [FIGURE src=/image/git/logo.png class="right"]
 
 Git är ett versionshanteringssystem som utvecklades i samband med arbetet med Linux-kärnan. Git har nu det blivit ett alltmer populärt verktyg för att hantera kod.
 
-Här är en kort guide till hur du *installerar* Git på din egen maskin.
+Här är en kort guide till hur du installerar Git på Windows och använder det tillsammans med terminalen Cygwin.
 
 <!--more-->
 
@@ -29,60 +29,42 @@ Läs på {#laspa}
 
 [Gå till Gits hemsida](http://git-scm.com/) och kika på de alternativ som finns för att installera Git.
 
-Om du använder Cygwin på Windows så [installerar du Git på Windows](kunskap/installera-versionshanteringssystemet-git-pa-windows-med-cygwin).
-
-Följ sedan instruktionerna för respektive miljö nedan. Börja med installationen, sedan kan du testa att det fungerar.
 
 
-
-
-Installera {#install}
+Installera på Windows (Cygwin) {#install-win}
 --------------------------------------
 
-Välj din miljö och installera Git.
+Ladda ned och starta installationsprogrammet. Klicka dig fram tills du kommer till denna rutan.
+
+[FIGURE src=/image/git/git-install-to-path.png caption="Se till att mittenvalet är gjort, du måste kunna använda Git från terminalen `cmd.exe`."]
+
+När du ser följande ruta (nedan) så skall du välja det sista valet som inte gör någon automatisk påverkan på dina filer. 
+
+[FIGURE src=/image/git/git-install-as-is.png caption="Se till att sista valet är gjort, Git skall inte ändra dina filer per automatik."]
+
+I övrigt kan du använda förvalda inställningar.
 
 
 
-### Installera på Windows (WSL/Bash) {#install-win-bash}
+### Testa installationen {#test-win}
 
-Git finns förinstallerat när du använder WSL med Bash/Ubuntu för Windows.
-
-
-
-### Installera på Mac OS {#install-mac}
-
-På Mac OS finns Git redan installerat som en del av systemet.
-
-
-
-### Installera på Linux/Unix {#install-nix}
-
-På Ubuntu och Debian Linux kan du installera med pakethanteraren.
-
-```bash
-apt install git
-```
-
-
-
-Testa installationen {#test}
---------------------------------------
-
-Testa att installationen finns på plats genom att följande kommando i en terminal.
+Testa installationen genom att köra följande kommando i din `cmd.exe`.
 
 ```bash
 git --version
 git
 ```
 
-Du kommer se vilken version du har installerat och du får en hjälptext som visar detaljer om hur kommanot fungerar.
+Det kan se ut så här.
+
+[FIGURE src=/image/git/git-version.png caption="Kommandot Git finns nu i pathen och kan köras från `cmd.exe`."]
 
 
 
 Avslutningsvis {#avslutning}
 --------------------------------------
 
-Denna artikel visar enbart hur du installerar Git eftersom det är en del av labbmiljön som används till kurserna. Att lära sig använda Git är en annan sak.
+Denna artikel visar enbart hur du installerar Git. Att lära sig använda Git är en annan sak.
 
 För att komma igång med de första kurserna på dbwebb så behöver du inte kunna något om Git så att ha det installerat är tillräckligt bra.
 

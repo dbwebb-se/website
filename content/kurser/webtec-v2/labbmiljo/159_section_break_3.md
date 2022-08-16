@@ -1,5 +1,1 @@
----
-title: Verktyg (kursspecifika)
-sectionHeader: true
-linkable: false
-...
+../../../labbmiljo/159_section_break_3.md

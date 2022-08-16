@@ -1,5 +1,1 @@
----
-title: Läs först
-sectionHeader: true
-linkable: false
-...
+../../../labbmiljo/001_section_break_1.md

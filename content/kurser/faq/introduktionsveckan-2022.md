@@ -29,6 +29,13 @@ Campusstudenterna (ettorna) kommer att få tillgång till våra labbsalar i samb
 
 
 
+Välkomstvideor {#valvideo}
+-----------------------------------
+
+Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2022](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-vHNbYP4U80rpyvtpxX5Cr)". Kika igenom den serien för lite tips och trix inför terminsstarten.
+
+
+
 Vem deltar på introveckan? {#ni}
 -----------------------------------
 
@@ -45,12 +52,6 @@ Under introveckan är det två kurser som startar, python och webtec. Webbprogra
 
 Introduktionsveckan sker på campus för campusprogrammet och på distans för övriga utbildningar.
 
-
-
-Välkomstvideor {#valvideo}
------------------------------------
-
-Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2022](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-vHNbYP4U80rpyvtpxX5Cr)". Kika igenom den serien för lite tips och trix inför terminsstarten.
 
 
 
@@ -102,11 +103,11 @@ Glöm inte att du även måste registrera dig på de kurser du skall gå. När d
 Planering {#plan}
 -----------------------------------
 
-Här följer en planering för introveckans aktiviteter där vissa är campus enbart, några distans and andra både och (hybrid).
+Här följer en planering för introveckans aktiviteter.
 
 
 
-### Måndag: Uppropsdagen {#mån-upprop}
+### Måndag: Uppropsdagen {#man-upprop}
 
 Veckan börjar kl 09-10 med "Rektorns välkomsttal" utomhus utanför hus J och det [kan följas via zoom](https://bth.zoom.us/j/69647412076).
 

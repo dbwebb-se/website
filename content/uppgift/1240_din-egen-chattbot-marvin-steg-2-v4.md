@@ -35,7 +35,7 @@ Du kan grunderna i Pythons stränghantering och du har gjort den [första delen]
 Krav {#krav}
 -----------------------
 [INFO]
-Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval **8** kan man då använda `--tags=8`, för Menyval **b1** `--tags=b1` osv.
+Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval **9** kan man då använda `--tags=9`, för Menyval **b1** `--tags=b1` osv.
 [/INFO]
 
 
@@ -53,11 +53,12 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
 3. Koden för dina menyval ska nu ligga i `marvin.py`. Flytta all kod för dina nuvarande menyval till `marvin.py`, dessa skall sparas i funktioner som du kallar på när ett menyval ha gjorts i programmet. Importera `marvin.py` i `main.py` och strukturera om koden för de gamla menyvalen så att de läggs i en varsin funktion, med **följande namn**. Dessa funktionerna har utöver sitt menyval som tag också "marvin1" som tag.
   * Menyval 1 - `greet`
   * Menyval 2 - `celcius_to_farenheit`
-  * Menyval 3 - `word_manipulation` * Tips, gör denna i samband med menyval **10**, (krav 6).
+  * Menyval 3 - `word_manipulation` * Tips, gör denna i samband med menyval **11**, (krav 6).
   * Menyval 4 - `sum_and_average`
   * Menyval 5 - `hyphen_string`
   * Menyval 6 - `is_isogram`
   * Menyval 7 - `compare_numbers`
+  * Menyval 8 - `robber_language`
 
     Om du har gjort några av extrauppgifterna från föregående kursmoment så kan du döpa dem till ett valfritt namn.
 
@@ -74,14 +75,14 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
     ```python
 
     ...
-    elif menychoice == "8":
+    elif menychoice == "9":
         string = input("Enter a string to randomize: ")
         print(randomize_string(string))
     ```
 
 
 
-5. Menyval **8** - `randomize_string`: Kasta om bokstäver. Marvin ska be dig skriva in ett ord som sedan slumpmässigt kastas om. Det omkastade ordet ska sedan skrivas ut i formatet `<orginal sträng> --> <slumpad sträng>`. Lösningen ska vara case-sensitive, med andra ord `A != a`. Tips [random modulen](https://docs.python.org/3.8/library/random.html).
+5. Menyval **9** - `randomize_string`: Kasta om bokstäver. Marvin ska be dig skriva in ett ord som sedan slumpmässigt kastas om. Det omkastade ordet ska sedan skrivas ut i formatet `<orginal sträng> --> <slumpad sträng>`. Lösningen ska vara case-sensitive, med andra ord `A != a`. Tips [random modulen](https://docs.python.org/3.8/library/random.html).
 
     ```python
 
@@ -89,7 +90,7 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
     input: "Borde inte bli samma igen"  output: "Borde inte bli samma igen --> eel gn rtm dBmibo saiiane"
     ```
 
-6. Menyval **9** - `get_acronym`: Akronym skapare. Marvin ska be om en sträng och skapa en akronym för den genom att plocka ut alla stora bokstäver och sätta ihop till en ny sträng. Tips, [isupper()](https://docs.python.org/3/library/stdtypes.html#str.isupper). Exempel:
+6. Menyval **10** - `get_acronym`: Akronym skapare. Marvin ska be om en sträng och skapa en akronym för den genom att plocka ut alla stora bokstäver och sätta ihop till en ny sträng. Tips, [isupper()](https://docs.python.org/3/library/stdtypes.html#str.isupper). Exempel:
     
     ```python
 
@@ -97,7 +98,7 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
     input: "Ingvar Kamprad Elmtaryd Agunnaryd"  output: "IKEA"
     ```
 
-7. Menyval **10** - `mask_string`: Sträng maskering. Skapa ett nytt val där Marvin ber om en sträng och ersätter alla utom de fyra sista karaktärerna med “#”. Exempel:
+7. Menyval **11** - `mask_string`: Sträng maskering. Skapa ett nytt val där Marvin ber om en sträng och ersätter alla utom de fyra sista karaktärerna med “#”. Exempel:
 
     ```python
 
@@ -113,7 +114,7 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
 
 
 
-8. Menyval **11** - `find_all_indexes`: Hitta alla index. Marvin ska be om två strängar, där den andra strängen är en del-sträng av den första. Funktionen ska returnera en kommaseparerad sträng med  alla index platser där den andra strängen finns med i den första. Det ska inte vara ett kommatecken på slutet av strängen. Om strängen som skickas in som andra argument inte finns i första argumentet ska funktionen returnera en tom sträng.
+8. Menyval **12** - `find_all_indexes`: Hitta alla index. Marvin ska be om två strängar, där den andra strängen är en del-sträng av den första. Funktionen ska returnera en kommaseparerad sträng med  alla index platser där den andra strängen finns med i den första. Det ska inte vara ett kommatecken på slutet av strängen. Om strängen som skickas in som andra argument inte finns i första argumentet ska funktionen returnera en tom sträng.
 
     Använd sträng funktionen funktionen [index()](https://docs.python.org/3/library/stdtypes.html#str.index) för att hitta index platser, notera att funktionen returnerar bara ett index åt gången, så även om en sträng finns med på två ställen returneras bara den första. För att komma runt detta och hitta alla index behöver ni anropa funktionen flera gånger och skicka med ett extra argument, `start`. `start` markera vilken index position funktionen ska börja leta från. Notera också att `index` funktionen lyfter ett `ValueError` om en söksträngen inte finns. Ni ska använda er av try-except i er funktion för att förhindra programmet från att krascha när det inträffar.
 

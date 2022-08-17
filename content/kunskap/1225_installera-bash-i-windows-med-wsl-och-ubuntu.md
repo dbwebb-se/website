@@ -12,7 +12,7 @@ category:
     - windows
     - bash
 revision:
-    "2022-08-17": "(G, mos) Om wsl redan är installerat."
+    "2022-08-17": "(G, mos) Om wsl redan är installerat, lade till video."
     "2022-08-16": "(F, mos) Uppdaterad till senaste installationsrutinen för WSL."
     "2020-04-29": "(E, mos) Lade till unzip som kommando att installera (krävs av composer)."
     "2019-08-22": "(D, aurora) Översedd inför HT19 och Windows 10 v1903."
@@ -37,6 +37,15 @@ Mer information {#pre}
 Denna artikel är förkortad till att ange hur man installerar WSL och Ubuntu för att få tillgång till en Bash terminal i Windows. Artikeln bygger på informationen som finns att läsa i "[Windows Subsystem for Linux Documentation](https://docs.microsoft.com/en-us/windows/wsl/)". Om du tappar bort dig eller behöver extra information så kan du gå och läsa den artikeln i lugn och ro.
 
 Här kommer den snabba vägen som är ett utdrag från artikeln "[Install Linux on Windows with WSL](https://docs.microsoft.com/en-us/windows/wsl/install)".
+
+
+
+Översikt av artikeln {#video}
+---------------------------------
+
+Det finns en video som visar hur Mikael jobbar igenom delar av denna artikel. Du kan titta igenom videon som ett komplement när du själv jobbar igenom artikeln.
+
+[YOUTUBE src="njUTrRS6uiU" width=700 caption="Mikael jobbar igenom huvuddelarna i denna artikel."]
 
 
 

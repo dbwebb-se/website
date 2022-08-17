@@ -92,7 +92,11 @@ Efterhand som du lär dig Python kommer du att märka att du referensmanualen ä
 
 ### Video  {#video}
 
-Titta på följande:
+Som en generell introduktion till programming och vissa av de tekniker och konstruktioner vi går igenom under kursen rekommenderas följande video. Föreläsningen är från Harvard kursen CS50 som ges som världens största [MOOC](https://en.wikipedia.org/wiki/Massive_open_online_course).
+
+[YOUTUBE src=qDbsiVWA2Ag caption="David J. Malan introducerar programmering och teknikerna bakom."]
+
+Nedanför hittar ni videor som kan vara bra att titta på för att lära er veckans kursmaterial.
 
 1. I videoserien [Lär dig Python](https://www.youtube.com/playlist?list=PLKtP9l5q3ce93pTlN_dnDpsTwGLCXJEpd) hittar du videor som är tätt kopplad till kursmaterialet. Kika på de videor som börjar med 0 och 1. Det är korta videor som tar upp delar som är relevanta i respektive kursmoment.
 
@@ -103,12 +107,6 @@ Titta på följande:
     * [Python for Informatics: Chapter 1 - Introduction part 4](https://youtu.be/gsry2SYOFCw?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p)
     * [Python for Informatics: Chapter 2 - Introduction part 1](https://youtu.be/7KHdV6FSpo8?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p)
     * [Python for Informatics: Chapter 2 - Introduction part 2](https://youtu.be/kefrGMAglGs?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p)
-
-
-Som en generell introduktion till programming och vissa av de tekniker och konstruktioner vi går igenom under kursen rekommenderas följande video. Föreläsningen är från Harvard kursen CS50 som ges som världens största [MOOC](https://en.wikipedia.org/wiki/Massive_open_online_course).
-
-[YOUTUBE src=qDbsiVWA2Ag caption="David J. Malan introducerar programmering och teknikerna bakom."]
-
 
 
 
@@ -124,15 +122,12 @@ Som en generell introduktion till programming och vissa av de tekniker och konst
 
 - Läs om hur du kan använda [dbwebb test](dbwebb-cli/python) för att rätta din kod.
 
-Om du känner att du har tid och lust.
-
 
 
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 
 *(ca: 6-10 studietimmar)*
-
 
 
 ### Övningar {#ovningar}

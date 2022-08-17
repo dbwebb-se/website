@@ -28,7 +28,7 @@ Kom igång med kommandot dbwebb {#dbwebbcli}
 
 Kommandot, eller verktyget, dbwebb, är ett terminalprogram, skrivet i Bash, som hjälper dig att ha koll på dina filer i kursen. Det hjälper dig också att lämna in resultatet så att lärarna kan rätta och det hjälper dig att publicera till en webbplats för studenter.
 
-**dbwebb kommandot är samma för alla dbwebb kurser. Om du har läst en dbwebb kurs tidigare behöver du inte göra om dessa stegen.**
+**dbwebb kommandot är samma för alla dbwebb kurser. Om du har installerat dbwebb kommandot kan du hoppas över steg 1 och 2.**
 
 Det finns en guide som visar hur du kommer igång, [guiden om dbwebb-cli](https://dbwebb.se/dbwebb-cli).
 

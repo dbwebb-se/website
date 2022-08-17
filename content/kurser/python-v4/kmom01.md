@@ -47,22 +47,14 @@ Så här kan det se ut när du är klar med Plane uppgiften.
 
 
 
-Labbmiljön  {#labbmiljo}
+Labbmiljö  {#labbmiljo}
 ---------------------------------
 
 *(ca: 2-4 studietimmar)*
 
-Det första du behöver göra är att installera en labbmiljö för kursen. Om detta är din första dbwebb-kurs så kan det innebära en hel del jobb och en del nya tekniker. Se till att du har gott om tid när du gör detta.
+Se till att du har kursens labbmiljö installerad.
 
-Om du vill ha en introduktion till det som händer i steg 2-4 så kikar du på videon "[Mikael installerar dbwebb-cli som en del av labbmiljön](https://www.youtube.com/watch?v=vlZRW2OZamE)".
-
-1. Du kan börja med att [installera labbmiljön](./../labbmiljo) som behövs för kursen.
-
-1. Fortsätt med sektionen för att [installera kommandot `dbwebb`](dbwebb-cli/kom-igang-och-installera). Kommandot används under hela kursen för att jobba med kursmaterialet.
-
-1. När du har installerat kommandot så fortsätter du med sektionen för att [konfigurera kommandot `dbwebb`](dbwebb-cli/konfiguration).
-
-1. Du kan nu [ladda ned (klona) ditt lokala kursrepo `python`](dbwebb-cli/clone) som innehåller kursmaterial för kursen (**OBS** i artikeln används kursen `htmlphp` som exempel, byt ut det mot `python`). Här kommer du att skriva all kod till övningar och uppgifter.
+1. Jobba igenom "[Installera kursens labbmiljö](./../installera-labbmiljo)" för att komma igång med din labb- och utvecklingsmiljö för kursen.
 
 
 

@@ -244,4 +244,4 @@ Klart. Magiskt. Så vida det inte strular förstås. Då får man felsöka och g
 
 "Namnbaserade virtuella hostar" med Apache är ett bra sätt att köra flera webbplatser på en server. Det är också ett bra sätt att köra en utvecklingsserver med många webbplatser.
 
-När man nu, som vi gjort, kombinerar detta med servar i Docker, så får du en möjlighet att köra många webbplatser och att köra dem på många olika servrar som kan vara konfigurerade på olika sätt. Det kan vara ett kraftfullt verktyg för en webbprogrammerare.
+När man nu kombinerar detta med servar i Docker, så får du en möjlighet att köra många webbplatser och att köra dem på många olika servrar som kan vara konfigurerade på olika sätt. Det kan vara ett kraftfullt verktyg för en webbprogrammerare.

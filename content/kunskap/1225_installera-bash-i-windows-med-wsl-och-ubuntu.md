@@ -296,7 +296,8 @@ cd
 rm winhome
 ```
 
-När du jobbar med kurserna rekommenderas det att du sparar alla filerna i din hemmakatalog i terminalen. Det gör det enklast att nå dem via både WSL och dina vanliga Windows-applikationer och du undviker problem med filrättigheter.
+När du jobbar med kurserna rekommenderas det att du sparar alla filerna i din Windows hemmakatalog. Det gör det enklast att nå dem via både WSL, webbserver och andra Windows applikationer och du har dem lätt tillgängliga för att ta backup.
+
 
 
 Bra att ha {#braattha}

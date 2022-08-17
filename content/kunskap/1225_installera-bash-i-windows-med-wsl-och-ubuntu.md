@@ -12,6 +12,7 @@ category:
     - windows
     - bash
 revision:
+    "2022-08-17": "(G, mos) Om wsl redan är installerat."
     "2022-08-16": "(F, mos) Uppdaterad till senaste installationsrutinen för WSL."
     "2020-04-29": "(E, mos) Lade till unzip som kommando att installera (krävs av composer)."
     "2019-08-22": "(D, aurora) Översedd inför HT19 och Windows 10 v1903."
@@ -72,6 +73,24 @@ wsl --install
 ```
 
 Detta kommando kommer att aktivera de funktioner som krävs för att köra WSL och installera Ubuntu-distributionen av Linux.
+
+
+
+### Jag har redan wsl installerat {#wslinstalled}
+
+Ovan kommando fungerar endast om du inte redan har installerat wsl. Om det är installerat så kommer du istället få fram en hjälptext till hur du använder kommandot. Om du då vill installera en specific distribution av Linux så kan du först kolla vilka som finns tillgängliga och sedan kan du installera just den distributionen.
+
+Visa vilka distributioner som finns.
+
+```
+wsl --list --online
+```
+
+Installera till exmpel distributionen för Ubuntu.
+
+```
+wsl --install --distribution Ubuntu
+```
 
 
 

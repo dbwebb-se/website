@@ -4,6 +4,7 @@ author:
   - aar
 category: python
 revision:
+  "2022-08-17": (B, aar) La till uppgift om rövarspråket.
   "2021-03-29": (A, moc) Ny version för att introducerar automaträttning.
 created: "2021-03-29 15:54"
 ...
@@ -110,6 +111,15 @@ input: "Dansk"    output: "Match!"
     input: "hej"       output: "not a number!"
     input: 3         output: "larger!"
     input "done"
+    ```
+
+8. Menyval **8**: Gör så Marvin kan tala [rövarspråket](https://sv.wikipedia.org/wiki/R%C3%B6varspr%C3%A5ket). Marvin ska använda ett input anrop för att ta emot ett ord och sen skriva ut ordet översatt till rövarspråket.
+
+    Exempel:
+
+    ```python
+    input: "b"      output: "bob"
+    input: "apa"    output: "apopa"
     ```
 
 

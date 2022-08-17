@@ -5,6 +5,7 @@ category:
     - python
     - labbmiljö
 revision:
+    "2022-08-17": (E, aar) Flyttade ner cygwin instruktionen, då bash är standard på windows.
     "2021-01-19": (D, aar) La till länk till kändda fel FAQ på github issues.
     "2017-05-30": (C, mos) Uppdaterad inför ht17.
     "2016-02-22": (B, mos) Modifierad med nya videor och flyttade IDLE och python på studservern till egna tips.
@@ -35,12 +36,6 @@ Ett vanligt sätt att utveckla med Python är att ha det installerat och tillgä
 
 Installera nu Python version 3 (python3) i din terminal.
 
-Cygwin på Windows:
-
-```bash
-apt-cyg install python3
-```
-
 Bash på Windows:
 
 ```bash
@@ -57,6 +52,12 @@ Linux (debian):
 
 ```bash
 apt-get install python3
+```
+
+Cygwin på Windows:
+
+```bash
+apt-cyg install python3
 ```
 
 Verifiera att installationen gick bra genom att kontrollera vilken version av python3 som du har installerad.

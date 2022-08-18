@@ -101,18 +101,18 @@ Då är vi redo att börja skriva exempelkoden i vår första vy-filen `view/php
 
 
 
+Array {#array}
+---------------------------------
+
+foreach
+
+
+
 Datastrukturer {#datastrukturerallmant}
 ---------------------------------
 
 Allmänt om datastrukturer.
 Koppla snygg kod.
-
-
-
-Array {#array}
----------------------------------
-
-foreach
 
 
 

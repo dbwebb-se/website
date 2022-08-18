@@ -29,6 +29,15 @@ Campusstudenterna (ettorna) kommer att få tillgång till våra labbsalar i samb
 
 
 
+Välkommen till introveckan {#valkommen}
+-----------------------------------
+
+Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokumentet och det som händer i introveckan. Pratar han långsamt så speedar du upp honom till 1,5 gånger hastigheten via inställningarna i YouTube.
+
+[YOUTUBE src="BQJpFvQ9Ers" width=700 caption="Mikael hälsar välkommen till introveckan 2022."]
+
+
+
 Välkomstvideor {#valvideo}
 -----------------------------------
 

@@ -431,7 +431,7 @@ Loopkonstruktioner med `for` och `while` är andra exempel på PHP kontrollstruk
 
 ### while-loop {#whileloop}
 
-Vi börjar med ett exempelprogram som bygger en while loop som summerar alla udda tal som finns. Vi börjar på talet 1 och vi slutar när summan har kommit upp i, eller är över, talet 42. mellan 1 till och med talet 42. Du kanske själv kan klura ut hur det kan fungera? Om man strukturerar programmet med kommentarer, som en del av problemlösningen, så kan det se ut så här.
+Vi börjar med ett exempelprogram som bygger en while loop som summerar alla udda tal som finns. Vi börjar på talet 1 och vi slutar när summan har kommit upp i, eller är över, talet 42. Du kanske själv kan klura ut hur det kan fungera? Om man strukturerar programmet med kommentarer, som en del av problemlösningen, så kan det se ut så här.
 
 ```php
 // Prepare variables before loop
@@ -446,7 +446,7 @@ while (some condition so the sum does not exceed 42) {
 // Print the sum
 ```
 
-Att skissa sin kod, innan man börjar koda, kan vara ett bra sätt att jobba med sin problemlösning. Det innebär att man tänker igenom hur koden skall vara, utan att veta ett komplett facit, fördelen är att man delar in koden i mindre delar och många små problem är ofta enklare att ett och ett, än att lösa ett stor och kanske komplext problem. Förenkla problemet tills koden uppenbarar sig. Att skriva kod på detta sättet kan ibland kallas [pseudokod](https://en.wikipedia.org/wiki/Pseudocode).
+Att skissa sin kod, innan man börjar koda, kan vara ett bra sätt att jobba med sin problemlösning. Det innebär att man tänker igenom hur koden skall vara, utan att veta ett komplett facit. Fördelen är att man delar in koden i mindre delar och många små problem vilka ofta är enklare att lösa ett och ett, än att lösa ett stort och kanske komplext problem. Förenkla problemet tills koden uppenbarar sig. Att skriva kod på detta sättet kan ibland kallas [pseudokod](https://en.wikipedia.org/wiki/Pseudocode).
 
 När jag är klar ser min kod ut så här.
 
@@ -695,7 +695,7 @@ Jag har angett `method="GET"` vilket innebär att formulärets data kommer att s
 
 Jag har angett `action=""` vilket innebär att formuläret postas till samma url som formuläret är på. Det kallas självpostande formulär, "self-submitting form" då det går till samma sida som formuläret visas på. Hade jag velat posta resultatet till en annan sida så hade jag kunnat ange till exempel `action="me.php"`.
 
-När formuläret postas så skickas dess inneåll till den webbsidan som har angivits. Där får vi ta emot argumentet på samma sätt som vi gjorde i förra övningen. Så här kan det se ut. Jämför variabelnamnen med de namn som används i formuläret ovan.
+När formuläret postas så skickas dess innehåll till den webbsidan som har angivits. Där får vi ta emot argumentet på samma sätt som vi gjorde i förra övningen. Så här kan det se ut. Jämför variabelnamnen med de namn som används i formuläret ovan.
 
 ```php
 // Get incoming arguments from querystring

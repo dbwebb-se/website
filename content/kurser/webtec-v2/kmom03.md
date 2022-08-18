@@ -21,7 +21,7 @@ Kmom03: Programmera en webbplats
 
 Vi lär oss programmeringsspråket PHP och hur man kan skapa dynamiska webbsidor via programmeringskonstruktioner som variabler, if-satser, och loopar. Vi använder inbyggda variabler som $_GET och $_SERVER tillsammans med querysträng och HTML formulär provar vi att skicka argument till en webbsida.
 
-Vi jobbar vidare med den katalogstruktur vi har byggt upp och det handlar färmst om att placera koden i sidkontrollers och vyer. Strukturen är viktig då den hjälper oss att hålla ordning i koden vilket gör det enklare att felsöka och utveckla webbsidorna.
+Vi jobbar vidare med den katalogstruktur vi har byggt upp och det handlar främst om att placera koden i sidkontrollers och vyer. Strukturen är viktig då den hjälper oss att hålla ordning i koden vilket gör det enklare att felsöka och utveckla webbsidorna.
 
 När du är klar med detta kursmoment så har du grundläggande kunskap i hur man programmerar med PHP och grunderna för hur man bygger och driftsätter en dynamisk webbplats med PHP.
 

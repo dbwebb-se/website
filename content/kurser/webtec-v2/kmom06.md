@@ -10,7 +10,7 @@ author:
 revision:
     "2022-06-28": "(A, mos) Första utgåvan."
 ...
-Kmom06: SQL
+Kmom06: PHP, PDO och SQL
 ==================================
 
 [WARNING]

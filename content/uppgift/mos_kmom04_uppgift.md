@@ -5,7 +5,7 @@ category:
 revision:
     "2022-08-11": "(A, mos) Första utgåvan till webtec-v2."
 ...
-Programmera din rapportsida till webtec-kursen
+Programmera din rapportsida till webtec-kursen (kmom04)
 ===================================
 
 Du skall programmera ett par webbsidor med PHP och grundläggande konstruktioner såsom variabler, if-satser, loopar, inbyggda funktioner samt använda dig av HTML form och GET via querysträngen.

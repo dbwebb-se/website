@@ -22,12 +22,6 @@ Resurser
 
 Följande resurser används i olika omfattning i föreläsningen och du kan använda några av dem för att ytterligare studera och öva på det som tas upp i föreläsningen. 
 
-1. Bekanta dig kort med [webbplatsen för PHP](http://php.net/), bara så att du har varit där och ser hur den ser ut. Det som vi framförallt kommer att använda framöver är [manualen för PHP](http://php.net/manual/en/). Kika snabbt igenom dess innehållsförteckning så att du ser vad det handlar om. Du behöver inte studera något i detalj för tillfället. Även för PHP funkar googling bra att nå rätt sida i referensmanualen, pröva "php echo" och min rekommendation är att du väljer PHP referensmanualen som landningssida, det blir bäst i längden.
-
-1. Webbplatsen W3Schools har en guide som är lättillgänglig när man vill komma igång med grunderna i PHP.
-
-    * [PHP Tutorial](https://www.w3schools.com/php/)
-
 1. I kursboken [Webbutveckling med PHP och MySQL](kunskap/boken-webbutveckling-med-php-och-mysql) är följande kapitel relevanta att läsa igenom och/eller använda som referens.
 
     * Kapitel 1 Introduktion
@@ -36,6 +30,12 @@ Följande resurser används i olika omfattning i föreläsningen och du kan anv�
     * Kapitel 4 Operatorer
     * Kapitel 5 Villkorssatser
     * Kapitel 6 Iterationer
+
+1. Bekanta dig kort med [webbplatsen för PHP](http://php.net/), bara så att du har varit där och ser hur den ser ut. Det som vi framförallt kommer att använda framöver är [manualen för PHP](http://php.net/manual/en/). Kika snabbt igenom dess innehållsförteckning så att du ser vad det handlar om. Du behöver inte studera något i detalj för tillfället. Även för PHP funkar googling bra att nå rätt sida i referensmanualen, pröva "php echo" och min rekommendation är att du väljer PHP referensmanualen som landningssida, det blir bäst i längden.
+
+1. Webbplatsen W3Schools har en guide som är lättillgänglig när man vill komma igång med grunderna i PHP.
+
+    * [PHP Tutorial](https://www.w3schools.com/php/)
 
 1. Följande sektioner i guiden "[Kom igång med programmering i PHP](guide/kom-igang-med-programmering-i-php)" kan komplettera det som tas upp i föreläsningen.
 

@@ -72,9 +72,11 @@ eller gör detta i zoom-sessionen.
 
 Läs enligt följande.
 
-1. På sidan för föreläsningen ovan så finns läsanvisningar som hjälper dig att studera grunderna i programmeringsspråket PHP. Välj bland dem så att du har material att referera till.
+1. På sidan för föreläsningen ovan så finns läsanvisningar som hjälper dig att studera grunderna i programmeringsspråket PHP. Välj bland dem för att läsa på med om begreppen.
 
 <!--
+* Jobba igenom PHP-guiden och börja använda den igen?
+
 html/css-guiden används inte mer, är det ett problem eller räcker det att övningarna i kmom01/02 har ersatt den? 
 
 1. Läs igenom följande sektion i guiden "[Kom igång med HTML och CSS](guide/kom-igang-med-html-och-css)".

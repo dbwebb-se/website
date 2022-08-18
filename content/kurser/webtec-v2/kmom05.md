@@ -10,7 +10,7 @@ author:
 revision:
     "2022-06-28": "(A, mos) Första utgåvan."
 ...
-Kmom05: SQL
+Kmom05: SQL och SQLite
 ==================================
 
 [WARNING]
@@ -103,8 +103,15 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 <!--
 Byt uppgift, kalender ish? med GET
 
--->
+* Lägg tillbaka PHP-guiden och lägg till stycke om databas/PDO för att komplettera artikeln.
 
+* Använd funktioner för att bygga på kmom04.
+
+Inför labbarna (kmom04-06) om det känns som det behövs och om det känns att det finns utrymme (koppla till guiden?)
+
+1. Gör uppgiften "[PHP lab 5: utforska inbyggda funktioner](uppgift/php-lab5-utforska-inbyggda-funktioner)". Spara filerna i katalogen `me/kmom05/lab5`.
+
+-->
 
 
 Resultat & Redovisning  {#resultat_redovisning}

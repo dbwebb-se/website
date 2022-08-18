@@ -133,15 +133,15 @@ Vi lär oss programmeringsspråket PHP och hur man kan skapa dynamiska webbsidor
 
 
 
-### Kmom04: PHP {#kmom04}
+### Kmom04: PHP datastrukturer {#kmom04}
 
-TBD.
+Array, Form, Post, Session.
 
 [Instruktion till kursmoment 04](./kmom04).
 
 
 
-### Kmom05: SQL {#kmom05}
+### Kmom05: SQL och SQLite {#kmom05}
 
 Vi skall titta på databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen eftersom databasen ligger i en enda fil och det finns inga användare eller behörigheter att konfigurera.
 
@@ -151,7 +151,7 @@ I en databas, en relationsdatabas som SQLite, så pratar vi SQL med databasen. V
 
 
 
-### Kmom06: SQL {#kmom06}
+### Kmom06: PHP, PDO och SQL {#kmom06}
 
 Vi skall titta på databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen eftersom databasen ligger i en enda fil och det finns inga användare eller behörigheter att konfigurera.
 

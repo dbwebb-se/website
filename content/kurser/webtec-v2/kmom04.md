@@ -84,7 +84,7 @@ Läs enligt följande.
 
 ### Video för orientering {#video}
 
-__(Detta är samma videor som föreslogs i kmom03, du får en ny möjlighet att kika på dem om du inte gjorde det då...)__
+_(Detta är samma videor som föreslogs i kmom03, du får en ny möjlighet att kika på dem om du inte gjorde det då...)_
 
 Titta på följande videor/filmer, om du finner dem intressanta. Filmerna är tänkta att ge dig en liten orientering i det område som behandlas i kursmomentet.
 
@@ -110,12 +110,19 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
+1. Jobba igenom övningen "[Programmera din webbsida med PHP datastrukturer](kunskap/programmera-din-webbsida-med-php-datastrukturer)" som hjälper dig att komma igång med PHP och datastrukturer som arrayer, funktioner och superglobala arrayer som POST och SESSION. Spara koden du skriver under `me/report`, om du skriver extra test- och exempelprogram kan du spara dem under `me/kmom04`.
 
 <!--
 * Arrayer
 * (Funktioner)
 * POST med processingsida
 * Session
+* galleri, next, prev
+* delar av inloggning
+
+* Bygg formulär. (som övning?)
+https://jonkopingenergi.se/privat/fiber/serviceavgift (använd även till databasen)
+
 
 * Programmera något med PHP, som en övningssida i report?
 
@@ -128,7 +135,9 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-* Gör uppgiften "[Bygg en webbplats med PHP](uppgift/bygg-en-webbplats-med-php)".
+Bygg ett galleri och en månadskalender med PHP datastrukturer
+
+1. Gör uppgiften "[Bygg ett galleri och en månadskalender med PHP datastrukturer](uppgift/bygg-ett-galleri-och-en-manadskalender-med-php-datastrukturer)" och spara alla filer under `me/report`.
 
 <!--
 Kalender, månadens babe
@@ -136,9 +145,6 @@ Kalender, månadens babe
 Kalender samt bytta månad med länk.
 
 Galleri med bilder, klicka runt, läsa av filer i katalog. Next
-
-Bygg formulär. (som övning?)
-https://jonkopingenergi.se/privat/fiber/serviceavgift (använd även till databasen)
 
 Session, formulär med POST
 

@@ -144,7 +144,7 @@ PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den 
 | Dag | Tid | Vem | Grupp | Vad | Var |
 |-----|-----|-----|-------|-----|-----|
 | 23/8 Tis | mos | 10-11 | webtec | Kursintroduktion | Inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
-| 23/8 Tis | aar | 11-12 | python | Kursintroduktion | Inspelad, [zoom](https://bth.zoom.us/j/8535967236) |
+| 23/8 Tis | aar | 11-12 | python | Kursintroduktion | [Inspelad](https://www.youtube.com/watch?v=35NRWij9Z0Q&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=4), [zoom](https://bth.zoom.us/j/8535967236) |
 | 24/8 Ons | klw | 08-09 | alla   | Introduktion till terminalen | Multisalen, stream |
 | 24/8 Ons | klw | 09-10 | alla   | Labbmiljö dbwebb-cli | Multisalen, stream |
 | 24/8 Ons | aar | 10-11 | python | Intro till Python | Multisalen, stream |

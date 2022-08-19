@@ -4,8 +4,8 @@ Initiera kursrepo och server
 Innan du kan börja jobba med ett kursrepo så behöver du initiera både kursrepot och studentservern.
 
 ```bash
-# Flytta in i katalogen för kursrepot, tex kursrepot htmlphp
-$ cd htmlphp
+# Flytta in i katalogen för kursrepot, tex kursrepot webtec
+$ cd webtec
 $ dbwebb init
 ```
 

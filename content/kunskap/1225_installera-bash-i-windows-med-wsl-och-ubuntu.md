@@ -324,7 +324,7 @@ cd
 rm winhome
 ```
 
-När du jobbar med kurserna rekommenderas det att du sparar alla filerna i din Windows hemmakatalog. Det gör det enklast att nå dem via både WSL, webbserver och andra Windows applikationer och du har dem lätt tillgängliga för att ta backup.
+När du jobbar med kurserna rekommenderas det att du sparar alla filerna i ubuntu miljön. Det gör det enklast att nå dem via både WSL och texteditorn.
 
 
 

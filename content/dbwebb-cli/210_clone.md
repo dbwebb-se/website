@@ -6,7 +6,6 @@ Kursmaterial finns samlat i kursrepo, kurskataloger, som laddas ned från Github
 Förslagsvis så samlar du alla kursrepon i en och samma katalog och döper den till `dbwebb-kurser`. Du kan lägga katalogen var du vill, men direkt under din hemmakatalog är en bra plats.
 
 ```bash
-# Byt $HOME till $HOMEPATH för hemmakatalog för Windowsanvändaren
 $ mkdir "$HOME/dbwebb-kurser"
 $ cd "$HOME/dbwebb-kurser"
 ```

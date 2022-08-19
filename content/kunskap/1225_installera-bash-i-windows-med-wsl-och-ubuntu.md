@@ -239,7 +239,16 @@ Nu öppnas filväljaren och visar filerna i katalogen samt en sökväg till dem.
 
 [FIGURE src=image/snap22/explorer_open_from_ubuntu.png?w=w3 caption="Filväljaren explorer öppnar ett fönster och visar filerna i terminalen."]
 
-Du kan också öppna texteditor på liknande sätt.
+
+### Öppna VSCode från terminalen {#open-vscode}
+
+För att kunna öppna VSCode från terminalen behöver du installera ett tillägg i VSCode.
+
+[FIGURE src=image/vscode/vscode-wsl.png?w=w3 caption="Installera Remote - WSL i VSCode."]
+
+Gör som bilden visar, gå till fliken för tillägg, sök på "wsl" och installera "Remote - WSL". Efter det behöver du starta om terminalen.
+
+När du har startat terminalen igen kan du skriva som nedanför för att öppna mappen du står i, i vscode. Första gången du gör det kommer den installera verktyget.
 
 ```text
 code .

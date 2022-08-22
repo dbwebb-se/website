@@ -41,13 +41,7 @@ Kursintro {#pres}
 
 Här är en video som "pratar" dig igenom kursens upplägg och delar av innehållet i detta dokumentet.
 
-[WARNING]
-
-**En uppdaterad video spelas in augusti 2022.**
-
-[/WARNING]
-
-[YOUTUBE src="RvCFLObcJUk" width=700 caption="Kursintroduktion till kursen webtec med Mikael."]
+[YOUTUBE src="K7F5IVgK1bg" width=700 caption="Kursintroduktion till kursen webtec med Mikael."]
 
 
 

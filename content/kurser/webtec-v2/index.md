@@ -16,11 +16,7 @@ Kursen webtec (v2)
 
 Kursen **Webbteknologier**, a.k.a. *webtec*, lär ut webbutveckling där teknikerna  HTML, CSS, PHP och SQL används för att tillsammans bygga en databasdriven webbplats.
 
-[WARNING]
 
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
-
-[/WARNING]
 
 <!--more-->
 

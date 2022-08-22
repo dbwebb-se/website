@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2022-08-22": "(F, mos) Stödfunktioner med video."
     "2022-08-16": "(E, mos) Kopia och uppdaterad inför ht22."
     "2021-08-17": "(D, mos) Lade till checklista."
     "2021-05-20": "(C, mos) Kopia och uppdaterad inför ht21."
@@ -124,7 +125,7 @@ På campus håller Kenneth en träff och frågestund med campusstudenterna kl 10
 
 För distansstudenter håller Mikael en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337) under samma tid.
 
-Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J.
+Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. [Stödfunktionerna har spelat in en video för att presentera sig och sin verksamhet](https://www.youtube.com/watch?v=SSQDHLdJHbM&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=3).
 
 Efter lunch mellan 13-14 följer en "Högskoleintro (svensk version)" i Multisal J1504 ([zoom](https://bth.zoom.us/j/66718402136)).
 

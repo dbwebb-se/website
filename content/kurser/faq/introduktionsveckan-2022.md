@@ -1,7 +1,7 @@
 ---
 author: mos
 revision:
-    "2022-08-22": "(F, mos) Stödfunktioner med video."
+    "2022-08-22": "(F, mos) Video från måndagen."
     "2022-08-16": "(E, mos) Kopia och uppdaterad inför ht22."
     "2021-08-17": "(D, mos) Lade till checklista."
     "2021-05-20": "(C, mos) Kopia och uppdaterad inför ht21."
@@ -123,7 +123,7 @@ Veckan börjar kl 09-10 med "Rektorns välkomsttal" utomhus utanför hus J och d
 
 På campus håller Kenneth en träff och frågestund med campusstudenterna kl 10-11 i salen J1360.
 
-För distansstudenter håller Mikael en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337) under samma tid.
+För distansstudenter håller Mikael en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337) under samma tid ([spelades in](https://www.youtube.com/watch?v=yMTUDvTHsfE&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)).
 
 Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. [Stödfunktionerna har spelat in en video för att presentera sig och sin verksamhet](https://www.youtube.com/watch?v=SSQDHLdJHbM&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=3).
 

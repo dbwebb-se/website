@@ -146,10 +146,10 @@ PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den 
 |-----|-----|-----|-------|-----|-----|
 | 23/8 Tis | mos | 10-11 | webtec | Kursintroduktion | [Inspelad](https://youtu.be/K7F5IVgK1bg), [zoom](https://bth.zoom.us/j/4200421337) |
 | 23/8 Tis | aar | 11-12 | python | Kursintroduktion | [Inspelad](https://www.youtube.com/watch?v=35NRWij9Z0Q&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=4), [zoom](https://bth.zoom.us/j/8535967236) |
-| 24/8 Ons | klw | 08-09 | alla   | Introduktion till terminalen | Multisalen, stream |
-| 24/8 Ons | klw | 09-10 | alla   | Labbmiljö dbwebb-cli | Multisalen, stream |
-| 24/8 Ons | aar | 10-11 | python | Intro till Python | Multisalen, stream |
-| 24/8 Ons | efo | 11-12 | alla   | Introduktion till datavetenskap | Multisalen, stream |
+| 24/8 Ons | klw | 08-09 | alla   | Introduktion till terminalen | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
+| 24/8 Ons | klw | 09-10 | alla   | Labbmiljö dbwebb-cli | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
+| 24/8 Ons | aar | 10-11 | python | Intro till Python | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
+| 24/8 Ons | efo | 11-12 | alla   | Introduktion till datavetenskap | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
 | 25/8 Tor | grm, mos | 09-10 | webtec | Labbmiljö webb | H430, inspelad, Discord |
 | 25/8 Tor | grm, mos | 10-11 | webtec | Skapa webbsida | H430, inspelad, Discord |
 | 25/8 Tor | grm, mos | 11-12 | webtec | Publicera webbsida | H430, inspelad, Discord |

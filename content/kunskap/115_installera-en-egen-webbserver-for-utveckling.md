@@ -2,6 +2,7 @@
 author: mos
 category: labbmiljo
 revision:
+    "2022-08-24": (H, mos) Lade till h3 och ny länk till wsl bash.
     "2022-08-17": (G, mos) Uppdaterade hur länkarna skapas.
     "2018-08-21": (F, mos) Information om Mac och inte VM.
     "2015-08-17": (E, mos) La till info om symboliska länkar.
@@ -36,24 +37,36 @@ Jag har valt att använda XAMPP eftersom den är open source och fungerar bra. X
 
 
 
-Installera XAMPP {#install}
+Kom igång med XAMPP {#komigang}
 --------------------------------------------------------------------
 
-Så här installerade jag:
-
-1) Gå till hemsidan för XAMPP och ladda ned det paketet du vill ha (Windows, Mac).
+Följ mina steg för att komma igång.
 
 
-2) Kör en ren installation, se till att du är Administratör på din Windows-maskin (för att undvika problem).
+
+### 1. Installera {#install}
+
+Gå till hemsidan för XAMPP och ladda ned det paketet du vill ha (Windows, Mac).
+
+Kör en ren installation, se till att du är Administratör på din Windows-maskin (för att undvika problem).
+
+När du väljer miljö på Mac så välj den som _inte_ heter VM i namnet. VM står för virtual machine.
 
 
-3) Ändra så att Apache kör på 8080 (för att undvika problem när någon annan redan kör på port 80, typ Skype eller befintlig webserver). I Mac klickar du på "Configure" och ändrar port i rutan som poppar upp. I Windows är det lite krångligare, du gör så här. 
 
-3.1) Öppna Apaches konfigfil `httpd.conf` genom att klicka på knappen "Config" och väljer sedan "Apache (httpd.conf)" i den menyn som kommer upp.
+### 2. Konfigurera {#konfigurera}
+
+Ändra så att Apache kör på 8080 (för att undvika problem när någon annan redan kör på port 80, typ Skype eller befintlig webserver).
+
+I Mac klickar du på "Configure" och ändrar port i rutan som poppar upp.
+
+I Windows är det lite krångligare, du gör så här. 
+
+1) Öppna Apaches konfigfil `httpd.conf` genom att klicka på knappen "Config" och väljer sedan "Apache (httpd.conf)" i den menyn som kommer upp.
 
 [FIGURE src=/image/xampp/xampp-config-port.png&w=w3 caption="Öppna konfigfilen till Apache."[/FIGURE]
 
-3.2) En texteditor öppnar filen `httpd.conf`. Leta reda på raden som säger:
+2) En texteditor öppnar filen `httpd.conf`. Leta reda på raden som säger:
 
 ```text
 Listen 80
@@ -67,8 +80,13 @@ Listen 8080
 
 [FIGURE src=/image/xampp/xampp-config-port-httpd.png&w=w3 caption="Byt port som Apache kör på för att undvika krockar med andra program."[/FIGURE]
 
+Klart.
 
-4) Klar. Starta Apache
+
+
+### 3. Starta Apache {#start}
+
+Starta Apache.
 
 [FIGURE src=/image/xampp/start-apache.png?w=w3 caption="Starta Apache webbserver."[/FIGURE]
 
@@ -77,25 +95,36 @@ Apache har startat.
 [FIGURE src=/image/xampp/apache-started.png?w=w3 caption="Nu snurrar Apache webbserver på din lokala maskin."[/FIGURE]
 
 
-5) Peka webbläsaren till `http://localhost:8080/` eller `http://127.0.0.1:8080` (kopiera in länkarna till din webbläsare). Så här kan det se ut när XAMPPs standard hemsida visas.
+
+### 4. Öppna webbläsaren mot Apache {#webblasare}
+
+Peka webbläsaren till `http://localhost:8080/` eller `http://127.0.0.1:8080` (kopiera in länkarna till din webbläsare).
+
+Så här kan det se ut när XAMPPs standard hemsida visas.
 
 [FIGURE src=/image/xampp/xampp-home.png?w=w3 caption="XAMPPs hemsida på din lokala maskin visas."[/FIGURE]
 
 
-6) Xampp installeras i `C:\xampp` och webrooten ligger i `C:\xampp\htdocs` på Windows och i Mac OS gäller `/Applications/XAMPP/htdocs`. Gör följande steg för att testa din installation genom att skapa en HTML-sida och en PHP-sida. 
 
+### 5. Skapa en webbsida {#webbsida}
 
-6.1) Skapa en katalog `test` i din htdocs-katalog (din webroot). 
+Xampp installeras i `C:\xampp` och webrooten ligger i `C:\xampp\htdocs` på Windows och i Mac OS gäller `/Applications/XAMPP/htdocs`.
+
+Gör följande steg för att testa din installation genom att skapa en HTML-sida och en PHP-sida. 
+
+1) Skapa en katalog `test` i din htdocs-katalog (din webroot). 
 
 [FIGURE src=/image/xampp/htdocs-create-test-dir.png?w=w3 caption="Katalogen `test` skapas i filväljaren."[/FIGURE]
 
 
-6.2) Öppna samma katalog i din webbläsare. Länken dit är `http://localhost:8080/test` eller `http://127.0.0.1:8080/test`. Katalogen är tom för tillfället.
+
+2) Öppna samma katalog i din webbläsare. Länken dit är `http://localhost:8080/test` eller `http://127.0.0.1:8080/test`. Katalogen är tom för tillfället.
 
 [FIGURE src=/image/xampp/firefox-test-empty.png?w=w3 caption="Katalogen `test` öppnad i webbläsaren via webbservern."[/FIGURE]
 
 
-6.3) Skapa två filer i katalogen och döp dem till `test.html` (en HTML-sida) och `test.php` (en HTML -sida med PHP-kod).
+
+3) Skapa två filer i katalogen och döp dem till `test.html` (en HTML-sida) och `test.php` (en HTML -sida med PHP-kod).
 
 [FIGURE src=/image/xampp/htdocs-create-test-files.png?w=w3 caption="Två filer skapade i katalogen test via filväljaren."[/FIGURE]
 
@@ -104,7 +133,8 @@ Kontrollera att du även ser filerna i din webbläsare genom att ladda om sidan 
 [FIGURE src=/image/xampp/firefox-test-files-empty.png?w=w3 caption="De nyskapade filerna är synliga via webbservern."[/FIGURE]
 
 
-6.4) Öppna de båda filerna i din texteditor och lägg in följande kod i dem.
+
+4) Öppna de båda filerna i din texteditor och lägg in följande kod i dem.
 
 Kod till HTML-sidan `test.html`.
 
@@ -132,7 +162,8 @@ Kod till PHP-sidan `test.php`.
 [FIGURE src=/image/xampp/jedit-test-php.png?w=w3 caption="Filen `test.php` skapas i texteditorn."[/FIGURE]
 
 
-6.5) Öppna de båda filerna i din webbläsare för att se hur de ser ut.
+
+5) Öppna de båda filerna i din webbläsare för att se hur de ser ut.
 
 * `http://127.0.0.1:8080/test`
 
@@ -150,7 +181,9 @@ Kod till PHP-sidan `test.php`.
 
 Nu fungerar din installation av XAMPP tillsammans med HTML- och PHP-sidor.
 
+<!--
 Det finns en [forumtråd där du kan få hjälp om installationen krånglar](t/2705).
+-->
 
 
 
@@ -163,11 +196,90 @@ Låt oss skapa en symbolisk länk från webbroten och pekar på en katalog under
 
 När vi har lyckats med detta så kan du nå webbfilerna via xampp om du öppnar länken `http://localhost:8080/dbwebb`.
 
-Följ nedan instruktioner för att skapa länken på Windows eller på Mac OS.
+Följ nedan instruktioner för att skapa länken på Windows (WSL/Bash eller Cygwin) eller på Mac OS.
 
 
 
-### Skapa länk på Windows {#linkwin}
+### Skapa länk på Windows (WSL/Bash) {#linkwsl}
+
+Detta stycket gäller enbart om du har din katalog `dbwebb-kurser` i WSL/Bash. Detta är på Windows det rekommenderade sättet.
+
+I Windows ligger din webbkatalog ofta under `c:\xampp\htdocs`. Du kan öppna en "Command Prompt" CMD terminal i Windows (som Administratör) och börja att flytta till den katalogen. Det är här vi skall skapa länken.
+
+```text
+cd c:\xampp\htdocs
+dir
+dir dbwebb
+```
+
+[FIGURE src=/image/snap22/mklink_wsl_dir.png?w=w3 caption="För tillfället finns ingen länk till dbwebb i XAMPP katalogen."[/FIGURE]
+
+Nu behöver vi ta reda på vilken katalog du har i WSL/Bash. Öppna din Bash-terminal och gå till din hemmakatalog. Starta sedan `explorer.exe` och se vilken katalog som applikationen upplever det som.
+
+```text
+# I WSL/Bash gå till din hemmakatalog
+cd
+
+# Flytta till katalogen dbwebb-kurser
+cd dbwebb-kurser
+
+# Starta explorer mot nuvarande katalog som representeras av .
+explorer.exe .
+```
+
+[FIGURE src=/image/snap22/mklink_wsl_explorer.png?w=w3 caption="Starta explorer.exe i katalogen dbwebb-kurser."[/FIGURE]
+
+[FIGURE src=/image/snap22/mklink_wsl_path.png?w=w3 caption="Markera sökvägen till katalogen och kopiera den."[/FIGURE]
+
+Nu kan du i explorer markera och kopiera sökvägen till din hemmakatalog i WSL/Bash. I mitt fall var sökvägen följande.
+
+```text
+# Path till min katalog
+\\wsl.localhost\Ubuntu-20.04\home\mos\dbwebb-kurser
+
+# Generell path in i en WSL instance
+\\host\instance\path
+```
+
+Du kan nu gå tillbaka till CMD och där skall vi nu skapa länken.
+
+Skapa länken enligt nedan men byt sökvägen till katalogen till din egen som du fick via explorer ovan.
+
+```text
+mklink /D .\dbwebb "sökvägen"
+```
+
+Så här blev det för mig.
+
+```text
+mklink /D .\dbwebb "\\wsl.localhost\Ubuntu-20.04\home\mos\dbwebb-kurser"
+```
+
+Nu är länken skapad och vi kan se att den ligger i katalogen och innehållet i den katalog dit den pekar.
+
+```text
+# Se alla filer som börjar på dbwebb i katalogen
+dir dbwebb*
+
+# Visa innehållet i den katalog dit symlänken pekar
+dir dbwebb
+```
+
+Så här kan det se ut när man gör det.
+
+[FIGURE src=/image/snap22/mklink_wsl_mklink.png?w=w3 caption="Skapa en symbolisk länk till en annan katalog i Windows."[/FIGURE]
+
+Om något går fel så kan du radera den symboliska länken så här, och sedan starta om igen.
+
+```text
+rmdir dbwebb
+```
+
+
+
+### Skapa länk på Windows (Cygwin) {#linkcygwin}
+
+Detta stycket gäller enbart om du har din katalog `dbwebb-kurser` någonstans i ditt windows filsystem, till exempel under din Windows hemmakatalog. Om du har terminalen Cygwin kan det vara bra att göra på detta sättet.
 
 I Windows ligger din webbkatalog ofta under `c:\xampp\htdocs`. Du kan länka till en katalog med kommandot `mklink` i kommandoprompten. Öppna "Command Prompt" *som administratör* och kör följande kommando. 
 
@@ -196,15 +308,15 @@ dir dbwebb*
 dir dbwebb
 ```
 
+Så här kan det se ut när man gör det.
+
+[FIGURE src=/image/snap22/mklink_dbwebb.png?w=w3 caption="Skapa en symbolisk länk till en annan katalog i Windows."[/FIGURE]
+
 Om något går fel så kan du radera den symboliska länken så här, och sedan starta om igen.
 
 ```text
 rmdir dbwebb
 ```
-
-Så här kan det se ut när man gör det.
-
-[FIGURE src=/image/snap22/mklink_dbwebb.png?w=w3 caption="Skapa en symbolisk länk till en annan katalog i Windows."[/FIGURE]
 
 
 
@@ -249,10 +361,10 @@ Prova nu att ladda om filen i webbläsaren och se om det löste problemet.
 Apache på Linux och andra plattformar? {#linux}
 --------------------------------------------------------------------
 
-Det finns många andra plattformar att köra webbserver med PHP och databas på. Använder du Linux kan du köra XAMPP eller installera det på egen hand med en pakethanterare.
+Det finns många andra plattformar att köra webbserver med PHP och databas på. Använder du Linux kan du köra XAMPP eller installera Apache och PHP på egen hand med en pakethanterare.
 
 
-
+<!--
 Äldre installationsbeskrivningar {#aldre}
 --------------------------------------------------------------------
 
@@ -278,3 +390,5 @@ Möjliga problem vid installation på Windows:
 
 * Vid problem, kontrollera alltid vad det står i loggfilerna för Apache, MySQL och PHP?
 [/INFO]
+
+-->

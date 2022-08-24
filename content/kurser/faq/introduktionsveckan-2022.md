@@ -150,9 +150,9 @@ PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den 
 | 24/8 Ons | klw | 09-10 | alla   | Labbmiljö dbwebb-cli | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
 | 24/8 Ons | aar | 10-11 | python | Intro till Python | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
 | 24/8 Ons | efo | 11-12 | alla   | Introduktion till datavetenskap | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 25/8 Tor | grm, mos | 09-10 | webtec | Labbmiljö webb | H430, inspelad, Discord |
-| 25/8 Tor | grm, mos | 10-11 | webtec | Skapa webbsida | H430, inspelad, Discord |
-| 25/8 Tor | grm, mos | 11-12 | webtec | Publicera webbsida | H430, inspelad, Discord |
+| 25/8 Tor | grm, mos | 09-10 | webtec | Labbmiljö webb | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
+| 25/8 Tor | grm, mos | 10-11 | webtec | Skapa webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
+| 25/8 Tor | grm, mos | 11-12 | webtec | Publicera webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
 
 Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2022](https://www.youtube.com/playlist?list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)".
 

@@ -25,15 +25,13 @@ Se till att du har en egen lokal utvecklingsmiljö för dina webbsidor. I dbwebb
 Webbserver Apache httpd med PHP och databas {#webbserver}
 --------------------------------------------------------------------
 
-Det finns ett antal sätt att installera Apache och PHP. Välj ett som du känner dig bekväm med. 
+Som rekommenderad miljö på Windows och Mac OS används [XAMPP](https://www.apachefriends.org/index.html). På Linux kan du välja XAMPP eller hellre installera Apache och PHP med pakethanteraren.
 
-Som rekommenderad miljö på Windows och Mac OS används [XAMPP](https://www.apachefriends.org/index.html).
+Vi har valt att använda XAMPP eftersom den är open source och fungerar bra. XAMPP är lätt att installera och komma igång med och den har ett trevligt och enkelt gränssnitt. Dessutom finns den både till Windows, Mac OS och Linux.
 
-När du väljer miljö på Mac så välj den som inte heter VM i namnet. Det står för virtual machine och den vill vi undvika. Du kan läsa [mer om detta i forumet](https://dbwebb.se/t/6648).
-
-Jag har valt att använda XAMPP eftersom den är open source och fungerar bra. XAMPP är lätt att installera och komma igång med och den har ett trevligt och enkelt gränssnitt. Dessutom finns den både till Windows, Mac OS och Linux.
-
+<!--
 [Tidigare användes WAMPServer (Windows) och MAMP (Mac)](#aldre). Alla tre fungerar för kurserna och du kan välja vilken du vill. Får du problem så kommer jag troligen be dig använda XAMPP.
+-->
 
 
 
@@ -50,7 +48,7 @@ Gå till hemsidan för XAMPP och ladda ned det paketet du vill ha (Windows, Mac)
 
 Kör en ren installation, se till att du är Administratör på din Windows-maskin (för att undvika problem).
 
-När du väljer miljö på Mac så välj den som _inte_ heter VM i namnet. VM står för virtual machine.
+När du väljer miljö på Mac så välj den som _inte_ heter VM i namnet. VM står för virtual machine. Du kan läsa [mer om detta i forumet](https://dbwebb.se/t/6648).
 
 
 

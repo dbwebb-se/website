@@ -2,7 +2,7 @@
 author: mos
 category: labbmiljo
 revision:
-    "2022-08-24": (H, mos) Lade till h3 och ny länk till wsl bash.
+    "2022-08-24": (H, mos) Lade till h3 och ny länk till wsl bash samt videor.
     "2022-08-17": (G, mos) Uppdaterade hur länkarna skapas.
     "2018-08-21": (F, mos) Information om Mac och inte VM.
     "2015-08-17": (E, mos) La till info om symboliska länkar.
@@ -35,6 +35,15 @@ Vi har valt att använda XAMPP eftersom den är open source och fungerar bra. XA
 
 
 
+Videoserie {#video}
+--------------------------------------------------------------------
+
+Det finns en videoserie som kompletterar denna artikel och vissa saker som händer efter denna artikeln, den kompletta videoserien kan nås på "[Installera en egen webbserver (XAMPP) för utveckling (på Windows/Mac)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_9ulrpXIXd4ZsiHSidyJft)".
+
+Ett par av dessa videor är även inkluderade i själva dokumentet nedan. Kika gärna i videorna om du får bekymmer, eller om du tycker det är lättare att följa dem.
+
+
+
 Kom igång med XAMPP {#komigang}
 --------------------------------------------------------------------
 
@@ -50,11 +59,15 @@ Kör en ren installation, se till att du är Administratör på din Windows-mask
 
 När du väljer miljö på Mac så välj den som _inte_ heter VM i namnet. VM står för virtual machine. Du kan läsa [mer om detta i forumet](https://dbwebb.se/t/6648).
 
+[YOUTUBE src="To0RsSrPA48" list="PLKtP9l5q3ce_9ulrpXIXd4ZsiHSidyJft" width=700 caption="Installera XAMPP på Windows (och Mac)."]
+
 
 
 ### 2. Konfigurera {#konfigurera}
 
 Ändra så att Apache kör på 8080 (för att undvika problem när någon annan redan kör på port 80, typ Skype eller befintlig webserver).
+
+[YOUTUBE src="UbTgjcHi4EI" list="PLKtP9l5q3ce_9ulrpXIXd4ZsiHSidyJft" width=700 caption="Konfigurera och starta XAMPP på porten 8080."]
 
 I Mac klickar du på "Configure" och ändrar port i rutan som poppar upp.
 
@@ -109,6 +122,10 @@ Så här kan det se ut när XAMPPs standard hemsida visas.
 Xampp installeras i `C:\xampp` och webrooten ligger i `C:\xampp\htdocs` på Windows och i Mac OS gäller `/Applications/XAMPP/htdocs`.
 
 Gör följande steg för att testa din installation genom att skapa en HTML-sida och en PHP-sida. 
+
+[YOUTUBE src="8l9bVIlVIM0" list="PLKtP9l5q3ce_9ulrpXIXd4ZsiHSidyJft" width=700 caption="Skapa en testsida i XAMPP för HTML och för PHP."]
+
+
 
 1) Skapa en katalog `test` i din htdocs-katalog (din webroot). 
 
@@ -201,6 +218,8 @@ Följ nedan instruktioner för att skapa länken på Windows (WSL/Bash eller Cyg
 ### Skapa länk på Windows (WSL/Bash) {#linkwsl}
 
 Detta stycket gäller enbart om du har din katalog `dbwebb-kurser` i WSL/Bash. Detta är på Windows det rekommenderade sättet.
+
+[YOUTUBE src="feIiivzFKUw" list="PLKtP9l5q3ce_9ulrpXIXd4ZsiHSidyJft" width=700 caption="Skapa en länk från XAMPP htdocs till dbwebb-kurser i WSL/Bash/Ubuntu."]
 
 I Windows ligger din webbkatalog ofta under `c:\xampp\htdocs`. Du kan öppna en "Command Prompt" CMD terminal i Windows (som Administratör) och börja att flytta till den katalogen. Det är här vi skall skapa länken.
 

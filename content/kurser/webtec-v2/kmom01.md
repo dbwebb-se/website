@@ -8,16 +8,10 @@ views:
 author:
     - mos
 revision:
-    "2022-06-28": "(A, mos) Första utgåvan."
+    "2022-08-24": "(A, mos) Första utgåvan inför ht22."
 ...
 Kmom01: Bygg en webbplats
 ==================================
-
-[WARNING]
-
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
-
-[/WARNING]
 
 Vi inleder kursen med att bygga en webbplats som baseras på HTML, CSS och PHP. Vi försöker kommer skapa en god struktur och uppdelning av filer och kataloger samt komma igång med de grundeläggande begrepp som används när man bygger en webbplats.
 

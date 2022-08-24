@@ -6,6 +6,7 @@ author:
 category:
     - python
 revision:
+    "2022-08-24": (H, aar) Bytte mapp kmom01/hello till kmom01/plane. Då validering är avstängt för hello.
     "2019-05-24": (G, efo) La till visualiseringsverktyg.
     "2018-06-29": (F, aar) Uppdaterade mappstruktur mot kursrepo.
     "2018-06-21": (E, efo) Bytte ordning på asciinema och video.
@@ -84,18 +85,18 @@ Så här tar du en kopia av exempelprogrammet, öppnar upp det i din editor och 
 
 Du ska nu ta en kopia av exempel-programmet `hello.py` och spara i din me-katalog där du kan editera och testa fler konstruktioner.
 
-Först ställer vi oss i rooten av kursrepot. Sedan kopierar vi filen `example/hello/hello.py` till katalogen `me/kmom01/hello`.
+Först ställer vi oss i rooten av kursrepot. Sedan kopierar vi filen `example/hello/hello.py` till katalogen `me/kmom01/plane`.
 
 ```bash
 # Gå till ditt kursrepo python
-$ cp -i example/hello/hello.py me/kmom01/hello
+$ cp -i example/hello/hello.py me/kmom01/plane
 ```
 
-Tanken är att dina egna filer som du jobbar med under kursen samlas under katalogen `me`. Du kan nu gå in i din katalog `me/kmom01/hello` och köra filen igen.
+Tanken är att dina egna filer som du jobbar med under kursen samlas under katalogen `me`. Du kan nu gå in i din katalog `me/kmom01/plane` och köra filen igen.
 
 ```bash
 # Gå till ditt kursrepo python
-$ cd me/kmom01/hello
+$ cd me/kmom01/plane
 $ python3 hello.py
 ```
 
@@ -161,12 +162,12 @@ Det är lätt att bli stressad när man försöker laga ett fel men det hjälper
 
 ###Ett program med fel {#felprogram}
 
-Det finns ett exempelprogram som innehåller ett par felaktigheter. Ta en kopia av det och lägg i din katalog `me/kmom01/hello`.
+Det finns ett exempelprogram som innehåller ett par felaktigheter. Ta en kopia av det och lägg i din katalog `me/kmom01/plane`.
 
 ```bash
 # Gå till ditt kursrepo python
-$ cp example/hello/hello-fel.py_ me/kmom01/hello/hello-fel.py
-$ cd me/kmom01/hello
+$ cp example/hello/hello-fel.py_ me/kmom01/plane/hello-fel.py
+$ cd me/kmom01/plane
 $ python3 hello-fel.py
 Traceback (most recent call last):
   File "hello-fel.py", line 8, in <module>
@@ -210,12 +211,12 @@ För att testa så kan du ta en ny kopia av programkoden som innehöll felaktigh
 
 ```bash
 # Gå till ditt kursrepo python
-$ cp example/hello/hello-fel.py_ me/kmom01/hello/hello-fel-igen.py
+$ cp example/hello/hello-fel.py_ me/kmom01/plane/hello-fel-igen.py
 $ dbwebb validate kmom01
 # utelämnar vissa delar av utskriften...
 *.py using pylint
 
-WARNING pylint failed: './me/kmom01/hello/hello-fel-igen.py'
+WARNING pylint failed: './me/kmom01/plane/hello-fel-igen.py'
 ************* Module hello-fel-igen
 E:  8, 0: Undefined variable 'prin' (undefined-variable)
 E: 12, 6: Using variable 'str2' before assignment (used-before-assignment)
@@ -238,11 +239,11 @@ Kolla på videon med nedanför där Kenneth förklarar felen och hur man löser 
 
 Validering är alltså ett sätt att kvalitetssäkra din kod. Valideringen kan upptäcka potentiella felaktigheter som inte syns när du exekverar koden. Valideringsverktyg är viktiga verktyg för en proffsprogrammerare.
 
-Du kan nu radera filen så att den inte ligger och ger felmeddelande.
+Du kan nu radera filerna så att de inte ligger och ger felmeddelande.
 
 ```bash
 # Gå till ditt kursrepo python
-$ rm me/kmom01/hello/hello-fel-igen.py
+$ rm me/kmom01/plane/hello-fel-igen.py me/kmom01/plane/hello-fel.py me/kmom01/plane/hello.py 
 ```
 
 

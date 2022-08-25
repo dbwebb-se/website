@@ -104,7 +104,73 @@ Då är vi redo att börja skriva exempelkoden i vår första vy-filen `view/php
 Array {#array}
 ---------------------------------
 
-foreach
+Du hittar information om [datatypen array i manualen](https://www.php.net/manual/en/book.array.php), se till att ha den vid din sida.
+
+Vi börjar med att skapa en array som innehåller detaljer om "mikael". Så här kan vi skapa arrayen med hjälp av konstruktionen `[]` samt spara alltihop i variabeln `$mikael`.
+
+Vi kan skriva allt på en rad men det kan vara tydligare att skriva på flera rader.
+
+```php
+$mikael = [
+    "Mikael",
+    "Roos",
+    1968,
+    "Teacher",
+    78.2
+];
+```
+
+I en array kan man spara värden av olika datatyper. Det går att lägga till hur mycket detaljer man vill.
+
+För att skriva ut innehållet i en array så kan man använda någon av de inbyggda funktionerna [print_r](https://www.php.net/manual/en/function.print-r.php) eller [var_dump](https://www.php.net/manual/en/function.var-dump.php). Båda dumpar innehållet i arrayen och var_dump visar även vilken upplevd typ som värdet har.
+
+Det kan se ut så här i din vy.
+
+```html
+<h2>Array som datastrukturer</h2>
+
+<p>Låt oss testa att använda en array.</p>
+
+<pre><?= print_r($mikael, true) ?></pre>
+
+<pre><?= var_dump($mikael) ?></pre>
+```
+
+När innehållet i arrayen skrivs ut så visas också på vilken position värdet ligger. Alla värden i arrayen ligger på en position. Första värdet hamnar på position 0 och sedan ökar det med ett per position. I arrayen ovan, som har 5 värden så stämmer alltså följande.
+
+```php
+$mikael[0] === "Mikael";
+$mikael[4] === 78.2;
+```
+
+En array kan alltså vara en "kontainer" för olika värden. Det är en variabel som innehåller flera olika värden, varje position i variabeln har ett värde.
+
+Vi kan räkna ut hur många värden som finns i en array med funktionen [count](https://www.php.net/manual/en/function.count.php).
+
+```php
+$items = count($mikael);
+```
+
+Om vi är osäkra på om en position i arrayen har ett värde så kan vi kontrollera det med funktionen [array_key_exists](https://www.php.net/manual/en/function.array-key-exists.php).
+
+```php
+array_key_exists($mikael[0]);
+
+array_key_exists($mikael[10]);
+```
+
+Det finns många [inbyggda funktioner som kan hjälpa oss att jobba med arrayer](https://www.php.net/manual/en/ref.array.php), kika snabbt och översiktligt på dem.
+
+Försök nu bygga en vy som testar din array, det kan se ut så här när du är klar.
+
+[FIGURE src=image/webtec/phpstruct/array.png?w=w3 caption="Utskriften från när vi leker runt med en array."]
+
+Ett litet PS är att det inte är lätt att skriva ut värder "TRUE" eller "FALSE" när man skriver ut en boolsk variabel i PHP. Man kan behöva konvertera det värdet till en sträng, annars får man '1' och '' (ingenting). Men du ser i min utskrift ovan att jag har löst det och skriver ut en representation av de boolska värdena.
+
+
+
+Loopa arrayens innehåll med foreach {#foreach}
+---------------------------------
 
 
 
@@ -113,6 +179,7 @@ Datastrukturer {#datastrukturerallmant}
 
 Allmänt om datastrukturer.
 Koppla snygg kod.
+
 
 
 

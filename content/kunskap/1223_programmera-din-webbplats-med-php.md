@@ -846,8 +846,12 @@ Om vi skriver ut informationen kan det se ut så här.
 
 
 
+<!--
 Datum på svenska {#datumsv}
 --------------------------------------
+
+sudo apt-get install php-intl
+-->
 
 
 

@@ -123,6 +123,8 @@ galleri
 
 (next/prev)
 
+datum på svenska, månad och dag på svenska via array?
+
 
 
 Array key/value {#arraykv}

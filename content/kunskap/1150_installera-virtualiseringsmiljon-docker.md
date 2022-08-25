@@ -19,7 +19,7 @@ Hämta installationsprogrammet {#download}
 Webbplatsen för Docker innehåller en del där du kan ladda hem och installera Docker. Det finns en Community Edition (CE) versioner för Windows, Mac och Linux. Kör igenom installationen enligt anvisningarna.
 
 * Windows
-    - [Installera WSL2](https://docs.microsoft.com/en-us/windows/wsl/install)
+    - [Installera Bash i Windows med WSL och Ubuntu](/kunskap/installera-bash-i-windows-med-wsl-och-ubuntu)
     - [Installera Docker](https://docs.docker.com/docker-for-windows/install/) 
 
 * [MacOs](https://docs.docker.com/docker-for-mac/install/)

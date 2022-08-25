@@ -115,7 +115,7 @@ Bra, då är vi nästan klara. Jag tänkte ladda hem ett par bilder först. För
 
 ```text
 # Hämta hem bilder från nätet via en webblänk och spara lokalt
-wget -O public/img/favicon.png https://dbwebb.se/bth-leaf.png
+wget -O public/img/favicon.png https://dbwebb.se/img/bth-leaf.png
 wget -O public/img/me.png https://dbwebb.se/img/prata-med-ankan.png
 wget -O public/img/me_small.jpg https://dbwebb.se/img/mikael-roos/mos-tjaro-square.jpg
 wget -O public/img/background.jpg https://dbwebb.se/img/mos-desktop-kaprifolen.jpg

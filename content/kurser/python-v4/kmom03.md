@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2022-08-26": (L, aar) Bytte ut vag redovisningsfråga till tydligare.
     "2020-03-30": (K, moc) Flyttade Funktioner från 04 till 03 inför V4 HT21.
     "2020-09-04": (J, aar) Släppt för HT20.
     "2020-05-15": (I, aar) Flyttade Funktioner från 03 till 04 inför V3 HT20.
@@ -124,8 +125,8 @@ Läs [instruktionen om hur du skall lämna in och redovisa](./../redovisa).
 Se till att följande frågor besvaras i redovisningstexten.
 
 * Har du programmerat med funktioner tidigare?
-* Hur kan du använda funktioner när du programmerar?
+* Vilka fördelar finns med att använda funktioner i koden?
+* Hur fungerar funktioner?
 * Du har gjort din första modul i Python, känns strukturen bra?
 * Hur kan du använda moduler?
-* Hur tänkte du när du utförde dem?
 * Gjorde du någon av extrauppgifterna? Berätta om det arbetet i så fall.

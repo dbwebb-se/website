@@ -2,6 +2,7 @@
 author: efo
 category: python
 revision:
+  "2022-08-26": (C, aar) La till rubrik vid default värde.
   "2018-06-18": (B, aar) La till ett simpelt exempel av hur en funktion kan se ut.
   "2017-05-31": (A, efo) Första utgåvan inför kursen python H17.
 ...
@@ -128,6 +129,9 @@ calculate_energy(andreas_time, "Andreas")
 # Emil använder 0.033333333333333326 kWh
 # Andreas använder 0.04666666666666666 kWh
 ```
+
+
+### Fördefinierade värde (default value) {#default}
 
 Vi har nu kapslat in vår kod för att beräkna energiåtgången. Denna koden kan återanvändas för nya personer som ska värma mat så låt oss titta på ett sådant exempel.
 

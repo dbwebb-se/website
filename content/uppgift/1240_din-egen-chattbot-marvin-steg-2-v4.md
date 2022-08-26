@@ -4,6 +4,7 @@ author:
   - aar
 category: python
 revision:
+  "2022-08-26": (B, aar) Delade upp marvin koden i marvin1 och marvin2 moduler.
   "2021-03-30": (A, moc) Ny version för att introducerar automaträttning.
 created: "2021-03-30 11:19"
 ...
@@ -50,10 +51,10 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
 
 2. Skapa filen `main.py`, den skall innehålla koden för att starta ditt program. Skapa **funktionen** `main` som innehåller koden för din while-loop. Din main fil skall sedan kalla på `main` funktion i blocket för villkoret `if __name__ == "__main__"` som du lägger längst ner i main.py.
 
-3. Koden för dina menyval ska nu ligga i `marvin.py`. Flytta all kod för dina nuvarande menyval till `marvin.py`, dessa skall sparas i funktioner som du kallar på när ett menyval ha gjorts i programmet. Importera `marvin.py` i `main.py` och strukturera om koden för de gamla menyvalen så att de läggs i en varsin funktion, med **följande namn**. Dessa funktionerna har utöver sitt menyval som tag också "marvin1" som tag.
+3. Koden för dina menyval ska nu ligga i `marvin1.py`. Flytta all kod för dina nuvarande menyval till `marvin1.py`, dessa skall sparas i funktioner som du kallar på när ett menyval ha gjorts i programmet. Importera `marvin1.py` i `main.py` och strukturera om koden för de gamla menyvalen så att de läggs i en varsin funktion, med **följande namn**. Dessa funktionerna har utöver sitt menyval som tag också "marvin1" som tag.
   * Menyval 1 - `greet`
   * Menyval 2 - `celcius_to_farenheit`
-  * Menyval 3 - `word_manipulation` * Tips, gör denna i samband med menyval **11**, (krav 6).
+  * Menyval 3 - `word_manipulation` * Tips, gör denna i samband med menyval **11**, (krav 7).
   * Menyval 4 - `sum_and_average`
   * Menyval 5 - `hyphen_string`
   * Menyval 6 - `is_isogram`
@@ -80,6 +81,7 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
         print(randomize_string(string))
     ```
 
+5. Skapa filen `marvin2.py`. Koden för de nya menyvalen nedanför ska du skriva i `marvin2.py`. Importera filen i `main.py`.
 
 
 5. Menyval **9** - `randomize_string`: Kasta om bokstäver. Marvin ska be dig skriva in ett ord som sedan slumpmässigt kastas om. Det omkastade ordet ska sedan skrivas ut i formatet `<orginal sträng> --> <slumpad sträng>`. Lösningen ska vara case-sensitive, med andra ord `A != a`. Tips [random modulen](https://docs.python.org/3.8/library/random.html).
@@ -110,7 +112,7 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
 
     Skriv koden i `mask_string` så att `multiply_str` används för att skapa delen av strängen med `#`.
 
-    Använd också `multiply_str` för att lösa menyval **3**. I `word_manipulation` anropa `multiply_str` för att bygga upp strängen.
+    Använd också `multiply_str` för att lösa menyval **3**. I `word_manipulation` anropa `multiply_str` för att bygga upp strängen (du behöver importera marvin2 i marvin1 för det).
 
 
 

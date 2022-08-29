@@ -73,7 +73,7 @@ Vi sparar allt vårt arbete i kursrepot i katalogen `me/kmom01`. Låt mig visa h
 # Ställ dig i rooten av kursrepot
 
 # Gå till arbetskatalogen
-cd me/report
+cd me/kmom01
 
 # Visa de filer som finns i katalogen (det bör vara tomt inledningsvis)
 ls -al

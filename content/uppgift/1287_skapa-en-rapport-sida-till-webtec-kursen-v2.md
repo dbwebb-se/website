@@ -131,7 +131,7 @@ Utför följande krav.
 
 1. I katalogen `config/` skall du ha filen `config.php` som innehåller konfigurering för att sätta på felutskrifter. Du kan även lägga till mer information i den konfigureringsfilen om du anser det passar.
 
-1. Du skall ge din webbplats en grov stil, lite bättre än den stilen som kommer ifrån övningen. Du kan antingen skapa din egen stil, eller så utgår du från en befintlig webbplats och lånar stilelement från den. Utför ändringarna i din stylesheet `public/style/css.style`.
+1. Du skall ge din webbplats en grov stil, lite bättre än den stilen som kommer ifrån övningen. Du kan antingen skapa din egen stil, eller så utgår du från en befintlig webbplats och lånar stilelement från den. Utför ändringarna i din stylesheet `public/css/style.css`.
 
 1. Skapa en ny sidkontroller `public/today.php` som skriver ut dagens datum, tid och vilken veckodag det är tillsammans med veckans nummer. Lek med stylen och gör veckans dag med extra stort typsnitt och udda färger. Sidkontrollern lägger du även i sidans navbar.
 

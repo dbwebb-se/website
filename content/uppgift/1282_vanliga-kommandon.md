@@ -20,7 +20,7 @@ Du har installerat [Docker](kunskap/installera-virtualiseringsmiljon-docker).
 
 ## Introduktion {#intro}
 
-Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du använt dig av för att lösa kravet. Ett krav per rad. Till din hjälp har du `man`-sidorna. Och hela internet såklart. Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainutils`: `$ apt isntall bsdmainutils`.
+Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du använt dig av för att lösa kravet. Ett krav per rad. Till din hjälp har du `man`-sidorna. Och hela internet såklart. Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainutils`: `$ apt install bsdmainutils`.
 
 ## Krav {#krav}
 

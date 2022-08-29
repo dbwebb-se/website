@@ -128,7 +128,10 @@ Se till att följande frågor besvaras i din redovisningstext.
 * Berätta om din upplevelse att jobba med styling och CSS, hur kändes det?
 * Försök reflektera över vilka eventuella svårigheter som finns för en nybörjare att komma igång med CSS.
 * Är du nöjd med utseendet på din webbplats eller är det sakr du hade velat ändra på?
-* Gjorde du någon av extrauppgifterna och berätta isåfall hur du tänkte och gick tillväga samt vad du tyckte om resultatet.
 * Vilken är din TIL för detta kmom?
+
+<!--
+* Gjorde du någon av extrauppgifterna och berätta isåfall hur du tänkte och gick tillväga samt vad du tyckte om resultatet.
+-->
 
 Glöm inte att testa din inlämning med `dbwebb test kmom02`.

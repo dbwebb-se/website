@@ -8,14 +8,14 @@ views:
 author:
     - mos
 revision:
-    "2022-07-01": "(A, mos) Första utgåvan."
+    "2022-08-29": "(A, mos) Första utgåvan."
 ...
 Kmom02: Styla en webbplats
 ==================================
 
 [WARNING]
 
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+**Om du anser dig vara en "early adopter" så får du gärna köra igång med detta kursmomentet. Eftersom du då är en av de första så kan det förekomma vissa saker som eventullet är felaktiga, men säg till läraren och länka till dokumentet/artikeln så rättar de snabbt upp det.**
 
 [/WARNING]
 

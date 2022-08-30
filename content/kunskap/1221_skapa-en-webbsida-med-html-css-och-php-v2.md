@@ -854,6 +854,8 @@ I tabellen nedan är ett par tecken som är reserverade i HTML, de har speciell 
 
 Det finns fler tecken som kan konstrueras med HTML entiter. Du kan till exempel skapa ett copyright-tecken &copy; `&copy;` eller ett euro-tecken &euro; `&euro;` med dem.
 
+Specialtecken som euro och copyright kan också skrivas (eller kopieras) direkt in i webbsidan som en utf-8 representation. Det kan vara ett bra alternativ till HTML entiteter, numer använder vi ofta teckenkodningen utf-8 för att skapa webbsidorna och det ersätter vissa av HTML entiteterna.
+
 
 
 Link checker {#linkcheck}

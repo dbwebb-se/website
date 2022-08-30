@@ -605,6 +605,7 @@ Det är viktigt att du har rätt flöde i filen. De olika konstruktionerna beror
 1. Starta med att inkludera konfigfilen.
 1. Skapar de variabler som behövs för att sidan skall kunna renderas.
 1. Rendera sidan, börja med headern och fortsätt sedan med main och footern.
+    1. Skriv ut värdet på PHP-variablerna.
 
 ```html
 <?php

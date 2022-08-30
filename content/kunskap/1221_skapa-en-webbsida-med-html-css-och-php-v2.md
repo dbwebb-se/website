@@ -526,7 +526,7 @@ Om du inte ser bilden kan du behöva ladda om sidan utan cachen, ett vanligt sä
 
 
 
-Skapa en ny webbsida {#php}
+Interna länkar {#interna}
 --------------------------------------
 
 Vi har sett hur man kan länka mellan webbsidor med `<a>` men man kan också länka internt i en websida med konstruktionen `#id`. Låt oss ta ett exempel.
@@ -555,6 +555,8 @@ I sidan/sidkontrollern `report.php` vill vi förbereda oss för att skriva redov
 Du kan själv fylla på med kmom03, kmom04, kmom05, kmom06 och kmom10.
 
 Du kan koppla ihop konstruktionen `<a href="#kmom01">` där brädgården följs av ett id som är unikt inom en webbsida. Jag har sedan angett id på de element som jag vill direktlänka till via `<h2 id="kmom01">`. På detta sättet jag skapa interna länkar i ett dokument och direktlänka till en viss del av sidan. I vårt fall har vi skapat en liten innehållsförteckning för dokumentet.
+
+Vill du skapa en länk som leder direkt till redovisningstexten för kmom01 lägger du till `#kmom01` i slutet av länken.
 
 [FIGURE src=image/webtec/html-css-php/report.png?w=w3 caption="En sida med en innehållsförteckning som leder till olika delar av sidans innehåll."]
 

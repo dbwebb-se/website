@@ -140,13 +140,12 @@ När vi är klara så ser strukturen ut så här. Du kan själv kolla din egen s
 │   │   └── me_small.jpg    
 │   ├── me.php              
 │   └── report.php          
-├── setup.bash              
 └── view                    
     ├── byline.php          
     ├── footer.php          
     └── header.php          
 
-5 directories, 13 files     
+5 directories, 12 files     
 ```
 
 Vi har nu en grundstruktur i vår webbplats. Du kan prova att öppna filerna via din webbläsare och din lokala webbserver. De flesta filerna är ännu tomma, men du bör kunna se bilderna om du klickar på dem.

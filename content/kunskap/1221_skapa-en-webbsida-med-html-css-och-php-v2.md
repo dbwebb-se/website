@@ -271,7 +271,7 @@ I din footer, mellan `<footer>` och `</footer>`, kan du lägga in en länk till 
 För att det skall fungera behöver du lägga in en länk till valideringsverktyget, lägg den i din footer.
 
 ```html
-<p>Validering: <a href="http://validator.w3.org/check/referer">HTML</a><p>
+<p>Validering: <a href="http://validator.w3.org/check/referer">HTML</a></p>
 ```
 
 För att det skall fungera behöver du även lägga till en meta-konstruktion i din `<head>` av sidan. Lägg följande konstruktion direkt efter sidans `</tile>` och innan `</head>`.
@@ -886,7 +886,7 @@ I bilden nedan visas Network-fliken tillsammans med de resurser som laddas för 
 
 En bra sak att notera kan vara att vissa resurser cachas av webbläsaren och laddas inte när man gör reload på sidan. Prova att göra reload på din sida, förutsatt att du har resurser som är cachade, gör sedan en tvingad reload via `shift ctrl r` (`shift cmd r` på Mac) och se att statusen ändras och visar resursens storlek. Det visar att resursen laddades från sin källa och var inte cachad.
 
-[FIGURE src=image/webtec/html-css-php/inspect_network_reload.png?w=w3 caption="Men en tvingande omladdning så laddas alla cachade resurser om."]
+[FIGURE src=image/webtec/html-css-php/inspect_network_reload.png?w=w3 caption="Med en tvingande omladdning så laddas alla cachade resurser om."]
 
 Detta verktyg kan vara bra vid felsökning när du vill se vilka resurser som laddas till sidan.
 

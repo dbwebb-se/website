@@ -2,6 +2,7 @@
 author:
     - mos
 revision:
+    "2022-09-01": (G, mos) Ändrad till 15-20 meningar i storlek.
     "2021-06-14": (F, mos) Uppdaterad inför webtec.
     "2020-08-28": (E, mos) Ny video som visar inlämningen.
     "2018-08-16": (D, mos) Bort redovisning i forum samt bytte ITs mot Canvas.
@@ -31,7 +32,7 @@ Reflektera över svårigheter, problem, lösningar, erfarenheter, lärdomar, res
 
 Kan du koppla och jämföra (reflektera) dina lärdomar från nuvarande kursmoment mot andra kursmoment, kurser eller andra lärdomar du har sedan tidigare?
 
-Skriv ett stycke om totalt 30-40 meningar för varje kursmoment. Försök väva in frågorna i löpande text.
+Skriv ett stycke om totalt 15-20 meningar för varje kursmoment. Försök väva in frågorna i löpande text.
 
 
 

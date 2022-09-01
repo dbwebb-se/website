@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2022-09-01": "(B, mos) Förtydliga kravet om today och navbar."
     "2022-06-28": "(A, mos) Första utgåvan."
 ...
 Skapa en rapportsida till webtec-kursen (v2)
@@ -133,7 +134,7 @@ Utför följande krav.
 
 1. Du skall ge din webbplats en grov stil, lite bättre än den stilen som kommer ifrån övningen. Du kan antingen skapa din egen stil, eller så utgår du från en befintlig webbplats och lånar stilelement från den. Utför ändringarna i din stylesheet `public/css/style.css`.
 
-1. Skapa en ny sidkontroller `public/today.php` som skriver ut dagens datum, tid och vilken veckodag det är tillsammans med veckans nummer. Lek med stylen och gör veckans dag med extra stort typsnitt och udda färger. Sidkontrollern lägger du även i sidans navbar.
+1. Skapa en ny sidkontroller `public/today.php` som skriver ut dagens datum, tid och vilken veckodag det är tillsammans med veckans nummer. Lek med stylen och gör veckans dag med extra stort typsnitt och udda färger. Sidkontrollern lägger du även i sidans navbar så att man kan klicka på "Today" och får fram en ny webbsida med header, footer och dagens datum.
 
 1. Kontrollera att dina sidkontroller passerar Unicorn validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
 

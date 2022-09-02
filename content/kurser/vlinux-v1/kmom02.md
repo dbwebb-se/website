@@ -7,10 +7,6 @@ revision:
 
 # Kmom02: Dockerfile och Bash
 
-[WARNING]
-Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
-
 Nu har vi fått Dockermiljön på plats och vi vet hur vi startar en container samt hur vi navigerar i den. Vi ska nu titta på hur vi kan skapa en egen image utifrån en så kallad Dockerfile så vi slipper installera om allt varje gång vi stänger ner containern. Vi ska också lära oss hur vi kan skapa bashscript som vi exekverar i containern.
 
 <!--more-->

@@ -505,7 +505,7 @@ De huvudsakliga delarna i sidan är dessa. Det är en article som har en header 
     <article class="article">
         <header>
             <h1>Om Mig Själv</h1>
-            <p class="author">Skriven av Mikael Roos, uppdaterad <date datetime="2022-06-29">2022-06-29</date>.</p>
+            <p class="author">Skriven av Mikael Roos, uppdaterad <time datetime="2022-06-29">2022-06-29</time>.</p>
         </header>
 
         <figure class="figure right">

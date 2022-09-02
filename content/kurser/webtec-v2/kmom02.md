@@ -13,12 +13,6 @@ revision:
 Kmom02: Styla en webbplats
 ==================================
 
-[WARNING]
-
-**Om du anser dig vara en "early adopter" så får du gärna köra igång med detta kursmomentet. Eftersom du då är en av de första så kan det förekomma vissa saker som eventullet är felaktiga, men säg till läraren och länka till dokumentet/artikeln så rättar de snabbt upp det.**
-
-[/WARNING]
-
 Vi fortsätter att jobba på den webbpalts vi byggde i förra kursmomentet och nu handlar det om att styla upp webbplatsens olika delar och lära oss med om CSS.
 
 Vi utgår från en ostylad sida, likt följande.

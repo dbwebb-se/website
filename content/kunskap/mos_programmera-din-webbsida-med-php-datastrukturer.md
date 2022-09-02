@@ -169,6 +169,138 @@ Ett litet PS är att det inte är lätt att skriva ut värder "TRUE" eller "FALS
 
 
 
+Array numerisk {#arrayn}
+---------------------------------
+
+Låt oss titta på hur vi kan använda en array för att konstruera svenska namn på veckodagar och månader. Vi börjar med en array som innehåller namnen på veckodagarna.
+
+```php
+$weekday = [
+    "Måndag",
+    "Tisdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lördag",
+    "Söndag"
+];
+
+$dayNumToday = date("N");
+
+$dayToday = $weekday[$dayNumToday - 1];
+```
+
+När vi placerar veckodagarna i arrayen så hamnar det första värdet på position 0 och så vidare till det sista värdetsom här hamnar på position 6. Detta är en "numerisk array" då den har nummer som nycklar för att referera en viss position i arrayen.
+
+När vi sedan hämtar värdet på dagen i veckan har det värdet 1 till 7, så vi behöver minska det med ett för att hamna på rätt position i arrayen.
+
+Nu kan vi skriva ut detaljerna om veckodagarna och dagens namn.
+
+```html
+<p>Här är en array med veckodagar på position 0 till 6.</p>
+
+<pre><?= print_r($weekday, true) ?></pre>
+
+<p>Idag är det veckodag: '<?= $dayToday ?>' (veckodag nummer <?= $dayNumToday ?>).</p>
+```
+
+Vi kan göra ett liknande exempel med månadens dagar. Här gör vi lite annorlunda och väljer att först definiera en tom array och sedan stoppar vi in första månaden på position 1. Resterande månader får första tillgängliga positionen, det vill säga 2, 3, 4 och så vidare upp till 12.
+
+```php
+$monthName = [];
+$monthName[1] = "Januari";
+$monthName[] = "Februari";
+$monthName[] = "Mars";
+$monthName[] = "April";
+$monthName[] = "Maj";
+$monthName[] = "Juni";
+$monthName[] = "Juli";
+$monthName[] = "Augusti";
+$monthName[] = "September";
+$monthName[] = "Oktober";
+$monthName[] = "November";
+$monthName[] = "December";
+
+$monthNames = implode(", ", $monthName);
+
+$monthNumToday = date("n");
+
+$monthToday = $monthName[$monthNumToday];
+```
+
+Eftersom vi nu har "preppat" och förberett arrayen lite bättre så slipper vi att minska med ett när vi hämtar ut värdet. Konstruktionen `date("n")` ger oss månadernas värde som 1 till 12.
+
+Man kan spara en del kodande om man "preppar sina datastrukturer" så att det är lätt att hantera värdena i dem. Vad som är en bra struktur får man tänka på från fall till fall.
+
+Funktionen `implode()` skriver ut alla värden i en array i en sträng. Det finns en annan funktion `explode()` som gör tvärtom, den delar en sträng i delar och placerar delarna i en array.
+
+Nu kan vi skriva ut detaljer om arrayen och månadens namn.
+
+```html
+<p>Vi har en array med månadernas namn, vi kan använda "implode()" på den för att skriva ut den som en sträng.</p>
+
+<p><?= $monthNames ?>.</p>
+
+<p>Idag är det månad: '<?= $monthToday ?>' (månadens nummer <?= $monthNumToday ?>).</p>
+```
+
+När vi är klara med denna övningen kan vår sida se ut så här.
+
+[FIGURE src=image/webtec/phpstruct/array_date.png?w=w3 caption="Namn på veckodag och månad med hjälp av en numerisk array."]
+
+På detta sättet kan vi skapa en struktur för att jobba med anpassade svenska namn på veckodagar och datum.
+
+
+
+Array key/value {#arraykv}
+---------------------------------
+
+En annan variant på arrayen är en så kallad key-value array (nyckel - värde). Det är samma array i grund och botten, men man väljer att ge värdet en strängnyckel, istället för en numerisk position.
+
+Om vi tänker att vi skall bygga ett galleri och visa bilder och vi har sparat alla bilder i en array där nyckeln är bildens namn och värdet är sökvägen till filen, då kan en sådan array se ut så här.
+
+```php
+$paintings = [
+    "Jean-Léon Gérôme" => "img/The_leap_of_Marcus_Curtius_(1850-55),_by_Jean-Léon_Gérôme.jpg",
+    "Justus Sustermans" => "img/BMVB1452-Justus_Sustermans-La_familia_de_Darius_davant_Alexandre_el_Gran.jpeg",
+    "Matthias Laurenz Gräff" => "img/Matthias_Laurenz_Gräff,__Traum_Österreich_-_Vorstellung_und_Wirklichkeit_.jpg",
+    "Sebastiano Ricci" => "img/Sebastiano_Ricci_-_A_Recusa_de_Arquimedes.jpg",
+];
+
+$paintings["Niels Simonsen"] = "img/Episoden_af_Træfning_ved_Sankelmark,_den_6._Februar.jpg";
+$paintings["Gustave Moreau"] = "img/Moreau_-_Thomyris_et_Cyrus,_Inv._13978.jpg";
+```
+
+
+
+```html
+<h2>Key/value array: Gissa artisten</h2>
+
+<p>Här är ett galleri med historiska målningar. Försök gissa vilken konstnär eller 
+    målning det är. När du håller musen över bilden så framträder svaret.</p>
+
+<div class="gallery">
+<?php foreach ($paintings as $key => $value) : ?>
+    <img src="<?= $value ?>" title="<?= $key . " " . $value ?>" alt="<?= $value ?>">
+<?php endforeach; ?>
+</div>
+```
+
+Läs innehåll från fil, tex redovisa sidan
+
+Finns markdown via allt i en fil?
+
+galleri
+
+(next/prev)
+
+
+
+Array i en array {#array2}
+---------------------------------
+
+
+
 Loopa arrayens innehåll med foreach {#foreach}
 ---------------------------------
 
@@ -180,26 +312,6 @@ Datastrukturer {#datastrukturerallmant}
 Allmänt om datastrukturer.
 Koppla snygg kod.
 
-
-
-
-Array numerisk {#arrayn}
----------------------------------
-
-galleri
-
-(next/prev)
-
-datum på svenska, månad och dag på svenska via array?
-
-
-
-Array key/value {#arraykv}
----------------------------------
-
-Läs innehåll från fil, tex redovisa sidan
-
-Finns markdown via allt i en fil?
 
 
 

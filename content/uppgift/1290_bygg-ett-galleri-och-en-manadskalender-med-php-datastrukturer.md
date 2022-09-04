@@ -120,7 +120,7 @@ Placera en länk till sidkontrollern i navbaren.
 
 Tanken är att din almanacka har följande utseende.
 
-[FIGURE src=image/webtec/phpstruct/foto_kalender.jpg?w=w3 caption="En fotokalender i form av en årsalmanacka."]
+[FIGURE src=image/webtec/phpstruct/fotokalender.png caption="En fotokalender i form av en årsalmanacka."]
 
 I kalendern visar du vecka för vecka med sitt veckonummer, datum för dagen och månadens namn. För varje dag, skriv ut vilket dagnummer det är för året (1-365/366). Du kan även välja att visa mer information om du vill.
 

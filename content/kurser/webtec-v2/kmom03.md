@@ -15,7 +15,7 @@ Kmom03: Programmera en webbplats
 
 [WARNING]
 
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+**Det är fritt fram att jobba med kursmomentet om du är en "early adopter". Rapportera eventuella felaktigheter och tveksamheter till mos.**
 
 [/WARNING]
 

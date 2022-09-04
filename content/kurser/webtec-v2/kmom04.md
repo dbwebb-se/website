@@ -19,10 +19,13 @@ kmom04: PHP datastrukturer
 
 [/WARNING]
 
-Array, Form, Post, Session.
+Vi fördjupar oss mer i programmering med PHP och vi tittar på datastrukturer med arrayer för att se skillnader och likheter mellan numeriska arrayer och associativa arrayer.
 
-Bygg ett galleri och en månadskalender.
+Vi tittar vidare på HTML formulär och använder POST tillsammans med processing- och resultat-sidor.
 
+Vi kikar på sessionen och lär oss hur man kan spara värden i sessions-arrayenoch få en lagring av värden mellan användarens sidanrop.
+
+Vi tittar också på hur funktioner kan användas för att förbättra vår kodstruktur så att koden blir enkel att utveckla, underhålla och felsöka i. 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
@@ -54,10 +57,10 @@ Finns ej
 * [PHP och HTML formulär](./../forelasning/php-html-formular)
 * [PHP, cookies och sessioner](./../forelasning/php-cookie-session)
 
-Ovan föreläsningar ersätts av en längre lektion.
+Tankar om utveckling?
 
-* Om innehåll i webbplatsen? (markdown kanske, som en filbaserad databas)
 * PHP läsa från lokala filer, prepare för databas
+* Om innehåll i webbplatsen? (markdown kanske, som en filbaserad databas)
 -->
 
 
@@ -112,68 +115,64 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 1. Jobba igenom övningen "[Programmera din webbsida med PHP datastrukturer](kunskap/programmera-din-webbsida-med-php-datastrukturer)" som hjälper dig att komma igång med PHP och datastrukturer som arrayer, funktioner och superglobala arrayer som POST och SESSION. Spara koden du skriver under `me/report`, om du skriver extra test- och exempelprogram kan du spara dem under `me/kmom04`.
 
-<!--
-* Arrayer
-* (Funktioner)
-* POST med processingsida
-* Session
-* galleri, next, prev
-* delar av inloggning
-
-* Bygg formulär. (som övning?)
-https://jonkopingenergi.se/privat/fiber/serviceavgift (använd även till databasen)
-
-
-* Programmera något med PHP, som en övningssida i report?
-
-* I lektionen "[Bygg en webbplats med PHP](./../forelasning/bygg-en-webbplats-med-php)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
--->
-
 
 
 ### Uppgifter {#uppgifter}
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-Bygg ett galleri och en månadskalender med PHP datastrukturer
-
 1. Gör uppgiften "[Bygg ett galleri och en månadskalender med PHP datastrukturer](uppgift/bygg-ett-galleri-och-en-manadskalender-med-php-datastrukturer)" och spara alla filer under `me/report`.
 
 <!--
-Kalender, månadens babe
 
-Kalender samt bytta månad med länk.
+* Galleri med bilder, klicka runt, läsa av filer i katalog. Next
+* galleri (next/prev)
+* glob
 
-Galleri med bilder, klicka runt, läsa av filer i katalog. Next
-
-Session, formulär med POST
-
-Inloggning av användare med lösenord.
-
-Som uppgift?
-https://arkiv.dbwebb.se/kod-exempel/business-card-generator/
-
-1. Jobba igenom övningen "[Att bygga en styleväljare till sin webbplats](kunskap/att-bygga-en-stylevaljare-till-sin-webbplats)".
+* Kalender, månadens babe
+* Kalender samt byta månad med länk.
+* Dagens anmn i array?
+* Todo i array?
+* PHP läsa från lokala filer, prepare för databas
 
 
-Inför labbarna (kmom04-06) om det känns som det behövs och om det känns att det finns utrymme (koppla till guiden?)
-
-1. Gör uppgiften "[PHP lab 3: Arrayer](uppgift/php-lab3-arrayer)". Spara alla filerna i katalogen `me/kmom03/lab3`.
-
-1. Gör uppgiften "[PHP lab 4: skapa egna funktioner](uppgift/php-lab4-skapa-egna-funktioner)". Spara alla filerna i katalogen `me/kmom04/lab4`.
+Jag behöver någon uppgift i form av HTML form, post, session med flashmessage.
+* (Gissa på något, kanske dagens namn?)
 
 -->
 
+<!--
+TANKAR FRAMÖVER.
 
+* Inför labbar (kmom04-06) om det känns som det behövs och om det känns att det finns utrymme (koppla till guiden?)
+
+* Gör uppgiften "[PHP lab 3: Arrayer](uppgift/php-lab3-arrayer)". Spara alla filerna i katalogen `me/kmom03/lab3`.
+
+* Gör uppgiften "[PHP lab 4: skapa egna funktioner](uppgift/php-lab4-skapa-egna-funktioner)". Spara alla filerna i katalogen `me/kmom04/lab4`.
+-->
+
+
+<!--
 ### Överkurs och extra uppgifter {#extra}
 
 Här följer extra uppgifter som du kan utföra för att lära dig mer, om du har tid, lust och energi.
 
+-->
+
 <!--
 * Login, gör ett komplett loginskript/hantering
+* Extra övning som visa inloggninig, eller lägg som extrauppgift
+* Inloggning av användare med lösenord.
+
+* Gissa mitt nummer
 
 * Markdown, läs in fil och konvertera, kräver composer och PHP i pathen (låt vara tills design-kursen)
+
+* https://arkiv.dbwebb.se/kod-exempel/business-card-generator/
+
+* Jobba igenom övningen "[Att bygga en styleväljare till sin webbplats](kunskap/att-bygga-en-stylevaljare-till-sin-webbplats)".
 -->
+
 
 
 
@@ -187,9 +186,11 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i din redovisningstext.
 
-* Hur är din uppfattning om programmeringsspråket PHP så här långt?
-* Är du bekväm med att använda GET, POST, SESSION och COOKIE i din webbutveckling?
-* Hur kändes det att bygga webbplatsen med sidkontroller och vyer?
+* Hur kändes det att jobba med datastrukturer i arrayer?
+* Hur tänker du kring funktionern och hittade du mer kod som du valde att strukturera i funktioner?
+* Kan du se skillnaden på HTML formulär med GET och POST?
+* Gick det bra när du jobbade med SESSION?
+* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. Berätta även om du försökte på någon av extrauppgifterna.
 * Vilken är din TIL för detta kmom?
 
 Glöm inte att testa din inlämning med `dbwebb test kmom04`.

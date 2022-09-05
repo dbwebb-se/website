@@ -40,7 +40,7 @@ _(ca: 6-10 studietimmar)_
 
 Genomför följande övningar.
 
-1. Gå igenom guiden och de delar som handlar om [Volymer](guide/docker/volymer), [Dockerfile](guide/docker//bygga-image) och [Docker Hub](guide/docker/docker-hub).
+1. Gå igenom guiden och de delar som handlar om [Volymer](guide/docker/volymer), [Dockerfile](guide/docker/bygga-image) och [Docker Hub](guide/docker/docker-hub).
 
 1. Jobba igenom artikeln ["Skapa script med options, command och arguments"](kunskap/skapa-bash-skript-med-options-command-och-arguments). Den ger dig en struktur till hur du kan skapa Bash-script.
 

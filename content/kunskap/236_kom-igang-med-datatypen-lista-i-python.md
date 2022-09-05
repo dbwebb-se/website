@@ -69,12 +69,12 @@ Det finns fler sätt att skapa en lista. Du kan till exempel använda en konstru
 >>> alist = list()
 >>> alist          
 []                 
->>> anotherList = ["a", "b", "c"]
->>> print(anotherList)                  
+>>> another_list = ["a", "b", "c"]
+>>> print(another_list)                  
 ['a', 'b', 'c']                  
 ```
 
-`anotherList` innehåller här tre olika värden/strängar. Varje värde i en lista kallas ett element, `anotherList` innehåller tre element. Det finns alltid varianter på hur man gör saker. En enkel variant vore att jag helt enkelt skapade hela min shoppinglistan på en gång.
+`another_list` innehåller här tre olika värden/strängar. Varje värde i en lista kallas ett element, `another_list` innehåller tre element. Det finns alltid varianter på hur man gör saker. En enkel variant vore att jag helt enkelt skapade hela min shoppinglistan på en gång.
 
 ```python
 >>> shopping = ["köttfärs", "krossade tomater", "grädde", "gul lök", 'röd lök']
@@ -127,14 +127,14 @@ Det går att ändra värdet på en position på följande sätt.
 Med hjälp av dessa konstruktioner kan vi nu byta plats på två element i listan. Säg jag vill byta plats på "grädde" och "köttfärs".
 
 ```python
->>> tempItem = shopping[0]                                      
+>>> temp_item = shopping[0]                                      
 >>> shopping[0] = shopping[2]                                   
->>> shopping[2] = tempItem                                      
+>>> shopping[2] = temp_item                                      
 >>> print(shopping)                                                    
 ['grädde', 'morötter', 'köttfärs', 'gul lök', 'röd lök']
 ```
 
-Jag behöver mellanlagra värdet i variabeln `tempItem` och på det viset kan jag byta plats på två element i en lista.
+Jag behöver mellanlagra värdet i variabeln `temp_item` och på det viset kan jag byta plats på två element i en lista.
 
 Vi kollar lite snabbt på vad som händer om man försöker använda ett för stort index på listan.
 

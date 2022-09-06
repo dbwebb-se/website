@@ -48,7 +48,7 @@ Utför följande krav.
 
 1. Spara alla dina stylesheets under `public/css`. Förslagsvis har du en liknande struktur som finns i övningen men du kan själv välja hur du fördelar din CSS-kod i filer, du behöver dock minst ha filen `public/css/style.css` på plats.
 
-1. Gör ett noga övervalt val av vilka typsnitt (font-family) som du använder och välj olika typsnitt för rubriker och text. Det sägs ge ett bra utseende om man gör så. Din header kan du styla till lite extra med typsnitten. Du har ett exempelprogram i kursrepot under `example/css/font-family` som visar olika fonter och hur man importerar externa fonter som till exempel fria Google fonter.
+1. Gör ett noga övertänkt val av vilka typsnitt (font-family) som du använder och välj olika typsnitt för rubriker och text. Det sägs ge ett bra utseende om man gör så. Din header kan du styla till lite extra med typsnitten. Du har ett exempelprogram i kursrepot under `example/css/font-family` som visar olika fonter och hur man importerar externa fonter som till exempel fria Google fonter.
 
 1. Styla din navbar.
 

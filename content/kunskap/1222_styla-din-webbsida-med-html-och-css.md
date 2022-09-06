@@ -511,7 +511,7 @@ De huvudsakliga delarna i sidan är dessa. Det är en article som har en header 
 
         <figure class="figure right">
             <img src="img/me.png" width="300" alt="Bild på mig">
-            </figcaption>Mikael Roos</figcaption>
+            <figcaption>Mikael Roos</figcaption>
         </figure>
 
         Text om mig.
@@ -579,7 +579,7 @@ HTML-koden för en figure och figcaption ser ut så här.
 ```html
 <figure class="figure right">
     <img src="img/me.png" width="300" alt="Bild på mig">
-    </figcaption>Mikael Roos</figcaption>
+    <figcaption>Mikael Roos</figcaption>
 </figure>
 ```
 

@@ -6,6 +6,7 @@ category:
     - css
     - kurs webtec
 revision:
+    "2022-09-06": "(B, mos) Genomgång och stavning."
     "2022-07-01": "(A, mos) Första utgåvan inför webtec-v2."
 ...
 Styla din webbsida med HTML och CSS
@@ -721,7 +722,7 @@ Jag löser det genom att lägga till konstruktionen `clear: both;` på det eleme
 
 [FIGURE src=image/webtec/style-it/byline_clear_both.png?w=w3 caption="Nu stängdes flytandet av från bilden och min byline hamnade på rätt plats."]
 
-De båda "fixarna" clearfix och clearfloat kan vid första anblicken se liknande ut men tittar man nogare så är det två olika type av problem.
+De båda "fixarna" clearfix och clearfloat kan vid första anblicken se liknande ut men tittar man nogare så är det två olika typer av problem.
 
 
 
@@ -857,7 +858,7 @@ När man bygger en kolumn layout finns ett antal olika tekniker att välja bland
 
 Min huvudsakliga class är `two-col-layout` och där har jag en "kontainer-div" som omsluter de två kolumnerna. Du kan jämföra med strukturen i footern där vi valde att kalla det "rader" och "kolumner". Principen är densamma här, bara andra namn och ett annat sammanhang.
 
-Det jag behöver styla är kontainern till flex och de två kolumnernas bredd. Jag har också en max bredd och centrerar kotnainern i mitten av sidan. Jag väljer att placera koden i `public/css/two_column_layout.css`.
+Det jag behöver styla är kontainern till flex och de två kolumnernas bredd. Jag har också en max bredd och centrerar kontainern i mitten av sidan. Jag väljer att placera koden i `public/css/two_column_layout.css`.
 
 ```css
 /** two_column_layout.css */
@@ -881,7 +882,7 @@ Det jag behöver styla är kontainern till flex och de två kolumnernas bredd. J
 
 Jag väljer att tänka att hela bredden är 16 delar och asiden blir 4 delar och main blir 12 delar. Ibland underlättar det att tänka i den formen av "grid-baserad" utforming av sidan.
 
-Jag behöver också styla till själva asiden. Den stlen liknar rätt mycket den jag har i `main.css` så jag lånar så att det passar ihop med den stil som `.main` har.
+Jag behöver också styla till själva asiden. Den stilen liknar rätt mycket den jag har i `main.css`. Jag lånar stilen så att det passar ihop med den stil som `.main` har.
 
 ```css
 .aside {
@@ -937,7 +938,7 @@ img {
 }
 ```
 
-Därefter gör jag mins första "media query" som säger att när webbläsarens bredd blir smalare än ett visst antal pixlar så skall ett antal CSS-konstruktioner gälla. Jag ser till att dessa konstruktioner hamnar längst ned av alla CSS-konstruktioner så att de får högst specificitet.
+Därefter gör jag min första "media query" som säger att när webbläsarens bredd blir smalare än ett visst antal pixlar så skall ett antal CSS-konstruktioner gälla. Jag ser till att dessa konstruktioner hamnar längst ned av alla CSS-konstruktioner så att de får högst specificitet.
 
 Jag startar med min två kolumners layout.
 

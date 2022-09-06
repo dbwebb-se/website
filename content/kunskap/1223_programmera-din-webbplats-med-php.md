@@ -100,7 +100,7 @@ Vår sidkontroller har till uppgift att generera grunden till webbsidan genom at
 
 För att undvika att skriva all PHP-kod direkt i sidkontrollern så lägger vi varje exempel i en vy. Det kan vara ett rimligt sätt att dela upp koden i olika filer. En god uppdelning gör det enklare att felsöka och vidarutveckla koden.
 
-Vi skapar vyn `view/php/hello_world.php` och inkluderar den i sidkontrollern.
+Vi skapar vyn `view/php/hello.php` och inkluderar den i sidkontrollern.
 
 Först uppdaterar vi delen i sidkontrollern som inkluderar vyn.
 

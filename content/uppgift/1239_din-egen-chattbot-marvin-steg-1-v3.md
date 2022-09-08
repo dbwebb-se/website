@@ -144,11 +144,12 @@ För att inkludera dina extrauppgifter i testerna behöver du skicka med `-e` el
 
 
 
-* Menyval **a1**: Gör ett val där Marvin tar emot två `input()` i from av strängar. Den skall sedan kolla om alla karaktärer i den andra strängen finns i den första. Exempel:
+* Menyval **a1**: Gör ett val där Marvin tar emot två `input()` i from av strängar. Den skall sedan kolla om alla karaktärer i den andra strängen finns i den första. Varje bokstav räknas bara en gång. Exempel:
 ```python
 input: "Python", "phno"        output: "Match!"
 input: "Programming", "gram"   output: "Match!"
 input: "kassler", "kusl"       output: "No match!"
+input: "mister", "misse"       output: "No match!"
 ```
 
 * Menyval **a2**: Dubblera tills det innehåller alla siffror, gör ett menyval där Marvin räknar ut hur många gånger ett tal behöver multipliceras med två för att talet ska innehålla alla siffror mellan 0 och 9 minst en gång. Menyvalet ska ta två inputs, ett som är talet som ska multipliceras och ett input som är hur många gånger den ska försöka multiplicera innan den ger upp. Om den inte lyckas innan den ska ge upp returnera -1. Exempel:

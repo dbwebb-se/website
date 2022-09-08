@@ -46,7 +46,7 @@ Dispens och mer tid {#dispens}
 
 Vi brukar vara flexibla med att ge mer tid till de som är aktiva på kurserna. Vi brukar ge generella dispenser för att ge extra tid till de som kämpar och verkligen vill klara av kurserna.
 
-Ibland kan det räcka att man klarat kmom01 för att få ytterligare lite tid at tjobba igenom kmom02. Men detta är något som bestäms inom varje kurs.
+Ibland kan det räcka att man klarat kmom01 för att få ytterligare lite tid att jobba igenom kmom02. Men detta är något som bestäms inom varje kurs.
 
 
 

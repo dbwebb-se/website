@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2022-06-24": (G, mos) Genomgången och mindre justeringar inför ht22.
     "2020-06-24": (F, mos) Mindre justeringar inför ht20.
     "2016-08-04": (E, mos) Justerade vissa länkar.
     "2016-04-22": (D, mos) Överflyttad till ny webbplats.
@@ -25,7 +26,7 @@ För att klara uppropet så skall du ha lämnat in redovisning av kursmoment 01 
 När sker ditt 3-veckors uppropet? {#3v-nar}
 ------------------------------------------------------------
 
-Kontrollera [din studieplan](rekommenderad-studieplan) för att se när du har 3-veckors upprop i din kurs.
+Kontrollera din rekommenderade studieplan för att se när du har 3-veckors upprop i din kurs.
 
 
 
@@ -36,7 +37,7 @@ Om du inte klarar kraven för 3-veckors uppropet så får du ett *tidigt avbrott
 
 Har du fått ett tidigt avbrott kan du inte *kräva* att få tillbaka din studieplats, men har något fel skett så brukar det lösas i god anda.
 
-Om du deltar i ett program kan du få ditt avbott upphävt, när du visar aktivitet i kursen.
+Om du deltar i ett program kan du få ditt avbrott upphävt, när du visar aktivitet i kursen.
 
 
 
@@ -44,6 +45,8 @@ Dispens och mer tid {#dispens}
 ------------------------------------------------------------
 
 Vi brukar vara flexibla med att ge mer tid till de som är aktiva på kurserna. Vi brukar ge generella dispenser för att ge extra tid till de som kämpar och verkligen vill klara av kurserna.
+
+Ibland kan det räcka att man klarat kmom01 för att få ytterligare lite tid at tjobba igenom kmom02. Men detta är något som bestäms inom varje kurs.
 
 
 
@@ -61,7 +64,7 @@ Kontakta den kursansvarige läraren för att reda ut läget.
 Klara uppropet och behåll din studieplats {#3v-omreg}
 ------------------------------------------------------------
 
-Du som klarar 3-veckors uppropet har kvar din registrering på kursen och kan, [om du inte hinner färdigt](hinner-inte-fardigt), be att (i mån av plats) bli [omregistrerad på kursen](omregistrering) vid nästkommande kurstillfälle.
+Du som klarar 3-veckors uppropet har kvar din registrering på kursen och kan, om du inte hinner färdigt, be att (i mån av plats) bli [omregistrerad på kursen](omregistrering) vid nästkommande kurstillfälle.
 
 *Du ser varför det är viktigt att klara 3-veckors uppropet?*
 
@@ -75,6 +78,8 @@ Taktik-inlämning {#3v-taktik}
 Det är naturligtvis möjligt att fokusera på att lämna in kursmoment 01 & 02, bara för att vara säker på att klara 3-veckors uppropet och undvika problem med CSN och inte riskera att tappa studieplatsen. Det går alltid att överväga en sådan taktik, det är inget fel i det.
 
 Taktik-inlämning kan vara bra om man går flera kurser och behöver lite andrum i studierna.
+
+Att lämna in en icke-komplett inlämning brukar inte hjälpa dig att klara 3v-uppropet.
 
 *Detta var alltså taktik, inte normalfallet, ta ett eget beslut.*
 

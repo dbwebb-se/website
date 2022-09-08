@@ -58,6 +58,8 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lägg till redovisningstexten i din me-sida.
 
+[YOUTUBE src=LJs-9hBkO58 width=639 caption="Har du fått med alla delar?"]
+
 ### dockerhub.bash {#dockerhub-bash}
 
 1. Skapa ett script `kmom02/dockerhub.bash` som vid exekvering kör din publicerade image. Se till så filen är exekverbar.

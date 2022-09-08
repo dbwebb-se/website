@@ -40,7 +40,7 @@ Besvara de specifika frågor som finns för varje kursmoment.
 
 Reflektera över svårigheter, problem, lösningar, erfarenheter, lärdomar, resultatet, etc.
 
-Skriv ett stycke om 15-30 meningar under respektive kursmoment i filen `me/redovisa/redovisning.html`.
+Skriv ett stycke om 15-20 meningar under respektive kursmoment i filen `me/redovisa/redovisning.html`.
 
 När du är klar innehåller filen `me/redovisa/redovisning.html` redovisningstexter från samtliga kursmoment.
 

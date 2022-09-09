@@ -149,3 +149,5 @@ Se till att följande frågor besvaras i redovisningstexten.
 * Hur kändes konceptet med async och await och asynkron programmering?
 * Hur gick det att koppla ihop JavaScript, Node.js med SQL och databasen?
 * Vilken är din TIL för detta kmom?
+
+<!-- Poängtera dbwebb test samt möjlighet att dubbelkolla att backupfilen fungerar. -->

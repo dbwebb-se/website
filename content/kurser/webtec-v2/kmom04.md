@@ -160,6 +160,7 @@ Här följer extra uppgifter som du kan utföra för att lära dig mer, om du ha
 -->
 
 <!--
+* Lägg till detaljer om dagens namn och namnsdagar i din sidkontroller `today.php`.
 * Login, gör ett komplett loginskript/hantering
 * Extra övning som visa inloggninig, eller lägg som extrauppgift
 * Inloggning av användare med lösenord.

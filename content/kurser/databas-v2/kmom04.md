@@ -160,3 +160,5 @@ Se till att följande frågor besvaras i redovisningstexten.
 * Gick det bra att sluföra uppgiften om ER modellering samt skapa SQL-kod för databasen?
 * Hur känner du allmänt inför kursen så här långt?
 * Vilken är din TIL för detta kmom?
+
+<!-- Poängtera dbwebb test samt möjlighet att dubbelkolla att backupfilen fungerar. -->

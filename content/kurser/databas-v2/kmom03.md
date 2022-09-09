@@ -132,6 +132,10 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Skapa ER-modell för en databas (konceptuell)](uppgift/skapa-er-modell-for-en-databas-konceptuell)". Visa att du kan jobba enligt en metod för att skapa en databasmodell och redovisa i ett dokument. Detta är första delen av uppgiften som slutförs i kommande kursmoment. Spara allt du gör i `me/kmom03/er1`.
 
+<!--
+Förtydliga hur innehållsförteckningen kan se ut i dokumentet, skapa en mall som de kan följa.
+-->
+
 
 
 Resultat & Redovisning  {#resultat_redovisning}
@@ -151,3 +155,5 @@ Se till att följande frågor besvaras i redovisningstexten.
 * Hur gick det att jobba med ER-modelleringen, några reflektioner?
 * Fanns det några extra svårigheter/utmaningar du kämpade med i kursmomentet?
 * Vilken är din TIL för detta kmom?
+
+<!-- Poängtera dbwebb test samt möjlighet att dubbelkolla att backupfilen fungerar. -->

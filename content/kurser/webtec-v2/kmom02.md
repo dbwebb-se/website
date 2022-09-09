@@ -88,7 +88,16 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 1. Jobba igenom övningen "[Styla din webbsida med HTML och CSS](kunskap/styla-din-webbsida-med-html-och-css)" som hjälper dig att komma igång med CSS konstruktioner för att styla din webbplats. Spara koden du skriver under `me/report`, om du skriver extra test- och exempelprogram kan du spara dem under `me/kmom02`.
 
+<!--
+html/css-guiden används inte mer, är det ett problem eller räcker det att övningarna i kmom01/02 har ersatt den? Man kan göra en handfull exempelprogram där man stylar specifika saker och spelar in videor kopplade till exempelkoden som kan ligga under `example/css`.
+    * navbar
+    * header
+    * column layout
+    * flex
+    * float
+    * block model
 
+-->
 
 ### Uppgifter {#uppgifter}
 

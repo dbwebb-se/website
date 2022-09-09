@@ -90,7 +90,7 @@ Utför följande krav.
 
 1. Skapa en sidkontroller `public/month.php` som visar en månadskalender i en HTML tabell enligt beskrivningen och bild ovan. Placera sidan i navbaren. Styla sidan så att den ser tilltalande ut, använd din egen stil. Överst i sidan skapar du ett HTML GET formulär som ger möjligheten att skriva in ett datum, när man postar formuläret så visas en månadskalender för den månaden som datumet tillhör. Använd "self submitting" formulär.
 
-1. Månadskalendern skall innehålla en rubrik där år och månad skrivs ut. På varje rad skrivs datum ut tillsammans med vilken dag det är. Söndagar markeras med rött. Veckonumret skrivs ut på varje måndag. För varje dag, skriv ut vilket dagnummer det är för året (1-365/366).
+1. Månadskalendern skall innehålla en rubrik där år och månad skrivs ut. På varje rad skrivs datum ut tillsammans med vilken dag det är. Söndagar markeras med rött. Veckonumret skrivs ut på varje måndag. För varje dag, skriv ut vilket dagnummer det är för året (1-365/366). Du kan se [bilden ovan](#manadskal) för att inspireras av den.
 
 1. Skriv alltid ut veckonumret på första dagen i månaden, även om det inte är en måndag.
 

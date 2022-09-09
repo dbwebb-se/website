@@ -8,22 +8,16 @@ views:
 author:
     - mos
 revision:
-    "2022-08-11": "(A, mos) Första utgåvan."
+    "2022-09-09": "(A, mos) Första utgåvan."
 ...
 Kmom03: Programmera en webbplats
 ==================================
 
-[WARNING]
-
-**Det är fritt fram att jobba med kursmomentet om du är en "early adopter". Rapportera eventuella felaktigheter och tveksamheter till mos.**
-
-[/WARNING]
-
-Vi lär oss programmeringsspråket PHP och hur man kan skapa dynamiska webbsidor via programmeringskonstruktioner som variabler, if-satser, och loopar. Vi använder inbyggda variabler som $_GET och $_SERVER tillsammans med querysträng och HTML formulär provar vi att skicka argument till en webbsida.
+Vi lär oss grunderna i programmeringsspråket PHP om hur man kan skapa dynamiska webbsidor via programmeringskonstruktioner som variabler, if-satser, och loopar. Vi använder inbyggda variabler som $_GET och $_SERVER tillsammans med querysträng och HTML formulär där vi provar att skicka argument till en webbsida.
 
 Vi jobbar vidare med den katalogstruktur vi har byggt upp och det handlar främst om att placera koden i sidkontrollers och vyer. Strukturen är viktig då den hjälper oss att hålla ordning i koden vilket gör det enklare att felsöka och utveckla webbsidorna.
 
-När du är klar med detta kursmoment så har du grundläggande kunskap i hur man programmerar med PHP och grunderna för hur man bygger och driftsätter en dynamisk webbplats med PHP.
+När du är klar med detta kursmoment så har du grundläggande kunskap i hur man programmerar med PHP och du har grunderna för hur man bygger och driftsätter en dynamisk webbplats med PHP.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
@@ -63,7 +57,10 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 <!--
 1. [PHP sidkontroller och vyer](./../forelasning/php-sidkontroller-vyer) för att beskriva flödet när en websida produceras med PHP och koppla till MVC?
 
-eller gör detta i zoom-sessionen.
+1. Föreläsning som visar flödet i hur en PHP-sida processas, så man får en mental bild som hjälper till vid felsökning?
+
+1. Någon mer handfast föreläsning i PHP, som hjälper dem att programemra de allra första stapplande konstruktionerna? Eller gör det till en övning som kan spelas in på video.
+
 -->
 
 
@@ -72,12 +69,10 @@ eller gör detta i zoom-sessionen.
 
 Läs enligt följande.
 
-1. På sidan för föreläsningen ovan så finns läsanvisningar som hjälper dig att studera grunderna i programmeringsspråket PHP. Välj bland dem för att läsa på med om begreppen.
+1. På sidan för föreläsningen ovan så finns läsanvisningar som hjälper dig att studera grunderna i programmeringsspråket PHP. Välj bland dem för att läsa på mer om begreppen.
 
 <!--
-* Jobba igenom PHP-guiden och börja använda den igen?
-
-html/css-guiden används inte mer, är det ett problem eller räcker det att övningarna i kmom01/02 har ersatt den? 
+* Jobba igenom PHP-guiden och börja använda den igen? Komplettera korta artiklar med videor och exempelprogram.
 
 1. Läs igenom följande sektion i guiden "[Kom igång med HTML och CSS](guide/kom-igang-med-html-och-css)".
     * [Tabeller](guide/kom-igang-med-html-och-css/tabeller)
@@ -123,10 +118,10 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 <!--
 * Uppgift från webtec-v1, kan innehålla exempel som går att återanvända "[Programmera med PHP](uppgift/programmera-med-php)".
--->
 
-<!--
-Inför labbarna om det känns som det behövs och om det känns att det finns utrymme.
+* Gör några små videor som visar hur man problemlöser och kodar små lösningar i PHP-program. För att hjälpa dem igång med små konstruktioner.
+
+* Inför labbarna om det känns som det behövs och om det känns att det finns utrymme.
 
 1. Gör uppgiften "[PHP lab 1: uttryck, datatyper och variabler](uppgift/php-lab1-uttryck-datatyper-och-variabler)". Spara alla filerna i katalogen `me/kmom01/lab1`.
 

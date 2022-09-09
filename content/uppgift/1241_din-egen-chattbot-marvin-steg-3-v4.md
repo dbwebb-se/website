@@ -4,6 +4,7 @@ author:
   - aar
 category: python
 revision:
+  "2022-09-09": (B, aar) La till nytt extra krav för pick.
   "2020-03-30": (A, moc) Ny version för att introducerar automaträttning.
 ...
 Din egen chattbot - Marvin - steg 3
@@ -108,6 +109,18 @@ Extrauppgift {#extra}
     ```
 
     - Tags: `inv`, `range`
+
+
+- Utöka menyval **pick** med stöd för en sekvens. Utöver att fungera som tidigare ska det också gå att skriva `inv pick <sak>,<sak>,<sak> <position>`, där sekvensen med saker är ord med komma i mellan och `<position>` är heltal. Ändra `pick(bag, what, where)` så du kan kan ta emot en sträng med flera saker. Precis som med vanliga `pick` så ska `position` vara optionellt. Om man inte skickar med en position ska alla saker läggas till sist i ryggsäcken. Om man skickar med position ska de läggas in på det index, utan att ta bort sakerna som redan finns där. `pick` ska fortfarande funka som vanlig om man inte skicka en en sträng med kommatecken i.
+
+    ```python
+    # med inventory ["ko", "lo", "apa"]
+    input: "inv pick mus,tjur"        returnerar: ["ko", "lo", "apa", "mus", "tjur"]
+
+    input: "inv pick mus,tjur 1"       returnerar: ["ko", "mus", "tjur", "lo", "apa"]
+    ```
+
+    - Tags: `pick`
 
 
 

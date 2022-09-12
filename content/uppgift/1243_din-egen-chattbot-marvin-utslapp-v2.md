@@ -96,7 +96,7 @@ cd kmom05/marvin4
 
 
 
-3. Menyval **12**: Användaren ska kunna söka efter vilka länder som finns i `country_data`.  Sökningen ska vara case insensitive och det ska gå att söka på hela namn och delar av namn. Ett input anrop ska tas emot som innehåller söksträngen. Alla länder som matchar sökningen ska skrivas ut.
+3. Menyval **12**: Användaren ska kunna söka efter vilka länder som finns i `country_data`.  Sökningen ska vara case insensitive och det ska gå att söka på hela namn och delar av namn. Ett input anrop ska tas emot som innehåller söksträngen. Alla länder som matchar sökningen ska skrivas ut. Gör utskriften i `main.py`.
 
     Skapa funktionen `search_country(search_word)`. Den ska ta emot en sträng som argument, vilket är sökordet för att hitta länder. I funktionen hitta alla länder som matchar sökordet och returnera dem i en lista.
 
@@ -122,7 +122,7 @@ cd kmom05/marvin4
 
 
 
-4. Menyval **13**: Menyvalet ska skriva ut hur ett lands utsläpp har förändrats i procent mellan två år. Menyvalet ska ta emot ett input anrop där input kommer vara kommaseparerad , `country,year1,year2`. Du behöver plocka ut argumenten från den strängen. Resultat utskriften ska vara formaterad som `"Country_name:change"`. Du ska skapa två funktioner `get_country_year_data_megaton(country, year)` och `get_country_change_for_years(country, year1, year2)`. Om användaren skriver ett felaktigt år ska du skriva ut `"Wrong year!"`.
+4. Menyval **13**: Menyvalet ska skriva ut hur ett lands utsläpp har förändrats i procent mellan två år. Menyvalet ska ta emot ett input anrop där input kommer vara kommaseparerad , `country,year1,year2`. Du behöver plocka ut argumenten från den strängen. Resultat utskriften ska vara formaterad som `"Country_name:change"`. Du ska skapa två funktioner `get_country_year_data_megaton(country, year)` och `get_country_change_for_years(country, year1, year2)`. Om användaren skriver ett felaktigt år ska du skriva ut `"Wrong year!"`. För utskrifterna i `main.py`.
 
     ```python
 

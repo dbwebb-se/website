@@ -8,10 +8,6 @@ revision:
 
 # Kmom03: Virtual Hosts
 
-[WARNING]
-Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
-
 Nu kan vi enkelt snurra igång en Linuxmiljö så låt oss se hur vi kan använda containern som en server och installera ett par webbplatser på den. Det låter som en vettig syssla för en webbprogrammerare.
 
 Ett bra sätt att installera många webbplatser på en och samma maskin är Apache Virtual Hosts och det är något vi skall bekanta oss med. Vi ska skapa namnbaserade webbplatser som ligger på samma domän med hjälp av webbservern Apache.

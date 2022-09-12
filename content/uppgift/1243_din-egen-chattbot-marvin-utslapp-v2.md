@@ -149,7 +149,7 @@ cd kmom05/marvin4
 
 
 
-5. Menyval **14**: Menyvalet ska samla all data för ett land och skriva ut den. Som input ska menyvalet be om ett land. Du ska skapa två funktioner `get_country_data(country_name)` och `print_country_data(data)`. Använd `print_country_data` för att skriva ut datan du får från `get_country_data`.
+5. Menyval **14**: Menyvalet ska samla all data för ett land och skriva ut den. Som input ska menyvalet be om ett land. Du ska skapa två funktioner `get_country_data(country_name)` och `print_country_data(data)`. Använd `print_country_data` för att skriva ut datan du får från `get_country_data`. **Obs** Anropa inte `print_country_data` i `get_country_data`. Utan returnera data till main.py och anropa `print_country_data` där.
 
     Funktionen `get_country_data(country_name)` ska ta emot en sträng som argument vilket är namnet på landet. I funktionen ska du bygga upp en dictionary med data och returnera. Om landet saknar populations data, sätt värdet `None` för den nyckeln. Använd de tidigare funktionerna `get_country_change_for_years` och `get_country_year_data_megaton` för att hämta ut utsläpps data. Nedanför kan ni se strukturen på vad som ska returneras.
 

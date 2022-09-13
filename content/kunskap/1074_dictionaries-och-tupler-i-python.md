@@ -167,7 +167,7 @@ print(warehouse.values())
 
 
 
-### Dictionaries i dictionaries
+### Dictionaries i dictionaries {#dic-in-dict}
 
 På ett riktigt lager räcker det inte bara med antal varor som är kvar, vi vill även ha en möjlighet att ange priset. Med dictionaries, precis som med listor, har vi möjligheten att skapa dictionaries i dictionaries, så kallade nästlade dictionaries. Detta gör att vi kan ha både antalet och ett pris för varje vara. Vi kan nu skriva ut en sorterad lista med pris på följande sätt.
 

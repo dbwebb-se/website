@@ -155,9 +155,9 @@ $items = count($mikael);
 Om vi är osäkra på om en position i arrayen har ett värde så kan vi kontrollera det med funktionen [array_key_exists](https://www.php.net/manual/en/function.array-key-exists.php).
 
 ```php
-array_key_exists($mikael[0]);
+array_key_exists(0, $mikael);
 
-array_key_exists($mikael[10]);
+array_key_exists(10, $mikael);
 ```
 
 Det finns många [inbyggda funktioner som kan hjälpa oss att jobba med arrayer](https://www.php.net/manual/en/ref.array.php), kika snabbt och översiktligt på dem.

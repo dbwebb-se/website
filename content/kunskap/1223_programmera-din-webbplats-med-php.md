@@ -429,7 +429,7 @@ Loopkonstruktioner med `for` och `while` är andra exempel på PHP kontrollstruk
 
 
 
-### while-loop {#whileloop}
+### While-loop {#whileloop}
 
 Vi börjar med ett exempelprogram som bygger en while loop som summerar alla udda tal som finns. Vi börjar på talet 1 och vi slutar när summan har kommit upp i, eller är över, talet 42. Du kanske själv kan klura ut hur det kan fungera? Om man strukturerar programmet med kommentarer, som en del av problemlösningen, så kan det se ut så här.
 

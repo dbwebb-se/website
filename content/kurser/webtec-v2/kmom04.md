@@ -23,7 +23,7 @@ Vi fördjupar oss mer i programmering med PHP och vi tittar på datastrukturer m
 
 Vi tittar vidare på HTML formulär och använder POST tillsammans med processing- och resultat-sidor.
 
-Vi kikar på sessionen och lär oss hur man kan spara värden i sessions-arrayenoch få en lagring av värden mellan användarens sidanrop.
+Vi kikar på sessionen och lär oss hur man kan spara värden i sessions-arrayen och få en lagring av värden mellan användarens sidanrop.
 
 Vi tittar också på hur funktioner kan användas för att förbättra vår kodstruktur så att koden blir enkel att utveckla, underhålla och felsöka i. 
 

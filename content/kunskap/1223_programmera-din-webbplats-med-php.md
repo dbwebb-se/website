@@ -541,7 +541,7 @@ for ($i = 0; $i <= 6; $i++) {
 $weekStr .= "</ul>\n"
 ```
 
-Ovan ser vi endast PHP-koden till lösningen. om det är någon funktion du inte sett tidigare så kan du slå upp den i manualen, till exempel genom att googla `php time`. 
+Ovan ser vi endast PHP-koden till lösningen. Om det är någon funktion du inte sett tidigare så kan du slå upp den i manualen, till exempel genom att googla `php time`. 
 
 Vi får inte glömma att skriva ut resultat-strängarna till webbsidan.
 
@@ -691,7 +691,7 @@ Här behöver vi först skapa ett HTML formulär med ett textfält där vi kan s
 
 Formuläret kommer visa upp ett textfält där användaren kan skriva in godtycklig text. Det visas också en knapp där användaren kan klicka för att skicka (submitta) formuläret så att dess data skickas till servern. Det finns också en knapp som rensar formuläret till sitt ursprungliga läge.
 
-Jag har angett `method="GET"` vilket innebär att formulärets data kommer att skickas via querysträngen.
+Jag har angett `method="get"` vilket innebär att formulärets data kommer att skickas via querysträngen.
 
 Jag har angett `action=""` vilket innebär att formuläret postas till samma url som formuläret är på. Det kallas självpostande formulär, "self-submitting form" då det går till samma sida som formuläret visas på. Hade jag velat posta resultatet till en annan sida så hade jag kunnat ange till exempel `action="me.php"`.
 

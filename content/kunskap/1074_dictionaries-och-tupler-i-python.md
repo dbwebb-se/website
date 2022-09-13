@@ -2,6 +2,7 @@
 author: efo
 category: python
 revision:
+  "202-09-13": (C, aar) La till del där data är uppdelat i olika dicts.
   "2018-06-27": (B, efo) Uppdaterad med sortering baserad på value.
   "2017-06-21": (A, efo) Första utgåvan inför kursen python H17.
 ...
@@ -195,7 +196,7 @@ För de som är intresserade finns ett litet exempel i Pythons [dokumentation f�
 
 Tupler {#tuples}
 --------------------------------------
-Ibland vill man ha en sekvens av data som inte ska eller kan ändras. I Python använder man tupler (tuples på engelska) för att åstadkomma detta. Tupler är en sekvens av data som kan vara av olika typer och vi skapar en tupel med hjälp av `()`. Tupler kan inte ändras men vi kan hämta ut data med hjälp av index för datat med samma notation (`[index]`) som för en lista. I vårt lager vill vi att varje vara ska ha en streckkod och ett internt lager nummer, dessa ska aldrig ändras så vi väljer att använda en tupel för denna data. I exemplet nedan har vi definierat en nyckel `ids` i varje element i `warehouse_deluxe` och som värde för nyckeln har vi en tupel. Vi lägger igen till "röd lök" i vårt lager och vi avslutar exemplet med att skriva ut en formaterad sträng med alla varor i lagret.
+Ibland vill man ha en sekvens av data som inte ska eller kan ändras. I Python använder man tupler (tuples på engelska) för att åstadkomma detta. Tupler är en sekvens av data som kan vara av olika typer och vi skapar en tupel med hjälp av `()`. Tupler kan inte ändras men vi kan hämta ut data med hjälp av index för datat med samma notation (`[index]`) som för en lista. I vårt lager vill vi att varje vara ska ha en streckkod och en lager plats, dessa ska aldrig ändras så vi väljer att använda en tupel för denna data. I exemplet nedan har vi definierat en nyckel `ids` i varje element i `warehouse_deluxe` och som värde för nyckeln har vi en tupel. Vi lägger igen till "röd lök" i vårt lager och vi avslutar exemplet med att skriva ut en formaterad sträng med alla varor i lagret.
 
 ```python
 warehouse_deluxe = {
@@ -211,20 +212,20 @@ warehouse_deluxe["röd lök"]["price"] = 9
 warehouse_deluxe["röd lök"]["ids"] = (6314, "D04")
 
 for key in sorted(warehouse_deluxe.keys()):
-    print("{product} costs {price} and we have {stock} in stock. It has barcode {barcode} and stock id {stock_id}.".format(
+    print("{product} costs {price} and we have {stock} in stock. It has barcode {barcode} and location {location_id}.".format(
         product=key,
         price=warehouse_deluxe[key]["price"],
         stock=warehouse_deluxe[key]["stock"],
         barcode=warehouse_deluxe[key]["ids"][0],
-        stock_id=warehouse_deluxe[key]["ids"][1]
+        location_id=warehouse_deluxe[key]["ids"][1]
     ))
 
 # skriver ut:
-# grädde costs 20 and we have 80 in stock. It has barcode 3141 and stock id L12.
-# gul lök costs 5 and we have 42 in stock. It has barcode 2742 and stock id D02.
-# krossade tomater costs 10 and we have 33 in stock. It has barcode 4224 and stock id E13.
-# köttfärs costs 50 and we have 20 in stock. It has barcode 1234 and stock id K14.
-# röd lök costs 9 and we have 7 in stock. It has barcode 6314 and stock id D04.
+# grädde costs 20 and we have 80 in stock. It has barcode 3141 and location L12.
+# gul lök costs 5 and we have 42 in stock. It has barcode 2742 and location D02.
+# krossade tomater costs 10 and we have 33 in stock. It has barcode 4224 and location E13.
+# köttfärs costs 50 and we have 20 in stock. It has barcode 1234 and location K14.
+# röd lök costs 9 and we have 7 in stock. It has barcode 6314 and location D04.
 ```
 
 För de som är intresserade finns ett litet exempel i Pythons [dokumentation för tupler](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences).
@@ -234,7 +235,7 @@ För de som är intresserade finns ett litet exempel i Pythons [dokumentation f�
 
 ### Söka i nästlade datastrukturer {#search}
 
-Vi kollar också på hur vi kan jobba med nästlade datastrukturer för att hitta ett element med ett värde. Vi vill kunna söka på varors stock id för att få fram vilken vara det är kopplat till. Då kan vi passa på att utnyttja hur Python kan använda tupler vi tilldelning.
+Vi kollar också på hur vi kan jobba med nästlade datastrukturer för att hitta ett element med ett värde. Vi vill kunna söka på varors `location` för att få fram vilken vara det är kopplat till. Då kan vi passa på att utnyttja hur Python kan använda tupler vi tilldelning.
 
 Vi har redan sett att hur vi kan tilldela värden till två variabler i en for-loop med enumerate.
 
@@ -275,7 +276,7 @@ krossade tomater {'stock': 33, 'price': 10, 'ids': (4224, 'E13')}
 gul lök {'stock': 42, 'price': 5, 'ids': (2742, 'D02')}
 ```
 
-Nu kan vi i loopen kolla om ett visst sock id finns och då skriva ut varans namn.
+Nu kan vi i loopen kolla om ett visst stock id finns och då skriva ut varans namn.
 
 ```python
 search_for = "E13"
@@ -286,6 +287,59 @@ for item, data in warehouse_deluxe.items():
 # skriver ut
 # krossade tomater
 ```
+
+
+
+### Jobba med data uppdelat i två olika strukturer {#split-data}
+
+Ibland finns vår data utspridd på olika ställen, det kan vara t.ex. på olika servrar eller i olika filer. Då måste vi kunna samla ihop datan och presentera den på ett samman hängande sätt.
+
+Nedanför har jag delat upp datan så det ligger i två olika dictionaries. Varornas hyllplats finns nu i en separat dictionary, där `id` i `warehouse_deluxe` används som nyckel i den nya dictionary:n.
+
+```python
+warehouse_deluxe = {
+    "köttfärs": { "stock": 20, "price": 50, "id": 1234 },
+    "grädde": { "stock": 80, "price": 20, "id": 3141 },
+    "krossade tomater": { "stock": 33, "price": 10, "id": 4224 },
+    "gul lök": { "stock": 42, "price": 5, "id": 2742 },
+}
+
+stock_locations = {
+    1234: "K14",
+    3141:"L12",
+    4224:"E13",
+    2742:"D02",
+}
+```
+
+Nu vill vi göra en fin utskrift där all data för varje produkt finns med. Vi behöver hämta ut `id` från `warehouse_deluxe` och använda som nyckel i `stock_locations` för att kunna slå ihop all data för en produkt.
+
+```python
+def merge_data(warehouse, locations):
+    """
+    merge data from two dicts into a list with tuples
+    """
+    all_data = []
+    for name, data in warehouse.items():
+        all_data.append(
+            (name, data, locations[data["id"]])
+        )
+    return all_data
+
+def print_all(products_list):
+    """
+    Print all the data
+    """
+    for name, data, location in products_list:
+        print(
+            f"{name} costs {data['price']} and we have {data['stock']} in stock. It has barcode {data['id']} and location {location}."
+        )
+
+merged_data = merge_data(warehouse_deluxe, stock_locations)
+print_all(merged_data)
+```
+
+I `merge_data` lägger jag datan i en ny datastruktur så att originalet är oförändrat. Så att den funktionen inte påverkar någon annan funktionalitet jag kan ha i mitt program. Jag strukturerar datan i en tuple i listan, för då går det lätt att använda den i en for-loop.
 
 
 

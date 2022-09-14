@@ -42,7 +42,7 @@ _(ca: 4-10 studietimmar)_
 
 Genomför följande övningar.
 
-1. Läs igenom artikeln "[Kom igång med Apache](kunskap/kom-igang-med-apache)".
+1. Läs igenom artikeln "[Kom igång med Apache](kunskap/kom-igang-med-apache)". Här ska du inte utföra delarna utan det räcker att du läser igenom de olika stegen.
 
 1. Läs stycket om verktyget "grep" i artikeln ["Text processering"](kunskap/text-processering#grep).
 

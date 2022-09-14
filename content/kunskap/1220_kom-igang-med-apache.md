@@ -5,6 +5,10 @@ revision:
   "2022-05-09": (A, lew) Första utgåvan inför kursen vlinux ht22.
 ...
 
+[INFO]
+Notera att den här artikeln ska du enbart läsa igenom. Du behöver inte installera Apache2 lokalt på din maskin, utan det gör du senare i Docker.
+[/INFO]
+
 # Kom igång med Apache
 
 Apache är en webbserver utvecklad av Apache Software Foundation. Apache har funnits med sedan 1995 och är en av världens mest använda webbservermjukvaror för webbinnehåll via HTTP.

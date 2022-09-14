@@ -1,10 +1,10 @@
 ---
 author: lew
 revision:
-    "2020-03-11": "(A, lew) Första versionen."
+  "2020-03-11": "(A, lew) Första versionen."
 ...
-Installera Apache {#install}
--------------------------------------------
+
+## Installera Apache {#install}
 
 Vi behöver webbservern Apache. Så här installerar du Apache och testar att det fungerar. Vi börjar med att skapa en Dockerfile med följande innehåll:
 
@@ -35,4 +35,4 @@ Om vi vill bli av med varningen petar vi in ServerName i rätt fil. Lägg till f
 RUN echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
 ```
 
-Om vi hade tagit oss in i containern, tex via `docker -it exec <id> bash` och velat kika statusen hade felet med en terminalbaserad webbläsare dykt upp. Man kan då välja att installera tex `w3m` i byggfasen.
+Om vi hade tagit oss in i containern, tex via `docker exec -it <id> bash` och velat kika statusen hade felet med en terminalbaserad webbläsare dykt upp. Man kan då välja att installera tex `w3m` i byggfasen.

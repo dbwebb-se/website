@@ -114,6 +114,8 @@ Här följer extra uppgifter som du kan utföra för att lära dig mer, om du ha
 
 * Prova att skapa en "dark mode" av din webbplats, förutsatt att den är ljus. Annars får du skapa en ljus version av din mörka webbplats. Det finns ett exempel i ditt kursrepo under `example/css/dark_mode` som visar hur du kan skapa och växla mellan en mörk och ljus version av din webbplats. Integrera liknande funktionalitet i din `me/report`.
 
+* Gör extrauppgift likt stilväljare "[Att bygga en styleväljare till sin webbplats](kunskap/att-bygga-en-stylevaljare-till-sin-webbplats)".
+
 * När man bygger en responsiv webbplats kan man också behöva en responsiv meny som anpassar sig efter webbläsarens bredd. Studera exempelkoden under ditt kursrepo `example/css/responsiv_menu` och försök sedan att lägga till en motsvarande responsiv meny i din `me/report`.
 -->
 

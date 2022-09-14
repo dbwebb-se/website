@@ -3,12 +3,13 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2022-09-14": "(B, mos) Genomgången och tog bort galleriuppgiften."
     "2022-08-11": "(A, mos) Första utgåvan till webtec-v2."
 ...
-Bygg ett galleri och en månadskalender med PHP datastrukturer
+Bygg en månadskalender och ett gissningsspel med PHP datastrukturer
 ===================================
 
-Du skall bygga ut din webbplats och dels skapa ett galleri och dels en almanacka i form av en måadskalender med bilder. I övningen kommer du att få jobba med att organisera ditt PHP-kodande och jobba med bland annat arrayer och funktioner.
+Du skall bygga ut din webbplats och dels skapa een almanacka i form av en måadskalender med bilder och dels skall du göra ett litet gissningsspel. I övningen kommer du att få jobba med att organisera ditt PHP-kodande och jobba med bland annat arrayer och funktioner.
 
 Du kommer också få träna på HTML formulär med POST och sessioner.
 
@@ -40,6 +41,8 @@ Introduktion och förberedelse {#intro}
 -----------------------
 
 Om du har jobbat igenom övningen så är du förberedd för uppgiften och du har tränat på de begrepp som används för att lösa uppgiften.
+
+I denna uppgiften kan du troligen återanvända en del av den koden du gjorde i förra uppgiften om en kalender. Se om du kan återanvända koden på ett bra sätt. Kanske kan du till och med överväga att flytta vissa delar till funktioner, om du känner dig bekväm med det.
 
 
 
@@ -90,6 +93,7 @@ Från övningen förutsetts att du har följande implementerat.
 
 
 
+<!-->
 ### Krav 1: Galleri med 12 bilder {#galleri}
 
 I första delen av uppgiften handlar det om att göra ett enkelt galleri med 12 bilder som du själv har valt. Gör en sidkontroller `public/gallery.php` som visar upp samtliga bilder på en sida.
@@ -106,15 +110,17 @@ Gör bara detta om du känner att du har tid, lust och energi.
 
 Om du vill så kan du uppdatera ditt galleri så att det kan visa 4 eller 6 bilder på en sida och att man måste klicka på en länk "nästa sida" för att se de andra bilderna. Här kan du använda `?num=6` för att säga hur många bilder du vill visa och kombinera det med `?num=6&page=2` för att visa de sista 6 bilderna.
 
+-->
 
 
-### Krav 2: Almanacka med bild {#manadskal}
+
+### Krav 1: Almanacka med bild {#manadskal}
 
 Du skall göra en årsalmanacka för årets 12 månader i innevarande år där du visar en månad tillsammans med en bild, en så kallad foto-kalender.
 
-Gör en sidkontroller `photocal.php` som tar ett argument via querysträngen `?month=6` och därefter visas månaden juni upp tillsammans med en bild. Skickar man in `?month=7` så visas juli upp och missar man att skicka in något alls så visas aktuell månad.
+Gör en sidkontroller `photocal.php` som tar ett argument via querysträngen `?month=6` och därefter visas månaden juni upp tillsammans med en bild. Skickar man in `?month=7` så visas juli upp och missar man att skicka in något alls så visas aktuell månad. Du kan också välja att skicka in både månad och år via querysträngen, det är upp till dig hur du konstruerar querysträngen.
 
-Skapa en länk så att man kan navigera till nästa och föregående månad.
+Skapa en länk så att man kan navigera till nästa och föregående månad. När du kommer till månad 12 och klickar nästa så tar det antingen stopp, eller så byter du år - det är upp till dig att välja taktik.
 
 Placera en länk till sidkontrollern i navbaren.
 
@@ -130,13 +136,13 @@ Se till att söndagar är röda i din style.
 
 Gör bara detta om du känner att du har tid, lust och energi.
 
-Placera in namnen på de som har namnsdagar på rätt plats i kalendern. Du har en funktion i `src/calendar.php` som kan ge dig en array med alla namnsdagar.
+Placera in namnen på de som har namnsdagar på rätt plats i kalendern. Du har en funktion i `src/calendar.php` som kan ge dig en array med alla namnsdagar på ett visst datum.
 
 
 
-### Krav 3: Gissa på dagens namn {#dagensnamn}
+### Krav 2: Gissa på dagens namn {#dagensnamn}
 
-Du skall göra ett litet gissningsspel med hjälp av arrayen på namnens betydelse. I denna uppgiften får du träna på HTML formulär, POST och SESSION.
+Du skall göra ett litet gissningsspel med hjälp av kalenderfunktionen som kan ge dig en array med namnens betydelse. I denna uppgiften får du träna på HTML formulär, POST och SESSION.
 
 Du har en funktion i `src/calendar.php` som kan ge dig en array med alla namn och deras betydelse.
 
@@ -155,6 +161,10 @@ Här är grunden i spelet.
 1. I resultatsidan visar du om användaren gissade rätt eller fel. Du kan även visa det namnet som var rätt svar.
 
 1. När man börjar om så plockar du fram ett nytt namn och en ny beskrivning.
+
+**EXTRA**
+
+Om du har idéer och tankar kring hur du kan göra "spelet" mer roligt så får du gärna implementera det. Kanske kan du hitta ett sätt att även använda namnsdagarna och koppla ihop informationen med namn och betydelse. Se om du kan klura ut något.
 
 
 

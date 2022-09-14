@@ -8,14 +8,14 @@ views:
 author:
     - mos
 revision:
-    "2022-06-28": "(A, mos) Första utgåvan."
+    "2022-09-14": "(A, mos) Första utgåvan."
 ...
 kmom04: PHP datastrukturer
 ==================================
 
 [WARNING]
 
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+**Om du är en early adopter så går det nu bra att jobba igenom detta kursmomentet, det sista som uppdaterades var att uppgiften bytte namn och skalades ned i omfattning.**
 
 [/WARNING]
 
@@ -121,23 +121,13 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. Gör uppgiften "[Bygg ett galleri och en månadskalender med PHP datastrukturer](uppgift/bygg-ett-galleri-och-en-manadskalender-med-php-datastrukturer)" och spara alla filer under `me/report`.
+1. Gör uppgiften "[Bygg en månadskalender och ett gissningsspel med PHP datastrukturer](uppgift/bygg-en-manadskalender-och-ett-gissningsspel-med-php-datastrukturer)" och spara alla filer under `me/report`.
 
 <!--
 
-* Galleri med bilder, klicka runt, läsa av filer i katalog. Next
-* galleri (next/prev)
+* Galleri med bilder, klicka runt, läsa av filer i katalog. (next/prev)
 * glob
-
-* Kalender, månadens babe
-* Kalender samt byta månad med länk.
-* Dagens anmn i array?
-* Todo i array?
 * PHP läsa från lokala filer, prepare för databas
-
-
-Jag behöver någon uppgift i form av HTML form, post, session med flashmessage.
-* (Gissa på något, kanske dagens namn?)
 
 -->
 
@@ -161,20 +151,13 @@ Här följer extra uppgifter som du kan utföra för att lära dig mer, om du ha
 
 <!--
 * Lägg till detaljer om dagens namn och namnsdagar i din sidkontroller `today.php`.
+* Skapa fler funktioner som hämtar data om namn och liknande.
 * Login, gör ett komplett loginskript/hantering
 * Extra övning som visa inloggninig, eller lägg som extrauppgift
 * Inloggning av användare med lösenord.
 
-* Gissa mitt nummer
-
 * Markdown, läs in fil och konvertera, kräver composer och PHP i pathen (låt vara tills design-kursen)
-
-* https://arkiv.dbwebb.se/kod-exempel/business-card-generator/
-
-* Jobba igenom övningen "[Att bygga en styleväljare till sin webbplats](kunskap/att-bygga-en-stylevaljare-till-sin-webbplats)".
 -->
-
-
 
 
 

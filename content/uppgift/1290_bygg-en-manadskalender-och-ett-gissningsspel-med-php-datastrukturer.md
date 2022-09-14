@@ -93,7 +93,7 @@ Från övningen förutsetts att du har följande implementerat.
 
 
 
-<!-->
+<!--
 ### Krav 1: Galleri med 12 bilder {#galleri}
 
 I första delen av uppgiften handlar det om att göra ett enkelt galleri med 12 bilder som du själv har valt. Gör en sidkontroller `public/gallery.php` som visar upp samtliga bilder på en sida.

@@ -20,7 +20,9 @@ Du har läst kurslitteraturen och skaffat dig grundläggande kunskaper om bash.
 
 ## Introduktion {#intro}
 
-I exempelmappen finns en [JSON-fil](https://github.com/dbwebb-se/vlinux/tree/master/example/json) som ska servas med hjälp av en router, byggd i språket du valt. Du väljer själv hur du vill sköta "routingen". Om du vill köra med PHP, finns en [minimal router](https://github.com/dbwebb-se/vlinux/tree/master/example/php-router) i exempelmappen du kan utgå ifrån. Tips finns i tillhörande README.md-fil.
+I exempelmappen finns en [JSON-fil](https://github.com/dbwebb-se/vlinux/tree/master/example/json) som ska servas med hjälp av en router, byggd i språket du valt. Du väljer själv hur du vill sköta "routingen".
+
+<!-- Om du vill köra med PHP, finns en [minimal router](https://github.com/dbwebb-se/vlinux/tree/master/example/php-router) i exempelmappen du kan utgå ifrån. Tips finns i tillhörande README.md-fil. -->
 
 Routes som ska stödas är:
 

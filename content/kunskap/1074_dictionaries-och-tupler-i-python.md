@@ -2,7 +2,7 @@
 author: efo
 category: python
 revision:
-  "202-09-13": (C, aar) La till del där data är uppdelat i olika dicts.
+  "2022-09-13": (C, aar) La till del där data är uppdelat i olika dicts.
   "2018-06-27": (B, efo) Uppdaterad med sortering baserad på value.
   "2017-06-21": (A, efo) Första utgåvan inför kursen python H17.
 ...

@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2022-09-15": "(B, mos) Lade till livlinor."
     "2022-08-11": "(A, mos) Första utgåvan till webtec-v2."
 ...
 Programmera din rapportsida till webtec-kursen
@@ -76,6 +77,23 @@ Du skall göra en månadskalender som har ett liknande utseende som följande ka
 [FIGURE src=image/webtec/programmera/month_cal.jpg?w=w3 caption="En månadskalender."]
 
 Den skall göras i en HTML tabell och försök likna ovan kalender så gott det går. 
+
+
+
+### Tips, trix och livlinor {#livlina}
+
+I GitHub issuen "[Tips, trix och show-off från kmom03 med "Idag är det fredag" och "Månadskalender"](https://github.com/dbwebb-se/webtec/issues/15)" finns det en del inspiration och tips och trix till hur man kan tänka och vilka eventuella svårigheter som finns i uppgiften.
+
+Den bästa taktiken är troligen att först lösa `friday.php` och därefter ta sig an `month.php`. De saker man lär sig i friday kommer att användas i month.
+
+Det finns en livlina till `friday.php`i form av en video "[Kmom03: Mikael visar hur man kan komma igång och lösa uppgiften med friday.php](https://www.youtube.com/watch?v=APLHs5D94YI)" som visar i detalj hur man kan tänka, men den bör du bara titta på om du verkligen fastnar på uppgiften.
+
+Det finns även två livlinor till `month.php` i form av videor, men även de bör du enbart titta på om du fastnar när du försöker lösa uppgiften.
+
+* [Kmom03: Kom igång att lösa uppgiften med månadskalendern och month.php](https://www.youtube.com/watch?v=px0TlLwMpeA)
+* [Kmom03: Hur tänka när man skall loopa igenom alla dagar i en månad och skriva ut en tabell month.php](https://www.youtube.com/watch?v=4G3JsRx24s8)
+
+Kom ihåg, samtliga konstruktioner som du behöver för att lösa uppgiften är omnämnda i övningen i någon omfattning.
 
 
 

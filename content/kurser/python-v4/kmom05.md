@@ -23,11 +23,11 @@ revision:
 Kmom05: Dictionaries och Tupler
 ==================================
 
-[WARNING]
+[INFO]
 
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+Gör `dbwebb update` innan du börjar jobba med uppgifterna!
 
-[/WARNING]
+[/INFO]
 
 Lär dig mer om datastrukturer i Python, nu handlar det om dictionaries och tupler. Dictionaries sparar data som ett nyckel-värde par och tupler strukturer vår data i mindre enheter med ett sammanhang. Vi använder våra kunskaper om dictionaries för att utveckla Marvin med verktyg för att analysera koldioxidutsläpp.
 
@@ -84,6 +84,10 @@ Titta på följande:
 
 
 ###Lästips {#lastips}
+
+1. Tidigare år har jag gett längre återkoppling på kmom02 inlämningar som studenter har frågat efter. Jag rekommenderar att läsa igenom dem för att se hur man kan lösa sakerna på olika sätt.
+    - [Marvin3 och labbuppgift 2.4](https://github.com/dbwebb-se/python/issues/53).
+
 
 1. [Exempel och förklaringar av valideringsfel](https://github.com/dbwebb-se/python/issues/46)
 

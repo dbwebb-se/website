@@ -2,6 +2,7 @@
 author: mos
 category: sql
 revision:
+    "2022-09-16": "(E, mos) Förtydliga vad som gäller för wsl."
     "2021-06-28": "(D, mos) Flyttad till labbmiljö och omskriven inför webtec-kursen."
     "2018-10-01": "(C, mos) Hur man avslutar programmet med ctrl-d."
     "2018-09-30": "(B, mos) Changed name of sqlite frile from jetty to boatclub."
@@ -24,7 +25,7 @@ En kommandoradsklient är behändig för den som jobbar i terminalen.
 Förutsättningar {#pre}
 --------------------------------------
 
-Du har koll på terminalen på [Mac OS](kunskap/terminalen-och-pakethantering-med-brew-pa-mac-os), [Linux](kunskap/terminalen-och-pakethantering-i-unix-linux) eller [Windows/Cygwin](kunskap/installera-unix-terminalen-cygwin-pa-windows).
+Du har en terminal där du kan köra en pakethanterare för att installera program.
 
 
 
@@ -38,8 +39,8 @@ På Mac OS finns den förinstallerad.
 På Linux och Windows/Cygwin installerar du den med pakethantering.
 
 ```text
-# Linux
-apt-get install sqlite3
+# Linux och Windows/WSL/Ubuntu
+apt install sqlite3
 
 # Windows/Cygwin
 apt-cyg install sqlite3

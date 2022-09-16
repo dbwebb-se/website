@@ -26,6 +26,14 @@ Databas, SQL.
 
 <!--stop-->
 
+[WARNING]
+
+**Om du är en early adopter så går det nu bra att jobba igenom detta kursmomentet, det sista som uppdaterades var att uppgiften bytte namn och skalades ned i omfattning.**
+
+[/WARNING]
+
+
+
 
 Labbmiljö  {#labbmiljo}
 ---------------------------------

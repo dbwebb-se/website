@@ -8,16 +8,10 @@ views:
 author:
     - mos
 revision:
-    "2022-09-14": "(A, mos) Första utgåvan."
+    "2022-09-16": "(A, mos) Första utgåvan."
 ...
 kmom04: PHP datastrukturer
 ==================================
-
-[WARNING]
-
-**Om du är en early adopter så går det nu bra att jobba igenom detta kursmomentet, det sista som uppdaterades var att uppgiften bytte namn och skalades ned i omfattning.**
-
-[/WARNING]
 
 Vi fördjupar oss mer i programmering med PHP och vi tittar på datastrukturer med arrayer för att se skillnader och likheter mellan numeriska arrayer och associativa arrayer.
 

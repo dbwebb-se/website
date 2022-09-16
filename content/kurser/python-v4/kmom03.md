@@ -64,7 +64,11 @@ Titta på följande:
 
 ###Lästips {#lastips}
 
-1. Läs den [feedback jag gav](https://gist.github.com/AndreasArne/cecb1fb4dbc1ec7c83c57a8d2f678012) en student på labbuppgiften 4.2 i lab2.
+1. Tidigare år har jag gett längre återkoppling på kmom02 inlämningar som studenter har frågat efter. Jag rekommenderar att läsa igenom dem för att se hur man kan lösa sakerna på olika sätt.
+    - [labbuppgift 4.2 och menyval A5](https://gist.github.com/AndreasArne/cecb1fb4dbc1ec7c83c57a8d2f678012).
+    - [menyval A5 HT21](https://github.com/dbwebb-se/python/issues/51).
+    - [menyval A5 HT20](https://github.com/dbwebb-se/python/issues/48).
+
 
 1. [Think Python: How to Think Like a Computer Scientist](kunskap/boken-think-python-how-to-think-like-a-computer-scientist)
     * Chapter Debugging

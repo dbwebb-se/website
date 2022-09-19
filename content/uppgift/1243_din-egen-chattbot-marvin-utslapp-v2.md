@@ -96,7 +96,7 @@ cd kmom05/marvin4
 
 
 
-3. Menyval **12**: Användaren ska kunna söka efter vilka länder som finns i `country_data`.  Sökningen ska vara case insensitive och det ska gå att söka på hela namn och delar av namn. Ett input anrop ska tas emot som innehåller söksträngen. Alla länder som matchar sökningen ska skrivas ut. Gör utskriften i `main.py`.
+3. Menyval **13**: Användaren ska kunna söka efter vilka länder som finns i `country_data`.  Sökningen ska vara case insensitive och det ska gå att söka på hela namn och delar av namn. Ett input anrop ska tas emot som innehåller söksträngen. Alla länder som matchar sökningen ska skrivas ut. Gör utskriften i `main.py`.
 
     Skapa funktionen `search_country(search_word)`. Den ska ta emot en sträng som argument, vilket är sökordet för att hitta länder. I funktionen hitta alla länder som matchar sökordet och returnera dem i en lista.
 
@@ -117,12 +117,12 @@ cd kmom05/marvin4
     input "atlantis"      output: "Country does not exist!"
     ```
 
-    - Tags: `12`, `search_menu` (testar meny valet), `search_func` (testar funktionen)
+    - Tags: `13`, `search_menu` (testar meny valet), `search_func` (testar funktionen)
 
 
 
 
-4. Menyval **13**: Menyvalet ska skriva ut hur ett lands utsläpp har förändrats i procent mellan två år. Menyvalet ska ta emot ett input anrop där input kommer vara kommaseparerad , `country,year1,year2`. Du behöver plocka ut argumenten från den strängen. Resultat utskriften ska vara formaterad som `"Country_name:change"`. Du ska skapa två funktioner `get_country_year_data_megaton(country, year)` och `get_country_change_for_years(country, year1, year2)`. Om användaren skriver ett felaktigt år ska du skriva ut `"Wrong year!"`. För utskrifterna i `main.py`.
+4. Menyval **14**: Menyvalet ska skriva ut hur ett lands utsläpp har förändrats i procent mellan två år. Menyvalet ska ta emot ett input anrop där input kommer vara kommaseparerad , `country,year1,year2`. Du behöver plocka ut argumenten från den strängen. Resultat utskriften ska vara formaterad som `"Country_name:change"`. Du ska skapa två funktioner `get_country_year_data_megaton(country, year)` och `get_country_change_for_years(country, year1, year2)`. Om användaren skriver ett felaktigt år ska du skriva ut `"Wrong year!"`. För utskrifterna i `main.py`.
 
     ```python
 
@@ -145,11 +145,11 @@ cd kmom05/marvin4
     arguments: "Sweden", "1990", "2017"       return: -12.46 # Utsläppen har minskat med -12.46% från 1990 till 2017
     ```
 
-    - Tags: `13`, `change_menu`, `change_func`
+    - Tags: `14`, `change_menu`, `change_func`
 
 
 
-5. Menyval **14**: Menyvalet ska samla all data för ett land och skriva ut den. Som input ska menyvalet be om ett land. Du ska skapa två funktioner `get_country_data(country_name)` och `print_country_data(data)`. Använd `print_country_data` för att skriva ut datan du får från `get_country_data`. **Obs** Anropa inte `print_country_data` i `get_country_data`. Utan returnera data till main.py och anropa `print_country_data` där.
+5. Menyval **15**: Menyvalet ska samla all data för ett land och skriva ut den. Som input ska menyvalet be om ett land. Du ska skapa två funktioner `get_country_data(country_name)` och `print_country_data(data)`. Använd `print_country_data` för att skriva ut datan du får från `get_country_data`. **Obs** Anropa inte `print_country_data` i `get_country_data`. Utan returnera data till main.py och anropa `print_country_data` där.
 
     Funktionen `get_country_data(country_name)` ska ta emot en sträng som argument vilket är namnet på landet. I funktionen ska du bygga upp en dictionary med data och returnera. Om landet saknar populations data, sätt värdet `None` för den nyckeln. Använd de tidigare funktionerna `get_country_change_for_years` och `get_country_year_data_megaton` för att hämta ut utsläpps data. Nedanför kan ni se strukturen på vad som ska returneras.
 
@@ -208,7 +208,7 @@ cd kmom05/marvin4
     Population        - 1990: 8567375       2005: 9038627   2017: 9904895
     ```
 
-    - Tags: `14`, `data_menu`, `data_func`
+    - Tags: `15`, `data_menu`, `data_func`
 
 
 

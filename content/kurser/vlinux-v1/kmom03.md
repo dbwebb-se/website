@@ -72,6 +72,8 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lägg till hosten via `docker run`. Den ska heta `mysite.vlinux.se`.
 
+[YOUTUBE src=N4utGAtitTg width=639 caption="Har du fått med alla delar?"]
+
 ### Testa din inlämning {#test}
 
 Du kan köra vissa tester på din inlämning och se om de delarna uppfyller kraven. Rättningen kommer endast genomföras om testerna går igenom.

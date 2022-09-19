@@ -63,7 +63,7 @@ Tankar om utveckling?
 
 Läs enligt följande.
 
-1. På sidan för föreläsningarna ovan så finns läsanvisningar som hjälper dig att studera datastrukturer i programmeringsspråket PHP. Välj bland dem för att läsa på med om begreppen.
+1. På sidan för föreläsningarna ovan så finns läsanvisningar som hjälper dig att studera datastrukturer i programmeringsspråket PHP. Välj bland dem för att läsa på mer om begreppen.
 
 <!--
 * Jobba igenom PHP-guiden och börja använda den igen?

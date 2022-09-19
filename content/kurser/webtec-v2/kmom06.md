@@ -19,7 +19,10 @@ Kmom06: PHP, PDO och SQL
 
 [/WARNING]
 
-Form, Post, Session.
+PHP PDO, CRUD
+
+När vi kan vår SQL så använder vi den kunskapen till att koppla samman PHP och databasen för att bygga en databasdriven webbplats. Via webbplatsen skall du kunna lägga till, uppdatera och ta bort innehåll. Detta är de vanliga funktionerna för create, read, update, delete och kallas även CRUD.
+
 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
@@ -40,7 +43,8 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
-* [PHP PDO och databaser](./../forelasning/php-pdo-och-databaser)
+* [PHP PDO och databaser](./../forelasning/php-pdo-och-databaser). Vi tittar på PHP PDO som är ett sätt att koppla sig mot olika databaser via PHPs gränssnitt som heter PDO. Vi ser olika sätt att ställa frågor till databasen och hur man hanterar resultatet.
+
 <!--
 * <s>[Databasdriven webbplats med CRUD](./../forelasning/webbplats-med-crud)</s> utgår.
 -->
@@ -52,6 +56,36 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 Läs enligt följande.
 
 1. ...
+
+
+<!--
+### W3Schools SQL {#w3sphp}
+
+Webbplatsen W3Schools har en guide som är lättilgänglig när man vill komma igång med grunderna i SQL.
+
+1. [SQL Tutorial](https://www.w3schools.com/sql/)
+1. [PHP MySQL Database](https://www.w3schools.com/php/php_mysql_intro.asp). Även om guiden handlar om MySQL så är det samma interface i PHP, PHP PDO, och det används även till SQLite.
+
+
+### PHP {#php}
+
+Följande delar är relevanta för PHP.
+
+1. [PHP Data Objects (PDO)](http://php.net/manual/en/intro.pdo.php). Kika översiktligt på det. Det handlar om ett gemensamt gränssnitt för att koppla sig mot flera olika databaser.
+-->
+
+
+
+### Video för orientering {#video}
+
+_(Detta är samma videor som föreslogs i kmom05, du får en ny möjlighet att kika på dem om du inte gjorde det då...)_
+
+Titta på följande videor/filmer. Filmerna är tänkta att ge dig en liten orientering i det område som behandlas i kursmomentet.
+
+* [Richard Hipp, SQLite main author - Two Weeks of Databases #DB2W](https://www.youtube.com/watch?v=2eaQzahCeh4) (57 min)
+* [An Introduction to SQLite (by Richard Hipp)](https://www.youtube.com/watch?v=giAMt8Tj-84) (51 min)
+
+Videorna ovan finner du även i spellistan "[ Om webbutveckling (HTML, CSS, PHP, SQL)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-Qp6DTS_2s6q-Br66ufoWc)".
 
 
 

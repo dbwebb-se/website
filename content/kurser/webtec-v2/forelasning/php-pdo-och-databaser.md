@@ -28,6 +28,10 @@ Du kan själv bläddra igenom [de HTML slides som används i presentationen](htt
 Resurser
 ------------------------
 
-1. I PHP-manualen finns ett stycke om [PHP Data Objects (PDO)](http://php.net/manual/en/intro.pdo.php).
+Följande resurser används i olika omfattning i föreläsningen och du kan använda några av dem för att ytterligare studera och öva på det som tas upp i föreläsningen. 
+
+1. I PHP-manualen finns ett stycke om [PHP Data Objects (PDO)](http://php.net/manual/en/intro.pdo.php). Det handlar om ett gemensamt gränssnitt för att koppla sig mot flera olika databaser.
 
 1. Delar av materialet och kodexempel i föreläsningen kommer från övningen "[Kom igång med SQLite och PHP PDO (v2)](kunskap/kom-igang-med-sqlite-och-php-pdo-v2)".
+
+1. [W3schools: PHP MySQL Database](https://www.w3schools.com/php/php_mysql_intro.asp). Även om guiden handlar om MySQL så är det samma interface i PHP, PHP PDO, och det används även till SQLite.

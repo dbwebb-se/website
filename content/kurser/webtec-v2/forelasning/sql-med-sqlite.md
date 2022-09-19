@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2022-09-19": "(B, mos) Gick igenom läsanvisningarna."
     "2021-09-26": "(A, mos) Första utgåva inför kursstart HT2021."
 ...
 SQL med SQLite
@@ -19,6 +20,8 @@ Du kan själv bläddra igenom [de HTML slides som används i presentationen](htt
 Resurser
 ------------------------
 
+Följande resurser används i olika omfattning i föreläsningen och du kan använda några av dem för att ytterligare studera och öva på det som tas upp i föreläsningen. 
+
 * [SQLite dokumentation](https://www.sqlite.org/docs.html)
     * [CREATE](https://www.sqlite.org/lang_createtable.html)
     * [DROP](https://www.sqlite.org/lang_droptable.html)
@@ -33,4 +36,7 @@ Resurser
 Mer om SQL.
 
 * [Wikipedia SQL](https://en.wikipedia.org/wiki/SQL)
-* [W3Schools SQL Tutorial](https://www.w3schools.com/sql/)
+
+Webbplatsen W3Schools har en guide som är lättillgänglig när man vill komma igång med grunderna i SQL.
+
+1. [SQL Tutorial](https://www.w3schools.com/sql/)

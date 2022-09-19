@@ -4,10 +4,11 @@ category:
     - databas
     - sql
 revision:
+    "2022-09-19": "(E, mos) Utökad med bilder och UPDATE/DELETE."
     "2021-09-25": "(D, mos) Ny utgåva, genomgången, förkortad och använder terminalklienten sqlite3."
     "2018-09-24": "(C, mos) Ny utgåva, genomgången och bytte ut Firefox SQLite Manager mot DB Browser for SQLite."
-    "2017-01-09": "(B, mos) Stödjer både htmlphp och dbjs."
-    "2015-06-05": "(A, mos) Första utgåvan för htmlphp version 2 av kursen."
+    "2017-01-09": "(B, mos) Stödjer både webtec och dbjs."
+    "2015-06-05": "(A, mos) Första utgåvan för webtec version 2 av kursen."
 ...
 Kom igång med SQL och databasen SQLite med terminalklienten sqlite3
 ==================================
@@ -60,7 +61,7 @@ Du kan se artikeln "[En kommandoradsklient för SQLite](labbmiljo/sqlite3)" som 
 Skapa en ny databas {#createdb}
 --------------------------------------
 
-Börja med att öppna en ny databas och döp den till `course.sqlite`. Vi skall bygga en databas för att hålla koll på de kurser vi skall gå på högskolan..
+Börja med att öppna en ny databas och spara den i filen `course.sqlite`. Vi skall bygga en databas för att hålla koll på de kurser vi skall gå på högskolan.
 
 ```text
 $ sqlite3 course.sqlite
@@ -68,6 +69,10 @@ SQLite version 3.24.0 2018-06-04 14:10:15
 Enter ".help" for usage hints.
 sqlite> 
 ```
+
+[FIGURE src=image/webtec/sqlite/01-skapa-ny-databas.png?w=w3 caption="Då är vi redo att börja skapa databasen."]
+
+Än så länge har det inte skapats en fil, vi måste först fylla på med en struktur för databasen, innan filen skapas.
 
 Nästa steg är att skapa en tabell i din databas.
 
@@ -100,9 +105,13 @@ CREATE TABLE course
 );
 ```
 
+De tre översta raderna är kommentarer, en kommentar inleds med `-- ` i SQL.
+
 Varje kolumn har en datatyp som säger vilket typ av data som kolumnen lagrar. I databas-sammanhang är det viktigt att ange rätt typ från början. Vår typ av databaser, relationsdatabasen, jobbar med hård typning. Vill du lära dig mer om datatyperna så kan du läsa hur [SQLite stöder datatyperna NULL, INTEGER, REAL, TEXT och BLOB](https://www.sqlite.org/datatype3.html).
 
 Jag väljer att göra kolumnen "code" till primärnyckel i tabellen. Det säger att det inte kan ligga flera rader i tabellen där "kursens kod" är densamma. Det får bara ligga en rad med en specifik kurskod i tabellen, kurskoden är alltså unik.
+
+[FIGURE src=image/webtec/sqlite/02-skapa-tabell.png?w=w3 caption="Nu har vi skapat strukturen för en tabell, ännu finns inget innehåll i tabellen."]
 
 
 
@@ -130,6 +139,8 @@ CREATE TABLE course
 
 Vill du veta vilka mer kommandon som finns i applikationen `sqlite3` så skriver du `.help`.
 
+[FIGURE src=image/webtec/sqlite/03-shema.png?w=w3 caption="Databasens struktur kallas också databasens schema."]
+
 
 
 Spara SQL koden i filer {#save-in-file}
@@ -140,6 +151,12 @@ När du jobbar med SQL bör du normalt spara undan din kod i en fil. Det blir en
 Koden för att skapa databasens schema kan du lägga i en fil `ddl.sql`.
 
 Du kan sedan köra den filen antingen genom att kopiera dess innehåll direkt in till applikationen `sqlite3` eller så använder du kommandot `.read ddl.sql` för att exekvera alla kommandon i filen.
+
+[FIGURE src=image/webtec/sqlite/04-code-med-ddl-sql.png?w=w3 caption="Vi skriver SQL och sparar i filer."]
+
+[FIGURE src=image/webtec/sqlite/04-read-ddl-sql.png?w=w3 caption="Vi kan exekvera filen med SQL genom att läsa in den i terminalklienten."]
+
+Om allt gick bra så visas inga felmeddelanden.
 
 
 
@@ -157,7 +174,7 @@ Så här kan innehållet i en tabellen "course" se ut, fördelat på fyra rader,
 ```text
 code        name        points      term
 ----------  ----------  ----------  ----------
-PA1439      htmlphp     7.5         1
+PA1439      webtec      7.5         1
 DV1531      python      7.5         1
 PA1436      design      7.5         2
 DV1561      javascript  7.5         2
@@ -176,18 +193,20 @@ Låt se hur vi kan skapa innehåll i vår tabell.
 Lägg till värden i en tabell {#kurs-insert}
 --------------------------------------
 
-För att lägga till rader i en tabell använder vi `INSERT`. Följande kod lägger till de raderna vi ser ovan.
+För att lägga till rader i en tabell använder vi `INSERT`. Följande kod lägger till de raderna vi ser ovan. Här kan det för övningens skull vara bra att skapa en ny fil `insert.sql`.
 
 ```text
 INSERT INTO course
     (code, name, term)
 VALUES
-    ('PA1439', 'htmlphp', 1),
+    ('PA1439', 'webtec', 1),
     ('DV1531', 'python', 1),
     ('PA1436', 'design', 2),
     ('DV1561', 'javascript', 2)
 ;
 ```
+
+[FIGURE src=image/webtec/sqlite/05-insert-sql.png?w=w3 caption="Det är smidigt att skriva SQL-koden i en fil för att sedan exekvera filen."]
 
 Nu kan vi ställa en SQL-fråga mot tabellen.
 
@@ -211,13 +230,95 @@ SQL-satsen kan se ut så här tillsammans med resultatet.
 sqlite> SELECT * FROM course;
 code        name        points      term        kmom        done      
 ----------  ----------  ----------  ----------  ----------  ----------
-PA1439      htmlphp     7.5         1                                 
+PA1439      webtec      7.5         1                                 
 DV1531      python      7.5         1                                 
 PA1436      design      7.5         2                                 
 DV1561      javascript  7.5         2                                 
 ```
 
 Vi ser nu att tabellen innehåller fyra rader med 6 kolumner men värden finns endast i fyra av kolumnerna. I vår INSERT sats lade vi endast till tre värden, men den fjärde kolumnen `points` var definierad med ett default värde som används om inget annat värde definieras.
+
+[FIGURE src=image/webtec/sqlite/06-select.png?w=w3 caption="Nu kan vi ställa frågor mot databasen."]
+
+Du kan nu prova att variera din fråga mot databasen för att se hur olika rapporter kan se ut, prova följande.
+
+```text
+--- Show all courses in the first study period
+SELECT * FROM course WHERE term = 1;
+
+-- Show only the name and the code
+SELECT name, code FROM course;
+
+-- Order by name 
+SELECT * FROM course ORDER BY name;
+
+-- Show all courses containing a "a" in the name
+SELECT * FROM course WHERE name LIKE '%a%';
+```
+
+
+Uppdatera värden i en rad med UPDATE {#update}
+--------------------------------------
+
+Låt oss göra ett exempel med en UPDATE-sats för att uppdatera värden i en rad.
+
+Om vi nu säger att vi vill uppdatera tabellen i databasen så att det blir tydligt att vi för tillfället jobbar med kmom05 i kursen webtec och att vi är helt klara med kursen python, så skulle vi kunna göra så här.
+
+Först sätter vi att det är kmom05 vi nu jobbar med i kursen webtec.
+
+```text
+UPDATE course SET
+    kmom = 'kmom05'
+WHERE
+    name = 'webtec';
+```
+
+Ofta är det tydligare att skriva en större SQL-sats på flera rader, det blir lättare att läsa koden för att se vad som händer.
+
+Sedan sätter vi att vi är helt klara med kursen python genom att sätta ett datum när vi blev klara.
+
+
+```text
+UPDATE course SET
+    done = datetime('now')
+WHERE 
+    code = 'DV1531';
+```
+
+Så här kan det se ut om vi gör det direkt i klienten.
+
+[FIGURE src=image/webtec/sqlite/07-update.png?w=w3 caption="Nu är databasen uppdaterad."]
+
+Men kom ihåg att det är nästan alltid en bra idé att spara undan sin kod i filer, då blir det enklare att komma ihåg hur man gjorde och man kan gå tillbaka till sin exempelkod och se hur man skrev.
+
+
+
+Ta bort rader i tabellen med DELETE {#delete}
+--------------------------------------
+
+Man kan ta bort rader från tabellen med DELETE.
+
+```text
+-- Remove a specific course
+DELETE FROM course WHERE name = 'design';
+
+-- Remove all rows in the table
+DELETE FROM course;
+```
+
+Nu är tabellen tom.
+
+[FIGURE src=image/webtec/sqlite/08-delete.png?w=w3 caption="Nu kan vi ställa frågor mot databasen."]
+
+Som tur är så kan vi enkelt återställa tabellens innehåll genom att läsa in filerna igen.
+
+```text
+-- Add the initial rows to the table
+.read insert.sql
+
+-- And if you saved your updates...
+.read update.sql 
+```
 
 
 

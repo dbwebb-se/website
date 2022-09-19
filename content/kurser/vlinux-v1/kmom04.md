@@ -42,7 +42,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Skapa ett Bash-script, `kmom04/dockerhub.bash`, som kör din publicerade image. Mappen med JSON-filen ska servas via en volym där sökvägen tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Du ska till exempel kunna stå i mappen `kmom04` och köra kommandot: `$ bash dockerhub.bash "server/data"`.
 
-1. Containern ska kunna nås via port 8080 (-p).
+1. Containern ska kunna nås via miljövariablen DBWEBB_PORT om den är satt - annars port 8080 (-p).
 
 1. Containern ska köras i bakgrunden (-d).
 

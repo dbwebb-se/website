@@ -4,6 +4,7 @@ author:
     - efo
 category: python
 revision:
+    "2022-09-19": (C, aar) Tog bort krav om egen modul för menyn.
     "2020-05-25": (B, aar) Skrev om uppgifter för hantera automaträttning.
     "2020-03-30": (A, moc) Ny version för att introducerar automaträttning.
 ...
@@ -66,17 +67,13 @@ cd me/kmom06/analyzer
 
 Se till att din katalog `analyzer` innehåller filen `phil.txt` och `lorum.txt`. `phil.txt` ska vara **FÖRVALT** i programmet när man startar det.
 
-1. Ni får inte använda externa moduler för att göra analyzen. T.ex. får ni inte använda `collections` modulen. Ni ska skriva koden själva. Däreom får ni använda t.ex. `itemgetter` för att sortera er data.
+1. Ni får inte använda externa moduler för att göra analyzen. T.ex. får ni inte använda `collections` modulen. Ni ska skriva koden själva. Däremot får ni använda t.ex. `itemgetter` för att sortera er data.
 
-1. Ditt program ska bestå av tre moduler: `main.py`, `menu.py` och `analyzer.py`.
+1. Ditt program ska bestå av två moduler: `main.py` och `analyzer.py`.
 
 1. Du skall skapa funktioner för textanalysering i modulen `analyzer.py`.
 
-1. Modulen `menu.py` skall enbart innehålla kod för att visa menyn.
-
-1. Filen `main.py` skall enbart innehålla kommandoloopen, tänk while-loopen i marvin, och använda sig av modulerna `analyzer` och `menu` för att lösa uppgiften. Koden ska ligga i en funktion som heter `main`. **Glöm inte `if __name__ == "__main__"` i main.py för att starta programmet**.
-
-1. Menyvalet `menu` ska skriva ut menyn och vilka val man kan göra.
+1. Filen `main.py` skall enbart innehålla kommandoloopen, tänk while-loopen i marvin, och använda sig av modulen `analyzer` för att lösa uppgiften. Koden ska ligga i en funktion som heter `main`. **Glöm inte `if __name__ == "__main__"` i main.py för att starta programmet**.
 
 1. Analysera antal rader (ej tomma), ord och bokstäver med menyvalen `lines`, `words` och `letters`. Skriv minst en funktion för varje kommando i `analyzer.py`.
 
@@ -91,7 +88,7 @@ Se till att din katalog `analyzer` innehåller filen `phil.txt` och `lorum.txt`.
 
 
 
-1. Analysera även ord- och bokstavsfrekvensen och skriv ut de sju mest förekommande orden och bokstäverna. Använd menyvalen `word_frequency` och `letter_frequency`. Ange frekvensen i % av totala mängden ord eller bokstäver. Avrunda till en (1) decimal. Använd strukturen `"<bokstav/ord>: <antal> | <procent>%"` i utskriften. Utskriften ska vara soreterad i storleks ordning och bokstavsordning sjunkande. Om två ord har 5 ska orden sorteras i bokstavsordning sjunkande. Skriv minst en funktion för varje kommando i `analyzer.py`.
+1. Analysera även ord- och bokstavsfrekvensen och skriv ut de sju mest förekommande orden och bokstäverna. Använd menyvalen `word_frequency` och `letter_frequency`. Ange frekvensen i % av totala mängden ord eller bokstäver. Avrunda till en (1) decimal. Använd strukturen `"<bokstav/ord>: <antal> | <procent>%"` i utskriften. Utskriften ska vara sorterad i storleks ordning och bokstavsordning sjunkande. Om två ord har 5 ska orden sorteras i bokstavsordning sjunkande. Skriv minst en funktion för varje kommando i `analyzer.py`.
 
     ```python
 
@@ -115,7 +112,7 @@ Se till att din katalog `analyzer` innehåller filen `phil.txt` och `lorum.txt`.
 
 
 
-1. Ditt program skall klara av menyvalet `all` som kör alla analyserings funktioner i följd och skriver ut resultatet. Utskriften ska vara soreterad i storleks ordning och bokstavsordning sjunkande. Om två ord har 5 ska orden sorteras i bokstavsordning sjunkande.
+1. Ditt program skall klara av menyvalet `all` som kör alla analyserings funktioner i följd och skriver ut resultatet. Utskriften ska vara sorterad i storleks ordning och bokstavsordning sjunkande. Om två ord har 5 ska orden sorteras i bokstavsordning sjunkande tips (använd er av en lista och tupler för att göra sorteringen).
 
     ```python
 
@@ -167,6 +164,7 @@ Se till att din katalog `analyzer` innehåller filen `phil.txt` och `lorum.txt`.
                                 s: 9 | 6.4%"
     ```
 
+1. Gör menyvalet `q` som avslutar programmet.
 
 1. Testa, validera och publicera din kod enligt följande.
 

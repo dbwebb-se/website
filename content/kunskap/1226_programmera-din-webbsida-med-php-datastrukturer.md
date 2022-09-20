@@ -351,7 +351,7 @@ $paintings["Niels Simonsen"] = "img/Episoden_af_Træfning_ved_Sankelmark,_den_6.
 $paintings["Gustave Moreau"] = "img/Moreau_-_Thomyris_et_Cyrus,_Inv._13978.jpg";
 ```
 
-I koden ovan skapar jag först en array med 4 key/value par.I varje par är det konstnärens namn som är nyckeln och värdet är sökvägen till bildfilen som innehåller tavlan.
+I koden ovan skapar jag först en array med 4 key/value par. I varje par är det konstnärens namn som är nyckeln och värdet är sökvägen till bildfilen som innehåller tavlan.
 
 De två sista raderna visar hur jag kan lägga till ytterligare två konstnärer som nycklar och tilldela dem var sitt värde.
 
@@ -797,9 +797,14 @@ $_SESSION = array();
 // Note: This will destroy the session, and not just the session data!
 if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
-    setcookie(session_name(), '', time() - 42000,
-        $params["path"], $params["domain"],
-        $params["secure"], $params["httponly"]
+    setcookie(
+        session_name(),
+        '',
+        time() - 42000,
+        $params["path"],
+        $params["domain"],
+        $params["secure"],
+        $params["httponly"]
     );
 }
 
@@ -813,7 +818,7 @@ exit();
 
 I slutet av koden har jag lagt till en redirect till sessionssidan. Nu kan jag skapa en länk på sessionssidan som leder till `session_destroy.php`, när man klickar på den kommer sessionen förstöras och man hamnar tillbaka på sidkontrollern `session.php` som visar detaljer om den nyskapade sessionen.
 
-Det kan se ut så här. KLicka på länken med "Förstör sessionen" som leder till sidkontrollern `session_destroy.php`.
+Det kan se ut så här. Klicka på länken med "Förstör sessionen" som leder till sidkontrollern `session_destroy.php`.
 
 [FIGURE src=image/webtec/phpstruct/session_destroy_click.png?w=w3 caption="Då klickar vi på länken som leder till sidan som skall förstöra sessionen."]
 
@@ -849,7 +854,7 @@ header("Location: session.php");
 exit();
 ```
 
-Vi får inte glömma att alltid placera konfiguraitonsfilen överst, det är där som sessionen startas för varje sidanrop. Den måste altid finnas överst i varje sidkontroller.
+Vi får inte glömma att alltid placera konfigurationsfilen överst, det är där som sessionen startas för varje sidanrop. Den måste altid finnas överst i varje sidkontroller.
 
 I koden ovan placeras två värden i sessionen, dels ett slumpmässigt tal.
 
@@ -1037,9 +1042,14 @@ function destroySession () : void {
     // Note: This will destroy the session, and not just the session data!
     if (ini_get("session.use_cookies")) {
         $params = session_get_cookie_params();
-        setcookie(session_name(), '', time() - 42000,
-            $params["path"], $params["domain"],
-            $params["secure"], $params["httponly"]
+        setcookie(
+            session_name(),
+            '',
+            time() - 42000,
+            $params["path"],
+            $params["domain"],
+            $params["secure"],
+            $params["httponly"]
         );
     }
 

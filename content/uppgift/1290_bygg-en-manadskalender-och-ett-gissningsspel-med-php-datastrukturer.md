@@ -3,13 +3,14 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2022-09-20": "(C, mos) Stavning."
     "2022-09-14": "(B, mos) Genomgången och tog bort galleriuppgiften."
     "2022-08-11": "(A, mos) Första utgåvan till webtec-v2."
 ...
 Bygg en månadskalender och ett gissningsspel med PHP datastrukturer
 ===================================
 
-Du skall bygga ut din webbplats och dels skapa een almanacka i form av en måadskalender med bilder och dels skall du göra ett litet gissningsspel. I övningen kommer du att få jobba med att organisera ditt PHP-kodande och jobba med bland annat arrayer och funktioner.
+Du skall bygga ut din webbplats och dels skapa en almanacka i form av en månadskalender med bilder och dels skall du göra ett litet gissningsspel. I övningen kommer du att få jobba med att organisera ditt PHP-kodande och jobba med bland annat arrayer och funktioner.
 
 Du kommer också få träna på HTML formulär med POST och sessioner.
 
@@ -48,7 +49,7 @@ I denna uppgiften kan du troligen återanvända en del av den koden du gjorde i 
 
 ### Struktur {#struktur}
 
-Glöm inte att använda strukturen med sidkontrollers och vyer när du löser uppgiften.
+Du jobbar vidare med strukturen med sidkontrollers och vyer när du löser uppgiften.
 
 Du skall också organisera din kod i funktioner, om och när du anser att det passar.
 
@@ -73,7 +74,7 @@ cp example/database/src/calendar.php me/report/src
 
 Inkludera nu filen `src/calendar.php` i din `config/config.php`.
 
-Titta på funktionerna i filen. Prova att använda dem och skriva ut deras innehåll med en var_dump i en sidkontroller, bara för att se att du kan använda dem och du kan se vad de innehåller.
+Titta på funktionerna i filen. Prova att använda dem och skriva ut innehåll i det som funktionerna returnerar med en var_dump i en sidkontroller, bara för att se att du kan använda dem och du kan se vad de innehåller.
 
 
 
@@ -87,7 +88,7 @@ Utför följande krav.
 
 Från övningen förutsetts att du har följande implementerat.
 
-1. En sidkontroller `public/session.php` där du kan visa detaljer om sessionen, dess innehåll och du kan förstöra sessionen. Denna sidkontroller är synlig i din navbar.
+1. En sidkontroller `public/session.php` där du kan visa detaljer om sessionen, dess innehåll och att du kan förstöra sessionen. Denna sidkontroller är synlig i din navbar.
 
 1. Filen `src/functions.php` med funktioner för att förstöra sessionen och för att jobba med flashmedelanden via sessionen.
 
@@ -116,7 +117,7 @@ Om du vill så kan du uppdatera ditt galleri så att det kan visa 4 eller 6 bild
 
 ### Krav 1: Almanacka med bild {#manadskal}
 
-Du skall göra en årsalmanacka för årets 12 månader i innevarande år där du visar en månad tillsammans med en bild, en så kallad foto-kalender.
+Du skall göra en årsalmanacka för årets 12 månader i innevarande år där du visar en månad tillsammans med en bild, en så kallad fotokalender.
 
 Gör en sidkontroller `photocal.php` som tar ett argument via querysträngen `?month=6` och därefter visas månaden juni upp tillsammans med en bild. Skickar man in `?month=7` så visas juli upp och missar man att skicka in något alls så visas aktuell månad. Du kan också välja att skicka in både månad och år via querysträngen, det är upp till dig hur du konstruerar querysträngen.
 

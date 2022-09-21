@@ -80,6 +80,9 @@ Titta på följande:
 
 ###Lästips {#lastips}
 
+1. Tidigare år har jag gett längre återkoppling på kmom02 inlämningar som studenter har frågat efter. Jag rekommenderar att läsa igenom dem för att se hur man kan lösa sakerna på olika sätt.
+    - [Återkoppling på students marvin4](https://github.com/dbwebb-se/python/issues/54).
+
 1. [Exempel och förklaringar av valideringsfel](https://github.com/dbwebb-se/python/issues/46)
 
 

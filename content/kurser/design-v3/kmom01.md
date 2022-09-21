@@ -143,6 +143,8 @@ I *design* kommer vi fokusera på perspektivet *hållbarhet* och vilken roll vi 
 
 I kursmoment 05 och 06 kommer vi se några praktiska exempel på hur vi som programmerare kan skapa en mer hållbar webb. För att vi har tillräcklig förståelse för vad hållbarhet innebär kommer vi under kursmoment 01-04 skapa oss en grundförståelse om hållbarhet och vad det innebär.
 
+I följande video beskriver professor Johan Rockström jordklotets nuvarande status och hur vi påverkar det.
+
 [YOUTUBE src="8Sl28fkrozE" width=700 caption="10 years to transform the future of humanity -- or destabilize the planet | Johan Rockström"]
 
 

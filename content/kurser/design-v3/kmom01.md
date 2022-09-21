@@ -74,6 +74,7 @@ Bläddra lite i kursboken "[The Principles of Beautiful Web Design](kunskap/boke
 Både tredje och fjärde utgåvan av boken fungerar, materialet är uppdaterat och fjärde upplagan är något längre. Boken, i sin tredje utgåva, finns tillgänglig online via [BTHs bibliotek](http://bth.summon.serialssolutions.com/?#!/search?ho=t&l=sv-SE&q=9780992279448).
 
 
+
 ### Design med HTML5 och CSS3  {#guide}
 
 1. Läs igenom följande sektion i guiden "[Design med HTML5 och CSS3](guide/design-med-html5-och-css3)".
@@ -83,11 +84,13 @@ Både tredje och fjärde utgåvan av boken fungerar, materialet är uppdaterat o
 I guiden tittar vi på hur vi kan använda CSS tillsammans med HTML för att implementera designprinciper. I sektionen [Grunderna](guide/design-med-html5-och-css3/grunderna) tittar vi på grundläggande struktur för HTML och på vilka sätt vi kan applicera styling med CSS. I [Responsivitet](guide/design-med-html5-och-css3/responsivitet) tittar vi på hur vi med hjälp av media queries kan anpassa en webbplats för både stora och små enheter.
 
 
+
 ### Markdown {#markdown}
 
 Läs följande för att lära dig grunderna i textformatet Markdown. Markdown är ett populärt format för att låta användaren skriva text som är läsbar för ögat men ändå enkel att konvertera till HTML med en parser. I kursen kommer du att skriva dina webbsidor med Markdown.
 
 1. Kika på vad Markdown innebär genom att läsa [John Grubers introduktion till Markdown](https://daringfireball.net/projects/markdown/basics). För att testa själv så öppnar du en [Gist](https://gist.github.com/) och skriver i Markdown, det gör att du kan testa olika konstruktioner under tiden som du läser om dem.
+
 
 
 ### Git & GitHub {#git}
@@ -101,6 +104,7 @@ I kursen introduceras Git och GitHub. Git är ett versionshanteringssystem för 
 1. Ägna en stund åt att bekanta dig med webbplatser för GitHub. Du kan även kort och översiktligt kika på de guider och videor som finns för GitHub. Notera att de täcker så mycket mer än vad vi kommer jobba med i kursen så det kan räcka att du endast noterar att det existerar [guider för hur man jobbar med GitHub](https://guides.github.com/).
 
 
+
 ### CSS {#css}
 
 I detta kursmomentet jobbar vi med CSS. Läs följande.
@@ -110,6 +114,8 @@ I detta kursmomentet jobbar vi med CSS. Läs följande.
     * Categorizing CSS Rules
     * Base Rules
     * Layout Rules
+
+
 
 Videoserie {#videoserie}
 -------------------------------------------
@@ -125,6 +131,20 @@ Kursen har en videoserie för hur man kan jobba med Pico:
 Under kursens gång behandlar vi även mer mjuka delar av programvaruteknik. I denna första videon i PT-video-serien berättar Emil om olika roller och hur man kommunicerar på olika sätt.
 
 [YOUTUBE src="QO6tQcwdO_o" width=700 caption="Roller i teams"]
+
+
+
+Hållbarhet {#hallbarhet}
+-------------------------------------------
+
+Som en del av BTH's uppdrag har 5 perspektiv på utbildning definierats: *Hållbarhet, forskningsanknytning, samverkan, internationalisering och jämställdhet*. Perspektiven integreras i undervisningen för att belysa dessa viktiga områden.
+
+I *design* kommer vi fokusera på perspektivet *hållbarhet* och vilken roll vi som programmerare har i den sammanhangen.
+
+I kursmoment 05 och 06 kommer vi se några praktiska exempel på hur vi som programmerare kan skapa en mer hållbar webb. För att vi har tillräcklig förståelse för vad hållbarhet innebär kommer vi under kursmoment 01-04 skapa oss en grundförståelse om hållbarhet och vad det innebär.
+
+[YOUTUBE src="8Sl28fkrozE" width=700 caption="10 years to transform the future of humanity -- or destabilize the planet | Johan Rockström"]
+
 
 
 Övningar & Uppgifter  {#ovningar_uppgifter}

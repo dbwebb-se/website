@@ -4,7 +4,7 @@ author:
     - efo
 category: python
 revision:
-    "2022-09-19": (C, aar) Tog bort krav om egen modul för menyn.
+    "2022-09-19": (C, aar) Tog bort krav om egen modul för menyn och la till extrauppgift.
     "2020-05-25": (B, aar) Skrev om uppgifter för hantera automaträttning.
     "2020-03-30": (A, moc) Ny version för att introducerar automaträttning.
 ...
@@ -176,10 +176,17 @@ dbwebb publish analyzer
 ```
 
 
+
 Extrauppgift {#extra}
 -----------------------
 
-Det finns inga extrauppgifter.
+1. Bygg ut ditt program så att det även kan skriva ned resultatet i en fil. Lägg till menyvalet `write [choice]` där `[choice]` är något av de andra menyvalen. Ditt program ska skriva ner resultatet i en fil som heter `output.txt`. Om filen redan innehåller ett värde ska det skrivas över med det nya värdet.
+
+    ```python
+
+    input: "write lines"       file content: "17"
+    input: "wirte words"       file content: "199"
+    ```
 
 
 

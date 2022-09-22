@@ -91,7 +91,7 @@ Vi börjar utvecklingen av vår applikation i Python och micro-ramverket Flask d
 
 Avslutningsvis gör vi ett projekt enligt en specifikation. Projektet är det sista som du gör och tillsammans med inlämningsuppgifter och redovisningar används detta som underlag för att examinera dig från kursen.
 
-[Instruktion till kursmoment 03](webgl/kmom03).
+[Instruktion till kursmoment 03](moln/kmom03).
 
 
 

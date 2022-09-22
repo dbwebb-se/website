@@ -103,7 +103,7 @@ warm-cache:
 	@-mv $(LOCAL_HTDOCS)/cache/anax $(LOCAL_HTDOCS)/cache/anax-pre
 	@-mv $(LOCAL_HTDOCS)/cache/anax-warm $(LOCAL_HTDOCS)/cache/anax
 
-	curl --silent --insecure https://dbwebb.se/om
+	curl --silent --insecure https://dbwebb.se/om > /dev/null
 
 
 

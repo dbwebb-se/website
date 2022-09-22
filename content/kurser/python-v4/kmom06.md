@@ -24,11 +24,11 @@ revision:
 Kmom06: Filer
 ==================================
 
-[WARNING]
+[INFO]
 
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+Gör `dbwebb update` innan du börjar jobba med uppgifterna!
 
-[/WARNING]
+[/INFO]
 
 Som vi jobbat i tidigare kursmoment försvinner all data när vi stänger av programmet, vi har ingen permanent data. Genom att skriva ner data i filer under exekvering kan vi uppnå ett permanent minne åt våra program. I detta kursmomentet kommer ni lära er läsa data från fil och hur man skriver ner data till fil.
 

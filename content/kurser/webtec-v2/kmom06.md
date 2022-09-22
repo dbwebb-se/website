@@ -27,7 +27,7 @@ När vi kan vår SQL så använder vi den kunskapen till att koppla samman PHP o
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
-<!--stop-->
+<!--stop -->
 
 
 Läs & Studera  {#lasanvisningar}
@@ -55,7 +55,7 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 Läs enligt följande.
 
-1. ...
+1. På sidan för föreläsningarna ovan så finns läsanvisningar som hjälper dig att studera SQL och databaser. Välj bland dem för att läsa på mer om begreppen.
 
 
 <!--
@@ -63,7 +63,6 @@ Läs enligt följande.
 
 Webbplatsen W3Schools har en guide som är lättilgänglig när man vill komma igång med grunderna i SQL.
 
-1. [SQL Tutorial](https://www.w3schools.com/sql/)
 1. [PHP MySQL Database](https://www.w3schools.com/php/php_mysql_intro.asp). Även om guiden handlar om MySQL så är det samma interface i PHP, PHP PDO, och det används även till SQLite.
 
 
@@ -104,9 +103,12 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-* [Kom igång med SQLite och PHP PDO (v2)](kunskap/kom-igang-med-sqlite-och-php-pdo-v2)
+* [Kom igång med SQLite och PHP PDO (v2)](kunskap/kom-igang-med-sqlite-och-php-pdo-v2) <!-- OBS EJ INSPELAD -->
 
 <!--
+* PHP PDO med SQLite del II?
+* En föreläsning om CRUD? Kanske kopplad till admin för användare?
+
 * I lektionen "[Bygg en databasdriven webbplats med PHP och SQL](./../forelasning/bygg-en-databasdriven-webbplats-med-php-och-sql)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
 -->
 
@@ -119,7 +121,18 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 * Gör uppgiften "[Bygg en databasdriven webbplats med PHP och SQL](uppgift/bygg-en-databasdriven-webbplats-med-php-och-sql)".
 
 <!--
-Byt uppgift, kalender ish? med GET
+Hantera användare i en databas? Inloggning. Session.
+
+Användaren kan logga in, SELECT, färdig databas/tabell med admin/admin & doe/doe.
+
+Användaren kan byta sitt eget lösenord med UPDATE?
+
+Användaren kan radera sig själv från systemet DELETE?
+
+Användaren kan registrera sig själv INSERT?
+
+
+Vänta med CR UD till databaskursen kanske.
 
 Lägg till notiser till kalendern (CRUD)
 

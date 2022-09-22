@@ -133,6 +133,10 @@ I kalendern visar du vecka för vecka med sitt veckonummer, datum för dagen och
 
 Se till att söndagar är röda i din style.
 
+<!--
+* Använd minst 4/12 olika bilder.
+-->
+
 **EXTRA**
 
 Gör bara detta om du känner att du har tid, lust och energi.

@@ -84,7 +84,10 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 * [SQLite, en filbaserad databas](./../forelasning/sqlite-en-filbaserad-databas), en introduktion till databasen SQLite, dess användningsområden, features och några av dess klienter som går att använda för att jobba mot databasen.
 * [SQL med SQLite](./../forelasning/sql-med-sqlite), grunderna i SQL med databasen SQLite, hur man skapar databasens schema och hur man manipulerar innehållet i tabellerna samt hur man skapar rapporter från databasen.
 
-<!-- Del I av PHP PDO föreläsning, grunderna samt rapporter till sökformulär -->
+<!--
+* Del I av PHP PDO föreläsning, grunderna samt rapporter till sökformulär
+* PHP PDO med SQLite del I?
+-->
 
 
 
@@ -125,9 +128,23 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-* [Kom igång med SQL och databasen SQLite med terminalklienten sqlite3](kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3). När du jobbar igenom guiden kan du spara din kod i katalogen `me/kmom05/sqlite`.
+* [Kom igång med SQL och databasen SQLite med terminalklienten sqlite3](kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3). Spara din kod i katalogen `me/kmom05/sqlite`.
 
 * _Här kommer att läggas till en övning med PHP PDO som visar hur man kopplar sig till databasen med PHP och gör ett enkelt sökformulär._
+
+<!--
+
+* Splitta artikeln i kmom06 till två artiklar.
+
+* Mer fokus på att använda befintlig databas och mindre på att bygga en egen databas?
+
+* Sökformulär mot databasen?
+
+    * Dels visa sökresultatet likt Google
+    * Visa namn i en tabell
+    * Visa detaljer om ett namn ?name=Mikael
+    * Detaljer om datum ?date=29/9
+-->
 
 
 
@@ -141,6 +158,20 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 * Gör uppgiften "[Bygg en databas med SQL](uppgift/bygg-en-databas-med-sql)".
 
 Byt uppgift, kalender ish? med GET
+* Gör uppgiften "[Bygg en databas med SQL](uppgift/bygg-en-databas-med-sql)". <!-- Nej, inte så mycket fokus på att bygga en egen databas, istället använder vi en som finns. -->
+
+<!--
+Sök på namn.
+Sök på datum.
+Sök mot flera tabeller.
+
+Namndatabasen, en "sökmotor".
+Månens faser?
+Helgdagar?
+Koppla till kalendern och lägg in namnsdag på varje dag.
+
+
+
 
 * Lägg tillbaka PHP-guiden och lägg till stycke om databas/PDO för att komplettera artikeln.
 
@@ -150,17 +181,10 @@ Inför labbarna (kmom04-06) om det känns som det behövs och om det känns att 
 
 1. Gör uppgiften "[PHP lab 5: utforska inbyggda funktioner](uppgift/php-lab5-utforska-inbyggda-funktioner)". Spara filerna i katalogen `me/kmom05/lab5`.
 
-Namndatabasen, en "sökmotor".
-Månens faser?
-Helgdagar?
-Koppla till kalendern och lägg in namnsdag på varje dag.
 
 Extrauppgift minnessaker från fil till databasen.
 
 1. Gör laborationen "[SQL lab 1, introduktion till SQL](uppgift/sql-lab-1-introduktion-till-sql)" som låter dig träna på SQL kommandon.
-
-
-
 
 1. Gör uppgiften "[Gör en multisida för att söka i en databas](uppgift/bygg-en-multisida-for-att-soka-i-en-databas)". Spara filerna under `me/kmom05/jetty`.
 
@@ -175,6 +199,26 @@ Extrauppgift minnessaker från fil till databasen.
 1. Flytta användare och lösenord från din `config.php` och lägg in dem i en ny tabell i databasen.
 
 -->
+
+
+
+<!--
+### Överkurs och extra uppgifter {#extra}
+
+Här följer extra uppgifter som du kan utföra för att lära dig mer, om du har tid, lust och energi.
+
+-->
+
+<!--
+* Koppla kalender till todo, troligen för svårt?
+
+* Sök namn
+
+* Login, gör ett komplett loginskript/hantering
+* Extra övning som visa inloggninig, eller lägg som extrauppgift
+* Inloggning av användare med lösenord.
+-->
+
 
 
 

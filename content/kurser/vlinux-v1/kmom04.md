@@ -48,6 +48,8 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Containern ska ha namnet "myserver" (--name).
 
+[YOUTUBE src=bKkWw9b09Uw width=639 caption="Har du fått med alla delar?"]
+
 ### Testa din inlämning {#test}
 
 Du kan köra vissa tester på din inlämning och se om de delarna uppfyller kraven. Rättningen kommer endast genomföras om testerna går igenom.

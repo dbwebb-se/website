@@ -96,12 +96,12 @@ docker: clean-cache-anax
 warm-cache:
 	@$(call HELPTEXT,$@)
 	# Update this to pre warm the (local) cache
-	@-install -d -m 777 $(LOCAL_HTDOCS)/cache/anax-warm
-	@-install -d -m 777 $(LOCAL_HTDOCS)/cache/anax
+	install -d -m 777 $(LOCAL_HTDOCS)/cache/anax-warm
+	install -d -m 777 $(LOCAL_HTDOCS)/cache/anax
 	bash -c "time php $(LOCAL_HTDOCS)/script/cache-warm.php"
-	@-rm -rf $(LOCAL_HTDOCS)/cache/anax-pre
-	@-mv $(LOCAL_HTDOCS)/cache/anax $(LOCAL_HTDOCS)/cache/anax-pre
-	@-mv $(LOCAL_HTDOCS)/cache/anax-warm $(LOCAL_HTDOCS)/cache/anax
+	rm -rf $(LOCAL_HTDOCS)/cache/anax-pre
+	mv $(LOCAL_HTDOCS)/cache/anax $(LOCAL_HTDOCS)/cache/anax-pre
+	mv $(LOCAL_HTDOCS)/cache/anax-warm $(LOCAL_HTDOCS)/cache/anax
 
 	curl -s --head https://dbwebb.se
 

@@ -168,7 +168,7 @@ Se till att följande frågor besvaras i din redovisningstext.
 * Hur tänker du kring funktionern och hittade du mer kod som du valde att strukturera i funktioner?
 * Kan du se skillnaden på HTML formulär med GET och POST?
 * Gick det bra när du jobbade med SESSION?
-* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. Berätta även om du försökte på någon av extrauppgifterna.
+* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. <!--Berätta även om du försökte på någon av extrauppgifterna.-->
 * Vilken är din TIL för detta kmom?
 
 Glöm inte att testa din inlämning med `dbwebb test kmom04`.

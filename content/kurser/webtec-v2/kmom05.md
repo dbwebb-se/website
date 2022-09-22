@@ -8,33 +8,33 @@ views:
 author:
     - mos
 revision:
-    "2022-06-28": "(A, mos) Första utgåvan."
+    "2022-09-22": "(PA1, mos) Släppt till early adopter."
 ...
 Kmom05: SQL och SQLite
 ==================================
 
+<!--
 [WARNING]
 
 **Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
 
 [/WARNING]
 
-<!--
-
+-->
 
 [WARNING]
 
-**Om du är en early adopter så går det nu bra att jobba igenom detta kursmomentet, det sista som uppdaterades var att uppgiften bytte namn och skalades ned i omfattning.**
+**Om du är en early adopter så går det nu bra att börja jobba igenom detta kursmomentet, det saknas dock ännu en övning och själva uppgiften. Men det finns en övning och föreläsningar som man kan börja att jobba med.**
 
 [/WARNING]
 
--->
+Låt oss titta på databaser och hur de kan kopplas till en webbplats för att göra ett embryo till en sökmotor.
 
-Låt oss titta på databaser. Vi skall använda databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen eftersom databasen ligger i en enda fil och det finns inga användare eller behörigheter att konfigurera.
+Vi skall använda databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen då allt är samlat i en fil och det finns inget behov av att konfigurera användare eller behörigheter.
 
-Till databasen SQLite behövs klientprogram som kan användas för att prata med databasen. <!-- Vi prövar olika klienter, en variant för desktop och en terminalbaserad. -->
+Till databasen SQLite installerar vi ett klientprogram som kan användas för att prata med databasen och vi installerar PHP PDO som gör att vi kan koppla PHP-kod till databasen. <!-- Vi prövar olika klienter, en variant för desktop och en terminalbaserad. -->
 
-I en databas, en relationsdatabas som SQLite, så pratar vi SQL med databasen. Vi skriver SQL uttryck för att skapa tabeller och för att lägga till, uppdatera, visa och radera data från databasen.
+I en relationsdatabas som SQLite pratar vi SQL med databasen. Vi skriver SQL uttryck för att skapa tabeller som utgör databasens schema (struktur). Vi använder även SQL för att skapa rapporter från databasens innehåll samt redigera databasens innehåll.
 
 <!--more-->
 
@@ -53,7 +53,7 @@ Så här kan det se ut när du är klar med kursmomentet.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
-<!--stop-->
+<!--st op-->
 
 
 
@@ -84,6 +84,8 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 * [SQLite, en filbaserad databas](./../forelasning/sqlite-en-filbaserad-databas), en introduktion till databasen SQLite, dess användningsområden, features och några av dess klienter som går att använda för att jobba mot databasen.
 * [SQL med SQLite](./../forelasning/sql-med-sqlite), grunderna i SQL med databasen SQLite, hur man skapar databasens schema och hur man manipulerar innehållet i tabellerna samt hur man skapar rapporter från databasen.
 
+<!-- Del I av PHP PDO föreläsning, grunderna samt rapporter till sökformulär -->
+
 
 
 ### Litteratur  {#litteratur}
@@ -93,7 +95,7 @@ Läs enligt följande.
 1. På sidan för föreläsningarna ovan så finns läsanvisningar som hjälper dig att studera SQL och databaser. Välj bland dem för att läsa på mer om begreppen.
 
 1. I kursboken Webbutveckling med PHP och MySQL är följande kapitel relevanta att läsa igenom översiktligt.
-    * Kap 8 Databaser. Kapitlet handlar om databasen MySQL men är ändå relevant och ger en god introduktion till databaser och SQL.
+    * Kap 8 Databaser. Kapitlet handlar om databasen MySQL men är ändå relevant och ger en viss introduktion till databaser och SQL tillsammans med PHP.
 
 
 
@@ -125,11 +127,7 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 * [Kom igång med SQL och databasen SQLite med terminalklienten sqlite3](kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3). När du jobbar igenom guiden kan du spara din kod i katalogen `me/kmom05/sqlite`.
 
-<!--
-* I lektionen "[Bygg en databas med SQL](./../forelasning/bygg-en-databas-med-sql)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
-
-Sökformulär mot databasen?
--->
+* _Här kommer att läggas till en övning med PHP PDO som visar hur man kopplar sig till databasen med PHP och gör ett enkelt sökformulär._
 
 
 
@@ -137,9 +135,11 @@ Sökformulär mot databasen?
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-* Gör uppgiften "[Bygg en databas med SQL](uppgift/bygg-en-databas-med-sql)".
+* _Här kommer en uppgift att placeras som låter dig jobba mot en SQLite databas och bygga ett sökformulär._ Spara din kod i `me/report`.
 
 <!--
+* Gör uppgiften "[Bygg en databas med SQL](uppgift/bygg-en-databas-med-sql)".
+
 Byt uppgift, kalender ish? med GET
 
 * Lägg tillbaka PHP-guiden och lägg till stycke om databas/PDO för att komplettera artikeln.
@@ -187,18 +187,11 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i din redovisningstext.
 
-* Hur kändes det att bygga en databasdriven webbplats?
-* Var det svårt att komma in i hur du jobbar med SQL mot databasen och sedan SQL mot databasen via PHP eller kändes det som logiskt? Fanns det något som gav dig bekymmer?
+* Var det lätt att förstå SQL eller kändes det som en helt ny teknik?
+* Var detta din första bekantskap med databaser och SQL, eller har du tidigare kunskaper som du kan relatera till?
+* Hur gick det att utföra övningen med SQLite och SQL, var det något du fastnade på?
+* Hur gick det med övningarna i PHP PDO och SQLite/SQL, var det något som kändes utmanade?
+* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. <!--Berätta även om du försökte på någon av extrauppgifterna.-->
 * Vilken är din TIL för detta kmom?
 
 Glöm inte att testa din inlämning med `dbwebb test kmom05`.
-
-
-
-<!--
-* Var det lätt att förstå SQL eller kändes det som en helt ny teknik?
-* Var detta din första bekantskap med databaser och SQL, eller har du tidigare kunskaper som du kan relatera till?
-* Hur gick det att utföra övningarna med enbart SQLite, var det något du fastnade på?
-* Hur gick det med övningarna i PDO och SQLite, var det något som tog extra mycket tid?
-* Var det något som var extra svårt eller utmanande i kursmomentet?
--->

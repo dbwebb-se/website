@@ -64,7 +64,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Skapa ett Bash-script, `kmom05/dockerhub.bash`, Skriptet ska göra följande:
    - Skapa ett nätverk med namet `dbwebb`.
    - Starta upp båda kontainrarna med rätt options.
-   - Servern ska även kunna nås via webbläsaren.
+   - Servern ska även kunna nås via webbläsaren och port 8080. (localhost:8080)
    - Båda containrarna ska ha egna namn.
    - Server-containern ska köras i bakgrunden.
    - Klienten ska använda serverns namn. Du behöver då byta ut "localhost" i skriptet mot namnet du ger servern.

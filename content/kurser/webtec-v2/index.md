@@ -141,6 +141,8 @@ Vi skall titta på databasen SQLite som är en filbaserad databas. En filbaserad
 
 I en databas, en relationsdatabas som SQLite, så pratar vi SQL med databasen. Vi skriver SQL uttryck för att skapa tabeller och för att lägga till, uppdatera, visa och radera data från databasen.
 
+Vi skapar en sökmotor som kan söka i en befintlig databas och presentera resultatet i en webbsida.
+
 [Instruktion till kursmoment 05](./kmom05).
 
 

@@ -19,15 +19,30 @@ Kmom06: PHP, PDO och SQL
 
 [/WARNING]
 
+<!--
+[WARNING]
+
+**Om du är en early adopter så går det nu bra att börja jobba igenom detta kursmomentet, det saknas dock ännu en övning och själva uppgiften. Men det finns en övning och föreläsningar som man kan börja att jobba med.**
+
+[/WARNING]
+-->
+
 PHP PDO, CRUD
 
 När vi kan vår SQL så använder vi den kunskapen till att koppla samman PHP och databasen för att bygga en databasdriven webbplats. Via webbplatsen skall du kunna lägga till, uppdatera och ta bort innehåll. Detta är de vanliga funktionerna för create, read, update, delete och kallas även CRUD.
 
 
+<!--
+[FIGURE src="image/webtec/pdo/insert-filled.png?w=w3" caption="Formuläret är ifyllt med värden."]
+
+[FIGURE src="image/webtec/pdo/search-delete.png?w=w3" caption="Klicka på ett id för att se mer, eller update/delete för att modifiera raden."]
+-->
+
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 <!--stop -->
+
 
 
 Läs & Studera  {#lasanvisningar}

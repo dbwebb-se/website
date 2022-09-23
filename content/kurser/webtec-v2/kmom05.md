@@ -8,25 +8,10 @@ views:
 author:
     - mos
 revision:
-    "2022-09-22": "(PA1, mos) Släppt till early adopter."
+    "2022-09-23": "(A, mos) Släppt till early adopter."
 ...
 Kmom05: SQL och SQLite
 ==================================
-
-<!--
-[WARNING]
-
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
-
-[/WARNING]
-
--->
-
-[WARNING]
-
-**Om du är en early adopter så går det nu bra att börja jobba igenom detta kursmomentet, det saknas dock ännu en övning och själva uppgiften. Men det finns en övning och föreläsningar som man kan börja att jobba med.**
-
-[/WARNING]
 
 Låt oss titta på databaser och hur de kan kopplas till en webbplats för att göra ett embryo till en sökmotor.
 
@@ -36,18 +21,13 @@ Till databasen SQLite installerar vi ett klientprogram som kan användas för at
 
 I en relationsdatabas som SQLite pratar vi SQL med databasen. Vi skriver SQL uttryck för att skapa tabeller som utgör databasens schema (struktur). Vi använder även SQL för att skapa rapporter från databasens innehåll samt redigera databasens innehåll.
 
+Slutligen skapar vi en sökmotor som kan söka i en befintlig databas och presentera resultatet i en webbsida.
+
 <!--more-->
 
-<!--
 Så här kan det se ut när du är klar med kursmomentet.
 
 [FIGURE src="image/webtec/pdo/search-result.png?w=w3" caption="Resultatet från sökningen presenteras."]
-
-[FIGURE src="image/webtec/pdo/insert-filled.png?w=w3" caption="Formuläret är ifyllt med värden."]
-
-[FIGURE src="image/webtec/pdo/search-delete.png?w=w3" caption="Klicka på ett id för att se mer, eller update/delete för att modifiera raden."]
--->
-
 
 
 
@@ -128,14 +108,11 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-* [Kom igång med SQL och databasen SQLite med terminalklienten sqlite3](kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3). Spara din kod i katalogen `me/kmom05/sqlite`.
+* [Kom igång med SQL och databasen SQLite med terminalklienten sqlite3](kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3). I övningen får du lära dig grunderna i databasen SQLite tillsammans med terminalklienten sqlite3 och du får skriva grundläggande SQL-konstruktioner för att jobba mot en databas. Spara din övningskod i katalogen `me/kmom05/sqlite`.
 
-* _Här kommer att läggas till en övning med PHP PDO som visar hur man kopplar sig till databasen med PHP och gör ett enkelt sökformulär._
+* [Kom igång med PHP PDO och databasen SQLite](kunskap/kom-igang-med-php-pdo-och-databasen-sqlite) visar hur PHP PDO används för att koppla sig till databasen SQLite och ställa frågor och visa upp resultatet i en webbsida. Spara din övningskod i katalogen `me/kmom05/pdo` eller jobba direkt under din `me/report`.
 
 <!--
-
-* Splitta artikeln i kmom06 till två artiklar.
-
 * Mer fokus på att använda befintlig databas och mindre på att bygga en egen databas?
 
 * Sökformulär mot databasen?
@@ -152,13 +129,7 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-* _Här kommer en uppgift att placeras som låter dig jobba mot en SQLite databas och bygga ett sökformulär._ Spara din kod i `me/report`.
-
-<!--
-* Gör uppgiften "[Bygg en databas med SQL](uppgift/bygg-en-databas-med-sql)".
-
-Byt uppgift, kalender ish? med GET
-* Gör uppgiften "[Bygg en databas med SQL](uppgift/bygg-en-databas-med-sql)". <!-- Nej, inte så mycket fokus på att bygga en egen databas, istället använder vi en som finns. -->
+* Gör uppgiften "[Bygg en sökmotor med databasen SQLite och PHP PDO](uppgift/bygg-en-sokmotor-med-databasen-sqlite-och-php-pdo)". Spara din kod i `me/report`.
 
 <!--
 Sök på namn.
@@ -169,9 +140,6 @@ Namndatabasen, en "sökmotor".
 Månens faser?
 Helgdagar?
 Koppla till kalendern och lägg in namnsdag på varje dag.
-
-
-
 
 * Lägg tillbaka PHP-guiden och lägg till stycke om databas/PDO för att komplettera artikeln.
 
@@ -235,7 +203,7 @@ Se till att följande frågor besvaras i din redovisningstext.
 * Var detta din första bekantskap med databaser och SQL, eller har du tidigare kunskaper som du kan relatera till?
 * Hur gick det att utföra övningen med SQLite och SQL, var det något du fastnade på?
 * Hur gick det med övningarna i PHP PDO och SQLite/SQL, var det något som kändes utmanade?
-* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. <!--Berätta även om du försökte på någon av extrauppgifterna.-->
+* Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. Berätta även om du försökte på någon av extrauppgifterna.
 * Vilken är din TIL för detta kmom?
 
 Glöm inte att testa din inlämning med `dbwebb test kmom05`.

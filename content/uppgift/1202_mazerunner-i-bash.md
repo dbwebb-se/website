@@ -108,21 +108,7 @@ Tanken är här att vi ska flytta in vår Mazerunner i Docker och de ska prata m
 
 1. Skapa en Dockerfile i mappen `maze/server/` där du kopierar in din server i en container. Servern ska startas när containern startas. Bygg imagen och publicera den på Docker hub med namnet `username/vlinux-mazeserver:latest`. Byt ut _username_ mot ditt egna användarnamn.
 
-1. Skapa en Dockerfile i mappen `maze/client/` där du kopierar in din Bash-klient. Bygg imagen och publicera den på Docker hub med namnet `username/vlinux-mazeclient:latest`. Byt ut _username_ mot ditt egna användarnamn.
-
-1. Skapa ett exekverbart Bash-skript, `maze/kmom05.bash`. Skriptet ska göra följande:
-   - Skapa ett nätverk med namet `dbwebb`.
-   - Starta upp båda kontainrarna med rätt options.
-   - Servern ska även kunna nås via webbläsaren.
-   - Båda containrarna ska ha egna namn.
-   - Server-containern ska köras i bakgrunden.
-   - Klienten ska använda serverns namn. Du behöver då byta ut "localhost" i skriptet mot namnet du ger servern.
-   - Klient-containern ska starta i Bash och i den arbetsmappen du har skriptet i.
-   - Stoppa den/de containrar som är igång och ta bort nätverket.
-
-Så här kan det se ut när du är klar.
-
-[ASCIINEMA src=363527]
+1. Skapa en Dockerfile i mappen `maze/client/` där du kopierar in din Bash-klient. Bygg imagen och publicera den på Docker hub med namnet `username/vlinux-mazeclient:1.0`. Byt ut _username_ mot ditt egna användarnamn.
 
 ### Validera och publicera {#publish}
 

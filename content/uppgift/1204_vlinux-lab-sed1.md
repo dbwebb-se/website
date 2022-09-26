@@ -6,12 +6,13 @@ category:
     - regex
     - lab
 revision:
+    "2022-09-26": (B, lew) Uppdaterad inför HT22.
     "2019-05-24": (A, lew) Ny inför HT19.
 ...
 VLinux lab 4, reguljära uttryck
 ==================================
 
-Laboration för att träna grunderna i regex med verktyget sed. Du kommer jobba med verktyget sed och diverse textfiler. Till din hjälp har du en [regex guide](guide/kom-igang-med-regex/sed).
+Laboration för att träna grunderna i regex med verktyget sed. Du kommer jobba med verktyget sed och diverse textfiler. Till din hjälp har du en [regex guide](/kunskap/regex).
 
 <!--more-->
 
@@ -99,6 +100,8 @@ Det finns ingen extra uppgift.
 Tips från coachen {#tips}
 -----------------------
 
+I uppgiften om epostadreserna är det endast de i den tillhörande filen som ska matchas, inte alla tänkbara adresser.
+ 
 Använd [https://regex101.com/](https://regex101.com/) för att snabbt testa och följa uttrycken. Tänk på att det kan skilja lite mellan programmen som hanterar regex.
 
 

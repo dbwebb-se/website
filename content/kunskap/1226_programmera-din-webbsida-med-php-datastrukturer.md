@@ -702,7 +702,7 @@ Rent tekniskt löses detta genom att webbservern ber webbläsaren att spara en c
 
 Denna sessionsdata är individuell för varje session cookie och den sparas på servern, antingen i filer eller i en databas eller liknande. I PHP återfinns denna data i arrayen `$_SESSION` där det är fritt att spara data som skall leva mellan sidrequester.
 
-För att en session skall fungera så måste den initieras på servern. Man kan också förstöra en session och ta bort all data i den. När sessionen är igång så kan man använda den som en anlig array. Man kan både läsa från sessionen och skriva till den.
+För att en session skall fungera så måste den initieras på servern. Man kan också förstöra en session och ta bort all data i den. När sessionen är igång så kan man använda den som en vanlig array. Man kan både läsa från sessionen och skriva till den.
 
 Så här kan du göra för att komma igång med sessionen i din webbplats.
 

@@ -118,6 +118,9 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
+* [Kom igång med CRUD i databasen SQLite med PHP PDO](kunskap/kom-igang-med-crud-i-databasen-sqlite-med-php-pdo) visar hur PHP PDO kan användas för att jobba med INSERT, UPDATE och DELETE mot en SQLite -databas. Spara din övningskod i katalogen `me/kmom06/crud` eller jobba direkt under din `me/report`.
+
+<!--
 * [Kom igång med SQLite och PHP PDO (v2)](kunskap/kom-igang-med-sqlite-och-php-pdo-v2) <!-- OBS EJ INSPELAD -->
 
 <!--
@@ -133,6 +136,9 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
+* Gör uppgiften "[Bygg inloggning till webbplatsen med PHP PDO och CRUD mot SQLite](uppgift/bygg-inloggning-till-webbplatsen-med-php-pdo-och-crud-mot-sqlite)". Spara din kod i `me/report`.
+
+<!--
 * Gör uppgiften "[Bygg en databasdriven webbplats med PHP och SQL](uppgift/bygg-en-databasdriven-webbplats-med-php-och-sql)".
 
 <!--

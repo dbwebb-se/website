@@ -429,7 +429,7 @@ table, th, td {
 
 Det kan se ut så här om du kör skriptet.
 
-[FIGURE src=image/webtec/pdo1/select.png?w=w3 caption="Resultatet från SELECT utskrivet i en HTML-tabell."]
+[FIGURE src=image/webtec/pdo1/table.png?w=w3 caption="Resultatet från SELECT utskrivet i en HTML-tabell."]
 
 Då har vi koll på hur man ställer en databasfråga med SELECT och hämtar ett resultset och skriver ut det.
 

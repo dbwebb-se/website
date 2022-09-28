@@ -398,7 +398,7 @@ Använd alltid frågetecken `?` och skicka med argumenten `stmt->execute(['Mikae
 Visa innehållet i en tabell {#tabell}
 --------------------------------------
 
-Om vi vill ha en snyggare utskrift av vårt resultset så kan vi skriva ut det i en tabell med en foreach sats. Låt oss kika på hur det kan se ut om vi lägger följande kod i filen `table.sql`. Vi förutsätter att du har exekverat en fråga så att det finns ett resultset att hämta.
+Om vi vill ha en snyggare utskrift av vårt resultset så kan vi skriva ut det i en tabell med en foreach sats. Låt oss kika på hur det kan se ut om vi lägger följande kod i filen `table.php`. Vi förutsätter att du har exekverat en fråga så att det finns ett resultset att hämta.
 
 ```html
 // Get the resultset and print it out

@@ -141,7 +141,7 @@ Se till att söndagar är röda i din style.
 
 Gör bara detta om du känner att du har tid, lust och energi.
 
-Placera in namnen på de som har namnsdagar på rätt plats i kalendern. Du har en funktion i `src/calendar.php` som kan ge dig en array som innehåller namnsdagar kopplade till ett datum.
+Placera in namnen på de som har namnsdagar på rätt plats i kalendern. Du har en funktion i `src/calendar.php` som kan ge dig en array som innehåller namn kopplade till ett datum.
 
 
 

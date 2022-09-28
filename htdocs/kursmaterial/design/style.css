@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 1.25em;
+    margin-bottom: 1.75rem;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 3.5rem;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1.75rem;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 1.75rem;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: 0 auto;
+    padding: 1.75rem 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 1.75rem;
+    padding: 1rem;
+}
+
+.git {
+    background-color: #eee;
+}
+
+.dbwebb {
+    background-color: #eef;
+}
+
+.dbwebb-test {
+    background-color: #efe;
+}
+
+.pico {
+    background-color: #fee;
+}
+
+@media (min-width: 64em) {
+    .container {
+        width: 90%;
+        padding: 3.5rem 2rem;
+    }
+
+    .box {
+        width: 48%;
+    }
+
+    html {
+        font-size: 112.5%;
+    }
+}

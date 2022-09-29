@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2022-09-29": "(B, mos) Förtydliga så att man inte tror det behövs en JOIN."
     "2022-09-23": "(A, mos) Första utgåvan till webtec-v2."
 ...
 Bygg en sökmotor med databasen SQLite och PHP PDO
@@ -79,8 +80,8 @@ I databasen finns ett antal tabeller och de är beskrivna i filen [`example/data
 
 I uppgiften kommer du att jobba mot två tabeller.
 
-* namnlista - Svenska akademins almanacka, namnlängd och namnlista
-* namnbetydelse - Svenska akademin - Namnens ursprung och betydelse
+* namnlista - Svenska akademins almanacka, namnlängd och namnlista.
+* namnbetydelse - Svenska akademin - Namnens ursprung och betydelse.
 
 Du skall söka detaljer om namn och visa upp i webbsidan.
 
@@ -111,7 +112,7 @@ Sidkontrollern skall söka efter **ett** namn i de båda tabellerna och visa det
 
 Man skall kunna nå sidkontrollern via `name.php` och då visas ett meddelande att "du måste fylla i querysträngen".
 
-När man går till sidan via `name.php?query=<namn>`, det vill säga till exempel om man söker på "Mikael" så ser länken ut så här `name.php?query=Mikael`, i detta fallet skall detaljer om namnet visas i sidan. Hämta detaljer från båda databas-tabellerna och presentera dem.
+När man går till sidan via `name.php?query=<namn>`, det vill säga till exempel om man söker på "Mikael" så ser länken ut så här `name.php?query=Mikael`, i detta fallet skall detaljer om namnet visas i sidan. Hämta detaljer från båda databas-tabellerna och presentera dem. Du kan först söka i den ena tabellen och sedan i den andra tabellen.
 
 Om det inte finns detaljer om det namnet man söker efter så skall det inte visas några felutskrifter, det skall bara stå att "ingen information om namnet kunde hittas".
 
@@ -125,7 +126,9 @@ Hämta detaljer från fler tabeller i databasen om valt namn.
 
 Sidkontrollern `search.php` placeras i navbaren.
 
-Sidkontrollern skall söka efter namn och delar av namn i de båda tabellerna och visa upp en lista likt en sökmotors träffar (jämför Google/Bing) för de namn som matchar sökningen. Försök använda detaljer från båda tabellerna och presentera det så snyggt du kan i träfflistan.
+Sidkontrollern skall söka efter namn och delar av namn i de båda tabellerna och visa upp en lista likt en sökmotors träffar (jämför Google/Bing) för de namn som matchar sökningen. 
+
+Det går bra att först söka i ena tabellen och därefter i andra tabellen (två databasfrågor), och sedan skriva ut alla träffar man får.
 
 För varje sökresultat skall det visas vilket namn som matchade. Detta namn skall vara klickbart, om användaren klickar på länken så kommer man till sidan som visar mer detaljer om namnet.
 

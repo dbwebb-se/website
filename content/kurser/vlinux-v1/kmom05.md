@@ -71,7 +71,7 @@ Dessa uppgifter skall utföras och redovisas.
    - Klient-containern ska starta i Bash och i den arbetsmappen du har skriptet i.
    - Stoppa den/de containrar som är igång och ta bort nätverket.
 
-<!--[YOUTUBE src=bKkWw9b09Uw width=639 caption="Har du fått med alla delar?"] -->
+[YOUTUBE src=efQrbQhGN4M width=639 caption="Har du fått med alla delar?"]
 
 ### Testa din inlämning {#test}
 

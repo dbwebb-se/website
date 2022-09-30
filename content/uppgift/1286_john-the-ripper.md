@@ -32,6 +32,8 @@ $ rsync -ravd example/password-files/ me/kmom02/password-files/
 John the Ripper {#john}
 -----------------------------
 
+Exempel på hur du kan använda och installera John the Ripper.
+
 ### Windows
 
 Gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. Kör i Powershell eller bash shell (enable Windows Subsystem for Linux WSL i Windows features om du inte gjort det). Starta john.exe med hela pathen eller uppdatera din användares path (Environment variables) för att kunna starta med "john".
@@ -92,4 +94,4 @@ Redovisa {#redovisa}
 -----------------------
 
 Knäck de lösenord du kan och redovisa resultatet i kmom02 quiz. Vissa lösenord tar
-mycket lång tid att lösa och det är ok att ge sig efter 15-20 min.
+mycket lång tid att lösa och det är ok att ge sig efter 10-15 min.

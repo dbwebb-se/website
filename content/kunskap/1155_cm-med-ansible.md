@@ -31,6 +31,8 @@ För en introduktion till Ansible, läs Digital Oceans artikel [Configuration Ma
 
 [Best practice](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html).
 
+[Working with Ansible Playbooks – Tips & Tricks with Examples](https://spacelift.io/blog/ansible-playbooks)
+
 ## Struktur på Ansible Playbooks {#struktur}
 
 

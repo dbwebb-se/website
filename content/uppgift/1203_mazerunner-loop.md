@@ -41,7 +41,7 @@ $ cp -ri me/kmom05/maze/ me/kmom06/maze2/
 
 ### Mazerunner med loop (del 1) {#del1}
 
-1. Utöka funktionaliteten i `client/mazerunner.bash` så att allt sker i en loop när man startar programmet med `./mazerunner.bash loop`. Skriptet skall börja med att initiera ett nytt spel och visa vilka kartor som finns. Spelaren kan då välja en karta varpå spelaren träder in i första rummet. Därefter fortsätter loopen och väntar på att spelaren skriver in riktningen north, south, east, west, eller help för en hjälptext eller quit för att avsluta.
+1. Utöka funktionaliteten i `client/mazerunner.bash` så att allt sker i en loop när man startar programmet med `./mazerunner.bash loop`. Skriptet skall börja med att initiera ett nytt spel och visa vilka kartor som finns. Spelaren kan då välja en karta varpå spelaren träder in i första rummet. Därefter fortsätter loopen och väntar på att spelaren skriver in riktningen north, south, east, west, info för rumsinformation, help för en hjälptext eller quit för att avsluta.
 
 1. Bygg om din image och tagga den med `:loop` (_username/vlinux-mazeclient:loop_). Publicera den på Docker Hub.
 

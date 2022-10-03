@@ -13,24 +13,11 @@ revision:
 Kmom06: PHP, PDO och SQL
 ==================================
 
-[WARNING]
+Vi jobbar vidare med PHP PDO för att träna på begreppet CRUD som är Create, Read, Update och Delete av information i databasen via ett webbaserat gränssnitt med formulär.
 
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
+Samtidigt som vi tränar på hanteringen med CRUD så implementerar vi en inloggning till vår webbplats. Vi skapar en användardatabas och en möjlighet att logga in på webbplatsen och redigera detaljer om sitt eget konto.
 
-[/WARNING]
-
-<!--
-[WARNING]
-
-**Om du är en early adopter så går det nu bra att börja jobba igenom detta kursmomentet, det saknas dock ännu en övning och själva uppgiften. Men det finns en övning och föreläsningar som man kan börja att jobba med.**
-
-[/WARNING]
--->
-
-PHP PDO, CRUD
-
-När vi kan vår SQL så använder vi den kunskapen till att koppla samman PHP och databasen för att bygga en databasdriven webbplats. Via webbplatsen skall du kunna lägga till, uppdatera och ta bort innehåll. Detta är de vanliga funktionerna för create, read, update, delete och kallas även CRUD.
-
+[FIGURE src=image/webtec/crud/navbar_login.png?w=w3 caption="Inloggning på en webbplats."]
 
 <!--
 [FIGURE src="image/webtec/pdo/insert-filled.png?w=w3" caption="Formuläret är ifyllt med värden."]
@@ -41,7 +28,7 @@ När vi kan vår SQL så använder vi den kunskapen till att koppla samman PHP o
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
-<!--stop-->
+<!--stop -->
 
 
 
@@ -56,12 +43,17 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 ### Föreläsning {#flas}
 
+Det finns inga föreläsningar till detta kursmoment.
+
+<!--
 Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
 * [PHP PDO och databaser](./../forelasning/php-pdo-och-databaser). Vi tittar på PHP PDO som är ett sätt att koppla sig mot olika databaser via PHPs gränssnitt som heter PDO. Vi ser olika sätt att ställa frågor till databasen och hur man hanterar resultatet.
 
-<!--
-* <s>[Databasdriven webbplats med CRUD](./../forelasning/webbplats-med-crud)</s> utgår.
+* Dela upp PHP PDO i två föreläsningar, en kortare som kan ligga på kmom05 och en som kan ligga på 06.
+* [Databasdriven webbplats med CRUD](./../forelasning/webbplats-med-crud).
+* Eventuellt en extra föreläsning om säkerhet och prestanda i PHP
+* Eventuellt föreläsning om vilka tekniker som används när man gör webbutveckling rent generellt
 -->
 
 
@@ -70,23 +62,13 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 Läs enligt följande.
 
-1. På sidan för föreläsningarna ovan så finns läsanvisningar som hjälper dig att studera SQL och databaser. Välj bland dem för att läsa på mer om begreppen.
+1. I övningen använder vi PHPs hantering för att skapa och verifiera lösenord. Du kan läsa översiktligt om "[Password Hashing](https://www.php.net/manual/en/book.password.php)" i manualen. 
 
+1. Vill du studera med om PHP PDO så är manualen en bra källa, kika snabbt och översiktligt igenom stycket om "[PHP Data Objects (PDO)](http://php.net/manual/en/intro.pdo.php)".
 
-<!--
-### W3Schools SQL {#w3sphp}
+1. Webbplatsen W3Schools har en guide som är lättilgänglig när man vill komma igång med grunderna i SQL.
 
-Webbplatsen W3Schools har en guide som är lättilgänglig när man vill komma igång med grunderna i SQL.
-
-1. [PHP MySQL Database](https://www.w3schools.com/php/php_mysql_intro.asp). Även om guiden handlar om MySQL så är det samma interface i PHP, PHP PDO, och det används även till SQLite.
-
-
-### PHP {#php}
-
-Följande delar är relevanta för PHP.
-
-1. [PHP Data Objects (PDO)](http://php.net/manual/en/intro.pdo.php). Kika översiktligt på det. Det handlar om ett gemensamt gränssnitt för att koppla sig mot flera olika databaser.
--->
+    * [PHP MySQL Database](https://www.w3schools.com/php/php_mysql_intro.asp). Även om guiden handlar om MySQL så är det samma interface i PHP, PHP PDO, och det används även till SQLite.
 
 
 
@@ -118,17 +100,7 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-* [Kom igång med CRUD i databasen SQLite med PHP PDO](kunskap/kom-igang-med-crud-i-databasen-sqlite-med-php-pdo) visar hur PHP PDO kan användas för att jobba med INSERT, UPDATE och DELETE mot en SQLite -databas. Spara din övningskod i katalogen `me/kmom06/crud` eller jobba direkt under din `me/report`.
-
-<!--
-* [Kom igång med SQLite och PHP PDO (v2)](kunskap/kom-igang-med-sqlite-och-php-pdo-v2) <!-- OBS EJ INSPELAD -->
-
-<!--
-* PHP PDO med SQLite del II?
-* En föreläsning om CRUD? Kanske kopplad till admin för användare?
-
-* I lektionen "[Bygg en databasdriven webbplats med PHP och SQL](./../forelasning/bygg-en-databasdriven-webbplats-med-php-och-sql)" får du hjälp att komma igång med uppgiften. Lektionen spelas in.
--->
+* [Kom igång med CRUD i databasen SQLite med PHP PDO](kunskap/kom-igang-med-crud-i-databasen-sqlite-med-php-pdo) visar hur PHP PDO kan användas för att jobba med INSERT, UPDATE och DELETE mot en SQLite -databas. Spara din övningskod i katalogen `me/kmom06/crud` eller jobba direkt under din `me/report`. Som ett tips så är det nog enklast att jobba mot koden i `me/report` då du redan har stöd för databasen där samt ytterligare stöd för flash-meddelanden och sessioner.
 
 
 
@@ -137,33 +109,6 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
 * Gör uppgiften "[Bygg inloggning till webbplatsen med PHP PDO och CRUD mot SQLite](uppgift/bygg-inloggning-till-webbplatsen-med-php-pdo-och-crud-mot-sqlite)". Spara din kod i `me/report`.
-
-<!--
-* Gör uppgiften "[Bygg en databasdriven webbplats med PHP och SQL](uppgift/bygg-en-databasdriven-webbplats-med-php-och-sql)".
-
-<!--
-Hantera användare i en databas? Inloggning. Session.
-
-Användaren kan logga in, SELECT, färdig databas/tabell med admin/admin & doe/doe.
-
-Användaren kan byta sitt eget lösenord med UPDATE?
-
-Användaren kan radera sig själv från systemet DELETE?
-
-Användaren kan registrera sig själv INSERT?
-
-
-Vänta med CR UD till databaskursen kanske.
-
-Lägg till notiser till kalendern (CRUD)
-
-Reset
-
-Extrauppgift inloggning, skapa användare?
-
-1. Lägg till en inloggning på din mesida och styr så att man måste vara inloggad för att kunna redigera (lägga till, uppdatera, radera) i databasen. Kursrepot innehåller ett exempel på login i `example/login` som du kan utgå ifrån. Använd doe:doe och admin:admin som användare och lösenord.
-
--->
 
 
 
@@ -176,8 +121,9 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i din redovisningstext.
 
-* Hur kändes det att bygga en databasdriven webbplats?
-* Var det svårt att komma in i hur du jobbar med SQL mot databasen och sedan SQL mot databasen via PHP eller kändes det som logiskt? Fanns det något som gav dig bekymmer?
+* Berätta hur det var att jobba med konceptet kring CRUD.
+* Berätta hur det var att jobba med inloggning i webbplatsen, vad tänker du om det?
+* Berätta om hur nöjd du är med den koden du skapat i din `me/report` och ser du någon förbättringspotential?
 * Vilken är din TIL för detta kmom?
 
 Glöm inte att testa din inlämning med `dbwebb test kmom06`.

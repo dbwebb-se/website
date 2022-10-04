@@ -2,6 +2,7 @@
 author:
   - lew
 revision:
+  "2022-10-04": (B, lew) Uppdaterad inför HT22.
   "2019-03-26": (A, lew) Ny inför HT19.
 ...
 

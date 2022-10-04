@@ -6,6 +6,7 @@ category:
     - sqlite
     - kurs webtec
 revision:
+    "2022-10-04": "(B, mos) Lade till vilka lösenord som doe/admin har."
     "2022-10-03": "(A, mos) Första utgåvan inför webtec-v2."
 ...
 Kom igång med CRUD i databasen SQLite med PHP PDO
@@ -184,6 +185,8 @@ Här är en grov översikt över d sidkontroller som jag nu avser utveckla för 
         * Länk till profilen och logout.
 
 Det kan låta mycket att implementera detta, men när vi är klara kommer du se att det inte handlar om speciellt mycket kod. Låt oss ta det steg för steg.
+
+I databasen finns ett par färdiga användare som behöver finnas där för att det skall gå att rätta din inlämning. Det är användaren admin som har lösenordet 'admin' och det är användaren doe som har lösenordet 'doe'.
 
 
 

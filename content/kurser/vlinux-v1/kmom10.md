@@ -1,11 +1,11 @@
 ---
 author:
-    - lew
+  - lew
 revision:
-    "2019-03-26": (A, lew) Ny inför HT19.
+  "2019-03-26": (A, lew) Ny inför HT19.
 ...
-Kmom10: Projekt och examination
-==================================
+
+# Kmom10: Projekt och examination
 
 [WARNING]
 Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
@@ -15,21 +15,15 @@ Detta kursmoment avslutar och examinerar kursen.
 
 Upplägget är enligt följande:
 
-* Projektet och redovisning (20-80h)
+- Projektet och redovisning (20-80h)
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
-
-
-Bedömning och betygsättning {#bedomning}
---------------------------------------------------------------------
+## Bedömning och betygsättning {#bedomning}
 
 När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/bedomning-och-betygsattning).
 
-
-
-Projektidé och upplägg {#upplagg}
---------------------------------------------------------------------
+## Projektidé och upplägg {#upplagg}
 
 Du är nyanställd på firman BTH Server & Nätverk AB. De är osäkra på dina kunskaper och ger dig ett projekt som blivit liggande. De säger "Vi har en logg-fil från vår server, men den innehåller massa konstig information...Kan du hjälpa oss att plocka ut ip- och webbadresserna samt låta oss kunna filtrera dem?".
 
@@ -41,28 +35,21 @@ Du hittar alltså filen som är relaterad till projektet i ditt kursrepo under `
 
 Du kikar snabbt i katalogen och väljer att fokusera på en server som söker i loggen. Det låter lagom stort. Då du inte vet vilken miljö de använder väljer du att bygga in applikationen i Docker.
 
-
-
-Projektspecifikation {#projspec}
---------------------------------------------------------------------
+## Projektspecifikation {#projspec}
 
 Utveckla och leverera projektet enligt följande specifikationen. Saknas info i specen så kan du själv välja väg, dokumentera dina val i redovisningstexten.
 
 De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De två sista kraven är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg. Om grundkraven inte når 30 poäng får man komplettera din inlämning och kan då max få 30 poäng.
 
-Krav 1-3 (Grundkraven) ger max 10 poäng styck, totalt är det 30 poäng.  
-Krav 4 (Optionellt) ger max 10 poäng.  
+Krav 1-3 (Grundkraven) ger max 10 poäng styck, totalt är det 30 poäng.
+Krav 4 (Optionellt) ger max 10 poäng.
 Krav 5 (Optionellt) ger max 20 poäng.
-
-
 
 ### Kataloger för redovisning {#var}
 
 Samla alla dina filer för projektet i ditt kursrepo under `me/kmom10/bthloggen`.
 
 Redovisningstexten skriver du som vanligt i `me/redovisa`.
-
-
 
 ### Krav 1 Regex för att konvertera loggfil till JSON {#k1}
 
@@ -108,28 +95,24 @@ Döp ditt Bash-script till `bthloggen/log2json.bash`. När skriptet körs så sk
 
 Använd ett onlineverktyg, tex [jsonlint](https://jsonlint.com/), för att kontrollera att du producerat JSON som validerar.
 
-
-
 ### Krav 2 Server för att servera loggen {#k2}
 
 Här jobbar du i mappen `bthloggen/server/`.
 
 Skapa en server i valfritt språk som kan visa och filtrera bland salar via följande routes. Alla svar skall vara i JSON.
 
-| Route                     | Resultat |
-|---------------------------|----------|
-| `/`                       | Visa en lista av de routes som stöds. |
-| `/data/`                  | Visa samtliga rader. |
-| `/data?ip=<ip>`   | Visa raderna som innehåller &lt;ip&gt;. |
-| `/data?url=<url>`   | Visa raderna som innehåller &lt;url&gt;. |
+| Route             | Resultat                                 |
+| ----------------- | ---------------------------------------- |
+| `/`               | Visa en lista av de routes som stöds.    |
+| `/data/`          | Visa samtliga rader.                     |
+| `/data?ip=<ip>`   | Visa raderna som innehåller &lt;ip&gt;.  |
+| `/data?url=<url>` | Visa raderna som innehåller &lt;url&gt;. |
 
-Spara koden för servern, och det som servern behöver, i en underkatalog `bthloggen/server`. Servern skall byggas in i en Dockerkontainer som publiceras med *username/vlinux-kmom10:server*.
+Spara koden för servern, och det som servern behöver, i en underkatalog `bthloggen/server`. Servern skall byggas in i en Dockercontainer som publiceras med _username/bthloggen-server:&lt;tag&gt;_.
 
-Skapa en fil, `docker-compose.yml`, i mappen `bthloggen/` som kan starta servicen *server*.
+Skapa en fil, `docker-compose.yml`, i mappen `bthloggen/` som kan starta servicen _server_.
 
 Mappen `data/`, som innehåller logg-filen ska läggas till som en volym i docker-compose.
-
-
 
 ### Krav 3 Bashscript för att testa servern {#k3}
 
@@ -164,7 +147,7 @@ root@ef2d7f6842c0:/client# ./bthloggen.bash -c view url dbwebb
 27108
 ```
 
-Klienten skall byggas in i en Dockerkontainer som publiceras med *username/vlinux-kmom10:client*.
+Klienten skall byggas in i en Dockercontainer som publiceras med _username/bthloggen-client:&lt;tag&gt;_.
 
 Lägg till uppstarten av klienten i Docker Compose, där man ska hamna i Bash med `$ docker-compose run client`.
 
@@ -172,34 +155,28 @@ Nedan ser du ett exempel på hur krav 1-3 kan fungera.
 
 [ASCIINEMA src=252509 caption="Exempel på krav 1-3"]
 
-
-
 ### Krav 4: Webbklient (optionell) {#k4}
 
 Här jobbar du i mappen `bthloggen/webbclient/`.
 
 Skapa en webbsida som presenterar serverns funktionalitet. Man ska till exempel kunna söka information via ett sökfält eller välja det via en lista och få det presenterat på ett trevligt sätt. Utmana dig själv. Gör en snygg design på sidan så du inte bara visar upp JSON svaren. Här är det fritt att välja språk. Kraven är att:
 
-* Sidan ska byggas in i en Dockerkontainer som publiceras med taggen *username/vlinux-kmom10:webbclient*.
-* Kontainern ska vara nåbar via port `1338`.
-* Kontainern ska kunna startas som en service (webbclient) i Docker Composefilen.
-* Kontainern ska ligga på samma nätverk som de tidigare kontainrarna (krav 2 och 3).
-
-
+- Sidan ska byggas in i en Dockercontainer som publiceras med taggen _username/bthloggen-webbclient:&lt;tag&gt;_.
+- containern ska vara nåbar via port `1338`.
+- containern ska kunna startas som en service (webbclient) i docker-composefilen.
+- containern ska ligga på samma nätverk som de tidigare containrarna (krav 2 och 3).
 
 ### Krav 5: Mer data (optionell) {#k5}
 
 Utöka ditt skript `log2json.bash` så man får ut även datumet och klockslaget för varje rad. Lägg till dem i JSON-filen och se till så servern stöder filtrering på dem. Uppdatera även klient(erna). Glöm heller inte lägga till det i hjälptexten i `bthloggen.bash`.
 
-| Route&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   | Resultat |
-|---------------------------|----------|
-| `/data?month=<month>`   | Visa raderna från månaden &lt;month&gt; (tex `?month=Aug`). |
-| `/data?day=<day>`   | Visa raderna från dagen &lt;day&gt;. |
-| `/data?time=<time>`   | Visa raderna från tiden &lt;time&gt; (tex `?time=14`) visar alla rader inkomna 14:00 och fram till 14:59. `?time=13:28` visar alla rader inkomna 13:28. |
-| `/data?day=<day>&time=<time>`   | Visa raderna från tiden &lt;time&gt; på dagen &lt;day&gt;. |
-| `/data?month=<month>&day=<day>&time=<time>`   | Visa raderna från tiden &lt;time&gt; på dagen &lt;day&gt; och månaden &lt;month&gt;.|
-
-
+| Route&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Resultat                                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/data?month=<month>`                                                                                                                                                                                                                                                                                                                                                                           | Visa raderna från månaden &lt;month&gt; (tex `?month=Aug`).                                                                                             |
+| `/data?day=<day>`                                                                                                                                                                                                                                                                                                                                                                               | Visa raderna från dagen &lt;day&gt;.                                                                                                                    |
+| `/data?time=<time>`                                                                                                                                                                                                                                                                                                                                                                             | Visa raderna från tiden &lt;time&gt; (tex `?time=14`) visar alla rader inkomna 14:00 och fram till 14:59. `?time=13:28` visar alla rader inkomna 13:28. |
+| `/data?day=<day>&time=<time>`                                                                                                                                                                                                                                                                                                                                                                   | Visa raderna från tiden &lt;time&gt; på dagen &lt;day&gt;.                                                                                              |
+| `/data?month=<month>&day=<day>&time=<time>`                                                                                                                                                                                                                                                                                                                                                     | Visa raderna från tiden &lt;time&gt; på dagen &lt;day&gt; och månaden &lt;month&gt;.                                                                    |
 
 Ett exempel är alltså `/data?month=Aug&day=17&time=14:36` som kan ge resultatet:
 
@@ -229,23 +206,19 @@ Ett exempel är alltså `/data?month=Aug&day=17&time=14:36` som kan ge resultate
 ]
 ```
 
-
-
-Redovisning {#redovisning}
---------------------------------------------------------------------
+## Redovisning {#redovisning}
 
 1. På din [redovisningssida](./../redovisa), skriv följande:
 
-    1. För varje krav du implementerat, dvs 1-5, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
+   1. För varje krav du implementerat, dvs 1-5, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 
-    1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
+   1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
-    1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
+   1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
 2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas/redovisningen. Glöm inte länka till din me-sida och projektet.
 
 3. Se till att samtliga kursmoment validerar.
-
 
 ### Krav på videon {#krav-video}
 
@@ -259,6 +232,7 @@ Redovisning {#redovisning}
 
 5. Sikta på 4-5 minuter.
 
+6. Ladda upp videon i Canvas som en kommentar i inlämningen.
 
 ```bash
 # Ställ dig i kursrepot

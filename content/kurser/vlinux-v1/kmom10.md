@@ -156,18 +156,7 @@ Nedan ser du ett exempel på hur krav 1-3 kan fungera.
 
 [ASCIINEMA src=252509 caption="Exempel på krav 1-3"]
 
-### Krav 4: Webbklient (optionell) {#k4}
-
-Här jobbar du i mappen `bthloggen/webbclient/`.
-
-Skapa en webbsida som presenterar serverns funktionalitet. Man ska till exempel kunna söka information via ett sökfält eller välja det via en lista och få det presenterat på ett trevligt sätt. Utmana dig själv. Gör en snygg design på sidan så du inte bara visar upp JSON svaren. Här är det fritt att välja språk. Kraven är att:
-
-- Sidan ska byggas in i en Dockercontainer som publiceras med taggen _username/bthloggen-webbclient:&lt;tag&gt;_.
-- containern ska vara nåbar via port `1338`.
-- containern ska kunna startas som en service (webbclient) i docker-composefilen.
-- containern ska ligga på samma nätverk som de tidigare containrarna (krav 2 och 3).
-
-### Krav 5: Mer data (optionell) {#k5}
+### Krav 4: Mer data (optionell) {#k4}
 
 Utöka ditt skript `log2json.bash` så man får ut även datumet och klockslaget för varje rad. Lägg till dem i JSON-filen och se till så servern stöder filtrering på dem. Uppdatera även klient(erna). Glöm heller inte lägga till det i hjälptexten i `bthloggen.bash`.
 
@@ -206,6 +195,17 @@ Ett exempel är alltså `/data?month=Aug&day=17&time=14:36` som kan ge resultate
     }
 ]
 ```
+
+### Krav 5: Webbklient (optionell) {#k5}
+
+Här jobbar du i mappen `bthloggen/webbclient/`.
+
+Skapa en webbsida som presenterar serverns funktionalitet. Man ska till exempel kunna söka information via ett sökfält eller välja det via en lista och få det presenterat på ett trevligt sätt. Utmana dig själv. Gör en snygg design på sidan så du inte bara visar upp JSON svaren. Här är det fritt att välja språk. Kraven är att:
+
+- Sidan ska byggas in i en Dockercontainer som publiceras med taggen _username/bthloggen-webbclient:&lt;tag&gt;_.
+- containern ska vara nåbar via port `1338`.
+- containern ska kunna startas som en service (webbclient) i docker-composefilen.
+- containern ska ligga på samma nätverk som de tidigare containrarna (krav 2 och 3).
 
 ## Redovisning {#redovisning}
 

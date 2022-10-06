@@ -15,6 +15,10 @@ Er Microblog har fått många nya användare och ni behöver utöka er infrastru
 
 <!-- more -->
 
+[WARNING]
+**Kursmomentet uppdetaras** och är inte redo att jobbas igenom.
+[/WARNING]
+
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
 
 Vi kommer använda oss utav Kubernetes (K8s) för container orchestration men det är bra att känna till vilka andra verktyg som finns och lite om vad som skiljer dem åt.

@@ -12,6 +12,10 @@ Nu när vi har ett system uppe och rullande behöver vi veta när något går fe
 
 <!-- more -->
 
+[WARNING]
+**Kursmomentet uppdetaras** och är inte redo att jobbas igenom.
+[/WARNING]
+
 [FIGURE src="https://upload.wikimedia.org/wikipedia/commons/d/d2/IoT_environmental_monitoring_system_solution_-_Overview.jpg" caption="Överblick av olika delar som kan ingå i ett system med övervakning."]
 
 

@@ -13,6 +13,10 @@ Vi packar in vår kod i en Docker container för att underlätta utveckling, dri
 
 <!-- more -->
 
+[WARNING]
+**Kursmomentet uppdetaras** och är inte redo att jobbas igenom.
+[/WARNING]
+
 [FIGURE src="https://pics.me.me/it-works-on-my-machine-then-well-ship-your-machine-62072263.png"]
 
 

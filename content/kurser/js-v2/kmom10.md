@@ -1,27 +1,26 @@
 ---
 author: lew
 revision:
-    "2021-12-10": (A, lew) Uppdaterad inför ht21.
+  "2021-12-10": (A, lew) Uppdaterad inför ht21.
 ...
-Kmom10: Projekt och examination
-==================================
+
+[WARNING]
+Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
+[/WARNING]
+
+# Kmom10: Projekt och examination
 
 Detta kursmoment avslutar och examinerar kursen.
 
 Upplägget är enligt följande:
 
-* Projektet och redovisning (20-80h)
+- Projektet och redovisning (20-80h)
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
-
-
-Bedömning och betygsättning {#bedomning}
---------------------------------------------------------------------
+## Bedömning och betygsättning {#bedomning}
 
 När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/bedomning-och-betygsattning).
-
-
 
 ### Uppgifter {#uppgifter}
 
@@ -29,10 +28,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Intelligenstest](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom10/01_project.md)". Spara koden i `kmom10/`.
 
-
-
-Redovisning {#redovisning}
---------------------------------------------------------------------
+## Redovisning {#redovisning}
 
 1\. På din redovisningssida, skriv följande:
 
@@ -44,10 +40,7 @@ Redovisning {#redovisning}
 
 2\. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte länka till din me-sida och projektet.
 
-
 3\. Se till att samtliga kursmoment validerar.
-
-
 
 ### Krav på videon {#krav-video}
 
@@ -60,8 +53,6 @@ Redovisning {#redovisning}
 4. Försök hålla presentationen som en demo i arbetslivet, det är bra träning.
 
 5. Sikta på 4-5 minuter.
-
-
 
 ### Publicera {#publish}
 

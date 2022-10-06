@@ -1,13 +1,16 @@
 ---
 author: lew
 revision:
-    "2021-12-03": (A, lew) Ny version inför ht21.
+  "2021-12-03": (A, lew) Ny version inför ht21.
 ...
-Kmom06: Objekt
-==================================
+
+[WARNING]
+Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
+[/WARNING]
+
+# Kmom06: Objekt
 
 Vi har lärt oss att använda moduler för att strukturera vår kod och dela upp den i mindre delar. Vi ska i det här momentet fortsätta med en modulstruktur med hjälp av objekt. Till vår hjälp har vi en grund i form av ett halvfärdigt "hänga gubben" spel.
-
 
 <!--more-->
 
@@ -15,12 +18,10 @@ Vi har lärt oss att använda moduler för att strukturera vår kod och dela upp
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
+## Läsanvisningar {#lasanvisningar}
 
+_(ca: 4-6 studietimmar)_
 
-Läsanvisningar  {#lasanvisningar}
----------------------------------
-
-*(ca: 4-6 studietimmar)*
 <!--
 Läs följande.
 
@@ -30,30 +31,22 @@ Läs följande.
     * [The Module Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript)
  -->
 
-
 ### MDN {#mdn}
 
 Läs följande:
 
 1. Läs i [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) för att påminna dig om begreppet closure.
-    * [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)
+   - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)
 
+## Övningar & Uppgifter {#ovningar_uppgifter}
 
-
-
-Övningar & Uppgifter  {#ovningar_uppgifter}
--------------------------------------------
-
-*(ca: 12-16 studietimmar)*
-
+_(ca: 12-16 studietimmar)_
 
 ### Övningar {#ovningar}
 
 Genomför övningarna för att träna inför uppgifterna.
 
 1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/articles/kmom06) för kursmoment 6.
-
-
 
 ### Uppgifter {#uppgifter}
 
@@ -63,16 +56,15 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page 6](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom06/02_mepage6.md)". Spara resultatet i `me/redovisa/`.
 
-Resultat & Redovisning  {#resultat_redovisning}
------------------------------------------------
+## Resultat & Redovisning {#resultat_redovisning}
 
-*(ca: 1-2 studietimmar)*
+_(ca: 1-2 studietimmar)_
 
 Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i redovisningstexten.
 
-* Har du koll på hur function scope och closure fungerar eller känns det naturligt?
-* Har du några erfarenheter av designmönster sedan tidigare?
-* Har du koll på vad termerna `this` och `instans` är när vi pratar om objekt?
-* Vad är din TIL för det här kursmomentet?
+- Har du koll på hur function scope och closure fungerar eller känns det naturligt?
+- Har du några erfarenheter av designmönster sedan tidigare?
+- Har du koll på vad termerna `this` och `instans` är när vi pratar om objekt?
+- Vad är din TIL för det här kursmomentet?

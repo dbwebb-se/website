@@ -6,6 +6,7 @@ category:
     - sqlite
     - kurs webtec
 revision:
+    "2022-10-06": "(B, mos) Info om databas i wsl."
     "2022-09-23": "(A, mos) Första utgåvan inför webtec-v2."
 ...
 Kom igång med PHP PDO och databasen SQLite
@@ -163,6 +164,14 @@ Databasfilen ligger i underkatalogen `db` och sökvägen dit är `db/db.sqlite`.
 En DSN är en sträng som innehåller informationen för att koppla dig till databasen. En DSN ser olika ut för varje databas. I vårt fall består den av strängen `sqlite:` följt av filens sökväg.
 
 Du kan läsa lite om DSN i metoden för att koppla upp sig mot databasen, [PDO::__construct()](http://php.net/manual/en/pdo.construct.php), kika under stycket om *Parameters*. Du kan också kort [läsa om DSN på Wikipedia](https://en.wikipedia.org/wiki/Data_source_name).
+
+[INFO]
+
+Om du sitter i en Windows-miljö och har installerat XAMPP i Windows men sparar ditt kursrepo och filer i WSL/Ubuntu så behöver du göra enlingt följande tips för att få det att fungera.
+
+* [Kmom05 och felmeddelande med att läsa från databasen Windows/WSL/Ubuntu](https://github.com/dbwebb-se/webtec/issues/17)
+
+[/INFO]
 
 
 

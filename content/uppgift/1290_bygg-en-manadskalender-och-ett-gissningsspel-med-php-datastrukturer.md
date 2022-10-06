@@ -74,7 +74,7 @@ cp example/database/src/calendar.php me/report/src
 
 Inkludera nu filen `src/calendar.php` i din `config/config.php`.
 
-Titta på funktionerna i filen. Prova att använda dem och skriva ut innehåll i det som funktionerna returnerar med en var_dump i en sidkontroller, bara för att se att du kan använda dem och du kan se vad de innehåller.
+Titta på funktionerna i filen. Prova att anropa dem och skriva ut innehåll i det som funktionerna returnerar med en var_dump i en sidkontroller, bara för att se att du kan använda dem och du kan se vad de innehåller.
 
 
 

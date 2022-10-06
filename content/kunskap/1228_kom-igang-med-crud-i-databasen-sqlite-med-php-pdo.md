@@ -57,8 +57,8 @@ cp -i example/pdo_crud/db/user.sqlite me/kmom06/crud/db
 För att undvika problem med rättigheter när vi (och webbservern Apache) vill skriva till databasen så sätter vi följande rättigheter på katalogen och på databasfilen.
 
 ```text
-chmod 777 example/pdo_crud/db
-chmod 666 example/pdo_crud/db/user.sqlite
+chmod 777 me/kmom06/pdo_crud/db
+chmod 666 me/kmom06/pdo_crud/db/user.sqlite
 ```
 
 Nu kan vi titta i databasfilen vad den innehåller för schema.

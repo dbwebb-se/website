@@ -87,11 +87,11 @@ Du skall söka detaljer om namn och visa upp i webbsidan.
 
 Databasen innehåller fler tabeller som du kan använda som extrauppgift.
 
-<!--
+
+
 ### Tips, trix och livlinor {#livlina}
 
-I GitHub issuen "[Tips och trix till kmom04 och fotokalendern](https://github.com/dbwebb-se/webtec/issues/16)" finns det en del inspiration och tips och trix till hur man kan tänka och vilka eventuella svårigheter som finns i uppgiften.
--->
+I GitHub issuen "[Tips och trix till kmom05 och sökmotorn med namn](https://github.com/dbwebb-se/webtec/issues/18)" finns det en del inspiration och tips och trix till hur man kan tänka och vilka eventuella svårigheter som finns i uppgiften.
 
 
 

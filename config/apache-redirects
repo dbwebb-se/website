@@ -1,10 +1,11 @@
 # Error documents
+
 #ErrorDocument 403 /error/403.php
 #ErrorDocument 404 /error/404.php
 #ErrorDocument 410 /error/410.php
 
-
 # Removed old content
+
 Redirect 410 /betapal
 Redirect 410 /doc
 Redirect 410 /exercises
@@ -15,52 +16,59 @@ Redirect 410 /utility
 Redirect 410 /v2
 
 # Avoid double linking
-Redirect 301 /example	/kod-exempel
-Redirect 301 /examples	/kod-exempel
-Redirect 301 /kod-exempel/dynamic_menu.php  /kod-exempel/dynamic_php_menu
+
+Redirect 301 /example /kod-exempel
+Redirect 301 /examples /kod-exempel
+Redirect 301 /kod-exempel/dynamic_menu.php /kod-exempel/dynamic_php_menu
 Redirect 301 /kod-exempel https://arkiv.dbwebb.se/kod-exempel/
 
 # Moved content
+
 Redirect 301 /utbildning/webbprogrammering-180hp-campus /utbildning/webbprogrammering-180hp
 Redirect 301 /utbildning/webbprogrammering-120hp-distans /utbildning/webbprogrammering-120hp
 
 # Archive
-Redirect 301 /skalle    https://arkiv.dbwebb.se/skalle/
-Redirect 301 /sylvanas  https://arkiv.dbwebb.se/sylvanas/
-Redirect 301 /style     https://arkiv.dbwebb.se/style/
-Redirect 301 /forms     https://arkiv.dbwebb.se/forms/
-Redirect 301 /grill     https://arkiv.dbwebb.se/grill/
-Redirect 301 /grilla    https://arkiv.dbwebb.se/grilla/
-Redirect 301 /chatt     /irc
+
+Redirect 301 /skalle https://arkiv.dbwebb.se/skalle/
+Redirect 301 /sylvanas https://arkiv.dbwebb.se/sylvanas/
+Redirect 301 /style https://arkiv.dbwebb.se/style/
+Redirect 301 /forms https://arkiv.dbwebb.se/forms/
+Redirect 301 /grill https://arkiv.dbwebb.se/grill/
+Redirect 301 /grilla https://arkiv.dbwebb.se/grilla/
+Redirect 301 /chatt /irc
 
 # Forum
+
 <If "req('Host') != 'bth1.dbwebb.se'">
-    Redirect 301 /forum     http://bth1.dbwebb.se/forum
+Redirect 301 /forum http://bth1.dbwebb.se/forum
 </If>
 
+#
 
 #
+
 #
-#
+
 #Redirect /cal https://calendar.google.com/calendar/embed?src=7fvj57e11e6ct1tahn81b0ngb0%40group.calendar.google.com&ctz=Europe/Stockholm
 Redirect /cal /kalender
 
 Redirect /stream http://www.youtube.com/c/DbwebbSe/live
 Redirect /budord /image/budord.jpg
 
-
+#
 
 #
-#
+
 Redirect /kurser/javascript/lekplats /repo/javascript/example/lekplats
 Redirect /kurser/javascript/core /repo/javascript/example/core
 #Redirect /javascript/lekplats/ /repo/javascript/example/lekplats/
 
-
-
 #
+
 # Old redirects when moved old.dbwebb.se to v2.dbwebb.se
+
 #
+
 Redirect /javascript/kmom01/intro /kunskap/javascript-argh-maste-jag
 Redirect /opensource/cimage /opensource/cimage-and-img-php-for-image-resize-crop-and-processing-using-php-gd
 Redirect /opensource/stylephp /opensource/a-style-php-to-autocompile-less-with-lessphp
@@ -106,282 +114,287 @@ Redirect /youtube /social/youtube
 Redirect /bth /kurser/faq/bth-stodfunktioner
 
 #
+
 # kurser/
+
 #
-Redirect /kurser/bra-att-veta   /kurser/faq
-Redirect /kurser/struktur       /kurser/faq
+
+Redirect /kurser/bra-att-veta /kurser/faq
+Redirect /kurser/struktur /kurser/faq
 Redirect /kurser/lektionsplan-och-rekommenderad-studieplan /kurser/faq/rekommenderad-studieplan
 Redirect /kurser/maste-jag-skaffa-kurslitteraturen /kurser/faq/maste-jag-skaffa-kurslitteraturen
 Redirect /kurser/kom-igang /kurser/faq/kom-igang
 Redirect /kurser/bedomning-och-betygsattning /kurser/faq/bedomning-och-betygsattning
 Redirect /kurser/kursutvardering-och-kursutveckling /kurser/faq/kursutvardering-och-kursutveckling
 
+#
+
+# Lektions och studieplaner
 
 #
-# Lektions och studieplaner
-#
+
 # htmlphp
+
 Redirect /htmlphp/studieplan /kurser/htmlphp/studieplan
-Redirect /kurser/htmlphp/studieplan		https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDc0ZUhoTlA2eWtlLWx2MktwbkhzeEE
+Redirect /kurser/htmlphp/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDc0ZUhoTlA2eWtlLWx2MktwbkhzeEE
 Redirect /htmlphp/lektionsplan /kurser/htmlphp/lektionsplan
-Redirect /kurser/htmlphp/lektionsplan		https://docs.google.com/spreadsheets/d/1VxuFjmhGakKyE4kwKqpLNr6VGvLRgNnVeU3dyQTvVUI/edit?usp=sharing
+Redirect /kurser/htmlphp/lektionsplan https://docs.google.com/spreadsheets/d/1VxuFjmhGakKyE4kwKqpLNr6VGvLRgNnVeU3dyQTvVUI/edit?usp=sharing
 
 # phpmvc
-Redirect /phpmvc/studieplan			https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdGxWWmZwUE9oNGdiRDlFUDdaNzFPN1E
-Redirect /phpmvc/lektionsplan		https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdGZOcW9CVkhZTXNEdzJobGM3dUpmVGc
 
-Redirect /javascript/studieplan		https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdE9oSE00YVoxVi1HVjQ2eFZLVnV2bmc
-Redirect /javascript/lektionsplan	https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHlSZkp2QVEyVlRHdWRfUGVPTDdVR1E
+Redirect /phpmvc/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdGxWWmZwUE9oNGdiRDlFUDdaNzFPN1E
+Redirect /phpmvc/lektionsplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdGZOcW9CVkhZTXNEdzJobGM3dUpmVGc
 
-
+Redirect /javascript/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdE9oSE00YVoxVi1HVjQ2eFZLVnV2bmc
+Redirect /javascript/lektionsplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHlSZkp2QVEyVlRHdWRfUGVPTDdVR1E
 
 # webapp
 
 Redirect /webapp/studieplan /kurser/webapp/studieplan
-Redirect /kurser/webapp/studieplan         https://docs.google.com/spreadsheets/d/1F6zSLaDAXLmPgHxrmsiygJxOXbPhZuB69pd0WXhZsUQ/edit?usp=sharing
+Redirect /kurser/webapp/studieplan https://docs.google.com/spreadsheets/d/1F6zSLaDAXLmPgHxrmsiygJxOXbPhZuB69pd0WXhZsUQ/edit?usp=sharing
 
 Redirect /webapp/lektionsplan /kurser/webapp/lektionsplan
 Redirect /kurser/webapp/lektionsplan https://docs.google.com/spreadsheets/d/1imZXLGYFsyFP6Bd9OP55cTikqz9HzoJgemxtwbfeYNU/edit?usp=sharing
 
-
-
 #
+
 #javascript
-#
-Redirect /javascript/forelasning-kursintroduktion       https://dl.dropbox.com/u/24315211/javascript/javascript-intro.pdf
-Redirect /javascript/forelasning-kursintroduktion.pdf	https://dl.dropbox.com/u/24315211/javascript/javascript-intro.pdf
-Redirect /javascript/kmom01/forelasning		https://dl.dropbox.com/u/24315211/javascript/javascript-kmom01.pdf
-Redirect /javascript/kmom01/forelasning.pd      https://dl.dropbox.com/u/24315211/javascript/javascript-kmom01.pdf
-Redirect /javascript/kmom02/forelasning         https://dl.dropbox.com/u/24315211/javascript/javascript-kmom02.pdf
-Redirect /javascript/kmom02/forelasning.pdf     https://dl.dropbox.com/u/24315211/javascript/javascript-kmom02.pdf
-Redirect /javascript/kmom03/forelasning.pdf	https://dl.dropbox.com/u/24315211/javascript/javascript-kmom03.pdf
-Redirect /javascript/kmom04/forelasning.pdf	https://dl.dropbox.com/u/24315211/javascript/javascript-kmom04.pdf
-Redirect /javascript/kmom05/forelasning.pdf     https://dl.dropbox.com/u/24315211/javascript/javascript-kmom05.pdf
-Redirect /javascript/kmom06/forelasning.pdf     https://dl.dropbox.com/u/24315211/javascript/javascript-kmom06.pdf
-
-
 
 #
+
+Redirect /javascript/forelasning-kursintroduktion https://dl.dropbox.com/u/24315211/javascript/javascript-intro.pdf
+Redirect /javascript/forelasning-kursintroduktion.pdf https://dl.dropbox.com/u/24315211/javascript/javascript-intro.pdf
+Redirect /javascript/kmom01/forelasning https://dl.dropbox.com/u/24315211/javascript/javascript-kmom01.pdf
+Redirect /javascript/kmom01/forelasning.pd https://dl.dropbox.com/u/24315211/javascript/javascript-kmom01.pdf
+Redirect /javascript/kmom02/forelasning https://dl.dropbox.com/u/24315211/javascript/javascript-kmom02.pdf
+Redirect /javascript/kmom02/forelasning.pdf https://dl.dropbox.com/u/24315211/javascript/javascript-kmom02.pdf
+Redirect /javascript/kmom03/forelasning.pdf https://dl.dropbox.com/u/24315211/javascript/javascript-kmom03.pdf
+Redirect /javascript/kmom04/forelasning.pdf https://dl.dropbox.com/u/24315211/javascript/javascript-kmom04.pdf
+Redirect /javascript/kmom05/forelasning.pdf https://dl.dropbox.com/u/24315211/javascript/javascript-kmom05.pdf
+Redirect /javascript/kmom06/forelasning.pdf https://dl.dropbox.com/u/24315211/javascript/javascript-kmom06.pdf
+
+#
+
 # kurser/
-# kurser/arkiv
-#
 
+# kurser/arkiv
+
+#
 
 # mvc
-Redirect /mvc                       /kurser/mvc
-Redirect /kurser/mvc/studieplan     https://docs.google.com/spreadsheets/d/1a2tVndtZuqzx0113MtlI1hgM_JtxQrl3aN8sbd00ng8/edit?usp=sharing
-Redirect /kurser/mvc/lektionsplan   https://docs.google.com/spreadsheets/d/13nsNIJ6HmngTFQEDdDEMnb8e1kCPuhZx0vlYGtVA54c/edit?usp=sharing
-Redirect /kurser/mvc                /kurser/mvc-v2
+
+Redirect /mvc /kurser/mvc
+Redirect /kurser/mvc/studieplan https://docs.google.com/spreadsheets/d/1a2tVndtZuqzx0113MtlI1hgM_JtxQrl3aN8sbd00ng8/edit?usp=sharing
+Redirect /kurser/mvc/lektionsplan https://docs.google.com/spreadsheets/d/13nsNIJ6HmngTFQEDdDEMnb8e1kCPuhZx0vlYGtVA54c/edit?usp=sharing
+Redirect /kurser/mvc /kurser/mvc-v2
 
 # webtec
-Redirect /webtec                       /kurser/webtec
-Redirect /kurser/webtec/studieplan     https://docs.google.com/spreadsheets/d/1ohdubYpmJQ095Z4BTgADIh98LkgcZion3AbpuS1pXvA/edit?usp=sharing
-Redirect /kurser/webtec/lektionsplan   https://docs.google.com/spreadsheets/d/1HW5prIQffx8hHbW8JUEgfodSr2yOCV7sHScW8DDl0QY/edit?usp=sharing
-Redirect /kurser/webtec                /kurser/webtec-v2
+
+Redirect /webtec /kurser/webtec
+Redirect /kurser/webtec/studieplan https://docs.google.com/spreadsheets/d/1ohdubYpmJQ095Z4BTgADIh98LkgcZion3AbpuS1pXvA/edit?usp=sharing
+Redirect /kurser/webtec/lektionsplan https://docs.google.com/spreadsheets/d/1HW5prIQffx8hHbW8JUEgfodSr2yOCV7sHScW8DDl0QY/edit?usp=sharing
+Redirect /kurser/webtec /kurser/webtec-v2
 
 # pattern
-Redirect /pattern                       /kurser/pattern
-Redirect /kurser/pattern/studieplan     https://docs.google.com/spreadsheets/d/1Jsm5RFD4Lsn_Kig1Z8hPzuZ3Le1mskwXYwxCrjGgsEk/edit?usp=sharing
-Redirect /kurser/pattern/lektionsplan   https://docs.google.com/spreadsheets/d/1ETZ4rRBAu6DopFg00Hugo4fGyGXoSUjyRaOyQBOU9u8/edit?usp=sharing
-Redirect /kurser/pattern                /kurser/pattern-v1
+
+Redirect /pattern /kurser/pattern
+Redirect /kurser/pattern/studieplan https://docs.google.com/spreadsheets/d/1Jsm5RFD4Lsn_Kig1Z8hPzuZ3Le1mskwXYwxCrjGgsEk/edit?usp=sharing
+Redirect /kurser/pattern/lektionsplan https://docs.google.com/spreadsheets/d/1ETZ4rRBAu6DopFg00Hugo4fGyGXoSUjyRaOyQBOU9u8/edit?usp=sharing
+Redirect /kurser/pattern /kurser/pattern-v1
 
 # python
-Redirect /python                        /kurser/python
-Redirect /kurser/python/studieplan      https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDY1amxWYU1ZMVYyQkNxRU1TaTRoZ3c&usp=sharing
-Redirect /kurser/python/lektionsplan    https://docs.google.com/spreadsheets/d/1zFmphWE90vxLCFEhH60QEZ4I8p8pq3-XKWBLLQguOXM/edit?usp=sharing
-Redirect /kurser/python                /kurser/python-v4
+
+Redirect /python /kurser/python
+Redirect /kurser/python/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDY1amxWYU1ZMVYyQkNxRU1TaTRoZ3c&usp=sharing
+Redirect /kurser/python/lektionsplan https://docs.google.com/spreadsheets/d/1zFmphWE90vxLCFEhH60QEZ4I8p8pq3-XKWBLLQguOXM/edit?usp=sharing
+Redirect /kurser/python /kurser/python-v4
 
 # htmlphp
-Redirect /htmlphp/me            https://arkiv.dbwebb.se/htmlphp/me/
-Redirect /htmlphp-v1            /kurser/htmlphp-v1
-Redirect /kurser/htmlphp-v1     /kurser/arkiv/htmlphp-v1
 
-Redirect /htmlphp               /kurser/htmlphp
+Redirect /htmlphp/me https://arkiv.dbwebb.se/htmlphp/me/
+Redirect /htmlphp-v1 /kurser/htmlphp-v1
+Redirect /kurser/htmlphp-v1 /kurser/arkiv/htmlphp-v1
 
+Redirect /htmlphp /kurser/htmlphp
 
 # javascript1
-Redirect /kurser/javascript1/repo   /repo/javascript1
-Redirect /javascript1               /kurser/javascript1
-Redirect /kurser/javascript1/studieplan    https://docs.google.com/spreadsheets/d/1e1YHhdBPYqSZMG2g7xQE_7gu4ejobCre9F53F43KGDo/edit?usp=sharing
-Redirect /kurser/javascript1/lektionsplan    https://docs.google.com/spreadsheets/d/1m87jwckTiSHc9ty57laBa7rKiMGq9EXJ-xa4mjSEs3E/edit?usp=sharing
 
-
+Redirect /kurser/javascript1/repo /repo/javascript1
+Redirect /javascript1 /kurser/javascript1
+Redirect /kurser/javascript1/studieplan https://docs.google.com/spreadsheets/d/1e1YHhdBPYqSZMG2g7xQE_7gu4ejobCre9F53F43KGDo/edit?usp=sharing
+Redirect /kurser/javascript1/lektionsplan https://docs.google.com/spreadsheets/d/1m87jwckTiSHc9ty57laBa7rKiMGq9EXJ-xa4mjSEs3E/edit?usp=sharing
 
 # js
-Redirect /js               /kurser/js-v2
-Redirect /kurser/js     /kurser/js-v2
-Redirect /kurser/js/repo   /repo/js-v2
-Redirect /kurser/js-v2/studieplan    https://docs.google.com/spreadsheets/d/1WRlrnhph1jQKvIJIjkzgqVYFXj3bIFh4C2Kth4yxDA4/edit?usp=sharing
-Redirect /kurser/js-v2/lektionsplan    https://docs.google.com/spreadsheets/d/1oZfY3_ExjAGlYXIYoG3G4l-45SLg-VV89pjmz-uX2Kk/edit?usp=sharing
 
-
+Redirect /js /kurser/js-v2
+Redirect /kurser/js /kurser/js-v2
+Redirect /kurser/js/repo /repo/js-v2
+Redirect /kurser/js-v2/studieplan https://docs.google.com/spreadsheets/d/1Lgm6jpbHQGHEx7bJdv46Tk3e42wxbv18e14p8i8xNnw/edit?usp=sharing
+Redirect /kurser/js-v2/lektionsplan https://docs.google.com/spreadsheets/d/1imYYala19Uo7K3oAWkdE1UjRPsvyJZ1j2-9mql3wmrg/edit?usp=sharing
 
 # design
-Redirect /design            /kurser/design
-Redirect /kurser/design     /kurser/design-v3
-Redirect /kurser/design-v3/studieplan  https://docs.google.com/spreadsheets/d/1sDq1lkG7ESK1gd0fdKIDegD83dRwhOlGgc_JoXybGW8
-Redirect /kurser/design-v3/lektionsplan    https://docs.google.com/spreadsheets/d/1w_un3i7UDTOCEMfL42825xyFYCqGFILAhKG15qZVXbE
 
-
+Redirect /design /kurser/design
+Redirect /kurser/design /kurser/design-v3
+Redirect /kurser/design-v3/studieplan https://docs.google.com/spreadsheets/d/1sDq1lkG7ESK1gd0fdKIDegD83dRwhOlGgc_JoXybGW8
+Redirect /kurser/design-v3/lektionsplan https://docs.google.com/spreadsheets/d/1w_un3i7UDTOCEMfL42825xyFYCqGFILAhKG15qZVXbE
 
 # linux
-Redirect /linux         /kurser/linux
-Redirect /kurser/linux/studieplan  https://docs.google.com/spreadsheets/d/1Ns_HktjzxabVPvNuwFrxajWTm1xtEDEsN55SR30veMY/edit?usp=sharing
-Redirect /kurser/linux/lektionsplan    https://docs.google.com/spreadsheets/d/1U2WES9bUISTZaWAmnAJ57LzmNcxyCG9vh5UWeYQmygM/edit?usp=sharing
-Redirect /linux-v1          /kurser/linux-v1
-Redirect /linux-v2          /kurser/linux-v2
-Redirect /linux             /kurser/linux-v2
-Redirect /kurser/linux      /kurser/linux-v2
 
+Redirect /linux /kurser/linux
+Redirect /kurser/linux/studieplan https://docs.google.com/spreadsheets/d/1Ns_HktjzxabVPvNuwFrxajWTm1xtEDEsN55SR30veMY/edit?usp=sharing
+Redirect /kurser/linux/lektionsplan https://docs.google.com/spreadsheets/d/1U2WES9bUISTZaWAmnAJ57LzmNcxyCG9vh5UWeYQmygM/edit?usp=sharing
+Redirect /linux-v1 /kurser/linux-v1
+Redirect /linux-v2 /kurser/linux-v2
+Redirect /linux /kurser/linux-v2
+Redirect /kurser/linux /kurser/linux-v2
 
 # oopython
-Redirect /oopython         /kurser/oopython
-Redirect /kurser/oopython/studieplan  https://docs.google.com/spreadsheets/d/139dBR4xTojUwM_gD8RniO-RZJmXFP1-adM3CJljg3_8/edit?usp=sharing
-Redirect /kurser/oopython/lektionsplan    https://docs.google.com/spreadsheets/d/1l4Dxpz_PZYNBnwMZegR8uS6tRpm_qkecefAfU2wBKMQ/edit?usp=sharing
-Redirect /kurser/oopython  /kurser/oopython-v2
-Redirect /forum/utbildning/oopython     /forum/viewforum.php?f=57
 
+Redirect /oopython /kurser/oopython
+Redirect /kurser/oopython/studieplan https://docs.google.com/spreadsheets/d/139dBR4xTojUwM_gD8RniO-RZJmXFP1-adM3CJljg3_8/edit?usp=sharing
+Redirect /kurser/oopython/lektionsplan https://docs.google.com/spreadsheets/d/1l4Dxpz_PZYNBnwMZegR8uS6tRpm_qkecefAfU2wBKMQ/edit?usp=sharing
+Redirect /kurser/oopython /kurser/oopython-v2
+Redirect /forum/utbildning/oopython /forum/viewforum.php?f=57
 
 # webapp
-Redirect /webapp/repo   /repo/webapp
-Redirect /webapp-v1     /kurser/webapp-v1
-Redirect /webapp-v2     /kurser/webapp-v2
-Redirect /webapp-v3     /kurser/webapp-v3
-Redirect /webapp        /kurser/webapp-v4
+
+Redirect /webapp/repo /repo/webapp
+Redirect /webapp-v1 /kurser/webapp-v1
+Redirect /webapp-v2 /kurser/webapp-v2
+Redirect /webapp-v3 /kurser/webapp-v3
+Redirect /webapp /kurser/webapp-v4
 Redirect /kurser/webapp /kurser/webapp-v4
 
-
 # oophp (older)
-Redirect /oophp-v1              /kurser/oophp-v1
-Redirect /kurser/oophp-v1       /kurser/arkiv/oophp-v1
-Redirect /kurser/oophp-v2/me    https://arkiv.dbwebb.se/oophp/me
-Redirect /oophp-v2              /kurser/oophp-v2
-Redirect /oophp-v3              /kurser/oophp-v3
+
+Redirect /oophp-v1 /kurser/oophp-v1
+Redirect /kurser/oophp-v1 /kurser/arkiv/oophp-v1
+Redirect /kurser/oophp-v2/me https://arkiv.dbwebb.se/oophp/me
+Redirect /oophp-v2 /kurser/oophp-v2
+Redirect /oophp-v3 /kurser/oophp-v3
 
 # oophp
-Redirect /oophp                     /kurser/oophp
-Redirect /kurser/oophp/lektionsplan  https://docs.google.com/spreadsheets/d/1IrY2LgewCt-zvpGZcO1soTtRKhvyOwb8uAjkMePo59o
-Redirect /kurser/oophp/studieplan    https://docs.google.com/spreadsheets/d/1Ho29uzFlB6OPCza20FaWT_elE8q-wvm4hg1AM8Vr6io
-Redirect /kurser/oophp/forum        /forum/utbildning/oophp
-Redirect /kurser/oophp              /kurser/oophp-v5
-Redirect /forum/utbildning/oophp    /forum/viewforum.php?f=37
 
+Redirect /oophp /kurser/oophp
+Redirect /kurser/oophp/lektionsplan https://docs.google.com/spreadsheets/d/1IrY2LgewCt-zvpGZcO1soTtRKhvyOwb8uAjkMePo59o
+Redirect /kurser/oophp/studieplan https://docs.google.com/spreadsheets/d/1Ho29uzFlB6OPCza20FaWT_elE8q-wvm4hg1AM8Vr6io
+Redirect /kurser/oophp/forum /forum/utbildning/oophp
+Redirect /kurser/oophp /kurser/oophp-v5
+Redirect /forum/utbildning/oophp /forum/viewforum.php?f=37
 
 # ramverk1
-Redirect /ramverk1                  /kurser/ramverk1
-Redirect /kurser/ramverk1/studieplan    https://docs.google.com/spreadsheets/d/1FdymclxYzehF-xzxqQP2Oth6tWcUIdOOqQCXFv2wlIw/edit?usp=sharing
-Redirect /kurser/ramverk1/lektionsplan    https://docs.google.com/spreadsheets/d/1RsrdcQv-Xa3s8B96z4Dp_gOtzV0QQU5NITRx0o7suvQ/edit?usp=sharing
-Redirect /kurser/ramverk1           /kurser/ramverk1-v2
+
+Redirect /ramverk1 /kurser/ramverk1
+Redirect /kurser/ramverk1/studieplan https://docs.google.com/spreadsheets/d/1FdymclxYzehF-xzxqQP2Oth6tWcUIdOOqQCXFv2wlIw/edit?usp=sharing
+Redirect /kurser/ramverk1/lektionsplan https://docs.google.com/spreadsheets/d/1RsrdcQv-Xa3s8B96z4Dp_gOtzV0QQU5NITRx0o7suvQ/edit?usp=sharing
+Redirect /kurser/ramverk1 /kurser/ramverk1-v2
 Redirect /forum/utbildning/ramverk1 /forum/viewforum.php?f=59
 
-
 # ramverk2
-Redirect /ramverk2                  /kurser/ramverk2
-Redirect /kurser/ramverk2                  /kurser/ramverk2-v2
+
+Redirect /ramverk2 /kurser/ramverk2
+Redirect /kurser/ramverk2 /kurser/ramverk2-v2
 Redirect /forum/utbildning/ramverk2 /forum/viewforum.php?f=60
 
-
 # webgl
-Redirect /webgl/lektionsplan    https://goo.gl/3F4Kju
-Redirect /webgl/studieplan      https://goo.gl/Sp5Fhz
-Redirect /webgl/repo    /repo/webgl
-Redirect /webgl         /kurser/webgl
 
-
+Redirect /webgl/lektionsplan https://goo.gl/3F4Kju
+Redirect /webgl/studieplan https://goo.gl/Sp5Fhz
+Redirect /webgl/repo /repo/webgl
+Redirect /webgl /kurser/webgl
 
 # moln
-Redirect /moln/studieplan      https://docs.google.com/spreadsheets/d/1LxpTEczgMIM19HSohlX-18saXdBxINKbjMT7G7TmF88/edit?usp=sharing
-Redirect /moln        /kurser/moln
 
-
+Redirect /moln/studieplan https://docs.google.com/spreadsheets/d/1LxpTEczgMIM19HSohlX-18saXdBxINKbjMT7G7TmF88/edit?usp=sharing
+Redirect /moln /kurser/moln
 
 # matmod
+
 Redirect /forum/utbildning/matmod /forum/viewforum.php?f=72
 
-
 # exjobb
-Redirect /exjobb                    /kurser/exjobb
-Redirect /kurser/exjobb/studieplan  https://docs.google.com/spreadsheets/d/1twI5bJr_bg1e88PfO-HB4ZclXnLDsj7gtDMDnioGlnw/edit?usp=sharing
-Redirect /forum/utbildning/exjobb   /forum/viewforum.php?f=68
 
+Redirect /exjobb /kurser/exjobb
+Redirect /kurser/exjobb/studieplan https://docs.google.com/spreadsheets/d/1twI5bJr_bg1e88PfO-HB4ZclXnLDsj7gtDMDnioGlnw/edit?usp=sharing
+Redirect /forum/utbildning/exjobb /forum/viewforum.php?f=68
 
 # dbjs
-Redirect /dbjs                      /kurser/dbjs
-Redirect /kurser/dbjs/lektionsplan  https://goo.gl/gYcKGk
-Redirect /kurser/dbjs/studieplan    https://goo.gl/oP1wIE
-Redirect /kurser/dbjs               /kurser/dbjs-v1
-Redirect /forum/utbildning/dbjs     /forum/viewforum.php?f=64
+
+Redirect /dbjs /kurser/dbjs
+Redirect /kurser/dbjs/lektionsplan https://goo.gl/gYcKGk
+Redirect /kurser/dbjs/studieplan https://goo.gl/oP1wIE
+Redirect /kurser/dbjs /kurser/dbjs-v1
+Redirect /forum/utbildning/dbjs /forum/viewforum.php?f=64
 
 # databas (dataweb (dbw) + dbjs v2)
-Redirect /databas                      /kurser/databas
-Redirect /kurser/databas/lektionsplan  https://docs.google.com/spreadsheets/d/1Hd1DVPTqonOsPR6bwoSiuyT5_0pZLG95p0RNqeW5olM/edit?usp=sharing
-Redirect /kurser/databas/studieplan    https://docs.google.com/spreadsheets/d/1Gflek2AYBWOYZ3asKtcReJeWtpWiFZZpeMutjbGzGq8/edit?usp=sharing
-Redirect /kurser/databas               /kurser/databas-v2
-Redirect /forum/utbildning/databas     /forum/viewforum.php?f=73
+
+Redirect /databas /kurser/databas
+Redirect /kurser/databas/lektionsplan https://docs.google.com/spreadsheets/d/1Hd1DVPTqonOsPR6bwoSiuyT5_0pZLG95p0RNqeW5olM/edit?usp=sharing
+Redirect /kurser/databas/studieplan https://docs.google.com/spreadsheets/d/1Gflek2AYBWOYZ3asKtcReJeWtpWiFZZpeMutjbGzGq8/edit?usp=sharing
+Redirect /kurser/databas /kurser/databas-v2
+Redirect /forum/utbildning/databas /forum/viewforum.php?f=73
 
 # phpmvc
-Redirect /phpmvc-v1         /kurser/arkiv/phpmvc-v1
-Redirect /phpmvc-v2         /kurser/phpmvc
-Redirect /phpmvc            /kurser/phpmvc
 
-
+Redirect /phpmvc-v1 /kurser/arkiv/phpmvc-v1
+Redirect /phpmvc-v2 /kurser/phpmvc
+Redirect /phpmvc /kurser/phpmvc
 
 # vlinux
-Redirect /vlinux         /kurser/vlinux-v1
-Redirect /vlinux-v1         /kurser/vlinux-v1
-Redirect /kurser/vlinux-v1/studieplan  https://docs.google.com/spreadsheets/d/1xPkSjHKqTa8-LcKY6wthoevuhIi6SCL7CGzoAvqJtQU/edit?usp=sharing
-Redirect /kurser/vlinux-v1/lektionsplan  https://docs.google.com/spreadsheets/d/1OPFjRrCfoMOH-dJ6UG_osLD_qZfJDIEI5I4W2zUKxro/edit?usp=sharing
-Redirect /forum/utbildning/vlinux     /forum/viewforum.php?f=82
+
+Redirect /vlinux /kurser/vlinux-v1
+Redirect /vlinux-v1 /kurser/vlinux-v1
+Redirect /kurser/vlinux-v1/studieplan https://docs.google.com/spreadsheets/d/1xPkSjHKqTa8-LcKY6wthoevuhIi6SCL7CGzoAvqJtQU/edit?usp=sharing
+Redirect /kurser/vlinux-v1/lektionsplan https://docs.google.com/spreadsheets/d/1OPFjRrCfoMOH-dJ6UG_osLD_qZfJDIEI5I4W2zUKxro/edit?usp=sharing
+Redirect /forum/utbildning/vlinux /forum/viewforum.php?f=82
 
 # unix
-Redirect /unix         /kurser/unix
-Redirect /kurser/unix/studyplan  https://docs.google.com/spreadsheets/d/1o-vvRgfm1NSKS-RMvj0Q9EE2gGU29TUdtaL3LHSOnos/edit?usp=sharing
-Redirect /kurser/unix/lessonplan  https://docs.google.com/spreadsheets/d/1mK2HT1GSMerbpx-BPwIw-1oJC_oQ-KCoU2kUzpBRyWA/edit?usp=sharing
 
-
+Redirect /unix /kurser/unix
+Redirect /kurser/unix/studyplan https://docs.google.com/spreadsheets/d/1o-vvRgfm1NSKS-RMvj0Q9EE2gGU29TUdtaL3LHSOnos/edit?usp=sharing
+Redirect /kurser/unix/lessonplan https://docs.google.com/spreadsheets/d/1mK2HT1GSMerbpx-BPwIw-1oJC_oQ-KCoU2kUzpBRyWA/edit?usp=sharing
 
 # devops
-Redirect /devops         /kurser/devops
-Redirect /kurser/devops/studieplan  https://docs.google.com/spreadsheets/d/10YDcG5WMkEMGCWlv0qpHTcMXyXCQBQPtrwXYlz2JIuA/edit?usp=sharing
-Redirect /kurser/devops/lektionsplan    https://docs.google.com/spreadsheets/d/19OpBoi52bBRanF0TOeFTUqOfaEaVlKbBXksOKDFZe0w/edit?usp=sharing
-Redirect /kurser/devops  /kurser/devops-v1
-Redirect /forum/utbildning/devops     /forum/viewforum.php?f=57
 
-
+Redirect /devops /kurser/devops
+Redirect /kurser/devops/studieplan https://docs.google.com/spreadsheets/d/10YDcG5WMkEMGCWlv0qpHTcMXyXCQBQPtrwXYlz2JIuA/edit?usp=sharing
+Redirect /kurser/devops/lektionsplan https://docs.google.com/spreadsheets/d/19OpBoi52bBRanF0TOeFTUqOfaEaVlKbBXksOKDFZe0w/edit?usp=sharing
+Redirect /kurser/devops /kurser/devops-v1
+Redirect /forum/utbildning/devops /forum/viewforum.php?f=57
 
 # javascript
-Redirect /javascript        /kurser/javascript
 
-
+Redirect /javascript /kurser/javascript
 
 # itsec
-Redirect /itsec        /kurser/itsec
+
+Redirect /itsec /kurser/itsec
 Redirect /kurser/itsec /kurser/itsec-v2
-Redirect /kurser/itsec-v2/studieplan        https://docs.google.com/spreadsheets/d/14TDk09ITFATO7YKSF_-RnSJSLoGofwGN9DW2s0OF3Jo/edit?usp=sharing
-Redirect /kurser/itsec-v2/lektionsplan        https://docs.google.com/spreadsheets/d/169Sm3oX54pzvDkawx6cay7kcnFXlpVRA70alskYpQX4/edit?usp=sharing
-
-
+Redirect /kurser/itsec-v2/studieplan https://docs.google.com/spreadsheets/d/14TDk09ITFATO7YKSF_-RnSJSLoGofwGN9DW2s0OF3Jo/edit?usp=sharing
+Redirect /kurser/itsec-v2/lektionsplan https://docs.google.com/spreadsheets/d/169Sm3oX54pzvDkawx6cay7kcnFXlpVRA70alskYpQX4/edit?usp=sharing
 
 # webtopic
-Redirect /webtopic          /kurser/arkiv/webtopic
 
+Redirect /webtopic /kurser/arkiv/webtopic
 
 # matte1, telecom, test, indproj, exjobb
 
-
-
 #
+
 # Program Webbprogrammering 120/180 studieplan & lektionsplan
+
 #
 
 # Rekommenderad studieplan
+
 Redirect /program/webbprogrammering/studieplan/termin1 https://goo.gl/pqvkaj
 Redirect /program/webbprogrammering/studieplan/termin2 https://goo.gl/axc1bk
 Redirect /program/webbprogrammering/studieplan/termin3 https://docs.google.com/spreadsheets/d/14_8vGBuHJBXTVt4HhhBChzBexE1v37kQipNn2jMw-j4/edit?usp=sharing
 Redirect /program/webbprogrammering/studieplan/termin4 https://docs.google.com/spreadsheets/d/1Qvl4-bFvollxdQODPuImdO5wT7ds47BLCr5XNFrStQk/edit?usp=sharing
 
-
 # Lektionsplaner
+
 Redirect /program/webbprogrammering/lektionsplan/lasperiod1 https://goo.gl/av2XHO
 Redirect /program/webbprogrammering/lektionsplan/termin1/lasperiod1 https://goo.gl/av2XHO
 Redirect /program/webbprogrammering/lektionsplan/lasperiod2 https://goo.gl/HW07CY
@@ -393,294 +406,295 @@ Redirect /program/webbprogrammering/lektionsplan/termin2/lasperiod4 https://goo.
 Redirect /program/webbprogrammering/lektionsplan/termin3/lasperiod1 https://docs.google.com/spreadsheets/d/1CC1uoLIm5bXRu4V6KL2HszK1Aq2Vl3GeIoNiu_wpjtE/edit?usp=sharing
 Redirect /program/webbprogrammering/lektionsplan/termin3/lasperiod2 https://docs.google.com/spreadsheets/d/1CC1uoLIm5bXRu4V6KL2HszK1Aq2Vl3GeIoNiu_wpjtE/edit?usp=sharing
 
-
-
 # Kurspaket webutv
-Redirect /webutv/studieplan/25   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFkxaUtQMTItZ1IydWZPNHMxSFQwa0E&usp=sharing
-Redirect /webutv/studieplan/50   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFlXdHF6RWNYang2UEEwaFZFaG5SSnc&usp=sharing
-Redirect /webutv/studieplan   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFlXdHF6RWNYang2UEEwaFZFaG5SSnc&usp=sharing
+
+Redirect /webutv/studieplan/25 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFkxaUtQMTItZ1IydWZPNHMxSFQwa0E&usp=sharing
+Redirect /webutv/studieplan/50 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFlXdHF6RWNYang2UEEwaFZFaG5SSnc&usp=sharing
+Redirect /webutv/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFlXdHF6RWNYang2UEEwaFZFaG5SSnc&usp=sharing
 Redirect /utbildning/webbutveckling-och-programmering-30hp/lektionsplan/kurs1 https://docs.google.com/spreadsheets/d/1baElOfxlvFGutUJu1SJ6Rj_TNxiVNhYcqbV4hjnu5EA/edit?usp=sharing
 Redirect /utbildning/webbutveckling-och-programmering-30hp/lektionsplan/kurs2 https://docs.google.com/spreadsheets/d/1PBADd1GwwUkZuls22IMNa0cV8dG2KNbete5q1vGDfK8/edit?usp=sharing
 Redirect /utbildning/webbutveckling-och-programmering-30hp/lektionsplan/kurs3 https://docs.google.com/spreadsheets/d/1LvOSqE5mz2XaI6WazcFR8o1OCYHJanmuMcYukjaBXI0/edit?usp=sharing
 Redirect /utbildning/webbutveckling-och-programmering-30hp/lektionsplan/kurs4 https://docs.google.com/spreadsheets/d/19HfttrwelK5__PTUtuALM79P8tlS4uE2YpHQOMO4_PY/edit?usp=sharing
 
 # Kurspaket webprog
-Redirect /webprog/studieplan/25   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHJxeVo1cFlsTXlDd21NcEFsOW1iMkE&usp=sharing
-Redirect /webprog/studieplan/50   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHZPc1h4VTVsZk1DZTdUbEZNNlpVdHc&usp=sharing
-Redirect /webprog/studieplan/100  https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFVUUUJsNGdTc3dmMHItUVdjQmhnMUE&usp=sharing
-Redirect /webprog/studieplan   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHZPc1h4VTVsZk1DZTdUbEZNNlpVdHc&usp=sharing
+
+Redirect /webprog/studieplan/25 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHJxeVo1cFlsTXlDd21NcEFsOW1iMkE&usp=sharing
+Redirect /webprog/studieplan/50 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHZPc1h4VTVsZk1DZTdUbEZNNlpVdHc&usp=sharing
+Redirect /webprog/studieplan/100 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFVUUUJsNGdTc3dmMHItUVdjQmhnMUE&usp=sharing
+Redirect /webprog/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHZPc1h4VTVsZk1DZTdUbEZNNlpVdHc&usp=sharing
 Redirect /utbildning/webbprogrammering-och-databaser-30hp/lektionsplan/kurs1 https://docs.google.com/spreadsheets/d/19xDq5SgPbzcEHuU5yFFXfHzHeS6o7dURhoJ8ysKsh-U/edit?usp=sharing
 Redirect /utbildning/webbprogrammering-och-databaser-30hp/lektionsplan/kurs2 https://docs.google.com/spreadsheets/d/1sciqWg_WPeHWfpXrlvvLLghBdLbhNDfBLrEzeutOe4I/edit?usp=sharing
 Redirect /utbildning/webbprogrammering-och-databaser-30hp/lektionsplan/kurs3 https://docs.google.com/spreadsheets/d/1W16XJuVw-N6UCmcOBnKNmGC3ZExBqlSUuNn89fFGyRI/edit?usp=sharing
 Redirect /utbildning/webbprogrammering-och-databaser-30hp/lektionsplan/kurs4 https://docs.google.com/spreadsheets/d/1lFwY_bePrORxrb6AOYKlLBK1sxN6T6bilIRUdKb9OM8/edit?usp=sharing
 
-
-
 # Moved webutv and webprog to utbildning/
-Redirect /webutv    /utbildning/webbutveckling-och-programmering-30hp
-Redirect /webprog   /utbildning/webbprogrammering-och-databaser-30hp
 
-
+Redirect /webutv /utbildning/webbutveckling-och-programmering-30hp
+Redirect /webprog /utbildning/webbprogrammering-och-databaser-30hp
 
 # download
+
 Redirect /apt-cyg /download/apt-cyg
 
-
-
 #
+
 # Below from original dbwebb.se
+
 #
 
 # Older links that has moved permanent
+
 Redirect 301 /guide/kokbok-for-databasmodellering http://dbwebb.se/kunskap/kokbok-for-databasmodellering
 Redirect 301 /article/kokbok-for-databasmodellering http://dbwebb.se/kunskap/kokbok-for-databasmodellering
 Redirect 301 /kurser/hur-fungerar-kurspaketet /webprog
 
-
 #kampanj
-Redirect /sok-bth-webbprogrammering-2013	/forum/viewtopic.php?f=32&t=744
+Redirect /sok-bth-webbprogrammering-2013 /forum/viewtopic.php?f=32&t=744
 Redirect /nu-e-de-fredag /forum/viewtopic.php?f=17&t=2629
-Redirect /fredag         /forum/viewtopic.php?f=17&t=2629
+Redirect /fredag /forum/viewtopic.php?f=17&t=2629
 
 # Old articles with new names and links
-Redirect 301 /kunskap/anvand-lydias-formularklass-cform-for-formularhantering	/kunskap/cform-en-php-klass-for-att-skapa-presentera-och-validera-html-formular
+
+Redirect 301 /kunskap/anvand-lydias-formularklass-cform-for-formularhantering /kunskap/cform-en-php-klass-for-att-skapa-presentera-och-validera-html-formular
 
 #
+
 # Hangout rum
+
 #
-Redirect /hangout1  https://hangouts.google.com/call/y7r6gvdu4rehpfxeenuk5qujzee
-Redirect /hangout2  https://hangouts.google.com/call/j2luzm2xorbyvgd3nf5qcqk4tye
-Redirect /hangout3  https://hangouts.google.com/call/lzjzs5rbqzgddjhb3ybh6ifa6ye
-Redirect /hangout4  https://hangouts.google.com/call/qgl7zq55ifg4ngzmf35imgnzsae
-Redirect /hangout5  https://hangouts.google.com/call/kcmxdumbtjectfjq7w546anhqie
-Redirect /hangout6  https://hangouts.google.com/call/ddztaxbxofh7bgydtkxxyiupnue
-Redirect /hangout7  https://hangouts.google.com/call/xuy4t4yllfbjpegge3swlw5pome
-Redirect /hangout8  https://hangouts.google.com/call/5lzjila75jdmbht564lhelbtcue
-Redirect /hangout9  https://hangouts.google.com/call/hdznydsbrfbqlfzqx4he2xmf5me
-Redirect /hangout0	https://hangouts.google.com/call/klwimzxpaulsxavkzhvgy4efdya
-Redirect /hangout   https://hangouts.google.com/hangouts/_/dbwebb.se/dbwebb
 
+Redirect /hangout1 https://hangouts.google.com/call/y7r6gvdu4rehpfxeenuk5qujzee
+Redirect /hangout2 https://hangouts.google.com/call/j2luzm2xorbyvgd3nf5qcqk4tye
+Redirect /hangout3 https://hangouts.google.com/call/lzjzs5rbqzgddjhb3ybh6ifa6ye
+Redirect /hangout4 https://hangouts.google.com/call/qgl7zq55ifg4ngzmf35imgnzsae
+Redirect /hangout5 https://hangouts.google.com/call/kcmxdumbtjectfjq7w546anhqie
+Redirect /hangout6 https://hangouts.google.com/call/ddztaxbxofh7bgydtkxxyiupnue
+Redirect /hangout7 https://hangouts.google.com/call/xuy4t4yllfbjpegge3swlw5pome
+Redirect /hangout8 https://hangouts.google.com/call/5lzjila75jdmbht564lhelbtcue
+Redirect /hangout9 https://hangouts.google.com/call/hdznydsbrfbqlfzqx4he2xmf5me
+Redirect /hangout0 https://hangouts.google.com/call/klwimzxpaulsxavkzhvgy4efdya
+Redirect /hangout https://hangouts.google.com/hangouts/_/dbwebb.se/dbwebb
 
-Redirect /adobe		http://connect.sunet.se/dbwebb
-Redirect /klassrum	http://connect.sunet.se/dbwebb
-Redirect /msdnaa	https://docs.google.com/spreadsheet/viewform?formkey=dFR3OVBubTNzNmVUclFsTDVKc3RXWEE6MQ#gid=0
-Redirect /citat				/forum/viewtopic.php?f=32&t=1301
-Redirect /marvin/quote      /javascript/lekplats/get-marvin-quotes-using-ajax/quote.php
-Redirect /marvin	        /javascript/lekplats/get-marvin-quotes-using-ajax/
+Redirect /adobe http://connect.sunet.se/dbwebb
+Redirect /klassrum http://connect.sunet.se/dbwebb
+Redirect /msdnaa https://docs.google.com/spreadsheet/viewform?formkey=dFR3OVBubTNzNmVUclFsTDVKc3RXWEE6MQ#gid=0
+Redirect /citat /forum/viewtopic.php?f=32&t=1301
+Redirect /marvin/quote /javascript/lekplats/get-marvin-quotes-using-ajax/quote.php
+Redirect /marvin /javascript/lekplats/get-marvin-quotes-using-ajax/
 
 # dbwebb, used in all courses
+
 #nya
-Redirect /oversikt				/forum/viewtopic.php?f=30&t=99
-Redirect /kurslitteratur		/forum/viewtopic.php?f=30&t=98
-Redirect /kursadmin				/forum/viewtopic.php?f=30&t=110
-Redirect /upprop				/forum/viewtopic.php?f=30&t=126
-Redirect /redovisningstext		/blogg/att-skriva-en-bra-redovisningstext/
-Redirect /me-sida				/blogg/artikel/vad-ar-en-me-sida/
-Redirect /bedomning-och-betygsattning		/kurser/faq/bedomning-och-betygsattning/
-Redirect /grading				/kurser/faq/bedomning-och-betygsattning/
-Redirect /htmlphp/kursbeskrivning		http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1401
-Redirect /oophp/kursbeskrivning			http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1127
-Redirect /dbwebb1/kursbeskrivning		http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1223
-Redirect /dbwebb2/kursbeskrivning		http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1207
-Redirect /lydia/tutorial			/forum/viewtopic.php?f=14&t=46
-Redirect /wip/oversikt				https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFpWbjlhVEMxc0VrSUZRTWU5LVVHT1E&usp=sharing
-Redirect /wip/kvalitet				https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdGdVbkRGVXl0ZlZHelczV05hbFlkN1E&usp=sharing
-Redirect /kurser/oversikt			https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDl5ZEJTZzVIM28wOEt1S0xZbk5rcFE
-Redirect /msdnaa				/bloggg/msdnaa-studenter-far-fria-microsoft-produkter-under-studietiden
-#Redirect /linkedin				http://www.linkedin.com/groups/Webbprogrammering-och-Databaser-dbwebbse-3781398
-
-
+Redirect /oversikt /forum/viewtopic.php?f=30&t=99
+Redirect /kurslitteratur /forum/viewtopic.php?f=30&t=98
+Redirect /kursadmin /forum/viewtopic.php?f=30&t=110
+Redirect /upprop /forum/viewtopic.php?f=30&t=126
+Redirect /redovisningstext /blogg/att-skriva-en-bra-redovisningstext/
+Redirect /me-sida /blogg/artikel/vad-ar-en-me-sida/
+Redirect /bedomning-och-betygsattning /kurser/faq/bedomning-och-betygsattning/
+Redirect /grading /kurser/faq/bedomning-och-betygsattning/
+Redirect /htmlphp/kursbeskrivning http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1401
+Redirect /oophp/kursbeskrivning http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1127
+Redirect /dbwebb1/kursbeskrivning http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1223
+Redirect /dbwebb2/kursbeskrivning http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1207
+Redirect /lydia/tutorial /forum/viewtopic.php?f=14&t=46
+Redirect /wip/oversikt https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFpWbjlhVEMxc0VrSUZRTWU5LVVHT1E&usp=sharing
+Redirect /wip/kvalitet https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdGdVbkRGVXl0ZlZHelczV05hbFlkN1E&usp=sharing
+Redirect /kurser/oversikt https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDl5ZEJTZzVIM28wOEt1S0xZbk5rcFE
+Redirect /msdnaa /bloggg/msdnaa-studenter-far-fria-microsoft-produkter-under-studietiden
+#Redirect /linkedin http://www.linkedin.com/groups/Webbprogrammering-och-Databaser-dbwebbse-3781398
 
 # forum redirects
-Redirect /forum/utbildning/htmlphp		/forum/viewforum.php?f=4
-Redirect /forum/utbildning/design		/forum/viewforum.php?f=53
-Redirect /forum/utbildning/oophp		/forum/viewforum.php?f=37
-Redirect /forum/utbildning/phpmvc		/forum/viewforum.php?f=35
-Redirect /forum/utbildning/phpmvc-v2	/forum/viewforum.php?f=40
-Redirect /forum/utbildning/javascript	/forum/viewforum.php?f=28
-Redirect /forum/utbildning/python       /forum/viewforum.php?f=41
-Redirect /forum/utbildning/javascript1  /forum/viewforum.php?f=42
-Redirect /forum/utbildning/linux        /forum/viewforum.php?f=46
-Redirect /forum/utbildning/webapp       /forum/viewforum.php?f=47
-Redirect /forum/utbildning/webgl        /forum/viewforum.php?f=56
-Redirect /forum/utbildning/webgl        /forum/viewforum.php?f=56
 
-
+Redirect /forum/utbildning/htmlphp /forum/viewforum.php?f=4
+Redirect /forum/utbildning/design /forum/viewforum.php?f=53
+Redirect /forum/utbildning/oophp /forum/viewforum.php?f=37
+Redirect /forum/utbildning/phpmvc /forum/viewforum.php?f=35
+Redirect /forum/utbildning/phpmvc-v2 /forum/viewforum.php?f=40
+Redirect /forum/utbildning/javascript /forum/viewforum.php?f=28
+Redirect /forum/utbildning/python /forum/viewforum.php?f=41
+Redirect /forum/utbildning/javascript1 /forum/viewforum.php?f=42
+Redirect /forum/utbildning/linux /forum/viewforum.php?f=46
+Redirect /forum/utbildning/webapp /forum/viewforum.php?f=47
+Redirect /forum/utbildning/webgl /forum/viewforum.php?f=56
+Redirect /forum/utbildning/webgl /forum/viewforum.php?f=56
 
 #kodexempel
-Redirect /cform					/forum/viewtopic.php?t=275
+Redirect /cform /forum/viewtopic.php?t=275
 
 #databaser
-#Redirect /guide/kokbok-for-databasmodellering	https://docs.google.com/document/d/1YlT0cwU2BoRINVVcWDhYRi6lYeJLghYcV6SZuc1OWoM/edit?authkey=CO_SlsQJ
+#Redirect /guide/kokbok-for-databasmodellering https://docs.google.com/document/d/1YlT0cwU2BoRINVVcWDhYRi6lYeJLghYcV6SZuc1OWoM/edit?authkey=CO_SlsQJ
 
 #Kurspaket
-Redirect /kurspaket/studieplan/25   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHJxeVo1cFlsTXlDd21NcEFsOW1iMkE&usp=sharing
-Redirect /kurspaket/studieplan/50   https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHZPc1h4VTVsZk1DZTdUbEZNNlpVdHc&usp=sharing
-Redirect /kurspaket/studieplan/100  https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFVUUUJsNGdTc3dmMHItUVdjQmhnMUE&usp=sharing
-#Redirect /kurspaket/studieplan		https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdEg3bGtGZWtHRmYtczFfM2I1NjR1RWc
-Redirect /kurspaket/studieplan	    /kurser/lektionsplan-och-rekommenderad-studieplan
-Redirect /kurspaket		            /kurser/hur-fungerar-kurspaketet
-
-
+Redirect /kurspaket/studieplan/25 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHJxeVo1cFlsTXlDd21NcEFsOW1iMkE&usp=sharing
+Redirect /kurspaket/studieplan/50 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdHZPc1h4VTVsZk1DZTdUbEZNNlpVdHc&usp=sharing
+Redirect /kurspaket/studieplan/100 https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFVUUUJsNGdTc3dmMHItUVdjQmhnMUE&usp=sharing
+#Redirect /kurspaket/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdEg3bGtGZWtHRmYtczFfM2I1NjR1RWc
+Redirect /kurspaket/studieplan /kurser/lektionsplan-och-rekommenderad-studieplan
+Redirect /kurspaket /kurser/hur-fungerar-kurspaketet
 
 #Program
-Redirect /wip/distans				https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFpnZ2dxSmxoRDVpcVNDRUcyUUg0cmc&usp=sharing
+Redirect /wip/distans https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdFpnZ2dxSmxoRDVpcVNDRUcyUUg0cmc&usp=sharing
 
 # phpmvc Obsolete
-Redirect 301 /phpmvc/oversikt			/phpmvc/
-Redirect 301 /phpmvc/kmom01/instruktion		/phpmvc/kmom01
-Redirect 301 /phpmvc/kmom02/instruktion   /phpmvc/kmom02
-Redirect 301 /phpmvc/kmom03/instruktion   /phpmvc/kmom03
-Redirect 301 /phpmvc/kmom04/instruktion   /phpmvc/kmom04
-Redirect 301 /phpmvc/kmom05/instruktion   /phpmvc/kmom05
-Redirect 301 /phpmvc/kmom06/instruktion   /phpmvc/kmom06
-Redirect 301 /phpmvc/kmom07/instruktion   /phpmvc/kmom07
-Redirect 301 /phpmvc/kmom10/instruktion   /phpmvc/kmom10
+
+Redirect 301 /phpmvc/oversikt /phpmvc/
+Redirect 301 /phpmvc/kmom01/instruktion /phpmvc/kmom01
+Redirect 301 /phpmvc/kmom02/instruktion /phpmvc/kmom02
+Redirect 301 /phpmvc/kmom03/instruktion /phpmvc/kmom03
+Redirect 301 /phpmvc/kmom04/instruktion /phpmvc/kmom04
+Redirect 301 /phpmvc/kmom05/instruktion /phpmvc/kmom05
+Redirect 301 /phpmvc/kmom06/instruktion /phpmvc/kmom06
+Redirect 301 /phpmvc/kmom07/instruktion /phpmvc/kmom07
+Redirect 301 /phpmvc/kmom10/instruktion /phpmvc/kmom10
 
 # phpmvc material
+
 #kmom01
-Redirect /phpmvc/kursintro			http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-intro.pdf
-Redirect /phpmvc/kursintro-vt13.pdf		https://dl.dropbox.com/u/24315211/phpmvc/phpmvc-intro-vt13.pdf
-Redirect /phpmvc/html5-boilerplate-vt13.pdf	https://dl.dropbox.com/u/24315211/phpmvc/html5boilerplate-vt13.pdf
-Redirect /phpmvc/en-bra-webbplats.pdf		https://dl.dropbox.com/u/24315211/phpmvc/en-bra-webbplats-vt13.pdf
-Redirect /phpmvc/en-bra-webbplats-vt13.pdf	https://dl.dropbox.com/u/24315211/phpmvc/en-bra-webbplats-vt13.pdf
+Redirect /phpmvc/kursintro http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-intro.pdf
+Redirect /phpmvc/kursintro-vt13.pdf https://dl.dropbox.com/u/24315211/phpmvc/phpmvc-intro-vt13.pdf
+Redirect /phpmvc/html5-boilerplate-vt13.pdf https://dl.dropbox.com/u/24315211/phpmvc/html5boilerplate-vt13.pdf
+Redirect /phpmvc/en-bra-webbplats.pdf https://dl.dropbox.com/u/24315211/phpmvc/en-bra-webbplats-vt13.pdf
+Redirect /phpmvc/en-bra-webbplats-vt13.pdf https://dl.dropbox.com/u/24315211/phpmvc/en-bra-webbplats-vt13.pdf
 
 #kmom02
-Redirect /phpmvc/mvc-och-ramverk		http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-mvc-och-ramverk.pdf
-Redirect /phpmvc/lydia-grunden	                http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-grunden.pdf
-Redirect /phpmvc/mvc-och-ramverk-vt13.pdf	https://dl.dropbox.com/u/24315211/phpmvc/phpmvc-mvc-och-ramverk-vt13.pdf
-Redirect /phpmvc/lydia-grunden-vt13.pdf		https://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-grunden-vt13.pdf
+Redirect /phpmvc/mvc-och-ramverk http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-mvc-och-ramverk.pdf
+Redirect /phpmvc/lydia-grunden http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-grunden.pdf
+Redirect /phpmvc/mvc-och-ramverk-vt13.pdf https://dl.dropbox.com/u/24315211/phpmvc/phpmvc-mvc-och-ramverk-vt13.pdf
+Redirect /phpmvc/lydia-grunden-vt13.pdf https://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-grunden-vt13.pdf
 
 #kmom03
-Redirect /phpmvc/codeigniter-gastbok-vt13.pdf	https://dl.dropboxusercontent.com/u/24315211/phpmvc/codeigniter-guestbook-vt13.pdf
-Redirect /phpmvc/phpmvc-lydia-gastbok-vt13.pdf	https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-guestbook-vt13.pdf
+Redirect /phpmvc/codeigniter-gastbok-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/codeigniter-guestbook-vt13.pdf
+Redirect /phpmvc/phpmvc-lydia-gastbok-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-guestbook-vt13.pdf
 
 #kmom04
-Redirect /phpmvc/lydia-user   		        http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-user.pdf
-Redirect /phpmvc/lydia-cform-vt13.pdf		https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-cform-vt13.pdf
-Redirect /phpmvc/lydia-user-vt13.pdf		https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-user-vt13.pdf
+Redirect /phpmvc/lydia-user http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-user.pdf
+Redirect /phpmvc/lydia-cform-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-cform-vt13.pdf
+Redirect /phpmvc/lydia-user-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-user-vt13.pdf
 
 #kmom05
-Redirect /phpmvc/lydia-content                  http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-content.pdf
-Redirect /phpmvc/lydia-content-vt13.pdf		https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-content-vt13.pdf
+Redirect /phpmvc/lydia-content http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-content.pdf
+Redirect /phpmvc/lydia-content-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-content-vt13.pdf
 
 #kmom06
-Redirect /phpmvc/style-php-vt13.pdf		https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-style-php-vt13.pdf
-Redirect /phpmvc/lydia-tema			http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-tema.pdf
-Redirect /phpmvc/lydia-tema.pdf                 http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-tema.pdf
-Redirect /phpmvc/lydia-tema-vt13.pdf		https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-tema-vt13.pdf
+Redirect /phpmvc/style-php-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-style-php-vt13.pdf
+Redirect /phpmvc/lydia-tema http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-tema.pdf
+Redirect /phpmvc/lydia-tema.pdf http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-tema.pdf
+Redirect /phpmvc/lydia-tema-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-tema-vt13.pdf
 
 #kmom07
-Redirect /phpmvc/lydia-produktifiera            http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-produktifiera.pdf
-Redirect /phpmvc/lydia-produktifiera.pdf        http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-produktifiera.pdf
-Redirect /phpmvc/lydia-produktifiera-vt13.pdf	https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-produktifiera-vt13.pdf
-
+Redirect /phpmvc/lydia-produktifiera http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-produktifiera.pdf
+Redirect /phpmvc/lydia-produktifiera.pdf http://dl.dropbox.com/u/24315211/phpmvc/phpmvc-lydia-produktifiera.pdf
+Redirect /phpmvc/lydia-produktifiera-vt13.pdf https://dl.dropboxusercontent.com/u/24315211/phpmvc/phpmvc-lydia-produktifiera-vt13.pdf
 
 #gamla
-Redirect /apply					http://edu.bth.se/utbildning/utb_sok_resultat.asp?enkel-sok=databas
-Redirect /library				http://books.google.com/books?uid=102889430628016279764&as_coll=1001&source=gbs_lp_bookshelf_list
-Redirect /teacher_support			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNzZkeGptejlnNw&hl=en
-Redirect /text/example				https://docs.google.com/document/d/17s06VCma7Q1ILuKGC5iZEm7L4lsfqEgYCbm_K9_ADT0/edit
-Redirect /text/howto				https://docs.google.com/document/d/1sJfLBvi4tmZIJRf0Z6thWmgdA8PpMtSB3E6REoaZ5AA/edit
-Redirect /project/instruction                   https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDVmeHJiNnh3Nw&hl=en
-Redirect /examination/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDExZ3M5a2dqY3M&hl=en
-Redirect /examination/addon_example		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDZmeHJ0ZjdnbQ&hl=en
+Redirect /apply http://edu.bth.se/utbildning/utb_sok_resultat.asp?enkel-sok=databas
+Redirect /library http://books.google.com/books?uid=102889430628016279764&as_coll=1001&source=gbs_lp_bookshelf_list
+Redirect /teacher_support https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNzZkeGptejlnNw&hl=en
+Redirect /text/example https://docs.google.com/document/d/17s06VCma7Q1ILuKGC5iZEm7L4lsfqEgYCbm_K9_ADT0/edit
+Redirect /text/howto https://docs.google.com/document/d/1sJfLBvi4tmZIJRf0Z6thWmgdA8PpMtSB3E6REoaZ5AA/edit
+Redirect /project/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDVmeHJiNnh3Nw&hl=en
+Redirect /examination/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDExZ3M5a2dqY3M&hl=en
+Redirect /examination/addon_example https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDZmeHJ0ZjdnbQ&hl=en
+
 # grade finns aven under htmlphp, oophp och dbwebb1, lankar till samma doc som foljande tva.
-#Redirect /grading/template                      https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
-#Redirect /grading                               https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
-Redirect /source				https://github.com/mosbth/CSource/raw/master/source.php
-Redirect /guides                                /htmlphp/kmom07/me2/guide.php
-Redirect /css-20				/htmlphp/htmlphp/de_20_vanligaste_css_konstruktionerna.php
-Redirect /sqlite-20				/htmlphp/htmlphp/20_steg_for_att_komma_igang_med_sqlite.php
-Redirect /top20                 /htmlphp/htmlphp/guider_om.php
-Redirect /html20                /htmlphp/kmom07/me2/guide.php?id=html20
-Redirect /css20                 /htmlphp/kmom07/me2/guide.php?id=css20
-Redirect /php20                 /htmlphp/kmom07/me2/guide.php?id=php20
-Redirect /forms20               /htmlphp/htmlphp/20_steg_for_att_komma_igang_med_formular.php
-Redirect /sqlite20              /htmlphp/kmom07/me2/guide.php?id=sqlite20
-Redirect /style20               /htmlphp/htmlphp/20_steg_att_styla_med_css_och_stylesheets.php
-Redirect /blog					/blogg
-#Redirect /blog                                 http://db-o-webb.blogspot.com
-#Redirect /github				http://github.com/mosbth
-#Redirect /twitter				http://twitter.com/mos_bth
-Redirect /cluster                               /utbildning
-Redirect /kluster				/utbildning
-#Redirect /article/kokbok_for_databasmodellering	https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzY2Z3F6N2o2OW0&hl=en&authkey=CO_SlsQJ
-Redirect /help					http://google.se
-Redirect /kanon				https://goo.gl/1tsO7b
+
+#Redirect /grading/template https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
+#Redirect /grading https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
+Redirect /source https://github.com/mosbth/CSource/raw/master/source.php
+Redirect /guides /htmlphp/kmom07/me2/guide.php
+Redirect /css-20 /htmlphp/htmlphp/de_20_vanligaste_css_konstruktionerna.php
+Redirect /sqlite-20 /htmlphp/htmlphp/20_steg_for_att_komma_igang_med_sqlite.php
+Redirect /top20 /htmlphp/htmlphp/guider_om.php
+Redirect /html20 /htmlphp/kmom07/me2/guide.php?id=html20
+Redirect /css20 /htmlphp/kmom07/me2/guide.php?id=css20
+Redirect /php20 /htmlphp/kmom07/me2/guide.php?id=php20
+Redirect /forms20 /htmlphp/htmlphp/20_steg_for_att_komma_igang_med_formular.php
+Redirect /sqlite20 /htmlphp/kmom07/me2/guide.php?id=sqlite20
+Redirect /style20 /htmlphp/htmlphp/20_steg_att_styla_med_css_och_stylesheets.php
+Redirect /blog /blogg
+#Redirect /blog http://db-o-webb.blogspot.com
+#Redirect /github http://github.com/mosbth
+#Redirect /twitter http://twitter.com/mos_bth
+Redirect /cluster /utbildning
+Redirect /kluster /utbildning
+#Redirect /article/kokbok_for_databasmodellering https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzY2Z3F6N2o2OW0&hl=en&authkey=CO_SlsQJ
+Redirect /help http://google.se
+Redirect /kanon https://goo.gl/1tsO7b
 
 #wip
-Redirect /wip/courses                           https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdFlEQktPM055Y2JiV0k3Tk9RRllQNUE&hl=en&authkey=CIyL-h8
-Redirect /wip/kurser                            https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdFlEQktPM055Y2JiV0k3Tk9RRllQNUE&hl=en&authkey=CIyL-h8
-#Redirect /wip                                   http://www.bth.se/com/wip
-Redirect /wip   /program/webbprogrammering
-
-
+Redirect /wip/courses https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdFlEQktPM055Y2JiV0k3Tk9RRllQNUE&hl=en&authkey=CIyL-h8
+Redirect /wip/kurser https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdFlEQktPM055Y2JiV0k3Tk9RRllQNUE&hl=en&authkey=CIyL-h8
+#Redirect /wip http://www.bth.se/com/wip
+Redirect /wip /program/webbprogrammering
 
 # htmlphp
-Redirect /htmlphp/install  			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDM2bnRtZDVmdw&hl=en&authkey=CJjGiosL
-Redirect /htmlphp/install_lab_environment 	https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDM2bnRtZDVmdw&hl=en&authkey=CJjGiosL
-Redirect /htmlphp/literature			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMjAyZzdjMnhyZmM&hl=en
-Redirect /htmlphp/dv1401			http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1401
-Redirect /htmlphp/overview			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMjA0Z3czdHhyZHQ&hl=en
-Redirect /htmlphp/schedule/vt11                 https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDc0ZUhoTlA2eWtlLWx2MktwbkhzeEE&hl=en&output=html&gid=5
-Redirect /htmlphp/schedule			https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDc0ZUhoTlA2eWtlLWx2MktwbkhzeEE&hl=en&output=html
-Redirect /htmlphp/grading			/kurser/faq/bedomning-och-betygsattning
-Redirect /htmlphp/kmom01/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDMzOXc1YjczZmI&hl=en
-Redirect /htmlphp/kmom02/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDYxcXM4NGY1Z2g&hl=en
-Redirect /htmlphp/kmom03/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDY1Y2JkbjhoY2Q&hl=en
-Redirect /htmlphp/kmom04/instruction		https://docs.google.com/document/d/13-bq7gK0Ec5EYFH2l0JiEu65cCT8k2xLixbdOnd9kOI/edit?authkey=CK_i2tYE
-Redirect /htmlphp/kmom05/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDc1ZGhwNTRjZ2Y&hl=en
-Redirect /htmlphp/kmom06/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTMzZGRzd3FwZ20&hl=en
-Redirect /htmlphp/kmom07/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTM1Z3MzYjlkY3I&hl=en
-Redirect /htmlphp/kmom08/projectdescription	https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTM5YzhmaDQ3ZzM&hl=en
+
+Redirect /htmlphp/install https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDM2bnRtZDVmdw&hl=en&authkey=CJjGiosL
+Redirect /htmlphp/install_lab_environment https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDM2bnRtZDVmdw&hl=en&authkey=CJjGiosL
+Redirect /htmlphp/literature https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMjAyZzdjMnhyZmM&hl=en
+Redirect /htmlphp/dv1401 http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1401
+Redirect /htmlphp/overview https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMjA0Z3czdHhyZHQ&hl=en
+Redirect /htmlphp/schedule/vt11 https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDc0ZUhoTlA2eWtlLWx2MktwbkhzeEE&hl=en&output=html&gid=5
+Redirect /htmlphp/schedule https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDc0ZUhoTlA2eWtlLWx2MktwbkhzeEE&hl=en&output=html
+Redirect /htmlphp/grading /kurser/faq/bedomning-och-betygsattning
+Redirect /htmlphp/kmom01/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDMzOXc1YjczZmI&hl=en
+Redirect /htmlphp/kmom02/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDYxcXM4NGY1Z2g&hl=en
+Redirect /htmlphp/kmom03/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDY1Y2JkbjhoY2Q&hl=en
+Redirect /htmlphp/kmom04/instruction https://docs.google.com/document/d/13-bq7gK0Ec5EYFH2l0JiEu65cCT8k2xLixbdOnd9kOI/edit?authkey=CK_i2tYE
+Redirect /htmlphp/kmom05/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDc1ZGhwNTRjZ2Y&hl=en
+Redirect /htmlphp/kmom06/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTMzZGRzd3FwZ20&hl=en
+Redirect /htmlphp/kmom07/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTM1Z3MzYjlkY3I&hl=en
+Redirect /htmlphp/kmom08/projectdescription https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTM5YzhmaDQ3ZzM&hl=en
 
 # oophp
-Redirect /oophp/install   			http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
-Redirect /oophp/install_lab_environment		http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
-Redirect /oophp/literature			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfN2NzeDlocWhr&hl=en
-Redirect /oophp/dv1127          	        http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1127
-Redirect /oophp/overview			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDMxYzVmOXNyZDY&hl=en
-Redirect /oophp/schedule/vt11			https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdGRKaUVVQ21KZXdwNTIxYkJHZklNSUE&hl=en&output=html&gid=8
-Redirect /oophp/schedule			https://spreadsheets.google.com/pub?key=0AiJ-Zb8R9RVmdGRKaUVVQ21KZXdwNTIxYkJHZklNSUE&hl=en&output=html
-Redirect /oophp/grading				https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
-Redirect /oophp/kmom01/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNGZqM2JycWhm&hl=en
-Redirect /oophp/kmom02_03/instruction		http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDBnM3FjNmRjZg&hl=en
-Redirect /oophp/kmom04/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTVncGZ4NHJkYg&hl=en
-Redirect /oophp/kmom05/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTBjNTVtMzJkMw&hl=en
-Redirect /oophp/kmom06/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTI0ZnJ3ZzZuZ2o&hl=en
-Redirect /oophp/kmom07/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTk5aHEydDJta3c&hl=en
-Redirect /oophp/kmom08/marin_gaming_arena	https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTU2eGs1eGJ2cDc&hl=en&authkey=CJ2018YO
 
+Redirect /oophp/install http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
+Redirect /oophp/install_lab_environment http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
+Redirect /oophp/literature https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfN2NzeDlocWhr&hl=en
+Redirect /oophp/dv1127 http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1127
+Redirect /oophp/overview https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDMxYzVmOXNyZDY&hl=en
+Redirect /oophp/schedule/vt11 https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdGRKaUVVQ21KZXdwNTIxYkJHZklNSUE&hl=en&output=html&gid=8
+Redirect /oophp/schedule https://spreadsheets.google.com/pub?key=0AiJ-Zb8R9RVmdGRKaUVVQ21KZXdwNTIxYkJHZklNSUE&hl=en&output=html
+Redirect /oophp/grading https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
+Redirect /oophp/kmom01/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNGZqM2JycWhm&hl=en
+Redirect /oophp/kmom02_03/instruction http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDBnM3FjNmRjZg&hl=en
+Redirect /oophp/kmom04/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTVncGZ4NHJkYg&hl=en
+Redirect /oophp/kmom05/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTBjNTVtMzJkMw&hl=en
+Redirect /oophp/kmom06/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTI0ZnJ3ZzZuZ2o&hl=en
+Redirect /oophp/kmom07/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTk5aHEydDJta3c&hl=en
+Redirect /oophp/kmom08/marin_gaming_arena https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTU2eGs1eGJ2cDc&hl=en&authkey=CJ2018YO
 
 # dbwebb1
-Redirect /dbwebb1/grading			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
-Redirect /dbwebb1/install 			http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
-Redirect /dbwebb1/install_lab_environment	http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
-Redirect /dbwebb1/literature			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNzVmNjJ2c2hjNQ&hl=en
-Redirect /dbwebb1/schedule/vt11			https://spreadsheets.google.com/pub?key=0AiJ-Zb8R9RVmcDJBVml3VVdybElVYkpiaG9ZLXVQRmc&output=html&gid=7
-Redirect /dbwebb1/schedule			https://spreadsheets.google.com/pub?key=0AiJ-Zb8R9RVmcDJBVml3VVdybElVYkpiaG9ZLXVQRmc&output=html
-Redirect /dbwebb1/dv1106                        http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1106
-Redirect /dbwebb1/dv1223                        http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1223
-Redirect /dbwebb1/overview			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDE5Z3NmNDI1Z24&hl=en
-Redirect /dbwebb1/kmom01/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfODFjcW0zd3pmZw&hl=en
-Redirect /dbwebb1/kmom02/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfOTdjdnJrdDVuNA&hl=en
-Redirect /dbwebb1/kmom03/instruction		https://docs.google.com/Doc?docID=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDUxY2s0YmRkc3g&hl=en
-Redirect /dbwebb1/kmom04/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDY3Zjh4N2pmY2c&hl=en
-Redirect /dbwebb1/kmom05/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDcxZzhtdzc5Nmo&hl=en
-Redirect /dbwebb1/kmom06/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTI3ZDR3NWRnYzU&hl=en
-Redirect /dbwebb1/kmom07/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTQyZ3djczNuY3Q&hl=en
-Redirect /dbwebb1/campus/vt11-lp4		https://spreadsheets.google.com/pub?hl=en&hl=en&key=0AiJ-Zb8R9RVmdDJIR3N1QW9QX2tWazNZdWpCWi1FTGc&output=html
+
+Redirect /dbwebb1/grading https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTUxbmJudGtzaGc&authkey=CPyI68UB&hl=en_US&authkey=CPyI68UB
+Redirect /dbwebb1/install http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
+Redirect /dbwebb1/install_lab_environment http://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMTdnOGhuNDlnMg&hl=en
+Redirect /dbwebb1/literature https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNzVmNjJ2c2hjNQ&hl=en
+Redirect /dbwebb1/schedule/vt11 https://spreadsheets.google.com/pub?key=0AiJ-Zb8R9RVmcDJBVml3VVdybElVYkpiaG9ZLXVQRmc&output=html&gid=7
+Redirect /dbwebb1/schedule https://spreadsheets.google.com/pub?key=0AiJ-Zb8R9RVmcDJBVml3VVdybElVYkpiaG9ZLXVQRmc&output=html
+Redirect /dbwebb1/dv1106 http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1106
+Redirect /dbwebb1/dv1223 http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1223
+Redirect /dbwebb1/overview https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDE5Z3NmNDI1Z24&hl=en
+Redirect /dbwebb1/kmom01/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfODFjcW0zd3pmZw&hl=en
+Redirect /dbwebb1/kmom02/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfOTdjdnJrdDVuNA&hl=en
+Redirect /dbwebb1/kmom03/instruction https://docs.google.com/Doc?docID=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDUxY2s0YmRkc3g&hl=en
+Redirect /dbwebb1/kmom04/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDY3Zjh4N2pmY2c&hl=en
+Redirect /dbwebb1/kmom05/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDcxZzhtdzc5Nmo&hl=en
+Redirect /dbwebb1/kmom06/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTI3ZDR3NWRnYzU&hl=en
+Redirect /dbwebb1/kmom07/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTQyZ3djczNuY3Q&hl=en
+Redirect /dbwebb1/campus/vt11-lp4 https://spreadsheets.google.com/pub?hl=en&hl=en&key=0AiJ-Zb8R9RVmdDJIR3N1QW9QX2tWazNZdWpCWi1FTGc&output=html
 
 # dbwebb2
-Redirect /dbwebb2/literature 			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzExZnhuZ2RnZG4&hl=en
-Redirect /dbwebb2/schedule/vt11			https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDlrOW14ajJUanV2SmthX2xpQXUzV3c&hl=en&output=html&gid=7
-Redirect /dbwebb2/schedule			https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDlrOW14ajJUanV2SmthX2xpQXUzV3c&hl=en&output=html
-Redirect /dbwebb2/dv1207                        http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1207
-Redirect /dbwebb2/overview			https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDMyaGYzNTZnZHY&hl=en
-Redirect /dbwebb2/feedback_during_course	https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzEyZGZ0bnBxY20&hl=en
-Redirect /dbwebb2/kmom01/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzEzYzJyNG13Y2I&hl=en
-Redirect /dbwebb2/kmom02/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzI4ZjVtYnJqY3g&hl=en
-Redirect /dbwebb2/kmom03/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTI3aGo4M2h3Zm4&hl=en
-Redirect /dbwebb2/kmom04/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzUwYzJicDRwZHA&hl=en
-Redirect /dbwebb2/kmom08/instruction		https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTU3ZzR2ajRidHc&hl=en
+
+Redirect /dbwebb2/literature https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzExZnhuZ2RnZG4&hl=en
+Redirect /dbwebb2/schedule/vt11 https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDlrOW14ajJUanV2SmthX2xpQXUzV3c&hl=en&output=html&gid=7
+Redirect /dbwebb2/schedule https://spreadsheets.google.com/ccc?key=0AiJ-Zb8R9RVmdDlrOW14ajJUanV2SmthX2xpQXUzV3c&hl=en&output=html
+Redirect /dbwebb2/dv1207 http://edu.bth.se/utbildning/utb_kurs.asp?Kurskod=DV1207
+Redirect /dbwebb2/overview https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNDMyaGYzNTZnZHY&hl=en
+Redirect /dbwebb2/feedback_during_course https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzEyZGZ0bnBxY20&hl=en
+Redirect /dbwebb2/kmom01/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzEzYzJyNG13Y2I&hl=en
+Redirect /dbwebb2/kmom02/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzI4ZjVtYnJqY3g&hl=en
+Redirect /dbwebb2/kmom03/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTI3aGo4M2h3Zm4&hl=en
+Redirect /dbwebb2/kmom04/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfMzUwYzJicDRwZHA&hl=en
+Redirect /dbwebb2/kmom08/instruction https://docs.google.com/Doc?docid=0ASJ-Zb8R9RVmZGhoN2pjaHBfNTU3ZzR2ajRidHc&hl=en

@@ -2,15 +2,12 @@
 author:
   - lew
 revision:
+  "2022-10-06": (C, lew) Klarmarkerade kmom10.
   "2022-10-04": (B, lew) Uppdaterad inför HT22.
   "2019-03-26": (A, lew) Ny inför HT19.
 ...
 
 # Kmom10: Projekt och examination
-
-[WARNING]
-Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
 
 Detta kursmoment avslutar och examinerar kursen.
 

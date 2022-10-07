@@ -51,6 +51,16 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lägg till redovisningstexten i din me-sida.
 
+[YOUTUBE src=oN-iYTWoFGg?t=2310 width=639 caption="Fungerar uppgiften som tänkt?"]
+
+### Testa din inlämning {#test}
+
+Du kan köra vissa tester på din inlämning och se om de delarna uppfyller kraven. Rättningen kommer endast genomföras om testerna går igenom.
+
+```console
+$ dbwebb test kmom06
+```
+
 ## Resultat & Redovisning {#resultat_redovisning}
 
 _(ca: 1-2 studietimmar)_

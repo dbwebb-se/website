@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2022-10-07": "(D, mos) Länk till tips och trix."
     "2022-09-20": "(C, mos) Stavning."
     "2022-09-14": "(B, mos) Genomgången och tog bort galleriuppgiften."
     "2022-08-11": "(A, mos) Första utgåvan till webtec-v2."
@@ -78,6 +79,12 @@ Titta på funktionerna i filen. Prova att anropa dem och skriva ut innehåll i d
 
 
 
+### Tips, trix och livlinor {#livlina}
+
+I GitHub issuen "[Tips och trix till kmom04 och fotokalendern](https://github.com/dbwebb-se/webtec/issues/16)" finns det en del inspiration och tips och trix till hur man kan tänka och vilka eventuella svårigheter som finns i uppgiften.
+
+
+
 Krav {#krav}
 -----------------------
 
@@ -94,31 +101,13 @@ Från övningen förutsetts att du har följande implementerat.
 
 
 
-<!--
-### Krav 1: Galleri med 12 bilder {#galleri}
-
-I första delen av uppgiften handlar det om att göra ett enkelt galleri med 12 bilder som du själv har valt. Gör en sidkontroller `public/gallery.php` som visar upp samtliga bilder på en sida.
-
-Gör en style så att sidan ser trevlig ut.
-
-Placera en länk till sidkontrollern i navbaren.
-
-Styla det så att det ser snyggt ut och se till att bilderna visas upp i samma/liknande storlek. Enklast är att spara bilderna för hand och redigera storleken i ett bildbehandlingsprogram.
-
-**EXTRA**
-
-Gör bara detta om du känner att du har tid, lust och energi.
-
-Om du vill så kan du uppdatera ditt galleri så att det kan visa 4 eller 6 bilder på en sida och att man måste klicka på en länk "nästa sida" för att se de andra bilderna. Här kan du använda `?num=6` för att säga hur många bilder du vill visa och kombinera det med `?num=6&page=2` för att visa de sista 6 bilderna.
-
--->
-
-
-
 ### Krav 1: Almanacka med bild {#manadskal}
 
 Du skall göra en årsalmanacka för årets 12 månader i innevarande år där du visar en månad tillsammans med en bild, en så kallad fotokalender.
 
+<!--
+Använd bara date=2022-06-01, inte month.
+-->
 Gör en sidkontroller `photocal.php` som tar ett argument via querysträngen `?month=6` och därefter visas månaden juni upp tillsammans med en bild. Skickar man in `?month=7` så visas juli upp och missar man att skicka in något alls så visas aktuell månad. Du kan också välja att skicka in både månad och år via querysträngen, det är upp till dig hur du konstruerar querysträngen.
 
 Skapa en länk så att man kan navigera till nästa och föregående månad. När du kommer till månad 12 och klickar nästa så tar det antingen stopp, eller så byter du år - det är upp till dig att välja taktik.
@@ -132,6 +121,12 @@ Tanken är att din almanacka har följande utseende.
 I kalendern visar du vecka för vecka med sitt veckonummer, datum för dagen och månadens namn. För varje dag, skriv ut vilket dagnummer det är för året (1-365/366). Du kan även välja att visa mer information om du vill.
 
 Se till att söndagar är röda i din style.
+
+<!--
+Se till att din kalender börjar på en måndag. Om månaden inte börjar på en måndag så visar du datum från den sista veckan på föregående månad.
+
+Se till att kalendern avslutas på en söndag. Om den aktiella månaden inte avslutar med en söndag så visar du dagar från kommande månad tills det blir söndag.
+-->
 
 <!--
 * Använd minst 4/12 olika bilder.

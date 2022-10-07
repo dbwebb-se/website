@@ -64,6 +64,15 @@ Veckans PT-video handlar om din roll i en grupp.
 
 
 
+Hållbarhet {#hallbarhet}
+-------------------------------------------
+
+Vi fortsätter fokusera på perspektivet *hållbarhet* och vilken roll vi som programmerare har i den sammanhangen.
+
+I detta kmom tar vi en titt på hur Internet skapar en mer jämlik värld där fler och fler kan få tillgång till information. International Telecommunication Union (ITU) är en del av FN och gav förra ut [följande rapporter](https://www.itu.int/itu-d/reports/statistics/2021/11/15/foreword/) om Internet.
+
+
+
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 

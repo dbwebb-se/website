@@ -127,7 +127,11 @@ Avslutningsvis {#avslutning}
 
 Det var ett par korta steg för att komma igång med kommandoradsklienten för SQLite. Ibland kan det vara det snabbaste och enklaste sättet att tillgå och prata med en SQLite-databas.
 
-Det finns fler typer av klienter som du kan använda till SQLite. Här följer två exempel.
+Det finns fler typer av klienter som du kan använda till SQLite. Här följer två exempel som du kan kika på som eventuell överskurs.
 
 * Desktop: [Kom igång med databasen SQLite med DB Browser för SQLite](kunskap/kom-igang-med-databasen-sqlite-med-db-browser-for-sqlite)
 * Webb: [En webbaserad klient för SQLite, phpliteadmin](kunskap/en-webbaserad-klient-for-sqlite-phpliteadmin)
+
+<!--
+Dubbelkolla att de båda klienterna ovan fortfarande fungerar med tex win/wsl.
+-->

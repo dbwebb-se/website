@@ -54,6 +54,16 @@ Läs följande för att få en introduktion och översikt till gridbaserad layou
 
 1. I uppgiften så ska ni tolka Wireframes, vill man läsa mer om det kan man göra det [här](https://en.wikipedia.org/wiki/Website_wireframe).
 
+
+
+### Video {#video}
+
+Veckans PT-video handlar om din roll i en grupp.
+
+[YOUTUBE src="7KSCvPwNrzE" width=700 caption="din roll?"]
+
+
+
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 

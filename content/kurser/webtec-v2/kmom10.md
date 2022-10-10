@@ -7,6 +7,7 @@ views:
             src: "image/webtec/logo.png"
 author: mos
 revision:
+    "2022-10-10": "(I, mos) Uppdaterad inför webtec v2 ht22."
     "2021-10-12": "(H, mos) Uppdaterad inför webtec v1."
     "2020-10-14": "(G, mos) Not om redovisningsvideo."
     "2020-10-14": "(F, mos) Not om access till databasen."
@@ -18,12 +19,6 @@ revision:
 ...
 Kmom10: Projekt och examination
 ==================================
-
-[WARNING]
-
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
-
-[/WARNING]
 
 Detta kursmoment avslutar och examinerar kursen.
 
@@ -43,7 +38,9 @@ Responsiv sida som ett optionellt krav, via optionella delar i kmomen?
 Förutsättning {#pre}
 --------------------------------------------------------------------
 
-Det finns ingen anledning att påbörja projektet om du inte är klar med kmom05/06 som visar hur du jobbar mot databaser i den kodstruktur som kursen erbjuder.
+Det finns ingen anledning att påbörja projektet om du inte är klar med kmom05 och kmom0606 som visar hur du jobbar mot databaser i den kodstruktur som kursen erbjuder.
+
+Börja med en `dbwebb update` för at tuppdatera ditt kursrepo.
 
 
 
@@ -113,14 +110,10 @@ Gör ditt val mellan BMO och NVM. Bygg sedan webbplatsen med följande funktion 
 
 Bygg en egen webbplats för BMO/NVM. Spara webbplatsen i ditt kursrepo under `me/proj`.
 
-<!--
-Förstasidan i projektet skall heta `me/proj/index.php`.
--->
-
 Webbplatsen skall ha en stil, layout, header och footer som speglar
 webbplatsens syfte och idé. Din redovisningstext skall innehålla ett stycke där du förklarar ditt val av style.
 
-Det finns många bilder i `img`-katalogen. Använd dem när du presenterar objekten och för att illustrera artiklarna. Använd "rätt" storlek av bilderna så att webbläsaren inte behöver skala om bilden.
+Det finns många bilder som du kan använda när du presenterar objekten och för att illustrera artiklarna. Använd "rätt" storlek av bilderna så att webbläsaren inte behöver skala om bilden.
 
 Objekten är de utställningsobjekt som visas upp i museet. Det finns också artiklar som berättar och sätter in objekten i ett sammanhang.
 
@@ -128,17 +121,19 @@ Objekten är de utställningsobjekt som visas upp i museet. Det finns också art
 
 #### Databas {#databas}
 
-Informationen från databasen läses in med PHP PDO på det viset vi gjort i kmom05/06. Man skall inte kopiera innehåll från databasen och placera in i HTML-koden.
+Informationen från databasen läses in med PHP PDO på det viset vi gjort i kmom05 & 06. Man skall inte kopiera innehåll från databasen och placera in i HTML-koden.
 
 Man kan göra justeringer direkt i databasens innehåll och tabellstruktur. Det är okey att modifiera tabeller och lägga till ytterligare tabeller och information i databasen. Berätta vad du gjort för ändringar i redovisningstexten.
+
+Databasen placerar du i katalogen `db/`.
 
 
 
 #### Webbplatsens kodbas {#kodbas}
 
-Du skall bygga webbplatsen med stöd av den kodbas du använt i kursen. Det innebär sidkontroller, templatefiler för vyer och layout. Använd samma katalogstruktur som använts i kursen.
+Du skall bygga webbplatsen med stöd av den kodbas och struktur du använt i kursen. Det innebär sidkontroller, processingkontroller och templatefiler för vyer och layout. Använd samma katalogstruktur som använts i kursen.
 
-Skapar du egna funktioner så lägger du dem i `src/functions.php`.
+Skapar du egna funktioner så lägger du dem i katalogen `src/`.
 
 Det finns ingen anledning att använda JavaScript i projektet. Det är inte förbjudet, men det ger ingen bonus, eventuellt tvärtom - om det inte fungerar för rättaren.
 
@@ -149,6 +144,8 @@ Det finns ingen anledning att använda ett CSS ramverk i projektet, men det är 
 #### Hem {#hem}
 
 Webbplatsen skall ha en välkomnande förstasida som visar på webbplatsens syfte och innehåll. En trevlig förstasida kan göra en lyckad webbplats.
+
+Döp denna sidkontroller till `public/home.php`.
 
 Använd gärna objekt och korta introduktioner till artiklarna för att locka användaren att stanna kvar på din webbplats.
 
@@ -163,11 +160,11 @@ på ett trevligt och lättåtkomligt sätt.
 
 * Artiklarna skall finnas på en egen sida, tillgängliga via navbaren.
 
-Det bör finnas en sida som visar flera/alla objekt med en kort intro till respektive objekt.
+Det skall finnas en sida som visar flera/alla objekt med en kort intro till respektive objekt.
 
 Man kan sedan välja ett specifikt objekt som man vill titta på och då visas det objektet upp i en separat sida.
 
-Gör samma struktur för artiklarna.
+Gör en liknande struktur för artiklarna.
 
 
 
@@ -175,7 +172,7 @@ Gör samma struktur för artiklarna.
 
 Webbplatsen skall ha en Om-sida, tillgänglig via navbaren.
 
-I webbplatsen skall det även finnas en personlig presentation av dig själv, liknande den du har på din me-sida. Du har ju skapat siten, så berätta vem du är och i vilket sammanhang webbplatsen skapades.
+I webbplatsen kan det även finnas en personlig presentation av dig själv, liknande den du har på din me-sida. Du har ju skapat siten, så berätta vem du är och i vilket sammanhang webbplatsen skapades.
 
 Om-sidan skall även innehålla ett generellt textstycke om webbplatsen och dess innehåll. Det finns material i databasen du kan använda till om-sidan.
 
@@ -211,6 +208,8 @@ Till exempel bör bilder vara responsiva, tillsammans med header, footer och de 
 
 Gör ytterligare en sida till din webbplats, denna sida skall innehålla dokumentation av din webbplats. Du behöver inte lägga denna sidan i navbaren, men det måste finnas en länk till dokumentationssidan från din om-sida.
 
+Döp denna sidkontroller till `public/doc.php`.
+
 I sidan skriver du om följande.
 
 1. Berätta om din kodstruktur som ligger bakom din webbplats. Berätta hur du tänkte när du organiserade din kod för webbplatsen.
@@ -223,17 +222,17 @@ I sidan skriver du om följande.
 
 Förbättra användarens möjilghet att navigera på din webbplats och finna informationen. Användarens upplevelse, User Experience (UX), är en viktig ingrediens när man bygger flödet i webbplatsen.
 
-Lägg till en sökfunktion och gör det enkelt att navigera mellan objekten med en länk till "Nästa objekt" och "Föregående objekt".
+Lägg till följande möjligheter för att söka och navigera.
 
-1. Gör en sökfunktion där man kan söka bland objekt och artiklar. När sökresultatet kommer upp så kan man klicka på ett objekt eller artikel för att komma vidare till en sida där enbart det valda objektet/artikeln visas.
+1. Gör en sökfunktion där man kan söka bland objekt och artiklar. När sökresultatet kommer upp så presenteras kort information om sökträffen. Sedan kan man klicka på sökträffen och komma till det objekt eller artikel som sökträffen gäller. Placera länken till söksidan i navbaren (eller motsvarande).
 
-2. Gör så att man enkelt kan titta över objekten med en länk till "nästa objekt" och "föregående objekt". Det kan då bli enkelt att navigera mellan objekten.
+2. Gör så att man enkelt kan titta över alla objekten med en länk till "nästa objekt" och "föregående objekt". Det kan då bli enkelt att navigera mellan objekten. Man skall alltså kunna klicka sig fram mellan samtliga objekt.
 
 
 
 ### Krav 5: Galleri av bilder (optionell) {#k5}
 
-Skapa en egen sida med ett galleri som visar bilderna som är kopplade till objekten.
+Skapa en egen sida med ett galleri som visar bilderna som är kopplade till objekten. Namnge länken som "Galleri" och placera den i navbaren.
 
 Använd inte JavaScript. Gör en lösning baserad på serversidan och PHP.
 
@@ -247,7 +246,7 @@ Om man klickar på en bild så leder den länken till att enbart bilden visas, a
 
 Skapa ett gränssnitt för webbplatsens administratör. Följande delar skall finnas med.
 
-1. Administratören kan logga in på webbplatsen för att komma åt de administrativa funktionerna. Använd *admin admin* och *doe doe* som användare och lösenord.
+1. Administratören kan logga in på webbplatsen för att komma åt de administrativa funktionerna. Använd *admin admin* och *doe doe* som användare och lösenord. Placera länken till login i navbaren (eller liknande).
 
 2. Det skall gå att editera webbplatsens innehåll (artiklar/objekt) som ligger lagrat i databasen. Det skall gå att lägga till och ta bort innehåll.
 

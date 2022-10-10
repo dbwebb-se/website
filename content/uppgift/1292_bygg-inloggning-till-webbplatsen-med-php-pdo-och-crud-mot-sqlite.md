@@ -92,7 +92,9 @@ Krav {#krav}
 
 Utför följande krav.
 
-
+<!--
+* Förtydliga vilka sökvägar som skall gälla, ange en sidkontroller och ange var databasfilen skall ligga.
+-->
 
 ### Krav 1: Loginhantering på webbplatsen {#K1}
 

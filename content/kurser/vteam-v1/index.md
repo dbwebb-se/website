@@ -5,7 +5,7 @@ views:
         template: default/image
         data:
             src: "image/vteam/logo.png"
-title: webtec (v2)
+title: vteam (v1)
 author:
     - mos
 revision:

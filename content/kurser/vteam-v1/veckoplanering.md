@@ -54,7 +54,7 @@ Skaffa dig en grupp genom att till exempel annonsera att du söker en grupp i ku
 
 
 
-Vecka 01: Kund och uppdrag
+Vecka 01 (v44): Kund och uppdrag
 -------------------------
 
 Kursen startar och projektet presenteras tillsammans med kursens upplägg.
@@ -63,58 +63,74 @@ Innan veckan är slut skall alla finnas i en grupp. Gruppstorleken är 4 student
 
 
 
-Vecka 02: XXX
+Vecka 02 (v45): System Design Specification (SDS)
+-------------------------
+
+Jobba med översikten av systemet, dokumentera i en SDS.
+
+
+
+Vecka 03 (v46): XXX
 -------------------------
 
 
 
-
-Vecka 03: XXX
+Vecka 04 (v47): SDS Klar
 -------------------------
 
+Lämna in SDS.
 
+<!--
+* Individuell reflektion över arbetet så här långt samt se vilken plats man själv tar i projektet.
+    * Fundera på om det är något man vill ändra för resten av projektet.
+-->
 
-Vecka 04: SDS Klar
+Vecka 05 (v48): Implementera
 -------------------------
 
-Lämna in SDS för ert projekt.
+Påbörja implementationsfasen av projektet och implementera systemet enligt er SDS.
 
 
 
-Vecka 05: XXX
--------------------------
-
-
-
-Vecka 06: Teknikval
+Vecka 06 (v49): Teknikval
 -------------------------
 
 Lämna in de teknikval ni gjort för projektet och berätta kort om hur ni kommer att implementera systemet.
 
 
 
-Vecka 07, 08, 09: Implementera projektet
+Vecka 07 (v50): Implementera projektet
 -------------------------
 
-Jobba med implementationen av projektet, se att hela tiden integrera teamets arbete i en helhet.
+Jobba med implementationen av projektet och se till att kontinuerligt integrera teamets arbete i en helhet.
+
+Första möjligheten att göra en leverans av systemet.
 
 
 
-Vecka 10: Förbered inför leverans
+Vecka 08 (v51): Implementera projektet
+-------------------------
+
+
+Vecka 09 (v52): Implementera projektet
+-------------------------
+
+
+Vecka 10 (v01): Förbered inför leverans
 -------------------------
 
 Jobba med projektet och förbered inför leveransen.
 
 
 
-Vecka 11: Leverans och redovisning
+Vecka 11 (v02): Leverans och redovisning
 -------------------------
 
-Gruppen levererar sitt system och presenterar det.
+Gruppen levererar systemet och presenterar arbetet och demonstrerar att systemet fungerar.
 
-Avslutningsvis skrivs en erfarenhetsrapport som inkluderas i gruppens slutrapport.
+Avslutningsvis skrivs en slutrapport från gruppens projektarbetet. Slutrapporten innehåller även en erfarenhetsrapport med lärdomar.
 
-Varje deltagare skriver också en avslutande summering (1 sida) av sina egna erfarenheter och lärdomar av gruppens arbete och kursens utformning. 
+Varje deltagare skriver också en avslutande summering av sina egna erfarenheter och lärdomar av gruppens arbete och kursens utformning.
 
 <!-- Vad gjorde vi bra och vad kan vi göra bättre nästa gång samt fem viktiga tips (tekniska tips och grupptips) till grupperna som går detta projekt nästa år -->
 

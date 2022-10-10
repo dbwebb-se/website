@@ -202,6 +202,11 @@ Redirect /kurser/pattern/studieplan https://docs.google.com/spreadsheets/d/1Jsm5
 Redirect /kurser/pattern/lektionsplan https://docs.google.com/spreadsheets/d/1ETZ4rRBAu6DopFg00Hugo4fGyGXoSUjyRaOyQBOU9u8/edit?usp=sharing
 Redirect /kurser/pattern /kurser/pattern-v1
 
+# vteam
+
+Redirect /vteam         /kurser/vteam-v1
+Redirect /kurser/vteam  /kurser/vteam-v1
+
 # python
 
 Redirect /python /kurser/python

@@ -99,7 +99,8 @@ views:
                             meta:
                                 type: content
                                 #route: kurser/ramverk1-v2/block-kurser-kmom
-                                route: kurser/pattern-v1/block-kurser-kmom-proj
+                                #route: kurser/pattern-v1/block-kurser-kmom-proj
+                                route: kurser/vteam-v1/block-kurser-kmom
                     column-3:
                         data:
                             meta:
@@ -163,7 +164,8 @@ views:
                             meta:
                                 type: content
                                 #route: kurser/ramverk1-v2/block-kurser-kmom
-                                route: kurser/pattern-v1/block-kurser-kmom-proj
+                                #route: kurser/pattern-v1/block-kurser-kmom-proj
+                                route: kurser/vteam-v1/block-kurser-kmom
                     column-3:
                         data:
                             meta:

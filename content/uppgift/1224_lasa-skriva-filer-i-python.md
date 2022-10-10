@@ -6,7 +6,7 @@ category:
 revision:
     "2020-08-24": (a, aar) Skapad inför python-v3.
 ...
-LÄsa och skriva filer i python
+Läsa och skriva filer i python
 ==================================
 
 Vi ska i denna laboration träna på läsa och skriva data till filer i Python.
@@ -40,9 +40,9 @@ Materialet skapas nu och läggs i en underkatalog till din katalog `me`.
 | `instruction.html` | Beskrivning av labben och de uppgifter som skall göras, öppna och läs via en webbläsare.               |
 | `answer.py`        | Här skall du skriva din kod för att lösa respektive uppgift i labben. |
 | `Dbwebb.py`        | Används av `answer.py` för att testa din labb.                        |
-| `.answer.json`      | Används av `Dbwebb.py` för att testa din labb.                        |
-| `ircLog.txt`      | Fil med data som du ska jobba med i labben.                        |
-| `passwords.txt`      | Fil med data som du ska jobba med i labben.                        |
+| `.answer.json`     | Används av `Dbwebb.py` för att testa din labb.                        |
+| `quotes.txt`       | Fil med data som du ska jobba med i labben.                        |
+| `passwords.txt`    | Fil med data som du ska jobba med i labben.                        |
 
 Öppna filen `instruction.html` i en webbläsare och läs igenom de uppgifter som labben omfattar.
 

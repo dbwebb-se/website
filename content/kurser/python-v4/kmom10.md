@@ -151,8 +151,7 @@ När du skriver en användares resultat till `score.txt` ska du också spara vil
 
 ### Krav 6: Skrivtest med slumpade tecken (optionell) {#k6}
 
-Lägg till menyval 5, ska användaren välja ett antal sekunder som testet ska pågå.
-
+Lägg till menyval 5, i det manyvalet ska användaren välja ett antal sekunder som testet ska pågå. Under så många sekunder ska du slumpa fram ett tecken som användaren ska skriva in så snabbt som möjligt. När tiden har tagit slut ska du skriva ut vilka tecken som blev fel och hur många gånger som det skrevs fel på det tecknet. Utskriften ska vara sorterad i storleksordning på antalet fel. Räkna också ut och skriv ut antalet tecken per ord som användaren hann med.
 
 
 
@@ -161,24 +160,20 @@ Redovisning {#redovisning}
 
 1. På din [redovisningssida](./../redovisa), skriv följande:
 
-2. Berätta om din kodstruktur som ligger bakom din webbplats. Berätta hur du tänkte när du organiserade din kod för webbplatsen.
-    - hur det tänkte med uppdelning i moduler, vilka funktioner i vilken modul och varför?
-3. 
-
     1. För varje krav du implementerat, dvs 1-3, 4, 5, 6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
+       - Berätta om din kodstruktur och hur du tänkte när du organiserade din kod.
 
     2. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
     3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-4. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte att bifoga länken till projektet på studentservern.
+2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte att bifoga länken till projektet på studentservern.
 
-5. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Detta kan du göra dagen efter projektets deadline. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
+3. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
 
-6. Se till att samtliga kursmoment validerar i "dbwebb test/validate/publish".
+4. Se till att samtliga kursmoment validerar i "dbwebb validate/publish".
 
 ```text
 # Ställ dig i kursrepot
-dbwebb test kmom10
 dbwebb publish me
 ```

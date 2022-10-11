@@ -26,14 +26,14 @@ Totalt omfattar kursmomentet (07/10) ca 20+10 studietimmar. Du kan själv styra 
 Förutsättning {#pre}
 --------------------------------------------------------------------
 
-Du jobbat igenom föregående kursmoment.
+Du har jobbat igenom föregående kursmoment.
 
 
 
 Bedömning och betygsättning {#bedomning}
 --------------------------------------------------------------------
 
-När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/bedomning-och-betygsattning).
+När du har lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/bedomning-och-betygsattning).
 
 
 
@@ -57,7 +57,7 @@ Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
 Lägg din kod i `kmom10/typing`. Din kod ska validera i python för att få godkänt.
 
-Implementera en ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska ni räkna ut en poäng på hur bra det gick och visa upp det. 
+Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska ni räkna ut en poäng på hur bra det gick och visa upp det. 
 
 
 
@@ -83,9 +83,9 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 #### Vad ett skrivtest är {#skrivtest}
 
-För menyval 1-3, ett test går ut på att läsa upp alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv ut andra raden, vänta på att användaren skriver in samma rad osv. tills alla rader har gåtts igenom. Kolla på videon ovanför om ni är osäkra på hur det ska gå till. När testet är klart ska ni skriva ut hur bra användaren [presterade och poäng](#performance).
+För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv därefter ut andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om ni är osäkra på hur det ska gå till. När testet är klart ska ni skriva ut hur bra användaren [presterade och poäng](#performance).
 
-Efter det ska ni be användaren skriva in sitt namn och ni ska spara namnet mes dess poäng i filen `score.txt`. I `score.txt` ska innehålla alla som kört ett test och vilken poäng de fick. 
+Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet och användarens poäng i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken poäng de fick. 
 
 
 
@@ -93,9 +93,9 @@ Efter det ska ni be användaren skriva in sitt namn och ni ska spara namnet mes 
 
 Med prestanda menas två saker, hur många procent tecken användaren skrev in fel jämfört med texten som visades och hur många gånger olika tecken blev felskrivna. T.ex. om programmet skriver ut:  
 `hej På dig Igelkott` och användaren skriver in:  
-`he jpå Di gIgelkorr`. Då blir följande tecken fel , "j", " " två gånger , "P", "d", "g" och "t" två gånger 2. Det blir 42% fel. Notera att **det är case-sensitive, `a != A`**.
+`he jpå Di gIgelkorr`. Då blir följande tecken fel , "j" en gång, " " två gånger, "P", "d" och "g" en gång samt "t" två gånger. Det blir 42% fel. Notera att **det är case-sensitive, `a != A`**.
 
-Vilka tecken som är fel och hur många gånger varje blir fel **ska vara sorterat** på antalet i utskriften.
+Utskriften ska bestå av vilka tecken som gick fel **sorterat** på antalet i utskriften.
 
 För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av dividerat med fel procenten, `len/error_percentage`. 
 
@@ -129,7 +129,7 @@ Det finns inte några färdiga tester, så `dbwebb test kmom10` funkar **inte**.
 
 ### Krav 4: Tidtagning (optionell) {#k4}
 
-För menyval 1-3 lägg till att räkna ut hur lång tid det tar för användaren att skriva in hela texten. Mät tiden från precis innan du skriver ut första raden till att användaren har skrivit in sista raden.
+För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användaren att skriva in hela texten. Mät tiden från precis innan du skriver ut första raden till att användaren har skrivit in sista raden.
 
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
@@ -137,7 +137,7 @@ Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för 
 
 #### Prestanda och poäng {#k4-score}
 
-Nu ska tiden mäd i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många ord per minut (WPM) som användaren skrev.
+Nu ska tiden med i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många ord per minut (WPM) som användaren skrev.
 
 Poänguträkningen ska nu vara `len/duration/error_percentage`.
 

@@ -75,7 +75,7 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 "3". Starta skrivtest med filen `hard.txt`.  
 
-"4". Skriv ut poänglistan som du har sparat i `score.txt`.  
+"4". Skriv ut poänglistan som du har sparat i `score.txt`, sorterad på högst poäng.
 
 "q". Ansluta programmet.
 
@@ -95,7 +95,9 @@ Med prestanda menas två saker, hur många procent tecken användaren skrev in f
 `hej På dig Igelkott` och användaren skriver in:  
 `he jpå Di gIgelkorr`. Då blir följande tecken fel , "j", " " två gånger , "P", "d", "g" och "t" två gånger 2. Det blir 42% fel. Notera att **det är case-sensitive, `a != A`**.
 
-För att räkna ut poängen, ta antalet tecken som användaren ska skriva in dividerat med fel procenten, `len/error_percentage`. 
+Vilka tecken som är fel och hur många gånger varje blir fel **ska vara sorterat** på antalet i utskriften.
+
+För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av dividerat med fel procenten, `len/error_percentage`. 
 
 
 
@@ -125,37 +127,32 @@ Det finns inte några färdiga tester, så `dbwebb test kmom10` funkar **inte**.
 
 
 
-### Krav 4: Sök och navigera (optionell) {#k4}
+### Krav 4: Tidtagning (optionell) {#k4}
 
-Förbättra användarens möjilghet att navigera på din webbplats och finna informationen. Användarens upplevelse, User Experience (UX), är en viktig ingrediens när man bygger flödet i webbplatsen.
+För menyval 1-3 lägg till att räkna ut hur lång tid det tar för användaren att skriva in hela texten. Mät tiden från precis innan du skriver ut första raden till att användaren har skrivit in sista raden.
 
-Lägg till en sökfunktion och gör det enkelt att navigera mellan objekten med en länk till "Nästa objekt" och "Föregående objekt".
-
-1. Gör en sökfunktion där man kan söka bland objekt och artiklar. När sökresultatet kommer upp så kan man klicka på ett objekt eller artikel för att komma vidare till en sida där enbart det valda objektet/artikeln visas.
-
-2. Gör så att man enkelt kan titta över objekten med en länk till "nästa objekt" och "föregående objekt". Det kan då bli enkelt att navigera mellan objekten.
+Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
 
 
-### Krav 5: Galleri av bilder (optionell) {#k5}
+#### Prestanda och poäng {#k4-score}
 
-Skapa en egen sida med ett galleri som visar bilderna som är kopplade till objekten.
+Nu ska tiden mäd i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många ord per minut (WPM) som användaren skrev.
 
-Använd inte JavaScript. Gör en lösning baserad på serversidan och PHP.
-
-Visa mindre bilder (thumbnails) på alla bilder. Välj att visa 4 bilder (välj själv antal) på en sida. Det skall finnas en länk "Nästa >" för att visa nästa 4 bilder, och föregående "< Föregående" 4 bilder. Användaren kan klicka runt och med enkelhet se alla bilder i arkivet, sida för sida.
-
-Om man klickar på en bild så leder den länken till att enbart bilden visas, antingen i en webbsida, eller bara som ren bild direkt i webbläsaren.
+Poänguträkningen ska nu vara `len/duration/error_percentage`.
 
 
 
-### Krav 6: Administrativt gränssnitt (optionell) {#k6}
+### Krav 5: Sortera poängutskriften (optionell) {#k5}
 
-Skapa ett gränssnitt för webbplatsens administratör. Följande delar skall finnas med.
+När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst poäng.
 
-1. Administratören kan logga in på webbplatsen för att komma åt de administrativa funktionerna. Använd *admin admin* och *doe doe* som användare och lösenord.
 
-2. Det skall gå att editera webbplatsens innehåll (artiklar/objekt) som ligger lagrat i databasen. Det skall gå att lägga till och ta bort innehåll.
+
+### Krav 6: Skrivtest med slumpade tecken (optionell) {#k6}
+
+Lägg till menyval 5, ska användaren välja ett antal sekunder som testet ska pågå.
+
 
 
 
@@ -164,9 +161,9 @@ Redovisning {#redovisning}
 
 1. På din [redovisningssida](./../redovisa), skriv följande:
 
-1. Berätta om din kodstruktur som ligger bakom din webbplats. Berätta hur du tänkte när du organiserade din kod för webbplatsen.
+2. Berätta om din kodstruktur som ligger bakom din webbplats. Berätta hur du tänkte när du organiserade din kod för webbplatsen.
     - hur det tänkte med uppdelning i moduler, vilka funktioner i vilken modul och varför?
-2. 
+3. 
 
     1. För varje krav du implementerat, dvs 1-3, 4, 5, 6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 
@@ -174,11 +171,11 @@ Redovisning {#redovisning}
 
     3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-3. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte att bifoga länken till projektet på studentservern.
+4. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte att bifoga länken till projektet på studentservern.
 
-4. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Detta kan du göra dagen efter projektets deadline. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
+5. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Detta kan du göra dagen efter projektets deadline. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
 
-5. Se till att samtliga kursmoment validerar i "dbwebb test/validate/publish".
+6. Se till att samtliga kursmoment validerar i "dbwebb test/validate/publish".
 
 ```text
 # Ställ dig i kursrepot

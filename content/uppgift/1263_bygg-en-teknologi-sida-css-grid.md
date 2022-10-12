@@ -12,7 +12,7 @@ Bygg en teknologi-sida med CSS-Grid
 
 Du skall bygga om teknologi-sida på din portfolio sida med hjälp utav CSS-Grid.
 
-Du börjar med att strukturera upp din samlingssida (`portfolio/content/technology/index.md`) för alla teknologier och följer sedan upp med att fixa din layout för de individuella artiklar (`portfolio/content/technology/XX.md`).
+Du börjar med att strukturera upp en samlingssida (`portfolio/content/technology/index.md`) för alla teknologier och följer sedan upp med att fixa en layout för de individuella artiklar (`portfolio/content/technology/XX.md`).
 
 
 
@@ -41,18 +41,14 @@ Som webbutvecklare är det inte sällan man får något som kallas en wireframe 
 
 ## Förberedda artiklar
 
-Du får självklart göra egna artiklar om olika teknologier, men för att kursmomentet kan fokusera på design och att lära sig CSS Grid finns förberedda artiklar om 7 olika teknologier i exempel mappen i kursrepot under  `example/technologies`.
+Du får självklart göra egna artiklar om olika webbteknologier, men för att kursmomentet kan fokusera på design och att lära sig CSS Grid finns förberedda artiklar om 7 olika webbteknologier i exempel mappen i kursrepot under  `example/technologies`.
 
 
 
 Krav {#krav}
 -----------------------
 
-En alumni till programmet, Matilda, var snäll nog att göra fyra wireframes som ni ska efterlikna med hjälp utav CSS-Grid och/eller Flexbox. Själva designen på sidorna får ni välja, det är layout:en vi är ute efter. Om ni vill ha större bilder så kan ni trycka på bilderna för att få full storlek.
-
-[INFO]
-Mobilmenyn som visas i våra wireframes är den för hela portfolion. Ni behöver inte göra en till för era undersidor.
-[/INFO]
+Själva designen på sidorna får ni välja, det är layout:en vi är ute efter. Om ni vill ha större bilder så kan ni trycka på bilderna för att få full storlek.
 
 
 
@@ -60,16 +56,16 @@ Mobilmenyn som visas i våra wireframes är den för hela portfolion. Ni behöve
 
 * Din landningssida skall använda sig utav en egen layout, `technologies.twig`
 * Din landningssida skall använda sig utav CSS-Grid.
-* Din grid ska bestå utav tre kolumner.
+* Din grid ska bestå utav **tre** kolumner.
 * Titel för sidan och projektboxen ska vara en del av gridet och vara tre kolumner i bredd.
 * Boxarna ska ha en länk till respektive teknologi så man kan navigera vidare.
+* Varje box ska kunna ta upp 1, 2 eller 3 kolumner i bredd.
 * Sidan och dess grid ska vara responsivt genom att:
     * Besöks sidan via en telefon ska gridet istället vara en kolumn bred.
 
 Resten av designen är upp till er att bestämma.
 
-[FIGURE src=image/design-v3/wireframes/frame_2.png?height=450 caption="Vår landningssida på desktop"]
-[FIGURE src=image/design-v3/wireframes/frame_1.png?height=450 caption="Vår landningssida på en telefon"]
+[FIGURE src=image/design-v3/wireframes/wireframe-teknologier.png?height=450 caption="Landningssida på desktop"]
 
 
 
@@ -85,8 +81,7 @@ Resten av designen är upp till er att bestämma.
 
 Resten av designen är upp till er att bestämma.
 
-[FIGURE src=image/design-v3/wireframes/frame_3.png?height=450 caption="Vår enskilda report-sida på desktop"]
-[FIGURE src=image/design-v3/wireframes/frame_4.png?height=450 caption="Vår enskilda report-sida på mobil"]
+[FIGURE src=image/design-v3/wireframes/wire-frame-enskild-teknologi.png?height=450 caption="Vår enskilda report-sida på desktop"]
 
 
 

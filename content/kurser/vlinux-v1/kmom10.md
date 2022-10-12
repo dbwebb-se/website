@@ -97,7 +97,7 @@ Använd ett onlineverktyg, tex [jsonlint](https://jsonlint.com/), för att kontr
 
 Här jobbar du i mappen `bthloggen/server/`.
 
-Skapa en server i valfritt språk som kan visa och filtrera bland salar via följande routes. Alla svar skall vara i JSON.
+Skapa en server i valfritt språk som kan visa och filtrera datan via följande routes. Alla svar skall vara i JSON.
 
 | Route             | Resultat                                 |
 | ----------------- | ---------------------------------------- |

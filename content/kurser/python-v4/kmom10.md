@@ -6,20 +6,17 @@ revision:
 Kmom10: Projekt och examination
 ==================================
 
-[WARNING]
-
-**Kursutveckling pågår inför hösten 2022. Använd inte materialet innan denna rutan är borttagen.**
-
-[/WARNING]
-<!-- [INFO]dbwebb update och dbwebb init[/INFO] -->
+[INFO]
+Innan du startar med projektet, kör `dbwebb update` och `dbwebb init`
+[/INFO]
 
 Detta kursmoment avslutar och examinerar kursen.
 
 Upplägget är enligt följande:
 
-* Projektet och redovisning (20-30h)
+* Projektet och redovisning (20-36h)
 
-Totalt omfattar kursmomentet (07/10) ca 20+10 studietimmar. Du kan själv styra din arbetsinsats genom att välja vilka optionella delar du utför.
+Totalt omfattar kursmomentet (07/10) ca 20+16 studietimmar. Du kan själv styra din arbetsinsats genom att välja vilka optionella delar du utför.
 
 
 
@@ -42,8 +39,7 @@ Projektidé och upplägg {#upplagg}
 
 Du ska utveckla ett program för att öva på att skriva snabbt på ett tangentbord. Det finns många webbsidor som erbjuder det redan, t.ex. [https://www.keybr.com/](https://www.keybr.com/), men vi ska skapa ett program för terminalen. **PS** Det finns inga tester för projektet. Det är upp till er att tolka och implementera kraven.
 
-LÄGG IN VIDEO PÅ FÄRDIGT PROGRAM!!!
-
+[YOUTUBE src=fbFOKLyF2yM caption="Andreas visar hur projektet kan se ut när det är klart.]
 
 
 Projektspecifikation {#projspec}
@@ -151,7 +147,7 @@ När du skriver en användares resultat till `score.txt` ska du också spara vil
 
 ### Krav 6: Skrivtest med slumpade tecken (optionell) {#k6}
 
-Lägg till menyval 5, i det manyvalet ska användaren välja ett antal sekunder som testet ska pågå. Under så många sekunder ska du slumpa fram ett tecken som användaren ska skriva in så snabbt som möjligt. När tiden har tagit slut ska du skriva ut vilka tecken som blev fel och hur många gånger som det skrevs fel på det tecknet. Utskriften ska vara sorterad i storleksordning på antalet fel. Räkna också ut och skriv ut antalet tecken per ord som användaren hann med.
+Lägg till menyval 5, i det manyvalet ska användaren välja ett antal sekunder som testet ska pågå. Under så många sekunder ska du slumpa fram ett tecken som användaren ska skriva in så snabbt som möjligt. När tiden har tagit slut ska du skriva ut vilka tecken som blev fel och hur många gånger som det skrevs fel på det tecknet. Utskriften ska vara sorterad i storleksordning på antalet fel. Räkna också ut och skriv ut hur många procent av tecknen som blev fel och antalet tecken per minut som användaren skrev.
 
 
 

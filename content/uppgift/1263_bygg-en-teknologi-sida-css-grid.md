@@ -81,7 +81,7 @@ Resten av designen är upp till er att bestämma.
 
 Resten av designen är upp till er att bestämma.
 
-[FIGURE src=image/design-v3/wireframes/wire-frame-enskild-teknologi.png?height=450 caption="Vår enskilda report-sida på desktop"]
+[FIGURE src=image/design-v3/wireframes/wireframe-enskild-teknologi.png?height=450 caption="Vår enskilda report-sida på desktop"]
 
 
 

@@ -7,7 +7,10 @@ revision:
 Kmom10: Tågtrafik upplägget
 ==================================
 
-Detta projektet har i grunden förbestämda datakällor från Trafikverkets API. Data från API:t behandlas av ett [API-proxy](https://trafik.emilfolino.se/) för att förenkla gränssnittet mot API:t.
+[FIGURE src=image/webapp/v4/kajt.jpeg?w=c5 class="right"]
+
+Detta projekt utvecklades i samarbete med Branschprogrammet Kapacitet i järnvägstrafiken – [KAJT](https://kajt.org/). Projektet baseras på öppen data från Trafikverket och handlar om att visualisera förseningar i tågtrafiken.
+
 
 
 Projektspecifikation {#projspec}
@@ -18,6 +21,8 @@ Utveckla och leverera projektet enligt följande specifikationen. Saknas informa
 De två första kraven är obligatoriska och de fyra sista kraven är optionella krav. De två obligatoriska kraven måste lösas tillsammans med ett (1) valfritt optionellt krav för att få godkänt på uppgiften. Lös valfritt antal av de resterande optionella krav för att samla poäng och därmed nå högre betyg.
 
 Varje krav ger maximalt 10 poäng, totalt är det 60 poäng.
+
+Detta projektet har i grunden förbestämda datakällor från Trafikverkets API. Data från API:t behandlas av ett [API-proxy](https://trafik.emilfolino.se/) för att förenkla gränssnittet mot API:t.
 
 
 

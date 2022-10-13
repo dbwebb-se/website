@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2022-10-13": "(B, aar) Uppdaterade hur man räknar poäng."
     "2022-10-07": "(A, aar) Skapad inför HT22."
 ...
 Kmom10: Projekt och examination
@@ -93,7 +94,7 @@ Med prestanda menas två saker, hur många procent tecken användaren skrev in f
 
 Utskriften ska bestå av vilka tecken som gick fel **sorterat** på antalet i utskriften.
 
-För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av dividerat med fel procenten, `len/error_percentage`. 
+För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av multiplicerat med hundra minus - fel procenten, `len * (100 - error_percentage)`. T.ex. `121 * (100 - 50)` ger 6050 poäng, texten är 121 tecken lång och användaren skrev 50% fel.
 
 
 
@@ -125,7 +126,7 @@ Det finns inte några färdiga tester, så `dbwebb test kmom10` funkar **inte**.
 
 ### Krav 4: Tidtagning (optionell) {#k4}
 
-För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användaren att skriva in hela texten. Mät tiden från precis innan du skriver ut första raden till att användaren har skrivit in sista raden.
+För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användaren att skriva in hela texten, i sekunder. Mät tiden från precis innan du skriver ut första raden till att användaren har skrivit in sista raden.
 
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
@@ -135,7 +136,7 @@ Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för 
 
 Nu ska tiden med i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många ord per minut (WPM) som användaren skrev.
 
-Poänguträkningen ska nu vara `len/duration/error_percentage`.
+Poänguträkningen ska nu vara `(len * (100 - error_percentage)) / duration`.
 
 
 

@@ -7,7 +7,7 @@ revision:
 Kmom10: Tågtrafik upplägget
 ==================================
 
-[FIGURE src=image/webapp/v4/kajt.jpeg?w=c5 class="right"]
+[FIGURE src=image/webapp/v4/kajt.jpg?w=c5 class="right"]
 
 Detta projekt utvecklades i samarbete med Branschprogrammet Kapacitet i järnvägstrafiken – [KAJT](https://kajt.org/). Projektet baseras på öppen data från Trafikverket och handlar om att visualisera förseningar i tågtrafiken.
 

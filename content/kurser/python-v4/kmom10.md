@@ -134,7 +134,7 @@ Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för 
 
 #### Prestanda och poäng {#k4-score}
 
-Nu ska tiden med i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många ord per minut (WPM) som användaren skrev.
+Nu ska tiden med i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många tecken per minut (CPM) som användaren skrev.
 
 Poänguträkningen ska nu vara `(len * (100 - error_percentage)) / duration`.
 

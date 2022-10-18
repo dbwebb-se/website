@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2022-10-18": "(B, lew) Uppdaterad inför HT22."
   "2021-05-12": "(A, lew) Ny version inför HT21."
 ...
 
@@ -77,6 +78,22 @@ Jobba igenom följande.
 1. Jobba igenom det praktiska exemplet [Kom igång med JavaScript i terminalen](https://github.com/dbwebb-se/js-v2/tree/master/example/basics).
 
 ### Uppgifter {#uppgifter}
+
+Dessa uppgifter skall utföras och redovisas.
+
+1. Gör uppgiften "[Glacier report](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom01/01_glacier.md)". Spara dina filer i `kmom01/`.
+
+1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom01/02_mepage.md)". Spara resultatet i `me/redovisa/`.
+
+TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"]
+
+### Testa din inlämning {#test}
+
+Du kan köra vissa tester på din inlämning och se om de delarna uppfyller kraven. Rättningen kommer endast genomföras om testerna går igenom.
+
+```console
+$ dbwebb test kmom01
+```
 
 Dessa uppgifter skall utföras och redovisas.
 

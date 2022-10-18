@@ -52,6 +52,16 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page 2](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom02/02_mepage2.md)". Spara resultatet i `me/redovisa/`.
 
+TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"]
+
+### Testa din inlämning {#test}
+
+Du kan köra vissa tester på din inlämning och se om de delarna uppfyller kraven. Rättningen kommer endast genomföras om testerna går igenom.
+
+```console
+$ dbwebb test kmom02
+```
+
 ## Resultat & Redovisning {#resultat_redovisning}
 
 _(ca: 1-2 studietimmar)_

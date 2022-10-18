@@ -94,7 +94,7 @@ Med prestanda menas två saker, hur många procent tecken användaren skrev in f
 
 Utskriften ska bestå av vilka tecken som gick fel **sorterat** på antalet i utskriften.
 
-För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av multiplicerat med hundra minus - fel procenten, `len * (100 - error_percentage)`. T.ex. `121 * (100 - 50)` ger 6050 poäng, texten är 121 tecken lång och användaren skrev 50% fel.
+För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av multiplicerat med hundra minus - fel procenten, `len * (100 - error_percentage)`. T.ex. `121 * (100 - 50)` ger 6050 poäng, texten är 121 tecken lång och användaren skrev 50% fel. **PS** poängen som Andreas visar i videon ovanför stämmer inte med uträkningen som står här. Uträkningen är uppdaterade efter att Andreas spelade in videon.
 
 
 

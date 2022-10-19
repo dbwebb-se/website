@@ -40,7 +40,7 @@ Tanken är att vi ska jobba med ett projekt igenom hela kursen och då behöver 
 
 ### Labbmiljön  {#labbmiljo}
 
-Vi kommer att utöka vad som ingår i labbmiljön under kursen. Till en början behöver vi programmen som finns i [installera labbmiljön](./../labbmiljo).
+Vi kommer att utöka vad som ingår i labbmiljön under kursen. Till en början behöver vi programmen som finns i [installera labbmiljön](./../labbmiljo). Det är rekommenderat att ha minst python version 3.8.
 
 
 
@@ -64,15 +64,9 @@ Logga in på [Azure](https://portal.azure.com/#home) med ditt studentinlogg och 
 
 #### Domännamn {#domain}
 
-Det underlättar dessutom om vi har ett domännamn som vi kan länka till en server. Om du inte redan har ett kolla in artikeln ["GitHub Education Pack och en server på Digital Ocean"](kunskap/github-education-pack-och-en-server-pa-digital-ocean). I den görs mer saker än vad vi behöver göra så kolla bara på de två följande delarna:
+Det underlättar dessutom om vi har ett domännamn som vi kan länka till en server. Om du inte redan har ett kolla in artikeln ["GitHub Education Pack och ett domännamn"](kunskap/github-education-pack-och-doman-namn).
 
-1. [GitHub Education Pack](kunskap/github-education-pack-och-en-server-pa-digital-ocean#gep)
-
-1. [En domän till din server](kunskap/github-education-pack-och-en-server-pa-digital-ocean#domain) (Du kan sluta läsa när det börjar handla om Digital ocean).
-
-<!-- Möjlig alternativ till namecheap, http://www.dot.tk/en/index.html?lang=en -->
-
-När du har fixat en domän, kolla på videon för att ditt domännamn till servern du skapade ovanför.
+När du har fixat en domän, kolla på videon för att koppla ditt domännamn till servern du skapade ovanför i Azure.
 
 [YOUTUBE src="CNSAT9n0554" caption="102 Koppla domän till Azure."]
 

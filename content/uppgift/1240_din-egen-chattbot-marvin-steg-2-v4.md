@@ -67,7 +67,7 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
     Det är OK att bryta ut din kod till flera mindre funktioner så länge de används i funktionen som efterfrågas.
 
 
-    - Tags: `struct`. Kör tester som kollar att "marvin.py" och "main.py" finns och att funktionen "main()" finns i "main.py"
+    - Tags: `struct`. Kör tester som kollar att "marvin1.py" och "main.py" finns och att funktionen "main()" finns i "main.py". Kollar även att "marvin2.py" finns. 
 
 
 

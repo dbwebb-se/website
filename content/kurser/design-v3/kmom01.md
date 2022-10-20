@@ -141,7 +141,7 @@ Som en del av BTH's uppdrag har 5 perspektiv på utbildning definierats: *Hållb
 
 I *design* kommer vi fokusera på perspektivet *hållbarhet* och vilken roll vi som programmerare har i den sammanhangen.
 
-I kursmoment 05 och 06 kommer vi se några praktiska exempel på hur vi som programmerare kan skapa en mer hållbar webb. För att vi har tillräcklig förståelse för vad hållbarhet innebär kommer vi under kursmoment 01-04 skapa oss en grundförståelse om hållbarhet och vad det innebär.
+I kursmoment 04, 05 och 06 kommer vi se några praktiska exempel på hur vi som programmerare kan skapa en mer hållbar webb. För att vi har tillräcklig förståelse för vad hållbarhet innebär kommer vi under kursmoment 01-03 skapa oss en grundförståelse om hållbarhet och vad det innebär.
 
 I följande video beskriver professor Johan Rockström jordklotets nuvarande status och hur vi påverkar det.
 

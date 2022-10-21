@@ -74,20 +74,7 @@ När du har fixat en domän, kolla på videon för att koppla ditt domännamn ti
 
 #### 10 första minuterna {#10first}
 
-Nu ska vi logga in på servern och konfigurera den. Vi utgår från en artikeln som är gjord för jsramverk kursen så några saker är inte exakt likadant.
-
-När du loggar in på servern använd `azureuser` som användare istället för `root`.  
-Du behöver även byta till root användaren efter att du har loggat in, gör det med `sudo su`.  
-Du kan skippa följande kommandon:
-
-```bash
-apt-get remove --purge unscd
-userdel -r debian
-```
-
-Brandväggsdelen är frivillig i och med att vi kommer styra portar till servern i Azure.
-
-Gör nu [Första 10 minuter på en server](kunskap/github-education-pack-och-en-server-pa-digital-ocean#first10) delen. 
+Nu ska vi logga in på servern och konfigurera den, gör [Första 10 minuter på en server](kunskap/10-forsta-minuterna-pa-en-server).
 
 
 
@@ -135,7 +122,7 @@ Om ni vill snabba på CircleCi jobbet kan ni cacha det installerade paketen, det
     - [The seven rules of a great Git commit message](https://chris.beams.io/posts/git-commit/#seven-rules). Ni kan också läsa stycket ovanför, i länken, om varför det är viktigt.
     - [Keeping Git Commit Messages Consistent with a Custom Template ](https://dev.to/timmybytes/keeping-git-commit-messages-consistent-with-a-custom-template-1jkm). I denna kursen kan ni t.ex. använda vilket kursmoment ni jobbar på i footern.
 
-1. [Semantisk versionshantering](https://semver.org/lang/sv/), en bra versionsstandard för projekt. Vi inte riktigt den i kursen för att jag vill ha ny siffra för varje kursmoment.
+1. [Semantisk versionshantering](https://semver.org/lang/sv/), en bra versionsstandard för projekt. Vi följer inte riktigt den i kursen för att jag vill ha ny siffra för varje kursmoment.
 
 1. [The 12 Factor App](https://12factor.net/) är en populär "standard" för att bygga Software-as-a-service och  används mycket i devops sammanhang.
 
@@ -156,7 +143,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 1. Koppla ditt repo till CircleCi. När du gör en commit ska CricleCi köra alla unittester, integrationtester och validera koden. Lägg till en CircleCi badge i README filen för repot.
 
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v1.0.0. Om du pushar kmom01 flera gånger kan du öka siffrorna efter 1:an.
+2. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v11.0.0. PS. vi ska göra ny tag varje kmom, ni börjar på v11.0.0 för taggarna jag har skapat när jag har utvecklat repot inte ska blandas med era. Om du pushar kmom01 flera gånger kan du öka siffrorna efter 11:an.
 
 <!-- 1. Inkludera en länk till ditt GitHub repo och din webbsida (domännamn) i din inlämning på Canvas. -->
 

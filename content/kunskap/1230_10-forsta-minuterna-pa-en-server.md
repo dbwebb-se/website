@@ -27,7 +27,7 @@ Du har en server med ett operativsystem installerat.
 Logga in på servern {#login}
 -------------------------------
 
-Vi loggar in på servern genom att använda SSH via terminalen med kommandot. `ssh azureuser@[IP]` ersätt din [IP] med den IP som din server har.
+Vi loggar in på servern genom att använda SSH via terminalen med kommandot. `ssh -i ~/.ssh/azure azureuser@[IP]` ersätt din [IP] med den IP som din server har eller ditt domännamn.
 
 När du är inne på servern byt till root användaren med `sudo su`.
 
@@ -47,33 +47,29 @@ passwd
 
 ### Uppdatera servern {#update}
 
-Nästa steg är att uppdatera serverns programvara till senaste version genom att använda verktyget `apt-get`.
+Nästa steg är att uppdatera serverns programvara till senaste version genom att använda verktyget `apt-get`. Men först vill vi berätta för Debian vilken teckenkodning ([locale](https://wiki.debian.org/Locale)) som ska användas, annars får vi en varning av `apt-get`.
 
 ```bash
+localectl set-locale LANG=en_US.UTF-8
 apt-get update
 apt-get upgrade
 ```
 
 
 
+
 Skapa din egen användare {#user}
 -------------------------------------
 
-Vi vill aldrig logga in som `azureuser` eller `root`. `azureuser` är standard namnet för alla servrar som skapas i Azure, så hackare försöker använda det namnet för att komma åt vår server. `root` användaren har för mycket rättigheter. Så vi skapar en egen användare `deploy` med följande kommandon. Du kan byta ut `deploy` mot vad som helst, men då ska du göra det i alla följande kommandon. De två första kommandon är för att rensa bort `azureuser` användaren.
+Vi vill aldrig logga in som `azureuser` eller `root`. `azureuser` är standard namnet för alla servrar som skapas i Azure, så hackare försöker använda det namnet för att komma åt vår server. `root` användaren har för mycket rättigheter. Så vi skapar en egen användare `deploy` med följande kommandon. Du kan byta ut `deploy` mot vad som helst, men då ska du göra det i alla följande kommandon. Senare ska vi ta bort `azureuser` användaren.
 
 ```bash
-userdel -r debian
-useradd deploy
-mkdir /home/deploy
+useradd -s /bin/bash -m deploy
 mkdir /home/deploy/.ssh
 chmod 700 /home/deploy/.ssh
 ```
 
-Vi passar på att i samma veva ställa in vilken förvald terminal vår nya använda ska använda, vi väljer `bash` då vi är vana vid den.
-
-```bash
-usermod -s /bin/bash deploy
-```
+I `useradd` används `-s /bin/bash` för att välja terminal åt användaren. `-m` gör att en home mapp skapas åt användaren.
 
 
 
@@ -81,7 +77,7 @@ usermod -s /bin/bash deploy
 
 Lösenord kan knäckas.
 
-Därför använder vi istället SSH nycklar för att autentisera oss mot servern. Skapa och öppna filen med kommandot `nano /home/deploy/.ssh/authorized_keys` och lägg innehållet av din lokala `.ssh/id_rsa.pub` nyckel i den filen på en rad.
+Därför använder vi istället SSH nycklar för att autentisera oss mot servern. Skapa och öppna filen med kommandot `nano /home/deploy/.ssh/authorized_keys` och lägg innehållet av din lokala `.ssh/azure.pub` nyckel i den filen på en rad.
 
 När du har lagt till nyckeln kör du följande två kommandon för att sätta korrekta rättigheter på katalogen och filen.
 
@@ -108,17 +104,20 @@ Spara filen och starta om SSH med hjälp av kommandot `service ssh restart`. Tes
 
 
 
-lägg in på slutet att ta bort azureuser! som det är i ansible.
+### Ta bort azureuser {#deluser}
 
+Först stänger vi ner uppkopplingen för användaren azureuser genom att skriva `exit` i terminalfönstret. Alla kommandon vi kommer köra från och med nu körs som användaren `deploy`.
 
-brandväggen frivillg? 
+Logga in på servern igen som `deploy` användaren och kör kommandot:
 
+```
+sudo userdel -r azureuser
+```
 
 
 
 ### Brandvägg {#firewall}
 
-Först stänger vi ner uppkopplingen för användaren root genom att skriva exit i terminalfönstret. Alla kommandon vi kommer köra från och med nu körs som användaren deploy.
 
 Vi använder oss av brandväggen `ufw` för att stänga och öppna portar till vår server. Installera med kommandot `sudo apt-get install ufw`.
 
@@ -162,7 +161,7 @@ Unattended-Upgrade::Allowed-Origins {
 
 ### fail2ban {#fail2ban}
 
-Vårt sista steg är att installera verktyget fail2ban som används för att automatiskt kolla logfiler och stoppa aktivitet som vi inte vill ha på vår server. Vi installerar och låter ursprungsinställningarna göra sitt jobb. Vi installerar med `sudo apt-get install fail2ban`.
+Vårt sista steg är att installera verktyget fail2ban som används för att automatiskt kolla loggfiler och stoppa aktivitet som vi inte vill ha på vår server. Vi installerar och låter ursprungsinställningarna göra sitt jobb. Vi installerar med `sudo apt-get install fail2ban`.
 
 
 
@@ -185,4 +184,4 @@ För att lättare kunna driftsätta våra git-repon installerar vi även git med
 Avslutningsvis {#avslutning}
 --------------------------------------
 
-Djupt andetag. Det var en rejäl omgång, men vi är nu på gång på riktigt med en egen server med nginx och node. Vi ska i kommande artiklar titta på hur vi kan skapa ett API som skickar data vid förfrågningar.
+Nu har ni en server som är redo att användas till det mesta.

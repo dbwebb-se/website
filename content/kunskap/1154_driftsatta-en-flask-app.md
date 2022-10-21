@@ -33,7 +33,7 @@ Jag gör installationen på en VM som kör Debian 10 och Python 3.7.
 Installera Python, Supervisor och MySQL. I produktion kör vi MySQL som databas istället för SQLite.
 
 ```bash
-apt-get install python3-venv python3-dev supervisor git default-mysql-server
+apt-get install python3-venv python3-dev supervisor git default-mysql-server make
 ```
 
 Om du har gjort 10 första minuterna på en servern övningen har du redan nginx och git installerat, om du inte gjort det installera dem också.
@@ -211,7 +211,7 @@ server {
 }
 ```
 
-Byt ut `microblog.se` mot din domän och kolla att pathen till `.well-known` finns, du kan ändra den om du vill. Certbot sparar filer i `.well-known` som används när en klient ska kolla att server tillhör den domän som den säger. Gå till katalogen `/etc/nginx/sites-enabled` för att skapa en symbolisk länk till konfigurationsfilen.
+Byt ut `microblog.se` mot din domän och kolla att mappen till `.well-known` finns, du kan ändra den om du vill. Certbot sparar filer i `.well-known` som används när en klient ska kolla att server tillhör den domän som den säger. Gå till katalogen `/etc/nginx/sites-enabled` för att skapa en symbolisk länk till konfigurationsfilen.
 
 ```bash
 cd /etc/nginx/sites-enabled

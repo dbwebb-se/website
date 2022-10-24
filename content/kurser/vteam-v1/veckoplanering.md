@@ -52,6 +52,8 @@ Förbered inför kursen
 
 Skaffa dig en grupp genom att till exempel annonsera att du söker en grupp i kursens chattkanal eller prata med dina studiekompisar.
 
+Läs igenom bakgrunden till projektet i dokumentet "[Elsparkcyklar bakgrundsanalys](https://drive.google.com/file/d/19qRnYcCYRRba3ePd5fbuxtMf3B04qmfs/view?usp=sharing)" för att skaffa dig kunskap om den domän där du skall verka i.
+
 
 
 Vecka 01 (v44): Kund och uppdrag
@@ -60,7 +62,7 @@ Vecka 01 (v44): Kund och uppdrag
 <!--
 TODO 
 
-* Kursintroduktion och genomgång av kravspecen.
+* Kursintroduktion och genomgång av domänen och kravspecen.
 * Presentation av systemarkitekturer och genomgång av uppgiften SDS.
 -->
 
@@ -75,6 +77,13 @@ Innan veckan är slut skall alla finnas i en grupp. Gruppstorleken är 4 student
 <!--
 * [System Design Specification (SDS) (slides)](https://dbwebb-se.github.io/pattern/lecture/L01-system-design-specification/slide.html)
 -->
+
+**Material**
+
+Följande material är viktiga styrdokument att sätta sig in i.
+
+1. "[Elsparkcyklar bakgrundsanalys](https://drive.google.com/file/d/19qRnYcCYRRba3ePd5fbuxtMf3B04qmfs/view?usp=sharing)"
+1. Kravspecifikation
 
 **Resurser**
 

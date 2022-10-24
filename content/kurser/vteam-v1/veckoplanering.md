@@ -7,6 +7,7 @@ views:
             src: "image/vteam/logo.png"
 author: mos
 revision:
+    "2022-10-24": "(B, mos) Länk till domänbeskrivning."
     "2022-10-10": "(A, mos) Första utgåva inför kursstart HT2022."
 ...
 Veckoplan med kursveckor - vad händer och vad göra?

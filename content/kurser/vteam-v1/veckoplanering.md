@@ -47,7 +47,7 @@ https://www.youtube.com/playlist?list=PLKtP9l5q3ce9JglLprvPbXklQiAC_Jizu
 
 
 
-Förbered inför kursen
+Förbered inför kursen {#prepare}
 -------------------------
 
 Skaffa dig en grupp genom att till exempel annonsera att du söker en grupp i kursens chattkanal eller prata med dina studiekompisar.
@@ -56,7 +56,7 @@ Läs igenom bakgrunden till projektet i dokumentet "[Elsparkcyklar bakgrundsanal
 
 
 
-Vecka 01 (v44): Kund och uppdrag
+Vecka 01 (v44): Kund och uppdrag {#w01}
 -------------------------
 
 <!--
@@ -98,7 +98,7 @@ Följande läsresurser är relevanta denna veckan.
 
 
 
-Vecka 02 (v45): Fokus Serversidan
+Vecka 02 (v45): Fokus Serversidan {#w02}
 -------------------------
 
 <!--
@@ -165,7 +165,7 @@ Torsdagen hade vi en session om riskanalys av projektet som också spelades in.
 
 
 
-Vecka 03 (v46): Fokus Klientsidan
+Vecka 03 (v46): Fokus Klientsidan {#w03}
 -------------------------
 
 Jobba med SDS. Fokus på klientsidan av projektet. Gräv djupare in i serversidan.
@@ -185,7 +185,7 @@ Vilka krav har industrin på nya studenter?
 
 
 
-Vecka 04 (v47): SDS Klar
+Vecka 04 (v47): SDS Klar  {#w04}
 -------------------------
 
 Leverans av SDS.
@@ -219,7 +219,7 @@ Mini-uppgiften löser du i 'Reflektera över "Good and Clean Code"'.
 
 
 
-Vecka 05 (v48): Implementera
+Vecka 05 (v48): Implementera {#w05}
 -------------------------
 
 Påbörja implementationsfasen av projektet och implementera systemet enligt er SDS.
@@ -236,14 +236,14 @@ Man kan nu boka in en tid för att leverera i december och vi fortsätter med ko
 
 
 
-Vecka 06 (v49): Teknikval
+Vecka 06 (v49): Teknikval {#w06}
 -------------------------
 
 Lämna in de teknikval ni gjort för projektet och berätta kort om hur ni kommer att implementera systemet.
 
 
 
-Vecka 07 (v50): Implementera projektet
+Vecka 07 (v50): Implementera projektet {#w07}
 -------------------------
 
 Jobba med implementationen av projektet och se till att kontinuerligt integrera teamets arbete i en helhet.
@@ -252,22 +252,22 @@ Första möjligheten att göra en leverans av systemet.
 
 
 
-Vecka 08 (v51): Implementera projektet
+Vecka 08 (v51): Implementera projektet {#w08}
 -------------------------
 
 
-Vecka 09 (v52): Implementera projektet
+Vecka 09 (v52): Implementera projektet {#w09}
 -------------------------
 
 
-Vecka 10 (v01): Förbered inför leverans
+Vecka 10 (v01): Förbered inför leverans {#w10}
 -------------------------
 
 Jobba med projektet och förbered inför leveransen. Genomför en egenkontroll i form av en avstämning inför slutleveransen, vad skall finnas med och hur skall det leveraras, dokumenteras, presenteras och testköras?
 
 
 
-Vecka 11 (v02): Leverans och redovisning
+Vecka 11 (v02): Leverans och redovisning {#w11}
 -------------------------
 
 Gruppen levererar systemet och presenterar arbetet och demonstrerar att systemet fungerar.

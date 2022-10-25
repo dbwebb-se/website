@@ -22,6 +22,8 @@ Kmom10: Projekt och examination
 
 Detta kursmoment avslutar och examinerar kursen.
 
+Du jobbar enskilt och tar inte hjälp av någon.
+
 Upplägget är enligt följande:
 
 * Projektet och redovisning (20-60h)

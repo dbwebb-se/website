@@ -95,11 +95,14 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 $ dbwebb test kmom01
 ```
 
-Dessa uppgifter skall utföras och redovisas.
+### Publicera din kod {#publish}
 
-1. Gör uppgiften "[Glacier report](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom01/01_glacier.md)". Spara dina filer i `kmom01/`.
+Du lämnar in koden via dbwebbkommandot:
 
-1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom01/02_mepage.md)". Spara resultatet i `me/redovisa/`.
+```console
+$ dbwebb publish kmom01
+$ dbwebb publish redovisa
+```
 
 ## Resultat & Redovisning {#resultat_redovisning}
 

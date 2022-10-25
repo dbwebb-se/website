@@ -52,6 +52,15 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 $ dbwebb test kmom03
 ```
 
+### Publicera din kod {#publish}
+
+Du lämnar in koden via dbwebbkommandot:
+
+```console
+$ dbwebb publish kmom03
+$ dbwebb publish redovisa
+```
+
 ## Resultat & Redovisning {#resultat_redovisning}
 
 _(ca: 1-2 studietimmar)_

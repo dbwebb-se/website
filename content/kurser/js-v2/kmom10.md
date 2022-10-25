@@ -60,5 +60,6 @@ Glöm inte att publicera kursmomentet.
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb publish me
+$ dbwebb publish kmom10
+$ dbwebb publish redovisa
 ```

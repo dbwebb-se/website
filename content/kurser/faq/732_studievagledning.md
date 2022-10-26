@@ -2,7 +2,7 @@
 title: Studievägledning
 author: mos
 revision:
-    "2022-10-24": "(PA2, mos) Preliminär."
+    "2022-10-26": "(A, mos) Första utgåvan."
 ...
 Studievägledning och Studieteknik
 ==================================
@@ -11,11 +11,20 @@ Under dina studier kan det ibland hända att du behöver hjälp och stöd att pr
 
 Det finns studievägledare som är kopplade till våra utbildningsprogram och därmed är väl medvetna om ditt upplägg för studierna och hur kurserna genomförs.
 
-Du når studievägledaren på xxx.xxx@bth.se och du kan initiera en dialog per mail och eventuellt slutföra den via telefon, fysisk träff eller via zoom/teams.
+Enklast att komma i kontakt med studievägledaren är via [BTHs webbplats för Studievägledning](https://studentportal.bth.se/genomfor-studierna/studentstod/studievagledning/) där kontaktuppgifter finns. Där kan ni även se vilken studievägledare som har mest koll på våra program.
 
-[WARNING]
-**Detta dokument är preliminärt och under framtagande.**
-[/WARNING]
+
+
+Vad kan studievägledaren hjälpa dig med? {#vad}
+----------------------------------
+
+Studievägledaren kan främst hjälpa dig med följande.
+
+* Bollplank kring studierelaterade frågor
+* Studieplanering om man kommit efter i studierna
+* Studieteknik
+
+Du kan få en samtalspart som är insatt i det program du studerar, din studiesituation och som vet om hur man kan "navigera" i systemet, vad som är möjligt och inte.
 
 
 
@@ -24,19 +33,10 @@ Förbered inför samtal {#forbered}
 
 Du kan förbereda dig för ett samtal med studievägledaren på följande sätt.
 
-Fyll i ett Google sheet om vilka kurser du genomgått och hur många poäng du har tagit på kurserna i de ark som finns i "[Följ upp dina studier -> Dokument per antagningsomgång](./folj-upp-studierna)".
+Fyll i ett Google sheet om vilka kurser du genomgått och hur många poäng du har tagit på kurserna i de ark som finns i "[Följ upp dina studier -> Dokument per antagningsomgång](/kurser/faq/folj-upp-studierna)".
 
 Efter din första träff är det bra att dela dokumentet med studievägledaren så att den kan göra noteringar i dokumentet. Eventuellt vill du även dela dokumentet och göra det skrivbart för din programansvarige.
 
-
-
-Vad kan studievägledaren hjälpa dig med? {#vad}
-----------------------------------
-
-Anna, vad vill du skriva här?
-
-Studieplanering
-Samtalspart
 
 
 Hamnat efter i studierna - studieplanering {#efter}
@@ -60,7 +60,7 @@ Byte av utbildningsprogram inom webb {#bytewebb}
 
 Inom Webbprogrammering har vi flera studenter som byter mellan campus till distan, från distans till campus och från kurspaketen till programmet. Om du vill veta hur det fungerar formellt kan det vara bra att boka in ett samtal.
 
-Ofta hanteras detta genom en ansökan om "[Antagning till senare del av utbildningsprogram](./735_antagning-till-senare-del-av-utbildningsprogram)".
+Ofta hanteras detta genom en ansökan om "[Antagning till senare del av utbildningsprogram](/kurser/faq/antagning-till-senare-del-av-utbildningsprogram)".
 
 
 
@@ -74,7 +74,7 @@ Om du vill byta från ett annat utbildningsprogram till Webbprogrammering campsu
 Läsa trean på campus (distans?) {#trean}
 ----------------------------------
 
-BTH erbjuder för tillfället inte ett tredje år på distans men du kan gå trean på campus. Detta hanteras som en "[Antagning till senare del av utbildningsprogram](./735_antagning-till-senare-del-av-utbildningsprogram)".
+BTH erbjuder för tillfället inte ett tredje år på distans men du kan gå trean på campus. Detta hanteras som en "[Antagning till senare del av utbildningsprogram](/kurser/faq/antagning-till-senare-del-av-utbildningsprogram)".
 
 De kurser som går i trean har inte ett hybrid/distansupplägg som krav på sig. Vissa av kurserna kan eventuellt genomföras på distans, men andra kan det troligen inte. Det är det lärarteam som genomför kurserna som bestämmer. Man kan alltså inte räkna med, eller förvänta sig, att kurserna går att läsa på distans.
 
@@ -91,14 +91,33 @@ Prata med studievägledningen för att utvärdera på vilket sätt du skulle kun
 
 
 
-Fortsätta och läsa Master {#master}
+Fortsätta och läsa Magister/Master {#master}
 ----------------------------------
 
-Skriv något om vilka mastersutbildningar som kan vara relevanta och vilka förkunskaper de har.
+Efter avklarade studier på kandidatprogrammet kan du fortsätta studera på avancerad nivå till en magister- eller master-examen.
+
+Vanliga program som kan vara relevanta är alla masters inom datavetenskap och programvaruteknik.
+
+BTH erbjuder följande mastersutbildningar som kan vara relevanta.
+
+* [Masterprogram i Software Engineering (programvaruteknik) 120hp](https://www.bth.se/utbildning/program-och-kurser/paasw)
+* [Masterprogram i datavetenskap 120hp](https://www.bth.se/utbildning/program-och-kurser/dvacc/)
+
+Dessa båda har dock förkunskapskrav om 15hp matematik så man behöver en extra mattekurs för att bli behörig. Prata med studievägledningen eller programansvarig för att se vilka möjligheter du har att byta ut en kurs mot en kurs i matte, eller läsa extra matte under dina studier.
+
+BTH erbjuder även en magister om 60hp som riktar sig till yrkesverksamma som har minst två års yrkeserfarenhet inom programvaruindustrin. Denna utbildning går på halvfart och distans och kan sökas till vårterminen.
+
+* [Magisterprogram i Software Engineering 60hp](https://www.bth.se/utbildning/program-och-kurser/paasa/)
+
+PS. Missa inte att man söker ofta till masterutbildningar redan under hösten. Det är inte alla mastersutbilningar som även har en ansökningsperiod under mars/april.
 
 
 
 Studieteknik {#studieteknik}
 ----------------------------------
 
-Anna, vad vill du skall stå här
+Studievägledarna jobbar även med studieteknik på följande sätt.
+
+* På sidan "Studieteknik" hittar du en länk till Canvas med filmer om [Studieteknik av Björn Liljeqvist](https://studentportal.bth.se/genomfor-studierna/pluggtips/). Filmerna är indelade i olika teman.
+
+Du kan även boka ett individuellt möte med studievägledaren så kan ni tillsammans gå igenom just din studieteknik.

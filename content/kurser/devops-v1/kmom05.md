@@ -392,6 +392,13 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 
 
+Läsanvisningar {#las}
+--------------------------
+
+Rekommendationen för denna veckan är att läsa **"Part V. Scaling"** som ni ska läsa.
+
+
+
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------
 
@@ -401,12 +408,12 @@ Se till att följande frågor besvaras i texten:
 
 1. Varnade Snyk om några paket som ni behövde uppdatera?
 
-1. Ändrade ni något i er kod efter ni kört Bandit? Använder ni `# nosec` för att ignorera någon kod eller skippa något test? Varför?
+2. Ändrade ni något i er kod efter ni kört Bandit? Använder ni `# nosec` för att ignorera någon kod eller skippa något test? Varför?
 
-1. Beskriv vilka Zap varningar ni fixade och hur ni löste dem.
+3. Beskriv vilka Zap varningar ni fixade och hur ni löste dem.
 
-1. Gick det bra med SSH konfigurationen?
+4. Gick det bra med SSH konfigurationen?
 
-1. Hur skulle du definiera DevSecOps och dess roll inom devops?
+5. Hur skulle du definiera DevSecOps och dess roll inom devops?
 
-1. Var skulle du säga att vi har den största säkerhets risken i vårt system och infrastruktur?
+6. Var skulle du säga att vi har den största säkerhets risken i vårt system och infrastruktur?

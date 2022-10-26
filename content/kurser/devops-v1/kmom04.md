@@ -169,6 +169,14 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 
 
+
+Läsanvisningar {#las}
+--------------------------
+
+Rekommendationen för denna veckan är att läsa **"Part IV. Tools"** som ni ska läsa.
+
+
+
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------
 
@@ -178,10 +186,10 @@ Se till att följande frågor besvaras i texten:
 
 1. Beskriv vad som menas med Monitoring, olika saker som brukar övervakas och vad det används till.
 
-1. Beskriv Log management och vad det används till.
+2. Beskriv Log management och vad det används till.
 
-1. Beskriv APM och vad det används till.
+3. Beskriv APM och vad det används till.
 
-1. Beskriv Observability och försök koppla det till ovanstående frågor.
+4. Beskriv Observability och försök koppla det till ovanstående frågor.
 
-1. Vad är dina tankar om Prometheus och Grafana?
+5. Vad är dina tankar om Prometheus och Grafana?

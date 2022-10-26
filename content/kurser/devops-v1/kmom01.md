@@ -28,8 +28,6 @@ Kolla på följande video för att få en introduktion till ämnet devops. Devop
 
 <!-- Ny video https://www.youtube.com/watch?v=Me3ea4nUt0U kortare och med om arbetsflödet -->
 
-För de som vill gräva ner sig i den teoretiska delen och företagskulturen av devops rekommenderar jag boken [Effective Devops](http://tinyurl.com/yyuw7a9w). Läs kapitel 1-6.
-
 <!-- https://tinyurl.com/y4kyayqa the devops handbook -->
 
 
@@ -140,13 +138,22 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 1. Lägg till funktionaliteten att följa andras blogginlägg. Jobba igenom [Kom igång med followers](kunskap/kom-igang-med-followers).
 
-1. Driftsätt den nya funktionaliteten på din server.
+2. Driftsätt den nya funktionaliteten på din server.
 
-1. Koppla ditt repo till GitHub Actions. När du gör en commit ska Actions köra alla unittester, integrationtester och validera koden. Lägg till en Actions [badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge) i README filen för repot.
+3. Koppla ditt repo till GitHub Actions. När du gör en commit ska Actions köra alla unittester, integrationtester och validera koden. Lägg till en Actions [badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge) i README filen för repot.
 
-2. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v11.0.0. PS. vi ska göra ny tag varje kmom, ni börjar på v11.0.0 för att taggarna jag har skapat när jag har utvecklat repot inte ska blandas med era. Om du pushar kmom01 flera gånger kan du öka siffrorna efter 11:an.
+4. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v11.0.0. PS. vi ska göra ny tag varje kmom, ni börjar på v11.0.0 för att taggarna jag har skapat när jag har utvecklat repot inte ska blandas med era. Om du pushar kmom01 flera gånger kan du öka siffrorna efter 11:an.
 
 <!-- 1. Inkludera en länk till ditt GitHub repo och din webbsida (domännamn) i din inlämning på Canvas. -->
+
+
+
+Läsanvisningar {#las}
+--------------------------
+
+I kursen ska ni läsa boken **[Effective DevOps](http://tinyurl.com/y6jy5x8u)**. Boken är inte kopplad till kursmomenten, men den behövs när ni ska skriva rapporten i slutet av kursen. Ni kan själva välja upplägg för när ni läser den. Ett rekommenderat upplägg är att läsa en del, "part", i veckan. Då har ni läst igenom hela boken efter kmom06.
+
+Rekommendationen för denna veckan är att läsa **"Part I. What is devops?"** som ni ska läsa.
 
 
 

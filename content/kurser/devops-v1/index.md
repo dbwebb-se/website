@@ -4,6 +4,7 @@ author:
     - aar
     - mos
 revision:
+    "2022-10-26": "(D, aar) Uppdaterade kurskod/kursplan."
     "2020-01-24": "(C, aar) Ändrade hur kmoms ger poäng."
     "2019-04-16": "(B, aar) Uppdaterad inför V1."
     "2018-12-06": "(A, mos) Första revisionen efter kursens inrättande."
@@ -164,14 +165,10 @@ Kurslitteratur {#litteratur}
 
 ### Kurslitteratur {#kurslitteratur}
 
-Det finns ingen speciell kursbok utan det är ersatt med läsanvisningar i varje kursmoment i form av exempelvis artiklar, guider, manualer.
-
-<!--
 Som kurslitteratur har jag valt följande böcker. Det är en god idé att läsa igenom dessa  under kursen, det finns läsanvisningar till dessa i samband med varje kursmoment.
+* **[Effective DevOps](http://tinyurl.com/y6jy5x8u)** -- Jennifer Davis, Ryn Daniels  
 
-* **[Beginning PHP and MySQL: From Novice to Professional](kunskap/boken-beginning-php-and-mysql-from-novice-to-professional)** -- Gilmore, W  
-  En tjockare bok för den som vill ha en mer komplett vy över PHP och MySQL från början.
--->
+  Building a Culture of Collaboration, Affinity, and Tooling at Scale.
 
 
 
@@ -179,9 +176,6 @@ Som kurslitteratur har jag valt följande böcker. Det är en god idé att läsa
 
 Följande böcker har jag valt som referenslitteratur. De kan vara bra att ha tillhands och ger lite extra läsmöjligheter. De behövs inte för att klara kursen men vill du bemästra kursens område så är dessa böcker bra startpunkter. Välj och vraka och ta ett eget beslut om de böcker du vill använda.
 
-
-* **[Effective DevOps](http://tinyurl.com/y6jy5x8u)** -- Jennifer Davis, Ryn Daniels  
-  Building a Culture of Collaboration, Affinity, and Tooling at Scale.
 
 * **[Securing DevOps](http://tinyurl.com/y659zjwc)** -- Julien Vehent 
   Explores how the techniques of DevOps and security should be applied together to make cloud services safer.
@@ -264,4 +258,6 @@ Läs om hur [vi jobbar med kursutvärdering och kursutveckling](kurser/kursutvar
 Kursplan {#kursplan}
 -----------------------------------------------------
 
-Kursens namn är "Kontinuerlig integration och driftsättning i molnet". Du hittar [kursplanen genom att söka på kurskoden DV1617 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1617).
+Kursens namn är "Kontinuerlig integration och driftsättning i molnet". Du hittar [kursplanen genom att söka på kurskoden DV1658 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1658).
+
+Fram till och med 2021 gick kursen med kurskoden [DV1617](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1617)

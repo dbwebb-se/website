@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2022-10-26": "(D, aar) Bytte ut CircleCi mot Github Actions."
     "2021-10-29": "(C, aar) Slog ihop canvas inlämning med kmom02."
     "2020-10-20": "(B, aar) Uppdaterade med Azure inför HT20."
     "2019-04-17": "(A, aar) Första versionen släppt."
@@ -98,13 +99,13 @@ Jobba igenom ["Driftsätta en Flask app"](kunskap/driftsatta-en-flask-app).
 
 ### Continues Integration {#ci}
 
-Vi vill ha en CI-kedja till repot så att testerna automatiskt körs när du gör push. I kursen har jag valt att använda [CircleCi](https://circleci.com/). Nu ska du läsa igenom en artikel som visar hur vi kan använda CirclCi för python projekt. När du gjort det ska du göra det för ditt forkade repo.
+Vi vill ha en CI-kedja till repot så att testerna automatiskt körs när du gör push. I kursen har jag valt att använda [GitHub Actions](https://docs.github.com/en/actions). Nu ska du läsa igenom en artikel som visar hur vi kan använda Actions för python projekt. När du gjort det ska du göra det för ditt forkade repo.
 
-Jobba igenom ["Continuous Integration With Python: An Introduction"](https://realpython.com/python-continuous-integration/).
+Läs igenom ["Building and testing Python"](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python).
 
-När du pushar kod i ditt repo ska CircleCi köra alla unittester, integrationtester och validera koden. Använd dig av make kommandot `make test` för att köra det. Du ska **inte** använda dig av flake8 som de gjorde i artikeln. 
+När du pushar kod i ditt repo ska Actions köra alla unittester, integrationtester och validera koden. Använd dig av make kommandot `make test` för att köra det. Du ska **inte** använda dig av flake8 som de gjorde i artikeln.
 
-Om ni vill snabba på CircleCi jobbet kan ni cacha det installerade paketen, detta är frivilligt. Kolla in [Caching dependencies](https://circleci.com/docs/2.0/project-walkthrough/#caching-dependencies), det är i `steps:` delen det intressanta sker. En längre förklaring på hur det funkar kan ni hitta i [CircleCi's dokumentation](https://circleci.com/docs/2.0/caching/).
+Jag rekommenderar att ni lägger till att cacha dependencies, då går det lite snabbare att köra allt.
 
 
 
@@ -141,9 +142,9 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 1. Driftsätt den nya funktionaliteten på din server.
 
-1. Koppla ditt repo till CircleCi. När du gör en commit ska CricleCi köra alla unittester, integrationtester och validera koden. Lägg till en CircleCi badge i README filen för repot.
+1. Koppla ditt repo till GitHub Actions. När du gör en commit ska Actions köra alla unittester, integrationtester och validera koden. Lägg till en Actions [badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge) i README filen för repot.
 
-2. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v11.0.0. PS. vi ska göra ny tag varje kmom, ni börjar på v11.0.0 för taggarna jag har skapat när jag har utvecklat repot inte ska blandas med era. Om du pushar kmom01 flera gånger kan du öka siffrorna efter 11:an.
+2. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v11.0.0. PS. vi ska göra ny tag varje kmom, ni börjar på v11.0.0 för att taggarna jag har skapat när jag har utvecklat repot inte ska blandas med era. Om du pushar kmom01 flera gånger kan du öka siffrorna efter 11:an.
 
 <!-- 1. Inkludera en länk till ditt GitHub repo och din webbsida (domännamn) i din inlämning på Canvas. -->
 

@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2022-10-26": "(D, aar) Bytte ut CircleCi mot Github Actions."
     "2021-10-29": "(C, aar) Slog ihop canvas inlämning med kmom01."
     "2020-11-06": "(B, aar) Ready for HT20."
     "2019-11-01": "(A, aar) Första versionen."
@@ -142,38 +143,30 @@ Skapa ett nytt Make kommado `make test-docker` som startar er test image och kö
 
 
 
-## CircleCI och Continuous Delivery {#circleci_cd}
+## Actions och Continuous Delivery {#actions-cd}
 
 Vi kan se Continuous Delivery som steget efter Continuous Integration. I CI har vi ett flöde där vi kör tester automatisk, nästa steg är när alla tester har blivit godkända. Då vill vi bygga vår applikation så att den finns tillgänglig för driftsättning med de senaste uppdateringarna. Vår applikation bygger vi genom att skapa en fungerande docker image. Läs en mer detaljerad förklaring av [Martin Fowler](https://martinfowler.com/bliki/ContinuousDelivery.html), ett av de stora namnen inom Microservices, Software Development och Continuous Integration/Delivery/Deployment. I nästa kursmoment ska vi ta det ett steg längre och uppnå Continuous Deployment, vilket lägger till att automatisk driftsätta applikationen efter vi testat och byggt den.
 <!-- https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff -->
 
-Vi ska inte uppnå "riktigt" CD då vi inte har en staging miljö och vi borde testa koden mer rigoröst. Men vi jobbar med det vi har. Vi har redan ett CI flöde på CircleCi, nu ska ni bygga ut det med delivery steget. Om testerna går igenom ska ni bygga er produktions image och publicera den på DockerHub.
+Vi ska inte uppnå "riktigt" CD då vi inte har en staging miljö och vi borde testa koden mer rigoröst. Men vi jobbar med det vi har. Vi har redan ett CI flöde på Actions, nu ska ni bygga ut det med delivery steget. Om testerna går igenom ska ni bygga er produktions image och publicera den på DockerHub.
 
-Om ni inte redan har ett, skapa först ett konto på [DockerHub](https://hub.docker.com/). Skapa sen ett nytt repo där ni kan ladda upp er produktions image. När ni gjort det testa ladda upp er första image manuellt. 
+Om ni inte redan har ett, skapa först ett konto på [DockerHub](https://hub.docker.com/). Skapa sen ett nytt repo där ni kan ladda upp er produktions image. När ni gjort det testa ladda upp er första image manuellt.
 
 - [Skapa och hanter konto på DockerHub](https://dbwebb.se/guide/docker/skapa-och-hantera-konto).
 
-Nu vill vi att er produktions image byggs och pushas till dockerhub automatiskt när ni pushar uppdateringar i er kod till GitHub. Vi gör så att detta sker i CircleCi. Läs följande artiklar för att se hur ni kan skriva er CircleCi config för att bygga och publicera er image till DockerHub. Tänk på att ni bara vill bygga och publicera en ny image om alla tester går igenom. Innan ni gör det kan ni installera CircleCi CLI för att slippa massa commits där CircleCi configen inte validerar.
+Nu vill vi att er produktions image byggs och pushas till dockerhub automatiskt när ni pushar uppdateringar i er kod till GitHub. Ni vill bara bygga och pusha er image om testerna går igenom för koden. Ni har redan ett workflow som kollar det. Eftersom vi är utvecklare gillar vi att dela upp vår kod i olika filer. Nu ska ni skapa ett nytt workflow (separat fil) som bygger och pushar er image till DockerHub men bara om testerna passerar. Ni uppnår det genom att från det nya workflow:et återanvända det som tester koden.
 
-- [Installera CircleCi CLI](kunskap/installera-circleci-cli) om ni inte redan har gjort det.
-
-- Använd validate kommandot för att spara tid och kolla att ni har giltiga konfigurationer.
-
-- [Using CircleCI workflows to replicate Docker Hub automated builds](https://circleci.com/blog/using-circleci-workflows-to-replicate-docker-hub-automated-builds/) 
+Läs först om hur man kan återanvända workflows och skapa sen ett nytt workflow som bygger och pushar er docker image.
+- [Reusing workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+- [Publishing Docker images](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images). Dokumentation om [alternativ till att bygga er image](https://github.com/docker/build-push-action#customizing).
 
 Gör ett aktivt val mellan att publicera ny image för varje ny release eller vid varje commit!
-
-Vi vill inte spara lösenord eller annan känslig information i kod så att det finns publikt på GitHub. Samtidigt behöver vi använda oss av t.ex. lösenord när vi kör saker i CircleCi. Känslig information kan vi spara som miljövariabler i CircleCi och sen använda i CircleCI flödet.
-
-- Använda [miljövariabler i CircleCi](https://circleci.com/docs/2.0/env-vars/#setting-an-environment-variable-in-a-container).
-
-<!-- Hur få exit kod? https://docs.docker.com/compose/reference/up/ --exit code from service, behövs den? -->
 
 
 
 ## Kör i produktion {#docker_prod}
 
-Det sista steget är att köra er produktions container på er VM i Azure. Installera Docker på servern och starta up er microblog med docker-compose. Bygg inte containerna på servern utan använd den som byggdes på CircleCi och laddades upp till DockerHub.
+Det sista steget är att köra er produktions container på er VM i Azure. Installera Docker på servern och starta up er microblog med docker-compose. Bygg inte containerna på servern utan använd den som byggdes på GitHub Actions och laddades upp till DockerHub.
 
 Ni ska inte använda supervisor längre. Vi använde supervisor för att se till att det hela tiden finns en Gunicorn process igång men det ansvaret flyttas över till Docker. Lägg till `restart: always` i er docker-compose fil.
 
@@ -214,13 +207,13 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 1. En docker-compose fil för att köra test och starta prod miljön.
 
-1. Använd `make test-docker` för att köra testerna och validerar kod i Docker. `validate-docker` funkar inte på CircleCi, om ni vill lägga till att validera era dockerfiler behöver ni använda en [docker orb](https://github.com/hadolint/hadolint/blob/master/docs/INTEGRATION.md#circleci)
+2. Använd `make test-docker` för att köra testerna och validerar kod i Docker.
 
-1. CircleCi kör testerna, validering och bygger produktions image och pushar till DockerHub.
+3. GitHub Action kör testerna, validering och bygger produktions image och pushar till DockerHub.
 
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v2.0.0. Om du pushar kmom02 flera gånger kan du öka siffrorna efter 2:an.
+4. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v2.0.0. Om du pushar kmom02 flera gånger kan du öka siffrorna efter 2:an.
 
-1. Inkludera en länk till ditt GitHub repo och din webbsida (domännamn) i din inlämning på Canvas.
+5. Inkludera en länk till ditt GitHub repo och din webbsida (domännamn) i din inlämning på Canvas.
 
 
 
@@ -233,11 +226,11 @@ Se till att följande frågor besvaras i texten:
 
 1. Vad var din uppfattning av devops innan kursen började?
 
-1. Har din uppfattning ändrats så här långt in i kursen?
-
 1. Hur skulle du definiera devops?
 
 1. Har du använt Docker förut? Gick det bra att använda det nu?
+
+1. Hur används Docker inom devops?
 
 1. Valde du att bygga ny Docker image vid varje commit eller release? Varför?
 

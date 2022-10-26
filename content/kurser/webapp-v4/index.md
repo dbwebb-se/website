@@ -11,14 +11,6 @@ Kursen webapp (v4)
 
 Kursen **Webbapplikationer för mobila enheter**, a.k.a. *webapp*, lär dig hur du bygger applikationer för mobila enheter och läsplattor med webbteknologier.
 
-[WARNING]
-
-**Kursutveckling pågår**.
-
-Påbörja inte arbete med kursen, då moment, uppgifter och övningar kan ändras.
-
-[/WARNING]
-
 
 
 <!--more-->

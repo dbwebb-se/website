@@ -89,6 +89,8 @@ Följande material är viktiga styrdokument att sätta sig in i.
 
 Följande läsresurser är relevanta denna veckan.
 
+Rörande arkitektur.
+
 1. [Software architecture patterns - Take a deep dive into several common software architecture patterns](https://www.oreilly.com/content/software-architecture-patterns/)
     1. [The top 5 software architecture patterns: How to make the right choice (shorter article on the same matter)](https://techbeacon.com/app-dev-testing/top-5-software-architecture-patterns-how-make-right-choice)
 1. [The Big Ball of Mud and Other Architectural Disasters](https://blog.codinghorror.com/the-big-ball-of-mud-and-other-architectural-disasters/)
@@ -96,6 +98,11 @@ Följande läsresurser är relevanta denna veckan.
     1. [Why Software Becomes a Big Ball of Mud (yet another (short) article on the matter)](https://pressupinc.com/blog/2015/04/why-software-becomes-a-big-ball-of-mud/)
 1. [What UML diagram should I use to show a platform's architecture? (TLDR; "make it look good")](https://softwareengineering.stackexchange.com/questions/198178/what-uml-diagram-should-i-use-to-show-a-platforms-architecture)
 1. Paper "[Architectural Blueprints—The 4+1 View Model of Software Architecture](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)" showing examples on how to draw 4+1 architecture blueprints.
+
+Rörande arbetsmetoder.
+
+1. [Vad är ett stand-up meeting?](https://en.wikipedia.org/wiki/Stand-up_meeting) Vilka frågor känns relevanta att svara på ett stand-up?
+1. [Vilken är din roll i gruppen?](https://www.youtube.com/watch?v=7KSCvPwNrzE&list=PLKtP9l5q3ce9BUGisXHdP8dueMoaXyQ71) Emil lyfter frågan om hur en grupp organiserar sig och vilken roll man tar på sig.
 
 **Assignment**
 

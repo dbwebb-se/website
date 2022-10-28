@@ -233,6 +233,8 @@ Man kan nu boka in en tid för att leverera i december och vi fortsätter med ko
 (Övriga diskussioner kring implementationen av systemet, eventuellt justeringar av kraven.)
 
 (Hur simulerar man ett system i drift?)
+
+https://dbwebb.se/kunskap/gps-och-karta
 -->
 
 

@@ -20,7 +20,7 @@ Det finns ocks tips och trix till hur vissa saker kan implementeras i projektet.
 
 
 
-Håll ihop gruppen
+Håll ihop gruppen {#team}
 -------------------------
 
 Ni har ett stort system att utveckla på en begränsad kalendertid och begränsade resurser av person-timmar.
@@ -41,7 +41,7 @@ Hur väl ni håller ihop gruppen kan komma att påverka betygsättningen.
 
 
 
-System Design Specifikation (SDS)
+System Design Specifikation (SDS) {#sds}
 -------------------------
 
 Det vi eftersträvar är ett relativt kort (5-7 sidor (max 15-20 sidor) med information + försättsblad) och översiktligt dokument som påvisar systemets arkitektur, delsystemen och hur kommunikationen flödar i systemet.
@@ -54,7 +54,7 @@ En SDS bör innehålla referenser till de källor man använt när man gjort sin
 
 
 
-Körbart system i Docker
+Körbart system i Docker {#docker}
 -------------------------
 
 En grundtanke är att hela projektet skall kunna köras lokalt på en dator med Docker. Det är främst för möjligheten att testa och utveckla systemet. Att köra systemet i Docker skall vara en del i projektets repo (repon). Det skall finnas en möjlighet att ta hem projektets repo och starta upp "hela servern" med tex `docker-compose up -d server`.
@@ -67,7 +67,7 @@ Att drifta systemet på en extern servern är "add on" och en trevlig sak, men d
 
 
 
-Simulera drift i Docker
+Simulera drift i Docker {#simulera}
 -------------------------
 
 Tanken är att ni skall kunna visa att ert system fungerar genom att simulera driften av ett antal tusen cyklar i en stad där cyklarna rör sig på en karta, eller visar att de är parkerade.
@@ -76,7 +76,7 @@ Denna simulering är ett absolut krav och kommer att visa hur bra ni lyckats med
 
 
 
-Designa ett RESTful API
+Designa ett RESTful API {#rest}
 -------------------------
 
 Följande artikelserie tar dig igenom hur man kan tänka när man designar ett REST API. Du får också stöd för hur du kan designa ditt API med en matris som lite kan liknas vid hur vi designade databasen med ER-modellering.
@@ -92,7 +92,7 @@ Att fundera på:
 
 
 
-OAuth
+OAuth {#oauth}
 -------------------------
 
 OAuth skall byggas in i systemet för att hantera användarens inloggning. Det skall minst stödjas att man kan logga in med sitt konto från GitHub. Det är bra att få in detta i SDS:en.
@@ -102,7 +102,7 @@ OAuth skall byggas in i systemet för att hantera användarens inloggning. Det s
 
 
 
-Databas
+Databas {#databas}
 -------------------------
 
 Någon form av datalagring kommer behövas. Det kan vara en lokal databas eller "database-as-a-service". Det kan vara en relationsdatabas eller JSON/dokumentdatabas, välj det som är rimligt och prioritera tiden du har till förfogande.  
@@ -111,9 +111,30 @@ Någon form av datalagring kommer behövas. Det kan vara en lokal databas eller 
 
 
 
-Karta
+Karta {#map}
 -------------------------
 
 * Artikeln [GPS och karta](https://dbwebb.se/kunskap/gps-och-karta) användes tidigare i kursen webapp för att visa hur kartor fungerar.
 * [Leaflet](https://leafletjs.com/) ett JavaScript lib för att jobba med kartor.
 * [OpenStreetMap](https://www.openstreetmap.org/) kan vara ett alternativ för att visa kartor.
+
+
+
+Tekniska studier {#tech}
+-------------------------
+
+En teknisk studie är (i vårt sammanhang) när man undersöker en viss sak/feature och skriver ned resultatet i någon form av dokument som kan spridas.
+
+Här är några av de tekniska studier som förekommit under kursens historia.
+
+
+
+### 2022
+
+Låt se om några blir av under denna kursrundan.
+
+
+
+### 2021
+
+__Kkommer under kursens gång som exempel.__

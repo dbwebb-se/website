@@ -63,8 +63,10 @@ Vecka 01 (v44): Kund och uppdrag {#w01}
 <!--
 TODO 
 
-* Kursintroduktion och genomgång av domänen och kravspecen.
-* Presentation av systemarkitekturer och genomgång av uppgiften SDS.
+* Kursintroduktion och genomgång av domänen och kravspecen, använd materialet på Canvas och dbebb.
+* Presentation av systemarkitekturer.
+* Genomgång av uppgiften SDS.
+* Gör en template till SDS:en?
 -->
 
 Kursen startar och projektet presenteras tillsammans med kursens upplägg. Kundens kravbild gås igenom. Första uppgiften gås igenom, det handlar om förutsättningar för att skapa en översikt av systemet via en System Design Specification (SDS). Vi pratar om olika typer av arkitekturer när man bygger ett större system.
@@ -73,18 +75,15 @@ Innan veckan är slut skall alla finnas i en grupp. Gruppstorleken är 4 student
 
 **Presentation**
 
-* TBD
-
-<!--
 * [System Design Specification (SDS) (slides)](https://dbwebb-se.github.io/pattern/lecture/L01-system-design-specification/slide.html)
--->
 
 **Material**
 
 Följande material är viktiga styrdokument att sätta sig in i.
 
 1. "[Elsparkcyklar bakgrundsanalys](https://drive.google.com/file/d/19qRnYcCYRRba3ePd5fbuxtMf3B04qmfs/view?usp=sharing)"
-1. Kravspecifikation
+1. [Kravspecifikation](https://docs.google.com/document/d/1zWksQNmkXJgM7Q66k3-mgcxrexO6eF9xqd0Z632BwlU/edit?usp=sharing)
+1. [Tips, trix och förtydliganden](./../tips-trix-och-fortydliganden)
 
 **Resurser**
 
@@ -96,6 +95,11 @@ Följande läsresurser är relevanta denna veckan.
     1. [Big Ball of Mud (original paper)](http://www.laputan.org/mud/mud.html)
     1. [Why Software Becomes a Big Ball of Mud (yet another (short) article on the matter)](https://pressupinc.com/blog/2015/04/why-software-becomes-a-big-ball-of-mud/)
 1. [What UML diagram should I use to show a platform's architecture? (TLDR; "make it look good")](https://softwareengineering.stackexchange.com/questions/198178/what-uml-diagram-should-i-use-to-show-a-platforms-architecture)
+1. Paper "[Architectural Blueprints—The 4+1 View Model of Software Architecture](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)" showing examples on how to draw 4+1 architecture blueprints.
+
+**Assignment**
+
+* Börja jobba med [uppgiften SDS:en](./../assignment/system-design-specification).
 
 
 
@@ -194,6 +198,7 @@ Leverans av SDS.
 <!--
 * Individuell reflektion över arbetet så här långt samt se vilken plats man själv tar i projektet.
     * Fundera på om det är något man vill ändra för resten av projektet.
+* Jobba med små tekniska studier och dela kunskap
 -->
 
 

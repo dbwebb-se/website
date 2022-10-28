@@ -114,4 +114,6 @@ Någon form av datalagring kommer behövas. Det kan vara en lokal databas eller 
 Karta
 -------------------------
 
-[OpenStreetMap](https://www.openstreetmap.org/) kan vara ett alternativ för att visa kartor.
+* Artikeln [GPS och karta](https://dbwebb.se/kunskap/gps-och-karta) användes tidigare i kursen webapp för att visa hur kartor fungerar.
+* [Leaflet](https://leafletjs.com/) ett JavaScript lib för att jobba med kartor.
+* [OpenStreetMap](https://www.openstreetmap.org/) kan vara ett alternativ för att visa kartor.

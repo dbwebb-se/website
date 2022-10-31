@@ -5,10 +5,6 @@ revision:
   "2021-05-12": "(A, lew) Ny version inför HT21."
 ...
 
-[WARNING]
-Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
-[/WARNING]
-
 # Kmom01: Utvecklingsmiljö
 
 Låt oss komma i gång med en labbmiljö, och en miljö för kursen. För er som vill repetera eller inte har läst HTML/CSS innan kommer det finnas möjlighet att läsa på om det innan det används i den här kursen.

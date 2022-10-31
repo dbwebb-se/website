@@ -227,8 +227,7 @@ Läsanvisningar {#las}
 
 I kursen ska ni läsa boken **[Effective DevOps](http://tinyurl.com/y6jy5x8u)**. Boken är inte kopplad till kursmomenten, men den behövs när ni ska skriva rapporten i slutet av kursen. Ni kan själva välja upplägg för när ni läser den. Ett rekommenderat upplägg är att läsa en del, "part", i veckan. Då har ni läst igenom hela boken efter kmom06.
 
-Rekommendationen för denna veckan är att läsa **"Part III. Affinity"** som ni ska läsa.
-
+Rekommendationen för denna veckan är att läsa **"Part III. Affinity"**.
 
 
 Resultat & Redovisning  {#resultat_redovisning}

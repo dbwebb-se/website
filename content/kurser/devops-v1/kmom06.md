@@ -234,7 +234,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 Läsanvisningar {#las}
 --------------------------
 
-Rekommendationen för denna veckan är att läsa **"Part VI. Building Bridges with the Four Pillars of Effective Devops"** som ni ska läsa.
+Rekommendationen för denna veckan är att läsa **"Part VI. Building Bridges with the Four Pillars of Effective Devops"**.
 
 
 

@@ -173,7 +173,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 Läsanvisningar {#las}
 --------------------------
 
-Rekommendationen för denna veckan är att läsa **"Part IV. Tools"** som ni ska läsa.
+Rekommendationen för denna veckan är att läsa **"Part IV. Tools"**.
 
 
 

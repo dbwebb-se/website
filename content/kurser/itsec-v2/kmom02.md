@@ -34,13 +34,13 @@ Föreläsningar & Seminarium {#forelasningar}
 
 Föreläsningen:
 
-* 10:00 (2022-11-07) H430, med Martin om etik och privacy.
+* 10:15 (2022-11-07) H430, med Martin om etik och privacy.
 
 <!-- * 10:00 (2021-11-08) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633)) -->
 
 Obligatoriskt seminarie kring privacy:
 
-* 10:00-12:00 (2022-11-11) H430
+* 10:15-12:00 (2022-11-11) H430
 
 <!-- * 10:00-12:00 (2021-11-12) via Zoom ([Kenneth, Marie](https://bth.zoom.us/j/6772303809)) -->
 

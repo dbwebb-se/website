@@ -45,9 +45,9 @@ Föreläsningar  {#forelasningar}
 
 *(ca: 4 studietimmar)*
 
-* 10:00 (2022-10-31) H430, med Martin om introduktion till säkerhet del 1.
+* 10:15 (2022-10-31) H430, med Martin om introduktion till säkerhet del 1.
 
-* 10:00 (2022-11-04) H430, med Martin om introduktion till säkerhet del 2.
+* <strong>NY TID 13:15</strong> (2022-11-04) H430, med Martin om introduktion till säkerhet del 2.
 
 <!--
 * 10:00 (2021-11-01) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633))

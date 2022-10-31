@@ -36,7 +36,7 @@ Föreläsningar  {#forelasningar}
 
 *(ca: 2 studietimmar)*
 
-* 10:00 (2022-11-28) H430, med Anton om sårbarhetsanalys.
+* 10:15 (2022-11-28) H430, med Anton om sårbarhetsanalys.
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -67,7 +67,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10.00 (2021-12-03) H430 Sårbarhetsanalys, se uppgiften nedan
+* 10.15 (2021-12-03) H430 Sårbarhetsanalys, se uppgiften nedan
 
 <!-- * 10.00 (2021-12-03) via Zoom (länk på Canvas) -->
 

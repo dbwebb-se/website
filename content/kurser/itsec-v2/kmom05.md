@@ -28,9 +28,7 @@ Föreläsningar  {#forelasningar}
 
 *(ca: 2 studietimmar)*
 
-Du ska medverka på föreläsningen:
-
-* 10.00 (2021-12-06) H430, med Anton om säkerhetstänket vid testning.
+* 10.15 (2021-12-06) H430, med Anton om säkerhetstänket vid testning.
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -66,7 +64,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10.00 (2021-12-10) H430 Säkerhetstestning, se uppgiften nedan
+* 10.15 (2021-12-10) H430 Säkerhetstestning, se uppgiften nedan
 
 
 Uppgifter  {#uppgifter}

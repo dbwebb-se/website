@@ -45,8 +45,8 @@ Föreläsningar &amp; Laborationer {#forelasningar}
 
 Kursvecka 3 (Fokus på teori):
 
-* 14:00 (2021-11-14) H430, med Victor om hot.
-* 10:00 (2021-11-18) H430, med Victor om attacker.
+* 10:15 (2021-11-14) H430, med Victor om hot.
+* 10:15 (2021-11-18) H430, med Victor om attacker.
 
 <!--
 Hur hantera attaker när de är ett faktum?
@@ -60,8 +60,8 @@ klick, ransomware, social attacks
 
 Kursvecka 4 (Fokus på praktik/attacker):
 
-* 10:00 (2021-11-21) H430, med Marie laboration, attacker
-* 10:00 (2021-11-25) H430, med Marie. Frågor, eget arbete
+* 10:15 (2021-11-21) H430, med Marie laboration, attacker
+* 10:15 (2021-11-25) H430, med Marie. Frågor, eget arbete
 
 
 Läs &amp; Studera  {#lasanvisningar}

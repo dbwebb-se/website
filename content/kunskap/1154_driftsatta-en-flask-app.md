@@ -86,6 +86,13 @@ Du kan kolla att det fungerar genom att skriva `flask --help` och om `db` finns 
 
 ## Konfigurera databas {#config_db}
 
+[INFO]
+Mysql's loggfiler:
+
+- `/var/log/mysql.err` – MySQL Error log file
+- `/var/log/mysql.log` – MySQL log file
+[/INFO]
+
 Då var det dags att sätta upp databasen.
 
 Kör följande kommando för att börja konfigurera:
@@ -186,12 +193,25 @@ Om det fungerar borde du få liknande utskrift som nedanför om du kör `sudo su
 microblog            RUNNING   pid 8837, uptime 0:00:04
 ```
 
-Du kan även testa `wget localhost:8000` och kolla att du får korrekt index.html fil.
+Du kan även testa `wget localhost:8000` och kolla att du får korrekt index.html fil. Om du får något fel, kolla i loggfilerna som står nedanför.
+
+[INFO]
+Gunicorn loggfiler:
+- `/var/log/microblog/`
+
+
+Supervisor loggfiler:
+- `/var/log/supervisor/`
+[/INFO]
 
 
 
 ## Konfigurera Nginx {#conf_nginx}
 
+[INFO]
+Nginx loggfiler:
+- `/var/log/nginx/`
+[/INFO]
 Nu ska vi sätta upp och exponera nginx publikt så det kan skicka vidare request till Gunicorn. Nginx ska lyssna både på port 80 och 443, men all trafik från 80 ska skickas vidare till 443. Vi behöver lägga till konfiguration för port 80 och sen använder vi [certbot](https://certbot.eff.org/) för att automatiskt lägga till konfiguration för port 443.
 
 Skapa en fil i `/etc/nginx/sites-available/`, jag döper min till `microblog.se`, du kan döpa den till ditt domän namn eller annat passande. Vi lägger kod för att skicka vidare requests till 443/https.

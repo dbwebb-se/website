@@ -89,6 +89,10 @@ För kurspaketare introduceras Git och GitHub i denna kursen. Git är ett versio
 
 1. Ägna en stund åt att bekanta dig med webbplatser för GitHub. Du kan även kort och översiktligt kika på de guider och videor som finns för GitHub. Notera att de täcker så mycket mer än vad vi kommer jobba med i kursen så det kan räcka att du endast noterar att det existerar [guider för hur man jobbar med GitHub](https://guides.github.com/).
 
+Förutom ovanstående finns video-spellistan "Introduktion till git":
+
+[YOUTUBE src="LL-a3YTeL2M" list="PLKtP9l5q3ce_mjCcNeDNhVQIU_DM2P4WS" width=700 caption="Introduktion till git"]
+
 
 
 Övningar & Uppgifter  {#ovningar_uppgifter}

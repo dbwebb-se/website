@@ -14,10 +14,6 @@ Vi packar in vår kod i en Docker container för att underlätta utveckling, dri
 
 <!-- more -->
 
-[WARNING]
-**Kursmomentet uppdetaras** och är inte redo att jobbas igenom.
-[/WARNING]
-
 [FIGURE src="https://pics.me.me/it-works-on-my-machine-then-well-ship-your-machine-62072263.png"]
 
 
@@ -89,9 +85,9 @@ Nu när vi har lite kött på benen och vet vad Docker är och hur det fungerar 
 
 - Jobba igenom [Microblog med docker containers](kunskap/microblog_med_docker_containers) för att skapa dig en Dockerfile för produktion. Döp din Dockerfile till `Dockerfile_prod` och lägg den i mappen `docker`.
 
-Efter att ni skapat er Dockerfile kan läsa två relevanta artiklar om docker användning.
+När ni har skapat er Dockerfile ska ni läsa en recension av den Dockerfile ni har skapat.
 
-- Vsupalov's review av [Docker Usage in 'The Flask Mega-Tutorial'](https://vsupalov.com/flask-megatutorial-review/).
+- Vsupalov's recension av [Docker Usage in 'The Flask Mega-Tutorial'](https://vsupalov.com/flask-megatutorial-review/).
 
 
 
@@ -99,7 +95,7 @@ Efter att ni skapat er Dockerfile kan läsa två relevanta artiklar om docker an
 
 Att köra sin databas i Docker har länge varit debatterat, många är emot men fler och fler börjar tycka att det är OK. Jag är för att köra databasen in Docker så länge man lägger data mappen som en volym så att datan inte skrivs över när vi startar om containern.
 
-- Läsa lite om argumenten i [Should You Run Your Database in Docker?](https://vsupalov.com/database-in-docker/). 
+- Läsa om argumenten i [Should You Run Your Database in Docker?](https://vsupalov.com/database-in-docker/). 
 
 MySQL sparar sin data i mappen `/var/lib/mysql` så när ni kör er databas container i produktion gör den mappen till en volym på host systemet. Så att datan i databasen inte försvinner när vi stänger ned containern.
 
@@ -107,15 +103,19 @@ MySQL sparar sin data i mappen `/var/lib/mysql` så när ni kör er databas cont
 
 ## Skapa en Docker image för testning {#file_test}
 
-Nu borde ni ha en image för produktions miljön, vi vill även ha en för vår utvecklings/testningsmiljö. Hur vår image ska bete sig skiljer mellan de olika miljöerna.
+Den stora fördelen med Docker är att vi kan skapa färdiga miljöer och skicka mellan olika datorer. Nu har ni byggt en miljö/image för att köra microblog i produktion. Det vill vi även göra för utvecklings-/testmiljön. Med utvecklingsmiljön i Docker kan vi snabbt och lätt byta dator och få in nya utvecklare till projektet.
 
-När vi kör docker i produktion vill vi att containern ska vara igång för evigt. När vi istället gör en image för testning vill vi starta upp en container, köra alla tester i den och sedan ska den stänga ner.
+I den image som används i produktion är koden och alla dependencies statiska. När vi har skapat vår image kommer de sakerna inte ändras och containern ska vara igång för evigt. När vi istället gör en image för testning vill vi inte behöva bygga om hela vår image varje gång vi vill kolla om något fungerar och när den startas som en container ska den stängas när testerna har körts. Detta gör att koden och testerna behöver vara dynamisk i vår image. Denna imagen ska bara behöva byggas om när vi ändrar på test miljön (moduler och verktyg).
 
-Vi vill inte behöva bygga om containern varje gång vi vill köra testerna. Som imagen för produktionsmiljön är byggd behöver vi bygga om den varje gång vi uppdaterar koden. Det tar för lång tid. Vi kan lösa det genom att inte kopiera in koden i containern när den byggs. Istället lägger vi mappen som koden ligger som en volym i containern. Då behöver bara containern innehålla miljön för att köra testerna. Detta gör att vi bara behöver skapa containern en gång och sen kan vi återanvända den när vi har ändrat i koden.
+I produktions filen skapar vi mappen microblog och kopiera in alla mappar som behövs och gör allt i den mappen. Men det går inte nu när vi ska separera på installations- och kod-filer. `requirements` mappen ska ni kopiera in och installera filen `requirements/test.txt`. Själva koden och testerna läggs in som en volym när ni startar er container efter att ni har byggt en image.
 
-- Skapa en Dockerfile, döp den till `Dockerfile_test` och lägg den i mappen `docker`.
-- I den ska ni inte kopiera in koden för testerna eller koden som testas. Lägg till `microblog` mappen som en volym istället.
-- När containern startar ska den validera koden och köra unit och integrations testerna. När det är klart ska containerna stängas ner av sig själv. Ni behöver skapa ett nytt bash script som används istället för `boot.sh`, för att köra testerna.
+- Skapa en ny Dockerfile, döp den till `Dockerfile_test` och lägg den i mappen `docker`.
+- I den är det bara `requirements` mappen som ska kopieras in. Installera filen `requirements/test.txt`.
+- Installera `make` kommandot.
+- Skapa ett nytt `boot.sh` skript som kör `make test` i mappen du sätter som volym för testerna.
+- När containern startar ska den köra `make test` via ditt skript. När det är klart ska containern stängas ner av sig själv.
+
+Bygg filen som vanligt, `docker build -t microblog:test -f docker/Dockerfile_test .`. När ni ska använda den sen måste ni skicka med er lokala microblog mapp som en volym till container.
 
 Om ni vill kan ni ändra så integrationstesterna körs mot MySQL i docker container istället för SQLite i minnet. Testerna kommer troligen köras långsammare men testerna blir mer värdefulla då de körs mot likadant system som körs i produktion. När man kör databasen i en container för testerna brukar man inte göra data mappen till en volym, i och med att vi inte bryr oss om persistent data för tester.
 
@@ -166,9 +166,11 @@ Gör ett aktivt val mellan att publicera ny image för varje ny release eller vi
 
 ## Kör i produktion {#docker_prod}
 
-Det sista steget är att köra er produktions container på er VM i Azure. Installera Docker på servern och starta up er microblog med docker-compose. Bygg inte containerna på servern utan använd den som byggdes på GitHub Actions och laddades upp till DockerHub.
+Det sista steget i continuous delivery är att ni själva måste manuellt uppgradera produktions miljön så att er nya image används. Men vi skippar det i detta kursmomentet och tar det i nästa istället.
 
-Ni ska inte använda supervisor längre. Vi använde supervisor för att se till att det hela tiden finns en Gunicorn process igång men det ansvaret flyttas över till Docker. Lägg till `restart: always` i er docker-compose fil.
+<!-- att köra er produktions container på er VM i Azure. Installera Docker på servern och starta up er microblog med docker-compose. Bygg inte containerna på servern utan använd den som byggdes på GitHub Actions och laddades upp till DockerHub. -->
+
+<!-- Ni ska inte använda supervisor längre. Vi använde supervisor för att se till att det hela tiden finns en Gunicorn process igång men det ansvaret flyttas över till Docker. Lägg till `restart: always` i er docker-compose fil. -->
 
 Läs om vad Docker tycker om att använda [compose i produktion](https://docs.docker.com/compose/production/).
 

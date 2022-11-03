@@ -4,10 +4,6 @@ revision:
   "2021-05-04": (A, lew) Ny version inför ht21.
 ...
 
-[WARNING]
-Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
-[/WARNING]
-
 # Kmom02: Moduler
 
 Vi skall nu koda mer JavaScript. Vi bekantar oss med fler konstruktioner i språket och tar en titt på hur vi kan dela upp koden i moduler som i sin tur importerar och exporterar koden.
@@ -52,7 +48,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page 2](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom02/02_mepage2.md)". Spara resultatet i `me/redovisa/`.
 
-TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"]
+<!-- TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 

@@ -4,6 +4,7 @@ category:
     - devops
     - docker
 revision:
+    "2022-11-03": (C, aar) La till heredoc och logs.
     "2021-11-09": (B, aar) Updaterade python version för att bli av med gcc problem.
     "2020-10-25": (A, moc) Skapad inför HT2020.
 ...
@@ -41,12 +42,13 @@ COPY requirements requirements
 COPY requirements.txt microblog.py boot.sh ./
 
 RUN python -m venv .venv
-ENV FLASK_APP microblog.py
 RUN .venv/bin/pip3 install -r requirements.txt
 
-RUN chmod +x boot.sh
+ENV FLASK_APP microblog.py
 
+RUN chmod +x boot.sh
 RUN chown -R microblog:microblog ./
+
 USER microblog
 
 EXPOSE 5000
@@ -98,7 +100,7 @@ En annan intressant sak om Docker är att allt som containern skriver till `stdo
 Nu när vår nya Dockerfile är skapad kan vi bygga vår container image:
 
 ```bash
-$ docker build -t microblog:latest -f docker/Dockerfile_prod .
+$ docker build -t microblog:1.0.0-prod  microblog:prod -f docker/Dockerfile_prod .
 ```
 
 Argumentet `-t` som vi lägger till i kommandot `docker build` anger namnet och taggen för den nya container imagen.   
@@ -111,7 +113,7 @@ Vill man se en lista av alla images som existerar lokalt kan man göra det med `
 ```bash
 $ docker images
 REPOSITORY    TAG          IMAGE ID        CREATED              SIZE
-microblog     latest       54a47d0c27cf    About a minute ago   216MB
+microblog     1.0.0-prod       54a47d0c27cf    About a minute ago   216MB
 python        3.6-alpine   a6beab4fa70b    9 months ago         88.7MB
 ```
 
@@ -125,10 +127,11 @@ Starta upp Containern {#starta-microblog-containern}
 Efter att container imagen är byggd kan vi starta den med kommandot `docker run`. Denna tar vanligtvis emot ett stort antal argument, men vi börjar med ett mindre exempel:
 
 ```bash
-$ docker run --name microblog -d -p 8000:5000 --rm microblog:latest
+$ docker run --name microblog -d -p 8000:5000 --rm microblog:1.0.0-prod
 021da2e1e0d390320248abf97dfbbe7b27c70fefed113d5a41bb67a68522e91c
 ```
 
+Kolla att du kommer åt webbsidan i webbläsaren med `localhost:8000`. Om något är fel kan du kolla loggarna med `docker logs microblog`.
 
 `--name` tilldelar ett namn för containern.   
 `-d` berättar för Docker att köra containern i bakgrunden.   
@@ -143,7 +146,7 @@ Om man vill se vilka containers som är körandes kan man använda `docker ps`:
 ```bash
 $ docker ps
 CONTAINER ID  IMAGE             COMMAND      PORTS                   NAMES
-021da2e1e0d3  microblog:latest  "./boot.sh"  0.0.0.0:8000->5000/tcp  microblog
+021da2e1e0d3  microblog:1.0.0-prod  "./boot.sh"  0.0.0.0:8000->5000/tcp  microblog
 ```
 
 Om man nu vill stoppa containern kan man använda `docker stop` följt av dess ID:
@@ -164,7 +167,7 @@ Så extra miljövariabler för byggtid kan vara användbara, men det finns ocks�
 ```bash
 $ docker run --name microblog -d -p 8000:5000 --rm -e SECRET_KEY=my-secret-key \
     -e MYSQL_DATABASE=microblog \
-    microblog:latest
+    microblog:1.0.0-prod
 ```
 
 Det är inte ovanligt för `docker run` kommandon att bli långa på grund av att de har många miljövariabler som behöver definieras.
@@ -194,9 +197,10 @@ Vi kan nu starta om Microblog, men den här gången med en länk till databascon
 $ docker run --name microblog -d -p 8000:5000 --rm -e SECRET_KEY=my-secret-key \
     --link mysql:dbserver \
     -e DATABASE_URL=mysql+pymysql://microblog:<database-password>@dbserver/microblog \
-    microblog:latest
+    microblog:1.0.0-prod
 ```
 
+I loggarna för microblogen kan du se om kopplingen mellan microblog och mysql fungerar, `docker logs microblog`. Om där inte är något fel så funkar det.
 
 `--link` berättar för Docker att göra en annan container är tillgänglig. Argumentet innehåller två namn åtskilda av ett kolon. Den första delen är namnet eller ID på containern som ska länkas, i det här fallet den som heter `mysql` som vi skapade ovan. Den andra delen definierar ett host-namn som kan användas och hänvisar till den vi länkar. Här använder jag `dbserver` som representerar databasservern.
 
@@ -228,23 +232,37 @@ Denna loop kontrollerar exit-koden för kommandot `flask db upgrade`, och om den
 Validera Dockerfile {#validate}
 -----------------------------------------------------------
 
-Som med all annan kod vi skriver finns det så klart en linter/validator till koden i Dockerfiles. Vi ska använda [hadolint](https://github.com/hadolint/hadolint). Det finns olika sätt att installera den, men det lätaste är att använda deras docker container. Testa validera er kod med följande kommando.
-
-```
-docker run --rm -i hadolint/hadolint < docker/Dockerfile_prod
-```
-
-Om allting gick bra, vilket det borde om ni har följt guiden, får ni ingen utskrift. Den skriver bara ut något om det finns valideringsfel.
-
-För att se hur det ser ut när det finns fel kan ni klistra in raden `RUN cd /tmp && echo "hello!"` i er Dockerfile och köra validatorn igen. Ni kan ta bort raden efter ni har testat.
+Som med all annan kod vi skriver finns det så klart en linter/validator till koden i Dockerfiles. Vi ska använda [hadolint](https://github.com/hadolint/hadolint). Det finns olika sätt att installera den, men det lättaste är att använda deras docker container. Testa validera er kod med följande kommando.
 
 ```
 docker run --rm -i hadolint/hadolint < docker/Dockerfile_prod
 
-/dev/stdin:4 DL3003 Use WORKDIR to switch to a directory
+DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
+DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
 ```
 
-En lista på felen som hadolint kolla på hittar ni under [rules](https://github.com/hadolint/hadolint#rules).
+Du borde få samma fel som jag fick. Vi kan skriva om koden så det blir ett RUN kommando istället, i nyare versioner av Docker finns det stöd för [HereDoc](https://phoenixnap.com/kb/bash-heredoc). Med det kan vi skriva flera rader i RUN.
+
+Istället för:
+```
+RUN command1
+RUN command2
+RUN command3
+```
+
+Skriver vi:
+
+```
+RUN <<-EOF
+    command1
+    command2
+    command3
+EOF
+```
+
+För att Docker ska stödja den nya syntaxen behöver du först lägga till `# syntax=docker/dockerfile:1.4` överst i din Dockerfile. Sen kan du skriva om koden och bygga din image igen.
+
+En lista över hadolint's möjliga fel hittar du under [rules](https://github.com/hadolint/hadolint#rules), där finns också förslag på lösningar.
 
 
 
@@ -262,19 +280,19 @@ När det är klart kan du nu logga in via terminalen med kommandot `docker login
 $ docker login
 ```
 
-Vi har en image som heter `microblog:latest` lagrad lokalt på datorn men, för att kunna publicera den här imagen till Docker-registret, behöver vi ändra taggen lite genom att lägga till namnet på vårt konto:
+Vi har en image som heter `microblog:1.0.0-prod` lagrad lokalt på datorn men, för att kunna publicera den här imagen till Docker-registret, behöver vi ändra taggen lite genom att lägga till namnet på vårt konto:
 
 ```bash
-$ docker tag microblog:latest <your-docker-registry-account>/microblog:latest
+$ docker tag microblog:1.0.0-prod <your-docker-registry-account>/microblog:1.0.0-prod
 ```
 
-Om du listar dina images igen med `docker images` kommer vi att se två stycken, en för Microblog (den ursprungliga med `microblog:latest` namnet) och en ny som innehåller ditt kontonamn. Det här är egentligen två alias för samma image.
+Om du listar dina images igen med `docker images` kommer vi att se två stycken, en för Microblog (den ursprungliga med `microblog:1.0.0-prod` namnet) och en ny som innehåller ditt kontonamn. Det här är egentligen två alias för samma image.
 
 
 För att publicera din image i Docker-registret, använd kommandot `docker push`:
 
 ```bash
-$ docker push <your-docker-registry-account>/microblog:latest
+$ docker push <your-docker-registry-account>/microblog:1.0.0-prod
 ```
 
 Nu är din image offentligt tillgänglig och redo att användas.

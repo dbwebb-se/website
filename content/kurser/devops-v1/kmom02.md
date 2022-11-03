@@ -67,13 +67,13 @@ Om ni redan har läst kursen vlinux kan ni gå vidare till nästa steg. Annars j
 
 - [Docker](guide/docker/introduktion)
 
-Om ni vill öva mer på Docker så finns det många [Docker övningar på Catacoda](https://katacoda.com/courses/docker).
+Om ni vill öva mer på Docker så finns det många [Docker övningar på killercoda](https://killercoda.com/comp-killercoda/course/Docker%20Tutorials%20(Without%20Click-and-Execute)).
 
 
 
 ### Docker i devops {#devops}
 
-Docker är väldigt populärt inom devops världen av många anledningar och ni kan läsa varför i Dockers bloggserie **Docker and the Three Ways of DevOps**.
+Docker är väldigt populärt inom devops världen av många anledningar, läs om varför i Dockers bloggserie **Docker and the Three Ways of DevOps**.
 
 - [Part 1: The First Way – Systems Thinking](https://www.docker.com/blog/docker-three-ways-devops/)
 

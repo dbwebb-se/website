@@ -18,23 +18,9 @@ Detta dokument uppdateras löpande under kursen, som minnesnoteringar för vad s
 Varje kursvecka förekommer ett eller flera fokusområden som presenteras från lärarteamet med föreläsningar och/eller artiklar. Dessa fokusområden skall sedan diskuteras och hanteras i grupperna och införlivas i gruppens arbete.
 
 <!--
-* Problemlösning, prioritering och implementering utifrån en kravspecifikation.
-• Utveckling i ramverk för webbapplikationer.
-• Test och kvalitetssäkring av kod.
-• Begreppet "god och snygg kod" (clean code).
-• Driftsättning av större projekt samt analys av projektets eventuella bidrag inom begreppet "hållbarhet".
-• Arbete i team där team inte är bundna till tid eller fysisk plats.
-• Att tillsammans med teamet bygga ett större system efter en kravspecifikation och enligt en uppsatt tidplan.
-• Hur skapa ett gott och gynnsamt gruppklimat.
-
-
 TODO
 
 * Maila refgruppen och be om tips - vad säga till studenterna om vad som är viktigt när man jobbar i grupp och vilka arbetssätt som normalt förekommer ute.
-
-* Förra årets lektioner och läsanvisningar:
-https://bth.instructure.com/courses/4367/modules/items/125416
-
 
 LINKS
 
@@ -67,6 +53,8 @@ TODO
 * Presentation av systemarkitekturer.
 * Genomgång av uppgiften SDS.
 * Gör en template till SDS:en?
+
+* Frågor till referensgruppen från studenterna.
 -->
 
 Kursen startar och projektet presenteras tillsammans med kursens upplägg. Kundens kravbild gås igenom. Första uppgiften gås igenom, det handlar om förutsättningar för att skapa en översikt av systemet via en System Design Specification (SDS). Vi pratar om olika typer av arkitekturer när man bygger ett större system.

@@ -217,7 +217,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 5. Inkludera en länk till ditt GitHub repo och din webbsida (domännamn) i din inlämning på Canvas.
 
-
+[YOUTUBE src=LOULXBE3iAE caption="Hur det kan se ut när det är klart"]
 
 Läsanvisningar {#las}
 --------------------------

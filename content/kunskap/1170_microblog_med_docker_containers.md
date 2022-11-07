@@ -241,7 +241,7 @@ DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
 DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
 ```
 
-Du borde få samma fel som jag fick. Vi kan skriva om koden så det blir ett RUN kommando istället, i nyare versioner av Docker finns det stöd för [HereDoc](https://phoenixnap.com/kb/bash-heredoc). Med det kan vi skriva flera rader i RUN.
+Du borde få samma fel som jag fick. Vi kan skriva om koden så det blir ett RUN kommando istället, i nyare versioner av Docker finns det stöd för [HereDoc](https://phoenixnap.com/kb/bash-heredoc). Med det kan vi skriva flera rader i RUN. Om ni har en äldre version av Docker behöver ni sätta miljövariabeln `export DOCKER_BUILDKIT=1` innan ni gör `build`. Det aktiverar ett bygg verktyg med mer funktionalitet.
 
 Istället för:
 ```

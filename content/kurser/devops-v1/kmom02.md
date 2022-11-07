@@ -133,9 +133,14 @@ För Docker använder vi [docker-compose](https://docs.docker.com/compose/) i de
 
 - [docker-compose](https://dbwebb.se/guide/docker/installera-compose).
 
-Skapa filen `docker-compose.yml` i root mappen av repot. I den, lägg till en service för att köra test container och en som startar prod containern mot en MySQL container.
+Skapa filen `docker-compose.yml` i root mappen av repot. I den, lägg till en service för att köra test container och en som startar prod containern mot en MySQL container. För att docker-compose ska klara av att hantera `<<-EOF` i Dockerfile behöver ni sätta följande miljövariabler:
 
-`docker-compose up test` ska starta test containern och köra alla tester.
+```
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+```
+
+`docker-compose run test` ska starta test containern och köra alla tester.
 
 `docker-compose up prod` ska starta en MySQL container och er prod container.
 

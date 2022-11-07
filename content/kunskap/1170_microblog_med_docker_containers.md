@@ -100,7 +100,7 @@ En annan intressant sak om Docker är att allt som containern skriver till `stdo
 Nu när vår nya Dockerfile är skapad kan vi bygga vår container image:
 
 ```bash
-$ docker build -t microblog:1.0.0-prod  microblog:prod -f docker/Dockerfile_prod .
+$ docker build -t microblog:1.0.0-prod -t microblog:prod -f docker/Dockerfile_prod .
 ```
 
 Argumentet `-t` som vi lägger till i kommandot `docker build` anger namnet och taggen för den nya container imagen.   

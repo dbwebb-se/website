@@ -104,51 +104,50 @@ Vecka 02 (v45): Fokus Serversidan {#w02}
 <!--
 TODO
 
-* Införa någon form av standup, kanske på torsdagarna?
+1. Utgå från architecture.svg och en översikt av systemet/arkitekturen [architecture.svg](https://github.com/dbwebb-se/pattern/blob/main/docs/lecture/L02-RESTful-API/architecture.svg), [web](https://dbwebb-se.github.io/pattern/lecture/L02-RESTful-API/architecture.svg)
 
-* Måndags-zoom - Genomgång av REST API
-* Måndags-zoom - Skissa och designa ett REST API utifrån en matris
-* Måndags-zoom - Tips om bike-shedding och tips om att jobba med Git/GitHub
+    * Utgå från bilden och börja skissa på backenden
+    * Rita och skissa, prata och diskutera
+    * MVC, web, rest, db, sas, möjliga artifekter, programmeringskod, ramverk, språk
 
+2. Designa ett REST API.
+
+    * I lektionen skissade vi på en [REST API matris](https://docs.google.com/spreadsheets/d/1V_2KmGhWYd4qShBpHRBNepor11cSS6YxFjAHmlPEtJ4/edit?usp=sharing) som en variant av hur man kan skissa och designa sitt REST API. På ett sätt är detta jämförbart med hur man skissar och designar en databas med ER-modellering.
+    * Hur dokumentera ett REST API? [REM server](https://rem.dbwebb.se/) som exempel.
+
+3. Hur jobba med Git repon (GitHub eller GitLab) när man jobbar i grupp?
+
+    * [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+    * [Introduction to GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)
+
+4. Vad innebär "högpresterande team" och vad är "bike shedding"?
+
+    * [Tuckman's stages of group development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
+    * [High-performance teams](https://en.wikipedia.org/wiki/High-performance_teams)
+    * [Bike shedding / Law of triviality](https://en.wikipedia.org/wiki/Law_of_triviality)
+
+5. Tekniska studier och rapporter för att lära sig och sprida kunskap.
+
+    * https://dbwebb.se/kurser/vteam-v1/tips-trix-och-fortydliganden#tech
 -->
 
 Jobba vidare med SDS för att bryta ned och förstå systemet och dess delar. Fokus på serversidan av projektet.
 
-<!--
-En övergripande bild visades, för att översiktligt förklara en arkitektur.
-
-* https://github.com/dbwebb-se/pattern/blob/main/docs/lecture/L02-RESTful-API/architecture.svg
-* https://dbwebb-se.github.io/pattern/lecture/L02-RESTful-API/architecture.svg
-
-Designa ett REST API.
-
-* I lektionen skissade vi på en [REST API matris](https://docs.google.com/spreadsheets/d/1V_2KmGhWYd4qShBpHRBNepor11cSS6YxFjAHmlPEtJ4/edit?usp=sharing) som en variant av hur man kan skissa och designa sitt REST API. På ett sätt är detta jämförbart med hur man skissar och designar en databas med ER-modellering.
-
-Hur jobba med Git repon (GitHub eller GitLab) när man jobbar i grupp?
-
-* [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-* [Introduction to GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)
-
-Vad innebär "högpresterande team" och vad är "bike shedding"?
-
-* [Tuckman's stages of group development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
-* [High-performance teams](https://en.wikipedia.org/wiki/High-performance_teams)
-* [Bike shedding / Law of triviality](https://en.wikipedia.org/wiki/Law_of_triviality)
--->
-
 **Presentation**
 
-* TBD
+Vi träffas och pratar som saker som hjälper oss framåt.
 
-<!--
-* Om olika sätt att rita bilder till SDS:en? Från Java-kursen. Inkl något om att jobba i projekt och hålla kontakten?
--->
+1. Jobba med arkitekturen och backenden samt olika teknikval
+1. Designa och dokumentera ett REST API
+1. GitHub/GitLab flow
+1. Effektiva och högpresterande team
+1. Tekniska studier och rapporter för att lära sig och sprida kunskap.
+    * Någon som är sugen på en teknisk studie om Docker med många containrar?
 
 **Resurser**
 
 Följande läsresurser är relevanta denna veckan.
 
-<!--
 Följande artikelserie tar dig igenom hur man kan tänka när man designar ett REST API. Du får också stöd för hur du kan designa ditt API med en matris som lite kan liknas vid hur vi designade databasen med ER-modellering.
 
 1. [How to design a RESTful API architecture from a human-language spec (part 1)](https://www.oreilly.com/content/how-to-design-a-restful-api-architecture-from-a-human-language-spec/)
@@ -157,16 +156,50 @@ Följande artikelserie tar dig igenom hur man kan tänka när man designar ett R
 
 Här är en [REM server](https://rem.dbwebb.se/) som visar ett exempel på hur en API:et till en REST server kan se ut och som kan användas för test. Använd en REST klient likt [ARC](https://advancedrestclient.com/) för att testa API:et.
 
-Torsdagen hade vi en session om riskanalys av projektet som också spelades in.
+Hur jobba med Git repon (GitHub eller GitLab) när man jobbar i grupp?
 
-* [Riskanalysdokumentet](https://docs.google.com/spreadsheets/d/1jqmyl1bKGc7La81MfwGVY0JqVPmopM0oG9s8-gCGEkc/edit?usp=sharing)
-* [Zoom-sessionen om riskerna](https://youtu.be/r-c7ETb80M0)
--->
+* [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+* [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+* [Introduction to GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)
+
+Vad innebär "högpresterande team" och vad är "bike shedding"?
+
+* [Tuckman's stages of group development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)
+* [High-performance teams](https://en.wikipedia.org/wiki/High-performance_teams)
+* [Bike shedding / Law of triviality](https://en.wikipedia.org/wiki/Law_of_triviality)
+
+Tekniska rapporter för att göra små korta utredningar och presentera resultat.
+
+* [Exempel på tekniska studier och rapporter](https://dbwebb.se/kurser/vteam-v1/tips-trix-och-fortydliganden#tech)
 
 
 
 Vecka 03 (v46): Fokus Klientsidan {#w03}
 -------------------------
+
+<!--
+TODO
+
+* Tekniker för klientsidan
+* Riskanalys (eller flytta till nästa vecka)
+* Effektivetet 10
+1. Docker med flera containrar, skapa en teknisk rapport om det.
+
+-->
+
+<!--
+Om det är någon som vill hoppa på frontend delen men inte har tillgång till någon server/api hämtning av datan än, så tipsar jag på npm packetet json-server https://www.npmjs.com/package/json-server
+1) npm i json-server
+2) skapa en json fil med data som tex bike.json
+{
+  "bikes": [
+    { "id": 1, "cords": [200, 210] }
+  ]
+}
+3) json-server --watch bike.json
+4) profit
+Nu kan ni fetcha data från http://localhost:5000/bikes 
+-->
 
 Jobba med SDS. Fokus på klientsidan av projektet. Gräv djupare in i serversidan.
 
@@ -181,6 +214,12 @@ Vilka krav har industrin på nya studenter?
 * Input från en annan XXX som jobbar på ett av Sveriges största IT-bolag
 
 [Presentationen från måndagen (lite arkitektur och lite om teams)](https://dbwebb-se.github.io/pattern/lecture/L03-seminar/slide.html)
+
+Torsdagen i vecka 2 hade vi en session om riskanalys av projektet som också spelades in.
+
+* [Riskanalysdokumentet](https://docs.google.com/spreadsheets/d/1jqmyl1bKGc7La81MfwGVY0JqVPmopM0oG9s8-gCGEkc/edit?usp=sharing)
+* [Zoom-sessionen om riskerna](https://youtu.be/r-c7ETb80M0)
+
 -->
 
 

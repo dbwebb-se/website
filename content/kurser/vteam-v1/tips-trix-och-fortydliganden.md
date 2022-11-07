@@ -137,4 +137,12 @@ Låt se om några blir av under denna kursrundan.
 
 ### 2021
 
-__Kkommer under kursens gång som exempel.__
+Här följer ett par tekniska studier (och liknande) som utfördes under 2021.
+
+1. [OAuth Technical Study](https://github.com/mosbth/oauth-tec-study/blob/main/OAuth_Technical_Study.md) (exempel från mos hur en teknisk rapport kan skrivas)
+
+1. [Technical study - Cordova plugin for scanning QR-code](https://github.com/jeso20BTH/Electric-Scooter-BTH-Pattern-Group-13/blob/main/qr-scanner-study.md)
+
+1. [Git sandbox, frågor och svar om Git flow](https://github.com/datalowe/pattern-git-sandbox)
+
+

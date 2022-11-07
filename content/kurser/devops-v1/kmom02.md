@@ -71,11 +71,7 @@ Om ni vill öva mer på Docker så finns det många [Docker övningar på killer
 
 Docker är väldigt populärt inom devops världen av många anledningar, läs om varför i Dockers bloggserie **Docker and the Three Ways of DevOps**.
 
-- [Part 1: The First Way – Systems Thinking](https://www.docker.com/blog/docker-three-ways-devops/)
-
-- [Part 2: The Second Way – Amplify Feedback Loops](https://www.docker.com/blog/docker-three-ways-devops-2/)
-
-- [Part 3: The Third Way – Culture of Continuous Experimentation and Learning](https://www.docker.com/blog/docker-three-ways-devops-3/)
+- [Docker and the Three Ways of DevOps](https://drive.google.com/file/d/1mAmfW6cilWNx_osvhsImSoH1bmZ__Tbe/view?usp=sharing)
 
 
 

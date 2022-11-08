@@ -85,7 +85,7 @@ Nästa steg är att bekanta dig med appen som du ska jobba på i kursen. Läs ig
 
 Vi har en server och vi har en app, då måste vi lära oss driftsätta den. Om något går fel när du jobbar igenom artikeln och du inte riktigt vet hur du ska ångra det, skapa om servern i Azure och använd dig av [skripten i repot](https://github.com/dbwebb-se/microblog/tree/master/scripts) för att snabbt göra de 10 första minuterna på en server och börja om med driftsättningen.
 
-Jobba igenom ["Driftsätta en Flask app"](kunskap/driftsatta-en-flask-app).
+Jobba igenom ["Driftsätta en Flask app"](kunskap/driftsatta-en-flask-app) **inloggad på din server**, inte lokalt på din dator.
 
 <!-- https://askubuntu.com/questions/879437/ensurepip-is-disabled-in-debian-ubuntu-for-the-system-python -->
 

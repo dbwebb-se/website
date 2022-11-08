@@ -158,7 +158,7 @@ Om ni inte redan har ett, skapa först ett konto på [DockerHub](https://hub.doc
 Nu vill vi att er produktions image byggs och pushas till dockerhub automatiskt när ni pushar uppdateringar i er kod till GitHub. Ni vill bara bygga och pusha er image om testerna går igenom för koden. Ni har redan ett workflow som kollar det. Eftersom vi är utvecklare gillar vi att dela upp vår kod i olika filer. Nu ska ni skapa ett nytt workflow (separat fil) som bygger och pushar er image till DockerHub men bara om testerna passerar. Ni uppnår det genom att från det nya workflow:et återanvända det som tester koden.
 
 Läs först om hur man kan återanvända workflows och skapa sen ett nytt workflow som bygger och pushar er docker image.
-- [Reusing workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+- [Reusing workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows). Tips, starta kmom01 flödet från kmom02 flödet.
 - [Publishing Docker images](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images). Dokumentation om [alternativ till att bygga er image](https://github.com/docker/build-push-action#customizing).
 
 Gör ett aktivt val mellan att publicera ny image för varje ny release eller vid varje commit!

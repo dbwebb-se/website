@@ -22,7 +22,7 @@ Förkunskaper {#forkunskaper}
 
 Du har installerat Node.js och npm ([Installera nodejs och npm](labbmiljo/node-och-npm)).
 
-Du har gått igenom artikeln [Kom igång med SASS och npm](kunskap/kom-igang-med-sass-och-npm).
+Du har gått igenom artikeln [Kom igång med SASS och npm](kunskap/kom-igang-med-sass-och-npm-v2).
 
 Du har gått igenom artikeln [Ikoner och fonter](kunskap/design-ikoner-och-fonter).
 

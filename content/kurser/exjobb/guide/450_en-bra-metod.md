@@ -34,6 +34,8 @@ Nedan visas några arbeten med bra metodbeskrivningar för olika metoder. Arbete
 
 [Persson, M. (2020). JavaScript DOM Manipulation Performance : Comparing Vanilla JavaScript and Leading JavaScript Front-end Frameworks](http://urn.kb.se/resolve?urn=urn:nbn:se:bth-19531)
 
+[Mohi El Din, H. (2021). Comparative Analysis of Ant Colony Optimization and Genetic Algorithm in Solving the Traveling Salesman Problem](http://urn.kb.se/resolve?urn=urn:nbn:se:bth-21520)
+
 
 
 ### Användartestar {#user-tests}

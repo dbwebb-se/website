@@ -241,7 +241,8 @@ DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
 DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
 ```
 
-Du borde få samma fel som jag fick. Vi kan skriva om koden så det blir ett RUN kommando istället, i nyare versioner av Docker finns det stöd för [HereDoc](https://phoenixnap.com/kb/bash-heredoc). Med det kan vi skriva flera rader i RUN. Om ni har en äldre version av Docker behöver ni sätta miljövariabeln `export DOCKER_BUILDKIT=1` innan ni gör `build`. Det aktiverar ett bygg verktyg med mer funktionalitet.
+Du borde få samma fel som jag fick. Vi kan skriva om koden så det blir ett RUN kommando istället, i nyare versioner av Docker finns det stöd för [HereDoc](https://phoenixnap.com/kb/bash-heredoc). Med det kan vi skriva flera rader i RUN. 
+
 
 Istället för:
 ```
@@ -260,7 +261,21 @@ RUN <<-EOF
 EOF
 ```
 
-För att Docker ska stödja den nya syntaxen behöver du först lägga till `# syntax=docker/dockerfile:1.4` överst i din Dockerfile. Sen kan du skriva om koden och bygga din image igen.
+
+
+#### Aktivera HereDoc {#heredoc}
+
+Om du har tillräckligt ny version av Docker räcker det med att lägga till `# syntax=docker/dockerfile:1.4` överst i din Dockerfile. Sen kan du skriva om koden och bygga din image igen. Om du får felet.... har du en för gammal version av Docker.
+
+Om du har en äldre version av Docker behöver du också sätta miljövariabeln `export DOCKER_BUILDKIT=1` innan du gör `build`. Det aktiverar ett bygg verktyg med mer funktionalitet. Men det funkar inte om du måste ha med `sudo` när du kör docker kommandon. För att slippa köra `sudo` behöver du lägga till din använda i dockers användargrupp. Gör det med:
+
+```
+sudo usermod -aG docker <användare>
+su - <användare>
+```
+
+Nu borde `docker build` med HereDoc i Dockerfile fungera.
+
 
 En lista över hadolint's möjliga fel hittar du under [rules](https://github.com/hadolint/hadolint#rules), där finns också förslag på lösningar.
 

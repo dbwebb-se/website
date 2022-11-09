@@ -16,9 +16,9 @@ revision:
 Kmom03: Attacker
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 När man som webbprogrammerare blir utsatt för en attack så är det lätt att hålla sig för skratt. En attack kan vara lättsam som en skämtsam och lekfull XSS där någon bara vill säga att de "ägde din webbplats". I artikeln "[Grundregel 1A i Cross Site Scripting (XSS) - Lita inte på någon](https://dbwebb.se/blogg/grundregel-1a-i-cross-site-scripting-xss-lita-inte-pa-nagon)" visas effekten av ett sådant exempel där någon litade på någon och det slutade med att studentföreningens webbplats gjordes till ett litet skämt.
 
@@ -156,7 +156,9 @@ Upplägget är enligt följande:
 
 Skriv en rapport på två till fyra sidor text, exklusive försättssida och exklusive referenssida. Det går bra att avgränsa och bara svara på delar av ledningens fråga. Tid och utrymme i rapporten är begränsat så det är okey att utelämna vissa delar. Men se till att rapporten hänger ihop som en helhet och innehåller minst 5 relevanta referenser. Vill ni dyka ned i en specifik fråga så går det bra, vill ni täcka flera frågor mer översiktligt så går det också bra.
 
-2) Lär dig göra attacker med hjälp av "[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)". Ladda ner, installera och kör lokalt. Välj gärna "From Sources". Följ instruktionerna i README.md och jag valde instruktionerna för "From Sources". Start enligt instruktionerna och gör gärna alla "hacking tutorials". Redovisa genom att ta en skärmdump på din scoreboard samt namn och beskrivning på alla lösta utmaningar (minst 10) du gjort. Tips! Ha gärna utvecklarverktyget (Developer Tools) för att bättre se vad som händer.
+Ni som jobbar i grupp skriver tre till fyra sidor, exklusive försättssida och exklusive referenssida. Ni redovisar individuellt på Canvas och skriver in namnen på gruppmedlemmarna i rapporten. 
+
+2) Lär dig göra attacker med hjälp av "[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)". Ladda ner, installera och kör lokalt. Välj gärna "From Sources". Följ instruktionerna i README.md (jag valde instruktionerna för "From Sources"). OBS! Använd Powershell! Starta enligt instruktionerna och gör gärna alla "hacking tutorials". Redovisa genom att ta en skärmdump på din scoreboard samt namn och beskrivning på alla lösta utmaningar (minst 10) du gjort. Tips! Använd gärna utvecklarverktyget (Developer Tools) i din webbläsare för att bättre se vad som händer.
 
 3) Film-uppgiften är inom ämnet "hur tänker en hacker/cracker/attacker"? I spellistan "[Internet - kultur och historia](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-NLQecGIdq3LnATTn0gKal)" finns ett antal filmer/dokumentärer som berör olika händelser inom Internet. Välj en av dessa filmer, eller en som du själv anser liknande, titta på filmen och försök sedan svara på frågan "Vad driver en hacker och hur tänker en hacker?" Du skriver svaret på Canvas i samband med din inlämning. Välj att titta på filmen individuellt, eller tillsammans med din gruppkompis för rapporten.
 
@@ -167,7 +169,7 @@ Extrauppgifter  {#extra}
 
 1) Fortsätt gör utmaningar i Juice shop. Redovisa dina framgångar med en ny skärmdump.
 
-2) Träna på lösenordshantering genom att förbättra lösenordshanteringen i appen [Super Secure User Storage](/uppgift/losenordshantering). Redovisa dina framgångar genom att berätta om dem i en fil.
+2) Träna på lösenordshantering genom att förbättra lösenordshanteringen i appen [Super Secure User Storage](/uppgift/losenordshantering). Redovisa dina framgångar genom att berätta om dem i en fil eller i textfältet när du redovisar kmom03.
 
 
 Resultat & Redovisning  {#resultat_redovisning}
@@ -179,9 +181,9 @@ På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämn
 
 1. Gör uppgifterna.   
 1. Gör kursmomentets quiz.   
-1. Ladda upp din fil, report.pdf, på Canvas Kmom03 Rapport.
-1. Resultatet (skärmdump) från utmaningarna i Juice shop laddar du upp på Canvas Kmom03.
-1. Hackeruppgiften redovisar du på Canvas Kmom03.
+1. Rapporten om attacker (uppgift 1), ladda upp din fil, report.pdf, på Canvas Kmom03 Rapport.
+1. Resultatet (skärmdump) från utmaningarna i Juice shop (uppgift 2) laddar du upp på Canvas Kmom03.
+1. Hackeruppgiften (uppgift 3) redovisar du på Canvas Kmom03.
 1. Resultatet (filerna) från extra uppgifterna laddar du upp på Canvas Kmom03. (OBS valfritt)
 
 <!-- Gör en gruppinlämning på Canvas, om ni jobbade i grupp och ladda upp rapporten som pdf, senast fredagen veckan efter att kmomet är avslutat. Svara på följande frågor i textfältet på Canvas (ge ett svar som grupp, såg ni olika filmer så ger ni två svar på den delen):

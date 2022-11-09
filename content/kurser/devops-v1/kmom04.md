@@ -165,7 +165,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 <!-- 1. Skapa larm i Prometheus som varnar om någon Docker container, Nginx eller instans inte längre är igång. Skapa även ett larm som varnar om minnet på hårddisken på Prometheus instansen har mindre än 5G kvar. -->
 <!-- Hitta ett sätt som kan användas för att temporärt tar plats på hårddisken så larmet kan testas. -->
 
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v4.0.0.
+1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v14.0.0.
 
 
 

@@ -227,7 +227,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 1. Radera ert AKS kluster.
 
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v6.0.0.
+1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v16.0.0.
 
 
 

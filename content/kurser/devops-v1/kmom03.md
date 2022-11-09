@@ -58,13 +58,6 @@ Ansible är ett verktyg för att automatisera server konfiguration. Läs om föl
 
 ### Förbered för Ansible {#prepare}
 
-[INFO]Du behöver troligen skapa en ny SSH nyckel. På grund av ändringar i programmet för att skapa SSH nycklar och begränsningar i CircleCI behöver du ha en `.pem` SSH nyckel och utan lösenord. Om du inte har det kan du skapa det med följande kommando. Lägg den i din `~/.ssh` mapp:
-
-`ssh-keygen -m PEM -t rsa -C "<your_email@example.com>"`
-
-Använd den nyckeln från och med nu när du jobbar med Ansible och dina servrar.
-[/INFO]
-
 Innan ni fortsätter **ska** ni ta bort era gamla VMs och resurser. På Azure portalen, gå till `All resources` och radera allt utom er "DNS zone" och "SSH key"!
 
 
@@ -90,7 +83,7 @@ Nästa steg är att skapa er egna playbook för 10 first minutes on a server, ko
 
 - Ni ska även ändra `remote_user` från `admin` till `azureuser`.
 
-- Kolla nu på videorna [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78)
+- Kolla nu på videorna 31x i [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78)
 
 
 
@@ -210,7 +203,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 1. Utöka CircleCi så att om testerna går igenom och en ny Docker image byggs ska den driftsättas på `appServer`. Med andra ord sätt upp Continuous Deployment.
 
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v3.0.0, om du pushar kmom03 flera gånger kan du öka siffrorna efter 3:an.
+1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v13.0.0, om du pushar kmom03 flera gånger kan du öka siffrorna efter 13:an.
 
 <!-- 1. Skriv skript som kollar om service är uppe, om inte kör ansible för att sätta upp annars bara uppdatera. (En deployer node?) -->
 

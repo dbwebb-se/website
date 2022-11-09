@@ -388,7 +388,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 1. Uppdatera Ansible rollen `10-first-minutes` så att servrarna använder den rekommenderade SSH konfigurationen.
 
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v5.0.0.
+1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v15.0.0.
 
 
 

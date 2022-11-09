@@ -214,7 +214,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 3. GitHub Action kör testerna, validering och bygger produktions image och pushar till DockerHub.
 
-4. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v2.0.0. Om du pushar kmom02 flera gånger kan du öka siffrorna efter 2:an.
+4. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v12.0.0. Om du pushar kmom02 flera gånger kan du öka siffrorna efter 12:an.
 
 5. Inkludera en länk till ditt GitHub repo och din webbsida (domännamn) i din inlämning på Canvas.
 

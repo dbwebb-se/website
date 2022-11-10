@@ -133,6 +133,14 @@ Här är några av de tekniska studier som förekommit under kursens historia.
 
 Låt se om några blir av under denna kursrundan.
 
+1. [Teknisk studie RabbitMQ](https://github.com/blajban/vteam-rabbitmq) som meddelandehanterare, "message brokern".
+
+1. [Hur man använder github i ett Team](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/github.md)
+
+1. [Teknisk studie om Load Balancers för REST API](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/load-balancer.md)
+
+1. [Hantering av geodata i databas/backend](https://github.com/sonnerberg/vteam-sds/blob/main/teknisk_analys_geo/teknisk_analys_geo.md)
+
 
 
 ### 2021

@@ -84,7 +84,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Tillgänglighet med Google Lighthouse](uppgift/tillganglighet-med-google-lighthouse)". Du ska kolla på hur din sida presterar i tillgänglighet enligt Google Lighthouse.
 
-1. Försäkra dig om att du har gjort `dbwebb purepublish me` och taggat din inlämning med version 6.0.0 (eller högre) samt pushat ditt repo och dess taggar till GitHub.
+1. Försäkra dig om att du har gjort `dbwebb publishpure me` och taggat din inlämning med version 6.0.0 (eller högre) samt pushat ditt repo och dess taggar till GitHub.
 
 
 

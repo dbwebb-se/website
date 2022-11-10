@@ -128,7 +128,7 @@ Läs följande om responsivitet och bilder.
 
 1. Gör uppgiften "[Youtube-klipp i iframe](uppgift/youtube-i-iframe)". Du skall via en iframe ladda in valfri video som en del av din galleri sida.
 
-1. Försäkra dig om att du har gjort `dbwebb purepublish me` och taggat din inlämning med version 5.0.0 (eller högre) samt pushat ditt repo och dess taggar till GitHub.
+1. Försäkra dig om att du har gjort `dbwebb publishpure me` och taggat din inlämning med version 5.0.0 (eller högre) samt pushat ditt repo och dess taggar till GitHub.
 
 
 

@@ -95,7 +95,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lös uppgiften "[Bygg en teknologi-sida med CSS-Grid](uppgift/bygg-en-teknologi-sida-css-grid)".
 
-1. Försäkra dig om att du har gjort `dbwebb publish me` och taggat din inlämning med version 3.0.0 (eller högre) samt pushat repot inklusive taggarna till GitHub.
+1. Försäkra dig om att du har gjort `dbwebb publishpure me` och taggat din inlämning med version 3.0.0 (eller högre) samt pushat repot inklusive taggarna till GitHub.
 
 
 

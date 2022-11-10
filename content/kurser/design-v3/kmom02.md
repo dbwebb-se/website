@@ -140,7 +140,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lös uppgiften ["Utveckla din portfolio sida med en om-sida och ett SASS-tema"](uppgift/utveckla-din-portfolio-kmom02).
 
-1. Försäkra dig om att du har gjort `dbwebb publish me` och taggat din inlämning med version 2.0.0 (eller högre) samt pushat repot inklusive taggarna till GitHub.
+1. Försäkra dig om att du har gjort `dbwebb publishpure me` och taggat din inlämning med version 2.0.0 (eller högre) samt pushat repot inklusive taggarna till GitHub.
 
 
 

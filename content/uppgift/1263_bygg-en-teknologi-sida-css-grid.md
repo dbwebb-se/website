@@ -57,11 +57,11 @@ Själva designen på sidorna får ni välja, det är layout:en vi är ute efter.
 * Din landningssida skall använda sig utav en egen layout, `technologies.twig`
 * Din landningssida skall använda sig utav CSS-Grid.
 * Din grid ska bestå utav **tre** kolumner.
-* Titel för sidan och projektboxen ska vara en del av gridet och vara tre kolumner i bredd.
+* Titeln för sidan ska vara en del av gridet och vara tre kolumner i bredd.
 * Boxarna ska ha en länk till respektive teknologi så man kan navigera vidare.
 * Varje box ska kunna ta upp 1, 2 eller 3 kolumner i bredd.
 * Sidan och dess grid ska vara responsivt genom att:
-    * Besöks sidan via en telefon ska gridet istället vara en kolumn bred.
+    * Besöks sidan via en telefon eller annan liten enhet ska gridet istället vara en kolumn bred.
 
 Resten av designen är upp till er att bestämma.
 

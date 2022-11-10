@@ -1,5 +1,5 @@
 ---
-author: nik 
+author: nik
 category:
     - pico
     - layout
@@ -23,6 +23,8 @@ Du har jobbat igenom följande tre delar i "[Design med HTML5 och CSS3](guide/de
 * [CSS Grid Layout](guide/design-med-html5-och-css3/css-grid-layout)
 * [Flexbox - Parent Elements](guide/design-med-html5-och-css3/flexbox)
 * [Flexbox - Child Elements](guide/design-med-html5-och-css3/flexbox-del2)
+
+
 
 Unik Layout {#unik}
 -------------------------------------
@@ -137,7 +139,7 @@ Ett tips är att använda sig utav Firefox när man utvecklar Grid. De har ett i
 
 [/INFO]
 
-Jag börjar med att säga att jag vill använda grid på min `.landingpage` som är den omslutande div:en. 
+Jag börjar med att säga att jag vill använda grid på min `.landingpage` som är den omslutande div:en.
 
 ```scss
 /* report.scss */
@@ -183,6 +185,15 @@ Visuellt just nu ser vi ingen skillnad, men om du håller på div:en i devtools 
 Vilket lägger en 1em mellan alla delar i gridet. Det kan se ut såhär:
 
 [FIGURE src=image/design-v3/grid-task-3.png caption"Steg 3"]
+
+
+
+Fullständigt exempel {#complete}
+-------------------------------------
+
+I `example/report_grid` ([GitHub-repot](https://github.com/dbwebb-se/design-v3/tree/master/example/report_grid)) finns ett fullständigt exempel. i `content/report` finns allt innehåll och i `themes/example` finns mallar och stil i filerna `reports.twig`, `report.twig` och `style.css`.
+
+
 
 Avslutningsvis {#avslutningsvis}
 -------------------------------------

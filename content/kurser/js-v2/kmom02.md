@@ -48,7 +48,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page 2](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom02/02_mepage2.md)". Spara resultatet i `me/redovisa/`.
 
-<!-- TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"] -->
+[YOUTUBE src=VreNDZDEfqA width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

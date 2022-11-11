@@ -54,7 +54,7 @@ Läs &amp; Studera  {#lasanvisningar}
     * Kapitel 18
 * Läs vidare i boken [Beyond Fear](/kunskap/boken-beyond-fear).
 
-* Läs mer om GDPR på [EUs sida](https://gdpr.eu/) eller hos [Datainspektionen](https://www.datainspektionen.se/lagar--regler/dataskyddsforordningen/).
+* Läs mer om GDPR på [EUs sida](https://gdpr.eu/) eller hos [Integritetsskyddsmyndigheten](https://www.imy.se/verksamhet/dataskydd//).
 
 * Läs mer om [Privacy Enhancing Technologies (PET)](https://www.priv.gc.ca/en/opc-actions-and-decisions/research/explore-privacy-research/2017/pet_201711/).
 

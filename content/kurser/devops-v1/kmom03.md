@@ -14,10 +14,6 @@ Vi fortsätter med att kolla in fler sätt att automatisera flöden. Vi lär oss
 
 <!-- more -->
 
-[WARNING]
-**Kursmomentet uppdetaras** och är inte redo att jobbas igenom.
-[/WARNING]
-
 [FIGURE src="https://www.gocd.org/assets/images/blog/continous-delivery-vs-deployment-infographic/continuous-delivery-vs-continuous-deployment-infographic-305dd620.png"]
 
 
@@ -95,9 +91,9 @@ Nu har vi en grund att utgå från, vi har tre servrar som är konfigurerade och
 
 Ni ska nu skapa en playbook för att sätta upp databasen på en server, applikationen på en och en load balancer på den sista. När vi bara hade en server använde vi Nginx som en reverse proxy för att skicka vidare requests till Flask appen. Nu ska vi använda Nginx som en load balancer istället. Med Nginx som en load balancer istället för en reverse proxy kan vi lätta utöka antalet applikations servrar när vår hemsida blir populär och besöks antalet ökar.
 
-I Ansible, i era playbooks använd host namnet `databas` för installationen av databasen, `appServer` för er servern med Microblog och `loadBalancer` för Nginx.
+I Ansible, i era playbooks använd host namnet `database` för installationen av databasen, `appServer` för er servern med Microblog och `loadBalancer` för Nginx.
 
-
+**Tips** Skapa en playbook som bara installerar Docker. Den kan ni återanvända för `appServer` och `database`.
 
 #### Database playbook {#database_pb}
 

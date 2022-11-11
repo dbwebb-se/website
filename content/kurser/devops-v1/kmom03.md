@@ -72,7 +72,7 @@ I följande playlist, kollar på videorna med `30x`i namnet för att bekanta er 
 
 
 
-### 10 first minutes on a server i Ansible
+### 10 first minutes on a server i Ansible {#10-first}
 
 Nästa steg är att skapa er egna playbook för 10 first minutes on a server, kolla på videorna med `31x` i namnet och skapa en playbook för 10-first-minutes skripten.  
 **Notera** några rättelser i videon:

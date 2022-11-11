@@ -54,6 +54,8 @@ Ansible är ett verktyg för att automatisera server konfiguration. Läs om föl
 
 - Ansible [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html).
 
+- Träna på Ansible på [killercoda](https://killercoda.com/ansible/scenario/ansible-en-101).
+
 
 
 ### Förbered för Ansible {#prepare}
@@ -70,7 +72,7 @@ I följande playlist, kollar på videorna med `30x`i namnet för att bekanta er 
 
 - [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
 
-Jag rekommenderar även att läsa `ansible/README.md` filen. Den innehåller bra att ha info och i slutet finns några vanliga fel och lösningar!
+- Läs igenom `ansible/README.md` filen. Stycker "Credentials" behöver ni fixa.
 
 
 
@@ -147,41 +149,70 @@ Det finns flera metoder för att få till HTTPS, vissa svårare än andra. Ni ka
 
 
 
-### Ansible på CircleCi för CD {#cd}
+### Ansible på GitHub Actions för CD {#cd}
 
 Vi kommer bara göra en väldigt simpel CD kedja som bara hanterar att uppdatera microblogen. Hur gör vi med ändringar i Nginx eller databasen? Vi nöjer oss med att bara klara av att uppdatera Microbloggen via CD och sköter databasen och Nginx manuellt men vi kan tänka på hur vi skulle gjort. Egentligen borde vi kanske dela upp vårt repo i tre stycken, en för vår load balancer, en för microblog och en för databasen. Då krävs tre separate utvecklings miljöer med Ansible och Makefiler. Men vi hade kunnat få till en bra uppdelning och minskat mängden filer och kod (speciellt i Ansible). En annan lösning är att börja med mer "ordentliga" commit meddelanden och ge den en specifik struktur. T.ex. lägga till taggar i dem och beroende på vilken tag som finns i meddelandet kör vi olika jobb på CircleCi. Det sista alternativet är nog det som är lättast för oss och det vi hade valt. Medan om vi jobbade på ett större projekt hade vi i slutändan tjänat på att dela upp repot i flera mindre.
 
-Läs en snabb överblick av olika [Continuous Deployment metoder](https://dzone.com/articles/docker-amp-continuous-delivery-deployment-types).
+- Läs en snabb överblick av olika [Deployment strategies](https://www.baeldung.com/ops/deployment-strategies).
 
-<!-- https://blog.theodo.com/2016/05/straight-to-production-with-docker-ansible-and-circleci/ -->
-<!-- https://www.dvlv.co.uk/how-we-use-circleci-and-ansible-to-automate-deploying-flask-applications.html -->
+För att ni ska kunna använda Ansible i Action behöver ni fixa två saker.
 
-Lägg till ett sista steg i er CircleCi config som kör er playbook för att driftsätta appen.
+1. Ansible behöver kunna logga in på Azure.
 
-För att slippa behöva aktivera venv i varje gång ni ska köra ett nytt kommando kan ni lägga till `- run: echo "source /path/to/virtualenv/bin/activate" >> $BASH_ENV` som ett steg efter att ni skapat `venv` mappen. Då kommer CircleCi automatiskt aktivera venv i varje steg. Kom ihåg att använda `make install-deploy` för dependencies.
-
-För att kunna jobba mot er appServer behöver ni kunna ssh:a från CircleCi till VM instansen. För det behöver ni lägga till er SSH nyckel på CircleCI.
-
-
-#### Lägg till SSH på CircleCi {ci-ssh}
-
-På CircleCi gå till settings för ert projekt, klicka `SSH permissions` och `Add SSH key`. Låt `Hostname` vara tomt och klistra in er SSH nyckel (inte `.pub` filen).
+2. Ansible behöver kunna SSH:a till Microblog servern.
 
 
 
-#### Lägg till Environment variables på CircleCi {ci-env}
+#### Lägg till Azure credentials i GitHub Actions {#cred_actions}
 
-Ni behöver också ha tillgång till era Azure credentials. Gå till settings för projektet och sen `Environment Variables`. Lägg nu till följande variabler med respektive data (Viktigt med stora bokstäver).
+Inloggnings uppgifterna till Azure är känslig data, det kan vi inte bara lägg i en fil i vårt repo och sen pusha. Utan vi behöver spara det som SECRET i GitHub. Men det ställer till problem för oss för att vi har begränsningar på våra konton. Därför behöver vi göra en lite workaround för att få det att fungera. Vi ska använda [base64](https://en.wikipedia.org/wiki/Base64) för att göra om teckenkodningen för vår inloggningsdata.
 
-- `AZURE_AD_USER`
+Kör följande på din dator.
 
-- `AZURE_PASSWORD`
+```
+base64 -i ~/.azure/credentials
+```
 
-- `AZURE_SUBSCRIPTION_ID`
+Kopiera utskriften och lägg till som en ny SECRET i ditt repo på GitHub.
 
-Om ni har krypterat filer med Ansible-vault kolla i README.md för hur ni läser dem i CircleCi.
+Sen när ni skapar en nya workflow fil, i den behöver ni följande för att hämta inloggningsuppgifterna.
 
-Nu borde ni vara redo att lägga till stegen i er CircleCi konfiguration för att driftsätta den senaste Docker imagen för Microblogen.
+```yml
+    - name: Create .azure folder
+      run: mkdir ~/.azure
+    - name: Write credentials
+      run: echo "${{ secrets.AZURE_CREDENTIALS }}" | base64 -d > ~/.azure/credentials
+
+```
+
+Vi skapar `.azure` mappen, återställer den omgjorda texten och skriver ner den till `.azure/credentials`. Nu kan Ansible logga in på Azure.
+
+
+
+#### Möjliggör SSH från Actions till en server {#ssh_actions} 
+
+För att komma åt våra virtuella maskiner krävs specifika SSH key files. Det gör att de nycklarna behöver finnas tillgängliga i GitHub Actions.
+
+```
+cat ~/.ssh/azure
+```
+
+Kopiera utskriften och lägg till som en SECRET i ert repo på GitHub.
+
+För att använda nyckeln i ett workflow behöver ni:
+
+```yml
+    - name: Setup SSH 
+      shell: bash
+      run: |
+        eval `ssh-agent -s`
+        mkdir -p /home/runner/.ssh/
+        touch /home/runner/.ssh/id_rsa
+        echo -e "${{secrets.SSH_PRIVATE_KEY}}" > /home/runner/.ssh/id_rsa
+        chmod 700 /home/runner/.ssh/id_rsa
+```
+
+Nu är ni redo att skapa ett nytt workflow där ni kör `gather_vm_instances.yml` och `deploy_app.yml`.
 
 
 
@@ -201,7 +232,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 1. Använd Ansible för att skapa och konfigurera tre servrar. En som databas, en till microblogen och en som load-balancer.
 
-1. Utöka CircleCi så att om testerna går igenom och en ny Docker image byggs ska den driftsättas på `appServer`. Med andra ord sätt upp Continuous Deployment.
+1. Utöka GitHub Actions så att om testerna går igenom och en ny Docker image byggs ska den driftsättas på `appServer`. Med andra ord sätt upp Continuous Deployment.
 
 1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v13.0.0, om du pushar kmom03 flera gånger kan du öka siffrorna efter 13:an.
 
@@ -211,7 +242,6 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 ### Lästips {#lastips}
 
 1. Hur man kan hantera flera [användare på produktionsservern med Ansible](https://www.cogini.com/blog/managing-user-accounts-with-ansible/). 
-<!-- https://dev.iachieved.it/iachievedit/ansible-and-aws-part-5/ -->
 
 
 
@@ -234,6 +264,10 @@ Se till att följande frågor besvaras i texten:
 
 1. Vad är CM?
 
+1. Vad är fördelarna med IaC och CM jämfört med att sätta upp allt manuellt?
+
 1. Vad är Continuous Deployment?
+
+1. Kan du se några problem med vår CI/CD kedja?
 
 1. Om du fick välja fritt hur skulle du vilja bygga upp CD kedjan?

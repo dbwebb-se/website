@@ -154,7 +154,12 @@ Följande artikelserie tar dig igenom hur man kan tänka när man designar ett R
 1. [How a RESTful API server reacts to requests (part 2)](https://www.oreilly.com/content/how-a-restful-api-server-reacts-to-requests/)
 1. [How a RESTful API represents resources (part 3)](https://www.oreilly.com/content/how-a-restful-api-represents-resources/)
 
-Här är en [REM server](https://rem.dbwebb.se/) som visar ett exempel på hur en API:et till en REST server kan se ut och som kan användas för test. Använd en REST klient likt [ARC](https://advancedrestclient.com/) för att testa API:et.
+Dokumentation av REST API:er.
+
+1. Här är en [REM server](https://rem.dbwebb.se/) som visar ett exempel på hur en API:et till en REST server kan se ut och som kan användas för test. Använd en REST klient likt [ARC](https://advancedrestclient.com/) för att testa API:et.
+
+1. [Emils dokumentation av REST API:et för lager API:et](https://lager.emilfolino.se/v2).
+
 
 Hur jobba med Git repon (GitHub eller GitLab) när man jobbar i grupp?
 
@@ -181,46 +186,58 @@ Vecka 03 (v46): Fokus Klientsidan {#w03}
 TODO
 
 * Tekniker för klientsidan
-* Riskanalys (eller flytta till nästa vecka)
-* Effektivetet 10
-1. Docker med flera containrar, skapa en teknisk rapport om det.
+* Docker
+
+CHANGE
+
+* Uppdatera seminarie slidesen till att bli tydliga delar med en tydlig inriktning. Varje del kan spelas in för sig.
+* Projektplanering med GitHub project
+* Förbättra/förtydliga slides/fokuset på klientsidans tekniker (gör egen artikel?) Kika lite på vad artikeln från IBM innehåller och gör liknande slidespresentation.
+* Fundera på hur lägga upp "industrin och jobba i grupper". kanske skriva en egen artikel om det?
+* Förbättra docker-exemplet, inkludera dokumentation.
 
 -->
 
-<!--
-Om det är någon som vill hoppa på frontend delen men inte har tillgång till någon server/api hämtning av datan än, så tipsar jag på npm packetet json-server https://www.npmjs.com/package/json-server
-1) npm i json-server
-2) skapa en json fil med data som tex bike.json
-{
-  "bikes": [
-    { "id": 1, "cords": [200, 210] }
-  ]
-}
-3) json-server --watch bike.json
-4) profit
-Nu kan ni fetcha data från http://localhost:5000/bikes 
--->
+Jobba med SDS. Fokus på klientsidan av projektet.
 
-Jobba med SDS. Fokus på klientsidan av projektet. Gräv djupare in i serversidan.
+**Presentation & Seminarie**
 
-<!--
-Hur ser industrin på att organisera sig i team och grupper?
+Vi träffas och pratar som saker som hjälper oss framåt.
 
-* [Martin Mazur - Dagens Industri IT & Strategy](https://www.linkedin.com/feed/update/urn:li:activity:6861311477781970944/)
+1. Allmänt om arkitektur, teknik och mjuka värden.
 
-Vilka krav har industrin på nya studenter?
+    * [Slides från måndagen](https://dbwebb-se.github.io/pattern/lecture/L03-seminar/slide2.html)
 
-* [Jane Strandberg, teamleader och chef, Prisjakt](https://gist.github.com/mosbth/76a4d7a503e45692d28c4c0dcd029703)
-* Input från en annan XXX som jobbar på ett av Sveriges största IT-bolag
+**Resurser**
 
-[Presentationen från måndagen (lite arkitektur och lite om teams)](https://dbwebb-se.github.io/pattern/lecture/L03-seminar/slide.html)
+1. Vilka varianter finns det för att bygga klienter med webbteknologier?
+    * Mobile app via webbläsaren, responsiv eller utvecklad enbart för små enheter, baserad på klassisk server-side generering av webbsidor.
+    * Single Page Application (SPA)
+        * React, Angular, Vue, Mithril
+    * Progressiva web appar
+        * [web.dev: Progressive Web Apps](https://web.dev/progressive-web-apps/)
+        * [MDN: Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+    * [Apache Cordova](https://cordova.apache.org/) kompilera HTML, CSS, JS till nativ applikation.
+    * "Native apps"
+        * iPhone med Swift och Objective-C
+        * Android med Java/Kotlin
+    * [Electron](https://www.electronjs.org/), "Build cross-platform desktop apps with JavaScript, HTML, and CSS".
 
-Torsdagen i vecka 2 hade vi en session om riskanalys av projektet som också spelades in.
+1. "[Choosing the best programming language for mobile app development](https://developer.ibm.com/articles/choosing-the-best-programming-language-for-mobile-app-development/)" är en artikel som kortfattat nämner flertalet av ovan tekniker för att bygga klientapplikationer med webbaserade teknologier.
 
-* [Riskanalysdokumentet](https://docs.google.com/spreadsheets/d/1jqmyl1bKGc7La81MfwGVY0JqVPmopM0oG9s8-gCGEkc/edit?usp=sharing)
-* [Zoom-sessionen om riskerna](https://youtu.be/r-c7ETb80M0)
+1. Docker med exempel på hur images byggs och containrar startas upp och kommunicerar.
+    * [Repo på GitLab med exempelkod](https://gitlab.com/mikael-roos/docker)
 
--->
+1. Hur ser industrin på att organisera sig i team och grupper?
+    * [Martin Mazur - Dagens Industri IT & Strategy](https://www.linkedin.com/feed/update/urn:li:activity:6861311477781970944/)
+
+1. Vilka krav har industrin på nya studenter?
+    * [Jane Strandberg, teamleader och chef, Prisjakt](https://gist.github.com/mosbth/76a4d7a503e45692d28c4c0dcd029703)
+
+**Lästips**
+
+1. "The Deadline: A Novel About Project Management" by TomDeMarco ISBN 0-932633-39-0. Populär och utbildande novell om projektledning av ett utvecklingsprojekt. Smått humoristisk och allvarlig om hur man kan få ett projekt i mål. Boken börjar med att projektledaren blir drogad och kidnappad och sätts i en position där ett lyckat projekt är samma sak som att behålla sin livhanke.
+    * [Läs om boken](https://wiki.c2.com/?TheDeadline).
 
 
 
@@ -230,11 +247,39 @@ Vecka 04 (v47): SDS Klar  {#w04}
 Leverans av SDS.
 
 <!--
+TODO
+
+* Kika gamla SDS:er
+* Projektplanering med GitHub project
+* x10 och x1
 * Individuell reflektion över arbetet så här långt samt se vilken plats man själv tar i projektet.
     * Fundera på om det är något man vill ändra för resten av projektet.
-* Jobba med små tekniska studier och dela kunskap
+* Riskanalys (eller flytta till nästa vecka)
+
+
+Frågor till näringslivet.
+
+* 10x, kan ni se det hända ute hos er?
+* ViLken teknik jobbar ni med och vad ser ni som intressant teknik närmaste kommande åren?
+* Juniora programmerare, vad ser ni som de kan förbättra? 
+
+Om 10x
+* Individual Productivity Variation in Software Development
+* Origins of 10X - How Valid is the Underlying Research?
+
+1. "[A good programmer can be as 10X times more productive than a mediocre one](https://softwareengineering.stackexchange.com/questions/179616/a-good-programmer-can-be-as-10x-times-more-productive-than-a-mediocre-one)"
+
+    * [Individual Productivity Variation in Software Development](https://www.construx.com/blog/productivity-variations-among-software-developers-and-teams-the-origin-of-10x/)
+    * [Origins of 10X - How Valid is the Underlying Research?](https://www.construx.com/blog/the-origins-of-10x-how-valid-is-the-underlying-research/)
+
 -->
 
+<!--
+Torsdagen i vecka 2 hade vi en session om riskanalys av projektet som också spelades in.
+
+* [Riskanalysdokumentet](https://docs.google.com/spreadsheets/d/1jqmyl1bKGc7La81MfwGVY0JqVPmopM0oG9s8-gCGEkc/edit?usp=sharing)
+* [Zoom-sessionen om riskerna](https://youtu.be/r-c7ETb80M0)
+-->
 
 <!--
 Vad vill näringslivet att vi skall kunna när vi kommer ut? Vilket behov upplever de att de har av programmerare och vilka krav ställer de på nyanställda? Mikael har pratat med gamla studenter och samlat ihop vad de anser vara viktigt.
@@ -265,6 +310,10 @@ Vecka 05 (v48): Implementera {#w05}
 Påbörja implementationsfasen av projektet och implementera systemet enligt er SDS.
 
 <!--
+TODO
+
+* Skippa måndagen, ersätt med "snygg kod föreläsningar.
+
 Vi hade en kort generell avstämning av läget, allt verkar så här långt "se bra ut". Det dyker inte upp så många frågor.
 
 Man kan nu boka in en tid för att leverera i december och vi fortsätter med korta träffar på måndagar och torsdagar inleds med en timme öppet hus för frågor och därefter kan man boka in gruppvis diskussioner.

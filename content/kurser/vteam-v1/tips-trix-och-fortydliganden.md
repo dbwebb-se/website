@@ -142,6 +142,11 @@ Låt se om några blir av under denna kursrundan.
 1. [Hantering av geodata i databas/backend](https://github.com/sonnerberg/vteam-sds/blob/main/teknisk_analys_geo/teknisk_analys_geo.md)
 
 
+<!--
+
+[Prestandatester](https://github.com/virtuella-team/vteam/tree/tzLocal), i har gjort några CRU(inget D) tester för att se hur backend reagerar på en stor mängd anrop på kort tid. 
+-->
+
 
 ### 2021
 

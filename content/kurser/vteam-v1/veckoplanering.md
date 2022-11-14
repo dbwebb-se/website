@@ -218,7 +218,7 @@ Vi träffas och pratar som saker som hjälper oss framåt.
         * [web.dev: Progressive Web Apps](https://web.dev/progressive-web-apps/)
         * [MDN: Progressive web apps (PWAs)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
     * [Apache Cordova](https://cordova.apache.org/) kompilera HTML, CSS, JS till nativ applikation.
-    * "Native apps"
+    * "Native apps", kompilerade för respektive enhet.
         * iPhone med Swift och Objective-C
         * Android med Java/Kotlin
     * [Electron](https://www.electronjs.org/), "Build cross-platform desktop apps with JavaScript, HTML, and CSS".

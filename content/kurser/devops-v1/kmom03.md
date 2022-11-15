@@ -56,7 +56,7 @@ Ansible är ett verktyg för att automatisera server konfiguration. Läs om föl
 
 ### Förbered för Ansible {#prepare}
 
-Innan ni fortsätter **ska** ni ta bort era gamla VMs och resurser. På Azure portalen, gå till `All resources` och radera allt utom er "DNS zone" och "SSH key"!
+Innan ni fortsätter **ska** ni ta bort era gamla VMs och resurser. På Azure portalen, gå till `All resources` och radera allt **utom** er "DNS zone" och "SSH key"!
 
 
 
@@ -66,9 +66,15 @@ Innan ni fortsätter **ska** ni ta bort era gamla VMs och resurser. På Azure po
 
 I följande playlist, kollar på videorna med `30x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot.
 
-- [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
+[INFO]
+All info om hur ni ska identifiera er mot Azure från Ansible är numera felaktig i materialet nedanför. I videon pratas det om att ni ska skapa en fil som heter `credentials` och den ska ni skriva era inloggningsuppgifter för Azure. Det funkar inte längre för att vi använda multi-factor authentication.
 
-- Läs igenom `ansible/README.md` filen. Stycker "Credentials" behöver ni fixa.
+Istället behöver ni installera terminalverktyget `az`. Ni hittar instruktioner för det här, [How to install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). När ni har installerat det kör kommandot `az login`. Med det kommandot loggar ni in på Azure och samtidigt sparas en JWT token på din dator som Ansible kan använda för att autentisera mot Azure.
+
+Efter detta ska Ansible mot Azure funka utan att ni behöver göra mer. Dock är kommandot bara den token som sparas giltig en viss tid, senare kan ni behöva köra `az login` igen för att skapa en ny token.
+[/INFO]
+
+- [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
 
 
 

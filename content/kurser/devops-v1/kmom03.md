@@ -157,6 +157,63 @@ Vi kommer bara göra en väldigt simpel CD kedja som bara hanterar att uppdatera
 
 - Läs en snabb överblick av olika [Deployment strategies](https://www.baeldung.com/ops/deployment-strategies).
 
+[INFO]
+På grund av den nya multi-factor authentication som används på våra konton kan vi logga in på Azure i Ansible från Actions.
+
+Nedanför kan ni se hur en workflow fil kan se ut om det gamla sättet att logga in hade fungerat.
+[/INFO]
+
+```yml
+name: Deploy microblog
+
+on:
+  workflow_call:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Create .azure folder
+      run: mkdir ~/.azure
+    - name: Write credentials
+      run: echo "${{ secrets.AZURE_CREDENTIALS }}" | base64 -d > ~/.azure/credentials
+
+    - name: Cache pip
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.9"
+        cache: 'pip'
+        cache-dependency-path: |
+          requirements/deploy.txt
+          ansible/requirements.yml
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements/deploy.txt
+        cd ansible && ansible-galaxy install -r requirements.yml
+
+    - name: Setup SSH 
+      shell: bash
+      run: |
+        eval `ssh-agent -s`
+        mkdir -p /home/runner/.ssh/
+        touch /home/runner/.ssh/id_rsa
+        echo -e "${{secrets.SSH_PRIVATE_KEY}}" > /home/runner/.ssh/id_rsa
+        chmod 700 /home/runner/.ssh/id_rsa
+
+    - name: Run playbook
+      run: cd ansible/ && ansible-playbook gather_az_instances.yml deploy_app.yml
+
+```
+<!--
+
 För att ni ska kunna använda Ansible i Action behöver ni fixa två saker.
 
 1. Ansible behöver kunna logga in på Azure.
@@ -215,7 +272,7 @@ För att använda nyckeln i ett workflow behöver ni:
 ```
 
 Nu är ni redo att skapa ett nytt workflow där ni kör `gather_vm_instances.yml` och `deploy_app.yml`.
-
+-->
 
 
 ### Video {#video}
@@ -234,7 +291,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 1. Använd Ansible för att skapa och konfigurera tre servrar. En som databas, en till microblogen och en som load-balancer.
 
-1. Utöka GitHub Actions så att om testerna går igenom och en ny Docker image byggs ska den driftsättas på `appServer`. Med andra ord sätt upp Continuous Deployment.
+<!-- 1. Utöka GitHub Actions så att om testerna går igenom och en ny Docker image byggs ska den driftsättas på `appServer`. Med andra ord sätt upp Continuous Deployment. -->
 
 1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v13.0.0, om du pushar kmom03 flera gånger kan du öka siffrorna efter 13:an.
 
@@ -270,6 +327,8 @@ Se till att följande frågor besvaras i texten:
 
 1. Vad är Continuous Deployment?
 
-1. Kan du se några problem med vår CI/CD kedja?
+1. Kan du se några problem med vår CI/CD kedja (tänk hur den skulle sätt ut om Azure hade funkat för oss)?
 
 1. Om du fick välja fritt hur skulle du vilja bygga upp CD kedjan?
+
+1. Hur var storleken på kursmomentet? Har du haft tid över så att du hade hunnit med att driftsätta via Github Actions?

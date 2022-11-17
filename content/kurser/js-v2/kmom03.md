@@ -39,7 +39,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom03/02_mepage3.md)". Spara resultatet i `me/redovisa/`.
 
-TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"]
+[YOUTUBE src=qN7otFlqlsw width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

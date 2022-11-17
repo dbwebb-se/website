@@ -110,7 +110,10 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 * Gör uppgiften "[Bygg inloggning till webbplatsen med PHP PDO och CRUD mot SQLite](uppgift/bygg-inloggning-till-webbplatsen-med-php-pdo-och-crud-mot-sqlite)". Spara din kod i `me/report`.
 
-
+<!--
+* Bestäm sidor som måste finnas, bra för validering och rättning.
+* Tydlig att inloggning skall vara i den befintliga wbbplatsen layout.
+-->
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------

@@ -118,6 +118,10 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 1. Gör uppgiften "[Bygg en månadskalender och ett gissningsspel med PHP datastrukturer](uppgift/bygg-en-manadskalender-och-ett-gissningsspel-med-php-datastrukturer)" och spara alla filer under `me/report`.
 
 <!--
+* Lägg till cheat i uppgiften om gissa namnet.
+-->
+
+<!--
 
 * Galleri med bilder, klicka runt, läsa av filer i katalog. (next/prev)
 * glob

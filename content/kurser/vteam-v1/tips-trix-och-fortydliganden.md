@@ -144,7 +144,12 @@ Låt se om några blir av under denna kursrundan.
 
 <!--
 
-[Prestandatester](https://github.com/virtuella-team/vteam/tree/tzLocal), i har gjort några CRU(inget D) tester för att se hur backend reagerar på en stor mängd anrop på kort tid. 
+1. [Prestandatester](https://github.com/virtuella-team/vteam/tree/tzLocal), i har gjort några CRU(inget D) tester för att se hur backend reagerar på en stor mängd anrop på kort tid. 
+
+1. [Docker technical study with React, Node and MariaDB](https://github.com/virtuella-team/vteam-sds/blob/main/teknisk_analys_docker/docker_technical_study.md)
+
+1. [Guide: GitHub Projects](https://gist.github.com/jf-Lindberg/2146bf666c71ca78f7d685f023ad6728), introducera Github Projects och ge en grundläggande översikt över hur man kan använda det i ett team.
+
 -->
 
 

@@ -69,7 +69,7 @@ I följande playlist, kollar på videorna med `30x`i namnet för att bekanta er 
 [INFO]
 All info om hur ni ska identifiera er mot Azure från Ansible är numera felaktig i materialet nedanför. I videon pratas det om att ni ska skapa en fil som heter `credentials` och den ska ni skriva era inloggningsuppgifter för Azure. Det funkar inte längre för att vi använda multi-factor authentication.
 
-Istället behöver ni installera terminalverktyget `az`. Ni hittar instruktioner för det här, [How to install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). När ni har installerat det kör kommandot `az login`. Med det kommandot loggar ni in på Azure och samtidigt sparas en JWT token på din dator som Ansible kan använda för att autentisera mot Azure.
+Istället behöver ni installera terminalverktyget `az`, i WSL. Ni hittar instruktioner för det här, [How to install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest), välj linux instruktionerna. När ni har installerat det kör kommandot `az login`. Med det kommandot loggar ni in på Azure och samtidigt sparas en JWT token på din dator som Ansible kan använda för att autentisera mot Azure.
 
 Efter detta ska Ansible mot Azure funka utan att ni behöver göra mer. Dock är kommandot bara den token som sparas giltig en viss tid, senare kan ni behöva köra `az login` igen för att skapa en ny token.
 [/INFO]

@@ -4,10 +4,6 @@ revision:
   "2021-11-19": (A, lew) Genomgång inför ht20.
 ...
 
-[WARNING]
-Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
-[/WARNING]
-
 # Kmom04: Webpack
 
 Nu har vi blivit lite varma i kläderna och ska ta et djupare kliv in i DOM manipuleringen. Vi ska arbeta med fler former och fler events. Till detta ska vi se hur vi kan packa ihop vår kod för produktion. Självklart ska vi arbeta med moduler.
@@ -46,7 +42,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page 4](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom04/02_mepage4.md)". Spara resultatet i `me/redovisa/`.
 
-TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"]
+<!-- [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 

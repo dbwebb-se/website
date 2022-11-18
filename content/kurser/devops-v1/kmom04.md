@@ -12,9 +12,6 @@ Nu när vi har ett system uppe och rullande behöver vi veta när något går fe
 
 <!-- more -->
 
-[WARNING]
-**Kursmomentet uppdetaras** och är inte redo att jobbas igenom.
-[/WARNING]
 
 [FIGURE src="https://upload.wikimedia.org/wikipedia/commons/d/d2/IoT_environmental_monitoring_system_solution_-_Overview.jpg" caption="Överblick av olika delar som kan ingå i ett system med övervakning."]
 
@@ -58,7 +55,7 @@ Log management är processen av att samla in, lagra, hantera och analysera logga
 
 - [Why is log management important](https://www.graylog.org/post/why-is-log-management-important).
 
-Läs också [ELK stack tutorial](https://www.guru99.com/elk-stack-tutorial.html) för en överblick av ett av de mest populära systemen för Log management.
+Läs också en snabb överblick av [ELK stack](https://www.guru99.com/elk-stack-tutorial.html) för en överblick av ett av de mest populära systemen för Log management.
 
 
 
@@ -118,11 +115,13 @@ Vi vill så klart visualisera hur själva flask appen mår i Grafana.
 
 ### MySQL {#mysql}
 
-Vi vill ha koll på vad som händer med databasen och det finns så klart en exporter för MySQL också.
+Vi skippar MySQl, det var problem med att få den att fungera förra året.
+
+<!-- Vi vill ha koll på vad som händer med databasen och det finns så klart en exporter för MySQL också.
 
 Jobba igenom [Övervaka MySQL med Prometheus och Grafana](kunskap/overvaka-mysql-med-prometheus-och-grafana)
 
-Glöm inte att öppna portar i Azure så Prometheus kommer åt mysql_exporter.
+Glöm inte att öppna portar i Azure så Prometheus kommer åt mysql_exporter. -->
 
 
 
@@ -156,9 +155,11 @@ Det finns generellt kursmaterial i video form.
 
 Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
-1. Ni har en till instans i er Azure infrastruktur som kör Prometheus och Grafana. Lägg till en Reverse Proxy i er Nginx konfiguration till Grafana. [Här](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f) kan ni hitta exempel på delar ni behöver lägga in i er Grafana och Nginx konfig. Länka till den i er redovisningstext och skriv inlogg uppgifter.
+1. Ni har en till instans i er Azure infrastruktur som kör Prometheus och Grafana.
 
-1. Ha en Dashboard för varje exporter vi gått igenom, Nginx, Mysql, Node_exporter och FLask.
+1. Lägg till en Reverse Proxy i er Nginx konfiguration till Grafana. [Här](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f) kan ni hitta exempel på delar ni behöver lägga in i er Grafana och Nginx konfig. Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
+
+1. Ha en Dashboard för följande exporters, Nginx, Node_exporter och Flask.
 
 1. Lägg till en Ansible playbook för Prometheus och Grafana. Lägg till att installera och starta alla olika exporters i respektive playbook. Glöm inte öppna de nya portarna i `security_groups` rollen.
 

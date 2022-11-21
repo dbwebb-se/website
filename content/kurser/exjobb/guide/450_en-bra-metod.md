@@ -12,6 +12,24 @@ En bra metod(beskrivning) skapar det mesta av trovärdigheten för arbetet. I en
 
 Du beskriver varför du har valt metoden du har valt och hur du har använt den. Det viktiga när du beskriver din metod är att en läsare ska kunna ta din metod och återupprepa din studie. Så viktigt att du beskriver exakt hur du har gjort och inte gör några antaganden, som en läsare inte har möjlighet att göra.
 
+Ett bra sätt att strukturera en metodbeskrivning är att använda strukturen **vad? varför? hur?** för varje forskningsfråga eller del av din studie. Låt oss titta på ett exempel för detta.
+
+I nedan stycke har **vad** markerats med röd, **varför** med grön och **hur** med blå.
+
+> <span style="background-color: rgba(255, 0, 0, 0.1)">Data har samlats in genom kvalitativa djupintervjuer.</span> <span style="background-color: rgba(0, 255, 0, 0.1)">Djupintervjuer är en lämplig metod för datainsamling när man vill komma åt individers subjektiva upplevelser, erfarenheter och åsikter [1, pp. 157-158].</span> <span style="background-color: rgba(0, 0, 255, 0.1)">Intervjuer kan vara helt öppna, semistrukturerade eller strukturerade. I denna studien har semi-strukturerade intervjuer använts för att alla respondenter besvarar samma uppsättning frågor. Fördelen med semistrukturerade intervjuer är att metoden ger möjlighet för att ställa uppföljande frågor och få förtydligande [1, pp. 157-158]. En intervjuguide användes för alla intervjuer, intervjuguiden kan ses i sin helhet i Appendix A. Vår studie följer dessutom Brinkmann och Kvales [2,
+pp. 40-45] sju steg för att säkerställa kvalitén.</span>
+
+[1] K. Säfsten och M. Gustavsson, Forskningsmetodik: för ingenjörer och andra
+problemlösare, Lund: Studentlitteratur, 2019.
+
+[2] S. Brinkmann och S. Kvale, Doing interviews, London: SAGE, 2018
+
+
+
+
+Exempel på bra metoder från examensarbeten {#examples}
+-----------------------------------
+
 Nedan visas några arbeten med bra metodbeskrivningar för olika metoder. Arbeten är blandade kandidat- och högskoleexamensarbeten.
 
 

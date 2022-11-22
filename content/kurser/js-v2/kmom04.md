@@ -42,7 +42,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page 4](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom04/02_mepage4.md)". Spara resultatet i `me/redovisa/`.
 
-<!-- [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"] -->
+[YOUTUBE src=sTGEOj8VQj0 width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

@@ -21,16 +21,16 @@ Uppgiften går ut på att analysera en applikation efter sårbarheter.
 Förkunskaper {#forkunskaper}
 -----------------------
 
-Du har deltagit i föreläsningarna som tillhör kursmomentet.
+Du har deltagit i föreläsningen som tillhör kursmomentet.
 
 Du har deltagit i föreläsningarna om Hot och Attacker i förra kursmomentet samt gjort övat på attacker på OWASP Juice shop.
 
 Analys {#analys}
 -----------------------
 
-Ni ska analysera applikationen utifrån de metoder och tekniker som nämns under föreläsningarna. Utgå ifrån att det är blackbox testing, dvs att ni inte har tillgång till koden. Bortse ifrån säkerhetsbrister som baseras på hur miljön är uppsatt, t.ex. HTTPS i en lokal utvecklingsmiljö.
+Ni ska analysera applikationen utifrån de metoder och tekniker som nämns under föreläsningarna. Utgå ifrån att det är blackbox testing, dvs att ni inte har tillgång till koden. Bortse ifrån säkerhetsbrister som baseras på hur miljön är uppsatt, t.ex. att HTTPS inte används i en lokal utvecklingsmiljö.
 
-Applikationen jobbar emot en SQLite-databas, om ni av någon anledning behöver återställa den så är det bara kopiera över den ifrån example igen.
+Applikationen jobbar emot en SQLite-databas, om ni av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen.
 
 Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/jmbktjvfxvff) som ni kan använda. Länken är till en read-only version, för att skapa er egna behöver ni vara inloggade och sen trycker ni "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller nedanstående krav:
 
@@ -56,14 +56,14 @@ Börja med att kopiera in mappen med applikationen till er me-katalog:
 
 ```bash
 # Flytta till kurskatalogen
-$ rsync -ravd example/bank-app me/kmom04/
+$ cp -r example/bank-app me/kmom01
 ```
 
-Köra applikationen lokalt med `npm install && npm start`. Eller om du vill använda docker, så starta applikationen med `docker-compose up -d`. 
+Gå till me/kmom01/bank-app och kör applikationen lokalt med `npm install && npm start`. Eller om du vill använda docker, så starta applikationen med `docker-compose up -d`. 
 
 ### Lämna in
 
-1. Analysera applikationen efter sårbarheter enligt de metoder som nämndes under föreläsningen som  attack träd, penetrationstestning etc. Dokumentera gärna hur du gjorde när du hittade sårbarheten. Du bör hitta minst 3 sårbarheter med väldigt god förståelse eller 5–6 med god förståelse.
+1. Analysera applikationen efter sårbarheter enligt de metoder som nämndes under föreläsningen som  attack träd, penetrationstestning etc. Dokumentera hur du gjorde när du hittade sårbarheten. Du bör hitta minst 3 sårbarheter med väldigt god förståelse eller 5–6 med god förståelse.
 
 1. Döp analysen till `analys.pdf` och ladda upp på Canvas.
 
@@ -75,6 +75,6 @@ $ dbwebb publish me
 Tips från coachen {#tips}
 -----------------------
 
-Gå igenom applikationen som en vanlig användare och bygg upp en visuell bild av hur flödet är. Det är lättare att leta säkerhetsbrister när man vet var de troligen finns. Använd dig gärna av någon eller några av metoderna från föreläsningen som Data flow diagram, Process flow diagram, aktivitetsmatris etc.
+Gå igenom applikationen som en vanlig användare och bygg upp en visuell bild av hur flödet är. Det är lättare att leta säkerhetsbrister när man vet var de troligen finns. Använd dig gärna av någon eller några av metoderna från föreläsningen som Attackträd, Data flow diagram, Process flow diagram, aktivitetsmatris etc.
 
 Lycka till och hojta till i Discord om du behöver hjälp!

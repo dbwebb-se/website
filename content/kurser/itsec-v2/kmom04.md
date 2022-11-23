@@ -4,7 +4,7 @@ author:
     - nik
     - grm
 revision:
-    "2022-08-10": "(D, grm) Komplettering HT22."
+    "2022-11-23": "(D, grm) Komplettering HT22."
     "2021-11-10": "(C, grm) Komplettering HT21."
     "2021-10-01": "(B, lew) Uppdatering för ht21"
     "2020-11-02": "(A, nik) Uppdatering för ht20"
@@ -12,9 +12,9 @@ revision:
 Kmom04: Sårbarhetsanalys
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Risk- och sårbarhetsanalysmomentet omfattar en introduktion till olika metoder för att modellera applikationers beteende, metoder för att genomföra sårbarhetsanalyser och attackscenarier. Vidare introduceras även riskanalys och riskhantering för att sätta sårbarheter i kontext.
 

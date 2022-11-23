@@ -20,7 +20,7 @@ Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på d
 
 [FIGURE src="img/devops/devops-security.png" caption="Hur det inte ska se ut när man kör devops."]
 
-Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till CircleCi som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.
+Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.
 
 
 
@@ -30,7 +30,8 @@ Målet med DevSecOps är att alla behöver tänka på och är ansvariga för sä
 
 Läs följande artiklar som tar upp lite olika delar av DevSecOps:
 
-- [The “What” “How” and “Why” of DevSecOps](https://www.newcontext.com/what-is-devsecops/)
+<!-- - [The “What” “How” and “Why” of DevSecOps](https://www.newcontext.com/what-is-devsecops/) -->
+- [The “What” “How” and “Why” of DevSecOps](https://web.archive.org/web/20220618115729/https://newcontext.com/what-is-devsecops/)
 - [What is DevSecOps?](https://www.atlassian.com/continuous-delivery/principles/devsecops)
 - kapitell 1 "Securing devops", 1.1-1.3, i [Securing Devops](http://tinyurl.com/usyps42) (länken går till en E-bok version) för en introduktion till Continuous Security.
 
@@ -355,11 +356,15 @@ Läs artiklarna nedanför som går igenom vad man ska tänka på när man sätte
 - [How Secure Is Your CICD Pipeline?](https://www.weave.works/blog/how-secure-is-your-cicd-pipeline)
 - [Ultimate guide to CI/CD security and DevSecOps](https://circleci.com/blog/security-best-practices-for-ci-cd/) 
 
+En viktigt del är hur vi sparar känslig information på ett säkert sätt samtidigt som datan finns tillgänglig till de olika systemen, en sån tjänst är [Conjur](https://www.conjur.org/solutions/devops-security/). De har varit duktiga och skapat en kort interaktiv tutorial där man kan testa använda Conjur för att bryta ut lösenord från Ansible filer.
+
+- Jobba igenom [Secure Ansible Automation](https://play.instruqt.com/embed/cyberark/tracks/secure-ansible-automation-v2?token=em__rXC9PujH1Mq11FB).
+
 
 
 ### Lästips {#lastips}
 
-1. [Zapping the top 10](https://www.owasp.org/index.php/ZAPpingTheTop10), hur ni kan använda Zap för att testa OWASP10 sårbarheterna.
+1. [Zapping the top 10](https://www.zaproxy.org/docs/guides/zapping-the-top-10-2021/), hur ni kan använda Zap för att testa OWASP10 sårbarheterna.
 
 
 

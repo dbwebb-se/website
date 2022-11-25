@@ -1,12 +1,9 @@
 ---
 author: lew
 revision:
+  "2022-11-25": (B, lew) Uppdaterad inför ht22.
   "2021-06-16": (A, lew) Ny inför ht21.
 ...
-
-[WARNING]
-Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
-[/WARNING]
 
 # Kmom05: Web API
 

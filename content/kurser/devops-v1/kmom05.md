@@ -14,10 +14,6 @@ Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på d
 
 <!-- more -->
 
-[WARNING]
-**Kursmomentet uppdetaras** och är inte redo att jobbas igenom.
-[/WARNING]
-
 [FIGURE src="img/devops/devops-security.png" caption="Hur det inte ska se ut när man kör devops."]
 
 Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.
@@ -110,72 +106,25 @@ I vårt projekt använder vi oss av många externa paket både i Python koden f�
 
 ##### Snyk {#snyk}
 
-<!-- https://circleci.com/blog/adding-application-and-image-scanning-to-your-cicd-pipeline/ -->
- Vi kan koppla Snyk till Microblog repot på GitHub och DockerHub, men då blir det inte en del av vår CI kedja utan vi behöver logga in på Snyk i efterhand och kolla resultatet. Det vill vi inte, vi ska använda oss av [Orbs i CircleCi](https://snyk.io/blog/automating-open-source-security-scanning-with-snyk-and-circleci/), mer specifikt [Snyks orb](https://github.com/snyk/snyk-orb) så att det blir ett steg i CI kedjan.
+ Vi kan koppla Snyk till Microblog repot på GitHub och DockerHub, men då blir det inte en del av vår CI kedja utan vi behöver logga in på Snyk i efterhand och kolla resultatet. Det vill vi inte, istället ska vi lägga till det i GitHub Actions så att det blir ett steg i CI kedjan.
 
-Först behöver ni tillåta 3rd party Orbs i CircleCi.
-
-- Gå till settings, Security och klicka i `Yes, allow all members of my organization to publish dev orbs... `. 
-
-- Sen behöver ni hämta en API nyckel från Snyk. 
+Ni behöver hämta en API nyckel från Snyk.
     - Skapa ett konto på [Snyk.io](https://snyk.io/).
-    - Gå tlll `settings`, `personal API token` och klicka `click to show`.
+    - Gå tlll `Account settings` (klicka på din profilbild nere i vänstra hörnet) och klicka på `click to show` under `Auth token`.
 
-- Kopiera nyckeln och gå till CircleCi och settings för ert Microblog projekt.
+- Kopiera nyckeln och gå till GitHub och settings för ert Microblog projekt.
 
-- Skapa en ny miljövariabel som heter `SNYK_TOKEN` och sätt api nyckeln som värde. Nu kan vi uppdatera er CircleCi konfig.
+- Skapa en ny miljövariabel som heter `SNYK_TOKEN` och sätt api nyckeln som värde.
 
-Snyk ska fungera så att det läser av dependency filer, `.requirements.txt` och en docker image i vårt fall, men det verkar inte funka så bra med virtuelle miljöer och .requirements.txt filer. Men vi kan få det att fungera.
-
-Om ni inte redan kör version 2.1 i er CircleCi konfig, uppdatera till det och lägg till snyk som en orb.
-
-```
-version: 2.1
-orbs: 
-    snyk: snyk/snyk@0.0.8
-```
-
-Vi börjar med att lägga till så att Python paketen skannas.
+Nu ska ni lägg till så att Snyk skannar Python paketen och Docker beroenden. Ni får välja själva om ni vill ska ett nytt workflow för detta eller lägga in det i något av de som redan finns.
 
 
-
-###### Python {#snyk-python}
-
-Snyk cli kollar vilka paket som är installerade och klarar egentligen inte av att kolla vår virtual environment. Men vi kan lurar Snyk med raden `- run: echo "source ~/repo/venv/bin/activate" >> $BASH_ENV` i CircleCi konfigurationen.
-
-Jag lägger till ett nytt jobb som heter `snyk`.
-
-```
-snyk:
-    docker:
-        - image: circleci/python:3.5
-    working_directory: ~/repo
-    steps:
-        - checkout
-        - run:
-            name: install dependencies
-            command: |
-                python3 -m venv venv
-                . venv/bin/activate
-                make install
-        - run: echo "source ~/repo/venv/bin/activate" >> $BASH_ENV # här gör vi så att så att CircleCi automatisk laddar venv och då kollar Snyk vad vi har installerat i den.
-        - snyk/scan
-```
-
-Pusha upp konfigurationen och kolla att det går igenom. Glöm inte att lägga till Snyk i Workflows jobs. När ni ser att det fungerar ska vi lägga till att skanna Docker imagen. 
+Snyk har redan skapat Actions som går att använda, [Snyk GitHub Actions](https://github.com/snyk/actions). Dock hade jag problem med att få Snyk att hitta mina pip paket. Jag var tvungen att istället använda [Snyk Python Action](https://github.com/marketplace/actions/snyk-python) för att skanna Python paketen.
 
 
+###### Snyk varning {#snyk-varning}
 
-###### Docker {#snyk-docker}
-
-I ert job där ni skapar och pushar docker imagen till DockerHub, lägg till ett nytt steg efter att ni byggt imagen men innan ni publicerar den.
-
-```
-- snyk/scan:
-    docker-image-name: $IMAGE_NAME
-```
-
-Pusha konfigurationen och kolla att det går igenom. Här fick jag en varning som jag inte lyckades lösa:
+Ett fel i Snyk ser ut på följande sätt.
 
 ```
 ✗ Low severity vulnerability found in musl/musl-utils
@@ -187,33 +136,9 @@ Pusha konfigurationen och kolla att det går igenom. Här fick jag en varning so
   Fixed in: 1.1.24-r10
 ```
 
-Ge det gärna ett försök och om ni lyckas, skriv i er redovisningstext hur ni gjorde.
+Om ni får fel som ni inte hittar lösningar på, då går det att ignorera felen i [en config för Snyk](https://support.snyk.io/hc/en-us/articles/360007487097-The-snyk-file).
 
-Men nu har vi ett problem, bygget avbryts när Snyk hittar ett fel men vi har ingen lösning på felet. Som tur är finns det [konfigurationsfiler till Snyk](https://support.snyk.io/hc/en-us/articles/360007487097-The-snyk-file) där vi kan ignorera felet.
-
-Skapa filen `.snyk` i rooten av ert repo. Sen lägger vi följande i den:
-
-```
-version: v1.14.0
-# ignores vulnerabilities until expiry date; change duration by modifying expiry date
-ignore:
-  SNYK-ALPINE312-MUSL-1042762:
-    - '*':
-        reason: no remediation
-        expires: 2021-06-01T00:00:00.000Z
-```
-
-Kolla under [Syntax i dokumentationen](https://support.snyk.io/hc/en-us/articles/360007487097-The-snyk-file) för en förklaring av innehållet.
-
-Nu behöver vi i circleci konfigurationen säga till Snyk att läsa in `.snyk`, den ska leta efter den automatisk men det funkar inte för mig.
-
-```
-- snyk/scan:
-    docker-image-name: $IMAGE_NAME
-    additional-arguments: "--policy-path=.snyk"
-```
-
-Nu borde er CI kedja gå igenom igen. Om ni får några andra fel i Snyk, försök lösa dem och skriv om det i er redovisningstext.
+Om ni får några varningar, skriv om dem i er redovisningstext.
 
 
 
@@ -243,7 +168,7 @@ För att Bandit ska läsa konfigurationen kör Bandit med `bandit -c .bandit.yml
 
 Om ni får några fel kan ni antingen fixa felet, lägga till `# nosec` eller hoppa över regeln helt. Analysera felet och gör ett aktivt val över vad som är en passande åtgärd på felet.
 
-- Lägg till `bandit` som ett make target I Makefile som kör Bandit på `app` mappen. Gör sen så att Bandit är en del av testerna som körs i Dockerfile_test och som en del av CircleCi.
+- Lägg till `bandit` som ett make target I Makefile som kör Bandit på `app` mappen. Gör sen så att Bandit är en del av testerna som körs i Dockerfile_test och som en del av GitHub Actions.
 
 
 
@@ -253,18 +178,18 @@ Om ni får några fel kan ni antingen fixa felet, lägga till `# nosec` eller ho
 
 Vi kommer att nöja oss med att köra deras [Baseline tester](https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan) på Microbloggen, då utförs inga aktiva attacker, den bara skannar webbsidan. Mozilla har ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna.
 
-- Följ blogginlägget ovanför för att testa köra den mot er Microblog, ni behöver inte lägga till det i CircleCi.
+- Följ blogginlägget ovanför för att testa köra den mot er Microblog, ni behöver inte lägga till det i GitHub Actions.
 
 Det går även att köra Zap mot er lokala miljö, men då måste ni sätta nätverk när ni startar containern:
 
-<!-- `docker run -t owasp/zap2docker-stable zap-baseline.py -t https://<domain>` -->
+<!-- docker run --net host owasp/zap2docker-weekly zap-baseline.py -t http://0.0.0.0:8000 -->
 ```
-docker run --net host owasp/zap2docker-weekly zap-baseline.py -t http://0.0.0.0:8000
+docker run -t owasp/zap2docker-weekly zap-baseline.py -t https://<domain>
 ```
 
 Fixa minst 5 valfria varningar från Zap, beskriv vilka och vad ni gjorde i redovisningstexten. Det lättaste sättet att fixa dem är att logga in på load balancer instansen och ändra i Nginx konfigurationen, ladda om Nginx och köra Zap igen för att se om varningen försvann.
 
-Egentligen skulle vi lagt till Zap i CircleCi men vi har ingen staging miljö att köra den mot. Så vi får nöja oss med att köra det manuellt innan push. Lägg till ett make target i Makefilen som kör Zap mot er Microblog, döp det till `zap`.
+Egentligen skulle vi lagt till Zap i GitHub Actions men vi har ingen staging miljö att köra den mot. Så vi får nöja oss med att köra det manuellt innan push. Lägg till ett make target i Makefilen som kör Zap mot er Microblog, döp det till `zap`.
 
 
 
@@ -349,7 +274,7 @@ Det finns givetvis sätt att göra SSH ännu säkrare, det är inget vi ska gör
 
 #### Hur säker är vår CI/CD pipeline? {#cicd}
 
-Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruktur är en säkerhetsrisk. Någon kan ta sig in i CircleCi's system och komma åt våra olika API nycklar t.ex. och på så sätt få tillgång till vår kod.
+Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruktur är en säkerhetsrisk. Någon kan ta sig in i GitHub Actions's system och komma åt våra olika API nycklar t.ex. och på så sätt få tillgång till vår kod.
 
 Läs artiklarna nedanför som går igenom vad man ska tänka på när man sätter upp sin CI/CD pipeline och kopplar ihop olika tjänster.
 
@@ -373,7 +298,7 @@ En viktigt del är hur vi sparar känslig information på ett säkert sätt samt
 Det finns generellt kursmaterial i video form.
 
 
-1. Kursen innehåller föreläsningar som spelas in och därefter läggs i spellistan "[devops streams ht21](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8g4N0v72y47OiNePhjOqqN)".
+1. Kursen innehåller föreläsningar som spelas in och därefter läggs i spellistan "[devops streams ht22](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8g4N0v72y47OiNePhjOqqN)".
 
 1. I "[kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78)" hittar du alla videor som är kopplade till kursmomentet, de börjar på 5xx i namnet.
 
@@ -383,9 +308,9 @@ Det finns generellt kursmaterial i video form.
 
 Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
-1. Skanna Python paketen och Microbloggen Docker image med Snyk på CircleCi. 
+1. Skanna Python paketen och Microbloggen Docker image med Snyk på GitHub Actions. 
 
-1. Skapa make target `bandit`. Lägg till så att det körs med testerna i docker och i CircleCI.
+1. Skapa make target `bandit`. Lägg till så att det körs med testerna i docker och i GitHub Actions.
 
 1. Fixa minst 5 varningar från Zap testerna. Glöm inte bort att uppdatera er Nginx konfiguration i Ansible!
 

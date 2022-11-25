@@ -55,6 +55,24 @@ När man får en programexamen har man läst samtliga kurser i programmets utbil
 
 
 
+Gå ned i studietakt, 50% {#studietakt}
+----------------------------------
+
+Våra studier är praktiska och kräver rätt mycket tid vid datorn. Om du av någon anledning behöver gå ned i studietakt, tex till 50%, så finns inget naturligt stöd för det men det finns ändå möjlighet att styra det på egen hand.
+
+När du går i ettan så finns ju våra kurspaket som läser på 50% och de läser halva ettan enligt följande:
+
+* Kurspaket webutv: python, javascript, oopython, webapp
+* Kurspaket webprog: webtec, design, databas, mvc
+
+De båda paketen har lite olika fokus och innehåll. Din möjlighet ligger i att på eget bevåg följa kurserna i ett av paketen och ignorera de andra kurserna tills senare, kanske nästa läsår. Detta ger dig möjligheten att läsa på halvfart genom att omregistrera vid nästa kurstillfälle på på de kurser du inte läser.
+
+Detta fungerar normalt sett. Omregistrering är alltid i mån av plats men det brukar inte vara ett hinder på dessa kurser.
+
+Väljer du att göra detta så är det på ditt eget ansvar och det kan finnas konsekvenser om/när kurser och upplägg ändras. Det är alltså inget garanterat och felfritt upplägg, men det är kanske ändå bästa alternativet beroende på din egen situation.
+
+
+
 Byte av utbildningsprogram inom webb {#bytewebb}
 ----------------------------------
 

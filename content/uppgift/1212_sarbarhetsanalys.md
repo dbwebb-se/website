@@ -4,6 +4,7 @@ author:
     - grm
 category: itsec
 revision:
+    "2022-11-28": (D, grm) Ändrade till minst 6 sårbarheter
     "2022-08-10": (C, grm) Uppdaterad inför ht22
     "2020-12-02": (B, nik) Uppdaterad inför ht20
     "2019-10-11": (A, lew, aurora) First edition.
@@ -63,7 +64,7 @@ Gå till me/kmom01/bank-app och kör applikationen lokalt med `npm install && np
 
 ### Lämna in
 
-1. Analysera applikationen efter sårbarheter enligt de metoder som nämndes under föreläsningen som  attack träd, penetrationstestning etc. Dokumentera hur du gjorde när du hittade sårbarheten. Du bör hitta minst 3 sårbarheter med väldigt god förståelse eller 5–6 med god förståelse.
+1. Analysera applikationen efter sårbarheter enligt de metoder som nämndes under föreläsningen som  attack träd, penetrationstestning etc. Dokumentera hur du gjorde när du hittade sårbarheten. Du bör hitta minst 6 sårbarheter.
 
 1. Döp analysen till `analys.pdf` och ladda upp på Canvas.
 

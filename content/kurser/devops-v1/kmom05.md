@@ -119,7 +119,7 @@ Ni behöver hämta en API nyckel från Snyk.
 Nu ska ni lägg till så att Snyk skannar Python paketen och Docker beroenden. Ni får välja själva om ni vill ska ett nytt workflow för detta eller lägga in det i något av de som redan finns.
 
 
-Snyk har redan skapat Actions som går att använda, [Snyk GitHub Actions](https://github.com/snyk/actions). Dock hade jag problem med att få Snyk att hitta mina pip paket. Jag var tvungen att istället använda [Snyk Python Action](https://github.com/marketplace/actions/snyk-python) för att skanna Python paketen.
+Snyk har redan skapat Actions som går att använda, [Snyk GitHub Actions](https://github.com/snyk/actions). Dock hade jag problem med att få Snyk att hitta mina pip paket. Jag var tvungen att istället använda [Snyk Python Action](https://github.com/marketplace/actions/snyk-python) för att skanna Python paketen. När ni ska skappa python paketen, sätt `path_to_dependency_file` till `requirements/prod.txt`. Snyk klara inte av att man länkar från en fil till en annan.
 
 
 ###### Snyk varning {#snyk-varning}

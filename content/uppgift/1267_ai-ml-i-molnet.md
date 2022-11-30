@@ -36,15 +36,15 @@ Se till att du har jobbat igenom "[En Flask App i molnet](kunskap/flask_och_temp
 Krav {#krav}
 -----------------------
 
+1. Du ska deploya Lager-API:t som en Docker container i Azures moln enligt "[Deployment av Lager-API:t i en Docker Container](kunskap/lager-apit-i-docker)". Den driftsatta containern ska användas av din WebApp.
+
 1. Du ska ha byggt och deployat en Webapp med ett UI enligt beskrivning som ger möjlighet att skriva in en länk till en bild och ett sätt att få ett resultat, t.ex en knapp. Lägg gränssnittet på routen `/image_search`.
 
-1. Webappen ska tolka innehållet i bilden med hjälp av Cognitive Services och presentera vilka produkter i lagret som matchar tolkningen.
+1. Webappen ska tolka innehållet i bilden med hjälp av Cognitive Services och presentera vilka produkter i lagret som matchar tolkningen. Se till att din applikation hämtar produkterna från den driftsatta Docker Container.
 
 1. Webappen ska vara robust och på ett användarvänligt sätt presentera för användaren om någonting går fel, till exempel om resultatet från Cognitive Services genererar en StatusCode 429.
 
 1. Webappen ska lämnas in i Canvas som en .zip-fil och driftsättas i Azure molnet.
-
-1. Du ska deploya Lager-API:t som en Docker container i Azures moln enligt "[Deployment av Lager-API:t i en Docker Container](kunskap/lager-apit-i-docker)". Den driftsatta containern ska användas av din WebApp.
 
 
 

@@ -42,7 +42,7 @@ Gör följande övningar för att träna inför uppgifterna.
 
 1.  Jobba igenom övningen "[Cognitive Services i Azure](kunskap/cognitive-services-i-azure)".
 
-
+1. Jobba igenom övningen "[Deployment av Lager-API:t i en Docker Container](kunskap/lager-apit-i-docker)".
 
 
 

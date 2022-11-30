@@ -81,6 +81,10 @@ Läs och studera följande.
 
 * Använd [OWASP Top Ten](https://owasp.org/www-project-top-ten/) som en källa för några av de vanligaste riskerna i en applikation. Börja med att kika igenom vilka de top-tio riskerna är och försök förstå vad de innebär för dig som utvecklare, hur bör du inte skriva din kod? Börja kika översiktligt.
 
+* Myndigheten för samhällsskydd och beredskap har gjort en vägledning "[Säkerhetsåtgärder i
+informationssystem](https://rib.msb.se/filer/pdf/30128.pdf)" som handlar
+om att införa säkerhetsåtgärder för att skydda information i informationssystem.
+
 * Läs igenom artikeln "[TimThumb Attacks: The Scale of Legacy Malware Infections](https://blog.sucuri.net/2019/08/timthumb-attacks-the-scale-of-legacy-malware-infections.html)" som berättar historien om hur ett litet PHP-script för att skala om bilder blev ett stort säkerhetshål för "remote code execution" i WordPress.
 
 * I artikeln "[Type Juggling and PHP Object Injection, and SQLi, Oh My!](https://foxglovesecurity.com/2017/02/07/type-juggling-and-php-object-injection-and-sqli-oh-my/)" visas hur man gör en exploit på en "loose comparisom `==`" och "`unserialize()` user supplied data" i PHP frameworket Expression Engine. Läs den som ett exempel på hur en attackerare tänker och funderar när den försöker hitta svagheter i ett system.

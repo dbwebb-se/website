@@ -57,7 +57,7 @@ Börja med att kopiera in mappen med applikationen till er me-katalog:
 
 ```bash
 # Flytta till kurskatalogen
-$ cp -r example/bank-app me/kmom01
+$ cp -r example/bank-app me/kmom04
 ```
 
 Gå till me/kmom01/bank-app och kör applikationen lokalt med `npm install && npm start`. Eller om du vill använda docker, så starta applikationen med `docker-compose up -d`. 

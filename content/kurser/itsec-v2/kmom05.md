@@ -14,9 +14,9 @@ revision:
 Kmom05: Säkerhetstestning
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Mjukvarutest ökar kvaliteten i den mjukvara som skrivs, men hur fungerar det med säkerhetstest. I detta kursmomentet, som bygger på sårbarhetsanalyser, går vi igenom vad säkerhetstester innebär och vad man behöver tänka på.
 

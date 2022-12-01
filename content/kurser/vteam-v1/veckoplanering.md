@@ -254,7 +254,7 @@ TODO
 * x10 och x1
 * Individuell reflektion över arbetet så här långt samt se vilken plats man själv tar i projektet.
     * Fundera på om det är något man vill ändra för resten av projektet.
-* Riskanalys (eller flytta till nästa vecka)
+* Riskanalys
 
 
 Frågor till näringslivet.
@@ -292,14 +292,6 @@ Automatisera tester och byggen med byggtjänster och tjänster för kodkvalitet.
 
 **Torsdag**
 
-Denna veckan blir det ingen Q&A session, istället finns det två videor/föreläsningar att titta på och en liten mini-uppgift som gäller att besvara frågan.
-
-> "Vad innebär "vacker kod" och är det något vi kan applicera i vårt projekt?"
-
-1. Video 1 "[The concept of Good and Clean Code](https://www.youtube.com/watch?v=drkATTaqEiw)"
-1. Video 2 "[Software philosophies and principles](https://www.youtube.com/watch?v=xLCHREF5I-I)"
-
-Mini-uppgiften löser du i 'Reflektera över "Good and Clean Code"'.
 -->
 
 
@@ -323,6 +315,17 @@ Man kan nu boka in en tid för att leverera i december och vi fortsätter med ko
 (Hur simulerar man ett system i drift?)
 
 https://dbwebb.se/kunskap/gps-och-karta
+
+
+Denna veckan blir det ingen Q&A session, istället finns det två videor/föreläsningar att titta på och en liten mini-uppgift som gäller att besvara frågan.
+
+> "Vad innebär "vacker kod" och är det något vi kan applicera i vårt projekt?"
+
+1. Video 1 "[The concept of Good and Clean Code](https://www.youtube.com/watch?v=drkATTaqEiw)"
+1. Video 2 "[Software philosophies and principles](https://www.youtube.com/watch?v=xLCHREF5I-I)"
+
+Mini-uppgiften löser du i 'Reflektera över "Good and Clean Code"'.
+
 -->
 
 

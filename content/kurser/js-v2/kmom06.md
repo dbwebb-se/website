@@ -4,10 +4,6 @@ revision:
   "2021-12-03": (A, lew) Ny version inför ht21.
 ...
 
-[WARNING]
-Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
-[/WARNING]
-
 # Kmom06: Objekt
 
 Vi har lärt oss att använda moduler för att strukturera vår kod och dela upp den i mindre delar. Vi ska i det här momentet fortsätta med en modulstruktur med hjälp av objekt. Till vår hjälp har vi en grund i form av ett halvfärdigt "hänga gubben" spel.

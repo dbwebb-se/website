@@ -102,7 +102,7 @@ Merged "demo" as current context in /home/zeldah/.kube/config
 Kolla att det fungerade med följande kommand:
 
 ```
-$kubectl get nodes
+$ kubectl get nodes
 
 NAME                                STATUS     ROLES   AGE     VERSION
 aks-agentpool-86164874-vmss000000   Ready      agent   11m     v1.20.9
@@ -263,7 +263,7 @@ spec:
 Aktivera den med:
 
 ```
-$ kubectl apply -f 001-app.yaml 
+$ kubectl apply -f 01-deployment.yml
 deployment.apps/kuard created
 
 $ kubectl get deployment
@@ -355,7 +355,7 @@ kuard   <none>   <domännamn>   20.105.99.40    80, 443   58s
 
 För att kolla att det fungerar, gå till webbläsaren och gå till ert domännamn. **Använd** `http://` framför, vi har inte skaffat certifikat för HTTPS än. I webbläsaren borde ni få upp en säkerhetsvarning, då funkar det.
 
-Ni kan också testa det från terminalen med `curl -kivL -H 'Host: www.<domän>' 'http://<ip>'`. Då ska ni få en av två följande ut utskrifter:
+Ni kan också testa det från terminalen med `curl -kivL http://<domän>` eller `http://<ip>`. Då ska ni få en av två följande ut utskrifter:
 
 ```
 ...
@@ -766,7 +766,7 @@ That's it! Nu kan ni gå till er domän i webbläsaren och ni borde mötas av en
 Städa upp {#cleanup}
 -------------------------------
 
-Gå in på Azure och radera ert kluster.
+Gå in på Azure och radera ert kluster eller kör kommandot `kubectl delete all --all` för att radera alla resurser i klustret.
 
 
 

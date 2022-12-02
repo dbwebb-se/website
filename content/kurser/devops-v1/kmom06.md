@@ -65,7 +65,10 @@ K8s använder yaml filer för att skriva konfigurationen i filer, som Ansible. F
 
 Läs igenom [Kubernetes deployment tutorial](https://devopscube.com/kubernetes-deployment-tutorial/) 
 
-Gör följande Katakoda för att öva på k8s. [Deploy containers using Yaml](https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions).
+<!-- Gör följande Katakoda för att öva på k8s. [Deploy containers using Yaml](https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions). 
+
+Den försvann med katakoda. har inte hittat en bra ersättare.
+-->
 
 
 
@@ -73,16 +76,15 @@ Gör följande Katakoda för att öva på k8s. [Deploy containers using Yaml](ht
 
 K8s bygger på virtualisering och containrar, vilket i grunden är stateless. Vi har inte tillgång till persistent data, när vi stänger ner en container så försvinner dess data. K8s och även Docker är i grunden byggt för att köra stateless applikationer, men när populariteten av verktygen har ökat har även användningsområden ökat och de har då lagt till olika lösningar för att få till persistent data (stateful). Men det är inte lika lätt att få till persistent data i K8s som det är i Docker.
 
-Läs [Stateful vs Stateless Applications on Kubernetes](https://linuxhint.com/stateful-vs-stateless-kubernetes/) för en bättre genomgång av skillnaden.
+- Läs [Stateful vs Stateless Applications on Kubernetes](https://linuxhint.com/stateful-vs-stateless-kubernetes/) för en bättre genomgång av skillnaden.
+
+- Jobba igenom [Deploying PHP Guestbook application with Redis](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/).
 
 <!-- ** guiden nedanför funkar bra på aks!!!!!** Om de har skapat resursgrupp och satt upp ett kluster redan. Funkade med 1 nod.
 
 I så fall gör första delen av den nya artikeln, videon, installera saker och aktivera config
  -->
 
-Ni ska börja med att öva på att skapa en stateless applikation och som tur är har K8s själva en bra guide för det. För guiden behöver ni ha tillgång till ett k8s kluster. I guiden finns det länkar till sandbox miljöer både i "Katacoda" och "Play with Kubernetes" som ni kan använda. Jag rekommenderar Katacoda då jag inte fick Play with K8s att fungera. Katacoda har dessutom Nano installerat så ni kan skriva konfigurationen till filer. Allt borde fungera utan problem fram tills steget [Viewing the Frontend Service via NodePort](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/#viewing-the-frontend-service-via-nodeport), Katacoda använder inte minikube för att starta sitt kluster så då kan ni inte använda det för att få en extern ip till ert kluster. Istället kan ni i Katacoda klicka på `+` som finns uppe på er terminal och välja `select port to view on host 1`. Då öppnas en ny tab i webbläsaren med koppling till klustret och där skriver ni in NodePort för er frontend service.
-
-Jobba igenom [Deploying PHP Guestbook application with Redis](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/).
 
 
 
@@ -96,7 +98,12 @@ Kolla på följande videos om volymer i Kubernetes.
 
 [YOUTUBE src="OulmwTYTauI" caption="Kubernetes Volumes 2: Understanding Persistent Volume (PV) and Persistent Volume Claim (PVC)"]
 
-Jobba igenom [Persistent volumes](https://www.katacoda.com/mjboxboat/courses/kubernetes-fundamentals-2/persistent-volumes) på Katacoda.
+
+- Läs [StatefulSet Basics](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/).
+
+- Jobba igenom [Deploying WordPress and MySQL with Persistent Volumes](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/).
+
+<!-- Jobba igenom [Persistent volumes](https://www.katacoda.com/mjboxboat/courses/kubernetes-fundamentals-2/persistent-volumes) på Katacoda. -->
 
 <!-- https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/ -->
 
@@ -212,7 +219,7 @@ Kolla på "Running Kubernetes in Production: A Million Ways to Crash Your Cluste
 
 Det finns generellt kursmaterial i video form.
 
-1. Kursen innehåller föreläsningar som spelas in och därefter läggs i spellistan "[devops streams ht21](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8g4N0v72y47OiNePhjOqqN)".
+1. Kursen innehåller föreläsningar som spelas in och därefter läggs i spellistan "[devops streams ht22](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8t5NnxhZIJC69_FL55FzNV)".
 
 1. I "[kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78)" hittar du alla videor som är kopplade till kursmomentet, de börjar på 6xx i namnet.
 

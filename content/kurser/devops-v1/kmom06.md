@@ -190,9 +190,19 @@ Jobba sen med i följande video för att testa på att skala er deployment.
 
 [YOUTUBE src=webuyGs-spQ  caption="Autoscale ett kubernetes kluster med HPA."]
 
+
+
+#### Testa olika driftsättningsstrategier i Kubernetes {#drift}
+
+Om ni vill och har tid över kan ni testa olika driftsättningsstrategier med Kubernetes. Jag har inte hunnit testa dem än, så jag vet inte om det funkar (men det borde göra det).
+
+- [Deployment Strategies In Kubernetes](https://auth0.com/blog/deployment-strategies-in-kubernetes/)
+
+
 [INFO]
 När ni har gjort det kan ni radera ert AKS kluster i Azure, ni behöver bara lämna in filerna för rättning.
 [/INFO]
+
 
 
 ### Kubernetes i produktion {#production}
@@ -202,8 +212,6 @@ Vårt kluster är väldigt simpelt, det är mer ett utvecklings kluster än någ
 - [Kubernetes in production vs. Kubernetes in development: 4 myths](https://enterprisersproject.com/article/2018/11/kubernetes-production-4-myths-debunked)
 
 - [7 Key Considerations for Kubernetes in Production](https://thenewstack.io/7-key-considerations-for-kubernetes-in-production/)
-
-- [Deployment Strategies In Kubernetes](https://auth0.com/blog/deployment-strategies-in-kubernetes/)
 
 Kolla på "Running Kubernetes in Production: A Million Ways to Crash Your Cluster" där Henning Jacobs från websidan [Zalando.se](https://www.zalando.se/) pratar om hur de använder Kubernetes och vad de lärt sig av att köra det i produktions miljön.
 
@@ -259,3 +267,5 @@ Se till att följande frågor besvaras i texten:
 1. Vad är viktigt att tänka på när man ska köra K8s i produktion?
 
 1. Hur känns det efter att ni använt K8s, var det lika svårt som alla skriver/säger att det är?
+
+1. Testade ni de olika driftsättningsstrategierna? Funkade det?

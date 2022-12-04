@@ -75,7 +75,7 @@ Om du inte har en fungerande Dockermiljö kan du installera paketen med `compose
 
 * Gör en sårbarhetsanalys, enligt samma kravspecifikation som i kmom04. För godkänt ska minst 5 st sårbarheter identifieras. Spara sårbarhetsanalysen i `kmom10/sårbarhetsanalys.pdf`.
 
-* Implementera testfall för sårbarheterna ca 3-5 per sårbarhet.
+* Implementera testfall för sårbarheterna ca 3-5 per sårbarhet. 
     * Det går att använda valfri "testsuite", men rekommendationen ligger på PHPUnit tillsammans med `make test` eller `composer test` (mer om Composer Script [här](https://getcomposer.org/doc/articles/scripts.md#writing-custom-commands)).
     * Dokumentera i redovisningstexten vad du valde och hur man kör testerna. Notera även PHP-version du använder om du kör utanför Docker.
 
@@ -139,6 +139,8 @@ Redovisning {#redovisning}
 2. Glöm inte länka till projektet.
 
 3. Se till att allt är publicerat.
+
+4. Redovisningsvideo med dig och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen, berätta vilka sårbarheter du hittat, åtgärderna, testverktyg och testfall. Visa gärna hur du kör dina testfall. Om du gjort de optionella kraven, så får du ett par minuter extra för att visa vad du gjort.
 
 ```bash
 # Ställ dig i kursrepot

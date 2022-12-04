@@ -146,3 +146,5 @@ Redovisning {#redovisning}
 # Ställ dig i kursrepot
 dbwebb publish me
 ```
+
+4. Redovisningsvideo med dig och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen, berätta vilka sårbarheter du hittat, åtgärderna, testverktyg och testfall. Visa gärna hur du kör dina testfall. Om du gjort de optionella kraven, så får du ett par minuter extra för att visa vad du gjort.

@@ -141,7 +141,7 @@ Kursmomentet ger en övergripande introduktion till både symmetriska och asymme
 
 Mjukvarutest ökar kvaliteten i den mjukvara som skrivs, men hur fungerar det med säkerhetstest. I detta kursmomentet, som bygger på sårbarhetsanalyser, går vi igenom vad säkerhetstester innebär och vad man behöver tänka på.
 
-[Instruktion till kursmoment 06](./kmom05).
+[Instruktion till kursmoment 05](./kmom05).
 
 
 

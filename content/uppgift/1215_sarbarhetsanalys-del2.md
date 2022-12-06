@@ -56,7 +56,9 @@ Dokumentera dina tester i ett eget kapitel. Berätta vilka testfall du gjorde oc
 
 ### Skriv testfall {#testfall}
 
-Skriv godtyckligt antal testfall (3+) per sårbarhet som demonstrerar hur man kan utnyttja sårbarheten och hur beteendet borde vara när det det fungerar som det ska. Först ska testfallen gå fel, visa rött, och det redovisar du med en skärmdump eller liknande i Appendix. Dessa testfall ska vara gröna när du sedan har åtgärdat sårbarheten. Redovisa även testfallen när de går rätt med en skärmdump eller liknande i Appendix. Minimum 9 testfall totalt.
+Skriv godtyckligt antal testfall (3+) per sårbarhet som demonstrerar hur man kan utnyttja sårbarheten och hur beteendet borde vara när det det fungerar som det ska. Först ska testfallen gå fel, visa rött, och det redovisar du med en skärmdump eller liknande i Appendix. Dessa testfall ska vara gröna när du sedan har åtgärdat sårbarheten. Redovisa även testfallen när de går rätt med en skärmdump eller liknande i Appendix. 
+
+Minimum 9 testfall totalt.
 
 Testerna ska gå att köras via `npm test`. Om testerna körs på ett annat sätt så dokumenterar du det så att det enkel går att köra dina tester.
 

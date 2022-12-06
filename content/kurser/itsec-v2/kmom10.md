@@ -20,6 +20,8 @@ Kursen uppdateras inför HT22. Är "gula rutan" borta är det fritt fram att bö
 
 Detta kursmoment avslutar och examinerar kursen.
 
+**Du jobbar enskilt och tar inte hjälp av någon.**
+
 Upplägget är enligt följande:
 
 * _Projektet och redovisning (30-80h)_
@@ -145,4 +147,4 @@ Redovisning {#redovisning}
 dbwebb publish me
 ```
 
-4. Redovisningsvideo med dig och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen, berätta vilka sårbarheter du hittat, åtgärderna, testverktyg och testfall. Visa gärna hur du kör dina testfall. Om du gjort de optionella kraven, så får du ett par minuter extra för att visa vad du gjort.
+4. Redovisningsvideo med dig (facecame) och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen av sårbarheter du hittat och med vilken metod. Berätta vilken testmetod du valt, testverktyg och testfall. Visa hur du kör dina testfall. Visa den sammanfattande tabellen med åtgärderna du gjort och gärna kod (vad har du gjort för åtgärd i koden). Om du gjort de optionella kraven, så får du ett par minuter extra per krav för att visa vad du gjort.

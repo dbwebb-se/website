@@ -766,7 +766,7 @@ That's it! Nu kan ni gå till er domän i webbläsaren och ni borde mötas av en
 Städa upp {#cleanup}
 -------------------------------
 
-Gå in på Azure och radera ert kluster eller kör kommandot `kubectl delete all --all` för att radera alla resurser i klustret.
+Gå in på Azure och radera ert kluster eller kör `kubectl delete all --all` och `kubectl delete ingress name -n namespace` för att radera alla resurser i klustret.
 
 
 

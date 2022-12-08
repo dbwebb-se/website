@@ -65,7 +65,7 @@ Uppgiften är indelad i två delar, en del angående innehåll och en där du sk
 
 1. Aktivera ditt tema i `me/portfolio/config/config.yml`.
 
-1. Gör en `dbwebb publish me` och kontrollera att allt fungerar på studentservern.
+1. Gör en `dbwebb publishpure me` och kontrollera att allt fungerar på studentservern.
 
 1. Commit:a alla filer, inklusive temat och lägg till en (ny) tagg (2.0.\*).
 

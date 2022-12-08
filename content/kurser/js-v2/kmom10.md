@@ -20,7 +20,7 @@ Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
 ## Bedömning och betygsättning {#bedomning}
 
-När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/bedomning-och-betygsattning).
+När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning i kursen js](kurser/bedomning-och-betygsattning-js).
 
 ### Uppgifter {#uppgifter}
 
@@ -32,7 +32,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1\. På din redovisningssida, skriv följande:
 
-1.1. För varje krav du implementerat, dvs 1-6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
+1.1. För varje deltest du implementerat, dvs 1-6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 
 1.2. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
@@ -53,6 +53,8 @@ Dessa uppgifter skall utföras och redovisas.
 4. Försök hålla presentationen som en demo i arbetslivet, det är bra träning.
 
 5. Sikta på 4-5 minuter.
+
+6. Lägg till videon som en kommenat i Canvas, lägg inte upp den på Youtube.
 
 ### Publicera {#publish}
 

@@ -15,11 +15,7 @@ Assignment gruppvis
 1. [System Design Specification (SDS)](kurser/vteam-v1/assignment/system-design-specification)
 1. [Riskanalys](kurser/vteam-v1/assignment/risk-analysis)
 1. [Teknikval för implementation](kurser/vteam-v1/assignment/technical-implementation)
-1. Leverans
-
-<!--
 1. [Leverans](kurser/vteam-v1/assignment/delivery)
--->
 
 Assignment individuella
 

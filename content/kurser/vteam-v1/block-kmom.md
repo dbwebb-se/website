@@ -4,12 +4,9 @@ Projektkurs där vi i grupper om 4 studenter blandar campus och distans för att
 
 Material
 
-<!--
 * [Bakgrundsmaterial och kravspecifikation](kurser/vteam-v1/bakgrundsmaterial-och-uppgift)
     * [Tips, trix och förtydliganden](kurser/vteam-v1/tips-trix-och-fortydliganden)
--->
 * [Veckoplan](kurser/vteam-v1/veckoplanering)
-* [Tips, trix och förtydliganden](kurser/vteam-v1/tips-trix-och-fortydliganden)
 * [Tekniska studier och rapporter](kurser/vteam-v1/tekniska-rapporter)
 
 Assignment gruppvis

@@ -33,7 +33,7 @@ Totalt omfattar kursmomentet (07/10) ca 30+25+25 studietimmar.
 Bedömning och betygsättning {#bedomning}
 --------------------------------------------------------------------
 
-När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/bedomning-och-betygsattning-quiz). I detta projekt har krav 4-6 slagits ihop till 2 lite större krav, krav 4 och krav 5.
+När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/faq/bedomning-och-betygsattning-quiz). I detta projekt har krav 4-6 slagits ihop till 2 lite större krav, krav 4 och krav 5.
 
 
 

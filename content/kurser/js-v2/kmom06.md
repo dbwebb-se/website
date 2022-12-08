@@ -52,7 +52,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page 6](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom06/02_mepage6.md)". Spara resultatet i `me/redovisa/`.
 
-TBD: [YOUTUBE src=XYZ width=639 caption="Hur kan det se ut när det är klart"]
+[YOUTUBE src=C1oDcKZ4B6s width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

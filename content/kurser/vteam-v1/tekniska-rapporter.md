@@ -29,7 +29,7 @@ Här följer ett par tekniska studier (och liknande) som utfördes under 2022.
 
 1. [Teknisk studie om Load Balancers för REST API](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/load-balancer.md)
 
-1. [Hantering av geodata i databas/backend](https://github.com/sonnerberg/vteam-sds/blob/main/teknisk_analys_geo/teknisk_analys_geo.md)
+1. [Hantering av geodata i databas/backend](https://github.com/virtuella-team/vteam-sds/blob/main/teknisk-analys-geo/teknisk_analys_geo.md)
 
 1. [Prestandatester](https://github.com/virtuella-team/vteam/tree/tzLocal), i har gjort några CRU(inget D) tester för att se hur backend reagerar på en stor mängd anrop på kort tid. 
 
@@ -47,6 +47,10 @@ Här följer ett par tekniska studier (och liknande) som utfördes under 2022.
 1. Här kommer ytterligare en Teknisk Studie / Guide i samma tema som ovan (Dummy data). Här kikar vi på ett sätt att "lansera" en stad. Staden ska ha verkliga positioner, laddstationer och cyklar. Artikeln går igenom hur vi kan skapa DML-filer med Python som tillsammans skapar ~1600 stationer med ~8400 laddplatser och ~8400 cyklar runtom Stockholm. Artikeln är inte tänkt för att ge läsaren färdig kod att implementera utan snarare visa ett sätt att producera stora mängder falsk men ändå "äkta" data. Denna Studie är rätt "matig", men målet är att producera data till flera tabeller med fokus på relationer i form av främmande nycklar mellan tabeller.
 
     * [Dummy data for dummies - Relationships](https://github.com/johnfredriksson/tech-studies/blob/main/dummy-data-for-dummies/dummy-data-for-dummies-relations.md)
+
+1. Här kommer en ny Teknisk Studie som handlar om Redis. Det blir en första introduktion till vad Redis är och varför det används. Sedan skapar vi en Redis-server i en docker container som vi manipulerar med Redis-klienten. Där provar vi på datatyper och metoder. I den andra halvan av Artikeln så försöker vi hitta ett syfte för Redis i vårt projekt. Vi går sedan vidare med att inkludera vår Redis-container i den befintliga 'docker-compose.yml' för projektet. Redis byggs in som ett lager mellan en route och databasen för att cacha undan datan som hämtas.
+
+    * [Meet Redis, the first introduction to the in-memory cache](https://github.com/johnfredriksson/tech-studies/blob/main/redis/meet-redis.md)
 
 
 

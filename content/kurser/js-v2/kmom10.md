@@ -1,12 +1,9 @@
 ---
 author: lew
 revision:
+  "2022-12-08": (B, lew) Uppdaterad inför ht22.
   "2021-12-10": (A, lew) Uppdaterad inför ht21.
 ...
-
-[WARNING]
-Kursmomentet är under uppdatering inför HT2022. Kursmaterialet kan komma att ändras så länge "gula rutan" är kvar.
-[/WARNING]
 
 # Kmom10: Projekt och examination
 

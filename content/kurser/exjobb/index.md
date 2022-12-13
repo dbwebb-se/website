@@ -2,7 +2,9 @@
 title: exjobb
 author:
     - mos
+    - efo
 revision:
+    "2022-12-13": "(K, efo) Uppdaterad inför VT2023."
     "2019-01-16": "(J, mos) Uppdaterade rätt poäng för ladokmoment."
     "2018-12-19": "(I, mos) Ny struktur med guide för infon."
     "2018-04-19": "(H, mos) Instruktioner för opponering."
@@ -21,7 +23,7 @@ Kursen **Självständigt arbete i Webbprogrammering**, a.k.a. *exjobb*, syftet m
 
 Betoningen i examensarbetet ligger på det tekniska innehållet. Arbetet kan vara av utredande eller konstruktiv karaktär.
 
-Resultatet från examensarbetet är en rapport där studenten som visar kunskaper, förståelse, förmågor och förhållningssätt som krävs av en högskoleingenjör. 
+Resultatet från examensarbetet är en rapport där studenten som visar kunskaper, förståelse, förmågor och förhållningssätt som krävs av en högskoleingenjör.
 
 Examensarbetet genomförs företrädesvis i samarbete med ett företag.
 
@@ -101,12 +103,50 @@ Som referenslitteratur och alternativ kursbok på engelska, finns följande.
 
 
 
-Kursmaterial {#kursmaterial}
+Kursmoment {#moment}
 -----------------------------------------------------
 
-Som ytterligare komplement till litteraturen så finns en [guide](./guide) som visar dig de olika moment som kursen omfattar samt tips och trix som hjälper dig fram.
+Examensarbetetskursen PA1438 är uppbyggt på ett lite annorlunda sätt och över en längre tidsperiod än vanliga dbwebb-kurser. Dock återfinns kursmoment som tidigare, dock spänner de över större tidsperioder.
 
-För generellt stöd och diskussioner finns ett [kursforum](forum/utbildning/exjobb) och en [kurschatt](https://gitter.im/dbwebb-se/exjobb).
+
+
+### Topic {#topic}
+
+Vi börjar kursen med att fundera över vilket område vi vill utforska och studera. Topic är det första dokumentet vi skriver och ger grunden för hela arbetet. Ett stort fokus är att definiera forskningsfrågor och att beskriva värdet och syftet med arbetet.
+
+[Instruktion till Topic](./topic).
+
+
+
+### Proposal {#proposal}
+
+Nästa steg är att tillsammans med din tilldelade handledare jobba vidare med att förfina din ide och skriva ett proposal. I proposal har vi ett stort fokus på att förfina val av metod och att säkerställa vetenskapligheten i arbetet.
+
+[Instruktion till Proposal](./proposal).
+
+
+
+### Rapport {#report}
+
+Nu börjar arbetet på riktigt, en studie ska genomföras och en rapport om studien ska skrivas. Vi tittar på akademiskt språk, redovisning av metod och resultat, samt hur resultaten kan kopplas till befintlig litteratur inom ditt valda område.
+
+[Instruktion till Rapport](./rapport).
+
+
+
+### Opponeringsrapport {#opposition}
+
+Som en del av kursen ska vi opponera på en annan students rapport, beskriva förbättringsområden och ge konstruktiv kritik.
+
+[Instruktion till Opponeringsrapport](./opponeringsrapport).
+
+
+
+### Uppdaterad rapport {#updated}
+
+Som avslutning på kursen uppdaterar vi rapporten på bakgrund av återkopplingen från examinator och opponering. Vi förbereder även för publicering av arbetet i Diva-portal.
+
+[Instruktion till Uppdaterad rapport](./uppdaterad).
 
 
 

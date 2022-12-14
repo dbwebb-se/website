@@ -34,6 +34,14 @@ SWEBOK finns som [PDF](article/exjobb/swebok-v3.pdf) här på dbwebb.se.
 
 
 
+### Video {#video}
+
+Titta igenom följande video för att effektivisera ditt läsande av vetenskapliga artiklar.
+
+[YOUTUBE src=IeaD0ZaUJ3Y width=630 caption="Professor Pete Carr pratar om hur man läser vetenskapliga artiklar."]
+
+
+
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 

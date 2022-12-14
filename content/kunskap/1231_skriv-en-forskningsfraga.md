@@ -56,7 +56,7 @@ Nu har vi en avgränsad fråga som är specifik men ändå tillräckligt komplex
 
 **RQ1:** Hur upplever utvecklare att funktionstestning i frontend i JavaScript säkerställer programvarans funktionalitet?
 
-**RQ2:** Vilket sammanband finns mellan användandet av funktionstestning i Open Source frontend JavaScript-projekt och antalet issues på GitHub?
+**RQ2:** Vilket samband finns mellan användandet av funktionstestning i Open Source frontend JavaScript-projekt och antalet issues på GitHub?
 
 
 

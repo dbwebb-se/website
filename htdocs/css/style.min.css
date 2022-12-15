@@ -32,3 +32,13 @@ h6 {
     font-family: "Helvetica", "Arial", sans-serif;
     font-weight: bold;
 }
+
+.rm-navbar,
+.rm-navbar-top.rm-navbar {
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.block>h4 {
+    line-height: inherit;
+}

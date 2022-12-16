@@ -28,9 +28,21 @@ Läs kapitel *5. Litteratur- och informationssökning till uppsatsen* i **Att sk
 
 ### Lästips {#lastips}
 
+
+
+#### SWEBOK {#swebok}
+
 Bekanta dig med [SoftWare Engineering Book Of Knowledge](https://www.computer.org/education/bodies-of-knowledge/software-engineering) (SWEBOK) för att säkerställa att ditt område för studien faller inom ämnesområdet *Programvaruteknik*.
 
 SWEBOK finns som [PDF](article/exjobb/swebok-v3.pdf) här på dbwebb.se.
+
+
+
+#### Läs tidigare exjobb {#tidigare}
+
+Alla tidigare exjobb skrivna som kandidatarbeten eller högskolearbeten finns på sidan [Läs gamla examensjobb](kurser/exjobb/guide/las-gamla-examensjobb).
+
+Exempel på bra Topic (där även proposal och det färdiga arbetet finns med) finns på sidan [Bra topics från tidigare år](kurser/exjobb/guide/bra-topics-fran-tidigare-ar).
 
 
 

@@ -52,6 +52,12 @@ Titta igenom följande video för att effektivisera ditt läsande av vetenskapli
 
 [YOUTUBE src=IeaD0ZaUJ3Y width=630 caption="Professor Pete Carr pratar om hur man läser vetenskapliga artiklar."]
 
+För att lära dig om sättet vi refererar på med hjälp av IEEE-standarden är detta en bra introduktion.
+
+<div class="embed-container">
+    <iframe src="https://player.vimeo.com/video/220916942?h=ba06cece7b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 
 Övningar & Uppgifter  {#ovningar_uppgifter}

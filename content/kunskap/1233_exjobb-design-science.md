@@ -25,6 +25,9 @@ Metod best practices {#best-practices}
 
 Vi lyfter ett antal _guidelines_ för att genomföra en _design science_ studie från [1]. Först beskrivs Guideline och sedan vart man kan hitta rekommendationen i artikeln.
 
+
+| Guideline | Del av artikel |
+|================|===============|
 | [G1] Distinguish practical problems from knowledge questions | Section 2. In practical problems stakeholders desire to change the world, in knowledge questions the researcher desires to change his/her knowledge of the world. |
 | [G2] Solve practical problems by the regulative cycle | Figure 1. |
 | [G3] Distinguish problem investigation from design validation | Section 3. In problem investigation existing phenomena are investigated, in design validation the effects of an unimplemented design are predicted |
@@ -38,6 +41,9 @@ Vi lyfter ett antal _guidelines_ för att genomföra en _design science_ studie 
 
 Och för att utvärdera de olika delar av vår design eller lösningen på problemet kan vi använda dessa metoder enligt [2].
 
+
+| Del av studie | Sätt att utvärdera delen |
+|================|===============|
 | 1. Observational | **Case Study:** Study artifact in depth in business environment<br>**Field Study:** Monitor use of artifact in multiple projects |
 | 2. Analytical | **Static Analysis:** Examine structure of artifact for static qualities (e.g., complexity)<br>**Architecture Analysis:** Study fit of artifact into technical IS architecture<br>**Optimization:** Demonstrate inherent optimal properties of artifact or provide optimality bounds on artifact behavior<br>**Dynamic Analysis:** Study artifact in use for dynamic qualities (e.g., performance) |
 | 3. Experimental | **Controlled Experiment:** Study artifact in controlled environment for qualities (e.g., usability)<br>**Simulation:** Execute artifact with artificial data |

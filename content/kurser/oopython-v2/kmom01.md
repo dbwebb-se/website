@@ -12,6 +12,11 @@ Kmom01: Kom igång med objekt och Flask
 Vi ska börjar kursen med grunderna om objekt och klasser. Vid sidan av ska vi arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.
 
 <!--more-->
+
+[WARNING]
+Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
+[/WARNING]
+
 [INFO]
 
 Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.

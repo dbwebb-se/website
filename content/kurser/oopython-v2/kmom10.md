@@ -12,6 +12,11 @@ Kmom10: Projekt och examination
 
 Detta kursmoment avslutar och examinerar kursen.
 
+[WARNING]
+Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
+[/WARNING]
+
+
 Upplägget är enligt följande:
 
 * Projektet och redovisning (20-80h)

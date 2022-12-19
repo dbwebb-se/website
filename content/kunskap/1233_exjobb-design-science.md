@@ -57,7 +57,10 @@ Metod referenser {#references}
 
 [1] Wieringa, Roel. "Design science as nested problem solving." In Proceedings of the 4th international conference on design science research in information systems and technology, pp. 1-12. 2009.
 
-[2]
+[2] Hevner, Alan R., Salvatore T. March, Jinsoo Park, and Sudha Ram. "Design science in information systems research." MIS quarterly (2004): 75-105.
+
+
+
 Avslutningsvis {#avslutning}
 --------------------------------------
 

@@ -26,10 +26,6 @@ Läs kapitel *5. Litteratur- och informationssökning till uppsatsen* i **Att sk
 
 
 
-### Lästips {#lastips}
-
-
-
 #### SWEBOK {#swebok}
 
 Bekanta dig med [SoftWare Engineering Book Of Knowledge](https://www.computer.org/education/bodies-of-knowledge/software-engineering) (SWEBOK) för att säkerställa att ditt område för studien faller inom ämnesområdet *Programvaruteknik*.

@@ -258,6 +258,10 @@ Läs om hur [vi jobbar med kursutvärdering och kursutveckling](kurser/kursutvar
 Kursplan {#kursplan}
 -----------------------------------------------------
 
+<!--
+From ht23 alt ht24: DV1673 Kontinuerlig integration och driftsättning i molnet, 7,5 hp
+-->
+
 Kursens namn är "Kontinuerlig integration och driftsättning i molnet". Du hittar [kursplanen genom att söka på kurskoden DV1658 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1658).
 
 Fram till och med 2021 gick kursen med kurskoden [DV1617](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1617)

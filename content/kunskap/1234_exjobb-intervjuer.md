@@ -14,18 +14,27 @@ I denna övning tittar vi på metoden _Intervjuer_, som är en lämplig metod f�
 
 
 
-Metoden Intervjuer {#metod}
+Metod best practices {#best-practices}
 --------------------------------------
+
+Välj att genomföra strukturerade, semi-strukturerade eller fria intervjuer. Oftast är semi-strukturerade intervjuer att föredra då alla respondenter besvarar samma uppsättning frågor, men intervjuaren har möjlighet att ställa följdfrågor [1, p. 83].
+
+Använd en intervjuguide för att säkerställa att alla frågor ställs och att frågorna ställs i rätt ordning.
+
+För ytterligare tydlighet och vetenskaplighet använd Brinkmann och Kvales [1,
+pp. 40-45] metod i sju steg för att säkerställa kvalitet i intervjustudier. Med metoden tydliggör vi varför studien ska göras,
+designar studien, genomför intervjuerna, transkriberar, analyserar, verifierar resultaten och slutligen rapporterar resultaten och slutsatser.
 
 
 
 Metod referenser {#references}
 --------------------------------------
 
+[1] Brinkmann, S. and Kvale, S., 2018. Doing Interviews. Qualitative Research Kit. Second55 City Road, London: SAGE Publications Ltd. [https://methods-sagepub-com.miman.bib.bth.se/book/doing-interviews-2e](https://methods-sagepub-com.miman.bib.bth.se/book/doing-interviews-2e)
 
+För ytterligare best practices se:
 
-Metod best practices {#best-practices}
---------------------------------------
+Dilley, P. (2000). Conducting Successful Interviews: Tips for Intrepid Research. Theory Into Practice, 39(3), 131–137. [http://www.jstor.org/stable/1477544](http://www.jstor.org/stable/1477544)
 
 
 

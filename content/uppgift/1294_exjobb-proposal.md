@@ -114,13 +114,13 @@ Lista de artiklar/material som du avser referera i ditt arbete. Se till att anv�
 Kravspecifikation {#reqs}
 -----------------------
 
-1. Använd ovanstående mall för att underlätta både för dig och för kursledningen.
+1. Använd ovanstående mall för att underlätta både för dig och för din handledare.
 
 1. Fokusera på att författa 2 (maximalt 3) avgränsade, specifika och tillräckligt komplexa forskningsfrågor.
 
 1. Genomför en litteratursökning enligt övningen i Topic. Se till att använda referenser enligt IEEE-standarden på ett korrekt sätt. Denna del av proposal kan i princip flyttas direkt till rapporten sen.
 
-1. Beskriv din(a) valda metod(er) utifrån metodlitteraturen och metodiken **vad? varför? hur?** (se [En bra metod](kurser/exjobb/guide/en-bra-metod)). Se till att du har ett antal referenser om metodiken och följ best practice för att stärka arbetets värde och reproducerbarhet.
+1. Beskriv din(a) valda metod(er) utifrån metodlitteraturen och metodiken **vad? varför? hur?** (se [En bra metod](kurser/exjobb/guide/en-bra-metod)). Se till att du har ett antal referenser om metodiken och följ best practice för att stärka arbetets värde och reproducerbarhet. Denna del av proposal kan i princip flyttas direkt till rapporten sen.
 
 
 

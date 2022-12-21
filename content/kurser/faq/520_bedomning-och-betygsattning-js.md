@@ -3,7 +3,7 @@ author: lew
 revision:
     "2022-12-08": "(A) Första utgåvan"
 ...
-Bedömning och betygsättning (projekt)
+Bedömning och betygsättning (js, projekt)
 ==================================
 
 Denna mall gäller för kurser som har en me-sida och avslutas med ett individuellt projekt.

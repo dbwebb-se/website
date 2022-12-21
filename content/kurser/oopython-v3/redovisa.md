@@ -11,7 +11,7 @@ Som ett sista steg i varje kursmoment skall ni lämna in veckan uppgifter. Gör 
 <!--more-->
 
 
-<!-- Jobbar ensam {#ensam}
+Jobbar ensam {#ensam}
 ---------------------------------------
 
 Även om du jobbar ensam behöver du ha gå med i en grupp på Canvas innan du gör första inlämningen. Gör sen följande när du ska lämna in ett kursmoment.
@@ -32,7 +32,7 @@ Svara på quizet som finns för kursmomentet du lämnar in.
 
 ### steg 3 {#e_3}
 
-Gör inlämning på uppgiften med namnet för kursmomentet. I texten skicka med länk till din användare på studentservern. -->
+Gör inlämning på uppgiften med namnet för kursmomentet. I texten skicka med länk till din användare på studentservern.
 
 
 

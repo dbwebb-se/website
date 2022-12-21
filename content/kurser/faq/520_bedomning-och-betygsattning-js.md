@@ -56,12 +56,13 @@ Följande tabell används vid bedömning av projektet.
 
 | Bedömningspunkt | Poäng | Din poäng |
 |-----------------|-------|-----------|
+| Koden validerar enligt kursens standard. | 4 | |
 | Deltest 1 är implementerat och fungerar felfritt. | 10 | |
 | Deltest 2 är implementerat och fungerar felfritt. | 10 | |
 | Deltest 3 är implementerat och fungerar felfritt. | 10 | |
 | Deltest 4 är implementerat och fungerar felfritt. | 15 (optionellt) | |
 | Deltest 5 är implementerat och fungerar felfritt. | 15 (optionellt) | |
-| JSDoc är implementerat och fungerar felfritt. | 10 (optionellt) | |
+| JSDoc är implementerat och fungerar felfritt. | 6 (optionellt) | |
 | TOTALT | 70 | |
 
 

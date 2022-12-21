@@ -31,6 +31,10 @@ Kursplan {#kursplan}
 
 Kursens namn är "JavaScript-baserade webbramverk". Du hittar [kursplanen genom att söka på kurskoden DV1612 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1612).
 
+<!--
+DV1677 JavaScript-baserade webbramverk, 7,5 hp
+från 2023 eller 2024
+-->
 
 
 Kursmaterial {#kursmaterial}

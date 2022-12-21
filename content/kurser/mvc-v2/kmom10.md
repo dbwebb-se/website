@@ -20,7 +20,17 @@ Totalt omfattar kursmoment 07/10 i storleksordningen 20--60 studietimmar.
 
 <!--more-->
 
+<!--
+* Rensa upp, städa, förenkla, förtydliga.
+* Någon uppgift som innebär mycket programmering och mindre databas?
+* Visa upp hur adventurespelet kan fungera?
+* Lägre betyg på hållbarhet eller lägg till någon del som kan ligga i databasen
 
+* Gör projekt som är helt nytt, istället för att bygga på de luddiga kmomen?
+
+* Om hållbarhet, gör mer krav på presentation med grader och referenser.
+    * Mer routes so det blir mer MVC.
+-->
 
 Introduktion {#pres}
 ------------------------

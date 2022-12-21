@@ -211,6 +211,10 @@ Kursplanen är kursens formella dokument som fastställts av högskolan. När ku
 
 Från och med hösten 2022 hittar du [kursplanen genom att söka på kurskoden PA1477 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=PA1477) och kursen heter "Programutveckling i virtuella team".
 
+<!--
+Ny kurskod från 2023 el 2024 -> DV1676
+-->
+
 
 <!--
 Versioner av kursen {#versioner}

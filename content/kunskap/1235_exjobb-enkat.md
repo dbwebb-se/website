@@ -8,6 +8,14 @@ Enkät
 
 I denna övning tittar vi på metoden _Enkäter_ och hur den vara ett braa sätt för att samla in kvantitativ och kvalitativ data från många individer. Nackdelen med metoden ligger precis i detta med _många individer_ då det krävs ganska många svar.
 
+[WARNING]
+
+**Artikeln är inte färdigställt.**
+
+Färdigställs innan kursstart.
+
+[/WARNING]
+
 
 
 <!--more-->

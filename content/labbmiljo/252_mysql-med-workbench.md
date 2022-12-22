@@ -41,8 +41,10 @@ För den som är väl bekant med Docker kan det vara ett kompletterande möjligh
 
 
 
-Äldre artiklar om numer ej används {#aldre}
+Äldre artiklar som numer ej används {#aldre}
 ----------------------------------
+
+Dessa användes senast vårterminen 2022 men från och med 2023 används enbart WSL2 som terminal på Windows.
 
 1. **[Endast Windowsanvändare]** Om du jobbar på Windows så skall du fortsätta med följande artikel så att du kan köra terminalklienten i godtycklig katalog.
 

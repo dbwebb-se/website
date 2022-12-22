@@ -37,6 +37,15 @@ Reflect on and answer the following questions by writing text with around 15 to 
 
 1. When it comes to "Software philosophies", did you find anything special that fits into your current project and are there more that you are using in your own day-to-day work?
 
+<!--
+* Referera till saker som sägs i föreläsningarna och exemplifiera. Koppla det du skriver till både föreläsningar, ditt projekt, tidigare kurser.
+
+* Gör som pdf. Använd några riktiga referenser stil IEEE.
+* Skriv som artikel, mer välstrukturerad, ange rubriker istället för frågor och förtydliga att man måste relatera till källor?
+* chatGPT diskussion  2022.
+https://discord.com/channels/118332969004957705/1027546182257496066/1055445818485776425
+-->
+
 
 
 Submission

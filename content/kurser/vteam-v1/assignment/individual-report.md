@@ -24,6 +24,23 @@ This is for mos to remember to move all text from Canvas to here and then link h
 <!--stop-->
 
 
+Skriv ett textstycke om cirka en (max två) A4 sidor som är din egen personliga reflektion av de lärdomar du gjort i kursen och i det projektet du jobbat.
+
+Lämna in som ett pdf-dokument eller som text här på Canvas.
+
+Svara minst på följande frågor.
+
+Reflektera över din grupps slutrapport, delar du alla slutsatser ni kom fram till eller vill du framhäva/förtydliga/lägga till något?
+Vilken är den viktigaste framgångsfaktorn för din grupp, vad gjorde ni verkligen bra och vad kunde ni gjort bättre?
+Vilka lärdomar drar du från ert projektarbete, vad hade du själv försökt göra bättre/annorlunda i nästa projekt?
+Vilka är dina egna 5 viktigaste tips till nästa års studenter av samma kurs, vad tycker du är mest viktigt för att lyckas med kursen, projektet, implementation och gruppen?
+Avsluta med din viktigaste TIL för hela kursen.
+
+
+---
+
+
+
 Requirements
 ------------------------
 

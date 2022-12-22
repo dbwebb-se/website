@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2022-12-22": "(G, mos) Bort med Windows cmd, path och cygwin."
     "2022-01-20": "(F, mos) Förtydligade strukturen vilka artiklar man skall jobba i."
     "2021-12-21": "(E, mos) Bort med referens till forum och ändra från MySQL till MariaDB och workbench i egen artikel samt flytta Windows terminaler till egna artiklar."
     "2019-01-09": "(C, mos) Lade till Docker."
@@ -23,14 +24,8 @@ Installation {#installation}
     * [Installera MariaDB Server på macOS](kunskap/installera-mariadb-server-pa-macos)
     * [Installera MariaDB Server på Linux](kunskap/installera-mariadb-server-pa-linux)
 
+1. **[Endast Windowsanvändare]** Du behöver se till att du kan jobba med terminalklienten i en Bash-terminal likt WSL2.
 
-1. **[Endast Windowsanvändare]** Om du jobbar på Windows så skall du fortsätta med följande artikel så att du kan köra terminalklienten i godtycklig katalog.
-
-    * [MariaDB klient och Windows med cmd terminalen](coachen/mariadb-och-windows-cmd-terminal)
-
-1. **[Endast Windowsanvändare]** Du behöver också se till att du kan jobba med terminalklienten i en Bash-terminal. Enklast är nog Cygwin men WSL2 är också trevligt.
-
-    * [MariaDB klient och Windows med Cygwin terminalen](coachen/mariadb-och-windows-cygwin-terminal)
     * [MariaDB klient och Windows med WSL2 bash terminal](coachen/mariadb-och-windows-wsl2-bash-terminal)
 
 1. Förutsatt att du kan logga in på databasen med din terminalklient så kan du nu gå vidare och [installera MySQL WorkBench](kunskap/installera-mysql-workbench).
@@ -43,3 +38,18 @@ Använd MySQL/MariaDB via Docker {#docker}
 ----------------------------------
 
 För den som är väl bekant med Docker kan det vara ett kompletterande möjlighet att köra databasservern som en docker kontainer. Du kan se hur man sätter upp grunderna i artikeln "[Kör MySQL Server och MySQL WorkBench via Docker](kunskap/kor-mysql-server-och-mysql-workbench-via-docker)".
+
+
+
+Äldre artiklar om numer ej används {#aldre}
+----------------------------------
+
+1. **[Endast Windowsanvändare]** Om du jobbar på Windows så skall du fortsätta med följande artikel så att du kan köra terminalklienten i godtycklig katalog.
+
+    * [MariaDB klient och Windows med cmd terminalen](coachen/mariadb-och-windows-cmd-terminal)
+
+1. **[Endast Windowsanvändare]** Du behöver också se till att du kan jobba med terminalklienten i en Bash-terminal. Enklast är nog Cygwin men WSL2 är också trevligt.
+
+    * [MariaDB klient och Windows med Cygwin terminalen](coachen/mariadb-och-windows-cygwin-terminal)
+    * [MariaDB klient och Windows med WSL2 bash terminal](coachen/mariadb-och-windows-wsl2-bash-terminal)
+

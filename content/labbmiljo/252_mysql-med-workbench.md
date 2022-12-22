@@ -21,7 +21,7 @@ Installation {#installation}
 1. Välj rätt artikel beroende på vilket operativsystem du använder.
 
     * [Installera MariaDB Server på Windows 10](kunskap/installera-mariadb-server-pa-windows-10)
-        * [MariaDB klient och Windows med WSL2 bash terminal](coachen/mariadb-och-windows-wsl2-bash-terminal)
+        * [Windows: MariaDB klient med WSL2 bash terminal](coachen/mariadb-och-windows-wsl2-bash-terminal)
 
     * [Installera MariaDB Server på macOS](kunskap/installera-mariadb-server-pa-macos)
     * [Installera MariaDB Server på Linux](kunskap/installera-mariadb-server-pa-linux)

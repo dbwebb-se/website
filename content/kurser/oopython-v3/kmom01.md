@@ -1,12 +1,9 @@
 ---
 author: aar
 revision:
-    "2022-01-14": (C, aar, grm) Bytt uppgift och lagt till övningar.
-    "2018-11-16": (B, aar) Uppdaterat länkar och redv. frågor.
-    "2017-11-10": (PB1, mos) Utkast till v2.
-    "2017-01-06": (A, mos) Lade till CGI på studentservern.
+    "2023-01-04": (A, aar) Skapade inför vt23.
 ...
-Kmom01: Kom igång med objekt och Flask
+Kmom01: Kom igång med UML
 ====================================
 
 Vi ska börjar kursen med grunderna om objekt och klasser. Vid sidan av ska vi arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.

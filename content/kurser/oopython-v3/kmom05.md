@@ -5,7 +5,7 @@ revision:
 category:
     - oopython
 ...
-Kmom04: Datastrukturer
+Kmom05: Datastrukturer
 ====================================
 
 [FIGURE src=/image/oopython/kmom04/index_list.png?w=c8 class="right"]

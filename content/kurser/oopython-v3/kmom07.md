@@ -8,7 +8,7 @@ revision:
     "2017-11-10": (PB1, mos) Utkast till v2.
     "2017-02-14": (A, lew) First version.
 ...
-Kmom06: Datastrukturen träd
+Kmom07: Datastrukturen träd
 ====================================
 
 Vi jobbar vidare med datastrukturer, algoritmer och rekursion genom att kolla på träd strukturer. Mer specifikt ska vi lära oss skapa ett Binärt sökträd och skapa algoritmer som kan traversera trädet rekursivt.

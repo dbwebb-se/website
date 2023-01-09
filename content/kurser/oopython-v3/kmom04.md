@@ -8,7 +8,7 @@ revision:
     "2019-01-19": (B, aar) Tog bort uppgifter om sekvensdiagram.
     "2017-12-13": (A, lew) New version for v2.
 ...
-Kmom03: UML och unittest
+Kmom04: UML och unittest
 ====================================
 
 [FIGURE src=/image/oopython/kmom02/kmom02_top.jpg class="right"]

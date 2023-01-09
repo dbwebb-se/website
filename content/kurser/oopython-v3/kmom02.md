@@ -1,6 +1,9 @@
 ---
-author: aar
+author: 
+    - aar
+    - grm
 revision:
+    "2023-01-09": (A, aar, grm) Uppdaterat inför vt23.
     "2022-01-14": (C, aar, grm) Bytt uppgift och lagt till övningar.
     "2018-11-16": (B, aar) Uppdaterat länkar och redv. frågor.
     "2017-11-10": (PB1, mos) Utkast till v2.
@@ -9,7 +12,7 @@ revision:
 Kmom02: Kom igång med Flask och testning
 ====================================
 
-Vi ska börjar kursen med grunderna om objekt och klasser. Vid sidan av ska vi arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.
+Vi ska göra grunden till ett Yahtzee spel och börja med testning. Vi kommer att arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.
 
 <!--more-->
 

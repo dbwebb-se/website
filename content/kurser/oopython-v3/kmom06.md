@@ -4,7 +4,7 @@ revision:
     "2018-01-31": (A, aar) Första version v2.
     "2017-11-10": (PF1, mos) Utkast till v2.
 ...
-Kmom05: Sorteringsalgoritmer och datastrukturer
+Kmom06: Sorteringsalgoritmer och datastrukturer
 ====================================
 
 Vi ska titta på hur några av de vanligaste sorteringsalgoritmerna ser ut och fungerar. Samtidigt ska vi lära oss hur man skriver rekursiva funktioner.

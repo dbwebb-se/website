@@ -7,7 +7,7 @@ revision:
     "2017-11-24": (A, lew) oopython v2.
     "2017-11-10": (PE1, mos) Utkast till v2.
 ...
-Kmom02: Arv och andra klassrelationer
+Kmom03: Arv och andra klassrelationer
 ====================================
 
 [FIGURE src=/image/oopython/kmom02/kmom02-class-relations.png class="right"]

@@ -1,12 +1,15 @@
 ---
-author: aar
+author: 
+    - aar
+    - grm
 revision:
-    "2023-01-04": (A, aar) Skapade inför vt23.
+    "2023-01-09": (A, aar, grm) Skapat och uppdaterat inför vt23.
 ...
 Kmom01: Kom igång med objekt och UML
 ====================================
 
-Vi ska börjar kursen med grunderna om objekt och klasser. Vid sidan av ska vi arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.
+Vi ska börjar kursen med grunderna om objekt och UML. Vi installerar labbmiljön och kommer igång med 
+objektorienterad python. 
 
 <!--more-->
 
@@ -20,7 +23,7 @@ Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.
 
 [/INFO]
 
-[FIGURE src=/image/oopython/kmom01/flask1.png?w=w2 caption="En enkel me-sida med Flask."]
+[FIGURE src=/image/oopython/kmom02/uml_diagrams.png?w=w2 caption="Ett exempel på ett klassdiagram i UML."]
 
 
 

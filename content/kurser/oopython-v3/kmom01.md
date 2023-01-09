@@ -3,7 +3,7 @@ author: aar
 revision:
     "2023-01-04": (A, aar) Skapade inför vt23.
 ...
-Kmom01: Kom igång med UML
+Kmom01: Kom igång med objekt och UML
 ====================================
 
 Vi ska börjar kursen med grunderna om objekt och klasser. Vid sidan av ska vi arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.
@@ -72,8 +72,6 @@ Läs följande:
 
 1. Fräscha upp minnet med [Python 3.x Doc](https://docs.python.org/3/). Kika runt lite och orientera dig.
 
-1. Titta på [Flasks hemsida](http://flask.pocoo.org/). Försök få en snabb överblick av vad Flask är.
-
 Följande artiklar är korta och bra att läsa:  
 1. [Motivation for obejct-oriented](https://atomicobject.com/resources/oo-programming/introduction-motivation-for-oo).
 
@@ -93,24 +91,9 @@ Titta på följande:
 
 1. Videoserien [Lär dig objektorienterad Python](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8cmKXE9Gw1Ra0GaYufGbN7) är tätt kopplat till kursmaterialet. Kika på de videor som börjar med 1.
 
-1. Titta på följande videos om Flask av "TheNewBoston":  
-
-    * [Basic app](https://www.youtube.com/watch?v=ZVGwqnjOKjk)  
-    * [Routing](https://www.youtube.com/watch?v=27Fjrlx4s-o)
-
 1. Titta på de första 7-minuterna av [Object-oriented programming](https://www.youtube.com/watch?v=lbXsrHGhBAU).  
 
 1. Tips från en tidigare student på en bra video [What is object-oriented programming?](https://www.youtube.com/watch?v=xoL6WvCARJY).
-
-###Lästips {#lastips}
-
-Om du känner att du har tid och lust.
-
-1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming)  
-    * Ch 4 - Expecting the Unexpected.
-
-1. Kika på [Jinja2's dokumentation](http://jinja.pocoo.org/).
-
 
 
 Övningar & Uppgifter  {#ovningar_uppgifter}
@@ -140,16 +123,6 @@ Genomför följande övning för att träna dig.
 
 2. Läs igenom "Intro till guiden" och "Objekt och klasser" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python)".
 
-3. Läs igenom artikeln om enhetstester "[Introduktion till enhetstester](kunskap/unittest-i-python_1)".
-
-**Tips** från coachen, gör lab1 innan ni fortsätter med resten av övningarna.
-
-4. Introducera dig själv med pip och venv, "[Python pakethantering med venv](kunskap/python-virtuel-miljo)".
-
-5. Kom igång och gör din första webbapplikation i Python tillsammans med övningen "[Flask och Jinja2](kunskap/flask-med-jinja2)".
-
-6. Gör din [Flask applikation som ett CGI-skript](coachen/flask-som-cgi-script) och publicera på studentservern med `dbwebb publish`. Ni behöver inte göra sista delen `Lägg till CGI i Apache webbserver` för detta behöver bara fungera på studentservern, **alltså inte lokalt**.
-
 
 
 ###Uppgifter {#uppgifter}
@@ -157,8 +130,6 @@ Genomför följande övning för att träna dig.
 Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Python med objekt och klasser](uppgift/python-med-objekt-och-klasser2)" (lab 1)
-
-2. Gör uppgiften "[Grunden för ett Yahtzee spel](uppgift/yahtzee1)".
 
 
 

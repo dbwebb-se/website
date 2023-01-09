@@ -6,7 +6,7 @@ revision:
     "2017-11-10": (PB1, mos) Utkast till v2.
     "2017-01-06": (A, mos) Lade till CGI på studentservern.
 ...
-Kmom01: Kom igång med Flask och testning
+Kmom02: Kom igång med Flask och testning
 ====================================
 
 Vi ska börjar kursen med grunderna om objekt och klasser. Vid sidan av ska vi arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.
@@ -30,26 +30,6 @@ Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
-
-Labbmiljön  {#labbmiljo}
----------------------------------
-
-*(ca: 2-4 studietimmar)*
-
-Det finns en [längre beskrivning om kursens labbmiljö](./../installera-labbmiljo). Läs den om du är osäker på vad som skall göras, eller om detta är din första dbwebb-kurs.
-
-Den korta varianten är att du behöver [installera labbmiljön](./../labbmiljo), uppdatera [dbwebb-cli](dbwebb-cli) samt klona och initiera kursrepot.
-
-```text
-# Gå till din katalog för dbwebb-kurser
-dbwebb selfupdate
-dbwebb clone oopython
-cd oopython
-dbwebb init
-```
-
-
-
 Läsanvisningar  {#lasanvisningar}
 ---------------------------------
 
@@ -60,18 +40,6 @@ Läsanvisningar  {#lasanvisningar}
 Läs följande:
 
 1. Titta på [Flasks hemsida](http://flask.pocoo.org/). Försök få en snabb överblick av vad Flask är.
-
-Följande artiklar är korta och bra att läsa:  
-1. [Motivation for obejct-oriented](https://atomicobject.com/resources/oo-programming/introduction-motivation-for-oo).
-
-1. [The object-oriented paradigm](https://atomicobject.com/resources/oo-programming/the-oo-paradigm).
-
-1. [Naming conventions](https://atomicobject.com/resources/oo-programming/naming-conventions).
-
-1. [Messaging](https://atomicobject.com/resources/oo-programming/messaging).
-
-1. [Abstraction and identity](https://atomicobject.com/resources/oo-programming/abstraction-and-identity).
-
 
 
 ###Video  {#video}

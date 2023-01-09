@@ -3,6 +3,7 @@ title: oopython-v3
 author:
     - aar
 revision:
+    "2023-01-09": (A, aar) Klart för vt23 och uppdaterat koppling mellan ladokuppgifter och kmom.
     "2022-12-21": (PA1, aar) Utkast till v3.
 ...
 Kursen oopython (v3)
@@ -73,7 +74,7 @@ Kursmoment {#kursmoment}
 Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h studerande i form av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke. Alla kursmoment skall redovisas och du samlar alla redovisningar i din me-sida.
 
 
-###Kmom01: Kom igång med objekt och UML {#kmom01}
+### Kmom01: Kom igång med objekt och UML {#kmom01}
 
 Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida med routes i ramverket Flask.
 
@@ -81,7 +82,7 @@ Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida 
 
 
 
-###Kmom02: Kom igång med Flask och testning {#kmom02}
+### Kmom02: Kom igång med Flask och testning {#kmom02}
 
 Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida med routes i ramverket Flask.
 
@@ -89,7 +90,7 @@ Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida 
 
 
 
-###Kmom03: Klassrelationer {#kmom03}
+### Kmom03: Klassrelationer {#kmom03}
 
 Vi jobbar vidare med vår me-sida i Flask. Till det kikar vi klassrelationer.
 
@@ -97,7 +98,7 @@ Vi jobbar vidare med vår me-sida i Flask. Till det kikar vi klassrelationer.
 
 
 
-###Kmom04: Mer om UML och enhetstester {#kmom04}
+### Kmom04: Mer om UML och enhetstester {#kmom04}
 
 Vi lär oss om mer UML diagram och enhetstester.
 
@@ -106,7 +107,7 @@ Vi lär oss om mer UML diagram och enhetstester.
 
 
 
-###Kmom05: Datastrukturer {#kmom05}
+### Kmom05: Datastrukturer {#kmom05}
 
 I det här kursmomentet övar vi oss på datastrukturer och felhantering med exceptions. En datastruktur är en struktur för organisering av datan.
 <!-- [Regex, regexp eller reguljära uttryck](https://sv.wikipedia.org/wiki/Regulj%C3%A4ra_uttryck) används för att hantera strängmatchning på olika sätt. Vi ska även utöka me-sidan med en databas. -->
@@ -115,7 +116,7 @@ I det här kursmomentet övar vi oss på datastrukturer och felhantering med exc
 
 
 
-###Kmom06: Sorteringsalgoritmer {#kmom06}
+### Kmom06: Sorteringsalgoritmer {#kmom06}
 
 Inom programmering finns några grundläggande sorteringsalgoritmer. Vi ska kika på dem samt titta närmare på datastrukturer och rekursion.
 
@@ -123,7 +124,7 @@ Inom programmering finns några grundläggande sorteringsalgoritmer. Vi ska kika
 
 
 
-###Kmom07: Träd som datastruktur {#kmom07}
+### Kmom07: Träd som datastruktur {#kmom07}
 
 Vi kollar på en ny typ av datastruktur, träd. Mer specifikt balanserat binär träd.
 
@@ -131,7 +132,7 @@ Vi kollar på en ny typ av datastruktur, träd. Mer specifikt balanserat binär 
 
 
 
-###Kmom08/10: Projekt och examination {#kmom10}
+### Kmom08/10: Projekt och examination {#kmom10}
 
 Avslutningsvis gör du ett projekt enligt en specifikation. Projektet är det sista som du gör och tillsammans med alla redovisningar som finns på din me-sida så används detta som underlag för att examinera dig från kursen.
 
@@ -176,11 +177,12 @@ Här följer en sammanställning av de läsanvisningar till kurslitteraturen som
 | Kursmoment | Python 3 Object-oriented Programming |
 |------------|--------------------------------------|
 | Kmom01     | Ch 1, 2                              |
-| Kmom02     | Ch 1, 2, 3, 4                        |
-| Kmom03     | Ch 3, 4, 12                          |
-| Kmom04     | Ch 6                                 |
-| Kmom05     |                                      |
+| Kmom02     |                                      |
+| Kmom03     | Ch 1, 2, 3, 4                        |
+| Kmom04     | Ch 3, 4, 12                          |
+| Kmom05     | Ch 6                                 |
 | Kmom06     |                                      |
+| Kmom07     |                                      |
 | Kmom10     | Ch 5                                 |
 
 Dessutom har varje kursmoment läsanvisningar i artiklar och videos.
@@ -228,9 +230,9 @@ Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens k
 
 | Kursens moment  | Ladok moment enligt kursplan  |
 |-----------------|-------------------------------|
-| Kmom01 + kmom02 | Uppgift 1 á 2.5hp             |
-| Kmom03 + kmom04 | Uppgift 2 á 2.5hp             |
-| Kmom05 - kmom10 | Projekt á 2.5hp               |
+| Kmom01 + kmom03 | Uppgift 1 á 2.5hp             |
+| Kmom04 + kmom05 | Uppgift 2 á 2.5hp             |
+| Kmom06 - kmom10 | Projekt á 2.5hp               |
 
 Läs mer om [rapportering av resultat](kurser/faq/resultatrapportering).
 

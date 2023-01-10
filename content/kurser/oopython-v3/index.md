@@ -94,7 +94,7 @@ Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida 
 
 Vi jobbar vidare med vår me-sida i Flask. Till det kikar vi klassrelationer.
 
-[Instruktion till kursmoment 02](kurser/oopython-v3/kmom03).
+[Instruktion till kursmoment 03](kurser/oopython-v3/kmom03).
 
 
 
@@ -103,7 +103,7 @@ Vi jobbar vidare med vår me-sida i Flask. Till det kikar vi klassrelationer.
 Vi lär oss om mer UML diagram och enhetstester.
 
 
-[Instruktion till kursmoment 03](kurser/oopython-v3/kmom04).
+[Instruktion till kursmoment 04](kurser/oopython-v3/kmom04).
 
 
 

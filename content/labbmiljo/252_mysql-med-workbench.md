@@ -48,7 +48,7 @@ Dessa användes senast vårterminen 2022 men från och med 2023 används enbart 
 
 Dessa artiklar ligger bara kvar av kuriosa och normalt sett skall du inte jobba igenom dessa.
 
-Om du av någon anöedning vill jobba med MariaDB i en windows terminal och i Cygwin så kan du behöva jobba igenom dessa artiklar.
+Om du av någon anledning vill jobba med MariaDB i en windows terminal (Powershell eller cmd) och i Cygwin så kan du behöva jobba igenom dessa artiklar.
 
 [/WARNING]
 

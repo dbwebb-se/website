@@ -196,6 +196,35 @@ print("Second number: ", random.randint(1, 100))
 
 Här blir första slumptalet 11 och andra slumptalet 46 varje gång. Testa gärna!
 
+Om vi vill att testa med slumptal i mer än ett testfall, så lägger vi det i en setup metod som körs före varje testfall. Så här ser hela testklassen ut med seed i en setup metod.
+
+```python
+#!/usr/bin/env python3
+""" Module for testing the class Car """
+
+import unittest
+import random
+from src.car import Car
+
+class TestCar(unittest.TestCase):
+    """ Submodule for unittests, derives from unittest.TestCase """
+
+    def setUp(self):
+    """ Setup that runs before every testcase """
+        random.seed("car")
+    
+    def test_present_car_ok(self):
+    """ Test if the string is correct from present_car """
+        my_car = Car("Volvo", 50000) # Act
+        self.assertEqual(my_car.present_car(),
+        "This bike is of model Volvo and costs 50000$.")# Assert
+
+    def test_random_numbers(self):
+    """ Test random numbers from 1 to 100 """
+        print("First number: ", random.randint(1, 100))
+        print("Second number: ", random.randint(1, 100))
+        # Assert random number 1 and 2
+```
 
 Avslutningsvis {#avslutning}
 ------------------------------

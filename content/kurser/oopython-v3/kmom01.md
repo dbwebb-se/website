@@ -23,7 +23,7 @@ Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.
 
 [/INFO]
 
-[FIGURE src=/image/oopython/kmom02/uml_diagrams.png?w=w2 caption="Ett exempel på ett klassdiagram i UML."]
+[FIGURE src=/image/oopython/kmom02/diagrams/fullExample_class.png?w=w2 caption="Ett exempel på ett klassdiagram i UML med 1 kund som kan göra 0 eller flera ordrar."]
 
 
 

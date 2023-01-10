@@ -44,6 +44,14 @@ För den som är väl bekant med Docker kan det vara ett kompletterande möjligh
 
 Dessa användes senast vårterminen 2022 men från och med 2023 används enbart WSL2 som terminal på Windows.
 
+[WARNING]
+
+Dessa artiklar ligger bara kvar av kuriosa och normalt sett skall du inte jobba igenom dessa.
+
+Om du av någon anöedning vill jobba med MariaDB i en windows terminal och i Cygwin så kan du behöva jobba igenom dessa artiklar.
+
+[/WARNING]
+
 1. **[Endast Windowsanvändare]** Om du jobbar på Windows så skall du fortsätta med följande artikel så att du kan köra terminalklienten i godtycklig katalog.
 
     * [MariaDB klient och Windows med cmd terminalen](coachen/mariadb-och-windows-cmd-terminal)

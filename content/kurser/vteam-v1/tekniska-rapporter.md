@@ -52,6 +52,28 @@ Här följer ett par tekniska studier (och liknande) som utfördes under 2022.
 
     * [Meet Redis, the first introduction to the in-memory cache](https://github.com/johnfredriksson/tech-studies/blob/main/redis/meet-redis.md)
 
+<!--
+ministudie på paketet node-cache. 
+https://github.com/Stenbergcool/cacheStudie
+-->
+
+
+<!--
+gokväll! om man vill göra life-like rutter för simuleringen kan jag tipsa om detta API:
+
+https://openrouteservice.org/dev/#/api-docs/introduction
+
+för de av er som gillar GIS finns det också en plugin till QGIS som gör att man kan plutta ut lite punkter från och lite punkter till och batcha iväg till API:t för att få tillbaka lite goa rutter
+
+man behöver regga sig för att få en api-key, och finns lite begränsningar i antalet req man kan göra, men räcker för att snurra upp det som behövs för oss
+
+sen kan man också tanka hem en färdig (förutom config) docker-container och bygga ihop backend för detta api själv, inte jätteknepigt men kräver att man plockar hem OSM-data att rutta på vilket kan vara pilligt kanske. men då kan man ropa hur mycket man vill på api såklart
+
+---
+
+Coolt! Tack för tipset. Vi, eller snarare @John.Fredriksson, hittade denna http://project-osrm.org/. Behövs ingen registrering eller api-key men detta gäller:  Persistent connections are limited to 512 requests per connection and allow no more then 5 seconds between requests. Inte säker på vad det har för konsekvenser. Har funkat bra hittills när vi jobbat med simuleringen med många cyklar i alla fall.
+
+-->
 
 
 2021

@@ -1,6 +1,9 @@
 ---
-author: lew
+author: 
+    - lew
+    - grm
 revision:
+    "2023-01-10": (D, grm) Uppdaterade till kmom02.
     "2022-01-14": (C, grm) Lägga till bild och kod i flask, bytte px till em.
     "2018-11-21": (B, aar) La till att installera moduler i venv.
     "2017-11-10": (A, lew) Updated version for VT18.
@@ -50,7 +53,7 @@ Frontcontroller {#frontcontroller}
 
 Vi skapar en fil som vi döper till `app.py`. Det är frontcontrollern till applikationen, dvs den fil som hanterar alla inkommande routes och servar webbläsaren med korrekt fil.
 
-Öppna en terminal och leta dig fram till mappen `kmom01/my_app`.
+Öppna en terminal och leta dig fram till mappen `kmom02/my_app`.
 
 ```bash
 $ touch app.py

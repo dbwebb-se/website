@@ -436,15 +436,17 @@ Lägg till kod i routen {#lagg_till_kod_i_routen}
 
 Hur gör vi då för att skapa en instans av en klass och visa den infon i vår app? Vi använder oss av klassen Car från övningen "[Introduktion till enhetstester](kunskap/unittest-i-python_1)". Kopiera car.py till "my_app" så att den ligger i samma katalog som app.py.
 
-Använd terminalen och ställ dig i "my_app":
+Använd terminalen och stå i "my_app":
 ```bash
-$ cp ../unittest/src/car.py .
+$ cp ../../../example/unittest/car/src/car.py .
 
 ```
 
 Nu uppdaterar vi `app.cy` och lägger in kod i metoden under route "/about".
 
 ```python
+from car import Car # Add afer flask import
+
 @app.route("/about")
 def about():
     """ About route """
@@ -465,7 +467,7 @@ Därefter uppdaterar vi templatefilen `about.html` med följande rad.
 
 Om vi nu uppdaterar servern och pekar webbläsaren på `localhost:5000/about`:
 
-[FIGURE src=/image/oopython/kmom01/jinja2_result_car.png?w=w2 caption="Information från kod i routen /about tillagd på sidan."]
+[FIGURE src=/image/oopython/kmom01/jinja2_result_car.png?w=w2 caption="Information från klassen Car i routen /about är tillagd på sidan."]
 
 
 Flask i debug-läge {#debug}

@@ -36,7 +36,7 @@ Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.
 Läsanvisningar  {#lasanvisningar}
 ---------------------------------
 
-*(ca: 8-10 studietimmar)*
+*(ca: 4-5 studietimmar)*
 
 ###Artiklar {#artiklar}
 
@@ -69,7 +69,7 @@ Om du känner att du har tid och lust.
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 
-*(ca: 8-10 studietimmar)*
+*(ca: 15-16 studietimmar)*
 
 
 ###Övningar {#ovningar}
@@ -90,7 +90,7 @@ Genomför följande övning för att träna dig.
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Grunden för ett Yahtzee spel](uppgift/yahtzee1)".
+1. Gör uppgiften "[Grunden för ett Yahtzee spel](uppgift/yahtzee1-v2)".
 
 
 

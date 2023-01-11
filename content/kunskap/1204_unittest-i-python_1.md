@@ -3,6 +3,7 @@ author:
     - aar
     - grm
 revision:
+    "2023-01-10": (B, grm) Uppdaterat till kmom02.
     "2022-01-12": (A, grm) Första versionen, utgått från "unittest_i_python".
 category:
     - oopython
@@ -33,7 +34,7 @@ Python kommer med en inbyggd modul, ett ramverk kallat "unittest". Inspirationsk
 
 ###Kodstruktur med enhetstester {#kodstruktur-med-enhetstester}
 
-Använd terminalen och ställ dig i "kmom01":
+Använd terminalen och ställ dig i "kmom02":
 ```bash
 $ mkdir unittest
 $ mkdir unittest/src
@@ -210,17 +211,22 @@ class TestCar(unittest.TestCase):
     """ Submodule for unittests, derives from unittest.TestCase """
 
     def setUp(self):
-    """ Setup that runs before every testcase """
+        """ Setup that runs before every testcase """
         random.seed("car")
+
+    def test_no_of_wheels_ok(self):
+        """ Test if number of wheels is 4 """
+        my_car = Car("Volvo", 50000) # Act
+        self.assertEqual(my_car.wheels, 4)# Assert
     
     def test_present_car_ok(self):
-    """ Test if the string is correct from present_car """
+        """ Test if the string is correct from present_car """
         my_car = Car("Volvo", 50000) # Act
         self.assertEqual(my_car.present_car(),
         "This bike is of model Volvo and costs 50000$.")# Assert
 
     def test_random_numbers(self):
-    """ Test random numbers from 1 to 100 """
+        """ Test random numbers from 1 to 100 """
         print("First number: ", random.randint(1, 100))
         print("Second number: ", random.randint(1, 100))
         # Assert random number 1 and 2

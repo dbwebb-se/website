@@ -2,6 +2,7 @@
 author: aar
 category: labbmiljo
 revision:
+  "2023-01-11": (E, grm) Uppdaterade versioner för pylint och Flask.
   "2022-01-12": (D, aar) La till sektion om att installera venv.
   "2019-01-12": (C, aar) La till varning om python länk inte är ett kommando.
   "2019-01-12": (B, aar) Tog bort dbwebb venv kommandot.
@@ -112,8 +113,8 @@ Kommandot för deaktivering kan köras från vilken mapp som helst på datorn, m
 Nu när vi har en virtuell miljö vi kan installera paket i, tar vi pip installationerna ett steg längre och använder oss av en "[Requirements file](https://pip.pypa.io/en/stable/user_guide/#requirements-files)". Det är ett sätt att enkelt kunna specificera vilka externa paket, med version, som behövs för ett projekt. Vi har en i [OOPython kursen](https://github.com/dbwebb-se/oopython/blob/master/.requirements.txt), filen heter `.requirements.txt`, och innehåller följande:
 
 ```
-pylint == 2.10.2
-Flask == 1.1.2
+pylint == 2.15.4
+Flask == 2.2.2
 ```
 
 Det betyder att modulen Flask med en version som är kompatibel med 1.1.2 och modulen pylint med version kompatibel med 2.10.2 behövs. Vi installera enkelt de både paketen genom att skriva:

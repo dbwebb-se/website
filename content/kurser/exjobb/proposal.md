@@ -20,7 +20,7 @@ Läs & Studera  {#lasanvisningar}
 
 ### Kurslitteratur {#kurslitteratur}
 
-Läs kapitel *7. Teori, metoder och tillvägagångssätt* i **Att skriva en bra uppsats** för att skapa dig en översikt av metodbeskrivningen och vilka olika metoder som kan vara lämpliga  för ditt område.
+Läs kapitel *7. Vetenskapsteori i uppsatsen* och *10. Teori, begrepp, metoder och tillvägagångssätt* i **Att skriva en bra uppsats** för att skapa dig en översikt av metodbeskrivningen och vilka olika metoder som kan vara lämpliga för ditt område.
 
 
 

@@ -18,10 +18,6 @@ Exceptions hjälper oss med att få reda på vad som gått fel. Det finns en hel
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 [INFO]
 Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.
 [/INFO]

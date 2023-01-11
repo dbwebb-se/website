@@ -18,10 +18,6 @@ Vi ska fortsätta med Yahtzee uppgiften, i detta kursmomentet ska ni skapa klass
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 [INFO]
 Ni behöver göra `dbwebb update` och `dbwebb init` i kursrepot innan ni startar med kursmomentet!
 [/INFO]

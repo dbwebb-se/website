@@ -17,10 +17,6 @@ Ni har redan tittat lite på UML och enhetstester men nu ska vi gräva lite djup
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 [INFO]
 Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.
 [/INFO]

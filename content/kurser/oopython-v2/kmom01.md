@@ -13,10 +13,6 @@ Vi ska börjar kursen med grunderna om objekt och klasser. Vid sidan av ska vi a
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 [INFO]
 
 Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.

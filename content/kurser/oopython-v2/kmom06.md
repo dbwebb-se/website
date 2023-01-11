@@ -15,10 +15,6 @@ Vi jobbar vidare med datastrukturer, algoritmer och rekursion genom att kolla p�
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 [INFO]
 
 Gör `dbwebb update` innan du startar med kursmomentet.

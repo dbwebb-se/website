@@ -35,7 +35,7 @@ views:
                         data:
                             meta:
                                 type: content
-                                route: kurser/oopython-v2/block-kurser-kmom
+                                route: kurser/oopython-v3/block-kurser-kmom
                     column-4:
                         data:
                             meta:

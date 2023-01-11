@@ -259,7 +259,7 @@ Redirect /kurser/linux /kurser/linux-v2
 Redirect /oopython /kurser/oopython
 Redirect /kurser/oopython/studieplan https://docs.google.com/spreadsheets/d/139dBR4xTojUwM_gD8RniO-RZJmXFP1-adM3CJljg3_8/edit?usp=sharing
 Redirect /kurser/oopython/lektionsplan https://docs.google.com/spreadsheets/d/1l4Dxpz_PZYNBnwMZegR8uS6tRpm_qkecefAfU2wBKMQ/edit?usp=sharing
-Redirect /kurser/oopython /kurser/oopython-v2
+Redirect /kurser/oopython /kurser/oopython-v3
 Redirect /forum/utbildning/oopython /forum/viewforum.php?f=57
 
 # webapp

@@ -192,8 +192,8 @@ För Bootstraps filer använder vi oss av [CDN](https://en.wikipedia.org/wiki/Co
 
     <title>Applikation i Flask</title>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"  rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"  rel="stylesheet">
 
     <!-- Private stylesheet, loads last -->
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">

@@ -512,4 +512,6 @@ Du har nu fått en genomgång i hur JavaScript fungerar med Node.js och du har f
 
 Grundstrukturen kan du förhoppningsvis bygga vidare på, även med begränsade kunskaper i JavaScript och Node.js. Det är alltid bra att ha en god grundstruktur att bygga på.
 
+<!--
 Denna artikel har en [egen forumtråd](t/8212) som du kan ställa frågor i, eller ge tips.
+-->

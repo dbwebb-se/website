@@ -19,7 +19,24 @@ Metoden Enkät {#metod}
 
 Rugg och Petre [1, pp. 141-151] argumenterar för svårigheten i enkät design och metoden och rekommenderar starkt att vi läser upp på metoden och dataanalys innan vi påbörjar en enkätstudie.
 
-Så då gör vi det. 
+Så då gör vi det.
+
+
+
+### Urval {#urval}
+
+Vi börjar med att ta en titt på de som vi vill ska svara på enkäten. Om vi vill svara med metoden enkät på frågan som vi tittade på i övningen "[Skriv en forskningsfråga](kunskap/skriv-en-forskningsfraga)":
+
+> Hur upplever utvecklare att funktionstestning i frontend i JavaScript säkerställer programvarans funktionalitet?
+
+Vi kan av praktiska orsaker inte låta varenda JavaScript programmerare i världen svara på frågan, så vi behöver göra ett urval. Alla programmerare benämns då populationen och delmängden som besvarar enkäten är urvalet. Det viktiga att säkerställa är att delmängden blir ett representativt urval. Vi ser i [2] och [3] att författarna använder flera kapitlen för att beskriva hur man säkerställer detta vilket då också blir viktigt för oss.
+
+<small><i>[2] och [3] finns tyvärr inte som e-bok, men bör finnas på bibliotek runt om i landet.</i></small>
+
+
+
+### Enkätdesign och frågor
+
 
 
 

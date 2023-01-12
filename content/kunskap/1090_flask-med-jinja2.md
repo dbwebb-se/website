@@ -455,14 +455,14 @@ def about():
     my_course = "OOPython"
 
     return render_template("about.html", name=my_name, course=my_course,
-        car_info=my_car.present_car())
+        car=my_car)
 
 ```
 
 Därefter uppdaterar vi templatefilen `about.html` med följande rad.
 
 ```html
-<p>Bil info: {{ car_info }} </p>
+<p>Bil info: {{ car.present_car() }} </p>
 ```
 
 Om vi nu uppdaterar servern och pekar webbläsaren på `localhost:5000/about`:

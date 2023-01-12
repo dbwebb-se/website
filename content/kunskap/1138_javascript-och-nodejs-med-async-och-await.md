@@ -337,4 +337,6 @@ Avslutningsvis {#avslutning}
 
 Denna artikel gav dig en introduktion i de begrepp som i mångt och mycket sammanfattar utmaningen att komma in i och förstå JavaScript med Node.js och dess asynkrona programmeringsmodell. Du har blivit introducerad i begreppen callback, promise, async och await och du har fått ett par exempelprogram att studera. Bygg gärna vidare på exempelprogrammen och se hur du kan bygga ut dem.
 
+<!--
 Denna artikel har en [egen forumtråd](t/8213) som du kan ställa frågor i, eller ge tips.
+-->

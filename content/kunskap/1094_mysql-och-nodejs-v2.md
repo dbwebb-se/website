@@ -845,4 +845,6 @@ Du har även fått en genomgång i hur man matar in text från användaren.
 
 Grundstrukturen i programmen kan du förhoppningsvis bygga vidare på när du bygger allt större program med databasen.
 
+<!--
 Denna artikel har en [egen forumtråd](t/6270) som du kan ställa frågor i, eller ge tips.
+-->

@@ -28,11 +28,11 @@ Förutsättning {#pre}
 Du kan grunderna i Python och du vet vad variabler, typer och funktioner innebär. Du har även gjort övningen "Intro till guiden" och "Objekt och klasser" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python)".
 
 
-###Pythons testramverk {#pythons-testramverk}
+### Pythons testramverk {#pythons-testramverk}
 
 Python kommer med en inbyggd modul, ett ramverk kallat "unittest". Inspirationskällan till det kommer från Javans [JUnit](http://junit.org/junit4/). Vi ska framför allt titta på basklassen *TestCase* som tar hand om enskilda tester på bland annat metoder.
 
-###Kodstruktur med enhetstester {#kodstruktur-med-enhetstester}
+### Kodstruktur med enhetstester {#kodstruktur-med-enhetstester}
 
 Använd terminalen och ställ dig i "kmom02":
 ```bash
@@ -53,7 +53,7 @@ Kodstrukturen:
 * test.py är en testprogrammet som kör alla testfilerna i katalogen /tests tack vare filen "/tests/\_\_init\_\_.py" som gör att alla testfilerna hittas i /tests. Vill du läsa mer om "\_\_init\_\_.py" kan du kika på [docs.python.org](https://docs.python.org/3/reference/import.html#regular-packages).
 
 
-###Klassen som ska testas {#klassen-som-ska-testas}
+### Klassen som ska testas {#klassen-som-ska-testas}
 
 Lägg koden för klassen Car i /src/car.py.
 
@@ -78,7 +78,7 @@ class Car():
 
 ```
 
-###Skapa testprogrammet {#kom-igang-med-ett-enhetstest}
+### Skapa testprogrammet {#kom-igang-med-ett-enhetstest}
 
 Lägg följande kod i test.py som är testprogrammet och kör alla testfiler som ligger i /tests.
 
@@ -102,7 +102,7 @@ $ python3 test.py
 
 [FIGURE src=/image/oopython/kmom01/result_no_testcases.png caption="Resultat från python3 test.py."]
 
-###Kom igång med ett enhetstest {#kom-igang-med-ett-enhetstest}
+### Kom igång med ett enhetstest {#kom-igang-med-ett-enhetstest}
 
 Lägg följande kod i /tests/test_car.py. Observera att vägen till filen car.py pekas ut genom "src.car".
 
@@ -126,7 +126,7 @@ $ python3 test.py
 
 [FIGURE src=/image/oopython/kmom01/result_no_testcases.png caption="Resultat från python3 test.py."]
 
-###Kom igång med ett enhetstest {#kom-igang-med-ett-enhetstest}
+### Kom igång med ett enhetstest {#kom-igang-med-ett-enhetstest}
 
 Då ska vi lägga till en metod i testklassen TestCar i /tests/test_car.py som testar att antalet hjul på en instans vi skapar av klassen Car är 4. Byt ut "pass" mot följande kod.
 
@@ -164,7 +164,7 @@ python3 test.py
 
 [FIGURE src=/image/oopython/kmom01/result_1_testcase.png caption="Resultat från python3 test.py."]
 
-###Testa en metod {#testa-en-metod}
+### Testa en metod {#testa-en-metod}
 
 Då ska vi lägga till en ny metod i testklassen TestCar i /tests/test_car.py som testar att metoden "present_car" ger rätt resultat för en Volvo som kostar 50000$. Lägg till följande kod.
 
@@ -182,7 +182,7 @@ Aj, då det blev fel! Ändra från "bike" till "car" och testa igen.
 
 [FIGURE src=/image/oopython/kmom01/result_2_testcases.png caption="Resultat från python3 test.py."]
 
-###Testa med slumptal {#testa-med_slumptal}
+### Testa med slumptal {#testa-med_slumptal}
 
 När vi enhetstestar med slumptal, så vill vi inte behöva ändra i testfallet varje gång vi kör testen. Med hjälp av "random.seed()" så får vi samma slumpvärde varje gång vi kör testen.
 
@@ -231,6 +231,16 @@ class TestCar(unittest.TestCase):
         print("Second number: ", random.randint(1, 100))
         # Assert random number 1 and 2
 ```
+
+
+
+### Testa privata attribut och metoder {#testa-privat}
+
+Ibland har vi privata attribut eller metoder i en klass som vi ska testa. Då vill vi kunna använda dem utan att bry oss om att de är privata, vilket vi kan för att vi kodar i Python. Men vi kommer fortfarande få valideringsfel om vi gör det.
+
+Ibland kan vi komma runt det genom att använda en `get_metod` för att läsa av ett privat attribut istället för att använda attributet direkt, `obj._attribut`. Men det passar inte alltid och då är den smidigaste lösning att stänga av valideringen som kollar om man använder privata attribut och metoder. Det gör vi genom att lägga till raden `#pylint: disable=protected-access` i början av filen med testerna. Då kommer pylint ignorera när vi skriver `obj._attribut`.
+
+
 
 Avslutningsvis {#avslutning}
 ------------------------------

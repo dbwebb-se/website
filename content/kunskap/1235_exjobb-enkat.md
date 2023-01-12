@@ -19,6 +19,8 @@ Metoden Enkät {#metod}
 
 Rugg och Petre [1, pp. 141-151] argumenterar för svårigheten i enkät design och metoden och rekommenderar starkt att vi läser upp på metoden och dataanalys innan vi påbörjar en enkätstudie.
 
+Så då gör vi det. 
+
 
 
 Metod referenser {#references}

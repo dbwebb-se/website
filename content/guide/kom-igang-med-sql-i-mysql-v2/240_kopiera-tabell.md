@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-01-15": "(F, mos) Bort med felaktigt dml_copy, skall vara ddl_copy."
     "2022-01-04": "(E, mos) Genomgången inför v2 och MariaDB."
     "2019-01-15": "(E, mos) Genomgången och testad."
     "2018-03-27": "(D, mos) Uppdaterad med dml_update_lonerevision.sql."
@@ -134,7 +135,7 @@ mariadb --table skolan < ddl-larare.sql
 mariadb --table skolan < insert-larare.sql
 mariadb --table skolan < ddl-alter.sql
 mariadb --table skolan < dml-update.sql
-mariadb --table skolan < dml-copy.sql
+mariadb --table skolan < ddl-copy.sql
 mariadb --table skolan < dml-update-lonerevision.sql
 mariadb --table skolan < dml-view.sql
 ```

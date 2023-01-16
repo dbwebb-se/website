@@ -109,9 +109,9 @@ Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h stude
 
 ### Kmom01: Databas {#kmom01}
 
-Vi introduceras till databasen MySQL och dess olika klienter samt lär oss använda SQL tillsammans med MySQL. Du får jobba igenom en övning i SQL som introducerar dig i grundläggande konstruktioner för att skapa och uppdatera en databas.
+Vi introduceras till databasen MySQL/MariaDB och dess olika klienter samt lär oss använda SQL tillsammans med MySQL/MariaDB. Du får jobba igenom en övning i SQL som introducerar dig i grundläggande konstruktioner för att skapa och uppdatera en databas.
 
-Du får pröva att använda tre olika klienter till MySQL, alla tre har sin plats och användningsområde vid olika tillfällen.
+Du får pröva att använda tre olika klienter till MySQL/MariaDB, alla tre har sin plats och användningsområde vid olika tillfällen.
 
 [Instruktion till kursmoment 01](./kmom01).
 
@@ -121,7 +121,7 @@ Du får pröva att använda tre olika klienter till MySQL, alla tre har sin plat
 
 Vi jobbar vidare med SQL och tränar på enklare konstruktionerna och mer utmanande saker som vyer, subqueries, UNION och JOIN.
 
-Du kommer även börja jobba med JavaScript och Node.js för att se hur du kan koppla dig till en MySQL databas via ett applikationsspråk. Detta innebär att du behöver installera en labbmiljö med Node.js och pakethanteraren npm samt att du kommer igång med grunderna i programmeringsspråket JavaScript och specifikt hur JavaScript används tillsammans med Node.js.
+Du kommer även börja jobba med JavaScript och Node.js för att se hur du kan koppla dig till en MySQL/MariaDB databas via ett applikationsspråk. Detta innebär att du behöver installera en labbmiljö med Node.js och pakethanteraren npm samt att du kommer igång med grunderna i programmeringsspråket JavaScript och specifikt hur JavaScript används tillsammans med Node.js.
 
 [Instruktion till kursmoment 02](./kmom02).
 

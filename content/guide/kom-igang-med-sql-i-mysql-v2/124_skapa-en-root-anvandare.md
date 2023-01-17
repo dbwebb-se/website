@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-01-17": "(E, mos) Förtydliga att Ubuntu/WSL behöver %."
     "2022-02-15": "(D, mos) Förtydliga vilken användare som skall användas."
     "2021-12-20": "(C, mos) Omskriven inför v2 och MariaDB."
     "2019-01-24": "(B, mos) Bort med överflödigt ;."
@@ -41,7 +42,7 @@ WITH GRANT OPTION
 ;
 ```
 
-Om du vill att användaren skall kunna ansluta från fler platser än bara 'localhost' så behöver du skapa ytterligare en användare för 'maria'@'%' där '%' anger att användaren kan ansluta från godtycklig host.
+Om du vill att användaren skall kunna ansluta från fler platser än bara 'localhost' så behöver du skapa ytterligare en användare för 'maria'@'%' där '%' anger att användaren kan ansluta från godtycklig host. Om du tex jobbar i Ubuntu/WSL och vill koppla dig till databasservern i Windows måste du ha en `%` användare.
 
 Kommandot [GRANT finns beskrivet i manualen](https://mariadb.com/kb/en/grant/).
 

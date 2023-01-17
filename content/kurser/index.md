@@ -33,7 +33,7 @@ views:
                             meta:
                                 type: content
                                 # ht16 = oopython-v1, ht17 = oopython-v2
-                                route: kurser/oopython-v2/block-kurser-kmom
+                                route: kurser/oopython-v3/block-kurser-kmom
                     column-4:
                         data:
                             meta:

@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-01-17": "(F, mos) Lade till SQL för att visa vilka användare som finns på systemet."
     "2023-01-17": "(E, mos) Förtydliga att Ubuntu/WSL behöver %."
     "2022-02-15": "(D, mos) Förtydliga vilken användare som skall användas."
     "2021-12-20": "(C, mos) Omskriven inför v2 och MariaDB."
@@ -138,6 +139,37 @@ mariadb -umaria
 ```
 
 Glöm inte att uppdatera din `.my.cnf` med det användarnamn som är ditt "default". Det förutsätter naturligtvis att du har [konfigurerat och använder en konfigurationsfil för my.cnf](coachen/mariadb-klient-och-my-cnf).
+
+
+
+
+Vilka användare finns på min databas? {#showusers}
+--------------------------------------
+
+För att visa vilka användare som finns på din dator kan du köra följande SQL-sats.
+
+```sql
+SELECT User, Host FROM mysql.global_priv;
+```
+
+Det kan se ut så här men svaret beror på vilka användare som finns i din databas.
+
+```text
+MariaDB [(none)]> SELECT User, Host FROM mysql.global_priv;
++-------------+-----------+
+| User        | Host      |
++-------------+-----------+
+| dbadm       | %         |
+| maria       | %         |
+| dbadm       | localhost |
+| maria       | localhost |
+| mariadb.sys | localhost |
+| mysql       | localhost |
+| root        | localhost |
++-------------+-----------+
+```
+
+Ovan finns med användare 'dbadn' och 'maria' och de kan ansluta antingen från 'localhost' eller från godtycklig host '%'.
 
 
 

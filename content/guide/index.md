@@ -10,7 +10,7 @@ Guider i produktionsläge.
 
 * [Kom igång med programmering i PHP](guide/kom-igang-med-programmering-i-php)
 * [Kom igång med objektorienterad programmering i PHP](guide/kom-igang-med-objektorienterad-programmering-i-php)
-* [Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql)
+* [Kom igång med SQL i MySQL (v2)](guide/kom-igang-med-sql-i-mysql-v2)
 * [Kom igång med HTML och CSS](guide/kom-igang-med-html-och-css)
 * [Kom igång med Bash](guide/kom-igang-med-bash)
 * [Docker](guide/docker)

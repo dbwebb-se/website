@@ -57,7 +57,7 @@ Läsanvisningar  {#lasanvisningar}
 
 Läs följande:
 
-1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming)  
+1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming-v3)  
     * Ch 1 - Object-oriented Design  
         - Introducing object-oriented --- Specifying attributes and behaviors.
     * Ch 2 - Objects in Python  

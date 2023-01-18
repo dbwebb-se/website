@@ -42,7 +42,7 @@ Läsanvisningar  {#lasanvisningar}
 
 Läs följande:
 
-1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming)  
+1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming-v3)  
     * Ch 1 - Object-oriented Design
         - Hiding details and creating the public interface --- Summary
     * Ch 2 - Objects in Python

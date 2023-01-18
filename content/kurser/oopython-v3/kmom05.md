@@ -41,7 +41,7 @@ Läsanvisningar  {#lasanvisningar}
 
 Läs följande:
 
-[Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming)  
+[Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming-v3)  
     * Ch 4 - Expecting the unexpected  
     * Ch 6 - Python Data Structures
 

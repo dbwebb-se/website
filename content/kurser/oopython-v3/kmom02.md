@@ -59,7 +59,7 @@ Titta på följande:
 
 Om du känner att du har tid och lust.
 
-1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming)  
+1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming-v3)  
     * Ch 4 - Expecting the Unexpected.
 
 1. Kika på [Jinja2's dokumentation](http://jinja.pocoo.org/).

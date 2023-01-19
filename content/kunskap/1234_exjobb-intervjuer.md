@@ -25,6 +25,8 @@ För ytterligare tydlighet och vetenskaplighet använd Brinkmann och Kvales [1,
 pp. 40-45] metod i sju steg för att säkerställa kvalitet i intervjustudier. Med metoden tydliggör vi varför studien ska göras,
 designar studien, genomför intervjuerna, transkriberar, analyserar, verifierar resultaten och slutligen rapporterar resultaten och slutsatser.
 
+När ni genomför intervjuerna se till att definiera syftet med studien. Samt att definiera nyckel-begrepp i studien för att de som genomför intervjun har samma definition som de som intervjuas.
+
 
 
 Metod referenser {#references}

@@ -35,8 +35,19 @@ Vi kan av praktiska orsaker inte låta varenda JavaScript programmerare i värld
 
 
 
-### Enkätdesign och frågor
+### Enkätdesign och frågor {#survey-design}
 
+Börja alltid en enkät med att beskriva syftet med enkäten och att definiera begreppen som enkäten behandlar. I exemplet ovan kan det till exempel vara bra att definiera _JavaScript-ramverk_ och _funktionstestning_ så författarna och de som svarar på enkäten har samma definition [3, p. 93].
+
+
+
+#### Olika typer av frågor {#types-of-questions}
+
+I en enkät vill man ofta ställa två olika sorters frågor: _bakgrundsfrågor_ och _frågor som mäter latenta variabler_.
+
+Bakgrundsfrågorna kan handla om vilket kön, utbildning, erfarenhet, lön osv. som respondenten har. Vi kan sedan använda dessa bakgrundsfrågor för att dela upp vårt urval i olika delar för att se om respondentens bakgrund påverkar hur de svarar på enkäten. Se till att enkätens bakgrundfrågor speglar uppsatsens forskningsfrågor så att ni inte behöver göra om enkätstudien för att data saknas i efterhand.
+
+Frågor som mäter latenta variabler är de frågor vi använder för att svara på 
 
 
 

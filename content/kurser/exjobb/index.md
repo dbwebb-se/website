@@ -95,7 +95,7 @@ En central del i kursen handlar om att skriva en rapport utifrån arbetet man g�
 
 * **Att skriva en bra uppsats**, Lotta Rienecker, Peter Stray Jörgensen. Förlag: Liber. Utgiven: 2014, antal sidor: 349. ISBN: 9789147111510.
 
-Som komplement rekommenderas "[Rapportskrivning för ingenjörer](https://goo.gl/bHSMH1)" och webbplatsen "[Skrivguiden](http://skrivguiden.se/)" vilka hjälper dig att förstå rapportens olika delar.
+Som komplement rekommenderas "[Rapportskrivning för ingenjörer](https://drive.google.com/file/d/0ByJ-Zb8R9RVmOHI3Y0FLSEIxVDlKOXZhRVBlZVJqdW5JNmtv/view?usp=sharing&resourcekey=0-l4alAhSiPGTE5hD21cbycw)" och webbplatsen "[Skrivguiden](http://skrivguiden.se/)" vilka hjälper dig att förstå rapportens olika delar.
 
 Som referenslitteratur och alternativ kursbok på engelska, finns följande.
 

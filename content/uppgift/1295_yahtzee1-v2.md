@@ -36,7 +36,7 @@ Om ni har gjort övningarna så har ni nästan kommit i mål med uppgiften.
 Introduktion {#intro}
 -----------------------
 
-Ni ska som sagt utveckla ett Yahtzee spel över flera kursmoment. Ni som jobbar ensamma ska utveckla spelet för terminalen medan ni som jobbar i grupp ska utveckla spelet för webbläsaren med hjälp av Flask.
+Ni ska som sagt utveckla ett Yahtzee spel över flera kursmoment.
 
 Spelet ska följa de internationella reglerna och inte de svenska reglerna. Här kan ni hitta [reglerna](https://gamerules.com/rules/yahtzee-dice-game/). I denna uppgiften kommer ni inte skapa någon logik för reglerna det kommer i senare uppgifter.
 

@@ -15,9 +15,9 @@ Flask med Jinja2
 
 [FIGURE src=/image/oopython/kmom03/kmom03_top_jinja.png?w=c8 class="right"]
 
-[Flask](http://flask.pocoo.org/) är ett microramverk för Python, som gör det möjligt att skapa webbapplikationer. Det är litet men kraftfullt. Vi ska gå igenom hur man installerar det och kommer igång med en enkel sida.
+[Flask](kunskap/flask-med-jinja2) är ett microramverk för Python, som gör det möjligt att skapa webbapplikationer. Det är litet men kraftfullt. Vi ska gå igenom hur man installerar det och kommer igång med en enkel sida.
 
-[Jinja2](http://jinja.pocoo.org/) är en så kallad "template engine" för Python som renderar template-filer åt oss.
+[Jinja2](https://jinja.palletsprojects.com/en/3.1.x/) är en så kallad "template engine" för Python som renderar template-filer åt oss.
 
 <!--more-->
 

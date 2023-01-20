@@ -42,7 +42,7 @@ Läsanvisningar  {#lasanvisningar}
 
 Läs följande:
 
-1. Titta på [Flasks hemsida](http://flask.pocoo.org/). Försök få en snabb överblick av vad Flask är.
+1. Titta på [Flasks hemsida](https://flask.palletsprojects.com/en/2.2.x/). Försök få en snabb överblick av vad Flask är.
 
 
 ###Video  {#video}

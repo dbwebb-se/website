@@ -5,7 +5,7 @@ category:
     - flask
     - kurs oopython
 revision:
-    "2023-01-23: (D, aar) La till info rutan om LF radslut
+    "2023-01-23": (D, aar) La till info rutan om LF radslut
     "2020-01-17": (C, aar) Lade till videos som visar hur vi använder det på studentserver och förklarar CGI.
     "2017-11-01": (B, mos) Lade till felhantering och indelat i stycken samt kort note om hur lägga till CGI i Apache.
     "2017-01-06": (A, mos) Första versionen.

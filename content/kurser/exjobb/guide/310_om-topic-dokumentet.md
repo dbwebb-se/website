@@ -43,7 +43,7 @@ Vad planerar du att undersöka? Inled med en kort och tydlig introduktion i ett 
 
 Punktlista dina olika fokusområden och beskriv dem kort.
 
-Specificera preliminära frågeställningar du ämnar försöka besvara. Skriv dina frågeställningar som numrerade forskningsfrågor (RQ1, RQ2 osv.). Ta gärna inspiration från och hjälp av [https://skrivguiden.se/skriva/skrivprocessen/#syfte](skrivguiden.se). Speciellt stycket under **Tre exempel på syften, problemformuleringar och forskningsfrågor:**.
+Specificera preliminära frågeställningar du ämnar försöka besvara. Skriv dina frågeställningar som numrerade forskningsfrågor (RQ1, RQ2 osv.). Ta gärna inspiration från och hjälp av [skrivguiden.se](https://skrivguiden.se/skriva/skrivprocessen/#syfte). Speciellt stycket under **Tre exempel på syften, problemformuleringar och forskningsfrågor:**.
 
 Specificera preliminära mål, vad vill du uppnå.
 

@@ -4,6 +4,7 @@ author:
     - aar
     - mos
 revision:
+    "2023-01-27": "(E, aar) Uppdaterade kurskod/kursplan."
     "2022-10-26": "(D, aar) Uppdaterade kurskod/kursplan."
     "2020-01-24": "(C, aar) Ändrade hur kmoms ger poäng."
     "2019-04-16": "(B, aar) Uppdaterad inför V1."
@@ -262,6 +263,7 @@ Kursplan {#kursplan}
 From ht23 alt ht24: DV1673 Kontinuerlig integration och driftsättning i molnet, 7,5 hp
 -->
 
-Kursens namn är "Kontinuerlig integration och driftsättning i molnet". Du hittar [kursplanen genom att söka på kurskoden DV1658 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1658).
+Från och med hösten 2023 byter kursen kurskod till [DV1673](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1673).
 
-Fram till och med 2021 gick kursen med kurskoden [DV1617](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1617)
+- Under 2022 gick kursen med kurskoden [DV1658](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1658)
+- Fram till och med 2021 gick kursen med kurskoden [DV1617](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1617)

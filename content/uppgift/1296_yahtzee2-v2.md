@@ -175,21 +175,18 @@ När ni är färdiga kan det se ut så här:
 
 1. Implementera de nya metoderna för Die och Hand.
 
-1. Gör nya klassdiagram för Die och Hand, inkludera relation och kardinalitet. Spara dem som `uml.png` i `yahtzee2` mappen. Rita gärna i [draw.io](https://www.draw.io/).
+1. Gör nya klassdiagram för Die och Hand, inkludera relation och kardinalitet. Spara dem som `uml.png` i `yahtzee2` mappen. Rita gärna i [draw.io](https://www.draw.io/). Ni kan utgå från diagrammen som finns i [Yahtzee1 uppgiften](uppgift/yahtzee1-v2#die).
 
 1. Lägg till ett test för Die klassen i `me/kmom03/yahtzee2/tests/test_die.py`. Testa följande saker i Die klassen:
     1. Att `__eq__()` returnerar rätt vi jämförelse med ett annat Die objekt.
 
 1. Skapa tester för Hand klassen i `me/kmom03/yahtzee2/tests/test_hand.py`. Testa följande saker i Hand klassen:
     1. Att skapa ett objekt utan skicka argument till konstruktorn.
-    1. Att skapa ett objekt och skicka lista med tärningar till konstruktorn.
-    1. Att `roll()` med en lista som argument slår om rätt tärningar.
-    1. Att `roll()` utan argument slår om alla tärningar.
-    1. Att `to_list()` returnerar en lista med tärningarnas värde.
+    1. Att skapa ett objekt och skicka lista med tärningsvärden till konstruktorn.
 
 1. Implementera koden för Rule enligt klassdiagrammen ovanför. Spara alla klasser i filen `me/kmom03/yahtzee2/src/rules.py`.
 
-1. Lägg till radiobuttons för de olika reglerna i ett formulär med en submit-knapp. Bredvid en radiobutton för en viss regel ska namnet på regeln skrivas ut, t.ex. "Three of a kind".
+1. Lägg till radiobuttons för de olika reglerna i ett formulär med en submit-knapp. Bredvid en radiobutton för en viss regel ska namnet på regeln skrivas ut, t.ex. "Three of a kind". Här kan ni se hur man gör [radiobuttons i ett formulär](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio).
 
 1. Vid varje regel ska det också visas hur många poäng respektive regel är värd men nuvarande hand.
 

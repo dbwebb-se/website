@@ -1,6 +1,7 @@
 ---
-author: lew
+author: aar
 revision:
+    "2023-01-27": (E, aar) Bytt ut uppgift och get/post övning.
     "2022-01-21": (D, aar) Bytt ut bank omt yahtzee2.
     "2021-01-18": (C, moc) Bytt ut frågorsport uppgift mot bank.
     "2018-12-18": (B, aar) Bytt ut form uppgift mot frågorsport.
@@ -17,10 +18,6 @@ Kom igång med _arv_ och andra klassrelationer. Vi ska titta närmare på klassr
 Vi ska fortsätta med Yahtzee uppgiften, i detta kursmomentet ska ni skapa klasser för att få poäng baserat på vilka tärningar som finns i en hand.
 
 <!--more-->
-
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
 
 [INFO]
 Ni behöver göra `dbwebb update` och `dbwebb init` i kursrepot innan ni startar med kursmomentet!
@@ -92,7 +89,7 @@ Genomför följande övning för att träna dig.
 
 1. Jobba igenom artikeln "[Hur vi visar olika relationer mellan klasser i ett klassdiagram](kunskap/relationer_klassdiagram)".
 
-1. Läs igenom artikeln som handlar om "[GET, POST i Flask](kunskap/flask-get-post)".
+1. Läs igenom artikeln som handlar om "[GET, POST i Flask](kunskap/flask-get-post-session)".
 
 
 
@@ -102,8 +99,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Python med klass relationer](uppgift/python-med-klass-relationer)" (lab 2)
 
-1. Gör uppgiften "[Yahtzee2](uppgift/yahtzee2)". Spara koden i mappen `me/kmom02/yahtzee2/`.
+1. Gör uppgiften "[Yahtzee2](uppgift/yahtzee2-v2)". Spara koden i mappen `me/kmom03/yahtzee2/`.
 
+<!-- 1. Gör uppgiften "[Yahtzee2](uppgift/yahtzee2)". Spara koden i mappen `me/kmom02/yahtzee2/`. -->
 <!-- 1. Gör uppgiften "[Bank med Flask](uppgift/bank_med_flask)". Spara koden i mappen `me/kmom02/bank/`. -->
 <!-- 1. Gör uppgiften "[Frågesport med Flask](uppgift/fragesport_med_flask)". Spara koden i mappen `me/kmom02/bank/`. -->
 <!-- 1. Gör uppgiften "[Skapa former](uppgift/skapa-former)". Spara koden i mappen `me/flask/`. -->
@@ -112,7 +110,7 @@ Dessa uppgifter skall utföras och redovisas.
 ```bash
 # Ställ dig i kurskatalogen
 # dbwebb validate flask
-dbwebb publish kmom02
+dbwebb publish kmom03
 ```
 
 

@@ -194,8 +194,8 @@ Vi ska utnyttja Jinja2's funktionalitet för att hantera mallar och skapa mallar
 
 Vi hoppar in i mappen templates/tables/ och tittar på `show_guesses.html`.
 
-Vi skapar en tabell och använder Jinja för att skapa en loop och lägga till varje employee i tabellen.
-Magin händer i `<tbody>`, vi använder en [for-loop](http://jinja.pocoo.org/docs/2.10/templates/#for) med hjälp av Jinja för att gå igenom en lista med Employee objekt och lägger till dem i tabellen, en rad/objekt. Detta betyder att vi i app.py måste skicka med en lista med Employee objekt till `render_template()` metoden.
+Vi skapar en tabell och använder Jinja för att skapa en loop och lägga till varje gissning i tabellen.
+Magin händer i `<tbody>`, vi använder en [for-loop](http://jinja.pocoo.org/docs/2.10/templates/#for) med hjälp av Jinja för att gå igenom en lista med Guess objekt och lägger till dem i tabellen, en rad/objekt.
 
 ```html
 <table class="table">

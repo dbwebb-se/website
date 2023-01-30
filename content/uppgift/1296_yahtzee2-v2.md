@@ -46,7 +46,7 @@ Era klasser ska uppfylla beskrivningarna nedanför. Beskrivningarna är vad som 
 
 Lägg till en ny metod.
 
-- `__eq__(die/value)` ska kunna ta emot ett Die objekt eller ett heltal. Om tärningarna innehåller samma värde ska `True` returneras, annars `False`. Samma gäller om heltaltet är samma som tärningens värde.
+- `__eq__(die:Die/value:int)` ska kunna ta emot ett Die objekt eller ett heltal. Om tärningarna innehåller samma värde ska `True` returneras, annars `False`. Samma gäller om heltaltet är samma som tärningens värde.
 
 
 
@@ -70,7 +70,7 @@ Inga.
 
 #### Metoderna {#rule-met}
 
-- `points(hand)` - metoden är abstrakt och ska innehålla `pass`. Syftet med metoden är att räkna ut hur många poäng man får med en Hand med en regel.
+- `points(hand: Hand)` - metoden är abstrakt och ska innehålla `pass`. Syftet med metoden är att räkna ut hur många poäng man får med en Hand med en regel.
 
 
 
@@ -80,13 +80,13 @@ Denna klassen ärver från `Rule` och representerar reglerna i övre delen, anta
 
 #### Attributen {#same-value-rule-attr}
 
-- `value` - Ska innehålla värdet för regeln, t.ex. 1 för regeln Ones, 2 för regeln Twos.
 - `name` - Ska innehålla namnet på regeln, t.ex. "Ones" för regeln Ones osv.
+- `value` - Ska innehålla värdet för regeln, t.ex. 1 för regeln Ones, 2 för regeln Twos.
 
 #### Metoderna {#same-value-rule-met}
 
-- `__init__(value, name)` - inga defaultvärden
-- `points(hand)` - ska ta emot ett Hand objekt som argument. Metoden ska räkna ut hur många av tärningarna som har samma värde som värdet i `value` och returnera vad det blir i poäng. T.ex. 3 för 3 stycken 1:or om det är i subklassen Ones.
+- `__init__(name:str, value: int)` - inga defaultvärden
+- `points(hand: Hand)` - ska ta emot ett Hand objekt som argument. Metoden ska räkna ut hur många av tärningarna som har samma värde som värdet i `value` och returnera vad det blir i poäng. T.ex. 3 för 3 stycken 1:or om det är i subklassen Ones.
 
 
 
@@ -128,7 +128,7 @@ def __init__(self):
     self.name = "Three of a kind"
 ...       
 ```
-- `points(hand)` - ska returnera poängsumman för regeln. Om handen innehåller minst 3 tärningar med samma värde blir poängen summan av alla tärningar i handen. Oavsett vilket värde det finns 3 av så blir poängen summan av alla 5 tärningar.
+- `points(hand: Hand)` - ska returnera poängsumman för regeln. Om handen innehåller minst 3 tärningar med samma värde blir poängen summan av alla tärningar i handen. Oavsett vilket värde det finns 3 av så blir poängen summan av alla 5 tärningar.
 
 
 

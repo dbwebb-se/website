@@ -55,7 +55,7 @@ Läs följande:
 
 1. [Aggregation](https://atomicobject.com/resources/oo-programming/object-oriented-aggregation)
 
-1. [Arv](https://atomicobject.com/resources/oo-programming/object-oriented-interitance.)
+1. [Arv](https://atomicobject.com/resources/oo-programming/object-oriented-interitance)
 
 
 

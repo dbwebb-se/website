@@ -63,7 +63,7 @@ Denna klassen ska representera tärning.
 - `__init__(value)` - `value` parametern ska ha ett default värde. Om man skickar med ett argument till `value` parametern i konstruktorn ska tärningen få det värdet. Om argumentet innehåller ett heltal som är större än `MAX_ROLL_VALUE`, tilldela `MAX_ROLL_VALUE` som värde på tärningen. Om argumentet innehåller ett heltal som är mindre än `MIN_ROLL_VALUE`, tilldela `MIN_ROLL_VALUE` som värde på tärningen. Om man **inte** skickar med ett argument ska det slumpas fram ett värde till tärningen.
 - `get_name()` - ska returnera namnet på värdet tärningen har. En tärning med värdet 1 har namnet "one", värdet 2 har namnet "two" osv.
 - `get_value()` - ska returnera värdet på tärningen.
-- `roll()` - slumpa fram ett nytt värde på tärningen. Använd funktionen `randint` i modulen `random`.
+- `roll()` - slumpa fram ett nytt värde på tärningen. Använd funktionen `randint` i modulen `random`. Eftersom att värden slumpas fram så kan en tärning få samma värde igen.
 - `__str__()` ska returnera värdet som tärningen har som en sträng.
 
 
@@ -102,7 +102,7 @@ Ni ska lägga grunden för ett Yahtzee spel i webbläsaren med hjälp av Flask. 
     1. Att skapa ett objekt utan skicka argument till konstruktorn.
     1. Att skapa ett objekt och skicka värde på tärningen till konstruktorn.
     1. Att skapa ett objekt och skicka ett otillåtet värde på tärningen, som till exempel 100, till konstruktorn.
-    1. Att `roll()` slumpar nytt värde.
+    1. Att `roll()` slumpar nytt värde. Eftersom att värden slumpas fram så kan en tärning få samma värde igen.
     1. Att `get_name()` returnerar korrekt namn.
     1. Att `__str__()` returnerar rätt värde som en sträng.
 

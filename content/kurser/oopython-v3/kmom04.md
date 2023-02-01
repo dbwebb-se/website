@@ -65,7 +65,7 @@ Läs följande:
 
 Titta på följande video:  
 
-1. Videos 12-22 i spellistan [Software Development Process: Part 2 of 3](https://www.youtube.com/watch?v=pZ9-ujSP_48&index=12&list=PLAwxTw4SYaPm8PAGH7ov2Bj-nG4sXgCtJ)  om class diagrams.
+1. Videos 12-22 i spellistan [Software Development Process: Part 2 of 3](https://www.youtube.com/watch?v=pZ9-ujSP_48&index=12&list=PLAwxTw4SYaPm8PAGH7ov2Bj-nG4sXgCtJ) om class diagrams. Det är många videor men de är bara mellan 1 och 3 minuter långa.
 
 1. Videom klassdiagram: [UML Class Diagram Tutorial](https://www.youtube.com/watch?v=UI6lqHOVHic)
 
@@ -121,12 +121,12 @@ Dessa uppgifter skall utföras och redovisas.
 
 <!-- 1. Gör uppgiften "[Bygg en bank med flask - Del 2](uppgift/bank_med_flask_del_tva)". Spara koden i `me/kmom03/bank2/`. -->
 
-1. Gör uppgiften "[Yahtzee3](uppgift/yahtzee3)". Spara koden i mappen `me/kmom03/yahtzee3/`.
+1. Gör uppgiften "[Yahtzee3](uppgift/yahtzee3-v2)". Spara koden i mappen `me/kmom04/yahtzee3/`.
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb test kmom03
-dbwebb publish kmom03
+dbwebb test kmom04
+dbwebb publish kmom04
 ```
 
 

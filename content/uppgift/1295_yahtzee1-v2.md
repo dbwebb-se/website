@@ -72,7 +72,7 @@ Denna klassen ska representera tärning.
 
 Denna klassen ska representera en spelhand som ska ha fem tärningar den kan spela med.
 
-[FIGURE src="/image/oopython/kmom01/yahtzee_hand.png" caption="Hand klass"]
+[FIGURE src="/image/oopython/kmom01/yahtzee1-hand.png" caption="Hand klass"]
 
 #### Attributen {#hand-attr}
 

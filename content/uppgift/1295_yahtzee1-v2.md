@@ -114,7 +114,7 @@ Ni ska lägga grunden för ett Yahtzee spel i webbläsaren med hjälp av Flask. 
 
 1. Applikationen ska använda Bootstrap.
 
-1. Applikationen ska ha routen `main`. I den routen ska ni skapa ett Hand objekt med fem slumpade tärningar. På routens sida ska ni visa värdet på handens fem tärningar med hjälp av bilderna som finns i [exampel/yahtzee/img](https://github.com/dbwebb-se/oopython/tree/master/example/yahtzee/img). Det finns en bild för varje tärningsslag mellan 1 och 6, med namnen one.png, two.png, three.png, four.png, five.png och six.png. T.ex. om handen slog tärningarna 1, 4, 2, 4, 4 så ska ni visa bilderna one.png, four.png, two.png, four.png och four.png.
+1. Applikationen ska ha routen `main`. I den routen ska ni skapa ett Hand objekt med fem slumpade tärningar och ni ska skicka in Hand objektet till `render_template()`. På routens sida ska ni visa värdet på handens fem tärningar med hjälp av bilderna som finns i [exampel/yahtzee/img](https://github.com/dbwebb-se/oopython/tree/master/example/yahtzee/img). Det finns en bild för varje tärningsslag mellan 1 och 6, med namnen one.png, two.png, three.png, four.png, five.png och six.png. T.ex. om handen slog tärningarna 1, 4, 2, 4, 4 så ska ni visa bilderna one.png, four.png, two.png, four.png och four.png.
 
 1. Ni ska också ha routen `about` där ni på sidan skriva era namn och akronymer.
 

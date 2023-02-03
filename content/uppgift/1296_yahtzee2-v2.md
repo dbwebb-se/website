@@ -70,7 +70,7 @@ Inga.
 
 #### Metoderna {#rule-met}
 
-- `points(hand: Hand)` - metoden är abstrakt och ska innehålla `pass`. Syftet med metoden är att räkna ut hur många poäng man får med en Hand med en regel.
+- `points(hand: Hand)` - metoden är abstrakt och ska vara tom. Syftet med metoden är att räkna ut hur många poäng man får med en Hand med en regel.
 
 
 

@@ -101,7 +101,7 @@ Genomför följande övningar för att träna dig.
 
 
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
@@ -119,15 +119,8 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Yahtzee3](uppgift/yahtzee3-v2)". Spara koden i mappen `me/kmom04/yahtzee3/`.
 
-```bash
-# Ställ dig i kurskatalogen
-dbwebb test kmom04
-dbwebb publish kmom04
-```
 
-
-
-###Extra {#extra}
+### Extra {#extra}
 
 Det finns inga extrauppgifter.
 

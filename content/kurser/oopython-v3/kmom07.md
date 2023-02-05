@@ -95,11 +95,6 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Skapa ett Binary Search Tree](uppgift/binary-search-tree)"
 
-```bash
-# Ställ dig i kurskatalogen
-dbwebb publish kmom06
-```
-
 
 
 ###Extra {#extra}

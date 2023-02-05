@@ -93,7 +93,7 @@ Genomför följande övning för att träna dig.
 
 
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
@@ -107,15 +107,8 @@ Dessa uppgifter skall utföras och redovisas.
 <!-- 1. Gör uppgiften "[Skapa former](uppgift/skapa-former)". Spara koden i mappen `me/flask/`. -->
 
 
-```bash
-# Ställ dig i kurskatalogen
-# dbwebb validate flask
-dbwebb publish kmom03
-```
 
-
-
-###Extra {#extra}
+### Extra {#extra}
 
 Det finns inga extrauppgifter.
 

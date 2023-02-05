@@ -30,14 +30,14 @@ Läsanvisningar  {#lasanvisningar}
 
 
 
-###Kurslitteratur  {#kurslitteratur}
+### Kurslitteratur  {#kurslitteratur}
 
 Läs följande:
 
 
 
 
-###Artiklar {#artiklar}
+### Artiklar {#artiklar}
 
 Läs följande:
 
@@ -46,7 +46,7 @@ Läs följande:
 1. [Python thinking recursively](https://realpython.com/python-thinking-recursively/). Intressant artikel som pratar om hur rekursion fungerar i Python.
 
 
-###Video  {#video}
+### Video  {#video}
 
 Titta på följande:
 
@@ -60,7 +60,7 @@ Titta på följande:
 
 
 
-###Lästips {#lastips}
+### Lästips {#lastips}
 
 Om du känner att du har tid och lust.
 
@@ -75,7 +75,7 @@ Om du känner att du har tid och lust.
 
 
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
 
 Genomför följande övning för att träna dig.
 
@@ -85,7 +85,7 @@ Genomför följande övning för att träna dig.
 
 
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
@@ -93,12 +93,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Terminalprogram med sortering av lista](uppgift/sortering-av-egen-lista)". Spara din kod i mappen `sort`.
 
-```bash
-# Ställ dig i kurskatalogen
-dbwebb publish kmom05
-```
 
-###Extra {#extra}
+
+### Extra {#extra}
 
 Det finns inga extrauppgifter.
 

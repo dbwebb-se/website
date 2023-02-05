@@ -96,7 +96,7 @@ Genomför följande övning för att träna dig.
 
 
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
@@ -106,14 +106,8 @@ TIPS! När ni gör uppgifterna kan ni använda [Treevizer](https://pypi.org/proj
 
 1. Gör uppgiften "[Skapa lista](uppgift/skapa-lista)". Spara din kod i mappen `list`.
 
-```bash
-# Ställ dig i kurskatalogen
-dbwebb test kmom04
-dbwebb publish kmom04
-```
 
-
-###Extra {#extra}
+### Extra {#extra}
 
 Det finns inga extrauppgifter.
 

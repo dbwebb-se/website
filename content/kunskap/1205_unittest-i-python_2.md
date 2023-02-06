@@ -3,6 +3,7 @@ author:
     - aar
     - grm
 revision:
+    "2023-02-06": (C, grm) Uppdaterat till kmom04.
     "2022-01-29": (B, grm) Lagt till kodstruktur.
     "2022-01-27": (A, aar) Kopierat från intro-till-enhetstester.
 category:
@@ -56,7 +57,7 @@ Artikeln utgår från filerna som vi hittar i [exempelmappen](https://github.com
 
 Nu är det dags att titta på hur vi skriver några enhetstester för vår klass, _Phone_. Klassen ligger i filen `phone.py`.
 
-Skapa kodtrukturen du gjorde i [Introduktion till enhetstester](kunskap/unittest-i-python_1). Använd terminalen och ställ dig i "kmom03":
+Skapa kodtrukturen du gjorde i [Introduktion till enhetstester](kunskap/unittest-i-python_1). Använd terminalen och ställ dig i "kmom04":
 ```bash
 $ mkdir unittest/src
 $ mkdir unittest/tests

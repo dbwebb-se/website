@@ -73,7 +73,7 @@ Attributet ni väljer att använda för att hålla poängen, ska vara **privat**
 
 - `finished()` - Metoden ska returnera `True` om alla regler har använts en gång för att få poäng, annars `False`.
 
-- `from_dict(points)` - Det ska vara en **classmethod** som används för att skapa ett nytt Scoreboard objekt. Metoden ska ta emot en dictionary där nycklarna är namn på regler och värdena är hur många poäng som de reglerna har fått. Värdet `-1` används för att markera att en regel inte har använts för att få några poäng. **Tips** skapa denna metoden tidigt, testerna använder sig av den för att skapa objekt att testa på.
+- `from_dict(points)` - Det ska vara en **classmethod** som används för att skapa ett nytt Scoreboard objekt. Metoden ska ta emot en dictionary där nycklarna är namn på regler och värdena är hur många poäng som de reglerna har fått. Värdet `-1` används för att markera att en regel inte har använts för att få några poäng. Här finns ett exempel på en [dictionary som kan användas som argument](https://gist.github.com/AndreasArne/8e4bb6d5ca5392d4c9a763346c7e02dd). **Tips** skapa denna metoden tidigt, testerna använder sig av den för att skapa objekt att testa på.
 
 
 

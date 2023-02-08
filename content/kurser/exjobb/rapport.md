@@ -15,4 +15,6 @@ Detta moment kompletteras under tidig vår 2023.
 [/WARNING]
 
 
+[Personuppgiftshantering](https://studentportal.bth.se/genomfor-studierna/examensarbete/personuppgiftsbehandling-vid-studentarbeten/)
+
 [ACM Code of Ethics](https://www.acm.org/code-of-ethics) Bör ligga i nån artikel om hur man diskuterar resultaten.

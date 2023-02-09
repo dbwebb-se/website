@@ -62,7 +62,7 @@ Lägg till en ny metod.
 
 Denna klassen är en **abstrakt** klass och representerar en regel. Det ska finnas en subklass för varje sätt att få poäng.
 
-[FIGURE src="/image/oopython/kmom02/yahtzee2-rules.png" caption="Klassen Rule och dess subklasser"]
+[FIGURE src="/image/oopython/kmom02/yahtzee2-rules-v2.png" caption="Klassen Rule och dess subklasser"]
 
 #### Attributen {#rule-attr}
 
@@ -105,7 +105,7 @@ Inga.
 ...
 def __init__(self):
     super().__init__(1, "Ones")
-...       
+...
 ```
 
 **Klasserna** `Twos`, `Threes`, `Fours`, `Fives` och `Sixes` är uppbyggda på samma sätt.

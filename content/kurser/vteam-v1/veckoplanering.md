@@ -20,7 +20,15 @@ Varje kursvecka förekommer ett eller flera fokusområden som presenteras från 
 <!--
 TODO
 
-* Maila refgruppen och be om tips - vad säga till studenterna om vad som är viktigt när man jobbar i grupp och vilka arbetssätt som normalt förekommer ute.
+* Dela upp veckoplanen i ett dokument per vecka, förtydliga vad man bör göra efter varje vecka
+* Hur ska de jobba med planering, lyft fram issues och backlogs som stöd i inledningen, gör det enkelt att komma igång med github projects backlog
+* Milstolpar, eller tydliga checklistor för att uppnå varje milstolpe, underlättar för de som har det svårt och kan fånga upp problemprojekt tidigare
+* Gör övning med docker som alla kan utföra på egen hand.
+* Checklista krav, minsta möjliga nivå, uppdelad i delar så att varje person kan lösa sin del?
+* Använd mentorer till de grupper som känns svaga?
+* Vissa länkar till de tekniska rapporterna kan vara brutna, kolla inför nästa år.
+* Checklista för individ, vad bör jag göra och vilka delar skall jag lämna in.
+
 
 LINKS
 

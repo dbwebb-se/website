@@ -80,12 +80,12 @@ Denna klassen ärver från `Rule` och representerar reglerna i övre delen, anta
 
 #### Attributen {#same-value-rule-attr}
 
-- `name` - Ska innehålla namnet på regeln, t.ex. "Ones" för regeln Ones osv.
 - `value` - Ska innehålla värdet för regeln, t.ex. 1 för regeln Ones, 2 för regeln Twos.
+- `name` - Ska innehålla namnet på regeln, t.ex. "Ones" för regeln Ones osv.
 
 #### Metoderna {#same-value-rule-met}
 
-- `__init__(name:str, value: int)` - inga defaultvärden
+- `__init__(value: int, name:str)` - inga defaultvärden
 - `points(hand: Hand)` - ska ta emot ett Hand objekt som argument. Metoden ska räkna ut hur många av tärningarna som har samma värde som värdet i `value` och returnera vad det blir i poäng. T.ex. 3 för 3 stycken 1:or om det är i subklassen Ones.
 
 
@@ -104,7 +104,7 @@ Inga.
 ```python
 ...
 def __init__(self):
-    super().__init__("Ones", 1)
+    super().__init__(1, "Ones")
 ...       
 ```
 

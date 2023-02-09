@@ -134,7 +134,7 @@ Rätta eventuella fel som dyker upp och validera igen. När det ser grönt ut s�
 Extrauppgift {#extra}
 -----------------------
 
-1. Istället för att skriva ut ett felmeddelande när du väljer samma regel igen, så kan du designa ditt spel så att du inte kan välja samma regel igen. När en regel är vald, så ska inte den kunna väljas igen och regelns poäng ska inte skrivas ut.
+1. Istället för att skriva ut ett felmeddelande när du väljer samma regel igen, så kan du designa ditt spel så att du inte kan välja samma regel igen. När en regel är vald, så ska inte den kunna väljas igen och vilken poäng nuvarande Hand är värde med regeln ska inte skrivas ut.
 
 
 

@@ -104,7 +104,7 @@ Inga.
 ```python
 ...
 def __init__(self):
-    super().__init__(1, "Ones")
+    super().__init__("Ones", 1)
 ...       
 ```
 

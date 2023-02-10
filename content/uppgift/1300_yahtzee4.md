@@ -120,6 +120,13 @@ Krav {#krav}
 
 1. I topplista vyn ska det skrivas ut hur många sparade inlägg som finns.
 
+1. Lägg till tester för följande saker. Kolla på [Testa exceptions](https://youtu.be/ePkZEOHhk-s) för att se hur man fångar exceptions i ett test:
+    - UnorderedList klassen:
+        - `get()` - kolla att exception lyfts om index inte finns.
+        - `get()` - kolla att rätt värde returneras om index finns.
+        - `remove()` - kolla att exceptions lyfts om värde saknas.
+        - `remove()` - kolla att listan är korrekt efter element har tagits bort om värdet finns.
+
 1. Testa, validera och publicera applikationen på studentservern.
 
 

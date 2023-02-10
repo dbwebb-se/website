@@ -1,7 +1,7 @@
 ---
-author: lew
+author: aar
 revision:
-    "2018-01-25": (A, lew) First version.
+    "2018-01-25": (A, aar) First version.
 category:
     - oopython
 ...
@@ -17,10 +17,6 @@ Vi ska titta närmare på några av de vanligaste datastrukturerna och hur de fu
 Exceptions hjälper oss med att få reda på vad som gått fel. Det finns en hel del inbyggda exceptions som vi säkert stött på tidigare. Nu ska vi se hur vi skapar egna exceptions och på så sätt ta ett steg till mot att ha full kontroll över hur programmet ska fungera.
 
 <!--more-->
-
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
 
 [INFO]
 Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.
@@ -86,7 +82,7 @@ Om du känner att du har tid och lust.
 
 
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
 
 Genomför följande övning för att träna dig.
 
@@ -100,16 +96,15 @@ Genomför följande övning för att träna dig.
 
 Dessa uppgifter skall utföras och redovisas.
 
-TIPS! När ni gör uppgifterna kan ni använda [Treevizer](https://pypi.org/project/treevizer/) för att skapa bilder av node strukturerna.
+TIPS! När ni implementerar er lista och kö kan ni använda [Treevizer](https://pypi.org/project/treevizer/) för att skapa bilder av node strukturerna.
 
-1. Gör uppgiften "[Skapa queue](uppgift/skapa-queue)". Spara din kod i mappen `queue`.
 
-1. Gör uppgiften "[Skapa lista](uppgift/skapa-lista)". Spara din kod i mappen `list`.
+1. Gör uppgiften "[Yahtzee4](uppgift/yahtzee4)". Spara din kod i mappen `yahtzee4`.
 
 
 ### Extra {#extra}
 
-Det finns inga extrauppgifter.
+1. Gör uppgiften "[Skapa queue](uppgift/skapa-queue-v2)". Spara din kod i mappen `queue`.
 
 
 Lämna in  {#resultat}

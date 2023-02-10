@@ -108,7 +108,7 @@ Krav {#krav}
 
 1. Implementera `UnorderedList` klassen i `yahtzee4/src/unorderedlist.py`.
 
-1. Implementera `Leaderboard` klassen i  `yahtzee4/src/leaderboard.py`. Ett `UnorderedList` objekt ska användas för att hålla spelare och dess poäng. Tips, används en tuple för att hålla namn och poäng som ett element.
+1. Implementera `Leaderboard` klassen i  `yahtzee4/src/leaderboard.py`. Ett `UnorderedList` objekt ska användas för att hålla spelare och dess poäng. Tips, använd en tuple för att hålla namn och poäng som ett element.
 
 1. Använd en fil för att spara data från `Leaderboard` klassen.
 

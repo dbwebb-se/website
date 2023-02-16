@@ -87,7 +87,7 @@ Metoderna i diagrammet **måste** finnas, i övrigt får ni själva bestämma hu
 
 - `load(filename)` - Ska vara en klassmetod. Metoden ska läsa upp data från fil med filnamnet, skapa ett `Leaderboard` objekt med data från filen och sen returnera det skapade `Leaderboard`objektet.
 
-- `save(filename)` - Metoden ska spara datan från `enteries` till fil med filnamnet. Datan ska vara strukturerad i filen så att ni kan läsa upp den i `load()` och återskapa `Leaderboard` objektet
+- `save(filename)` - Metoden ska spara datan från `enteries` till fil med filnamnet. Datan ska vara strukturerad i filen så att ni kan läsa upp den i `load()` och återskapa `Leaderboard` objektet. **PS** Om du får `permission denied` på studentservern, kör `sudo chmod 777 din-fil` lokalt och gör dbwebb publish igen.
 
 - `add_entry(name, score)` - Metoden ska lägga till namn och poäng i `entries`.
 

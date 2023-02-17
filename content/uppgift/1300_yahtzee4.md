@@ -100,8 +100,6 @@ Tips! I `app.py`, för ert `Leaderboard` objekt ska ni inte spara något i `sess
 Krav {#krav}
 -----------------------
 
-### Krav för alla {#krav-alla}
-
 1. Kopiera er kod från `me/kmom04/yahtzee3` till `me/kmom05/yahtzee4`.
 
 1. Implementera `Node` klassen i `yahtzee4/src/node.py`.

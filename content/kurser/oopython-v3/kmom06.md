@@ -11,9 +11,9 @@ Vi ska titta på hur några av de vanligaste sorteringsalgoritmerna ser ut och f
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
+[INFO]
+Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.
+[/INFO]
 
 [FIGURE src=/image/oopython/kmom05/index_top.png?w=w2 caption="Bild på algoritmen Merge-sort."]
 
@@ -91,7 +91,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Python med rekursiva funktioner](uppgift/python-med-rekursiva-funktioner-v2)" (lab 3)
 
-1. Gör uppgiften "[Terminalprogram med sortering av lista](uppgift/sortering-av-egen-lista)". Spara din kod i mappen `sort`.
+1. Gör uppgiften "[Yahtzee5](uppgift/yahtzee5)". Spara din kod i mappen `yahtzee5`.
 
 
 

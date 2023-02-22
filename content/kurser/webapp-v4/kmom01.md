@@ -30,9 +30,9 @@ Labbmiljön  {#labbmiljo}
 
 Det finns en [längre beskrivning om kursens labbmiljö](./../installera-labbmiljo). Läs den om du är osäker på vad som skall göras, eller om detta är din första dbwebb-kurs.
 
-[Installera labbmiljön](kurser/webapp-v4/labbmiljo) för kursen.
+[Installera labbmiljön](kurser/webapp-v4/labbmiljo) för kursen. **TLDR** har du `node` och `npm` installerat är det bara att tuta och köra.
 
-Uppdatera [dbwebb-cli](dbwebb-cli) samt klona och initiera kursrepot.
+Uppdatera sedan [dbwebb-cli](dbwebb-cli) samt klona och initiera kursrepot.
 
 ```text
 # Gå till din katalog för dbwebb-kurser

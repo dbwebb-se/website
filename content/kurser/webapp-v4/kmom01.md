@@ -67,9 +67,11 @@ För att förstå ett viktigt begrepp inom JavaScript-ramverk komponenter är ar
 
 1. Det finns en [videoserie](https://youtube.com/playlist?list=PLKtP9l5q3ce8Akmp6hSW78cDuHHNylpRG) kopplat till kursen, titta på videos som börjar på 1.
 
-Dessutom är detta en bra introduktion till JavaScript ramverket React:
+Dessutom är nedanstående bra introduktioner till JavaScript ramverket React och till React Native som vi använder i denna kursen:
 
 [YOUTUBE src=Tn6-PIqc4UM width=630 caption="Fireship React in 100 seconds."]
+
+[YOUTUBE src=gvkqT_Uoahw width=630 caption="Fireship React Native in 100 seconds."]
 
 
 

@@ -46,26 +46,26 @@ Krav {#krav}
 1. Skapa filen `src/sort.py` och kopiera in insertion sort från [artikeln](kunskap/sorteringsalgoritmer-v2#insertion-sort).  
 `src/sort.py` ska inte innehålla någon klass. Det räcker med enbart funktion för algoritmen.
 
-1. Justera Insertion sort funktionen så den kan sortera din `UnorderedList`. PS! När ni skapar sorterings algoritmerna **ska** ni använda er av listans metoder för att flytta på element. Ni ska **inte** hämta `head` och traversera noder med den i era algoritmer.
+1. Justera Insertion sort funktionen så den kan sortera din `UnorderedList`. PS! När ni skapar sorterings algoritmerna **ska** ni använda er av metoderna på `Unorderdlist` objektet för att flytta på element. Ni ska **inte** hämta `head` och traversera noder med den i era algoritmer eller gör om det till en inbyggd lista.
 
-1. I `src/sort.py` skapa en **rekursiv insertion** sort algoritm som kan sortera din lista. Döp den till `recursive_insertion`.
+2. I `src/sort.py` skapa en **rekursiv insertion** sort algoritm som kan sortera din lista. Döp den till `recursive_insertion`.
 
-1. Använd din insertion sort för att sortera UnorderedList i topplista vyn. Sortera på antalet poäng.
+3. Använd din insertion sort för att sortera UnorderedList i topplista vyn. Sortera på antalet poäng.
 
-1. Lägg till stöd för flera spelare med hjälp av en kö för att hålla koll på vilken spelares tur det är. Ni gör det genom att använda dequeue/peek för att få ut nuvarande spelare och enqueue för att lägga till spelare sist igen.
+4. Lägg till stöd för flera spelare med hjälp av en kö för att hålla koll på vilken spelares tur det är. Ni gör det genom att använda dequeue/peek för att få ut nuvarande spelare och enqueue för att lägga till spelare sist igen.
     - Om ni gjorde extrakravet i kmom05 och implementerade en egen Queue klass, kopiera in den filen i `src` och använd den. Annars, kopiera koden från [Datastrukturer#Queue](kunskap/datastrukturer#queue) och lägg i `src/queue.py`.
     - Jag rekommenderar att skapa en `to_list()` metod i `Queue` klassen så ni enkelt kan få ut datan för att spara i session.
 
-1. Det är upp till er själva hur ni implementerar flera spelar i spelet. Tänk på att ni **ska** skriva objektorienterad kod och vi vill minimera mängden kod i `app.py`. Ni får skapa nya klasser och uppdatera de som redan finns.
+5. Det är upp till er själva hur ni implementerar flera spelar i spelet. Tänk på att ni **ska** skriva objektorienterad kod och vi vill minimera mängden kod i `app.py`. Ni får skapa nya klasser och uppdatera de som redan finns.
 
-1. Spelet ska ta slut när alla spelare har valt alla regler. I den nya vinnar vyn ska bara den som fick höst poäng få skriva in sitt namn till topplistan.
+6. Spelet ska ta slut när alla spelare har valt alla regler. I den nya vinnar vyn ska bara den som fick höst poäng få skriva in sitt namn till topplistan.
 
-1. Försök jobba mot era objekt så mycket som möjligt i template filerna.
+7. Försök jobba mot era objekt så mycket som möjligt i template filerna.
 
-1. Lägg till tester för följande saker.
+8. Lägg till tester för följande saker.
     - minst två "värdefulla" tester för din rekursiva insertion sort i `tests/test_sort.py`.
 
-1. Testa, validera och publicera applikationen på studentservern.
+9. Testa, validera och publicera applikationen på studentservern.
 
 
 

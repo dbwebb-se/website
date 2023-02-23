@@ -8,6 +8,7 @@ category:
     - er-modellering
     - kursen databas
 revision:
+    "2023-02-23": "(G, mos) Bort med kravet DELETE på trigger."
     "2022-02-22": "(F, mos) Uppdaterade skrivningen om kravet invadd."
     "2022-02-11": "(E, mos) Genomgången och justerad inför v2."
     "2019-03-13": "(D, mos) Tips om optionella argument."
@@ -127,13 +128,12 @@ Uppgiften är indelad i tre huvudsakliga delar, en generell del inklusive databa
 
 1. Skapa en SQL-fil som du kan använda för att återskapa hela databasen från början till slut, kalla den för `sql/eshop/reset.sql`.
 
-1. Du skall ha en loggtabell som loggar intressanta händelser i systemet, via triggers. Du skall logga när någon gör INSERT, UPDATE och DELETE på tabellen produkt. Du loggar tiden då något hände och en textsträng som beskriver händelsen och det objekt som var inblandat i händelsen. Till exempel så här.
+1. Du skall ha en loggtabell som loggar intressanta händelser i systemet, via triggers. Du skall logga när någon gör INSERT och UPDATE på tabellen produkt. Du loggar tiden då något hände och en textsträng som beskriver händelsen och det objekt som var inblandat i händelsen. Till exempel så här.
 
 | Tidstämpel | Händelse |
 |------------|----------|
 | 2019-02-18 16:01:01 | "Ny produkt lades till med produktid 'produkt1'." |
 | 2019-02-18 16:02:01 | "Detaljer om produktid 'produkt1' uppdaterades." |
-| 2019-02-18 16:03:01 | "Produkten med produktid 'produkt1' raderades." |
 
 
 

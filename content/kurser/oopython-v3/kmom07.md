@@ -15,13 +15,9 @@ Vi jobbar vidare med datastrukturer, algoritmer och rekursion genom att kolla p�
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 [INFO]
 
-Gör `dbwebb update` innan du startar med kursmomentet.
+Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.
 [/INFO]
 
 [FIGURE src=/image/oopython/kmom06/bst.svg caption="Ett binärt sökträd."]
@@ -58,17 +54,15 @@ Inget att läsa.
 
 Titta på följande:
 
-1. Kolla på de video som börjar med [kmom06 i spellistan](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_PJCiQrnRxGtrfSFRBLvap).
+1. Kolla på de video som börjar med [kmom07 i spellistan](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_PJCiQrnRxGtrfSFRBLvap).
+
+1. [Gammal föreläsning](https://youtu.be/9NMhvR3jY6w?t=1951). Pratar allmänt om programmering, bl.a. att plugga programmering VS. jobba med programmering. Prata också om för- och nackdelar med objektorientering. Kolla från tidsstämpeln.
 
 
 
 ###Lästips {#lastips}
 
-1. [Förra tidigare års föreläsning](https://youtu.be/9NMhvR3jY6w?t=1951). Pratar allmänt om programmering, bl.a. att plugga programmering VS. jobba med programmering.
-
 1. [How to use the Python debugger](https://www.digitalocean.com/community/tutorials/how-to-use-the-python-debugger). Lär er använda Pythons debugger för att stega igenom koden.
-
-1. [Python debugger i atom](https://atom.io/packages/python-debugger). Installera Pythons debugger i atom så du kan stega igenom koden i atom istället för i terminalen. (Har inte testat den än. Om du testar skriv i redovisningstexten om den funkade bra).
 
 
 

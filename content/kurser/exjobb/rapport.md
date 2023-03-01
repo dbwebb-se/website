@@ -61,12 +61,14 @@ Under processen att skriva examensarbetet tar vi hjälp av två skrivguider.
 
 ### Övningar {#ovningar}
 
+1. Läs igenom artikeln "[Redovisa och diskutera dina resultat](kunskap/exjobb-redovisa-resultat)".
 
+1. Läs igenom artikeln "[En bra konklusion](kunskap/exjobb-en-bra-konklusion)".
 
 
 
 ### Uppgifter {#uppgifter}
 
-Följande uppgift skall utföras och redovisas.
+Följande uppgift skall utföras.
 
 1. Lös uppgiften "[Skriv din rapport](uppgift/exjobb-rapport)". Lämna in din rapport som en PDF på Canvas.

@@ -7,12 +7,6 @@ revision:
 Rapport
 ====================================
 
-[WARNING]
-**Kursutveckling pågår inför vt23.**
-
-Detta moment kompletteras under tidig vår 2023.
-[/WARNING]
-
 Nu är vi igång på riktigt efter att topic och proposal har godkänts. Nu är det dags att samla in resultaten och att analysera och diskutera hur det förhåller sig till forskningsområdet i stort. När vi diskuterar våra resultat tar vi även in etiska aspekter och på det sättet sätter vi arbetet i ett större perspektiv.
 
 

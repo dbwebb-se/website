@@ -84,6 +84,8 @@ Gör följande övningar för att träna inför uppgifterna.
 
 1.  Installera och testa verktyget jq via artikeln "[Installera verktyget jq för att söka i JSON-filer](kunskap/installera-verktyget-jq-for-att-soka-i-json-filer)".
 
+1. Läs igenom artikeln och installera "[Utvecklingsverktyg för REST tjänster](kunskap/utvecklingsverktyg-for-restful-tjanster)".
+
 1. Gör övningen "[Knappar för mobilen](kunskap/knappar-for-mobilen)". Spara eventuella testfiler i `me/kmom02/buttons`.
 
 1. Gör övningen "[En router i JavaScript](kunskap/en-router-i-javascript)".
@@ -109,7 +111,7 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i redovisningstexten.
 
-* Vilka fördelar ser du med verktyg som Postman, curl och jq?
+* Vilka fördelar ser du med verktyg som Postman och jq?
 * Fick du till en bra struktur i din CSS/SASS kod?
 * Vilka fördelar ser du med att kombinera _web components_ med en router i JavaScript?
 * Vilka insikter fick du när du skummade igenom Apples och Androids design guidelines?

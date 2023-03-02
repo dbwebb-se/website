@@ -7,7 +7,7 @@ revision:
 Kmom01: Web Components
 ==================================
 
-Tanken är att komma igång med utveckling av mobila applikationer. De mobila applikationerna utvecklar vi med tekniker baserade på HTML, CSS och JavaScript. Vi ser hur vi kan utnyttja dessa tekniker för att ändra innehållet utan att ladda om applikationen. Som ett första steg så läser vi på om grunderna, bygger en me-sida med fokus på mindre terminaler och börjar så smått med det löpande projektet för alla sex kursmoment.
+Tanken är att komma igång med utveckling av mobila applikationer. De mobila applikationerna utvecklar vi med tekniker baserade på HTML, CSS och JavaScript. Vi ser hur vi kan utnyttja dessa tekniker för att ändra innehållet utan att ladda om applikationen. Som ett första steg så läser vi på om grunderna och börjar så smått med det löpande projektet för alla sex kursmoment.
 
 
 
@@ -67,24 +67,13 @@ Läs följande artiklar för att få bakgrunden till övningarna.
 
 1. Läs om viewport på MDN i artikeln "[Using the viewport meta tag to control layout on mobile browsers](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)".
 
-<!-- 1. Läs artikeln om "[Mobile: native Apps, Web Apps, and hybrid Apps](http://www.nngroup.com/articles/mobile-native-apps/)". -->
-
 1. Bekanta dig med dokumentationen för [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) som vi använder för att ladda data via JavaScript.
 
-<!-- 1. Läs om "[MVC architektur](https://www.tmprod.com/blog/2012/what-is-mvc-architecture-in-a-web-based-application/)".
-
-<!-- 1. Titta i manualen om jQuery Mobile. Du finner den på deras [webbplats under demo](http://demos.jquerymobile.com/). Börja med att läsa artikeln som heter "Introduction" och läs därefter artikeln "Responsive Web Design". Avsluta med att skumma igenom manualen för att se vad där finns och för att bygga en känsla om vad jQuery Mobile innehåller.
-
-1. Titta på olika [varianter av mobila webappar med jQuery Mobile](http://jquerymobile.com/resources/) och få en känsla för vad man kan bygga med jQuery Mobile. -->
 
 
 ### Video {#video}
 
 1. Det finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-1cVPTFJ_Zw9b7N2Y4_ANI) kopplat till kursen, titta på videos som börjar på 0 och 1.
-
-<!-- 1. Video som ger en översikt av jQuery Mobile, "[jQuery Mobile and jQuery UI Keynotes - jQuery Conference Portland 2013](https://www.youtube.com/watch?v=JcHJtBAnGpE)". Video är från 2013 men ger en bra översikt och bakgrund av jQuery Mobile.
-
-1. Video om [Dave Methvin - The State of the jQuery Foundation](https://www.youtube.com/watch?v=vpooxtxaW2U&list=PL-0yjdC10QYpmXI3l-PGK1od4kTWOjm_A). Videon är opening keynote från konferensen jQuery Chicago 2014 och Dave Methvin är president av jQuery Foundation. -->
 
 
 
@@ -92,9 +81,7 @@ Läs följande artiklar för att få bakgrunden till övningarna.
 
 1. Läs översiktligt denna samling av "best-practices" för typografi på webben [Typography Handbook](http://typographyhandbook.com). Spara den i dina bokmärken som en framtida referens.
 
-<!-- 1. För mer om tillgänglighet (accessibility, a11y) titta in på [The A11Y Project](https://a11yproject.com/). -->
-
-<!-- 1. Läs artikeln [Choosing between a native, hybrid or webapp](https://crew.co/how-to-build-an-online-business/native-hybrid-web-app-differences/). -->
+1. För mer om tillgänglighet (accessibility, a11y) titta in på [The A11Y Project](https://a11yproject.com/).
 
 
 
@@ -108,10 +95,6 @@ Läs följande artiklar för att få bakgrunden till övningarna.
 ### Övningar {#ovningar}
 
 Gör följande övningar för att träna inför uppgifterna.
-
-1. Läs igenom tipset om "[Developer tools i webbläsaren för mobila enheter](coachen/developer-tools-i-webblasaren-for-mobila-enheter)".
-
-1. Läs igenom artikeln och installera "[Utvecklingsverktyg för REST tjänster](kunskap/utvecklingsverktyg-for-restful-tjanster)".
 
 1. Läs igenom artikeln "[Typografi i mobila enheter](kunskap/typografi-i-mobila-enheter)". Spara koden i `me/kmom01/typography`.
 

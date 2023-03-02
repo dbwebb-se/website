@@ -111,59 +111,59 @@ Kursmoment {#kursmoment}
 Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h studerande i form av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke. Alla kursmoment skall redovisas och du samlar alla redovisningar i din me-sida.
 
 
-###Kmom01: Single Page Application {#kmom01}
+### Kmom01: Web Components {#kmom01}
 
-Tanken är att komma igång med utveckling av mobila applikationer. De mobila applikationerna utvecklar vi med tekniker baserade på HTML, CSS och JavaScript. Vi ser hur vi kan utnyttja dessa tekniker för att ändra innehållet utan att ladda om applikationen. Som ett första steg så läser vi på om grunderna, bygger en me-sida med fokus på mindre terminaler och börjar så smått med det löpande projektet för alla sex kursmoment.
+Tanken är att komma igång med utveckling av mobila applikationer. De mobila applikationerna utvecklar vi med tekniker baserade på HTML, CSS och JavaScript. Vi ser hur vi kan utnyttja dessa tekniker för att ändra innehållet utan att ladda om applikationen. Som ett första steg så läser vi på om grunderna och börjar så smått med det löpande projektet för alla sex kursmoment.
 
-[Instruktion till kursmoment 01](kurser/webapp-v3/kmom01).
+[Instruktion till kursmoment 01](kurser/webapp-v5/kmom01).
 
 
 
-###Kmom02: Mobila enheters begränsningar {#kmom02}
+### Kmom02: En router {#kmom02}
 
 Vi tar en titt på vilka begränsningar och utmaningar man står inför som användare av en mobil enhet. Vi brytar ut CSS koden från kmom01 till ett GUI komponentbaserad ramverk och lägger till fler GUI komponenter till vårt ramverk.
 
-Vi fortsätter med vår applikation från kmom01 och använder tekniker för att strukturera JavaScript koden på ett bättre sätt.
+Vi fortsätter med vår applikation från kmom01 och använder tekniker för skapa en egen router så vi kan navigera runt i vår applikation.
 
 Innan vi gör detta tittar vi på ett verktyg som hjälper oss att söka och visa information i JSON-filer.
 
-[Instruktion till kursmoment 02](kurser/webapp-v3/kmom02).
+[Instruktion till kursmoment 02](kurser/webapp-v5/kmom02).
 
 
 
-###Kmom03: Formulär och CRUD {#kmom03}
+### Kmom03: Formulär och CRUD {#kmom03}
 
 I detta kursmoment fortsätter vi med att utveckla våra GUI komponenter från tidigare kursmoment. Vi skapar lättanvända formulärfält med hjälp av HTML5 och kopplar ihop fälten i formulär som är lätta att använda på små skärmar där kontext och möjligheten att skriva snabbt och enkelt saknas.
 
-I vår applikation lägger vi till möjligheten att skapa, uppdatera och ta bort data via formulär. Vi har i tidigare kursmoment arbetat enbart med vanilla JavaScript, men ska i detta kursmoment titta på hur vi kan använda oss av JavaScript ramverket mithril för att underlätta hämtning av data, rendering av HTML-element och de olika vyer.
+I vår applikation lägger vi till möjligheten att skapa, uppdatera och ta bort data via formulär.
 
-[Instruktion till kursmoment 03](kurser/webapp-v3/kmom03).
+[Instruktion till kursmoment 03](kurser/webapp-v5/kmom03).
 
 
 
-###Kmom04: Autentisering med JWT {#kmom04}
+### Kmom04: Autentisering med JWT {#kmom04}
 
 Vi fortsätter med Lager appen och lägger till en funktion för att skapa fakturor utifrån en order. Alla ska inte kunna skapa fakturor så innan vi skapar faktura funktionen skapar vi inloggning och tittar på JSON Web Tokens för autentisering.
 
 När man skapar en faktura är det bra att ha snygga och responsiva tabeller. Så kursmomentets GUI-komponent är just tabeller och hur vi optimerar dessa för mobila enheter.
 
-[Instruktion till kursmoment 04](kurser/webapp-v3/kmom04).
+[Instruktion till kursmoment 04](kurser/webapp-v5/kmom04).
 
 
 
-###Kmom05: Native {#kmom05}
+### Kmom05: Karta och GPS {#kmom05}
 
-Än så länge har vi skapat applikationer för webbläsaren, men i detta och nästa kursmoment skapar vi applikationer på 'riktigt' för våra mobila enheter. Vi ska se vilka fördelar detta kan ge och hur vi maximerar styrkorna för våra mobila enheter. Vi lägger till ikoner och splash screens och fokuserar på att anpassa applikationernas design för de olika plattformarna och skärmstorlekar.
+Vi tar en titt på hur vi kan använda externa npm-moduler direkt i applikation när vi bygger en karta i appen. Sedan tittar vi på hur vi kan använda webbens inbyggda API:er för att hämta användarens GPS-position.
 
-[Instruktion till kursmoment 05](kurser/webapp-v3/kmom05).
+[Instruktion till kursmoment 05](kurser/webapp-v5/kmom05).
 
 
 
-###Kmom06: Mobila enheters styrkor {#kmom06}
+### Kmom06: Mobila enheters styrkor {#kmom06}
 
-I detta kursmoment fortsätter vi att utnyttja styrkorna i våra mobila enheter. Vi kopplar in kamera och GPS för att skapa en fulländad applikation, som utnyttjar alla möjligheter vi har på en mobil plattform.
+I detta kursmoment fortsätter vi att utnyttja styrkorna i våra mobila enheter. Vi tittar vidare på webbens inbyggda API:er och hur vi kan använda dessa för att skapa mer fullvärdiga webb applikationer.
 
-[Instruktion till kursmoment 06](kurser/webapp-v3/kmom06).
+[Instruktion till kursmoment 06](kurser/webapp-v5/kmom06).
 
 
 
@@ -173,7 +173,7 @@ Avslutningsvis gör du ett projekt enligt en specifikation. Projektet är det si
 
 Projektet bygger på tidigare kursmoment och med dina nya erfarenheter skapar du en tillgänglig och användbar mobil applikation enligt specifikationen.
 
-[Instruktion till kursmoment 10](kurser/webapp-v3/kmom10).
+[Instruktion till kursmoment 10](kurser/webapp-v5/kmom10).
 
 
 
@@ -184,26 +184,9 @@ Kurslitteratur {#litteratur}
 
 
 
-###Kurslitteratur {#kurslitteratur}
-
-Det finns läsanvisningar i samband med varje kursmoment.
-
-
-* **[Mobile HTML5](kunskap/boken-mobile-html5)** -- Estelle Weyl
-  Boken går igenom de delar av HTML5, CSS3 och JavaScript som är relevanta när man bygger applikationer för mobila enheter. Använd boken som ett uppslagsverk och skumma bara igenom den.
-
-
-
-###Referenslitteratur {#referenslitteratur}
+### Referenslitteratur {#referenslitteratur}
 
 Följande böcker har jag valt som referenslitteratur. De kan vara bra att ha tillhands och ger lite extra läsmöjligheter. De behövs inte för att klara kursen men vill du bemästra kursens område så är dessa böcker bra startpunkter.
-
-
-* **[HTML och CSS-boken](boken-html-och-css-boken)** -- Rolf Staflin
-  En stabil bok för att komma igång med HTML och CSS.
-
-* **[JavaScript: The definitive Guide](kunskap/boken-javascript-the-definitive-guide)** -- D. Flanagan
-  En tegelsten, komplett med allt du vill veta om språket JavaScript med dess Core, DOM och eventhantering, inklusive en referens till olika funktioner. Perfekt för dig som verkligen vill JavaScript.
 
 * **[JavaScript: The Good Parts](kunskap/boken-javascript-the-good-parts)** -- D. Crockford
   En genomgång av JavaScript Core och hur man ska, och inte ska, skriva sin kod.
@@ -211,30 +194,14 @@ Följande böcker har jag valt som referenslitteratur. De kan vara bra att ha ti
 * **[You Don't Know JS](kunskap/boken-you-dont-know-javascript)** -- K. Simpson (@getify)
   Om du vill förstå JavaScript på djupet och därigenom bli kung på JavaScript, men samtidigt en bättre programmerare rekommenderas You Don't Know JS starkt.
 
+* **[HTML och CSS-boken](boken-html-och-css-boken)** -- Rolf Staflin
+  En stabil bok för att komma igång med HTML och CSS.
 
 
-###Övrig litteratur {#ovriglitteratur}
+
+### Övrig litteratur {#ovriglitteratur}
 
 I varje kursmoment kan det tillkomma läsanvisningar i till exempel artiklar, manualer och webbmaterial.
-
-
-
-Läsanvisningar {#lasanvisning}
-------------------------------
-
-Här följer en sammanställning av de läsanvisningar till kurslitteraturen som ges i varje kursmoment.
-
-| Kursmoment | Mobile HTML5  |
-|------------|-------------------------------------------------------------|
-| Kmom01     | Introduction, 1                                             |
-| Kmom02     | 11, 12                                                      |
-| Kmom03     | 4                                                           |
-| Kmom04     | 13                                                          |
-| Kmom05     | 14                                                          |
-| Kmom06     | 10                                                          |
-| Kmom10     |                                                             |
-
-Dessutom har varje kursmoment läsanvisningar i artiklar och videos.
 
 
 

@@ -14,11 +14,13 @@ Tanken är att komma igång med utveckling av mobila applikationer. De mobila ap
 <!--more-->
 
 
+
 [WARNING]
 **Kursutveckling pågår**
 
 Kursutveckling pågår inför kurstillfället VT23.
 [/WARNING]
+
 
 
 Vi har i tidigare kurser sett hur vi man kan skapa applikationer i webbläsaren där vi aldrig laddar om sidan. Vi ska fortsätta på det spåret och bygga vidare på detta med webbens inbyggda teknologier för till exempel hämtning av data från ett API.

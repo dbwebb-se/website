@@ -13,6 +13,16 @@ Kursen **Webbapplikationer för mobila enheter**, a.k.a. *webapp*, lär dig hur 
 
 
 
+[WARNING]
+
+**Påbörja inte denna versionen**
+
+Om du ämnar att gå kursen under VT23 är det webapp-v5 som gäller.
+
+[/WARNING]
+
+
+
 <!--more-->
 
 

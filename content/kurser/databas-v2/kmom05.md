@@ -114,12 +114,13 @@ Bekanta dig med följande:
     * [TIMESTAMP](https://mariadb.com/kb/en/timestamp/)
 
 
-
+<!--
 ### Modellering {#artiklar}
 
 Läs följande.
 
 1. Läs igenom foruminlägget om "[Vad välja som primärnyckel till en databastabell](t/6439)?", det ger en snabb orientering i hur man kan tänka när man väljer primärnyckel i en tabell.
+-->
 
 
 

@@ -143,7 +143,7 @@ class Queue:
             return "Empty list."
 
     def peek(self):
-        return self.items[len(self.items)-1]
+        return self.items[0]
 
     def size(self):
         return len(self.items)

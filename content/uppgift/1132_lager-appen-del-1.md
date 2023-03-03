@@ -2,13 +2,17 @@
 author: efo
 category: javascript
 revision:
+  "2023-03-02": (B, efo) Första utgåvan i samband med kursen webapp v5.
   "2018-01-10": (A, efo) Första utgåvan i samband med kursen webapp v3.
 ...
 Lager appen del 1
 ==================================
+
 [FIGURE src=image/webapp/warehouse.jpg?w=c5 class="right"]
 
 I denna uppgift skapar du grunden för en lager-app, du använder dina kunskaper från övningar och kurslitteratur för att skapa en SPA som är tillgängliga och användbar. Du hämtar JSON data från ett befintligt REST API och i denna första del ligger fokus på navigation och en enkel listning av produkter.
+
+
 
 <!--more-->
 
@@ -16,7 +20,7 @@ I denna uppgift skapar du grunden för en lager-app, du använder dina kunskaper
 
 Förkunskaper {#forkunskaper}
 -----------------------
-Du har jobbat igenom övningarna "[En Single Page Application](kunskap/en-single-page-application-me-app)" och "[Typografi i mobila enheter](kunskap/typografi-i-mobila-enheter)".
+Du har jobbat igenom övningarna "[Web Components](kunskap/web-components)" och "[Typografi i mobila enheter](kunskap/typografi-i-mobila-enheter)".
 
 
 
@@ -44,17 +48,7 @@ Krav {#krav}
 -----------------------
 1. Skapa en webbapplikation anpassad för mobilen.
 
-1. Appen ska innehålla 3 vyer, som beskrivs nedan.
-
-1. Välkomstvy med en kort hälsning.
-
-1. Lagerförteckningslista där produkterna listas med namn och hur många som finns.
-
-1. Ska gå att klicka på varje produkt och då visas en vy med information om den produkt som det klickats på.
-
-1. Navigationen ska tydligt visa vilken vy användaren är i.
-
-1. Skapa en navigationsmeny längst upp som används när man går från en enskild produkt tillbaka till listningen av produkter.
+1. Appen ska innehålla en lagerförteckningslista där produkterna listas med namn, lagersaldo och lagerplats.
 
 1. Validera och publicera din kod enligt följande.
 

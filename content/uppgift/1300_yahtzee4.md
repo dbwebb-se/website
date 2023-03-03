@@ -2,7 +2,8 @@
 author:
     - aar
 revision:
-    "2022-01-21": (A, aar) Första upplagan.
+    "2023-02-23": (B, aar) La till dunder metoderna som extrauppgifter.
+    "2023-01-21": (A, aar) Första upplagan.
 category:
     - oopython
 ...
@@ -143,6 +144,14 @@ Extrauppgift {#extra}
 -----------------------
 
 1. Använd `datetime` modulen för att spara dag och tid som spelaren fick sin poäng. Visa upp det i topplista routen också.
+
+1. Implementera den [magiska metoden __len__](https://docs.python.org/3/reference/datamodel.html#object.__len__) för din UnorderedList. Gör så `len(list)` fungerar.
+
+1. Implementera den [magiska metoden __str__](https://docs.python.org/3/reference/datamodel.html#object.__str__) för din UnorderedList. Gör så `print(list)` och `str(list)` fungerar.
+
+1. Implementera den [magiska metoden __getitem__](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) för din UnorderedList. Gör så `list[0]` fungerar.
+
+1. Implementera den [magiska metoden __setitem__](https://docs.python.org/3/reference/datamodel.html#object.__setitem__) för din UnorderedList. Gör så `list[0] = 4` fungerar.
 
 
 

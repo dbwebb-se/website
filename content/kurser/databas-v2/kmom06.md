@@ -106,11 +106,13 @@ Bekanta dig med följande:
 
 
 
+<!--
 ### Extra  {#extra}
 
 Gör följande som ren överkurs, om du har tid, energi och lust.
 
 1. Kika på foruminlägget "[Exempelkod Node.js, Express, MySQL och login med sessioner](t/7327)" som visar hur du löser login med sessionshantering i Express. Detta är dock inget vi kommer använda i kursen.
+-->
 
 
 

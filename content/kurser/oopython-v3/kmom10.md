@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2023-03-01": (F, aar) Bytte från terminal program till Flask och nya extrauppgifter.
     "2021-03-10": (E, aar) La till referensmaterial om Trie.
     "2020-03-10": (D, aar) La till i krav att spela in video som distans.
     "2020-02-28": (C, aar) La till i krav att ta bort ord och skriva ut i bokstavsordning.
@@ -12,23 +13,18 @@ Kmom10: Projekt och examination
 
 Detta kursmoment avslutar och examinerar kursen.
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
-
 Upplägget är enligt följande:
 
-* Projektet och redovisning (20-80h)
+* Projektet och redovisning (20-60h)
 
-Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
+Totalt omfattar kursmomentet (08/10) ca 20+20+20 studietimmar.
 
 
 
 Projektidé och upplägg {#upplagg}
 --------------------------------------------------------------------
 
-Du ska utveckla ett rättstavningsprogram till terminalen som använder en [Trie](https://www.youtube.com/watch?v=-urNrIAQnNo) för att lagra en ordlista.
+Du ska utveckla ett rättstavningswebbsida som använder en [Trie](https://www.youtube.com/watch?v=-urNrIAQnNo) för att lagra en ordlista.
 
 Börja med att kopiera filer med rättstavade engelska ord från exempel mappen.
 ```bash
@@ -37,13 +33,13 @@ cp example/dictionary/*.txt me/kmom10/spellchecker
 cd me/kmom10/SpellChecker
 ```
 
-Du kopierade fyra filer, alla innehåller ett ord per rad. `dictionary.txt` innehåller 349900 rättstavade ord och `tiny_dictionary.txt` innehåller 177. `dictionary.txt` kan ta lång tid att ladda och jobba med så när ni börjar med uppgiften använd `tiny_dictionary.txt` eller skapa en egen ännu mindre fil. Frequency filerna är för krav 5.
+Du kopierade fyra filer, alla innehåller ett ord per rad. `dictionary.txt` innehåller 349900 rättstavade ord och `tiny_dictionary.txt` innehåller 177. `dictionary.txt` kan ta lång tid att ladda och jobba med så när ni börjar med uppgiften använd `tiny_dictionary.txt` eller skapa en egen ännu mindre fil. Frequency filerna är för krav 4.
 
 Innan du börjar med programmeringen ska du göra en analys av programmet du ska bygga och dokumentera det med klassdiagram.
 
 Fråga i discord om du känner dig osäker.
 
-[YOUTUBE src=17SULXiU6hM width=700 caption="Andreas visar hur SpellChecker kan se ut när det är klart."]
+<!-- [YOUTUBE src=17SULXiU6hM width=700 caption="Andreas visar hur SpellChecker kan se ut när det är klart."] -->
 
 
 
@@ -60,47 +56,75 @@ Projektspecifikation {#projspec}
 
 Utveckla och leverera programmet enligt följande specifikation. Saknas info i specen kan du själv välja väg, dokumentera dina val i redovisningstexten.
 
-De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg.
+De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven är valfria krav. Lös de valfria kraven för att samla poäng och därmed nå högre betyg.
 
 Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
 
 
-###Krav 1: Grunden {#k1}
+### Krav 1: Grunden {#k1}
 
-Skriv din kod i katalogen `me/kmom10/spellchecker`. Filen som startar programmet skall heta `spellchecker.py` och ska innehålla klassen SpellChecker.
+Skriv din kod i katalogen `me/kmom10/spellchecker`.
 
-Implementera en Trie datastruktur, i filen `src/trie.py`, som använder Node objekt, `src/node.py`. Varje Node objekt behöver innehålla vilken bokstav noden representerar, en dictionary eller lista som ska hålla barn noderna och en boolean för att markera om det är en slut nod. Om du gör krav **fyra** måste du använda dictionary, annars kan du välja själv mellan dictionary och lista. Er Trie får **inte** innehålla en lista eller dict som innehåller hela orden som har lagts till. Orden ska byggas upp av strukturen i trädet.  
-I er Trie ska det gå att lägga till nya ord, kolla om ett ord finns i datastrukturen och få ut alla ord baserat på ett prefix.
 
-När man exekverar spellchecker.py ska ett SpellChecker objekt skapas som läser in en fil med rättstavade engelska ord. Starta sen ett klassiskt while-loop terminal program (Marvin meny, Handler exemplet är OK att använda). Följande menyval ska finnas:
 
-1. Ta ett ord som input och kolla om det finns i ordlistan (Trie objektet). Om ordet inte finns lyft felet `SearchMiss`, ni behöver också skapa det Exception själva. Skapa felet i filen `src/exceptions.py`. Det ska inte krascha programmet! Fånga felet i meny koden.
+#### Trie {#trie}
 
-1. En prefix sökning (auto-complete), användaren skriver in de tre första bokstäverna av ett ord. Programmet ska då skriva ut ord från ordlistan som har de bokstäverna som prefix, användaren ska kunna fortsätta att skriva in en bokstav åt gången och få ut orden som finns baserat på det prefixet. För att avsluta sökningen kan användaren skriva in `quit` som ett ord. Du kan begränsa utskriften av ord till max 10 åt gången, skriv ut ett ord per rad. Se video ovan för exempel.
+Implementera en Trie datastruktur, i filen `src/trie.py`, som använder Node objekt, `src/node.py`. Varje Node objekt behöver innehålla vilken bokstav noden representerar, en dictionary eller lista som ska hålla barn noderna och en boolean för att markera om det är en slut nod. Er Trie får **inte** innehålla en lista eller dict som innehåller hela orden som har lagts till. Orden ska byggas upp av strukturen i trädet.  
 
-1. Byta ut ordlistan, användaren ska skriva in ett filnamn. Programmet ska då skapa ett nytt Trie objekt och läsa in orden från den nya filen.
+I er Trie måste det finnas metoder för att:
 
-1. Skriv ut alla ord som finns i ordlistan, i bokstavsordning. Skriv ut ett ord per rad. Ett tips, för att göra denna metoden testbar kan ni skapa en som letar upp alla orden, lägger dem i en lista och returnerar listan. Sen låter ni en annan metod skriva ut orden.
+- lägga till ett nytt ord. Metoden ska heta `add_word(word)` och ta ett argument som är ordet som ska läggas till.
+- kolla om ett ord finns, om ordet inte finns ska ett `SearchMiss` error lyftas. Du behöver skapa det felet själv.
+- ta bort ett ord, om ordet inte finns ska ett `SearchMiss` error lyftas.
+    - Det räcker inte med att bara avmarkera noder när du tar bort ett ord. Om noderna i ordet inte används till ett annat ord ska du ta bort dem från datastrukturen.
+- returnera antalet ord som finns
+- returnera alla ord som finns
+- returnera alla ord baserat på ett prefix, prefixsökning. Metoden ska heta `prefix_search(prefix)` och ska ta emot ett argument som är en sträng.
+    - T.ex. om argumentet är `"he"` ska metoden returnera en listan `["hej", "hel", "hett"]`, alla ord som börjar på prefixet.
+    - Om det inte finns några ord med prefixet ska en tom lista returneras.
+- skapa ett Trie objekt med alla ord från en fil 
 
-1. Ta bort ett ord, programmet ska be användaren om ett ord som input och ta bort bort det ordet från Trien. Om ordet inte finns ska `SearchMiss` lyftas som error och skriv ut `"word is missing"`. Det ska inte krascha programmet! Det räcker inte med att bara avmarkera noder när du tar bort ett ord. Om noderna i ordet inte används till ett annat ord ska du ta bort dem från datastrukturen.
+Alla lösningar ska vara case-insensitive (skiftläge okänsliga), `A == a`.
 
-1. Exit
+Det finns bara tester för prefixsökning och krav 4-6. Tanken är att projektet ska vara mer "öppet", då vill vi inte styra upp allt och då kan ni skriva egna tester för att säkerställa att era metoder funkar som ni förväntar er. Ni får skapa fler metoder än de som är beskrivna ovanför.
 
-I SpellChecker klassen, lägg inte all kod i while-loopen, dela upp koden i metoder. T.ex. en metod/menyval åtminstone.
+
+
+#### Flask {#flask}
+
+Skapa en webbsida för att använda Trie datastrukturen och kolla rättstavade ord. Du behöver återskapa Trie objektet från filen i varje route.
+
+På sidan ska det finnas val i navbaren till följande sidor:
+
+1. Ta ett ord som input och kolla om det finns i ordlistan (Trie objektet). Meddela användaren på sida om det fanns eller inte.
+
+1. En prefix sökning (auto-complete), användaren skriver in början av ett ord. Då ska sidan visa upp alla ord som har inputen som prefix.
+
+1. Skriv ut alla ord som finns i ordlistan, i bokstavsordning. Överst på sidan ska det också stå antalet ord som finns.
+
+1. Ta bort ett ord, programmet ska be användaren om ett ord som input och ta bort bort det ordet från Trie objektet. Spara borttagna ord i session. Varje gång du återskapar Trie objektet, ta bort orden som finns i session.
+
+1. Byta ut ordlistan, skriv ut vilka filer som är tillgängliga och ha ett input element där användaren kan välja fil. Programmet ska då skapa ett nytt Trie objekt med orden från den nya filen fram till att användaren byter fil igen eller går in på sidan för att tömma session.
+    - Töm också session på borttagna ord.
+
+1. Tömma session, vilket gör att nästa gång ett Trie objekt ska skapas så används original filen. Rensa också listan med borttagna ord.
 
 I koden ni lämnar in ska filen `dictionary.txt` läsas in vid start.
 
+Webbsidan ska fungera på studentservern!
 
-###Krav 2: UML {#k2}
+
+
+### Krav 2: UML {#k2}
 
 #### Klassdiagram {#klass}
 
-**Innan du börjar programmera** ska du analyser och planera vad du ska koda. Dokumentera  med klassdiagram vilka klasser, attribut, metoder och relationer som du tror att du kommer skapa när du utvecklar programmet.
+**Innan du börjar programmera** ska du analyser och planera vad du ska koda. Dokumentera med klassdiagram vilka klasser, attribut, metoder och relationer som du tror att du kommer skapa när du utvecklar programmet.
 
 Klassdiagrammet ska lämnas in före du börjar koda projektet. Det finns en separat inlämning på Canvas för klassdiagrammet. **Du behöver inte vänta på att få godkänt innan du fortsätter med att programmera, det viktiga är att du har lämnat in det före.**
 
-Så gör ett klassdiagram, lämna in det och sen börjar du koda projektet.
+Gör ett klassdiagram, lämna in det och sen börjar du koda projektet.
 
 Det gör inget om koden skiljer sig från diagrammen när du är klar med projektet. Det blir inte alltid som man tänker sig.
 
@@ -112,7 +136,7 @@ Spara som `classdiagrams.png`. Ladda upp filen på Canvas inlämningsuppgiften.
 
 #### Sekvensdiagram {#sekvens}
 
-När du är färdigt med din kod, gör ett sekvensdiagram. Välj ett av menyvalen 1, 2 eller 5 att göra diagrammet för. Start punkten på digrammet ska vara en input från användaren till SpellChecker klassen.
+När du är färdigt med din kod, gör ett sekvensdiagram. Gör diagrammet för din "prefixsökning" metoden. Start punkten på digrammet ska vara att den metoden anropas.
 
 Lägg bilden i `spellchecker` mappen och döp den till `sequencediagram.png`.
 
@@ -124,43 +148,45 @@ Skriv enhetstester för dina klasser. Spara testerna i filen `tests/test_trie.py
 
 Minst 7 tester för Trie klassen. Testa inte bara positiva utfall, göra så att något går fel och testa hur det hanteras. Ni behöver också testa att `SearchMiss` exception:et lyfts.
 
-Se till att din kod validerar.
+
+
+Se till att din kod validerar. Det finns bara tester för prefixsökning och krav 4-6.
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb test kmom10 # --extra för att testa krav 5
+dbwebb test kmom10 # --extra för att testa krav 4-6
 dbwebb publish kmom10
 ```
 
 
+### Krav 4: Baser utskrift för prefixsökning på word frequency (valfritt) {#k4}
 
-### Krav 4: Sortera utskriften (optionell) {#k4}
+I detta kravet ska du använda filerna `frequency.txt` och `tiny_frequency.txt` för ordlistan. De filerna innehåller rättstavade engelska ord och hur vanliga de är. Varje rad innehåller ett ord och hur vanligt ordet är (ett float tal), separat med space. Ju högre siffra desto vanligare är ordet.
 
-För menyval 4 sortera alla orden innan de skrivs ut. Implementera en [Merge Sort](kunskap/sorteringsalgoritmer-v2#merge-sort) algoritm som metod i SpellChecker klassen. Hämta ut alla ord från Trie objektet, lägg dem i en lista, sortera listan med Merge sort och skriv ut listan.
-<!-- (https://www.tutorialspoint.com/data_structures_algorithms/merge_sort_algorithm.htm)-->
-Om du gör detta kravet ska du använda en dictionary för att hålla barn noderna i Node klassen. Lägg till tester för din merge sort.
-
-
-
-### Krav 5: Baser utskrift för menyval 2 på word frequency (optionell) {#k5}
-
-I detta kravet ska du använda filerna `frequency.txt` och `tiny_frequency.txt` för ordlistan. De filerna innehåller rättstavade engelska ord och hur vanliga de är. Varje rad innehåller ett ord och hur vanligt ordet är (ett float tal), separat med space. Ju högre siffra desto vanligare är ordet. Bygg ut din Node klass med ett attribut för frequency. I din metod för att lägga till ord, när du markera en slut nod behöver du också lägga in frekvensen för ordet som noden marker.
-
-Nu för menyval 2, när programmet skriver ut 10 ord som finns baserat på prefixet ska programmet sortera alla orden baserat på frekvens och begränsa utskriften till att max skriva ut de 10 med högst frekvens.
-
-I koden ni lämnar in ska filen `frequency.txt` läsas in vid start.
+- Bygg ut din Node klass med ett attribut för frequency.
+- I din metod för att lägga till ord, när du markera en slut nod behöver du också lägga in frekvensen för ordet som noden marker.
+- Din metod för prefixsökning, ska returnera max 10 ord, sortera på frekvens i sjunkande ordning.
+    - Om det finns 20 ord med ett prefix ska de 10 ord som har högst frekvens returneras, sorterat med högst värde först.
+- I koden ni lämnar in ska filen `frequency.txt` läsas in vid start.
 
 
+### Krav 5: Ge förslag på felstavade ord (valfritt) {#k5}
 
-### Krav 6: Grafiskt gränssnitt på webben (optionell) {#k6}
+Lägg till metoden `correct_spelling(word)` i Trie klassen som tar emot ett ord som argument. Metoden ska hitta ord som är stavade likadant där **en** bokstav i följd kan vara fel. T.ex. om argumentet är `"hkj"` ska metoden returnera listan `["hej", "hoj", "haj"]`. Argumentet har en bokstav som är fel. Metoden ska också klara av ord där det finns fler felstavade bokstäver men det finns minst en korrekt bokstäverna mellan de felstavade. T.ex. om argumentet är `"kplqo"` ska metoden returnera listan `["kollo"]`. Det finns två felstavade bokstäver men det är bara en bokstav åt gången.
 
-Gör ett grafiskt gränssnitt för att kolla om ett ord är rättstavat. Skapa en webbsida med Flask som innehåller två undersidor, en sida för att kolla om ett ord finns i ordlistan och en sida som skriver ut alla orden som finns i ordlistan.
-<!--
-För framtiden? Undersida för att byta fil och menyval 2?
--->
-Webbsidan ska även fungera på studentservern!
+Metoden ska hitta alla ord som är lika långa som argumentet där enstaka bokstäver är fel. Det kan finnas flera bokstäver som är fel men det ska finnas minst en korrekt bokstav mellan dem. Den behöver inte klara av att hitta ord där sista bokstaven är felaktig. T.ex. `"kollq"` matchar inte `"kollo"`. Om det inte finns några förslag ska en tom lista returneras. Om ordet är rättstavat ska en lista med enbart det ordet returneras.
 
-Koden som finns i app.py, som har med Flask att göra, behöver inte vara i en klass.
+Lägg till en sida där användaren kan få hjälp med rättstavning. Visa alla ord som hittas baserat på användarens input.
+
+
+
+### Krav 6: Suffixsökning (valfritt) {#k6}
+
+Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en sträng som ska vara ett suffix. Metoden ska returnera en lista med alla ord som har argumentet som suffix. Om det inte finns några förslag ska en tom lista returneras.
+
+T.ex. med argumentet `"ppa"` ska listan `["soppa"," "loppa"]` returneras.
+
+Lägg till en sida där alla ord visas baserat på användarens input. Visa alla ord som hittas baserat på användarens input.
 
 
 
@@ -188,7 +214,7 @@ Redovisning {#redovisning}
 
     3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? På en skala 1-10, vilket betyg ger du kursen?
 
-1. Kompletterar redovisningstexten med att spela in en kort video där de visar kod och berättar om de tekniska implementationerna de gjorde i projektet. Ladda upp videon i din inlämning på Canvas. Visa ditt ansikte och en giltig ID handling, t.ex. körkot eller pass, i videon. **OBS** Ladda inte upp er video på Youtube, studenter har fått sina kanaler blockerade på youtube för att de laddade upp video som visar ID.
+1. Kompletterar redovisningstexten med att spela in en kort video där de visar kod och berättar om de tekniska implementationerna de gjorde i projektet. Ladda upp videon som en media kommentar din inlämning på Canvas. Visa ditt ansikte och en giltig ID handling, t.ex. körkot eller pass, i videon. **OBS** Ladda inte upp er video på Youtube, studenter har fått sina kanaler blockerade på youtube för att de laddade upp video som visar ID.
 
 
 <!-- 1. <u><b>Distansprogram- och Kurspaket studenter</b></u> kompletterar redovisningstexten med att spela in en kort video där de visar kod och berättar om de tekniska implementationerna de gjorde i projektet. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas. -->

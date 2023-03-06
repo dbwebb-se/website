@@ -126,7 +126,20 @@ Först importerar vi klassen `LagerTitle` från en fil och klass som vi kommer s
 
 ### Elementets klass {#class}
 
+Vi börjar med att skapa en katalog `components` och här är tanken att vi under utvecklandet av vår lager-app lägger våra egna komponenter. I katalogen skapar vi filen `lager-title.js` som innehåller klassen `LagerTitle`.
 
+```javascript
+export default class LagerTitle extends HTMLElement {
+    // connect component
+    connectedCallback() {
+        this.innerHTML = `<h1>Lager-app</h1>`;
+    }
+}
+```
+
+Det första vi gör är att ärva från den generella HTMLElement klassen som är JavaScripts representation av alla de HTML Element som finns specificerade. Detta för att vi då kan komma attribut som `textContent`, `innerHTML` osv. Vi definierar sedan funktionen `connectedCallback`, viktigt att den heter exakt så då den anropas när komponenten ritas ut i webbläsaren. `connectedCallback` är ett exempel på en såkallad _life-cycle method_ där det finns ett antal fördefinierade [life-cycle methods](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks). Dessa funktioner med specifika fördefinierade namn anropas av webbläsaren under komponentens livs-cykel.
+
+Om du öppnar upp `index.html` i webbläsaren via din **webbserver lokalt**. Din webbserver lokalt kan vara XAMPP eller så kan man använda Python's inbyggda webbserver genom att köra kommandot `python3 -m http.server 9000` i terminalen. Då kan du gå till `http://localhost:9000` i terminalen och den katalogen som du körde kommandot i visas i webbläsaren.
 
 
 

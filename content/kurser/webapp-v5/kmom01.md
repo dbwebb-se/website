@@ -69,6 +69,8 @@ Läs följande artiklar för att få bakgrunden till övningarna.
 
 1. Bekanta dig med dokumentationen för [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) som vi använder för att ladda data via JavaScript.
 
+1. Bekanta dig översiktligt med _web components_ i artikeln "[Introduction](https://www.webcomponents.org/introduction)".
+
 
 
 ### Video {#video}
@@ -117,7 +119,7 @@ Resultat & Redovisning  {#resultat_redovisning}
 
 Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
-Se till att följande frågor besvaras i redovisningstexten.
+Se till att följande frågor besvaras i redovisningstexten och lämnas in på Canvas.
 
 * Är du sedan tidigare bekant med utveckling av mobila appar?
 * Vilket är den viktigaste lärdomen du gjort om typografi för mobila enheter?

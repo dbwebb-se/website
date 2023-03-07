@@ -83,7 +83,8 @@ I er Trie måste det finnas metoder för att:
 - returnera alla ord baserat på ett prefix, prefixsökning. Metoden ska heta `prefix_search(prefix)` och ska ta emot ett argument som är en sträng.
     - T.ex. om argumentet är `"he"` ska metoden returnera en listan `["hej", "hel", "hett"]`, alla ord som börjar på prefixet.
     - Om det inte finns några ord med prefixet ska en tom lista returneras.
-- skapa ett Trie objekt med alla ord från en fil 
+- klassmetoden `create_from_file()`, den ska returnera ett Trie objekt som innehåller alla orden från filen som ni ska läsa in vid start (`dictionary.txt` eller `frequency.txt`).
+- det ska gå att skapa ett tomt Trie objekt med `Trie()`.
 
 Alla lösningar ska vara case-insensitive (skiftläge okänsliga), `A == a`.
 
@@ -168,6 +169,7 @@ I detta kravet ska du använda filerna `frequency.txt` och `tiny_frequency.txt` 
 - Din metod för prefixsökning, ska returnera max 10 ord, sortera på frekvens i sjunkande ordning.
     - Om det finns 20 ord med ett prefix ska de 10 ord som har högst frekvens returneras, sorterat med högst värde först.
 - I koden ni lämnar in ska filen `frequency.txt` läsas in vid start.
+- Uppdatera metoden `add_word(word)` så att man också kan skicka in frekvens som argument. Ge frekvens parametern default argumentet `1`, `add_word(word, frequency=1)`.
 
 
 ### Krav 5: Ge förslag på felstavade ord (valfritt) {#k5}

@@ -20,7 +20,7 @@ I denna uppgift skapar du grunden för en lager-app, du använder dina kunskaper
 
 Förkunskaper {#forkunskaper}
 -----------------------
-Du har jobbat igenom övningarna "[Web Components](kunskap/web-components)" och "[Typografi i mobila enheter](kunskap/typografi-i-mobila-enheter)".
+Du har jobbat igenom övningarna "[Web Components](kunskap/web-components)", "[Introduktion till Lager-API:t](kunskap/introduktion-till-lager-api)" och "[Typografi i mobila enheter](kunskap/typografi-i-mobila-enheter)".
 
 
 
@@ -28,19 +28,7 @@ Introduktion {#intro}
 -----------------------
 Du har blivit kontaktat av företaget Infinity Warehouses då ryktet går på stan att du har koll på mobila applikationer. Infinity Warehouses vill ta steget in i 2000-talet och automatisera deras gamla omoderna lagerhanteringssystem. Infinity Warehouses har tidigare anställd en backend programmerare, men när hen hörde orden design, användbarhet och tillgänglighet sprang hen skrikande bort. Backend programmeraren hade dock hunnit skapa ett REST API innan hen försvann ner i serverrummet. [Dokumentationen för API:t](https://lager.emilfolino.se/v2) hjälper dig en bit på vägen.
 
-Skapa först en API-nyckel som du använder för att hämta just din data. Du kan sedan välja om du vill skapa nya produkter eller kopiera de befintliga produkterna. Du kommer i kommande kursmoment fortsätta arbetet med din lager-app, så rekommendationen är att skapa dina egna produkter då du kan vinkla din app mot dina intressen.
-
-Ett bra verktyg för att testa sig fram med API:er är Postman. Du kan även skapa egna produkter eller ändra de som du kopierade med Postman.
-
-I följande videos visar Emil hur du skapar en API-nyckel. I Postman fortsätter vi sedan med att kopiera den befintliga uppsättning produkter och uppdatera produkterna så de blir lite mer intressanta. Vi skapar även helt nya produkter.
-
-[YOUTUBE src=Ad7R_iHXR7k width=630 caption="API nyckel"]
-
-[YOUTUBE src=464oRgVq4ns width=630 caption="Kopiera produkter"]
-
-[YOUTUBE src=AFMaZJk_jmo width=630 caption="Ändra produkt"]
-
-[YOUTUBE src=nwcFboQY_lk width=630 caption="Skapa produkt"]
+I "[Introduktion till Lager-API:t](kunskap/introduktion-till-lager-api)" har du skapat en API-nyckel och kopierat, alternativt skapat egna produkter.
 
 
 

@@ -100,6 +100,8 @@ Gör följande övningar för att träna inför uppgifterna.
 
 1. Läs igenom artikeln "[Typografi i mobila enheter](kunskap/typografi-i-mobila-enheter)". Spara koden i `me/kmom01/typography`.
 
+1. Skapa en API-nyckel och produkter i ditt egna lager med hjälp av artikeln "[Introduktion till Lager-API:t](kunskap/introduktion-till-lager-api)".
+
 1. Gör övningen "[Web Components](kunskap/web-components)". Spara resultatet i `me/lager`.
 
 

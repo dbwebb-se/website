@@ -50,11 +50,6 @@ Kanske enbart fokusera på faktureringen i projektet. Kanske fokusera på att g�
 * Skapa faktura
 * Betala faktura
 
-Förtydliga minsta möjliga krav för att klara av tentan.
-
-* Lagrade procedurer
-* LEFT/RIGHT JOIN
-
 -->
 
 

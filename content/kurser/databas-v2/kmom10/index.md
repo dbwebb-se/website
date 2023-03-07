@@ -7,7 +7,7 @@ views:
             src: "image/snapvt18/bank2-account-actions.png?w=1100&h=300&cf&c=600,270,0,0&f=edgedetect"
 author: mos
 revision:
-    "2023-03-07": "(Q, mos) Nya datum för tenta 2023."
+    "2023-03-07": "(Q, mos) Nya datum för tenta 2023 och övningstentor för 2022."
     "2022-03-09": "(P, mos) Ny video för 2022 och v2."
     "2022-03-09": "(O, mos) Genomgången inför v2 och uppdaterade projektkrav."
     "2021-03-29": "(N, mos) Förtydliga självtest på krav 1 projektet."

@@ -186,6 +186,8 @@ Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en strän
 
 T.ex. med argumentet `"ppa"` ska listan `["soppa"," "loppa"]` returneras.
 
+Ni får **inte** bygga nytt träd där ni lägger till alla ord i bakvänd ordning eller plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och returnerar alla suffixorden. 
+
 Lägg till en sida där alla ord visas baserat på användarens input. Visa alla ord som hittas baserat på användarens input.
 
 

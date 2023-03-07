@@ -7,6 +7,7 @@ views:
             src: "image/snapvt18/bank2-account-actions.png?w=1100&h=300&cf&c=600,270,0,0&f=edgedetect"
 author: mos
 revision:
+    "2023-03-07": "(Q, mos) Nya datum för tenta 2023."
     "2022-03-09": "(P, mos) Ny video för 2022 och v2."
     "2022-03-09": "(O, mos) Genomgången inför v2 och uppdaterade projektkrav."
     "2021-03-29": "(N, mos) Förtydliga självtest på krav 1 projektet."
@@ -94,11 +95,11 @@ Med en godkänd tentamen kan du nå ett slutbetyg om E-C.
 
 ### Planerade tentamen {#planerade}
 
-Följande tentamen är planerade för kursomgången våren 2022.
+Följande tentamen är planerade för kursomgången våren 2023.
 
-* Tenta (kmom10/try1): Torsdagen den 24:e mars, 2022.
-* Omtenta (kmom10/try2): Fredagen den 27:e maj, 2022.
-* Resttenta (kmom10/try3): Fredagen den 26:e augusti, 2022.
+* Tenta (kmom10/try1): Torsdagen den 23:e mars, 2023.
+* Omtenta (kmom10/try2): Fredagen den 26:e maj, 2023.
+* Resttenta (kmom10/try3): Fredagen den 25:e augusti, 2023.
 
 Tentamen är distans och online. Ingen anmälan krävs.
 
@@ -143,10 +144,13 @@ Det finns ingen garanti för att nya tentamen kommer att följa exakt samma uppl
 Följande gamla tentor finns tillgängliga.
 
 <!--
+* 2023
+    * 
+-->
+
 * 2022
     * [Fiskodling](./tentamen/fiskodling)
     * [Förmögenhet](./tentamen/formogenhet)
--->
 
 * 2021
     * [Hund](./tentamen/hund)
@@ -156,12 +160,13 @@ Följande gamla tentor finns tillgängliga.
     * [Vapen](./tentamen/vapen)
     * [Rock](./tentamen/rock)
 
+<!--
+
 * 2019
     * [Pingis](./tentamen/pingis)
     * [Bibliotek](./tentamen/bibliotek)
     * [Säkerhetspolisens (SÄPO)](./tentamen/sapo)
 
-<!--
 Här följer en del äldre tentor från 2017-18. De är relevanta som övningstentor, även om de delvis skiljer sig i det upplägg som används från 2019 och framåt. Observera att poängfördelningen är olika för nedan tentor.
 
 * [En japansk smakresa, 31 augusti 2018](./tentamen/en-japansk-smakresa)

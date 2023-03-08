@@ -170,13 +170,18 @@ I detta kravet ska du använda filerna `frequency.txt` och `tiny_frequency.txt` 
     - Om det finns 20 ord med ett prefix ska de 10 ord som har högst frekvens returneras, sorterat med högst värde först.
 - I koden ni lämnar in ska filen `frequency.txt` läsas in vid start.
 - Uppdatera metoden `add_word(word)` så att man också kan skicka in frekvens som argument. Ge frekvens parametern default argumentet `1`, `add_word(word, frequency=1)`.
+- Detta kravet ska inte påverka krav 5 och krav 6, med andra ord de ska inte sorterat på frekvens.
 
 
 ### Krav 5: Ge förslag på felstavade ord (valfritt) {#k5}
 
 Lägg till metoden `correct_spelling(word)` i Trie klassen som tar emot ett ord som argument. Metoden ska hitta ord som är stavade likadant där **en** bokstav i följd kan vara fel. T.ex. om argumentet är `"hkj"` ska metoden returnera listan `["hej", "hoj", "haj"]`. Argumentet har en bokstav som är fel. Metoden ska också klara av ord där det finns fler felstavade bokstäver men det finns minst en korrekt bokstäverna mellan de felstavade. T.ex. om argumentet är `"kplqo"` ska metoden returnera listan `["kollo"]`. Det finns två felstavade bokstäver men det är bara en bokstav åt gången.
 
-Metoden ska hitta alla ord som är lika långa som argumentet där enstaka bokstäver är fel. Det kan finnas flera bokstäver som är fel men det ska finnas minst en korrekt bokstav mellan dem. Den behöver inte klara av att hitta ord där sista bokstaven är felaktig. T.ex. `"kollq"` matchar inte `"kollo"`. Om det inte finns några förslag ska en tom lista returneras. Om ordet är rättstavat ska en lista med enbart det ordet returneras.
+Metoden ska hitta alla ord som är lika långa som argumentet där enstaka bokstäver är fel. Det kan finnas flera bokstäver som är fel men det ska finnas minst en korrekt bokstav mellan dem. Den behöver inte klara av att hitta ord där sista bokstaven är felaktig. T.ex. `"kollq"` matchar inte `"kollo"`. Om det inte finns några förslag ska en tom lista returneras. Om ordet är rättstavat ska en lista med enbart det ordet returneras. Listan som returneras ska vara sorterad i bokstavsordning.
+
+Exempel, en Trie med orden `beat, heat, beet, belt, debt, boot`, och sökordet `beot` ska returnera listan `['boot', 'beat', 'beet', 'belt', 'debt', 'heat']`.
+
+Ni får **inte** plocka ut alla ord i en lista och sen leta igenom den listan efter rättstavning. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och returnerar alla förslagen. Utskriften ska **inte** begränsas till max 10.
 
 Lägg till en sida där användaren kan få hjälp med rättstavning. Visa alla ord som hittas baserat på användarens input.
 
@@ -184,13 +189,13 @@ Lägg till en sida där användaren kan få hjälp med rättstavning. Visa alla 
 
 ### Krav 6: Suffixsökning (valfritt) {#k6}
 
-Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en sträng som ska vara ett suffix. Metoden ska returnera en lista med alla ord som har argumentet som suffix. Om det inte finns några förslag ska en tom lista returneras.
+Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en sträng som ska vara ett suffix. Metoden ska returnera en lista med alla ord som har argumentet som suffix. Om det inte finns några förslag ska en tom lista returneras. Listan som returneras ska vara sorterad i bokstavsordning.
 
-T.ex. med argumentet `"ppa"` ska listan `["soppa"," "loppa"]` returneras.
+T.ex. med argumentet `"ppa"` ska listan `["loppa"," "soppa"]` returneras.
 
-Ni får **inte** bygga nytt träd där ni lägger till alla ord i bakvänd ordning eller plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och returnerar alla suffixorden. 
+Ni får **inte** bygga ett nytt träd där ni lägger till alla ord i bakvänd ordning eller plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och returnerar alla suffixorden.
 
-Lägg till en sida där alla ord visas baserat på användarens input. Visa alla ord som hittas baserat på användarens input.
+Lägg till en sida där alla ord visas baserat på användarens input. Visa alla ord som hittas baserat på användarens input. Utskriften ska **inte** begränsas till max 10.
 
 
 

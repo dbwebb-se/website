@@ -39,7 +39,7 @@ Innan du börjar med programmeringen ska du göra en analys av programmet du ska
 
 Fråga i discord om du känner dig osäker.
 
-<!-- [YOUTUBE src=17SULXiU6hM width=700 caption="Andreas visar hur SpellChecker kan se ut när det är klart."] -->
+[YOUTUBE src=aySsHujadSk width=700 caption="Andreas visar hur SpellChecker kan se ut när det är klart."]
 
 
 
@@ -168,6 +168,7 @@ I detta kravet ska du använda filerna `frequency.txt` och `tiny_frequency.txt` 
 - I din metod för att lägga till ord, när du markera en slut nod behöver du också lägga in frekvensen för ordet som noden marker.
 - Din metod för prefixsökning, ska returnera max 10 ord, sortera på frekvens i sjunkande ordning.
     - Om det finns 20 ord med ett prefix ska de 10 ord som har högst frekvens returneras, sorterat med högst värde först.
+    - Metoden ska returnera en lista med tupler, en tuple ska innehålla ordet på index 0 och frekvensen på index 1. T.ex. `[('alone', 272173.0), ('along', 251163.0), ('aloud', 32565.4), ('alongside', 10349.6), ('aloft', 10098.0)]`.
 - I koden ni lämnar in ska filen `frequency.txt` läsas in vid start.
 - Uppdatera metoden `add_word(word)` så att man också kan skicka in frekvens som argument. Ge frekvens parametern default argumentet `1`, `add_word(word, frequency=1)`.
 - Detta kravet ska inte påverka krav 5 och krav 6, med andra ord de ska inte sorterat på frekvens.

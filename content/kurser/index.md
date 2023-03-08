@@ -39,7 +39,7 @@ views:
                             meta:
                                 type: content
                                 # ht16 webapp-v2, ht17 webapp-v2, vt18-21 webapp-v3
-                                route: kurser/webapp-v4/block-kurser-kmom
+                                route: kurser/webapp-v5/block-kurser-kmom
 
     webbprogrammering-termin2:
         region: columns-above

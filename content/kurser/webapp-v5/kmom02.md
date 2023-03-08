@@ -59,7 +59,7 @@ Läs följande artiklar för att få bakgrunden till övningarna.
 
 ### Video {#video}
 
-1. Det finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-1cVPTFJ_Zw9b7N2Y4_ANI) kopplat till kursen, titta på videos som börjar på 2.
+1. Det finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_CbhJOudHjxkjYofM98kvh) kopplat till kursen, titta på videos som börjar på 2.
 
 1. Videospellistan [Introduktion till SASS](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8HZ5mbVhoKM_R1DmlX1iH1) ger en kort introduktion till funktioner i SASS.
 

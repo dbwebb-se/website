@@ -64,11 +64,11 @@ Läs följande artiklar för att få bakgrunden till övningarna.
 
 
 
-###Video  {#video}
+### Video  {#video}
 
 Se följande videor.
 
-1. Det finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-1cVPTFJ_Zw9b7N2Y4_ANI) kopplat till kursen, titta på videos som börjar på 4.
+1. Det finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_CbhJOudHjxkjYofM98kvh) kopplat till kursen, titta på videos som börjar på 4.
 
 <!-- 1. En video om att sluta skriva JavaScript-ramverk, "[Stop Writing JavaScript Frameworks - Joe Gregorio - OSCON 2015](https://www.youtube.com/watch?v=GMWAHzXQnNM)". Videon ger dig allmän kunskap om ramverk och lite om läget för ramverk inom JavaScript- och HTML-världen. -->
 

@@ -27,7 +27,7 @@ Vi har i tidigare kurser sett hur vi man kan skapa applikationer i webbläsaren 
 
 Som ett första steg ska vi börja med en löpande uppgift där vi i detta kursmoment skapar början till en lagerhanteringsapp. Nedan finns en liten video som visar hur det kan se ut när man är klar med Lager appen del 1.
 
-[YOUTUBE src=xp8blJ060XM width=630 caption="Lager appen del 1."]
+[YOUTUBE src=6Fni0LwEI10 width=630 caption="Lager appen del 1."]
 
 
 

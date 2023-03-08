@@ -268,8 +268,8 @@ Redirect /webapp/repo /repo/webapp
 Redirect /webapp-v1 /kurser/webapp-v1
 Redirect /webapp-v2 /kurser/webapp-v2
 Redirect /webapp-v3 /kurser/webapp-v3
-Redirect /webapp /kurser/webapp-v4
-Redirect /kurser/webapp /kurser/webapp-v4
+Redirect /webapp /kurser/webapp-v5
+Redirect /kurser/webapp /kurser/webapp-v5
 
 # oophp (older)
 

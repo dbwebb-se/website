@@ -181,7 +181,7 @@ Metoden ska hitta alla ord som är lika långa som argumentet där enstaka bokst
 
 Exempel, en Trie med orden `beat, heat, beet, belt, debt, boot`, och sökordet `beot` ska returnera listan `['boot', 'beat', 'beet', 'belt', 'debt', 'heat']`.
 
-Ni får **inte** plocka ut alla ord i en lista och sen leta igenom den listan efter rättstavning. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och returnerar alla förslagen. Utskriften ska **inte** begränsas till max 10.
+Ni får **inte** plocka ut alla ord i en lista och sen leta igenom den listan efter rättstavning. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och jobbar mot noderna för att kolla att kraven uppfylls. Utskriften ska **inte** begränsas till max 10.
 
 Lägg till en sida där användaren kan få hjälp med rättstavning. Visa alla ord som hittas baserat på användarens input.
 
@@ -193,7 +193,7 @@ Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en strän
 
 T.ex. med argumentet `"ppa"` ska listan `["loppa"," "soppa"]` returneras.
 
-Ni får **inte** bygga ett nytt träd där ni lägger till alla ord i bakvänd ordning eller plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och returnerar alla suffixorden.
+Ni får **inte** bygga ett nytt träd där ni lägger till alla ord i bakvänd ordning eller plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och och jobbar mot noderna för att kolla att kraven uppfylls..
 
 Lägg till en sida där alla ord visas baserat på användarens input. Visa alla ord som hittas baserat på användarens input. Utskriften ska **inte** begränsas till max 10.
 

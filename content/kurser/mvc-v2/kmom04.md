@@ -7,6 +7,14 @@ revision:
 Kmom04: Enhetstestning
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
+
 Vi jobbar vidare med klasser och objekt och nu tittar vi på hur klasser kan enhetstestas med verktyget PHPUnit. PHPUnit är ett av de verktyg som vanligen används inom PHP för att utföra enhetstestning av kod.
 
 Vi har tidigare pratat om begreppet inkapsling och att klasserna skall erbjuda ett publikt API, ett gränssnitt för användaren av klassen. Samtidigt vill vi skydda den interna implementationen inuti klassen. Vi vill låta användaren av vår klass ha ett tydligt gränssnitt, men inuti klassen vill vi själva bestämma hur vi implementerar klassens detaljer, utan att påverka/påverkas av det publika gränssnittet.

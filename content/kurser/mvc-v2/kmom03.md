@@ -8,6 +8,14 @@ revision:
 Kmom03: Applikation
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
+
 Vi jobbar vidare med klasser och objekt i PHP och bygger en applikation i ramverket Symfony. Detta kursmomentet blir som ett litet miniprojekt där vi problemlöser, designar och implementerar en applikation med objektorienterade konstruktioner enligt MVC.
 
 Vi jobbar med kodstil, kodstrukturer och vi försöker bygga vår kod så bra som möjligt enligt de riktlinjer som finns för snygg kod. Till vår hjälp tar vi ett antal kodlinters som ger oss rekommendationer om hur koden skall skrivas.

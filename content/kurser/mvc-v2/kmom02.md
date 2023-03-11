@@ -9,6 +9,14 @@ revision:
 Kmom02: Objektorientering
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
+
 Vi skall bygga grunderna till ett kortspel i vår webbplats för att träna på objektorientering och hur man skapar egna klasser och applikationer i ramverket Symfony.
 
 Vi skall programmera med objektorienterade konstruktioner för att bygga ett antal klasser som samverkar. Det handlar om klasser i PHP med metoder och medlemsvariabler. Vi försöker använda både arv och komposition så vi ser skillnader och likheter mellan dessa konstruktioner. Lyckas vi även få in konstruktioner som interface och traits så är det bonus.

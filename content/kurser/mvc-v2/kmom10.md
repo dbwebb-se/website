@@ -7,6 +7,16 @@ revision:
 Kmom07/10: Projekt och examination
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+Strukturen för projektet/examinationen kommer att uppdateras inför vt23.
+
+[/WARNING]
+
 Detta kursmoment avslutar och examinerar kursen.
 
 Alla delar i detta kursmoment skall utföras individuellt och självständigt.

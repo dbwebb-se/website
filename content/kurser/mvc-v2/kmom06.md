@@ -10,6 +10,14 @@ revision:
 Kmom06: Automatiserad test
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
+
 Vi vill nu ta vara på de tester vi kör mot vår applikation och automatisera och visualisera dem så att vi kan dra ännu större nytta av dem och det resultat de kan ge oss. När vi pratar tester så innebär det både enhetstester och den statiska kodvalidering som våra validatorer gör åt oss. Statisk kodvalidering innebär i vårt fall både kodstandarder och det som kallas "mess detectors" som upptäcker kod med förbättringspotential.
 
 Vi skall jobba med begrepp som automatiserad testning, automatiserad bygg av projektet samt fundera över vad det är alla validatorer försöker berätta för oss i form av "quality metrics". Detta kommer vi att göra genom att delvis påbörja en kedja av Continous integration (CI) och koppla vårt repo mot externa byggtjänster och låta dem bygga och testa vår kod varje gång vi pushar en ny commit till GitHub/GitLab.

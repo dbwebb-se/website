@@ -15,6 +15,14 @@ revision:
 Kmom01: Ramverk
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
+
 I denna kursen skall vi lära oss programmera webbapplikationer på ett objektorienterat sätt med fokus på det arkitekturella designmönstret MVC. För att komma igång behöver vi en bas och där har vi valt ramverket Symfony som är ett av de mer kända ramverken inom PHP.
 
 Vi börjar med att installera Symfony och bygger en webbplats med en kontroller (C:et i MVC) som ger oss grunden för kursens me-sida som skall innehålla detaljer om dig själv, kursen och dina redovisningstexter. Du använder vyer för att rendera webbsidorna (V:et i MVC). Vi provar även att skapa en sida som genererats med JSON, det blir ett embryo till att se hur man kan bygga en webbtjänst med ett så kallat RESTful API.

@@ -3,6 +3,7 @@ title: mvc (v2)
 author:
     - mos
 revision:
+    "2023-03-11": "(C, mos) Genomgången och uppdaterad inför vt23."
     "2022-05-02": "(B, mos) Första utgåva vt22, kopierad från mvc-v1, nu mvc-v2."
     "2021-03-25": "(A, mos) Första utgåva vt21, kopierad från oophp-v5."
 ...
@@ -240,9 +241,10 @@ Här kan du se en översikt av hur kurstillfället har valt att strukturera lär
 
 Här finner du även länkar till aktuella video streams och spellistor samt chatter och forum för handledning.
 
-* [Läromaterial vt22, lp4](./laromaterial-vt22lp4)
+* [Läromaterial vt23, lp4](./laromaterial-vt23lp4)
 
 <!--
+* [Läromaterial vt22, lp4](./laromaterial-vt22lp4)
 * [Läromaterial vt21, lp4](./laromaterial-vt21lp4)
 -->
 
@@ -253,9 +255,10 @@ Lärarteam och intressenter {#team}
 
 Här kan du hitta detaljer om ett kurstillfälle och se lärarteamet som utför kurstillfället, deras roller och kontaktuppgifter tillsammans med de som "äger" kursen och kurstillfället och vilka studentgrupper som läser kursen samt övriga intressenter till kurstillfället.
 
-* [Lärarteam och intressenter vt22, lp4](./team-vt22lp4)
+* [Lärarteam och intressenter vt23, lp4](./team-vt23lp4)
 
 <!--
+* [Lärarteam och intressenter vt22, lp4](./team-vt22lp4)
 * [Lärarteam och intressenter vt21, lp4](./team-vt21lp4)
 -->
 

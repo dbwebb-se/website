@@ -20,8 +20,6 @@ Innan vi gör detta tittar vi på ett verktyg som hjälper oss att söka och vis
 
 Det kan se ut så här när vi har gjort klart Lager appen del 2.
 
-[YOUTUBE src=PXiMMSsf9NA width=630 caption="Så här kan det se ut när vi är klara med Lager appen del 2."]
-
 
 
 <!--more-->
@@ -88,7 +86,7 @@ Gör följande övningar för att träna inför uppgifterna.
 
 1. Gör övningen "[Knappar för mobilen](kunskap/knappar-for-mobilen)". Spara eventuella testfiler i `me/kmom02/buttons`.
 
-1. Gör övningen "[En router i JavaScript](kunskap/en-router-i-javascript)".
+1. Gör övningen "[En router i JavaScript](kunskap/en-router-i-javascript)". Spara med fördel koden i `me/lager`.
 
 
 

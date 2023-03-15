@@ -2,13 +2,17 @@
 author: efo
 category: javascript
 revision:
+  "2023-03-15": (B, efo) Första utgåvan inför webapp-v5.
   "2018-01-18": (A, efo) Första utgåvan inför kursen linux V18.
 ...
 Knappar för mobilen
 ==================================
+
 [FIGURE src=image/webapp/button.jpg?w=c5 class="right"]
 
 Vi har sedan tidigare gjort CSS kod för navigation och typografi och vi ska i denna övning bygga ytterligare komponenter för våra appar. I slutet av övningen ska vi titta på hur vi kan strukturera CSS koden, både som ren CSS men även med hjälp av SASS en CSS-preprocessor.
+
+
 
 <!--more-->
 
@@ -16,6 +20,7 @@ Vi har sedan tidigare gjort CSS kod för navigation och typografi och vi ska i d
 
 Introduktion {#intro}
 --------------------------------------
+
 Knappar är en viktig del av de flesta CSS ramverk och kanske en av de mera omdiskuterade delar. Speciellt introduktionen av Flat Design i Apples iOS 7 och Googles Material Design visade på hur bra decor ibland kan vara dålig design. Problemet med Flat Design är att användaren ofta har problem att urskilja vad som går att klicka på och inte. I dessa två artiklar kan intresserade läsa mer: [The Problem with Flat Design According to a UX Expert](https://www.fastcodesign.com/3058094/the-problem-with-flat-design-according-to-a-ux-expert) och [Tablet Usability](https://www.nngroup.com/articles/tablet-usability/).
 
 En annan utmaning när man designar för små mobila enheter är att man inte har samma precision när man använder händerna, som med en gammal hederlig datormus. Därför är det viktigt att designa knappar och andra komponenter så de är lätta att interagera med trots avsaknaden av precision.
@@ -26,6 +31,7 @@ Exempelprogrammet från denna övning finns i kursrepot [example/sass-examples](
 
 En knapp {#intro}
 --------------------------------------
+
 Vi börjar med att definiera en klass för knappar `.button`. Vi vill att denna klassen ska kunna användas för flera olika HTML-element som till exempel `a`, `button` och `input[type=submit]`. I kod exemplet nedan har vi en grundstruktur med `index.html`, `normalize.min.css` och `style.css`. Jag har lagt till tre stycken element som vi ska designa i denna övning genom att använda klassen `.button`.
 
 ```html
@@ -36,7 +42,6 @@ Vi börjar med att definiera en klass för knappar `.button`. Vi vill att denna 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Button</title>
 
-    <link rel="stylesheet" href="normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -52,6 +57,11 @@ Vi börjar med att definiera en klass för knappar `.button`. Vi vill att denna 
 
 ```css
 /* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -59,15 +69,12 @@ body {
 
 .container {
     padding: 1rem;
+    margin-bottom: 3.2rem;
+    margin-top: 2rem;
     line-height: 1.4;
     font-size: 1.2rem;
 }
 ```
-
-Trots att vi använder `normalize.min.css`, som nollställer grundstilen i webbläsarna, ser vi ändå en liten skillnad om vi jämför Chrome med Firefox.
-
-[FIGURE src=image/webapp/screenshot-button-chrome.png?w=c7 class="right" caption="Tre grundelement i Chrome"]
-[FIGURE src=image/webapp/screenshot-button-firefox.png?w=c7 caption="Tre grundelement i Firefox"]
 
 För att få de tre grundelement till att vara likadana skapar vi en tunn ram runt alla tre, tar bort understrykningen för `a`-elementet, sätter textfärgen till mörkgrå och bakgrundsfärgen till vit.
 
@@ -156,6 +163,7 @@ En sak vi vill göra med knappar på mobila enheter är att de ska kunna fylla u
 
 Färger {#colors}
 --------------------------------------
+
 För att knappar kan signalera olika funktioner introducerar vi färger. En röd knapp betyder fara, en gul varning, blå eller grön att allt är lugnt. Vi lägger till ytterligare klasser då vi inte vill ändra på grunddesignen. Ett exempel på dessa klasser syns i kod exemplet nedan för en blå knapp. Notera att färgen på typsnittet har ändrats då vi inte vill ha ett mörkt typsnitt på en mörk bakgrund. En blå knapp definieras nu som `<button class="button blue-button">button</button>`.
 
 ```css
@@ -182,6 +190,7 @@ För att knappar kan signalera olika funktioner introducerar vi färger. En röd
 
 Struktur i CSS {#struktur}
 --------------------------------------
+
 Nu börjar vi få en hel del CSS kod där olika komponenter ligger blandat i samma CSS fil. För att strukturera upp detta kan det vara en fördel att dela upp koden i olika moduler. Ett enkelt och fullt tillräckligt sätt är att dela upp CSS-koden i olika filer och importera alla filer i `index.html`.
 
 Ett smidigare och mer kraftfullt sätt är att använda sig av en CSS-preprocessor. Fördelen med en CSS-preprocessor är inte bara att man kan samla koden i moduler och exportera en enda CSS fil. I CSS-preprocessors finns det inbyggda funktioner som underlättar vid hantering av färg, typsnitt och import av moduler.
@@ -236,12 +245,11 @@ $blue: #0074d9;
 }
 ```
 
-För att strukturera CSS-koden börjar vi med att skapa en fil `base.scss`. I filen `base.scss` importerar vi alla moduler med hjälp av till exempel `@import 'navigation'`. Det är denna fil vi använder när vi sedan ska kompilera SASS till CSS. Jag använder `.scss`-filer då jag gillar syntaxen då den påminner om CSS och ger möjlighet för att återanvända befintlig CSS. Men det är fritt fram att använda `.sass` syntax, om ni tycker om den. Som ni ser nedan har jag även flyttat in `normalize.min.css` i style katalogen och utnyttjar att jag kan skriva CSS kod i scss filer. Vi döper om `normalize.min.css` till `style/normalize.min.scss` och filen blir en del av den resulterande CSS filen istället för att ligga som ett beroende utanför.
+För att strukturera CSS-koden börjar vi med att skapa en fil `base.scss`. I filen `base.scss` importerar vi alla moduler med hjälp av till exempel `@import 'navigation'`. Det är denna fil vi använder när vi sedan ska kompilera SASS till CSS. Jag använder `.scss`-filer då jag gillar syntaxen då den påminner om CSS och ger möjlighet för att återanvända befintlig CSS. Men det är fritt fram att använda `.sass` syntax, om ni tycker om den.
 
 ```scss
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro');
 
-@import 'style/normalize.min.scss';
 @import 'style/variables';
 @import 'style/container';
 @import 'style/navigation';

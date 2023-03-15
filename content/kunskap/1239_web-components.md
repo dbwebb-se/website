@@ -392,6 +392,8 @@ export default class SingleProduct extends HTMLElement {
 
 Laddar du om sidan bör du få en lista på produkterna som finns i lagret.
 
+I ovanstående kod (och på andra ställen i koden) använder vi en [`getter`-funktion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get). En `getter`-funktion binder ett objekt till ett attribut i ett objekt eller klass i JavaScript. När vi efterfrågar attributet anrops funktionen som sedan returnerar ett värde. Detta är anledningen till att vi kan skriva `this.product.name` istället för `this.product()` och sedan hämta ut `name` från det objektet som returneras.
+
 
 
 Avslutningsvis {#avslutning}

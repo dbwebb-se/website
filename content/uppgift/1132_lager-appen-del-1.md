@@ -36,14 +36,14 @@ Krav {#krav}
 -----------------------
 1. Skapa en webbapplikation anpassad för mobilen.
 
-1. Appen ska innehålla en lagerförteckningslista där produkterna listas med namn, lagersaldo och lagerplats.
+1. Appen ska innehålla en lagerförteckningslista där produkterna listas med namn (`name`), lagersaldo (`stock`) och lagerplats (`location`).
 
 1. Validera och publicera din kod enligt följande.
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb validate lager1
-dbwebb publish lager1
+dbwebb validate lager
+dbwebb publish lager
 ```
 
 Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut så är du klar.

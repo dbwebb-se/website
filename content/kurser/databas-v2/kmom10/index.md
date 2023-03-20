@@ -50,6 +50,8 @@ Kanske enbart fokusera p책 faktureringen i projektet. Kanske fokusera p책 att g�
 * Skapa faktura
 * Betala faktura
 
+* Soft delete s책 att man kan radera produkter och ordrar, samt s채tta olika status p책 dem. Finns som extrauppgift tidigare och kan vara en bra uppgift i projektet. Man f책r nog ta bort det som extrauppgift kanske...
+
 -->
 
 

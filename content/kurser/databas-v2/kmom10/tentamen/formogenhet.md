@@ -192,16 +192,15 @@ Det är rapportens innehåll som är viktigt, inte hur du skriver ut det i tabel
 Ett tips är att kopiera tabellen nedan till ett eget dokument så att du kan se det i sin helhet.
 
 ```text
-+------------------------+---------------+--------------+-------------+----------+-----------+------------+
-| Person                 | Förmögenhet   | Aktie        | Inköpspris  | Nuvärde  | Fastighet | Värdering  |
-+------------------------+---------------+--------------+-------------+----------+-----------+------------+
-| Mikael Roos (BTH)      |             0 | NULL         |        NULL |     NULL | NULL      | NULL       |
-| Jeff Bezos (Amazon)    |           177 | AMAZON       |          11 |        3 | NULL      | NULL       |
-| Bill Gates (Microsoft) |           124 | MICROSOFT    |          14 |        6 | NULL      | NULL       |
-| Mark Zuckerberg (Meta) |            97 | SPACEX,META  |          31 |       12 | NULL      | NULL       |
-| Elon Musk (Tesla)      |           151 | TESLA,SPACEX |          25 |        9 | NULL      | NULL       |
-+------------------------+---------------+--------------+-------------+----------+-----------+------------+
-5 rows in set (0.000 sec)
++------------------------+---------------+--------------+-------------+----------+-------------------------+------------+
+| Person                 | Förmögenhet   | Aktie        | Inköpspris  | Nuvärde  | Fastighet               | Värdering  |
++------------------------+---------------+--------------+-------------+----------+-------------------------+------------+
+| Mikael Roos (BTH)      |             0 | NULL         |        NULL |     NULL | NULL                    | NULL       |
+| Jeff Bezos (Amazon)    |           177 | AMAZON       |          11 |        3 | STOCKHOLM-C             | 8.0 (10)   |
+| Bill Gates (Microsoft) |           124 | MICROSOFT    |          14 |        6 | Ö-I-SÖDERHAVET          | 11.2 (14)  |
+| Mark Zuckerberg (Meta) |            97 | SPACEX,META  |          31 |       12 | STUDENTRUM-A,NEW-YORK-C | 14.4 (18)  |
+| Elon Musk (Tesla)      |           151 | TESLA,SPACEX |          25 |        9 | EIFFELTORNET            | 9.6 (12)   |
++------------------------+---------------+--------------+-------------+----------+-------------------------+------------+
 ```
 
 1. I terminalklienten, skapa kommandot `report` som visar ovan rapport.

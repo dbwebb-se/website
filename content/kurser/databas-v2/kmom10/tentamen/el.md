@@ -168,7 +168,7 @@ Uppgift 2 (5p) {#u2}
 
 Chefen kommer förbi och hävdar bestämt att det behövs en sökfunktion i ditt verktyg.
 
-Man skall kunna söka på delsträngar i kraftverkens id, namnplats och källa samt på konsumenternas id, namn, ort och källa.
+Man skall kunna söka på delsträngar i kraftverkens id, namn, plats och källa samt på konsumenternas id, namn, ort och källa.
 
 1. I webbklienten, skapa routen `exam/search` där man i ett formulär kan ange en söksträng. Visa samma rapporter som du skapade tidigare, men visa enbart de rader som matchar söksträngen.
 

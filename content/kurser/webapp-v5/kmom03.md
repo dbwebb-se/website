@@ -3,7 +3,7 @@ author:
   - mos
   - efo
 revision:
-  "2018-01-30": (D, efo) Första utgåvan för webapp-v5.
+  "2023-03-24": (E, efo) Första utgåvan för webapp-v5.
   "2018-01-30": (C, efo) Första utgåvan för webapp-v3.
   "2017-03-13": (B, efo) Första utgåvan för webapp-v2.
   "2015-11-23": (A, mos) Första utgåvan för kursen.
@@ -11,9 +11,7 @@ revision:
 Kmom03: Formulär och CRUD
 ==================================
 
-I detta kursmoment fortsätter vi med att utveckla våra GUI komponenter från tidigare kursmoment. Vi skapar lättanvända formulärfält med hjälp av HTML5 och kopplar ihop fälten i formulär som är lätta att använda på små skärmar där kontext och möjligheten att skriva snabbt och enkelt saknas.
-
-I vår applikation lägger vi till möjligheten att skapa, uppdatera och ta bort data via formulär. Vi har i tidigare kursmoment arbetat enbart med vanilla JavaScript, men ska i detta kursmoment titta på hur vi kan använda oss av JavaScript ramverket mithril för att underlätta hämtning av data, rendering av HTML-element och de olika vyer.
+I detta kursmoment fortsätter vi med att utveckla våra GUI komponenter från tidigare kursmoment. Vi skapar lättanvända formulärfält med hjälp av HTML5 och kopplar ihop fälten i formulär som är lätta att använda på små skärmar där kontext och möjligheten att skriva snabbt och enkelt saknas. I vår applikation lägger vi till möjligheten att skapa data via formulär.
 
 
 
@@ -45,41 +43,10 @@ Läsanvisningar  {#lasanvisningar}
 *(ca: 6-10 studietimmar)*
 
 
-###Kurslitteratur  {#kurslitteratur}
-
-Läs följande:
-
-1. [Mobile HTML5](kunskap/boken-mobile-html5).
-    * Ch 4: HTML5 Web Forms
-
-
-
-###Artiklar {#artiklar}
-
-<!-- 1. Läs "[What the heck is shadow DOM](https://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/)".
-
-1. Läs om vilka "[use case som finns för shadow DOM](https://www.w3.org/2008/webapps/wiki/Component_Model_Use_Cases)".
-
-1. Skumma igenom "[Googles artikel shadow DOM-v1](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom?hl=en)". -->
-
-1. Bekanta dig med dokumentationen för JavaScript ramverket [mithril](http://mithril.js.org/api.html). Genomgången av en enkel app i en [tutorial](http://mithril.js.org/simple-application.html) är ytterst relevant för det vi gör i detta kursmoment.
-
-
 
 ### Video  {#video}
 
 1. Det finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_CbhJOudHjxkjYofM98kvh) kopplat till kursen, titta på videos som börjar på 3.
-
-
-
-
-###Lästips {#lastips}
-
-<!-- * Bekanta dig med [mithril Components](http://mithril.js.org/components.html), som hjälper dig att skapa återanvändbar kod.
-
-* Hur ser det egentligen ut med JavaScript ramverk 2018. Stack Overflow har publicerad statistik angående ramverk i artikeln [The Brutal Lifecycle of JavaScript Frameworks](https://stackoverflow.blog/2018/01/11/brutal-lifecycle-javascript-frameworks/).-->
-
-* I forumet finns en tråd om val av JavaScript ramverk och vad man kan tänka på [Hur tänka inför val av JavaScript ramverk?](forum/viewtopic.php?f=11&t=7195).
 
 
 
@@ -90,42 +57,19 @@ Läs följande:
 
 
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
 
-Gör följande övningar för att träna inför uppgifterna.
+Gör följande övning för att träna inför uppgifterna.
 
-1. Gör övningen "[Kom igång med ramverket Mithril](kunskap/kom-igang-med-mithril-v2)". Spara eventuella testfiler i `me/kmom03/nobel`.
-
-1. Läs igenom artikeln och gör övningarna i "[Ett mobilanpassad formulär](kunskap/ett-mobilanpassad-formular)". Spara eventuella testfiler i `me/kmom03/formular`.
-
-
-<!-- 1. Läs igenom artikeln "[Virtuella noder](kunskap/virtuella-noder)".
-
-1. Läs igenom artikeln och gör övningarna i "[Modeller och request i mithril](kunskap/mithril-modeller-och-request)". -->
-
-<!-- 1. Läs igenom artikeln och gör övningarna i "[Mobil webapp och RESTful server](kunskap/mobil-webapp-och-restful-server)". Spara de övningar du gör i mappen `me/kmom03/ajax`.
-
-1. Läs igenom artikeln "[Ett enkelt grid för alla våra enheter](kunskap/ett-enkelt-grid-for-alla-vara-enheter)".
-
-1. Läs igenom artikeln "[En kalender med mithril components](kunskap/en-kalender-med-mithril-components)".
-
--->
+1. Läs igenom artikeln och gör övningarna i "[Ett mobilanpassad formulär](kunskap/ett-mobilanpassad-formular)". Skriv koden i `me/lager` för återanvändning i uppgiften.
 
 
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Lager appen del 3](uppgift/lager-appen-del-3)". Spara resultatet i `me/kmom03/lager3`.
-
-<!-- 1. Lägg till en Splash screen och en ikon till din meapp. -->
-
-
-
-###Extra {#extra}
-
-Det finns ingen extrauppgift.
+1. Gör uppgiften "[Lager appen del 3](uppgift/lager-appen-del-3)". Spara resultatet i `me/lager`.
 
 
 
@@ -139,6 +83,6 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 Se till att följande frågor besvaras i redovisningstexten.
 
 * Vilka faktorer spelar in när du ska designa ett formulär för mobila enheter?
-* Hur känns övergången från vanilla JavaScript till ett JavaScript ramverk?
-* Gjorde du extrauppgifterna i lager appen? Berätta isåfall om det arbetet.
+* Vad tyckte du om den inbyggda formulär validering i webbläsaren?
+* Vilka lärdomar gjorde du kring hantering av formulär i JavaScript?
 * Vilken är din TIL för detta kmom?

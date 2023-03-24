@@ -2,6 +2,7 @@
 author: efo
 category: javascript
 revision:
+  "2023-03-24": (B, efo) Uppdaterad utgåva inför kursen webapp v5.
   "2017-03-15": (A, efo) Första utgåvan inför kursen webapp v2.
 ...
 Ett mobilanpassad formulär
@@ -211,110 +212,199 @@ Våra formulärfält ser nu ut enligt nedan och vi har nu samma styling trots ol
 
 
 
-Ett formulär i mithril {#mithril}
+Ett formulär i en web-komponent {#web-component}
 --------------------------------------
 
-I `example/bakery` finns ett exempelprogram på hur man kan göra ett formulär. Det är detta exempel som visas nedan. Exempelprogrammet innehåller ett fullständigt exempel och finns även inloggning och hantering av en JWT-token, som vi tar en titt på i [kmom04](kurser/webapp/kmom04).
-
-Formuläret nedan gör det möjligt att redigera kakor. Det finns en `bakery` modell som tar hand om data när det skickas från formuläret. När vi skapar formulär i mithril använder vi oss som vanligt av `m` för att skapa våra virtuella noder. Längst ut lägger vi ett formulär element och inuti formulär elementet våra formulärfält. För att de ändringar vi gör i formulärfältet ska sparas använder vi oss av livscykel metoderna `oninput` och `onchange`. `oninput` sätter värdet på den nuvarande kakan (`bakery.current`) varje gång vi får input i fältet.
-
-Vi använder oss av en livscykel metod `onsubmit` för formuläret för att förhindra att formuläret laddar om sidan när vi trycker på spara-knappen. Vi anropar dessutom modellens `save` funktion och då vi har redan satt värdet på den nuvarande dator kan vi helt enkelt bara spara den med hjälp av `m.request` och Lager-API:t som ligger i bakgrunden för appen.
+Låt oss då se hur vi knyter ihop lärdomar från ovan i ett web-komponent formulär i JavaScript. Vi börjar med att skapa en route i vår `Router` klass för att vi ska ha möjlighet att gå till vyn. Mitt `allRoutes`-objekt blir då.
 
 ```javascript
-import m from 'mithril';
-import { bakery } from "../models/bakery";
-
-let bakedGoodsForm = {
-    oninit: function(vnode) {
-        bakery.load(vnode.attrs.id);
+this.allRoutes = {
+    "": {
+        view: "<products-view></products-view>",
+        name: "Lagerlista",
     },
-    view: function() {
-        return m("div.container", m("form", {
-                onsubmit: function(event) {
-                    event.preventDefault();
-                    bakery.save();
-                } }, [
-            m("label.input-label", "Namn"),
-            m("input.input[type=text][placeholder=Name]", {
-                oninput: function (e) {
-                    bakery.current.name = e.target.value;
-                },
-                value: bakery.current.name
-            }),
-            m("label.input-label", "Lagerplats"),
-            m("input.input[type=text][placeholder=Lagerplats]", {
-                oninput: function (e) {
-                    bakery.current.location = e.target.value;
-                },
-                value: bakery.current.location
-            }),
-            m("label.input-label", "Lagersaldo"),
-            m("input.input[type=number][placeholder=Lagersaldo]", {
-                oninput: function (e) {
-                    bakery.current.stock = parseInt(e.target.value);
-                },
-                value: bakery.current.stock
-            }),
-            m("label.input-label", "Typ"),
-            m("select.input", {
-                onchange: function (e) {
-                    bakery.current.specifiers = parseInt(e.target.value);
-                }
-            }, bakery.cakeTypes.map(function(cakeType) {
-                return m("option", { value: cakeType }, cakeType);
-            })),
-            m("input[type=submit][value=Spara].button")
-        ]));
+    "packlist": {
+        view: "<packlist-view></packlist-view>",
+        name: "Plocklista",
+    },
+    "deliveries": {
+        view: "<deliveries-view></deliveries-view>",
+        name: "Inleveranser",
+    },
+    "deliveries-form": {
+        view: "<new-delivery></new-delivery>",
+        name: "Ny inleverans",
+        hidden: true,
+    },
+};
+```
+
+Som vi ser ovan har jag en `deliveries` route som visar upp alla inleveranser, ett smart sätt att skapa den är att utgå från lagersaldo vyn vi skapade i kmom01. Det borde vara ganska så snarlik information som bör finnas i den. Sedan har jag en `deliveries-form` route, här har jag valt att lägga ett attribut `hidden` som gör att den döljs i menyn. Det börjar bli mycket där och jag bara vill att det ska gå att komma åt från `deliveries` routen.
+
+I `Navigation` klassen har jag valt att implementera det på följande sätt.
+
+```javascript
+for (let path in routes) {
+    if (routes[path].hidden) {
+        continue;
+    }
+
+    navigationLinks += `<a href='#${path}'>${routes[path].name}</a>`;
+}
+```
+
+`<new-delivery></new-delivery>` innehåller liknande som tidigare, men i `main`-delen av vyn visas komponenten `<delivery-form></delivery-form>`, som är den vi ska titta på nedan.
+
+
+
+Inleverans formulär komponent {#komponent}
+--------------------------------------
+
+Då vi vill kunna visa upp alla produkter i en dropdown-lista börjar vi med att hämta produkterna. Då vi vill hålla koden **DRY** har jag valt att skapa en `products`-modell i en katalog `models`.
+
+```javascript
+import { apiKey, baseURL } from "../utils.js";
+
+const products = {
+    getProducts: async function getProducts() {
+        const response = await fetch(`${baseURL}/products?api_key=${apiKey}`);
+        const result = await response.json();
+
+        return result.data;
     }
 };
 
-export { bakedGoodsForm };
+export default products;
 ```
 
-Modellen `bakery` som används för att hämta ut den specifika datorn som ska redigeras (`load`) och spara datorn (`save`) ser ut enligt nedan. Först definierar vi `bakery.cakeTypes` och  `bakery.current`, samt `url` och `apiKey`. De används för att visa upp de olika sorters kakor vi har i konditoriet och `current` används för att spara data vi hämtar från Lager-API:t. När vi sedan ska spara kakan anropar vi en `PUT` route och skickar med `bakery.current` som data objekt.
+Vi kan nu i `delivery-form` hämta alla produkter i `connectedCallback` och sedan anropa funktionen `render` för att rendera ut formuläret. Vi skapar även två stycken instansvariabler. En array för att hålla produkterna och ett objekt för att hålla data om den inleverans som vi skapar i formuläret.
 
 ```javascript
-var m = require("mithril");
+import productsModel from "../models/products.js";
+import deliveriesModel from "../models/deliveries.js";
 
-var bakery = {
-    apiKey: "[API_KEY]", // i example/bakery finns en riktig api-nyckel som man kan använda för testning
-    url: "https://lager.emilfolino.se/v2/products",
-    cakeTypes: ["Tårta", "Bröd", "Småkaka"],
-    currentCakes: [],
-    loadAll: function() {
-        return m.request({
-            method: "GET",
-            url: bakery.url + "?api_key=" + bakery.apiKey
-        }).then(function(result) {
-            bakery.currentCakes = result.data;
-        });
-    },
-    current: {},
-    load: function(id) {
-        return m.request({
-            method: "GET",
-            url: bakery.url + "/" + id + "?api_key=" + bakery.apiKey
-        }).then(function(result) {
-            bakery.current = result.data;
-        });
-    },
-    save: function() {
-        bakery.current.api_key = bakery.apiKey;
+export default class DeliveryForm extends HTMLElement {
+    constructor() {
+        super();
 
-        return m.request({
-            method: "PUT",
-            url: bakery.url,
-            body: bakery.current
-        }).then(function() {
-            m.route.set("/");
-        });
+        this.products = [];
+        this.delivery = {};
     }
-};
 
-export { bakery };
+    // connect component
+    async connectedCallback() {
+        this.products = await productsModel.getProducts();
+
+        this.render();
+    }
+
+    render() {
+        this.innerHTML = `formulär`;
+    }
+}
 ```
 
-För ytterligare exempel på formulär hantering i mithril titta i [tutorial](https://mithril.js.org/simple-application.html).
+Vi skapar sedan ett `form`-element som kommer innehålla formuläret. Och kopplar en `EventListener` till `submit`-eventet på formuläret. För att vi ska kunna göra en `submit` skapar vi även en knapp som vi lägger till i formuläret och formuläret läggs sedan till som barn till `this`. Viktigt i `EventListener`-callbacken att använda sig av `event.preventDefault()` för att inte sidan ska laddas om och formuläret skickas. Vi kommer istället vela ta hand om det med hjälp av JavaScript.
+
+```javascript
+import productsModel from "../models/products.js";
+import deliveriesModel from "../models/deliveries.js";
+
+export default class DeliveryForm extends HTMLElement {
+    constructor() {
+        super();
+
+        this.products = [];
+        this.delivery = {};
+    }
+
+    // connect component
+    async connectedCallback() {
+        this.products = await productsModel.getProducts();
+
+        this.render();
+    }
+
+    render() {
+        let form = document.createElement("form");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+        });
+
+        let submitButton = document.createElement("input");
+
+        submitButton.setAttribute("type", "submit");
+        submitButton.setAttribute("value", "Skapa inleverans");
+        submitButton.classList.add("button", "green-button");
+
+        form.appendChild(submitButton);
+
+        this.appendChild(form);
+    }
+}
+```
+
+
+
+### Ett formulärfält {#input}
+
+Vi kommer nu ta en titt på hur vi kan skapa formulärfältet för `amount` och hur vi kan spara ner det som skrivs i fältet till `this.delivery`-objektet. Vi skapar ett `input`-element, där vi sätter två attribut. Först typen så vi får ett anpassat tangentbord på mobilen och validering av data. Efter det sätter vi även `required` för att utnyttja webbläsarens inbyggda formulärvalidering.
+
+Sedan kopplar vi en `EventListener` till `input`-eventet och hämtar då ut värdet från fältet med `event.target.value`. Vi utnyttjar `spread`-operatorn för att plocka fram alla attributen och värdena i `this.delivery`-objektet, för att sedan skriva över `amount`-attributet med det nya värdet. Nu när vi testar att skriva in en siffra i fältet och trycker på `submit`-knappen bör vi se en utskrift av objektet i konsollen i webbläsaren.
+
+```javascript
+render() {
+    let form = document.createElement("form");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        console.log(this.delivery);
+    });
+
+    let amountInput = document.createElement("input");
+
+    amountInput.setAttribute("type", "number");
+    amountInput.setAttribute("required", "required");
+    amountInput.classList.add("input");
+
+    amountInput.addEventListener("input", (event) => {
+        this.delivery = {
+            ...this.delivery,
+            amount: parseInt(event.target.value)
+        };
+    });
+
+    let submitButton = document.createElement("input");
+
+    submitButton.setAttribute("type", "submit");
+    submitButton.setAttribute("value", "Skapa inleverans");
+    submitButton.classList.add("button", "green-button");
+
+    form.appendChild(amountInput);
+    form.appendChild(submitButton);
+
+    this.appendChild(form);
+}
+```
+
+
+
+### Spread-operatorn {#spread}
+
+Vi använder oss av [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) i kodexemplet ovan `{ ...delivery, comment: content }`. Spread Operator kan användas på både arrayer och objekt. För arrayer delas varje element ut som argument som en funktion, så `...[1, 2, 3] => 1, 2, 3`. För ett objekt spridas nyckel-värde paren ut på följande sätt:
+
+```javascript
+let person = {
+    name: "Emil",
+    age: 35,
+};
+
+let concatenatedPerson = {...person, lastName: "Folino"};
+
+// concatenatedPerson: {name: "Emil", age: 35, lastName: "Folino"}
+```
 
 
 
@@ -322,6 +412,4 @@ Avslutningsvis {#avslutning}
 --------------------------------------
 Detta var en genomgång av ett antal olika input typer i HTML5, som ger bättre användbarhet speciellt på mobila enheter. Genom att tala om vilken sorts data, som varje formulärfält är gjort för, kan den mobila enhet anpassa tangentbord och användargränssnitt för den specifika användningen.
 
-Vi har även tittat på formulärhantering i mithril både själva formuläret i en vy och hur den bakomliggande modellen för att hämta och spara data ser ut.
-
-Om du har frågor eller tips så finns det en särskild [tråd i forumet](t/7317) om denna artikeln.
+Vi har även tittat på formulärhantering i JavaScript och hur vi kan skapa bra användbara formulär.

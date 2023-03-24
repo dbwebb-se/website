@@ -26,14 +26,6 @@ Det kan se ut så här när vi har gjort klart Lager appen del 2.
 
 
 
-[WARNING]
-**Kursutveckling pågår**
-
-Kursutveckling pågår inför kurstillfället VT23.
-[/WARNING]
-
-
-
 Nedan finns en liten video som visar hur det kan se ut när man är klar med Lager appen del 2.
 
 [YOUTUBE src=QAvD-vRgSaU width=630 caption="Lager appen del 2."]

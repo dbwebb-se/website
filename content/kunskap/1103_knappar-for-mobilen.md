@@ -265,7 +265,7 @@ Vi minns att vi med kommandot `npm run style` kan köra npm skriptet `style`, so
 sass base.scss style.min.css
 ```
 
-Om man istället vill skapa en komprimerad version av CSS koden kan man använda följande scripts. En rekommendation är att använda nedanstående kommandot `npm run style-min` då man annars kan få valideringsfel för den kompilerade CSS filen.
+Om man istället vill skapa en komprimerad version av CSS koden kan man använda följande scripts. En rekommendation är att använda nedanstående kommandot `npm run style-min` då man annars kan få valideringsfel för den kompilerade CSS filen. Se även till att byta från `style.css` till `style.min.css` i `index.html` för att ladda den filen istället.
 
 ```json
 "scripts": {

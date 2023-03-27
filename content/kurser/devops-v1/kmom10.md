@@ -28,7 +28,7 @@ För att uppnå godkänt behöver du demonstrerar följande:
 
 - Utförd rapport (innehåll, stavning, formatering, grammatik, logisk struktur, referenser).
 
-- Använd **minst** 2 [vetenskapliga](https://libguides.mdh.se/c.php?g=627111&p=4486609) referenser.
+- Använd **minst** 2 [vetenskapliga](https://libguides.lub.lu.se/c.php?g=679734&p=4846592) referenser.
 
 
 

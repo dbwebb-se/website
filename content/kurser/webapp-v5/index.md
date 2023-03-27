@@ -16,14 +16,6 @@ Kursen **Webbapplikationer för mobila enheter**, a.k.a. *webapp*, lär dig hur 
 
 
 
-[WARNING]
-**Kursutveckling pågår**
-
-Kursutveckling pågår inför kurstillfället VT23.
-[/WARNING]
-
-
-
 Kursen syftar till att lära ut utveckling av webbapplikationer med HTML, CSS och JavaScript och fokuserar på mobila enheter och läsplattor.
 
 Kursen går igenom konstruktioner i HTML, CSS och JavaScript som hjälper dig bygga applikationer som är oberoende av skärmens storlek och enhetens styrning (mus, touchscreen, penna, tangentbord).

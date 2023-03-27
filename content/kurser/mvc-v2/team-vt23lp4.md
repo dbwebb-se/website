@@ -43,9 +43,9 @@ Följande studentgrupper/utbildningar deltar i kurstillfället.
 
 | Utbildning | Kurstillfälle | Format | Utbildningsplan | Ansvarig |
 |------------|--------------|--------|-----------------|----------|
-| [Webbprogrammering 180hp](https://www.bth.se/utbildning/program-och-kurser/pagwe/?val=PAGWE22h) | DV1608 | Campus | [PAGWE22](http://edu.bth.se/utbildningsplaner/PAGWE_HT-22.pdf) | Mikael Roos mos@bth.se |
-| [Webbprogrammering 120hp](https://www.bth.se/utbildning/program-och-kurser/pagwg/?val=PAGWG22h) | DV1608 | Distans | [PAGWG21](http://edu.bth.se/utbildningsplaner/PAGWG_HT-22.pdf) | Mikael Roos mos@bth.se |
-| Webbprogrammering och databaser 30hp | DV1608 | Distans |  | Mikael Roos mos@bth.se |
+| [Webbprogrammering 180hp](https://www.bth.se/utbildning/program-och-kurser/pagwe/?val=PAGWE22h) | DV1608 | Campus | [PAGWE22](http://edu.bth.se/utbildningsplaner/PAGWE_HT-22.pdf) | Mikael Roos |
+| [Webbprogrammering 120hp](https://www.bth.se/utbildning/program-och-kurser/pagwg/?val=PAGWG22h) | DV1608 | Distans | [PAGWG22](http://edu.bth.se/utbildningsplaner/PAGWG_HT-22.pdf) | Mikael Roos |
+| Webbprogrammering och databaser 30hp | DV1608 | Distans |  | Mikael Roos |
 
 
 

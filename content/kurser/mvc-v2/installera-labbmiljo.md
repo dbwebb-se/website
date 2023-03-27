@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-03-27": "(C, mos) Genomgången inför mvc-v2 och vt23."
     "2022-03-22": "(B, mos) Genomgången inför mvc-v2 och vt22."
     "2021-03-17": "(A, mos) Första utgåvan."
 ...
@@ -16,7 +17,7 @@ Version av PHP {#phpversion}
 
 Labbmiljön bygger på att du har tillgång till en webbserver med PHP och att du har PHP tillgängligt i din terminal.
 
-Det rekommenderas att du använder PHP 8.1 till denna kursen. Eventuellt kan det fungera även med PHP 8.0, men rekommendationen är att uppgradera till senaste versionen.
+Det rekommenderas att du använder senaste versionen av PHP till denna kursen, är du osäker så fråga.
 
 Här kan du se vilken [version som körs på studentservern](http://www.student.bth.se/~mosstud/test/info.php).
 
@@ -33,23 +34,20 @@ Labbmiljön består av ett antal verktyg som du behöver installera på din dato
 
 Det är framförallt följande verktyg som du behöver tillgång till via terminalen och det är eventuellt några som är nya för dig i denna kursen.
 
-Så här ser det ut för mig, utskriften hos dig kan skilja beroende av vilka versioner du har.
+Så här ser det ut för mig.
 
 ```
 $ php --version
-PHP 8.1.4 (cli) (built: Mar 18 2022 18:10:55) (NTS)
+PHP 8.2.4 (cli) (built: Mar 16 2023 14:34:48) (NTS)
 
 $ composer --version
-Composer version 2.2.9 2022-03-15 22:13:37
+Composer version 2.4.1 2022-08-20 11:44:50
 
 $ make --version
-GNU Make 4.2.1
-
-$ git --version
-git version 2.20.1
+GNU Make 4.3
 ```
 
-Det är inte nödvändigt att du har exakt samma version av PHP i terminalen som du har i webbservern, men det bör ligga rätt nära för att undvika eventuella bekymmer med att PHP-versionen i terminalen påverkar vilka övriga paket som installeras med pakethanteraren composer.
+Utskriften hos dig kan skilja beroende av vilka versioner du har. Har du nyare versioner så är det bra. Har du äldre versioner så kan det fortfarande fungera, men var uppmärksam om du får bekymmer.
 
 
 

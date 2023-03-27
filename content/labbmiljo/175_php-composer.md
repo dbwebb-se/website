@@ -6,6 +6,8 @@ revision:
 PHP och Composer
 ==================================
 
+[FIGURE src=/image/snapvt16/logo-composer.png?w=c5 class="right"]
+
 Composer är ett kommandoradsprogram som låter dig installera paket och moduler som andra utvecklare har gjort och publicerat. Composer håller koll på vilka versioner som är installerade och att paketen installeras effektivt och kan hållas uppgraderade.
 
 
@@ -21,7 +23,7 @@ De operativsystem och terminaler som är aktuella är följande.
 * MacOS med den inbyggda terminalen
 * Linux och godtycklig terminal.
 
-Om du sitter på en annan terminal, till exempel Windows Cygwin, så är det lämpligt att uppgradera till Windows WSL2 med Ubuntu. Alternativet (ej rekommenderat) är att jobba igenom artikeln "[Lägg PHP 8 i pathen](labbmiljo/composer)" och använda den delen som visar hur man installarer composer med PHP som finns installerad med XAMPP.
+Om du sitter på en annan terminal, till exempel Windows Cygwin, så är det lämpligt att uppgradera till Windows WSL2 med Ubuntu. Alternativet (ej rekommenderat) är att jobba igenom artikeln "[Installera Composer för pakethantering med PHP](labbmiljo/composer)" och använda den delen som visar hur man installarer composer med PHP som finns installerad med XAMPP.
 
 
 

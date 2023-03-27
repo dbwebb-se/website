@@ -36,7 +36,7 @@ Du kan se vilka [PHP-paket som finns publicerade på Packagist](https://packagis
 
 
 
-Installera på Mac, Linux och Windows 10 WSL/Bash {#linux}
+Installera på Mac, Linux och WSL {#linux}
 -------------------------------
 
 Följ instruktionen om hur man [laddar ned och installerar composer](https://getcomposer.org/download/).

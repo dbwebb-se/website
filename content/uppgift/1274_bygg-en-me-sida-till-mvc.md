@@ -5,6 +5,7 @@ category:
     - php
     - kurs mvc
 revision:
+    "2023-03-28": "(B, mos) Uppdaterad inför vt23."
     "2022-03-23": "(A, mos) Första utgåvan."
 ...
 Bygg en me-sida till mvc-kursen
@@ -25,7 +26,7 @@ Förkunskaper {#forkunskaper}
 
 Du kan navigera bland Git och GitHub.
 
-Du kan installera och använda ramverket Symfony för att skapa en controller och webbsidor som renderas med templatemotorn Twig.
+Du kan installera och använda ramverket Symfony för att skapa en webbplats. Du använder controller och webbsidor som renderas med templatemotorn Twig.
 
 
 
@@ -36,7 +37,7 @@ Följande steg hjälper dig att komma igång med uppgiften.
 
 * Om du behöver hjälp med Git och GitHub så kikar du på videoserien "[Git, GitHub and GitLab - Learn and practice](https://www.youtube.com/playlist?list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv)".
 
-* Du bör ha jobbat igenom övningen "[Installera och bygga en webbapplikation i Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony)". Den ger dig grunden för att lösa uppgiften.
+* Du bör ha jobbat igenom övningen "[Get going with Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony)". Den ger dig grunden för att lösa uppgiften.
 
 
 
@@ -45,14 +46,18 @@ Krav {#krav}
 
 1. Gör en installation av Symfony och placera den i `me/report`. Den publika webbkatalogen skall ligga som `me/report/public`.
 
-1. Skapa följande webbsidor, använd templatefiler och en templatemotor.
+1. Skapa följande webbsidor, använd controller, templatefiler och en templatemotor, förslagsvis Twig.
 
     1. Skapa en route `/` som ger en presentation av dig själv inklusive en bild. Det är okey att vara anonym och hitta på en figur att presentera.
-    1. Skapa en route `/about` som berättar om kursen mvc och dess syfte. Länka till kursens Git-repo. Lägg till en representativ bild. Skapa ytterligare en länk som leder till ditt egna GitHub-repo.
+    1. Skapa en route `/about` som berättar om kursen mvc och dess syfte. Länka till kursens Git-repo. Lägg till en representativ bild. Skapa ytterligare en länk som leder till ditt egna GitHub-repo. Sidan skall ha två kolumner.
     1. Skapa en route `/report` där du samlar dina redovisningstexter för kursens kmom.
         1. Skapa även så att länken `/report#kmom01` leder direkt till kursmomentets redovisningstext.
 
-1. Skapa en enhetlig style till webbplatsen. Du kan använda LESS/SASS eller liknande CSS preprocessorer. Du kan använda CSS ramverk.
+1. Skapa en ny route `/lucky` som visar något dynamiskt värde när man laddar om sidan tillsammans med en/flera bilder. Det kan vara ett "lucky number" men kanske kan du hitta på något annat spännande att visa upp i sidan. Gör sidan lite snygg och stylad, kanske till och med lite "crazy". Se om du kan vara lite kreativ.
+
+1. Skapa en route `/api/quote` där du ger ett JSON svar som innehåller dagens citat. Växla slumpmässigt mellan (minst) tre olika citat som du själv hittat på eller lånat av någon. JSON svaret skall även innehålla dagens datum och en tidsstämpel för när svaret genererades.
+
+1. Skapa en tilltalande och enhetlig style till webbplatsen. Du kan använda LESS/SASS eller liknande CSS preprocessorer. Du kan använda CSS ramverk. Fundera och gör ett val.
 
 1. Sidorna skall ha en enhetlig layout och det skall finns:
 
@@ -64,7 +69,7 @@ Krav {#krav}
 
 1. Committa alla filer och lägg till en tagg 1.0.0. Om du gör uppdateringar så ökar du taggen till 1.0.1, 1.0.2, 1.1.0 eller liknande.
 
-1. Kör `dbwebb test kmom01` för att kolla att du inte har några fel.
+1. Kör `dbwebb test kmom01` för att kolla att du inte har några uppenbara fel.
 
 1. Pusha upp repot till GitHub, inklusive taggarna.
 
@@ -75,6 +80,6 @@ Krav {#krav}
 Tips från coachen {#tips}
 -----------------------
 
-Gör webbplatsen lagom bra. Du kan jobba vidare med webbplatsens struktur, innehåll och utseende under hela kursen.
+Gör webbplatsen lagom bra - väg hur mycket tid du har tillgängligt. Du kan jobba vidare med webbplatsens struktur, innehåll och utseende under hela kursen. Det behöver inte vara perfekt i kmom01.
 
 Lycka till och hojta till i issues eller chat om du behöver hjälp!

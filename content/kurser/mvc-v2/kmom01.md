@@ -8,20 +8,13 @@ views:
 author:
     - mos
 revision:
+    "2023-03-28": "(D, mos) Genomgången inför vt23, uppdaterad övning/uppgift."
     "2022-03-23": "(C, mos) Nytt kmom inför mvc-v2 och vt22."
     "2021-03-29": "(B, mos) Lade till läsresurs om Templating."
     "2021-03-25": "(A, mos) Första versionen släppt för mvc-v1."
 ...
 Kmom01: Ramverk
 ==================================
-
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
 
 I denna kursen skall vi lära oss programmera webbapplikationer på ett objektorienterat sätt med fokus på det arkitekturella designmönstret MVC. För att komma igång behöver vi en bas och där har vi valt ramverket Symfony som är ett av de mer kända ramverken inom PHP.
 

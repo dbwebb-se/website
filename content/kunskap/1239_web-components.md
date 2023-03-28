@@ -54,7 +54,7 @@ Vi börjar med att skapa en HTML-fil `index.html` där vi än så länge har en 
 
 ```html
 <!doctype html>
-<html lang="se">
+<html lang="sv">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

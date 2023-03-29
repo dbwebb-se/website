@@ -22,13 +22,6 @@ När man skapar en faktura är det bra att ha snygga och responsiva tabeller. S�
 
 
 
-[WARNING]
-**Kursutveckling pågår**
-
-Kursutveckling pågår inför kurstillfället VT23.
-[/WARNING]
-
-
 Så här kan det se ut när vi är klara.
 
 [YOUTUBE src=BPigfJ58JPI width=630 caption="Lager appen i kursmoment 4."]

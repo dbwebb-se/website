@@ -19,17 +19,9 @@ I detta kursmoment fortsätter vi med att utveckla våra GUI komponenter från t
 
 
 
-[WARNING]
-**Kursutveckling pågår**
-
-Kursutveckling pågår inför kurstillfället VT23.
-[/WARNING]
-
-
-
 Så här kan det se ut när vi är klara.
 
-[YOUTUBE src=iewE2qHR5FM width=630 caption="Lager3 i kursmoment 3."]
+[YOUTUBE src=2yNeTAMh2Jg width=630 caption="Lager-appen i kursmoment 3."]
 
 
 

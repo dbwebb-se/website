@@ -231,8 +231,8 @@ Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens k
 | Kursens moment  | Ladok moment enligt kursplan  |
 |-----------------|-------------------------------|
 | Kmom01 - kmom03 | Uppgift 1 á 2.5hp             |
-| Kmom04 + kmom05 | Uppgift 2 á 2.5hp             |
-| Kmom06 - kmom10 | Projekt á 2.5hp               |
+| Kmom04 + kmom06 | Uppgift 2 á 2.5hp             |
+| Kmom07 - kmom10 | Projekt á 2.5hp               |
 
 Läs mer om [rapportering av resultat](kurser/faq/resultatrapportering).
 

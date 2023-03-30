@@ -18,6 +18,8 @@ Guider i produktionsläge.
 * [Kom igång med SSH](guide/kom-igang-med-ssh)
 * [Programmering med JavaScript](guide/javascript1)
 * [Kom igång med awk](guide/kom-igang-med-awk)
+* [Kom igång med git](guide/git)
+* [Design med HTML5 och CSS3](guide/design-med-html5-och-css3)
 
 Guides in English.
 
@@ -28,7 +30,7 @@ Guides in English.
 Guider under utveckling till hösten 2018.
 
 * [Bygg webbplatser med ramverket Anax Flat](guide/bygg-webbplatser-med-ramverket-anax-flat)
-* [Design med HTML5 och CSS3](guide/design-med-html5-och-css3)
+
 <!-- * [Kom igång med HTML](guide/kom-igang-med-html)
 * [Kom igång med CSS](guide/kom-igang-med-css) -->
 

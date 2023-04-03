@@ -35,9 +35,33 @@ Introduktion och förberedelse {#intro}
 
 Följande steg hjälper dig att komma igång med uppgiften.
 
-* Om du behöver hjälp med Git och GitHub så kikar du på videoserien "[Git, GitHub and GitLab - Learn and practice](https://www.youtube.com/playlist?list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv)".
+Du bör ha jobbat igenom övningen "[Get going with Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony)". Den ger dig grunden för att lösa uppgiften.
 
-* Du bör ha jobbat igenom övningen "[Get going with Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony)". Den ger dig grunden för att lösa uppgiften.
+
+
+### Gör ett Git repo {#git}
+
+Gör ett git-repo av katalogen.
+
+```text
+# Gå till me/report
+git init
+touch README.md
+git add .
+git commit -m "First commit"
+```
+
+Du har nu ett git-repo. Vill du lära dig mer om Git kan du läsa mer i "[Work with Git](https://dbwebb-se.github.io/mvc/work-with-git)" som ger dig en snabb introduktion till de vanligaste kommandona i Git.
+
+
+
+### GitHub/GitLab {#github}
+
+Ladda upp ditt repo till en webbtjänst likt GitHub eller GitLab (eller motsvarande).
+
+Det mest lämpliga är att använda SSH-nycklar för att identifiera dig, det blir så mycket enklare än HTTPS där du behöver skriva lösenord varje gång du laddar upp repot.
+
+Om du behöver mer hjälp med Git och GitHub så kikar du på videoserien "[Git, GitHub and GitLab - Learn and practice](https://www.youtube.com/playlist?list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv)".
 
 
 

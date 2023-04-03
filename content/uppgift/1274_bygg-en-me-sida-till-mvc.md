@@ -53,6 +53,13 @@ git commit -m "First commit"
 
 Du har nu ett git-repo. Vill du lära dig mer om Git kan du läsa mer i "[Work with Git](https://dbwebb-se.github.io/mvc/work-with-git)" som ger dig en snabb introduktion till de vanligaste kommandona i Git.
 
+Om något går fel kan du alltid ta bort katalogen `.git/` och starta om.
+
+```text
+# me/report
+rm -rf .git
+```
+
 
 
 ### GitHub/GitLab {#github}

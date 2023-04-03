@@ -91,6 +91,9 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 
+1. Jobba igenom övningen "[Kodstil med Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-codestyle)" för att skriva koden på rätt sätt och få hjälp att formattera din kod.
+
+
 [WARNING]
 
 **Uppdatering sker inför kursrundan vt23**
@@ -100,8 +103,6 @@ Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
 [/WARNING]
 
 1. Jobba genom övningen "[Symfony with GET, POST, SESSION](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-get-post-session)" för att träna på hur du kan jobba med GET, POST, SESSION och formulär i Symfony.
-
-1. Jobba igenom övningen "[Kodstil med Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-codestyle)" för att skriva koden på rätt sätt.
 
 <!-- Flytta kodstil till uppgift och placera i dbwebb test -->
 

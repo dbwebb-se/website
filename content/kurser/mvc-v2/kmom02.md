@@ -2,6 +2,7 @@
 author:
     - mos
 revision:
+    "2023-04-03": "(PD1, mos) Genomgången inför vt23."
     "2022-04-05": "(C, mos) Nytt kmom inför mvc-v2 och vt22."
     "2021-05-26": "(B, mos) Läsresurs om semantisk versionshantering."
     "2021-04-02": "(A, mos) Första utgåvan i mvc-v1."
@@ -9,19 +10,9 @@ revision:
 Kmom02: Objektorientering
 ==================================
 
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
-
 Vi skall bygga grunderna till ett kortspel i vår webbplats för att träna på objektorientering och hur man skapar egna klasser och applikationer i ramverket Symfony.
 
 Vi skall programmera med objektorienterade konstruktioner för att bygga ett antal klasser som samverkar. Det handlar om klasser i PHP med metoder och medlemsvariabler. Vi försöker använda både arv och komposition så vi ser skillnader och likheter mellan dessa konstruktioner. Lyckas vi även få in konstruktioner som interface och traits så är det bonus.
-
-Vi tar hjälp av allmän problemlösning i form av top-down/bottom-up, pseudokod och flödesdiagram och använder det för att bygga upp och designa flödet i vårt blivande kortspel.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
@@ -50,8 +41,6 @@ För att lösa uppgifterna och redovisningen bör du studera enligt följande.
 
 Titta igenom följande föreläsningar.
 
-1. PS. Enligt dialog i chatten så är denna föreläsning flyttad till kmom03 pga av upplevd arbetsbelastning. Det går dock bra att välja om man tittar på den i detta eller nästa kmom. [Problemlösning och design av algoritmer för programmerare](./../forelasning/problemlosning-och-design-av-algoritmer) som visar på olika arbetssätt i hur man kan jobba med problemlösning innan man sätter igång och programmerar.
-
 1. [Klasser och objekt i PHP - arv, komposition, interface och trait](./../forelasning/klasser-och-objekt-i-php-arv-komposition-interface-trait) där vi studerar konstrukturer för arv, komposition, interface och trait. Vi pratar också om hur man skall tänka när man kodar objektorienterat och vad som är god kodsed och riktlinjer när man designar och implementerar sina klasser.
 
 
@@ -79,6 +68,14 @@ Läs enligt följande.
 
 
 
+### Git och skriva bra commits {#gitcommit}
+
+Det kan vara en konst att skriva bra commit-meddelande så att man får en bra historik när man tittar på koden via ens commits.
+
+* Läs artikeln "[How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)" för att få sju gyllene regler som kan hjälpa dig till bättre commit-meddelanden.
+
+
+
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 
@@ -93,6 +90,14 @@ Jobba igenom övningar för att träna. Uppgifterna skall utföras och redovisas
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
+
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
 
 1. Jobba genom övningen "[Symfony with GET, POST, SESSION](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-get-post-session)" för att träna på hur du kan jobba med GET, POST, SESSION och formulär i Symfony.
 
@@ -121,6 +126,14 @@ Dice övning med kod, inkl get, post, session?
 ### Uppgifter {#uppgifter}
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
+
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
 
 1. Lös uppgiften "[Bygg kort och kortlek i PHP och Symfony enligt MVC](uppgift/bygg-kort-och-kortlek-i-php-och-symfony-enligt-mvc)". Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 

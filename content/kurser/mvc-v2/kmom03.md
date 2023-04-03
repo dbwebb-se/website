@@ -2,6 +2,7 @@
 author:
     - mos
 revision:
+    "2023-04-03": "(PC1, mos) Genomgången inför vt23."
     "2022-04-12": "(B, mos) Länk till linters och not om problemlösning till kmom03."
     "2022-04-11": "(A, mos) Första utgåvan i mvc-v2."
 ...
@@ -19,6 +20,8 @@ Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
 Vi jobbar vidare med klasser och objekt i PHP och bygger en applikation i ramverket Symfony. Detta kursmomentet blir som ett litet miniprojekt där vi problemlöser, designar och implementerar en applikation med objektorienterade konstruktioner enligt MVC.
 
 Vi jobbar med kodstil, kodstrukturer och vi försöker bygga vår kod så bra som möjligt enligt de riktlinjer som finns för snygg kod. Till vår hjälp tar vi ett antal kodlinters som ger oss rekommendationer om hur koden skall skrivas.
+
+Vi tar hjälp av allmän problemlösning i form av top-down/bottom-up, pseudokod och flödesdiagram och använder det för att bygga upp och designa flödet i vårt blivande kortspel.
 
 <!-- more -->
 
@@ -61,17 +64,6 @@ Läs enligt följande.
 
     * [PHP The Right Way: Dependency Injection](https://phptherightway.com/#dependency_injection)
 
-
-
-### Git och skriva bra commits {#gitcommit}
-
-Det kan vara en konst att skriva bra commit-meddelande så att man får en bra historik när man tittar på koden via ens commits.
-
-* Läs artikeln "[How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)" för att få sju gyllene regler som kan hjälpa dig till bättre commit-meddelanden.
-
-<!--
-Flytta till kmom02, nu är artikeln även nämnd i uppgiften till kmom02.
--->
 
 
 

@@ -2,7 +2,7 @@
 author:
     - mos
 revision:
-    "2023-04-03": "(PD1, mos) Genomgången inför vt23."
+    "2023-04-04": "(D, mos) Genomgången inför vt23."
     "2022-04-05": "(C, mos) Nytt kmom inför mvc-v2 och vt22."
     "2021-05-26": "(B, mos) Läsresurs om semantisk versionshantering."
     "2021-04-02": "(A, mos) Första utgåvan i mvc-v1."

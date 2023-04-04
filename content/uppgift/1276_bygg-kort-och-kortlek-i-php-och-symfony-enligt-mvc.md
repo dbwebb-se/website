@@ -33,6 +33,23 @@ Introduktion och förberedelse {#intro}
 Läs och förbered dig.
 
 
+
+### Klasser 
+
+Du skall skapa egna applikationsklasser och integrera dem i Symfony. De klasser du gör skall ha med kortlek att göra. Det finns inget hårt och absolut krav på att dina klasser skall se ut på ett visst sätt, men förslaget är följande.
+
+* Card, ett kort
+* CardHand, en giv av kort, en korthand
+* DeckOfCards, en kortlek
+
+Du skall ha minst ett arv och här kan du välja att jobba med ett Card och ett CardGraphic som två olika kort. Du kan också välja att ha en DeckOfCards som har jokrar och en som inte har jokrar. Det är fritt så länge du har med minst ett arv.
+
+Du skall ha minst en komposition, men här är troligen både CardHand och DeckOfCards sådana konstruktioner.
+
+Det finns inga exakta krav på vilka metoder dina klasser skall ha. Det kan du delvis bestämma själv och delvis finns det vissa krav nedan som måste uppfyllas.
+
+
+
 ### Stil på korten
 
 Om du är osäker på hur en kortlek ser ut så kan du kontrollera med [Wikipedia Kortlek](https://sv.wikipedia.org/wiki/Kortlek). Eftersom vi skall spela kort så kan det vara bra att välja en klassisk Fransk-engelsk kortlek.
@@ -61,34 +78,19 @@ Krav {#krav}
 
 Kraven är uppdelade i sektioner.
 
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
-
-<!--
-Överväg om pokerpatiens är ett bättre spel där det är enklare att låta datorn spelar "smartare" eller dummare.
-
-Inkludera joker?
-
-Enklare än att blanda in usability när man spelar ett kortspel mot datorn.
--->
-
-<!-- generera UML diagram -->
 
 
 ### Skapa klasser och använd dem i webbsidor {#webb}
 
 Börja med att utveckla dina klasser och testa dem i webbsidor enligt följande.
 
-1. Skapa en kontroller i Symfony där du kan skapa webbsidor för denna delen av uppgiften.
+1. Skapa en kontroller i Symfony där du kan skapa routes för denna delen av uppgiften.
 
 1. Gör en förstasida `card` som länkar till samtliga undersidor för denna uppgiften. Detta är din "landningssida" för denna uppgiften. Placera länken till sidan i din navbar så den är lätt att nå.
 
-1. Skapa klasser för att hantera kort (card) och kortlek (deck). Skapa en sida `card/deck` som visar samtliga kort i kortleken sorterade per färg och värde. Ess kan vara antingen 1 eller 14 beroende av vilket kortspel man spelar.
+1. På din landdningssida, berätta kort om strukturen på dina klasser, vilka klasser har du och hur är de relaterade till varandra. Rita ett UML klass diagram och visa i sidan.
+
+1. Skapa en sida `card/deck` som visar samtliga kort i kortleken sorterade per färg och värde.
 
 1. Skapa en sida `card/deck/shuffle` som visar samtliga kort i kortleken när den har blandats.
 
@@ -98,13 +100,7 @@ Börja med att utveckla dina klasser och testa dem i webbsidor enligt följande.
 
 1. Kortleken skall sparas i sessionen så om man anropar sidorna `draw` och `draw/:number` så skall hela tiden antalet kort från korleken minskas tills kortleken är slut. När man gör `card/deck/shuffle` så kan kortleken återställas.
 
-1. Skapa en sida `card/deck/deal/:players/:cards` som delar ut ett antal  `:cards` från kortleken till ett antal `:players` och visar upp de korten som respektive spelare har fått. Visa även antalet kort som är kvar i kortleken. Här kan det vara bra att skapa klasser för player och cardHand eller liknande.
-
-1. Skapa en sida `card/deck2` som är en kortlek inklusive 2 jokrar. Visa kortleken på samma sätt som sidan `card/deck`. Här kan det troligen vara lämpligt med någon form av arv när du bygger koden. Försök återanvända `Deck` och bygg förslagsvis `DeckWith2Jokers extends Deck`.
-
-Optionellt krav.
-
-1. Fundera på om du kan använda konstruktionen "interface" för att bygga din kod förberedd för återanvändning. Tänk att din kod jobbar mot ett interface `DeckInterface` istället för en hård implementation av `Deck` alternativt `DeckWith2Jokers`. Se om du kan uppdatera din kod och dina sidor så applikationen blir mer flexibel för implementationen av själva kortleken. Spelaren, korthanden, och utdelningen av korten samt blandningen bör ju inte behöva bry sig om vilka kort som ligger i kortleken.
+1. [OPTIONELLT] Skapa en sida `card/deck/deal/:players/:cards` som delar ut ett antal `:cards` från kortleken till ett antal `:players` och visar upp de korten som respektive spelare har fått. Visa även antalet kort som är kvar i kortleken.
 
 
 
@@ -116,23 +112,15 @@ Denna delen gäller främst JSON API krav.
 
 1. Börja med att lägga till den route du skapade i kmom01 `api/quote`, länka till den och ge en kort förklaring av vad routen gör.
 
+1. Skapa en kontroller i Symfony där du kan skapa routes för ett JSON API för denna delen av uppgiften.
 
+1. Skapa en route `GET api/deck` som returnerar en JSON struktur med hela kortleken sorterad per färg och värde.
 
-Börja med att utveckla dina klasser och testa dem i webbsidor enligt följande.
+1. Skapa en route `POST api/deck/shuffle` som blandar kortleken och därefter returnerar en JSON struktur med kortleken.
 
-1. Skapa en kontroller i Symfony där du kan skapa ett JSON API för denna delen av uppgiften.
+1. Skapa route `POST api/deck/draw` och `POST api/deck/draw/:number` som drar 1 eller `:number` kort från kortleken och visar upp dem i en JSON struktur samt antalet kort som är kvar i kortleken. Kortleken sparas i sessionen så om man anropar dem flera gånger så minskas antalet kort i kortleken.
 
-1. I din landningssida för `card/` fortsätter du att länka till alla JSON routes som finns i denna delen av uppgiften.
-
-1. Skapa en route `GET card/api/deck` som returnerar en JSON struktur med hela kortleken sorterad per färg och värde.
-
-Följande 3 krav är optionella. Gör dem om du känner att du har tid. Det är bra övning och träning.
-
-1. Skapa en route `POST card/api/deck/shuffle` som blandar kortleken och därefter returnerar en JSON struktur med kortleken.
-
-1. Skapa route `POST card/api/deck/draw` och `card/api/deck/draw/:number` som drar 1 eller `:number` kort från kortleken och visar upp dem i en JSON struktur samt antalet kort som är kvar i kortleken. Kortleken sparas i sessionen så om man anropar dem flera gånger så minskas antalet kort i kortleken.
-
-1. Skapa en sida `card/api/deck/deal/:players/:cards` som delar ut ett antal  `:cards` från kortleken till ett antal `:players` och visar upp de korten som respektive spelare har fått i en JSON struktur. Visa även antalet kort som är kvar i kortleken.
+1. [OPTIONELLT] Skapa en route `POST api/deck/deal/:players/:cards` som delar ut ett antal `:cards` från kortleken till ett antal `:players` och visar upp de korten som respektive spelare har fått i en JSON struktur. Visa även antalet kort som är kvar i kortleken.
 
 
 

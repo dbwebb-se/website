@@ -93,6 +93,12 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 1. Lös uppgiften "[Bygg kortspel i PHP och Symfony enligt MVC](uppgift/bygg-kortspel-i-php-och-symfony-enligt-mvc)". Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 
 <!--
+Överväg om pokerpatiens är ett bättre spel där det är enklare att låta datorn spelar "smartare" eller dummare.
+
+Inkludera joker?
+
+Enklare än att blanda in usability när man spelar ett kortspel mot datorn.
+
 * Cards in 5x5 (Poker square)
 * Dice 5x5 (Dice square) (inkl highscore och histogram)
 

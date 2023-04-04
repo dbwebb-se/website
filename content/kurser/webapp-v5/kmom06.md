@@ -86,3 +86,4 @@ Se till att följande frågor besvaras i redovisningstexten.
 * Hur kändes det att jobba mot ett bild-API förutom Lager-API:t?
 * Fick du till ett bra gränssnitt för att ta och ladda upp bilderna?
 * Vilken är din TIL för detta kmom?
+* Vilken är din "In This Course I Learned" (ITCIL) för kursen?

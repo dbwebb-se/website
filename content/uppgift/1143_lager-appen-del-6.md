@@ -2,13 +2,15 @@
 author: efo
 category: javascript
 revision:
+  "2023-04-03": (B, efo) Uppdaterad för webapp-v5.
   "2018-03-01": (A, efo) Första utgåvan i samband med kursen webapp v3.
 ...
 Lager appen del 6
 ==================================
+
 [FIGURE src=image/webapp/world-map.jpg?w=c5 class="right"]
 
-I kursmoment 5 skapade vi en native app baserad på vår webapp med hjälp av Cordova. Vi ska i denna uppgiften använda oss av plugins för att komma åt native-funktionalitet i en fysisk enhet. Vi använder en mobil enhets styrka och läggar till funktionalitet för GPS och kartor.
+Vi ska i denna uppgiften använda oss av Web-API:s för att komma åt native-funktionalitet i våra fysiska mobila enheter. Vi använder en mobil enhets styrka och läggar till funktionalitet för GPS och kartor.
 
 
 
@@ -18,18 +20,12 @@ I kursmoment 5 skapade vi en native app baserad på vår webapp med hjälp av Co
 
 Förkunskaper {#forkunskaper}
 -----------------------
-Du har gjort uppgiften [Lager appen del 5](uppgift/lager-appen-del-5). Du har jobbat dig igenom övningarna "[Animationer och övergångar](kunskap/animationer-och-overgangar)" och "[GPS och karta](kunskap/gps-och-karta)".
+Du har gjort uppgiften [Lager appen del 4](uppgift/lager-appen-del-4). Du har jobbat dig igenom övningarna "[Animationer och övergångar](kunskap/animationer-och-overgangar)" och "[GPS och karta](kunskap/gps-och-karta)".
 
 
 
 Introduktion {#intro}
 -----------------------
-Börja med att kopiera din lager app från kmom05 så har du nått att utgå ifrån.
-
-```bash
-# stå i me-katalogen
-cp -r kmom05/lager5/* kmom06/lager6/
-```
 
 Använd lager [API:t](https://lager.emilfolino.se/v2) dokumentationen och speciellt sektionen om ordrar. Här kan du hämta ut alla ordrar.
 
@@ -51,25 +47,8 @@ Krav {#krav}
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb validate lager6
-dbwebb publish lager6
+dbwebb validate lager
+dbwebb publish lager
 ```
 
 Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut så är du klar.
-
-
-
-Extrauppgift {#extra}
------------------------
-* Använd ytterligare en Cordova plugin för att till exempel kunna ta bilder, komma åt kontakter eller liknande.
-
-
-
-Tips från coachen {#tips}
------------------------
-
-Validera och publicera ofta. Så slipper du en massa validerings- och publiceringsfel i slutet av övningen.
-
-När du gör *publish* så körs även *validate*. Blir det för mycket fel när du kör *publish* så kan det bli enklare att bara göra *validate* till att börja med.
-
-Lycka till och hojta till i forumet om du behöver hjälp!

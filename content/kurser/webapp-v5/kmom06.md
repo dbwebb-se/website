@@ -3,6 +3,7 @@ author:
     - mos
     - efo
 revision:
+  "2023-04-03": (E, efo) Nytt i och med webapp-v5.
   "2017-04-21": (D, efo) Förberedelser för webapp-v3.
   "2017-04-21": (C, efo) Ändringar inför släpp av kmom.
   "2017-03-17": (B, efo) Förberedelser för webapp-v2.
@@ -11,7 +12,7 @@ revision:
 Kmom06: Mobila enheters styrkor
 ==================================
 
-I detta kursmoment fortsätter vi att utnyttja styrkorna i våra mobila enheter. Vi kopplar in kamera och GPS för att skapa en fulländad applikation, som utnyttjar alla möjligheter vi har på en mobil plattform.
+Nu tar maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till möjligheten för att använda en kamera och ett bild-API för att spara bilderna.
 
 
 
@@ -27,9 +28,9 @@ Kursutveckling pågår inför kurstillfället VT23.
 
 
 
-Så här kan det se ut när vi är klara med kursmoment 06.
+Så här kan det se ut när vi är klara med kursmoment 05.
 
-[YOUTUBE src=SXZFj8itb7M width=630 caption="Lager appen i kursmoment 6."]
+[YOUTUBE src=SXZFj8itb7M width=630 caption="Lager appen i kursmoment 5."]
 
 
 
@@ -41,20 +42,6 @@ Läsanvisningar  {#lasanvisningar}
 ---------------------------------
 
 *(ca: 2 studietimmar)*
-
-
-### Kurslitteratur  {#kurslitteratur}
-
-1. [Mobile HTML5](kunskap/boken-mobile-html5).
-    * Ch 10: CSS3: Transforms, Transitions, and Animations.
-
-
-
-### Artiklar {#artiklar}
-
-Det finns inga artiklar.
-<!-- 1. Läs artikeln [Can We Please Stop Fighting The Native vs. Web App Wars?](http://readwrite.com/2015/02/27/native-vs-web-apps-ceasefire). -->
-<!-- 1. Läs i manualen om [introduktionen till Apache Cordova](https://cordova.apache.org/docs/en/latest/guide/overview/). -->
 
 
 
@@ -75,9 +62,7 @@ Titta på följande video.
 
 ### Övningar {#ovningar}
 
-1. Jobba igenom övningen "[Animationer och övergångar](kunskap/animationer-och-overgangar)". Spara eventuella testfiler i `me/kmom06/animation`.
-
-1. Jobba igenom övningen "[GPS och karta](kunskap/gps-och-karta)". Spara eventuella testfiler i `me/kmom06/gps`.
+1. Jobba igenom övningen "[Kamera i mobilen](kunskap/kamera-i-mobilen)". Spara eventuella testfiler i `me/lager`.
 
 
 
@@ -85,7 +70,7 @@ Titta på följande video.
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Lager appen del 6](uppgift/lager-appen-del-6)". Spara dina filer i `me/kmom06/lager6`.
+1. Gör uppgiften "[Lager appen del 6](uppgift/lager-appen-del-6b)". Spara dina filer i `me/lager`.
 
 
 
@@ -98,7 +83,6 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i redovisningstexten.
 
-* Vilka fördelar ger Cordova plugins?
-* Fick du till ett bra gränssnitt med kartan?
-* Vilka effekter gav animationer och övergångar?
+* Hur kändes det att jobba mot ett bild-API förutom Lager-API:t?
+* Fick du till ett bra gränssnitt för att ta och ladda upp bilderna?
 * Vilken är din TIL för detta kmom?

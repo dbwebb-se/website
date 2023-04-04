@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
+    "2023-04-03": "(C, mos) Genomgången inför vt23."
     "2021-04-10": "(B, mos) Problemlösning blir optionell."
     "2021-04-03": "(A, mos) Första utgåvan i mvc-v1."
 ...
@@ -22,7 +23,7 @@ Du har grundläggande kunskap i hur man skapar en klass i PHP och hur arv och ko
 
 Du kan bygga webbsidor via kontroller och templatefiler i Symfony.
 
-Du vet hur man använder GET, POST och SESSION i en webbapplikation.
+Du vet hur man använder HTML formulär med GET, POST och SESSION i en Symfony webbapplikation.
 
 
 
@@ -31,11 +32,27 @@ Introduktion och förberedelse {#intro}
 
 Läs och förbered dig.
 
+
+### Stil på korten
+
 Om du är osäker på hur en kortlek ser ut så kan du kontrollera med [Wikipedia Kortlek](https://sv.wikipedia.org/wiki/Kortlek). Eftersom vi skall spela kort så kan det vara bra att välja en klassisk Fransk-engelsk kortlek.
 
-Försök göra många små commits. När du är klar med en "feature" i din kod så kan det vara lämpligt att också göra en commit. Detta skapar dig en bra historik över ändringarna i din kod. Läs gärna igenom artikeln "[How to Write a Git Commit Message](https://cbea.ms/git-commit/)" för att få tips om hur du kan skriva bra commit-meddelanden.
+Du kan själv välja hur du vill representera korten i webbplatsen. Det finns flera alternativ.
 
-<!-- Eentuellt flytta stycket ovan till läsanvisningar i kmom02 istället. -->
+1. En span eller div som du stylar i CSS med rundande hörn.
+1. Använd utf-8 tecken för att visualisera spader, hjärter ♥, ruter, klöver. Börja googla "utf-8 spade".
+1. Du kan representera knekt, dam och kung med utf-8 tecken, prova googla "utf-8 king".
+1. Det finns bilder som representerar kort man kan använda, tex [File:English pattern playing cards deck.svg](https://commons.wikimedia.org/wiki/File:English_pattern_playing_cards_deck.svg). Men det kan vara lite pilligt att komma igång.
+
+Enklaste möjliga representationen kan vara något i stil med [A♥] för att representera hjärter ess. Eller ännu enklare kan vara ett [utf-8 tecken för att representera ett klöver ess](https://www.compart.com/en/unicode/U+1F0D1) 🃑. Sedan kan man styla ett utf-8 tecken med bland annat fontsize.
+
+Välj hur mycket tid du vill lägga på att göra snygga kort. Har du ont om tid så väljer du en enkel layout för korten till att börja med. Du kan alltid uppdatera till nästa kursmoment.
+
+
+
+### Flera små committs
+
+Försök göra många små commits. När du är klar med en "feature" i din kod så kan det vara lämpligt att också göra en commit. Detta skapar dig en bra historik över ändringarna i din kod. Läs gärna igenom artikeln "[How to Write a Git Commit Message](https://cbea.ms/git-commit/)" för att få tips om hur du kan skriva bra commit-meddelanden.
 
 
 
@@ -44,6 +61,23 @@ Krav {#krav}
 
 Kraven är uppdelade i sektioner.
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
+
+[/WARNING]
+
+<!--
+Överväg om pokerpatiens är ett bättre spel där det är enklare att låta datorn spelar "smartare" eller dummare.
+
+Inkludera joker?
+
+Enklare än att blanda in usability när man spelar ett kortspel mot datorn.
+-->
+
+<!-- generera UML diagram -->
 
 
 ### Skapa klasser och använd dem i webbsidor {#webb}
@@ -76,6 +110,14 @@ Optionellt krav.
 
 ### Bygg JSON API {#json}
 
+Denna delen gäller främst JSON API krav.
+
+1. Skapa en landningssida för routen `api/` som visar en webbsida med en sammanställning av alla JSON routes som din webbplats erbjuder.
+
+1. Börja med att lägga till den route du skapade i kmom01 `api/quote`, länka till den och ge en kort förklaring av vad routen gör.
+
+
+
 Börja med att utveckla dina klasser och testa dem i webbsidor enligt följande.
 
 1. Skapa en kontroller i Symfony där du kan skapa ett JSON API för denna delen av uppgiften.
@@ -94,41 +136,9 @@ Följande 3 krav är optionella. Gör dem om du känner att du har tid. Det är 
 
 
 
-### Problemlösning {#problemlos}
-
-[INFO]
-
-Denna delen av uppgiften kan med fördel göras i nästa kmom. Du kan alltså se den som optionell i detta kmom.
-
-Välj om du vill göra den i detta kmom eller avvakta och gör den i nästa kmom.
-
-Rekommendationen är att avvakta och göra denna delen i kmom03.
-
-[/INFO]
-
-Du skall försöka problemlösa ett spel med flödesschema och pseudokod.
-
-1. Välj ett kortspel som du vill problemlösa (och implementera i nästa kmom). Är du osäker så väljer du [kortspelet 21](https://sv.wikipedia.org/wiki/Tjugoett_(kortspel)) eller [kortspelet Black Jack](https://en.wikipedia.org/wiki/Blackjack) där en spelare kan spela mot datorn som är bank. Du kan även välja olika spelvarianter på dessa kortspel eller ett annat kortspel eller en [patiens](https://sv.wikipedia.org/wiki/Patiens) (se [exempel på olika kort patienser](https://www.123patiens.se/)).
-
-1. Samla all din dokumentation i en webbsida under routen `game/card` och länka till dokumentationssidan från din landningssida `card/`.
-
-1. Inled med en kort beskrivning av ditt kortspel och hur du valt att det skall fungera.
-
-1. Skapa ett flödesschema som representerar hur du tänker lösa grunderna i spelet. Resultatet kan du placera som en bild i webbsidan. Det behöver inte vara en komplett lösning, en dellösning räcker bra.
-
-1. Skapa psuedokod som visar hur du tänker lösa delar av spelet. Du kan spara resultatet som text eller bild men visa upp det i webbsidan. Det behöver inte vara en komplett lösning, en dellösning räcker bra.
-
-1. Fundera igenom vilka klasser du behöver för att implementera spelet. Beskriv klasserna i text med klassens namn och en mening som beskriver vad klassens syfte är. Håll det kort och enkelt.
-
-1. Om du vill kan du komplettera med att rita ett UML klass diagram (optionellt).
-
-
-
-<!--
 ### Kodvalidering {#validera}
 
 1. Fixa till din kod enligt den kodstil du kör genom att köra `composer csfix`.
--->
 
 
 
@@ -136,7 +146,7 @@ Du skall försöka problemlösa ett spel med flödesschema och pseudokod.
 
 1. Committa alla filer och lägg till en tagg 2.0.0. Om du gör uppdateringar så ökar du taggen till 2.0.1, 2.0.2, 2.1.0 eller liknande.
 
-1. Kör `dbwebb test kmom02` för att kolla att du inte har några fel.
+1. Kör `dbwebb test kmom02` för att kolla att du inte har några uppenbara fel.
 
 1. Pusha upp repot till GitHub, inklusive taggarna.
 

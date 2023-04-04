@@ -93,21 +93,16 @@ Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 
 1. Jobba igenom övningen "[Kodstil med Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-codestyle)" för att skriva koden på rätt sätt och få hjälp att formattera din kod.
 
+1. Jobba genom övningen "[Write your application code in Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-write-application-code)" för att träna på hur du kan skriva applikationskod i Symfony och hur du jobbar med HTML formulär och sessionen.
 
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
-
+<!--
 1. Jobba genom övningen "[Symfony with GET, POST, SESSION](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-get-post-session)" för att träna på hur du kan jobba med GET, POST, SESSION och formulär i Symfony.
 
-<!-- Flytta kodstil till uppgift och placera i dbwebb test -->
 
 1. Jobba igenom övningen "[Mina egna klasser i Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-write-your-own-class)" för att komma igång och se hur du kan skriva dina egna klasser inklusive arv och komposition samt integrera dem med en kontroller i Symfony.
+-->
 
+<!-- Flytta kodstil till uppgift och placera i dbwebb test -->
 
 <!--
 Gör egen klass i Symfony? Min första klass i Symfony?
@@ -128,13 +123,6 @@ Dice övning med kod, inkl get, post, session?
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
 
 1. Lös uppgiften "[Bygg kort och kortlek i PHP och Symfony enligt MVC](uppgift/bygg-kort-och-kortlek-i-php-och-symfony-enligt-mvc)". Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 

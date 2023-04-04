@@ -86,8 +86,6 @@ Krav {#krav}
 
 1. Skapa en ny route `/lucky` som visar något dynamiskt värde när man laddar om sidan tillsammans med en/flera bilder. Det kan vara ett "lucky number" men kanske kan du hitta på något annat spännande att visa upp i sidan. Gör sidan lite snygg och stylad, kanske till och med lite "crazy". Se om du kan vara lite kreativ.
 
-1. Skapa en route `/api/quote` där du ger ett JSON svar som innehåller dagens citat. Växla slumpmässigt mellan (minst) tre olika citat som du själv hittat på eller lånat av någon. JSON svaret skall även innehålla dagens datum och en tidsstämpel för när svaret genererades.
-
 1. Skapa en tilltalande och enhetlig style till webbplatsen. Du kan använda LESS/SASS eller liknande CSS preprocessorer. Du kan använda CSS ramverk. Fundera och gör ett val.
 
 1. Sidorna skall ha en enhetlig layout och det skall finns:
@@ -95,6 +93,8 @@ Krav {#krav}
     1. En tydlig header överst på varje sida, med eller utan bild.
     1. En navbar som gör att man kan navigera mellan samtliga sidor.
     1. En footer längst ned som visar rimliga detaljer.
+
+1. Skapa en route `/api/quote` där du ger ett JSON svar som innehåller dagens citat. Växla slumpmässigt mellan (minst) tre olika citat som du själv hittat på eller lånat av någon. JSON svaret skall även innehålla dagens datum och en tidsstämpel för när svaret genererades. Denna route ger alltså enbart ett JSON svar och inkluderar inte någon gemensam sidlayout som header, footer.
 
 1. Skapa ett Git repo av katalogen `me/report`. Koppla samman repot med GitHub, GitLab eller liknande tjänst.
 
@@ -105,6 +105,10 @@ Krav {#krav}
 1. Pusha upp repot till GitHub, inklusive taggarna.
 
 1. Gör en `dbwebb publishpure report` för att kolla att det fungerar på studentservern.
+
+<!--
+1. Skapa en landningssida för routen `api/` som visar en webbsida med en sammanställning av alla JSON routes som din webbplats erbjuder.
+-->
 
 
 

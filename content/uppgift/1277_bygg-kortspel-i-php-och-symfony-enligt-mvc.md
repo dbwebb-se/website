@@ -91,12 +91,6 @@ Kraven är uppdelade i sektioner.
 
 ### Problemlösning {#problemlos}
 
-[INFO]
-
-Denna delen av uppgiften kan du eventuellt redan ha löst i kmom02. Annars får du göra den nu.
-
-[/INFO]
-
 Du skall problemlösa det spelet du valt med flödesschema och pseudokod. Gör din problemlösning innan du påbörjar att implementera spelet.
 
 1. Samla all din dokumentation i en webbsida under routen `game/doc` och länka till dokumentationssidan från din landningssida.
@@ -159,7 +153,7 @@ Visa spelets hela ställning med alla detaljer?
 
 1. Committa alla filer och lägg till en tagg 3.0.0. Om du gör uppdateringar så ökar du taggen till 3.0.1, 3.0.2, 3.1.0 eller liknande.
 
-1. Kör `dbwebb test kmom03` för att kolla att du inte har några fel.
+1. Kör `dbwebb test kmom03` för att kolla att du inte har några uppenbara fel.
 
 1. Pusha upp repot till GitHub, inklusive taggarna.
 

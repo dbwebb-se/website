@@ -33,15 +33,16 @@ Använd lager [API:t](https://lager.emilfolino.se/v2) dokumentationen och specie
 
 Krav {#krav}
 -----------------------
+
 1. Använd animationer och övergångar för att efterlikna native applikationer.
 
 1. Skapa en vy i din app med de ordrar som är redo att skickas. Dvs. ordrar med status Packad (200).
 
-1. När man klickar in på ordern får man al information om ordern och en karta där paketet ska levereras.
+1. När man klickar in på ordern får man information om ordern och en karta där paketet ska levereras.
 
 1. Använd GPS för att visa nuvarande position på kartan.
 
-1. Gör det enkelt att testa din app. Ha minst en order med status Packad, som har en adress som fungerar och visas upp med en Geocoder.
+1. Gör det enkelt att testa din app. Ha minst en order med status Packad, som har en adress som fungerar och visas upp med en Geocoder/nominatim.
 
 1. Validera och publicera din kod enligt följande.
 

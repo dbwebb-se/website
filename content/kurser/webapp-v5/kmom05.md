@@ -20,14 +20,6 @@ I detta kursmoment börjar vi till fullo att utnyttja styrkorna i våra mobila e
 
 
 
-[WARNING]
-**Kursutveckling pågår**
-
-Kursutveckling pågår inför kurstillfället VT23.
-[/WARNING]
-
-
-
 Så här kan det se ut när vi är klara med kursmoment 05.
 
 [YOUTUBE src=emHOf_hnE4I width=630 caption="Lager appen i kursmoment 5."]
@@ -62,9 +54,11 @@ Titta på följande video.
 
 ### Övningar {#ovningar}
 
-1. Jobba igenom övningen "[Animationer och övergångar](kunskap/animationer-och-overgangar-v2)". Spara eventuella testfiler i `me/kmom06/animation`.
+I nedanstående övningar rekommenderas det att spara filerna i två kataloger. Finns inte katalogerna i ert kursrepo kan detta åtgärdas genom att köra `dbwebb update` och `dbwebb init`.
 
-1. Jobba igenom övningen "[GPS och karta](kunskap/gps-och-karta-v2)". Spara eventuella testfiler i `me/lager`.
+1. Jobba igenom övningen "[Animationer och övergångar](kunskap/animationer-och-overgangar-v2)". Spara eventuella testfiler i `me/kmom05/animation`.
+
+1. Jobba igenom övningen "[GPS och karta](kunskap/gps-och-karta-v2)". Spara eventuella testfiler i `me/kmom05/gps`.
 
 
 

@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
+    "2023-04-11": "(B, mos) Genomgången inför ht23."
     "2022-04-11": "(A, mos) Första utgåvan i mvc-v2."
 ...
 Bygg kortspel i PHP och Symfony enligt MVC
@@ -40,7 +41,7 @@ Implementera [kortspelet 21](https://sv.wikipedia.org/wiki/Tjugoett_(kortspel)) 
 
 Återanvänd de klasser du redan har. Om du modifierar klasserna så kan du behöva tänka på att du inte förstör något som redan fungerar.
 
-Spelets idé är att med två eller flera kort försöka uppnå det sammanlagda värdet 21, eller komma så nära som möjligt utan att överskrida 21.
+Spelets idé är att med två eller flera kort försöka uppnå det sammanlagda värdet 21, eller komma så nära som möjligt utan att överskrida 21. Ess är värt 1 eller 14.
 
 En spelrunda kan se ut så här när en spelare spelar mot banken.
 
@@ -49,7 +50,7 @@ En spelrunda kan se ut så här när en spelare spelar mot banken.
 * Spelaren tar ett kort. Kortet visas.
 * Spelaren kan bestämma att stanna eller ta ytterligare ett kort.
     * Om spelaren får över 21 vinner banken.
-* När spelaren stannarså är det bankens tur.
+* När spelaren stannar så är det bankens tur.
 * Banken är inte medveten om spelarens korthand.
 * Banken plockar kort tills den stannar eller har över 21.
     * Banken vinner vid lika eller om banken har mer än spelaren.
@@ -64,9 +65,11 @@ Förslaget är att du börjar med enklaste möjliga variant av spelet. Använd p
 
 ### Alternativa kortspel {#alt}
 
-Några alternativa varianter på kortspel kan till exempel vara [Black Jack](https://en.wikipedia.org/wiki/Blackjack), poker eller någon form av [patiens](https://sv.wikipedia.org/wiki/Patiens) (se [exempel på olika kort patienser](https://www.123patiens.se/)).
+Ett alternativt kortspel kan vara [Black Jack](https://en.wikipedia.org/wiki/Blackjack) som kan ses som en variant på kortspelet 21.
 
+Känner du dig mogen att försöka med ett lite mer avancerat spel så kan du prova att spela en pokerhand med 5 eller 7 kort. Men räkna med att det kan kräva lite mer tid att implementera. Läs mer om [poker](https://sv.wikipedia.org/wiki/Poker) och [Texas hold'em](https://sv.wikipedia.org/wiki/Texas_hold%27em).
 
+Ett patiensspel som kan lämpa sig för denna uppgift är "[Poker squares](https://en.wikipedia.org/wiki/Poker_squares)" där man lägger upp 5 x 5 kort och räknar ut vilka pokerhander man får i alla riktningar. Ju högre poäng destor bättre. Om man väljer detta kan det bli en intressant uppgift att försöka få datorspelaren att spela smart.
 
 <!--
 * Game, Player, ComputerPlayer, Card, Deck, CardHand, Histogram, Intelligence, HighScore, Statistics, CardCounter
@@ -86,6 +89,8 @@ Kraven är uppdelade i sektioner.
 1. Skapa en landdningssida för spelet `game/` där du samlar information om spelet och kan starta spelet. Placera länken i webbplatsens navbar.
 
 1. I din landningssida, inled med en kort beskrivning av ditt kortspel och reglerna för hur det fungerar.
+
+1. Placera en knapp eller länk som leder till att spelet börjar.
 
 
 
@@ -125,13 +130,13 @@ Följande krav är optionella och du gör dem om du har tid och lust.
 
 1. Låt banken och spelaren börja med 100 pengar var. När någon har 0 pengar har den spelaren förlorat.
 
-1. Gör så att man kan vara två spelare och banken.
-
 1. Korträkning med sannolikhet att få högt/lågt kort. Låt bli att blanda kortleken inför varje ny runda och spela tills kortleken är slut. Visa statistik som berättar sannolikheten för att få ett visst kort. Visa statistiken så att spelaren kan ha hjälp av den. Tex om spelaren har 15, visa sannolikheten för att spelaren inte skall bli tjock om nytt kort tas.
 
 1. Bygg en smartare bank som spelar på ett "intelligent sätt". Låt banken ta hjälp av statistiken.
 
-1. Bygg flera varianter av intelligens och låt spelaren och banken spela automatiskt enligt olika typer av intelligenser och se vilken intelligens/strategi som är bäst.
+1. Låt spelaren välja om den spelar mot den "dumma" eller den "smarta" banken.
+
+1. Förklara taktiken för den "dumma" och den "smarta" banken på dokumentationssidan.
 
 <!--
 Fundera på att bygga vidare på konceptet med JSON.
@@ -141,11 +146,17 @@ Visa spelets hela ställning med alla detaljer?
 
 
 
+### Kortspel JSON {#kortspeljson}
+
+1. I din landningssida för `api/` lägger du till routen `api/game` som visar upp den aktuella ställningen för spelet i en JSON struktur.
+
+
+
 ### Kodvalidering {#validera}
 
 1. Fixa till din kod enligt den kodstil du kör genom att köra `composer csfix`.
 
-1. Kolla din kod hur den matchar dina linters genom att köra `composer lint`. Får du fel så kollar du vad det är och rättar de sakerna du anser rimliga.
+1. Kolla din kod hur den matchar dina linters genom att köra `composer lint`. Får du fel så kollar du vad det är och rättar de sakerna du anser rimliga. Försök få en ren och tom rapport, utan valideringsfel.
 
 
 

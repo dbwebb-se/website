@@ -2,20 +2,12 @@
 author:
     - mos
 revision:
-    "2023-04-03": "(PC1, mos) Genomgången inför vt23."
+    "2023-04-11": "(C, mos) Genomgången inför vt23."
     "2022-04-12": "(B, mos) Länk till linters och not om problemlösning till kmom03."
     "2022-04-11": "(A, mos) Första utgåvan i mvc-v2."
 ...
 Kmom03: Applikation
 ==================================
-
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
 
 Vi jobbar vidare med klasser och objekt i PHP och bygger en applikation i ramverket Symfony. Detta kursmomentet blir som ett litet miniprojekt där vi problemlöser, designar och implementerar en applikation med objektorienterade konstruktioner enligt MVC.
 
@@ -26,14 +18,14 @@ Vi tar hjälp av allmän problemlösning i form av top-down/bottom-up, pseudokod
 <!-- more -->
 
 
-<small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
+<small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **40 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
 
 Läs & Studera  {#lasanvisningar}
 ---------------------------------
 
-*(ca: 1-2 studietimmar)*
+*(ca: 3-4 studietimmar)*
 
 För att lösa uppgifterna och redovisningen bör du studera enligt följande.
 
@@ -43,13 +35,23 @@ För att lösa uppgifterna och redovisningen bör du studera enligt följande.
 
 Titta igenom följande föreläsningar.
 
-1. [Problemlösning och design av algoritmer för programmerare](./../forelasning/problemlosning-och-design-av-algoritmer) som visar på olika arbetssätt i hur man kan jobba med problemlösning innan man sätter igång och programmerar. (Flyttad från kmom02 till kmom03).
+1. [Problemlösning och design av algoritmer för programmerare](./../forelasning/problemlosning-och-design-av-algoritmer) som visar på olika arbetssätt i hur man kan jobba med problemlösning innan man sätter igång och programmerar.
 
-1. [Hur tänka kring objektorientering och principer om snygg kod?](./../forelasning/hur-tanka-kring-objectorientering-och-snygg-kod) som visar på designprinciper och terminologi som hjälper oss att tänka kring hur vi skapar bra och snygg kod. Inspelad från veckans tisdags-zoom.
+1. [Hur tänka kring objektorientering och principer om snygg kod?](./../forelasning/hur-tanka-kring-objectorientering-och-snygg-kod) som visar på designprinciper och terminologi som hjälper oss att tänka kring hur vi skapar bra och snygg kod.
 
 <!--
-https://blog.ndepend.com/lack-of-cohesion-methods/
-software hierarchy of needs
+TODO
+
+* Inspelad från veckans tisdags-zoom. Borde jobbas igenom och spelas in mer på riktigt?
+
+
+* Föreläsning om interface (trait) och dependency injection
+* About "testable code"
+* Nyckeltal om snygg kod, presentera och lyft fram?
+* Små controllers, feta modeller
+
+* https://blog.ndepend.com/lack-of-cohesion-methods/
+* software hierarchy of needs
 -->
 
 
@@ -82,7 +84,7 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 
-1. Det finns en övning "[Get going with code linters in PHP](https://github.com/dbwebb-se/mvc/tree/main/example/php-linter-and-mess-detection)" i ditt kursrepo under `example/example/php-linter-and-mess-detection` som hjälper dig att komma igång med ett par verktyg för "code linting and mess detection" som ger dig råd om hur du kan städa upp din kod.
+1. Det finns en övning "[Get going with code linters in PHP](https://github.com/dbwebb-se/mvc/tree/main/example/php-linter-and-mess-detection)" i ditt kursrepo under `example/example/php-linter-and-mess-detection` som hjälper dig att komma igång med ett par verktyg för "code linting and mess detection" som ger dig råd om hur du kan städa upp din kod. Lägg till verktygen i ditt `me/report`.
 
 
 

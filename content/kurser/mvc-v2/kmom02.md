@@ -96,26 +96,13 @@ Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 1. Jobba genom övningen "[Write your application code in Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-write-application-code)" för att träna på hur du kan skriva applikationskod i Symfony och hur du jobbar med HTML formulär och sessionen.
 
 <!--
-1. Jobba genom övningen "[Symfony with GET, POST, SESSION](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-get-post-session)" för att träna på hur du kan jobba med GET, POST, SESSION och formulär i Symfony.
+TODO
 
-
-1. Jobba igenom övningen "[Mina egna klasser i Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-write-your-own-class)" för att komma igång och se hur du kan skriva dina egna klasser inklusive arv och komposition samt integrera dem med en kontroller i Symfony.
+* Övningen blev lite stor, kanske dela i två delar?
+* MVC-begreppet igen, fokus "modellklasser".
+    * Liten kontroller
+* Sökformulär
 -->
-
-<!-- Flytta kodstil till uppgift och placera i dbwebb test -->
-
-<!--
-Gör egen klass i Symfony? Min första klass i Symfony?
-Hur fördela koden i controlelr versus egna klasser?
-MVC-begreppet.
-Posta formulär, sessionen (plussa på en siffra).
-
-Dice övning med kod, inkl get, post, session?
--->
-
-<!-- Skapa en klass/route som visar dagens namn, quote eller liknande, både som sida och som rest api, bara get, ingen post eller session, eventuellt filer eller databasen sqlite -->
-
-<!-- generera dokumentation, phpdoc, uml -->
 
 
 
@@ -127,14 +114,13 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 1. Lös uppgiften "[Bygg kort och kortlek i PHP och Symfony enligt MVC](uppgift/bygg-kort-och-kortlek-i-php-och-symfony-enligt-mvc)". Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 
 <!--
-Överväg om pokerpatiens är ett bättre spel där det är enklare att låta datorn spelar "smartare" eller dummare.
+TODO
 
-Inkludera joker?
+* Inkludera joker?
 
-Enklare än att blanda in usability när man spelar ett kortspel mot datorn.
+* Generera dokumentation, phpdoc, uml
+* Generera UML diagram som ett verktyg
 -->
-
-<!-- generera UML diagram -->
 
 
 

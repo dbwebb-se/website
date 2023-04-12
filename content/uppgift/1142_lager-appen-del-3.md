@@ -48,15 +48,15 @@ Krav {#krav}
 * Leveransdatum (delivery_date)
 * Kommentar (comment)
 
-7. När formuläret skickas ska det skapas en inleverans i API:t.
+5. När formuläret skickas ska det skapas en inleverans i API:t.
 
-8. Lagersaldot för produkten ska ökas med den levererade mängden.
+5. Lagersaldot för produkten ska ökas med den levererade mängden.
 
-9. Använd ett `select`-element för att välja produkten som har levererats. Designa `select`-elementet så det passar in i resten av stilen för formuläret.
+7. Använd ett `select`-element för att välja produkten som har levererats. Designa `select`-elementet så det passar in i resten av stilen för formuläret.
 
-10. Använd ett `textarea`-element för kommentaren. Designa `textarea`-elementet så det passar in i resten av stilen för formuläret. Använd ett lämpligt standard-värde (default) för textarean.
+8. Använd ett `textarea`-element för kommentaren. Designa `textarea`-elementet så det passar in i resten av stilen för formuläret. Använd ett lämpligt standard-värde (default) för textarean.
 
-11. Validera och publicera din kod enligt följande.
+9. Validera och publicera din kod enligt följande.
 
 ```bash
 # Ställ dig i kurskatalogen

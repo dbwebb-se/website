@@ -58,7 +58,7 @@ I nedanstående övningar rekommenderas det att spara filerna i två kataloger. 
 
 1. Jobba igenom övningen "[Animationer och övergångar](kunskap/animationer-och-overgangar-v2)". Spara eventuella testfiler i `me/kmom05/animation`.
 
-1. Jobba igenom övningen "[GPS och karta](kunskap/gps-och-karta-v2)". Spara eventuella testfiler i `me/kmom05/gps`.
+1. Jobba igenom övningen "[GPS och karta](kunskap/gps-och-karta-v3)". Spara eventuella testfiler i `me/kmom05/gps`.
 
 
 

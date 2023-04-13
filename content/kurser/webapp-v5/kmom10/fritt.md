@@ -4,6 +4,7 @@ author:
     - efo
     - mos
 revision:
+    "2023-04-13": (F, efo) Uppdatering v5.
     "2019-04-09": (E, efo) Uppdaterade med proxy och video. Släppte.
     "2019-02-11": (D, efo) En första version inför 2019 LP4.
     "2019-02-11": (prel, efo) Inför 2019 LP4.
@@ -49,25 +50,11 @@ Varje krav ger maximalt 10 poäng, totalt är det 60 poäng.
 
 Samla alla dina filer för projektet i ditt kursrepo under `me/kmom10/proj`.
 
-Skapa ditt Cordova projekt med följande kommando:
-
-```bash
-# stå i me/kmom10/proj
-cordova create . se.dbwebb.<valfritt namn> <Valfritt namn>
-```
-
-Redovisningstexten skriver du i `me/redovisa`.
-
 
 
 ### Krav 1: Specifikation, datakällor och arkitektur {#k1}
 
-Din webapp ska använda följande teknologier:
-
-* Mithril eller vanilla JavaScript
-* Cordova
-* Stödja Android eller iOS samt webbläsare
-* Innehålla en egen ikon och splashscreen
+Din webapp ska baseras på de tekniker vi har använt under kursens gång.
 
 Välj ut de datakällor du skall använda och vilken data du behöver ur varje datakälla. Berätta om ditt val. Du ska använda minst två API:er. API:erna måste inte vara från Hack for Sweden, det är enbart ett tips.
 
@@ -109,42 +96,37 @@ Du kan inte räkna autentiseringstjänsten som en av dina två API:er.
 
 
 
-### Krav 5: Offline-läge (optionellt) {#k5}
+### Krav 5: Karta och GPS (optionellt) {#k6}
 
-Använd dina kunskaper om Cordova plugins från kursmoment 5 & 6 och pluginen [cordova-plugin-file](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/index.html) för att cacha datan från dina valda datakällor så appen kan användas utan internetuppkoppling.
-
-När du ansluter till ett api och hämtar data ska du spara den till en fil som du hämtar datan ifrån om det inte finns någon internetuppkoppling. Cordova pluginen [cordova-plugin-network-information](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-network-information/) kan användas för att kolla status om internetuppkoppling
-
-Övningen [Filer i Cordova](kunskap/filer-i-cordova) och exempel programmet `example/file` ([repo](https://github.com/dbwebb-se/webapp/tree/master/example/file)) hjälper en bit på vägen.
+Använd positionsdata (Koordinater eller adresser) från en av dina valda API:er och visa upp denna data i en karta med hjälp av de tekniker vi använde i kursmoment 6. Använd Web API:t GeoLocation för att visa upp användarens position på kartan.
 
 
 
-### Krav 6: Karta och GPS (optionellt) {#k6}
+### Krav 6: Kamera (optionellt) {#k5}
 
-Använd positionsdata (Koordinater eller adresser) från en av dina valda API:er och visa upp denna data i en karta med hjälp av de tekniker vi använde i kursmoment 6. Använd Cordova pluginen [cordova-plugin-geolocation](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation) för att visa upp användarens position på kartan.
+Använd dina kunskaper om MediaCapture Web API:t för att integrera mobila enhetens kamera i din applikation.
 
 
 
 Redovisning {#redovisning}
 --------------------------------------------------------------------
 
-1. På din [redovisningssida](./../redovisa), skriv följande:
+I Canvas skriv följande:
 
-    1. För varje krav du implementerat skriver du ett textstycke som uppfyller kravet. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
+1. För varje krav du implementerat skriver du ett textstycke som uppfyller kravet. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 
-    1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
+1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
-    1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
+1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte länka till din me-sida och projektet.
 
-3. Se till att samtliga kursmoment validerar.
 
-På grund av Corona ska alla spela in en redovisningsvideo som ska lämnas in tillsammans med redovisningstexten.
+### Presentation
 
-1. Spela in en kort video där du visar kod och berättar om de tekniska implementationerna du gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
+**Distansstudenter:** Spela in en kort video där du visar kod och berättar om de tekniska implementationerna du gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
 
-2. Visa ditt ansikte och en giltig ID handling, t.ex. körkort eller pass, i videon.
+**Campusstudenter:** Redovisar tillsammans i sal vid ett tillfälle som annonseras här, på Canvas och i Dsicord.
+
 
 [INFO]
 Se till att göra en `dbwebb update` innan `dbwebb publish me` så du får senaste versionen av kursrepot och konfiguration för kursrepot.

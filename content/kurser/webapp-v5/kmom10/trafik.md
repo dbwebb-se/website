@@ -57,12 +57,7 @@ Din app ska visa upp förseningar i tågtrafiken i Sverige. I [trafik API:t](htt
 
 De två datasätten kan kopplas ihop med hjälp `LocationSignature` från `/stations` och `FromLocation[].LocationName` i `/delayed`.
 
-Din app ska använda följande teknologier:
-
-* Mithril eller vanilla JavaScript
-* Cordova
-* Stödja Android eller iOS samt webbläsare
-* Innehålla en egen ikon och splashscreen
+Din webapp ska baseras på de tekniker vi har använt under kursens gång.
 
 
 __Arkitektur__: Beskriv i ett textstycke, som en del av din inlämning, vilka val av teknik du har gjort för din app. Berätta hur du har organiserad din kod så att en kollega snabbt kan sätta sig in i din app.
@@ -79,7 +74,7 @@ Berätta om någon av de möjligheter som finns för att förbättra din lösnin
 
 ### Krav 2: Karta och GPS {#k2}
 
-Använd positionsdata som finns för stationerna för att visa upp förseningar i tågtrafiken på en karta med hjälp av de tekniker vi använde i kursmoment 6. Använd Cordova pluginen [cordova-plugin-geolocation](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation) för att visa upp användarens position på kartan.
+Använd positionsdata som finns för stationerna för att visa upp förseningar i tågtrafiken på en karta med hjälp av de tekniker vi använde i kursmoment 6. Använd Web API:t GeoLocation för att visa upp användarens position på kartan.
 
 Rita ut förseningarna som markers på den station där förseningen är `FromLocation`. Skriv ut stationens namn och förseningen i markerns popup.
 
@@ -99,13 +94,11 @@ Utnyttja autentiseringstjänsten [auth.emilfolino.se](https://auth.emilfolino.se
 
 
 
-### Krav 5: Offline-läge (optionellt) {#k5}
+### Krav 5: Utnyttja tiden läge (optionellt) {#k5}
 
-Använd dina kunskaper om Cordova plugins från kursmoment 5 & 6 och pluginen [cordova-plugin-file](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/index.html) för att cacha datan från dina valda datakällor så appen kan användas utan internetuppkoppling.
+Skapa möjlighet för att användare av appen kan utnyttja förseningen av tåget till att se sig omkring. Använd tiden som tåget är försenad och rita sedan ut ett område på kartan där man hinner gå till och tillbaka till tåget innan det åker. Du kan räkna med att man kan gå 100m i minuten. Beräkna även in en marginal för att inte missa tåget.
 
-När du ansluter till ett api och hämtar data ska du spara den till en fil som du hämtar datan ifrån om det inte finns någon internetuppkoppling. Cordova pluginen [cordova-plugin-network-information](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-network-information/) kan användas för att kolla status om internetuppkoppling
-
-Övningen [Filer i Cordova](kunskap/filer-i-cordova) och exempel programmet `example/file` ([repo](https://github.com/dbwebb-se/webapp/tree/master/example/file)) hjälper en bit på vägen.
+Beskriv ditt tillvägagångssätt i din redovisningstext.
 
 
 
@@ -118,23 +111,22 @@ Använd en av [heatmap-modulerna](https://leafletjs.com/plugins.html#heatmaps) f
 Redovisning {#redovisning}
 --------------------------------------------------------------------
 
-1. På din [redovisningssida](./../redovisa), skriv följande:
+I Canvas skriv följande:
 
-    1. För varje krav du implementerat skriver du ett textstycke som uppfyller kravet. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
+1. För varje krav du implementerat skriver du ett textstycke som uppfyller kravet. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 
-    1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
+1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
-    1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
+1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte länka till din me-sida och projektet.
 
-3. Se till att samtliga kursmoment validerar.
 
-På grund av Corona ska alla spela in en redovisningsvideo som ska lämnas in tillsammans med redovisningstexten.
+### Presentation
 
-1. Spela in en kort video där du visar kod och berättar om de tekniska implementationerna du gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
+**Distansstudenter:** Spela in en kort video där du visar kod och berättar om de tekniska implementationerna du gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
 
-2. Visa ditt ansikte och en giltig ID handling, t.ex. körkot eller pass, i videon.
+**Campusstudenter:** Redovisar tillsammans i sal vid ett tillfälle som annonseras här, på Canvas och i Dsicord.
+
 
 [INFO]
 Se till att göra en `dbwebb update` innan `dbwebb publish me` så du får senaste versionen av kursrepot och konfiguration för kursrepot.

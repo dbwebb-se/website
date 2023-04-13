@@ -102,6 +102,11 @@ TODO
 * MVC-begreppet igen, fokus "modellklasser".
     * Liten kontroller
 * Sökformulär
+
+* Jobba mer med patterns? Creational patterns är nog lämpliga att lära ut.
+* Fundera igenom hur man lär ut kodkvalitet och patterns så det blir ett bra flöde.
+* Prata mer om MVC-mönstret, kanske föreläsningsmaterial.
+
 -->
 
 

@@ -125,6 +125,8 @@ TODO
 
 * Generera dokumentation, phpdoc, uml
 * Generera UML diagram som ett verktyg
+
+* CSS med bilder svg för att visa kort, gör exempel.
 -->
 
 

@@ -78,7 +78,7 @@ Gör följande övningar för att träna inför uppgifterna.
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Lager appen del 4](uppgift/lager-appen-del-4)". Spara dina filer i `me/kmom04/lager4`.
+1. Gör uppgiften "[Lager appen del 4](uppgift/lager-appen-del-4)". Spara dina filer i `me/lager`.
 
 
 

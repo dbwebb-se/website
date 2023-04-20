@@ -38,7 +38,7 @@ Krav {#krav}
 
 1. När du har tagit ett kort ska det laddas upp till Foto-API tjänsten beskrivit i "[Kamera i mobilen](kunskap/kamera-i-mobilen)".
 
-1. När bilden har laddats upp ska order-status ändras till status **Skickad (400)**.
+1. När bilden har laddats upp ska order-status ändras till status **Skickad (400)** och attributet `image_url` på ordern ska sättas till bild url'n vi precis laddade upp.
 
 1. Gör det enkelt att testa din app. Ha minst en order med status Packad.
 

@@ -15,7 +15,7 @@ Kamera i mobilen
 
 
 
-Exempelprogrammet från denna övning finns i kursrepot [example/camera](https://github.com/dbwebb-se/webapp/tree/master/example/camera) och i `example/camera`. Använd det gärna tillsammans med övningen för att se hur de olika delarna hänger ihop. En del kod utelämnas i exemplet för att det ska vara mer lättläst i artikeln.
+Exempelprogrammet från denna övning finns i kursrepot [example/camera](https://github.com/dbwebb-se/webapp/tree/master/example/camera) och i `example/camera`. Använd det gärna tillsammans med övningen för att se hur de olika delarna hänger ihop. En del kod utelämnas i exemplet för att det ska vara mer lättläst i artikeln. Finns inte `example/camera`-katalogen gör en `dbwebb update`.
 
 
 
@@ -24,7 +24,7 @@ Kamera i webbläsaren {#camera}
 
 Låt oss ta en titt på Web API:t [MediaDevices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) och se hur vi med hjälp av funktion getUserMedia kan ta en bild.
 
-Vi börjar med att skapa en komponenten `CameraComponent`.
+Vi börjar med att skapa en komponent `CameraComponent` i filen `components/camera.js`.
 
 ```javascript
 export default class CameraComponent extends HTMLElement {
@@ -36,16 +36,16 @@ export default class CameraComponent extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <div class="camera">
-                <video id="video">Video stream not available.</video>
-                <button id="startbutton">Take photo</button>
-                <button id="sendbutton">Send photo</button>
-            </div>
-            <canvas id="canvas"></canvas>
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+            <button id="startbutton">Take photo</button>
+            <button id="sendbutton">Send photo</button>
+        </div>
+        <canvas id="canvas"></canvas>
         `;
 
         window.addEventListener("load", () => {
-            this.startup()
+            this.startup();
         }, false);
     }
 }
@@ -78,7 +78,7 @@ startup() {
 
     video.addEventListener(
         "canplay",
-        (ev) => {
+        () => {
             if (!streaming) {
                 height = video.videoHeight / (video.videoWidth / width);
 
@@ -103,7 +103,7 @@ startup() {
         "click",
         (ev) => {
             ev.preventDefault();
-            this.takepicture(width, height);
+            this.takepicture(canvas, video, width, height);
         },
         false
     );
@@ -117,15 +117,16 @@ startup() {
         false
     );
 
-    this.clearphoto();
+    this.clearphoto(canvas);
 }
 ```
 
-De resterande funktionerna i klassen finns nedan.
+De resterande funktionerna i klassen finns nedan. I `takepicture` ritar vi ut en frame från videon som en bild i `canvas`-elementet. Sedan tar vi data och skapar det som kallas en [dataUrl](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs). Det är en lång base64-encoded sträng som beskriver bilden pixel för pixel. Vi sparar denna data i vår instansvariabel. `clearphoto` rensar `canvas`-elementet och sätter det till en mellangrå färg. Den kan vi se från första början på sidan.
 
 ```javascript
-takepicture(width, height) {
+takepicture(canvas, video, width, height) {
     const context = canvas.getContext("2d");
+
     if (width && height) {
         canvas.width = width;
         canvas.height = height;
@@ -133,12 +134,13 @@ takepicture(width, height) {
 
         this.photoData = canvas.toDataURL("image/png");
     } else {
-        clearphoto();
+        this.clearphoto(canvas);
     }
 }
 
-clearphoto() {
+clearphoto(canvas) {
     const context = canvas.getContext("2d");
+
     context.fillStyle = "#AAA";
     context.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -147,224 +149,44 @@ clearphoto() {
 ```
 
 
+
 Foto API {#foto-api}
 --------------------------------------
+
+För att vi ska kunna spara undan bilderna behöver vi en plats att spara undan de på. Vi väljer UploadCare då det är gratis (upp till 5,000 uploads / mo, 15 GB traffic / mo, 1 GB storage) och det finns ett trevligt uppladdnings-API. Vi börjar med att gå till [webbplatsen](https://app.uploadcare.com/accounts/signup/) för tjänsten och registrerar oss. Sedan när vi har kommit in i tjänsten kopierar vi Public key från denna sidan, se till att välja API keys ute till vänster.
+
+![Upload care key](image/webapp-uploadcare-key.png)
+
+Vi kan sedan installera `upload-client` som vi sedan kan använda för att ladda upp bilder till API:t.
 
 ```bash
 npm install @uploadcare/upload-client
 mkdir uploadcare
-cp node_modules/@uploadcare/upload-client/dist/index.browser.js uploadcare/
+cp node_modules/@uploadcare/upload-client/dist/index.browser.js uploadcare/index.browser.min.js
 ```
 
-
-
-
-Låt oss installera `leaflet` för att komma igång med kartan och kopiera lite filer så allt hamnar på rätt plats.
-
-```bash
-# stå i me/kmom05/gps
-npm init --yes
-npm install leaflet
-mkdir leaflet
-cp node_modules/leaflet/dist/leaflet.js leaflet/leaflet.min.js
-cp node_modules/leaflet/dist/leaflet.css leaflet/leaflet.min.css
-cp -r node_modules/leaflet/dist/images leaflet/
-cp ../../../example/gps-v5/leaflet/location.png leaflet/
-```
-
-Vi importerar sedan `leaflet.min.js` filen och då får vi tillgång till ett global objekt `L`. För att valideringen inte ska klaga lägger vi en kommentar längst upp i filen om att vi vet att globala variabeln finns. Vi lägger även till `<div id="map" class="map"></div>` som en del av `innerHTML` för vår komponent. I funktionen `renderMap` renderar vi sedan ut kartan och lägger till vilka **tiles** vi vill använda, **tiles** är de små kartbilder som tillsammans bygger ihop kartan i olika grader av in-zoomning.
+Vi importerar sedan `upload-client` längst upp i filen `components/camera.js` med raden `import { UploadClient } from "../uploadcare/index.browser.min.js";`. De med skarpa ögen såg att vi hade lagt till en `eventListener` på `sendbutton` i `startup()`, den anropar funktionen `sendpicture`.
 
 ```javascript
-/* global L */
+async sendpicture() {
+    const blob = await (await fetch(this.photoData)).blob();
 
-import "../leaflet/leaflet.min.js";
+    const client = new UploadClient({ publicKey: '[INSERT API-KEY]' });
 
-export default class MapView extends HTMLElement {
-    constructor() {
-        super();
+    const fileInfo = await client.uploadFile(blob);
+    const cdnUrl = fileInfo.cdnUrl;
 
-        this.map = null;
-    }
-
-    connectedCallback() {
-        this.innerHTML = `<h1>MapView</h1><div id="map" class="map"></div>`;
-
-        this.renderMap();
-    }
-
-    renderMap() {
-        this.map = L.map('map').setView([56.18219, 15.59094], 11);
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(this.map);
-    }
+    console.log(cdnUrl);
 }
 ```
 
-Om vi laddar om sidan nu bör det bli heltokigt på riktigt, men kartbitar lite överallt på skärmen, så vi ser till att lägga till `leaflet.min.css` i `index.html` innan vår `style.css` fil.
-
-```html
-<link rel="stylesheet" href="leaflet/leaflet.min.css" />
-<link rel="stylesheet" href="style.css" />
-```
-
-Och nu bör det ser någorlunda vettigt ut med en karta som visar Karlskrona med omnejd.
-
-
-
-Markörer {#markorer}
---------------------------------------
-
-För att vi ska kunna visa olika specifika platser på kartan vill vi kunna rita ut markörer. För att vi ska kunna rita ut markörer behöver vi koordinater och det kan vi antingen skriva in manuellt eller så kan vi omvandla adresser till koordinater. Jag väljer först att skapa en modell för just omvandlingen till koordinater i filen `models/nominatim.js`. I den modellen använder vi tjänsten nominatim.openstreetmap.org för att göra om en adress till koordinater.
-
-```javascript
-export default async function getCoordinates(address) {
-    const urlEncodedAddress = encodeURIComponent(address);
-    const url = "https://nominatim.openstreetmap.org/search.php?format=jsonv2&q=";
-    const response = await fetch(`${url}${urlEncodedAddress}`);
-    const result = await response.json();
-
-    return result;
-}
-```
-
-Vi kan sedan importera denna funktion till vår komponent. Från `connectedCallback`-metoden anropar vi sedan `this.renderMarkers`-metoden som ritar ut en markör baserat på koordinater och en från en adress vi omvandlar med hjälp av modellen.
-
-```javascript
-/* global L */
-
-import "../leaflet/leaflet.min.js";
-
-import getCoordinates from "../models/nominatim.js";
-
-export default class MapView extends HTMLElement {
-    constructor() {
-        super();
-
-        this.map = null;
-    }
-
-    connectedCallback() {
-        this.innerHTML = `<h1>MapView</h1><div id="map" class="map"></div>`;
-
-        this.renderMap();
-    }
-
-    renderMap() {
-        this.map = L.map('map').setView([56.18219, 15.59094], 11);
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(this.map);
-
-        this.renderMarkers();
-    }
-
-    async renderMarkers() {
-        let coordinates = [56.2345, 15.6034];
-
-        L.marker(coordinates).addTo(this.map);
-
-        let adress = "Stortorget 1, Karlskrona";
-
-        const results = await getCoordinates(adress);
-
-        L.marker([
-            parseFloat(results[0].lat),
-            parseFloat(results[0].lon)
-        ]).addTo(this.map);
-    }
-}
-```
-
-Vi bör nu kunna se två markörer på kartan, en på Stortorget och en en bit norrom Karlskrona.
-
-
-
-Användarens plats {#plats}
---------------------------------------
-
-Sista pusselbiten vi behöver att få på plats är användarens position utritad på kartan. Vi kommer då använda oss av webbläsarens inbyggda möjlighet för att plocka ut användarens position. [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) beskriver hur det fungerar med att hämta ut användarens position.
-
-Vi lägger till ytterligare en metod i vår komponent `renderLocation`, som vi anropar från `renderMap`. I metoden frågar vi först om `geolocation` är tillgängligt i `navigator`-objektet som är den webbläsare vi ser sidan via. Sedan frågar vi `navigator` om nuvarande position och får tillbaka ett result som vi sedan ritar ut som en markör. Vi väljer att ändra utseendet på markören bara för att visa att den ena är positionen och den andra en vanlig markör.
-
-```javascript
-/* global L */
-
-import "../leaflet/leaflet.min.js";
-
-import getCoordinates from "../models/nominatim.js";
-
-export default class MapView extends HTMLElement {
-    constructor() {
-        super();
-
-        this.map = null;
-    }
-
-    connectedCallback() {
-        this.innerHTML = `<h1>MapView</h1><div id="map" class="map"></div>`;
-
-        this.renderMap();
-    }
-
-    renderMap() {
-        this.map = L.map('map').setView([56.18219, 15.59094], 11);
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(this.map);
-
-        this.renderMarkers();
-
-        this.renderLocation();
-    }
-
-    async renderMarkers() {
-        let coordinates = [56.2345, 15.6034];
-
-        L.marker(coordinates).addTo(this.map);
-
-        let adress = "Stortorget 1, Karlskrona";
-
-        const results = await getCoordinates(adress);
-
-        L.marker([
-            parseFloat(results[0].lat),
-            parseFloat(results[0].lon)
-        ]).addTo(this.map);
-    }
-
-    renderLocation() {
-        let locationMarker = L.icon({
-            iconUrl:      "leaflet/location.png",
-            iconSize:     [24, 24],
-            iconAnchor:   [12, 12],
-            popupAnchor:  [0, 0]
-        });
-
-
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition((position) => {
-                L.marker(
-                    [position.coords.latitude,                  position.coords.longitude],
-                    {icon: locationMarker}
-                ).addTo(this.map);
-            });
-        }
-    }
-}
-```
+I ovanstående funktionen tar vi först och gör om vår dataUrl till en [blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob). Sedan initierar vi en `UploadClient` med vår API-nyckel vi kopierade från UploadCare-webbplatsen tidigare. Sedan laddar vi upp filen (kan ta en stund) och får tillbaka en url till bilden.
 
 
 
 Avslutningsvis {#avslutning}
 --------------------------------------
 
-Vi har i denna artikel använt oss av OpenStreetMap och leaflet.js för att placera ut markörer på en karta på specifika platser. Vi har även tittat på hur vi kan använda `geolocation`-Web-API:t för att rita ut användarens position på kartan.
+Vi har i denna artikel använt oss av Web API:t MediaDevices för att ta bilder med våra mobila enheter. Vi har även använt ett Foto-API för att spara undan bilderna.
 
-Exempelprogrammet från denna övning finns i kursrepot [example/gps](https://github.com/dbwebb-se/webapp/tree/master/example/gps-v5) och i `example/gps-v5`.
+Exempelprogrammet från denna övning finns i kursrepot [example/camera](https://github.com/dbwebb-se/webapp/tree/master/example/camera) och i `example/camera`.

@@ -20,14 +20,6 @@ Nu maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till m
 
 
 
-[WARNING]
-**Kursutveckling pågår**
-
-Kursutveckling pågår inför kurstillfället VT23.
-[/WARNING]
-
-
-
 Så här kan det se ut när vi är klara med kursmoment 05.
 
 [YOUTUBE src=SXZFj8itb7M width=630 caption="Lager appen i kursmoment 5."]
@@ -62,7 +54,7 @@ Titta på följande video.
 
 ### Övningar {#ovningar}
 
-1. Jobba igenom övningen "[Kamera i mobilen](kunskap/kamera-i-mobilen)". Spara eventuella testfiler i `me/lager`.
+1. Jobba igenom övningen "[Kamera i mobilen](kunskap/kamera-i-mobilen)". Spara eventuella testfiler i `me/kmom06/camera`.
 
 
 
@@ -86,4 +78,4 @@ Se till att följande frågor besvaras i redovisningstexten.
 * Hur kändes det att jobba mot ett bild-API förutom Lager-API:t?
 * Fick du till ett bra gränssnitt för att ta och ladda upp bilderna?
 * Vilken är din TIL för detta kmom?
-* Vilken är din "In This Course I Learned" (ITCIL) för kursen?
+* Vilken är din "In This Course I Learned" (ITCIL) för kursen, välj ut den ena sak du anser mest viktig?

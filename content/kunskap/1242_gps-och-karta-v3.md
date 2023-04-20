@@ -18,7 +18,7 @@ Vi ska i denna övning använda [leaflet.js](https://leafletjs.com) tillsammans 
 
 
 
-Exempelprogrammet från denna övning finns i kursrepot [example/gps](https://github.com/dbwebb-se/webapp/tree/master/example/gps-v5) och i `example/gps-v5`. Använd det gärna tillsammans med övningen för att se hur de olika delarna hänger ihop. En del kod utelämnas i exemplet för att det ska vara mer lättläst i artikeln.
+Exempelprogrammet från denna övning finns i kursrepot [example/gps](https://github.com/dbwebb-se/webapp/tree/master/example/gps-v5) och i `example/gps-v5`. Använd det gärna tillsammans med övningen för att se hur de olika delarna hänger ihop. En del kod utelämnas i exemplet för att det ska vara mer lättläst i artikeln. Finns inte `example/gps-v5`-katalogen gör en `dbwebb update`.
 
 
 

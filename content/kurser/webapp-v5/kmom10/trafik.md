@@ -25,15 +25,6 @@ Varje krav ger maximalt 10 poäng, totalt är det 60 poäng.
 
 Samla alla dina filer för projektet i ditt kursrepo under `me/kmom10/proj`.
 
-Skapa ditt Cordova projekt med följande kommando:
-
-```bash
-# stå i me/kmom10/proj
-cordova create . se.dbwebb.trafik Trafik
-```
-
-Redovisningstexten skriver du i `me/redovisa`.
-
 
 
 ### Datakällor {data}

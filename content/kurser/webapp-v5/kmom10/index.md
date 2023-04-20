@@ -18,14 +18,6 @@ Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
 
 
-[WARNING]
-**Kursutveckling pågår**
-
-Kursutveckling pågår inför kurstillfället VT23.
-[/WARNING]
-
-
-
 Projektidéer och upplägg {#upplagg}
 --------------------------------------------------------------------
 

@@ -104,7 +104,7 @@ Använd positionsdata (Koordinater eller adresser) från en av dina valda API:er
 
 ### Krav 6: Kamera (optionellt) {#k5}
 
-Använd dina kunskaper om MediaCapture Web API:t för att integrera mobila enhetens kamera i din applikation.
+Använd dina kunskaper om MediaCapture Web API:t för att integrera mobila enhetens kamera i din applikation. Använd även UploadCare API:t för att spara undan bilder.
 
 
 

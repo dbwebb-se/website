@@ -12,7 +12,7 @@ revision:
 Kmom06: Mobila enheters styrkor
 ==================================
 
-Nu tar maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till möjligheten för att använda en kamera och ett bild-API för att spara bilderna.
+Nu maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till möjligheten för att använda en kamera och ett bild-API för att spara bilderna.
 
 
 

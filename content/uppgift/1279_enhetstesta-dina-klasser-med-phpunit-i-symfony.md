@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
+    "2023-04-20": "(B, mos) Genomgången inför vt23."
     "2022-04-18": "(A, mos) Första utgåvan i mvc-v2."
 ...
 Enhetstesta dina klasser med PHPUnit i Symfony
@@ -45,11 +46,7 @@ Kraven är uppdelade i sektioner.
 
 1. Installera phpunit och lägg till det som ett skript `composer phpunit`.
 
-1. Gör så att kodtäckningsrapport för HTML genereras till katalogen `build/coverage`.
-
-<!--
-Ändra katalog till doc/coverage så man kan använda den för att kolla kodtäckning
--->
+1. Gör så att kodtäckningsrapport för HTML genereras till katalogen `docs/coverage`.
 
 
 
@@ -61,17 +58,25 @@ Kraven är uppdelade i sektioner.
 
 1. Varje testfall har minst en assertion.
 
-1. Du har en kodtäckning som överträffar 50% på varje testobjekt.
+1. Du har en kodtäckning som överträffar 70% på varje testobjekt men sikta mot att nå över 90% kodtäckning.
 
-1. Det är helt okey om du vill uppdatera din källkod för att göra en bättre eller mer testbar.
+1. Det är helt okey om du vill uppdatera din källkod för att göra den bättre eller mer testbar. Code refactoring (att skriva om sin kod för att förbättra den) är ofta ett bra alternativ.
+
+[OPTINELLT] Som en extra utmaning kan du se om dina controllers är testbara med phpunit och i vilken mån du kan testa dem eller vad som krävs för att du skall kunna testa dem.
+
+
+
+### Dokumentara kod {#dockblock}
+
+1. Välj ut minst en av dina klasser och lägg till kommentarer med PHP DockBlock. Dina kommentarer skall minst innehålla en enrads beskrivning av vad metoderna och klassen gör.
+
+1. Generea dokumentationen till katalogen `docs/api` med kommandot `composer phpdoc`.
 
 
 
 ### Utvecklingsmiljö {#miljo}
 
-<!-- Skall man linta koden i test? -->
-
-1. Fixa till din kod enligt den kodstil du kör genom att köra `composer csfix`. Se till att skriptet även fixar kodstilen i katalogen `tests`.
+1. Fixa till din kod enligt den kodstil du kör genom att köra `composer csfix`.
 
 1. Kolla din kod hur den matchar dina linters genom att köra `composer lint`.
 

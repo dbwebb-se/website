@@ -2,18 +2,11 @@
 author:
     - mos
 revision:
+    "2023-04-20": "(B, mos) Genomgången i mvc-v2."
     "2021-04-19": "(A, mos) Första utgåvan i mvc-v1."
 ...
 Kmom04: Enhetstestning
 ==================================
-
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
 
 Vi jobbar vidare med klasser och objekt och nu tittar vi på hur klasser kan enhetstestas med verktyget PHPUnit. PHPUnit är ett av de verktyg som vanligen används inom PHP för att utföra enhetstestning av kod.
 
@@ -44,14 +37,7 @@ Labbmiljö  {#labbmiljo}
 
 Installera följande som en del av din labbmiljö.
 
-1. Installera [Xdebug](labbmiljo/xdebug) för att kunna köra enhetstester med kodtäckning på din lokala maskin.
-
-    1. Om du är på Mac kan du vara behjälpt av att installera "PHP i terminalen" och "Xdebug" via pakethanterare Brew, för detaljer se "[Installera Xdebug på Mac OS med XAMPP/brew](t/8514)".
-
-<!--
-Fixa installationsinstruktionen på Mac
-https://xdebug.org/docs/install#pecl
--->
+1. Installera [Xdebug](labbmiljo/xdebug_2023) för att kunna köra enhetstester med kodtäckning på din lokala maskin.
 
 
 
@@ -101,9 +87,10 @@ Läs enligt följande.
 
     * 2. Writing Tests for PHPUnit
     * 3. The Command-Line Test Runner
-    * 4. Fixtures
-    * 5. Organizing Tests
-    * 9. Code Coverage Analysis
+    * 4. Organizing Tests
+    * 5. Fixtures
+    * 6. Test Doubles
+    * 7. Code Coverage
     * Appendix 1. Assertions
 
 

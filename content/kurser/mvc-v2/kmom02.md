@@ -144,7 +144,7 @@ Se till att följande frågor besvaras i din redovisningstext.
 
 * Berätta om din implementation från uppgiften. Hur löste du uppgiften, är du nöjd/missnöjd, vilken förbättringspotential ser du i din koden och dina klasser?
 
-* Berätta hur det kändes att modellera ett kortspel med flödesdiagram och psuedokod. Var det något som du tror stödjer dig i din problemlösning och tankearbete för att strukturera koden kring en applikation?
+* Vilka är dina refelktioner så här långt med att jobb i Symfony med applikationskod enligt MVC?
 
 * Vilken är din TIL för detta kmom?
 

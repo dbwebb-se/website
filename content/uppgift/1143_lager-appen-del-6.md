@@ -20,7 +20,7 @@ Vi ska i denna uppgiften använda oss av Web-API:s för att komma åt native-fun
 
 Förkunskaper {#forkunskaper}
 -----------------------
-Du har gjort uppgiften [Lager appen del 4](uppgift/lager-appen-del-4). Du har jobbat dig igenom övningarna "[Animationer och övergångar](kunskap/animationer-och-overgangar)" och "[GPS och karta v3](kunskap/gps-och-karta-v3)".
+Du har gjort uppgiften [Lager appen del 4](uppgift/lager-appen-del-4). Du har jobbat dig igenom övningarna "[Animationer och övergångar](kunskap/animationer-och-overgangar-v2)" och "[GPS och karta v3](kunskap/gps-och-karta-v3)".
 
 
 

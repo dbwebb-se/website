@@ -37,7 +37,7 @@ Labbmiljö  {#labbmiljo}
 
 Installera följande som en del av din labbmiljö.
 
-1. Installera [Xdebug](labbmiljo/xdebug_2023) för att kunna köra enhetstester med kodtäckning på din lokala maskin.
+1. Installera [Xdebug](labbmiljo/xdebug) för att kunna köra enhetstester med kodtäckning på din lokala maskin.
 
 
 

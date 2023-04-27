@@ -51,3 +51,10 @@ dbwebb publish lager
 ```
 
 Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut så är du klar.
+
+
+
+Extrauppgift {#extra}
+-----------------------
+
+* Lägg till en vy som visar de levererade ordrar (status Skickad) och bilden som togs vid leverans.

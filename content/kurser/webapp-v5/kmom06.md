@@ -20,10 +20,9 @@ Nu maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till m
 
 
 
-<!-- Så här kan det se ut när vi är klara med kursmoment 06. -->
+Så här kan det se ut när vi är klara med kursmoment 06.
 
-<!-- [YOUTUBE src=SXZFj8itb7M width=630 caption="Lager appen i kursmoment 5."]
- -->
+[YOUTUBE src=SDvsHIIIC_k width=630 caption="Lager appen i kursmoment 6."]
 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>

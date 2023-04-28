@@ -68,7 +68,7 @@ Kraven är uppdelade i sektioner.
 
 1. Inkludera möjligheten att återställa databasen till sitt ursprungliga innehåll via routen `library/reset`.
 
-1. Alla delar av "Biblioteket" skall fungera tillsammans som en applikation, det finns länkar och formulära som är sammankopplade och man får en "user experience" av att applikationen hänger ihop.
+1. Alla delar av "Biblioteket" skall fungera tillsammans som en applikation. Det finns länkar och formulär som är sammankopplade och man får en "user experience" av att applikationen hänger ihop.
 
 
 

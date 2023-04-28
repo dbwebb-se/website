@@ -68,9 +68,9 @@ Kraven är uppdelade i sektioner.
 
 ### Dokumentara kod {#dockblock}
 
-1. Välj ut minst en av dina klasser och lägg till kommentarer med PHP DockBlock. Dina kommentarer skall minst innehålla en enrads beskrivning av vad metoderna och klassen gör.
+1. Välj ut minst en av dina klasser och lägg till kommentarer med PHP DockBlock. Dina kommentarer skall minst innehålla en rads beskrivning av vad metoderna och klassen gör.
 
-1. Generea dokumentationen till katalogen `docs/api` med kommandot `composer phpdoc`.
+1. Generera dokumentationen till katalogen `docs/api` med kommandot `composer phpdoc`.
 
 
 

@@ -139,9 +139,8 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 1. Lös uppgiften "[Enhetstesta dina klasser med PHPUnit i Symfony](uppgift/enhetstesta-dina-klasser-med-phpunit-i-symfony)".
 
 <!--
-generera dokumentation, phpdoc, uml  hur fixa uml klassdiagram?
+generera dokumentation, uml  hur fixa uml klassdiagram?
 Kanske flytta det till kmom03 i fortsättningen?
-Samt kräva att det läggs till i Git-repot, tex doc/coverage
 -->
 
 

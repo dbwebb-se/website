@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
+    "2023-04-28": "(B, mos) Uppdaterad inför ht23 och optionell inloggnin gborttagen."
     "2022-04-25": "(A, mos) Första utgåvan till mvc-v2."
 ...
 Kom igång med Doctrine ORM i Symfony
@@ -49,7 +50,7 @@ Kraven är uppdelade i sektioner.
 
 ### Bibliotek CRUD {#crud}
 
-1. Skapa en landningssida för din "Bibliotek" applikation. Placera landningssidan i din navbar.
+1. Skapa en landningssida `library/` för din "Bibliotek" applikation. Placera landningssidan i din navbar.
 
 1. Skapa en databas som innehåller en tabell med böcker. Lägg in minst tre böcker (riktiga eller påhittade) med deras titel, ISBN och författare samt en bild som representerar boken.
 
@@ -65,17 +66,21 @@ Kraven är uppdelade i sektioner.
 
 1. Använd GET och POST. Kom ihåg att alltid använda POST när du gör en uppdatering i databasen.
 
+1. Inkludera möjligheten att återställa databasen till sitt ursprungliga innehåll via routen `library/reset`.
+
+1. Alla delar av "Biblioteket" skall fungera tillsammans som en applikation, det finns länkar och formulära som är sammankopplade och man får en "user experience" av att applikationen hänger ihop.
+
+
+
+### Bibliotek JSON {#json}
+
+1. I din landningssida för `api/` lägger du till routen `api/library/books` som visar upp samtliga böcker i biblioteket i en JSON struktur.
+
+1. Lägg till routen `api/library/book/<isbn>` där man kan se en av böckerna via dess ISBN nummer. Lägg till ett exempel som länkar direkt till en av böckerna i biblioteket. 
+
+
+
 <!--
-
-* Inkludera möjlighet att återställa databasen till ursprungsläget
-
-* Förtydliga att man skall kunna länka till alla delar flexibelt och ingen del skall vara hårdkodad.
-
--->
-
-
-
-
 ### Användare och login {#anv}
 
 Detta kravet är OPTIONELLT och du gör det om du har tid, energi och lust. Du kan också göra delar av kravet för att prova på.
@@ -103,6 +108,19 @@ Detta kravet är OPTIONELLT och du gör det om du har tid, energi och lust. Du k
 1. Administratören kan även uppdatera rollen för en användare.
 
 1. Lägg till så att en ny användare kan registrera sig själv på webbplatsen och därefter kan logga in direkt.
+-->
+
+
+
+### Utvecklingsmiljö {#miljo}
+
+1. Fixa till din kod enligt den kodstil du kör genom att köra `composer csfix`.
+
+1. Kolla din kod hur den matchar dina linters genom att köra `composer lint`.
+
+1. Dubbelkolla att dina testfall passerar med `composer phpunit`.
+
+1. Generera documentation av din kod med `composer phpdoc`.
 
 
 

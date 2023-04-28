@@ -42,6 +42,9 @@ Totalt omfattar kursmoment 07/10 i storleksordningen 20--60 studietimmar.
 * Bokningssystem? Flyg, hotell?
 * Blog, forum?
 
+* Databas med återställning
+* Inloggning?
+
 * Om hållbarhet, gör mer krav på presentation med grader och referenser.
     * Mer routes so det blir mer MVC.
 -->

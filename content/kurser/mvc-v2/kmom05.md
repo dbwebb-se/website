@@ -2,6 +2,7 @@
 author:
     - mos
 revision:
+    "2023-04-28": "(D, mos) Genomgången inför vt23."
     "2022-04-25": "(C, mos) Genomgången inför vt22 mvc-v2."
     "2021-04-30": "(B, mos) Lade till ORM föreläsning från Zoom och övningar."
     "2021-04-26": "(A, mos) Första utgåvan."
@@ -9,15 +10,7 @@ revision:
 Kmom05: ORM / Databas
 ==================================
 
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
-
-Det finns olika taktiker att integrera applikationskod med databasen när man jobbar med ramverk. Ett sätt är att jobba med PHP PDO och SQL direkt mot databasen eller via ett databas API som är uppbyggt av lagrade procedurer (jämför med databas-kursen). Ett annat sätt som är vanligt i sammnhanget ramverk är att använda sig av ett ORM lager (Object Relational Mapping) vars syfte är att objektifiera relationsdatabasen och accessen till databasen. Det handlar alltså om att göra relationsdatabasen mer objektorienterad.
+Det finns olika taktiker att integrera applikationskod med databasen när man jobbar med ramverk. Ett sätt är att jobba med PHP PDO och SQL direkt mot databasen eller via ett databas API som är uppbyggt av lagrade procedurer (jämför med databas-kursen). Ett annat sätt är att använda sig av ett ORM lager (Object Relational Mapping) vars syfte är att objektifiera relationsdatabasen och accessen till databasen. Det handlar alltså om att göra relationsdatabasen mer objektorienterad.
 
 Tanken med ORM är att ge programmeraren möjlighet att jobba mot databasen med vanlig objektorienterad PHP kod via metoder, klasser och objekt. Det gränssnitt som ORM erbjuder döljer själva databasen och programmeraren behöver inte vara speciellt bevandrad i varken SQL eller hur en relationsdatabas fungerar. Programmeraren behöver dock lära sig hur ORM modulen fungerar.
 
@@ -29,14 +22,6 @@ Vi skall nu använda ORM för att koppla oss från ramverket till en databas.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
-
-<!--
-
-* Borde inloggning vara en del?
-    *  "bin/console" ihop med "make:user" följt av ett argument för namnet på tabellen i databasen som skapas. "bin/console make:auth".
-    * Eller använda OAUTH istället?
-* Återställa databasen
--->
 
 
 Labbmiljö  {#labbmiljo}
@@ -54,10 +39,6 @@ Du kan använda databaserna MySQL, MariaDB eller SQLite för att genomföra uppg
 
 En möjlighet är att i övningarna nedan börja jobba med SQLite och när man är bekväm med att det fungerar så kan man byta över till MySQL/MariaDB då de databaserna kräver lite mer administration och hantering för att komma igång.
 
-<!--
-* Fixa video om labbmiljön?
--->
-
 
 
 Läs & Studera  {#lasanvisningar}
@@ -74,8 +55,10 @@ Titta igenom följande föreläsningar.
 1. [Database ORM - Object Relational Mapping](./../forelasning/orm) en introduktion till området och generella designmönster för datalagning och hantering av databaser.
 
 <!--
+TODO 
+
 * Gör om ovan zoom till en vanlig inspelad föreläsning.
-* Föreläs och visa strukturen i Doctrine & Symfony.
+* NY FLÄS Föreläs och visa strukturen i Doctrine & Symfony.
 -->
 
 
@@ -119,6 +102,13 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 1. I kursrepot under [`example/symfony-doctrine`](https://github.com/dbwebb-se/mvc/tree/main/example/symfony-doctrine) finns en övning med exempelkod som visar hur du kommer igång med Doctrine i Symfony.
 
 
+<!--
+* Borde inloggning vara en del?
+    *  "bin/console" ihop med "make:user" följt av ett argument för namnet på tabellen i databasen som skapas. "bin/console make:auth".
+    * Koppla till säkerhet, OWASP?
+-->
+
+
 
 ### Uppgifter {#uppgifter}
 
@@ -130,9 +120,9 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 * Re-init databasen i uppgiften.
 
-* How to unit test database
+* How to unit test database (needs an exercise)
 
-* How to link to other tables, one-to-one, one-to-many, many-to-many
+* How to link to other tables, one-to-one, one-to-many, many-to-many (needs exercise)
 
 Search engine
 https://symfony.com/blog/the-new-symfony-documentation-search-engine
@@ -151,9 +141,9 @@ Se till att följande frågor besvaras i din redovisningstext.
 
 * Gick det bra att jobba igenom övningen med Symfony och Doctrine. Något särskilt du tänkte/reagerade på under övningen?
 
-* Berätta om din applikation och hur du tänkte när du byggde upp den. Tänkte du något speciellt på användargränssnittet? Gick det bra att jobba med ORM i CRUD eller vad anser du om det?
+* Berätta om din applikation och hur du tänkte när du byggde upp den. Tänkte du något speciellt på användargränssnittet?
 
-* Berätta om du gjorde (delar av) extrauppgiften med användare och login.
+* Gick det bra att jobba med ORM i CRUD eller vad anser du om det, jämför gärna med andra sätt att jobba med databaser?
 
 * Vad är din uppfattning om ORM så här långt och relatera gärna till andra sätt att jobba med applikationskod mot databaser?
 

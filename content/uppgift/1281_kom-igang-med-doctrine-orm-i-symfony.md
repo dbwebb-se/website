@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
+    "2023-05-02": "(C, mos) Ändra library/reset till optionellt."
     "2023-04-28": "(B, mos) Uppdaterad inför ht23 och optionell inloggnin gborttagen."
     "2022-04-25": "(A, mos) Första utgåvan till mvc-v2."
 ...
@@ -66,9 +67,9 @@ Kraven är uppdelade i sektioner.
 
 1. Använd GET och POST. Kom ihåg att alltid använda POST när du gör en uppdatering i databasen.
 
-1. Inkludera möjligheten att återställa databasen till sitt ursprungliga innehåll via routen `library/reset`.
-
 1. Alla delar av "Biblioteket" skall fungera tillsammans som en applikation. Det finns länkar och formulär som är sammankopplade och man får en "user experience" av att applikationen hänger ihop.
+
+1. [OPTIONELLT] Inkludera möjligheten att återställa databasen till sitt ursprungliga innehåll via routen `library/reset`.
 
 
 

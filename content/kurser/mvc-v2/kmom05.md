@@ -22,7 +22,17 @@ Vi skall nu använda ORM för att koppla oss från ramverket till en databas.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
+<!--
 
+TODO
+
+* Uppdatera databasövningen med en övning som även använder querybuilder i ProductRepository.
+* Samt länka två tabeller och joina.
+* Göra reset på databasen.
+
+* Symfony forms. 
+
+-->
 
 Labbmiljö  {#labbmiljo}
 ---------------------------------

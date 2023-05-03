@@ -27,6 +27,9 @@ Vi skall också börja lära oss om grunderna med objektorientering och dess kon
 <!-- more -->
 
 <!--
+
+* Guiden kan behöva en genomgång och uppfräschning.
+
 * Jobba igenom inledningen så att fokus på OO och MVC blir tydligt.
     * Ramverket kommer i andra hand.
 * Gå igenom samtliga föreläsningar.

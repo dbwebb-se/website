@@ -78,7 +78,16 @@ Krav {#krav}
 
 Kraven är uppdelade i sektioner.
 
+<!--
+TODO
 
+* Kortlek med Joker?
+
+* Påminn om att sessionen måste initieras med en kortlek, även om man klickar direkt på en route som är beroende av det.
+
+* Lägg till om POST/GET på json routes som uppdaterar state.
+
+-->
 
 ### Skapa klasser och använd dem i webbsidor {#webb}
 

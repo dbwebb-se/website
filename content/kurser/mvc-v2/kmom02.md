@@ -98,6 +98,10 @@ Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 <!--
 TODO
 
+* Visa hur man kan döda sessionen för att testa.
+* Lägg till om POST/GET på json routes som uppdaterar state.
+* Visa hur man visar utf-8 tecken i json
+
 * Övningen blev lite stor, kanske dela i två delar?
 * MVC-begreppet igen, fokus "modellklasser".
     * Liten kontroller
@@ -144,7 +148,7 @@ Se till att följande frågor besvaras i din redovisningstext.
 
 * Berätta om din implementation från uppgiften. Hur löste du uppgiften, är du nöjd/missnöjd, vilken förbättringspotential ser du i din koden och dina klasser?
 
-* Vilka är dina refelktioner så här långt med att jobb i Symfony med applikationskod enligt MVC?
+* Vilka är dina reflektioner så här långt med att jobb i Symfony med applikationskod enligt MVC?
 
 * Vilken är din TIL för detta kmom?
 

@@ -2,6 +2,7 @@
 author: mos
 baseurl: null
 revision:
+    "2023-05-03": "(C, mos) Bort med länka rtill forum."
     "2022-03-16": "(B, mos) Uppdaterad inför antagningsomgången hösten 2022."
     "2021-08-09": "(A, mos) Första utgåva."
 ...
@@ -101,11 +102,15 @@ För tillfället finns ytterst få obligatoriska tillfällen där närvaro kräv
 
 Grundupplägget är att man skall kunna studera på programmet oavsett tid och plats, det fungerar för det mesta men inte alltid. Finns det obligatoriska träffar så bör det annonseras av läraren när kursen startar.
 
+<!--
 Om du försöker jobba heltid och studera så kan du läsa forumtråden "[Läsa distansprogrammet och jobba heltid? (ge tips)](http://bth1.dbwebb.se/t/7232)" som ger dig viss insyn i hur det kan vara.
+-->
 
 
-
+<!--
 Mer om upplägget på studierna {#mer}
 ---------------------------------
 
 I forumet finns en tråd som sammanställer lite vanliga frågor och svar kring upplägget på utbildningen, kika där för fler svar - [Jag vill söka BTH Webbprogrammering 2020](http://bth1.dbwebb.se/t/8849).
+
+-->

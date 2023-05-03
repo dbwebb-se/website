@@ -162,7 +162,7 @@ Vi kan sedan installera `upload-client` som vi sedan kan använda för att ladda
 ```bash
 npm install @uploadcare/upload-client
 mkdir uploadcare
-cp node_modules/@uploadcare/upload-client/dist/index.browser.js uploadcare/index.browser.min.js
+cp node_modules/@uploadcare/upload-client/dist/esm/index.browser.mjs uploadcare/index.browser.min.js
 ```
 
 Vi importerar sedan `upload-client` längst upp i filen `components/camera.js` med raden `import { UploadClient } from "../uploadcare/index.browser.min.js";`. De med skarpa ögen såg att vi hade lagt till en `eventListener` på `sendbutton` i `startup()`, den anropar funktionen `sendpicture`.

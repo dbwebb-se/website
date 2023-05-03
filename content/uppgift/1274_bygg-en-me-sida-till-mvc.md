@@ -82,6 +82,8 @@ Dela in kraven med rubriker.
 
 lucky kan ha som uppgift att visa 1-5 tärningar och summera dem?
 
+Ställ krav på innehåll i README. Inkl bild. Inkl instruktion om hur klona och komma igång med repot.
+
 -->
 
 1. Gör en installation av Symfony och placera den i `me/report`. Den publika webbkatalogen skall ligga som `me/report/public`.

@@ -155,7 +155,7 @@ Foto API {#foto-api}
 
 För att vi ska kunna spara undan bilderna behöver vi en plats att spara undan de på. Vi väljer UploadCare då det är gratis (upp till 5,000 uploads / mo, 15 GB traffic / mo, 1 GB storage) och det finns ett trevligt uppladdnings-API. Vi börjar med att gå till [webbplatsen](https://app.uploadcare.com/accounts/signup/) för tjänsten och registrerar oss. Sedan när vi har kommit in i tjänsten kopierar vi Public key från denna sidan, se till att välja API keys ute till vänster.
 
-![Upload care key](image/webapp-uploadcare-key.png)
+![Upload care key](image/webapp/webapp-uploadcare-key.png)
 
 Vi kan sedan installera `upload-client` som vi sedan kan använda för att ladda upp bilder till API:t.
 

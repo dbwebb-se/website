@@ -75,6 +75,15 @@ Om du behöver mer hjälp med Git och GitHub så kikar du på videoserien "[Git,
 Krav {#krav}
 -----------------------
 
+<!--
+Dela in kraven med rubriker.
+
+1. Skapa en landningssida för routen `api/` som visar en webbsida med en sammanställning av alla JSON routes som din webbplats erbjuder.
+
+lucky kan ha som uppgift att visa 1-5 tärningar och summera dem?
+
+-->
+
 1. Gör en installation av Symfony och placera den i `me/report`. Den publika webbkatalogen skall ligga som `me/report/public`.
 
 1. Skapa följande webbsidor, använd controller, templatefiler och en templatemotor, förslagsvis Twig.
@@ -105,10 +114,6 @@ Krav {#krav}
 1. Pusha upp repot till GitHub, inklusive taggarna.
 
 1. Gör en `dbwebb publishpure report` för att kolla att det fungerar på studentservern.
-
-<!--
-1. Skapa en landningssida för routen `api/` som visar en webbsida med en sammanställning av alla JSON routes som din webbplats erbjuder.
--->
 
 
 

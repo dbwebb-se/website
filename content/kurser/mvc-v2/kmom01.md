@@ -28,22 +28,15 @@ Vi skall också börja lära oss om grunderna med objektorientering och dess kon
 
 <!--
 * Jobba igenom inledningen så att fokus på OO och MVC blir tydligt.
-* Ramverket kommer i andra hand.
-* Förenkla för rättningsverktyget.
-* JSON skall vara del, tex så skall länken till GitHub redovisas.
-    * Inkludera Fetch GET på klientsidan för någon form av fusk?
-* Städa, rensa, förenkla.
-    * Placera som extrauppgifter bra utmaningar.
+    * Ramverket kommer i andra hand.
+* Gå igenom samtliga föreläsningar.
+* Placera som extrauppgifter bra utmaningar.
     * Kanske kan ge en betygsnivå i slutet av kursen?
 * Kortspel är kanske inte optimalt, ger behov av klientsideprogrammering?
-* Bättre slutprojekt?
 
-* Promota visualisering och snygghet.
-* Visa hur man får in SASS och JavaScript.
+* Visa hur man får in SASS.
+* Inkludera Fetch GET på klientsidan för någon form av fusk?
 
-* Sprid ut kodandet över fler kmom och låt kmom01 & 02 vara lite enklare. Koda även i kmom04 & 05 & 06
-    * Låt kmom05 vara en del av applikationen, istället för att vara fristående.
-* Alla uppgifter skall ha tydliga landdningssidor som kan testas.
 -->
 
 

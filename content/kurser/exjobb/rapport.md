@@ -66,3 +66,5 @@ Under processen att skriva examensarbetet tar vi hjälp av två skrivguider.
 Följande uppgift skall utföras.
 
 1. Lös uppgiften "[Skriv din rapport](uppgift/exjobb-rapport)". Lämna in din rapport som en PDF på Canvas.
+
+1. Lämna in en muntlig video presentation tillsammans med rapporten. 10-15 minuter lång. Fokusera på frågeställningar, metod, resultat och vad resultaten innebär.

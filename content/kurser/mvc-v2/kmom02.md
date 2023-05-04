@@ -98,6 +98,8 @@ Spara dina filer under `me/report` och bygg vidare på den webbplatsen.
 <!--
 TODO
 
+* JSON route som visar innehållet i sessionen?
+
 * Visa hur man kan döda sessionen för att testa.
 * Lägg till om POST/GET på json routes som uppdaterar state.
 * Visa hur man visar utf-8 tecken i json
@@ -131,6 +133,8 @@ TODO
 * Generera UML diagram som ett verktyg
 
 * CSS med bilder svg för att visa kort, gör exempel.
+
+* JSON route som visar innehållet i sessionen?
 -->
 
 

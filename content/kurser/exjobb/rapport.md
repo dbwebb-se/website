@@ -68,3 +68,7 @@ Följande uppgift skall utföras.
 1. Lös uppgiften "[Skriv din rapport](uppgift/exjobb-rapport)". Lämna in din rapport som en PDF på Canvas.
 
 1. Lämna in en muntlig video presentation tillsammans med rapporten. 10-15 minuter lång. Fokusera på frågeställningar, metod, resultat och vad resultaten innebär.
+
+Se sättet att lämna in på i kursen exjobb i nedanstående video:
+
+[YOUTUBE src=iWhcEtuv9Jw width=630 caption="Lämna in video och PDF i exjobb"]

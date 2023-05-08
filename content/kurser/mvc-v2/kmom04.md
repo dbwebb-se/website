@@ -126,6 +126,8 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 how to mock session & request
 
 how to test controller
+
+Använd coverage/dashboard.html för att prata om nyckeltal och CRAP score.
 -->
 
 

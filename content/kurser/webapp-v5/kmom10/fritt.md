@@ -98,7 +98,7 @@ Du kan inte räkna autentiseringstjänsten som en av dina två API:er.
 
 ### Krav 5: Karta och GPS (optionellt) {#k6}
 
-Använd positionsdata (Koordinater eller adresser) från en av dina valda API:er och visa upp denna data i en karta med hjälp av de tekniker vi använde i kursmoment 6. Använd Web API:t GeoLocation för att visa upp användarens position på kartan.
+Använd positionsdata (Koordinater eller adresser) från en av dina valda API:er och visa upp denna data i en karta med hjälp av de tekniker vi använde i kursmoment 5. Använd Web API:t GeoLocation för att visa upp användarens position på kartan.
 
 
 

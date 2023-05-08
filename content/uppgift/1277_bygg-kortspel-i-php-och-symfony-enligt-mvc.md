@@ -124,6 +124,20 @@ Bygg ditt kortspel i Symfony med objektorienterade konstruktioner i PHP och för
 
 1. Banken behöver inte vara speciellt intelligent i sitt kortspel. Det räcker att den kan utföra sin uppgift och spela spelet. En enkel variant är att banken alltid plockar kort tills den har 17 eller mer, sedan stannar den.
 
+<!--
+
+Det skall framgå tydligt på varje sida vad spelets ställning är och vem som vunnit.
+
+Optionellt?
+
+* UI skall göra tydligt vilka knappar som är klickbara vid vare tidpunkt i spelet för att leda spelaren fram.
+
+-->
+
+
+
+### Kortspel valfritt {#kortspel}
+
 Följande krav är optionella och du gör dem om du har tid och lust.
 
 1. Gör så att spelaren kan satsa pengar. Man kan satsa en viss summa vid varje spel. Håll koll på hur mycket pengar som spelaren och banken har.
@@ -138,17 +152,15 @@ Följande krav är optionella och du gör dem om du har tid och lust.
 
 1. Förklara taktiken för den "dumma" och den "smarta" banken på dokumentationssidan.
 
-<!--
-Fundera på att bygga vidare på konceptet med JSON.
-Fuska på något sätt?
-Visa spelets hela ställning med alla detaljer?
--->
-
 
 
 ### Kortspel JSON {#kortspeljson}
 
 1. I din landningssida för `api/` lägger du till routen `api/game` som visar upp den aktuella ställningen för spelet i en JSON struktur.
+
+<!--
+Fuska på något sätt med JSON, att kolla in kortleken och nästa kort?
+-->
 
 
 

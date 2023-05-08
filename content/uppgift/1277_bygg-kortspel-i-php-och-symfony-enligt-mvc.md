@@ -159,7 +159,8 @@ Följande krav är optionella och du gör dem om du har tid och lust.
 1. I din landningssida för `api/` lägger du till routen `api/game` som visar upp den aktuella ställningen för spelet i en JSON struktur.
 
 <!--
-Fuska på något sätt med JSON, att kolla in kortleken och nästa kort?
+* Det skall framgå vems tur det är i spelet, eller om någon har vunnit.
+* Fuska på något sätt med JSON, att kolla in kortleken och nästa kort?
 -->
 
 

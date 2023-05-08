@@ -2,6 +2,7 @@
 author:
     - mos
 revision:
+    "2023-05-08": "(E, mos) Genomgången inför ht23."
     "2022-05-03": "(D, mos) Lade till övning om software metrics."
     "2022-05-02": "(C, mos) Uppdaterad inför vt22 och mvc-v2."
     "2021-05-04": "(B, mos) Kompletterade med läsanvisningar."
@@ -10,17 +11,9 @@ revision:
 Kmom06: Automatiserad test
 ==================================
 
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-[/WARNING]
-
 Vi vill nu ta vara på de tester vi kör mot vår applikation och automatisera och visualisera dem så att vi kan dra ännu större nytta av dem och det resultat de kan ge oss. När vi pratar tester så innebär det både enhetstester och den statiska kodvalidering som våra validatorer gör åt oss. Statisk kodvalidering innebär i vårt fall både kodstandarder och det som kallas "mess detectors" som upptäcker kod med förbättringspotential.
 
-Vi skall jobba med begrepp som automatiserad testning, automatiserad bygg av projektet samt fundera över vad det är alla validatorer försöker berätta för oss i form av "quality metrics". Detta kommer vi att göra genom att delvis påbörja en kedja av Continous integration (CI) och koppla vårt repo mot externa byggtjänster och låta dem bygga och testa vår kod varje gång vi pushar en ny commit till GitHub/GitLab.
+Vi skall jobba med begrepp som automatiserad testning av projektet samt fundera över vad det är alla validatorer försöker berätta för oss i form av "quality metrics". Detta kommer vi att göra genom att delvis påbörja en kedja av Continous integration (CI) och koppla vårt repo mot externa byggtjänster och låta dem bygga och testa vår kod varje gång vi pushar en ny commit till GitHub/GitLab.
 
 När vi är klara får vi en badge, en liten grön/röd status-bild av bygget, som berättar om kodbygget gick bra eller inte. Vi kan också få badges som ger oss information om hur vacker vår kod är, vilken upplevd kodkvalitet som vi har producerat.
 
@@ -38,9 +31,7 @@ När vi är klara så kommer vi framförallt att bättre förstå innebörden av
 
 
 <!--
-
 Lägg till i dbwebb test så att det kollar om README filen är uppdaterad med länkar till badges.
-
 -->
 
 
@@ -62,14 +53,14 @@ Titta igenom följande föreläsningar.
 Se igenom föreläsningen om den har rätt fokus, gör en uppdatering.
 Knyt ihop med (en uppdaterad variant av) föreläsningen om kvalitetsaspekter på oo programmering.
 
-Förenkla och håll ett fokus kring fyra C:n för att komma igång med kodkvalitet.
+Förenkla och håll ett fokus kring fyra (fem code coverage, sex CRAP) C:n för att komma igång med kodkvalitet.
 * Cyclomatic complexity
 * Cohesion (LCOM)
 * Coupling (Afferent and Efferent)
 * Coverage
 
 Något om CI/CD? Locka till kursen i trean?
-Något om olika typer av buildysystem?
+Något om olika typer av buildsystem?
 -->
 
 
@@ -86,10 +77,6 @@ Läs enligt följande.
 1. När vi pratar automatiserad testning så berör vi områden som benämns CI/CD. Läs snabbt och översiktligt igenom artikeln "[What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)" och försök ta reda på vad termen CD och vad termen CD står för.
 
 1. Bekanta dig snabbt och översiktligt med byggtjänsten [Scrutinizer CI](https://scrutinizer-ci.com/), du kommer använda den i uppgifterna.
-
-<!--
-1. Wikipedia har en översikt om "[Software metric](https://en.wikipedia.org/wiki/Software_metric)" som visar en lista med olika mätvärden som finns för programvara. Kika snabbt på listan för att få en känsla av olika mättal.
--->
 
 
 
@@ -110,13 +97,6 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 1. En guide/övning "[Software Quality Metrics](https://github.com/dbwebb-se/mvc/tree/main/example/metrics)" som visar hur du kan jobba med analys av din kod i Scrutinizer och phpmetrics. Det finns även en videoinspelning där Mikael visar hur du kan jobba med verktygen och de metrics de visar. Det kan vara bra att jobba igenom denna för att få ett par tips inför uppgiften samt att ha mätvärden från fler projekt att relatera till.
 
-<!--
-
-* Artikeln "[Integrera din packagist modul med verktyg för automatisk test och validering](kunskap/integrera-din-packagist-modul-med-verktyg-for-automatisk-test-och-validering)" visar hur man kan integrera en PHP modul eller applikation mot ett par externa bygg och kvalitetstjänster, däribland Travis CI och Scrutinizer CI. Artikeln innehåller även videomaterial. Artikeln har ett par år på nacken men användes senaste hösten 2020 i undervisningen i kursen ramverk1. Du behöver inte utföra det som står i artikeln utan den är mer tänkt som exempel för att visa hur det fungerar så det räcker med att lsäa igenom artikeln och fokusera på Travis och Scrutinizer samt se på de videorna vid behov.
-
-Eventuellt byt ut ovan äldre artikel. Kanske spela in nya videor eller nåt annat...
--->
-
 
 
 ### Uppgifter {#uppgifter}
@@ -134,11 +114,9 @@ PS. Undvik att uppdatera din källkod i `me/report` när du gör de två första
 <!--
 Integrera phpmetrics med phpunit så att man ser en rapport.
 
-Fixa test mot din Symfony Controller och din Symfony Application.
-
 Om test mot databas använd .env.test
 
-.env.scrutinizer
+Om specifikt för Scrutinizer, .env.scrutinizer
 
 CI flöde, GitHub Actions?
 -->

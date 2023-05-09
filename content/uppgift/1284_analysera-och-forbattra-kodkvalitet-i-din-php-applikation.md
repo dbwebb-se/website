@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
+    "2023-05-09": "(C, mos) lade till övning om mättal."
     "2023-05-08": "(B, mos) Genomgången inför vt23."
     "2022-05-02": "(A, mos) Första utgåvan."
 ...
@@ -29,7 +30,19 @@ Introduktion och förberedelse {#intro}
 
 Gör följande steg för att förbereda dig för uppgiften.
 
-Läs på snabbt så du har koll på de sex C:na om kodkvalitet (6C). Du kan se det som 6 steg till snyggare och bättre kod, "clean code".
+
+
+### Övning Software Quality Metrics {#ovn}
+
+Det finns en guide/övning "[Software Quality Metrics](https://github.com/dbwebb-se/mvc/tree/main/example/metrics)" som visar hur du kan jobba med analys av din kod i Scrutinizer och phpmetrics. Det finns även en videoinspelning där Mikael visar hur du kan jobba med verktygen och de metrics de visar.
+
+Det kan vara bra att jobba igenom denna för att få ett par tips inför uppgiften samt att ha mätvärden från fler projekt att relatera till.
+
+
+
+### 6C om kodkvalitet {#6C}
+
+Inför denna uppgiften definierar vi de sex C:na om kodkvalitet (6C). Du kan se det som 6 steg till snyggare och bättre kod, "clean code".
 
 * Codestyle
 * Coverage
@@ -40,9 +53,15 @@ Läs på snabbt så du har koll på de sex C:na om kodkvalitet (6C). Du kan se d
 
 Din undersökning om kodkvalitet på din egen kod kan utgå från dessa "mättal". Men glöm inte bort att det finns fler mättal som kan vara intressanta.
 
-Uppgiften handlar dels om att göra din egen analys av kodkvalitet med hjälp av phpmetrics och Scrutinizer. Därefter skall du identifiera ett antal förbättringsmöjligheter och genomföra dem i din kod. Slutligen analyserar du om och hur dina ändringar påverkade rapporterna från phpmetrics och Scrutinizer. Försök att nå så höga "poäng" som möjligt och så lite varningar som möjligt.
 
-Du bör ha jobbat igenom guide/övning "[Software Quality Metrics](https://github.com/dbwebb-se/mvc/tree/main/example/metrics)" som visar hur du kan jobba med analys av din kod i Scrutinizer och phpmetrics.
+
+### Om uppgiften {#om}
+
+Uppgiften handlar dels om att göra din egen analys av kodkvalitet med hjälp av phpmetrics och Scrutinizer.
+
+Därefter skall du identifiera ett antal förbättringsmöjligheter och genomföra dem i din kod. 
+
+Slutligen analyserar du om och hur dina ändringar påverkade rapporterna från phpmetrics och Scrutinizer. Försök att nå så höga "poäng" som möjligt och så lite varningar som möjligt.
 
 
 
@@ -102,7 +121,9 @@ Se till att köra verktygen i din utvecklingsmiljö så att de hanterar den uppd
 
 1. Dubbelkolla att dina testfall passerar med `composer phpunit`.
 
-1. Generera documentation av din kod med `composer phpdoc`.
+1. Generera dokumentation av din kod med `composer phpdoc`.
+
+1. Generera metrics för din kod `composer metrics`.
 
 
 
@@ -113,6 +134,8 @@ Se till att köra verktygen i din utvecklingsmiljö så att de hanterar den uppd
 1. Kör `dbwebb test kmom06` för att kolla att du inte har några fel.
 
 1. Pusha upp repot till GitHub, inklusive taggarna.
+
+1. Verifiera att Scrutinizer är uppdaterad med senaste versionen av din kod.
 
 1. Gör en `dbwebb publishpure report` och kontrollera att att det fungerar på studentservern.
 

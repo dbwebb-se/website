@@ -2,6 +2,7 @@
 author:
     - mos
 revision:
+    "2023-05-09": "(F, mos) Strukturerade om övning och uppgift."
     "2023-05-08": "(E, mos) Genomgången inför ht23."
     "2022-05-03": "(D, mos) Lade till övning om software metrics."
     "2022-05-02": "(C, mos) Uppdaterad inför vt22 och mvc-v2."
@@ -95,19 +96,17 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. En guide/övning "[Software Quality Metrics](https://github.com/dbwebb-se/mvc/tree/main/example/metrics)" som visar hur du kan jobba med analys av din kod i Scrutinizer och phpmetrics. Det finns även en videoinspelning där Mikael visar hur du kan jobba med verktygen och de metrics de visar. Det kan vara bra att jobba igenom denna för att få ett par tips inför uppgiften samt att ha mätvärden från fler projekt att relatera till.
+**PS**. Undvik att uppdatera din källkod i `me/report` när du gör de två första övningarna. Spara dina eventuella ändringar till sista uppgiften.
+
+1. Det finns en övning "[Quality metrics of your PHP code](https://github.com/dbwebb-se/mvc/tree/main/example/phpmetrics)" i ditt kursrepo under `example/phpmetrics` som hjälper dig att komma igång med att visualisera mätvärden för din kod som kan ange och indikera en viss nivå av kvalitet för din kod.
+
+1. Det finns en övning "[Integrate your repo with Scrutinizer](https://github.com/dbwebb-se/mvc/tree/main/example/scrutinizer)" i ditt kursrepo under `example/scrutinizer` som hjälper dig att integrera ditt repo med den externa byggtjänsten Scrutinizer.
 
 
 
 ### Uppgifter {#uppgifter}
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
-
-PS. Undvik att uppdatera din källkod i `me/report` när du gör de två första övningarna. Spara dina eventuella ändringar till sista uppgiften.
-
-1. Det finns en övning "[Quality metrics of your PHP code](https://github.com/dbwebb-se/mvc/tree/main/example/phpmetrics)" i ditt kursrepo under `example/phpmetrics` som hjälper dig att komma igång med att visualisera mätvärden för din kod som kan ange och indikera en viss nivå av kvalitet för din kod.
-
-1. Det finns en övning "[Integrate your repo with Scrutinizer](https://github.com/dbwebb-se/mvc/tree/main/example/scrutinizer)" i ditt kursrepo under `example/scrutinizer` som hjälper dig att integrera ditt repo med den externa byggtjänsten Scrutinizer.
 
 1. Utför uppgiften "[Analysera och förbättra kodkvalitet i din PHP applikation](uppgift/analysera-och-forbattra-kodkvalitet-i-din-php-applikation)" och jobba mot ditt `me/report`.
 

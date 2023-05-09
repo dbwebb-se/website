@@ -121,7 +121,7 @@ Detta kravet är OPTIONELLT och du gör det om du har tid, energi och lust. Du k
 
 1. Dubbelkolla att dina testfall passerar med `composer phpunit`.
 
-1. Generera documentation av din kod med `composer phpdoc`.
+1. Generera dokumentation av din kod med `composer phpdoc`.
 
 
 

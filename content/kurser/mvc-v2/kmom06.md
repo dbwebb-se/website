@@ -111,8 +111,6 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 1. Utför uppgiften "[Analysera och förbättra kodkvalitet i din PHP applikation](uppgift/analysera-och-forbattra-kodkvalitet-i-din-php-applikation)" och jobba mot ditt `me/report`.
 
 <!--
-Integrera phpmetrics med phpunit så att man ser en rapport.
-
 Om test mot databas använd .env.test
 
 Om specifikt för Scrutinizer, .env.scrutinizer

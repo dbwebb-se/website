@@ -78,6 +78,8 @@ Kraven är uppdelade i sektioner.
 Samla rå mätdata som en deluppgift
 
 Fixa så att phpunit kan integreras med phpmetrics
+
+* Använd CRAP score från phpmetrics som en input till rapporten
 -->
 
 1. Skapa en landningssida `metrics/` för din "Metrics analys" som handlar om kodkvalitet och hur man kan jobba med "Clean code". Placera landningssidan i din navbar. Du skriver din rapport direkt i landningssidan.
@@ -87,6 +89,12 @@ Fixa så att phpunit kan integreras med phpmetrics
 1. Skapa en rubrik "Phpmetrics" och analysera dess rapport för din kod. Använd mätvärdena för att hitta flaskhalsar och svaga punkter i din kod (minst 3 stycken). Du vill hitta kod som har förbättringspotential. Visualisera med någon representativ bild från rapporten.
 
 1. Skapa en rubrik "Scrutinizer" och analysera dess rapport för din kod. Gör på samma sätt som du gjorde med Phpmetrics.
+
+<!--
+1. CRAP score från phpunit.
+
+1. Visualisera mätdata, välj vilka.
+-->
 
 1. I ovan analys så kopplar du dina "findings" till 6C. Använd gärna något ytterligare mättal som du finner relevant och intressant.
 

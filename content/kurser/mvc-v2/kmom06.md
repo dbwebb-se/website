@@ -102,6 +102,14 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 1. Det finns en övning "[Integrate your repo with Scrutinizer](https://github.com/dbwebb-se/mvc/tree/main/example/scrutinizer)" i ditt kursrepo under `example/scrutinizer` som hjälper dig att integrera ditt repo med den externa byggtjänsten Scrutinizer.
 
+<!--
+CI flöde, GitHub Actions?
+
+Fundera igenom flödet och undervisa i CI.
+
+Exempelrepo https://github.com/mosbth/mvc-metrics
+-->
+
 
 
 ### Uppgifter {#uppgifter}
@@ -109,14 +117,6 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
 1. Utför uppgiften "[Analysera och förbättra kodkvalitet i din PHP applikation](uppgift/analysera-och-forbattra-kodkvalitet-i-din-php-applikation)" och jobba mot ditt `me/report`.
-
-<!--
-Om test mot databas använd .env.test
-
-Om specifikt för Scrutinizer, .env.scrutinizer
-
-CI flöde, GitHub Actions?
--->
 
 
 

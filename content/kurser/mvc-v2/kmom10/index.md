@@ -29,25 +29,12 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmoment 07/10 i storleksordningen 20--40 studietimmar.
 
-<!--stop-->
 <!--more-->
 
 <!--
-* Rensa upp, städa, förenkla, förtydliga.
-* Någon uppgift som innebär mycket programmering och mindre databas?
-* Visa upp hur adventurespelet kan fungera?
-* Lägre betyg på hållbarhet eller lägg till någon del som kan ligga i databasen
-
-* Gör projekt som är helt nytt, istället för att bygga på de luddiga kmomen?
-
-* Bokningssystem? Flyg, hotell?
-* Blog, forum?
-
-* Databas med återställning
-* Inloggning?
-
-* Om hållbarhet, gör mer krav på presentation med grader och referenser.
-    * Mer routes so det blir mer MVC.
+* Borde lösas inuti kmom, ev som extrauppgift
+    * Databas med återställning
+    * Inloggning?
 -->
 
 
@@ -77,10 +64,10 @@ Du skall fortsätta bygga vidare på din kodbas i `me/report` och där lägger d
 
 Du behöver göra ett aktivt val om vilket projekt du vill utveckla. Här är förslagen till projektidéer.
 
-* Casino med kortspel (poker)
-* Äventyrsspel (adventure)
-* Visualisera indikatorer för hållbarhet (sustainability)
-* Eget fokus (eget)
+* [Visualisera indikatorer för hållbarhet](./sustainability)
+* [Casino med kortspel](./poker)
+* [Äventyrsspel](./adventure)
+* [Eget fokus](./eget-fokus)
 
 Tänk till så att du inte väljer ett alltför stort och komplext projekt som tar alltför mycket tid. Välj ett projekt där du kan slutföra grundkraven inom 20-40h beroende på din ambitionsnivå.
 
@@ -128,65 +115,45 @@ Din nya webbplats skall minst uppfylla följande krav.
     * Generera metrics med phpmetrics.
 
 
-* Din about-sida skall innehålla en summering där du berättar om projektets kodkvalitet. Berätta vilka eventuella åtgärder du gjort för att kvalitetssäkra projektet och hur du jobbat med kodkvaliteten och vilka verktyg du använt. Har du fokuserat på några speciella saker, verktyg eller metrics, så kan du berätta om dem.
 
-
-Krav 4: Snygg kod (optionellt) {#k4}
+Krav 4: ORM (optionellt) {#k4}
 --------------------------------------------------------------------
 
-* Din webbplats skall använda databas via ORM.
+1. Din webbplats skall använda databas via ORM.
+
+1. Din databas måste innehålla minst två tabeller.
+
+1. Skapa en sida `proj/about/database`, och lägg till
+
+    1. En bild på ett ER diagram av tabellerna.
+    1. För varje tabell beskriv i en mening vad som sparas i tabellen.
+    1. Förklara hur du löste eventuella relationer mellan tabellerna.
+
+1. Berätta med egna ord (cirka 10-15 meningar) om hur du ser på fördelar, nackdelar, likheter och skillnader mellan ORM och sättet vi jobbade i databaskursen.
+
+1. Från din sida `proj/about`, lägg till en länk till `proj/about/database`.
 
 
-enhetstestning
-inloggning
+
+Krav 5: Valfritt 1 (optionellt) {#k5}
+--------------------------------------------------------------------
+
+**Arbete pågår**
+
+
+
+Krav 6: Valfritt 2 (optionellt) {#k6}
+--------------------------------------------------------------------
+
+**Arbete pågår**
+
+
+
+<!--
 snygg kod
-databas
+inloggning
 
-
-dokumentera om databasen och berätta om skillnader mellan orm och databaskursen.
-
-
-
-Krav 5: Inloggning (optionellt) {#k5}
---------------------------------------------------------------------
-
-<!--
-Ditt projekt skall innehålla en möjlighet att logga in. Man skall kunna logga in med följande två användare.
-
-* akronym doe, lösenord doe
-* akronym admin, lösenord admin
-
-En användare kan ha en roll som vanlig användare eller som administratör.
-
-Användaren doe är en vanlig användare som inte har tillgång till administratörsfunktioner.
-
-Användaren admin har tillgång till administratörsfunktioner.
-
-Användare har en profilsida med detaljer om användaren. Någon av detaljerna skall kunna redigeras av användaren.
-
-En användare skall ha en profilbild som användaren själv kan byta länken till.
-
-Man skall kunna registrera en ny användare genom att ange en akronym och ett lösenord.
-
-När administratören är inloggad kan den se en översikt av samtliga användare i databasen. Administratören kan även lägga till, uppdatera och ta bort en användare.
--->
-
-
-
-Krav 6: ORM (optionellt) {#k6}
---------------------------------------------------------------------
-
-<!--
-Du har valt att göra en större databas där du har minst två tabeller som har en relation mellan varandra. Du har alltså minst två tabeller som behöver joinas.
-
-Du använder ORM för att jobba mot tabellerna.
-
-Du kan använda SQL för att joina eller så lär du dig mer om Symfony och Doctrine och "[How to Work with Doctrine Associations / Relations](https://symfony.com/doc/current/doctrine/associations.html)".
-
-Du har även gjort ett logiskt ER-diagram över din databas och sparat som en bild.
-
-* I din about-sida, skriv ett stycke "ORM" och lista vilka tabeller du har och ge en beskrivning av dina tabeller (en rad räcker). Berätta även vilka tabeller som är kopplade (har en relation).
-* Inkludera och visa bilden på ditt ER diagram.
+* Din about-sida skall innehålla en summering där du berättar om projektets kodkvalitet. Berätta vilka eventuella åtgärder du gjort för att kvalitetssäkra projektet och hur du jobbat med kodkvaliteten och vilka verktyg du använt. Har du fokuserat på några speciella saker, verktyg eller metrics, så kan du berätta om dem.
 -->
 
 

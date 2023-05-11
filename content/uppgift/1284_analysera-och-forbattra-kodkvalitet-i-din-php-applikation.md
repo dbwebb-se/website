@@ -80,6 +80,11 @@ Samla rå mätdata som en deluppgift
 Fixa så att phpunit kan integreras med phpmetrics
 
 * Använd CRAP score från phpmetrics som en input till rapporten
+
+1. CRAP score från phpunit.
+
+1. Visualisera mätdata, välj vilka.
+
 -->
 
 1. Skapa en landningssida `metrics/` för din "Metrics analys" som handlar om kodkvalitet och hur man kan jobba med "Clean code". Placera landningssidan i din navbar. Du skriver din rapport direkt i landningssidan.
@@ -92,13 +97,6 @@ Fixa så att phpunit kan integreras med phpmetrics
 
     1. Inkludera klickbara Scrutinizer badges i din rapport för build, coverage och quality.
     1. Placera samma badges i din REAEME.md.
-
-<!--
-1. CRAP score från phpunit.
-
-1. Visualisera mätdata, välj vilka.
-
--->
 
 1. I ovan analys så kopplar du dina "findings" till 6C. Använd gärna något ytterligare mättal som du finner relevant och intressant.
 

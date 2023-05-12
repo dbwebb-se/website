@@ -12,7 +12,7 @@ Casino med kortspel (poker)
 
 **Uppdatering sker inför kursrundan vt23**
 
-Texten i uppgiften är under översyn och uppdateras inför tisdagen den 15/5-23.
+Texten i uppgiften är under översyn och uppdateras inför tisdagen den 16/5-23.
 
 [/WARNING]
 

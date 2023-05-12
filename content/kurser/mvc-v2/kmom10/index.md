@@ -8,16 +8,6 @@ revision:
 Kmom07/10: Projekt och examination
 ==================================
 
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Kursmomentet är under översyn och uppdatering inför kommande kursomgång.
-
-Strukturen för projektet/examinationen kommer att uppdateras inför vt23.
-
-[/WARNING]
-
 Detta kursmoment avslutar och examinerar kursen.
 
 Alla delar i detta kursmoment skall utföras individuellt och självständigt.
@@ -128,8 +118,11 @@ Krav 4: ORM (optionellt) {#k4}
     1. En bild på ett ER diagram av tabellerna.
     1. För varje tabell beskriv i en mening vad som sparas i tabellen.
     1. Förklara hur du löste eventuella relationer mellan tabellerna.
+    1. Berätta om du använde SQLite eller någon annan databas.
+    1. Berätta om du gjorde enhetstester mot databasen.
+        * Berätta om/hur du lyckades med enhetstester på Scrutinizer med databasen.
 
-1. Berätta med egna ord (cirka 10-15 meningar) om hur du ser på fördelar, nackdelar, likheter och skillnader mellan ORM och sättet vi jobbade i databaskursen.
+1. Berätta med egna ord (cirka 15 meningar) om hur du ser på fördelar, nackdelar, likheter och skillnader mellan ORM och det sätt vi jobbade med databasen i databaskursen.
 
 1. Från din sida `proj/about`, lägg till en länk till `proj/about/database`.
 

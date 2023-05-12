@@ -8,6 +8,14 @@ revision:
 Äventyrsspel (adventure)
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Texten i uppgiften är under översyn och uppdateras inför tisdagen den 15/5-23.
+
+[/WARNING]
+
 Ett klassiskt äventyrsspel, så som jag tänker mig det i denna uppgiften, är ett spel där man börjar i ett rum och en bild visas. I rummet kan man ta saker och lägga i sin ryggsäck, man kan peta på saker i rummet och något kan hända eller visa sig. Man kan förflytta sig åt öster, väster, norr och söder, förutsatt att det finns öppningar åt de hållen.
 
 Målet är att ta sig till sista rummet och ha med sig någon viktig sak man kan använda för att nå till skatten/målet.

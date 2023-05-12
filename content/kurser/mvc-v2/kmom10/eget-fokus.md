@@ -8,6 +8,14 @@ revision:
 Eget fokus
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Texten i uppgiften är under översyn och uppdateras inför tisdagen den 15/5-23.
+
+[/WARNING]
+
 Du har en helt egen idé om vad du vill göra som projekt. Ok, kör på det. Men du måste börja med att skriva ner din projektidé i text, ungefär som är gjort ovan, och du bör (inget krav) visa texten för en lärare innan du sätter igång och kodar loss.
 
 Ditt projekt måste omfatta någon form av databas och ORM.

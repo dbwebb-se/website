@@ -8,6 +8,14 @@ revision:
 Casino med kortspel (poker)
 ==================================
 
+[WARNING]
+
+**Uppdatering sker inför kursrundan vt23**
+
+Texten i uppgiften är under översyn och uppdateras inför tisdagen den 15/5-23.
+
+[/WARNING]
+
 Gör en webbplats där du kan spela poker om låtsaspengar. Du kan välja mellan följande olika upplägg på poker.
 
 Utmaningen i denna uppgiften är att bestämma vilken hand man har och om den handen vinner över motspelaren. Det bör bli en del logiskt kodande kring det och där kan man ha nytta av enhetstester.

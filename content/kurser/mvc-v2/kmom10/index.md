@@ -29,14 +29,12 @@ Totalt omfattar kursmoment 07/10 i storleksordningen 20--40 studietimmar.
 
 
 
-<!--
 Introduktion {#pres}
 ------------------------
 
 Här är en video som "pratar" dig igenom projektets upplägg och delar av innehållet i detta dokumentet.
 
-[YOUTUBE src="LiYCu1Pf3fM" width=700 caption="Kmom10 - Introduktion till projektet."]
--->
+[YOUTUBE src="K8wyu6P0qmw" width=700 caption="Kmom10 - Introduktion till projektet."]
 
 
 

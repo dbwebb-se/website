@@ -2,7 +2,7 @@
 author:
     - mos
 revision:
-    "2023-05-11": "(B, mos) Uppdaterad inför vt23."
+    "2023-05-16": "(B, mos) Uppdaterad inför vt23."
     "2022-05-06": "(A, mos) Första utgåvan mvc-v2."
 ...
 Kmom07/10: Projekt och examination
@@ -55,13 +55,13 @@ Du skall fortsätta bygga vidare på din kodbas i `me/report` och där lägger d
 Du behöver göra ett aktivt val om vilket projekt du vill utveckla. Här är förslagen till projektidéer.
 
 * [Visualisera indikatorer för hållbarhet](./sustainability)
-* [Casino med kortspel](./poker)
+* [Kortspel (poker/black jack)](./poker)
 * [Äventyrsspel](./adventure)
 * [Eget fokus](./eget-fokus)
 
 Tänk till så att du inte väljer ett alltför stort och komplext projekt som tar alltför mycket tid. Välj ett projekt där du kan slutföra grundkraven inom 20-40h beroende på din ambitionsnivå.
 
-Letar du efter enklaste projektet så är det troligen "sustainability" projektet.
+Letar du efter enklaste projektet så är det troligen "sustainability" projektet alternativt en enklare variant av kortspel.
 
 
 
@@ -106,7 +106,18 @@ Din nya webbplats skall minst uppfylla följande krav.
 
 
 
-Krav 4: ORM (optionellt) {#k4}
+Krav 4: JSON API (optionellt) {#k4}
+--------------------------------------------------------------------
+
+1. Skapa ett JSON API till dit projekt och presentera det i sidan `proj/api`. 
+
+1. Skapa minst 5 olika JSON routes varav minst en skall vara en POST route.
+
+1. I sidan skall man kunna klicka på samtliga länkar/knappar för att testa ditt API.
+
+
+
+Krav 5: ORM (optionellt) {#k5}
 --------------------------------------------------------------------
 
 1. Din webbplats skall använda databas via ORM.
@@ -128,26 +139,18 @@ Krav 4: ORM (optionellt) {#k4}
 
 
 
-Krav 5: Valfritt 1 (optionellt) {#k5}
+Krav 6: Avancerade features (optionellt) {#k6}
 --------------------------------------------------------------------
 
-**Arbete pågår**
+Förutsatt att du har uppfyllt krav 4 och krav 5 så kan du även uppfylla krav 6 genom att själv beskriva och lyfta fram 3-5 features/saker som du anser har varit extra svåra och utmanade att lösa i ditt projekt.
 
+Kanske är det saker som är tidskrävande eller så är det saker som varit utmanande att lösa rent tankemässigt.
 
+Det handlar alltså om att beskriva de saker som du gjort förutom baskraven. Du väljer själv vilka delar du anser värda att ta upp.
 
-Krav 6: Valfritt 2 (optionellt) {#k6}
---------------------------------------------------------------------
+Välj saker som tydligt kan betraktas att vara utanför ramen för baskraven och för varje sak du lyfter fram så skriver du ett kort textstycke om varför du anser att detta bör räknas in i detta sista optionella krav.
 
-**Arbete pågår**
-
-
-
-<!--
-snygg kod
-inloggning
-
-* Din about-sida skall innehålla en summering där du berättar om projektets kodkvalitet. Berätta vilka eventuella åtgärder du gjort för att kvalitetssäkra projektet och hur du jobbat med kodkvaliteten och vilka verktyg du använt. Har du fokuserat på några speciella saker, verktyg eller metrics, så kan du berätta om dem.
--->
+Rättaren gör en bedömning, baserad på din text, om din insats är värd 0, 5 eller 10 poäng. Rättaren väger troligen ockå in det allmänna tillståndet på din lösning och kan eventuellt väga in den bedömda svårighetsnivån.
 
 
 

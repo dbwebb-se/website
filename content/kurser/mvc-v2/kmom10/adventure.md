@@ -2,19 +2,11 @@
 author:
     - mos
 revision:
-    "2023-05-11": "(B, mos) Uppdaterad inför vt23."
+    "2023-05-16": "(B, mos) Uppdaterad inför vt23."
     "2022-05-06": "(A, mos) Första utgåvan mvc-v2."
 ...
 Äventyrsspel (adventure)
 ==================================
-
-[WARNING]
-
-**Uppdatering sker inför kursrundan vt23**
-
-Texten i uppgiften är under översyn och uppdateras inför tisdagen den 16/5-23.
-
-[/WARNING]
 
 Ett klassiskt äventyrsspel, så som jag tänker mig det i denna uppgiften, är ett spel där man börjar i ett rum och en bild visas. I rummet kan man ta saker och lägga i sin ryggsäck, man kan peta på saker i rummet och något kan hända eller visa sig. Man kan förflytta sig åt öster, väster, norr och söder, förutsatt att det finns öppningar åt de hållen.
 
@@ -26,6 +18,23 @@ Här är utmaningen att göra en bra struktur bakom spelet så att man kan lägg
 
 Håll det enkelt. Visa en bild för varje rum, implementera ryggsäck där man kan ta med sig saker, implementera att man kan navigera mellan rummen och se dolda saker genom att agera med dem, eventuellt via något man har i sin ryggsäck.
 
-Spelet kan var 3-5 rum stort (inte större) och det måste finnas en fusklapp som visar läraren hur man spelar igenom spelet snabbaste vägen.
+Spelet kan var 3-5 rum stort (inte större) och det måste finnas en fusklapp som visar läraren hur man spelar igenom spelet snabbaste vägen. Länka till fusklappen från landningssidan.
 
-Här finns en lista med "[Top 100 All-Time Adventure Games](https://adventuregamers.com/articles/view/18643)" och kanske känner du igen något spel där. Ett spel jag själv växte upp med var första varianterna av Larry. Men jag kom aldrig i mål.
+<!--
+Förslag till optionella delar kan vara följande:
+
+* 
+-->
+
+
+
+Exempel på adventure spel {#tips}
+----------------------------------
+
+Här finns en lista med "[Top 100 All-Time Adventure Games](https://adventuregamers.com/articles/view/18643)" och kanske känner du igen något spel där. 
+
+Så här kunde ett adventure game se ut förr i tiden.
+
+[FIGURE src="img/kurs/mvc/adventure_game1.jpg"]
+
+[FIGURE src="img/kurs/mvc/adventure_game2.png"]

@@ -8,30 +8,30 @@ views:
         data:
             src: "image/tema/trad/tree2.jpg?w=1100&h=400&a=10,0,0,0&cf"
 
-    columns-above-1:
-        region: columns-above
-        template: default/columns
-        sort: 1
-        data:
-            class: col3
-            meta:
-                type: columns
-                columns:
-                    column-1:
-                        data:
-                            meta:
-                                type: content
-                                route: block/home/bth-webbprogrammering
-                    column-2:
-                        data:
-                            meta:
-                                type: content
-                                route: kurser/block-kurser
-                    column-3:
-                        data:
-                            meta:
-                                type: content
-                                route: block/home/aktuellt-top
+    # columns-above-1:
+    #     region: columns-above
+    #     template: default/columns
+    #     sort: 1
+    #     data:
+    #         class: col3
+    #         meta:
+    #             type: columns
+    #             columns:
+    #                 column-1:
+    #                     data:
+    #                         meta:
+    #                             type: content
+    #                             route: block/home/bth-webbprogrammering
+    #                 column-2:
+    #                     data:
+    #                         meta:
+    #                             type: content
+    #                             route: kurser/block-kurser
+    #                 column-3:
+    #                     data:
+    #                         meta:
+    #                             type: content
+    #                             route: block/home/aktuellt-top
 
     columns-above-2:
         region: columns-above

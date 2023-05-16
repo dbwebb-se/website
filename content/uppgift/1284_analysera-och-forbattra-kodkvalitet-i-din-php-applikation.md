@@ -96,7 +96,7 @@ Fixa så att phpunit kan integreras med phpmetrics
 1. Skapa en rubrik "Scrutinizer" och analysera dess rapport för din kod. Gör på samma sätt som du gjorde med Phpmetrics.
 
     1. Inkludera klickbara Scrutinizer badges i din rapport för build, coverage och quality.
-    1. Placera samma badges i din REAEME.md.
+    1. Placera samma badges i din README.md.
 
 1. I ovan analys så kopplar du dina "findings" till 6C. Använd gärna något ytterligare mättal som du finner relevant och intressant.
 

@@ -114,7 +114,7 @@ I Canvas skriv följande:
 
 
 
-### Presentation
+### Presentation {#presentation}
 
 **Alla:** Spela in en kort video där du visar kod och berättar om de tekniska implementationerna du gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
 

@@ -51,9 +51,8 @@ I Canvas skriv följande:
 
 ### Presentation
 
-**Distansstudenter:** Spela in en kort video där du visar kod och berättar om de tekniska implementationerna du gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
+**Alla:** Spela in en kort video där du visar kod och berättar om de tekniska implementationerna du gjorde i den individuella examinationen. Lägg till en länk till videon i redovisningstexten på inlämningen på Canvas.
 
-**Campusstudenter:** Redovisar tillsammans i sal vid ett tillfälle som annonseras här, på Canvas och i Dsicord.
 
 
 [INFO]
@@ -62,5 +61,6 @@ Se till att göra en `dbwebb update` innan `dbwebb publish me` så du får senas
 
 ```bash
 # Ställ dig i kursrepot
+dbwebb update
 dbwebb publish me
 ```

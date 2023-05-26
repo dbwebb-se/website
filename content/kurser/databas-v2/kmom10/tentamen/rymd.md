@@ -137,7 +137,7 @@ Bygg en webbklient.
 
 1. Ditt terminalprogram skall fungera som en oändlig kommandoloop där man kan skriva in kommandon som programmet utför. Det skall finnas ett kommando `menu` som visar menyn med samtliga kommandon. När man skriver kommandot `exit` skall programmet avslutas.
 
-1. Skapa kommandot `visa` som visar samma rapporter som kan ses i webbklienten via länken `/exam/visa`. Exkludera dock webblänkarna från rapporten så att utskriften blir lite snyggare i terminalklienten.
+1. Skapa kommandot `visa` som visar samma rapport som kan ses i webbklienten via länken `/exam/visa`. Exkludera dock webblänkar från rapporten så att utskriften blir lite snyggare i terminalklienten.
 
 1. Lägg till kommandot så det syns när man kör `menu`.
 
@@ -168,9 +168,9 @@ Uppgift 2 (5p) {#u2}
 
 Chefen kommer förbi och hävdar bestämt att det behövs en sökfunktion i ditt verktyg.
 
-Man skall kunna söka på delsträngar i kraftverkens id, namn, plats och källa samt på konsumenternas id, namn, ort och källa.
+Man skall kunna söka på delsträngar i sattelitens id, namn, plats och massa samt på fenomen (id, namn) och problem (id, namn).
 
-1. I webbklienten, skapa routen `exam/search` där man i ett formulär kan ange en söksträng. Visa samma rapporter som du skapade tidigare, men visa enbart de rader som matchar söksträngen.
+1. I webbklienten, skapa routen `exam/search` där man i ett formulär kan ange en söksträng. Visa samma rapport som du skapade tidigare, men visa enbart de rader som matchar söksträngen.
 
 1. Lägg till länken i navbaren.
 

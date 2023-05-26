@@ -168,7 +168,7 @@ Uppgift 2 (5p) {#u2}
 
 Chefen kommer förbi och hävdar bestämt att det behövs en sökfunktion i ditt verktyg.
 
-Man skall kunna söka på delsträngar i sattelitens id, namn, plats och massa samt på fenomen (id, namn) och problem (id, namn).
+Man skall kunna söka på delsträngar i satellitens id, namn, plats och massa samt på fenomen (id, namn) och problem (id, namn).
 
 1. I webbklienten, skapa routen `exam/search` där man i ett formulär kan ange en söksträng. Visa samma rapport som du skapade tidigare, men visa enbart de rader som matchar söksträngen.
 

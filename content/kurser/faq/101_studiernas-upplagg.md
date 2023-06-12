@@ -37,6 +37,8 @@ Sista kmomet brukar heta kmom07/10 och är kursens examination som kan vara proj
 
 Ofta är inlämnignar individuella men det förekommer också grupparbeten. Det kan hända att man kan välja att jobba själv när det är grupparbeten.
 
+[YOUTUBE src=SJU0URQYXf4 width=630 caption="Emil om hur du som student kan tänka när du tar dig an ett kmom."]
+
 
 
 Veckoschema {#vschema}
@@ -59,6 +61,8 @@ Genomgångar och föreläsningar brukar hållas i verktyg likt Zoom eller stream
 Träffarna är normalt sett inte obligatoriska och man kan därför ta del av undervisningsmaterialet i efterhand.
 
 Det finns möjlighet att chatta med lärare på bestämda tider och ibland svaras det även utanför dessa schemalagda tider.
+
+[YOUTUBE src=gfshD_jUiwA width=630 caption="Emil pratar om hur vi rekommenderar att ni lägger upp tiden."]
 
 
 

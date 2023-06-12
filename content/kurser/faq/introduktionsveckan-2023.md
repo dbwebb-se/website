@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-06-12": "(G, mos) Kopia och uppdaterad inför ht23."
     "2022-08-22": "(F, mos) Video från måndagen."
     "2022-08-16": "(E, mos) Kopia och uppdaterad inför ht22."
     "2021-08-17": "(D, mos) Lade till checklista."
@@ -8,7 +9,7 @@ revision:
     "2020-08-04": "(B, mos) Uppdaterad inför ht20."
     "2020-06-22": "(A, mos) Ny inför ht20."
 ...
-Introduktionsveckan 2022
+Introduktionsveckan 2023
 ==================================
 
 Introduktionsveckan är för nya studenter på program och kurspaket och syftar till att ge en extra vecka, innan normal terminsstart, då man kan komma igång med studier och bekanta sig med studiemiljön vid BTH. Välkomsthälsningar, kursstarter och studiesociala aktiviteter blandas med varandra.
@@ -35,14 +36,18 @@ Välkommen till introveckan {#valkommen}
 
 Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokumentet och det som händer i introveckan. Pratar han långsamt så speedar du upp honom till 1,5 gånger hastigheten via inställningarna i YouTube.
 
+*Video kommer i augusti.*
+
+<!--
 [YOUTUBE src="BQJpFvQ9Ers" width=700 caption="Mikael hälsar välkommen till introveckan 2022."]
+-->
 
 
 
 Välkomstvideor {#valvideo}
 -----------------------------------
 
-Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2022](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-vHNbYP4U80rpyvtpxX5Cr)". Kika igenom den serien för lite tips och trix inför terminsstarten.
+Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-vHNbYP4U80rpyvtpxX5Cr)". Kika igenom den serien för lite tips och trix inför terminsstarten.
 
 
 
@@ -68,7 +73,7 @@ Introduktionsveckan sker på campus för campusprogrammet och på distans för �
 Vad lär vi oss under introveckan? {#lara}
 -----------------------------------
 
-Under introveckan kommer det vara allmän info och fokus på att installera labbmiljön som används i kurserna. Det handlar främst om att komma igång med labbmiljön i kmom01 (kmom = kursmoment) i kurserna python och webtec.
+Under introveckan kommer det presenteras allmän info och fokus är på att installera labbmiljön som används i kurserna. Det handlar främst om att komma igång med labbmiljön i kmom01 (kmom = kursmoment) i kurserna python och webtec.
 
 * [python/kmom01/labbmiljö](/kurser/python/labbmiljo)
 * [webtec/kmom01/labbmiljö](/kurser/webtec/labbmiljo)
@@ -82,6 +87,7 @@ Informationsmaterial {#infomat}
 
 Här är ett dokument som är bra att kika igenom som ny student.
 
+<!-- Bör uppdateras till 2023 -->
 * [Så här funkar det på BTH](https://drive.google.com/file/d/1BV_raNJQle24M36f9c2xhNVxjNAgpkpu/view?usp=sharing)
 
 <!--
@@ -97,7 +103,7 @@ Upprop online {#upprop}
 
 För att erbjuda flexibilitet så kan ni utföra uppropen per distans via följande formulär. Det gör att ni som har jobb inte behöver ta ledigt för att delta i ett formellt upprop ett bestämt klockslag under introveckan.
 
-Här är [formulär där du kan göra upprop till din utbildning](https://forms.gle/sQzfDqSXhmhqZMbLA).
+Här är [formulär där du kan göra upprop till din utbildning](https://forms.gle/CeS1TC3WbjTRNQN69).
 
 <!--
 * [Gör upprop Webbprogrammering 180hp campus](https://forms.gle/4sMUaw3eTWP48JhB7)
@@ -121,13 +127,19 @@ Här följer en planering för introveckans aktiviteter.
 
 Veckan börjar kl 09-10 med "Rektorns välkomsttal" utomhus utanför hus J och det [kan följas via zoom](https://bth.zoom.us/j/69647412076).
 
-På campus håller Kenneth en träff och frågestund med campusstudenterna kl 10-11 i salen J1360.
+På campus håller biträdande programansvarig Kenneth Lewenhagen en träff och frågestund med campusstudenterna kl 10-11 i salen J1360.
 
-För distansstudenter håller Mikael en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337) under samma tid ([spelades in](https://www.youtube.com/watch?v=yMTUDvTHsfE&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)).
+För distansstudenter håller Mikael en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337) under samma tid. <!-- ([spelades in](https://www.youtube.com/watch?v=yMTUDvTHsfE&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)). -->
 
-Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. [Stödfunktionerna har spelat in en video för att presentera sig och sin verksamhet](https://www.youtube.com/watch?v=SSQDHLdJHbM&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=3).
+Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. 
 
+<!--
+[Stödfunktionerna har spelat in en video för att presentera sig och sin verksamhet](https://www.youtube.com/watch?v=SSQDHLdJHbM&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=3).
+-->
+
+<!--
 Efter lunch mellan 13-14 följer en "Högskoleintro (svensk version)" i Multisal J1504 ([zoom](https://bth.zoom.us/j/66718402136)).
+-->
 
 
 
@@ -154,13 +166,13 @@ PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den 
 | 25/8 Tor | grm, mos | 10-11 | webtec | Skapa webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
 | 25/8 Tor | grm, mos | 11-12 | webtec | Publicera webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
 
-Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2022](https://www.youtube.com/playlist?list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)".
+Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_WleXainMoaxfhsIBgVvQo)".
 
 
 
 ### Fredag: Campusvandring {#campusvandring}
 
-På fredag kan du följa med Kenneth och Andreas och kanske Emil på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor.
+På fredag kan du följa med Kenneth på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor.
 
 Samling receptionen, hus A, även kallad "badtunnan".
 

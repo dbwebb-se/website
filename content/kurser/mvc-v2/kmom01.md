@@ -40,6 +40,13 @@ Vi skall också börja lära oss om grunderna med objektorientering och dess kon
 * Visa hur man får in SASS.
 * Inkludera Fetch GET på klientsidan för någon form av fusk?
 
+* Fokus på README från början.
+* GitHub Actions
+
+* Sikta mot Casino och player med betting
+* Jobba mot Roulette, som ett alternativ till tärning.
+* Jobba mot tärningsspel Craps:
+https://en.wikipedia.org/wiki/Craps
 -->
 
 

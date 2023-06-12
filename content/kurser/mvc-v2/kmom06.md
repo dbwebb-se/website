@@ -32,7 +32,10 @@ När vi är klara så kommer vi framförallt att bättre förstå innebörden av
 
 
 <!--
-Lägg till i dbwebb test så att det kollar om README filen är uppdaterad med länkar till badges.
+* Lägg till i dbwebb test så att det kollar om README filen är uppdaterad med länkar till badges.
+
+Uppdatera scruti med npm i och npm run build.
+
 -->
 
 

@@ -166,7 +166,7 @@ PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den 
 | 25/8 Tor | grm, mos | 10-11 | webtec | Skapa webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
 | 25/8 Tor | grm, mos | 11-12 | webtec | Publicera webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
 
-Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_WleXainMoaxfhsIBgVvQo)".
+Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce85z_kwufc2WndLdeqeP9ej)".
 
 
 

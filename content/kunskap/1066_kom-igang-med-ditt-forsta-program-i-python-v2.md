@@ -6,6 +6,7 @@ author:
 category:
     - python
 revision:
+    "2023-06-14": (I, aar) Bytte Atom till VSCode.
     "2022-08-24": (H, aar) Bytte mapp kmom01/hello till kmom01/plane. Då validering är avstängt för hello.
     "2019-05-24": (G, efo) La till visualiseringsverktyg.
     "2018-06-29": (F, aar) Uppdaterade mappstruktur mot kursrepo.
@@ -112,12 +113,12 @@ När du jobbar i terminalen kommer du att flytta runt bland katalogerna en del. 
 
 ```bash
 # Gå till ditt kursrepo python
-$ atom .
+$ code .
 ```
 
-Kommandot ovan startar texteditorn Atom och använder `.` (den katalogen du står i) som nuvarande arbetskatalog.
+Kommandot ovan startar texteditorn VSCode och använder `.` (den katalogen du står i) som nuvarande arbetskatalog.
 
-Det kan vara en bra idé att alltid starta editorn på detta sätt, från rooten av kursrepot. Det finns nämligen en del konfigurationsfiler som ligger i rooten av kursrepot. De kommer att användas av Atoms pluginer, lite längre fram i kursen. När du öppnar editorn i rooten av kursrepot, så får Atom tillgång till dem.
+Det kan vara en bra idé att alltid starta editorn på detta sätt, från rooten av kursrepot. Det finns nämligen en del konfigurationsfiler som ligger i rooten av kursrepot. De kommer att användas av VSCode's pluginer, lite längre fram i kursen. När du öppnar editorn i rooten av kursrepot, så får VSCode tillgång till dem.
 
 Du kan nu redigera exempelprogrammet och lägga till en utskrift av ditt eget namn. Sedan kan du pröva att lägga till lite ASCII art (bilder gjorda med ASCII-tecken) och skriva ut det. Bild-googla "ASCII art" så hittar du exempel på bilder du kan använda.
 

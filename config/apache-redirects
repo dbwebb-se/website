@@ -212,7 +212,7 @@ Redirect /kurser/vteam  /kurser/vteam-v1
 Redirect /python /kurser/python
 Redirect /kurser/python/studieplan https://docs.google.com/spreadsheet/ccc?key=0AiJ-Zb8R9RVmdDY1amxWYU1ZMVYyQkNxRU1TaTRoZ3c&usp=sharing
 Redirect /kurser/python/lektionsplan https://docs.google.com/spreadsheets/d/1zFmphWE90vxLCFEhH60QEZ4I8p8pq3-XKWBLLQguOXM/edit?usp=sharing
-Redirect /kurser/python /kurser/python-v4
+Redirect /kurser/python /kurser/python-v5
 
 # htmlphp
 

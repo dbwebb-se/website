@@ -131,4 +131,9 @@ Det finns ingen extra uppgift.
 Tips från coachen {#tips}
 -----------------------
 
-Lycka till och hojta till i chatten om du behöver hjälp!
+- [Hur ber man om hjälp med kod i chatten?](coachen/hur_fraga_hjalp), där förklaras hur ni ber om hjälp på bästa sättet så ni ska få svar så snabbt som möjligt.
+
+- [Exempel och förklaringar av valideringsfel](https://github.com/dbwebb-se/python/issues/46).
+
+- En sida med [användbara länkar](./lankar), som kan vara bra att ha under kursensgång.
+

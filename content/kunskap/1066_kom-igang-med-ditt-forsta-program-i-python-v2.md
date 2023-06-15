@@ -234,11 +234,13 @@ Du vill att alla dina filer skall validera så när du får valideringsfel så b
 
 Valideringen kan upptäcka direkta felaktigheter men också tveksamma konstruktioner i din kod, konstruktioner som kan vara fel, men behöver inte vara det. Det kan också vara konstruktioner som inte är lämpliga för att de är en potentiell felkälla.
 
-Kolla på videon med nedanför där Kenneth förklarar felen och hur man löser dem.
+Kolla på videon med nedanför där Andreas förklarar felen och hur man löser dem.
 
 [YOUTUBE src=X9rngBcaHpA width=630 caption="Andreas visar hur man validerar koden."]
 
 Validering är alltså ett sätt att kvalitetssäkra din kod. Valideringen kan upptäcka potentiella felaktigheter som inte syns när du exekverar koden. Valideringsverktyg är viktiga verktyg för en proffsprogrammerare.
+
+Här kan du hitta förklaring till vanliga fel och hur man löser dem, [Exempel och förklaringar av valideringsfel](https://github.com/dbwebb-se/python/issues/46).
 
 Du kan nu radera filerna så att de inte ligger och ger felmeddelande.
 
@@ -260,8 +262,6 @@ Valideringen kontrollerar att du följer styleguiden och att det inte finns någ
 
 Gör ditt bästa för att alltid skriva kod som går igenom valideringen. Annars finns risken att du får komplettera dina redovisningar.
 
-Har du [funderingar om Pylint och hur det används i kursen](/t/2565) så finns det en särskild forumtråd där det diskuteras.
-
 
 
 Hjälp mig online {#hjalp}
@@ -276,7 +276,11 @@ Här kan du se två exempel på när jag använder dessa tjänster.
 
 Dela bara med dig av den koden som är problematisk. Stora exempelprogram är det få som vill hjälpa till med. Förenkla för den som skall hjälpa dig. Då får du snabbare svar.
 
+I videon nedanför visar Kenneth hur det kan gå till, han använder dock ett gammalt chattprogram som vi inte använder längre, men principen är detsamma.
+
 [YOUTUBE src=lrVtvqlhWjY width=630 caption="Kenneth visar hur man delar och visar upp koden."]
+
+Läs också [Hur ber man om hjälp med kod i chatten?](coachen/hur_fraga_hjalp), där förklaras hur ni ber om hjälp på bästa sättet så ni ska få svar så snabbt som möjligt.
 
 
 

@@ -107,15 +107,11 @@ Nedanför hittar ni videor som kan vara bra att titta på för att lära er veck
 
 ###Lästips {#lastips}
 
-- [Hur ber man om hjälp med kod i chatten?](coachen/hur_fraga_hjalp)
-
-- [Exempel och förklaringar av valideringsfel](https://github.com/dbwebb-se/python/issues/46)
+- [Hur ber man om hjälp med kod i chatten?](coachen/hur_fraga_hjalp). 
 
 - Hur man löser valideringsfelet "line-to-long" med [radbrytning i Python](coachen/radbrytning-i-python).
 
 - Kolla på [Study Less Study Smart](https://www.youtube.com/watch?v=IlU-zDU6aQ0), 60 min video hur man studerar effektivt. Om ni känner att den är för lång kan ni kolla på [Study Less Study Smart: A 6-Minute Summary](https://www.youtube.com/watch?v=23Xqu0jXlfs).
-
-- Läs om hur du kan använda [dbwebb test](dbwebb-cli/python) för att rätta din kod.
 
 - Det finns en sida med [användbara länkar](./lankar), som kan vara bra att ha under kursensgång.
 
@@ -143,9 +139,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör laborationen "[Python med värden och variabler](uppgift/python-med-varden-och-variabler)" för att träna på grunderna i Python. Spara alla filer under `me/kmom01/lab1`.
 
-1. Gör uppgiften "[Ditt första Python-skript](uppgift/ditt-forsta-python-skript-v2)" för att visa att du har koll på grunderna. Spara alla filer under `me/kmom01/plane`.
+1. Läs om hur du kan använda [dbwebb test](dbwebb-cli/python) för att rätta din kod.
 
-1. Gör uppgiften "[Skapa en me-sida för Python-kursen](uppgift/skapa-en-me-sida-till-python-kursen)" så du kan skriva dina redovisningstexter. Spara alla filer under `me/redovisa`.
+1. Gör uppgiften "[Ditt första Python-skript](uppgift/ditt-forsta-python-skript-v2)" för att visa att du har koll på grunderna. Spara alla filer under `me/kmom01/plane`.
 
 
 
@@ -157,19 +153,7 @@ För er som vill öva mer, ni kan använda er av sidorna som finns under [koda k
 
 
 
-Resultat & Redovisning  {#resultat_redovisning}
+Lämna in  {#resultat}
 -----------------------------------------------
 
-*(ca: 1-2 studietimmar)*
-
-Läs [instruktionen om hur du skall lämna in och redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-* Vad är en variabel?
-* Vilken utvecklingsmiljö använder du?
-* Är du bekant med programmering och problemlösning och/eller Python sedan tidigare?
-* Är du bekant med terminalen och Unix-kommandon sedan tidigare?
-* Gick det bra att komma i gång med kursmomentet, fanns det svårigheter som du fastnade på?
-* Vilken del av kursmaterialet (böcker, artiklar, videor, etc) uppskattade du mest, använde du dem alla?
-* Gick det bra att använda `dbwebb test` kommandot? Har du någon feedback på verktyget?
+Läs [Lämna in och redovisa uppgift](./../redovisa) för att ta reda på hur ni lämna in era uppgifter när ni är klara.

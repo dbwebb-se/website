@@ -6,7 +6,7 @@ revision:
 Lämna in och redovisa uppgift
 ====================================
 
-Som ett sista steg i varje kursmoment skall ni lämna in veckan uppgifter. Gör så här.
+Som ett sista steg i varje kursmoment skall ni lämna in veckans uppgifter. Gör så här.
 
 <!--more-->
 

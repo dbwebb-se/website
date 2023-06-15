@@ -5,6 +5,7 @@ category:
     - python
     - labbmiljö
 revision:
+    "2023-06-15": (B, aar) La till youtube video.
     "2020-05-08": (A, aar) Första versionen.
 ...
 Installera Thonny
@@ -42,3 +43,5 @@ Klicka på `view` och sen klicka i `Files`, `Shell` och `Variables`.
 Om ni vill kan ni även gå in på `Tools --> Options --> Editor` och klicka i alla `Highlight ...` alternativen.
 
 Nu är du redo att använda Thonny.
+
+[YOUTUBE src=01X9Txqbs2s caption="En snabb introduction till Thonny."]

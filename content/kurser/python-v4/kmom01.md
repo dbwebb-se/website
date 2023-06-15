@@ -102,6 +102,7 @@ Nedanför hittar ni videor som kan vara bra att titta på för att lära er veck
     * [Python for Informatics: Chapter 2 - Introduction part 1](https://youtu.be/7KHdV6FSpo8?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p)
     * [Python for Informatics: Chapter 2 - Introduction part 2](https://youtu.be/kefrGMAglGs?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p)
 
+<!-- Vill lägga till denna videon,https://www.youtube.com/watch?v=nykOeWgQcHM men hittar inget bra ställe då jag inte vill få in fler länkar.... -->
 
 
 ###Lästips {#lastips}
@@ -115,6 +116,8 @@ Nedanför hittar ni videor som kan vara bra att titta på för att lära er veck
 - Kolla på [Study Less Study Smart](https://www.youtube.com/watch?v=IlU-zDU6aQ0), 60 min video hur man studerar effektivt. Om ni känner att den är för lång kan ni kolla på [Study Less Study Smart: A 6-Minute Summary](https://www.youtube.com/watch?v=23Xqu0jXlfs).
 
 - Läs om hur du kan använda [dbwebb test](dbwebb-cli/python) för att rätta din kod.
+
+- Det finns en sida med [användbara länkar](kurser/python-v4/lankar), som kan vara bra att ha under kursensgång.
 
 
 
@@ -150,7 +153,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 Det finns inga extra uppgifter för denna veckan.
 
-För er som vill öva mer, ni kan använda er av sidor som [leetcode.com](https://leetcode.com/problemset/all/?listId=79h8rn6&page=1&difficulty=EASY) och [hackerrank.com](https://www.hackerrank.com/auth/signup) för att hitta uppgifter att öva på.
+För er som vill öva mer, ni kan använda er av sidorna som finns under [koda koda koda](kurser/python-v4/lankar#koda) för att hitta uppgifter att öva på.
 
 
 

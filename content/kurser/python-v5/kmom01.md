@@ -4,6 +4,7 @@ author:
     - efo
     - aar
 revision:
+    "2023-06-15": (L, aar) Bytt redovisningstext mot quiz.
     "2019-05-24": (K, efo, aar) Uppdaterade med video inför HT19.
     "2018-06-08": (prel, mos) Nytt dokument inför uppdatering av kursen.
     "2017-09-01": (J, mos) Video till installation av dbwebb-cli.

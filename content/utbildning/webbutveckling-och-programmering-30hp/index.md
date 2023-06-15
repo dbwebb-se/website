@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-06-15": "(K, aar) Bytte python v4 till v5."
     "2023-01-11": "(J, aar) Bytte oopython v2 till v3."
     "2021-06-21": "(I, aar) Bytte python v3 till v4."
     "2020-09-01": "(H, aar) Bytte javascript1 mot js."
@@ -33,7 +34,7 @@ views:
                         data:
                             meta:
                                 type: content
-                                route: kurser/python-v4/block-kurser-kmom
+                                route: kurser/python-v5/block-kurser-kmom
                     column-2:
                         data:
                             meta:

@@ -22,7 +22,7 @@ views:
                         data:
                             meta:
                                 type: content
-                                route: kurser/python-v4/block-kurser-kmom
+                                route: kurser/python-v5/block-kurser-kmom
                     column-2:
                         data:
                             meta:

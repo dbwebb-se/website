@@ -204,6 +204,20 @@ for letter in "räksmörgås":
 
 Notera att vi använder `in` konstruktionen även i en `if`-sats för att kolla om bokstaven finns i en annan sträng. `in` kan alltså användas på olika sätt tillsammans med både villkor och loopar. Vi kommer under kursens gång tillbaka till `in` flertalet gånger och ser många användningsområden. Så om det känns lite magiskt nu kommer det att sätta sig under kursens gång.
 
+
+För att kolla om ett värde **inte** finns kan vi använda nyckelordet `not` tillsammans med `in`.
+
+```python
+non_letters = ""
+for letter in "räksmörgås":
+    if letter not in "åäö":
+        non_letters += letter
+print(non_letters)
+
+#skriver ut:
+# rksmrgs
+```
+
 [YOUTUBE src=CKvtLiRIK_s caption="Andreas visar hur for-loopar exekveras."]
 
 

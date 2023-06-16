@@ -33,6 +33,7 @@ Tjänster med mer läromaterial.
 | [Reserverade nyckelord i Python](https://docs.python.org/3.0/reference/lexical_analysis.html#id8) | Använd inte dem som variabelnamn i er kod. |
 | [PEP8 Style guide](https://peps.python.org/pep-0008/) | Pythons guide för hur man bör skriva sin kod. Skillnad på bra och dålig kod. |
 | [Hedy](https://hedy-beta.herokuapp.com/) | Lite annorlunda sätt att lära sig programmera. Börja med ett förenklat programmeringsspråk som blir mer avancerat för varje nivå man klarar. |
+| [Python Tutorial for Beginners](https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7) | Tips från en före detta student. En Youtube spellista med bra förklaringar. |
 
 
 ### Verktyg/Tjänster {#verktyg}
@@ -44,7 +45,7 @@ Länkar markerade med `*`, är bra när man vill felsöka.
 | *[pythontutor](https://pythontutor.com/) | Visualisera hur din kod exekveras. |
 | *[diffchecker](https://www.diffchecker.com/) | Jämför två texter och se var de skiljer sig. (alternativ är att använda kommandot `diff` i terminalen) |
 | *[stackoverflow](https://stackoverflow.com/questions/tagged/python) | Forum för att be om hjälp med programmering. troligen har någon annan redan ställt frågan du har, börja därför med att leta om någon har gjort det. |
-|  |  |
+
 
 
 
@@ -60,4 +61,3 @@ Tjänster där ni kan öva på att skriva kod.
 | [leetcode](https://leetcode.com/problemset/all/?listId=79h8rn6&page=1&difficulty=EASY) | Öva på programmerings utmaningar och tävla mot andra |
 | [hackerrank](https://www.hackerrank.com/) | Öva på programmerings utmaningar och tävla mot andra |
 | [Project Euler](https://projecteuler.net/) | Programmerings utmaningar |
-|  |  |

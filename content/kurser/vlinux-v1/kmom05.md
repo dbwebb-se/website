@@ -8,6 +8,10 @@ revision:
 
 # Kmom05: Docker network
 
+[WARNING]
+Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
+[/WARNING]
+
 Nu har vi kontroll på hur vi kan hantera en webbserver i Docker. Vi tar ett steg till in i Bashprogrammeringen och bygger ett script som kan prata med en server.
 
 Du kommer få en färdig server, skriven i Node.js, och ett RESTful API till servern. Servern implementerar en [_maze_](https://en.wikipedia.org/wiki/Maze). Servern är färdig och du kan testköra den via kommandot curl.
@@ -18,7 +22,7 @@ Vi ska även kika lite på reguljära uttryck med hjälp av en labb.
 
 Så är upplägget. Låt se hur bra vingarna bär. Upplägget på detta kursmomentet är "lite friare", så vi går nästan rakt på själva uppgiften.
 
-<!--more-->
+<!--stop-->
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 

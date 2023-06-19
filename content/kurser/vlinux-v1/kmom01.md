@@ -9,6 +9,10 @@ revision:
 
 # Kmom01: Docker och en linuxmiljö
 
+[WARNING]
+Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
+[/WARNING]
+
 Det första vi behöver är en Linuxmiljö. På något sätt.
 
 Vi har alla redan tillgång till en Linuxmiljö i form av Cygwin eller WSL för windows, terminalen på en Mac, eller kanske har du rent av redan Linux som operativsystem. För att förutsättningarna ska vara lika oberoende av underliggande operativsystem så kommer vi installera Docker och köra Linuxdistributionen Ubuntu och versionen 22.04.
@@ -17,7 +21,7 @@ För att lyckas med kursmomentet så behöver du bekanta dig med grunderna i ter
 
 Vid sidan av studierna kan du välja att installera på en annan server också. Kanske har du en gammal dator till övers, eller är du bekväm med virtuella servrar, eller investerar du i en Raspberry Pi för ett par hundralappar.
 
-<!--more-->
+<!--stop-->
 
 [FIGURE src=/image/vlinux/kmom01_top.png?w=w2 caption="Okey, terminalen, och nu då?"]
 

@@ -9,6 +9,10 @@ revision:
 
 # Kmom10: Projekt och examination
 
+[WARNING]
+Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
+[/WARNING]
+
 Detta kursmoment avslutar och examinerar kursen.
 
 Upplägget är enligt följande:
@@ -16,6 +20,8 @@ Upplägget är enligt följande:
 - Projektet och redovisning (20-80h)
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
+
+<!--stop-->
 
 ## Bedömning och betygsättning {#bedomning}
 

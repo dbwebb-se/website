@@ -1,5 +1,5 @@
 ---
-author: mos
+author: aar
 revision:
     "2022-08-26": (L, aar) Bytte ut vag redovisningsfråga till tydligare.
     "2020-03-30": (K, moc) Flyttade Funktioner från 04 till 03 inför V4 HT21.
@@ -33,7 +33,7 @@ Läsanvisningar  {#lasanvisningar}
 *(ca: 4-6 studietimmar)*
 
 
-###Kurslitteratur  {#kurslitteratur}
+### Kurslitteratur  {#kurslitteratur}
 
 Läs följande:
 
@@ -42,13 +42,13 @@ Läs följande:
 
 
 
-###Artiklar {#artiklar}
+### Artiklar {#artiklar}
 
 Det finns inga artiklar.
 
 
 
-###Video  {#video}
+### Video  {#video}
 
 Titta på följande:
 
@@ -62,16 +62,12 @@ Titta på följande:
 
 
 
-###Lästips {#lastips}
+### Lästips {#lastips}
 
 1. Tidigare år har jag gett längre återkoppling på kmom02 inlämningar som studenter har frågat efter. Jag rekommenderar att läsa igenom dem för att se hur man kan lösa sakerna på olika sätt.
     - [labbuppgift 4.2 och menyval A5](https://gist.github.com/AndreasArne/cecb1fb4dbc1ec7c83c57a8d2f678012).
     - [menyval A5 HT21](https://github.com/dbwebb-se/python/issues/51).
     - [menyval A5 HT20](https://github.com/dbwebb-se/python/issues/48).
-
-
-1. [Think Python: How to Think Like a Computer Scientist](kunskap/boken-think-python-how-to-think-like-a-computer-scientist)
-    * Chapter Debugging
 
 1. [Exempel och förklaringar av valideringsfel](https://github.com/dbwebb-se/python/issues/46)
 
@@ -83,7 +79,7 @@ Titta på följande:
 *(ca: 12-16 studietimmar)*
 
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
 
 Genomför övningarna för att träna inför uppgifterna.
 
@@ -93,11 +89,9 @@ Genomför övningarna för att träna inför uppgifterna.
 
 1. Jobba igenom artikeln/övningen "[Moduler i Python](kunskap/moduler-i-python)" för att bekanta dig med ett sätt att strukturera koden i Python. De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom03/functions` då koden bygger på förra övningen.
 
-1. Fortsätt med del 4 och 5 i "[Debugger i Python](kunskap/python-debugger)" för att lära dig felsöka och förstå din kod med debuggern. Alternativ fortsätt använda Thonny, det är som en grafisk debugger.
 
 
-
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
@@ -107,24 +101,13 @@ Dessa uppgifter skall utföras och redovisas.
 
 
 
-###Extra {#extra}
+### Extra {#extra}
 
 Det finns inga extra uppgifter.
 
 
 
-Resultat & Redovisning  {#resultat_redovisning}
+Lämna in  {#resultat}
 -----------------------------------------------
 
-*(ca: 1-2 studietimmar)*
-
-Läs [instruktionen om hur du skall lämna in och redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-* Har du programmerat med funktioner tidigare?
-* Vilka fördelar finns med att använda funktioner i koden?
-* Hur fungerar funktioner?
-* Du har gjort din första modul i Python, känns strukturen bra?
-* Hur kan du använda moduler?
-* Gjorde du någon av extrauppgifterna? Berätta om det arbetet i så fall.
+Läs [Lämna in och redovisa uppgift](./../redovisa) för att ta reda på hur ni lämna in era uppgifter när ni är klara.

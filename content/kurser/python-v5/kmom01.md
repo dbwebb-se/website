@@ -83,6 +83,7 @@ Efterhand som du lär dig Python kommer du att märka att du referensmanualen ä
 
 1. Se översikten av referensdokumentation för [Python 3.x Doc](https://docs.python.org/3/). Bekanta dig översiktligt med strukturen och se vilken typ av information som du kan hitta.
 
+1. [How to write beautiful python code with PEP 8](https://realpython.com/python-pep8/).
 
 
 ### Video  {#video}
@@ -114,7 +115,7 @@ Nedanför hittar ni videor som kan vara bra att titta på för att lära er veck
 
 - Kolla på [Study Less Study Smart](https://www.youtube.com/watch?v=IlU-zDU6aQ0), 60 min video hur man studerar effektivt. Om ni känner att den är för lång kan ni kolla på [Study Less Study Smart: A 6-Minute Summary](https://www.youtube.com/watch?v=23Xqu0jXlfs).
 
-- Det finns en sida med [användbara länkar](./lankar), som kan vara bra att ha under kursensgång.
+- Det finns en sida med [användbara länkar](./../lankar), som kan vara bra att ha under kursensgång.
 
 
 
@@ -150,7 +151,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 Det finns inga extra uppgifter för denna veckan.
 
-För er som vill öva mer, ni kan använda er av sidorna som finns under [koda koda koda](./lankar#koda) för att hitta uppgifter att öva på.
+För er som vill öva mer, ni kan använda er av sidorna som finns under [koda koda koda](./../lankar#koda) för att hitta uppgifter att öva på.
 
 
 

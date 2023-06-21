@@ -31,6 +31,7 @@ Tjänster med mer läromaterial.
 |---|---|
 | [Den officiella python guiden](https://docs.python.org/3/tutorial/) | Pythons egna genomgång av Python |
 | [Reserverade nyckelord i Python](https://docs.python.org/3.0/reference/lexical_analysis.html#id8) | Använd inte dem som variabelnamn i er kod. |
+| [How to write beautiful python code with PEP 8](https://realpython.com/python-pep8/) | En sammanfattning av PEP8 länken nedanför. |
 | [PEP8 Style guide](https://peps.python.org/pep-0008/) | Pythons guide för hur man bör skriva sin kod. Skillnad på bra och dålig kod. |
 | [Hedy](https://hedy-beta.herokuapp.com/) | Lite annorlunda sätt att lära sig programmera. Börja med ett förenklat programmeringsspråk som blir mer avancerat för varje nivå man klarar. |
 | [Python Tutorial for Beginners](https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7) | Tips från en före detta student. En Youtube spellista med bra förklaringar. |

@@ -1,9 +1,10 @@
 ---
 author:
-  - moc
   - aar
+  - moc
 category: python
 revision:
+  "2023-06-22": (C, aar) FLytta runt på menyval och la till create_ssn.
   "2022-08-26": (B, aar) Delade upp marvin koden i marvin1 och marvin2 moduler.
   "2021-03-30": (A, moc) Ny version för att introducerar automaträttning.
 created: "2021-03-30 11:19"
@@ -72,7 +73,7 @@ elif choice == "1":
     * Menyval 4 - `sum_and_average`
     * Menyval 5 - `hyphen_string`
     * Menyval 6 - `is_isogram`
-    * Menyval 7 - `validate_ssn` * Tips, gör denna i samband med menyval **9**, (krav 6).
+    * Menyval 7 - `validate_ssn`
     * Menyval 8 - `robber_language`
 
     Om du har gjort några av extrauppgifterna från föregående kursmoment så kan du döpa dem till ett valfritt namn.
@@ -112,20 +113,44 @@ elif choice == "1":
     ```python
 
     ...
-    elif choice == "9":
+    elif choice == "11":
         string = input("Enter a string to randomize: ")
         print(randomize_string(string))
     ```
 
 
 
-5. Menyval **9** - `randomize_string`: Kasta om bokstäver. Marvin ska be dig skriva in ett ord som sedan slumpmässigt kastas om. Funktionen `randomize_string` ska returnera det nya slumpade ordet. Svaret ska sedan skrivas ut i formatet `<orginal sträng> --> <slumpad sträng>`. Lösningen ska vara case-sensitive, med andra ord `A != a`. Tips [random modulen](https://docs.python.org/3.8/library/random.html).
+7. Menyval **9** - `create_ssn`: Skapa de fyra sista siffrorna till ett födelsedatum. Skapa ett nytt menyval där Marvin ber om en sträng som innehåller ett födelse datum, t.ex. `"910813"`. Din funktion ska skap de fyra sista siffrorna till det, `"910813-NNNN"`. För att skapa dem, använda [random modulen](https://docs.python.org/3.8/library/random.html) och slumpa fram de tre första siffrorna. Använd sen Luhnalgoritmen för att räkna ut den fjärde. Den funkar nästa på samma sätt som i menyval 7. 
+
+ Algoritmen funkar på så sätt att varannan siffra multipliceras med 2 och 1, med start på första siffran i personnumret. Om något tal vid multiplikationen blir större än 9 ersätts det talet med dess siffersumma. Därefter summeras alla tal och här skiljer sig funktionen från menyval 7. Sista siffran erhålls genom att summan subtraheras från närmaste högre tiotal. Exempel med `811218-987`:
+
+    ```
+8  1 1 2 1 8  9 8  7
+    *  2  1 2 1 2 1  2 1  2
+    -------------------------
+    ^  ^ ^ ^ ^ ^  ^ ^  
+    16  1 2 2 2 8 18 8 14
+    ```
+
+    Vilket blir `1 + 6 + 1 + 2 + 2 + 2 + 8 + 1 + 8 + 8 + 1 + 4 = 44`, `50 - 44 = 6`. Personnummret blir då `811218-9876`.
+
+    För att subtrahera från närmsta tiotal kan man använda [modulu operatorn](https://sv.wikipedia.org/wiki/Modul%C3%A4r_aritmetik), `%`.
+
+    Som du läst finns det funktionalitet som är samma mellan menyval 7 och 9. Därför ska du skapa en ny funktion som används i koden för menyval 7 och 9. Skapa `create_ssn` som tar emot födelsedatumet och skapar tre siffror. Skapa sen `calculate_luhna_sum` som tar emot en sträng med födelsedatumet och de tre siffrorna, utan `-`, `"811218987"`. Funktionen ska räkna ut summan och returnera den, `44`. I `create_ssn` använd summan och räkna ut sist siffran och returnera hela personnummret, med `-`, `811218-9876`.
+
+    Uppdatera sen koden för menyval 7 så att du använder `calculate_luhna_sum` i den koden också, för att räkna ut summan som ska kollas om den är delbar med 10. Koll om talet är delbart med 10 i menyval 7 funktionen, inte i `calculate_luhna_sum`. Genom att återanvända funktioner på flera ställen kan vi få mer [DYR kod](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+
+ Exempel:
 
     ```python
 
-    input: "Hej"                        output: "Hej --> jHe"
-    input: "Borde inte bli samma igen"  output: "Borde inte bli samma igen --> eel gn rtm dBmibo saiiane"
+    input: "910813"     output: "910813-2201".
     ```
+
+ Eftersom tre siffror slumpas fram kommer ni inte få samma sista som i exemplet. Men om ni använder det i menyval 7 ska det vara ett giltigt personnumer
+
+
+
 
 6. Menyval **10** - `get_acronym`: Akronymskapare. Marvin ska be om en sträng och skapa en akronym för den genom att plocka ut alla stora bokstäver och sätta ihop till en ny sträng. Tips, [isupper()](https://docs.python.org/3/library/stdtypes.html#str.isupper). Exempel:
     
@@ -135,19 +160,15 @@ elif choice == "1":
     input: "Ingvar Kamprad Elmtaryd Agunnaryd"  output: "IKEA"
     ```
 
-7. Menyval **11** - `mask_string`: Sträng maskering. Skapa ett nytt val där Marvin ber om en sträng och ersätter alla utom de fyra sista karaktärerna med “#”. Exempel:
+
+
+5. Menyval **11** - `randomize_string`: Kasta om bokstäver. Marvin ska be dig skriva in ett ord som sedan slumpmässigt kastas om. Funktionen `randomize_string` ska returnera det nya slumpade ordet. Svaret ska sedan skrivas ut i formatet `<orginal sträng> --> <slumpad sträng>`. Lösningen ska vara case-sensitive, med andra ord `A != a`. Tips [random modulen](https://docs.python.org/3.8/library/random.html).
 
     ```python
 
-    input: "4556364607935616"     output: "############5616"
-    input: "64607935616"          output: "#######5616"
+    input: "Hej"                        output: "Hej --> jHe"
+    input: "Borde inte bli samma igen"  output: "Borde inte bli samma igen --> eel gn rtm dBmibo saiiane"
     ```
-
-    Till detta menyvalet ska du också skapa funktionen `multiply_str`. `multiply_str` funktionen ska ta emot två argument, det första ska vara en sträng och det andra ett heltal. Funktionen ska multiplicera strängen med heltalet och returnera strängen som skapas.
-
-    Skriv koden i `mask_string` så att `multiply_str` används för att skapa delen av strängen med `#`.
-
-    Använd också `multiply_str` för att lösa menyval **3**. I `word_manipulation` anropa `multiply_str` för att bygga upp strängen (du behöver importera marvin2 i marvin1 för det).
 
 
 

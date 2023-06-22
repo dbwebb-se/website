@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2023-06-22": (M, aar) Nytt inför v5.
     "2022-08-26": (L, aar) Bytte ut vag redovisningsfråga till tydligare.
     "2020-03-30": (K, moc) Flyttade Funktioner från 04 till 03 inför V4 HT21.
     "2020-09-04": (J, aar) Släppt för HT20.

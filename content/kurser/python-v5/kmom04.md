@@ -4,6 +4,7 @@ author:
     - efo
     - mos
 revision:
+    "2023-06-27": (Q, aar) Ersatte redovisningsfrågor med quiz.
     "2021-03-30": (P, moc) Flyttade listor från 03 till 04 inför V4 HT21.
     "2020-05-15": (O, aar) Flyttade listor från 05 till 03 inför V3 HT20.
     "2019-06-14": (N, efo) Bytte på 04 och 05.
@@ -49,7 +50,7 @@ Läsanvisningar  {#lasanvisningar}
 *(ca: 4-6 studietimmar)*
 
 
-###Kurslitteratur  {#kurslitteratur}
+### Kurslitteratur  {#kurslitteratur}
 
 Läs följande:
 
@@ -62,7 +63,7 @@ Läs följande:
 
 
 
-###Artiklar {#artiklar}
+### Artiklar {#artiklar}
 
 Det finns inga artiklar.
 
@@ -75,7 +76,7 @@ Läs följande:
 
 
 
-###Video  {#video}
+### Video  {#video}
 
 Titta på följande:
 
@@ -89,7 +90,7 @@ Titta på följande:
 
 
 
-###Lästips {#lastips}
+### Lästips {#lastips}
 
 1. Läs den [feedback jag gav](https://gist.github.com/AndreasArne/cecb1fb4dbc1ec7c83c57a8d2f678012) en student på labbuppgiften 4.2 i lab2.
 
@@ -104,7 +105,7 @@ Titta på följande:
 
 
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
 
 Genomför övningarna för att träna inför uppgifterna.
 
@@ -112,7 +113,7 @@ Genomför övningarna för att träna inför uppgifterna.
 
 
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
@@ -122,7 +123,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 
 
-###Extra {#extra}
+### Extra {#extra}
 
 Det finns inga extrauppgifter.
 <!-- Om du har tid och lust finns extra uppgifter att utföra. -->
@@ -133,21 +134,8 @@ Det finns inga extrauppgifter.
 
 
 
-Resultat & Redovisning  {#resultat_redovisning}
+
+Lämna in  {#resultat}
 -----------------------------------------------
 
-*(ca: 1-2 studietimmar)*
-
-Läs [instruktionen om hur du skall lämna in och redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-* Vad är en lista?
-* Vad är slicing?
-* Var det svårt att bekanta sig med datastrukturen för listor eller flöt det på bra?
-* Har du jobbat med listor, eller arrayer, i andra programmeringsspråk?
-* Kan du i så fall jämföra Python listor mot andra programmeringsspråk?
-* Om du gjorde uppgiften del 2 i listövningen, varför behöver man göra bytet i den specifika ordningen?
-* Hur gick det att utföra uppgifterna, vilken tog mest tid och vilken var mest lärorik när det gäller listor?
-* Vad tycker du om rättningssytemet Umbridge? Funkar det bra? Något vi kan förbättre?
-<!-- * Gjorde du någon av extrauppgifterna? Berätta om det arbetet isåfall. -->
+Läs [Lämna in och redovisa uppgift](./../redovisa) för att ta reda på hur ni lämna in era uppgifter när ni är klara.

@@ -49,22 +49,22 @@ cd kmom04/marvin3
 
 2. Skapa en ny fil `inventory.py` där du lägger **alla nya** funktioner för inventory kommandona. Importera inventory.py i main.py. Skapa en lista i main.py som ska fungera som en ryggsäck.
 
-3. Lär Marvin att hantera listor. Skapa funktionen `pick` som tar emot tre argument, den första skall vara ryggsäcken, den andra skall vara saken man skall plocka upp och den tredje skall vara en optionell parameter som säger vilken position (index) saken skall lägga sig i. Funktionen ska lägga till saken i listan, om position skickas med ska saken tryckas in på den platsen (du ska inte skriva över det som redan ligger på den platsen, de sakerna ska flyttas ett index åt höger). Om position inte skickas med ska saken läggas till sist i ryggsäcken. Funktionen skall returnera den uppdaterade ryggsäcken.
+3. Lär Marvin att hantera listor. Skapa funktionen `pick` som tar emot tre argument, den första skall vara ryggsäcken, den andra skall vara saken man skall plocka upp och den tredje skall vara en optionell parameter som säger vilken position (index) saken skall lägga sig i. Funktionen ska lägga till saken i listan, om position skickas med ska saken tryckas in på den platsen (du ska inte ersätta det som redan ligger på den platsen, de sakerna ska flyttas ett index åt höger). Om position inte skickas med ska saken läggas till sist i ryggsäcken. Funktionen skall returnera den uppdaterade ryggsäcken.
 
-   I `main.py` skall du lägga till stöd för kommandot **"inv pick"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande som innehåller vad som lades till i ryggsäcken och på vilken position om ett index är givet. Meddelandet skall skivas ut i funktionen och inte main programmet.
+   I `main.py` skall du lägga till stöd för kommandot **"inv pick"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande som innehåller **vad som lades till** i ryggsäcken och på **vilken position** om ett index är givet. Meddelandet skall skivas ut i funktionen och inte main programmet.
 
     - Tags: `pick`
 
-4. Skapa funktionen `inventory` som tar emot ett argument, ryggsäcken. Funktionen skall inte returnera någonting. Den skall skriva ut ett meddelande som innehåller hur många saker som befinner sig i ryggsäcken och alla saker som ligger där inne. I `main.py` lägger du till stöd för kommandot **inv** som exekverar funktionen.
+4. Skapa funktionen `inventory` som tar emot ett argument, ryggsäcken. Funktionen skall inte returnera någonting. Den skall skriva ut ett meddelande som innehåller hur **antalet** saker som befinner sig i ryggsäcken och **alla saker** som ligger där inne. I `main.py` lägger du till stöd för kommandot **inv** som exekverar funktionen.
     - Tags: `inv`
 
-5. Skapa funktionen `drop` som skall kasta bort en sak från ryggsäcken. Den skall ta emot två argument, första är ryggsäcken och den andra är saken som skall slängas. Funktionen skall returnera den uppdaterade ryggsäcken. I `main.py` skall du lägga till stöd för kommandot **"inv drop"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande som innehåller saken som kastades. Meddelandet skall skivas ut i funktionen och inte main programmet.
+5. Skapa funktionen `drop` som skall kasta bort en sak från ryggsäcken. Den skall ta emot två argument, första är ryggsäcken och den andra är saken som skall slängas. Funktionen skall returnera den uppdaterade ryggsäcken. I `main.py` skall du lägga till stöd för kommandot **"inv drop"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande som innehåller **saken som kastades**. Meddelandet skall skivas ut i funktionen och inte main programmet.
     - Tags: `drop`
 
-6. Skapa funktionen `swap` som skall ta emot tre argument, den första är ryggsäcken, den andra och tredje är själva sakerna som skall byta plats. Funktionen skall returnera den uppdaterade ryggsäcken. I `main.py` skall du lägga till stöd för kommandot **"inv swap"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande med de sakerna som bytte plats. Meddelandet skall skivas ut i funktionen och inte main programmet.
+6. Skapa funktionen `swap` som skall ta emot tre argument, den första är ryggsäcken, den andra och tredje är själva sakerna som skall byta plats. Funktionen skall returnera den uppdaterade ryggsäcken. I `main.py` skall du lägga till stöd för kommandot **"inv swap"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande som innehåller **sakerna som bytte plats**. Meddelandet skall skivas ut i funktionen och inte main programmet.
     - Tags: `swap`
 
-7. Felhantering. Lägg till felhantering för kommandona **"inv drop"**, **"inv swap"** och **"inv pick"** som ändrar utsikten och det värdet som skall returneras. Om en sak man vill kasta eller byta plats på inte finns i ryggsäcken skall du skriva ett passande felmeddelande som innehåller ordet "Error" och saken som inte existerar i ryggsäcken.
+7. Felhantering. Lägg till felhantering för kommandona **"inv drop"**, **"inv swap"** och **"inv pick"** som ändrar utsikten och det värdet som skall returneras. Om en sak man vill kasta eller byta plats på inte finns i ryggsäcken skall du skriva ett passande felmeddelande som innehåller ordet **"Error"** och saken som inte existerar i ryggsäcken. **Tips** Använd dig av `try-except`. 
 
     Om man anger ett för högt index i pick kommandot skall den inte plocka upp något. Du skall istället skriva ut ett passande meddelande som innehåller ordet "Error" och den givna positionen.
 

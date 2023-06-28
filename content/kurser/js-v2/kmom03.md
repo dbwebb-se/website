@@ -7,6 +7,10 @@ revision:
 
 # Kmom03: DOM och events
 
+[WARNING]
+Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
+[/WARNING]
+
 Nu är det dags att ta JavaScript koden ett stort kliv rakt in i webbläsaren. Det är ju trots allt där vi kommer hantera den största delen av den JavaScript vi kommer skriva.
 
 [FIGURE src=/img/js-v2/kmom03.png?w=w2 caption="Bilder skapade med JavaScript."]

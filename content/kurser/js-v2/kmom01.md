@@ -7,6 +7,10 @@ revision:
 
 # Kmom01: Utvecklingsmiljö
 
+[WARNING]
+Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
+[/WARNING]
+
 Låt oss komma i gång med en labbmiljö, och en miljö för kursen. För er som vill repetera eller inte har läst HTML/CSS innan kommer det finnas möjlighet att läsa på om det innan det används i den här kursen.
 
 Detta kursmoment ger dig basen för resten av kursen, det hanterar grunderna som behövs så att vi i kommande kursmoment ska kunna dyka ned mer i JavaScript.

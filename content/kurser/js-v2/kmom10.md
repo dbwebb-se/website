@@ -7,6 +7,10 @@ revision:
 
 # Kmom10: Projekt och examination
 
+[WARNING]
+Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
+[/WARNING]
+
 Detta kursmoment avslutar och examinerar kursen.
 
 Upplägget är enligt följande:

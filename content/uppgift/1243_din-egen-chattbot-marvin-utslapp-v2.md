@@ -130,19 +130,19 @@ cd kmom05/marvin4
     input: "Sweden,1000,2017"       output: "Wrong year!"
     ```
 
-    I `get_country_year_data_megaton(country, year)` funktionen ska du returnera hur mycket utsläpp ett land gjorde ett specifikt år, i måttet ton (du behöver multiplicera datan med `1000000`.). Funktionen tar emot två argument, första argumentet ska vara en sträng med landets namn och det andra argumentet ska vara en sträng med året.  
-    Om årtalet som skickas in inte finns ska funktionen lyfta ett `ValueError`.
+    I `get_country_year_data_megaton(country, year)` funktionen ska du returnera hur mycket utsläpp ett land gjorde ett specifikt år, i måttet ton (du behöver multiplicera datan med `1000000`.). Funktionen tar emot två argument, första argumentet ska vara en sträng med landets namn och det andra argumentet ska vara ett heltal med året.  
+    Om årtalet som skickas in inte finns ska funktionen lyfta ett `ValueError`, fånga det i `main.py` koden och inte i `get_country_change_for_years()`.
 
     ```python
 
-    arguments: "Sweden", "1990"      return: 58117000.0
+    arguments: "Sweden", 1990      return: 58117000.0
     ```
 
-    `get_country_change_for_years(country, year1, year2)` Funktionen ska räkna ut och returnera skillnaden för ett lands utsläpp mellan två år. Första argumentet ska vara en sträng med landets namn, andra argumentet en sträng med ett år som en sträng och tredje argumentet en sträng med ett år som en sträng. Räkna ut med hur många procent utsläppen har ändrats mellan `year1` och `year2` och avrunda till två decimaler. Använd dig av funktionen `get_country_year_data_megaton` för att hämta ut utsläpps datan för de båda åren.
+    `get_country_change_for_years(country, year1, year2)` Funktionen ska räkna ut och returnera skillnaden för ett lands utsläpp mellan två år. Första argumentet ska vara en sträng med landets namn, andra argumentet ett heltal med ett år och tredje argumentet ett heltal med ett år. Räkna ut med hur många procent utsläppen har ändrats mellan `year1` och `year2` och avrunda till två decimaler. Använd dig av funktionen `get_country_year_data_megaton` för att hämta ut utsläpps datan för de båda åren.
 
     ```python
 
-    arguments: "Sweden", "1990", "2017"       return: -12.46 # Utsläppen har minskat med -12.46% från 1990 till 2017
+    arguments: "Sweden", 1990, 2017       return: -12.46 # Utsläppen har minskat med -12.46% från 1990 till 2017
     ```
 
     - Tags: `14`, `change_menu`, `change_func`
@@ -157,9 +157,9 @@ cd kmom05/marvin4
 
     {
         'name': '<name>',
-        '1990': {'emission': <utsläpp i ton>, 'population': <antal eller None>},
-        '2005': {'emission': <utsläpp i ton>, 'population': <antal eller None>},
-        '2017': {'emission': <utsläpp i ton>, 'population': <antal eller None>},
+        1990: {'emission': <utsläpp i ton>, 'population': <antal eller None>},
+        2005: {'emission': <utsläpp i ton>, 'population': <antal eller None>},
+        2017: {'emission': <utsläpp i ton>, 'population': <antal eller None>},
         'emission_change': (<skillnad mellan 1990-2005>, <skillnad mellan 2005-2017>)
     }
     ```
@@ -170,17 +170,17 @@ cd kmom05/marvin4
 
     arguments: "Sweden"     return:{
                                 'name': 'Sweden',
-                                '1990': {'emission': 58117000.0, 'population': 8567375},
-                                '2005': {'emission': 55877000.0, 'population': 9038627},
-                                '2017': {'emission': 50874000.0, 'population': 9904895},
+                                1990: {'emission': 58117000.0, 'population': 8567375},
+                                2005: {'emission': 55877000.0, 'population': 9038627},
+                                2017: {'emission': 50874000.0, 'population': 9904895},
                                 'emission_change': (-3.85, -8.95)
                             }
 
     arguments: "Greenland"  return: {
                                 'name': 'Greenland',
-                                '1990': {'emission': 3000.0, 'population': None},
-                                '2005': {'emission': 631000.0, 'population':None},
-                                '2017': {'emission': 518000.0, 'population': None},
+                                1990: {'emission': 3000.0, 'population': None},
+                                2005: {'emission': 631000.0, 'population':None},
+                                2017: {'emission': 518000.0, 'population': None},
                                 'emission_change': (20933.33, -17.91)
                             }
     ```
@@ -302,4 +302,4 @@ Felsöka med debuggern/Thonny och komplettera med utskrifter av `print()`.
 
 Validera ofta. Så slipper du en massa valideringsfel i slutet av övningen.
 
-Lycka till och hojta till i forumet om du behöver hjälp!
+Lycka till och hojta till i chatten om du behöver hjälp!

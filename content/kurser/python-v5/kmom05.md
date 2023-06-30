@@ -85,11 +85,11 @@ Titta på följande:
 
 ###Lästips {#lastips}
 
-1. Tidigare år har jag gett längre återkoppling på kmom02 inlämningar som studenter har frågat efter. Jag rekommenderar att läsa igenom dem för att se hur man kan lösa sakerna på olika sätt.
+- Tidigare år har jag gett längre återkoppling på kmom02 inlämningar som studenter har frågat efter. Jag rekommenderar att läsa igenom dem för att se hur man kan lösa sakerna på olika sätt.
     - [Marvin3 och labbuppgift 2.4](https://github.com/dbwebb-se/python/issues/53).
 
 
-1. [Exempel och förklaringar av valideringsfel](https://github.com/dbwebb-se/python/issues/46)
+- Det finns en sida med [användbara länkar](./../lankar), som kan vara bra att ha under kursensgång.
 
 
 
@@ -128,19 +128,7 @@ Det finns inga extrauppgifter.
 
 
 
-Resultat & Redovisning  {#resultat_redovisning}
+Lämna in  {#resultat}
 -----------------------------------------------
 
-*(ca: 1-2 studietimmar)*
-
-Läs [instruktionen om hur du skall lämna in och redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-* Känns det som du fick ordning på listor, dictionaries och tupler, när man skall använda respektive och hur de kan användas?
-* Vad skiljer de tre datastrukturerna från varandra?
-* Hur använde du dem i uppgifterna?
-* Nu har ni lärt er allt ni ska om exceptions i denna kursen. Hur känns det att jobba med det och skillnaden mellan LBYL och EAFP?
-* Gjorde du någon av extrauppgifterna? Berätta om det arbetet i så fall.
-* Vad tyckte du om emission uppgiften?
-* Om du använder Thonny vad tycker du om det? Blir det lättare att förstå koden när du stegar igenom den?
+Läs [Lämna in och redovisa uppgift](./../redovisa) för att ta reda på hur ni lämna in era uppgifter när ni är klara.

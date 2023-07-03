@@ -88,7 +88,12 @@ Titta på följande:
 *(ca: 12-16 studietimmar)*
 
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
+
+[YOUTUBE src=FKqqVNDX08E caption="Genomgång av kmom02 del1."]
+
+[YOUTUBE src=Z6m0uoEdVoI caption="Genomgång av kmom01."]
+
 
 1. Jobba igenom artikeln/övningen "[Jämförelseoperatorer och booleska värden](kunskap/booleans-och-jamforelseoperatorer)" för att träna på hur värden jämförs i Python. Python-interpretatorn används för att testa koden. Vill du spara någon del av koden så gör du det under `me/kmom02/flow`.
 

@@ -7,6 +7,13 @@ revision:
 Kmom10: Projekt och examination
 ==================================
 
+
+[WARNING]
+Kursmomentet uppdateras! Påbörja inte innan den gula rutan är borta.
+[/WARNING]
+
+
+
 [INFO]
 Innan du startar med projektet, kör `dbwebb update` och `dbwebb init`
 [/INFO]

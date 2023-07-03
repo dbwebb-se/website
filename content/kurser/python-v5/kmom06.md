@@ -24,6 +24,12 @@ revision:
 Kmom06: Filer
 ==================================
 
+[WARNING]
+Kursmomentet uppdateras! Påbörja inte innan den gula rutan är borta.
+[/WARNING]
+
+
+
 [INFO]
 
 Gör `dbwebb update` innan du börjar jobba med uppgifterna!

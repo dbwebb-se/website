@@ -129,6 +129,9 @@ Nedanför hittar ni videor som kan vara bra att titta på för att lära er veck
 
 Genomför följande övning för att träna dig och förbereda inför uppgifterna.
 
+[YOUTUBE src=NvpjX99ayzQ caption="Genomgång av kmom01."]
+
+
 1. Kom igång och gör ditt första program i Python tillsammans med artikeln "[Kom igång med ditt första program i Python](kunskap/kom-igang-med-ditt-forsta-program-i-python-v2)". De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom01/hello`.
 
 1. Jobba igenom artikeln "[Introduktion till variabler och datatyper](kunskap/introduktion-till-variabler-och-datatyper)" som hjälper dig att komma igång med grunderna i programmering med Python.  De exempelprogram du gör kan du spara under `me/kmom01/hello`.

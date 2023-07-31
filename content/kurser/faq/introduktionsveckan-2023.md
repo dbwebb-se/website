@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-07-31": "(H, mos) Uppdaterad med schemat."
     "2023-06-12": "(G, mos) Kopia och uppdaterad inför ht23."
     "2022-08-22": "(F, mos) Video från måndagen."
     "2022-08-16": "(E, mos) Kopia och uppdaterad inför ht22."
@@ -15,6 +16,10 @@ Introduktionsveckan 2023
 Introduktionsveckan är för nya studenter på program och kurspaket och syftar till att ge en extra vecka, innan normal terminsstart, då man kan komma igång med studier och bekanta sig med studiemiljön vid BTH. Välkomsthälsningar, kursstarter och studiesociala aktiviteter blandas med varandra.
 
 <!--more-->
+
+BTH presenterar [information om introveckan på sin webbplats](https://studentportal.bth.se/ny-student/schema-for-introduktionsveckan/). Där finner du även information om studentaktiviteter som börjar helgen innan introveckan.
+
+Detta dokument innehåller ytterligare information för introveckan för "webbare".
 
 <!--
 [INFO]
@@ -36,7 +41,7 @@ Välkommen till introveckan {#valkommen}
 
 Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokumentet och det som händer i introveckan. Pratar han långsamt så speedar du upp honom till 1,5 gånger hastigheten via inställningarna i YouTube.
 
-*Video kommer i augusti.*
+*Video kommer i augusti, veckan innan introveckan startar.*
 
 <!--
 [YOUTUBE src="BQJpFvQ9Ers" width=700 caption="Mikael hälsar välkommen till introveckan 2022."]
@@ -47,7 +52,7 @@ Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokum
 Välkomstvideor {#valvideo}
 -----------------------------------
 
-Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-vHNbYP4U80rpyvtpxX5Cr)". Kika igenom den serien för lite tips och trix inför terminsstarten.
+Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-vHNbYP4U80rpyvtpxX5Cr)". Kika igenom den serien för tips och trix inför terminsstarten.
 
 
 
@@ -123,15 +128,24 @@ Här följer en planering för introveckans aktiviteter.
 
 **Schemat är preliminärt.**
 
+Om det blir några sena ändringar i planeringen så kan du kolla upp dem i schemat.
+
+* [Schemat för campusstudenter](https://cloud.timeedit.net/bth/web/sched1/riq66Q08677Z6YQy6Q73Z9Z66QZ850254YQ3Y0gQ20og767Xxb45lQXZlYloc9m3Wou7ylX80mZ9Q9mZ695QXcQZoyxb602Q5Z6Y553Q8l7g5Vc15X7Z3566Xn6l603T69cWWY2W1Y9YWx83XW5WW4Xo5WW9VX8o86W436Xl49Z0qX4ZWQ1X6q5X0o88oXo6W7qX275QZl0pQoZq6Qo.html).
+* [Schemat för distansstudenter](https://cloud.timeedit.net/bth/web/sched1/ri167734X25Z0QQ6Z96g86Q0yx0Y6Y76Z09gQY6Q5375l6b7W4Z96l2cl5ZxmQZ9yQXYm09XXZo6b3mQ560l1o7QQZ5cy93uYo756885Xc6WWW63Y0YQXgl3T829ZWxX5Y5c676951WloW6W534V3X4nW8q8957o1W8ZXWZXX7QW0X6564WX26qVool8X9lo4q0XQopZQ0.html).
+* Kurspaketare kan utgå från schemat för distanstudenter.
+
+Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce85z_kwufc2WndLdeqeP9ej)".
+
 
 
 ### Måndag: Uppropsdagen {#man-upprop}
 
-Veckan börjar kl 09-10 med "Rektorns välkomsttal" utomhus utanför hus J och det [kan följas via zoom](https://bth.zoom.us/j/69647412076).
+Veckan börjar kl 09-10 med "Rektorns välkomsttal" utomhus utanför hus J. Det är ännu oklart om vi kan följa välkomsttalet via zoom. 
+<!-- och det [kan följas via zoom](https://bth.zoom.us/j/69647412076). -->
 
-På campus håller biträdande programansvarig Kenneth Lewenhagen en träff och frågestund med campusstudenterna kl 10-11 i salen J1360.
+På campus håller biträdande programansvarig Kenneth Lewenhagen en träff och frågestund med campusstudenterna kl 10-11 i salen J1650.
 
-För distansstudenter håller Mikael en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337) under samma tid. <!-- ([spelades in](https://www.youtube.com/watch?v=yMTUDvTHsfE&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)). -->
+För distansstudenter håller Mikael samtidigt en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337). <!-- ([spelades in](https://www.youtube.com/watch?v=yMTUDvTHsfE&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)). -->
 
 Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. 
 
@@ -143,43 +157,68 @@ Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel m
 Efter lunch mellan 13-14 följer en "Högskoleintro (svensk version)" i Multisal J1504 ([zoom](https://bth.zoom.us/j/66718402136)).
 -->
 
+Efter lunch mellan 14-15 följer en föreläsning om "Strategisk hållbarhet" i Gradängsal C216 (även via zoom). <!-- ([zoom](https://bth.zoom.us/j/66718402136)). -->
 
 
-### Tisdag - Torsdag: Kursaktiviteter {#kursplan}
 
-Här följer en planering för introveckans kurs aktiviteter där syftet är att starta kurserna och komma igång med labbmiljön.
+#### Tisdag: Kursaktiviteter {#tisdag}
 
-PS. Inför onsdagen bör du på egen hand ha installerat följande delar av den generella labbmiljön som gäller för både [python](/kurser/python/labbmiljo) och [webtec](/kurser/webtec/labbmiljo).
+På **tisdagen** är det kursstarter.
+
+| Tid   | Lärare | Grupp  | Vad | Var |
+|-------|--------|--------|-----|-----|
+| 10-11 | mos    | webtec | Kursintroduktion | [Inspelad](https://youtu.be/K7F5IVgK1bg), [zoom](https://bth.zoom.us/j/4200421337) |
+| 11-12 | aar    | python | Kursintroduktion | [Inspelad](https://www.youtube.com/watch?v=35NRWij9Z0Q&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=4), [zoom](https://bth.zoom.us/j/8535967236) |
+
+Vi startar lugnt så använd tiden för att förbereda dig inför onsdagen.
+
+
+
+#### Onsdag: Kursaktiviteter {#onsdag}
+
+Inför **onsdagen** bör du på egen hand ha installerat följande delar av den generella labbmiljön som gäller för både [python](/kurser/python/labbmiljo) och [webtec](/kurser/webtec/labbmiljo).
 
 * Ett uppdaterat operativsystem (Windows, Mac, Linux)
 * En texteditor (förslaget är Visual Studio Code)
 * En bash terminal med pakethanterare (Mac & Linux har redan en, Windows rekommenderar vi WSL/Ubuntu).
 * Versionshanteringssystemet Git. 
 
-| Dag | Tid | Vem | Grupp | Vad | Var |
-|-----|-----|-----|-------|-----|-----|
-| 23/8 Tis | mos | 10-11 | webtec | Kursintroduktion | [Inspelad](https://youtu.be/K7F5IVgK1bg), [zoom](https://bth.zoom.us/j/4200421337) |
-| 23/8 Tis | aar | 11-12 | python | Kursintroduktion | [Inspelad](https://www.youtube.com/watch?v=35NRWij9Z0Q&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=4), [zoom](https://bth.zoom.us/j/8535967236) |
-| 24/8 Ons | klw | 08-09 | alla   | Introduktion till terminalen | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 24/8 Ons | klw | 09-10 | alla   | Labbmiljö dbwebb-cli | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 24/8 Ons | aar | 10-11 | python | Intro till Python | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 24/8 Ons | efo | 11-12 | alla   | Introduktion till datavetenskap | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 25/8 Tor | grm, mos | 09-10 | webtec | Labbmiljö webb | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
-| 25/8 Tor | grm, mos | 10-11 | webtec | Skapa webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
-| 25/8 Tor | grm, mos | 11-12 | webtec | Publicera webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337), Discord |
-
-Videor och streams från introduktionsveckan kan komma att sparas i spellistan "[Introveckan augusti 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce85z_kwufc2WndLdeqeP9ej)".
+| Tid   | Lärare | Grupp  | Vad | Var |
+|-------|--------|--------|-----|-----|
+| 08-09 | klw    | alla   | Introduktion till terminalen | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
+| 09-10 | klw    | alla   | Labbmiljö dbwebb-cli | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
+| 10-11 | aar    | python | Intro till Python | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
+| 11-12 | efo    | alla   | Introduktion till datavetenskap | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
 
 
 
-### Fredag: Campusvandring {#campusvandring}
+#### Torsdag: Kursaktiviteter {#torsdag}
 
-På fredag kan du följa med Kenneth på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor.
+**Torsdagen** är enbart för webtec-kursen och fokuserar på labbmiljön för webbplatsen.
 
-Samling receptionen, hus A, även kallad "badtunnan".
+Campusstudenter träffar Marie i H430 och distansstudenter träffar Mikael i zoom. Vissa delar finns inspelade. Man kan även få hjälp i Discord.
+
+| Tid   | Lärare   | Grupp  | Vad | Var |
+|-------|----------|--------|-----|-----|
+| 09-10 | grm, mos | webtec | Labbmiljö webb | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
+| 10-11 | grm, mos | webtec | Skapa webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
+| 11-12 | grm, mos | webtec | Publicera webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
 
 
 
+### Fredag: Campusvandring & föreläsningar {#campusvandring}
+
+Morgonen börjar på campus med information från Biblioteket kl 10:30-11:00 (ej zoom). 
+
+Därefter kan du följa med Kenneth och Marie på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor. Samling receptionen, hus A, även kallad "badtunnan".
+
+Efter lunch fortsätter det med två föreläsningar på campus, båda nås även via zoom.
+
+* 13-14 Internationalisering, forskning och samverkan
+* 14-15 Kommunikation som bidrar till jämställdhet
+
+
+<!--
 ### Tisdag - Fredag: BTH gemensamma föreläsningar {#bthplan}
 
 Under veckan erbjuder BTH ett antal gemensamma föreläsningar om de områden som BTH anser viktiga och inom områden som är bra att veta som student. En del av dessa går att följa på distans.
@@ -190,13 +229,7 @@ Under veckan erbjuder BTH ett antal gemensamma föreläsningar om de områden so
 | 25/8 Tor | 13-14 | Multisal J1504 | Strategisk hållbarhet (eng) | [Zoom](https://bth.zoom.us/j/67994047066) |
 | 26/8 Fre | 10:30-11:00 | Biblioteket | Biblioteket info | [Zoom](https://bth.zoom.us/j/61182510149). Samling ingång nedre plan, hus H |
 | 26/8 Fre | 13-14 | Multisal J1504 | Kommunikation jämställdhet | Endast campus |
-
-Om det blir några sena ändringar i planeringen så kan du kolla upp dem i schemat.
-
-* [Schemat för campusstudenter](https://cloud.timeedit.net/bth/web/sched1/riq66Q08677Z6YQy6Q73Z9Z66QZ850254YQ3Y0gQ20og767Xxb45lQXZlYloc9m3Wou7ylX80mZ9Q9mZ695QXcQZoyxb602Q5Z6Y553Q8l7g5Vc15X7Z3566Xn6l603T69cWWY2W1Y9YWx83XW5WW4Xo5WW9VX8o86W436Xl49Z0qX4ZWQ1X6q5X0o88oXo6W7qX275QZl0pQoZq6Qo.html).
-* [Schemat för distansstudenter](https://cloud.timeedit.net/bth/web/sched1/ri167734X25Z0QQ6Z96g86Q0yx0Y6Y76Z09gQY6Q5375l6b7W4Z96l2cl5ZxmQZ9yQXYm09XXZo6b3mQ560l1o7QQZ5cy93uYo756885Xc6WWW63Y0YQXgl3T829ZWxX5Y5c676951WloW6W534V3X4nW8q8957o1W8ZXWZXX7QW0X6564WX26qVool8X9lo4q0XQopZQ0.html).
-* Kurspaket kan utgå från schemat för distanstudenter.
-
+-->
 
 
 ### Kårens eftermiddagar {#karen}

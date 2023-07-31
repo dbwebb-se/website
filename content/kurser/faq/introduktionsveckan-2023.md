@@ -93,6 +93,7 @@ Informationsmaterial {#infomat}
 Här är ett dokument som är bra att kika igenom som ny student.
 
 <!-- Bör uppdateras till 2023 -->
+
 * [Så här funkar det på BTH](https://drive.google.com/file/d/1BV_raNJQle24M36f9c2xhNVxjNAgpkpu/view?usp=sharing)
 
 <!--

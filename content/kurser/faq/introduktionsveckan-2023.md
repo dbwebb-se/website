@@ -121,6 +121,8 @@ Planering {#plan}
 
 Här följer en planering för introveckans aktiviteter.
 
+**Schemat är preliminärt.**
+
 
 
 ### Måndag: Uppropsdagen {#man-upprop}
@@ -189,7 +191,11 @@ Under veckan erbjuder BTH ett antal gemensamma föreläsningar om de områden so
 | 26/8 Fre | 10:30-11:00 | Biblioteket | Biblioteket info | [Zoom](https://bth.zoom.us/j/61182510149). Samling ingång nedre plan, hus H |
 | 26/8 Fre | 13-14 | Multisal J1504 | Kommunikation jämställdhet | Endast campus |
 
-Om det blir några sena ändringar i planeringen så kan du [kolla upp dem i schemat](https://cloud.timeedit.net/bth/web/sched1/riq66Q03666Z6YQy6Q73Z6Z66QZ760354YQ3Y0gQ30og767Xxb45lQXZlYloc9m3Wou7ylX80mZ9Q9mZ695QXcQZoyxb602Q5Z6Y553Q8l7g5Vc15X7Z3566Xn6l603T69cWWY2W1Y9YWx83XW5WW4Xo5WW9VX8o86W436Xl49Z0qX4ZWQ1X6q5X0o88oXo6W7qX275QZl0cvQWVnFroVxpmnwbawaVcZnrjQcbpVWhu%C3%A4%C3%B6VquZQbbVpWVrkrqVppowwu%C3%A4mVwaVVnaj%C3%B6bV%C3%A5ojv%C3%A4Verubj5nVscxrarou%C3%B6bc5J0a1oVqVWVWZW6QY.html).
+Om det blir några sena ändringar i planeringen så kan du kolla upp dem i schemat.
+
+* [Schemat för campusstudenter](https://cloud.timeedit.net/bth/web/emp1/riq66Q08677Z6YQy6Q73Z9Z66QZ850254YZ3Y0gQ20og767XQpq5c6Qo.html).
+* [Schemat för distansstudenter](https://cloud.timeedit.net/bth/web/emp1/riq66Q09677Z6YQy6Q73Z9Z66QZ850654YZ3Y0gQ20og767XQpq5c6Qo.html).
+* Kurspaket kan utgå från schemat för distanstudenter.
 
 
 

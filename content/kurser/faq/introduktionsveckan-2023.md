@@ -193,8 +193,8 @@ Under veckan erbjuder BTH ett antal gemensamma föreläsningar om de områden so
 
 Om det blir några sena ändringar i planeringen så kan du kolla upp dem i schemat.
 
-* [Schemat för campusstudenter](https://cloud.timeedit.net/bth/web/emp1/riq66Q08677Z6YQy6Q73Z9Z66QZ850254YZ3Y0gQ20og767XQpq5c6Qo.html).
-* [Schemat för distansstudenter](https://cloud.timeedit.net/bth/web/emp1/riq66Q09677Z6YQy6Q73Z9Z66QZ850654YZ3Y0gQ20og767XQpq5c6Qo.html).
+* [Schemat för campusstudenter](https://cloud.timeedit.net/bth/web/sched1/riq66Q08677Z6YQy6Q73Z9Z66QZ850254YQ3Y0gQ20og767Xxb45lQXZlYloc9m3Wou7ylX80mZ9Q9mZ695QXcQZoyxb602Q5Z6Y553Q8l7g5Vc15X7Z3566Xn6l603T69cWWY2W1Y9YWx83XW5WW4Xo5WW9VX8o86W436Xl49Z0qX4ZWQ1X6q5X0o88oXo6W7qX275QZl0pQoZq6Qo.html).
+* [Schemat för distansstudenter](https://cloud.timeedit.net/bth/web/sched1/ri167734X25Z0QQ6Z96g86Q0yx0Y6Y76Z09gQY6Q5375l6b7W4Z96l2cl5ZxmQZ9yQXYm09XXZo6b3mQ560l1o7QQZ5cy93uYo756885Xc6WWW63Y0YQXgl3T829ZWxX5Y5c676951WloW6W534V3X4nW8q8957o1W8ZXWZXX7QW0X6564WX26qVool8X9lo4q0XQopZQ0.html).
 * Kurspaket kan utgå från schemat för distanstudenter.
 
 

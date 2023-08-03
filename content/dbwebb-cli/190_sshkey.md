@@ -24,3 +24,28 @@ $ ls -l "$HOME/.ssh"
 Så här kan det se ut.
 
 [ASCIINEMA src=24617]
+
+
+
+Problem
+---------------------------
+
+Vanliga problem är att man skriver in lösenordet och då inga tecken ekas ut på skärmen så blir man osäker. Men det är bara att skriva sitt lösenord och trycka enter.
+
+Kan du ändå inte logga in så kan du köra om `dbwebb config` och dubbelkolla att du skrev in rätt akronym. Sedan provar du `dbwebb sshkey` igen.
+
+Fungerar det inte så kan du prova att logga in på studentservern med `dbwebb login` och ditt lösenord. Går det bra (du kommer in på studentservern) så kan du skriva `exit` för att logga ut från studentservern. Sedan provar du `dbwebb sshkey` igen.
+
+Om det inte fungerar trots det så kan du prova att logga in via ssh till studentservern. Du skriver då följande kommando och ange sedan lösenordet då kommandot ber om det.
+
+```
+ssh acro23@ssh.student.bth.se
+```
+
+Lyckas du logga in på studentservern så skriver du `exit` för att lämna.
+
+Om det trots detta inte fungerar så kan du fundera på om du har något spam- eller antivirus-program som du bör avvaktivera för att testa igen.
+
+Om inget av detta fungerar så får du mail a IT-helpdesk och berätta att du försöker logga in på studentservern med ssh och ditt lösenord och det fungerar inte. Visa det sista exemplet som är relaterat till kommandot `ssh`. Om ssh inte fungerar så kan inte dbwebb-kommandot fungera.
+
+

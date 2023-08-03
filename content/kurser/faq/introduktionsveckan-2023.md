@@ -173,6 +173,10 @@ På **tisdagen** är det kursstarter.
 
 Vi startar lugnt så använd tiden för att förbereda dig inför onsdagen.
 
+<!--
+efo studieteknik/bli-skit-bra-på-det-du-gör föreläsningen
+-->
+
 
 
 #### Onsdag: Kursaktiviteter {#onsdag}

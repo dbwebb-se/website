@@ -14,6 +14,7 @@ Din akronym kan se ut så här, som exempel:
 ```text
 goli21
 mase22
+mope23
 ```
 
 Akronymen består av dina initialer följt av året som ditt studentkonto skapades.

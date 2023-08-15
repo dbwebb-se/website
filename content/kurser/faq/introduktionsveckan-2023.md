@@ -191,9 +191,9 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
-| 08-09 | klw    | alla   | Introduktion till terminalen | [Zoom](https://bth.zoom.us/j/6772303809) |
-| 09-10 | klw    | alla   | Labbmiljö dbwebb-cli | [Zoom](https://bth.zoom.us/j/6772303809) |
-| 10-11 | aar    | python | Intro till Python | [Zoom](https://bth.zoom.us/j/6772303809) |
+| 08-09 | klw    | alla   | Introduktion till terminalen | inspelad, [[Zoom](https://bth.zoom.us/j/6772303809) |
+| 09-10 | klw    | alla   | Labbmiljö dbwebb-cli | inspelad, [[Zoom](https://bth.zoom.us/j/6772303809) |
+| 10-11 | aar    | python | Intro till Python | inspelad, [[Zoom](https://bth.zoom.us/j/6772303809) |
 
 
 

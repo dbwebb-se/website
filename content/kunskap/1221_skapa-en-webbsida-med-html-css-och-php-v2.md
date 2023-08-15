@@ -83,6 +83,7 @@ Nus skapar jag ett par kataloger för att ge en grundstruktur till webbplatsen. 
 
 ```text
 # Skapa kataloger för den publika delen
+mkdir public
 mkdir public/img
 mkdir public/css
 

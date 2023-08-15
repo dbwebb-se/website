@@ -52,7 +52,7 @@ Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokum
 Välkomstvideor {#valvideo}
 -----------------------------------
 
-Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-vHNbYP4U80rpyvtpxX5Cr)". Kika igenom den serien för tips och trix inför terminsstarten.
+Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2023](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_vOJX5uDVeKx1P5bGAcpah)". Kika igenom den serien för information, tips och trix inför terminsstarten.
 
 
 
@@ -148,7 +148,7 @@ På campus håller biträdande programansvarig Kenneth Lewenhagen en träff och 
 
 För distansstudenter håller Mikael samtidigt en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337). <!-- ([spelades in](https://www.youtube.com/watch?v=yMTUDvTHsfE&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)). -->
 
-Klockan 11-14 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. 
+Klockan 11-12 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. 
 
 <!--
 [Stödfunktionerna har spelat in en video för att presentera sig och sin verksamhet](https://www.youtube.com/watch?v=SSQDHLdJHbM&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=3).
@@ -170,6 +170,7 @@ På **tisdagen** är det kursstarter.
 |-------|--------|--------|-----|-----|
 | 10-11 | mos    | webtec | Kursintroduktion | [Inspelad](https://youtu.be/K7F5IVgK1bg), [zoom](https://bth.zoom.us/j/4200421337) |
 | 11-12 | aar    | python | Kursintroduktion | [Inspelad](https://www.youtube.com/watch?v=35NRWij9Z0Q&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=4), [zoom](https://bth.zoom.us/j/8535967236) |
+| 13-14 | efo    | alla   | Introduktion till datavetenskap | H430, [zoom](https://bth.zoom.us/j/6772303809) |
 
 Vi startar lugnt så använd tiden för att förbereda dig inför onsdagen.
 
@@ -190,10 +191,9 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
-| 08-09 | klw    | alla   | Introduktion till terminalen | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 09-10 | klw    | alla   | Labbmiljö dbwebb-cli | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 10-11 | aar    | python | Intro till Python | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
-| 11-12 | efo    | alla   | Introduktion till datavetenskap | Multisalen, [zoom](https://bth.zoom.us/j/6772303809) |
+| 08-09 | klw    | alla   | Introduktion till terminalen | [Zoom](https://bth.zoom.us/j/6772303809) |
+| 09-10 | klw    | alla   | Labbmiljö dbwebb-cli | [Zoom](https://bth.zoom.us/j/6772303809) |
+| 10-11 | aar    | python | Intro till Python | [Zoom](https://bth.zoom.us/j/6772303809) |
 
 
 

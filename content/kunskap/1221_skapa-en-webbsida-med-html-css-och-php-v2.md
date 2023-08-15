@@ -275,7 +275,7 @@ För att det skall fungera behöver du lägga in en länk till valideringsverkty
 <p>Validering: <a href="http://validator.w3.org/check/referer">HTML</a></p>
 ```
 
-För att det skall fungera behöver du även lägga till en meta-konstruktion i din `<head>` av sidan. Lägg följande konstruktion direkt efter sidans `</tile>` och innan `</head>`.
+För att det skall fungera behöver du även lägga till en meta-konstruktion i din `<head>` av sidan. Lägg följande konstruktion direkt efter sidans `</title>` och innan `</head>`.
 
 ```html
 <meta name="referrer" content="unsafe-url">

@@ -48,6 +48,12 @@ Mac OS:
 brew install python3
 ```
 
+Om detta inte fungerar och du får ett felmeddelande som säger att python3 behöver "command line developer tool", så installerar du det med. Eventuellt så får du inte felmeddelandet förrän du verifierar python3. python3 är inte inkluderat i Mac OS Ventura.
+
+```bash
+xcode-select --install 
+```
+
 Linux (debian):
 
 ```bash

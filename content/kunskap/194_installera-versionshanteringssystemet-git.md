@@ -51,8 +51,13 @@ Git finns förinstallerat när du använder WSL med Bash/Ubuntu för Windows.
 
 ### Installera på Mac OS {#install-mac}
 
-På Mac OS finns Git redan installerat som en del av systemet.
+På vissa versioner av Mac OS så finns Git redan installerat som en del av systemet. Men om du har en nyare version av Mac OS som Ventura så installerar du git.
 
+```bash
+brew install git
+```
+
+Om inte testet av Git funkar, så starta om ditt terminalfönster och testa igen.
 
 
 ### Installera på Linux/Unix {#install-nix}

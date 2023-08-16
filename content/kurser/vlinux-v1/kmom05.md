@@ -28,7 +28,7 @@ Så är upplägget. Låt se hur bra vingarna bär. Upplägget på detta kursmome
 
 ### Video {#video}
 
-Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 05.
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce97kWiBo2wLqDtfuoi0E25X). Titta på videorna som börjar med 05.
 
 ### Lästips {#lastips}
 

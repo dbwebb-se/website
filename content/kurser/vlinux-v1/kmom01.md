@@ -15,7 +15,7 @@ Kursmomentet är under uppdatering och är klart när den här gula rutan är bo
 
 Det första vi behöver är en Linuxmiljö. På något sätt.
 
-Vi har alla redan tillgång till en Linuxmiljö i form av Cygwin eller WSL för windows, terminalen på en Mac, eller kanske har du rent av redan Linux som operativsystem. För att förutsättningarna ska vara lika oberoende av underliggande operativsystem så kommer vi installera Docker och köra Linuxdistributionen Ubuntu och versionen 22.04.
+Vi har alla redan tillgång till en Linuxmiljö i form av WSL för windows, terminalen på en Mac, eller kanske har du rent av redan Linux som operativsystem. För att förutsättningarna ska vara lika oberoende av underliggande operativsystem så kommer vi installera Docker och köra Linuxdistributionen Ubuntu och den aktuella LTS versionen.
 
 För att lyckas med kursmomentet så behöver du bekanta dig med grunderna i terminalen och lära dig ett par av de viktigaste kommandona som utförs i terminalen.
 
@@ -65,7 +65,7 @@ Läs följande:
 
 ### Video {#video}
 
-Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 01.
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce97kWiBo2wLqDtfuoi0E25X). Titta på videorna som börjar med 01.
 
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 

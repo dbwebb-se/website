@@ -25,7 +25,7 @@ Så kan det se alltså ut när ena delen är klar.
 
 ### Video {#video}
 
-Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 06.
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce97kWiBo2wLqDtfuoi0E25X). Titta på videorna som börjar med 06.
 
 ## Läsanvisningar {#lasanvisningar}
 

@@ -36,7 +36,7 @@ Läs följande: -->
 
 ### Video {#video}
 
-Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 03.
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce97kWiBo2wLqDtfuoi0E25X). Titta på videorna som börjar med 03.
 
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 

@@ -21,7 +21,7 @@ Nu vet vi hur vi bygger en egen image med hjälp av Docker. Vi har också gått 
 
 ### Video {#video}
 
-Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_XueavhyZ_udFDLVFaoVo5). Titta på videorna som börjar med 04.
+Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce97kWiBo2wLqDtfuoi0E25X). Titta på videorna som börjar med 04.
 
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 

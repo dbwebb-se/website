@@ -215,7 +215,7 @@ Campusstudenter träffar Marie i H430 och distansstudenter träffar Mikael i zoo
 
 Morgonen börjar på campus med information från Biblioteket kl 10:30-11:00 (ej zoom). 
 
-Därefter kan du följa med Kenneth och Marie på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor. Samling receptionen, hus A, även kallad "badtunnan".
+Därefter kan du följa med Kenneth på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor. Samling receptionen, hus A, även kallad "badtunnan".
 
 Efter lunch fortsätter det med två föreläsningar på campus, båda nås även via zoom.
 

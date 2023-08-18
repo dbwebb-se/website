@@ -169,7 +169,7 @@ På **tisdagen** är det kursstarter.
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
 | 10-11 | mos    | webtec | Kursintroduktion | [Inspelad](https://youtu.be/K7F5IVgK1bg), [zoom](https://bth.zoom.us/j/4200421337) |
-| 11-12 | aar    | python | Kursintroduktion | [Inspelad](https://www.youtube.com/watch?v=35NRWij9Z0Q&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=4), [zoom](https://bth.zoom.us/j/8535967236) |
+| 11-12 | aar    | python | Kursintroduktion | [Inspelad](https://youtu.be/NJDGtST0EF4) [del 2](https://www.youtube.com/watch?v=S5txR6aFhmw), [zoom](https://bth.zoom.us/j/8535967236) |
 | 13-14 | efo    | alla   | Introduktion till datavetenskap | H430, [zoom](https://bth.zoom.us/j/6772303809) |
 
 Vi startar lugnt så använd tiden för att förbereda dig inför onsdagen.
@@ -193,7 +193,7 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 |-------|--------|--------|-----|-----|
 | 08-09 | klw    | alla   | Introduktion till terminalen | [Inspelad](https://www.youtube.com/watch?v=wojCiz4JDuU), [Zoom](https://bth.zoom.us/j/6772303809) |
 | 09-10 | klw    | alla   | Labbmiljö dbwebb-cli | [Inspelad](https://www.youtube.com/watch?v=ttxe_6Vyvss), [Zoom](https://bth.zoom.us/j/6772303809) |
-| 10-11 | aar    | python | Intro till Python | Inspelad, [Zoom](https://bth.zoom.us/j/6772303809) |
+| 10-11 | aar    | python | Intro till Python | [Inspelad](https://youtu.be/Xa3vgo_91XI), [Zoom](https://bth.zoom.us/j/6772303809) |
 
 
 

@@ -5,6 +5,7 @@ author:
     - efo
     - aar
 revision:
+    "2023-08-18": (L, aar) Uppdaterade mål så det stämmer med nya kursplanen.
     "2023-06-15": (K, aar) Skapade v5 för byta redovisningstext till quiz.
     "2022-05-13": (J, mos) Not om ny kurskod.
     "2021-05-27": (I, aar) Flyttat om kmom inför v4.
@@ -26,11 +27,21 @@ Kursen **Programmering och Problemlösning i Python**, a.k.a. *python*, lär ut 
 <!--more-->
 
 
-Detta är en grundkurs i programmering vilket innebär att vi startar med att skapa rutiner för problemlösning och felsökning via enkla grundkonstruktioner i Python. Vi bygger en utvecklingsmiljö som hjälper oss med utveckling och felsökning. Efterhand bygger vi mer och mer avancerade konstruktioner i Python, men fortfarande på en rimlig nivå som passar en nybörjare i programmering.
+Detta är en grundkurs i programmering vilket innebär att vi startar med att skapa rutiner för problemlösning och felsökning via enkla grundkonstruktioner i Python. Vi bygger en utvecklingsmiljö som hjälper oss med utveckling och felsökning. Stegvis bygger vi mer och mer avancerade konstruktioner i Python.
+
+I praktiska övningar får du möjlighet att lära dig grunderna i strukturerad programmering och problemlösning samt använda Pythons inbyggda standardbibliotek med bland annat filhantering och datastrukturer.
 
 Programmeringsspråket Python är ett högnivåspråk med stöd för olika programmeringsparadigmer som objektorientering och funktionell programmering. Du använder Python för att bekanta dig med dessa olika sätt att skriva din kod. Du får pröva på att använda Pythons inbyggda standardbibliotek med funktioner för stränghantering, filhantering och datastrukturer.
 
 Via litteraturstudier och praktiska övningar får du möjlighet att via programmeringsspråket Python, lära dig grunderna i strukturerad programmering och problemlösning. I slutet av kursen får du visa dina färdigheter i en praktisk individuell examination.
+
+
+Kursintro {#pres}
+------------------------
+
+Här är en video som "pratar" dig igenom kursens upplägg och delar av innehållet i detta dokumentet.
+
+[YOUTUBE src="NJDGtST0EF4" width=700 caption="Kursintroduktion till kursen python med Andreas."]
 
 
 
@@ -49,11 +60,9 @@ Innehåll {#innehall}
 Kursen omfattar följande områden:
 
 * Allmän problemlösning och strukturerad programmering.
-* Grundläggande programmering med variabler, loopar, funktioner med argument och returvärde.
-* Grunden i och användande av datastrukturer och algoritmer.
-* Översikt av standardbibliotek samt introduktion till externa moduler.
-* Organisation av större kodmassa i moduler.
-* Felsökning, felkoder och tekniker att debugga sitt program.
+* Grundläggande programmering i Python med variabler, villkorssatser, loopar, funktioner, argument.
+* Felhantering, felkoder och tekniker att felsöka sitt program.
+* Översikt av Pythons standardbibliotek och användande av datastrukturer och algoritmer och filhantering.
 * Utvecklingsmiljö och verktyg för programvaruutveckling med Python.
 
 
@@ -61,29 +70,34 @@ Kursen omfattar följande områden:
 Mål {#mal}
 ------------------------
 
-###Kunskap och förståelse {#kunskap}
+### Kunskap och förståelse {#kunskap}
 
 Efter genomförd kurs skall studenten:
 
-* kunna visa grundläggande kunskaper i problemlösning med strukturerad programmering i Python genom att skriftligen beskriva och sammanfatta erfarenheter och observationer från övningar och individuell examination.
-* kunna visa grundläggande kunskaper i att lösa definierade problem via programmering i Python.
+* Påvisa grundläggande kunskaper i problemlösning med strukturerad programmering i Python genom att
+skriftligen beskriva och sammanfatta erfarenheter och observationer från övningar och uppgifter.
+
+* Påvisa grundläggande kunskaper i att lösa definierade problem via programmering i Python
 
 
 
-###Färdighet och förmåga {#fardighet}
+### Färdighet och förmåga {#fardighet}
 
 Efter genomförd kurs skall studenten:
 
 * utifrån en specifikation kunna utveckla en lösning i Python samt dokumentera och via text kunna presentera denna lösning.
+
 * ha god praktisk förmåga att hantera de verktyg och utvecklingsmiljöer som används vid utveckling och felsökningar med Python.
 
 
 
-###Värderingsförmåga och förhållningssätt {#vardera}
+### Värderingsförmåga och förhållningssätt {#vardera}
 
 Efter genomförd kurs skall studenten:
 
-* via redovisningstexter kunna visa grundläggande förmåga att reflektera över bra och mindre bra kod i sammanhanget kodstruktur och lösningar på definierade problem.
+* Självständigt och kritiskt kunna utvärdera och analysera sina lösningar.
+
+* Bedöma vilka konstruktioner som är lämpliga att använda för ett problem.
 
 
 

@@ -219,8 +219,8 @@ Därefter kan du följa med Kenneth på en campusvandring mellan kl 11-12. Detta
 
 Efter lunch fortsätter det med två föreläsningar på campus, båda nås även via zoom.
 
+* <s>14-15</s> 08-09 Kommunikation som bidrar till jämställdhet
 * 13-14 Internationalisering, forskning och samverkan
-* 14-15 Kommunikation som bidrar till jämställdhet
 
 
 <!--

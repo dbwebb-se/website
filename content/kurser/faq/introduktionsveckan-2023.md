@@ -127,7 +127,7 @@ Planering {#plan}
 
 Här följer en planering för introveckans aktiviteter.
 
-**Schemat är preliminärt.**
+<!-- **Schemat är preliminärt.** -->
 
 Om det blir några sena ändringar i planeringen så kan du kolla upp dem i schemat.
 

@@ -72,7 +72,7 @@ elif choice == "1":
     * Menyval 3 - `points_to_grade`
     * Menyval 4 - `sum_and_average`
     * Menyval 5 - `hyphen_string`
-    * Menyval 6 - `is_isogram`
+    * Menyval 6 - `compare_numbers`
     * Menyval 7 - `validate_ssn`
     * Menyval 8 - `robber_language`
 

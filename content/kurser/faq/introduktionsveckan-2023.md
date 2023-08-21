@@ -148,7 +148,7 @@ På campus håller biträdande programansvarig Kenneth Lewenhagen en träff och 
 
 För distansstudenter håller Mikael samtidigt en träff och frågestund i [mos zoom](https://bth.zoom.us/j/4200421337). <!-- ([spelades in](https://www.youtube.com/watch?v=yMTUDvTHsfE&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc)). -->
 
-Klockan 11-12 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J. 
+Klockan 11-12 brukar det bjudas på lättare förtäring i samband med "Mingel med stödfunktioner" utanför Bistro J, plan 1, hus J.
 
 <!--
 [Stödfunktionerna har spelat in en video för att presentera sig och sin verksamhet](https://www.youtube.com/watch?v=SSQDHLdJHbM&list=PLKtP9l5q3ce9NxJ59ztFKIJD7tbF3cllc&index=3).
@@ -170,7 +170,7 @@ På **tisdagen** är det kursstarter.
 |-------|--------|--------|-----|-----|
 | 10-11 | mos    | webtec | Kursintroduktion | [Inspelad](https://youtu.be/K7F5IVgK1bg), [zoom](https://bth.zoom.us/j/4200421337) |
 | 11-12 | aar    | python | Kursintroduktion | [Inspelad](https://youtu.be/NJDGtST0EF4) [del 2](https://www.youtube.com/watch?v=S5txR6aFhmw), [zoom](https://bth.zoom.us/j/8535967236) |
-| 13-14 | efo    | alla   | Introduktion till datavetenskap | H430, [zoom](https://bth.zoom.us/j/6772303809) |
+| 13-14 | efo    | alla   | Introduktion till datavetenskap | H430, [zoom](https://bth.zoom.us/j/4569558656) |
 
 Vi startar lugnt så använd tiden för att förbereda dig inför onsdagen.
 
@@ -187,7 +187,7 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 * Ett uppdaterat operativsystem (Windows, Mac, Linux)
 * En texteditor (förslaget är Visual Studio Code)
 * En bash terminal med pakethanterare (Mac & Linux har redan en, Windows rekommenderar vi WSL/Ubuntu).
-* Versionshanteringssystemet Git. 
+* Versionshanteringssystemet Git.
 
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
@@ -213,7 +213,7 @@ Campusstudenter träffar Marie i H430 och distansstudenter träffar Mikael i zoo
 
 ### Fredag: Campusvandring & föreläsningar {#campusvandring}
 
-Morgonen börjar på campus med information från Biblioteket kl 10:30-11:00 (ej zoom). 
+Morgonen börjar på campus med information från Biblioteket kl 10:30-11:00 (ej zoom).
 
 Därefter kan du följa med Kenneth på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor. Samling receptionen, hus A, även kallad "badtunnan".
 

@@ -141,8 +141,8 @@ Videor och streams från introduktionsveckan kan komma att sparas i spellistan "
 
 ### Måndag: Uppropsdagen {#man-upprop}
 
-Veckan börjar kl 09-10 med "Rektorns välkomsttal" utomhus utanför hus J. Det är ännu oklart om vi kan följa välkomsttalet via zoom. 
-<!-- och det [kan följas via zoom](https://bth.zoom.us/j/69647412076). -->
+Veckan börjar kl 09-10 med "Rektorns välkomsttal" utomhus utanför hus J. <!-- Det är ännu oklart om vi kan följa välkomsttalet via zoom. -->
+Det [kan följas via zoom](https://bth.zoom.us/j/69647412076).
 
 På campus håller biträdande programansvarig Kenneth Lewenhagen en träff och frågestund med campusstudenterna kl 10-11 i salen J1650.
 

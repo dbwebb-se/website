@@ -94,7 +94,7 @@ Här är ett dokument som är bra att kika igenom som ny student.
 
 <!-- Bör uppdateras till 2023 -->
 
-* [Så här funkar det på BTH](https://drive.google.com/file/d/1BV_raNJQle24M36f9c2xhNVxjNAgpkpu/view?usp=sharing)
+* [Så här funkar det på BTH](https://bthse-my.sharepoint.com/personal/mos_bth_se/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmos%5Fbth%5Fse%2FDocuments%2FBifogade%20filer%2FS%C3%A5%20h%C3%A4r%20funkar%20det%20p%C3%A5%20BTH%2Epdf&parent=%2Fpersonal%2Fmos%5Fbth%5Fse%2FDocuments%2FBifogade%20filer&ga=1)
 
 <!--
 Här finns en checklista med saker som är bra att veta inför studier på campus & distans.

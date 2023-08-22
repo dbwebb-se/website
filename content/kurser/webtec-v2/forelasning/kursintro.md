@@ -10,7 +10,7 @@ Kursintroduktion
 
 Vi går igenom kursen avseende innehåll, struktur, schema och upplägg för att få en uppfattning om vad kursen handlar om och hur den är upplagd.
 
-Videon är 34 minuter lång.
+Videon är 22 minuter lång.
 
 [YOUTUBE src="K7F5IVgK1bg" width=700 caption="Kursintroduktion till kursen webtec med Mikael."]
 

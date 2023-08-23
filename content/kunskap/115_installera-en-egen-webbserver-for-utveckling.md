@@ -22,6 +22,13 @@ Se till att du har en egen lokal utvecklingsmiljö för dina webbsidor. I dbwebb
 
 
 
+Förutsättning {#pre}
+--------------------------------------------------------------------
+
+Innan du börjar med denna artikel måste du ha klonat ditt kursrepo. De symboliska länkarna i slutet av artikeln förutsätter det. Läs i labbmiljön om [kommandot dbwebb-cli och om hur du klonar ett kursrepo](kurser/webtec-v2/installera-labbmiljo#dbwebbcli), innan du fortsätter med denna artikel.
+
+
+
 Webbserver Apache httpd med PHP och databas {#webbserver}
 --------------------------------------------------------------------
 

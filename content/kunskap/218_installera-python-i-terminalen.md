@@ -60,6 +60,19 @@ Linux (debian):
 apt-get install python3
 ```
 
+Om du får följande fel
+
+```bash
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+```
+
+Då behöver du installera som admin. Kör kommandot:
+
+```bash
+sudo apt-get install python3
+```
+
 Cygwin på Windows:
 
 ```bash

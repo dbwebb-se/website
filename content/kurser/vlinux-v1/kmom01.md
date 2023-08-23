@@ -2,6 +2,7 @@
 author:
   - lew
 revision:
+  "2023-08-23": (D, lew) Inför HT23.
   "2022-03-11": (C, lew) Inför HT22.
   "2020-03-11": (B, lew) Inför HT20.
   "2019-03-19": (A, lew) Inför HT19.
@@ -21,7 +22,7 @@ För att lyckas med kursmomentet så behöver du bekanta dig med grunderna i ter
 
 Vid sidan av studierna kan du välja att installera på en annan server också. Kanske har du en gammal dator till övers, eller är du bekväm med virtuella servrar, eller investerar du i en Raspberry Pi för ett par hundralappar.
 
-<!--stop-->
+<!--more-->
 
 [FIGURE src=/image/vlinux/kmom01_top.png?w=w2 caption="Okey, terminalen, och nu då?"]
 

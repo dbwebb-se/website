@@ -213,13 +213,24 @@ Campusstudenter träffar Marie i H430 och distansstudenter träffar Mikael i zoo
 
 ### Fredag: Campusvandring & föreläsningar {#campusvandring}
 
-Morgonen börjar på campus med information från Biblioteket kl 10:30-11:00 (ej zoom).
+#### Campus
 
-Därefter kan du följa med Kenneth på en campusvandring mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor. Samling receptionen, hus A, även kallad "badtunnan".
+Morgonen börjar på campus med information från Biblioteket kl 10:30-11:00.
 
-Efter lunch fortsätter det med två föreläsningar på campus, båda nås även via zoom.
+Därefter kan du följa med Kenneth på en campusvandring/träff mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. Du får också tillfälle att prata med dina lärare och ställa frågor. Samling receptionen, hus A, även kallad "badtunnan".
 
-* <s>14-15</s> 08-09 Kommunikation som bidrar till jämställdhet
+Efter lunch fortsätter det med två föreläsningar på campus.
+
+* 13-14 Internationalisering, forskning och samverkan
+* 14-15 Kommunikation som bidrar till jämställdhet (enbart campus)
+
+
+
+#### Distans
+
+För de som är på distans gäller följande föreläsningar som kan följas via zoom.
+
+* 08-09 Kommunikation som bidrar till jämställdhet
 * 13-14 Internationalisering, forskning och samverkan
 
 

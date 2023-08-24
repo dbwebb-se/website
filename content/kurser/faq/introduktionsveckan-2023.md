@@ -217,7 +217,7 @@ Campusstudenter träffar Marie i H430 och distansstudenter träffar Mikael i zoo
 
 Morgonen börjar på campus med information från Biblioteket kl 10:30-11:00.
 
-Därefter, mellan kl 11-12 kan du komma till labbsalen (H430) om du har några frågor eller bara vill hänga lite med studentkollegorna. Det kan även vara bra om du ej är klar med labbmiljön då du har tillfälle att prata med dina lärare och ställa frågor innan kurserna startar på måndag.  
+Därefter, mellan kl 11-12, kan du komma till labbsalen (H430) om du har några frågor eller bara vill hänga lite med studentkollegorna. Det kan även vara bra om du ej är klar med labbmiljön då du har tillfälle att prata med dina lärare och ställa frågor innan kurserna startar på måndag.  
 
 <!-- Samling receptionen, hus A, även kallad "badtunnan". Kenneth på en campusvandring/träff mellan kl 11-12. Detta är ett bra tillfälle att träffa dina studentkollegor som skall gå campusprogrammet. -->
 

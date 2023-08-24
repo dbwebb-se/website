@@ -2,17 +2,13 @@
 author:
   - lew
 revision:
-  "2023-08-23": (D, lew) Inför HT23.
+  "2023-08-24": (D, lew) Inför HT23.
   "2022-03-11": (C, lew) Inför HT22.
   "2020-03-11": (B, lew) Inför HT20.
   "2019-03-19": (A, lew) Inför HT19.
 ...
 
 # Kmom01: Docker och en linuxmiljö
-
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
 
 Det första vi behöver är en Linuxmiljö. På något sätt.
 

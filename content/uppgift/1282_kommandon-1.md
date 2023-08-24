@@ -21,7 +21,7 @@ Du har installerat [Docker](kunskap/installera-virtualiseringsmiljon-docker).
 
 ## Introduktion {#intro}
 
-Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du använt dig av för att lösa kravet. Ett krav per rad. Till din hjälp har du `man`-sidorna. Och hela internet såklart. 
+Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du använt dig av för att lösa kravet. Ett krav per rad. Till din hjälp har du `man`-sidorna. Och hela internet såklart.
 
 Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainutils`: `$ apt install bsdmainutils`.
 
@@ -31,7 +31,7 @@ Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainu
 
 1. Ta en skärmdump som visar resultatet av kommandot `cal` inifrån containern. Spara filen som `cal.png`.
 
-1. Skapa filen `info` och lägg till kommandot som löser respektive krav:
+1. Skapa filen `info.bash` och lägg till kommandot som löser respektive krav:
 
    1. Skriv enbart ut operativsystemets namn. (`uname`)
 
@@ -43,7 +43,7 @@ Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainu
 
    1. Använd `cowsay` för att skriva ut en valfri hälsning. (`./usr/games/cowsay`)
 
-Se till så du har filen `kmom01/commands/info` när du lämnar in.
+Se till så du har filen `kmom01/commands/info.bash` när du lämnar in.
 
 
 

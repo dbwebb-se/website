@@ -5,6 +5,7 @@ category:
     - Docker
     - linux
 revision:
+    "2023-08-24": (B, lew) Uppdaterad inför HT23.
     "2022-04-20": (A, lew) Ny inför HT22.
 
 ...
@@ -58,11 +59,11 @@ Krav {#krav}
 
 1. Du får inte skapa någon fil eller mapp utan allt finns någonstans i den kopierade mappen.
 
-1. Varje kommando du kör lägger du även i filen `answers`. Ett kommando per rad och filen ska inte innehålla något annat. Alla kommandon ska utgå ifrån att du står i den kopierade mappen.
+1. Varje kommando du kör lägger du även i filen `answers.bash`. Ett kommando per rad och filen ska inte innehålla något annat. Alla kommandon ska utgå ifrån att du står i den kopierade mappen.
 
 Tips: Installera programmet `tree`. Det används för att lista innehåll i en mappstruktur på ett överskådligt sätt. Kommandot `tree .` listar strukturen med utgångspunkt i den nuvarande mappen. Se även `man tree`.
 
-När du är klar så kopierar du filen `answers` från containern in till den lokala mappen `kmom01/structure`.
+När du är klar så kopierar du filen `answers.bash` från containern in till den lokala mappen `kmom01/structure`.
 
 
 
@@ -72,9 +73,9 @@ För att testa din lösning som läraren kan du göra följande:
 
 1. Kopiera in en ny `example/structure` in till containern.
 
-1. Kopiera in din `answers` fil till ovan mapp.
+1. Kopiera in din `answers.bash` fil till ovan mapp.
 
-1. Kör kommandot `$ bash answers` för att köra alla kommandon i följd.
+1. Kör kommandot `$ bash answers.bash` för att köra alla kommandon i följd.
 
 1. Hur ser det ut med `tree .`?
 

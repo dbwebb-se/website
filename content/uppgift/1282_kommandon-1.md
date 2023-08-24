@@ -5,10 +5,11 @@ category:
   - Docker
   - linux
 revision:
+  "2023-08-24": (B, lew) Uppdaterad inför HT23.
   "2022-04-14": (A, lew) Ny inför HT22.
 ...
 
-# Vanliga kommandon
+# Kommandon 1
 
 Vi ska träna på några kommandon i unixmiljön. Vi ska installera några program och se hur vi kan använda dem och dess "options" och skapa ett par filer med diverse information och kommandon.
 
@@ -20,7 +21,11 @@ Du har installerat [Docker](kunskap/installera-virtualiseringsmiljon-docker).
 
 ## Introduktion {#intro}
 
-Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du använt dig av för att lösa kravet. Ett krav per rad. Till din hjälp har du `man`-sidorna. Och hela internet såklart. Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainutils`: `$ apt install bsdmainutils`.
+Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du använt dig av för att lösa kravet. Ett krav per rad. Till din hjälp har du `man`-sidorna. Och hela internet såklart. 
+
+Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainutils`: `$ apt install bsdmainutils`.
+
+[INFO]Du ska utföra alla kommandon inifrån containern[/INFO]
 
 ## Krav {#krav}
 
@@ -30,7 +35,7 @@ Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du an
 
    1. Skriv enbart ut operativsystemets namn. (`uname`)
 
-   1. Visa en kalender över enbart juli 2022. (`cal`)
+   1. Visa en kalender över enbart juli 2023. (`cal`)
 
    1. Skriv ut dagens datum i formatet `yyyy/mm/dd`. (`date`)
 

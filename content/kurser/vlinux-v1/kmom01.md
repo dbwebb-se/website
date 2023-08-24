@@ -91,7 +91,9 @@ Dessa uppgifter skall utföras och redovisas. När du ska exekvera delar i en co
 
 1. Gör uppgiften "[Skapa en me-sida till vlinux-kursen](uppgift/skapa-en-me-sida-till-vlinux-kursen)". Här fyller du på din redovisningstext efter varje kursmoment.
 
-[YOUTUBE src=GLRRsziU2xU width=639 caption="Har du fått med alla delar?"]
+<!-- [YOUTUBE src=GLRRsziU2xU width=639 caption="Har du fått med alla delar?"] -->
+TBD: Video som visar klart kursmoment
+
 
 ### Testa din inlämning {#test}
 

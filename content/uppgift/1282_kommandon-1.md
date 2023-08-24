@@ -31,7 +31,7 @@ Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainu
 
 1. Ta en skärmdump som visar resultatet av kommandot `cal` inifrån containern. Spara filen som `cal.png`.
 
-1. Skapa filen `info.txt` och lägg till kommandot som löser respektive krav:
+1. Skapa filen `info` och lägg till kommandot som löser respektive krav:
 
    1. Skriv enbart ut operativsystemets namn. (`uname`)
 
@@ -41,7 +41,11 @@ Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainu
 
    1. Hur mycket utrymme tar mappen `/usr/bin` i mb? (`du`)
 
-Se till så du har filen i den lokala mappen `kmom01/commands` när du lämnar in.
+   1. Använd `cowsay` för att skriva ut en valfri hälsning. (`./usr/games/cowsay`)
+
+Se till så du har filen `kmom01/commands/info` när du lämnar in.
+
+
 
 ### Publicera {#publish}
 

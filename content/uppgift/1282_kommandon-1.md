@@ -41,7 +41,7 @@ Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainu
 
    1. Hur mycket utrymme tar mappen `/usr/bin` i mb? (`du`)
 
-   1. Använd `cowsay` för att skriva ut en valfri hälsning. (`./usr/games/cowsay`)
+   1. Använd `cowsay` för att skriva ut en valfri hälsning. (`/usr/games/cowsay`)
 
 Se till så du har filen `kmom01/commands/info.bash` när du lämnar in.
 

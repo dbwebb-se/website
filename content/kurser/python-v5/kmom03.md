@@ -82,7 +82,7 @@ Titta på följande:
 
 ### Övningar {#ovningar}
 
-Genomför övningarna för att träna inför uppgifterna.
+[YOUTUBE src=GgKkPnnTrPY caption="Genomgång av kmom03."]
 
 1. Jobba igenom artikeln/övningen "[Funktioner, argument och returvärden](kunskap/funktioner-argument-och-returvarden)" för att träna på hur du skapar funktioner. De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom03/functions`.
 

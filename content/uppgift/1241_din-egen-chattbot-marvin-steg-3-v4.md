@@ -34,6 +34,8 @@ Se hur det kan se ut när uppgiften är klar:
 [ASCIINEMA src=B7hLyjHGlGbUwj9c6JoTnONRB]
 
 
+[YOUTUBE src=EQ3Ownyvz7A caption="Tips för att komma igång med Marvin3."]
+
 
 Krav {#krav}
 -----------------------

@@ -107,7 +107,7 @@ Titta på följande:
 
 ### Övningar {#ovningar}
 
-Genomför övningarna för att träna inför uppgifterna.
+Ingen video i detta kmom, börja med övningen direkt.
 
 1. Jobba igenom artikeln/övningen "[Kom igång med datatypen lista i Python](kunskap/kom-igang-med-datatypen-lista-i-python)". De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom04/list`.
 

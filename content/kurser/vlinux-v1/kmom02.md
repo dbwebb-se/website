@@ -2,18 +2,15 @@
 author:
   - lew
 revision:
+  "2023-08-25": (B, lew) Uppdaterad inför HT23.
   "2022-04-11": (A, lew) Ny inför HT22.
 ...
 
 # Kmom02: Dockerfile och Bash
 
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
-
 Nu har vi fått Dockermiljön på plats och vi vet hur vi startar en container samt hur vi navigerar i den. Vi ska nu titta på hur vi kan skapa en egen image utifrån en så kallad Dockerfile så vi slipper installera om allt varje gång vi stänger ner containern. Vi ska också lära oss hur vi kan skapa bashscript som vi exekverar i containern.
 
-<!--stop-->
+<!--more-->
 
 [FIGURE src=/image/vlinux/bashlogo.png caption="Bash."]
 

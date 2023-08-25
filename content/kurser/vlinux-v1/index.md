@@ -4,6 +4,7 @@ title: vlinux (v1)
 author:
     - lew
 revision:
+    "2023-08-25": (D, lew) Uppdaterad inför HT23
     "2022-04-20": (C, lew) Uppdaterad inför HT22
     "2018-12-21": (B, lew)
     "2018-12-21": (A, mos) Inför skapandet av linux v3, nytt namn, syfte, förkunskaper och kurskod.

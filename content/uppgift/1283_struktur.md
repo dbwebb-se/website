@@ -57,9 +57,9 @@ Krav {#krav}
 4 directories, 9 files
 ```
 
-1. Du får inte skapa någon fil eller mapp utan allt finns någonstans i den kopierade mappen.
+2. Du får inte skapa någon fil eller mapp utan allt finns någonstans i den kopierade mappen (vissa är även dolda).
 
-1. Varje kommando du kör lägger du även i filen `answers.bash`. Ett kommando per rad och filen ska inte innehålla något annat. Alla kommandon ska utgå ifrån att du står i den kopierade mappen.
+3. Varje kommando du kör lägger du även i filen `answers.bash`. Ett kommando per rad och filen ska inte innehålla något annat. Alla kommandon ska utgå ifrån att du står i den kopierade mappen.
 
 Tips: Installera programmet `tree`. Det används för att lista innehåll i en mappstruktur på ett överskådligt sätt. Kommandot `tree .` listar strukturen med utgångspunkt i den nuvarande mappen. Se även `man tree`.
 

@@ -7,6 +7,7 @@ category:
     - php
     - kurs webtec
 revision:
+    "2023-08-29": "(E, mos) Bort med Unicorn."
     "2022-06-28": "(D, mos) Genomgången och större uppdatering inför webtec-v2."
     "2018-06-19": "(C, mos) Uppdaterad inför htmlphp v3, kompletterad med video."
     "2016-02-03": "(B, mos) Blå ruta om status för Unicorn."
@@ -814,7 +815,7 @@ För att underlätta validering av sidorna så lägger vi till en direktlänk ti
 Ladda upp sidorna på driftsservern för att testa att länken till CSS-validatorn fungerar. Klicka på den och se om din sida validerar.
 
 
-
+<!--
 Unicorn, ett valideringsverktyg för flera tekniker {#unicorn}
 --------------------------------------
 
@@ -831,6 +832,7 @@ Så här kan det se ut när du klickar på länken och validerar både HTML och 
 [FIGURE src=image/webtec/html-css-php/unicorn.png?w=w3 caption="Unicorn validerar HTML, CSS och om sidan innehåller ett _feed_ (vilket sidan inte gör)."]
 
 Kom nu ihåg att alltid dubbelkolla att din sida validerar. Hamnar du i trubbel så kollar du alltid först om sidan validerar. Det är ofta första steget i felsökningen, kontrollera att HTML och CSS validerar.
+-->
 
 
 

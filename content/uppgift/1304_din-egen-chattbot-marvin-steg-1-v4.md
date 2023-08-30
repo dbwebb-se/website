@@ -172,7 +172,7 @@ För att inkludera dina extrauppgifter i testerna behöver du skicka med `-e` el
 
 
 
-* Menyval **a1**: Gör ett val där Marvin tar emot två `input()` i from av strängar. Den skall sedan kolla om alla karaktärer i den andra strängen finns i den första. Varje bokstav räknas bara en gång. Exempel:
+* Menyval **a1**: Gör ett val där Marvin tar emot två `input()` i from av strängar. Den skall sedan kolla om alla bokstäver i den andra strängen finns i den första. Om en bokstav i den andra strängen förekommer flera gånger måste den finnas minst samma antal gånger i den första. Exempel:
 ```python
 input: "Python", "phno"        output: "Match!"
 input: "Programming", "gram"   output: "Match!"

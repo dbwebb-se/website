@@ -37,6 +37,8 @@ Så här kan det se ut när du är klar med Plane uppgiften.
 [YOUTUBE src=7qifosdyfe8 caption="Så här kan det se ut när du är klar med Plane uppgiften."]
 
 
+[YOUTUBE src=NvpjX99ayzQ caption="Genomgång av kmom01."]
+
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
@@ -128,9 +130,6 @@ Nedanför hittar ni videor som kan vara bra att titta på för att lära er veck
 ### Övningar {#ovningar}
 
 Genomför följande övning för att träna dig och förbereda inför uppgifterna.
-
-[YOUTUBE src=NvpjX99ayzQ caption="Genomgång av kmom01."]
-
 
 1. Kom igång och gör ditt första program i Python tillsammans med artikeln "[Kom igång med ditt första program i Python](kunskap/kom-igang-med-ditt-forsta-program-i-python-v2)". De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom01/hello`.
 

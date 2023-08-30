@@ -83,7 +83,7 @@ elif choice == "1":
     ```python
 #main.py
     elif choice == "1":
-        greet()
+        marvin1.greet()
     ```
 
     ```python

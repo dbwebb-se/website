@@ -24,6 +24,8 @@ I detta kursmoment ska vi kolla på hur vi kan strukturera koden så den blir me
 
 [FIGURE src=/image/python/func-module.png?w=w2 caption="Marvin skall nu lära sig lite mer och få en bättre struktur."]
 
+[YOUTUBE src=GgKkPnnTrPY caption="Genomgång av kmom03."]
+
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
@@ -81,8 +83,6 @@ Titta på följande:
 
 
 ### Övningar {#ovningar}
-
-[YOUTUBE src=GgKkPnnTrPY caption="Genomgång av kmom03."]
 
 1. Jobba igenom artikeln/övningen "[Funktioner, argument och returvärden](kunskap/funktioner-argument-och-returvarden)" för att träna på hur du skapar funktioner. De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom03/functions`.
 

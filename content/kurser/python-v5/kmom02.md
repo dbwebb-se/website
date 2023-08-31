@@ -20,6 +20,10 @@ Vi har bekantat oss med värden, datatyper och variabler och det är nu dags fö
 
 [FIGURE src=/image/python/py-marvin.png?w=w2 caption="Marvin i Python."]
 
+[YOUTUBE src=FKqqVNDX08E caption="Genomgång av kmom02 del1."]
+
+[YOUTUBE src=Z6m0uoEdVoI caption="Genomgång av kmom02 del2."]
+
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **40 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
@@ -89,11 +93,6 @@ Titta på följande:
 
 
 ### Övningar {#ovningar}
-
-[YOUTUBE src=FKqqVNDX08E caption="Genomgång av kmom02 del1."]
-
-[YOUTUBE src=Z6m0uoEdVoI caption="Genomgång av kmom01."]
-
 
 1. Jobba igenom artikeln/övningen "[Jämförelseoperatorer och booleska värden](kunskap/booleans-och-jamforelseoperatorer)" för att träna på hur värden jämförs i Python. Python-interpretatorn används för att testa koden. Vill du spara någon del av koden så gör du det under `me/kmom02/flow`.
 

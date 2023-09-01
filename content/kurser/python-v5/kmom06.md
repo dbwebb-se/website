@@ -24,12 +24,6 @@ revision:
 Kmom06: Filer
 ==================================
 
-[WARNING]
-Kursmomentet uppdateras! Påbörja inte innan den gula rutan är borta.
-[/WARNING]
-
-
-
 [INFO]
 
 Gör `dbwebb update` innan du börjar jobba med uppgifterna!
@@ -127,15 +121,7 @@ Det finns inga extrauppgifter.
 
 
 
-Resultat & Redovisning  {#resultat_redovisning}
+Lämna in  {#resultat}
 -----------------------------------------------
 
-*(ca: 1-2 studietimmar)*
-
-Läs [instruktionen om hur du skall lämna in och redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-* Hur jobbar man med filer i Python?
-* Vilka fördelar ger det att kunna läsa från och skriva till filer?
-* Hur gick det att utföra uppgifterna?
+Läs [Lämna in och redovisa uppgift](./../redovisa) för att ta reda på hur ni lämna in era uppgifter när ni är klara.

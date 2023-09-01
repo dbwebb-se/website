@@ -38,6 +38,8 @@ Så här kan det se ut när du bekantar dig med listor.
 
 <script type="text/javascript" src="https://asciinema.org/a/11737.js" id="asciicast-11737" async></script>
 
+Ingen genomgång video i detta kmom.
+
 <!--[FIGURE src=/image/snap/py-marvin.png?w=w2 caption="Marvin i Python."]-->
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
@@ -106,8 +108,6 @@ Titta på följande:
 
 
 ### Övningar {#ovningar}
-
-Ingen video i detta kmom, börja med övningen direkt.
 
 1. Jobba igenom artikeln/övningen "[Kom igång med datatypen lista i Python](kunskap/kom-igang-med-datatypen-lista-i-python)". De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom04/list`.
 

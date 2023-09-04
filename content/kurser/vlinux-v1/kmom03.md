@@ -2,21 +2,19 @@
 author:
   - lew
 revision:
+  "2023-09-04": (C, lew) Uppdaterad inför HT23.
   "2022-05-09": (B, lew) Uppdaterad inför HT22.
   "2019-03-25": (A, lew) Ny inför HT19.
 ...
 
 # Kmom03: Virtual Hosts
 
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
 
 Nu kan vi enkelt snurra igång en Linuxmiljö så låt oss se hur vi kan använda containern som en server och installera ett par webbplatser på den. Det låter som en vettig syssla för en webbprogrammerare.
 
 Ett bra sätt att installera många webbplatser på en och samma maskin är Apache Virtual Hosts och det är något vi skall bekanta oss med. Vi ska skapa namnbaserade webbplatser som ligger på samma domän med hjälp av webbservern Apache.
 
-<!--stop-->
+<!--more-->
 
 [FIGURE src=/image/vlinux/apache.svg.png caption="Apache2."]
 
@@ -54,6 +52,8 @@ Genomför följande övningar.
 
 1. Ha lite koll på [Docker guiden](guide/docker). Framförallt delarna om Dockerfile och volymer.
 
+
+
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
@@ -66,7 +66,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 ### dockerhub.bash {#dockerhub-bash}
 
-1. Skapa ett Bash-script, `kmom03/dockerhub.bash` som kör din publicerade image. Filerna ska servas via en volym där sökvägen tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Mappa sökvägen mot din valda `DocumentRoot` i config-filen.
+1. Skapa ett Bash-script, `kmom03/dockerhub.bash` som kör din publicerade image. Filerna ska servas via en volym där mappen med filerna tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Mappa sökvägen mot din valda `DocumentRoot` i config-filen.
 
 1. Containern ska kunna nås via port 8080 (-p).
 
@@ -76,7 +76,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lägg till hosten via `docker run`. Den ska heta `mysite.vlinux.se`.
 
-[YOUTUBE src=N4utGAtitTg width=639 caption="Har du fått med alla delar?"]
+[YOUTUBE src=WtWR8WMtHzw width=639 caption="Har du fått med alla delar?"]
 
 ### Testa din inlämning {#test}
 

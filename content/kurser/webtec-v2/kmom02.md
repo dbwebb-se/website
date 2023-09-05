@@ -13,13 +13,13 @@ revision:
 Kmom02: Styla en webbplats
 ==================================
 
-Vi fortsätter att jobba på den webbpalts vi byggde i förra kursmomentet och nu handlar det om att styla upp webbplatsens olika delar och lära oss med om CSS.
+Vi fortsätter att jobba på den webbplats vi byggde i förra kursmomentet och nu handlar det om att styla upp webbplatsens olika delar och lära oss mer om CSS.
 
 Vi utgår från en ostylad sida, likt följande.
 
 [FIGURE src=image/webtec/style-it/start.png?w=w3 caption="En ostylad webbplats att utgå ifrån."]
 
-När vi är klara har vi stylat navbar, header, footer, innehåll med artikle och aside med kolumnbaserad layout och vi har provat konstruktioner som float och flex och vi har dessutom byggt en responsiv funktion i webbplatsen.
+När vi är klara har vi stylat navbar, header, footer, innehåll med article och aside med kolumnbaserad layout och vi har provat konstruktioner som float och flex och vi har dessutom byggt en responsiv funktion i webbplatsen.
 
 Resultatet blir individuellt men min egen variant ser ut så här.
 
@@ -51,6 +51,12 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 
 
 ### Litteratur  {#litteratur}
+
+<!--
+* Nuvarande läsresurser är mestadels uppslagsverk och referens, det är bra men någon enklare läsresurs vore bra.
+* Det behövs bättre läsreferenser som ger en enklare introduktion till CSS. 
+* kanske en artikel om responsive webbdesign.
+-->
 
 Läs enligt följande.
 
@@ -89,13 +95,18 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 1. Jobba igenom övningen "[Styla din webbsida med HTML och CSS](kunskap/styla-din-webbsida-med-html-och-css)" som hjälper dig att komma igång med CSS konstruktioner för att styla din webbplats. Spara koden du skriver under `me/report`, om du skriver extra test- och exempelprogram kan du spara dem under `me/kmom02`.
 
 <!--
-html/css-guiden används inte mer, är det ett problem eller räcker det att övningarna i kmom01/02 har ersatt den? Man kan göra en handfull exempelprogram där man stylar specifika saker och spelar in videor kopplade till exempelkoden som kan ligga under `example/css`.
+* Övningen/artikel känns rätt stabil och gedigen.
+
+* html/css-guiden används inte mer, är det ett problem eller räcker det att övningarna i kmom01/02 har ersatt den? Man kan göra en handfull övningar/exempelprogram där man stylar specifika saker och spelar in videor kopplade till exempelkoden som kan ligga under `example/css`.  Kanske är detta något som kan ligga utöver övningsartikeln och bygga vidare på den.
     * navbar
     * header
     * column layout
     * flex
     * float
     * block model
+* Varje del i artikeln kan ha en referensimplementation i example/css som kan byggas till en övning/vide i sig själv.
+
+* labb i php vore nog bra.
 
 -->
 
@@ -117,6 +128,9 @@ Här följer extra uppgifter som du kan utföra för att lära dig mer, om du ha
 * Gör extrauppgift likt stilväljare "[Att bygga en styleväljare till sin webbplats](kunskap/att-bygga-en-stylevaljare-till-sin-webbplats)".
 
 * När man bygger en responsiv webbplats kan man också behöva en responsiv meny som anpassar sig efter webbläsarens bredd. Studera exempelkoden under ditt kursrepo `example/css/responsiv_menu` och försök sedan att lägga till en motsvarande responsiv meny i din `me/report`.
+
+* Det vore bra om man kunde sprida ut css över hela kursen, små delar i varje kmom.
+
 -->
 
 

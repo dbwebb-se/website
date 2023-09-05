@@ -67,11 +67,20 @@ Titta på följande föreläsningar. Föreläsningarna kan innehålla tips om l�
 1. [HTML](./../forelasning/html)
 
 <!--
+* Webbserver (kanske löses av webbteknologier?)
 * [Protokollet HTTP](./../forelasning/protokollet-http) löses dock delvis av Emils lilla video.
 -->
 
 
 ### Litteratur  {#litteratur}
+
+<!--
+* Någon läsresurs om HTML (och CSS) mer vanlig artikel till nybörjaren. Eller skall föreläsningen lösa det?
+* Det är mestadels referenslitteratur som läsresurser nu.
+
+* [web.dev](https://web.dev/), en Google community för webbutveckling.
+
+-->
 
 Läs enligt följande.
 
@@ -120,7 +129,10 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 1. Jobba igenom övningen "[Skapa en webbsida med HTML, CSS och PHP (v2)](kunskap/skapa-en-webbsida-med-html-css-och-php-v2)" som hjälper dig bygga en webbplats med HTML, CSS och PHP. Spara koden du skriver under `me/kmom01`.
 
 <!--
+* Övningen/artikel känns rätt stabil och gedigen.
 * Använda guiden? Kanske som en del i genomgången? https://dbwebb.se/guide/kom-igang-med-html-och-css
+* Någon form av för-övning som visar grunden i en webbsida, snabbt och lätt. Inklusive lite CSS. 
+* Labb och korta praktiska övningar saknas nog?
 -->
 
 ### Uppgifter {#uppgifter}

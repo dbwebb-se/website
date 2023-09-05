@@ -6,6 +6,7 @@ category:
     - css
     - kurs webtec
 revision:
+    "2023-09-05": "(C, mos) Genomgång och några stavfel."
     "2022-09-06": "(B, mos) Genomgång och stavning."
     "2022-07-01": "(A, mos) Första utgåvan inför webtec-v2."
 ...
@@ -722,7 +723,7 @@ Jag löser det genom att lägga till konstruktionen `clear: both;` på det eleme
 
 [FIGURE src=image/webtec/style-it/byline_clear_both.png?w=w3 caption="Nu stängdes flytandet av från bilden och min byline hamnade på rätt plats."]
 
-De båda "fixarna" clearfix och clearfloat kan vid första anblicken se liknande ut men tittar man nogare så är det två olika typer av problem.
+De båda "fixarna" clearfix och clearfloat kan vid första anblicken se liknande ut men tittar man mer noggrant så är det två olika typer av problem.
 
 
 
@@ -763,7 +764,7 @@ Sidan `about.php` har nu ett par saker som jag vill lösa. Låt oss titta på si
 
 Jag förklarar och fixar till sakerna samtidigt.
 
-När jag ändå håller på så tar jag även och lägger in samma sidstruktur i `about.php` med en artikel, på det viset jag har i `me.php`. Det udnerlättar om alla sidkontrollers har en liknande layout så jag vet att den stil jag skriver kan påverka dem alla.
+När jag ändå håller på så tar jag även och lägger in samma sidstruktur i `about.php` med en artikel, på det viset jag har i `me.php`. Det underlättar om alla sidkontrollers har en liknande HTML layout så jag vet att den stil jag skriver kan påverka dem alla.
 
 
 
@@ -827,7 +828,7 @@ Här är en sådan konstruktion som jag väljer att placera i `public/css/main.c
 
 ### About fixad {#aboutfix}
 
-Då var vi klara med att förbereda sidan `about.php` för att inehålla lite mer saker.
+Då var vi klara med att förbereda sidan `about.php` för att innehålla lite mer saker.
 
 [FIGURE src=image/webtec/style-it/about_fixed.png?w=w3 caption="Nu har jag fixat så att även sidor med litet innehåll ser helt okey ut."]
 
@@ -880,7 +881,7 @@ Det jag behöver styla är kontainern till flex och de två kolumnernas bredd. J
 }
 ```
 
-Jag väljer att tänka att hela bredden är 16 delar och asiden blir 4 delar och main blir 12 delar. Ibland underlättar det att tänka i den formen av "grid-baserad" utforming av sidan.
+Jag väljer att tänka att hela bredden är 16 delar och asiden blir 4 delar och main blir 12 delar. Ibland underlättar det att tänka i formen av "grid-baserad" eller kolumnbaserad utforming av sidan.
 
 Jag behöver också styla till själva asiden. Den stilen liknar rätt mycket den jag har i `main.css`. Jag lånar stilen så att det passar ihop med den stil som `.main` har.
 
@@ -903,6 +904,14 @@ Troligen behöver jag justera stylen beroende av om jag har asiden till vänster
 [FIGURE src=image/webtec/style-it/about_2col.png?w=w3 caption="Nu är min about-sida uppdaterad med en två kolumners layout."]
 
 Då börjar vi nära oss slutet.
+
+
+<!--
+Aside till vänster? {#rowreverse}
+--------------------------------------
+
+Visa hur man kan skifta mellan aside höger/vänster med antingen HTML eller med row-reverse.
+-->
 
 
 

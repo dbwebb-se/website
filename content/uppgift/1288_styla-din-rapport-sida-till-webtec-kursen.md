@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2023-09-05": "(B, mos) Genomgång, mindre förtydligande."
     "2022-07-01": "(A, mos) Första utgåvan."
 ...
 Styla din rapportsida till webtec-kursen
@@ -66,12 +67,14 @@ Utför följande krav.
 
 1. Din byline skall innehålla en bild och lite text och vara stylad. Du skall också placera innehållet i din byline i en vy under `view/byline.php` och inkludera den där den används.
 
-1. Styla till din sidkontroller today och försök att göra en "crazy" sida där du visar upp dagens datum och veckodag. Lek med CSS konstruktionerna.
+1. Styla till din sidkontroller `today.php` och försök att göra en "crazy" sida där du visar upp dagens datum och veckodag. Lek med CSS konstruktionerna.
 
-1. Kontrollera att dina sidkontroller passerar Unicorn validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
+1. Kontrollera att dina sidkontroller passerar HTML & CSS validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
 
 <!--
-Mer jobb? Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
+Mer jobb? 
+* Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
+* Tre kolumners layout vore att bygga på det som finns i övningen?
 -->
 
 

@@ -72,7 +72,8 @@ Utför följande krav.
 1. Kontrollera att dina sidkontroller passerar HTML & CSS validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
 
 <!--
-Mer jobb? 
+* Är det tillräckligt med frihet i uppgiften, så man kan bygga på det man lärt sig? Kanske är lösbart med exrauppgifter.
+* Mer jobb? 
 * Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
 * Tre kolumners layout vore att bygga på det som finns i övningen?
 -->

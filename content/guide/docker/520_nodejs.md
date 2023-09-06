@@ -32,10 +32,10 @@ Det dyker upp några frågor, där det bara är att trycka ENTER för defaultvä
 
 ### Installera Express {#installera-express}
 
-Vi installerar Express lokalt så vi kan testa applikationen. Vi använder `--save` så sparas det som en dependency i package.json.
+Vi installerar Express lokalt så vi kan testa applikationen.
 
 ```
-$ npm install express --save
+$ npm install express
 ```
 
 Utgångsläget blir då en package.json. Min ser ut så här:
@@ -65,13 +65,13 @@ Notera att jag lade till ett start-script. Det kommandot ska vi även köra i v�
 Nästa steg är filen index.js. Jag tar koden i stort sett rakt av från [expressjs.com](https://expressjs.com/en/starter/hello-world.html).
 
 ```javascript
-const express = require("express");
-const app = express();
-const port = 1337;
+const express = require("express")
+const app = express()
+const port = 1337
 
-app.get("/", (req, res) => res.send("Hello from inside Docker!"));
+app.get("/", (req, res) => res.send("Hello from inside Docker!"))
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ```
 
 Nu kan vi testa servern lokalt med `$ npm start` och peka webbläsaren på `localhost:1337`.

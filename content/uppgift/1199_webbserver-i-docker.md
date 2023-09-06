@@ -46,7 +46,7 @@ Du ska i den här uppgiften mestadels jobba i mappen `kmom04/server/`.
 
 1. Bygg en server som kan svara på "routsen" ovan. Alla svar ska vara JSON.
 
-1. Skapa en Dockerfile `Dockerfile` och lägg till din server i arbetsmappen `/server`. JSON-filen ska inte kopieras in, utan ska läggas till som en volym.
+1. Skapa en Dockerfile `Dockerfile` och lägg till din server i arbetsmappen `/server`. Mappen `data` med JSON-filen ska inte kopieras in, utan ska läggas till som en volym.
 
 1. Publicera din image med namnet _username/vlinux-server:1.0_ där du använder ditt egna användarnamn. Se till så imagen är publik.
 

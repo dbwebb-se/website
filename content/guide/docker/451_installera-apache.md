@@ -13,10 +13,10 @@ FROM ubuntu:22.04
 
 RUN apt update && apt install -y apache2
 
-CMD apachectl -D FOREGROUND
+CMD ["apachectl", "-D", "FOREGROUND"]
 ```
 
-**-D FOREGROUND** tvingar Apache att köras i förgrunden. Om vi startar med tex `apachectl start` så kommer servern köras fristående och inte i Dockers "huvudprocess". När ingenting körs i huvudprocessen stänger Docker ner sig.
+**"-D", "FOREGROUND"** tvingar Apache att köras i förgrunden. Om vi startar med tex `apachectl start` så kommer servern köras fristående och inte i Dockers "huvudprocess". När ingenting körs i huvudprocessen stänger Docker ner sig.
 
 Om vi bygger imagen och kör igång den kan vi se servern igång och vänta på requests:
 

@@ -38,7 +38,7 @@ Du har jobbat igenom föregående kursmoment.
 Bedömning och betygsättning {#bedomning}
 --------------------------------------------------------------------
 
-När du har lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/bedomning-och-betygsattning).
+När du har lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/faq/bedomning-och-betygsattning-quiz).
 
 
 
@@ -99,7 +99,7 @@ Med prestanda menas två saker, hur många procent tecken användaren skrev in f
 `hej På dig Igelkott` och användaren skriver in:  
 `he jpå Di gIgelkorr`. Då blir följande tecken fel , "j" en gång, " " två gånger, "P", "d" och "g" en gång samt "t" två gånger. Det blir 42% fel. Notera att **det är case-sensitive, `a != A`**.
 
-Utskriften ska bestå av vilka tecken som gick fel **sorterat** på antalet i utskriften.
+Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i utskriften. Tecknet som skrevs fel flest gånger ska skrivas ut först.
 
 För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av multiplicerat med hundra minus - fel procenten, `len * (100 - error_percentage)`. T.ex. `121 * (100 - 50)` ger 6050 poäng, texten är 121 tecken lång och användaren skrev 50% fel. **PS** poängen som Andreas visar i videon ovanför stämmer inte med uträkningen som står här. Uträkningen är uppdaterade efter att Andreas spelade in videon.
 
@@ -111,6 +111,8 @@ Din kod ska skrivas i minst två filer. Programmet ska utgå från `main.py` och
 
 Din kod **ska** skrivas i funktioner. Vi godkänner inte kod som ligger utanför funktioner i det globala scopet, förutom enstaka variabler.
 
+Du får **inte** installera moduler med `pip`. Du får bara importera moduler som vi använt i kursen tidigare och `time` modulen.
+
 
 
 #### Väl fungerande program {#fungera}
@@ -119,7 +121,7 @@ Programmet skall fungera utan brister och inte krascha när man använder det en
 
 
 
-#### Validera och kompabilitet {#validera}
+#### Validera och kompatibilitet {#validera}
 
 Din kod ska validera med pylint.
 
@@ -149,13 +151,13 @@ Poänguträkningen ska nu vara `(len * (100 - error_percentage)) / duration`.
 
 ### Krav 5: Sortera poängutskriften (optionell) {#k5}
 
-När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst poäng.
+När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst poäng. PS. Tänk på att när du sorterar poängen ska det vara som heltal och inte strängar.
 
 
 
 ### Krav 6: Skrivtest med slumpade tecken (optionell) {#k6}
 
-Lägg till menyval 5, i det manyvalet ska användaren välja ett antal sekunder som testet ska pågå. Under så många sekunder ska du slumpa fram ett tecken som användaren ska skriva in så snabbt som möjligt. När tiden har tagit slut ska du skriva ut vilka tecken som blev fel och hur många gånger som det skrevs fel på det tecknet. Utskriften ska vara sorterad i storleksordning på antalet fel. Räkna också ut och skriv ut hur många procent av tecknen som blev fel och antalet tecken per minut som användaren skrev. Inkludera användarens sista input om tiden tar slut under tiden som programmet väntar på att användaren ska skriva.
+Lägg till menyval 5, i det menyvalet ska användaren välja ett antal sekunder som testet ska pågå. Under så många sekunder ska du slumpa fram ett tecken (bokstäver, siffror och punkter) som användaren ska skriva in så snabbt som möjligt. När tiden har tagit slut ska du skriva ut vilka tecken som blev fel och hur många gånger som det skrevs fel på det tecknet. Utskriften ska vara sorterad i storleksordning på antalet fel. Räkna också ut och skriv ut hur många procent av tecknen som blev fel och antalet tecken per minut som användaren skrev. Inkludera användarens sista input om tiden tar slut under tiden som programmet väntar på att användaren ska skriva.
 
 
 
@@ -173,7 +175,7 @@ Redovisning {#redovisning}
 
 2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte att bifoga länken till projektet på studentservern.
 
-3. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
+3. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Efter du har gjort inlämningen på Canvas lägg videon som en mediakommentar på din inlämning. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
 
 4. Se till att samtliga kursmoment validerar i "dbwebb validate/publish".
 

@@ -49,7 +49,7 @@ Följande tabell används vid bedömning av genomförda kursmoment och redovisni
 | Bedömningspunkt | Poäng | Din poäng |
 |-----------------|-------|-----------|
 | Kursmomenten är utförda enligt instruktion. | 30 | |
-| Quizerna i kursen är genomförda. Poängen för quiz-delen beräknas enligt: Totalt finns det 24 quiz-poäng att hämta. Quiz-poängen delas på 2,4 för att få slutbetygspoängen.  | 10 | |
+| Quizerna i kursen är genomförda. Antal korrekta svar ger 0-10 poäng.  | 10 | |
 | TOTALT | 40 | |
 
 

@@ -12,7 +12,17 @@ Normalt gör vi detta med DNS. Vi lägger så att maskinens namn kopplas mot en 
 
 Men nu har vi en utvecklingsmiljö med en server i Docker som använder en mappad port till den lokala miljön. Vi behöver alltså sätta upp lokalt, i vårt eget nätverk, att maskinen me.vlinux.se känns igen som 127.0.0.1 och hamnar i min server som snurrar i en container.
 
-I mitt fall, så kommer jag åt webbservern, på min server, via adressen `http://localhost:8080`. Jag kan nu lägga till ett entry i min egen fil för datornamn. Filen heter `/etc/hosts`, i min lokala miljö, och jag lägger till ett nytt lokalt datornamn i filen så här.
+I mitt fall, så kommer jag åt webbservern, på min server, via adressen `http://localhost:8080`. Jag kan nu lägga till ett entry i min egen fil för datornamn. Filen heter `hosts`, i min lokala miljö, och jag lägger till ett nytt lokalt datornamn i filen på samma sätt oberoende av vilket OS jag använder.
+
+Det som skiljer är var filen finns. Glöm inte att du måste vara administratör för att redigera filen. Du kan till exempel starta VSCode som administratör och sedan öppna filen.
+
+Om du använder Windows (Även om du kör WSL):
+
+```text
+C:\Windows\system32\drivers\etc\hosts
+```
+
+Om du använder Linux/MacOS:
 
 ```text
 sudo nano /etc/hosts
@@ -24,13 +34,7 @@ Följande rad lägger du till i filen.
 127.0.0.1   me.vlinux.se
 ```
 
-På en klient med MacOS gör du på samma sätt.
-
-Sitter du på Windows så heter filen följande. Glöm inte att du måste vara administratör för att redigera filen. Du kan till exempel starta VSCode som administratör och sedan öppna filen.
-
-```text
-C:\Windows\system32\drivers\etc\hosts
-```
+Namnet vi ger här måste mappa mot det namn vi gett i configfilen, vid `ServerName`.
 
 Nu kan jag komma åt den lokala maskinen via namnet istället. Adressen `http://me.vlinux.se:8080` är numer samma som att skriva `http://localhost:8080` eller `http://127.0.0.1:8080`. Det är precis detta som Apache tittar på när den identifierar den namnbaserade virtuella hosten.
 

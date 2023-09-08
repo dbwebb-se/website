@@ -95,9 +95,9 @@ För att snurra igång containern och kunna visa våra filer blir hela run-komma
 $ docker run -it -p 8080:80 -v $(pwd)/me.vlinux.se:/var/www/vhosts/me.vlinux.se --add-host me.vlinux.se:127.0.0.1 apachetest
 ```
 
-Det enda vi behöver göra nu för att kunna nå den utifrån containern är att lägga till `127.0.0.1    me.vlinux.se` i vår lokala hosts-fil. Var var den nu igen?
+<!-- Det enda vi behöver göra nu för att kunna nå den utifrån containern är att lägga till `127.0.0.1    me.vlinux.se` i vår lokala hosts-fil. Var var den nu igen?
 
 ```text
 Linux/MacOS: /etc/hosts
 Windows: C:\Windows\system32\drivers\etc\hosts
-```
+``` -->

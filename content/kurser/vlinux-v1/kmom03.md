@@ -58,7 +58,7 @@ Genomför följande övningar.
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften [Lab 2](uppgift/linux-lab-2-sok-i-en-logg-fil) för att träna upp grundläggande färdigheter i bash och hantering av filsystem. Här jobbar du i mappen `kmom03/bash2`.
+1. Gör uppgiften [Lab 2](uppgift/linux-lab-2-sok-i-en-logg-fil) för att träna upp grundläggande färdigheter i bash och hantering av filsystem. Här jobbar du i mappen `kmom03/bash2`. Glöm inte att exekvera labben i en container så resultaten blir rätt.
 
 1. Gör uppgiften "[Skapa en webbplats på en Apache Virtual Host](uppgift/skapa-virtual-host)". Här arbetar du i mappen `kmom03/vhosts`.
 

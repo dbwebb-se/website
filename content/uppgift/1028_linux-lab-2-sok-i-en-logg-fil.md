@@ -4,12 +4,15 @@ category:
   - bash
   - lab
 revision:
+  "2023-09-08": (B, lew) Uppdatering inför 2023.
   "2016-12-20": (A, efo) Första utgåvan av lab2 i linux.
 ...
 
 # Linux lab 2, Sök i en logg-fil
 
 Laboration för att träna på bash kommandon för att söka och hämta information i text-filer.
+
+[INFO]Notera att du ska exekvera labben inuti en container med Ubuntu för att få rätt resultat.[/INFO]
 
 <!--more-->
 
@@ -48,7 +51,7 @@ Skriv din bash kod inom `$( )` för att den ska exekveras och returnera svaret, 
 ANSWER=$( find . -name 'filename' )
 ```
 
-Du kan testa dina lösningar genom att köra programmet `answer.bash` i din terminal.
+Du kan testa dina lösningar genom att köra programmet `answer.bash` i din container.
 
 ```bash
 $ ./answer.bash

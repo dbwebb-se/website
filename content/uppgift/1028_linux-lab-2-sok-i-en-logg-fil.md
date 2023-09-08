@@ -81,4 +81,4 @@ Det finns ingen extra uppgift.
 
 ## Tips från coachen {#tips}
 
-Lycka till och hojta till i forumet om du behöver hjälp!
+Lycka till och hojta till i Discord om du behöver hjälp!

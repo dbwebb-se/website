@@ -57,7 +57,7 @@ Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval 
 1. Sök på bilder på [Asciiworld](http://www.asciiworld.com/) (eller motsvarande) och hitta din egen bild på "Marvin". Lägg in din bild i programmet och ersätt den med bilden på Marvin.
 
 
-1. Organisera din kod i `if`-satsen inuti `while`-loopen. Samla all kod i filen `marvin.py`. Se till att dina menyval har samma namn som den **markerade** texten.
+1. Organisera din kod i `if`-satsen inuti `while`-loopen. Samla all kod i filen `marvin.py`. Se till att dina menyval har samma siffra som det står i kraven.
 
 
 1. Uppdatera menyval **1** för att berätta vad du heter. Byt ut hälsningsfrasen mot en annan. Du kan även byta namnet på din "Marvin", om du vill.

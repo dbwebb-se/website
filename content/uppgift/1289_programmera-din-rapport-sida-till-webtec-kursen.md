@@ -82,7 +82,7 @@ Den skall göras i en HTML tabell och försök likna ovan kalender så gott det 
 
 ### Tips, trix och livlinor {#livlina}
 
-I GitHub issuen "[Tips, trix och show-off från kmom03 med "Idag är det fredag" och "Månadskalender"](https://github.com/dbwebb-se/webtec/issues/15)" finns det en del inspiration och tips och trix till hur man kan tänka och vilka eventuella svårigheter som finns i uppgiften.
+I GitHub issuen "[Tips, trix och show-off från kmom03 med "Idag är det fredag" och "Månadskalender"](https://github.com/dbwebb-se/webtec/issues/15)" finns det en del inspiration och tips och trix till hur man kan tänka och vilka eventuella svårigheter som finns i uppgiften. Det finns bland annat bilder på färdiga lösningar.
 
 Den bästa taktiken är troligen att först lösa `friday.php` och därefter ta sig an `month.php`. De saker man lär sig i friday kommer att användas i month.
 
@@ -114,7 +114,7 @@ Utför följande krav.
 
 1. Månadskalendern skall innehålla en länk som leder till nästa/föregående månad.
 
-1. Kontrollera att dina sidkontroller passerar Unicorn validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
+1. Kontrollera att dina sidkontroller passerar W3C validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
 
 
 <!--

@@ -7,6 +7,7 @@ category:
     - php
     - kurs webtec
 revision:
+    "2023-09-12": "(B, mos) Lägg till en enklare del av for-loop som introduktion."
     "2022-08-10": "(A, mos) Första utgåvan inför webtec-v2."
 ...
 Programmera din webbplats med PHP
@@ -27,7 +28,7 @@ Förutsättningar {#pre}
 
 Du har installerat en labbmiljö likt den som beskrivs i dokumentet om [labbmiljö för kursen webtec](kurser/webtec-v2/installera-labbmiljo). Det innefattar bland annat en webbserver med stöd för PHP.
 
-Du har jobbat igenom kmom02 i kursen webtec och du är bevandrar i det sätt som används för att skapa webbsidor med PHP där du har en katalogstruktur.
+Du har jobbat igenom kmom02 i kursen webtec och du är bevandrad i det sätt som används för att skapa webbsidor med PHP där du har en katalogstruktur.
 
 Du har jobbat igenom kmom02 och du har en motsvarande webbplats som du kan bygga vidare på.
 
@@ -215,7 +216,7 @@ Variabler och typer {#variabler}
 
 Variabler är en konstruktion som startar med ett dollar `$` tecken följt av en sekvens av tecken, siffror och underscore. Använd variabelnamn som beskriver sitt innehåll och är lagom långa. Här är exempel på två variabler som sparar strängar och skriver ut dess innehåll.
 
-```php
+```html
 <?php
 $name = "Mikael";
 $city = "Bankeryd";
@@ -228,7 +229,7 @@ $city = "Bankeryd";
 
 När vi jobbar med strängar så använder vi dubbelfnutt eller enkelfnutt runt strängen. Om vi jobbar med siffror som heltal eller flyttal så anger vi värdet direkt. Så här.
 
-```php
+```html
 <?php
 // Integer
 $age = 42;
@@ -246,7 +247,7 @@ Vi kan avvakta lite med att räkna ut när jag föddes. När vi gör det vill vi
 
 Man kan räkna med variabler som du troligen är van vid från matematiken i skolan.
 
-```php
+```html
 <?php
 // Float/double
 $radius = 7.0;
@@ -490,8 +491,34 @@ Det var while loopen, bra att använda när man har ett villkor som styr hur lä
 Ett tips är att det kan vara bra att ha utskrifter inuti loopen, när man vill testa sin kod. Ibland är man osäker på om koden verkligen går in i en if-sats eller loop, då kan man lägga till en echo-sats för att skriva ut ledande text eller visa innehållet i en variabel. Det kan vara ett bra sätt att jobba med test och felsökning av sin kod.
 
 
-
 ### For-loop {#forloop}
+
+En for-loop är bra när man vill loopa ett bestämt antal gånger. Grunden för en for-loop ser ut så här.
+
+```php
+// The structure of a for-loop
+for (init values; check condition; increment/decrement) {
+    // Do some code
+}
+```
+
+Om man vill summera alla tal mellan 1 till 10 så kan man skriva loopen så här.
+
+```php
+// Sum all values between 1 and 10
+$sum = 0;
+for ($i = 1; $i <= 10; $i++) {
+    $sum += $i;
+}
+```
+
+Man kan ofta lösa samma programmeringsproblem med antingen en for-loop eller en while-loop. Slutkoden ser bara lite olika ut. 
+
+Nu när du vet grunden i hur en for-loop fungerar, kan du modifiera den så att den räknar ut summan av alla jämna tal mellan 1 och 42? Det blir en variant av koden du har i while-loopen ovan.
+
+
+
+### For-loop med datum {#forloopdate}
 
 Låt oss bygga ut vårt testprogram till att skriva ut alla veckans dagar med deras datum och veckonummer med en for-loop. Vi utgår fran dagens datum men vi bör kunna testa så att programmet fungerar med alla godtyckliga datum.
 
@@ -567,11 +594,14 @@ Detta kallas querystring och är en del av URL:en, som om du kan hitta en enkel 
 I PHP finns det en speciell variabel som heter [`$_GET`](https://www.php.net/manual/en/reserved.variables.get.php) och där samlas all information om querysträngen. Man kan hämta värden från `$_GET` på följande sätt.
 
 ```php
-echo $_GET['q']; // Detta ger "php get" i första exemplet
+// ?q=php+get
+echo $_GET['q']; // Detta ger "php get"
 
-echo $_GET['key']; // Detta ger "value" i andra exemplet
+// ?key=value
+echo $_GET['key']; // Detta ger "value"
 
-echo $_GET['key2']; // Detta ger "value2" i tredje exemplet
+// ?key=value&key2=value2
+echo $_GET['key2']; // Detta ger "value2"
 ```
 
 Vi kan också kontrollera om ett värde är satt i querysträngen.

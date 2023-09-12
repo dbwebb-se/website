@@ -13,6 +13,14 @@ revision:
 Kmom03: Programmera en webbplats
 ==================================
 
+<!--
+KOMMENTAR
+
+Det svåra med detta momentet är att det lär ut programmering OCH att koda i sammanhanget HTML/CSS.
+Nybörjare i programmering har svårt och normalt hade man delat upp detta i två steg.
+Man behöver normalt längre tid till att lära sig detta och man behöver öva i små övningar/labbar med enkla konstruktioner.
+-->
+
 Vi lär oss grunderna i programmeringsspråket PHP om hur man kan skapa dynamiska webbsidor via programmeringskonstruktioner som variabler, if-satser, och loopar. Vi använder inbyggda variabler som $_GET och $_SERVER tillsammans med querysträng och HTML formulär där vi provar att skicka argument till en webbsida.
 
 Vi jobbar vidare med den katalogstruktur vi har byggt upp och det handlar främst om att placera koden i sidkontrollers och vyer. Strukturen är viktig då den hjälper oss att hålla ordning i koden vilket gör det enklare att felsöka och utveckla webbsidorna.

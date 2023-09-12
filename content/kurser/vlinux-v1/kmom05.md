@@ -12,11 +12,11 @@ revision:
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
 [/WARNING]
 
-Nu har vi kontroll på hur vi kan hantera en webbserver i Docker. Vi tar ett steg till in i Bashprogrammeringen och bygger ett script som kan prata med en server.
+Nu har vi kontroll på hur vi kan hantera en webbserver i Docker. Vi tar ett steg till in i Bashprogrammeringen och bygger ett script som kan prata med en server och inte bara skicka requests.
 
 Du kommer få en färdig server, skriven i Node.js, och ett RESTful API till servern. Servern implementerar en [_maze_](https://en.wikipedia.org/wiki/Maze). Servern är färdig och du kan testköra den via kommandot curl.
 
-Din uppgift är att bygga en bash-klient till servern, enligt en kravspecifikation. Din klient skall använda servern för att lösa mazen. Vi lägger in klienten och servern i Docker-kontainrar och låter de prata med varandra med hjälp av "Docker network", där vi låter Docker skapa ett eget nätverk.
+Din uppgift är att bygga en bash-klient till servern, enligt en kravspecifikation. Din klient skall använda servern för att lösa mazen. Vi lägger in klienten och servern i Docker-containrar och låter de prata med varandra med hjälp av "Docker network", där vi låter Docker skapa ett eget nätverk.
 
 Vi ska även kika lite på reguljära uttryck med hjälp av en labb.
 
@@ -46,13 +46,15 @@ _(ca: 8-14 studietimmar)_
 
 1. Läs artikeln om "[Regulära uttryck](kunskap/regex)".
 
-1. Läs stycket om verktyget "sed" i artikeln ["Text processering"](kunskap/text-processering#sed).
+1. Läs artikeln om "[Regex med grep](kunskap/grep)".
+
+<!-- 1. Läs stycket om verktyget "sed" i artikeln ["Text processering"](kunskap/text-processering#sed). -->
 
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften [lab3 (sed1)](uppgift/vlinux-lab-sed1) för att träna upp grundläggande färdigheter i sed och reguljära uttryck.
+<!-- 1. Gör uppgiften [lab3 (sed1)](uppgift/vlinux-lab-sed1) för att träna upp grundläggande färdigheter i sed och reguljära uttryck. -->
 
 1. Gör uppgiften "[Mazerunner i bash](uppgift/mazerunner-i-bash)". Du sparar ditt arbete under mappen `kmom05/maze/`.
 
@@ -61,13 +63,13 @@ Dessa uppgifter skall utföras och redovisas.
 <!-- 1. Skapa ett exekverbart Bash-skript, `maze/kmom05.bash`.
    Så här kan det se ut när du är klar. -->
 
-[ASCIINEMA src=363527]
+<!-- [ASCIINEMA src=363527] -->
 
 ### dockerhub.bash {#dockerhub-bash}
 
 1. Skapa ett Bash-script, `kmom05/dockerhub.bash`, Skriptet ska göra följande:
    - Skapa ett nätverk med namet `dbwebb`.
-   - Starta upp båda kontainrarna med rätt options.
+   - Starta upp båda containrarna med rätt options.
    - Servern ska även kunna nås via webbläsaren och port 8080. (localhost:8080)
    - Båda containrarna ska ha egna namn.
    - Server-containern ska köras i bakgrunden.
@@ -97,4 +99,4 @@ Se till att följande frågor besvaras i redovisningstexten.
 - Kikade du på källkoden till maze-servern? Har du några reflektioner kring den?
 - Gjorde du nåt speciellt i din mazerunner som du vill lyfta fram?
 - Vad tycker du om regex så här långt?
-- Känner du att du är med på grunderna i verktyget sed?
+- Känner du att du är med på grunderna i verktygen sed och grep?

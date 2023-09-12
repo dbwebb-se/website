@@ -6,6 +6,7 @@ category:
     - linux
     - regex
 revision:
+    "2023-09-12": (B, lew) Uppdaterad inför HT23.
     "2021-04-12": (A, lew) Skapad inför HT2021.
 ...
 
@@ -104,7 +105,7 @@ Grep är mycket mer än vad vi sett men vi stannar här i denna kursen. Det fung
 Sed {#sed}
 -----------------------
 
-Sed är en *Stream Editor* som kan söka efter, matcha, gruppera och byta ut strängar från en ström med text. Sed jobbar med options och flaggor, vilka vi ska titta mer på. Vi blandar även in lite reguljära uttryck.
+Sed är en *Stream Editor* som kan söka efter, matcha, gruppera och byta ut strängar från en ström med text. Sed jobbar med options och flaggor, vilka vi ska titta mer på. Det som gör Sed till ett kraftfullare verktyg än tex Grep är möjligheten att jobba med "substitution" och att kunna editera direkt i filer, "inplace". Vi blandar även in lite reguljära uttryck.
 
 I de exempel som nu följer så används en textfil, `courses.txt` med innehållet:
 
@@ -115,7 +116,7 @@ Emil Folino is the teacher in the course Webbapp (DV1609).
 Mikael Roos is the teacher in the course OOPHP (DV1608).
 ```
 
-Vi kan använda den ihop med redirection: `sed command < courses.txt`. Vill du testa själv finns filen i [exempelmappen](https://github.com/dbwebb-se/vlinux/blob/master/example/sed/courses.txt).
+Vi kan använda filen på följande sätt: `sed command courses.txt`. Vill du testa själv finns filen i [exempelmappen](https://github.com/dbwebb-se/vlinux/blob/master/example/sed/courses.txt).
 
 [INFO]Vi kan använda ett option, -E, när vi arbetar med `sed` för att slippa escapa backslashes och vissa andra speciella karaktärer.[/INFO]
 

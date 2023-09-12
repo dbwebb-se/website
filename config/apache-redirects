@@ -376,8 +376,8 @@ Redirect /javascript /kurser/javascript
 
 Redirect /itsec /kurser/itsec
 Redirect /kurser/itsec /kurser/itsec-v2
-Redirect /kurser/itsec-v2/studieplan https://docs.google.com/spreadsheets/d/14TDk09ITFATO7YKSF_-RnSJSLoGofwGN9DW2s0OF3Jo/edit?usp=sharing
-Redirect /kurser/itsec-v2/lektionsplan https://docs.google.com/spreadsheets/d/169Sm3oX54pzvDkawx6cay7kcnFXlpVRA70alskYpQX4/edit?usp=sharing
+Redirect /kurser/itsec-v2/studieplan https://docs.google.com/spreadsheets/d/180APfav-qLGZZioxAjO06i1yAPyt_y3ZrIpM673aUpc/edit#gid=2078349694
+Redirect /kurser/itsec-v2/lektionsplan https://docs.google.com/spreadsheets/d/1zA_6lrPWBhxTWzhp3IDiH_e-hyvbDQFug589uELboeE/edit#gid=2146491912
 
 # webtopic
 

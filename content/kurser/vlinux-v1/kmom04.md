@@ -9,10 +9,6 @@ revision:
 
 # Kmom04: En webbserver i Docker
 
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
-
 Nu vet vi hur vi bygger en egen image med hjälp av Docker. Vi har också gått igenom hur vi kan strukturera ett Bash-script som även exekveras inuti en container. Vi tar ett steg till och tittar på hur vi kör en webbserver inuti Docker. I det här kursmomentet får du välja om du vill leka med Apache/php, Flask/Python eller Nodejs/JavaScript. Huvudsaken är att du får igång en server med en router som kan serva en JSON-fil. Vi jobbar även vidare med Bash - såklart.
 
 <!--more-->

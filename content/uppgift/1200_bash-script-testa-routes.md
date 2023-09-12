@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+    "2023-09-12": (C, lew) Uppdaterad inför HT23.
     "2021-04-14": (B, lew) Uppdaterade porten i kravet inför HT21.
     "2019-04-16": (A, lew) Första utgåvan inför HT19.
 ...
@@ -38,11 +39,13 @@ Krav {#krav}
 
 1. Skapa ett bash-script `client/client.bash` som kan ta emot options och argument. Anropas ditt script utan options eller argument, skall scriptet skriva ut att man kan få hjälp genom att använda `--help, -h`.
 
-1. Ändra rättigheter för scriptet genom kommandot `chmod 755 client/client.bash`
+1. Gör scriptet exekverbart.
 
 1. Ditt script skall avslutas med korrekt exit värde.
 
 1. Använd en main-funktion för att starta programmet.
+
+1. Onödig inforation från cURL ska döljas.
 
 1. Gör en kontroll om miljövariabeln `DBWEBB_PORT` är satt. Är den det ska den användas mot servern. Annars väljer du port själv.
 
@@ -54,7 +57,7 @@ Krav {#krav}
 |-----------------------|-----------------|
 | `-h, --help`          | Skriv ut en hjälptext om hur programmet används. |
 | `-v, --version`       | Visar nuvarande version av programmet. |
-| `-s, --save`          | Spara den returnerade datan till `client/saved.data`. Det ska fungera för alla argument.|
+| `-s, --save`          | Spara den returnerade datan till `client/saved.data`. Den behöver då inte skrivas ut. Det ska fungera för alla argument.|
 
 
 7. Följande *argument* ska fungera:
@@ -64,7 +67,7 @@ Krav {#krav}
 | `all`                     | anropa din route `/all`. |
 | `names`                   | anropa din route `/names`.|
 | `color <color>`           | anropa din route `color/<color>`. |
-| `test <url>`        | Använd curl för att skriva ut ett meddelande om servern är igång eller ej. Om &lt;url&gt; är satt ska den anropas, annars localhost:port. |
+| `test <url>`        | Använd curl för att skriva ut ett meddelande om servern är igång eller ej. |
 
 
 
@@ -90,4 +93,4 @@ Det finns inga extrauppgifter.
 Tips från coachen {#tips}
 -----------------------
 
-Lycka till och hojta till i forumet om du behöver hjälp!
+Lycka till och hojta till i Discord om du behöver hjälp!

@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2023-09-12": (C, lew) Uppdaterad inför HT23.
   "2022-06-22": (B, lew) Uppdaterad inför HT22.
   "2019-04-11": (A, lew) Första utgåvan inför HT19.
 ...
@@ -31,7 +32,7 @@ Routes som ska stödas är:
 | `/`              | En presentation av de olika routesen.         |
 | `/all`           | Hela JSON-filen.                              |
 | `/names`         | Namnen på alla växterna.                      |
-| `/color/<color>` | Alla växter som kan ha &lt;color&gt; som färg |
+| `/color/<color>` | Alla växter som kan ha &lt;color&gt; som färg. . |
 
 JSON-filen kopierar du från exempelmappen:
 
@@ -45,6 +46,8 @@ $ cp -r example/json/items.json me/kmom04/server/data/
 Du ska i den här uppgiften mestadels jobba i mappen `kmom04/server/`.
 
 1. Bygg en server som kan svara på "routsen" ovan. Alla svar ska vara JSON.
+
+1. Man ska kunna använda både stor och liten bokstav när det filtreras på namn/färg. Till exempel så ska både `yellow` och `Yellow` fungera. Likadant med namnen.
 
 1. Skapa en Dockerfile `Dockerfile` och lägg till din server i arbetsmappen `/server`. Mappen `data` med JSON-filen ska inte kopieras in, utan ska läggas till som en volym.
 

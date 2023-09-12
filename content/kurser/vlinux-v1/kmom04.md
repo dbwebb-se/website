@@ -2,6 +2,7 @@
 author:
   - lew
 revision:
+  "2023-09-12": (C, lew) Uppdaterad inför HT23.
   "2022-06-22": (B, lew) Uppdaterad inför HT22.
   "2019-03-26": (A, lew) Ny inför HT19.
 ...
@@ -12,9 +13,9 @@ revision:
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
 [/WARNING]
 
-Nu vet vi hur vi bygger en egen image med hjälp av Docker. Vi har också gått igenom hur vi kan strukturera ett Bash-script som även exekveras inuti en kontainer. Vi tar ett steg till och tittar på hur vi kör en webbserver inuti Docker. I det här kursmomentet får du välja om du vill leka med Apache/php, Flask/Python eller Nodejs/JavaScript. Huvudsaken är att du får igång en server med en router som kan serva en JSON-fil. Vi jobbar även vidare med Bash - såklart.
+Nu vet vi hur vi bygger en egen image med hjälp av Docker. Vi har också gått igenom hur vi kan strukturera ett Bash-script som även exekveras inuti en container. Vi tar ett steg till och tittar på hur vi kör en webbserver inuti Docker. I det här kursmomentet får du välja om du vill leka med Apache/php, Flask/Python eller Nodejs/JavaScript. Huvudsaken är att du får igång en server med en router som kan serva en JSON-fil. Vi jobbar även vidare med Bash - såklart.
 
-<!--stop-->
+<!--more-->
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
@@ -33,6 +34,8 @@ Genomför följande övningar.
 
 1. Läs igenom guiden "[Hantera applikationer](guide/docker/hantera-applikationer)". Välj sedan ett språk du vill använda.
 
+1. Se i guiden hur vi kan jobba med [miljövaribler](guide/docker/miljovariabler)
+
 1. Glöm inte bort guiden [kom igång med Bash](guide/kom-igang-med-bash).
 
 ### Uppgifter {#uppgifter}
@@ -47,13 +50,28 @@ Dessa uppgifter skall utföras och redovisas.
 
 ### dockerhub.bash {#dockerhub-bash}
 
-1. Skapa ett Bash-script, `kmom04/dockerhub.bash`, som kör din publicerade image. Mappen med JSON-filen ska servas via en volym där sökvägen tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Du ska till exempel kunna stå i mappen `kmom04` och köra kommandot: `$ bash dockerhub.bash "server/data"`.
+1. Skapa ett Bash-script, `kmom04/dockerhub.bash`, som kör din publicerade image.
 
-1. Containern ska kunna nås via miljövariablen DBWEBB_PORT om den är satt - annars port 8080 (-p).
+2. Mappen med JSON-filen ska servas via en volym där sökvägen tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Man ska till exempel kunna göra på följande sätt:
 
-1. Containern ska köras i bakgrunden (-d).
+```console
+$ pwd
+/home/klw/dbwebb-kurser/vlinux/me/kmom04
+$ bash dockerhub.bash "server/data"
+```
 
-1. Containern ska ha namnet "myserver" (--name).
+```console
+$ pwd
+/home/klw/dbwebb-kurser/vlinux/me/kmom04/server
+$ bash dockerhub.bash "data"
+```
+
+
+3. Containern ska kunna nås via miljövariablen DBWEBB_PORT om den är satt - annars port 8080 (-p).
+
+4. Containern ska köras i bakgrunden (-d).
+
+5. Containern ska ha namnet "myserver" (--name).
 
 [YOUTUBE src=bKkWw9b09Uw width=639 caption="Har du fått med alla delar?"]
 

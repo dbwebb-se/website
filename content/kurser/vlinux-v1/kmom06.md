@@ -62,7 +62,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften [awk script](uppgift/vlinux-awk) för att träna upp grundläggande färdigheter i verktyget awk. Du arbetar i mappen `awk/`.
 
-1. Gör uppgiften [sed](uppgift/vlinux-lab-sed1) (labb) för att träna upp grundläggande färdigheter i sed.
+1. Gör uppgiften [sed](uppgift/sed1) (labb) för att träna upp grundläggande färdigheter i sed.
+<!-- 
+1. Gör uppgiften [sed](uppgift/vlinux-lab-sed1) (labb) för att träna upp grundläggande färdigheter i sed. -->
 
 1. Gör uppgiften [Spel loop i Mazerunner](uppgift/mazerunner-loop). Du arbetar i mappen `maze2/`.
 

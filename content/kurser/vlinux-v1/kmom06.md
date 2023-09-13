@@ -2,6 +2,7 @@
 author:
   - lew
 revision:
+  "2023-09-14": (B, lew) Uppdaterad inför HT23.
   "2019-03-26": (A, lew) Ny inför HT19.
 ...
 
@@ -11,7 +12,7 @@ revision:
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
 [/WARNING]
 
-Nu har vi koll på hur vi kan strukturera lite större Bash-script. Vi ska gå vidare med Docker och kika på _Docker Compose_. Det underlättar för oss när Docker konstruktionerna växer. Vi ska ta vår Mazerunner från förra kursmomentet och använda oss utav Docker Compose för att köra igång kontainrarna och nätverket. Vi ska även lägga till lite funktionalitet till Mazerunner. Utöver Bash och Docker Compose ska vi fortsätta titta på reguljära uttryck och verktyget "Awk".
+Nu har vi koll på hur vi kan strukturera lite större Bash-script. Vi ska gå vidare med Docker och kika på _Docker Compose_. Det underlättar för oss när Docker konstruktionerna växer. Vi ska ta vår Mazerunner från förra kursmomentet och använda oss utav Docker Compose för att köra igång kontainrarna och nätverket. Vi ska även lägga till lite funktionalitet till Mazerunner. Utöver Bash och Docker Compose ska vi fortsätta titta på reguljära uttryck och verktygen "Sed" och "Awk".
 
 <!--stop-->
 
@@ -27,15 +28,21 @@ Så kan det se alltså ut när ena delen är klar.
 
 Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce97kWiBo2wLqDtfuoi0E25X). Titta på videorna som börjar med 06.
 
+
+
 ## Läsanvisningar {#lasanvisningar}
 
 ###Lästips {#lastips}
 
 Läs i dokumentationen om [Docker Compose](https://docs.docker.com/compose/).
 
+
+
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 
 _(ca: 8-18 studietimmar)_
+
+
 
 ### Övningar {#ovningar}
 
@@ -43,7 +50,11 @@ Genomför följande övningar.
 
 1. Gå igenom delen i guiden som handlar om "[Docker Compose](guide/docker/docker-compose)".
 
+1. Läs stycket om verktyget "sed" i artikeln ["Text processering"](kunskap/text-processering#sed).
+
 1. Läs i guiden om "[awk](guide/kom-igang-med-awk)".
+
+
 
 ### Uppgifter {#uppgifter}
 
@@ -51,11 +62,16 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften [awk script](uppgift/vlinux-awk) för att träna upp grundläggande färdigheter i verktyget awk. Du arbetar i mappen `awk/`.
 
+1. Gör uppgiften [sed](uppgift/vlinux-lab-sed1) (labb) för att träna upp grundläggande färdigheter i sed.
+
 1. Gör uppgiften [Spel loop i Mazerunner](uppgift/mazerunner-loop). Du arbetar i mappen `maze2/`.
 
 1. Lägg till redovisningstexten i din me-sida.
 
-[YOUTUBE src=oN-iYTWoFGg?t=2310 width=639 caption="Fungerar uppgiften som tänkt?"]
+TBD: Video på klart kmom
+<!-- [YOUTUBE src=oN-iYTWoFGg?t=2310 width=639 caption="Fungerar uppgiften som tänkt?"] -->
+
+
 
 ### Testa din inlämning {#test}
 
@@ -64,6 +80,8 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 ```console
 $ dbwebb test kmom06
 ```
+
+
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
@@ -79,3 +97,4 @@ Se till att följande frågor besvaras i redovisningstexten.
 - Kommer du använda Docker utanför kursens ramar?
 - Gjorde du någon uppdatering av Mazerunnerns struktur?
 - Beskriv dina tankar om awk.
+- Beskriv dina tankar om sed.

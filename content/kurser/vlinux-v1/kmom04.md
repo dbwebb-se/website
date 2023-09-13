@@ -35,7 +35,7 @@ Genomför följande övningar.
 
 1. Läs igenom guiden "[Hantera applikationer](guide/docker/hantera-applikationer)". Välj sedan ett språk du vill använda.
 
-1. Se i guiden hur vi kan jobba med [miljövaribler](guide/docker/miljovariabler)
+1. Se i guiden hur vi kan jobba med [miljövaribler](guide/kom-igang-med-bash/miljovariabler)
 
 1. Glöm inte bort guiden [kom igång med Bash](guide/kom-igang-med-bash).
 

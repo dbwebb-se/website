@@ -16,13 +16,18 @@ Nu vet vi hur vi bygger en egen image med hjälp av Docker. Vi har också gått 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
+
 ### Video {#video}
 
 Till kursen finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce97kWiBo2wLqDtfuoi0E25X). Titta på videorna som börjar med 04.
 
+
+
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 
 _(ca: 15-20 studietimmar)_
+
+
 
 ### Övningar {#ovningar}
 
@@ -34,6 +39,8 @@ Genomför följande övningar.
 
 1. Glöm inte bort guiden [kom igång med Bash](guide/kom-igang-med-bash).
 
+
+
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
@@ -43,6 +50,8 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Bash-script som testar serverns routes](uppgift/bash-script-testa-routes)". Spara arbetet i mappen `client/`.
 
 1. Lägg till redovisningstexten i din me-sida.
+
+
 
 ### dockerhub.bash {#dockerhub-bash}
 

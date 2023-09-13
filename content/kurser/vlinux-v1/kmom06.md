@@ -50,7 +50,7 @@ Genomför följande övningar.
 
 1. Gå igenom delen i guiden som handlar om "[Docker Compose](guide/docker/docker-compose)".
 
-1. Läs stycket om verktyget "sed" i artikeln ["Text processering"](kunskap/text-processering#sed).
+1. Läs om verktyget "sed" i artikeln ["Sed"](kunskap/sed).
 
 1. Läs i guiden om "[awk](guide/kom-igang-med-awk)".
 

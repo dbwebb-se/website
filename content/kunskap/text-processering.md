@@ -98,7 +98,7 @@ Joe Biden, 2021-
 
 Där fick vi se lite regex och en så kallad "character class" `[]`. Uttrycket säger att matchningen ska gälla alla bokstäverna inne i hakparentesen.
 
-Grep är mycket mer än vad vi sett men vi stannar här i denna kursen. Det fungerar utmärkt att filtrera kommandon som till exempel `ls` eller `top`. Vi kan som vi såg även blanda in mer reguljära uttryck i vårt PATTERN.
+Grep är mycket mer än vad vi sett men vi stannar här för stunden. Det fungerar utmärkt att filtrera kommandon som till exempel `ls` eller `top`. Vi kan som vi såg även blanda in mer reguljära uttryck i vårt PATTERN.
 
 
 

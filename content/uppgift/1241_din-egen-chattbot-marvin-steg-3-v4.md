@@ -51,7 +51,7 @@ cd kmom04/marvin3
 
 2. Skapa en ny fil `inventory.py` där du lägger **alla nya** funktioner för inventory kommandona. Importera inventory.py i main.py. Skapa en lista i main.py som ska fungera som en ryggsäck.
 
-3. Lär Marvin att hantera listor. Skapa funktionen `pick` som tar emot tre argument, den första skall vara ryggsäcken, den andra skall vara saken man skall plocka upp och den tredje skall vara en optionell parameter som säger vilken position (index) saken skall lägga sig i. Funktionen ska lägga till saken i listan, om position skickas med ska saken tryckas in på den platsen (du ska inte ersätta det som redan ligger på den platsen, de sakerna ska flyttas ett index åt höger). Om position inte skickas med ska saken läggas till sist i ryggsäcken. Funktionen skall returnera den uppdaterade ryggsäcken.
+3. Lär Marvin att hantera listor. Skapa funktionen `pick` som tar emot tre argument, den första skall vara ryggsäcken, den andra skall vara saken man skall plocka upp och den tredje skall vara en optionell parameter som säger vilken position (index) saken skall lägga sig i (som en string). Funktionen ska lägga till saken i listan, om position skickas med ska saken tryckas in på den platsen (du ska inte ersätta det som redan ligger på den platsen, de sakerna ska flyttas ett index åt höger). Om position inte skickas med ska saken läggas till sist i ryggsäcken. Funktionen skall returnera den uppdaterade ryggsäcken.
 
    I `main.py` skall du lägga till stöd för kommandot **"inv pick"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande som innehåller **vad som lades till** i ryggsäcken och på **vilken position** om ett index är givet. Meddelandet skall skivas ut i funktionen och inte main programmet.
 

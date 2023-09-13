@@ -2,6 +2,7 @@
 author:
   - lew
 revision:
+  "2023-09-13": (C, lew) Uppdaterad inför HT23.
   "2022-09-23": (B, lew) Uppdaterad inför HT22.
   "2019-03-26": (A, lew) Ny inför HT19.
 ...
@@ -55,10 +56,11 @@ _(ca: 8-14 studietimmar)_
 Dessa uppgifter skall utföras och redovisas.
 
 <!-- 1. Gör uppgiften [lab3 (sed1)](uppgift/vlinux-lab-sed1) för att träna upp grundläggande färdigheter i sed och reguljära uttryck. -->
+1. Gör uppgiften "[regex 1](uppgift/regex1)" för att träna upp grundläggande färdigheter i reguljära uttryck och verktyget grep.
 
-1. Gör uppgiften "[Mazerunner i bash](uppgift/mazerunner-i-bash)". Du sparar ditt arbete under mappen `kmom05/maze/`.
+2. Gör uppgiften "[Mazerunner i bash](uppgift/mazerunner-i-bash)". Du sparar ditt arbete under mappen `kmom05/maze/`.
 
-1. Lägg till redovisningstexten i din me-sida.
+3. Lägg till redovisningstexten i din me-sida.
 
 <!-- 1. Skapa ett exekverbart Bash-skript, `maze/kmom05.bash`.
    Så här kan det se ut när du är klar. -->
@@ -99,4 +101,3 @@ Se till att följande frågor besvaras i redovisningstexten.
 - Kikade du på källkoden till maze-servern? Har du några reflektioner kring den?
 - Gjorde du nåt speciellt i din mazerunner som du vill lyfta fram?
 - Vad tycker du om regex så här långt?
-- Känner du att du är med på grunderna i verktygen sed och grep?

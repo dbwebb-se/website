@@ -43,11 +43,10 @@ _(ca: 8-14 studietimmar)_
 
 1. Läs om "[Docker network](guide/docker/docker-network) i guiden".
 
-1. Luta dig mot guiden "[kom igång med Bash](guide/kom-igang-med-bash)".
-
 1. Läs artikeln om "[Regulära uttryck](kunskap/regex)".
 
 1. Läs artikeln om "[Regex med grep](kunskap/grep)".
+
 
 <!-- 1. Läs stycket om verktyget "sed" i artikeln ["Text processering"](kunskap/text-processering#sed). -->
 
@@ -56,7 +55,7 @@ _(ca: 8-14 studietimmar)_
 Dessa uppgifter skall utföras och redovisas.
 
 <!-- 1. Gör uppgiften [lab3 (sed1)](uppgift/vlinux-lab-sed1) för att träna upp grundläggande färdigheter i sed och reguljära uttryck. -->
-1. Gör uppgiften "[regex 1](uppgift/regex1)" för att träna upp grundläggande färdigheter i reguljära uttryck och verktyget grep.
+1. Gör uppgiften (labben) "[regex 1](uppgift/regex1)" för att träna upp grundläggande färdigheter i reguljära uttryck och verktyget grep.
 
 2. Gör uppgiften "[Mazerunner i bash](uppgift/mazerunner-i-bash)". Du sparar ditt arbete under mappen `kmom05/maze/`.
 
@@ -75,11 +74,11 @@ Dessa uppgifter skall utföras och redovisas.
    - Servern ska även kunna nås via webbläsaren och port 8080. (localhost:8080)
    - Båda containrarna ska ha egna namn.
    - Server-containern ska köras i bakgrunden.
-   - Klienten ska använda serverns namn. Du behöver då byta ut "localhost" i skriptet mot namnet du ger servern.
+   - Klienten ska använda serverns namn. Du behöver då byta ut "localhost" i skriptet mot namnet du ger servern (om du inte redan uppdaterat det).
    - Klient-containern ska starta i Bash och i den arbetsmappen du har skriptet i.
    - Stoppa den/de containrar som är igång och ta bort nätverket.
 
-[YOUTUBE src=efQrbQhGN4M width=639 caption="Har du fått med alla delar?"]
+<!-- [YOUTUBE src=efQrbQhGN4M width=639 caption="Har du fått med alla delar?"] -->
 
 ### Testa din inlämning {#test}
 

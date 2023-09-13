@@ -2,6 +2,7 @@
 author: lew
 category: vlinux
 revision:
+  "2023-09-13": (B, lew) Uppdatering inför HT23.
   "2022-06-22": (A, lew) Uppdatering inför HT22.
 ...
 
@@ -106,9 +107,9 @@ Så här kan det se ut när du är klar.
 
 Tanken är här att vi ska flytta in vår Mazerunner i Docker och de ska prata med varandra via ett eget nätverk. Allt ska starta via ett Bash-skript.
 
-1. Skapa en Dockerfile i mappen `maze/server/` där du kopierar in din server i en container. Servern ska startas när containern startas. Bygg imagen och publicera den på Docker hub med namnet `username/vlinux-mazeserver:latest`. Byt ut _username_ mot ditt egna användarnamn.
+1. Skapa en Dockerfile i mappen `maze/server/` där du kopierar in din server i en container. Servern ska startas när containern startas. Bygg imagen och publicera den på Docker hub med namnet `username/vlinux-mazeserver:1.0`. Byt ut _username_ mot ditt egna användarnamn.
 
-1. Skapa en Dockerfile i mappen `maze/client/` där du kopierar in din Bash-klient. Bygg imagen och publicera den på Docker hub med namnet `username/vlinux-mazeclient:1.0`. Byt ut _username_ mot ditt egna användarnamn.
+1. I nästa uppgift (dockerhub.bash) ska du användadig av namn på containrarna. Fundera ut ett bra namn på din servercontainer och uppdatera ditt script och byt ut `localhost` mot ditt nya servernamn. Då slipper du bygga om din image i nästa uppgift. Skapa en Dockerfile i mappen `maze/client/` där du kopierar in din Bash-klient. Bygg imagen och publicera den på Docker hub med namnet `username/vlinux-mazeclient:1.0`. Byt ut _username_ mot ditt egna användarnamn.
 
 ### Validera och publicera {#publish}
 

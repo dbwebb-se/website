@@ -6,6 +6,7 @@ category:
   - Docker Compose
   - linux
 revision:
+  "2023-09-14": (C, lew) Uppdaterad inför HT23.
   "2022-09-28": (B, lew) Uppdaterad inför HT22.
   "2019-05-06": (A, lew) Ny inför HT19.
 ...
@@ -88,4 +89,4 @@ Det finns ingen extrauppgift.
 
 Strukturera din kod med funktioner i bash. Då får du en bra struktur i första delen och i andra delen så kan du återanvända funktionerna.
 
-Lycka till och hojta till i forumet om du behöver hjälp!
+Lycka till och hojta till på Discord om du behöver hjälp!

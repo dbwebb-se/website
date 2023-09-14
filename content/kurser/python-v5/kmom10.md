@@ -89,20 +89,29 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv därefter ut andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om ni är osäkra på hur det ska gå till. När testet är klart ska ni skriva ut hur bra användaren [presterade och poäng](#performance).
 
-Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet och användarens poäng i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken poäng de fick. 
+Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet och användarens poäng i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken poäng de fick.
 
 
 
 ##### Räkna ut prestation och poäng {#performance}
 
-Med prestanda menas två saker, hur många procent tecken användaren skrev in fel jämfört med texten som visades och hur många gånger olika tecken blev felskrivna. T.ex. om programmet skriver ut:  
+När ni ska jämföra resultat utgår vi från orden, orden är separerade med mellanslag. Punkttecken har ingen speciellt betydelse, tänk på dem som vilka bokstäver som helst i ett ord. T.ex. strängen "hej, p-å dig" innehåller tre ord, "hej,", "p-å" och "dig".
+
+###### Ord {#words}
+
+Räkna ut ord precision med `antal rättstavade ord / totalt antal ord`. Om användaren skriver in fler ord än vad som efterfrågas, då ska antalet rättstavade ord minskas med ett för varje extra ord som är skrivit. T.ex. om testet skriver ut 5 ord som användaren ska skriva av och användaren skriver in sju ord där två av orden också är felstavade. Då blir uträkningen `5-2-2 = 1`, `1/5` vilket ger `20%` precision. Notera att **det är case-sensitive, `a != A`**
+
+###### Tecken {#chars}
+
+Räkna ut tecken precision med `antalet rättstavade tecken / total antal tecken`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord.
+
+Räkna också ut hur många gånger varje tecken blev felskrivet.
+
+T.ex. om programmet skriver ut:  
 `hej På dig Igelkott` och användaren skriver in:  
-`he jpå Di gIgelkorr`. Då blir följande tecken fel , "j" en gång, " " två gånger, "P", "d" och "g" en gång samt "t" två gånger. Det blir 42% fel. Notera att **det är case-sensitive, `a != A`**.
+`he jpå Dig Igelkorr`. Då blir följande tecken fel , "j" i "hej", "P" och "å" i "På", "d" i "dig" och "t" två gånger i "Igelkott". Notera att **det är case-sensitive, `a != A`**. Det blir följande fel, t 2, j 1, p 1, å 1, och d 1. Det är 6 fel av 16 och precisionen blir 62%. 
 
-Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i utskriften. Tecknet som skrevs fel flest gånger ska skrivas ut först.
-
-För att räkna ut poängen, ta antalet tecken i texten som användaren ska skriva av multiplicerat med hundra minus - fel procenten, `len * (100 - error_percentage)`. T.ex. `121 * (100 - 50)` ger 6050 poäng, texten är 121 tecken lång och användaren skrev 50% fel. **PS** poängen som Andreas visar i videon ovanför stämmer inte med uträkningen som står här. Uträkningen är uppdaterade efter att Andreas spelade in videon.
-
+Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i utskriften. Tecknet som skrevs fel flest gånger ska skrivas ut först. Skriv också ut precisionen.
 
 
 #### kodstruktur {#kodstruktur}
@@ -118,6 +127,8 @@ Du får **inte** installera moduler med `pip`. Du får bara importera moduler so
 #### Väl fungerande program {#fungera}
 
 Programmet skall fungera utan brister och inte krascha när man använder det enligt kraven.
+
+Det ska gå att skriva in färre tecken och ord än vad som skrivs ut. Det ska också gå att skriva in fler utan att programmet kraschar.
 
 
 
@@ -139,13 +150,18 @@ För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användare
 
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
+#### Gross WPM {#gwpm}
+
+Räkna ut gross words per minute, använd `antal rättstavade ord ` från (ord precision)[#words] och dela det på hur många minuter det tog för användaren att skriva klart. Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
+
+
+#### Net WPM {#nwpm}
+
 
 
 #### Prestanda och poäng {#k4-score}
 
 Nu ska tiden med i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många tecken per minut (CPM) som användaren skrev.
-
-Poänguträkningen ska nu vara `(len * (100 - error_percentage)) / duration`.
 
 
 

@@ -66,7 +66,20 @@ Dessa uppgifter skall utföras och redovisas.
 
 ### dockerhub.bash {#dockerhub-bash}
 
-1. Skapa ett Bash-script, `kmom03/dockerhub.bash` som kör din publicerade image. Filerna ska servas via en volym där mappen med filerna tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Mappa sökvägen mot din valda `DocumentRoot` i config-filen.
+1. Skapa ett Bash-script, `kmom03/dockerhub.bash` som kör din publicerade image. Filerna ska servas via en volym där mappen med filerna tas emot som argument. Utgå alltid från den egna kontexten (`$(pwd)`). Mappa sökvägen mot din valda `DocumentRoot` i config-filen. Man ska till exempel kunna göra på följande sätt:
+
+```console
+$ pwd
+/home/klw/dbwebb-kurser/vlinux/me/kmom03
+$ bash dockerhub.bash "mysite1"
+```
+
+```console
+$ pwd
+/home/klw/dbwebb-kurser/vlinux/me/kmom03/vhosts
+$ bash dockerhub.bash "vhosts/mysite1"
+```
+Man ska med andra ord skicka in sökvägen som argument. Scriptet ska enbart fånga upp och använda det.
 
 1. Containern ska kunna nås via port 8080 (-p).
 

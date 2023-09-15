@@ -118,7 +118,7 @@ Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i u
 
 Din kod ska skrivas i minst två filer. Programmet ska utgå från `main.py` och du måste skapa minst en till modul som du har kod i.
 
-Din kod **ska** skrivas i funktioner. Vi godkänner inte kod som ligger utanför funktioner i det globala scopet, förutom enstaka variabler.
+Din kod **ska** skrivas i funktioner. Vi godkänner inte kod som ligger utanför funktioner i det globala scopet, förutom enstaka variabler. Tänk på att skriva [DRY kod](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). För långa upprepade kodsnuttar ger minuspoäng.
 
 Du får **inte** installera moduler med `pip`. Du får bara importera moduler som vi använt i kursen tidigare och `time` modulen. Om du vill använda någon annan modul, kontakta kursansvarig och fråga om det är OK.
 
@@ -128,7 +128,9 @@ Du får **inte** installera moduler med `pip`. Du får bara importera moduler so
 
 Programmet skall fungera utan brister och inte krascha när man använder det enligt kraven.
 
-Det ska gå att skriva in färre tecken och ord än vad som skrivs ut. Det ska också gå att skriva in fler utan att programmet kraschar.
+Det ska gå att skriva in färre och fler tecken och ord än vad som skrivs ut utan att programmet kraschar.
+
+Programmet ska inte krascha om filen saknas som används till poänghistorik.
 
 
 
@@ -152,17 +154,31 @@ Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för 
 
 #### Gross WPM {#gwpm}
 
-Räkna ut gross words per minute, använd `antal rättstavade ord ` från (ord precision)[#words] och dela det på hur många minuter det tog för användaren att skriva klart. Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
+Räkna ut gross words per minute, `antal skriva ord / minuter `. Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
 
 
 #### Net WPM {#nwpm}
 
+Räkna ut net words per minute, `gross wpm - (antal felskrivna ord / minuter)`.
+
+Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
 
 
-#### Prestanda och poäng {#k4-score}
+#### Kategorier {#category}
 
-Nu ska tiden med i prestanda och poängräkningen. Efter skrivtestet är klart ska du också skriva ut hur många tecken per minut (CPM) som användaren skrev.
-
+| Net wpm | Djur |
+------------------
+| 10 - 3120 | Sengångare    |
+| 30 - 40| Snigel    |  
+| 40 - 50| Sjöko      |
+| 60 - 780| Människa      |
+| 50 - 60|       |
+| 70 - 80|       |
+| 80 - 90|       |
+| 90 - 100|       |
+| 100 - 120|       |
+|  > 120|       |
+-------------------
 
 
 ### Krav 5: Sortera poängutskriften (optionell) {#k5}

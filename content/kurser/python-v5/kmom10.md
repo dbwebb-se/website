@@ -95,7 +95,7 @@ Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet 
 
 ##### Räkna ut prestation och poäng {#performance}
 
-När ni ska jämföra resultat utgår vi från orden, orden är separerade med mellanslag. Punkttecken har ingen speciellt betydelse, tänk på dem som vilka bokstäver som helst i ett ord. T.ex. strängen "hej, p-å dig" innehåller tre ord, "hej,", "p-å" och "dig".
+När ni ska jämföra resultat utgår vi från orden, orden är separerade med mellanslag. Punkttecken har ingen speciellt betydelse, tänk på dem som vilka bokstäver som helst i ett ord. T.ex. strängen "hej. p-å dig" innehåller tre ord, "hej.", "p-å" och "dig".
 
 ###### Ord {#words}
 
@@ -164,21 +164,23 @@ Räkna ut net words per minute, `gross wpm - (antal felskrivna ord / minuter)`.
 Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
 
 
-#### Kategorier {#category}
+#### Kategori {#category}
+
+Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilken net WPM den fick. När användaren är färdig med ett test visa vilken djur den är. Nedanför hittar ni vilka djur som representerar vilka net WPM. 
 
 | Net wpm | Djur |
-------------------
-| 10 - 3120 | Sengångare    |
-| 30 - 40| Snigel    |  
-| 40 - 50| Sjöko      |
-| 60 - 780| Människa      |
-| 50 - 60|       |
-| 70 - 80|       |
-| 80 - 90|       |
-| 90 - 100|       |
-| 100 - 120|       |
-|  > 120|       |
--------------------
+|---------|---------|
+| 10 - 20| Sengångare |
+| 20 - 30| Snigel |
+| 30 - 40| Sjöko |
+| 40 - 50| Människa  |
+| 50 - 60| Gasell|
+| 60 - 70| Struts|
+| 70 - 80| Svärdfisk|
+| 80 - 90| Sporrgås|
+| 90 - 100| Taggstjärtseglare|
+| 100 - 120| Kungsörn|
+|  > 120| Pilgrimsfalk|
 
 
 ### Krav 5: Sortera poängutskriften (optionell) {#k5}

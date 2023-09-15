@@ -40,7 +40,8 @@ Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut s
 
 ## Extrauppgift {#extra}
 
-1. Lägg till fler virtuella hostar via följande lokala mappar: `mysite1, mysite2 etc`.
+<!-- 1. Lägg till fler virtuella hostar via följande lokala mappar: `mysite1, mysite2 etc`. -->
+Det finns inga extrauppgifter.
 
 ## Tips från coachen {#tips}
 

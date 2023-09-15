@@ -1,17 +1,12 @@
 ---
 author: aar
 revision:
+    "2023-09-15": "(C, aar) Släppt utan uppdaterad video."
     "2022-10-13": "(B, aar) Uppdaterade hur man räknar poäng."
     "2022-10-07": "(A, aar) Skapad inför HT22."
 ...
 Kmom10: Projekt och examination
 ==================================
-
-
-[WARNING]
-Kursmomentet uppdateras! Påbörja inte innan den gula rutan är borta.
-[/WARNING]
-
 
 
 [INFO]
@@ -154,7 +149,7 @@ Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för 
 
 #### Gross WPM {#gwpm}
 
-Räkna ut gross words per minute, `antal skriva ord / minuter `. Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
+Räkna ut gross words per minute, `antal skrivna ord / minuter`. Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
 
 
 #### Net WPM {#nwpm}

@@ -70,8 +70,8 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Lägg till redovisningstexten i din me-sida.
 
-TBD: Video på klart kmom
-<!-- [YOUTUBE src=oN-iYTWoFGg?t=2310 width=639 caption="Fungerar uppgiften som tänkt?"] -->
+<!-- TBD: Video på klart kmom -->
+[YOUTUBE src=zf8z8gRJckY?t=2310 width=639 caption="Fungerar uppgiften som tänkt?"]
 
 
 

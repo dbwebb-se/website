@@ -6,6 +6,7 @@ category:
     - regex
     - lab
 revision:
+    "2023-09-14": (B, lew) Uppdaterad inför HT23.
     "2021-04-12": (A, lew) Ny inför HT21.
 ...
 awk script
@@ -38,7 +39,7 @@ Gå till din kurskatalog i terminalen och kör följande kommando.
 cp example/awk/awk_names.csv me/kmom06/awk/
 ```
 
-Filen innehåller en hel del rader med påhittade personuppgifter.
+Filen innehåller en hel del rader med påhittade personuppgifter. 
 [INFO]
 All data i filen är automatgenererad och är inga verkliga personer. Skulle det kunna mappas mot någon riktig person är det av ren slump. Datan kommer från offentliga listor med "populäraste namn" och "lista över orter i sverige". Även sifforna är automatgenererade.
 [/INFO]
@@ -49,7 +50,7 @@ All data i filen är automatgenererad och är inga verkliga personer. Skulle det
 
 Du ska skapa en uppsättning awk script. Tänk på att första raden ofta är en form av rubriker. Alla utskrifter ska ha samma formattering som i exemplet. Ett tips är att använda printf() i vissa svar.
 
-Alla script ska presentera korrekt resultat med kommandot:
+Försök få till en liknande presentation med indentering och padding som i exemplena nedan. Alla script ska presentera korrekt resultat med kommandot:
 
 `$ awk -f <script> awk_names.csv` där &lt;script&gt; byts ut mot respektive uppgift.
 

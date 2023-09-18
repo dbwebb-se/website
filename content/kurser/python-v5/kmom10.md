@@ -104,7 +104,7 @@ Räkna också ut hur många gånger varje tecken blev felskrivet.
 
 T.ex. om programmet skriver ut:  
 `hej På dig Igelkott` och användaren skriver in:  
-`he jpå Dig Igelkorr`. Då blir följande tecken fel , "j" i "hej", "P" och "å" i "På", "d" i "dig" och "t" två gånger i "Igelkott". Notera att **det är case-sensitive, `a != A`**. Det blir följande fel, t 2, j 1, p 1, å 1, och d 1. Det är 6 fel av 16 och precisionen blir 62%. 
+`he jpå Dig Igelkorr`. Då blir följande tecken fel , "j" i "hej", "P" och "å" i "På", "d" i "dig" och "t" två gånger i "Igelkott". Notera att **det är case-sensitive, `a != A`**. Det blir följande fel, t 2, j 1, p 1, å 1, och d 1. Det är 6 fel av 16 och precisionen blir 62%. Eftersom vi jämför per ord och ignorerar mellanslag blir "å" fel i ordet "På". Då jämför vi "På" med "jpå" vilket gör att P blir j, å blir p  och å i input är extra tecken.
 
 Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i utskriften. Tecknet som skrevs fel flest gånger ska skrivas ut först. Skriv också ut precisionen.
 

@@ -47,7 +47,7 @@ Du ska i den här uppgiften mestadels jobba i mappen `kmom04/server/`.
 
 1. Bygg en server som kan svara på "routsen" ovan. Alla svar ska vara JSON.
 
-1. Man ska kunna använda både stor och liten bokstav när det filtreras på namn/färg. Till exempel så ska både `yellow` och `Yellow` fungera. Likadant med namnen.
+1. Man ska kunna använda både stor och liten bokstav när det filtreras på namn/färg. Till exempel så ska både `yellow` och `Yellow` fungera.
 
 1. Skapa en Dockerfile `Dockerfile` och lägg till din server i arbetsmappen `/server`. Mappen `data` med JSON-filen ska inte kopieras in, utan ska läggas till som en volym.
 

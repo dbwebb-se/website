@@ -56,7 +56,7 @@ Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
 Lägg din kod i `kmom10/typing`. Din kod ska validera i python för att få godkänt.
 
-Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska ni räkna ut en poäng på hur bra det gick och visa upp det. 
+Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska ni räkna ut hur bra det gick och visa upp det. 
 
 
 
@@ -74,7 +74,7 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 "3". Starta skrivtest med filen `hard.txt`.  
 
-"4". Skriv ut poänglistan som du har sparat i `score.txt`, sorterad på högst poäng.
+"4". Skriv ut resultatlistan som du har sparat i `score.txt`, sorterad på högst precision.
 
 "q". Ansluta programmet.
 
@@ -82,13 +82,13 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 #### Vad ett skrivtest är {#skrivtest}
 
-För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv därefter ut andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om ni är osäkra på hur det ska gå till. När testet är klart ska ni skriva ut hur bra användaren [presterade och poäng](#performance).
+För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv därefter ut andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om ni är osäkra på hur det ska gå till. När testet är klart ska ni skriva ut hur bra användaren [presterade](#performance).
 
-Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet och användarens poäng i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken poäng de fick.
+Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet och användarens ordprecision i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken ordprecision de fick.
 
 
 
-##### Räkna ut prestation och poäng {#performance}
+##### Räkna ut prestation {#performance}
 
 När ni ska jämföra resultat utgår vi från orden, orden är separerade med mellanslag. Punkttecken har ingen speciellt betydelse, tänk på dem som vilka bokstäver som helst i ett ord. T.ex. strängen "hej. p-å dig" innehåller tre ord, "hej.", "p-å" och "dig".
 
@@ -125,7 +125,7 @@ Programmet skall fungera utan brister och inte krascha när man använder det en
 
 Det ska gå att skriva in färre och fler tecken och ord än vad som skrivs ut utan att programmet kraschar.
 
-Programmet ska inte krascha om filen saknas som används till poänghistorik.
+Programmet ska inte krascha om filen saknas som används till precisionshistorik.
 
 
 
@@ -178,9 +178,9 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 |  > 120| Pilgrimsfalk|
 
 
-### Krav 5: Sortera poängutskriften (optionell) {#k5}
+### Krav 5: Sortera precisionsutskriften (optionell) {#k5}
 
-När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst poäng. PS. Tänk på att när du sorterar poängen ska det vara som heltal och inte strängar.
+När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. PS. Tänk på att när du sorterar precision ska det vara som heltal och inte strängar.
 
 
 

@@ -100,7 +100,7 @@ Räkna ut ord precision med `antal rättstavade ord / totalt antal ord`. Om anv�
 
 Räkna ut tecken precision med `antalet rättstavade tecken / total antal tecken`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord.
 
-Räkna också ut hur många gånger varje tecken blev felskrivet. **Utgå** från de rätta tecknen när du du kollar om de är rätt, **inte** användarens input. Det är inte tecknet användaren skriver in som ska räknas utan tecknet användaren skulle skriva in men inte gjorde, som ska räknas ut.
+Räkna också ut hur många gånger varje korrekt tecken blev felskrivet. **Utgå** från de korrekta tecknen när du du kollar om de är rätt, **inte** användarens input. Det är inte tecknet användaren skriver in som ska räknas utan tecknet användaren skulle skriva in men inte gjorde, som ska räknas ut.
 
 T.ex. om programmet skriver ut:  
 `hej På dig Igelkott` och användaren skriver in:  

@@ -440,7 +440,7 @@ Egentligen sa Linus även följande, som visar mer hur han tänkte.
 
 > "...git actually has a simple design, with stable and reasonably well-documented data structures. In fact, I'm a huge proponent of designing your code around the data, rather than the other way around, and I think it's one of the reasons git has been fairly successful […] I will, in fact, claim that the difference between a bad programmer and a good one is whether he considers his code or his data structures more important."
 
-I båda fallen pratar de om vikten av att strukturera sina datastrukturer så att de är lätta att komma åt, uppdatera och skapa. har man tänkt till lite extra när man gör sina datastrukturer så faller sig programmeringskoden mycket enklare.
+I båda fallen pratar de om vikten av att strukturera sina datastrukturer så att de är lätta att komma åt, uppdatera och skapa. Har man tänkt till lite extra när man gör sina datastrukturer så faller sig programmeringskoden mycket enklare.
 
 Om man sitter med en kodbas och tycker att datastrukturena verkar jobbiga och leder till en massa extra kod, då kan det vara en signal om att man borde strukturera om sina datastrukturer.
 
@@ -453,7 +453,7 @@ HTML formulär med POST {#post}
 
 Arrayer används när man postar ett formulär till en webbsida så låt oss nu byta ämne och titta på hur man kan jobba med HTML formulär och POST.
 
-Vi har tidigare tittat på ett GET formulär och nu skall vi se skillnaden till ett POST formulär. I GET-formuläret postades all data som en del av querysträngen, men i POST så skickas all forumlärdata som en del i HTTP-bodyn och det är inte lika synligt som i fallet med GET.
+Vi har tidigare tittat på ett GET formulär och nu skall vi se skillnaden till ett POST formulär. I GET-formuläret postades all data som en del av querysträngen, men i POST så skickas all formulärdata som en del i HTTP-bodyn och det är inte lika synligt som i fallet med GET.
 
 Tanken är att vi nu bygger ett enklare HTML formulär och använder det som ett POST formulär vilket i princip innebär att vi startar formuläret så här.
 
@@ -461,7 +461,7 @@ Tanken är att vi nu bygger ett enklare HTML formulär och använder det som ett
 <form method="post">
 ```
 
-Eftersom det är POST så kommer vi också att posta formuläret till en ny sida, vi kan kalla den processingsida. En processingsida har som ansvar att ta emot data från det postade formuläret och kontrollera att det som postats är rimligt och därefter hantera det. Vad "hantera" innebär skiljer från fall till fall, en kanske vill du spara informationen i en databas eller liknande.
+Eftersom det är POST så kommer vi också att posta formuläret till en ny sida, vi kan kalla den processingsida. En processingsida har som ansvar att ta emot data från det postade formuläret och kontrollera att det som postats är rimligt och därefter hantera det. Vad "hantera" innebär skiljer från fall till fall, men kanske vill du spara informationen i en databas eller liknande.
 
 Så här anger vi att formuläret skall postas till en processingsida.
 
@@ -667,7 +667,7 @@ header("Location: datastructure.php#form");
 exit();
 ```
 
-NU är det enbart PHP-kod i processingsidan och om formuläret betraktas som "komplett" så skickas vidare till en resultatsida, annars skickas du tillbaka till den sidan du kom ifrån.
+Nu är det enbart PHP-kod i processingsidan och om formuläret betraktas som "komplett" så skickas vidare till en resultatsida, annars skickas du tillbaka till den sidan du kom ifrån.
 
 Det är viktigt att göra `exit()` efter att man gjort `header("Location: form_result.php")`, annars fortsätter exekveringen av koden och man får oväntade resultat.
 

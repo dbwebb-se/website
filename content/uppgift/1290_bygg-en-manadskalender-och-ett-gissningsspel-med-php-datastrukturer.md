@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs webtec
 revision:
+    "2023-09-19": "(E, mos) Genomgång mindre justeringar i text."
     "2022-10-07": "(D, mos) Länk till tips och trix."
     "2022-09-20": "(C, mos) Stavning."
     "2022-09-14": "(B, mos) Genomgången och tog bort galleriuppgiften."
@@ -105,38 +106,36 @@ Från övningen förutsetts att du har följande implementerat.
 
 Du skall göra en årsalmanacka för årets 12 månader i innevarande år där du visar en månad tillsammans med en bild, en så kallad fotokalender.
 
-<!--
-Använd bara date=2022-06-01, inte month.
--->
-Gör en sidkontroller `photocal.php` som tar ett argument via querysträngen `?month=6` och därefter visas månaden juni upp tillsammans med en bild. Skickar man in `?month=7` så visas juli upp och missar man att skicka in något alls så visas aktuell månad. Du kan också välja att skicka in både månad och år via querysträngen, det är upp till dig hur du konstruerar querysträngen.
-
-Skapa en länk så att man kan navigera till nästa och föregående månad. När du kommer till månad 12 och klickar nästa så tar det antingen stopp, eller så byter du år - det är upp till dig att välja taktik.
-
-Placera en länk till sidkontrollern i navbaren.
-
-Tanken är att din almanacka har följande utseende.
+Tanken är att din almanacka har ett liknande utseende.
 
 [FIGURE src=image/webtec/phpstruct/fotokalender.png caption="En fotokalender i form av en årsalmanacka."]
 
-I kalendern visar du vecka för vecka med sitt veckonummer, datum för dagen och månadens namn. För varje dag, skriv ut vilket dagnummer det är för året (1-365/366). Du kan även välja att visa mer information om du vill.
+1. Gör en sidkontroller `photocal.php` som tar ett argument via querysträngen `?date=2022-06-25` och därefter visas månaden juni upp tillsammans med en bild. Skickar man in `?date=2022-07-01` så visas juli upp och missar man att skicka in något alls så visas aktuell månad. Det är upp till dig hur du konstruerar querysträngen.
 
-Se till att söndagar är röda i din style.
+1. Skapa en länk så att man kan navigera till nästa och föregående månad. När du kommer till månad 12 och klickar nästa så tar det antingen stopp, eller så byter du år till nästa månad - det är upp till dig att välja taktik.
 
-<!--
-Se till att din kalender börjar på en måndag. Om månaden inte börjar på en måndag så visar du datum från den sista veckan på föregående månad.
+1. Placera en länk till sidkontrollern i navbaren.
 
-Se till att kalendern avslutas på en söndag. Om den aktiella månaden inte avslutar med en söndag så visar du dagar från kommande månad tills det blir söndag.
--->
+1. I kalendern visar du vecka för vecka med sitt veckonummer, datum för dagen och månadens namn. För varje dag, skriv ut vilket dagnummer det är för året (1-365/366). Du kan även välja att visa mer information om du vill.
 
-<!--
-* Använd minst 4/12 olika bilder.
--->
+1. Se till att söndagar är röda i din style.
+
+1. Se till att din kalender börjar på en måndag. Om månaden inte börjar på en måndag så visar du datum från den sista veckan på föregående månad.
+
+1. Se till att kalendern avslutas på en söndag. Om den aktuella månaden inte avslutar med en söndag så visar du dagar från kommande månad tills det blir söndag.
+
+1. Använd 12 olika bilder för att representera månaderna.
+
 
 **EXTRA**
 
 Gör bara detta om du känner att du har tid, lust och energi.
 
-Placera in namnen på de som har namnsdagar på rätt plats i kalendern. Du har en funktion i `src/calendar.php` som kan ge dig en array som innehåller namn kopplade till ett datum.
+1. Placera in namnen på de som har namnsdagar på rätt plats i kalendern. Du har en funktion i `src/calendar.php` som kan ge dig en array som innehåller namn kopplade till ett datum. Det finns en [README.md](https://github.com/dbwebb-se/webtec/tree/main/example/database) som berättar mer om den datan du kan få ut av funktionerna.
+
+<!--
+Skapa ett exempelprogram och en README som visar hur man kan extrahera informationen så att det blir enklare att använda.
+-->
 
 
 
@@ -164,13 +163,17 @@ Här är grunden i spelet.
 
 **EXTRA**
 
-Om du har idéer och tankar kring hur du kan göra "spelet" mer roligt så får du gärna implementera det. Kanske kan du hitta ett sätt att även använda namnsdagarna och koppla ihop informationen med namn och betydelse. Se om du kan klura ut något.
+Om du har idéer och tankar kring hur du kan göra "spelet" mer roligt så får du gärna implementera det. 
+
+1. Kanske kan du hitta ett sätt att även använda namnsdagarna och koppla ihop informationen med namn och betydelse. Se om du kan klura ut något.
+
+1. Kanske kan man visa en hint med någon bokstav från namnet för att göra det enklare att gissa.
 
 
 
 ### Övriga krav {#krav}
 
-1. Kontrollera att dina sidkontroller passerar Unicorn validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
+1. Kontrollera att dina sidkontroller passerar HTML & CSS validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
 
 
 <!--

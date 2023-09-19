@@ -193,7 +193,7 @@ Lägg till menyval 5, i det menyvalet ska användaren välja ett antal sekunder 
 Redovisning {#redovisning}
 -------------------------------------------------------------------
 
-1. På din [redovisningssida](./../redovisa), skriv följande:
+1. I inlämningen på Canvas, skriv följande:
 
     1. För varje krav du implementerat, dvs 1-3, 4, 5, 6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
        - Berätta om din kodstruktur och hur du tänkte när du organiserade din kod.
@@ -202,7 +202,7 @@ Redovisning {#redovisning}
 
     3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-2. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte att bifoga länken till projektet på studentservern.
+2. Glöm inte att bifoga länken till projektet på studentservern (alternativ bara din akronym).
 
 3. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Efter du har gjort inlämningen på Canvas lägg videon som en mediakommentar på din inlämning. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
 

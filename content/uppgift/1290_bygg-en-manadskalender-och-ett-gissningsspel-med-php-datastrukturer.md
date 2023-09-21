@@ -71,7 +71,8 @@ mkdir me/report/data
 cp example/database/data/Svenska_akademin_namn*.csv me/report/data
 
 # Kopiera funktionerna som kan läsa in namnfilerna och skapa arrayer av dem
-cp example/database/src/calendar.php me/report/src
+mkdir me/report/src
+cp example/database/src/calendar.php me/report/src/
 ```
 
 Inkludera nu filen `src/calendar.php` i din `config/config.php`.

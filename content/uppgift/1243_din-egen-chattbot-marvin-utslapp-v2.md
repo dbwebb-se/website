@@ -14,6 +14,8 @@ I denna uppgiften ska vi bygga ut Marvin så att vi kan analysera hur mycket kol
 
 Vi har tillgång till utsläpp data för världens länder för åren 1990, 2005 och 2017. Det finns även data för ländernas antal invånare och yta.
 
+[YOUTUBE src=qWeMnO4HOoM caption="Introduktion till marvin4."]
+
 
 
 Förkunskaper {#forkunskaper}

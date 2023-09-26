@@ -125,7 +125,7 @@ elif choice == "1":
  Algoritmen funkar på så sätt att varannan siffra multipliceras med 2 och 1, med start på första siffran i personnumret. Om något tal vid multiplikationen blir större än 9 ersätts det talet med dess siffersumma. Därefter summeras alla tal och här skiljer sig funktionen från menyval 7. Sista siffran erhålls genom att summan subtraheras från närmaste högre tiotal. Exempel med `811218-987`:
 
     ```
-       8  1 1 2 1 8  9 8  7
+   8  1 1 2 1 8  9 8  7
     *  2  1 2 1 2 1  2 1  2
     -------------------------
     ^  ^ ^ ^ ^ ^  ^ ^  

@@ -122,7 +122,7 @@ input: 1
 1. Menyval **7**: Gör så att Marvin kan validera personnummer med hjälp av Luhnalgoritmen. Algoritmen funkar på så sätt att varannan siffra multipliceras med 2 och 1, med start på första siffran i personnumret. Om något tal vid multiplikationen blir större än 9 ersätts det talet med dess siffersumma. Därefter summeras alla tal och om summan är jämt delbar med 10 så är kontrollsiffran korrekt. Om personnumret validerar ska Marvin skriva ut `Valid` annars `Not valid`. Koden ska klara av personnummer med och utan `-` innan de fyra sista siffrorna och om för får eller för många siffror skickas med ska det bli "Not Valid".
 
     ```
-       8  1 1 2 1 8  9  8 7  6
+   8  1 1 2 1 8  9  8 7  6
     *  2  1 2 1 2 1  2  1 2  1
     ---------------------------
        ^  ^ ^ ^ ^ ^  ^  ^ ^  ^
@@ -141,7 +141,7 @@ input: "811218-9876"      output: "Valid"
 
 
 
-1. Menyval **8**: Gör så Marvin kan tala [rövarspråket](https://sv.wikipedia.org/wiki/R%C3%B6varspr%C3%A5ket). Marvin ska använda ett input anrop för att ta emot ett ord och sen skriva ut ordet översatt till rövarspråket.
+1. Menyval **8**: Gör så Marvin kan tala [rövarspråket](https://sv.wikipedia.org/wiki/R%C3%B6varspr%C3%A5ket). Marvin ska använda ett input anrop för att ta emot ett ord och sen skriva ut ordet översatt till rövarspråket. Följande bokstäver är vokaler: "A, E, I, O, U, Y, Å, Ä, Ö"
 
     Exempel:
 

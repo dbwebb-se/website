@@ -155,7 +155,7 @@ echo "<p>The database at '$dsn' is now connected.<p>Dumping the database connect
 var_dump($db);
 ```
 
-Det bör se ut ungefär så här när du kör skriptet.
+Det bör se ut ungefär så här när du kör skriptet. (Läs den blå rutan längre ned om du får problem).
 
 [FIGURE src=image/webtec/pdo1/connect.png?w=w3 caption="Det gick bra att koppla sig mot databasen."]
 
@@ -167,7 +167,7 @@ Du kan läsa lite om DSN i metoden för att koppla upp sig mot databasen, [PDO::
 
 [INFO]
 
-Om du sitter i en Windows-miljö och har installerat XAMPP i Windows men sparar ditt kursrepo och filer i WSL/Ubuntu så behöver du göra enlingt följande tips för att få det att fungera.
+Om du sitter i en Windows-miljö och har installerat XAMPP i Windows men sparar ditt kursrepo och filer i WSL/Ubuntu så behöver du göra enligt följande tips för att få det att fungera.
 
 * [Kmom05 och felmeddelande med att läsa från databasen Windows/WSL/Ubuntu](https://github.com/dbwebb-se/webtec/issues/17)
 
@@ -328,7 +328,7 @@ Det kan se ut så här när du kör skriptet.
 
 [FIGURE src=image/webtec/pdo1/select.png?w=w3 capition="Utskrift av resultatet från databasfrågan."]
 
-Svaret kommer som en array, där varje rad i arrayen är en rad från databasen. Det är en array som innehåller arrayer. Man kallar det även för en tvådimensionell array. Du kan använda en `foreach`för att loopa igenom ditt resultset och skriva ut det på ett lite snyggare sätt.
+Svaret kommer som en array, där varje rad i arrayen är en rad från databasen. Det är en array som innehåller arrayer. Man kallar det även för en tvådimensionell array. Du kan använda en `foreach` för att loopa igenom ditt resultset och skriva ut det på ett lite snyggare sätt.
 
 
 

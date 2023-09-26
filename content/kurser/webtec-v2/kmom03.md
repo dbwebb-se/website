@@ -19,7 +19,8 @@ KOMMENTAR
 Det svåra med detta momentet är att det lär ut programmering OCH att koda i sammanhanget HTML/CSS.
 Nybörjare i programmering har svårt och normalt hade man delat upp detta i två steg.
 Man behöver normalt längre tid till att lära sig detta och man behöver öva i små övningar/labbar med enkla konstruktioner.
--->
+
+En förbättring vore att förenkla övningen i dess mest svåra passager och flytta över till video/text som hjälper studenten att strukturera problemet i uppgiften. -->
 
 Vi lär oss grunderna i programmeringsspråket PHP om hur man kan skapa dynamiska webbsidor via programmeringskonstruktioner som variabler, if-satser, och loopar. Vi använder inbyggda variabler som $_GET och $_SERVER tillsammans med querysträng och HTML formulär där vi provar att skicka argument till en webbsida.
 

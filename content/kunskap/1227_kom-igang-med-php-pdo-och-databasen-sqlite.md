@@ -324,7 +324,7 @@ $res = $stmt->fetchAll();
 echo "<pre>", print_r($res, true), "</pre>";
 ```
 
-Det kan se ut så här när du kör skriptet.
+Det kan se ut så här när du kör skriptet. (Om du är på Windows med WSL så kan ditt skript hänga sig och ge ett felmeddelande om "fillåsning" efter ett tag, isåfall backar du upp till den blåa rutan och placerar din databas i Windows filsystem istället.)
 
 [FIGURE src=image/webtec/pdo1/select.png?w=w3 capition="Utskrift av resultatet från databasfrågan."]
 

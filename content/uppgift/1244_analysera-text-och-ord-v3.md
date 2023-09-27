@@ -185,7 +185,7 @@ Extrauppgift {#extra}
     ```python
 
     input: "write lines"       file content: "17"
-    input: "wirte words"       file content: "199"
+    input: "write words"       file content: "199"
     ```
 
 

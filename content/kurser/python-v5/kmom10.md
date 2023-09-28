@@ -130,15 +130,17 @@ Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i u
 Här kan ni se ett exempel med input från användaren för den lätta texten.
 
 Text från filen:
-> Hello my name is Andreas  
-> What is your name  
-> My name is Da  
+> "Hello my name is Andreas"  
+> "What is your name"  
+> "My name is Da"  
 
 
 Input från användaren:
-> Hellå m name andreas  
-> What is your nameaa  
-> My name is Do da  
+> "Hellå m name andreas"  
+> "What is your nameaa ko"  
+> ""
+
+På sista raden skriver användaren inte in något utan trycker bara på Enter på tangentbordet.
 
 Det ger följande prestation:
 ```python

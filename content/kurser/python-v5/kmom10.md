@@ -92,13 +92,28 @@ Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet 
 
 När ni ska jämföra resultat utgår vi från orden, orden är separerade med mellanslag. Punkttecken har ingen speciellt betydelse, tänk på dem som vilka bokstäver som helst i ett ord. T.ex. strängen "hej. p-å dig" innehåller tre ord, "hej.", "p-å" och "dig".
 
+Skilj också på raderna, om användaren skriver in ett ord för lite eller för mycket vill vi inte att det ska på verka alla ord efteråt. Det påverkar alla ord efteråt i samma input men det ska inte påverkar order i input efteråt. T.ex.
+
+Rätt text:
+
+> Hej På Er Idag  
+> Vad gör ni?
+
+Användarens input:
+
+> Hej er idag  
+> Vad gör ni?
+
+"På", "Er" och "Idag" blir fel för att "På" saknas, då matchas "På" till "er", "Er" till "idag" och "Idag" saknar ord att matcha mot. Varje ny rad ska "börja om". Andra raden blir 100% rätt.
+
+
 ###### Ord {#words}
 
 Räkna ut ord precision med `antal rättstavade ord / totalt antal ord`. Om användaren skriver in fler ord än vad som efterfrågas, då ska antalet rättstavade ord minskas med ett för varje extra ord som är skrivit. T.ex. om testet skriver ut 5 ord som användaren ska skriva av och användaren skriver in sju ord där två av orden också är felstavade. Då blir uträkningen `5-2-2 = 1`, `1/5` vilket ger `20%` precision. Notera att **det är case-sensitive, `a != A`**
 
 ###### Tecken {#chars}
 
-Räkna ut tecken precision med `antalet rättstavade tecken / total antal tecken`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord.
+Räkna ut och skriv ut tecken precision med `antalet rättstavade tecken / total antal tecken`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord. Om användaren skriver in fler tecken än vad som är med i det efterfrågade ordet ska varje extra tecken sänka antalet rättstavade tecken med ett. Precis som för orden.
 
 Räkna också ut hur många gånger varje korrekt tecken blev felskrivet. **Utgå** från de korrekta tecknen när du du kollar om de är rätt, **inte** användarens input. Det är inte tecknet användaren skriver in som ska räknas utan tecknet användaren skulle skriva in men inte gjorde, som ska räknas ut.
 
@@ -107,6 +122,44 @@ T.ex. om programmet skriver ut:
 `he jpå Dig Igelkorr`. Då blir följande tecken fel , "j" i "hej", "P" och "å" i "På", "d" i "dig" och "t" två gånger i "Igelkott". Notera att **det är case-sensitive, `a != A`**. Det blir följande fel, t 2, j 1, p 1, å 1, och d 1. Det är 6 fel av 16 och precisionen blir 62%. Eftersom vi jämför per ord och ignorerar mellanslag blir "å" fel i ordet "På". Då jämför vi "På" med "jpå" vilket gör att P blir j, å blir p  och å i input är extra tecken.
 
 Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i utskriften. Tecknet som skrevs fel flest gånger ska skrivas ut först. Skriv också ut precisionen.
+
+
+
+###### Exempel {#exempel}
+
+Här kan ni se ett exempel med input från användaren för den lätta texten.
+
+Text från filen:
+> Hello my name is Andreas  
+> What is your name  
+> My name is Da  
+
+
+Input från användaren:
+> Hellå m name andreas  
+> What is your nameaa  
+> My name is Do da  
+
+Det ger följande prestation:
+```python
+Ordprecision: 23.08% # (4-1) / 13
+Teckenprecision: 55.17% # (23-7) / 29
+Felstavade tecken:  
+   s: 3  
+   a: 3  
+   y: 2  
+   n: 2  
+   i: 2  
+   e: 2  
+   r: 1  
+   o: 1  
+   m: 1  
+   d: 1  
+   M: 1  
+   D: 1  
+   A: 1  
+```
+
 
 
 #### kodstruktur {#kodstruktur}
@@ -121,7 +174,7 @@ Du får **inte** installera moduler med `pip`. Du får bara importera moduler so
 
 #### Väl fungerande program {#fungera}
 
-Programmet skall fungera utan brister och inte krascha när man använder det enligt kraven.
+Programmet skall fungera utan brister och inte krascha när man använder det enligt kraven. Programmet ska kunna hantera att användaren råkar skriva fel i menyn.
 
 Det ska gå att skriva in färre och fler tecken och ord än vad som skrivs ut utan att programmet kraschar.
 
@@ -165,17 +218,18 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 
 | Net wpm | Djur |
 |---------|---------|
-| 10 - 20| Sengångare |
-| 20 - 30| Snigel |
-| 30 - 40| Sjöko |
-| 40 - 50| Människa  |
-| 50 - 60| Gasell|
-| 60 - 70| Struts|
-| 70 - 80| Svärdfisk|
-| 80 - 90| Sporrgås|
-| 90 - 100| Taggstjärtseglare|
-| 100 - 120| Kungsörn|
-|  > 120| Pilgrimsfalk|
+| 0 - 10| Sengångare |
+| 10 - 20| Snigel |
+| 20 - 30| Sjöko |
+| 30 - 40| Människa |
+| 40 - 50| Gasell  |
+| 50 - 60| Struts |
+| 60 - 70| Gepard |
+| 70 - 80| Svärdfisk |
+| 80 - 90| Sporrgås |
+| 90 - 100| Taggstjärtseglare |
+| 100 - 120| Kungsörn |
+|  > 120| Pilgrimsfalk |
 
 
 ### Krav 5: Sortera precisionsutskriften (optionell) {#k5}

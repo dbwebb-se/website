@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2023-09-29": "(D, aar) Lagt till video och exempel."
     "2023-09-15": "(C, aar) Släppt utan uppdaterad video."
     "2022-10-13": "(B, aar) Uppdaterade hur man räknar poäng."
     "2022-10-07": "(A, aar) Skapad inför HT22."
@@ -42,7 +43,7 @@ Projektidé och upplägg {#upplagg}
 
 Du ska utveckla ett program för att öva på att skriva snabbt på ett tangentbord. Det finns många webbsidor som erbjuder det redan, t.ex. [https://www.keybr.com/](https://www.keybr.com/), men vi ska skapa ett program för terminalen. **PS** Det finns inga tester för projektet. Det är upp till er att tolka och implementera kraven.
 
-[YOUTUBE src=fbFOKLyF2yM caption="Andreas visar hur projektet kan se ut när det är klart.]
+[YOUTUBE src=RLKUPG4-btI caption="Andreas visar hur projektet kan se ut när det är klart.]
 
 
 Projektspecifikation {#projspec}
@@ -127,7 +128,7 @@ Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i u
 
 ###### Exempel {#exempel}
 
-Här kan ni se ett exempel med input från användaren för den lätta texten.
+Här kan ni se ett exempel med input från användaren.
 
 Text från filen:
 > "Hello my name is Andreas"  
@@ -209,7 +210,7 @@ Räkna ut gross words per minute, `antal skrivna ord / minuter`. Avrunda minuter
 
 #### Net WPM {#nwpm}
 
-Räkna ut net words per minute, `gross wpm - (antal felskrivna ord / minuter)`.
+Räkna ut net words per minute, `gross wpm - (antal felskrivna ord / minuter)`. I "felskrivna ord" **inkludera** ord som användaren har skrivit för mycket.
 
 Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
 

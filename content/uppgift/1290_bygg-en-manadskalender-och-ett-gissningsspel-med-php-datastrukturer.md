@@ -85,6 +85,8 @@ Titta på funktionerna i filen. Prova att anropa dem och skriva ut innehåll i d
 
 I GitHub issuen "[Tips och trix till kmom04 och fotokalendern](https://github.com/dbwebb-se/webtec/issues/16)" finns det en del inspiration och tips och trix till hur man kan tänka och vilka eventuella svårigheter som finns i uppgiften.
 
+Det finns också en GitHub issue som ger dig "[Hur tänka kring kmom04 och gissa namnet spelet?](https://github.com/dbwebb-se/webtec/issues/27)" för att hjälpa dig att tänka kring lösningen om andra uppgiften nedan.
+
 
 
 Krav {#krav}

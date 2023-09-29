@@ -144,7 +144,7 @@ Sök på namnet i fler tabeller i databasen.
 
 ### Övriga krav {#krav}
 
-1. Kontrollera att dina sidkontroller passerar Unicorn validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
+1. Kontrollera att dina sidkontroller passerar HTML & CSS validatorn. Om du har några valideringsfel på CSS kan det ibland vara okey, men du bör inte ha något valideringsfel på HTML.
 
 
 <!--

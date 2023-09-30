@@ -2,15 +2,12 @@
 author:
   - lew
 revision:
+  "2023-09-30": (C, lew) Uppdaterad inför HT23.
   "2023-09-14": (B, lew) Uppdaterad inför HT23.
   "2019-03-26": (A, lew) Ny inför HT19.
 ...
 
 # Kmom06: Docker Compose
-
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
 
 Nu har vi koll på hur vi kan strukturera lite större Bash-script. Vi ska gå vidare med Docker och kika på _Docker Compose_. Det underlättar för oss när Docker konstruktionerna växer. Vi ska ta vår Mazerunner från förra kursmomentet och använda oss utav Docker Compose för att köra igång kontainrarna och nätverket. Vi ska även lägga till lite funktionalitet till Mazerunner. Utöver Bash och Docker Compose ska vi fortsätta titta på reguljära uttryck och verktygen "Sed" och "Awk".
 

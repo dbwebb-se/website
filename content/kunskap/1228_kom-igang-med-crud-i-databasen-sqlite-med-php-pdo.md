@@ -57,8 +57,8 @@ cp -i example/pdo_crud/db/user.sqlite me/kmom06/crud/db
 För att undvika problem med rättigheter när vi (och webbservern Apache) vill skriva till databasen så sätter vi följande rättigheter på katalogen och på databasfilen.
 
 ```text
-chmod 777 me/kmom06/pdo_crud/db
-chmod 666 me/kmom06/pdo_crud/db/user.sqlite
+chmod 777 me/kmom06/crud/db
+chmod 666 me/kmom06/crud/db/user.sqlite
 ```
 
 Nu kan vi titta i databasfilen vad den innehåller för schema.
@@ -170,7 +170,7 @@ En annan variant att "läsa från databasen" är att ställa en fråga för att 
 
 När man bygger upp inloggning på en webbsida behövs det en handfull sidokontrollers som samverkar i ett flöde och där man väljer att spara i sessionen om användaren är inloggad eller ej.
 
-Här är en grov översikt över d sidkontroller som jag nu avser utveckla för att bygga en hantering av inloggning på webbsidan.
+Här är en grov översikt över de sidkontroller som jag nu avser utveckla för att bygga en hantering av inloggning på webbsidan.
 
 * `login.php` som inloggningsformulär där man matar in sin acronym och lösenord.
     * `login_process.php` kontrollera inloggningen och sparar akronymen i sessionen om inloggningen var lyckad.
@@ -240,7 +240,7 @@ Om inloggningen misslyckades så sker en redirect tillbaka till inloggningssidan
 
 #### Steg 1, minsta möjliga processingsida {#minsta}
 
-Om vi börjar **problemlösa stegvis med minsta möjliga kod** så kan vi göra en processingsida som alltid misslyckas och gör en redirect tillbaka till login-sidan tillsammans med ett flashmeddelande. Sen justerar vi så att inloggninen fungerar och gör en redirect till sidan för alla användare.
+Om vi börjar **problemlösa stegvis med minsta möjliga kod** så kan vi göra en processingsida som alltid misslyckas och gör en redirect tillbaka till login-sidan tillsammans med ett flashmeddelande. Sen justerar vi så att inloggningen fungerar och gör en redirect till sidan för alla användare.
 
 ```php
 // Include the config file

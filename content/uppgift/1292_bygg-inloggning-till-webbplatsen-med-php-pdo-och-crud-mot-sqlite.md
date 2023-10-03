@@ -10,7 +10,7 @@ Bygg inloggning till webbplatsen med PHP PDO och CRUD mot SQLite
 
 Du skall bygga en inloggning till din webbplats samt möjlighet att lägga till nya användare, redigera detaljer om en användare och radera användare. Denna funktionalitet kan sammanfattas med CRUD för Create, Read, Update och Delete.
 
-Det blir en del formulärhantering och databasaccess. TÄnk på att en del av koden är rätt lik och i vissa fall kan det vara bra att skapa funktioner som gör det lättare att återanvända delar av koden.
+Det blir en del formulärhantering och databasaccess. Tänk på att en del av koden är rätt lik och i vissa fall kan det vara bra att skapa funktioner som gör det lättare att återanvända delar av koden.
 
 <!--more-->
 

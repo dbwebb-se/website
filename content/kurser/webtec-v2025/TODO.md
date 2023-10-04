@@ -121,6 +121,7 @@ webbserver?
 
 * fetch mot server alla detaljer om dag/datum/namn/solstånd
     * Gissa namnet, utifrån en beskrivning, gissa namnet
+        * Som nu med SESSION och PHP fast med JSON&fetch
     * (quiz)
 
 * Memoryspel (extra?)

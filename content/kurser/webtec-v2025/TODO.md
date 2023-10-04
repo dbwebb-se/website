@@ -19,6 +19,21 @@ SSI .shtml eloch/eller me/report som länkar till nya saker
 webbserver?
 
 
+* Föreläsning
+    * xxx
+* Läsanvisning
+    * xxx
+* Övning
+    * lab
+    * övning
+* Uppgift
+    * xxx
+* Uppgift (extra)
+    * xxx
+* Redovisning
+    * xxx
+
+
 
 ## [01: HTML (Bygg en webbplats)](kurser/webtec-v2025/kmom01)
 
@@ -55,7 +70,8 @@ webbserver?
     * Gamla labbar eller ny struktur?
     * Funkar för enhetstest
 
-* Är det fredag?
+* Idag `today` (visa detaljer om dagens datum)
+* Är det fredag (`is-it-friday`)?
 * Månadskalender kmom03 (table, if, loop, css, lite prog) 
 
 * HTML & CSS

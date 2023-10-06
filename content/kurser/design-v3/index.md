@@ -24,13 +24,11 @@ Kursen syftar till en orientering inom områden design och användbarhet, specif
 
 <!--more-->
 
-Introduktion till kursen:
+
 
 [YOUTUBE src=R4kMXfMHwp8 width=630 caption="Kursintro design"]
 
 
-
-Varför design:
 
 [YOUTUBE src=a59Vre1I6qs width=630 caption="Varför design?"]
 
@@ -97,14 +95,14 @@ Blekinge Tekniska Högskola har de senaste åren utvecklat en vision som ska gen
 Som en del av visionen och strategin för att tillämpa vision har BTH definierat fem perspektiv på utbildning:
 
 * Samverkan​
-* Hållbarhetsarbete
-* Jämställdhetsarbete
+* Hållbarhet
+* Jämställdhet
 * Internationalisering
 * Forskningsanknytning
 
 Vi kommer i denna kurs fokusera på perspektivet hållbarhet och sedan får ni även en introduktion till perspektivet forskningsanknytning.
 
-I början av kursen introduceras vi till perspektivet hållbarhet för att i slutet av kursen ha förutsättningar för att kunna analysera hur vi som utvecklare kan arbeta hållbart.
+I början av kursen introduceras vi till perspektivet hållbarhet för att i slutet av kursen ha förutsättningar för att kunna analysera hur vi som programmerare kan arbeta hållbart.
 
 
 
@@ -113,7 +111,6 @@ Kursmoment {#kursmoment}
 
 Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h studerande i form av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke.
 
-<!-- Alla kursmoment skall redovisas och du samlar alla redovisningar i din me-sida. -->
 
 
 ### Kmom01: Ramverk, innehåll, style {#kmom01}
@@ -196,15 +193,6 @@ Det finns läsanvisningar i samband med varje kursmoment.
 * **[The Principles of Beautiful Web Design](kunskap/boken-the-principles-of-beautiful-web-design)**
 
 
-<!--
-### Referenslitteratur {#referenslitteratur}
-
-Följande böcker har jag valt som referenslitteratur. De kan vara bra att ha tillhands och ger lite extra läsmöjligheter. De behövs inte för att klara kursen men vill du bemästra kursens område så är dessa böcker bra startpunkter.
-
-* **[HTML och CSS-boken](kunskap/boken-html-och-css-boken)**
-
--->
-
 
 ### Övrig litteratur {#ovriglitteratur}
 
@@ -281,16 +269,15 @@ Den sista inlämningen bestämmer kursens slutbetyg vilket utfärdas när samtli
 
 Läs mer om [rapportering av resultat](kurser/faq/resultatrapportering).
 
-<!--
 
-Kursutvärdering och kursutveckling {#kursutvardering}
+
+Kursvärdering och kursutveckling {#kursvardering}
 -----------------------------------------------------
 
 Det finns ett särskilt dokument som beskriver hur arbetet med kursutvärderingar och kursutveckling sker. Det är oerhört viktigt för mig att du säger till vad du tycker om kurs och kursmaterial, du kan alltid hojta till i både forum, chatt eller mail.
 
 Läs om hur [vi jobbar med kursutvärdering och kursutveckling](kurser/faq/kursutvardering-och-kursutveckling).
 
--->
 
 
 Kursplan {#kursplan}

@@ -227,14 +227,14 @@ Redirect /htmlphp /kurser/htmlphp
 Redirect /kurser/javascript1/repo /repo/javascript1
 Redirect /javascript1 /kurser/javascript1
 Redirect /kurser/javascript1/studieplan https://docs.google.com/spreadsheets/d/1e1YHhdBPYqSZMG2g7xQE_7gu4ejobCre9F53F43KGDo/edit?usp=sharing
-Redirect /kurser/javascript1/lektionsplan https://docs.google.com/spreadsheets/d/1m87jwckTiSHc9ty57laBa7rKiMGq9EXJ-xa4mjSEs3E/edit?usp=sharing
+Redirect /kurser/javascript1/lektionsplan https://docs.google.com/spreadsheets/d/168ZAUcTz2FYO674LrJPtFHGjQOxfAJqk0MyYN06ska8/edit?usp=sharing
 
 # js
 
 Redirect /js /kurser/js-v2
 Redirect /kurser/js /kurser/js-v2
 Redirect /kurser/js/repo /repo/js-v2
-Redirect /kurser/js-v2/studieplan https://docs.google.com/spreadsheets/d/1Lgm6jpbHQGHEx7bJdv46Tk3e42wxbv18e14p8i8xNnw/edit?usp=sharing
+Redirect /kurser/js-v2/studieplan https://docs.google.com/spreadsheets/d/1KHr4gPB5vw7p_IGj9WurhX9VCFfkSYWSEn3TAc2mrX0/edit?usp=sharing
 Redirect /kurser/js-v2/lektionsplan https://docs.google.com/spreadsheets/d/1imYYala19Uo7K3oAWkdE1UjRPsvyJZ1j2-9mql3wmrg/edit?usp=sharing
 
 # design

@@ -38,9 +38,11 @@ Labbmiljön  {#labbmiljo}
 
 *(ca: 2-4 studietimmar)*
 
-Det finns en [längre beskrivning om kursens labbmiljö](./../installera-labbmiljo). Läs den om du är osäker på vad som skall göras, eller om detta är din första dbwebb-kurs.
 
-Den korta varianten är att du behöver [installera labbmiljön](./../labbmiljo), uppdatera [dbwebb-cli](dbwebb-cli) samt klona och initiera kursrepot.
+
+Den korta varianten är att du behöver [installera labbmiljön](./../labbmiljo). **Vilket innebär de tre artiklarna** [Webbserver, PHP och databaser](./../labbmiljo/webbserver), [PHP i pathen](./../labbmiljo/php-i-pathen) och [PHP och Composer](./../labbmiljo/composer).
+
+Sedan uppdaterar du [dbwebb-cli](dbwebb-cli), klonar och initierar kursrepot.
 
 ```text
 # Gå till din katalog för dbwebb-kurser
@@ -49,6 +51,8 @@ dbwebb clone design
 cd design
 dbwebb init
 ```
+
+
 
 ### Verktyg {#verktyg}
 
@@ -59,6 +63,8 @@ Som designer finns det en del verktyg som hjälper dig att planera din design i 
 * [ColorZilla - ColorPicker for Chrome, Edge and Firefox](https://www.colorzilla.com/) (Gratis)
 
 Och som vi brukar säga, devtools är webbutvecklarens bästa vän.
+
+
 
 Läs & Studera  {#lasanvisningar}
 ---------------------------------
@@ -77,7 +83,7 @@ Både tredje och fjärde utgåvan av boken fungerar, materialet är uppdaterat o
 
 ### Design med HTML5 och CSS3  {#guide}
 
-1. Läs igenom följande sektion i guiden "[Design med HTML5 och CSS3](guide/design-med-html5-och-css3)".
+Läs igenom följande sektion i guiden "[Design med HTML5 och CSS3](guide/design-med-html5-och-css3)".
     * [Grunderna](guide/design-med-html5-och-css3/grunderna)
     * [Responsivitet](guide/design-med-html5-och-css3/responsivitet)
 

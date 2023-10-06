@@ -2,16 +2,13 @@
 author:
   - lew
 revision:
+  "2023-10-06": (D, lew) Klarmarkerade kmom10.
   "2022-10-06": (C, lew) Klarmarkerade kmom10.
   "2022-10-04": (B, lew) Uppdaterad inför HT22.
   "2019-03-26": (A, lew) Ny inför HT19.
 ...
 
 # Kmom10: Projekt och examination
-
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
 
 Detta kursmoment avslutar och examinerar kursen.
 
@@ -21,7 +18,7 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
-<!--stop-->
+<!--more-->
 
 ## Bedömning och betygsättning {#bedomning}
 
@@ -93,7 +90,7 @@ Börja med att kopiera logg-filen. Ställ dig i kursroten:
 $ cp example/proj/access-50k.log me/kmom10/
 ```
 
-Skapa ett Bash-script som automatiskt skapar en JSON-fil utifrån innehållet i logg-filen med hjälp av regex. Du får ta hjälp av verktygen vi gått igenom i kursen, tex sed och awk.
+Skapa ett Bash-script som automatiskt skapar en JSON-fil utifrån innehållet i logg-filen med hjälp av regex. Du får använda vilka verktyg du vill tex grep, sed och awk. Se bara till så du använder reguljära uttryck för filtreringen. 
 
 Döp ditt Bash-script till `bthloggen/log2json.bash`. När skriptet körs så skall det skapas en fil `bthloggen/data/log.json` som innehåller samtliga rader enligt strukturen ovan.
 
@@ -103,20 +100,20 @@ Använd ett onlineverktyg, tex [jsonlint](https://jsonlint.com/), för att kontr
 
 Här jobbar du i mappen `bthloggen/server/`.
 
-Skapa en server i valfritt språk som kan visa och filtrera datan via följande routes. Alla svar skall vara i JSON.
+Skapa en server i valfritt språk som kan visa och filtrera datan via följande routes. Du väljer själv hur du strukturerar routsen (`/data?ip=<ip>` eller `/data/ip/:ip` etc.). Alla svar skall vara i JSON.
 
 | Route             | Resultat                                 |
 | ----------------- | ---------------------------------------- |
 | `/`               | Visa en lista av de routes som stöds.    |
 | `/data/`          | Visa samtliga rader.                     |
-| `/data?ip=<ip>`   | Visa raderna som innehåller &lt;ip&gt;.  |
-| `/data?url=<url>` | Visa raderna som innehåller &lt;url&gt;. |
+| `/data/ip/:ip`   | Visa raderna som innehåller &lt;ip&gt;.  |
+| `/data/url/:url` | Visa raderna som innehåller &lt;url&gt;. |
 
 Spara koden för servern, och det som servern behöver, i en underkatalog `bthloggen/server`. Servern skall byggas in i en Dockercontainer som publiceras med _username/bthloggen-server:&lt;tag&gt;_.
 
 Skapa en fil, `docker-compose.yml`, i mappen `bthloggen/` som kan starta servicen _server_.
 
-Mappen `data/`, som innehåller logg-filen ska läggas till som en volym i docker-compose.
+Mappen `data/`, som innehåller logg-filen ska läggas till som en volym i docker-compose. Den ska ligga i samma mapp som docker-compose.yml. 
 
 ### Krav 3 Bashscript för att testa servern {#k3}
 
@@ -148,6 +145,7 @@ Ett exempel på `-c` kan vara:
 
 ```
 root@ef2d7f6842c0:/client# ./bthloggen.bash -c view url dbwebb
+# kan skilja lite beroende på i vilken miljö man exekverar
 27108
 ```
 
@@ -240,5 +238,5 @@ Skapa en webbsida som presenterar serverns funktionalitet. Man ska till exempel 
 
 ```bash
 # Ställ dig i kursrepot
-dbwebb publish me
+dbwebb publish kmom10
 ```

@@ -12,7 +12,7 @@ Kursmomentet är under uppdatering och är klart när den här gula rutan är bo
 
 Nu har vi blivit lite varma i kläderna och ska ta et djupare kliv in i DOM manipuleringen. Vi ska arbeta med fler former och fler events. Till detta ska vi se hur vi kan packa ihop vår kod för produktion. Självklart ska vi arbeta med moduler.
 
-<!--more-->
+<!--stop-->
 
 <!-- [FIGURE src=/image/snapht14/js1-boulder-dash.png caption="Öva arrayer med en Boulderdash klon."] -->
 

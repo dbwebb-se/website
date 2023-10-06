@@ -13,7 +13,7 @@ Kursmomentet är under uppdatering och är klart när den här gula rutan är bo
 
 När vi använder JavaScript i webbläsaren kan vi använda färdiga API:er som ger oss möjlighet att bygga våra webbsidor och applikationer på nya sätt. Vi ska i det här kursmomentet ta en närmare titt på två av dem.
 
-<!--more-->
+<!--stop-->
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 

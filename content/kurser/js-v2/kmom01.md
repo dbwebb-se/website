@@ -15,7 +15,7 @@ Låt oss komma i gång med en labbmiljö, och en miljö för kursen. För er som
 
 Detta kursmoment ger dig basen för resten av kursen, det hanterar grunderna som behövs så att vi i kommande kursmoment ska kunna dyka ned mer i JavaScript.
 
-<!--more-->
+<!--stop-->
 
 [FIGURE src=/img/js-v2/batman.png?w=w2 caption="En interpretator för JavaScript."]
 

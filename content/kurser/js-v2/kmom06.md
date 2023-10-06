@@ -12,7 +12,7 @@ Kursmomentet är under uppdatering och är klart när den här gula rutan är bo
 
 Vi har lärt oss att använda moduler för att strukturera vår kod och dela upp den i mindre delar. Vi ska i det här momentet fortsätta med en modulstruktur med hjälp av objekt. Till vår hjälp har vi en grund i form av ett halvfärdigt "hänga gubben" spel.
 
-<!--more-->
+<!--stop-->
 
 [FIGURE src=/img/hangman/hangman-validates-inline.svg caption="En SVG-bild till ett hänga gubben-spel som byggs enligt module pattern."]
 

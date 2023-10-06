@@ -19,6 +19,8 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
+<!--stop-->
+
 ## Bedömning och betygsättning {#bedomning}
 
 När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning i kursen js](kurser/faq/bedomning-och-betygsattning-js).

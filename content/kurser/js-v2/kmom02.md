@@ -12,7 +12,7 @@ Kursmomentet är under uppdatering och är klart när den här gula rutan är bo
 
 Vi skall nu koda mer JavaScript. Vi bekantar oss med fler konstruktioner i språket och tar en titt på hur vi kan dela upp koden i moduler som i sin tur importerar och exporterar koden.
 
-<!--more-->
+<!--stop-->
 
 [FIGURE src=/img/js-v2/whale.jpeg?w=w2 caption="En blåval."]
 

@@ -15,9 +15,9 @@ revision:
 Kmom01: Orientering
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT23. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Kursmomentet ger en översiktlig orientering i området informationssäkerhet vilket involverar dels en kategorisering av området samt genomgång av central terminologi. Fokus ligger på de säkerhetskoncept som har relevans inom webbutveckling. Dessutom involverar den översiktliga orienteringen att ge studenterna en förståelse för säkerhetskonceptens möjligheter och begränsningar inom området webbutveckling.
 
@@ -100,6 +100,5 @@ Resultat & Redovisning  {#resultat_redovisning}
 
 På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha besvarat quizen.
 
-1. Gör uppgiften.
 1. Gör kursmomentets quiz.
 1. Ladda upp din fil på Canvas.

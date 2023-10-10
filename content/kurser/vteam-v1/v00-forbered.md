@@ -27,6 +27,12 @@ Så här kan du annonsera om en grupp och presentera dig själv.
 
 > Jag heter Mikael och letar grupp. Jag är bra på backend och databas, jag kan även koda frontend även om det inte är min styrka. Jag kodar gärna PHP men har inget emot JavaScript. Jag ser fram emot kursen och kommer vara aktiv och siktar gärna på ett högt betyg, även om det inte är det allra viktigaste. Det känns nästan viktigare att få en fungerande och hälsosamt fungerande grupp vilket jag kan hjälpa till med. Jag jobbar dagtid men kan även vara tillgänglig viss kvällstid om nödvändigt. Jag är aktiv i Discord.
 
+De som inte har en grupp när kursen startar kommer delas in i egna grupper.
+
+Ta tillfället i akt och försök påverka gruppen du hamnar i, i den mån det är möjligt.
+
+Det är en god idé att blanda campus- och distansstudenter då campusare läser en indproj kurs i lp1 och distansare läser en jsramverk kurs. Det är olika kompetenser som är lämpliga att blanda i denna kursen.
+
 
 
 Sätt dig in i problemdomänen {#domain}

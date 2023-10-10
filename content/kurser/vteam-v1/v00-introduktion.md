@@ -21,13 +21,7 @@ Detta dokument ger en grov översikt av kursens upplägg och viktiga delsteg, l�
 Grupper om 4 {#grupp}
 -------------------------
 
-Ni jobbar i grupper om 4 och 4. Ni kan själv dela in er i grupper.
-
-De som inte har delat in sig i grupper vid kursens första träff kommer att delas in i egna grupper.
-
-Ta tillfället i akt och försök påverka gruppen du hamnar i, i den mån det är möjligt.
-
-Blanda gärna grupper med distans- och campus-studenter.
+Ni jobbar i grupper om 4 och 4. Ni kan själv dela in er i grupper eller så delas ni in i grupper när kursen startar.
 
 
 

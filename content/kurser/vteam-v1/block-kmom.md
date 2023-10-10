@@ -20,10 +20,12 @@ Youtube spellista 2022 https://www.youtube.com/playlist?list=PLKtP9l5q3ce_wXroqb
 
 #### Material
 
-* Bakgrundsmaterial och kravspecifikation
 <!--
 * [Bakgrundsmaterial och kravspecifikation](kurser/vteam-v1/bakgrundsmaterial-och-uppgift)
 -->
+
+* Bakgrundsmaterial (domänkunskap)
+* Kundens kravspecifikation
 * [Tips, trix och förtydliganden](kurser/vteam-v1/tips-trix-och-fortydliganden)
 * [Tekniska studier och rapporter](kurser/vteam-v1/tekniska-rapporter)
 

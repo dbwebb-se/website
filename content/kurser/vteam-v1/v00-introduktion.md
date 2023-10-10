@@ -79,14 +79,14 @@ När SDS:en är klar så skall gruppen implementera och testa systemet.
 Tekniska rapporter {#rap}
 -------------------------
 
-UNder kursens gång uppmanas grupper och individer att dokumentera sina val och lösningar i tekniska rapporter för att sprida kunskapen i sin grupp och mellan grupperna. Att ha en förmåga att snabbt dokumentera sina tankar och idéer är en bra förmåga och belönas när betyget sätts.
+Under kursens gång uppmanas grupper och individer att dokumentera sina val och lösningar i tekniska rapporter för att sprida kunskapen i sin grupp och mellan grupperna. Att ha en förmåga att snabbt dokumentera sina tankar och idéer är en bra förmåga och belönas när betyget sätts.
 
 
 
 Leverans {#lev}
 -------------------------
 
-Sista kursveckan är leveransvecka då gruppen gemensamt presenterar och provkör systemet.
+Sista kursveckan är leveransvecka då gruppen gemensamt presenterar (zoom) och provkör systemet.
 
 I leveransen skriver man även en slutrapport (gemensamt i gruppen) och lyfter fram viktiga lärdomar och erfarenheter från projektet och gruppens arbete.
 

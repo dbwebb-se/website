@@ -7,6 +7,7 @@ views:
             src: "image/webtec/logo.png"
 author: mos
 revision:
+    "2023-10-10": "(J, mos) Mindre justeringar i text och formulering."
     "2022-10-10": "(I, mos) Uppdaterad inför webtec v2 ht22."
     "2021-10-12": "(H, mos) Uppdaterad inför webtec v1."
     "2020-10-14": "(G, mos) Not om redovisningsvideo."
@@ -40,9 +41,9 @@ Responsiv sida som ett optionellt krav, via optionella delar i kmomen?
 Förutsättning {#pre}
 --------------------------------------------------------------------
 
-Det finns ingen anledning att påbörja projektet om du inte är klar med kmom05 och kmom0606 som visar hur du jobbar mot databaser i den kodstruktur som kursen erbjuder.
+Det finns ingen anledning att påbörja projektet om du inte är klar med kmom05 och kmom06 som visar hur du jobbar mot databaser i den kodstruktur som kursen erbjuder.
 
-Börja med en `dbwebb update` för at tuppdatera ditt kursrepo.
+Börja med en `dbwebb update` för att uppdatera ditt kursrepo.
 
 
 
@@ -139,7 +140,7 @@ Skapar du egna funktioner så lägger du dem i katalogen `src/`.
 
 Det finns ingen anledning att använda JavaScript i projektet. Det är inte förbjudet, men det ger ingen bonus, eventuellt tvärtom - om det inte fungerar för rättaren.
 
-Det finns ingen anledning att använda ett CSS ramverk i projektet, men det är inte förbjudet. Försök istället bygga ditt egna "CSS ramverk".
+Det finns ingen anledning att använda ett CSS-ramverk i projektet, men det är inte förbjudet. Försök istället bygga ditt egna "CSS ramverk".
 
 
 
@@ -182,7 +183,7 @@ Om-sidan skall även innehålla ett generellt textstycke om webbplatsen och dess
 
 #### Validera och kompabilitet {#validera}
 
-Webbplatsen skall validera för HTML och CSS enligt Unicorn. Extensions specifika för en webbläsare är tillåtna (-moz, -webkit, etc) samt viss användning av nya CSS-konstruktioner som validatorn inte klarar av.
+Webbplatsen skall validera för HTML och CSS enligt validatorerna. Eventuella undantag kan ske för CSS regler om det är rimligt. 
 
 Webbplatsen skall minst fungera i Firefox och Google Chrome.
 
@@ -226,7 +227,7 @@ Förbättra användarens möjilghet att navigera på din webbplats och finna inf
 
 Lägg till följande möjligheter för att söka och navigera.
 
-1. Gör en sökfunktion där man kan söka bland objekt och artiklar. När sökresultatet kommer upp så presenteras kort information om sökträffen. Sedan kan man klicka på sökträffen och komma till det objekt eller artikel som sökträffen gäller. Placera länken till söksidan i navbaren (eller motsvarande).
+1. Gör en sökfunktion där man kan söka bland objekt och artiklar. När sökresultatet kommer upp så presenteras kort information om sökträffen. Sedan kan man klicka på sökträffen och komma till det objekt eller artikel som sökträffen gäller. Placera länken till söksidan i navbaren.
 
 2. Gör så att man enkelt kan titta över alla objekten med en länk till "nästa objekt" och "föregående objekt". Det kan då bli enkelt att navigera mellan objekten. Man skall alltså kunna klicka sig fram mellan samtliga objekt.
 
@@ -238,7 +239,7 @@ Skapa en egen sida med ett galleri som visar bilderna som är kopplade till obje
 
 Använd inte JavaScript. Gör en lösning baserad på serversidan och PHP.
 
-Visa mindre bilder (thumbnails) på alla bilder. Välj att visa 4 bilder (välj själv antal) på en sida. Det skall finnas en länk "Nästa >" för att visa nästa 4 bilder, och föregående "< Föregående" 4 bilder. Användaren kan klicka runt och med enkelhet se alla bilder i arkivet, sida för sida.
+Visa mindre bilder (thumbnails) på alla bilder. Välj att visa 4 bilder (välj själv antal) på en sida. Det skall finnas en länk "Nästa >" för att visa nästa 4 bilder, och föregående "< Föregående" 4 bilder. Användaren kan klicka runt och med enkelhet se alla bilder, sida för sida.
 
 Om man klickar på en bild så leder den länken till att enbart bilden visas, antingen i en webbsida, eller bara som ren bild direkt i webbläsaren.
 
@@ -248,7 +249,7 @@ Om man klickar på en bild så leder den länken till att enbart bilden visas, a
 
 Skapa ett gränssnitt för webbplatsens administratör. Följande delar skall finnas med.
 
-1. Administratören kan logga in på webbplatsen för att komma åt de administrativa funktionerna. Använd *admin admin* och *doe doe* som användare och lösenord. Placera länken till login i navbaren (eller liknande).
+1. Administratören kan logga in på webbplatsen för att komma åt de administrativa funktionerna. Använd *admin admin* och *doe doe* som användare och lösenord. Placera länken till login i navbaren.
 
 2. Det skall gå att editera webbplatsens innehåll (artiklar/objekt) som ligger lagrat i databasen. Det skall gå att lägga till och ta bort innehåll.
 

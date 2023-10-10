@@ -18,10 +18,19 @@ Här är några av de tekniska studier som förekommit under kursens historia.
 
 
 
+2023
+-----------------------
+
+Här följer tekniska studier (och liknande) som utfördes under 2023.
+
+* Vem blir först att bidra?
+
+
+
 2022
 -----------------------
 
-Här följer ett par tekniska studier (och liknande) som utfördes under 2022.
+Här följer tekniska studier (och liknande) som utfördes under 2022.
 
 1. [Teknisk studie RabbitMQ](https://github.com/blajban/vteam-rabbitmq) som meddelandehanterare, "message brokern".
 

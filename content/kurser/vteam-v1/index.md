@@ -9,6 +9,7 @@ title: vteam (v1)
 author:
     - mos
 revision:
+    "2023-10-10": "(B, mos) Ny kurskod till HT23."
     "2022-10-10": "(A, mos) Första revisionen inför kursstart HT22."
 ...
 Kursen vteam (v1)
@@ -118,6 +119,10 @@ Läsresurser tillhandahålls baserat på det projekt som gäller för respektive
 
 Övriga läsresurser tilldelas i samband med olika moment i kursen. Läsresurser består främst av PDF-material och material som finns tillgängligt online.
 
+En kursbok som rekommenderas att läsa i anslutning till kursen är:
+
+1. The Deadline: A Novel About Project Management, författare Tom DeMarco, ISBN 9780932633392, Engelska, utgiven 1997-06-01
+
 
 
 Planering och studieplaner {#planering}
@@ -209,11 +214,10 @@ Kursplan {#kursplan}
 
 Kursplanen är kursens formella dokument som fastställts av högskolan. När kursen utvärderas görs det mot kursplanen. I kursplanen kan du läsa om kursens klassificering, syfte, innehåll, mål, generella förmågor, lärande och undervisning, bedömning och examination, litteratur, mm.
 
-Från och med hösten 2022 hittar du [kursplanen genom att söka på kurskoden PA1477 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=PA1477) och kursen heter "Programutveckling i virtuella team".
+Från och med hösten 2023 har kursen bytt kurskod [DV1676](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1676).
 
-<!--
-Ny kurskod från 2023 el 2024 -> DV1676
--->
+Hösten 2022 finns [kursplanen genom att söka på kurskoden PA1477 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=PA1477) och kursen heter "Programutveckling i virtuella team".
+
 
 
 <!--

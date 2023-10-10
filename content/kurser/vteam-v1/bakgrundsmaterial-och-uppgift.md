@@ -7,6 +7,7 @@ views:
             src: "image/vteam/logo.png"
 author: mos
 revision:
+    "2023-10-10": "(B, mos) Bort med detaljer om tips och trix."
     "2022-12-08": "(A, mos) Bakgrundsmaterial numer i ett eget dokument."
 ...
 Bakgrundsmaterial och kravspecifikation
@@ -33,11 +34,12 @@ Kravspecifikationen listar de krav (och önskemål?) som kunden ser viktiga att 
 * [Kravspecifikation](https://docs.google.com/document/d/1zWksQNmkXJgM7Q66k3-mgcxrexO6eF9xqd0Z632BwlU/edit?usp=sharing)
 
 
-
+<!--
 Förtydliganden och tips {#fortydliga}
 -------------------------
 
 Här följer förtydliganden av kravspecen som synliggör saker som kanske inte är uppenbara i kravspecen, men ändock är de viktiga för kunden.
 
 * [Tips, trix och förtydliganden](./../tips-trix-och-fortydliganden)
+-->
 

@@ -65,7 +65,7 @@ Torsdagar spelas inte in.
 Software Design Specification (SDS) {#sds}
 -------------------------
 
-Under kursens första del, de första 4 veckorna, utvecklar gruppen en analys och design av det system som skall utvecklas. Detta dokumenteras i ett dokument som kallas SDS. I SDS:en dokumenterar man de teknikval man gör.
+Under kursens första del, de första 4 veckorna, utvecklar gruppen en analys och design av det system som skall utvecklas. Detta dokumenteras i ett dokument som kallas SDS. I SDS:en dokumenterar man även de teknikval man gör.
 
 
 

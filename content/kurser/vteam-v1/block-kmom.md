@@ -33,7 +33,7 @@ Youtube spellista 2022 https://www.youtube.com/playlist?list=PLKtP9l5q3ce_wXroqb
 
 
 
-#### Assignments
+#### Uppgifter
 
 **Gruppvis**
 

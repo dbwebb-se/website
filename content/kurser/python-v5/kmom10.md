@@ -237,7 +237,7 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 
 ### Krav 5: Sortera precisionsutskriften (optionell) {#k5}
 
-När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. PS. Tänk på att när du sorterar precision ska det vara som heltal och inte strängar.
+När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
 
 
 

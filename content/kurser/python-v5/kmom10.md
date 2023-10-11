@@ -110,11 +110,11 @@ Användarens input:
 
 ###### Ord {#words}
 
-Räkna ut ord precision med `antal rättstavade ord / totalt antal ord`. Om användaren skriver in fler ord än vad som efterfrågas, då ska antalet rättstavade ord minskas med ett för varje extra ord som är skrivit. T.ex. om testet skriver ut 5 ord som användaren ska skriva av och användaren skriver in sju ord där två av orden också är felstavade. Då blir uträkningen `5-2-2 = 1`, `1/5` vilket ger `20%` precision. Notera att **det är case-sensitive, `a != A`**
+Räkna ut ord precision med `antal rättstavade ord / totalt antal ord i texten`. Om användaren skriver in fler ord än vad som efterfrågas, då ska antalet rättstavade ord minskas med ett för varje extra ord som är skrivit. T.ex. om testet skriver ut 5 ord som användaren ska skriva av och användaren skriver in sju ord där två av orden också är felstavade. Då blir uträkningen `5-2-2 = 1`, `1/5` vilket ger `20%` precision. Notera att **det är case-sensitive, `a != A`**
 
 ###### Tecken {#chars}
 
-Räkna ut och skriv ut tecken precision med `antalet rättstavade tecken / total antal tecken`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord. Om användaren skriver in fler tecken än vad som är med i det efterfrågade ordet ska varje extra tecken sänka antalet rättstavade tecken med ett. Precis som för orden.
+Räkna ut och skriv ut tecken precision med `antalet rättstavade tecken / total antal tecken i texten`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord. Om användaren skriver in fler tecken än vad som är med i det efterfrågade ordet ska varje extra tecken sänka antalet rättstavade tecken med ett. Precis som för orden.
 
 Räkna också ut hur många gånger varje korrekt tecken blev felskrivet. **Utgå** från de korrekta tecknen när du du kollar om de är rätt, **inte** användarens input. Det är inte tecknet användaren skriver in som ska räknas utan tecknet användaren skulle skriva in men inte gjorde, som ska räknas ut.
 
@@ -146,7 +146,7 @@ På sista raden skriver användaren inte in något utan trycker bara på Enter p
 Det ger följande prestation:
 ```python
 Ordprecision: 23.08% # (4-1) / 13
-Teckenprecision: 55.17% # (23-7) / 29
+Teckenprecision: 31.82% # (23-9) / 44
 Felstavade tecken:  
    s: 3  
    a: 3  

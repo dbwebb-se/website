@@ -43,10 +43,11 @@ Föreläsningar &amp; Laborationer {#forelasningar}
 
 *(ca: 8-10 studietimmar)*
 
-Kursvecka 3 (Fokus på teori):
+Kursvecka 3 (Fokus på teori), föreläsningar:
 
-* 10:15 (2021-11-14) H430, med Victor om hot.
-* 10:15 (2021-11-18) H430, med Victor om attacker.
+* 10:15 (2023-11-13) H430, med Victor om hot.
+
+* 10:15 (2023-11-17) H430, med Victor om attacker.
 
 <!--
 Hur hantera attaker när de är ett faktum?
@@ -58,10 +59,11 @@ Snabb på att rätta felen?
 klick, ransomware, social attacks
 -->
 
-Kursvecka 4 (Fokus på praktik/attacker):
+Kursvecka 4 (Fokus på praktik/attacker), laboration:
 
-* 10:15 (2021-11-21) H430, med Marie laboration, attacker
-* 10:15 (2021-11-25) H430, med Marie. Frågor, eget arbete
+* 10:15 (2023-11-20) H430, med Marie laboration, attacker
+
+* 10:15 (2023-11-24) H430, eget arbete
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -181,14 +183,12 @@ Resultat & Redovisning  {#resultat_redovisning}
 
 *(ca: 1-2 studietimmar)*
 
-På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha besvarat quizen.
-
-1. Gör uppgifterna.   
-1. Gör kursmomentets quiz.   
-1. Rapporten om attacker (uppgift 1), ladda upp din fil, report.pdf, på Canvas Kmom03 Rapport.
-1. Resultatet (skärmdump) från utmaningarna i Juice shop (uppgift 2) laddar du upp på Canvas Kmom03.
-1. Hackeruppgiften (uppgift 3) redovisar du på Canvas Kmom03.
-1. Resultatet (filerna) från extra uppgifterna laddar du upp på Canvas Kmom03. (OBS valfritt)
+På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha lämnat in quizen.
+ 
+1. Rapporten om attacker (uppgift 1); ladda upp din fil, report.pdf, i uppgiften Kmom03 Rapport på Canvas.
+1. Resultatet (skärmdump) från utmaningarna i Juice shop (uppgift 2) laddar du upp i uppgiften Kmom03 på Canvas.
+1. Hackeruppgiften (uppgift 3) redovisar du i uppgiften Kmom03 på Canvas.
+1. Resultatet (filerna) från extra uppgifterna laddar du upp i uppgiften Kmom03 på Canvas. (OBS valfritt)
 
 <!-- Gör en gruppinlämning på Canvas, om ni jobbade i grupp och ladda upp rapporten som pdf, senast fredagen veckan efter att kmomet är avslutat. Svara på följande frågor i textfältet på Canvas (ge ett svar som grupp, såg ni olika filmer så ger ni två svar på den delen):
 

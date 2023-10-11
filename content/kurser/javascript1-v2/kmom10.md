@@ -206,5 +206,5 @@ Redovisning {#redovisning}
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb publish me
+dbwebb publish kmom10
 ```

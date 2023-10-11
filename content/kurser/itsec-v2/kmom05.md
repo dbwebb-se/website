@@ -23,12 +23,12 @@ Mjukvarutest ökar kvaliteten i den mjukvara som skrivs, men hur fungerar det me
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
-Föreläsningar  {#forelasningar}
+Föreläsning  {#forelasningar}
 ---------------------------------
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2021-12-06) H430, med Anton om säkerhetstänket vid testning.
+* 10.15 (2023-12-04) H430, med Anton om säkerhetstänket vid testning.
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -64,7 +64,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2021-12-10) H430 Säkerhetstestning, se uppgiften nedan
+* 10.15 (2023-12-08) H430, med Marie Säkerhetstestning, se uppgiften nedan
 
 
 Uppgifter  {#uppgifter}
@@ -80,11 +80,9 @@ Resultat & Redovisning  {#resultat_redovisning}
 
 *(ca: 1-2 studietimmar)*
 
-På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha besvarat quizen.
+På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha lämnat in quizen.
 
-1. Gör uppgiften.
-1. Gör kursmomentets quiz.
-1. Ladda upp din fil, analys.pdf, på Canvas.
+1. Resultatet av Sårbarhetsanalys - Del 2, din fil analys.pdf, laddar du upp i uppgiften Kmom05 på Canvas.
 1. Publicera på studentservern, så att dina åtgärder kan ses och testerna köras.
 
 <!-- Svara på följande frågor i textfältet på Canvas.

@@ -32,9 +32,11 @@ Föreläsningar & Seminarium {#forelasningar}
 
 *(ca: 4 studietimmar)*
 
-Föreläsningen:
+Föreläsningar:
 
-* 10:15 (2022-11-07) H430, med Martin om etik och privacy.
+* 10:15 (2023-11-06) H430, med Martin om introduktion till säkerhet del 2.
+
+* <strong>NY TID 10:15 (2023-11-07)</strong> H430, med Martin om etik och privacy.
 
 <!-- * 10:00 (2021-11-08) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633)) -->
 
@@ -79,10 +81,10 @@ Resultat & Redovisning  {#resultat_redovisning}
 
 *(ca: 1-2 studietimmar)*
 
-På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in kursmomentet måste du ha besvarat quizen.
+På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in kursmomentet måste du ha lämnat in quizen.
 
-1. Gör kursmomentets quiz.
-2. Ladda upp din fil på Canvas.
+1. Resultatet från uppgiften "Knäck lösenord" redovisas i quizet.
+2. Ladda upp din fil ("Vad är privat egentligen?") i uppgiften Kmom02 på Canvas.
 
 <!-- Publicera dina filer till studentservern och svara på följande frågor i textfältet på Canvas:
 

@@ -45,9 +45,9 @@ Föreläsningar  {#forelasningar}
 
 *(ca: 4 studietimmar)*
 
-* 10:15 (2022-10-31) H430, med Martin om introduktion till säkerhet del 1.
+* 10:15 (2023-10-30) H430, med Martin om introduktion till säkerhet del 1.
 
-* <strong>NY TID 13:15</strong> (2022-11-04) H430, med Martin om introduktion till säkerhet del 2.
+* <strong>NY TID 10:15</strong> (2023-11-06) H430, med Martin om introduktion till säkerhet del 2.
 
 <!--
 * 10:00 (2021-11-01) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633))
@@ -98,7 +98,6 @@ Resultat & Redovisning  {#resultat_redovisning}
 
 *(ca: 1-2 studietimmar)*
 
-På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha besvarat quizen.
+På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha lämnat in quizet.
 
-1. Gör kursmomentets quiz.
-1. Ladda upp din fil på Canvas.
+1. Ladda upp din fil (referatet) i uppgiften Kmom01 på Canvas.

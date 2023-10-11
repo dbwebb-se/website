@@ -47,7 +47,7 @@ $ john --list=formats
 
 #### Mac
 
-Gå till "[John the Ripper (JtR)](https://download.openwall.net/pub/projects/john/contrib/macosx)" och installera enligt instruktionen i `README.txt`.
+Gå till "[John the Ripper (JtR)](https://download.openwall.net/pub/projects/john/contrib/macosx)" och installera enligt instruktionen i `README.txt`. Jag la min installation under me/kmom02.
 
 ```bash
 # Flytta till katalogen "run" i din John the Ripper installation.
@@ -59,7 +59,7 @@ $ ./john --list=formats
 
 #### Linux
 
-Jag installerade med snap på Ubunto.
+Jag installerade med snap på Ubuntu.
 
 ```bash
 $ sudo apt update

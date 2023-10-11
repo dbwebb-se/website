@@ -79,5 +79,5 @@ Publicera {#Publicera}
 
 ```bash
 # Flytta till kurskatalogen
-$ dbwebb publish me
+$ dbwebb publish kmom05
 ```

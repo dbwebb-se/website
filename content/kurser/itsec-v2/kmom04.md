@@ -31,12 +31,12 @@ Kör en `dbwebb update` så att allt är på plats.
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
-Föreläsningar  {#forelasningar}
+Föreläsning  {#forelasningar}
 ---------------------------------
 
 *(ca: 2 studietimmar)*
 
-* 10:15 (2022-11-28) H430, med Anton om sårbarhetsanalys.
+* 10:15 (2023-11-27) H430, med Anton om sårbarhetsanalys.
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -67,7 +67,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2021-12-03) H430 Sårbarhetsanalys, se uppgiften nedan
+* 10.15 (2023-12-01) H430, med Marie Sårbarhetsanalys, se uppgiften nedan
 
 <!-- * 10.00 (2021-12-03) via Zoom (länk på Canvas) -->
 
@@ -93,8 +93,6 @@ Resultat & Redovisning  {#resultat_redovisning}
 * Kan du se nyttan av att ha grundläggande koll på hur en sårbarhetsanalys fungerar?
 * Vilken är din TIL för detta kmom? -->
 
-På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha besvarat quizen.
+På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha lämnat in quizen.
 
-1. Gör uppgiften.
-1. Gör kursmomentets quiz.
-1. Ladda upp din fil, analys.pdf, på Canvas.
+1. Resultatet av Sårbarhetsanalysen, din fil analys.pdf, laddar du upp i uppgiften Kmom04 på Canvas.

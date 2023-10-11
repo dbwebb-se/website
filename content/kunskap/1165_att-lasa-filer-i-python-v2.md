@@ -35,7 +35,7 @@ cp -i ../example/file/list/items.txt kmom06/file
 cd kmom06/file
 ```
 
-Vi börjar med att öppna filen `items.txt` med hjälp av konstruktionen `with`, där definerar vi variabeln `filehandle` som innehåller kopplingen till filen. Med `filehandle` kan vi läsa hela filen genom att använda `read()`, men vi väljer att bara läsa en rad med hjälp av funktionen `readline()`.
+Vi börjar med att öppna filen `items.txt` med hjälp av konstruktionen `with`, där definerar vi variabeln `filehandle` som innehåller kopplingen till filen. Med `filehandle` kan vi läsa hela filen genom att använda `read()`.
 
 ```python
 # the name of the file
@@ -43,26 +43,32 @@ filename = "items.txt"
 
 # with - as for reading a file automatically closes it after reading is done
 with open(filename) as filehandle:
-    line = filehandle.readline()
+    lines = filehandle.read()
 
 # print the line read from the file
-print(line)
+print(lines)
 
-# skriver ut: cookie,cake,tea
+# skriver ut: 
+# cookie
+# cake
+# tea
+# 
 ```
 
-Vi har i övningen [Kom igång med datatypen lista i Python](kunskap/kom-igang-med-datatypen-lista-i-python) tittat på hur vi kan använda listor och här ser vi ett ypperligt tillfälle att använda oss av en lista. Vi har en komma-separerat sträng med tre delsträngar. Vi vill dela upp den komma-separerade strängen så varje delsträng blir ett element i en lista, detta kan göras med sträng-funktionen `split()`.
+Notera en tom rad på slutet.
+
+Vi har i övningen [Kom igång med datatypen lista i Python](kunskap/kom-igang-med-datatypen-lista-i-python) tittat på hur vi kan använda listor och här ser vi ett ypperligt tillfälle att använda oss av en lista. Vi har en sträng separerad med ny-rad. Vi vill dela upp den så varje delsträng blir ett element i en lista, detta kan göras med sträng-funktionen `split()`.
 
 ```python
 # split the line into a list on the comma ","
-items_as_list = line.split(",")
+items_as_list = lines.split("\n")
 # print what the list looks like
 print(items_as_list)
 
-# skriver ut: ['cookie', 'cake', 'tea\n']
+# skriver ut: ['cookie', 'cake', 'tea', '']
 ```
 
-Vi har nu en lista som innehåller tre element som vi har läst in från filen `items.txt`. Notera `\n` i sista elementet, `\n` är en radbrytning och egentligen inget vi vill ha med i listan. Så vi kan använda funktionen `strip()` för att ta bort så kallat whitespace (mellanrum, radbrytning osv.) från änderna av strängen.
+Vi har nu en lista som innehåller fyra element som vi har läst in från filen `items.txt`. Notera `""` i sista elementet, den får vi med för att sista raden har en `\n`, radbrytning, och egentligen inget vi vill ha med i listan. Så vi kan använda funktionen `strip()` för att ta bort så kallat whitespace (mellanrum, radbrytning osv.) från änderna av strängen.
 
 ```python
 # the name of the file
@@ -70,10 +76,10 @@ filename = "items.txt"
 
 # with - as for reading a file automatically closes it after reading is done
 with open(filename) as filehandle:
-    line = filehandle.readline().strip()
+    lines = filehandle.read().strip()
 
-# split the line into a list on the comma ","
-items_as_list = line.split(",")
+# split the line into a list on the comma "\n"
+items_as_list = lines.split("\n")
 # print what the list looks like
 print(items_as_list)
 ```
@@ -98,7 +104,7 @@ with open(filename) as filehandle:
 print(items_as_list)
 ```
 
-Vi får igen utskriften `['cookie', 'cake', 'tea']` med färre rader kod.
+Vi får igen utskriften `['cookie\n', 'cake\n', 'tea\n']` med färre rader kod. Men nu får vi med `\n` i slutet av varje sträng. Detta är en av de stora skillnaderna om vi väljer att använda `read()` och själva gör om det till en lista eller om vi använder `readlines()`. För tillfället nöjer vi oss med att ha med `\n`. Men i vanliga fall hade vi troligen inte velat ha med dem.
 
 Vi ska nu titta på hur vi kan lägga till flera element i listan och hur vi skriver listan till fil.
 
@@ -114,8 +120,9 @@ items_as_list.append("cup")
 # print what the list looks like after change
 print(items_as_list)
 
-# join the list into a string with a comma ","" between every item
-list_as_str = ",".join(items_as_list)
+# join the list into a string with nothing between every item
+# this is because we already have \n in the string values
+list_as_str = "".join(items_as_list)
 # show what the string looks like after join
 print(list_as_str)
 
@@ -124,6 +131,7 @@ with open(filename, "w") as filehandle:
     filehandle.write(list_as_str)
 ```
 
+Nu innehåller filen fyra föremål med en sak per rad. Vi noterar dock att förut fanns det en tom rad i slutet av filen vilket det inte gör längre.
 
 
 Avslutningsvis {#avslutning}

@@ -162,7 +162,7 @@ elif choice == "1":
 
 
 
-5. Menyval **11** - `randomize_string`: Kasta om bokstäver. Marvin ska be dig skriva in ett ord som sedan slumpmässigt kastas om. Funktionen `randomize_string` ska **bara** returnera det nya slumpade ordet. Svaret ska sedan skrivas ut i formatet `<orginal sträng> --> <slumpad sträng>`, från `main.py`. Lösningen ska vara case-sensitive, med andra ord `A != a`. Tips [random modulen](https://docs.python.org/3.8/library/random.html).
+5. Menyval **11** - `randomize_string`: Kasta om bokstäver. Marvin ska be dig skriva in ett ord som sedan slumpmässigt kastas om. Funktionen `randomize_string` ska **bara** returnera det nya slumpade ordet, **inte** ha med `<orginal sträng> -->`. Svaret ska sedan skrivas ut i formatet `<orginal sträng> --> <slumpad sträng>`, från `main.py`. Lösningen ska vara case-sensitive, med andra ord `A != a`. Tips [random modulen](https://docs.python.org/3.8/library/random.html).
 
     ```python
 

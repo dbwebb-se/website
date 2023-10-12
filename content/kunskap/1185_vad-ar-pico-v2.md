@@ -33,6 +33,8 @@ cd me/portfolio
 composer install
 ```
 
+Om det uppstår problem där felutskriften säger att det saknas php paket med kommandot `composer install` kan följande kommando lösa bekymrat: `sudo apt-get install php-xml php-mbstring`.
+
 Ovanstående kodstycke installerar även de nödvändiga paketen som Pico använder sig av med hjälp utav Composer, som är vår pakethanterare för PHP.
 
 Mappstruktur {#mapp}

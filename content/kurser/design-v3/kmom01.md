@@ -115,7 +115,7 @@ Förutom ovanstående finns video-spellistan "Introduktion till git":
 
 
 
-### CSS {#css}
+<!-- ### CSS {#css}
 
 I detta kursmomentet jobbar vi med CSS. Läs följande.
 
@@ -123,7 +123,7 @@ I detta kursmomentet jobbar vi med CSS. Läs följande.
     * Introduction
     * Categorizing CSS Rules
     * Base Rules
-    * Layout Rules
+    * Layout Rules -->
 
 
 

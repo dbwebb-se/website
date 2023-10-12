@@ -43,6 +43,8 @@ cd me/portfolio
 composer install
 ```
 
+Om det uppstår problem där felutskriften säger att det saknas php paket med kommandot `composer install` kan följande kommando lösa bekymrat: `sudo apt-get install php-xml php-mbstring`.
+
 Nu kan du öppna en webbläsare och peka mot katalogen `me/portfolio`. Får du problem eller felmeddelanden så hojta till i chatten så hjälper vi dig den sista biten.
 
 ### Publicera till studentservern {#publicera}

@@ -33,10 +33,14 @@ Vi har många frågeställningar om bilder, men låt se om vi kan bringa klarhet
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
+
+
 Verktyg {#verktyg}
 ---------------------------------
 
 Följande verktygstips gäller bildhantering. Kika över listan och se vilka som nämns. Som webbprogrammerare kan man behöva olika typer av verktyg för att bemästra bilder i olika situationer.
+
+
 
 ### Bildhantering {#bildhantering}
 
@@ -45,6 +49,8 @@ Följande verktygstips gäller bildhantering. Kika över listan och se vilka som
 * [Inkscape](https://inkscape.org/en/) är ett fritt program för att rita och hantera bilder i vektorgrafik såsom SVG. Vill du ha bilder att utgå ifrån så finns en bildbank med SVG-bilder på [OpenClipart](https://openclipart.org/https://openclipart.org/).
 
 * Ett bra snapshot-verktyg för skärmdumpar vill du integrera i din verktygslåda. Du vill ha ett verktyg där du enkelt kan ta en snapshot på hela eller delar av skärmen eller på en specifik applikation eller på innehållet i en webbsida. Det är smidigt om det är kopplat till ett enklare ritverktyg vilket gör det enkelt att rita på din snap. Det finns mängder av alternativ så som [Shutter](http://shutter-project.org/), [Gyazo](https://gyazo.com/en) och den jag personligen använder, [Lightshot](https://app.prntscr.com/en/index.html).
+
+
 
 ### Var kan jag hitta bilder? {#var-letar-man}
 
@@ -56,10 +62,14 @@ Följande verktygstips gäller bildhantering. Kika över listan och se vilka som
 * [unDraw](https://undraw.co/illustrations) har ett gäng SVG illustrationer av diverse aktiviteter.
 * [OnlyVectorBackgrounds](https://onlyvectorbackgrounds.com/) har en mängd vektor-baserade bilder som kan användas som bakgrund på din sida.
 
+
+
 Läs & Studera  {#lasanvisningar}
 ---------------------------------
 
 *(ca: 8-10 studietimmar)*
+
+
 
 ### Kurslitteratur  {#kurslitteratur}
 
@@ -69,12 +79,16 @@ Läs följande:
 
     * Kap 5: Imagery
 
+
+
 ### Design med HTML5 och CSS3  {#guide}
 
 1. Läs igenom följande sektion i guiden "[Design med HTML5 och CSS3](guide/design-med-html5-och-css3)".
     * [Bilder](guide/design-med-html5-och-css3/bilder)
 
 I sektionen [Bilder](guide/design-med-html5-och-css3/bilder) använder vi olika tekniker för att skapa responsiva bilder och bilder som fungerar bra på högupplösta skärmar.
+
+
 
 ### Webbplatsers laddningstid {#artikel}
 
@@ -93,6 +107,8 @@ Studera följande för att förbereda dig för uppgiften där du skall analysera
 
 1. Som extraläsning, vid intresse och om du har tid, så kan du läsa "[Google Developers: Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)" som ger en översikt i varför man bör jobba med prestanda av en webbplats.
 
+
+
 ### Om responsivitet {#responsivitet}
 
 Läs följande om responsivitet och bilder.
@@ -103,14 +119,14 @@ Läs följande om responsivitet och bilder.
 
 1. Läs artikeln "[CSS-Tricks: A Guide to the Responsive Images Syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/)" som går igenom hur man kan jobba kring `srcset` och `<pictures>`.
 
-<!-- 1. Som extra läsning kring responsiva bilder, om du har tid och intresse, rekommenderas följande två examensarbeten, gjorda av webbprogrammerare.
-    * [Responsive images in HTML5: A standardized solution in markup language](http://bth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=2&af=%5B%5D&searchType=SIMPLE&sortOrder2=title_sort_asc&query=Responsive+images&language=sv&pid=diva2%3A1212760&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=-4378), Philip Esmailzade, 2018
-    * [Responsive Images: A comparison of responsive image techniques with a focus on performance](http://bth.diva-portal.org/smash/record.jsf?aq2=%5B%5B%5D%5D&c=3&af=%5B%5D&searchType=SIMPLE&sortOrder2=title_sort_asc&query=Responsive+images&language=sv&pid=diva2%3A1032879&aq=%5B%5B%5D%5D&sf=all&aqe=%5B%5D&sortOrder=author_sort_asc&onlyFullText=false&noOfRows=50&dswid=9948), Kalle Kihlström, 2016. -->
+
 
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 
 *(ca: 8-10 studietimmar)*
+
+
 
 ### Övningar {#ovningar}
 

@@ -23,10 +23,14 @@ Vi kommer även att kolla på hur vi kan förbättra vår sida sett ifrån tillg
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
+
+
 Läs & Studera  {#lasanvisningar}
 ---------------------------------
 
 *(ca: 8-10 studietimmar)*
+
+
 
 ### Kurslitteratur  {#kurslitteratur}
 
@@ -37,6 +41,8 @@ Läs följande:
     * Kap 3: Texture
     * Kap 1: Layout and Composition (repetera kapitlet, främst delarna med Balance, Unity, Emphasis)
 
+
+
 ### Design med HTML5 och CSS3  {#guide}
 
 1. Läs igenom följande sektion i guiden "[Design med HTML5 och CSS3](guide/design-med-html5-och-css3)".
@@ -46,6 +52,8 @@ I sektionen [Design](guide/design-med-html5-och-css3/design) tittar vi tillbaka 
 
 1. Det har även tillkommit en del i guiden för förra kursmomentet som kan hjälpa er med tillgänglighet.
     * [Bilder - Highlight av bilder utan alt-attributet](guide/design-med-html5-och-css3/highlight-av-bilder)
+
+
 
 ### Designelement och designprinciper {#design}
 
@@ -59,6 +67,8 @@ Gå igenom följande material om designelement och designprinciper, det ger dig 
 
 1. Hämta inspiration till designeffekter och designelement via exempel från CodePen. Här är en [CodePen sökning på "effects"](http://codepen.io/search/pens?q=effects) som ger en god start in bland exempel.
 
+
+
 ### Tillgänglighet {#tillganglighet}
 
 Gå igenom följande material om tillgänglighet, MDN erbjuder en liten mjukare läsning medans W3 är utförliga guidelines. Det finns även två verktyg som kan hjälpa dig, tillsammans med Google Lighthouse vi använder i uppgiften.
@@ -68,6 +78,8 @@ Gå igenom följande material om tillgänglighet, MDN erbjuder en liten mjukare 
 1. "[Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)" är W3s guidelines kring "accessibility". Som vanligt när det gäller W3 så är det ganska utförligt, men det är bra att veta att det finns.
 
 1. Ett annat bra verktyg att använda på sin sida är [Toptal Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter/) som tillåter dig att se hur sidan ser ut med olika typer av färgblindhet. Det kan vara bra att använda på sin sida så man ser att inga färger får dålig kontrast eller överlag få ett hum om hur sidan kan uppfattas av andra.
+
+
 
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------

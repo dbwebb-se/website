@@ -15,10 +15,14 @@ Några av de tekniker vi ska kolla lite närmre på är Flexbox och CSS-Grid, so
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
+
+
 Läs & Studera  {#lasanvisningar}
 ---------------------------------
 
 *(ca: 8-10 studietimmar)*
+
+
 
 ### Kurslitteratur  {#kurslitteratur}
 
@@ -28,12 +32,16 @@ Läs följande:
 
     * Kap 1: Layout and Composition (repetera)
 
+
+
 ### Design med HTML5 och CSS3  {#guide}
 
 1. Läs igenom följande sektion i guiden "[Design med HTML5 och CSS3](guide/design-med-html5-och-css3)".
     * [Layout](guide/design-med-html5-och-css3/layout)
 
 I sektionen [Layout](guide/design-med-html5-och-css3/layout) tittar vi på hur vi med hjälp utav Flexbox och CSS-Grid kan ändra sidans layout så den fungera bra oavsett skärmstorlek.
+
+
 
 ### Grid-baserad layout och Flex {#grid}
 
@@ -48,11 +56,23 @@ Läs följande för att få en introduktion och översikt till gridbaserad layou
     * [CSS-Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
     * [CSS-Tricks - Centering in CSS: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
 
+
+
+### Verktyg {#verktyg}
+
+Som designer finns det en del verktyg som hjälper dig att planera din design i förväg. Ingen av dessa program är ett måste för kursen, men om man vill kan man installera någon av dem och testa runt så
+
+* [Figma - The collaborative interface design tool](https://www.figma.com/) (Gratis att använda men med betalversion)
+* [Adobe XD - UI/UX design and collaboration tool](https://www.adobe.com/products/xd.html) (Gratis att använda men med betalversion)
+* [ColorZilla - ColorPicker for Chrome, Edge and Firefox](https://www.colorzilla.com/) (Gratis)
+
+Och som vi brukar säga, devtools är webbutvecklarens bästa vän.
+
+
+
 ### Övrigt {#ovrigt}
 
 1. Artikeln "[Design elements and Principles](https://www.canva.com/learn/design-elements-principles/)" går igenom olika design element och principer och är bra att läsa igenom under kursens gång.
-
-1. I uppgiften så ska ni tolka Wireframes, vill man läsa mer om det kan man göra det [här](https://en.wikipedia.org/wiki/Website_wireframe).
 
 
 
@@ -69,7 +89,7 @@ Hållbarhet {#hallbarhet}
 
 Vi fortsätter fokusera på perspektivet *hållbarhet* och vilken roll vi som programmerare har i den sammanhangen.
 
-I detta kmom tar vi en titt på hur Internet skapar en mer jämlik värld där fler och fler kan få tillgång till information. International Telecommunication Union (ITU) är en del av FN och gav förra ut [följande rapporter](https://www.itu.int/itu-d/reports/statistics/2021/11/15/foreword/) om Internet.
+I detta kmom tar vi en titt på hur Internet skapar en mer jämlik värld där fler och fler kan få tillgång till information. International Telecommunication Union (ITU) är en del av FN och gav förr-förra året ut [följande rapporter](https://www.itu.int/itu-d/reports/statistics/2021/11/15/foreword/) om Internet.
 
 
 

@@ -70,6 +70,8 @@ För att komma igång så kan du läsa igenom följande artiklar:
 
 1. I kursen använder vi SASS så bekanta dig med [SASS](https://sass-lang.com/guide) och se vad du kan göra. SASS är uppbyggd som ett programmeringsspråk, så kika runt bland de manualer som finns men fokusera på "SASS Basics" för att lära dig hur du skriver SASS konstruktioner.
 
+
+
 ### SASS moduler {#sassmodul}
 
 Följande moduler kommer du att använda när du bygger ditt tema i den kommande uppgiften.
@@ -78,18 +80,21 @@ Följande moduler kommer du att använda när du bygger ditt tema i den kommande
 
 1. Titta snabbt och översiktligt på [Font Awesome](https://fontawesome.com/) och se vilka ikoner man kan skapa med dess hjälp. Leta reda på webbsidan som visar hur man installerar Font Awesome och se om du kan hitta hur man installerar det som en LESS-modul med hjälp av pakethanteraren npm. Vi kommer att göra detta senare i uppgiften.
 
+
+
 ### Fonter och ikoner {#fonter}
 
 Det finns mängder med sidor där man kan hitta ikoner och fonter gratis, nedan listas några av alternativen:
 
 * [Google Fonts](https://fonts.google.com/)
-* [DaFont](https://fontawesome.com/)
 * [Font Awesome](https://fontawesome.com/)
 * [Icons8](https://icons8.com/)
 
 Många av de ikoner och emojis man ser idag bestäms av [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium) som består av nio medlemmar, där bland Microsoft, Apple och Google. Det gör att en många ikoner/emojis finns tillgängliga oavsett vilken enhet man surfar via, utan att behöva ladda ner några ytterligare filer. Värt att notera är dock att ikonerna skiljer sig mellan olika enheter. Du kan se vilka som är tillgängliga här:
 
 * [Unicode Icons](https://unicode-table.com/en/)
+
+
 
 ### Om responsivitet {#responsivitet}
 
@@ -104,7 +109,7 @@ Hållbarhet {#hallbarhet}
 
 Vi fortsätter fokusera på perspektivet *hållbarhet* och vilken roll vi som programmerare har i den sammanhangen.
 
-På canvas finns videon "[Downsides of digital](https://bth.instructure.com/courses/4574/pages/downsides-of-digital)" där professor Jeffrey Sachs berättar om vissa av nackdelarna med Internet energianvändning.
+På canvas finns videon "[Downsides of digital](https://bth.instructure.com/courses/5435/pages/downsides-of-digital)" där professor Jeffrey Sachs berättar om vissa av nackdelarna med Internet energianvändning.
 
 
 
@@ -125,6 +130,8 @@ Hoppa in i mappen och testa lägg till din egna regel till exemplet. För att g�
 
 Om du vill läsa mer om SASS och se vilka typer av regler du kan skriva kan du läsa mer om det [här](https://sass-lang.com/guide).
 
+
+
 ### Övningar {#ovningar}
 
 Följande övningar bör genomföras:
@@ -132,6 +139,7 @@ Följande övningar bör genomföras:
 1. Arbeta igenom artikeln [Kom igång med SASS och npm](kunskap/kom-igang-med-sass-och-npm-v2) som hjälper dig att sätta upp SASS i din portfoliosida.
 
 1. Arbeta igenom artikeln [Ikoner och fonter](kunskap/design-ikoner-och-fonter) som går igenom hur man kan ladda in ikoner och fonter.
+
 
 
 ### Uppgifter {#uppgifter}

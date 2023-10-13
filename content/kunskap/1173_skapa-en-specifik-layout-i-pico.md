@@ -13,7 +13,11 @@ Skapa en specifik layout i Pico {#intro}
 
 I denna artikel så ska vi först börja med att kolla på hur man kan skapa en specifik layout i Pico och sen hur vi kan använda CSS-Grid för att placera ut saker på vår sida.
 
+
+
 <!--more-->
+
+
 
 Förutsättningar {#forutsattningar}
 -------------------------------------
@@ -29,11 +33,11 @@ Du har jobbat igenom följande tre delar i "[Design med HTML5 och CSS3](guide/de
 Unik Layout {#unik}
 -------------------------------------
 
-Jag utgår från att ni har ett eget tema under `themes/<temanamn>`. Mitt tema, `themes/aurora` innehåller innan övningen följande filer:
+Jag utgår från att ni har ett eget tema under `themes/<temanamn>`. Mitt tema, `themes/kmom02` innehåller innan övningen följande filer:
 
 ```bash
-[Aurora](~/git/student/design/me/portfolio) $ tree themes/aurora/
-themes/aurora/
+[Aurora](~/git/student/design/me/portfolio) $ tree themes/kmom02/
+themes/kmom02/
 ├── css
 │   ├── style.css
 │   └── style.min.css
@@ -50,35 +54,43 @@ Så nu ska vi fixa en landningssida med hjälp vår egen layout-fil, så vi bör
 
 ```bash
 # Stå i me/portfolio/themes/<erttema>
-cp index.twig report.twig
+cp index.twig technologies.twig
 ```
 
-Jag uppdaterar `themes/aurora/report.twig` så jag vet att jag hamnar på rätt sida genom att lägga till en `<h1>`:
+Jag uppdaterar `themes/kmom02/technologies.twig` så jag vet att jag hamnar på rätt sida genom att lägga till en `<h1>`:
 
 ```html
-<!-- Header (ca rad 65) -->
-<div class="main" role="main">
-    <h1>Vår egen layout från report.twig</h1>
-    <div class="container">
-        {{ content }}
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <h1>Vår egen layout från technologies.twig</h1>
+        <div class="container">
+            {{ content }}
+        </div>
     </div>
-</div>
-<!-- Footer (ca rad 72) -->
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
 ```
 
-För att se ladda in vår nya layout så är det så enkelt som att uppdatera vår meta-information i den Markdown fil som vi vill använda layouten i. Jag hoppar in i `content/report/index.md` som är min landningssida för report och skriver dit följande längst upp i meta-informationen:
+För att sen ladda in vår nya layout så är det så enkelt som att uppdatera vår meta-information i den Markdown fil som vi vill använda layouten i. Skapa och hoppa in i filen `content/technology/index.md` som blir vår landningssida för teknologi-sidan och skriv dit följande längst upp i meta-informationen:
 
 ```markdown
 ---
-Title: Report
-Description: This is my report page.
-Template: report
+Title: Technologies
+Description: This is my technologies page.
+Template: technologies
 ---
 ```
 
-Det nya är att vi bestämmer vilken Template vi vill använda, genom att lägga till `Template: report`. Den kollar då i tema-mappen för det valda temat efter en `report.twig` (som vi skapade innan). Vi sparar och laddar om och ser nu att vi har vår gamla report-sida, fast med en ny `<h1>`. Härligt.
+Det nya är att vi bestämmer vilken Template vi vill använda, genom att lägga till `Template: technologies`. Den kollar då i tema-mappen för det valda temat efter en `technologies.twig` (som vi skapade innan). Vi sparar och laddar om och ser nu att vi har en sida med en rubrik, men som annars är tom, så låt oss fylla den.
 
-[FIGURE src=image/design-v3/report-twig.png caption="Såhär kan vår nya layout i report se ut"]
+
 
 Grid baserad sida {#grid}
 -------------------------------------
@@ -93,42 +105,44 @@ Nu ska vi uppdatera vår layout så att den använder sig utav grid, iallafall c
 </div>
 ```
 
-Sen så ska vi lägga dit varje kursmoment. I och med att det går att skriva HTML i våra Markdown-filer tycker jag det känns som en mer rätt väg att gå än att hårdkoda vår layout (även om den bara används på denna sidan). I min `content/report/index.md`, under meta-informationen, så lägger jag till samtliga kursmoment med en div runtomkring sig:
+Sen så ska vi lägga dit varje kursmoment. I och med att det går att skriva HTML i våra Markdown-filer tycker jag det känns som en mer rätt väg att gå än att hårdkoda vår layout (även om den bara används på denna sidan). I min `content/technology/index.md`, under meta-informationen, så lägger jag till samtliga kursmoment med en div runtomkring sig:
 
 ```
-Report
+Technologies
 ==========================
 
-<div class="kmom-box">
-Kmom01
+<div class="box">
+CSS
 </div>
 
-<div class="kmom-box">
-Kmom02
+<div class="box">
+HTML
 </div>
 
-<div class="kmom-box">
-Kmom03
+<div class="box">
+JAVASCRIPT
 </div>
 
-<div class="kmom-box">
-Kmom04
+<div class="box">
+PHP
 </div>
 
-<div class="kmom-box">
-Kmom05
+<div class="box">
+PYTHON
 </div>
 
-<div class="kmom-box">
-Kmom06
+<div class="box">
+GIT
 </div>
 
-<div class="kmom-box project">
-Kmom10
+<div class="box wide">
+SQLITE
 </div>
 ```
 
-Det var det vi behövde göra i vår HTML, nu har jag en rätt bra grund för att skapa mig ett grid, så som vi gjorde i guiden. Resten kan vi lösa via SASS. Jag börjar med att göra en ny fil, `themes/aurora/scss/report.scss` som får innehålla allt som har med denna layout att göra, det blir renare. PS, glöm inte att importera den!
+Det var det vi behövde göra i vår HTML, nu har jag en rätt bra grund för att skapa mig ett grid, så som vi gjorde i guiden. Resten kan vi lösa via SASS. Jag börjar med att göra en ny fil, `themes/kmom02/scss/technology.scss` som får innehålla allt som har med denna layout att göra, det blir renare. PS, glöm inte att importera den!
+
+
 
 ### SASS {#sass}
 
@@ -142,7 +156,7 @@ Ett tips är att använda sig utav Firefox när man utvecklar Grid. De har ett i
 Jag börjar med att säga att jag vill använda grid på min `.landingpage` som är den omslutande div:en.
 
 ```scss
-/* report.scss */
+/* technology.scss */
 .landingpage {
     display: grid;
 }
@@ -150,7 +164,7 @@ Jag börjar med att säga att jag vill använda grid på min `.landingpage` som 
 
 Vi kan testköra här och se vad som händer, `npm run style`.
 
-[FIGURE src=image/design-v3/grid-task-1.png caption="Steg 1"]
+[FIGURE src=image/design-v3/grid-devtools.png caption="Steg 1"]
 
 Ja det var ju inte så spännande. Men det kan vi lösa med några steg till. Jag börjar med att säga att min rubrik ska sträcka sig över 3 kolumner. Jag lägger även till `justify-self: center` för att centrera den i dessa tre kolumner.
 
@@ -165,15 +179,7 @@ Vi testar igen och ser att resultatet redan nu ser ganska bra ut. Anledningen ti
 
 [FIGURE src=image/design-v3/grid-task-2.png caption="Steg 2"]
 
-Vi applicerar samma `grid-column: span 3` till vår kmom10, det är ju trots allt ett projekt som tar lite längre tid än kursmomenten.
-
-```scss
-.kmom-box.project {
-    grid-column: span 3;
-}
-```
-
-Visuellt just nu ser vi ingen skillnad, men om du håller på div:en i devtools ser du att den har 100% bredd. Sista saken jag tänkte visa i denna artikel, innan ni får köra själva, är ett sett att fixa spacingen i ett grid. Jag utökar min `.landingpage` klass:
+Sista saken jag tänkte visa i denna artikel, innan ni får köra själva, är ett sett att fixa spacingen i ett grid. Jag utökar min `.landingpage` klass:
 
 ```scss
 .landingpage {
@@ -185,13 +191,6 @@ Visuellt just nu ser vi ingen skillnad, men om du håller på div:en i devtools 
 Vilket lägger en 1em mellan alla delar i gridet. Det kan se ut såhär:
 
 [FIGURE src=image/design-v3/grid-task-3.png caption"Steg 3"]
-
-
-
-Fullständigt exempel {#complete}
--------------------------------------
-
-I `example/report_grid` ([GitHub-repot](https://github.com/dbwebb-se/design-v3/tree/master/example/report_grid)) finns ett fullständigt exempel. i `content/report` finns allt innehåll och i `themes/example` finns mallar och stil i filerna `reports.twig`, `report.twig` och `style.css`.
 
 
 

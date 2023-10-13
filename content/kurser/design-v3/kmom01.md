@@ -54,18 +54,6 @@ dbwebb init
 
 
 
-### Verktyg {#verktyg}
-
-Som designer finns det en del verktyg som hjälper dig att planera din design i förväg. Ingen av dessa program är ett måste för kursen, men om man vill kan man installera någon av dem och testa runt så
-
-* [Figma - The collaborative interface design tool](https://www.figma.com/) (Gratis att använda men med betalversion)
-* [Adobe XD - UI/UX design and collaboration tool](https://www.adobe.com/products/xd.html) (Gratis att använda men med betalversion)
-* [ColorZilla - ColorPicker for Chrome, Edge and Firefox](https://www.colorzilla.com/) (Gratis)
-
-Och som vi brukar säga, devtools är webbutvecklarens bästa vän.
-
-
-
 Läs & Studera  {#lasanvisningar}
 ---------------------------------
 
@@ -112,18 +100,6 @@ I kursen introduceras Git och GitHub. Git är ett versionshanteringssystem för 
 Förutom ovanstående finns video-spellistan "Introduktion till git":
 
 [YOUTUBE src="LL-a3YTeL2M" list="PLKtP9l5q3ce_mjCcNeDNhVQIU_DM2P4WS" width=700 caption="Introduktion till git"]
-
-
-
-<!-- ### CSS {#css}
-
-I detta kursmomentet jobbar vi med CSS. Läs följande.
-
-1. I online boken "[SMACSS Scalable and Modular Architecture for CSS](http://smacss.com/book/)" läser du följande korta kapitel för inspiration av en variant till hur man kan tänka när man skriver CSS i större sammanhang.
-    * Introduction
-    * Categorizing CSS Rules
-    * Base Rules
-    * Layout Rules -->
 
 
 

@@ -32,34 +32,23 @@ $ rsync -ravd example/password-files/ me/kmom02/password-files/
 John the Ripper {#john}
 -----------------------------
 
-Exempel på hur du kan använda och installera John the Ripper.
+Exempel på hur du kan använda och installera John the Ripper. Läs mer här: "[Dokumentation om John the Ripper(JtR)](https://www.openwall.com/john/doc/)".
 
-### Windows
+### Installation Windows
 
 Gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. Kör i Powershell eller bash shell (enable Windows Subsystem for Linux WSL i Windows features om du inte gjort det). Starta john.exe med hela pathen eller uppdatera din användares path (Environment variables) för att kunna starta med "john".
 
-```bash
-# Exempel på kommandon:
-$ john password1.txt
-$ john --show password1.txt
-$ john --list=formats
-```
+#### Installation Mac
 
-#### Mac
-
-Gå till "[John the Ripper (JtR)](https://download.openwall.net/pub/projects/john/contrib/macosx)" och installera enligt instruktionen i `README.txt`. Jag la min installation under me/kmom02.
+Jag installerade med pakethanteraren brew.
 
 ```bash
-# Flytta till katalogen "run" i din John the Ripper installation.
-# Exempel på kommandon:
-$ ./john ../../password-files/password1.txt
-$ ./john --show ../../password-files/password1.txt
-$ ./john --list=formats
+$ brew install john
 ```
 
-#### Linux
+#### Installation Linux
 
-Jag installerade med snap på Ubuntu.
+Jag installerade med apt och snap på Ubuntu.
 
 ```bash
 $ sudo apt update
@@ -69,8 +58,12 @@ $ sudo apt install snapd
 
 # Installera John the Ripper
 $ sudo apt install john-the-ripper
+```
 
-# Exempel på kommandon:
+#### Kommandon
+
+```bash
+# Exempel på kommandon (från kmom02/password-files):
 $ john password1.txt
 $ john --show password1.txt
 $ john --list=formats

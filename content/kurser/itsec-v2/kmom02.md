@@ -15,9 +15,9 @@ revision:
 Kmom02: Privacy
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT23. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Kursmomentet ger en introduktion till konceptet privacy genom att förklara centrala definitioner. Särskilt belyses avvägningen mellan privacy och att som slutanvändare dela med sig av sin information för att möjliggöra diverse IT-baserade tjänster. Därutöver kommer exempel på vanliga privacy-förbättrande tekniker förklaras. Slutligen ges exempel på omfattande attacker som påverkat slutanvändarnas privacy negativt samt förslag på relevanta mekanismer för att försvåra dessa attacker.
 
@@ -40,7 +40,7 @@ Föreläsningar:
 
 <!-- * 10:00 (2021-11-08) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633)) -->
 
-Obligatoriskt seminarie kring privacy:
+Obligatoriskt seminarie kring privacy: Om du inte deltar i seminariet, så kommer du att få en uppgift skickat till dig via Canvas efter seminariet.
 
 * 10:15-12:00 (2022-11-11) H430
 
@@ -69,7 +69,7 @@ Uppgifter  {#uppgifter}
 
 *(ca: 6-10 studietimmar)*
 
-1. Gör uppgiften "[Vad är privat egentligen?](uppgift/diskussion-vad-ar-privat-egentligen)" i sal (eller virtuellt). Ni ska i grupp diskutera frågorna och anteckna vad ni kommer fram till.
+1. Gör uppgiften "[Vad är privat egentligen?](uppgift/diskussion-vad-ar-privat-egentligen)" i sal (eller virtuellt). Ni ska i grupp diskutera frågorna och anteckna vad ni kommer fram till. Reflektionen skrivs individuellt.
 1. Gör uppgiften "[Knäck lösenord](uppgift/john-the-ripper)" 
 1. Gör Kmom02 quiz.
 

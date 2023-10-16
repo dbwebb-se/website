@@ -211,7 +211,7 @@ Följande uppdrag rör analyser och de kan göras i grupp, enligt samma villkor 
 
 **Företaget Sök Under** har bett dig att göra en analys av aktuell webbplatsdesign. Vilka är de trender och som är aktuella för tillfället?
 
-Du har här full frihet att göra ditt urval så du kan välja att undersöka webbplatsdesign för hockeyklubbar, försäkringsbolag, artister eller kommuner.
+Du har här full frihet att göra ditt urval så du kan välja att undersöka webbplatsdesign för till exempel hockeyklubbar, försäkringsbolag, artister eller kommuner.
 
 Välj en kategori och välj därefter 3-5 webbplatser som du väljer att undersöka ur aspekten webbplatsdesign och aktuella trender.
 
@@ -225,7 +225,7 @@ Lägg resultatet i din portfolio-sida under `content/analysis/10_webbplatsdesign
 
 **Organisationen Valfrihet** har kontaktat dig och bett dig göra en analys inom design och webbplatser. De vill att du gör en analys av den webbplats du har skapat ovan under uppdragen [Uppdrag webbplats och tema](#webbplats).
 
-Du ska göra analysen utifrån **1** av de analyserteman vi har haft i kursmoment 4-6 tidigare i kursen: _Färg (kmom04)_, _bilder och laddningstider (kmom05)_ eller _design element och principer (kmom06)_. Se respektive kursmoment för mall och instruktioner.
+Du ska göra analysen utifrån **1** av de analysteman vi har haft i kursmoment 4-6 tidigare i kursen: _Färg (kmom04)_, _bilder och laddningstider (kmom05)_ eller _design element och principer (kmom06)_. Se respektive kursmoment för mall och instruktioner.
 
 Lägg resultatet i din portfolio-sida under `content/analysis/11_design-och-webbplatser.md`.
 

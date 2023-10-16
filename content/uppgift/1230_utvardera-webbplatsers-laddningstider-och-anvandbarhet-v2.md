@@ -14,7 +14,11 @@ Utvärdera webbplatsers laddningstid och användbarhet (v2)
 
 Du skall välja ut ett antal olika webbplatser och testa dem för att mäta hur snabbt de laddas och om de innehåller några saker som kan förbättras med tanke på laddningstid och användbarhet.
 
+
+
 <!--more-->
+
+
 
 Du kan jobba enskilt eller i grupp (2-4 personer) för att lösa denna uppgiften.
 
@@ -32,7 +36,7 @@ Introduktion {#intro}
 
 Även om ni jobbar i grupp så skall var och en av er lägga in varsin analys i sin egen portfolio-sida.
 
-Förbered dig inför uppgiften genom att jobba igenom kursmomentets läsanvisningar under "[Webbplatsers laddningstid](kurser/design-v2/kmom05#artikel)".
+Förbered dig inför uppgiften genom att jobba igenom kursmomentets läsanvisningar under "[Webbplatsers laddningstid](kurser/design-v3/kmom05#artikel)".
 
 När du mäter laddningstid via devtools och filken "Network" så använd shift-ctrl-r så att webbläsaren inte använder sina cachade objekt.
 
@@ -41,7 +45,7 @@ När du mäter laddningstid via devtools och filken "Network" så använd shift-
 Krav {#krav}
 -----------------------
 
-1. Skapa en ny rapport i `content/analysis/02_load.md`.
+1. Skriv din rapport i `content/analysis/02_load.md`.
 
 1. Välj ut 3 webbplatser som skall analyseras, berätta hur du gjorde urvalet.
 
@@ -63,15 +67,6 @@ Krav {#krav}
 1. Bestäm en gräns för absolut laddningstid som du själv uppfattar som snabb eller långsam webbplats. Skriv en mening om hur ditt urval av webbplatser klarar ditt gränsvärde och hur du upplever webbplatsernas snabbhet, rent generellt, i ditt urval.
 
 1. I slutet av rapporten skriver du ett eget stycke med namnen på dina gruppmedlemmar.
-
-
-
-Peer-review {#peer-review}
------------------------
-
-Inom akademin är en viktig del att utvärdera andras arbeten. Forskare utvärderar varandras forskning genom peer-reviews och i kommande examensarbeten ska ni opponera på andra studenters arbeten. För att förbereda inför detta och för att lära dig att ge och ta emot konstruktiv kritik ges i kursen möjlighet för peer-review. Denna del är frivillig, men jag hoppas en del studenter utnyttjar möjligheten.
-
-I Canvas finns uppgift för kmom04-kmom06 under uppgiftsgruppen Rapport peer-review. Lämna in en länk direkt till din rapportsida. Onsdagen efter inlämning görs en fördelning av rapporter studenter i mellan. Ni kan sedan gå in och läsa varandras rapport och skriva en kommentar. Skriv gärna med utgångspunkt i [mallen](uppgift/utvardera-webbplatsers-fargval-och-kanslan-de-signalerar-v2#struct) och de kommentarer som finns där.
 
 
 

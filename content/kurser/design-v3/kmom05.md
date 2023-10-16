@@ -55,12 +55,9 @@ Följande verktygstips gäller bildhantering. Kika över listan och se vilka som
 ### Var kan jag hitta bilder? {#var-letar-man}
 
 * Om man letar bilder man fritt får använda är följande tre sidor en bra start.
-    * [Pexels](https://www.pexels.com/)
     * [Unsplash](https://unsplash.com/)
+    * [Pexels](https://www.pexels.com/)
     * [Pixabay](https://pixabay.com/)
-
-* [unDraw](https://undraw.co/illustrations) har ett gäng SVG illustrationer av diverse aktiviteter.
-* [OnlyVectorBackgrounds](https://onlyvectorbackgrounds.com/) har en mängd vektor-baserade bilder som kan användas som bakgrund på din sida.
 
 
 
@@ -88,6 +85,14 @@ Läs följande:
 
 I sektionen [Bilder](guide/design-med-html5-och-css3/bilder) använder vi olika tekniker för att skapa responsiva bilder och bilder som fungerar bra på högupplösta skärmar.
 
+Följande artiklar kompletterar guiden ovan, läs om du har tid över eller eventuellt efter du har jobbat igenom kmom'et.
+
+1. Läs artikeln "[MDN: Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)" som visar dig grunden i HTML-konstruktioner för att leverera olika bilder till olika enheter via `srcset` och `<pictures>`.
+
+1. Läs artikeln "[Google Developers: Responsive images](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)" som ger dig en insyn i hur du kan jobba med responsivitet och optimering av bilder.
+
+1. Läs artikeln "[CSS-Tricks: A Guide to the Responsive Images Syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/)" som går igenom hur man kan jobba kring `srcset` och `<pictures>`.
+
 
 
 ### Webbplatsers laddningstid {#artikel}
@@ -100,24 +105,9 @@ Studera följande för att förbereda dig för uppgiften där du skall analysera
 
 1. Läs översiktligt igenom artikeln "[Moz om Page Speed](https://moz.com/learn/seo/page-speed)" som ger en snabb insyn i hur man tänker kring optimering av en webbplats för laddningstiden.
 
-1. Hur snabbt en webbplats laddas är en del av de algoritmer som bestämmer hur Google visar en webbplats i SERPEN (webbplatsens plats i sökresultatet).
- Läs bloggartikeln "[Using page speed in mobile search ranking](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html)" som berättar om en uppdatering av sökalgoritmerna som relaterar till webbplatsernas laddningstid.
-
-1. Kika sedan snabbt på Googles "[PageSpeed Insights Rules](https://developers.google.com/speed/docs/insights/rules)" som ger råd för att snabba upp sidor. Artikeln är markerad som _deprecated_ (2018) men ger ändå vägledning i vilka delar som kan optimeras på en webbplats.
+1. Hur snabbt en webbplats laddas är en del av de algoritmer som bestämmer hur Google visar en webbplats i SERPEN (webbplatsens plats i sökresultatet). Läs bloggartikeln "[Using page speed in mobile search ranking](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html)" som berättar om en uppdatering av sökalgoritmerna som relaterar till webbplatsernas laddningstid.
 
 1. Som extraläsning, vid intresse och om du har tid, så kan du läsa "[Google Developers: Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)" som ger en översikt i varför man bör jobba med prestanda av en webbplats.
-
-
-
-### Om responsivitet {#responsivitet}
-
-Läs följande om responsivitet och bilder.
-
-1. Läs artikeln "[MDN: Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)" som visar dig grunden i HTML-konstruktioner för att leverera olika bilder till olika enheter via `srcset` och `<pictures>`.
-
-1. Läs artikeln "[Google Developers: Responsive images](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)" som ger dig en insyn i hur du kan jobba med responsivitet och optimering av bilder.
-
-1. Läs artikeln "[CSS-Tricks: A Guide to the Responsive Images Syntax in HTML](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/)" som går igenom hur man kan jobba kring `srcset` och `<pictures>`.
 
 
 

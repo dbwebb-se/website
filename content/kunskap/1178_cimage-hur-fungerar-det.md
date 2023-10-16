@@ -10,15 +10,19 @@ revision:
 Cimage - Hur fungerar det?
 ==================================
 
-En väg att gå med optimering och manipulering av bilder är att använda moduler för det. Vi ska jobba med Mikaels egenbyggda Cimage, som bland annat ger oss tillgång till följande funktionalitet:
+En väg att gå med optimering och manipulering av bilder är att använda moduler för det. Vi ska jobba med Mikael Roos egenbyggda Iimage, som bland annat ger oss tillgång till följande funktionalitet:
 
 * Resize, crop
 * Filter
 * Quality, file size
 
+Vi ska kolla lite närmre på hur man kan använda sig av detta och hur ni kan använda det i eran portfolio för att dels matcha färgschemat ni går efter men även för att minska storleken på de filer som laddas in.
+
+
+
 <!--more-->
 
-Vi ska kolla lite närmre på hur man kan använda sig av detta och hur ni kan använda det i eran portfolio för att dels matcha färgschemat ni går efter men även för att minska storleken på de filer som laddas in.
+
 
 Installation & Användning {#installation}
 --------------------------------------
@@ -53,6 +57,8 @@ Och i våra `.twig`-filer är det inte svårare än såhär:
 
 Då vet vi hur vi laddar in bilder via Cimage, då kan vi köra vidare med att se vad den kan hjälpa oss att göra.
 
+
+
 Ändra storlek & beskärning {#storlek_beskar}
 --------------------------------------
 
@@ -77,6 +83,8 @@ Vi kan även jobba med %, det kan vara trevligt för att slippa behöva räkna u
 
 Nu är den istället 273 KB, dvs 16% av storleken av ursprungsbilden i storlek, utan någon märkbar skillnad i kvalité. Det känns bra och gör att min sida går snabbare att ladda in, även på sämre linor.
 
+
+
 ### Beskärning {#beskar}
 
 Om man vill beskära sin bild så kan man använda sig av regeln `?area=`. Area säger vilken del av bilden vi faktiskt vill ha ut och tar emot 4 värden i ordningen `top,right,bottom,left` och mäts i %. Som exempel kan vi hämta ut halva dbwebb-lövet på följande sätt:
@@ -99,6 +107,8 @@ Vi kan även beskära en specifik del av bilden genom att använda `?crop=` som 
 ```
 
 Till höger kan du se hur resultatet blev.
+
+
 
 Kvalité & filstorlek {#kvalite}
 --------------------------------------
@@ -128,6 +138,8 @@ Vi kan se att det stora hoppet i filstorlek är att gå ifrån `.png` till `.jpg
 | image/header.jpg?width=50%      | 273KB   | 16%      |
 | image/header.jpg?width=50%&q=50 | 240KB   | 14.1%    |
 
+
+
 Filter {#filter}
 --------------------------------------
 
@@ -142,12 +154,16 @@ Det finns en mängd filter man kan se på "[Filters and convolution](https://cim
 | Brightness | ?f=brightness,VALUE | image/header.jpg?width=50%&f=brightness,50  |
 | Contrast   | ?f=constrast,VALUE  | image/header.jpg?width=50%&f=contrast,50    |
 
+
+
 Felsökning {#felsokning}
 --------------------------------------
 
 Ibland kan något gå fel eller inte fungera som man vill. En bra start är att lägga på flaggan `?nc` som står för `no-cache`. Den ser till att skapa om bilden ifall något i cachen skulle gått fel.
 
 Nästa steg är att lägga på `?v` flaggan, som ger oss verbose output. Den kan ta en stund att ladda in och man kan behöva öppna bilden i en ny flik för att få se utskriften.
+
+
 
 Avslutningsvis {#avslut}
 --------------------------------------

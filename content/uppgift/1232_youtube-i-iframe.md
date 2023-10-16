@@ -8,8 +8,13 @@ revision:
 Youtube i iframe
 ===================================
 
+Bilder i all ära, men videos är ju typ 30 bilder i sekunden, det måste vara bätre.
+
+
 
 <!--more-->
+
+
 
 Förkunskaper {#forkunskaper}
 -----------------------

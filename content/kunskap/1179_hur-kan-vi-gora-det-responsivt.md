@@ -14,7 +14,11 @@ Hur kan vi göra bilder och video responsivt?
 
 Vi ska i denna artikel ta en titt på hur vi kan använda oss av cimage och HTML konstruktionerna `srcset` och `picture` för att skapa responsiva bilder. Och då vi inte bara vill ha responsiva bilder, men även responsiva videos löser vi den saken med.
 
+
+
 <!--more-->
+
+
 
 Förkunskaper {#pre}
 --------------------------------------
@@ -93,6 +97,8 @@ För `iframe`-elementet sätter vi `position: absolute;` och positionerar iframe
 }
 ```
 
+
+
 Twig {#twig}
 -------------------------------------
 
@@ -109,6 +115,8 @@ I Twig kan vi skriva vanlig HTML, så där är det relativt simpelt att länka v
 
 Vi kombinerar helt enkelt `{{ base_url}}` som pekar på rooten av Pico-ramverket (i vårt fall `me/portfolio`). Sen lägger vi till sökvägen `/image` som i vår `.htaccess` pekar oss till cimage. Därefter säger vi vilken bild vi vill använda, `sheep.jpg` och de parametrar vi vill skicka med till cimage, t.ex. `&w=667`.
 
+
+
 Markdown {#markdown}
 -------------------------------------
 
@@ -122,6 +130,8 @@ I Markdown ser det snarlikt ut, bara att vi behöver uppdatera vår `{{ base_url
     </picture>
 </a>
 ```
+
+
 
 Avslutningsvis {#avslut}
 --------------------------------------

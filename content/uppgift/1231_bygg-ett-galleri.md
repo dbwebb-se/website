@@ -12,9 +12,11 @@ I denna uppgift ska ni använda er av er tidigare kunskap inom grid och bygga et
 
 [FIGURE src=image/design-v3/barack.png caption="Barack Obama's Instagram"]
 
-<!--more-->
-
 Vi behöver inte göra något riktigt så avancerat som Instagram, men vi vill ha ett galleri på sidan som kan visa upp bilder som en blogg eller bilder på olika projekt ni arbetat med.
+
+
+
+<!--more-->
 
 
 

@@ -10,7 +10,7 @@ revision:
 Förbättra din portfölj med designprinciper
 ===================================
 
-Vi använder vår erfarenheter från analysen av webbplatser och designprinciper för att förbättra vår egen portfölj.
+Vi använder våra erfarenheter från analysen av webbplatser och designprinciper för att förbättra vår egen portfölj.
 
 
 

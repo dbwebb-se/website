@@ -15,9 +15,13 @@ Du skall i denna analys välja ut ett antal olika webbplatser inom gruppen perso
 
 Du skall sen genomföra samma analys på din egen portfolio sida och jämföra vad det finns för skillnader mellan din egen sida och de du undersökt.
 
+Analysen av andras sidor kan ni göra i grupp 2-4 eller självständigt. Analysen av er egen sida ska ske självständigt.
+
+
+
 <!--more-->
 
-Analysen av andras sidor kan ni göra i grupp 2-4 eller självständigt. Analysen av er egen sida ska ske självständigt.
+
 
 Förkunskaper {#forkunskaper}
 -----------------------
@@ -25,6 +29,8 @@ Förkunskaper {#forkunskaper}
 Du har gjort den föregående utredningsuppgiften "[Utvärdera webbplatsers laddningstid och användbarhet](uppgift/utvardera-webbplatsers-laddningstider-och-anvandbarhet)".
 
 Du har läst om principer för design i kursmomentets läsanvisningar.
+
+
 
 Introduktion {#intro}
 -----------------------
@@ -40,10 +46,9 @@ Luta dig tillbaka och inse att du faktiskt kan vara kritiker av en design för e
 Krav {#krav}
 -----------------------
 
-1. Skapa en ny rapport i `content/analysis/03_designprincip.md`.
+1. Skriv din analys i `content/analysis/03_designprincip.md`.
 
-1. Välj ut 3 webbplatser inom kategorin personsidor som skall analyseras, berätta hur du gjorde urvalet.
-    1. Notera att du inte ska använda andra studenters me-sidor/portföljer.
+1. Välj ut 3 webbplatser inom kategorin personsidor som skall analyseras, berätta hur du gjorde urvalet. (Notera att du inte ska använda andra studenters me-sidor/portföljer)
 
 1. Berätta om du använde något speciellt bakgrundsmaterial som definierade designprinciper (och designelement). Det blir stöd för din bakomliggande metod för att utföra din studie.
 
@@ -62,15 +67,6 @@ Krav {#krav}
     1. Notera uppdateringarna du gör, eller väljer att inte göra.
 
 1. I slutet av rapporten skriver du ett eget stycke med namnen på dina gruppmedlemmar.
-
-
-
-Peer-review {#peer-review}
------------------------
-
-Inom akademin är en viktig del att utvärdera andras arbeten. Forskare utvärderar varandras forskning genom peer-reviews och i kommande examensarbeten ska ni opponera på andra studenters arbeten. För att förbereda inför detta och för att lära dig att ge och ta emot konstruktiv kritik ges i kursen möjlighet för peer-review. Denna del är frivillig, men jag hoppas en del studenter utnyttjar möjligheten.
-
-I Canvas finns uppgift för kmom04-kmom06 under uppgiftsgruppen Rapport peer-review. Lämna in en länk direkt till din rapportsida. Onsdagen efter inlämning görs en fördelning av rapporter studenter i mellan. Ni kan sedan gå in och läsa varandras rapport och skriva en kommentar. Skriv gärna med utgångspunkt i [mallen](uppgift/utvardera-webbplatsers-fargval-och-kanslan-de-signalerar-v2#struct) och de kommentarer som finns där.
 
 
 

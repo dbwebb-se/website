@@ -12,7 +12,11 @@ I denna uppgift ska ni använda er utav verktyget Google Lighthouse för att se 
 
 [FIGURE src=image/design-v3/lighthouse-100.png caption="jsramverk.se, som har 100 på samtliga delar av Lighthouse mätningar"]
 
+
+
 <!--more-->
+
+
 
 Förkunskaper {#forkunskaper}
 -----------------------
@@ -23,10 +27,14 @@ Du har kikat på de resurser som ligger under stycket "[Tillgänglighet](kurser/
 
 Du har Google Chrome eller valfri annan Chromium webbläsare installerad.
 
+
+
 Introduktion {#introduktion}
 -----------------------
 
 [YOUTUBE src="IlxwM7HrW7A" width=700 caption="Analysera tillgänglighet med Google Lighthouse"]
+
+
 
 Krav {#krav}
 -----------------------
@@ -41,7 +49,10 @@ Följande krav gäller vid mätningar via devtools:
 Utöver dessa så ska portfolion som vanligt:
 
 1. Allt fungera på studentservern
+
 1. Dina `.scss` filer ska gå igenom lint med hjälp utav `npm run lint`.
+
+
 
 Tips från coachen {#tips}
 -----------------------

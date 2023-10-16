@@ -11,7 +11,11 @@ Kmom06: Tillgänglighet och prestanda
 
 Som avslutning på kursen så ska vi kolla över två områden som lätt hamnar i skymundan. Vi börjar med att kolla på begreppet "the final touch" som är bra att vara medveten om i sammanhanget design. Det handlar om det sista penseldraget och att se när man är "färdig" med sin design.
 
+
+
 <!--more-->
+
+
 
 Ibland händer det att man tittar på sin webbplats och ser att den inte känns komplett, något saknas, men man har svårt att sätta fingret på vad det är. Vi pratar om webbplatsens design och känslan den ger när man tittar på den. Det kan vara de små sakerna som gör det, *the final touch*.
 
@@ -50,9 +54,6 @@ Läs följande:
 
 I sektionen [Design](guide/design-med-html5-och-css3/design) tittar vi tillbaka på tidigare sektioner och använder vår kunskap för att skapa en helhet med ett stort fokus på detaljen.
 
-1. Det har även tillkommit en del i guiden för förra kursmomentet som kan hjälpa er med tillgänglighet.
-    * [Bilder - Highlight av bilder utan alt-attributet](guide/design-med-html5-och-css3/highlight-av-bilder)
-
 
 
 ### Designelement och designprinciper {#design}
@@ -60,8 +61,6 @@ I sektionen [Design](guide/design-med-html5-och-css3/design) tittar vi tillbaka 
 Gå igenom följande material om designelement och designprinciper, det ger dig en grund i vad det handlar om. Du behöver veta det för att utföra uppgiften.
 
 1. Titta igenom videos i spellistan [Design -- principer och element](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-oz7aoBkk-oEn4xzGbtqxU). Där finns samlat ett par korta videor som visualiserar, exemplifierar och förklarar designelement och designprinciper. Titta där för att få en uppfattning om begreppen och se hur de kan användas. I videoserien finns även en föreläsning om "Elements & Principles of Art" (överkurs) som kan vara intressant att titta på i sammanhanget.
-
-1. Studera ett par olika designprinciper och se hur designelement kan användas för att uppnå dessa principer. Materialet finns på webbplatsen [Visual Literacy](http://www.educ.kent.edu/community/VLO/Design/principles/) (oklart om länken fungerar) och en offline-kopia av webbplatsen finns i dokumentet [vl.pdf](article/vl.pdf).
 
 1. Läs mer om designprinciper i "[Design Elements & Principles](https://www.canva.com/learn/design-elements-principles/)" som visualiserar, beskriver och exemplifierar 20 designprinciper.
 
@@ -78,6 +77,8 @@ Gå igenom följande material om tillgänglighet, MDN erbjuder en liten mjukare 
 1. "[Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)" är W3s guidelines kring "accessibility". Som vanligt när det gäller W3 så är det ganska utförligt, men det är bra att veta att det finns.
 
 1. Ett annat bra verktyg att använda på sin sida är [Toptal Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter/) som tillåter dig att se hur sidan ser ut med olika typer av färgblindhet. Det kan vara bra att använda på sin sida så man ser att inga färger får dålig kontrast eller överlag få ett hum om hur sidan kan uppfattas av andra.
+
+1. Frida och Janni skrev häromåret ett föredömligt examensarbete om [Utvecklarens förutsättningar för säkerställande av tillgänglig webb](https://urn.kb.se/resolve?urn=urn:nbn:se:bth-23039). I arbetet kan ni få en inblick i hur ett bra examensarbete struktureras och skrivs, samt skaffa er en uppfattning om utvecklares uppfattningar om och förutsättningar för att skapa en tillgänglig webb. Skumma igenom i mån av tid.
 
 
 

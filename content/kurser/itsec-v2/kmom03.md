@@ -115,7 +115,7 @@ Titta på följande videor.
 
 1. Titta på denna videoserie med 2-minuters avsnitt som förklarar "[OWASP Top 10 Vulnerabilities Explained](https://www.youtube.com/playlist?list=PLbKl_RtocZetEzdHyZCgZHwaUHjE_jeQT)" från Detectify.
 
-1. (Extra) Om du vill ha mer förklaringar till en eller flera av OWASP Top Ten så kan du kika i videoserien (10 minuters avsnitt) "[OWASP Top Ten - 2017](https://www.youtube.com/playlist?list=PLyqga7AXMtPPuibxp1N0TdyDrKwP9H_jD)" från F5 DevCentral.
+1. (Extra) Om du vill ha mer förklaringar till en eller flera av OWASP Top Ten så kan du kika i videoserien (10 minuters avsnitt) "[OWASP Top Ten - 2021](https://www.youtube.com/playlist?list=PLyqga7AXMtPOguwtCCXGZUKvd2CDCmUgQ)" från F5 DevCentral.
 
 1. (Extra) Vill du ha ännu mer OWASP så tittar du på konferenspresentationen "[GOTO 2019 • AppSec: From the OWASP Top Ten(s) to the OWASP ASVS • Jim Manico](https://www.youtube.com/watch?v=nvzMN5Z8DJI)" (51 minutes).
 
@@ -154,7 +154,7 @@ Det finns en hel del skrivuppgifter i kursen, tycker inte att det är ett proble
 
 Det finns tre uppgifter, en skrivuppgift, en "lär dig attacker"-uppgift och en "titta på en film"-uppgift.
 
-1) Skrivuppgift är inom området attacker. Ni kan jobba i grupper om 2 och 2, eller individuellt. Rapportmall finns att tillgå för LaTeX/Overleaf i kursrepot under [`example/report-template-latex`](https://github.com/dbwebb-se/itsec/tree/master/example/report-template-latex). Det är inte ett krav att skriva i det formatet, men en bra övning. Kanske vill du skriva exjobbet i LaTeX?
+1. <strong>Skrivuppgift</strong> är inom området attacker. Ni kan jobba i grupper om 2 och 2, eller individuellt. Rapportmall finns att tillgå för LaTeX/Overleaf i kursrepot under [`example/report-template-latex`](https://github.com/dbwebb-se/itsec/tree/master/example/report-template-latex). Det är inte ett krav att skriva i det formatet, men en bra övning. Kanske vill du skriva exjobbet i LaTeX?
 
 Upplägget är enligt följande:
 
@@ -164,9 +164,13 @@ Skriv en rapport på två till fyra sidor text, exklusive försättssida och exk
 
 Ni som jobbar i grupp skriver tre till fyra sidor, exklusive försättssida och exklusive referenssida. Ni redovisar individuellt på Canvas och skriver in namnen på gruppmedlemmarna i rapporten. 
 
-2) Lär dig göra attacker med hjälp av "[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)". Ladda ner, installera och kör lokalt. Välj gärna "From Sources". Följ instruktionerna i README.md (jag valde instruktionerna för "From Sources"). OBS! Använd Powershell! Starta enligt instruktionerna och gör gärna alla "hacking tutorials". Redovisa genom att ta en skärmdump på din scoreboard samt namn och beskrivning på alla lösta utmaningar (minst 10) du gjort. Tips! Använd gärna utvecklarverktyget (Developer Tools) i din webbläsare för att bättre se vad som händer.
+1. Lär dig göra <strong>attacker</strong> med hjälp av "[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)". Ladda ner, installera och kör lokalt. Välj gärna "From Sources". Följ instruktionerna i README.md (jag valde instruktionerna för "From Sources"). OBS! Använd Powershell på Windows! Starta enligt instruktionerna och gör gärna alla "hacking tutorials". 
 
-3) Film-uppgiften är inom ämnet "hur tänker en hacker/cracker/attacker"? I spellistan "[Internet - kultur och historia](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-NLQecGIdq3LnATTn0gKal)" finns ett antal filmer/dokumentärer som berör olika händelser inom Internet. Välj en av dessa filmer, eller en som du själv anser liknande, titta på filmen och försök sedan svara på frågan "Vad driver en hacker och hur tänker en hacker?" Du skriver svaret på Canvas i samband med din inlämning. Välj att titta på filmen individuellt, eller tillsammans med din gruppkompis för rapporten.
+Redovisa genom att ta en skärmdump på din scoreboard samt namn och beskrivning på alla lösta utmaningar (minst 10) du gjort. Tips! Använd gärna utvecklarverktyget (Developer Tools) i din webbläsare för att bättre se vad som händer.
+
+1. <strong>Film-uppgiften</strong> är inom ämnet "hur tänker en hacker/cracker/attacker"? I spellistan "[Internet - kultur och historia](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-NLQecGIdq3LnATTn0gKal)" finns ett antal filmer/dokumentärer som berör olika händelser inom Internet. Välj en av dessa filmer, eller en som du själv anser liknande, titta på filmen och försök sedan svara på frågan "Vad driver en hacker och hur tänker en hacker?" Du skriver svaret på Canvas i samband med din inlämning. Välj att titta på filmen individuellt, eller tillsammans med din gruppkompis för rapporten.
+
+1. Gör Kmom03 quiz.
 
 <!-- mer videor till denna spellistan? -->
 
@@ -187,7 +191,7 @@ På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämn
  
 1. Rapporten om attacker (uppgift 1); ladda upp din fil, report.pdf, i uppgiften Kmom03 Rapport på Canvas.
 1. Resultatet (skärmdump) från utmaningarna i Juice shop (uppgift 2) laddar du upp i uppgiften Kmom03 på Canvas.
-1. Hackeruppgiften (uppgift 3) redovisar du i uppgiften Kmom03 på Canvas.
+1. Filmuppgiften (uppgift 3) redovisar du i uppgiften Kmom03 på Canvas.
 1. Resultatet (filerna) från extra uppgifterna laddar du upp i uppgiften Kmom03 på Canvas. (OBS valfritt)
 
 <!-- Gör en gruppinlämning på Canvas, om ni jobbade i grupp och ladda upp rapporten som pdf, senast fredagen veckan efter att kmomet är avslutat. Svara på följande frågor i textfältet på Canvas (ge ett svar som grupp, såg ni olika filmer så ger ni två svar på den delen):

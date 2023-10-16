@@ -18,6 +18,8 @@ Du skriver rapporten i ett format som kan benämnas "akademiskt format". Det är
 
 Du kan jobba enskilt eller i grupp (2-4 personer) för att lösa denna uppgiften.
 
+
+
 <!--more-->
 
 
@@ -56,6 +58,8 @@ touch content/analysis/{01_colors.md,02_load.md,03_design_principles.md}
 ```
 
 Även om ni jobbar i grupp så skall var och en av er lägga in varsin egen kopia rapporten i sin egen redovisa-sida.
+
+
 
 ### Färgpalett i markdown dokument {#palett}
 
@@ -139,28 +143,18 @@ Krav {#krav}
 Vi kommer göra analyser i kmom04, kmom05 och kmom06. Om du vill analysera samma sidor i alla kmom välj då personsidor, mer finns beskrivit i [kmom06](uppgift/utvardera-webbplatsers-designprinciper-v2).
 [/INFO]
 
-2. Berätta om du använde något särskilt verktyg för att göra färganalysen (metod).
+2. Berätta om du använde något särskilt verktyg för att göra färganalysen (metod). Berätta dessutom hur du gick till väga när du använde verktyget.
 
 3. För varje webbplats, gör följande (resultat):
     1. Ta en snapshot (bild) på webbplats.
     1. Dokumentera och visualisera färgpaletten som används.
     1. Notera vilken typ av färgschema som använts.
-    1. Notera om och vilken accentfärg som använts.
-    1. Notera val av typsnitt för H1-H3 samt brödtext, kommentera om det är serif eller sans-serif.
+    1. Notera val av typsnitt för H1-H3 samt brödtext.
     1. Notera i en mening om du anser att webbplatsens färgval och typografi motsvarar den profil du tror att webbplatsen vill ha.
 
 4. Skriv ett stycke om dina samlade intryck från resultatet, finns det något värt att nämna, diskutera, att analysera (analys), fick du fram något bra med din studie?
 
 5. I slutet av rapporten skriver du ett eget stycke med namnen på dina gruppmedlemmar.
-
-
-
-Peer-review {#peer-review}
------------------------
-
-Inom akademin är en viktig del att utvärdera andras arbeten. Forskare utvärderar varandras forskning genom peer-reviews och i kommande examensarbeten ska ni opponera på andra studenters arbeten. För att förbereda inför detta och för att lära dig att ge och ta emot konstruktiv kritik ges i kursen möjlighet för peer-review. Denna del är frivillig, men jag hoppas en del studenter utnyttjar möjligheten.
-
-I Canvas finns uppgift för kmom04-kmom06 under uppgiftsgruppen Rapport peer-review. Lämna in en länk direkt till din rapportsida. Onsdagen efter inlämning görs en fördelning av rapporter studenter i mellan. Ni kan sedan gå in och läsa varandras rapport och skriva en kommentar. Skriv gärna med utgångspunkt i [mallen](uppgift/utvardera-webbplatsers-fargval-och-kanslan-de-signalerar-v2#struct) och de kommentarer som finns där.
 
 
 

@@ -10,9 +10,13 @@ revision:
 Sätt upp session i Pico
 ==================================
 
-För att Pico ska kunna veta om den ska ladda in ert vanliga tema eller det mörka temat så behöver vi sätta upp en session. Vi tar vara på våra kunskaper ifrån htmlphp och sätter upp det i Pico. Artikeln är uppdelad i ett par olika delar där varje del är filer ni behöver uppdatera.
+För att Pico ska kunna veta om den ska ladda in ert vanliga tema eller det mörka temat så behöver vi sätta upp en session. Vi tar vara på våra kunskaper ifrån webtec och sätter upp det i Pico. Artikeln är uppdelad i ett par olika delar där varje del är filer ni behöver uppdatera.
+
+
 
 <!--more-->
+
+
 
 Config {#config}
 --------------------------------------
@@ -29,6 +33,8 @@ if (session_status() == PHP_SESSION_NONE) {
 ```
 
 Vi startar sessionen om den inte är igång med samma unika sessionsnamn som i htmlphp. Den bygger på sökvägen till filen, så på studentservern behövs detta för att ni ska få en unik session.
+
+
 
 Index {#index}
 --------------------------------------
@@ -71,6 +77,8 @@ $pico->setConfig(array(
 ```
 
 Sådär, nu är vår session igång och rullar och vi kan nå den vart som i våra `.twig`-filer genom att hämta den såhär: `{{ config.session }}`.
+
+
 
 Formulär {#forms}
 --------------------------------------
@@ -154,14 +162,10 @@ if (isset($_GET["action"])) {
 
 Nu kan vi, oavsett vilken sida vi står på, uppdatera temat genom att lägga till `?action=theme` på vår URL eller nollställa sessionen genom att lägga till `?action=session_destroy`. En bra start, men rimligen vill vi göra det mer användarvänligt så i nästa del löser vi det genom att göra två knappar.
 
+
+
 Twig & Meta {#twig}
 --------------------------------------
-
-Nu ska vi in och uppdatera våra `.twig` filer.
-
-[WARNING]
-I denna del kommer vi behöva uppdatera samtliga `.twig` filer vi har i vårt tema.
-[/WARNING]
 
 Jag väljer att lägga mina länkar i min footer med hjälp av `content/_meta.md`, men ni kan själva välja att lägga länkarna varsom med hjälp av följande:
 
@@ -191,7 +195,7 @@ Social:
 ---
 ```
 
-Sådär, nu har jag tillgång till mina länkar, men jag behöver uppdatera så min sida håller koll på vilken stylesheet den ska ladda in. I min header i samtliga `.twig`-filer har jag följande länk som laddar in temat:
+Sådär, nu har jag tillgång till mina länkar, men jag behöver uppdatera så min sida håller koll på vilken stylesheet den ska ladda in. I min `header.twig`-fil har jag följande länk som laddar in temat:
 
 ```html
 <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" />
@@ -208,6 +212,8 @@ Jag behöver bygga om denna så den laddar in `style.min.css` (eller `style.css`
 ```
 
 Trycker ni nu på länken för att byta tema så borde ni ha en sida utan tema alls. Tryck igen för att få tillbaka ert vanliga tema.
+
+
 
 SCSS {#scss}
 --------------------------------------
@@ -238,7 +244,9 @@ För slippa behöva köra två kommandon uppdaterar jag mina script i `package.j
 },
 ```
 
-Jag kan då köra `npm run style` för att bygga både mitt ljusa och mörka tema och jag har även uppdaterat min watch så den kollar båda filerna efter ändringar.
+Jag kan då köra `npm run style` för att bygga både mitt ljusa och mörka tema och jag har även uppdaterat min watch så den kollar båda filerna efter ändringar. Och vi kan köra `npm run style-min` för att bygga de komprimerade `.min.css` filerna. Se till att köra rätt script för att bygga det Stylesheet du har laddat i din `header.twig`.
+
+
 
 Avslutningsvis {#avslut}
 --------------------------------------

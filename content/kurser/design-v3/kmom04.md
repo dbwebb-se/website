@@ -92,15 +92,15 @@ I sektionen [Färg](guide/design-med-html5-och-css3/farg) tittar vi på hur vi k
 
 
 
-### Färg {#color}
+<!-- ### Färg {#color}
 
 Lös följande artiklar för att få en bakgrund i allmän layout kopplad till färger och färgscheman.
 
 1. Läs artikeln "[The Characteristics of Minimalism in Web Design](https://www.nngroup.com/articles/characteristics-minimalism/)". Artikeln sammanställer ett antal webbplatsers karaktäristik och diskuterar kring valet av stil och färgval. Fokuset är på minimalism, att "hålla det enkelt".
 
-1. Läs artikeln "[An Introduction to Color Theory for Web Designers](https://webdesign.tutsplus.com/articles/an-introduction-to-color-theory-for-web-designers--webdesign-1437)" som ger insyn i hur man väljer färger och färgschema för en webbplats.
 
-1. Läs [kapitel 13 i boken Web Design - The Complete Reference](http://www.webdesignref.com/chapters/13/ch13-16.htm). Det handlar om "Color and Usability" och "The Hidden Meaning of Colors" och ger en kort introduktion till färger och webbdesign.
+
+1. Läs [kapitel 13 i boken Web Design - The Complete Reference](http://www.webdesignref.com/chapters/13/ch13-16.htm). Det handlar om "Color and Usability" och "The Hidden Meaning of Colors" och ger en kort introduktion till färger och webbdesign. -->
 
 
 
@@ -110,6 +110,7 @@ Läs följande artikel "Traditional and Modern color theory", om du finner den i
 
 * [Part 1: Modern colour theory](http://www.huevaluechroma.com/001.php)
 * [Part 1: Traditional colour theory strikes back](http://www.huevaluechroma.com/002.php)
+* Läs artikeln "[An Introduction to Color Theory for Web Designers](https://webdesign.tutsplus.com/articles/an-introduction-to-color-theory-for-web-designers--webdesign-1437)" som ger insyn i hur man väljer färger och färgschema för en webbplats.
 
 
 

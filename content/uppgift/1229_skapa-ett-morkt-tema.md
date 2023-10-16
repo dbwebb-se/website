@@ -15,7 +15,11 @@ Uppgiftens storlek beror på hur du byggt upp ditt tema i föregående kursmomen
 
 > "Come to the Dark Side, we have cookies" - Darth Vader
 
+
+
 <!--more-->
+
+
 
 Förkunskaper {#forkunskaper}
 -----------------------
@@ -25,10 +29,14 @@ Förkunskaper {#forkunskaper}
 
 Du har jobbat igenom artikeln [Sätt upp session i Pico](kunskap/satt-upp-session-i-pico) som hjälper sig sätta upp sessionen och grunden för ett mörkt tema.
 
+
+
 Krav {#krav}
 -----------------------
 
 Uppgiften är indelad i två delar, ditt vanliga tema och det mörka temat.
+
+
 
 ### Vanliga temat {#vanlig}
 
@@ -54,13 +62,15 @@ Uppgiften är indelad i två delar, ditt vanliga tema och det mörka temat.
 
 Dubbelkolla hur kontrasten fungerar i ditt tema med hjälp utav [Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/). Du behöver publicera till studentservern för att det ska fungera.
 
+
+
 ### Mörka temat {#mork}
 
 Utöver ovanstående krav ska du bygga ett mörkt tema med följande krav.
 
-1. Jobba vidare i samma tema.
+1. Utgå från ditt befintliga tema i filen `style.scss` Ta en kopia och döp den `style-dark.scss`.
 
-1. Temat ska bestå utav en `style-dark.scss` som är huvudfilen för det mörka temat. Här importerar du eventuella moduler du skapar.
+1. I `style-dark.scss` som är huvudfilen för det mörka temat importerar du eventuella moduler du skapar.
 
 1. Temat ska använda sig utav variabler för att bestämma färger. På så sätt kan ni enkelt anpassa temat mellan ljust och mörkt.
 
@@ -74,6 +84,8 @@ Dubbelkolla hur kontrasten fungerar i ditt tema med hjälp utav [Color Contrast 
 
 Verktyget kommer troligen att ladda in ert vanliga tema (i och med att den inte jobbar med sessioner). Ni kan lösa detta genom att hårdkoda ert mörka tema i er `<header>` för att testa verktyget. Se till att ändra tillbaka innan ni lämnar in!
 
+
+
 ### Övrigt {#ovrigt}
 
 1. Dina `.scss` filer ska gå igenom lint med hjälp utav `npm run lint`.
@@ -81,6 +93,8 @@ Verktyget kommer troligen att ladda in ert vanliga tema (i och med att den inte 
 1. Det ska gå att kompilera både `style.scss` och `style-dark.scss` samtidigt med hjälp utav `npm run style`.
 
 1. Dubbelkolla att allt fungerar på studentservern.
+
+
 
 Tips från coachen {#tips}
 -----------------------

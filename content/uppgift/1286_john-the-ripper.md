@@ -36,7 +36,13 @@ Exempel på hur du kan använda och installera John the Ripper. Läs mer här: "
 
 ### Installation Windows
 
-Gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. Kör i Powershell eller bash shell (enable Windows Subsystem for Linux WSL i Windows features om du inte gjort det). Starta john.exe med hela pathen eller uppdatera din användares path (Environment variables) för att kunna starta med "john".
+Jag körde <strong>wsl</strong> och installerade med pakethanteraren apt.
+
+```bash
+$ sudo apt install john
+```
+
+Eller om du kör <strong>Powershell</strong> så gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. Funkar i Powershell eller bash shell (enable Windows Subsystem for Linux WSL i Windows features om du inte gjort det). Starta john.exe med hela pathen eller uppdatera din användares path (Environment variables) för att kunna starta med "john".
 
 #### Installation Mac
 

@@ -54,16 +54,13 @@ $ brew install john
 
 #### Installation Linux
 
-Jag installerade med apt och snap på Ubuntu.
+Jag installerade med pakethanteraren apt på Ubuntu.
 
 ```bash
 $ sudo apt update
 
-# Om du saknar snap
-$ sudo apt install snapd
-
 # Installera John the Ripper
-$ sudo apt install john-the-ripper
+$ sudo apt install john
 ```
 
 #### Kommandon

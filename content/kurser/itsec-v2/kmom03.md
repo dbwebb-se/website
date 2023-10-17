@@ -154,7 +154,7 @@ Det finns en hel del skrivuppgifter i kursen, tycker inte att det är ett proble
 
 Det finns tre uppgifter, en skrivuppgift, en "lär dig attacker"-uppgift och en "titta på en film"-uppgift.
 
-1. <strong>Skrivuppgift</strong> är inom området attacker. Ni kan jobba i grupper om 2 och 2, eller individuellt. Rapportmall finns att tillgå för LaTeX/Overleaf i kursrepot under [`example/report-template-latex`](https://github.com/dbwebb-se/itsec/tree/master/example/report-template-latex). Det är inte ett krav att skriva i det formatet, men en bra övning. Kanske vill du skriva exjobbet i LaTeX?
+1) <strong>Skrivuppgift</strong> är inom området attacker. Ni kan jobba i grupper om 2 och 2, eller individuellt. Rapportmall finns att tillgå för LaTeX/Overleaf i kursrepot under [`example/report-template-latex`](https://github.com/dbwebb-se/itsec/tree/master/example/report-template-latex). Det är inte ett krav att skriva i det formatet, men en bra övning. Kanske vill du skriva exjobbet i LaTeX?
 
 Upplägget är enligt följande:
 
@@ -164,13 +164,11 @@ Skriv en rapport på två till fyra sidor text, exklusive försättssida och exk
 
 Ni som jobbar i grupp skriver tre till fyra sidor, exklusive försättssida och exklusive referenssida. Ni redovisar individuellt på Canvas och skriver in namnen på gruppmedlemmarna i rapporten. 
 
-1. Lär dig göra <strong>attacker</strong> med hjälp av "[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)". Ladda ner, installera och kör lokalt. Välj gärna "From Sources". Följ instruktionerna i README.md (jag valde instruktionerna för "From Sources"). OBS! Använd Powershell på Windows! Starta enligt instruktionerna och gör gärna alla "hacking tutorials". 
+2) Gör uppgiften "[Attacker på Juice Shop](uppgift/juiceshop)" 
 
-Redovisa genom att ta en skärmdump på din scoreboard samt namn och beskrivning på alla lösta utmaningar (minst 10) du gjort. Tips! Använd gärna utvecklarverktyget (Developer Tools) i din webbläsare för att bättre se vad som händer.
+3) <strong>Film-uppgiften</strong> är inom ämnet "hur tänker en hacker/cracker/attacker"? I spellistan "[Internet - kultur och historia](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-NLQecGIdq3LnATTn0gKal)" finns ett antal filmer/dokumentärer som berör olika händelser inom Internet. Välj en av dessa filmer, eller en som du själv anser liknande, titta på filmen och försök sedan svara på frågan "Vad driver en hacker och hur tänker en hacker?" Du skriver svaret på Canvas i samband med din inlämning. Välj att titta på filmen individuellt, eller tillsammans med din gruppkompis för rapporten.
 
-1. <strong>Film-uppgiften</strong> är inom ämnet "hur tänker en hacker/cracker/attacker"? I spellistan "[Internet - kultur och historia](https://www.youtube.com/playlist?list=PLKtP9l5q3ce-NLQecGIdq3LnATTn0gKal)" finns ett antal filmer/dokumentärer som berör olika händelser inom Internet. Välj en av dessa filmer, eller en som du själv anser liknande, titta på filmen och försök sedan svara på frågan "Vad driver en hacker och hur tänker en hacker?" Du skriver svaret på Canvas i samband med din inlämning. Välj att titta på filmen individuellt, eller tillsammans med din gruppkompis för rapporten.
-
-1. Gör Kmom03 quiz.
+4) Gör Kmom03 quiz.
 
 <!-- mer videor till denna spellistan? -->
 
@@ -190,7 +188,7 @@ Resultat & Redovisning  {#resultat_redovisning}
 På Canvas finns det ett Quiz för varje kursmoment. För att du ska kunna lämna in uppgiften till kursmomentet måste du ha lämnat in quizen.
  
 1. Rapporten om attacker (uppgift 1); ladda upp din fil, report.pdf, i uppgiften Kmom03 Rapport på Canvas.
-1. Resultatet (skärmdump) från utmaningarna i Juice shop (uppgift 2) laddar du upp i uppgiften Kmom03 på Canvas.
+1. Resultatet från utmaningarna i Juice shop (uppgift 2) laddar du upp i uppgiften Kmom03 på Canvas.
 1. Filmuppgiften (uppgift 3) redovisar du i uppgiften Kmom03 på Canvas.
 1. Resultatet (filerna) från extra uppgifterna laddar du upp i uppgiften Kmom03 på Canvas. (OBS valfritt)
 

@@ -81,7 +81,7 @@ Det finns inga övningar till det här kursmomentet.
  -->
 
 
-Uppgifter {#uppgifter}
+Uppgifter (individuellt) {#uppgifter}
 -------------------------------------------
 
 *(ca: 4-6 studietimmar)*

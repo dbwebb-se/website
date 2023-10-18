@@ -46,7 +46,7 @@ Juice shop som applikation är utvecklad med ett stort antal säkerhetsbrister o
 Grundkrav {#grundkrav}
 -----------------------------
 
-Gör minst 10 utmaningar.
+Gör minst 10 utmaningar (individuellt eller i grupp om 2 och 2). Skriv en kortbeskrivning för varje utmaning som gjorts (individuellt).
 
 
 Redovisa {#redovisa}

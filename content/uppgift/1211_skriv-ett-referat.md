@@ -10,22 +10,22 @@ revision:
     "2019-10-11": (A, lew, aurora) First edition.
 ...
 
-Skriv ett referat {#referat}
+Skriv ett referat (individuellt) {#referat}
 ==================================
 
 Uppgiften går ut på att skriva ett referat på en text, alltså att sammanfatta en längre text på ett begränsat utrymme. Texten ska, med era egna ord, sammanfatta och presentera relevant information samt de viktigaste punkterna från artikeln. Det handlar därmed både om att förstå texten och kunna förmedla den vidare till läsaren med egna ord. Texten är på engelska men skriv referatet på svenska.
 
-Referatet ska vara på max 1 A4 sida (ca 500-600 ord). Ert referat ska vara objektivt, det är artikelförfattarens synpunkter som ska redovisas. Tänk på att det begränsade utrymmet gör att ni måste fokusera på det väsentliga i texten, den röda tråden.
+Referatet ska vara på max 1 A4 sida (ca 500-600 ord). Ert referat ska vara objektivt, det är artikelförfattarens synpunkter som ska redovisas. Tänk på att det begränsade utrymmet gör att du måste fokusera på det väsentliga i texten, den röda tråden.
 
 <!--more-->
 
 Uppgiften kommer bedömas utifrån tre delar:
 
-* Hur väl ni lyckas plockas fram det väsentliga i texten, vad vill författaren säga?
+* Hur väl du lyckas plockas fram det väsentliga i texten, vad vill författaren säga?
 
 * Är er sammanställning begriplig även för en läsare som inte läst ursprungsartikeln?
 
-* Skriver ni på en akademiskt godtagbar nivå? Korrekt stavning, avstavning och grammatik. Språket ska vara vårdat men inte tillkrånglat.
+* Skriver du på en akademiskt godtagbar nivå? Korrekt stavning, avstavning och grammatik. Språket ska vara vårdat men inte tillkrånglat.
 
 [Texten hittar du här](/kursmaterial/itsec/doc/crossing-line-ethics-security-professional-890.pdf).
 

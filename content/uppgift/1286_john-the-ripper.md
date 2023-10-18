@@ -80,10 +80,10 @@ Om du inte vill installera John the Ripper lokalt, så finns det en "[John the R
 
 Kanske kan någon av lösenorden i filerna knäckas med "[Crackstation](https://crackstation.net/)" eller någon liknande tjänst.
 
-Grundkrav {#grundkrav}
+Krav {#grundkrav}
 -----------------------------
 
-Knäck lösenorden.
+Knäck lösenorden (individuellt).
 
 
 Redovisa {#redovisa}

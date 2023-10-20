@@ -261,7 +261,7 @@ Redovisning {#redovisning}
 
 2. Glöm inte att bifoga länken till projektet på studentservern (alternativ bara din akronym).
 
-3. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Efter du har gjort inlämningen på Canvas lägg videon som en mediakommentar på din inlämning. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/slutpresentation).
+3. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Efter du har gjort inlämningen på Canvas lägg videon som en mediakommentar på din inlämning. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/presentation).
 
 4. Se till att samtliga kursmoment validerar i "dbwebb validate/publish".
 

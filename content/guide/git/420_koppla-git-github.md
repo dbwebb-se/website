@@ -10,7 +10,11 @@ Det repot vi skapade nu kallas för vår "remote" och vi ska nu koppla samman v�
 
 [FIGURE src=image/git-guide/connect-local-remote.png]
 
-Stycket längst ner känns mest rätt för oss, vi har redan skapat lite filer och commit:at dom. Den första raden är det som kopplar vårt lokala repo mot det vi skapade på GitHub, följt utav en rad som döper om vår nuvarande "branch" till `main`. Det är en preferens ifrån GitHub, men det skadar inte oss så vi lyssnar och döper om vår "branch". Tillsist så laddar vi upp vår kod till GitHub med hjälp utav `git push -u origin main`. Det är bara första gången nu vi behöver specificera att vi vill ladda upp till `origin main`, i framtiden räcker det med `git push`.
+Stycket längst ner känns mest rätt för oss, vi har redan skapat lite filer och commit:at dom. Den första raden är det som kopplar vårt lokala repo mot det vi skapade på GitHub. **Viktigt att i detta skedet välja ssh-länken som bör börja på git@github.com**.
+
+Sedan döper vi om vår master branch till `main`. Det är en preferens ifrån GitHub, men det skadar inte oss så vi lyssnar och döper om vår "branch".
+
+Tillsist så laddar vi upp vår kod till GitHub med hjälp utav `git push -u origin main`. Det är bara första gången nu vi behöver specificera att vi vill ladda upp till `origin main`, i framtiden räcker det med `git push`.
 
 Såhär kan det se ut:
 

@@ -15,12 +15,17 @@ Du behöver installera din portfolio, fylla den med innehåll och sedan lägga t
 
 Du skall också skapa ett Git-repo av din portfolio-sida och ladda upp det till Github.
 
+
+
 <!--more-->
+
+
 
 Förkunskaper {#forkunskaper}
 -----------------------
 
 Du har en labbmiljö som motsvarar [labbmiljön för kursen design](kurser/design-v3/kmom01#labbmiljo).
+
 
 
 Introduktion och förberedelse {#intro}
@@ -47,6 +52,8 @@ Om det uppstår problem där felutskriften säger att det saknas php paket med k
 
 Nu kan du öppna en webbläsare och peka mot katalogen `me/portfolio`. Får du problem eller felmeddelanden så hojta till i chatten så hjälper vi dig den sista biten.
 
+
+
 ### Publicera till studentservern {#publicera}
 
 För att din portfolio ska fungera på studentservern så behöver du uppdatera två rader i `me/portfolio/.htaccess`, annars får du 404 på dina länkar och 500 på bilderna.
@@ -70,6 +77,8 @@ Därefter kan ni publicera till studentservern för att se att allt fungerar:
 dbwebb publish me
 ```
 
+
+
 #### Bilder laddas inte lokalt {#bilder-felsok}
 
 Det kan hända att du får 404 på dina bilder lokalt. Om du går in i devtools (F12) och går till network, så kan du se alla filer som hämtas för hemsidan. Där kan du se länkarna till de bilder som inte laddas in. Om du öppnar en av dem och får felmeddelandet:
@@ -89,6 +98,8 @@ Så behöver du uppdatera rättigheterna på cache-mappen med hjälp utav:
 chmod -R 777 cache/*
 ```
 
+
+
 ### Git {#git}
 
 Ni ska ladda upp eran portfolio till GitHub. Om ni inte redan har, jobba igenom guiden "[Kom igång med Git och GitHub](guide/git)" som går igenom hur man sätter upp ett repo. Kort sagt:
@@ -100,6 +111,14 @@ Ni ska ladda upp eran portfolio till GitHub. Om ni inte redan har, jobba igenom 
 * Ladda upp med `git push`
 * Tagga ditt repo med `git tag -a v1.0.0 -m <message>`
 * Ladda upp taggen med `git push --tags`
+
+
+
+#### Support for password authentication {#git-support}
+
+Om ni får problem med att göra `git push` och ett felmeddelande med något liknande "Support for password authentication was removed on August 13, 2021." har ni valt `https` länken när ni kopplade er mot GitHub. Du kan dubbelkolla att det är det som är bekymrat med kommandot `git remote -v` börjar länken som dyker upp med `https` kan du ändra till `ssh` länken. Du ändrar då länken med kommandot `git remote set-url origin git@github.com:username/repo`.
+
+
 
 ### Bekanta dig {#bekanta}
 
@@ -116,6 +135,8 @@ Du kan följa med i videon nedan för att se hur man kan:
 
 [YOUTUBE src="6aVDmXDXqDs" list="PLKtP9l5q3ce8h3PKihj_CSVBkyxtORWiy" width=700 caption="Pico introduktion"]
 
+
+
 Krav {#krav}
 -----------------------
 
@@ -127,13 +148,15 @@ Krav {#krav}
 
 1. Skapa ditt eget tema och aktivera det i `config/config.yml`, se "[Vad är Pico? - Tema](kunskap/vad-ar-pico-v2#tema)" för mer information.
 
-1. I din portfolio-mapp (`me/portfolio/`), skapa en fil som heter `github.txt` som innehåller enbart länken till ditt Github-repo (ex: `https://github.com/dbwebb-se/design-v3`)
+1. I din portfolio-mapp (`me/portfolio/`), skapa en fil som heter `github.txt` som innehåller enbart länken till hemsidan för ditt Github-repo (ex: `https://github.com/dbwebb-se/design-v3`)
 
 1. Publicera dina filer till studentservern, `dbwebb publish me`, och kontrollera att allt fungerar som det ska.
 
 1. Commit:a dina ändringar och lägg till en ny tagg (1.0.\*).
 
 1. Push:a repot till GitHub, inklusive taggarna.
+
+
 
 Tips från coachen {#tips}
 -----------------------

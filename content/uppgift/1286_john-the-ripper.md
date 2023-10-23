@@ -46,10 +46,22 @@ Eller om du kör <strong>Powershell</strong> så gå till "[John the Ripper (JtR
 
 #### Installation Mac
 
-Jag installerade med pakethanteraren brew.
+Jag installerade med pakethanteraren brew och lyckades då bara lösa password1.txt.
 
 ```bash
 $ brew install john
+```
+
+Jag laddade då ner "[John the Ripper för Mac](https://download.openwall.net/pub/projects/john/contrib/macosx/ )" och valde "john-1.8.0.9-jumbo-macosx_avx2.zip". Jag packade upp den under Applications i min hemmakatalog.
+
+```bash
+$ cd ~/dbwebb-kurser/itsec/me/kmom02/password-files
+
+$ ln -s ~/Applications/john-1.8.0.9-jumbo-macosx_avx2\ 2/run
+# Använd <tab> för att komma fram till run
+
+# Kör den nya John the Ripper installationen med:
+$ run/john password2.txt
 ```
 
 #### Installation Linux

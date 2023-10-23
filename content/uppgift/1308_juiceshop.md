@@ -23,7 +23,7 @@ Installation {#installation}
 
 Jag installerar på Wsl i min hemkatalog. Det funkar också i Powershell. Jag följer denna "[Lokal installation](https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html#_local_installation)" och väljer "From sources". 
 
-Jag installerar på Mac och Ubuntu på samma sätt.
+Jag installerar på Mac och Ubuntu på samma sätt, under Applications i min hemmakatalog.
 
 ```bash
 # npm är installerat

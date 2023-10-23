@@ -365,7 +365,7 @@ Redirect /kurser/unix/lessonplan https://docs.google.com/spreadsheets/d/1mK2HT1G
 Redirect /devops /kurser/devops
 Redirect /kurser/devops/studieplan https://docs.google.com/spreadsheets/d/10YDcG5WMkEMGCWlv0qpHTcMXyXCQBQPtrwXYlz2JIuA/edit?usp=sharing
 Redirect /kurser/devops/lektionsplan https://docs.google.com/spreadsheets/d/19OpBoi52bBRanF0TOeFTUqOfaEaVlKbBXksOKDFZe0w/edit?usp=sharing
-Redirect /kurser/devops /kurser/devops-v1
+Redirect /kurser/devops /kurser/devops-v2
 Redirect /forum/utbildning/devops /forum/viewforum.php?f=57
 
 # javascript

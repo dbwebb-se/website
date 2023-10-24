@@ -13,6 +13,8 @@ Microblog med Docker containers {#intro}
 
 I denna artikeln ska vi jobba igenom [kapitel 19](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xix-deployment-on-docker-containers) i Miguel's guide. Vi skall titta på hur man kan bygga en container för Microblog applikationen och koppla upp den mot en separat databas container. Slutligen skall vi också publicera den på Docker-registret så att vi kan komma åt applikationen utan att behöva källkoden.
 
+Som referens finns ["Driftsätta en Flask app"](kunskap/driftsatta-en-flask-app), där ni kan se hur appen körs utan Docker.
+
 
 <!--more-->
 

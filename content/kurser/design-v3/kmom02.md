@@ -203,5 +203,5 @@ Kommandot `dbwebb test` kommer användas som utgångspunkt för rättningen. Du 
 # stå i roten av kursrepot (dbwebb-kurser/design)
 dbwebb update
 npm install
-dbwebb test kmom01
+dbwebb test kmom02
 ```

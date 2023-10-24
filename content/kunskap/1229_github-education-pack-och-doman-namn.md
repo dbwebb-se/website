@@ -10,8 +10,6 @@ revision:
 GitHub Education Pack och ett domännamn
 ==================================
 
-[FIGURE src=/image/ramverk2/do.png class="right"]
-
 Vi kommer i denna artikel titta på hur vi kan använda GitHub Education Pack för att få ett gratis domännamn.
 
 <!--more-->

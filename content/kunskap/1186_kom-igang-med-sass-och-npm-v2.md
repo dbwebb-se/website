@@ -14,12 +14,18 @@ Kom igång med SASS och npm {#intro}
 Vi har tidigare i kursen skrivit CSS kod för att styla våran webbsida. Även om CSS nu stödjer variabler så saknar den fortfarande funktionalitet som funktioner och matematiska operationer.
 Vi skall i denna övningen titta på hur man kan använda sig av pakethanteraren `npm` för att bland annat underlätta stylandet och förbättra webbplatsens laddningstid.
 
+
+
 <!--more-->
+
+
 
 Förutsättningar {#forutsattningar}
 -------------------------------------
 
 Du har installerat [nodejs och npm](https://dbwebb.se/kunskap/installera-node-och-npm).
+
+
 
 Innan du börjar övningen {#innan}
 -------------------------------------
@@ -32,6 +38,8 @@ $ rsync -ravd themes/<ditt-tema-namn>/ themes/kmom02
 ```
 
 Nu borde du ha ditt nya tema i `portfolio/themes/kmom02` och vi kan påbörja vår övergång till SASS. Om du inte vill att ditt tema ska heta kmom02 kan du uppdatera vad mappen heter.
+
+
 
 Installera SASS, stylelint och normalize.css via npm {#installera-med-npm}
 ---------------------------------------------------------------------------
@@ -94,6 +102,8 @@ I vår `package.json` hittar vi `scripts`, den tar emot ett objekt av kommandon 
 
 **Notera:** Om ni bytte namn på erat tema så behöver ni uppdatera så den pekar på namnet ni valde.
 
+
+
 ### Vår validering {#validering}
 
 I kursen så använder vi oss enbart utav stylelint som validering. Vi installerade den tidigare, men för att den ska fungera så behöver man ha en konfigurationsfil som förklarar vad den ska validera. Vi skapar en sådan, `portfolio/themes/.stylelintrc.json` som innehåller följande:
@@ -113,7 +123,6 @@ I kursen så använder vi oss enbart utav stylelint som validering. Vi installer
             }
         ],
         "at-rule-no-unknown": null,
-        "order/properties-alphabetical-order": null,
         "selector-max-compound-selectors": 5
     },
     "ignoreFiles": [
@@ -131,10 +140,14 @@ I kursen så använder vi oss enbart utav stylelint som validering. Vi installer
 
 Nu ska ni kunna köra `npm run lint` för att validera er SASS-kod. Men vi har inte skapat några filer än så det händer inte särskilt mycket.
 
+
+
 Bygg CSS med SASS {#bygg-css-med-sass}
 ---------------------------------------
 
 Ni har erat tema ifrån det första kursmomentet. Troligen består det minst utav en `style.css` och en `mobile-menu.css`, en bra grund för vad vi vill göra nu.
+
+
 
 ### Import {#import}
 
@@ -198,6 +211,8 @@ blockquote {
 }
 ```
 
+
+
 ### Variabler {#variabler}
 
 En annan feature vi kommer jobba med är variabler. Det vanligaste användningsområdet för variabler är färger, där det tillåter oss att sätta färger i en variabel längst upp i vår fil och sen jobba mot dessa variabler istället för hexdecimala/rgb värden. Vi hoppar in i `themes/kmom02/scss/variables.scss` och lägger till följande fem variabler:
@@ -235,7 +250,7 @@ För att se de ändringar vi gjort nu, så behöver vi göra om våra `.scss`-fi
 $ npm run style
 ```
 
-Nu har vi våra CSS-filer och behöver bara uppdatera vår `portfolio/config/config.yml` så att vårt nya tema laddas in. 
+Nu har vi våra CSS-filer och behöver bara uppdatera vår `portfolio/config/config.yml` så att vårt nya tema laddas in.
 
 ```yml
 ...
@@ -253,12 +268,15 @@ Laddar vi om sidan så bör vi ha förlorat vår föregående style men ha en ba
 **Tips ifrån coachen:** Skapa en SASS-modul utav mobilnavigeringen, så som vi gjorde med blockquote och code. Glöm inte att importera den!
 [/INFO]
 
+
+
 Tidigare version {#tidigare-version}
 --------------------------------------
 
 Efter feedback ifrån HT2020 så har denna introduktion fått sig en omskrivning. Ett mer tydligt flöde tillsammans med tips inför uppgiften är nu i fokus.
 
 Om man är intresserad av den gamla versionen kan man läsa den här [Kom igång med SASS och npm](kunskap/kom-igang-med-sass-och-npm).
+
 
 
 Avslutningsvis  {#avslutningsvis}

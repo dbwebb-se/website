@@ -42,17 +42,18 @@ _(ca: 12-16 studietimmar)_
 
 ### Övningar {#ovningar}
 
-1. Gå igenom artiklarna för kmom02 i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/articles/kmom02).
+1. Gå igenom artiklarna för kmom02 i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/components/02).
 
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Animals](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom02/01_animals.md)". Spara dina filer i `kmom02/`.
+1. Gör uppgiften "[Animals](https://github.com/dbwebb-se/js-v2/blob/master/components/02/assignment-1.md)". Spara dina filer i `kmom02/`.
 
-1. Gör uppgiften "[Me page 2](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom02/02_mepage2.md)". Spara resultatet i `me/redovisa/`.
+1. Gör uppgiften "[Me page 2](https://github.com/dbwebb-se/js-v2/blob/master/components/02/assignment-2.md)". Spara resultatet i `me/public/`.
 
-[YOUTUBE src=VreNDZDEfqA width=639 caption="Hur kan det se ut när det är klart"]
+<!-- TBD: Är jag färdig video -->
+<!-- [YOUTUBE src=2P5lbVR7Z5c width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 
@@ -68,9 +69,13 @@ Du lämnar in koden via dbwebbkommandot:
 
 ```console
 $ dbwebb publish kmom02
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```
 
+## Resultat & Redovisning {#resultat_redovisning}
+
+Se till så koden är publicerad. Lämna sedan in på Canvas efter du genomfört quizzet.
+<!-- 
 ## Resultat & Redovisning {#resultat_redovisning}
 
 _(ca: 1-2 studietimmar)_
@@ -82,4 +87,4 @@ Se till att följande frågor besvaras i redovisningstexten.
 - Har du programmerat i JavaScript tidigare, eller kan du relatera till andra språk du har programmerat i?
 - Vad tycker du är det svåraste, mest utmanande med JavaScript jämfört med Python eller PHP - så här långt?
 - Känner du att du har koll på vad en modul är?
-- Vilken är din TIL för det här kursmomentet?
+- Vilken är din TIL för det här kursmomentet? -->

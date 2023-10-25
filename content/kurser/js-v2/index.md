@@ -2,6 +2,7 @@
 title: js (v2)
 author: lew
 revision:
+    "2023-10-24": "(B, lew) Uppdaterad version inför HT23."
     "2021-05-12": "(A, lew) Ny version inför HT21."
 ...
 Kursen js (v2)
@@ -13,7 +14,7 @@ Kursen **Programmering med JavaScript**, a.k.a. *js*, lär ut programmering och 
 
 Vi startar med att skapa rutiner för problemlösning och felsökning via enkla grundkonstruktioner i språket. Vi bygger upp en utvecklingsmiljö med relevanta verktyg i en webbmiljö. Vi använder JavaScript tillsammans med HTML och CSS för att skapa klientbaserade webbapplikationer. Du får se hur dessa tekniker samverkar.
 
-Via litteraturstudier och praktiska övningar får du möjlighet att lära dig programmeringsspråket JavaScript tillsammans med HTML och CSS. Du lär dig grunderna i att skapa en klientbaserad webbapplikation. I slutet av kursen får du visa dina färdigheter i ett praktiskt programmeringsprojekt.
+Via praktiska övningar får du möjlighet att lära dig programmeringsspråket JavaScript tillsammans med HTML och CSS. Du lär dig grunderna i att skapa en klientbaserad webbapplikation. I slutet av kursen får du visa dina färdigheter i ett praktiskt programmeringsprojekt.
 
 
 
@@ -127,7 +128,7 @@ Det finns en uppsjö med API:er vi kan använda för att bredda vår programmeri
 
 ### Kmom06: Objekt {#kmom06}
 
-Vi skapar ett spel, hangman, utifrån objekt och moduler, och ser hur vi kan skapa objekt på olika sätt.
+Vi skapar ett interaktivt spel, utifrån objekt och moduler, och ser hur vi kan skapa objekt på olika sätt.
 <!-- När vår kodbas växer blir det mer och mer viktigt att ha en bra struktur på den. Annars blir det svårt att vidareutveckla koden och underhålla den. När man dessutom skall använda olika moduler av kod från olika tillverkare så är det viktigt att de olika kod-delarna inte krockar. Att använda ett konstruktion som heter *module* hittar vi ett sätt att bättre strukturera vår kod. -->
 
 [Instruktion till kursmoment 06](./kmom06).
@@ -242,13 +243,7 @@ Kursplan {#kursplan}
 
 Kursplanen är kursens formella dokument som fastställts av högskolan. När kursen utvärderas görs det mot kursplanen. I kursplanen kan du läsa om kursens klassificering, syfte, innehåll, mål, generella förmågor, lärande och undervisning, bedömning och examination, litteratur, mm.
 
-Du hittar [kursplanen genom att söka på kurskoden DV1561 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1561).
-
-Från och med höstterminen 2017 byter kursen namn till "Programmering med JavaScript" och får en ny kurskod DV1561 samt ändrar förkunskapskrav till G1F (kräver någon form av förkunskaper).
-
-Kursen hette fram till och med hösten 2016 "Programmering med JavaScript, HTML och CSS", kurskoden var DV1532 och hade förkunskapskrav G1N (grundläggande).
-
-Se [kursplan för DV1532](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1532).
+Du hittar [kursplanen genom att söka på kurskoden DV1657 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=DV1657).
 
 
 

@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2023-10-24": "(C, lew) Uppdaterad inför HT23."
   "2022-10-18": "(B, lew) Uppdaterad inför HT22."
   "2021-05-12": "(A, lew) Ny version inför HT21."
 ...
@@ -27,7 +28,7 @@ _(ca: 2-4 studietimmar)_
 
 Det finns en [längre beskrivning om kursens labbmiljö](./../installera-labbmiljo). Läs den om du är osäker på vad som skall göras, eller om detta är din första dbwebb-kurs.
 
-Den korta varianten är att du behöver jobba igenom [artiklarna för labbmiljön](https://github.com/dbwebb-se/js-v2/blob/master/articles/environment), uppdatera [dbwebb-cli](dbwebb-cli) samt klona och initiera kursrepot.
+Den korta varianten är att du behöver jobba igenom [artiklarna för labbmiljön](https://github.com/dbwebb-se/js-v2/tree/master/components/01/environment), uppdatera [dbwebb-cli](dbwebb-cli) samt klona och initiera kursrepot.
 
 ```text
 # Gå till din katalog för dbwebb-kurser
@@ -57,10 +58,11 @@ Gör följande:
 
 ### Video {#video}
 
-Senare i kursen, i kursmoment 03, behöver du ha en del baskunskaper i HTML och CSS. Om du känner att du behöver färska upp minnet eller rent av skaffa dig baskunskaperna bör du redan nu titta igenom följande av Mikael:
+Senare i kursen behöver du ha en del baskunskaper i HTML och CSS. Om du känner att du behöver färska upp minnet eller rent av skaffa dig baskunskaperna bör du redan nu titta igenom följande:
 
 - [HTML](https://youtu.be/8QMveCqpegw)
 - [CSS](https://youtu.be/Rzpl9mrJ05w)
+- [Snabbintro till HTML/CSS](https://youtu.be/e7e-sSyryoQ?si=Oc8bUxfMsGo0E_2N)
 
 <!--
 1. Videoserien [Lär dig JavaScript](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_YXUQlr5aAzJ406vSsmeMT) är tätt kopplat till kursmaterialet. Kika igenom serien under kursens gång. -->
@@ -73,19 +75,20 @@ _(ca: 4-10 studietimmar)_
 
 Jobba igenom följande.
 
-1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/articles/kmom01).
+1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/components/01). Se även till så du har labbmiljön installerad.
 
-1. Jobba igenom det praktiska exemplet [Kom igång med JavaScript i terminalen](https://github.com/dbwebb-se/js-v2/tree/master/example/basics).
+1. Titta på [videon för kmom01](https://www.youtube.com/watch?v=ZfK9H6555xo&list=PLKtP9l5q3ce_RgMHdPs3y2jOSwj3FEQtA) 
 
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Glacier report](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom01/01_glacier.md)". Spara dina filer i `kmom01/`.
+1. Gör uppgiften "[Basics](https://github.com/dbwebb-se/js-v2/blob/master/components/01/assignment-1.md)". Spara dina filer i `kmom01/`.
 
-1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom01/02_mepage.md)". Spara resultatet i `me/redovisa/`.
+1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/components/01/assignment-2.md)". Spara resultatet i `me/public/`.
 
-[YOUTUBE src=2P5lbVR7Z5c width=639 caption="Hur kan det se ut när det är klart"]
+<!-- TBD: Är jag färdig video -->
+<!-- [YOUTUBE src=2P5lbVR7Z5c width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 
@@ -101,13 +104,15 @@ Du lämnar in koden via dbwebbkommandot:
 
 ```console
 $ dbwebb publish kmom01
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
-_(ca: 1-2 studietimmar)_
+Se till så koden är publicerad. Lämna sedan in på Canvas efter du genomfört quizzet.
 
+<!-- _(ca: 1-2 studietimmar)_ -->
+<!-- 
 Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i redovisningstexten.
@@ -115,4 +120,4 @@ Se till att följande frågor besvaras i redovisningstexten.
 - Vilken utvecklingsmiljö använder du (berätta om något förändrats sen sist, om du svarat på frågan i tidigare kurser)?
 - Är du bekant med JavaScript sedan tidigare?
 - Gick det bra att komma i gång med kursmomentet, var det lagom, för litet, för stort, något som var svårt eller saknades?
-- Vilken är din TIL för detta kmom?
+- Vilken är din TIL för detta kmom? -->

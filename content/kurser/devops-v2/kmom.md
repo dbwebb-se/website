@@ -93,37 +93,84 @@ Läs:
 
 
 
-# CI {#ci}
+## Continuous Integration {#ci}
 
 
-Vi vill ha en CI-kedja till repot så att testerna automatiskt körs när du gör push. I kursen har jag valt att använda [GitHub Actions](https://docs.github.com/en/actions). Nu ska du läsa igenom en artikel som visar hur vi kan använda Actions för python projekt. När du gjort det ska du göra det för ditt forkade repo.
+Vi vill ha en CI-kedja till repot så att testerna automatiskt körs när du gör push. I kursen har jag valt att använda [GitHub Actions](https://docs.github.com/en/actions).
 
-Läs igenom ["Building and testing Python"](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python).
+### Läs och titta {#ci-read}
 
-Läs först om hur man kan återanvända workflows och skapa sen ett nytt workflow som bygger och pushar er docker image.
-- [Reusing workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows). Tips, starta kmom01 flödet från kmom02 flödet.
-- [Publishing Docker images](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images). Dokumentation om [alternativ till att bygga er image](https://github.com/docker/build-push-action#customizing)
+- [Continuous Integration av Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html).
 
-# CD {#cd}
 
+### Att göra {#ci-do}
+
+Jobba igenom:
+
+- ["Building and testing Python"](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) i Actions.
+
+
+
+## Continuous Delivery {#cd}
+
+Vi kan se Continuous Delivery som steget efter Continuous Integration. I CI har vi ett flöde där vi kör tester automatisk, nästa steg är när alla tester har blivit godkända. Då vill vi bygga vår applikation så att den finns tillgänglig för driftsättning med de senaste uppdateringarna.
+
+### Läs och titta {#cd-read}
+
+- [Continuous Delivery av Martin Fowler](https://martinfowler.com/bliki/ContinuousDelivery.html).
+
+- [Reusing workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows) i Actions.
+
+- [Publishing Docker images](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images) från Actions. Dokumentation om [alternativ till att bygga er image](https://github.com/docker/build-push-action#customizing)
+
+
+
+
+## Hur vi jobbar med repot {#git}
+
+Ni ska jobba enligt GitHub Flow i ert repo. Det betyder att ni ska ha feature branches, gör pull requests och göra code reviews. För att underlätta det ska ni också fokusera på bra commit meddelanden.
+
+
+
+### Läs och titta {#git-read}
+
+- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+
+- [The seven rules of a great Git commit message](https://chris.beams.io/posts/git-commit/#seven-rules).
+
+- [Keeping Git Commit Messages Consistent with a Custom Template ](https://dev.to/timmybytes/keeping-git-commit-messages-consistent-with-a-custom-template-1jkm).
+
+- [Semantisk versionshantering](https://semver.org/lang/sv/), en bra versionsstandard för projekt. Vi följer inte riktigt den i kursen för att jag vill ha ny siffra för varje kursmoment.
+
+- [CHANGELOG](https://keepachangelog.com/en/1.0.0/), håll koll på vad som ändras mellan versionerna i ett projekt.
+
+
+
+## Lästips {#lastips}
+
+- [Multistage builds](https://docs.docker.com/develop/develop-images/multistage-build/), för vår app är detta kanske inte nödvändigt men det är väldigt bra att känna till.
+
+- [Best practices](https://www.wintellect.com/security-best-practices-for-docker-images/) för Docker.
+
+- [Building Your Production Tech Stack for Docker Container Platform](https://dockercon2018.hubs.vidyard.com/watch/k3Cv676wmxAwYDxbvcgcgC), video från DockerCon 2018.
 
 
 
 Uppgifter  {#uppgifter}
 -------------------------------------------
 
-Ett repo
-Branches och pull request. peer review.
-1. Bättre commit meddelanden:
-    - [The seven rules of a great Git commit message](https://chris.beams.io/posts/git-commit/#seven-rules). Ni kan också läsa stycket ovanför, i länken, om varför det är viktigt.
-    - [Keeping Git Commit Messages Consistent with a Custom Template ](https://dev.to/timmybytes/keeping-git-commit-messages-consistent-with-a-custom-template-1jkm). I denna kursen kan ni t.ex. använda vilket kursmoment ni jobbar på i footern.
+versioner - git och docker
+ci som kör tester
+cd dom publiserar
+microblog ska köras på azure server och vara tillgänglig via ett domännamn, med den nya funktionaliteten.
 
-1. [Semantisk versionshantering](https://semver.org/lang/sv/), en bra versionsstandard för projekt. Vi följer inte riktigt den i kursen för att jag vill ha ny siffra för varje kursmoment.
-
-1. [CHANGELOG](https://keepachangelog.com/en/1.0.0/), håll koll på vad som ändras mellan versionerna i ett projekt.
-
+var är nginx? kunskap/driftsatta-en-flask-app#conf_nginx
 
 - Döp din Dockerfile till `Dockerfile_prod` och lägg den i mappen `docker`.
+
+
+Nu vill vi att er produktions image byggs och pushas till dockerhub automatiskt när ni pushar uppdateringar i er kod till GitHub. Ni vill bara bygga och pusha er image om testerna går igenom för koden. Ni har redan ett workflow som kollar det. Eftersom vi är utvecklare gillar vi att dela upp vår kod i olika filer. Nu ska ni skapa ett nytt workflow (separat fil) som bygger och pushar er image till DockerHub men bara om testerna passerar. Ni uppnår det genom att från det nya workflow:et återanvända det som tester koden.
+
 
 Läsanvisningar {#las}
 --------------------------

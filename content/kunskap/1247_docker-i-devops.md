@@ -43,6 +43,9 @@ Om ni redan har läst kursen vlinux kan ni gå vidare till nästa steg. Annars j
 Om ni vill öva mer på Docker så finns det många [Docker övningar på killercoda](https://killercoda.com/comp-killercoda/course/Docker%20Tutorials%20(Without%20Click-and-Execute)).
 
 
+**Läs om** [Docker latest tag](https://vsupalov.com/docker-latest-tag/), ett annat hett ämne inom Docker är om man ska använda `latest` taggen för att köra images eller ej.
+
+
 
 ## Docker i devops {#devops}
 
@@ -68,6 +71,10 @@ En viktigt del av det praktiska inom devops är att spara konfiguration som kod 
 
 En typisk sån sak är att bygga/köra Docker images. Att bygga/starta en image behöver ofta någon slags konfiguration t.ex. vad ska vara volymer, miljövariabler eller vilken port som ska öppnas. Om detta inte finns som kod blir det svårt för någon annan än för den som skrev koden att göra det.
 
-För Docker använder vi [docker-compose](https://docs.docker.com/compose/) i detta syftet. Om ni jobbade igenom hela docker guiden längre upp borde ni ha det installerat. Annars jobba igenom följande guide.
+För Docker använder vi [docker-compose](https://docs.docker.com/compose/) i detta syftet.
+
+Läs att använda [docker compose i produktion](https://docs.docker.com/compose/production/).
+
+Om ni jobbade igenom hela docker guiden längre upp borde ni ha det installerat. Annars jobba igenom följande guide för att installera.
 
 - [docker-compose](guide/docker/installera-compose).

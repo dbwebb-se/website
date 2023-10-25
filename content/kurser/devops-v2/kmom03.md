@@ -18,6 +18,9 @@ Påbörja inte före denna rutan är borta.
 
 <!-- more -->
 
+**Skriv att de ska lägga till `-r deploy.txt` i requirements/dev.txt.**
+
+
 [FIGURE src="https://www.gocd.org/assets/images/blog/continous-delivery-vs-deployment-infographic/continuous-delivery-vs-continuous-deployment-infographic-305dd620.png"]
 
 

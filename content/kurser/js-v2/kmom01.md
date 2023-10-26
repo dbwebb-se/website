@@ -88,7 +88,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/components/01/assignment-2.md)". Spara resultatet i `me/public/`.
 
 
-[YOUTUBE src="" width=639 caption="Hur kan det se ut när det är klart"]
+[YOUTUBE src=3Xir1UZO62M width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

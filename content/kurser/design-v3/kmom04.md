@@ -54,6 +54,8 @@ Vi lyfter in vår nyfunna kunskap om färger till vårt nuvarande tema och däre
 
 Vi gör även ett en studie om webbplatsers val av färger och typografi där vi skriver en rapport som vi publicerar i vår portfolio-sida. Rapporten kan man välja att lösa i grupp eller enskilt.
 
+[YOUTUBE src="QX_WoPvkVJ4" width=700 caption="Klar med kmom04"]
+
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 

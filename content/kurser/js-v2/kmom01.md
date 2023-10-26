@@ -1,22 +1,22 @@
 ---
 author: lew
 revision:
-  "2023-10-24": "(C, lew) Uppdaterad inför HT23."
+  "2023-10-26": "(C, lew) Uppdaterad inför HT23."
   "2022-10-18": "(B, lew) Uppdaterad inför HT22."
   "2021-05-12": "(A, lew) Ny version inför HT21."
 ...
 
 # Kmom01: Utvecklingsmiljö
-
+<!-- 
 [WARNING]
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
+[/WARNING] -->
 
 Låt oss komma i gång med en labbmiljö, och en miljö för kursen. För er som vill repetera eller inte har läst HTML/CSS innan kommer det finnas möjlighet att läsa på om det innan det används i den här kursen.
 
 Detta kursmoment ger dig basen för resten av kursen, det hanterar grunderna som behövs så att vi i kommande kursmoment ska kunna dyka ned mer i JavaScript.
 
-<!--stop-->
+<!--more-->
 
 [FIGURE src=/img/js-v2/batman.png?w=w2 caption="En interpretator för JavaScript."]
 
@@ -87,8 +87,8 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/components/01/assignment-2.md)". Spara resultatet i `me/public/`.
 
-<!-- TBD: Är jag färdig video -->
-<!-- [YOUTUBE src=2P5lbVR7Z5c width=639 caption="Hur kan det se ut när det är klart"] -->
+
+[YOUTUBE src="" width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

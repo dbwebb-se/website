@@ -1,14 +1,15 @@
 ---
 author: lew
 revision:
+  "2023-10-26": (B, lew) Uppdaterad version inför ht23.
   "2021-05-04": (A, lew) Ny version inför ht21.
 ...
 
 # Kmom02: Moduler
 
-[WARNING]
+<!-- [WARNING]
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
+[/WARNING] -->
 
 Vi skall nu koda mer JavaScript. Vi bekantar oss med fler konstruktioner i språket och tar en titt på hur vi kan dela upp koden i moduler som i sin tur importerar och exporterar koden.
 
@@ -53,7 +54,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Me page 2](https://github.com/dbwebb-se/js-v2/blob/master/components/02/assignment-2.md)". Spara resultatet i `me/public/`.
 
 <!-- TBD: Är jag färdig video -->
-<!-- [YOUTUBE src=2P5lbVR7Z5c width=639 caption="Hur kan det se ut när det är klart"] -->
+[YOUTUBE src="" width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

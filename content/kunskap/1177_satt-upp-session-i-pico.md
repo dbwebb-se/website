@@ -32,7 +32,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 ```
 
-Vi startar sessionen om den inte är igång med samma unika sessionsnamn som i htmlphp. Den bygger på sökvägen till filen, så på studentservern behövs detta för att ni ska få en unik session.
+Vi startar sessionen om den inte är igång med samma unika sessionsnamn som i webtec. Den bygger på sökvägen till filen, så på studentservern behövs detta för att ni ska få en unik session.
 
 
 
@@ -218,7 +218,7 @@ Trycker ni nu på länken för att byta tema så borde ni ha en sida utan tema a
 SCSS {#scss}
 --------------------------------------
 
-Nu behöver jag fixa mina `.scss` filer så att allt det här fungerar. Jag börjar med att skapa en ny fil i mitt tema, `aurora/scss/style-dark.scss` som ska ligga till grund för mitt tema. Min `style-dark.scss` får i nuläget vara en kopia på min `style.scss`, utöver att jag lägger in följande regel för att se att det fungerar.
+Nu behöver jag fixa mina `.scss` filer så att allt det här fungerar. Jag börjar med att skapa en ny fil i mitt tema, `kmom02/scss/style-dark.scss` som ska ligga till grund för mitt tema. Min `style-dark.scss` får i nuläget vara en kopia på min `style.scss`, utöver att jag lägger in följande regel för att se att det fungerar.
 
 ```scss
 /* Längst ner i min style-dark.scss */
@@ -233,14 +233,14 @@ För slippa behöva köra två kommandon uppdaterar jag mina script i `package.j
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass aurora/scss/style.scss:aurora/css/style.css aurora/scss/style-dark.scss:aurora/css/style-dark.css --no-source-map --watch",
-    "watch-min": "sass aurora/scss/style.scss:aurora/css/style.min.css aurora/scss/style-dark.scss:aurora/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "watch": "sass kmom02/scss/style.scss:kmom02/css/style.css kmom02/scss/style-dark.scss:kmom02/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass kmom02/scss/style.scss:kmom02/css/style.min.css kmom02/scss/style-dark.scss:kmom02/css/style-dark.min.css --no-source-map --watch --style compressed",
     "style": "npm run style-light && npm run style-dark",
     "style-min": "npm run style-light-min && npm run style-dark-min",
-    "style-dark": "sass aurora/scss/style-dark.scss aurora/css/style-dark.css --no-source-map",
-    "style-dark-min": "sass aurora/scss/style-dark.scss aurora/css/style-dark.min.css --no-source-map --style compressed",
-    "style-light": "sass aurora/scss/style.scss aurora/css/style.css --no-source-map",
-    "style-light-min": "sass aurora/scss/style.scss aurora/css/style.min.css --no-source-map --style compressed"
+    "style-dark": "sass kmom02/scss/style-dark.scss kmom02/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass kmom02/scss/style-dark.scss kmom02/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass kmom02/scss/style.scss kmom02/css/style.css --no-source-map",
+    "style-light-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed"
 },
 ```
 

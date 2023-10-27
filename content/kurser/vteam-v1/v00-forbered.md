@@ -40,6 +40,8 @@ Sätt dig in i problemdomänen {#domain}
 
 Läs igenom bakgrunden till projektet i de dokument som är tillgängliga för att skaffa dig kunskap om den domän där du skall verka i.
 
+De dokument som du nu bör läsa igenom är "Bakgrundsmaterial (domänkunskap)" samt "Kundens kravspecifikation".
+
 När man kommer till första mötet med gruppen vill man gärna se att alla har läst igenom de dokument som finns tillgängliga.
 
-
+De som är bäst förberedda inför ett möte kommer också mest styra mötets utkomst. Det kan vara bra att veta det. Vill man styra så gör man det lämpligast genom att vara påläst.

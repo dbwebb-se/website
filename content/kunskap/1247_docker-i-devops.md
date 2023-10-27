@@ -75,6 +75,13 @@ För Docker använder vi [docker-compose](https://docs.docker.com/compose/) i de
 
 Läs att använda [docker compose i produktion](https://docs.docker.com/compose/production/).
 
+För att docker-compose ska klara av att hantera `<<-EOF` i Dockerfile, vilket vi använder för Microblog, behöver ni sätta följande miljövariabler:
+
+```
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+```
+
 Om ni jobbade igenom hela docker guiden längre upp borde ni ha det installerat. Annars jobba igenom följande guide för att installera.
 
 - [docker-compose](guide/docker/installera-compose).

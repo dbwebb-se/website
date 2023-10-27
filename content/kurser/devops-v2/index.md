@@ -93,34 +93,31 @@ Efter genomförd kurs skall studenten:
 Kursmoment {#kursmoment}
 ------------------------
 
-Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h studerande i form av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke. Alla kursmoment skall redovisas och du samlar alla redovisningar i din me-sida.
+Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20-40h studerande i form av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke. Alla kursmoment skall redovisas och du samlar alla redovisningar i din me-sida.
 
 Kursen avslutas med ett större avslutande moment som examinerar kursen.
 
 
 
-### Kmom01: Introduktion till DevOps {#kmom01}
+### Kmom01: Introduktion till DevOps och Docker {#kmom01}
 
-Vi startar kmom01 med att bekanta oss med koden för ett redan påbörjat projekt. Vi behöver servrar för att driftsätta projektet och ska ska använda oss av [Azure](https://azure.microsoft.com/) för att hosta servrar i molnet. Dessutom börjar vi titta på innebörden av DevOps.
+Vi startar kmom01 med att bekanta oss med koden på ett redan påbörjat projekt. Vi behöver servrar för att driftsätta projektet och ska ska använda oss av [Azure](https://azure.microsoft.com/) för att hosta servrar i molnet. Projektet driftsätter i vi produktion med Docker. Dessutom börjar vi titta på innebörden av DevOps.
 
 Läs [instruktionen till kursmoment 01](./kmom01).
 
 
 
-### Kmom02: Docker {#kmom02}
+### Kmom02: Configuration Management och Continuous Deployment {#kmom03}
 
-Vi packar in vårt kod i en Docker container och lär oss används docker-compose. Samtidigt ser vi till att fixa en Docker container för utvecklingsmiljön och en för produktionsmiljön.
+Vi lär oss CM verktyget Ansible och använder det för att enkelt kunna skapa nya servrar och driftsätta vår kod.
 
 Läs [instruktionen till kursmoment 02](./kmom02).
 
 
 
-### Kmom03: Configuration Management och Continuous Deployment {#kmom03}
-
-Vi lär oss CM verktyget Ansible och använder det för att enkelt kunna skapa nya servrar och driftsätta vår kod.
 
 
-Läs [instruktionen till kursmoment 03](./kmom03).
+<!-- Läs [instruktionen till kursmoment 03](./kmom03). -->
 
 
 
@@ -160,7 +157,7 @@ Läs [instruktionen till kursmoment 07/10](./kmom10).
 Kurslitteratur {#litteratur}
 ----------------------------
 
-[Måste jag skaffa kurslitteraturen](kurser/maste-jag-skaffa-kurslitteraturen)?
+I denna kursen ska ni läsa kurslitteraturen. Ni kan antingen köpa boken eller använda länken nedanför för att läsa den gratis online.
 
 
 

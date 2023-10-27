@@ -10,6 +10,11 @@ revision:
 Kmom02: Docker
 ==================================
 
+[WARNING]
+Kurs under utveckling!
+
+Påbörja inte före denna rutan är borta.
+[/WARNING]
 
 ## Skapa en Docker image för testning {#file_test}
 

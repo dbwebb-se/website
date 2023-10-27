@@ -218,7 +218,7 @@ Från och med hösten 2023 har kursen bytt kurskod [DV1676](http://edu.bth.se/ut
 
 Hösten 2022 finns [kursplanen genom att söka på kurskoden PA1477 via BTH's hemsida](http://edu.bth.se/utbildning/utb_kursplaner.asp?KKurskod=PA1477) och kursen heter "Programutveckling i virtuella team".
 
-
+Kursen gick första gången på prov under hösten 2021 och då under kursen "DV1610 Webbaserade ramverk och designmönster".
 
 <!--
 Versioner av kursen {#versioner}

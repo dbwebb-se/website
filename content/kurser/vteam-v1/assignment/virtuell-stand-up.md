@@ -33,5 +33,5 @@ Inför torsdagen är det följande frågor som skall besvaras (med kort-korta sv
 Resurser
 -------------------------
 
-1. Läs allmänt om syftet med korta "standups" möten På [Wiki om Stand-up meeting](https://en.wikipedia.org/wiki/Stand-up_meeting).
+1. Läs allmänt om syftet med korta "standups" möten på [Wiki om Stand-up meeting](https://en.wikipedia.org/wiki/Stand-up_meeting).
 

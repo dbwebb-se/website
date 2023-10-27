@@ -71,7 +71,7 @@ Läs & Studera  {#lasanvisningar}
 
 Bläddra lite i kursboken "[The Principles of Beautiful Web Design](kunskap/boken-the-principles-of-beautiful-web-design)". Bara för att bekanta dig med den, vi börjar läsa i samband med nästa kmom, men det skadar inte att ligga ett kapitel före.
 
-Både tredje och fjärde utgåvan av boken fungerar, materialet är uppdaterat och fjärde upplagan är något längre. Boken, i sin tredje utgåva, finns tillgänglig online via [BTHs bibliotek](http://bth.summon.serialssolutions.com/?#!/search?ho=t&l=sv-SE&q=9780992279448).
+Både tredje och fjärde utgåvan av boken fungerar, materialet är uppdaterat och fjärde upplagan är något längre. Boken, i sin tredje utgåva, finns tillgänglig online via [BTHs bibliotek](https://bth.summon.serialssolutions.com/#!/search?ho=t&include.ft.matches=f&l=en&q=1925836363).
 
 
 

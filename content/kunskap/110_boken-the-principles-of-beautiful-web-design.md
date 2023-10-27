@@ -14,11 +14,15 @@ Boken: The Principles of Beautiful Web Design
 
 En härlig bok om webdesign och dess komponenter. För den som vill lära sig mer om design av webbplatser. Boken fungerar bra som komplement till alla andra mer programmeringsinriktade böcker som du finner på dessa sidor. Även en programmerare kan ha nytta av att ha koll på ingredienser i webdesign såsom layout, färger och fonter.
 
+
+
 <!--more-->
+
+
 
 Boken får ett högt betyg av mig :-D.
 
-Boken används som referenslitteratur i kursen [htmlphp](htmlphp).
+Boken används som referenslitteratur i kursen [webtec](webtec) och som kurslitteratur i kursen [design](design).
 
 
 
@@ -37,11 +41,4 @@ Om Boken {#om-boken}
 
 [BOOK isbn=9780992279448]
 
-BTH's bibliotek kan erbjuda boken som e-bok.
-
-
-
-Diskutera boken i forumet {#forum}
-----------------------------------
-
-Det finns en forumtråd där du kan [fråga eller berätta vad du tyckte om boken](f/5351).
+BTH's bibliotek kan erbjuda boken som [e-bok](https://bth.summon.serialssolutions.com/#!/search?ho=t&include.ft.matches=f&l=en&q=1925836363).

@@ -112,7 +112,8 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 <!--
 * Bestäm sidor som måste finnas, bra för validering och rättning.
-* Tydlig att inloggning skall vara i den befintliga wbbplatsen layout.
+* Tydlig att inloggning skall vara i den befintliga webbplatsen layout.
+* Fixa rättningsprogrammet så att det tydligt visar om den optinoella delen är gjort, det behöver finnas en landdningssida?
 -->
 
 Resultat & Redovisning  {#resultat_redovisning}

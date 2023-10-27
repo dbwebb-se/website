@@ -119,6 +119,9 @@ Följande uppgifter skall utföras och resultatet skall redovisas.
 
 <!--
 * Lägg till cheat i uppgiften om gissa namnet.
+* Lägg till extra om statistik för att visa antalet fel och rätt.
+* markera dagens datum i kalendern.
+* Poängtera att resultaten skall visas i sidor som innehåller header/footer.
 -->
 
 <!--

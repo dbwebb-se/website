@@ -59,8 +59,6 @@ Tänk på och anteckna följande saker när ni läser boken. Använd det som und
 - Något ni anser kan påverka ert val av arbetsplats efter studierna. T.ex. om de inte jobbar på det sättet vill ni inte arbeta där.
 - Något ni tror är svårt att föra över från teori till praktik. Varför?
 - Något ni redan har erfarenhet av som du kan dela med dig av dina erfarenheter.
-- Vilka utmaningar som finna när man implementerar DevOps på en arbetsplats presenterar boken? Hur överkommer man utmaningarna?
-- Var det något exempel från verkligheten eller fallstudier som stod ut för dig? Hur illustrerar dem begreppen som boken tar upp?
 - Övriga saker som ni vill prata om.
 
 Inför första träffen (när ni läser del 1 i boken) ska ni också notera hur boken presenterar DevOps historia och utveckling. Hur har området ändrats genom åren?
@@ -89,6 +87,7 @@ På sista mötet ska vi utöver de saker som vi har pratat om på de andra träf
 - Hur definierar boken DevOps?
 - Vilken roll har mätningar och mätvärden i DevOps. Vilka mätvärden anser boken är viktiga och varför?
 - Fanns det delar i boken ni inte håller med om? Förklara er ståndpunkt.
+- Vilka utmaningar som finna när man implementerar DevOps på en arbetsplats presenterar boken? Hur överkommer man utmaningarna?
 - Hur lyfter boken vikten av samarbete och tvärfunktionella samarbeten?
 - Reflektera över hur boken har påverkat er förståelse av DevOps och dess potentiella påverkan på er framtida karriär.
 

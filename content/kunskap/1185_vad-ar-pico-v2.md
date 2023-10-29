@@ -15,7 +15,11 @@ Vad är Pico? {#inledning}
 
 Pico är ett CMS, Content Management System, som tillåter användaren att hantera innehållet på en sida utan att behöva "koda" sidan själv. Det finns flera andra stora alternativ, så som WordPress, Drupal och Grav, men i denna kursen ville vi ha ett tunnare ramverk som låter oss fokusera på design-aspekten av webbutveckling. Pico är även ett "flat-file" CMS, vilket innebär att man jobbar emot filer istället för en databas, ungefär så som [dbwebb (Github)](https://github.com/dbwebb-se/website) är uppbyggt.
 
+
+
 <!--more-->
+
+
 
 Vi ska i denna artikel introducera er till grunderna inom Pico och hur man kan jobba med ett CMS. Några saker vi kommer kolla på är Pico som ramverk, hur det fungerar, dess mappstruktur, hur man lägger till nytt innehåll samt hur man kan jobba med sin layout och stil på sidan.
 
@@ -122,6 +126,8 @@ Om du inte kan ladda bilden i exemplet bör du ändra rättigheter för `cache`-
 # stå i me/portfolio
 chmod -R 777 cache
 ```
+
+Ett annat fel som kan uppstå är `[img.php] Extension gd is not loaded`. Leta reda på xampp's `php.ini`-fil och hitta raden `;extension=gd`. Där tar du bort `;` för att ladda in `gd`.
 
 
 

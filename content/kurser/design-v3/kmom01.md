@@ -78,8 +78,9 @@ Både tredje och fjärde utgåvan av boken fungerar, materialet är uppdaterat o
 ### Design med HTML5 och CSS3  {#guide}
 
 Läs igenom följande sektion i guiden "[Design med HTML5 och CSS3](guide/design-med-html5-och-css3)".
-    * [Grunderna](guide/design-med-html5-och-css3/grunderna)
-    * [Responsivitet](guide/design-med-html5-och-css3/responsivitet)
+
+* [Grunderna](guide/design-med-html5-och-css3/grunderna)
+* [Responsivitet](guide/design-med-html5-och-css3/responsivitet)
 
 I guiden tittar vi på hur vi kan använda CSS tillsammans med HTML för att implementera designprinciper. I sektionen [Grunderna](guide/design-med-html5-och-css3/grunderna) tittar vi på grundläggande struktur för HTML och på vilka sätt vi kan applicera styling med CSS. I [Responsivitet](guide/design-med-html5-och-css3/responsivitet) tittar vi på hur vi med hjälp av media queries kan anpassa en webbplats för både stora och små enheter.
 

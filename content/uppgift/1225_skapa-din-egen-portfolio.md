@@ -98,6 +98,8 @@ Så behöver du uppdatera rättigheterna på cache-mappen med hjälp utav:
 chmod -R 777 cache/*
 ```
 
+Ett annat fel som kan uppstå är `[img.php] Extension gd is not loaded`. Leta reda på xampp's `php.ini`-fil och hitta raden `;extension=gd`. Där tar du bort `;` för att ladda in `gd`.
+
 
 
 ### Git {#git}

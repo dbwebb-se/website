@@ -235,7 +235,7 @@ Redirect /js /kurser/js-v2
 Redirect /kurser/js /kurser/js-v2
 Redirect /kurser/js/repo /repo/js-v2
 Redirect /kurser/js-v2/studieplan https://docs.google.com/spreadsheets/d/1KHr4gPB5vw7p_IGj9WurhX9VCFfkSYWSEn3TAc2mrX0/edit?usp=sharing
-Redirect /kurser/js-v2/lektionsplan https://docs.google.com/spreadsheets/d/1imYYala19Uo7K3oAWkdE1UjRPsvyJZ1j2-9mql3wmrg/edit?usp=sharing
+Redirect /kurser/js-v2/lektionsplan https://docs.google.com/spreadsheets/d/168ZAUcTz2FYO674LrJPtFHGjQOxfAJqk0MyYN06ska8/edit?usp=sharing
 
 # design
 

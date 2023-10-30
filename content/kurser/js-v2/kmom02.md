@@ -54,7 +54,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Me page 2](https://github.com/dbwebb-se/js-v2/blob/master/components/02/assignment-2.md)". Spara resultatet i `me/public/`.
 
 <!-- TBD: Är jag färdig video -->
-[YOUTUBE src="" width=639 caption="Hur kan det se ut när det är klart"]
+[YOUTUBE src="UhKbRvKSScg" width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

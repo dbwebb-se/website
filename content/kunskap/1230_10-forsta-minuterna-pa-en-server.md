@@ -137,7 +137,7 @@ sudo ufw enable
 
 Vi vill inte hålla på att manuellt uppdatera vår server, men vi vill inte heller sakna en patch när de kommer så vi kommer använda oss av verktyget unattended-upgrades. Vi installerar med `sudo apt-get install unattended-upgrades`.
 
-Uppdatera filen `/etc/apt/apt.conf.d/10periodic` så den innehåller nedanstående.
+Uppdatera filen `/etc/apt/apt.conf.d/10periodic`, lägg till följande i slutet av filen.
 
 ```bash
 APT::Periodic::Update-Package-Lists "1";
@@ -146,7 +146,7 @@ APT::Periodic::AutocleanInterval "7";
 APT::Periodic::Unattended-Upgrade "1";
 ```
 
-Uppdatera även filen `/etc/apt/apt.conf.d/50unattended-upgrades` så den ser ut som nedan.
+Uppdatera även filen `/etc/apt/apt.conf.d/50unattended-upgrades`, lägg till följande i slutet av filen.
 
 ```bash
 Unattended-Upgrade::Allowed-Origins {

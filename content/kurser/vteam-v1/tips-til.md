@@ -14,92 +14,63 @@ Tips och TIL från föregående års studenter
 
 Tips från förra årets studenter.
 
-Var ärlig i vad du vill ha ut av kursen när du söker medlemmar till en grupp, våga fråga andra
+---
+
+* Var ärlig i vad du vill ha ut av kursen när du söker medlemmar till en grupp, våga fråga andra
 men våga också säga nej om det inte känns som att det kommer passa ditt sätt att jobba eller
 dina ambitioner
-▪ Börja skriva kod och sätt upp git/docker tidigt i processen, redan innan SDS:en är inlämnad
-▪ Om något i implementationen fungerar, låt det vara så, om ni får tid över så kan ni fixa till det
+* Börja skriva kod och sätt upp git/docker tidigt i processen, redan innan SDS:en är inlämnad
+* Om något i implementationen fungerar, låt det vara så, om ni får tid över så kan ni fixa till det
 i stället för att fastna i att göra det perfekt
-▪ Ha en positiv stämning på mötena och ha en öppen kommunikation kring det som går bra och
+* Ha en positiv stämning på mötena och ha en öppen kommunikation kring det som går bra och
 det som går mindre bra
-▪ Dela med dig av din kunskap till gruppmedlemmarna, alla har kunskap om olika saker och det
+* Dela med dig av din kunskap till gruppmedlemmarna, alla har kunskap om olika saker och det
 är värdefullt
 
-Min viktigaste TIL för hela projektet är att kunna lite på att processen kommer ta oss framåt,
-det går inte att ha kontroll på allting när man jobbar i en grupp och det är lärorikt, lite läskigt
-ibland men mest av allt häftigt att alla små delar kan bli en så pass bra produkt i slutändan.
+Min viktigaste TIL för hela projektet är att kunna lite på att processen kommer ta oss framåt, det går inte att ha kontroll på allting när man jobbar i en grupp och det är lärorikt, lite läskigt ibland men mest av allt häftigt att alla små delar kan bli en så pass bra produkt i slutändan.
 
 ---
 
-Börja i god tid. saker och ting tar längre tid än vad man tror.
-Kommunicera väl med varandra, det gör det väldigt mycket enklare att se till att alla är i fas och att arbetet flyter på som planerat
-Planering, planering, och lite ytterligare planering är väldigt viktigt. Det kan i början kanske kännas lite överflödigt att behöva planera så mycket utan att koda, men planeringen har verkligen varit ett oerhört viktigt stöd i utvecklingsfasen.
-Tänk efter innan man implementerar något, finns det bättre sätt att göra det på?
-Arbeta med god kodstruktur, desto mer man implementerar desto större blir projektet och svårare att underhålla. 
+* Börja i god tid. saker och ting tar längre tid än vad man tror.
+* Kommunicera väl med varandra, det gör det väldigt mycket enklare att se till att alla är i fas och att arbetet flyter på som planerat
+* Planering, planering, och lite ytterligare planering är väldigt viktigt. Det kan i början kanske kännas lite överflödigt att behöva planera så mycket utan att koda, men planeringen har verkligen varit ett oerhört viktigt stöd i utvecklingsfasen.
+* Tänk efter innan man implementerar något, finns det bättre sätt att göra det på?
+* Arbeta med god kodstruktur, desto mer man implementerar desto större blir projektet och svårare att underhålla. 
  
+Min viktigaste TIL för denna kurs är att man kan aldrig börja i god tid nog, saker tar alltid längre tid än man förväntar sig och stöter man på ett oväntat problem kan det helt plötsligt göra ens situation mycket mera stressad. Det gör även som jag nämnt innan att man inte alltid kan ta tiden som krävs för att skapa den bästa implementationen, utan fokus får läggas på att bara koda något som fungerar. Detta har inte varit något som har påverkat min del av projektet i någon större uträckning, men man önskar alltid att man hade haft mer tid för att göra saker ännu bättre. I sin helhet måste jag säga att jag är oerhört nöjd med vårt projekt och vad vi har lyckats leverera, och hade gärna arbetat med samma grupp igen i framtiden.
 
-Min viktigaste TIL för denna kurs är att man kan aldrig börja i god tid nog, saker tar alltid längre tid än man förväntar sig och stöter man på ett oväntat problem kan det helt plötsligt göra ens situation mycket mera stressad. Det gör även som jag nämnt innan att man inte alltid kan ta tiden som krävs för att skapa den bästa implementationen, utan fokus får läggas på att bara koda något som fungerar. Detta har inte varit något som har påverkat min del av projektet i någon större uträckning, men man önskar alltid att man hade haft mer tid för att göra saker ännu bättre. I sin helhet måste jag säga att jag är oerhört nöjd med vårt projekt och vad vi har lyckats leverera, och hade gärna arbetat med samma grupp igen i framtiden. Avslutningsvis så måste det sägas att det har varit en oerhört rolig kurs, och det har känts väldigt givande att få arbeta mer “på riktigt” som ett team med ett gemensamt mål.
+Avslutningsvis så måste det sägas att det har varit en oerhört rolig kurs, och det har känts väldigt givande att få arbeta mer “på riktigt” som ett team med ett gemensamt mål.
 
 ---
 
-Inse värdet av er SDS, ju bättre SDS ju bättre produkt. Ta vara på de 4 första veckorna så känns de sista 6 som 12.
-Skapa en god utvecklingsmiljö som gör det enkelt att kommunicera, planera och publicera kod.
-Gör en tydlig skillnad mellan vad kraven faktiskt är och vilka interna extra-krav ni som grupp kan sätta upp själva, lös alla baskrav först.
-Forska! Sök ständigt efter nya tekniker som skulle kunna lösa problem eller förbättra er produkt, med en tydlig formulering så går det att hitta ett paket för varje problem vi kan tänkas ha.
-Arbetsklimat är allt. Låt alla komma till tals och vara ärliga, har vi inte kul kan vi lika väl strunta i det.
- 
-
-Avslutande ord
-
- 
-
-Jag är väldigt tacksam för denna kurs då den verkligen har vidgat min vy över hur ett grupparbete kan vara, jäklar vad jag är stolt över oss alla. Jag har haft riktigt kul samtidigt som jag lärt mig mycket om programmering och mycket om mig själv.
-
- 
+* Inse värdet av er SDS, ju bättre SDS ju bättre produkt. Ta vara på de 4 första veckorna så känns de sista 6 som 12.
+* Skapa en god utvecklingsmiljö som gör det enkelt att kommunicera, planera och publicera kod.
+* Gör en tydlig skillnad mellan vad kraven faktiskt är och vilka interna extra-krav ni som grupp kan sätta upp själva, lös alla baskrav först.
+* Forska! Sök ständigt efter nya tekniker som skulle kunna lösa problem eller förbättra er produkt, med en tydlig formulering så går det att hitta ett paket för varje problem vi kan tänkas ha.
+* Arbetsklimat är allt. Låt alla komma till tals och vara ärliga, har vi inte kul kan vi lika väl strunta i det.
 
 Att sammanfatta kursen i en TIL skulle vara att jag har lärt mig att fungera i en grupp och bidra till att skapa en så god gruppdynamik som möjligt. Jag har lärt mig mer än vad jag någonsin kunde tänka mig när det kommer till webbutveckling men jag vill verkligen lägga fokus på att lyfta hur gruppen har varit.
 
- 
-
-vTeam är en kurs som binder samman allt vi lärt oss hittills i programmet och lär oss att kombinera våra kunskaper föra att kunna skapa en enastående produkt.
+Avslutande ord. Jag är väldigt tacksam för denna kurs då den verkligen har vidgat min vy över hur ett grupparbete kan vara, jäklar vad jag är stolt över oss alla. Jag har haft riktigt kul samtidigt som jag lärt mig mycket om programmering och mycket om mig själv. vTeam är en kurs som binder samman allt vi lärt oss hittills i programmet och lär oss att kombinera våra kunskaper föra att kunna skapa en enastående produkt.
 
 ---
 
-Sätt upp en docker- och githubmiljö (om det nu ska användas) så fort som
-möjligt så man ser att det fungerar. Därefter kan man börja koda.
-- Våga be om hjälp om man fastnar någonstans så det inte tar upp onödig tid.
-- Det går inte att vara perfektionist, då kommer projektet aldrig bli färdigt då
-det alltid finns saker som kan bli bättre
-- Bra kommunikation i gruppen är A och O för att kunna lyckas med projektet.
-- Tänk på att det ska vara kul. Det är ingen idé att koda om det inte känns roligt
-och blir för mycket. Ta paus när du behöver och gå ifrån datorn ibland. (Detta
-har varit vårt motto under projektet, även om just det med paus har varit lite
-extra svårt att hålla fast vid).
+* Sätt upp en docker- och githubmiljö (om det nu ska användas) så fort som möjligt så man ser att det fungerar. Därefter kan man börja koda.
+* Våga be om hjälp om man fastnar någonstans så det inte tar upp onödig tid.
+* Det går inte att vara perfektionist, då kommer projektet aldrig bli färdigt då det alltid finns saker som kan bli bättre
+* Bra kommunikation i gruppen är A och O för att kunna lyckas med projektet.
+* Tänk på att det ska vara kul. Det är ingen idé att koda om det inte känns roligt och blir för mycket. Ta paus när du behöver och gå ifrån datorn ibland. (Detta
+har varit vårt motto under projektet, även om just det med paus har varit lite extra svårt att hålla fast vid).
 
-5. Mitt viktigaste TIL för denna kurs har varit att programmera i grupp. Som sagt har jag
-inte varit van med det alls sedan tidigare och därav har jag lärt mig oerhört mycket
-nytt från mina gruppmedlemmar. Med tanke på att jag inte ens hade kollat på någon
-kod över huvud taget innan jag började denna utbildning känner jag att jag kommer
-väldigt långt i min utveckling och med hjälp av denna kurs har jag fått en rejäl skjuts
-framåt i utvecklingen så jag känner att jag är ett steg närmare att klara av arbetslivets
-utmaningar.
+Mitt viktigaste TIL för denna kurs har varit att programmera i grupp. Som sagt har jag inte varit van med det alls sedan tidigare och därav har jag lärt mig oerhört mycket nytt från mina gruppmedlemmar. Med tanke på att jag inte ens hade kollat på någon kod över huvud taget innan jag började denna utbildning känner jag att jag kommer väldigt långt i min utveckling och med hjälp av denna kurs har jag fått en rejäl skjuts framåt i utvecklingen så jag känner att jag är ett steg närmare att klara av arbetslivets utmaningar.
 
 ---
 
-Håll det enkelt I design fasen. Det är lätt att ryckas med I alla flashiga features och verktyg man kan använda, men glöm inte att det ska implementeras med. 
- 
-
-Var inte blyga för att prova att skriva en teknisk studie för ett problem gruppen ställs inför. Det hjälper andra men framför allt kommer det hjälpa er själva med att förstå och hitta den bästa lösningen på problemen just ni har. 
- 
-
-Försök att få igång Docker miljön så tidigt som möjligt- det är lätt att skjuta på detta, men gör inte det. Docker ASAP! 
- 
-
-Lägg lite extra tid när implementations-fasen börjar med att få hela gruppen att förstå och jobba med Git. Merge-conflicts kommer att ske men det finns vägar att gå för att minimera dom. Försök hitta det sätt som passar gruppen bäst. 
- 
-
-Vi är alla här för att lära och ingen av oss kan allt, så använd gruppens sammanslagna kunskaper som ett verktyg och var inte rädd för säga att det är något du inte förstår. Sannolikheten att någon annan I gruppen kan hjälpa är stor, och nästa gång är det kanske du som hjälper en annan gruppmedlem att förstå. - #hivemind 
-
+* Håll det enkelt I design fasen. Det är lätt att ryckas med I alla flashiga features och verktyg man kan använda, men glöm inte att det ska implementeras med. 
+* Var inte blyga för att prova att skriva en teknisk studie för ett problem gruppen ställs inför. Det hjälper andra men framför allt kommer det hjälpa er själva med att förstå och hitta den bästa lösningen på problemen just ni har. 
+* Försök att få igång Docker miljön så tidigt som möjligt- det är lätt att skjuta på detta, men gör inte det. Docker ASAP! 
+* Lägg lite extra tid när implementations-fasen börjar med att få hela gruppen att förstå och jobba med Git. Merge-conflicts kommer att ske men det finns vägar att gå för att minimera dom. Försök hitta det sätt som passar gruppen bäst. 
+* Vi är alla här för att lära och ingen av oss kan allt, så använd gruppens sammanslagna kunskaper som ett verktyg och var inte rädd för säga att det är något du inte förstår. Sannolikheten att någon annan I gruppen kan hjälpa är stor, och nästa gång är det kanske du som hjälper en annan gruppmedlem att förstå. - #hivemind 
 
 Den viktigaste lärdomen jag tar med mig från denna kursen är nog att det blev ganska så tydligt att komplexiteten inte ökar linjärt med antal features, utan snarare exponentiellt, där en liten ogenomtänkt ändring/tillägg kan verka ok men egentligen kräver ändringar I en kedja genom hela systemet. Bra och grundliga tester kan hjälpa att hitta dessa fel tidigt, men när tid saknas så är det tyvärr lätt att det är just tester det tummas på.  
 
@@ -107,93 +78,59 @@ Detta är nog också min TIL att helt enkelt försöka tänka på tester inte ba
 
 ---
 
-Prestigelös och saklig kommunikation
-- Förmåga att bryta ner komplexa problem
-- Att kommununicera med lagom avancerade ord som alla kan förstå
-- Arbetsfördelning
-- Delaktighet
-- Hålla sig till planeringen (mestadels)
-Utöver dessa punkter vill jag tipsa nästa års studenter som hamnar i liknande
-gruppdynamik att:
-- Vara ärlig mot dig själv och andra i gruppen
-- Sätta gränser när man känner att det blir för mycket press
-- Sikta lite lägre än vad man tror då saker och ting tenderar att ta mer tid än tänkt
-- Försöka att inte jämföra dig för mycket i hur andra presterar
-- Ha mer fokus på arbetsglädje än på betyg
+* Prestigelös och saklig kommunikation
+* Förmåga att bryta ner komplexa problem
+* Att kommununicera med lagom avancerade ord som alla kan förstå
+* Arbetsfördelning
+* Delaktighet
+* Hålla sig till planeringen (mestadels)
 
-
----
-
-Se till att börja implementera prototyper rätt tidigt
-● Få upp ett arbetsflöde som fungerar för samtliga i gruppen
-● För samtal i någon grupp-chatt dagligen
-● Fråga om hjälp och var ärlig med vad du klarar av
-● Linta från starten så behöver ni inte rätta över 1000 fel på samma gång
-TIL FÖR KURSEN
-Det största är nog att man inte alltid vet bäst själv, jag var rätt kritisk till rabbitMQ-delen i
-början mest för att jag var orolig över att det var en helt ny teknik men det har ju lönat sig
-och kanske till och med gett mig en ingång hos ett företag som jobbar med just den
-tekniken.
-Ibland gäller det bara att våga ta risker!
+Utöver dessa punkter vill jag tipsa nästa års studenter som hamnar i liknande gruppdynamik att:
+* Vara ärlig mot dig själv och andra i gruppen
+* Sätta gränser när man känner att det blir för mycket press
+* Sikta lite lägre än vad man tror då saker och ting tenderar att ta mer tid än tänkt
+* Försöka att inte jämföra dig för mycket i hur andra presterar
+* Ha mer fokus på arbetsglädje än på betyg
 
 ---
 
-Mitt första tips för kommande kursdeltagare är att ha klart för dig vad du vill uppnå i ett grupparbete. Har du gått distansprogrammet och kanske inte varit så social, så är nu din chans. Att hitta personer med samma ambitionsnivå som dig själv, kommer göra att kursen blir väldigt givande och rolig.
+* Se till att börja implementera prototyper rätt tidigt
+* Få upp ett arbetsflöde som fungerar för samtliga i gruppen
+* För samtal i någon grupp-chatt dagligen
+* Fråga om hjälp och var ärlig med vad du klarar av
+* Linta från starten så behöver ni inte rätta över 1000 fel på samma gång
 
-Mitt andra tips är försöka att hålla det så enkelt som möjligt, visst skall man ha SDS och arkitektur i åtanke, men har du inte kodat så mycket innan så gå alltid tillbaka till DRY och KISS. Ibland behöver man bara få det hårdkodat och fungerande. Sedan är det mycket lättare att ta små steg för att det skall bli mer dynamiskt.
+Det största TIL är nog att man inte alltid vet bäst själv, jag var rätt kritisk till rabbitMQ-delen i början mest för att jag var orolig över att det var en helt ny teknik men det har ju lönat sig och kanske till och med gett mig en ingång hos ett företag som jobbar med just den tekniken. Ibland gäller det bara att våga ta risker!
 
-Tredje tips är att tänka på kommunikationen. Att känna att man inte förstår eller sitter fast med något, är saker som vi alla hanterar olika. Din styrka kanske kan va någon annans svaghet. Så se till att ha en bra och öppen dialog i gruppen.
+---
 
-Fjärde tips är att ha du inte tagit tag i git än, så skulle jag rekommendera dig att lägga lite tid på det medans man jobbar på SDSen. Ju mer projektet växer, desto lättare är det om du kan förstå hur man jobbar med git i en grupp.
-
-Femte och sista tipset, är nog att inte glömma bort att ha roligt. Kan bli lätt att glömma när man fastnar med något.
+* Mitt första tips för kommande kursdeltagare är att ha klart för dig vad du vill uppnå i ett grupparbete. Har du gått distansprogrammet och kanske inte varit så social, så är nu din chans. Att hitta personer med samma ambitionsnivå som dig själv, kommer göra att kursen blir väldigt givande och rolig.
+* Mitt andra tips är försöka att hålla det så enkelt som möjligt, visst skall man ha SDS och arkitektur i åtanke, men har du inte kodat så mycket innan så gå alltid tillbaka till DRY och KISS. Ibland behöver man bara få det hårdkodat och fungerande. Sedan är det mycket lättare att ta små steg för att det skall bli mer dynamiskt.
+* Tredje tips är att tänka på kommunikationen. Att känna att man inte förstår eller sitter fast med något, är saker som vi alla hanterar olika. Din styrka kanske kan va någon annans svaghet. Så se till att ha en bra och öppen dialog i gruppen.
+* Fjärde tips är att ha du inte tagit tag i git än, så skulle jag rekommendera dig att lägga lite tid på det medans man jobbar på SDSen. Ju mer projektet växer, desto lättare är det om du kan förstå hur man jobbar med git i en grupp.
+* Femte och sista tipset, är nog att inte glömma bort att ha roligt. Kan bli lätt att glömma när man fastnar med något.
 
 Min TIL för hela kursen, är att jag kunnat uppnå en hel del saker, som jag inte hade kunnat för ett par månader sedan. Så otroligt kul att inse hur långt man har kommit.
 
 ---
 
-Se till att skaffa dig en förståelse för dina gruppmedlemmars situation - det gör att
-samarbetet kommer fungera bättre
-● Implementationsfasen är kort för denna typ av system - sätt igång direkt och slappna
-inte av i början (även om du inte slappnar av så kommer du förmodligen få jobba hårt
-för att få det här klart)
-● Tydliggör och kom överens om gränssnitten för data som skickas mellan systemets
-delar tidigt
-● Optimera inte för mycket i förtid, det är nödvändigt att pröva sig fram när man är ny
-men försök komma till snabba beslut kring tekniker och lösningar för att spara tid
-● Ta ansvar för helheten - någon måste göra det (helst ska alla göra det och då måste
-ju även du göra det)
-Min viktigaste TIL
-Jag väljer att lyfta det som jag har tryckt på ovan, men kanske i något annorlunda form. Jag
-har lärt mig att det är viktigt att hitta balans mellan att göra bästa tänkbara lösning och att
-hinna gå i mål. I slutändan blir nog en kund gladare över att ha en vante än världens bästa
-“tumhätta””. Optimering är bra, att skriva snygg och lättunderhållen kod är bra men till
-syvende och sist är ett system som levererar det som förväntas ändå det bästa.
+* Se till att skaffa dig en förståelse för dina gruppmedlemmars situation - det gör att samarbetet kommer fungera bättre
+* Implementationsfasen är kort för denna typ av system - sätt igång direkt och slappna inte av i början (även om du inte slappnar av så kommer du förmodligen få jobba hårt för att få det här klart)
+* Tydliggör och kom överens om gränssnitten för data som skickas mellan systemets delar tidigt
+* Optimera inte för mycket i förtid, det är nödvändigt att pröva sig fram när man är ny men försök komma till snabba beslut kring tekniker och lösningar för att spara tid
+* Ta ansvar för helheten - någon måste göra det (helst ska alla göra det och då måste ju även du göra det)
+
+Min viktigaste TIL. Jag väljer att lyfta det som jag har tryckt på ovan, men kanske i något annorlunda form. Jag har lärt mig att det är viktigt att hitta balans mellan att göra bästa tänkbara lösning och att hinna gå i mål. I slutändan blir nog en kund gladare över att ha en vante än världens bästa “tumhätta””. Optimering är bra, att skriva snygg och lättunderhållen kod är bra men till syvende och sist är ett system som levererar det som förväntas ändå det bästa.
 
 ---
 
-Försök hitta en grupp där alla har liknande ambitioner och förutsättningar. Om vissa i
-gruppen tänker sig att produkten ska bli exceptionell, medan andra har svårt att hitta tid,
-kan det nog uppstå gnissel.
-- Arbeta ordentligt med testdriven utveckling, kodkvalitet och dokumentation från dag ett,
-även om det är lite trist. Det gör processen mindre rörig och mer givande senare, och man
-slipper många huvudvärkar längs vägen.
-- Ta chansen att pröva nya teknologier – det är ett stort projekt men ändå inte helt ”på
-riktigt”, så det är en särskild chans att lära sig nya saker och att inte bara köra på det som
-känns enklast.
-- Var övertydlig och frekvent i kommunikation med gruppen. Berätta gärna (i Discord?) om
-vad du sysslar med och vad du tänker, även om det inte har någon omedelbar leverans. Det
-hjälper dig och alla andra att få en tydligare uppfattning om systemet som helhet och om de
-parallella utvecklingsprocesser som pågår.
-- Få alla delar av systemet på plats så snabbt som möjligt, i sin mest grundläggande form. Det
-gör det resterande arbetet betydligt mer överskådligt och tryggt.
-Avsluta med din viktigaste TIL för hela kursen.
-Något jag nog visste i teorin men som jag nu har lärt mig i praktiken är hur mycket av tiden i ett stort
-programmeringsprojekt som går åt till planering, kommunikation och samarbete - snarare än att
-skriva kod. Att skriva kod som ska fungera ihop med en annans persons kod är en helt annan femma
-än att sitta med ett eget projekt. Att tolka krav, göra prioriteringar och att komma överens om
-designval är även det något som kan kräva långa diskussioner. I slutändan så är det dock också
-roligare att ta sig an en uppgift tillsammans med andra!
+* Försök hitta en grupp där alla har liknande ambitioner och förutsättningar. Om vissa i gruppen tänker sig att produkten ska bli exceptionell, medan andra har svårt att hitta tid, kan det nog uppstå gnissel.
+* Arbeta ordentligt med testdriven utveckling, kodkvalitet och dokumentation från dag ett, även om det är lite trist. Det gör processen mindre rörig och mer givande senare, och man slipper många huvudvärkar längs vägen.
+* Ta chansen att pröva nya teknologier – det är ett stort projekt men ändå inte helt ”på riktigt”, så det är en särskild chans att lära sig nya saker och att inte bara köra på det som känns enklast.
+* Var övertydlig och frekvent i kommunikation med gruppen. Berätta gärna (i Discord?) om vad du sysslar med och vad du tänker, även om det inte har någon omedelbar leverans. Det hjälper dig och alla andra att få en tydligare uppfattning om systemet som helhet och om de parallella utvecklingsprocesser som pågår.
+* Få alla delar av systemet på plats så snabbt som möjligt, i sin mest grundläggande form. Det gör det resterande arbetet betydligt mer överskådligt och tryggt.
+
+TIL. Något jag nog visste i teorin men som jag nu har lärt mig i praktiken är hur mycket av tiden i ett stort programmeringsprojekt som går åt till planering, kommunikation och samarbete - snarare än att skriva kod. Att skriva kod som ska fungera ihop med en annans persons kod är en helt annan femma än att sitta med ett eget projekt. Att tolka krav, göra prioriteringar och att komma överens om designval är även det något som kan kräva långa diskussioner. I slutändan så är det dock också roligare att ta sig an en uppgift tillsammans med andra!
 
 ---
 

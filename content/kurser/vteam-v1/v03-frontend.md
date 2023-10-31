@@ -34,6 +34,45 @@ CHANGE
 
 -->
 
+Projekt {#proj}
+-------------------------
+
+
+
+
+Föreläsning {#flas}
+-------------------------
+
+Följande är föreläsningsmaterial som hanteras under veckan.
+
+1. [System Design Specification (SDS)](./../forelasning/sds) berättar om systemarkitekturer och hur man med olika verktyg, bilder och texter kan analysera ett system och visualisera och berätta för sin omgivning hur systemet är tänkt att fungera och byggas.
+
+
+
+Uppgifter {#uppgift}
+-------------------------
+
+* Fortsätt jobba uppgiften SDS:en.
+* Tekniska rapporter
+
+
+
+Team {#team}
+-------------------------
+
+
+
+Torsdag standup
+-----------------------
+
+Denna veckan fokuserar vi på:
+
+1. XXX
+
+
+
+
+
 Jobba med SDS. Fokus på klientsidan av projektet.
 
 **Presentation & Seminarie**

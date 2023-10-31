@@ -20,52 +20,84 @@ Innan veckan är slut skall alla finnas i en grupp.
 
 
 
-### Assignment
+Kursintro {#intro}
+-------------------------
+
+Vi går igenom kursens formalia, upplägg och fokus.
+
+
+
+Projekt {#proj}
+-------------------------
+
+Vi tittar på de viktiga grunddokumenten i projektet, vi börjar med bakgrundsanalysen/domänbeskrivningen och vi går snabbt igenom kravspecifikationen. 
+
+Vi tittar även på tips och trix som kan vara bra att veta om samt de tekniska rapporter som finns från föregående års studenter.
+
+
+
+Föreläsning {#flas}
+-------------------------
+
+Följande är föreläsningsmaterial som hanteras under veckan.
+
+1. [System Design Specification (SDS)](./../forelasning/sds) berättar om systemarkitekturer och hur man med olika verktyg, bilder och texter kan analysera ett system och visualisera och berätta för sin omgivning hur systemet är tänkt att fungera och byggas.
+
+Studera följande.
+
+1. [Software architecture patterns - Take a deep dive into several common software architecture patterns](https://www.oreilly.com/content/software-architecture-patterns/). Läs artikel om 5 vanliga designmönster för arkitektur.
+
+1. [The Big Ball of Mud and Other Architectural Disasters](https://blog.codinghorror.com/the-big-ball-of-mud-and-other-architectural-disasters/). Läs artikeln om vad som händer när arkitekturen blir fel.
+
+
+
+Uppgifter {#uppgift}
+-------------------------
 
 * Börja jobba med [uppgiften SDS:en](./../assignment/system-design-specification).
 
-<!--stop-->
-
-<!--
-TODO 
-
-* Kursintroduktion och genomgång av domänen och kravspecen, använd materialet på Canvas och dbebb.
-* Presentation av systemarkitekturer.
-* Genomgång av uppgiften SDS.
-* Gör en template till SDS:en?
-
-* Frågor till referensgruppen från studenterna.
--->
 
 
-**Presentation**
+Team {#team}
+-------------------------
 
-* [System Design Specification (SDS) (slides)](https://dbwebb-se.github.io/pattern/lecture/L01-system-design-specification/slide.html)
+Är alla indelade i ett team? Annars löses det under första träffen.
 
-**Material**
+Ni bör ha ett första möte i ert team där ni pratar med varandra så alla får berätta lite om sig själva och sin ambition i kursen. Låt alla berätta vad de är duktiga på. Lyssna.
 
-Följande material är viktiga styrdokument att sätta sig in i.
+Bestäm hur ni skall ha era träffar i teamet, hur skall ni kommunicera löpande så att ni inte tappar varandra och alltid är synkade?
 
-1. "[Elsparkcyklar bakgrundsanalys](https://drive.google.com/file/d/19qRnYcCYRRba3ePd5fbuxtMf3B04qmfs/view?usp=sharing)"
-1. [Kravspecifikation](https://docs.google.com/document/d/1zWksQNmkXJgM7Q66k3-mgcxrexO6eF9xqd0Z632BwlU/edit?usp=sharing)
-1. [Tips, trix och förtydliganden](./../tips-trix-och-fortydliganden)
+Behöver ert team ha någon som har en ledande roll, någon som är sammankallande?
 
-**Resurser**
+Bestäm vad ni gör till nästa vecka, så att alla har uppgifter att utföra. Börja nästa möte med en avstämning så alla får berätta vad de gjort och hur långt de kommit.
 
-Följande läsresurser är relevanta denna veckan.
+Studera följande.
 
-Rörande arkitektur.
-
-1. [Software architecture patterns - Take a deep dive into several common software architecture patterns](https://www.oreilly.com/content/software-architecture-patterns/)
-    1. [The top 5 software architecture patterns: How to make the right choice (shorter article on the same matter)](https://techbeacon.com/app-dev-testing/top-5-software-architecture-patterns-how-make-right-choice)
-1. [The Big Ball of Mud and Other Architectural Disasters](https://blog.codinghorror.com/the-big-ball-of-mud-and-other-architectural-disasters/)
-    1. [Big Ball of Mud (original paper)](http://www.laputan.org/mud/mud.html)
-    1. [Why Software Becomes a Big Ball of Mud (yet another (short) article on the matter)](https://pressupinc.com/blog/2015/04/why-software-becomes-a-big-ball-of-mud/)
-1. [What UML diagram should I use to show a platform's architecture? (TLDR; "make it look good")](https://softwareengineering.stackexchange.com/questions/198178/what-uml-diagram-should-i-use-to-show-a-platforms-architecture)
-1. Paper "[Architectural Blueprints—The 4+1 View Model of Software Architecture](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)" showing examples on how to draw 4+1 architecture blueprints.
-
-Rörande arbetsmetoder.
-
-1. [Vad är ett stand-up meeting?](https://en.wikipedia.org/wiki/Stand-up_meeting) Vilka frågor känns relevanta att svara på ett stand-up?
 1. [Vilken är din roll i gruppen?](https://www.youtube.com/watch?v=7KSCvPwNrzE&list=PLKtP9l5q3ce9BUGisXHdP8dueMoaXyQ71) Emil lyfter frågan om hur en grupp organiserar sig och vilken roll man tar på sig.
 
+
+
+Torsdag standup
+-----------------------
+
+Varje torsdag har vi standup möten, läs om hur vi genomför [torsdagens standup](kurser/vteam-v1/assignment/virtuell-stand-up).
+
+Denna veckan har vi fokus på:
+
+1. Var är nu absolut viktigast för att komma igång på bästa sätt?
+
+    * Git
+    * GitHub
+        * Actions
+        * Project
+    * Docker
+    * Mall till SDS
+
+2. Tips från förra årets studenter (vad skrev de i sina slutrapporter)?
+
+3. Planering, hur kan vi övergripande göra en enklare tidplanering för projektet?
+
+<!--
+* [Dokument för 2023](https://docs.google.com/document/d/1pDRVOwz0e58zwFZJsefQCCb79ZWnzvkl6mLTrQWn2QM/edit?usp=sharing)
+* [Dokument från 2022](https://docs.google.com/document/d/1F2yxBIUW2sR_IkPK5iJsrhvEuSGX_W2mci9X5hVqVAM/edit?usp=sharing)
+-->

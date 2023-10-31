@@ -35,7 +35,7 @@ Youtube spellista 2022 https://www.youtube.com/playlist?list=PLKtP9l5q3ce_wXroqb
 
 #### Uppgifter
 
-**Gruppvis**
+**Grupp**
 
 1. [Virtuell Stand-up](kurser/vteam-v1/assignment/virtuell-stand-up)
 1. [System Design Specification (SDS)](kurser/vteam-v1/assignment/system-design-specification)
@@ -43,7 +43,7 @@ Youtube spellista 2022 https://www.youtube.com/playlist?list=PLKtP9l5q3ce_wXroqb
 1. [Teknikval för implementation](kurser/vteam-v1/assignment/technical-implementation)
 1. [Leverans](kurser/vteam-v1/assignment/delivery)
 
-**Individuella**
+**Individuell**
 
 1. [Snygg kod](kurser/vteam-v1/assignment/good-and-clean-code)
 1. [Individuell rapport](kurser/vteam-v1/assignment/individual-report)

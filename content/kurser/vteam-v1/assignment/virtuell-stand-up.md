@@ -17,7 +17,8 @@ Inför varje torsdagsträff har vi en virtuell "stand up" i Discord där varje g
 Så här fungerar den virtuella stand-up:en.
 
 
-Torsdags stand-up
+
+Torsdags stand-up {#1}
 -------------------------
 
 Inför varje torsdagsträff har vi en virtuell "stand up" i Discord där varje grupp (innan kl 13:00) berättar status på arbetet. Utse en i gruppen som är ansvarig (eller dela ansvaret...?) till att varje torsdag fylla i statusen i Discord. Se också till att gruppen alltid finns representerad av minst en person på måndags och torsdagsträffarna. I standup-tråden kan ni även skriva frågor som ni vill ha besvarande under torsdagens avstämning.
@@ -30,7 +31,7 @@ Inför torsdagen är det följande frågor som skall besvaras (med kort-korta sv
 
 
 
-Resurser
+Resurser {#2}
 -------------------------
 
 1. Läs allmänt om syftet med korta "standups" möten på [Wiki om Stand-up meeting](https://en.wikipedia.org/wiki/Stand-up_meeting).

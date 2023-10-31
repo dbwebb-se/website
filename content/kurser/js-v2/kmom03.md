@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2023-10-31": (C, lew) Uppdaterad inför ht23.
   "2022-11-09": (B, lew) Uppdaterad inför ht22.
   "2021-06-03": (A, lew) Ny version inför ht21.
 ...
@@ -25,25 +26,31 @@ Läs följande (översiktligt):
 
 1. [Intro till DOM på mdn](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
+### Video {#video}
+
+Det finns en uppsättning videor som är kopplade till uppgiften. 
+Kika på videor om DOM och Events i spellistan [Kom igång med js](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c).
+
+
+
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 
 _(ca: 12-16 studietimmar)_
+
 
 ### Övningar {#ovningar}
 
 Genomför övningarna för att träna inför uppgifterna.
 
-1. Gå igenom [artiklarna i kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/articles/kmom03) för kursmoment 3.
+1. Gå igenom [artiklarna i kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/components/03) för kursmoment 3.
 
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Rainbow](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom03/01_rainbow.md)". Spara dina filer i `kmom03/`.
+1. Gör uppgiften "[Rainbow](https://github.com/dbwebb-se/js-v2/blob/master/components/03/assignment-1.md)". Du jobbar där i mappen `public/`.
 
-1. Gör uppgiften "[Me page](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom03/02_mepage3.md)". Spara resultatet i `me/redovisa/`.
-
-[YOUTUBE src=qN7otFlqlsw width=639 caption="Hur kan det se ut när det är klart"]
+<!-- [YOUTUBE src=qN7otFlqlsw width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 
@@ -58,19 +65,9 @@ $ dbwebb test kmom03
 Du lämnar in koden via dbwebbkommandot:
 
 ```console
-$ dbwebb publish kmom03
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
-_(ca: 1-2 studietimmar)_
-
-Läs [instruktionen om hur du skall redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-- Har du arbetat med HTML och CSS innan?
-- Känner du att du har koll på hur vi använder JavaScript för att manipulera DOM?
-- Vad tyckte du om de olika uppgifterna? Hur tänkte du när du utförde dem? Var de svåra eller lätta?
-- Vad är din TIL för det här kursmomentet?
+Se till så koden är publicerad. Lämna sedan in på Canvas efter du genomfört quizzet.

@@ -228,7 +228,7 @@ views:
                         data:
                             meta:
                                 type: content
-                                route: kurser/devops-v1/block-kurser-kmom
+                                route: kurser/devops-v2/block-kurser-kmom
                     column-3:
                         data:
                             meta:

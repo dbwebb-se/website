@@ -1,5 +1,5 @@
 ---
-title: devops (v1)
+title: devops (v2)
 author:
     - aar
     - mos
@@ -10,7 +10,7 @@ revision:
     "2019-04-16": "(B, aar) Uppdaterad inför V1."
     "2018-12-06": "(A, mos) Första revisionen efter kursens inrättande."
 ...
-Kursen devops (v1)
+Kursen devops (v2)
 ==================================
 
 Kursen **Kontinuerlig integration och driftsättning i molnet**, a.k.a. *devops*, lär ut hur man jobbar med utveckling och it-drift tillsammans genom att lära grunderna i att sätta upp och automatisera processer för kontinuerlig integration och driftsättning i en molnbaserad miljö.

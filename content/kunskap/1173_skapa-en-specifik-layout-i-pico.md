@@ -149,7 +149,7 @@ Det var det vi behövde göra i vår HTML, nu har jag en rätt bra grund för at
 [INFO]
 Ett tips är att använda sig utav Firefox när man utvecklar Grid. De har ett inbyggt system för att visualisera det via devtools (vilket är det ni kommer se i resterande del av guiden).
 
-[FIGURE src=image/design-v3/grid-devtools.png?nc caption="Ännu ett sätt devtools kan hjälpa oss"]
+[FIGURE src=image/design-v3/grid-devtools-v2.png caption="Ännu ett sätt devtools kan hjälpa oss"]
 
 [/INFO]
 
@@ -164,7 +164,7 @@ Jag börjar med att säga att jag vill använda grid på min `.landingpage` som 
 
 Vi kan testköra här och se vad som händer, `npm run style`.
 
-[FIGURE src=image/design-v3/grid-devtools.png?nc caption="Steg 1"]
+[FIGURE src=image/design-v3/grid-devtool-v2.png caption="Steg 1"]
 
 Ja det var ju inte så spännande. Men det kan vi lösa med några steg till. Jag börjar med att säga att min rubrik ska sträcka sig över 3 kolumner. Jag lägger även till `justify-self: center` för att centrera den i dessa tre kolumner.
 
@@ -177,7 +177,7 @@ Ja det var ju inte så spännande. Men det kan vi lösa med några steg till. Ja
 
 Vi testar igen och ser att resultatet redan nu ser ganska bra ut. Anledningen till att detta fungerar som det gör nedan är för att vi sätter vårt grid till tre i bredd (med hjälp utav `grid-column: span 3`). Standard så tar varje element i vårt grid upp en ruta, så vi får följande resultat:
 
-[FIGURE src=image/design-v3/grid-task-2.png?nc caption="Steg 2"]
+[FIGURE src=image/design-v3/grid-task-2-v2.png caption="Steg 2"]
 
 Sista saken jag tänkte visa i denna artikel, innan ni får köra själva, är ett sett att fixa spacingen i ett grid. Jag utökar min `.landingpage` klass:
 
@@ -190,7 +190,7 @@ Sista saken jag tänkte visa i denna artikel, innan ni får köra själva, är e
 
 Vilket lägger en 1em mellan alla delar i gridet. Det kan se ut såhär:
 
-[FIGURE src=image/design-v3/grid-task-3.png?nc caption"Steg 3"]
+[FIGURE src=image/design-v3/grid-task-3-v2.png caption"Steg 3"]
 
 
 

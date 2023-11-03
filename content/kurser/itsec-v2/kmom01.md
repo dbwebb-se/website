@@ -34,7 +34,6 @@ Labbmiljön  {#labbmiljo}
 
 I kursen tillkommer det inget nytt till labbmiljön, men studenten förväntas ha följande installerat:
 
-* PHP (tillsammans med Composer)
 * Node/npm
 * MySQL eller MariaDB
 

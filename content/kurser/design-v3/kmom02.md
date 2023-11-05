@@ -56,7 +56,7 @@ Läs följande:
     * [Typografi](guide/design-med-html5-och-css3/typografi)
     * [Responsivitet](guide/design-med-html5-och-css3/responsivitet) (repetition)
 
-I sektionen [Typografi](guide/design-med-html5-och-css3/grid-och-typografi) tittar vi främst på hur typografi kan skapa lättläst och anpassad typografi på en webbplats.
+I sektionen [Typografi](guide/design-med-html5-och-css3/typografi) tittar vi främst på hur typografi kan skapa lättläst och anpassad typografi på en webbplats.
 
 
 

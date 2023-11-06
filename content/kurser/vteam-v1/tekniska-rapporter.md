@@ -40,7 +40,7 @@ När du är klar så sprider du studien och gör dig redo för att eventuellt up
 
 Här följer tekniska studier (och liknande) som utfördes under 2023.
 
-* [Jämför snabbheten mellan olika operationer i mariadb eller mongodb](https://github.com/p0ntan/tec-db). Ett verktyg att testa olika datatyper och dess hastighet i olika databaser.
+1. [Jämför snabbheten mellan olika operationer i mariadb eller mongodb](https://github.com/p0ntan/tec-db). Ett verktyg att testa olika datatyper och dess hastighet i olika databaser.
 
 
 
@@ -51,7 +51,7 @@ Här följer tekniska studier (och liknande) som utfördes under 2022.
 
 1. [Teknisk studie RabbitMQ](https://github.com/blajban/vteam-rabbitmq) som meddelandehanterare, "message brokern".
 
-1. [Hur man använder github i ett Team](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/Technical%20analyses/github.md)
+1. [Hur man använder github i ett team](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/Technical%20analyses/github.md)
 
 1. [Teknisk studie om Load Balancers för REST API](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/Technical%20analyses/load-balancer.md)
 

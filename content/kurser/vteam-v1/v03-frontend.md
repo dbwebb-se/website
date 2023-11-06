@@ -61,6 +61,12 @@ Team {#team}
 -------------------------
 
 
+4. Vad innebär "högpresterande team" och vad är "bike shedding"?
+
+    * [High-performance teams](https://en.wikipedia.org/wiki/High-performance_teams)
+    * [Bike shedding / Law of triviality](https://en.wikipedia.org/wiki/Law_of_triviality)
+
+
 
 Torsdag standup
 -----------------------
@@ -113,6 +119,8 @@ Vi träffas och pratar som saker som hjälper oss framåt.
 
 1. "The Deadline: A Novel About Project Management" by TomDeMarco ISBN 0-932633-39-0. Populär och utbildande novell om projektledning av ett utvecklingsprojekt. Smått humoristisk och allvarlig om hur man kan få ett projekt i mål. Boken börjar med att projektledaren blir drogad och kidnappad och sätts i en position där ett lyckat projekt är samma sak som att behålla sin livhanke.
     * [Läs om boken](https://wiki.c2.com/?TheDeadline).
+
+
 
 
 

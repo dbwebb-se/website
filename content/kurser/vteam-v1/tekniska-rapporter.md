@@ -7,6 +7,7 @@ views:
             src: "image/vteam/logo.png"
 author: mos
 revision:
+    "2023-11-06": "(B, mos) Stycke om hur man gör studie."
     "2022-12-01": "(A, mos) Flyttad från tips o trix till eget dokument."
 ...
 Tekniska studier & rapporter
@@ -18,7 +19,22 @@ Här är några av de tekniska studier som förekommit under kursens historia.
 
 
 
-2023
+Hur gör jag en teknisk studie och rapport? {#hur}
+-----------------------
+
+Börja med att klura ut vad du vill undersöka och formulera de frågor du vill ha svar på. Använd det för att skapa en **Titel** och en **Introduktion** till din tekniska studie.
+
+Många studier kan dokumenteras i ett repo. Skapa gärna ett eget repo för din studie och använd filen `README.md` för att dokumentera den. När du är klar blir detta din "tekniska rapport".
+
+När du "skriver av dig" så kan du rikta dig till dina team-medlemmar och ditt fokus är att utbilda dem. Besvara de frågor du ställde inledningsvis och visa med bilder och kod hur du jobbar.
+
+En studie kan dokumenteras snabbt och lite slarvigt, den kan även dokumenteras prydligt med länkar och referenser. Välj det som lämpar sig bäst och fundera på hur mycket tid du har till att genomföra studien.
+
+När du är klar så sprider du studien och gör dig redo för att eventuellt uppdatera den, korrigera eller komplettera beroende på vilka kommentarer du får av läsarna.
+
+
+
+2023 {#2023}
 -----------------------
 
 Här följer tekniska studier (och liknande) som utfördes under 2023.
@@ -27,7 +43,7 @@ Här följer tekniska studier (och liknande) som utfördes under 2023.
 
 
 
-2022
+2022 {#2022}
 -----------------------
 
 Här följer tekniska studier (och liknande) som utfördes under 2022.
@@ -85,7 +101,7 @@ Coolt! Tack för tipset. Vi, eller snarare @John.Fredriksson, hittade denna http
 -->
 
 
-2021
+2021 {#2021}
 -----------------------
 
 Här följer ett par tekniska studier (och liknande) som utfördes under 2021.

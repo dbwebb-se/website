@@ -18,6 +18,13 @@ Kursen startar och projektet presenteras tillsammans med kursens upplägg. Kunde
 
 Innan veckan är slut skall alla finnas i en grupp.
 
+<!--
+TODO
+
+* Lägg till så man skapar en mall för SDS? Eller som en egen video som spelas in.
+
+-->
+
 
 
 Kursintro {#intro}

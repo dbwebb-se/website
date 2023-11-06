@@ -22,15 +22,19 @@ Jobba vidare med SDS för att bryta ned och förstå systemet och dess delar. De
 <!--
 TODO
 
-* Jobba igenom allt föreläsningsmaterial nedan. Gör slides så blir det enklare att genomföra presentationerna.
+* Jobba igenom allt föreläsningsmaterial nedan. Gör slides? så blir det enklare att genomföra presentationerna. Allt behöver jobbas igenom.
+* I nuläget hinns inte allt med på listan så man behöver kapa  och prioritera vad som sägs.
 
-* Visa notes från torsdagen
-* (Visa mallen för SDS)
+Lägg till som egna spellistor?
 
-Lägg till?
+Projektplanering
 * Hur bryter man ned kraven? (excel)
-* Hur planerar man upp ett projekt? GitHub Projects
-* Hur gör man en tidplan för projektet? (excel)
+* Hur gör man en tidplan för projektet (inledande fasen och hela)? (excel)
+
+Jobba med aktiviteter i Github
+1. Kan GitHub Projects vara ett sätt att hantera det som skall göras?
+1. Flytta [GitHub/GitLab workflow](./../forelasning/git-workflow), till en sådan spelista?
+1. Visa hur man gör PR med granskning innan merge.
 
 -->
 
@@ -45,9 +49,7 @@ Följande är föreläsningsmaterial som hanteras under veckan.
 
 1. [RESTful API](./../forelasning/rest-api), hur kan vi jobba med att designa ett REST API.
 
-1. [GitHub/GitLab workflow](./../forelasning/git-workflow), hur jobbar vi med ett arbetsflöde kring GitHub/GitLab när vi jobbar i grupp?
-
-1. Kan GitHub Projects vara ett sätt att hantera det som skall göras?
+1. [GitHub/GitLab workflow](./../forelasning/git-workflow), hur jobbar vi med ett arbetsflöde kring GitHub/GitLab när vi jobbar i grupp? 
 
 1. [Formande och utveckling av grupp](./../forelasning/grupp-utveckling), finns det något skrivet om de faser man går igenom när man etablerar en grupp?
 

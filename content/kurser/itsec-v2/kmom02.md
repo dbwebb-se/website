@@ -34,9 +34,9 @@ Föreläsningar & Seminarium {#forelasningar}
 
 Föreläsningar:
 
-* 10:15 (2023-11-06) H430, med Martin om introduktion till säkerhet del 2.
+* 10:15 (2023-11-07) H430, med Martin om introduktion till säkerhet del 2.
 
-* <strong>NY TID 10:15 (2023-11-07)</strong> H430, med Martin om etik och privacy.
+* <strong>NY TID 10:15 (2023-11-09)</strong> C245, med Martin om etik och privacy.
 
 <!-- * 10:00 (2021-11-08) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633)) -->
 

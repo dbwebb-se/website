@@ -7,6 +7,7 @@ views:
             src: "image/vteam/logo.png"
 author: mos
 revision:
+    "2023-11-06": "(C, mos) Fixade brustna länkar samt lade till första rapporten för 2023."
     "2023-11-06": "(B, mos) Stycke om hur man gör studie."
     "2022-12-01": "(A, mos) Flyttad från tips o trix till eget dokument."
 ...
@@ -39,7 +40,7 @@ När du är klar så sprider du studien och gör dig redo för att eventuellt up
 
 Här följer tekniska studier (och liknande) som utfördes under 2023.
 
-* Vem blir först att bidra?
+* [Jämför snabbheten mellan olika operationer i mariadb eller mongodb](https://github.com/p0ntan/tec-db). Ett verktyg att testa olika datatyper och dess hastighet i olika databaser.
 
 
 
@@ -50,9 +51,9 @@ Här följer tekniska studier (och liknande) som utfördes under 2022.
 
 1. [Teknisk studie RabbitMQ](https://github.com/blajban/vteam-rabbitmq) som meddelandehanterare, "message brokern".
 
-1. [Hur man använder github i ett Team](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/github.md)
+1. [Hur man använder github i ett Team](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/Technical%20analyses/github.md)
 
-1. [Teknisk studie om Load Balancers för REST API](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/load-balancer.md)
+1. [Teknisk studie om Load Balancers för REST API](https://github.com/FalkenDev/V-Team-SparkRentals/blob/dev/Technical%20analyses/load-balancer.md)
 
 1. [Hantering av geodata i databas/backend](https://github.com/virtuella-team/vteam-sds/blob/main/teknisk-analys-geo/teknisk_analys_geo.md)
 

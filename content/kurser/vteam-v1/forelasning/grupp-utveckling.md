@@ -10,7 +10,7 @@ Föreläsning: Formande och utveckling av grupp
 [![slide](https://dbwebb-se.github.io/pattern/lecture/L01-system-design-specification/img/slide.png)](https://dbwebb-se.github.io/pattern/lecture/L02-RESTful-API/slide.html)
 -->
 
-Hur brukar det fungera när man etablerar en grupp. Vilka faser kan man säga att gruppen går igenom?
+Hur brukar det fungera när man etablerar en grupp. Vilka faser kan man säga att gruppen går igenom och hur jobbar man sig fram för att bli en effektiv grupp.
 
 <!--
 Videon är 44 minuter lång.
@@ -28,19 +28,21 @@ Tuckman's stages of group development {#stages}
 
 Enligt "[Tuckman's stages of group development](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)" finns det 5 olika faser i utvecklingen av en grupp.
 
-1. Forming
-1. Forming
-1. Norming
-1. Performing
-1. Adjourning
+1. Forming (sätt ihop gruppen och kom igång)
+1. Storming (kom överens och förbi initiala bekymmer med kommunikation och ambition)
+1. Norming (alla vet vad de skall göra och jobbar på)
+1. Performing (hög produktivitet och nöjdhet, alla hjälper varandra)
+1. Adjourning (summera och avsluta, gruppen separeras)
 
-**Norming** Det första steget är att "etablera scenen" för projektet och komma igång. Här är det viktigt att sätta ihop teamet och jobba för att etablera målen och säkerställa att man har en gemensam mental bild av projektet.
+**Forming** Det första steget är att "etablera scenen" för projektet och komma igång. Här är det viktigt att sätta ihop teamet och jobba för att etablera målen och säkerställa att man har en gemensam mental bild av projektet.
 
-**Storming** Direkt därefter handlar det om att lösa konflikter och spänningar. Olika viljor och ambitioner strävar åt olika håll. Varje individ kan hjälpa genom att agera som en resurs för projektet. Försök att utveckla ett ömsesidigit förtroende i gruppen. Ibland får man prioritera och ibland medla för att finna vägar framåt.
+**Storming** Direkt därefter handlar det om att lösa spänningar och konflikter. Olika viljor och ambitioner strävar åt olika håll. Varje individ kan hjälpa genom att agera som en resurs för projektet. Försök att utveckla ett ömsesidigit förtroende i gruppen. Ibland får man prioritera och ibland medla för att finna vägar framåt.
 
-**Norming** och **Performing** så har vi farten uppe och allt flyter på. Glöm inte bort att kommunicera och hjälpa varandra. Glöm inte bort att träffas och stämma av så att ni inte glider isär.
+**Norming** så har vi farten uppe och alla vet vad som skall göras och jobbar på. Glöm inte bort att kommunicera och hjälpa varandra. Glöm inte bort att träffas och stämma av så att ni inte glider isär.
 
-**Adjourning** handlar om att nå målet, sammanställa arbetet och leverera gemensamt. Därefter monterar man ned gruppen och separerar medlemmarna.
+**Performing** är en fas för riktigt effektiva grupper där alla känner att de bidrar och man hjälps åt i gruppen oh har god kommunikation. man prioriterar och hanterar uppkomna problem med en samsyn och alla har fokus på att komma i mål.
+
+**Adjourning** handlar om att nå målet, sammanställa arbetet och leverera gemensamt. Därefter monterar man ned gruppen och separerar medlemmarna. Att gemesamt och individuellt sammafatta sina erfarenheter från arbetet kan vara en del i detta steget.
 
 
 

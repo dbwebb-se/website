@@ -1,16 +1,12 @@
 ---
 author: lew
 revision:
-  "2023-10-31": (C, lew) Uppdaterad inför ht23.
+  "2023-11-07": (C, lew) Uppdaterad inför ht23.
   "2022-11-09": (B, lew) Uppdaterad inför ht22.
   "2021-06-03": (A, lew) Ny version inför ht21.
 ...
 
 # Kmom03: DOM och events
-
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
 
 Nu är det dags att ta JavaScript koden ett stort kliv rakt in i webbläsaren. Det är ju trots allt där vi kommer hantera den största delen av den JavaScript vi kommer skriva.
 

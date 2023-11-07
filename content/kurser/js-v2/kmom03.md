@@ -12,7 +12,7 @@ Nu är det dags att ta JavaScript koden ett stort kliv rakt in i webbläsaren. D
 
 [FIGURE src=/img/js-v2/kmom03.png?w=w2 caption="Bilder skapade med JavaScript."]
 
-<!--stop-->
+<!--more-->
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 

@@ -34,7 +34,7 @@ Du har jobbat igenom uppgiften "[Bygg en teknologi-sida med CSS-Grid](uppgift/by
 Krav {#krav}
 -----------------------
 
-Uppgiften är två delad, grid-delen och bildhanterings-delen. Skapa en ny katalog för galleriet i `portfolio/content/gallery.md`. Skapa själv nya template-filer i ditt `theme` om du anser att det behövs.
+Uppgiften är två delad, grid-delen och bildhanterings-delen. Skapa en ny sida för galleriet i `portfolio/content/gallery.md`. Skapa själv nya template-filer i ditt `theme` om du anser att det behövs.
 
 
 

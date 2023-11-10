@@ -34,6 +34,8 @@ Efter kraven finns lite hjälp för att lösa er Playbooks.
 
 I Ansible, i era playbooks använd host namnet `database` för installationen av databasen, `appserver` för era servrar med Microblog och `loadbalancer` för Nginx.
 
+Ni kan använda `ansible-lint` för att få tips på hur ni bör skriva er Ansible kod. Ni kan använda `-x <list of rules>` för att exkludera regler.
+
 **Tips** Skapa en roll som bara installerar Docker. Den kan ni återanvända för `appserver` och `database`.
 
 

@@ -80,15 +80,11 @@ Kan börja använda ansible-lint undertiden.
 
 Än så länge har vi manuellt kör kommandon på servern. Nu ska vi uppgradera oss och göra detta i Ansible istället.
 
+Först, [installer Azure-CLI](./../labbmiljo/azure-cli) och lägg till `-r deploy.txt` i `requirements/dev.txt`. Installera Ansible paketen med `make install-dev``.`
+
 ### Läs och titta {#code-read}
 
 - Kolla på videorna med `30x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot. [kursen devops spellista](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
-
-[INFO]
-Istället behöver ni installera terminalverktyget `az`, i WSL. Ni hittar instruktioner för det här, [How to install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest), välj linux instruktionerna. När ni har installerat det kör kommandot `az login`. Med det kommandot loggar ni in på Azure och samtidigt sparas en JWT token på din dator som Ansible kan använda för att autentisera mot Azure.
-
-Efter detta ska Ansible mot Azure funka utan att ni behöver göra mer. Dock är kommandot bara den token som sparas giltig en viss tid, senare kan ni behöva köra `az login` igen för att skapa en ny token.
-[/INFO]
 
 - [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
 
@@ -112,8 +108,9 @@ I uppgifterna ska ni öka antalet servrar som används för produktionsmiljön. 
 
 Den ny strukturen är att vi har en egen VM för databasen och två olika VM's för microbloggen. Båda kör en varsin kopia av Microblog och är kopplade till samma databas. På det sättet kan vi sprida ut hanteringen av request på två olika VM's och kan hantera fler besökare. Förutsatt att databasen kan hantera request från två olika källor samtidigt på ett bra sätt, det borde inte vara några problem. Steget vi har kvar är att koppla ett domännamn till båda Microblog VM's. Det kan vi använda en load balancer till. Vi sätter Nginx som en load balancer istället för en reverse proxy på en VM och låter den dela upp inkommande requests till de båda Microblog VM's.
 
-[FIGURE src="image/devops/azure-structure.png" caption="VM struktur på Azure"]
+[FIGURE src="image/devops/azure-structure.png" caption="VM struktur på Azure."]
 
+*På bilden har loadbalancer och databasen speciella ikoner men det är fortfarande vanliga VM's vi ska använda.*
 
 ### Läs och titta {#cloud-read}
 
@@ -129,78 +126,53 @@ I länken ovanför skriver de inte att vi inte kan lägga ett `http` block i ett
 
 
 
-
-## Uppgifter {#uppgifter}
-
-Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
-
-
-### Ansible
-
-
-1. Uppdatera provision scripts så att fyra servrar skapas och installeras med 10-first-minutes.
-
-  - En loadbalancer, en database och två appserver, som heter appserver1 och appserver2.
-  - Appservrarna ska dela security group.
-  - Uppdatera gather_vm_instances så att det skapas en hosts grupp som heter appserver och går till appserver1 och 2. Tips. använd er av item.tags.Type. ? Eller ge dem den
-  - Lägg till två subdomäner där de går till varsin appserver. De ska heta appserver1.<domännamn> och appserver2.<domännamn>.
-
-1. Ansible roll för databas.
-  - Installera docker
-  - Starta en MySQL container.
-1. Ansible roll för appserver.
-  - installera docker
-  - Starta microblog container som kopplas till databasen.
-1. Ansible roll för loadbalancer.
-  - Installera Nginx
-  - Konfa https
-  - Gör loadbalancer som går till båda appserver.
-
-<!-- 1. Utöka GitHub Actions så att om testerna går igenom och en ny Docker image byggs ska den driftsättas på `appServer`. Med andra ord sätt upp Continuous Deployment. -->
-
-
-### GitHub Actions
-
-1. Implementera en CD strategi med ansible.
-  - Vid ny release ska Actions köra Ansible playbooks som gör en valbar CD strategi för att driftsätta den nya versionen.
-  - En avslutande del i Ansible playbooks ska vara att kolla att den nya versionen körs.
-
-1. Lägg till en funktionalitet och minst ett test för funktionaliteten.
-
-
-
-
-
-
-
-
-Läsanvisningar {#las}
+Läsanvisningar {#read}
 --------------------------
 
-I kursen ska ni läsa boken **[Effective DevOps](http://tinyurl.com/y6jy5x8u)**. Boken är inte kopplad till kursmomenten, men den behövs när ni ska skriva rapporten i slutet av kursen. Ni kan själva välja upplägg för när ni läser den. Ett rekommenderat upplägg är att läsa en del, "part", i veckan. Då har ni läst igenom hela boken efter kmom06.
+Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 
-Rekommendationen för denna veckan är att läsa **"Part III. Affinity"**.
+Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
+
+
+
+Uppgifter  {#uppgifter}
+-------------------------------------------
+
+1. Uppdatera provision Playbook så att fyra servrar skapas.
+  - En `loadbalancer`, en `database` och två `appserver`, som heter `appserver1` och `appserver2`.
+  - Appservrarna ska dela security group.
+  - Lägg till två subdomäner där de går till varsin `appserver`. De ska heta `appserver1.<domännamn>` och `appserver2.<domännamn>`.
+  - Uppdatera `gather_instances` så att det skapas en hosts grupp som heter `appserver` och går till `appserver1` och `appserver2`. Tips. använd er av `item.tags.Type`.
+
+2. Sätt upp [Microbloggen med Ansible](uppgift/microblog-ansible).
+
+3. Implementera en Continuous Deployment strategi med Ansible och Github Actions.
+  - Vid ny release ska Actions köra Ansible playbooks som gör en valbar CD strategi för att driftsätta den nya versionen.
+    - Er strategi ska inte ha någon downtime, så ni kan inte använda Recreate Deployment Strategy.
+    - Från GitHub Actions kan ni inte koppla upp er mot Azure och köra `gather_instances`. Därför la vi till att skapa subdomänerna i första uppgiften.
+    - I filen `ansible/hosts`, lägg till ny hosts som går till `appserver1.<domännamn>` och `appserver2.<domännamn>`. Då kan ni använda de hosts i er nya CD Playbook. Ni får lägga till fler hosts om det behövs.
+  - En avslutande del i er CD playbook ska verifiera att rätt version av Microblog körs på produktionsservrarna.
+
+4. På Microbloggen, lägg till en ny route som visar vilken version av appen som körs.
+  - Lägg till ett test som testar att det routen fungerar.
+
 
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------
 
-Läs [instruktionen om hur du skall redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i texten:
-
-Vad menas med Idempotency inom CM
-
-1. Vad är IaC?
+Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
 
 1. Vad är CM?
 
+1. Vad menas med Idempotency inom CM och IaC?
+
 1. Vad är fördelarna med IaC och CM jämfört med att sätta upp allt manuellt?
 
-1. Vad är Continuous Deployment?
+1. Vilken CD strategi valde ni?
 
-1. Kan du se några problem med vår CI/CD kedja (tänk hur den skulle sätt ut om Azure hade funkat för oss)?
+1. Kan du se några problem med er CI/CD kedja?
 
 1. Om du fick välja fritt hur skulle du vilja bygga upp CD kedjan?
 
-1. Hur var storleken på kursmomentet? Har du haft tid över så att du hade hunnit med att driftsätta via Github Actions?
+1. Hur var storleken på kursmomentet?

@@ -4,7 +4,7 @@ author:
 revision:
     "2023-11-10": "(A, aar) Ny versionen inför V2."
 ...
-Kmom03: Configuration Management och Continuous Deployment
+Kmom02: Configuration Management och Continuous Deployment
 ==================================
 
 Vi fortsätter med att kolla in fler sätt att automatisera flöden. Vi lär oss Ansible för Configuration Management (CM) och Infrastructure as Code (IaC). Tillsammans med Ansible och GitHub Actions ska vi också utveckla vår Continuous Delivery till Continuous Deployment (också CD).
@@ -78,7 +78,7 @@ Först, [installer Azure-CLI](./../labbmiljo/azure-cli) och lägg till `-r deplo
 
 - Kolla på videorna med `30x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot, [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
 
-- Om ni vill hänga med och skriva 10-first-minutes själva så kan ni kolla på videorna med "31x" i namnet.
+- Om ni vill hänga med och skriva 10-first-minutes själva så kan ni kolla på videorna med "31x" i namnet. Videorna är lite utdaterade när det kommer till hur man exekverar filerna Då pratar jag om AWS men om ni har kollat på de andra videorna så vet ni hur man exekverar filerna.
 
 
 

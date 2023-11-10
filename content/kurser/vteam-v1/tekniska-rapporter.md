@@ -42,6 +42,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2023.
 
 1. [Jämför snabbheten mellan olika operationer i mariadb eller mongodb](https://github.com/p0ntan/tec-db). Ett verktyg att testa olika datatyper och dess hastighet i olika databaser.
 
+1. [Typesafe JavaScript with JSDoc and TypeScript](https://github.com/kiwijos/vteam-ts-jsdoc-study) om att använda JSDoc och TypeScript för att säkra sin vanliga JavaScript.
+
 
 
 2022 {#2022}

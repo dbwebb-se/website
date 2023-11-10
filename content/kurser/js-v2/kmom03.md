@@ -46,7 +46,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Rainbow](https://github.com/dbwebb-se/js-v2/blob/master/components/03/assignment-1.md)". Du jobbar där i mappen `public/`.
 
-<!-- [YOUTUBE src=qN7otFlqlsw width=639 caption="Hur kan det se ut när det är klart"] -->
+[YOUTUBE src=GITze3V6ZOQ width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

@@ -29,19 +29,19 @@ Du har deltagit i föreläsningarna om Hot och Attacker i förra kursmomentet sa
 Analys {#analys}
 -----------------------
 
-Ni ska analysera applikationen utifrån de metoder och tekniker som nämns under föreläsningarna. Utgå ifrån att det är blackbox testing, dvs att ni inte har tillgång till koden. Bortse ifrån säkerhetsbrister som baseras på hur miljön är uppsatt, t.ex. att HTTPS inte används i en lokal utvecklingsmiljö.
+Du ska analysera applikationen utifrån de metoder och tekniker som nämns under föreläsningarna. Utgå ifrån att det är blackbox testing, dvs att du inte har tillgång till koden. Bortse ifrån säkerhetsbrister som baseras på hur miljön är uppsatt, t.ex. att HTTPS inte används i en lokal utvecklingsmiljö.
 
-Applikationen jobbar emot en SQLite-databas, om ni av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen.
+Applikationen jobbar emot en SQLite-databas, om du av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen.
 
-Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/jmbktjvfxvff) som ni kan använda. Länken är till en read-only version, för att skapa er egna behöver ni vara inloggade och sen trycker ni "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller nedanstående krav:
+Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/jmbktjvfxvff) som du kan använda. Länken är till en read-only version, för att skapa er egna behöver du vara inloggade och sen trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller nedanstående krav:
 
 1. Försättsblad med titel, ert namn och datum.
 1. Innehållsförteckning.
 1. Sammanfattning av innehållet i analysen.
 1. Målet med analysen.
 1. En beskrivning av systemet och dess funktionalitet/flöde (mycket kort, ska utökas nästa vecka när du tittar på koden).
-1. En metodbeskrivning av hur ni gått tillväga för att identifiera sårbarheter.
-1. En lista med de sårbarheter ni identifierat
+1. En metodbeskrivning av hur du gått tillväga för att identifiera sårbarheter.
+1. En lista med de sårbarheter du identifierat
     * Risk/sårbarhet (namn)
     * Beskrivning av sårbarheten
     * Allvarlighetsgrad (Sannolikhet \* Risk)
@@ -49,7 +49,7 @@ Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/jmbktj
     * OWASP-kategori
 1. En överskådlig tabell som presenterar ovanstående lista tillsammans med en rangordning och motiveringen till rangordningen.
 
-Metodbeskrivningen bör visa hur ni har gått tillväga, t.ex. om ni använt attackträd, use-cases, eller någon annan metodik. Era eventuella attackträd eller visualiseringar ska också tas med i rapporten.
+Metodbeskrivningen bör visa hur du har gått tillväga, t.ex. om du använt attackträd, use-cases, eller någon annan metodik. Era eventuella attackträd eller visualiseringar ska också tas med i rapporten.
 
 ### Applikationen
 
@@ -60,7 +60,7 @@ Börja med att kopiera in mappen med applikationen till er me-katalog:
 $ cp -r example/bank-app me/kmom04
 ```
 
-Gå till me/kmom01/bank-app och kör applikationen lokalt med `npm install && npm start`. Eller om du vill använda docker, så starta applikationen med `docker-compose up -d`. 
+Gå till me/kmom04/bank-app och kör applikationen lokalt med `npm install && npm start`. Eller om du vill använda docker, så starta applikationen med `docker-compose up -d`. 
 
 ### Lämna in
 

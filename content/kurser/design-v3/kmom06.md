@@ -128,7 +128,7 @@ Gör Quiz på Canvas och lämna sedan in din inlämning i den nu upplåsta uppgi
 Testa din inlämning {#testa}
 -----------------------------------------------
 
-Kommandot `dbwebb test` testar att grunderna för kmom'et är på plats. Vår rättning utgår från detta kommando.
+Kommandot `dbwebb test` testar att grunderna för kmom'et är på plats. Vår rättning utgår från detta kommando. Viktigt att göra `dbwebb update` innan testerna körs då de har uppdaterats.
 
 ```shell
 # stå i dbwebb-kurser/design

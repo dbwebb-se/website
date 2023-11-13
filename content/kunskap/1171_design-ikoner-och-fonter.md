@@ -156,7 +156,7 @@ Vi kollar vad varje rad gör. Första importerar grundmodulen för Font Awesome,
 
 Till sist laddar vi in tre typer av ikoner (fonter): Brands, Solid och Regular. Då ska allt vara på plats på SASS-delen.
 
-## Uppdatera Twig
+## Uppdatera Twig {#uppdatera-twig}
 
 Nu ska vi se hur vi kan använda våra nya ikoner i vår HTML (Twig). Till och börja med vill jag uppdatera så min Github-ikon i footern fortfarande fungerar. Såhär ser min footer ut just nu.
 

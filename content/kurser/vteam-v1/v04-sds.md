@@ -63,9 +63,62 @@ Automatisera tester och byggen med byggtjänster och tjänster för kodkvalitet.
 
 (Docker, docker-compose, en miljö för test och utveckling.)
 
+GitHub actions, gör exempelrepo?
+
+
+
+4. Vad innebär "högpresterande team"?
+
+    * [High-performance teams](https://en.wikipedia.org/wiki/High-performance_teams)
+
+
+
 **Torsdag**
 
 -->
+
+
+
+
+Föreläsning {#flas}
+-------------------------
+
+Följande är föreläsningsmaterial som hanteras under veckan.
+
+1. Riskanalys
+
+1. [Seminarie om arkitektur och tekniker för frontend applikationer](./../forelasning/frontend) om hur man kan tänka när man skissar på arkitektur och gör teknikval för applikationer i systemet.
+
+
+
+Uppgifter {#uppgift}
+-------------------------
+
+* Färdigställ SDS och lämna in.
+* Tekniska rapporter
+
+
+
+Team {#team}
+-------------------------
+
+
+4. Vad innebär "högpresterande team"?
+
+    * [High-performance teams](https://en.wikipedia.org/wiki/High-performance_teams)
+
+
+
+Torsdag standup
+-----------------------
+
+Här kommer några tips om hur du kan status checka vad ni gör i gruppen.
+
+
+
+
+
+
 
 
 

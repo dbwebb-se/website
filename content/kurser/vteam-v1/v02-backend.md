@@ -22,7 +22,7 @@ Jobba vidare med SDS för att bryta ned och förstå systemet och dess delar. De
 <!--
 TODO
 
-* Jobba igenom allt föreläsningsmaterial nedan. Gör slides? så blir det enklare att genomföra presentationerna. Allt behöver jobbas igenom.
+* Jobba igenom allt föreläsningsmaterial nedan. Gör slides! så blir det enklare att genomföra presentationerna. Allt behöver jobbas igenom.
 * I nuläget hinns inte allt med på listan så man behöver kapa  och prioritera vad som sägs.
 
 Projektplanering (egen spellista? egen artikelserie? vissa delar kan vara i vecka 01)
@@ -66,6 +66,14 @@ Uppgifter {#uppgift}
 
 * Fortsätt jobba med uppgiften SDS:en.
 * Tekniska rapporter.
+
+
+<!--
+Team {#team}
+-------------------------
+
+Lägg till något som är fokuserat på team, även om det finns ovan i gruppens utvecklingsfaser.
+-->
 
 
 

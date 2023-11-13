@@ -67,7 +67,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2023-12-01) H430, med Marie Sårbarhetsanalys, se uppgiften nedan
+* 10:15 (2023-12-01) H430, med Marie Sårbarhetsanalys, se uppgiften nedan
 
 <!-- * 10.00 (2021-12-03) via Zoom (länk på Canvas) -->
 

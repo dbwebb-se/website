@@ -121,7 +121,9 @@ Läsresurser tillhandahålls baserat på det projekt som gäller för respektive
 
 En kursbok som rekommenderas att läsa i anslutning till kursen är:
 
-1. The Deadline: A Novel About Project Management, författare Tom DeMarco, ISBN 9780932633392, Engelska, utgiven 1997-06-01
+1. The Deadline: A Novel About Project Management, författare Tom DeMarco, ISBN 9780932633392, Engelska, utgiven 1997-06-01. Populär och utbildande novell om projektledning av ett utvecklingsprojekt. Smått humoristisk och allvarlig om hur man kan få ett projekt i mål. Boken börjar med att projektledaren blir drogad och kidnappad och sätts i en position där ett lyckat projekt är samma sak som att behålla sin livhanke.
+
+    * [Läs om boken](https://wiki.c2.com/?TheDeadline).
 
 
 

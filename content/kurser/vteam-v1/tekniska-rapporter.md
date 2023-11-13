@@ -44,6 +44,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2023.
 
 1. [Typesafe JavaScript with JSDoc and TypeScript](https://github.com/kiwijos/vteam-ts-jsdoc-study) om att använda JSDoc och TypeScript för att säkra sin vanliga JavaScript.
 
+1. [TripGenerator](https://github.com/JuliaLind/TripGenerator) to auto-generating a number of consequent routes for electric bikes, which takes into consideration obstacles and any polygons to avoid defined by yourself.
+
 
 
 2022 {#2022}

@@ -191,4 +191,6 @@ Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans m
 
 1. Om du fick välja fritt hur skulle du vilja bygga upp CD kedjan?
 
+1. Vilken ny funktionalitet la ni till?
+
 1. Hur var storleken på kursmomentet?

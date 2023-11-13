@@ -194,3 +194,5 @@ Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans m
 1. Vilken ny funktionalitet la ni till?
 
 1. Hur var storleken på kursmomentet?
+
+1. Veckans TIL?

@@ -44,7 +44,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Mera dom](https://github.com/dbwebb-se/js-v2/blob/master/components/04/assignment-1.md)". Du ska jobba vidare med `public/`.
 
 
-<!-- [YOUTUBE src=sTGEOj8VQj0 width=639 caption="Hur kan det se ut när det är klart"] -->
+[YOUTUBE src=tljJ2TxBpC4 width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

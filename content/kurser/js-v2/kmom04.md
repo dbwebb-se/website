@@ -9,7 +9,7 @@ revision:
 
 Nu har vi blivit lite varma i kläderna och ska ta et djupare kliv in i DOM manipuleringen. Vi ska arbeta med fler former och fler events. Självklart ska vi även arbeta med moduler.
 
-<!--stop-->
+<!--more-->
 
 <!-- [FIGURE src=/image/snapht14/js1-boulder-dash.png caption="Öva arrayer med en Boulderdash klon."] -->
 

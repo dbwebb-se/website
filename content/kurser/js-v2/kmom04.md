@@ -1,16 +1,13 @@
 ---
 author: lew
 revision:
+  "2023-11-15": (B, lew) Genomgång inför ht23.
   "2021-11-19": (A, lew) Genomgång inför ht20.
 ...
 
-# Kmom04: Webpack
+# Kmom04: Mer DOM och Events
 
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
-
-Nu har vi blivit lite varma i kläderna och ska ta et djupare kliv in i DOM manipuleringen. Vi ska arbeta med fler former och fler events. Till detta ska vi se hur vi kan packa ihop vår kod för produktion. Självklart ska vi arbeta med moduler.
+Nu har vi blivit lite varma i kläderna och ska ta et djupare kliv in i DOM manipuleringen. Vi ska arbeta med fler former och fler events. Självklart ska vi även arbeta med moduler.
 
 <!--stop-->
 
@@ -36,17 +33,18 @@ _(ca: 12-16 studietimmar)_
 
 Genomför övningarna för att träna inför uppgifterna.
 
-1. Gå igenom [artiklarna i kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/articles/kmom04) för kursmoment 4.
+1. Gå igenom artiklarna i kursrepot för [kursmoment 03](https://github.com/dbwebb-se/js-v2/tree/master/components/03).
+
+2. Gå igenom artiklarna i kursrepot för [kursmoment 04](https://github.com/dbwebb-se/js-v2/tree/master/components/04).
 
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Mera dom](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom04/01_dom.md)". Spara dina filer i `kmom04/`.
+1. Gör uppgiften "[Mera dom](https://github.com/dbwebb-se/js-v2/blob/master/components/04/assignment-1.md)". Du ska jobba vidare med `public/`.
 
-1. Gör uppgiften "[Me page 4](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom04/02_mepage4.md)". Spara resultatet i `me/redovisa/`.
 
-[YOUTUBE src=sTGEOj8VQj0 width=639 caption="Hur kan det se ut när det är klart"]
+<!-- [YOUTUBE src=sTGEOj8VQj0 width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 
@@ -56,25 +54,35 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 $ dbwebb test kmom04
 ```
 
+### Validera din kod {#validate}
+
+Du validerar koden med npm scripten:
+
+```console
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
+```
+
+Du kan även köra alla linters på en gång med `$ npm run lint`.
+
+### Dokumentera din kod {#jsdoc}
+
+Du genererar dokumentationen med följande script:
+
+```console
+$ npm run jsdoc --what=public
+```
+
+
 ### Publicera din kod {#publish}
 
 Du lämnar in koden via dbwebbkommandot:
 
 ```console
-$ dbwebb publish kmom04
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
-_(ca: 1-2 studietimmar)_
-
-Läs [instruktionen om hur du skall redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-- Hur upplevde du DOM-uppgiften, var något svårt eller utmanande?
-- Beskriv vad du gjorde som sista uppgift i DOM-uppgiften.
-- Hur kändes omfattningen på detta kursmoment jämfört med övriga kmom?
-- Är det någon av uppgifterna, eller materialet i allmänhet, som du vill lyfta upp som extra lärorik?
-- Vad är din TIL för det här kursmomentet?
+Se till så koden är publicerad. Lämna sedan in på Canvas efter du genomfört quizzet.

@@ -13,7 +13,7 @@ revision:
 Sårbarhetsanalys {#analys}
 ==================================
 
-Uppgiften går ut på att analysera en applikation efter sårbarheter.
+Uppgiften går ut på att analysera en applikation efter sårbarheter. Ni får gärna analysera och hitta sårbarheter två och två men dokumentet, Sårbarhetsanalys, ska lämnas in individuellt.
 
 <!--more-->
 
@@ -32,6 +32,10 @@ Analys {#analys}
 Du ska analysera applikationen utifrån de metoder och tekniker som nämns under föreläsningarna. Utgå ifrån att det är blackbox testing, dvs att du inte har tillgång till koden. Bortse ifrån säkerhetsbrister som baseras på hur miljön är uppsatt, t.ex. att HTTPS inte används i en lokal utvecklingsmiljö.
 
 Applikationen jobbar emot en SQLite-databas, om du av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen.
+
+
+Mall sårbarhetsanalys {#mall}
+-----------------------
 
 Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/jmbktjvfxvff) som du kan använda. Länken är till en read-only version, för att skapa er egna behöver du vara inloggade och sen trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller nedanstående krav:
 

@@ -35,7 +35,7 @@ Tänk på att återställa din databas om du tagit sönder den i kmom04 (gäller
 $ cp -r example/bank-app me/kmom05
 ```
 
-*Det går bra att ta bort applikationen från din kmom04 mapp, så slipper du att den tar plats på studentservern*
+<!-- *Det går bra att ta bort applikationen från din kmom04 mapp, så slipper du att den tar plats på studentservern* -->
 
 Uppgifter {#uppgifter}
 ---------------------------------
@@ -44,7 +44,7 @@ Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återuppr
 
 ### Systemets funktionalitet {#funktionalitet}
 
-Genom att titta igenom koden tar du reda på funktionaliteten/flödet i systemet, Bankappen, och fyller i kapitel 3 i rapporten. Gör gärna ett flödesschema eller någon annan bild som beskriver funktionaliteten/flödet. Fortsätt att jobba med din analysfil från kmom04.
+Genom att titta igenom koden tar du reda på funktionaliteten/flödet i systemet, Bankappen, och fyller i kapitel 3 i rapporten. Gör gärna ett flödesschema eller någon annan bild som beskriver funktionaliteten/flödet. Kopiera din sårbarhetsanalys från kmom04 till kmom05 och fortsätt att jobba i den.
 
 ### Uppdatera rapport med testmetod {#uppdatera_metod}
 
@@ -58,7 +58,7 @@ Dokumentera dina tester i ett eget kapitel. Berätta vilka testfall du gjorde oc
 
 Skriv godtyckligt antal testfall (3+) per sårbarhet som demonstrerar hur man kan utnyttja sårbarheten och hur beteendet borde vara när det det fungerar som det ska. Först ska testfallen gå fel, visa rött, och det redovisar du med en skärmdump eller liknande i Appendix. Dessa testfall ska vara gröna när du sedan har åtgärdat sårbarheten. Redovisa även testfallen när de går rätt med en skärmdump eller liknande i Appendix. 
 
-Minimum 9 testfall totalt.
+Minimum 9 testfall totalt. Försök att testa olika delar av appen!
 
 Testerna ska gå att köras via `npm test`. Om testerna körs på ett annat sätt så dokumenterar du det så att det enkel går att köra dina tester.
 

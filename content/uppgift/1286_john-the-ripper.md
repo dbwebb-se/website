@@ -42,14 +42,14 @@ Jag körde <strong>wsl</strong> och installerade med pakethanteraren apt.
 $ sudo apt install john
 ```
 
-Eller om du kör <strong>Powershell</strong> så gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. Funkar i Powershell eller bash shell (enable Windows Subsystem for Linux WSL i Windows features om du inte gjort det). Starta john.exe med hela pathen eller uppdatera din användares path (Environment variables) för att kunna starta med "john".
+Men då får jag inte jumbo versionen, så jag kör istället <strong>Powershell</strong> så gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. Funkar i Powershell eller bash shell (enable Windows Subsystem for Linux WSL i Windows features om du inte gjort det). Starta john.exe med hela pathen eller uppdatera din användares path (Environment variables) för att kunna starta med "john".
 
 #### Installation Mac
 
 Jag installerade med pakethanteraren brew och lyckades då bara lösa password1.txt.
 
 ```bash
-$ brew install john
+$ brew install john-jumbo
 ```
 
 Jag laddade då ner "[John the Ripper för Mac](https://download.openwall.net/pub/projects/john/contrib/macosx/ )" och valde "john-1.8.0.9-jumbo-macosx_avx2.zip". Jag packade upp den under Applications i min hemmakatalog.
@@ -72,8 +72,19 @@ Jag installerade med pakethanteraren apt på Ubuntu.
 $ sudo apt update
 
 # Installera John the Ripper
-$ sudo apt install john
+$ sudo apt install snapd
+$ sudo snap install john-the-ripper
 ```
+
+
+#### Verifiera installationen
+
+```bash
+$ john
+```
+
+Och se att John the Ripper och jumbo är med i namnet, typ John the Ripper 1.9.0-jumbo.
+
 
 #### Kommandon
 

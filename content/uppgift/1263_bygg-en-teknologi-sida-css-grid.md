@@ -65,6 +65,10 @@ Själva designen på sidorna får ni välja, det är layout:en vi är ute efter.
 
 Resten av designen är upp till er att bestämma.
 
+[INFO]
+Använd Docs sidan i eran portfölj. Därför finns mycket värdefull information att hämta kring länkning mellan sidor och hur man kan rita ut länkar till alla sidor i en katalog.
+[/INFO]
+
 [FIGURE src=image/design-v3/wireframes/wireframe-teknologier.png?height=450 caption="Landningssida på desktop"]
 
 

@@ -2,340 +2,254 @@
 author:
     - aar
 revision:
-    "2020-11-13": "(B, aar) Bytt från AWS till Azure."
-    "2019-07-29": "(A, aar) Första versionen."
+    "2023-11-17": "(A, aar) Första versionen."
 ...
-Kmom03: Configuration Management och Continuous Deployment
+Kmom03: DevSecOps
 ==================================
 
-Vi fortsätter med att kolla in fler sätt att automatisera flöden. Vi lär oss Ansible för Configuration Management (CM) och Infrastructure as Code (IaC). Tillsammans med Ansible och CircleCI ska vi också utveckla vår Continuous Delivery till Continuous Deployment (också CD).
+Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på development och operations teams men även security behöver inkluderas för att det ska bli ett bra resultat. I detta kursmoment ska vi kolla på hur vi kan inkludera säkerhet i hela utvecklingsprocessen, så att alla blir ansvariga för säkerhet i ett projekt.
 
-[WARNING]
-Kurs under utveckling!
+<!-- more -->
 
-Påbörja inte före denna rutan är borta.
-[/WARNING]
+[FIGURE src="img/devops/devops-security.png" caption="Hur det inte ska se ut när man kör devops."]
 
-<!-- more -->z
+Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.
 
-**Skriv att de ska lägga till `-r deploy.txt` i requirements/dev.txt.**
 
 
-[FIGURE src="https://www.gocd.org/assets/images/blog/continous-delivery-vs-deployment-infographic/continuous-delivery-vs-continuous-deployment-infographic-305dd620.png"]
+### Vad är DevSecOps {#devsecops}
 
+Målet med DevSecOps är att alla behöver tänka på och är ansvariga för säkerheten hos en produkt. Säkerhet behöver vara en del av hela utvecklingsprocessen. Mycket inom devops handlar om automation och där vill vi även ha med säkerheten, manuell kontroll av säkerhet ska vara ett undantag inte regeln. DevSecOps har fått ett eget namn för att det är först på senare år som man börjat med att få in säkerhetstänket, det var med inte riktigt i början av devops.
 
+### Läs och titta {#devsecops-read}
 
-Nästa steg i vår miljö är att utöka antalet servrar från en till tre. Vi ska bygga en klassisk webbapp struktur, en server för databasen, en för appen och en som load balancer (Nginx, fungerade som proxy tidigare). Med systemet vi har nu, att kopiera bash filer till servern och exekvera manuellt är inte hållbart inom devops. Vi ska utnyttja kraften av Configuration Management verktyget Ansible för att uppnå denna strukturen på att hållbart sätt. Vi flyttar över funktionaliteten från bash skripten till Ansible, som kan utföra samma sak på flera servrar samtidigt. Vi ska skapa och stänga ner servrar med ett kommando, installera och konfigurera dem och tillslut ha ett kommando för att sätta upp hela produktionsmiljön, från zero to hero!
+<!-- - [The “What” “How” and “Why” of DevSecOps](https://www.newcontext.com/what-is-devsecops/) -->
+- [The “What” “How” and “Why” of DevSecOps](https://web.archive.org/web/20220618115729/https://newcontext.com/what-is-devsecops/)
+- [What is DevSecOps?](https://www.atlassian.com/continuous-delivery/principles/devsecops)
+- kapitel 1 "Securing devops", 1.1-1.3, i [Securing Devops](http://tinyurl.com/usyps42) (länken går till en E-bok version) för en introduktion till Continuous Security.
 
-[INFO]
-Innan ni sätter igång med kursmomentet kolla att ert Microblog repo är synkat med originalet, [Syncing a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
-[/INFO]
 
 
+### Test-driven security {#tds}
 
-## Infrastructure as Code och Configuration Management {#iac-cm}
+Vi lägga in automatiska säkerhetskontroller i vår CI/CD kedja, men vi jobbar inte med säkerhet så vi har inte kunskapen att utföra säkerhetstester på vårt projekt. Som tur är finns det många projekt andra människor och företag har gjort som testar säkerhet i olika aspekter på olika system.
 
-Infrastructure as Code innebär att behandla sin infrastruktur (servrar) som software, det ska vara definierat i kod och versionshanterat, för ett längre mer djupgående utlägg läs följande:
 
-- [Why use IaC](https://medium.com/cloudnativeinfra/why-use-infrastructure-as-code-881ccd6c4290).
 
-För att få en översikt av vad CM är har Digital Ocean gjort en bra sammanfattning:
+#### Docker {#docker}
 
-- [An introduction to Congifuration Management](https://www.digitalocean.com/community/tutorials/an-introduction-to-configuration-management).
+När det kommer till att göra Docker säkrare finns det väldigt mycket man kan göra, det finns flera olika långa dokument som går igenom vad man kan göra. T.ex. [CIS Docker Benchmark](https://www.cisecurity.org/benchmark/docker/), ett av de längre dokumenten, och [OWASP Container security standard](https://github.com/OWASP/Container-Security-Verification-Standard), som tycker att CIS är för långt dokument. Ni behöver inte sätta er in i dem men om ni är intresserade rekommenderar jag OWASPs standard. Man behöver både säkra upp de image's som man skapar och själva Docker daemon som exekverar image's på servern.
 
-När ni fått lite bättre koll på IaC och CM kan ni läsa om olika verktyg som finns och var de passar in [inom IaC och CM](https://dzone.com/articles/when-to-use-which-infrastructure-as-code-tool).
+### Läs och titta {#docker-read}
 
+- [Docker security cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
+- [Container security best practices](https://logz.io/blog/container-security-best-practices/)
 
 
-## Ansible {#ansible}
 
-Ansible är ett verktyg för att automatisera server konfiguration. Läs om följande artiklar om Ansible.
+##### Docker image security scanning {#docker_scan}
 
-- [Ansibles grundkoncept](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html).
+Det finns några olika verktyg för att skanna Docker images, Docker runtime och inställningar i Docker host. 
 
-- Introduktion till att [använda Ansible](https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks).
+Den nämner dock inte [Docker Bench Security](https://github.com/docker/docker-bench-security) vilket är Dockers egna verktyg för att skanna olika delar av Docker.
 
-- Ansible [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html).
+###### Läs och titta {#dockerscan-read}
 
-- Träna på Ansible på [killercoda](https://killercoda.com/ansible/scenario/ansible-en-101).
+- [Docker Image Security Scanning: What It Can and Can't Do](https://resources.whitesourcesoftware.com/blog-whitesource/docker-image-security-scanning)
+- Länken ovanför nämner fler olika verktyg, men den nämner inte Dockers egna verktyg, [Docker Bench Security](https://github.com/docker/docker-bench-security). För att se allt man "behöver" göra på sin server rekommenderar jag att ni logga in på en appserver och kör verktyget. Då får ni upp en lång lista på saker man borde fixa på en server som kör Docker.
 
 
+<!-- ##### Docker Bench for Security {#bench}
 
-### Förbered för Ansible {#prepare}
+Docker har byggt ihop några skript som kollar basic säkerhet i Docker konfiguration och images. Projektet kallas för [Docker Bench Security](https://github.com/docker/docker-bench-security) och det kollar många av sakerna som tas upp dokumenten jag länkade ovanför. Docker Bench Security är en bra start för säkerhet i Docker men det är inte en fullstädning lösning.
 
-Innan ni fortsätter **ska** ni ta bort era gamla VMs och resurser. På Azure portalen, gå till `All resources` och radera allt **utom** er "DNS zone" och "SSH key"!
+Jobba igenom guiden [Using Docker Bench Security to configure Docker to best practices](https://developers.hp.com/epic-stories/blog/docker-bench-security-container-hardening-and-auditing-host-security) för att fixa basic konfiguration på servrarna för att lösa många av varningarna. Logga in på er AppServer och kör kommandona där när ni jobbar igenom guiden. OBS! Läs igenom nedanstående info innan ni börjar med guiden, det rättar saker som inte funkar för oss, guiden kommer inte lösa alla felen ni har och den är skriven för Alpine os så t.ex. behöver ni skriva `apt-get` istället för `apk` när ni ska installera något.
 
-
-
-### Bekanta er med Ansible skripten {#ansib-scripts}
-
-Än så länge har vi kopierat skript från `scripts` mappen över till servern och exekverat för att konfigurera servern. Nu ska vi uppgradera oss och göra detta i Ansible istället.
-
-I följande playlist, kollar på videorna med `30x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot.
-
-[INFO]
-All info om hur ni ska identifiera er mot Azure från Ansible är numera felaktig i materialet nedanför. I videon pratas det om att ni ska skapa en fil som heter `credentials` och den ska ni skriva era inloggningsuppgifter för Azure. Det funkar inte längre för att vi använda multi-factor authentication.
-
-Istället behöver ni installera terminalverktyget `az`, i WSL. Ni hittar instruktioner för det här, [How to install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest), välj linux instruktionerna. När ni har installerat det kör kommandot `az login`. Med det kommandot loggar ni in på Azure och samtidigt sparas en JWT token på din dator som Ansible kan använda för att autentisera mot Azure.
-
-Efter detta ska Ansible mot Azure funka utan att ni behöver göra mer. Dock är kommandot bara den token som sparas giltig en viss tid, senare kan ni behöva köra `az login` igen för att skapa en ny token.
-[/INFO]
-
-- [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
-
-
-
-### 10 first minutes on a server i Ansible {#10-first}
-
-Nästa steg är att skapa er egna playbook för 10 first minutes on a server, kolla på videorna med `31x` i namnet och skapa en playbook för 10-first-minutes skripten.  
-**Notera** några rättelser i videon:
-
-- I videon används `gather_aws_instances.yml`, ni ska istället använda `gather_vm_instances.yml`.
-
-- Ni ska även ändra `remote_user` från `admin` till `azureuser`.
-
-- Kolla nu på videorna 31x i [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78)
-
-
-<!-- 
-### Playbooks för app strukturen {#app_structure}
-
-Nu har vi en grund att utgå från, vi har tre servrar som är konfigurerade och installerade som en grund server. Nästa steg är att konfigurerar varje server för sig. 
-
-Ni ska nu skapa en playbook för att sätta upp databasen på en server, applikationen på en och en load balancer på den sista. När vi bara hade en server använde vi Nginx som en reverse proxy för att skicka vidare requests till Flask appen. Nu ska vi använda Nginx som en load balancer istället. Med Nginx som en load balancer istället för en reverse proxy kan vi lätta utöka antalet applikations servrar när vår hemsida blir populär och besöks antalet ökar.
-
-I Ansible, i era playbooks använd host namnet `database` för installationen av databasen, `appServer` för er servern med Microblog och `loadBalancer` för Nginx.
-
-**Tips** Skapa en playbook som bara installerar Docker. Den kan ni återanvända för `appServer` och `database`.
-
-#### Database playbook {#database_pb}
-
-Skapa en playbook som startar en Docker container med MySQL på servern. Ni kan **inte** använda hashade lösenord, MySql klara inte av det. De måste vara i plain-text. 
-
-När ni startar containern skicka också med `- MYSQL_ROOT_PASSWORD=<password>` som environment variabel, ni kommer använda det i kmom04.
-
-
-
-#### Applikations playbook {#app_pb}
-
-Skapa en playbook som startar en Docker container med er senaste Microblog imagen på servern. När ni ska koppla Flask appen till databasen behöver ni IP addressen för databas servern, ni kan inte längre använda er av Dockers länkning för att de körs på två olika maskiner. I ansible kan ni använda `{{ groups.database[0] }}` för att få ut IP för databas hosten. **Tips** om ni inte lyckas koppla upp er mot database kan ni logga in på er VM och köra `docker logs <microblog container namn>` för att se loggen för docker containern.
-
-Ni behöver inte längre installera Supervisor på appServern, nu ska Docker se till att det alltid finns en applikation körandes.
-
-
-
-#### Load balancer playbook {#lb_pb}
-
-Skapa en playbook som installerar Nginx och konfigurerar det som en load balancer. Nginx ska skicka vidare requests till applikations servern. Vi har bara en applikations server än så länge så en load balancer tillför inte direkt något, men det är bra att känna till hur man gör en load balancer.
-
-Läs Nginxs dokumentation om att skapa en load balancer. Vad de inte skriver är att vi inte kan lägga ett `http` block i ett annat `http` block. Vilket vi gör om vi bara skapar en ny host i `/etc/nginx/sites-available`. Detta gör att vi måste ändra på config filen `/etc/nginx/nginx.conf`.
-
-- [Nginx load balancer](https://nginx.org/en/docs/http/load_balancing.html).
-
-- Ni kan hitta två config filer för Nginx som load balancer på [Gist](https://gist.github.com/AndreasArne/58374253123a31bb7c32e2b551fe8492).
-
-Använd [template](https://docs.ansible.com/ansible/latest/modules/template_module.html) modulen i Ansible för att flytta conf filerna. Notera variablerna i `load-balancer.conf.j2` som ni behöver ha värden till i Ansible.
-
-- `nginx.conf.j2` till `/etc/nginx/nginx.conf`
-
-- `load-balancer.conf.j2` till `/etc/nginx/sites-available/load-balancer.conf`.
-
-Ni kan använda [file](https://docs.ansible.com/ansible/latest/modules/file_module.html?highlight=file) modulen för att länka `load-balancer.conf` till `sites-enabled` mappen.
-
-**Tips** Ni hittar logfilerna för Nginx i `/var/log/nginx`. Om en konfig fil inte fungerar kan ni köra `nginx -t` för att validera den.
-
-<!-- Tänk på att ni kan använda `sudo nginx -t` som `validate` steg, på tasks i Ansible, för att validera er Nginx konfiguration. -->
-
-För att få till HTTPS via Ansible kolla nedanför. -->
-
-
-
-##### HTTPS via Ansible {#https-ansible}
-
-Det finns flera metoder för att få till HTTPS, vissa svårare än andra. Ni kan välja själva om ni tar genvägen och kolla på hur jag har gjort eller lösa det själva. För mitt sätt, kolla gist länken nedanför.
-
-- [Ansible kod för Nginx](https://gist.github.com/AndreasArne/6b627f15aabeecd435abd1e8e11f96c8). Se till att det ligger överst i er `main.yml` för Nginx installationen annars kan det blir problem med config filerna.
-
-
-<!-- 
-### Ansible på GitHub Actions för CD {#cd}
-
-Vi kommer bara göra en väldigt simpel CD kedja som bara hanterar att uppdatera microblogen. Hur gör vi med ändringar i Nginx eller databasen? Vi nöjer oss med att bara klara av att uppdatera Microbloggen via CD och sköter databasen och Nginx manuellt men vi kan tänka på hur vi skulle gjort. Egentligen borde vi kanske dela upp vårt repo i tre stycken, en för vår load balancer, en för microblog och en för databasen. Då krävs tre separate utvecklings miljöer med Ansible och Makefiler. Men vi hade kunnat få till en bra uppdelning och minskat mängden filer och kod (speciellt i Ansible). En annan lösning är att börja med mer "ordentliga" commit meddelanden och ge den en specifik struktur. T.ex. lägga till taggar i dem och beroende på vilken tag som finns i meddelandet kör vi olika jobb på CircleCi. Det sista alternativet är nog det som är lättast för oss och det vi hade valt. Medan om vi jobbade på ett större projekt hade vi i slutändan tjänat på att dela upp repot i flera mindre.
-
-- Läs en snabb överblick av olika [Deployment strategies](https://www.baeldung.com/ops/deployment-strategies).
-
-[INFO]
-På grund av den nya multi-factor authentication som används på våra konton kan vi logga in på Azure i Ansible från Actions.
-
-Nedanför kan ni se hur en workflow fil kan se ut om det gamla sättet att logga in hade fungerat.
-[/INFO]
-
-```yml
-name: Deploy microblog
-
-on:
-  workflow_call:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Create .azure folder
-      run: mkdir ~/.azure
-    - name: Write credentials
-      run: echo "${{ secrets.AZURE_CREDENTIALS }}" | base64 -d > ~/.azure/credentials
-
-    - name: Cache pip
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.9"
-        cache: 'pip'
-        cache-dependency-path: |
-          requirements/deploy.txt
-          ansible/requirements.yml
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements/deploy.txt
-        cd ansible && ansible-galaxy install -r requirements.yml
-
-    - name: Setup SSH 
-      shell: bash
-      run: |
-        eval `ssh-agent -s`
-        mkdir -p /home/runner/.ssh/
-        touch /home/runner/.ssh/id_rsa
-        echo -e "${{secrets.SSH_PRIVATE_KEY}}" > /home/runner/.ssh/id_rsa
-        chmod 700 /home/runner/.ssh/id_rsa
-
-    - name: Run playbook
-      run: cd ansible/ && ansible-playbook gather_az_instances.yml deploy_app.yml
-
-``` -->
-<!--
-
-För att ni ska kunna använda Ansible i Action behöver ni fixa två saker.
-
-1. Ansible behöver kunna logga in på Azure.
-
-2. Ansible behöver kunna SSH:a till Microblog servern.
-
-
-
-#### Lägg till Azure credentials i GitHub Actions {#cred_actions}
-
-Inloggnings uppgifterna till Azure är känslig data, det kan vi inte bara lägg i en fil i vårt repo och sen pusha. Utan vi behöver spara det som SECRET i GitHub. Men det ställer till problem för oss för att vi har begränsningar på våra konton. Därför behöver vi göra en lite workaround för att få det att fungera. Vi ska använda [base64](https://en.wikipedia.org/wiki/Base64) för att göra om teckenkodningen för vår inloggningsdata.
-
-Kör följande på din dator.
+- När ni ska konfigurera `auditd` ska ni skriva reglerna i filen `/etc/audit/rules.d/audit.rules`.  
+- När ni i guiden ska konfigurera Docker Daemon skippa följande två rader:
 
 ```
-base64 -i ~/.azure/credentials
+"log-driver": "syslog",
+"disable-legacy-registry": true,
+"userns-remap": "default"
 ```
 
-Kopiera utskriften och lägg till som en ny SECRET i ditt repo på GitHub.
+Vi vill inte sätta log-driver för att vi har inte en extern log server att skicka dem till, `disable-legacy-registry` är [deprecated i nyare versioner av Docker](https://docs.docker.com/engine/deprecated/#interacting-with-v1-registries). Efter att ni startat om Docker deamon efter ny config kan det vara så att microblog containern inte startar automatiskt så ni får starta den manuellt.
 
-Sen när ni skapar en nya workflow fil, i den behöver ni följande för att hämta inloggningsuppgifterna.
+- Använd `sudo less /var/log/syslog  |  grep docker` för att Docker felmededelande vid restart. kan också tillägga att om man försöker starta om Docker för ofta får man error. Då är det bara att vänta en stund innan man försöker igen.
 
-```yml
-    - name: Create .azure folder
-      run: mkdir ~/.azure
-    - name: Write credentials
-      run: echo "${{ secrets.AZURE_CREDENTIALS }}" | base64 -d > ~/.azure/credentials
+Jobba igenom guiden nu.
+
+Efter guiden hade jag kvar följande fel:
+
+- 1.1, vi struntar i denna.
+- 2.11
+- 2.12
+- 4.6
+
+
+
+https://github.com/freach/docker-image-policy-plugin whitelist docker images för pull -->
+
+
+
+#### Dependency Scanning {#dep_scan}
+
+I vårt projekt använder vi oss av många externa paket både i Python koden för Microbloggen men även i Docker imagen. Man kan aldrig riktigt veta om ett paket man installera är säkert eller om det innehåller säkerhetsrisker. Här kommer Dependency scanning in i bilden. Dependency Scanning verktyg har oftast en stor databas som kontinuerligt uppdateras med paket som man vet innehåller kända säkerhetssårbarheter.
+
+##### Läs och titta {#depscan-read}
+
+- [Dependency and Container Scanning](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/)
+- I uppgiften ska ni använda [Trivy](https://github.com/aquasecurity/trivy) och [Dockle](https://github.com/goodwithtech/dockle).
+
+
+
+#### SAST vs. DAST vs. IAST {#ast}
+
+Säkerhetshål kan uppstå många ställen i en applikation och då finns det många sätt vi kan försöka hitta säkerhetshålen.
+
+Static/Dynamic/Interactive Application Security Testing syftat på olika ställen/sätt vi letar efter säkerhetshål.
+
+##### Läs och titta {#depscan-read}
+
+- [SAST vs. DAST](https://www.synopsys.com/blogs/software-security/sast-vs-dast-difference/) för en jämförelse av de två och vad de är bra på.
+- [Interactive Application Security Testing ](https://snyk.io/learn/application-security/iast-interactive-application-security-testing/).
+
+I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST och [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) för att utföra DAST på Microbloggen.
+
+
+
+### Infrastruktur Security {#infrastruktur}
+
+Produktionsmiljön, CI/CD och molntjänsten vi använder kan vi också göra säkrare. Vi är dock begränsade i vad vi kan göra i och med att vi har studentkonton.
+
+
+
+#### Azure {#azure}
+
+När det kommer till att säkra molnmiljön handlar det om att verifiera konfiguration istället för att testa tjänsten.
+
+Vi borde kontrollera följande:
+
+- Att rätt brandväggsregler används i Security Groups.
+
+- Att systemen är up-to-date genom att kolla versionen på bas imagen vi använder som OS på servrarna.
+
+- Kontrollera rättigheterna användare har. Vi kan inte göra detta då vi har studentkonton, vi har inte tillgång till [Role based access controll (RBAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview). Med det kan man kontrollera vem som har rättigheter att skapa/ändra/radera resurser. Vi skulle t.ex. kunna skapa en ny användare som används av `gather_instances.yml` playbooken och den användaren har bara rättigheter att läsa data från Azure. Då hade vi inte varit lika sårbara om vi hade råkat läcka credentials.
+
+Det finns olika verktyg för att verifiera konfigurationer i molntjänster, men igen är vi begränsade för att vi har studentkonto och inte kan sätta roller och kontrollera subscriptions. Ett populärt open-source verktyg är [ScoutSuite](https://github.com/nccgroup/ScoutSuite) men vi kan inte använda det.
+
+Vi nöjer oss med att veta att vi borde göra det, för att vi inte kan på grund av begränsningarna med studentkonton.
+
+
+
+##### Security Groups {#sg}
+
+Vi kan och ska förbättra våra security groups, som det ser ut nu kan vem som helst koppla upp sig till de olika portarna som är öppna på våra servrar. Det är onödigt när vi vet vilka IP-addresser alla servrarna har. Vi kan inte göra det på ett bra sätt som det ser ut nu, för att vi kör rollen för SGs före vi skapar servrarna i Ansible. Vi behöver skapa servrarna först så att vi kan använda deras IP när vi skapar SGs. Det ska ni fixa i uppgiften.
+
+
+
+#### Produktionsmiljön {#prod_miljo}
+
+Det finns en hel del vi kan göra med servrarna i produktion. SSH är en viktig del i vårt arbetsflöde, Ansible behöver kunna SSH:a in till varje server för att konfigurera dem och vi gör det för att felsöka och testa saker. Dock så är vår SSH setup inte särskilt säker, även om vi har stängt av root och password login vilket är steg 1.
+
+I vår struktur kan man SSH:a in till varje server från vilken IP som helst. En säkrare struktur än vad vi har är att ha en bastion/access node som fungerar som ingång till hela produktions infrastrukturen. Då hade vi skapat en till instans som endast är till för att ge tillgång till resten av servrarna. Servern hade haft en security group så att man kan SSH:a till den från vilken IP som helst. På övriga servrar sätter vi security groups som bara tillåter SSH kopplingar från bastion nodens IP. Vi kommer inte att skapa en bastion node då vi har begränsat med resurser men med en större budget hade vi gjort detta.
+
+##### Läs och titta {#prod-read}
+
+- [What is a bastion host?](https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/)
+
+
+##### SSH {#ssh}
+
+När vi ändå är inne på SSH kopplingar så kan vi konfigurera säkrare kopplingar på servrarna. Vi börjar med att använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) verktyg för att skanna SSH konfigurationen på våra servrar. Kör följande kommando lokalt på er dator.
 
 ```
-
-Vi skapar `.azure` mappen, återställer den omgjorda texten och skriver ner den till `.azure/credentials`. Nu kan Ansible logga in på Azure.
-
-
-
-#### Möjliggör SSH från Actions till en server {#ssh_actions} 
-
-För att komma åt våra virtuella maskiner krävs specifika SSH key files. Det gör att de nycklarna behöver finnas tillgängliga i GitHub Actions.
-
-```
-cat ~/.ssh/azure
+docker run -it mozilla/ssh_scan /app/bin/ssh_scan -t <domain>
 ```
 
-Kopiera utskriften och lägg till som en SECRET i ert repo på GitHub.
+Alla servrar borde ha samma SSH konfiguration så det räcker att köra den mot er load balancer. Man får rätt mycket text utskriven men det viktiga är vad den skriver för `recommendation`, jag fick följande:
 
-För att använda nyckeln i ett workflow behöver ni:
-
-```yml
-    - name: Setup SSH 
-      shell: bash
-      run: |
-        eval `ssh-agent -s`
-        mkdir -p /home/runner/.ssh/
-        touch /home/runner/.ssh/id_rsa
-        echo -e "${{secrets.SSH_PRIVATE_KEY}}" > /home/runner/.ssh/id_rsa
-        chmod 700 /home/runner/.ssh/id_rsa
+```
+"recommendations": [
+  "Remove these key exchange algorithms: diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1",
+  "Remove these MAC algorithms: umac-64-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, hmac-sha1"
+],
 ```
 
-Nu är ni redo att skapa ett nytt workflow där ni kör `gather_vm_instances.yml` och `deploy_app.yml`.
--->
+Scannern tycker att jag borde ta bort gamla algoritmer som inte längre är säkra. Istället för att in och leta efter vilka algoritmer vi använder och hur vi stänger av dem så kan tänker jag att vi använder oss Mozillas moderna openSSH konfigurationer. På [guidelines/openssh](https://infosec.mozilla.org/guidelines/openssh) finns det färdiga konfigurations filer för säkrare SSH.
+
+###### Att göra {#ssh-do}
+
+- Kopiera konfigurationen för `Modern (OpenSSH 6.7+)` från [guidelines/openssh](https://infosec.mozilla.org/guidelines/openssh), SSH:a in på load balancern och ersätt ssh konfigurationen i `/etc/ssh/sshd_config` med den nya.
+
+- Lägg till raden `AllowUsers deploy`.
+
+- Ändra följande rad `Subsystem sftp  /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO` till `Subsystem sftp  /usr/lib/openssh/sftp-server -f AUTHPRIV -l INFO`. Filvägen till sftp-servern är fel, och då klagar Ansible om det inte är konfigurerat rätt.
+
+Kör ssh_scan igen och kolla att ni inte har några rekommendationer kvar. 
 
 
-### Video {#video}
+#### Hur säker är vår CI/CD pipeline? {#cicd}
 
-Det finns generellt kursmaterial i video form.
+Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruktur är en säkerhetsrisk. Någon kan ta sig in i GitHub Actions's system och komma åt våra olika API nycklar t.ex. och på så sätt få tillgång till vår kod.
 
-1. Kursen innehåller föreläsningar som spelas in och därefter läggs i spellistan "[devops streams ht22](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8t5NnxhZIJC69_FL55FzNV)".
+### Läs och titta {#cicd-read}
 
-1. I "[kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78)" hittar du alla videor som är kopplade till kursmomentet, de börjar på 3xx i namnet.
+- [How Secure Is Your CICD Pipeline?](https://www.weave.works/blog/how-secure-is-your-cicd-pipeline)
+- [Ultimate guide to CI/CD security and DevSecOps](https://circleci.com/blog/security-best-practices-for-ci-cd/) 
 
-
-
-### Uppgifter {#uppgifter}
-
-Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
-
-1. Använd Ansible för att skapa och konfigurera tre servrar. En som databas, en till microblogen och en som load-balancer.
-
-<!-- 1. Utöka GitHub Actions så att om testerna går igenom och en ny Docker image byggs ska den driftsättas på `appServer`. Med andra ord sätt upp Continuous Deployment. -->
-
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v13.0.0, om du pushar kmom03 flera gånger kan du öka siffrorna efter 13:an.
-
-<!-- 1. Skriv skript som kollar om service är uppe, om inte kör ansible för att sätta upp annars bara uppdatera. (En deployer node?) -->
 
 
 ### Lästips {#lastips}
 
-1. Hur man kan hantera flera [användare på produktionsservern med Ansible](https://www.cogini.com/blog/managing-user-accounts-with-ansible/). 
+1. [Zapping the top 10](https://www.zaproxy.org/docs/guides/zapping-the-top-10-2021/), hur ni kan använda Zap för att testa OWASP10 sårbarheterna.
 
 
 
-Läsanvisningar {#las}
+Läsanvisningar {#read}
 --------------------------
 
-I kursen ska ni läsa boken **[Effective DevOps](http://tinyurl.com/y6jy5x8u)**. Boken är inte kopplad till kursmomenten, men den behövs när ni ska skriva rapporten i slutet av kursen. Ni kan själva välja upplägg för när ni läser den. Ett rekommenderat upplägg är att läsa en del, "part", i veckan. Då har ni läst igenom hela boken efter kmom06.
+Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 
-Rekommendationen för denna veckan är att läsa **"Part III. Affinity"**.
+Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
+
+
+
+Uppgifter  {#uppgifter}
+-------------------------------------------
+
+1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
+1. Fixa minst 5 varningar från [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) testerna.
+    - Kör Zap's [Baseline tester](https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan) på er produktionsmiljö för att hitta fel.
+        - Mozilla har ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna.
+    - Uppdatera er Nginx konfiguration i Ansible med lösningarna.
+1. Uppdatera Security groups bara tillåter de ip-adresser som behöver tillgång till specifika portar.
+    - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats.
+    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 får koppla upp sig till mysql porten på database.
+    - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`
+1. Förbättra SSH konfigurationen.
+    - Använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) för att hitta förbättringar. Kör det på er domännamn. Alla servrar ska ha samma konfiguration, därför behöver vi bara köra det mot en.
+    - 
+1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen.
+
 
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------
 
-Läs [instruktionen om hur du skall redovisa](./../redovisa).
+Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
 
 Se till att följande frågor besvaras i texten:
 
-1. Vad är IaC?
+1. Vilka fel hittade ni när ni implementerade [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions?
 
-1. Vad är CM?
+2. Ändrade ni något i er kod efter ni kört Bandit? Använder ni `# nosec` för att ignorera någon kod eller skippa något test? Varför?
 
-1. Vad är fördelarna med IaC och CM jämfört med att sätta upp allt manuellt?
+3. Beskriv vilka Zap varningar ni fixade och hur ni löste dem.
 
-1. Vad är Continuous Deployment?
+4. Hur skulle du definiera DevSecOps och dess roll inom devops?
 
-1. Kan du se några problem med vår CI/CD kedja (tänk hur den skulle sätt ut om Azure hade funkat för oss)?
+5. Var skulle du säga att vi har den största säkerhets risken i vårt system och infrastruktur?
 
-1. Om du fick välja fritt hur skulle du vilja bygga upp CD kedjan?
-
-1. Hur var storleken på kursmomentet? Har du haft tid över så att du hade hunnit med att driftsätta via Github Actions?
+6. Veckans TIL?

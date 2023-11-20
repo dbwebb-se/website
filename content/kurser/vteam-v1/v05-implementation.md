@@ -44,63 +44,23 @@ Denna veckan blir det ingen Q&A session, istället finns det två videor/förel�
 
 Mini-uppgiften löser du i 'Reflektera över "Good and Clean Code"'.
 
--->
 
+Föreläsning?
 
+4. Vad innebär "högpresterande team"?
 
-Vecka 06 (v49): Teknikval {#w06}
--------------------------
+    * [High-performance teams](https://en.wikipedia.org/wiki/High-performance_teams)
 
-Lämna in de teknikval ni gjort för projektet och berätta kort om hur ni kommer att implementera systemet.
+* Mer om teams-delen?
+* x10 och x1
 
+Om 10x
+* Individual Productivity Variation in Software Development
+* Origins of 10X - How Valid is the Underlying Research?
 
+1. "[A good programmer can be as 10X times more productive than a mediocre one](https://softwareengineering.stackexchange.com/questions/179616/a-good-programmer-can-be-as-10x-times-more-productive-than-a-mediocre-one)"
 
-Vecka 07 (v50): Implementera projektet {#w07}
--------------------------
+    * [Individual Productivity Variation in Software Development](https://www.construx.com/blog/productivity-variations-among-software-developers-and-teams-the-origin-of-10x/)
+    * [Origins of 10X - How Valid is the Underlying Research?](https://www.construx.com/blog/the-origins-of-10x-how-valid-is-the-underlying-research/)
 
-Jobba med implementationen av projektet och se till att kontinuerligt integrera teamets arbete i en helhet.
-
-Första möjligheten att göra en leverans av systemet.
-
-
-
-Vecka 08 (v51): Implementera projektet {#w08}
--------------------------
-
-
-Vecka 09 (v52): Implementera projektet {#w09}
--------------------------
-
-
-Vecka 10 (v01): Förbered inför leverans {#w10}
--------------------------
-
-Jobba med projektet och förbered inför leveransen. Genomför en egenkontroll i form av en avstämning inför slutleveransen, vad skall finnas med och hur skall det leveraras, dokumenteras, presenteras och testköras?
-
-
-
-Vecka 11 (v02): Leverans och redovisning {#w11}
--------------------------
-
-Gruppen levererar systemet och presenterar arbetet och demonstrerar att systemet fungerar.
-
-Avslutningsvis skrivs en slutrapport från gruppens projektarbetet. Slutrapporten innehåller även en erfarenhetsrapport med lärdomar.
-
-Varje deltagare skriver också en avslutande summering av sina egna erfarenheter och lärdomar av gruppens arbete och kursens utformning.
-
-<!-- Vad gjorde vi bra och vad kan vi göra bättre nästa gång samt fem viktiga tips (tekniska tips och grupptips) till grupperna som går detta projekt nästa år -->
-
-
-
-<!--
-* Påvisa goda kunskaper i att designa större applikationer och system inom webbteknologier genom att skriftligen beskriva och sammanfatta arkitekturen för systemet.
-* Påvisa goda kunskaper att jobba i en grupp och aktivt delta i gruppens löpande arbete samt inse olika kriterier som kan ge en hälsosam grupp.
-
-* Utifrån en större kravspecifikation kunna designa, utveckla och leverera ett komplett och fungerande system där möjlighet till olika prioriteringar medges.
-* Visa mycket god förmåga att skapa kod som kan betraktas som ”god och snygg kod” genom att använda filosofier, tester och analysverktyg som hjälper att skapa en bild av det som kan vara "god kod".
-
-* Självständigt och i grupp kritiskt kunna utvärdera och analysera sin tekniska lösning och de
-prioriteringar som ledde fram till den.
-* Självständigt och i grupp reflektera över de byggstenar som gör en god och hälsosam grupp och
-grupparbete.
 -->

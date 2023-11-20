@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2023-11-20": "(B, mos) Mindre redigeringar i text."
     "2022-12-01": "(A, mos) Innehåll flyttat från Canvas och omskrivet som en förberedelse inför 2023."
 ...
 Assignment: Risk analysis
@@ -20,9 +21,9 @@ Perform a Risk Analysis for the project.
 Resources
 ------------------------
 
-There is a session held that prepares you for this assignment by first helding a **lecture** on the topic where a "method for risk analysis" is introduced.
+There is a combined lecture and workshop that talks about how to execute a risk analysis and what to do with it.
 
-Then a **workshop** is carried out on how to execute a risk analysis. The result from the workshop provides a startpoint for your team to work further on.
+The result from the workshop provides a startpoint for your team to work further on.
 
 
 
@@ -31,11 +32,11 @@ Requirements
 
 Each team executes their risk analysis and the may use the result from the workshop to start with. You should remove the risks that is not valid for your team.
 
-Document something like 10, 15, 20 risks and discuss them in your team. Assess and evaluate each risk according to the "method" presented in the lecture.
+Document at least 15 to 20 risks and discuss them in your team. Assess and evaluate each risk according to the "method" presented in the lecture.
 
-It is not the number of risks that are important, it is more "what" risks you choose to focus on and prioritizes.
+It is not the number of risks that are important, it is more "what" risks you choose to focus on and lift up.
 
-Try to find risks that cover several aspects of your project and includes all (or some) of the different stakeholders you have for the project.
+Try to find risks that cover several aspects of your project and includes all of the different stakeholders you have for the project.
 
 Focus on technical and implementation risks in detail. What will hinder you from making the delivery on time?
 
@@ -59,4 +60,4 @@ Write a few lines reflections on how you feel that the risk analysis worked out 
 Examination
 ------------------------
 
-The teacher will grade your submission G, Ux or U and provide short feedback on Canvas.
+The teacher will grade your submission G, Ux or U on Canvas.

@@ -23,6 +23,18 @@ TODO
 
 * Lägg till så man skapar en mall för SDS? Eller som en egen video som spelas in.
 
+* Rita bild om stakeholders för projektet. Kan koppla in den bilden när man gör riskanalysen.
+
+* Hitta process hur man tar krav och överför till features, så man kan stämma av att alla krav utförs samt att man får möjlighet att prioritera dem. Kan kopplas till aktiviteter. Kan kopplas till riskanalysen?
+
+* Skapa material för röd tråd om projektplanering från att bryta ned kraven till att planera aktiviteter i backlogg i github projetcts. inklusive övergripande vecko plan
+
+* Skapa material för röd tråd om git, github, docker, issues, github projects, github actions, devops... Automatisera tester och byggen med byggtjänster och tjänster för kodkvalitet.
+
+* Gör röd tråd med input från näringslivet, spela in intervjuver som material?
+
+
+
 -->
 
 

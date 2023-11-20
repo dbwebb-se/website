@@ -25,6 +25,8 @@ Det är lätt att stirra sig blind på sin egen sida och det är därför viktig
 
 Vi kommer även att kolla på hur vi kan förbättra vår sida sett ifrån tillgänglighet, "accessibility" som det heter på engelska. Vi använder oss utav verktyget Google Lighthouse där vi siktar på att nå 100 på samtliga sidor.
 
+[YOUTUBE src="AIqwseO_j0s" width=700 caption="Klar med kmom06"]
+
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 

@@ -12,10 +12,10 @@ revision:
 Kmom04: Sårbarhetsanalys
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT23. Är "gula rutan" borta är det fritt fram att börja.
 [/WARNING]
-
+ -->
 Risk- och sårbarhetsanalysmomentet omfattar en introduktion till olika metoder för att modellera applikationers beteende, metoder för att genomföra sårbarhetsanalyser och attackscenarier. Vidare introduceras även riskanalys och riskhantering för att sätta sårbarheter i kontext.
 
 [INFO]

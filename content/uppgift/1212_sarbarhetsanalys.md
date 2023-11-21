@@ -31,7 +31,7 @@ Analys {#analys}
 
 Du ska analysera applikationen utifrån de metoder och tekniker som nämns under föreläsningarna. Utgå ifrån att det är blackbox testing, dvs att du inte har tillgång till koden. Bortse ifrån säkerhetsbrister som baseras på hur miljön är uppsatt, t.ex. att HTTPS inte används i en lokal utvecklingsmiljö.
 
-Applikationen jobbar emot en SQLite-databas, om du av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen.
+Applikationen jobbar emot en SQLite-databas, om du av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen. Gör gärna SQL-injektion på databasen med SQLmap, för [mer här](https://sqlmap.org/). Då får du veta vilken databas det är och innehållet med tabeller och data.
 
 
 Mall sårbarhetsanalys {#mall}
@@ -40,18 +40,18 @@ Mall sårbarhetsanalys {#mall}
 Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/jmbktjvfxvff) som du kan använda. Länken är till en read-only version, för att skapa er egna behöver du vara inloggade och sen trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller nedanstående krav:
 
 1. Försättsblad med titel, ert namn och datum.
-1. Innehållsförteckning.
-1. Sammanfattning av innehållet i analysen.
-1. Målet med analysen.
-1. En beskrivning av systemet och dess funktionalitet/flöde (mycket kort, ska utökas nästa vecka när du tittar på koden).
-1. En metodbeskrivning av hur du gått tillväga för att identifiera sårbarheter.
-1. En lista med de sårbarheter du identifierat
+2. Innehållsförteckning.
+3. Sammanfattning av innehållet i analysen.
+4. Målet med analysen.
+5. En beskrivning av systemet och dess funktionalitet/flöde (mycket kort, ska utökas nästa vecka när du tittar på koden).
+6. En metodbeskrivning av hur du gått tillväga för att identifiera sårbarheter.
+7. En lista med de sårbarheter du identifierat
     * Risk/sårbarhet (namn)
     * Beskrivning av sårbarheten
     * Allvarlighetsgrad (Sannolikhet \* Risk)
     * Estimerad kostnad att åtgärda (i timmar)
     * OWASP-kategori
-1. En överskådlig tabell som presenterar ovanstående lista tillsammans med en rangordning och motiveringen till rangordningen.
+8. En överskådlig tabell som presenterar ovanstående lista tillsammans med en rangordning och motiveringen till rangordningen.
 
 Metodbeskrivningen bör visa hur du har gått tillväga, t.ex. om du använt attackträd, use-cases, eller någon annan metodik. Era eventuella attackträd eller visualiseringar ska också tas med i rapporten.
 

@@ -221,7 +221,7 @@ Uppgifter  {#uppgifter}
 
 1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
 1. Fixa minst 5 varningar från [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) testerna.
-    - Kör Zap's [Baseline tester](https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan) på er produktionsmiljö för att hitta fel.
+    - Kör Zap's [Baseline tester](https://www.zaproxy.org/docs/docker/baseline-scan/) på er produktionsmiljö för att hitta fel.
         - Mozilla har ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna.
     - Uppdatera er Nginx konfiguration i Ansible med lösningarna.
 1. Uppdatera Security groups bara tillåter de ip-adresser som behöver tillgång till specifika portar.

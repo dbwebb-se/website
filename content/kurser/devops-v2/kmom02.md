@@ -171,7 +171,7 @@ Uppgifter  {#uppgifter}
     - I filen `ansible/hosts`, lägg till ny hosts som går till `appserver1.<domännamn>` och `appserver2.<domännamn>`. Då kan ni använda de hosts i er nya CD Playbook. Ni får lägga till fler hosts om det behövs.
   - En avslutande del i er CD playbook ska verifiera att rätt version av Microblog körs på produktionsservrarna.
 
-1. På Microbloggen, lägg till en ny route som visar vilken version av appen som körs.
+1. På Microbloggen, lägg till en ny route som visar vilken version av appen som körs på servern.
   - Lägg till ett test som testar att det routen fungerar.
 
 
@@ -190,8 +190,6 @@ Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans m
 1. Kan du se några problem med er CI/CD kedja?
 
 1. Om du fick välja fritt hur skulle du vilja bygga upp CD kedjan?
-
-1. Vilken ny funktionalitet la ni till?
 
 1. Hur var storleken på kursmomentet?
 

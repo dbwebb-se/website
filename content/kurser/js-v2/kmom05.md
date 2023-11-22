@@ -1,19 +1,16 @@
 ---
 author: lew
 revision:
+  "2023-11-22": (C, lew) Uppdaterad inför ht23.
   "2022-11-25": (B, lew) Uppdaterad inför ht22.
   "2021-06-16": (A, lew) Ny inför ht21.
 ...
 
 # Kmom05: Web API
 
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
-
 När vi använder JavaScript i webbläsaren kan vi använda färdiga API:er som ger oss möjlighet att bygga våra webbsidor och applikationer på nya sätt. Vi ska i det här kursmomentet ta en närmare titt på två av dem.
 
-<!--stop-->
+<!--more-->
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
@@ -37,17 +34,16 @@ _(ca: 12-16 studietimmar)_
 
 Genomför övningarna för att träna inför uppgifterna.
 
-1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/articles/kmom05) för kursmoment 5.
+1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/components/05) för kursmoment 5.
 
 ###Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[CO2 Emission](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom05/01_co2-emission.md)". Spara koden i `kmom05/`.
+1. Gör uppgiften "[CO2 Emission](https://github.com/dbwebb-se/js-v2/blob/master/components/05/assignment-1.md)". Spara koden i `public/`.
 
-1. Gör uppgiften "[Me page 5](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom05/02_mepage5.md)". Spara resultatet i `me/redovisa/`.
 
-[YOUTUBE src=0CNP6uQkBU4 width=639 caption="Hur kan det se ut när det är klart"]
+<!-- [YOUTUBE src=0CNP6uQkBU4 width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 
@@ -57,24 +53,34 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 $ dbwebb test kmom05
 ```
 
+### Validera din kod {#validate}
+
+Du validerar koden med npm scripten:
+
+```console
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
+```
+
+Du kan även köra alla linters på en gång med `$ npm run lint`.
+
+### Dokumentera din kod {#jsdoc}
+
+Du genererar dokumentationen med följande script:
+
+```console
+$ npm run jsdoc --what=public
+```
+
 ### Publicera din kod {#publish}
 
 Du lämnar in koden via dbwebbkommandot:
 
 ```console
-$ dbwebb publish kmom05
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
-_(ca: 1-2 studietimmar)_
-
-Läs [instruktionen om hur du skall redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-- Kan du komma på något annat sammanhang där Web Storage hade fungerat bra?
-- Vad känner du för fetch API?
-- Beskriv skillnaden mellan synkron och asynkron.
-- Vad är din TIL för det här kursmomentet?
+Se till så koden är publicerad. Lämna sedan in på Canvas efter du genomfört quizzet.

@@ -36,23 +36,16 @@ Exempel på hur du kan använda och installera John the Ripper. Läs mer här: "
 
 ### Installation Windows
 
-Jag körde <strong>wsl</strong> och installerade med pakethanteraren apt.
-
-```bash
-$ sudo apt install john
-```
-
-Men då får jag inte jumbo versionen, så jag kör istället <strong>Powershell</strong> så gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. Funkar i Powershell eller bash shell (enable Windows Subsystem for Linux WSL i Windows features om du inte gjort det). Starta john.exe med hela pathen eller uppdatera din användares path (Environment variables) för att kunna starta med "john".
+Jag kör <strong>Powershell</strong> så gå till "[John the Ripper (JtR)](https://www.openwall.com/john/)" och ladda ner den version som passar bäst (32 eller 64-bitars Windows). Packa upp på valfritt ställe, till exempel i din hemmakatalog under programs. 
+Jag packar upp under downloads. Sen öppnar jag Powershell och skapar en katalog under C:\JohnTheRipper och kopierar dit katalogerna (doc, etc, run och filen README) från det det jag packade upp. Öppna ett kommandofönster och gå till katalogen C:\JohnTheRipper\run och kör kommadot "john" för att starta.
 
 #### Installation Mac
 
-Jag installerade med pakethanteraren brew och lyckades då bara lösa password1.txt.
+Jag installerade med pakethanteraren brew.
 
 ```bash
 $ brew install john-jumbo
 ```
-
-Jag laddade då ner "[John the Ripper för Mac](https://download.openwall.net/pub/projects/john/contrib/macosx/ )" och valde "john-1.8.0.9-jumbo-macosx_avx2.zip". Jag packade upp den under Applications i min hemmakatalog.
 
 ```bash
 $ cd ~/dbwebb-kurser/itsec/me/kmom02/password-files

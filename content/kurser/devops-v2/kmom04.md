@@ -125,7 +125,7 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 1. Skapa ett valfritt larm, ett sätt att aktivera det och att avaktivera det. Larmet ska skickas till `https://webhook.site`. I redovisningstexten, skriv hur man kan aktivera och avaktivera larmet. Samt länk till er webhook sida där man kan se larmet. 
 
-1. Lägg till en Reverse Proxy i er Nginx konfiguration till Grafana. [Här](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f) kan ni hitta exempel på delar ni behöver lägga in i er Grafana och Nginx konfig. Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
+1. Lägg till en Reverse Proxy i er [Nginx konfiguration till Grafana och Grafana konfiguration](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f). Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
 
 Glöm inte att öppna portar i Azure!
 
@@ -154,4 +154,6 @@ Se till att följande frågor besvaras i texten:
 
 5. Hur kan jag aktivera och avaktivera er larm? Skicka med länk till webhook.site.
 
-6. Testade ni Loki? Fick ni ihop det, i så fall tror du att man hade hunnit med det i kursmomentet? 
+6. Testade ni Loki? Fick ni ihop det, i så fall tror du att man hade hunnit med det i kursmomentet?
+
+7. Skriv inloggning till er grafana sida.

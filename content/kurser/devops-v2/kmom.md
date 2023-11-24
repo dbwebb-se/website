@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2023-11-24": "(C, aar) Släppt för HT23."
     "2020-11-19": "(B, aar) Släppt för HT20."
     "2019-10-15": "(A, aar) Första versionen."
 ...
@@ -10,11 +11,6 @@ Kmom04: Monitoring
 
 Nu när vi har ett system uppe och rullande behöver vi veta när något går fel, vi ska övervaka hela produktionsmiljön och alla dess delar.
 
-[WARNING]
-Kurs under utveckling!
-
-Påbörja inte före denna rutan är borta.
-[/WARNING]
 
 <!-- more -->
 
@@ -83,42 +79,61 @@ Vi ska använda oss av [Prometheus](https://prometheus.io/), ett väldigt popul�
 #### Läs och titta {#prometheus-read}
 
 - Läs [Prometheus Monitoring: The Definitive Guide in 2019](https://devconnected.com/the-definitive-guide-to-prometheus-in-2019/) för en överblick av vad Prometheus är och vad det innehåller.
-
+- [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/)
+- [Alerting Best practice](https://prometheus.io/docs/practices/alerting/)
+- [Operatorer i Prometheus](https://prometheus.io/docs/prometheus/latest/querying/operators/)
 
 
 
 #### Att göra {#prometheus-do}
 
-När ni nu har lite kolla på hur Prometheus fungerar ska ni testa installera Prometheus, Grafana och koppla ihop dem.
+Nu ska ni starta upp prometheus, grafana och koppla ihop dem.
 
 - Kolla på videorna 401-403 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12). Gör det lokalt på er dator för att testa få det att fungera.
+
+- Kolla på videorna 410-413 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12). PS i video 412 körs det på produktionsservrar men ni kan göra det lokalt som med allt annat, det är likadant.
+
+
+
+Läsanvisningar {#read}
+--------------------------
+
+Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
+
+Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
 
 
 
 ### Uppgifter {#uppgifter}
 
-Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
-1. Ni har en till instans i er Azure infrastruktur som kör Prometheus och Grafana.
+1. Utöka Ansible provisioning koden så att ni skapar en till server som heter och har typen `monitoring`.
+    - Öppna passande portar i security groups.
+
+1. Skriv Ansible kod som installerar och startar Prometheus, Grafana och Alertmanager på den nya VM instansen.
+    - Använd er av modulen [Grafana datasources](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_datasource_module.html) för att lägga till prometheus som datakälla
+
+1. Uppdatera era appservrar så de kör er nya Docker image som innehåller flask exportören.
+
+1. Vi borde ha en exportör för MySQL men tidigare år har den funkat dåligt. Installera istället en Node exporter på databas VM:en. Då får vi alla fall lite koll på hur servern mår. Gör det via Ansible koden.
+
+1. Konfigurera en exportör för Nginx. I övningen [Övervaka nginx med Prometheus och Grafana](kunskap/overvaka-nginx-med-prometheus-och-grafana) kan ni se hur man gör.
+
+1. Konfigurera Prometheus så den hämtar data från alla exportörer.
+
+1. Lägg till dashboard i Grafana för alla exportörer. Använd Ansible modulen [dashboards](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_dashboard_module.html) för att lägga till den från Ansible. Det går inte att koppla ihop er dashboard och datasource i Ansible koden. Modulerna saknar stöd för det. Bara skapa dem via Ansible och sen får ni koppla ihop dem manuellt.
+
+1. Skapa ett valfritt larm, ett sätt att aktivera det och att avaktivera det. Larmet ska skickas till `https://webhook.site`. I redovisningstexten, skriv hur man kan aktivera och avaktivera larmet. Samt länk till er webhook sida där man kan se larmet. 
 
 1. Lägg till en Reverse Proxy i er Nginx konfiguration till Grafana. [Här](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f) kan ni hitta exempel på delar ni behöver lägga in i er Grafana och Nginx konfig. Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
 
-1. Ha en Dashboard för följande exporters, Nginx, Node_exporter och Flask.
-
-1. Lägg till en Ansible playbook för Prometheus och Grafana. Lägg till att installera och starta alla olika exporters i respektive playbook. Glöm inte öppna de nya portarna i `security_groups` rollen.
-
-<!-- 1. Skapa larm i Prometheus som varnar om någon Docker container, Nginx eller instans inte längre är igång. Skapa även ett larm som varnar om minnet på hårddisken på Prometheus instansen har mindre än 5G kvar. -->
-<!-- Hitta ett sätt som kan användas för att temporärt tar plats på hårddisken så larmet kan testas. -->
-
-1. Försäkra dig om att du har pushat repot med din senaste kod och taggat din inlämning med version v14.0.0.
+Glöm inte att öppna portar i Azure!
 
 
-
-
-Läsanvisningar {#las}
+Extrauppgift {#extra}
 --------------------------
 
-Rekommendationen för denna veckan är att läsa **"Part IV. Tools"**.
+Om ni får tid över, testa log management verktyget [Loki](https://grafana.com/oss/loki/). Försök få loggar från Nginx eller microbloggen till Grafana med hjälp av Loki.
 
 
 
@@ -137,4 +152,6 @@ Se till att följande frågor besvaras i texten:
 
 4. Beskriv Observability och försök koppla det till ovanstående frågor.
 
-5. Vad är dina tankar om Prometheus och Grafana?
+5. Hur kan jag aktivera och avaktivera er larm? Skicka med länk till webhook.site.
+
+6. Testade ni Loki? Fick ni ihop det, i så fall tror du att man hade hunnit med det i kursmomentet? 

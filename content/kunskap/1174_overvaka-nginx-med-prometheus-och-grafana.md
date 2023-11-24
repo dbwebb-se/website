@@ -14,6 +14,8 @@ I denna artikel skall vi gå igenom hur man kan övervaka trafiken till våran n
 <!--more-->
 
 
+Det finns en officiell exporter för [Nginx](https://github.com/nginxinc/nginx-prometheus-exporter) som använder sig utav [ngx_http_stub_status_module](http://nginx.org/en/docs/http/ngx_http_stub_status_module.html) för att samla data. Tyvärr behöver man ha Nginx Plus för att få ut mer intressant data som hur många 4xx/5xx request man får in. Nu har vi inte Plus versionen och får nöja oss med att kunna se att servern är igång och hur många requests servern har fått.
+
 
 Aktivera stub_status i nginx {#stub_status}
 ---------------------------------------------------------

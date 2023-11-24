@@ -26,30 +26,17 @@ Påbörja inte före denna rutan är borta.
 <!-- https://old.reddit.com/r/devops/comments/afqye3/whats_your_monitoring_and_alerting_stack_look_like/
 https://itnext.io/deploy-elk-stack-in-docker-to-monitor-containers-c647d7e2bfcd
  -->
- 
-<!-- Elastic stack
-https://logz.io/blog/10-elasticsearch-concepts/
-https://github.com/nickjj/ansible-docker
-https://www.guru99.com/elk-stack-tutorial.html
-    Ny instance med t2.small
-    Ny SG
-    RP i LB nod för ELK
-    Installera Beats på övriga instancer
-    +1 app instance?
-    Om de kör provision igen för att bara få upp ELK kommer det även starta upp en till av varje annan!!
-    load balancer - https://galaxy.ansible.com/entercloudsuite/filebeat
-        https -> http, enabled -> started?
-    galaxy https://blog.ktz.me/getting-started-with-ansible-galaxy/
- -->
 
 
 ### Monitoring {#monitoring}
 
 När system ligger utspridda på virtuelle servrar jorden runt är det inte lätt att hålla koll på att alla servrar och system hela tiden är igång. Här kommer infrastruktur monitoring in i bilden men vi kan också ha application monitoring där vi övervakar metrics från system. T.ex. hur många request varje server har fått eller hur många 404 requests.
 
-Läs Microsofts förklaring av [Monitoring](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-monitoring).
+#### Läs och titta {#monitoring-read}
 
-Läs sen [Monitoring in a DevOps world](https://queue.acm.org/detail.cfm?id=3178371).
+- Microsofts förklaring av [Monitoring](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-monitoring).
+
+- [Monitoring in a DevOps world](https://queue.acm.org/detail.cfm?id=3178371).
 
 
 
@@ -57,11 +44,13 @@ Läs sen [Monitoring in a DevOps world](https://queue.acm.org/detail.cfm?id=3178
 
 Log management är processen av att samla in, lagra, hantera och analysera loggar från infrastruktur, system och applikation. Det är ett väldigt brett ämne då typ allt genererar loggar av något slag och system för att sköta log hantering är väldigt avancerade. För att få en överblick av delarna som ingår i log management och vilken användning olika roller har av log management läs följande:
 
+#### Läs och titta {#log-read}
+
 - [What is log management](https://www.tripwire.com/state-of-security/security-data-protection/security-controls/what-is-log-management/).
 
 - [Why is log management important](https://www.graylog.org/post/why-is-log-management-important).
 
-Läs också en snabb överblick av [ELK stack](https://www.guru99.com/elk-stack-tutorial.html) för en överblick av ett av de mest populära systemen för Log management.
+- en snabb överblick av [ELK stack](https://www.guru99.com/elk-stack-tutorial.html) för en överblick av ett av de mest populära systemen för Log management.
 
 
 
@@ -69,7 +58,9 @@ Läs också en snabb överblick av [ELK stack](https://www.guru99.com/elk-stack-
 
 APM kan även kallas Application Performance Management (också APM), enligt vissa är det skillnad. APM är att övervaka, hantera och diagnosera prestanda, tillgänglighet och användare upplevelse av applikationer. Avancerade program används för att göra om data till "business value".
 
-Läs [What is application performace monitoring](https://www.eginnovations.com/blog/what-is-application-performance-monitoring/).
+#### Läs och titta {#apm-read}
+
+- [What is application performace monitoring](https://www.eginnovations.com/blog/what-is-application-performance-monitoring/).
 
 
 
@@ -77,9 +68,11 @@ Läs [What is application performace monitoring](https://www.eginnovations.com/b
 
 På senare år har det även börjat talas mycket om Observability vilket hänger ihop med monitoring. Vi kan se monitoring som att ha kolla på hälsan av våra system medan observability är att ha djup insikt i hur våra system beter sig. Observability ska hjälpa oss hitta fel och problem.
 
-Läs [Observability sv. Monitoring](https://dzone.com/articles/observability-vs-monitoring).
+#### Läs och titta {#observability-read}
 
-Om ni vill kan ni även kolla på [What Does the Future Hold for Observability?](https://www.youtube.com/watch?v=MkSdvPdS1oA)
+- [Observability sv. Monitoring](https://dzone.com/articles/observability-vs-monitoring).
+
+- Om ni vill kan ni även kolla på [What Does the Future Hold for Observability?](https://www.youtube.com/watch?v=MkSdvPdS1oA).
 
 
 
@@ -87,7 +80,16 @@ Om ni vill kan ni även kolla på [What Does the Future Hold for Observability?]
 
 Vi ska använda oss av [Prometheus](https://prometheus.io/), ett väldigt populärt verktyg för att lagra tidsserie data och visualisera data. Prometheus har inbyggt stöd för att visa simpla grafer för data men oftast använder man det tillsammans med externa visualiseringsverktyg. Vi ska använda [Grafana](https://grafana.com/) för att bygga dashboards med grafer och diagram över datan från Prometheus.
 
-Läs [Prometheus Monitoring : The Definitive Guide in 2019](https://devconnected.com/the-definitive-guide-to-prometheus-in-2019/) för en överblick av vad Prometheus är och vad det innehåller.
+#### Läs och titta {#prometheus-read}
+
+- Läs [Prometheus Monitoring: The Definitive Guide in 2019](https://devconnected.com/the-definitive-guide-to-prometheus-in-2019/) för en överblick av vad Prometheus är och vad det innehåller.
+
+
+
+
+
+
+
 
 När ni sen har lite kolla på hur Prometheus fungerar ska ni testa installera Prometheus, Grafana och koppla ihop dem.
 

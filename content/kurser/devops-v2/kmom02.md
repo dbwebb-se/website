@@ -168,7 +168,7 @@ Uppgifter  {#uppgifter}
   - Vid ny release ska Actions köra Ansible playbooks som gör en valbar CD strategi för att driftsätta den nya versionen.
     - Er strategi ska inte ha någon downtime, så ni kan inte använda Recreate Deployment Strategy.
     - Från GitHub Actions kan ni inte koppla upp er mot Azure och köra `gather_instances`. Därför la vi till att skapa subdomänerna i första uppgiften.
-    - I filen `ansible/hosts`, lägg till ny hosts som går till `appserver1.<domännamn>` och `appserver2.<domännamn>`. Då kan ni använda de hosts i er nya CD Playbook. Ni får lägga till fler hosts om det behövs.
+    - I filen `ansible/hosts`, lägg till ny hosts som går till `appserver1.<domännamn>` och `appserver2.<domännamn>`. Då kan ni använda de hosts i er nya CD Playbook. Ni får lägga till fler hosts om det behövs. PS. Namnge inte dem till samma groups/hosts namn som gather_instances skriptet ger.
   - En avslutande del i er CD playbook ska verifiera att rätt version av Microblog körs på produktionsservrarna.
 
 1. På Microbloggen, lägg till en ny route som visar vilken version av appen som körs på servern.

@@ -225,12 +225,12 @@ Uppgifter  {#uppgifter}
         - Mozilla har ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna.
     - Uppdatera er Nginx konfiguration i Ansible med lösningarna.
 1. Uppdatera Security groups bara tillåter de ip-adresser som behöver tillgång till specifika portar.
-    - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats.
+    - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats och lägg till att köra `gather_instances` mellan skapa instanser och skapa security groups. Annars har vi inte tillgång till instansernas IP vi precis skapade.
     - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 får koppla upp sig till mysql porten på database.
-    - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`
+    - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`.
 1. Förbättra SSH konfigurationen.
     - Använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) för att hitta förbättringar. Kör det på er domännamn. Alla servrar ska ha samma konfiguration, därför behöver vi bara köra det mot en.
-    - 
+
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen.
 
 

@@ -46,6 +46,11 @@ Här följer tekniska studier (och liknande) som utfördes under 2023.
 
 1. [TripGenerator](https://github.com/JuliaLind/TripGenerator) to auto-generating a number of consequent routes for electric bikes, which takes into consideration obstacles and any polygons to avoid defined by yourself.
 
+1. [report-acr](https://github.com/missivaeak/report-acr) 
+Instruktioner till hur man kan komma igång med ett Azure Container Registry. Azure Container Register (ACR) är gratis för oss på BTH.
+
+1. [Using NGINX as load balancer](https://github.com/idaloof/nginx-load-balancer) The idea behind this repo is to set up the possibility to load your server with requests from a number of simultaneous users, both with and without a load balancer.
+
 
 
 2022 {#2022}

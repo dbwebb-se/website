@@ -21,10 +21,6 @@ Denna vecka är det leverans av SDS och vi är klara med fasen för analys, desi
 <!--
 TODO
 
-* Individuell reflektion över arbetet så här långt samt se vilken plats man själv tar i projektet.
-    * Fundera på om det är något man vill ändra för resten av projektet.
-    * Lägg till som assignment som en avstämningspunkt?
-
 * Frågor till näringslivet.
 * Vad vill näringslivet att vi skall kunna när vi kommer ut? Vilket behov upplever de att de har av programmerare och vilka krav ställer de på nyanställda? Mikael har pratat med gamla studenter och samlat ihop vad de anser vara viktigt.
     * Intervjuva tre alumner om hur de jobbar med SDS och liknande dokument/faser.

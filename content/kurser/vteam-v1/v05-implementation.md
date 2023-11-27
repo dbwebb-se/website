@@ -7,7 +7,7 @@ views:
             src: "image/vteam/logo.png"
 author: mos
 revision:
-    "2023-10-10": "(C, mos) Utbruten till eget dokument."
+    "2023-11-27": "(C, mos) Utbruten till eget dokument."
     "2022-10-24": "(B, mos) Länk till domänbeskrivning."
     "2022-10-10": "(A, mos) Första utgåva inför kursstart HT2022."
 ...
@@ -19,7 +19,7 @@ Påbörja implementationsfasen av projektet och implementera systemet enligt SDS
 <!--
 TODO
 
-* Lägg till bilder i föreläsningen
+* Lägg till bilder i föreläsningen och exemplifiera mer
 
 -->
 
@@ -43,9 +43,11 @@ Uppgifter {#uppgift}
 Torsdag standup
 -----------------------
 
-Här kommer några tips om hur du kan status checka vad ni gör i gruppen.
+Här kommer några tips om hur du kan status checka vad ni gör i gruppen och om viktiga saker finns på plats.
 
 * Är systemet indelat i subsystem och alla har en huvudsaklig del att syssla med?
-* Hur tar gruppen hand om saker som faller mellan stolarna?
 * Alla kan committa till Git-repot?
 * Alla kan köra docker på sin dator och kan starta en container som ligger i repot?
+* När planerar ni er första integration internt i gruppen?
+* Har gruppen en plan för hur man kommuncerar resten av projektet?
+* Hur tar gruppen hand om saker som faller mellan stolarna?

@@ -1,7 +1,7 @@
 ---
 author: mos
 revision:
-    "2023-11-06": "(A, mos) Ny presentation inför ht23."
+    "2023-11-27": "(A, mos) Ny presentation inför ht23."
 ...
 Föreläsning: Team i lyckade projekt
 ====================

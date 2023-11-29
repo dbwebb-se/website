@@ -51,6 +51,10 @@ Instruktioner till hur man kan komma igång med ett Azure Container Registry. Az
 
 1. [Using NGINX as load balancer](https://github.com/idaloof/nginx-load-balancer) The idea behind this repo is to set up the possibility to load your server with requests from a number of simultaneous users, both with and without a load balancer.
 
+1. [Database Connection Speed Test](https://github.com/Mooney91/database-speed) compare and analyse the speed and performance of Node.js, Python, and PHP when connecting to a database.
+
+1. [Sign in using GitHub](https://github.com/kiwijos/vteam-github-oauth-study) "Sign in using GitHub". As a link. In your app. That let's users sign into the app using GitHub. That's the goal of this tech demo.
+
 
 
 2022 {#2022}

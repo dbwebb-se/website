@@ -114,7 +114,21 @@ The teacher will grade your submission and provide feedback on Canvas and though
 
 
 <!--
-Resources
+Feedback
 ------------------------
+
+Hej,
+
+Jag har läst igenom ert SDS-dokument och försökt skapa mig en bild av ert system och dess indelning i subsystem.
+
+Jag försöker framförallt få en känsla av att ni kan förmedla en bild av ert blivande system.
+
+Er SDS är GODKÄND.
+
+Jag ser fram emot att se hela systemet i drift vid leveransen.
+
+//Mikael
+
+PS.
 
 -->

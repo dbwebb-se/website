@@ -19,8 +19,11 @@ Påbörja implementationsfasen av projektet och implementera systemet enligt SDS
 <!--
 TODO
 
-* Lägg till bilder i föreläsningen och exemplifiera mer
-
+* Lägg till bilder i föreläsningen för att lätta upp och inpspirera,
+    * och exemplifiera mer, mer citat?
+* Föreläsningen tar nästan 2x45 min
+    * Glöm inte ta paus
+    * Gör den mindre?
 -->
 
 

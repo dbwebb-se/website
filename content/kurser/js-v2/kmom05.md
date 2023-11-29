@@ -43,7 +43,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[CO2 Emission](https://github.com/dbwebb-se/js-v2/blob/master/components/05/assignment-1.md)". Spara koden i `public/`.
 
 
-<!-- [YOUTUBE src=0CNP6uQkBU4 width=639 caption="Hur kan det se ut när det är klart"] -->
+[YOUTUBE src=dgOH1WtVo_I width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 
@@ -52,6 +52,15 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 ```console
 $ dbwebb test kmom05
 ```
+
+### Dokumentera din kod {#jsdoc}
+
+Du genererar dokumentationen med följande script:
+
+```console
+$ npm run jsdoc --what=public
+```
+
 
 ### Validera din kod {#validate}
 
@@ -65,13 +74,6 @@ $ npm run htmlhint --what=public
 
 Du kan även köra alla linters på en gång med `$ npm run lint`.
 
-### Dokumentera din kod {#jsdoc}
-
-Du genererar dokumentationen med följande script:
-
-```console
-$ npm run jsdoc --what=public
-```
 
 ### Publicera din kod {#publish}
 

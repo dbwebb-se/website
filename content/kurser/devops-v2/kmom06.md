@@ -21,17 +21,21 @@ Påbörja inte före denna rutan är borta.
 
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
 
+
+[INFO]
+PS! Om ni har fått kmom04 rättat, radera alla era resurser på Azure förutom er DNS zone.
+
+Innan ni sätter igång med kursmomentet kolla att ert Microblog repo är synkat med originalet, [Syncing a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
+
+PS! Om ni har fått kmom04 rättat, radera alla era resurser på Azure förutom er DNS zone.
+[/INFO]
+
+
 Vi kommer använda oss utav Kubernetes (K8s) för container orchestration men det är bra att känna till vilka andra verktyg som finns och lite om vad som skiljer dem åt.
 
 Läs [What Is Container Orchestration?](https://blog.newrelic.com/engineering/container-orchestration-explained/)
 
-[INFO]
-PS! Om ni har fått kmom05 rättat, radera alla era resurser på Azure förutom er DNS zone.
 
-Innan ni sätter igång med kursmomentet kolla att ert Microblog repo är synkat med originalet, [Syncing a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
-
-PS! Om ni har fått kmom05 rättat, radera alla era resurser på Azure förutom er DNS zone.
-[/INFO]
 
 
 

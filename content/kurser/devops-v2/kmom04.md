@@ -108,7 +108,7 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 
 1. Utöka Ansible provisioning koden så att ni skapar en till server som heter och har typen `monitoring`.
-    - Öppna passande portar i security groups.
+    - **Öppna passande portar i security groups.**
 
 1. Skriv Ansible kod som installerar och startar Prometheus, Grafana och Alertmanager på den nya VM instansen.
     - Använd er av modulen [Grafana datasources](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_datasource_module.html) för att lägga till prometheus som datakälla
@@ -127,8 +127,7 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 1. Lägg till en Reverse Proxy i er [Nginx konfiguration till Grafana och Grafana konfiguration](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f). Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
 
-Glöm inte att öppna portar i Azure!
-
+**Glöm inte att öppna portar i Azure!**
 
 Extrauppgift {#extra}
 --------------------------

@@ -9,7 +9,7 @@ revision:
 Kmom06: Container orchestration
 ==================================
 
-Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera trycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället börjar ni med att läsa på om container orchestration.
+Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera trycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället  börjar ni läsa på om container orchestration.
 
 [WARNING]
 Kurs under utveckling!
@@ -21,6 +21,7 @@ Påbörja inte före denna rutan är borta.
 
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
 
+
 [INFO]
 PS! Om ni har fått kmom04 rättat, radera alla era resurser på Azure förutom er DNS zone.
 
@@ -29,26 +30,16 @@ Innan ni sätter igång med kursmomentet kolla att ert Microblog repo är synkat
 PS! Om ni har fått kmom04 rättat, radera alla era resurser på Azure förutom er DNS zone.
 [/INFO]
 
+
 Vi kommer använda oss utav Kubernetes (K8s) för container orchestration men det är bra att känna till vilka andra verktyg som finns och lite om vad som skiljer dem åt.
 
+Läs [What Is Container Orchestration?](https://blog.newrelic.com/engineering/container-orchestration-explained/)
 
-### Container Orchestration {#co}
 
-Container orchestration är det övergripandet namnet på verktyg som hantera livscykeln för många containers.
-
-#### Läs och titta {#co-read}
-
-- [What Is Container Orchestration?](https://web.archive.org/web/20210125081227/https://blog.newrelic.com/engineering/container-orchestration-explained/)
 
 
 
 ### Kubernetes {#k8s}
-
-Ni ska lära er Kubernetes vilket är ett av de populäraste verktygen men samtidigt det mest komplicerade. Det innebär att det är mycket kopierande och skriva av.
-
-Kubernetes har själva väldigt mycket och bra material för att lära sig Kubernetes och alla dess delar. En bra utgångspunkt är deras [dokumentation](https://kubernetes.io/docs/home/), där finns länkar till det mesta.
-
-#### Läs och titta {#k8s-read}
 
 Börja med en snabb introduktion till Kubernetes begrepp.
 
@@ -58,7 +49,7 @@ Om det inte var pedagogiskt nog förklaring av Kubernetes kan jag rekommendera f
 
 [YOUTUBE src="Q4W8Z-D-gcQ" caption="The Illustrated Children's Guide to Kubernetes."]
 
-#### Att göra {#k8s-do}
+Kubernetes har själva väldigt mycket och bra material för att lära sig Kubernetes och alla dess delar. En bra utgångspunkt är deras [dokumentation](https://kubernetes.io/docs/home/), där finns länkar till det mesta.
 
 - Jobba igenom modul 1-6 i [Learn Kubernetes basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/). För att få en bättre förståelse för grunderna i K8s (Kubernetes) och hur man kan interagera med det.
 
@@ -68,15 +59,15 @@ Om det inte var pedagogiskt nog förklaring av Kubernetes kan jag rekommendera f
 
 Det finns två sätt att hantera objekt (pods, deployments, etc...) i K8s, imperative och declarative. I imperative kör vi kommandon i terminalen för att jobba mot ett K8s kluster, som ni gjorde i Kubernetes basics, och i declarative skriver vi konfiguration i filer och kör mot klustret.
 
+Läs om deras olika [för och nackdelar](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/).
+
 Vi vill givetvis jobba declarative för att då kan vi spara konfigurationen i Git och vi behöver inte oroa oss för snowflake servrar eller att bara en person har kunskapen om klustret.
 
 [FIGURE src="http://assets.digitalocean.com/articles/comics/imperative-declarative-k8s.jpg" caption="digitalocean förklarar [imperativ vs declarative](https://www.digitalocean.com/community/tutorials/imperative-vs-declarative-kubernetes-management-a-digitalocean-comic)"]
 
+K8s använder yaml filer för att skriva konfigurationen i filer, som Ansible. För en överblick av hur filerna struktureras och vad de kan innehålla. Ska ni läsa en guide men ni behöver inte jobba med i guiden, det räcker om ni läser och förstår.
 
-##### Läs och titta {#k8s-read}
-
-- [För och nackdelar med deklarativ vs imperativ](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/).
-- För att se hur K8s strukturerar yaml filer läs [Kubernetes deployment tutorial](https://devopscube.com/kubernetes-deployment-tutorial/). Ni behöver bara läsa, inte jobba igenom.
+Läs igenom [Kubernetes deployment tutorial](https://devopscube.com/kubernetes-deployment-tutorial/) 
 
 <!-- Gör följande Katakoda för att öva på k8s. [Deploy containers using Yaml](https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions). 
 
@@ -85,27 +76,25 @@ Den försvann med katakoda. har inte hittat en bra ersättare.
 
 
 
-### Stateless applications {#statless}
+#### Stateless applications {#statless}
 
 K8s bygger på virtualisering och containrar, vilket i grunden är stateless. Vi har inte tillgång till persistent data, när vi stänger ner en container så försvinner dess data. K8s och även Docker är i grunden byggt för att köra stateless applikationer, men när populariteten av verktygen har ökat har även användningsområden ökat och de har då lagt till olika lösningar för att få till persistent data (stateful). Men det är inte lika lätt att få till persistent data i K8s som det är i Docker.
 
-#### Läs och titta {#stateless-read}
-
 - Läs [Stateful vs Stateless Applications on Kubernetes](https://linuxhint.com/stateful-vs-stateless-kubernetes/) för en bättre genomgång av skillnaden.
-
-#### Att göra {#stateless-do}
 
 - Jobba igenom [Deploying PHP Guestbook application with Redis](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/).
 
+<!-- ** guiden nedanför funkar bra på aks!!!!!** Om de har skapat resursgrupp och satt upp ett kluster redan. Funkade med 1 nod.
+
+I så fall gör första delen av den nya artikeln, videon, installera saker och aktivera config
+ -->
 
 
-### Stateful applications {#stateful}
 
-Nu när ni har testat på att köra en stateless applikation i K8s ska ni lära er hur man kan köra en stateful applikation.
 
-#### Läs och titta {#stateful-read}
+#### Stateful applications {#stateful}
 
-- [The sad state of stateful Pods in Kubernetes](https://elastisys.com/sad-state-stateful-pods-kubernetes/) för en förklaring av problemet med stateful applikationer.
+Nu när ni har testat på att köra en stateless applikation i K8s ska ni lära er hur man kan köra en stateful applikation. Börja med att läsa [The sad state of stateful Pods in Kubernetes](https://elastisys.com/sad-state-stateful-pods-kubernetes/) för en förklaring av problemet med stateful applikationer.
 
 Kolla på följande videos om volymer i Kubernetes.
 
@@ -116,22 +105,27 @@ Kolla på följande videos om volymer i Kubernetes.
 
 - Läs [StatefulSet Basics](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/).
 
-
-#### Att göra {#stateful-do}
-
 - Jobba igenom [Deploying WordPress and MySQL with Persistent Volumes](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/).
 
+<!-- Jobba igenom [Persistent volumes](https://www.katacoda.com/mjboxboat/courses/kubernetes-fundamentals-2/persistent-volumes) på Katacoda. -->
+
+<!-- https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/ -->
+
+<!-- Innan ni stänger ner hela miljön, lägg till webui https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/ för att inspektera K8s infrastrukturen. -->
+
+<!-- https://www.katacoda.com/courses/kubernetes/liveness-readiness-healthchecks -->
+
+<!-- https://www.katacoda.com/javajon/courses/kubernetes-pipelines/helm -->
 
 
-### Designa för Kubernetes {#design} 
+
+#### Designa för Kubernetes {#design} 
 
 Ni har nu titta lite på hur en applikations design/arkitektur påverkar hur lätt det är att köra den i K8s. Det finns så klart flera saker som är bra att tänka på när man skapa sin applikation men även hur man sätter upp den i K8s.
 
-#### Läs och titta {#design-read}
+Läs [Architecting Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/architecting-applications-for-kubernetes) som tar upp lite om hur man ska tänka runt applikationen men även hur man använder K8s.
 
-- [Architecting Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/architecting-applications-for-kubernetes) tar upp lite om hur man ska tänka runt applikationen men även hur man använder K8s.
-
-- [Modernizing Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes) handlar  om hur man kan skriva om en applikation för att den ska fungera bättre för K8s.
+Läs [Modernizing Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes) som handlar mer om hur man kan skriva om en applikation för att den ska fungera bättre för K8s.
 
 
 

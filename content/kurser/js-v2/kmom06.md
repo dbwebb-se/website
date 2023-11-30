@@ -1,18 +1,15 @@
 ---
 author: lew
 revision:
+  "2023-11-20": (B, lew) Uppdaterad version inför ht23.
   "2021-12-03": (A, lew) Ny version inför ht21.
 ...
 
 # Kmom06: Objekt
 
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
-
 Vi har lärt oss att använda moduler för att strukturera vår kod och dela upp den i mindre delar. Vi ska i det här momentet fortsätta med en modulstruktur med hjälp av objekt. Till vår hjälp har vi en grund i form av ett halvfärdigt "hänga gubben" spel.
 
-<!--stop-->
+<!--more-->
 
 [FIGURE src=/img/hangman/hangman-validates-inline.svg caption="En SVG-bild till ett hänga gubben-spel som byggs enligt module pattern."]
 
@@ -31,12 +28,6 @@ Läs följande.
     * [The Module Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript)
  -->
 
-### MDN {#mdn}
-
-Läs följande:
-
-1. Läs i [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) för att påminna dig om begreppet closure.
-   - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)
 
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 
@@ -46,17 +37,16 @@ _(ca: 12-16 studietimmar)_
 
 Genomför övningarna för att träna inför uppgifterna.
 
-1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/articles/kmom06) för kursmoment 6.
+1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/components/06) för kursmoment 6.
 
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Hangman](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom06/01_hangman.md)". Spara koden i `kmom06/`.
+1. Gör uppgiften "[Hangman](https://github.com/dbwebb-se/js-v2/blob/master/components/06/assignment-1.md)". Jobba i mappen `public/`.
 
-1. Gör uppgiften "[Me page 6](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom06/02_mepage6.md)". Spara resultatet i `me/redovisa/`.
 
-[YOUTUBE src=C1oDcKZ4B6s width=639 caption="Hur kan det se ut när det är klart"]
+<!-- [YOUTUBE src=dgOH1WtVo_I width=639 caption="Hur kan det se ut när det är klart"] -->
 
 ### Testa din inlämning {#test}
 
@@ -66,24 +56,36 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 $ dbwebb test kmom06
 ```
 
+### Dokumentera din kod {#jsdoc}
+
+Du genererar dokumentationen med följande script:
+
+```console
+$ npm run jsdoc --what=public
+```
+
+
+### Validera din kod {#validate}
+
+Du validerar koden med npm scripten:
+
+```console
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
+```
+
+Du kan även köra alla linters på en gång med `$ npm run lint`.
+
+
 ### Publicera din kod {#publish}
 
 Du lämnar in koden via dbwebbkommandot:
 
 ```console
-$ dbwebb publish kmom06
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
-_(ca: 1-2 studietimmar)_
-
-Läs [instruktionen om hur du skall redovisa](./../redovisa).
-
-Se till att följande frågor besvaras i redovisningstexten.
-
-- Har du koll på hur function scope och closure fungerar eller känns det naturligt?
-- Har du några erfarenheter av designmönster sedan tidigare?
-- Har du koll på vad termerna `this` och `instans` är när vi pratar om objekt?
-- Vad är din TIL för det här kursmomentet?
+Se till så koden är publicerad. Lämna sedan in på Canvas efter du genomfört quizzet.

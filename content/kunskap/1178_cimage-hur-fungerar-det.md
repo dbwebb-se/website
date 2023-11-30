@@ -10,7 +10,7 @@ revision:
 Cimage - Hur fungerar det?
 ==================================
 
-En väg att gå med optimering och manipulering av bilder är att använda moduler för det. Vi ska jobba med Mikael Roos egenbyggda Iimage, som bland annat ger oss tillgång till följande funktionalitet:
+En väg att gå med optimering och manipulering av bilder är att använda moduler för det. Vi ska jobba med Mikael Roos egenbyggda Cimage, som bland annat ger oss tillgång till följande funktionalitet:
 
 * Resize, crop
 * Filter

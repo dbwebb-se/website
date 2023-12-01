@@ -14,9 +14,9 @@ revision:
 Kmom05: Säkerhetstestning
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT23. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Mjukvarutest ökar kvaliteten i den mjukvara som skrivs, men hur fungerar det med säkerhetstest. I detta kursmomentet, som bygger på sårbarhetsanalyser, går vi igenom vad säkerhetstester innebär och vad man behöver tänka på.
 
@@ -28,7 +28,7 @@ Föreläsning  {#forelasningar}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2023-12-04) H430, med Anton om säkerhetstänket vid testning.
+* 10.15 (2023-12-04) H430, med Anton om säkerhetstänket vid testning samt Marie med säkerhetstestning praktiskt.
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -57,6 +57,7 @@ Det finns flera vägar att gå för att sätta upp testning med JavaScript och E
 * [ChaiJS](https://www.chaijs.com/)
 * [Jest](https://jestjs.io/)
 * [SuperTest](https://www.npmjs.com/package/supertest)
+* [Cypress](https://learn.cypress.io/)
 
 
 Laboration  {#laboration}

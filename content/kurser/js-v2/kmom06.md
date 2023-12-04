@@ -46,7 +46,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Hangman](https://github.com/dbwebb-se/js-v2/blob/master/components/06/assignment-1.md)". Jobba i mappen `public/`.
 
 
-<!-- [YOUTUBE src=dgOH1WtVo_I width=639 caption="Hur kan det se ut när det är klart"] -->
+[YOUTUBE src=LJ0RN4Gl6Ig width=639 caption="Hur kan det se ut när det är klart"]
 
 ### Testa din inlämning {#test}
 

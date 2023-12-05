@@ -15,7 +15,7 @@ Kmom07/10: Projekt och examination
 ==================================
 
 [WARNING]
-Kursen uppdateras inför HT23. Är "gula rutan" borta är det fritt fram att börja.
+Kursen uppdateras inför HT23. Är "gula rutan" borta är det fritt fram att börja. Jag planerar att släppa projektet 12/12. 
 [/WARNING]
 
 Detta kursmoment avslutar och examinerar kursen.

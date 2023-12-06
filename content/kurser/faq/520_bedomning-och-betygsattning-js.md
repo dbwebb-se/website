@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+    "2023-12-06": "(B) Andra utgåvan, uppdaterad inför ht23"
     "2022-12-08": "(A) Första utgåvan"
 ...
 Bedömning och betygsättning (js, projekt)
@@ -44,9 +45,9 @@ Poängbedömning {#poangbedomning}
 
 
 
-### Kursmoment & Redovisningstexter {#bedomning-kmom}
+### Kursmoment {#bedomning-kmom}
 
-För kompletta inlämningar som är godkända och har en reflekterande redovisningstext ges 30 poäng.
+För kompletta inlämningar (01-06) som är godkända ges 30 poäng. Resultatet av quizfrågorna används vid eventuella gränsfall där det väger mellan betygsnivåer.
 
 
 
@@ -56,14 +57,12 @@ Följande tabell används vid bedömning av projektet.
 
 | Bedömningspunkt | Poäng | Din poäng |
 |-----------------|-------|-----------|
-| Koden validerar enligt kursens standard. | 4 | |
 | Deltest 1 är implementerat och fungerar felfritt. | 10 | |
 | Deltest 2 är implementerat och fungerar felfritt. | 10 | |
 | Deltest 3 är implementerat och fungerar felfritt. | 10 | |
 | Deltest 4 är implementerat och fungerar felfritt. | 15 (optionellt) | |
 | Deltest 5 är implementerat och fungerar felfritt. | 15 (optionellt) | |
-| JSDoc är implementerat och fungerar felfritt. | 6 (optionellt) | |
-| TOTALT | 70 | |
+| TOTALT | 60 | |
 
 
 

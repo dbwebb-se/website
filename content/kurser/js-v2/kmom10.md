@@ -1,15 +1,12 @@
 ---
 author: lew
 revision:
+  "2023-12-06": (C, lew) Uppdaterad inför ht23.
   "2022-12-08": (B, lew) Uppdaterad inför ht22.
   "2021-12-10": (A, lew) Uppdaterad inför ht21.
 ...
 
 # Kmom10: Projekt och examination
-
-[WARNING]
-Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
 
 Detta kursmoment avslutar och examinerar kursen.
 
@@ -19,7 +16,7 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
-<!--stop-->
+<!--more-->
 
 ## Bedömning och betygsättning {#bedomning}
 
@@ -29,7 +26,7 @@ När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisad
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Intelligenstest](https://github.com/dbwebb-se/js-v2/blob/master/assignments/kmom10/01_project.md)". Spara koden i `kmom10/`.
+1. Gör uppgiften "[Intelligenstest](https://github.com/dbwebb-se/js-v2/blob/master/components/10/01_project.md)". Spara koden i `public/`.
 
 ## Redovisning {#redovisning}
 
@@ -41,11 +38,11 @@ Dessa uppgifter skall utföras och redovisas.
 
 1.3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-2\. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte länka till din me-sida och projektet.
+2\. Ta en kopia av texten på din redovisningssida och kopiera in den på Canvas. Glöm inte länka till din me-sida.
 
 3\. Se till att samtliga kursmoment validerar.
 
-### Krav på videon {#krav-video}
+### Krav på videon (distans, KP) {#krav-video}
 
 1. Börja med att visa upp en idhandling och ditt ansikte så vi vet att du är du.
 
@@ -57,7 +54,18 @@ Dessa uppgifter skall utföras och redovisas.
 
 5. Sikta på 4-5 minuter.
 
-6. Lägg till videon som en kommenat i Canvas, lägg inte upp den på Youtube.
+6. Lägg till videon som en kommentar i Canvas eller på annat ställe där den är skyddad, lägg inte upp den på Youtube. Dubbelkolla så länken till videon fungerar.
+
+### Krav på presentation (campus) {#krav-pres}
+
+1. Berätta om projektet och visa upp vad du har gjort.
+
+2. Lyft fram delar som du har jobbat mycket med eller som du är stolt över.
+
+3. Försök hålla presentationen som en demo i arbetslivet, det är bra träning.
+
+4. Sikta på 4-5 minuter.
+
 
 ### Publicera {#publish}
 
@@ -65,6 +73,5 @@ Glöm inte att publicera kursmomentet.
 
 ```bash
 # Ställ dig i kurskatalogen
-$ dbwebb publish kmom10
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```

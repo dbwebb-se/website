@@ -157,7 +157,10 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "coreos" chart repository
 Update Complete. ⎈ Happy Helming!⎈
 
-$ helm install nginx ingress-nginx/ingress-nginx --set rbac.create=true --version 4.0.12 # installerar ingressen i vårt kluster, sätter upp resurserna.
+<!-- $ helm install nginx ingress-nginx/ingress-nginx --set rbac.create=true --version 4.0.12 # installerar ingressen i vårt kluster, sätter upp resurserna. -->
+$ helm install ingress-nginx ingress-nginx/ingress-nginx \
+  --version 4.8.4 \
+  --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-load-balancer-health-probe-request-path"=/healthz # installerar ingressen i vårt kluster, sätter upp resurserna.
 NAME: nginx
 LAST DEPLOYED: Wed Dec  1 14:23:02 2021
 NAMESPACE: default
@@ -312,10 +315,10 @@ kind: Ingress
 metadata:
   name: kuard
   annotations:
-    kubernetes.io/ingress.class: "nginx" # kopplar vår ingress till den installerade nginx-ingress
     # cert-manager.io/issuer: "letsencrypt-staging"
 
 spec:
+  ingressClassName: nginx # kopplar vår ingress till den installerade nginx-ingress
   tls: # sätter att vi ska bara acceptera https trafik till er domän
   - hosts:
     - <ditt domännamn>
@@ -420,7 +423,7 @@ Vi ska nu installer en [cert-manager](https://cert-manager.io/docs/) den lägger
 Kör följande kommando för att installera:
 
 ```
-$ kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.6.1/cert-manager.yaml
+$ kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.8.0/cert-manager.yaml
 customresourcedefinition.apiextensions.k8s.io/certificaterequests.cert-manager.io created
 customresourcedefinition.apiextensions.k8s.io/certificates.cert-manager.io created
 customresourcedefinition.apiextensions.k8s.io/challenges.acme.cert-manager.io created
@@ -757,7 +760,7 @@ Om det tar tid kan ni kolla om `kubectl describe order` och `kubectl describe ch
  $ kubectl describe certificate demo-tls
 -->
 
-That's it! Nu kan ni gå till er domän i webbläsaren och ni borde mötas av en liknande vy.
+That's it! Nu kan ni gå till er domän i webbläsaren och ni borde mötas av en liknande vy. Om ni får fel kan det vara så att Microsoft's DNS inte har uppdaterats. Gå till `https://www.nslookup.io/website-to-ip-lookup/` och skriva in er domän. Kolla att den är kopplad till rätt IP. Om den inte är det dubbelkolla att ni har sparat ändringen i Azure annars är det bara att vänta. Ni kan också testa en annan webbläsare eller `wget <er domän> && cat index.html`.
 
 [FIGURE src=/image/devops/sucess.png caption="kuard i webbläsaren"]
 
@@ -766,7 +769,7 @@ That's it! Nu kan ni gå till er domän i webbläsaren och ni borde mötas av en
 Städa upp {#cleanup}
 -------------------------------
 
-Gå in på Azure och radera ert kluster eller kör `kubectl delete all --all` och `kubectl delete ingress name -n namespace` för att radera alla resurser i klustret.
+Gå in på Azure och radera ert kluster eller kör `kubectl delete all --all` och `kubectl delete ingress <name> -n <namespace>` för att radera alla resurser i klustret. Använd `helm uninstall ingress-nginx` för att ta bort den från helm också.
 
 
 

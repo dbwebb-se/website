@@ -65,7 +65,7 @@ Skapa ett kluster på AKS {#aks}
 
 Jobba igenom videon nedanför och skapa ett kluster.
 
-[YOUTUBE src=aCZW1f0Jkn4 caption="Skapa ett AKS kluster"]
+[YOUTUBE src=UgJSHskSnkU caption="Skapa ett AKS kluster"]
 
 När ni har skapat ett kluster ska vi göra så att vi kommer åt det med kubectl.
 

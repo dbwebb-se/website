@@ -15,7 +15,13 @@ Nu ska ni få välja själva ett verktyg att undersöka hur det funkar och passa
 Uppgifter  {#uppgifter}
 -------------------------------------------
 
-Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog. En del av studien ska innehålla instruktion på hur man sätter upp och inkorporerar verktyget i Microblog och i en del ska ni reflektera över hur verktyget relaterar till devops.
+Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog.
+
+Studien ska bestå av tre delar.
+
+- Förklara vad verktyget är och vad det gör.
+- Instruktioner på hur man inkorporerar verktyget i Microblog.
+- Reflektera över hur verktyget passar in i och relaterar till devops.
 
 Skapa **inte** ett eget repo för studien utan uppdatera koden i ert repo så verktyget fungerar för er och skapa ett dokument eller en ny README fil med er text.
 

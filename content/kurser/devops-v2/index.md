@@ -131,12 +131,11 @@ Läs [instruktionen till kursmoment 04](./kmom04).
 
 
 
-<!-- ### Kmom05: Continuous Security {#kmom05}
+### Kmom05: Valfritt verktyg {#kmom05}
 
-Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på development och operations teams men även security behöver inkluderas för att det ska bli ett bra resultat. I detta kursmoment ska vi kolla på hur vi kan inkludera säkerhet i hela utvecklingsprocessen, så att alla blir ansvariga för säkerhet i ett projekt.
+Ni får själva välja ett verktyg ni vill testa integrera i er Microblog. Det ska resultera i en teknisk rapport där ni förklarar hur man kan integrera verktyget och hur det hänger ihop med devops.
 
-
-Läs [instruktionen till kursmoment 05](./kmom05). -->
+Läs [instruktionen till kursmoment 05](./kmom05).
 
 
 

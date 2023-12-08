@@ -146,6 +146,7 @@ Nu när ni vet skillnaden på olika sätt att hantera tillgång till vårt klust
 
 Använd helm för att ladda ner `ingress-ngingx`.
 
+<!-- $ helm install nginx ingress-nginx/ingress-nginx --set rbac.create=true --version 4.0.12 # installerar ingressen i vårt kluster, sätter upp resurserna. -->
 ```
 $ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx # lägger till repot för nginx-ingress
 
@@ -157,7 +158,6 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "coreos" chart repository
 Update Complete. ⎈ Happy Helming!⎈
 
-<!-- $ helm install nginx ingress-nginx/ingress-nginx --set rbac.create=true --version 4.0.12 # installerar ingressen i vårt kluster, sätter upp resurserna. -->
 $ helm install ingress-nginx ingress-nginx/ingress-nginx \
   --version 4.8.4 \
   --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-load-balancer-health-probe-request-path"=/healthz # installerar ingressen i vårt kluster, sätter upp resurserna.

@@ -11,12 +11,6 @@ Kmom06: Container orchestration
 
 Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera trycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället börjar ni med att läsa på om container orchestration.
 
-[WARNING]
-Kurs under utveckling!
-
-Påbörja inte före denna rutan är borta.
-[/WARNING]
-
 <!-- more -->
 
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
@@ -30,7 +24,7 @@ PS! Om ni har fått kmom05 rättat, radera alla era resurser på Azure förutom 
 [/INFO]
 
 [INFO]
-I detta kursmomentet ska ni jobba individuellt. Men eftersom ni bara har ett repo för gruppen behöver vi strukturera filerna i mappar. Filerna ni producerar ska läggas i mappen "kubernetes". Skapa en undermapp per gruppmedlem med ert namn och lägga era filer i dem. T.ex. för mig hade det blivit "kubernetes/andreas/fil.yml".
+I detta kursmomentet ska ni jobba individuellt, ni får fortfarande diskutera och hjälpa varandra. Men eftersom ni bara har ett repo för gruppen behöver vi strukturera filerna i mappar. Filerna ni producerar ska läggas i mappen "kubernetes". Skapa en undermapp per gruppmedlem med ert namn och lägga era filer i dem. T.ex. för mig hade det blivit "kubernetes/andreas/fil.yml".
 [/INFO]
 
 Vi kommer använda oss utav Kubernetes (K8s) för container orchestration men det är bra att känna till vilka andra verktyg som finns och lite om vad som skiljer dem åt.

@@ -6,6 +6,7 @@ author:
     - nik
     - grm
 revision:
+    "2023-12-12": "(D, grm) PHP till Javascript, ny projektuppgift inför HT23."
     "2022-12-04": "(C, grm) Uppdaterad inför HT22."
     "2020-12-10": "(B, nik) Uppdaterad inför HT20."
     "2019-12-09": "(A, lew) Första versionen."
@@ -66,24 +67,78 @@ Börja med att kopiera in applikationen till arbetsmappen och installera de nöd
 
 ```bash
 # Flytta till kurskatalogen
-$ rsync -ravd example/eshop-app2 me/kmom10/
-$ cd me/kmom10/eshop-app2
-$ docker-compose up -d
+$ rsync -ravd example/eshop-js me/kmom10/
+$ cd me/kmom10/eshop-js
+$ npm install
+$ docker compose up -d
+$ npm start
+# I webbläsaren, öppna localhost:3000 för terminalappen och localhost:3001 för dockerappen
+# databasen ligger i docker
 ```
 
-Om du inte har en fungerande Dockermiljö kan du installera paketen med `composer install`.
+Om du inte har en fungerande Dockermiljö kan du installera paketen med `composer install`. 
 
-### Krav 1, 2, 3: Sårbarhetsanalys {#k1}
+```bash
+# Om du får problem med docker, ta ner, rensa och starta om 
+$ docker compose down -v
+$ docker compose up -d
+# Om du får problem i terminalen, rensa, installera om och start om 
+$ npm run clean-all
+$ npm install
+$ npm start
+```
 
-* Gör en sårbarhetsanalys, enligt samma kravspecifikation som i kmom04. För godkänt ska minst 5 st sårbarheter identifieras. Spara sårbarhetsanalysen i `kmom10/sårbarhetsanalys.pdf`.
+### Bakgrund {#bakgrund}
+dbwebb har en eshop implementerad med PHP och ett ramverk som heter Anax. Eftersom det är gamla tekniker och språk, så ville vi uppdatera eshopen. En firma 'HalvBra AB' kontaktades och de tog uppdraget. De bytte till Javascript och Express och lovade att allt skulle vara klart hösten 2023. Men så gick de i konkurs och här har vi en halvklar eshop.
 
-* Implementera testfall för sårbarheterna ca 3-5 per sårbarhet. 
-    * Det går att använda valfri "testsuite", men rekommendationen ligger på PHPUnit tillsammans med `make test` eller `composer test` (mer om Composer Script [här](https://getcomposer.org/doc/articles/scripts.md#writing-custom-commands)).
-    * Dokumentera i redovisningstexten vad du valde och hur man kör testerna. Notera även PHP-version du använder om du kör utanför Docker.
+Men där kommer du in i bilden. Vill du ta dig an uppdraget att fixa nästa steg i eshopen? Och dessutom göra den säkrare? Vi tror på dig! 
+
+
+### Krav 1 & 2: Sårbarhetsanalys {#k1}
+
+* Gör en sårbarhetsanalys på befintlig app, enligt samma kravspecifikation som i kmom04. För godkänt ska minst 3 st sårbarheter identifieras. Spara sårbarhetsanalysen i `kmom10/sårbarhetsanalys.pdf`.   
+Eftersom att appen är under utveckling så behöver du inte göra en kopia på databasen. Däremot ska du se till att testfallen rensar efter sig.
+
+* Implementera testfall för 3 olika sårbarheter, ca 3-5 per sårbarhet. Minst 10 totalt. 
+    * Det går att använda valfritt testverktyg
+    * Dokumentera i redovisningstexten vad du valde för testverktyg och hur man kör testerna.
+    * Dokumentera testerna som går fel i ett Appendix. 
 
 * Åtgärda de sårbarheterna du hittat. Utöka din analys på samma sätt som i kmom05.
+    * Motivera och dokumentera dina åtgärder
+    * Dokumentera testerna som går rätt i ett Appendix.
 
-### Krav 4: Loggning (optionell) {#k4}
+
+### Krav 3: Nyutveckling med säkerhetstänk {#k3}
+
+Tyvärr har inte allt utveckling blivit klar och just nu behandlas alla användare lika. Men en användare som har rollen admin ska kunna se ett admingränssnitt när den loggar in. I admingränsnittet ska alla användare listas och dessutom ska admin kunna uppdatera alla användare samt ta bort dem från eshopen. Implementera detta på ett säkert sätt.
+* Gör en skiss över nyutvecklingen och lägg som ett eget kapitel i Sårbarhetsanalysen. Där beskriver du grovt hur du tänkt implementera det hela. Beskriv skillnaden på admin och vanliga användare. Motivera dina designval med tanke på säkerhet och skillnade admin och vanliga användare. Avsluta med ett stycke om framtida utveckling. Vad tycker du att admin mer ska kunna i en eshop?
+* Funktionalitet för admin
+    * Implementera router och controller för admin          
+    * Gör en adminvy, där admin ska se alla användare och kunna uppdatera deras profiler
+    * Admin ska kunna ta bort användare från adminvyn
+* Gör en testplan för vilka sårbarheter du ska testa
+* Implementera testfall för sårbarheterna, minst 6 testfall totalt. 
+    * Valfritt testverktyg
+    * Dokumentera att testerna går fel. Kör gärna testdriven utveckling där du utvecklar testerna först.
+* Implementera så säkert du kan och kör testerna igen. Dokumentera att testerna går rätt.
+
+<!-- ### Krav 3: Nyutveckling med säkerhetstänk krav ht24 {#k3}
+
+Tyvärr har inte allt utveckling blivit klar och kunden vill att du fixar så att kunden kan beställa på ett säkert sätt. Kunden kan inte beställa nu. När kunden klickar på 'Gå till kassan' så sammanställs kundkorgen men ingen order skapas.   
+Skapa koden för att göra en order och lagra den i tabellen 'Orders' i databasen. Det finns också en tabell 'OrderItem' att använda. Gör det möjligt för användaren att se sina ordrar via profilsidan.
+* Gör en testplan för vilka sårbarheter du ska testa
+* Implementera testfall för sårbarheterna, minst 6 testfall totalt. 
+    * Valfritt testverktyg
+    * Dokumentera att testerna går fel. 
+* Implementera så säkert du kan och kör testerna igen. Dokumentera att testerna går rätt. -->
+
+### Optionella krav 
+[WARNING]
+Optionella kraven uppdateras inför HT23. Jag planerar att släppa dom senast 15/12. 
+[/WARNING]
+
+<!-- ### Krav 4: Loggning (optionell) {#k4}
 
 Implementera loggning av data i applikationen ni gör en sårbarhetsanalys på. Fundera över vad som bör loggas och motivera dina val i din redovisningstext. Varför valde du just den datan? Vad valde du bort och varför?
 
@@ -93,7 +148,7 @@ För att få 10 poäng så behöver du logga, motivera och dokumentera data frå
 
 * eller utred och implementera skydd mot 'log injection'.   
 
-* eller beskriv i ord hur personalen som administrerar eshopen ska övervaka datan du loggat, kanske visa den på en webbsida, hur ofta ska loggen övervakas, vilka ska informeras om något inträffar.   
+* eller beskriv i ord hur personalen som administrerar eshopen ska övervaka datan du loggat, kanske visa den på en webbsida, hur ofta ska loggen övervakas, vilka ska informeras om något inträffar.    
 
 ### Krav 5: Privacy (optionell) {#k5}
 
@@ -107,7 +162,7 @@ De vill gärna att samtliga inom företaget ska gå igenom dokumentet och vill d
 
 För att få 15 poäng, så ska **vetenskapliga källor (minst 2)** bidra till minst två stycken i rapporten. BTH's bibliotek har bra information om vad som kan vara en vetenskaplig länk, se i [Ämnesguide Datavetenskap & Datorsäkerhet](https://www.bth.se/bibliotek/amnesguider/amnesguide-datorsakerhet/).
 
-Spara rapporten i `kmom10/privacy.pdf`.
+Spara rapporten i `kmom10/privacy.pdf`.-->
 
 <!-- ### Krav 6: Quiz (optionell) {#k6}
 
@@ -144,7 +199,9 @@ Redovisning {#redovisning}
 
 ```bash
 # Ställ dig i kursrepot
-dbwebb publish me
+dbwebb publish kmom10
 ```
 
-4. Redovisningsvideo med dig (facecame) och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen av sårbarheter du hittat och med vilken metod. Berätta vilken testmetod du valt, testverktyg och testfall. Visa hur du kör dina testfall. Visa den sammanfattande tabellen med åtgärderna du gjort och gärna kod (vad har du gjort för åtgärd i koden). Om du gjort de optionella kraven, så får du ett par minuter extra per krav för att visa vad du gjort.
+4. Redovisningsvideo med dig (facecame) och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen av sårbarheter du hittat och med vilken metod. Berätta vilken testmetod du valt, testverktyg och testfall. Visa hur du kör dina testfall när de går grönt. Visa den sammanfattande tabellen med åtgärderna du gjort och gärna kod (vad har du gjort för åtgärd i koden).   
+Berätta om nyutvecklingen. Hur gick det? Vilka sårbarheter hittade du innan och vi
+Om du gjort de optionella kraven, så får du ett par minuter extra per krav för att visa vad du gjort.

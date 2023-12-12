@@ -15,10 +15,6 @@ revision:
 Kmom07/10: Projekt och examination
 ==================================
 
-[WARNING]
-Kursen uppdateras inför HT23. Är "gula rutan" borta är det fritt fram att börja. Jag planerar att släppa projektet 12/12. 
-[/WARNING]
-
 Detta kursmoment avslutar och examinerar kursen.
 
 **Du jobbar enskilt och tar inte hjälp av någon.**
@@ -27,7 +23,7 @@ Upplägget är enligt följande:
 
 * _Projektet och redovisning (30-80h)_
 
-Totalt omfattar kursmomentet (07/10) ca 30+25+25 studietimmar.
+Totalt omfattar kursmomentet (07/10) ca 30+50 studietimmar.
 
 
 
@@ -36,6 +32,11 @@ Bedömning och betygsättning {#bedomning}
 
 När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/faq/bedomning-och-betygsattning-quiz). I detta projekt har krav 4-6 slagits ihop till 2 lite större krav, krav 4 och krav 5.
 
+
+Förkunskapskrav {#forkunskapskrav}
+---------------------------------
+
+Du har utfört uppgifterna från kmom01 till kmom05.
 
 
 Projektspecifikation {#projspec}
@@ -46,9 +47,9 @@ Utveckla och leverera projektet enligt följande specifikationen. Saknas info i 
 De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De två sista kraven är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg. Om grundkraven inte når 30 poäng får man komplettera sin inlämning. Man kan inte komplettera sig till ett högre betyg.
 
 Krav 1-3 (Grundkraven) ger max 10 poäng styck, totalt är det 30 poäng.  
-Krav 4 (Optionellt) ger max 15 poäng.  
-Krav 5 (Optionellt) ger max 15 poäng.   
-<!-- Krav 6 (Optionellt) ger max 10 poäng. -->
+Krav 4 (Optionellt) ger max 10 poäng.  
+Krav 5 (Optionellt) ger max 10 poäng.   
+Krav 6 (Optionellt) ger max 10 poäng.
 
 
 
@@ -89,14 +90,22 @@ $ npm start
 ```
 
 ### Bakgrund {#bakgrund}
-dbwebb har en eshop implementerad med PHP och ett ramverk som heter Anax. Eftersom det är gamla tekniker och språk, så ville vi uppdatera eshopen. En firma 'HalvBra AB' kontaktades och de tog uppdraget. De bytte till Javascript och Express och lovade att allt skulle vara klart hösten 2023. Men så gick de i konkurs och här har vi en halvklar eshop.
+Vår kund har en eshop som är implementerad med PHP och ett ramverk som heter Anax. Eftersom det är gamla tekniker och språk, så ville de uppdatera eshopen. En firma 'HalvBra AB' kontaktades och de bytte till Javascript och Express. Firman lovade att allt skulle vara klart hösten 2023. Men så gick de i konkurs och lämnade en halvklar eshop.
 
 Men där kommer du in i bilden. Vill du ta dig an uppdraget att fixa nästa steg i eshopen? Och dessutom göra den säkrare? Vi tror på dig! 
 
 
-### Krav 1 & 2: Sårbarhetsanalys {#k1}
+### Krav 1 Sårbarhetsanalys {#k1}
 
-* Gör en sårbarhetsanalys på befintlig app, enligt samma kravspecifikation som i kmom04. För godkänt ska minst 3 st sårbarheter identifieras. Spara sårbarhetsanalysen i `kmom10/sårbarhetsanalys.pdf`.   
+* Gör en sårbarhetsanalys på eshopen, enligt samma kravspecifikation som i kmom04. För godkänt ska minst 3 st sårbarheter identifieras. Dokumentera vilka testmetoder du använder och motivera varför. Glöm inte beskriva hur du gör för att återskapa sårbarheten.
+Tänk på att du inte känner till koden i detta krav.
+
+Spara sårbarhetsanalysen i `kmom10/sårbarhetsanalys.pdf`.   
+
+
+### Krav 2: Säkerhetstestning med åtgärder {#k2}
+
+* Fortsätt med sårbarhetsanalysen på eshopen enligt samma kravspecifikation som i kmom05. För godkänt ska minst 3 st sårbarheter identifieras. Fortsätt skriva i  sårbarhetsanalysen från krav 1.    
 Eftersom att appen är under utveckling så behöver du inte göra en kopia på databasen. Däremot ska du se till att testfallen rensar efter sig.
 
 * Implementera testfall för 3 olika sårbarheter, ca 3-5 per sårbarhet. Minst 10 totalt. 
@@ -112,37 +121,30 @@ Eftersom att appen är under utveckling så behöver du inte göra en kopia på 
 ### Krav 3: Nyutveckling med säkerhetstänk {#k3}
 
 Tyvärr har inte allt utveckling blivit klar och just nu behandlas alla användare lika. Men en användare som har rollen admin ska kunna se ett admingränssnitt när den loggar in. I admingränsnittet ska alla användare listas och dessutom ska admin kunna uppdatera alla användare samt ta bort dem från eshopen. Implementera detta på ett säkert sätt.
+
 * Gör en skiss över nyutvecklingen och lägg som ett eget kapitel i Sårbarhetsanalysen. Där beskriver du grovt hur du tänkt implementera det hela. Beskriv skillnaden på admin och vanliga användare. Motivera dina designval med tanke på säkerhet och skillnade admin och vanliga användare. Avsluta med ett stycke om framtida utveckling. Vad tycker du att admin mer ska kunna i en eshop?
+
 * Funktionalitet för admin
-    * Implementera router och controller för admin          
-    * Gör en adminvy, där admin ska se alla användare och kunna uppdatera deras profiler
+    * Implementera views, router och controller för admin          
+    * Gör en adminvy, där admin ska se alla användare och kunna uppdatera deras profiler. Lösenord kan inte uppdateras, så det behöver du inte implementera om du inte vill.   
     * Admin ska kunna ta bort användare från adminvyn
+
 * Gör en testplan för vilka sårbarheter du ska testa
+
 * Implementera testfall för sårbarheterna, minst 6 testfall totalt. 
     * Valfritt testverktyg
     * Dokumentera att testerna går fel. Kör gärna testdriven utveckling där du utvecklar testerna först.
+
 * Implementera så säkert du kan och kör testerna igen. Dokumentera att testerna går rätt.
 
-<!-- ### Krav 3: Nyutveckling med säkerhetstänk krav ht24 {#k3}
-
-Tyvärr har inte allt utveckling blivit klar och kunden vill att du fixar så att kunden kan beställa på ett säkert sätt. Kunden kan inte beställa nu. När kunden klickar på 'Gå till kassan' så sammanställs kundkorgen men ingen order skapas.   
-Skapa koden för att göra en order och lagra den i tabellen 'Orders' i databasen. Det finns också en tabell 'OrderItem' att använda. Gör det möjligt för användaren att se sina ordrar via profilsidan.
-* Gör en testplan för vilka sårbarheter du ska testa
-* Implementera testfall för sårbarheterna, minst 6 testfall totalt. 
-    * Valfritt testverktyg
-    * Dokumentera att testerna går fel. 
-* Implementera så säkert du kan och kör testerna igen. Dokumentera att testerna går rätt. -->
 
 ### Optionella krav 
-[WARNING]
-Optionella kraven uppdateras inför HT23. Jag planerar att släppa dom senast 15/12. 
-[/WARNING]
 
-<!-- ### Krav 4: Loggning (optionell) {#k4}
+### Krav 4: Loggning (optionell) {#k4}
 
-Implementera loggning av data i applikationen ni gör en sårbarhetsanalys på. Fundera över vad som bör loggas och motivera dina val i din redovisningstext. Varför valde du just den datan? Vad valde du bort och varför?
+Implementera loggning av data i eshopen. Fundera över vad som bör loggas och motivera dina val i din redovisningstext eller `kmom10/logging.pdf`. Varför valde du just den datan? Vad valde du bort och varför? Berätta vad du har implementerat och varför.
 
-För att få 10 poäng så behöver du logga, motivera och dokumentera data från 3 olika händelser eller incidenter. För att få 15 poäng behöver du göra något extra:   
+Förutom att logga, motivera och dokumentera data från 2 olika händelser eller incidenter, så ska du göra något av nedanstående:   
 
 * antingen använda något loggverktyg likt Apache log och beskriv hur loggarna ska analyseras och användas.   
 
@@ -150,7 +152,18 @@ För att få 10 poäng så behöver du logga, motivera och dokumentera data frå
 
 * eller beskriv i ord hur personalen som administrerar eshopen ska övervaka datan du loggat, kanske visa den på en webbsida, hur ofta ska loggen övervakas, vilka ska informeras om något inträffar.    
 
-### Krav 5: Privacy (optionell) {#k5}
+
+### Krav 5: Checklista (optionell) {#k5}
+
+Vår kund har tagit säkerheten på allvar och vill ha en checklista för hur de kan kolla säkerheten i eshopen. Vad behöver de göra för åtgärder? Finns det verktyg att använda som hjälper dem? 
+
+* Skriv en checklist i `kmom10/checklist.pdf`
+* Dokumentet har inledning och sammanfattning. Däremellan finns kapitel som beskriver en sammanfattning av checklistan samt en utförligare beskrivning av punkterna i checklistan.
+* Minst 8 punkter på checklistan
+* 2-3 sidor
+
+
+### Krav 6: Privacy (optionell) {#k6}
 
 Sätt er in i situationen att ni sitter på ett företag som får följande uppdrag:
 
@@ -160,9 +173,9 @@ Kunden *Infopedia* har insett att de börjat tappa användare för deras bristan
 
 De vill gärna att samtliga inom företaget ska gå igenom dokumentet och vill därför att längden på det ska vara **1-3 sidor**. Rapporten ska ha referenser till relevant information inom ämnet. (För 10 poäng)
 
-För att få 15 poäng, så ska **vetenskapliga källor (minst 2)** bidra till minst två stycken i rapporten. BTH's bibliotek har bra information om vad som kan vara en vetenskaplig länk, se i [Ämnesguide Datavetenskap & Datorsäkerhet](https://www.bth.se/bibliotek/amnesguider/amnesguide-datorsakerhet/).
+Det ska vara **vetenskapliga källor (minst 2)** som bidrar till minst två stycken i rapporten. BTH's bibliotek har bra information om vad som kan vara en vetenskaplig länk, se i [Ämnesguide Datavetenskap & Datorsäkerhet](https://www.bth.se/bibliotek/amnesguider/amnesguide-datorsakerhet/).
 
-Spara rapporten i `kmom10/privacy.pdf`.-->
+Spara rapporten i `kmom10/privacy.pdf`.
 
 <!-- ### Krav 6: Quiz (optionell) {#k6}
 

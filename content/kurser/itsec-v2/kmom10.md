@@ -30,7 +30,7 @@ Totalt omfattar kursmomentet (07/10) ca 30+50 studietimmar.
 Bedömning och betygsättning {#bedomning}
 --------------------------------------------------------------------
 
-När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/faq/bedomning-och-betygsattning-quiz). I detta projekt har krav 4-6 slagits ihop till 2 lite större krav, krav 4 och krav 5.
+När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/faq/bedomning-och-betygsattning-quiz). 
 
 
 Förkunskapskrav {#forkunskapskrav}
@@ -73,7 +73,7 @@ $ cd me/kmom10/eshop-js
 $ npm install
 $ docker compose up -d
 $ npm start
-# I webbläsaren, öppna localhost:3000 för terminalappen och localhost:3001 för dockerappen
+# I webbläsaren, öppna localhost:3000 för terminalappen och localhost:30001 för dockerappen
 # databasen ligger i docker
 ```
 
@@ -122,10 +122,10 @@ Eftersom att appen är under utveckling så behöver du inte göra en kopia på 
 
 Tyvärr har inte allt utveckling blivit klar och just nu behandlas alla användare lika. Men en användare som har rollen admin ska kunna se ett admingränssnitt när den loggar in. I admingränsnittet ska alla användare listas och dessutom ska admin kunna uppdatera alla användare samt ta bort dem från eshopen. Implementera detta på ett säkert sätt.
 
-* Gör en skiss över nyutvecklingen och lägg som ett eget kapitel i Sårbarhetsanalysen. Där beskriver du grovt hur du tänkt implementera det hela. Beskriv skillnaden på admin och vanliga användare. Motivera dina designval med tanke på säkerhet och skillnade admin och vanliga användare. Avsluta med ett stycke om framtida utveckling. Vad tycker du att admin mer ska kunna i en eshop?
+* Gör en skiss över nyutvecklingen och lägg som ett eget kapitel i Sårbarhetsanalysen. Där beskriver du grovt hur du tänkt implementera det hela. Beskriv skillnaden på admin och vanliga användare. Motivera dina designval med tanke på säkerhet. Vad är skillnaden admin och vanliga användare? Avsluta med ett stycke om framtida utveckling. Vad tycker du att admin mer ska kunna i en eshop?
 
 * Funktionalitet för admin
-    * Implementera views, router och controller för admin          
+    * Implementera views, router och controller för admin (följ strukturen i designen som finns)         
     * Gör en adminvy, där admin ska se alla användare och kunna uppdatera deras profiler. Lösenord kan inte uppdateras, så det behöver du inte implementera om du inte vill.   
     * Admin ska kunna ta bort användare från adminvyn
 
@@ -158,7 +158,7 @@ Förutom att logga, motivera och dokumentera data från 2 olika händelser eller
 Vår kund har tagit säkerheten på allvar och vill ha en checklista för hur de kan kolla säkerheten i eshopen. Vad behöver de göra för åtgärder? Finns det verktyg att använda som hjälper dem? 
 
 * Skriv en checklist i `kmom10/checklist.pdf`
-* Dokumentet har inledning och sammanfattning. Däremellan finns kapitel som beskriver en sammanfattning av checklistan samt en utförligare beskrivning av punkterna i checklistan.
+* Dokumentet har inledning och sammanfattning. Däremellan finns kapitel som beskriver en sammanfattning av checklistan. Dessutom ett kapitel med en utförligare beskrivning av punkterna i checklistan. Den här utförligare beskrivningen ska innehålla en beskrivning av punkten i checklistan, motivera varför den är med samt vad som ska göras för att åtgärda den.
 * Minst 8 punkter på checklistan
 * 2-3 sidor
 
@@ -171,7 +171,7 @@ Kunden *Infopedia* har insett att de börjat tappa användare för deras bristan
 
 *Infopedia* jobbar huvudsakligen med projekt/kunder i Europa så rapporten måste täcka GDPR. De är speciellt nyfikna på vad autentisering & behörighet (authentication & authorization) innebär och tror att den största risken är 'Broken Access Control'. Stämmer det eller vad kommer du fram till i din utredning?
 
-De vill gärna att samtliga inom företaget ska gå igenom dokumentet och vill därför att längden på det ska vara **1-3 sidor**. Rapporten ska ha referenser till relevant information inom ämnet. (För 10 poäng)
+De vill gärna att samtliga inom företaget ska gå igenom dokumentet och vill därför att längden på det ska vara **2-3 sidor**. Rapporten ska ha referenser till relevant information inom ämnet.
 
 Det ska vara **vetenskapliga källor (minst 2)** som bidrar till minst två stycken i rapporten. BTH's bibliotek har bra information om vad som kan vara en vetenskaplig länk, se i [Ämnesguide Datavetenskap & Datorsäkerhet](https://www.bth.se/bibliotek/amnesguider/amnesguide-datorsakerhet/).
 
@@ -202,11 +202,11 @@ Redovisning {#redovisning}
 
     1. För varje krav du implementerat, dvs 1-5, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
 
-    1. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
+    2. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
-    1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
+    3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
 
-2. Glöm inte länka till projektet.
+2. Länka till projektet på studentservern.
 
 3. Se till att allt är publicerat.
 
@@ -215,6 +215,6 @@ Redovisning {#redovisning}
 dbwebb publish kmom10
 ```
 
-4. Redovisningsvideo med dig (facecame) och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen av sårbarheter du hittat och med vilken metod. Berätta vilken testmetod du valt, testverktyg och testfall. Visa hur du kör dina testfall när de går grönt. Visa den sammanfattande tabellen med åtgärderna du gjort och gärna kod (vad har du gjort för åtgärd i koden).   
-Berätta om nyutvecklingen. Hur gick det? Vilka sårbarheter hittade du innan och vi
+1. Redovisningsvideo med dig (facecame) och ditt id eller redovisning på plats (hör av dig så bestämmer vi tid). Redovisningen ska vara 7-10 minuter lång och innehålla din sårbarhetsanalys med den sammanfattande tabellen av sårbarheter du hittat. Berätta vilken testmetod du valt, testverktyg och testfall. Visa hur du kör dina testfall när de går grönt. Visa den sammanfattande tabellen med åtgärderna du gjort och visa kodexempel (vad har du gjort för åtgärd i koden).   
+Berätta om nyutvecklingen. Hur gick det? Vilka sårbarheter hittade du och hur testade du dom? Visa delar av koden i nyutvecklingen.
 Om du gjort de optionella kraven, så får du ett par minuter extra per krav för att visa vad du gjort.

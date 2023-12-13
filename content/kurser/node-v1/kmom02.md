@@ -10,7 +10,7 @@ author:
 revision:
     "2023-10-03": "(PA1, mos) Utkast inför 2025."
 ...
-Kmom02: Node GUI klient server
+Kmom02: Node GUI klient/server
 ==================================
 
 Bygg Node GUI program i terminalen samt klient/server via REST API och websockets. (spel över socket) AI

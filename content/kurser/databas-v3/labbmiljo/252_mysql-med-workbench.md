@@ -1,0 +1,1 @@
+../../../labbmiljo/252_mysql-med-workbench.md

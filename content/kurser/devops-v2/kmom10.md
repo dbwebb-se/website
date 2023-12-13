@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2023-12-13": "(D, aar) Utvecklade om vad man borde ta med från boken."
     "2020-12-08": "(C, aar) La till krav om vetenskapliga referenser."
     "2020-01-10": "(B, aar) La till att ska skicka med en feedback text."
     "2019-10-15": "(A, aar) Första versionen."
@@ -10,12 +11,6 @@ Kmom07/10: Rapport
 ==================================
 
 Vi avslutar kursen med att ni individuellt skriver en rapport. Rapporten är det sista som du gör och tillsammans med alla redovisningar används detta som underlag för att examinera dig från kursen.
-
-[WARNING]
-Kurs under utveckling!
-
-Påbörja inte före denna rutan är borta.
-[/WARNING]
 
 <!-- more -->
 
@@ -27,6 +22,9 @@ För att uppnå godkänt behöver du demonstrerar följande:
 
 - kunna redogöra för vad devops är, både det praktiska och filosofiska/kulturella.
     - bl.a. blamelessness, kontinuerlig lärande och postmortems.
+    - reflektera över vad boken tycker devops är och innehåller.
+        - om det är något ni inte håller med om eller om ni kan hitta referenser som motsäger den.
+        - välj ut saker som ni tror är viktigast för uppnå devops.
 
 - Kunna förhålla sig till devops begrepp och relatera till hur de används och kan kopplas till verktyg.
 

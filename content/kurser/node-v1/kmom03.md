@@ -10,23 +10,13 @@ author:
 revision:
     "2023-10-03": "(PA1, mos) Utkast inför 2025."
 ...
-Kmom03: Programmera en webbplats
+Kmom03: Funktionell programmering
 ==================================
 
-<!--
-KOMMENTAR
+Jobba med funktionell programmering i Node och JavaScript.
+(os-fokus?)
 
-Det svåra med detta momentet är att det lär ut programmering OCH att koda i sammanhanget HTML/CSS.
-Nybörjare i programmering har svårt och normalt hade man delat upp detta i två steg.
-Man behöver normalt längre tid till att lära sig detta och man behöver öva i små övningar/labbar med enkla konstruktioner.
 
-En förbättring vore att förenkla övningen i dess mest svåra passager och flytta över till video/text som hjälper studenten att strukturera problemet i uppgiften. -->
-
-Vi lär oss grunderna i programmeringsspråket PHP om hur man kan skapa dynamiska webbsidor via programmeringskonstruktioner som variabler, if-satser, och loopar. Vi använder inbyggda variabler som $_GET och $_SERVER tillsammans med querysträng och HTML formulär där vi provar att skicka argument till en webbsida.
-
-Vi jobbar vidare med den katalogstruktur vi har byggt upp och det handlar främst om att placera koden i sidkontrollers och vyer. Strukturen är viktig då den hjälper oss att hålla ordning i koden vilket gör det enklare att felsöka och utveckla webbsidorna.
-
-När du är klar med detta kursmoment så har du grundläggande kunskap i hur man programmerar med PHP och du har grunderna för hur man bygger och driftsätter en dynamisk webbplats med PHP.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 

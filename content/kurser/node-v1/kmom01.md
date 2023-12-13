@@ -10,18 +10,14 @@ author:
 revision:
     "2023-10-03": "(PA1, mos) Utkast inför 2025."
 ...
-Kmom01: Bygg en webbplats
+Kmom01: Node CLI
 ==================================
 
-Vi inleder kursen med att bygga en webbplats som baseras på HTML, CSS och JavaScript. Vi försöker kommer skapa en god struktur och uppdelning av filer och kataloger samt komma igång med de grundeläggande begrepp som används när man bygger en webbplats.
+Grundläggande programmering i JavaScrip i Node och bygg ett meny program i terminalen. Docker
 
-Vi tar hjälp av validatorer för att kontrollera att vi skriver HTML, CSS och JavaScript på korrekt sätt.
 
-Samtidigt som vi bygger webbplatsen försöker vi bekanta oss med en del resurser som är bra för att lära sig mer om HTML, CSS och JavaScript.
 
-SSI?
-
-<small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20-40 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
+<small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
 
 
@@ -34,9 +30,7 @@ Se till att du har kursens labbmiljö installerad.
 
 1. Jobba igenom "[Installera kursens labbmiljö](./../installera-labbmiljo)" för att komma igång med din labb- och utvecklingsmiljö för kursen.
 
-Skippa XAMPP och kör Apache i WSL/brew eller i docker, alt npx httpd.
-
-Erbjud komplett labbmiljö via docker? (extra uppgift installera labbmiljön lokalt)
+Erbjud komplett labbmiljö via npm install & docker? (extra uppgift installera labbmiljön lokalt)
 
 
 

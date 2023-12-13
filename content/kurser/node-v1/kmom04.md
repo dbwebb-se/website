@@ -10,16 +10,13 @@ author:
 revision:
     "2023-10-03": "(PA1, mos) Utkast inför 2025."
 ...
-kmom04: PHP datastrukturer
+kmom04: Parallell programmering
 ==================================
 
-Vi fördjupar oss mer i programmering med PHP och vi tittar på datastrukturer med arrayer för att se skillnader och likheter mellan numeriska arrayer och associativa arrayer.
+Utforska asynkron och parallell programmering.
+(processer, jobbhantering, shell, filsystemet, rättigheter)
 
-Vi tittar vidare på HTML formulär och använder POST tillsammans med processing- och resultat-sidor.
 
-Vi kikar på sessionen och lär oss hur man kan spara värden i sessions-arrayen och få en lagring av värden mellan användarens sidanrop.
-
-Vi tittar också på hur funktioner kan användas för att förbättra vår kodstruktur så att koden blir enkel att utveckla, underhålla och felsöka i. 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 

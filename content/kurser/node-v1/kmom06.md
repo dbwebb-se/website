@@ -10,25 +10,18 @@ author:
 revision:
     "2023-10-03": "(PA1, mos) Utkast inför 2025."
 ...
-Kmom06: PHP, PDO och SQL
+Kmom06: Scrapa webbplats
 ==================================
 
-Vi jobbar vidare med PHP PDO för att träna på begreppet CRUD som är Create, Read, Update och Delete av information i databasen via ett webbaserat gränssnitt med formulär.
+Scrapa innehåll på en webbplats och analysera det inklusive inloggning, cookies och sessioner.
+(regexp, jq, awk, sed, grep, curl)
 
-Samtidigt som vi tränar på hanteringen med CRUD så implementerar vi en inloggning till vår webbplats. Vi skapar en användardatabas och en möjlighet att logga in på webbplatsen och redigera detaljer om sitt eget konto.
-
-[FIGURE src=image/webtec/crud/navbar_login.png?w=w3 caption="Inloggning på en webbplats."]
-
-<!--
-[FIGURE src="image/webtec/pdo/insert-filled.png?w=w3" caption="Formuläret är ifyllt med värden."]
-
-[FIGURE src="image/webtec/pdo/search-delete.png?w=w3" caption="Klicka på ett id för att se mer, eller update/delete för att modifiera raden."]
--->
+<!--more-->
 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
-<!--stop -->
+<!--st op -->
 
 
 

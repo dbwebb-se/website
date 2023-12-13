@@ -10,24 +10,13 @@ author:
 revision:
     "2023-10-03": "(PA1, mos) Utkast inför 2025."
 ...
-Kmom05: SQL och SQLite
+Kmom05: OS-nära programmering
 ==================================
 
-Låt oss titta på databaser och hur de kan kopplas till en webbplats för att göra ett embryo till en sökmotor.
-
-Vi skall använda databasen SQLite som är en filbaserad databas. En filbaserad databas förenklar hanteringen då allt är samlat i en fil och det finns inget behov av att konfigurera användare eller behörigheter.
-
-Till databasen SQLite installerar vi ett klientprogram som kan användas för att prata med databasen och vi installerar PHP PDO som gör att vi kan koppla PHP-kod till databasen. <!-- Vi prövar olika klienter, en variant för desktop och en terminalbaserad. -->
-
-I en relationsdatabas som SQLite pratar vi SQL med databasen. Vi skriver SQL uttryck för att skapa tabeller som utgör databasens schema (struktur). Vi använder även SQL för att skapa rapporter från databasens innehåll samt redigera databasens innehåll.
-
-Slutligen skapar vi en sökmotor som kan söka i en befintlig databas och presentera resultatet i en webbsida.
+Koda nära operativsystemet och dess resurser. 
+(bash, find, curl, process, filsystem).
 
 <!--more-->
-
-Så här kan det se ut när du är klar med kursmomentet.
-
-[FIGURE src="image/webtec/pdo/search-result.png?w=w3" caption="Resultatet från sökningen presenteras."]
 
 
 

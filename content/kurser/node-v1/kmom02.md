@@ -10,22 +10,12 @@ author:
 revision:
     "2023-10-03": "(PA1, mos) Utkast inför 2025."
 ...
-Kmom02: Styla en webbplats
+Kmom02: Node GUI klient server
 ==================================
 
-Vi fortsätter att jobba på den webbplats vi byggde i förra kursmomentet och nu handlar det om att styla upp webbplatsens olika delar och lära oss mer om CSS.
+Bygg Node GUI program i terminalen samt klient/server via REST API och websockets. (spel över socket) AI
 
-Vi utgår från en ostylad sida, likt följande.
 
-[FIGURE src=image/webtec/style-it/start.png?w=w3 caption="En ostylad webbplats att utgå ifrån."]
-
-När vi är klara har vi stylat navbar, header, footer, innehåll med article och aside med kolumnbaserad layout och vi har provat konstruktioner som float och flex och vi har dessutom byggt en responsiv funktion i webbplatsen.
-
-Resultatet blir individuellt men min egen variant ser ut så här.
-
-[FIGURE src=image/webtec/style-it/done.png?w=w3 caption="En stylad webbplats när övningen är klar."]
-
-Lycka till när du nu kastar dig in i en underbar värld av CSS konstruktioner.
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 

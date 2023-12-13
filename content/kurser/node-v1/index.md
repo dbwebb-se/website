@@ -5,16 +5,16 @@ views:
         template: default/image
         data:
             src: "image/webtec/logo.png"
-title: webtec (v2025)
+title: node (v1)
 author:
     - mos
 revision:
     "2023-10-03": "(PA1, mos) Första utkastet."
 ...
-Kursen webtec (v2025)
+Kursen node (v1)
 ==================================
 
-Kursen **Webbteknologier**, a.k.a. *webtec*, lär ut webbutveckling där teknikerna  HTML, CSS, PHP och SQL används för att tillsammans bygga en databasdriven webbplats.
+Kursen **Avancerad programmering med Node och JavaScript**, a.k.a. *node*, lär ut webbutveckling där teknikerna  HTML, CSS, PHP och SQL används för att tillsammans bygga en databasdriven webbplats.
 
 
 

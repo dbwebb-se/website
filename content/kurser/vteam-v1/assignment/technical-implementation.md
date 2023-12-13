@@ -22,7 +22,7 @@ Requirements
 
 Write a short text about the techniques you are using in your project for the implementation of the system.
 
-The idea is that all the teams write a short text which is then spread to all the teams so all can see what different technique choices are made for backend, frontend, frameworks, languages, devtools and ci/cd.
+The idea is that all the teams write a short text which is then spread to all the teams so all can see what different technique choices are made for the architecture, backend, frontend, frameworks, languages, devtools, test and ci/cd.
 
 Do not write more than "half a A4" page of text, so be condensed with the text and no images.
 

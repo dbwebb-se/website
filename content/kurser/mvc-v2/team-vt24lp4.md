@@ -4,7 +4,7 @@ author:
 revision:
     "2023-03-11": "(A, mos) Ny för vt23."
 ...
-Kursformalia våren 2023, läsperiod 4
+Kursformalia våren 2024, läsperiod 4
 ==================================
 
 Kursformalia berör detaljer om kurstillfället och visar när det sker, vilka som är ansvariga och vilka studentgrupper som deltar samt information om kursens genomförande.
@@ -16,9 +16,9 @@ Kursformalia berör detaljer om kurstillfället och visar när det sker, vilka s
 Kurstillfälle {#tillfalle}
 ----------------------------------
 
-Kurstillfället pågår under läsperiod 4, våren 2023.
+Kurstillfället pågår under läsperiod 4, våren 2024.
 
-Kurstillfället pågår 9 veckor, det startar v13 och avslutas v21 (2021-03-27 -- 2021-06-04).
+Kurstillfället pågår 9 veckor, det startar v13 och avslutas v22 (2024-03-25 -- 2024-06-02).
 
 
 
@@ -43,8 +43,8 @@ Följande studentgrupper/utbildningar deltar i kurstillfället.
 
 | Utbildning | Kurstillfälle | Format | Utbildningsplan | Ansvarig |
 |------------|--------------|--------|-----------------|----------|
-| [Webbprogrammering 180hp](https://www.bth.se/utbildning/program-och-kurser/pagwe/?val=PAGWE22h) | DV1608 | Campus | [PAGWE22](http://edu.bth.se/utbildningsplaner/PAGWE_HT-22.pdf) | Mikael Roos |
-| [Webbprogrammering 120hp](https://www.bth.se/utbildning/program-och-kurser/pagwg/?val=PAGWG22h) | DV1608 | Distans | [PAGWG22](http://edu.bth.se/utbildningsplaner/PAGWG_HT-22.pdf) | Mikael Roos |
+| [Webbprogrammering 180hp](https://www.bth.se/utbildning/program-och-kurser/pagwe/?val=PAGWE23h) | DV1608 | Campus | [PAGWE22](http://edu.bth.se/utbildningsplaner/PAGWE_HT-23.pdf) | Mikael Roos |
+| [Webbprogrammering 120hp](https://www.bth.se/utbildning/program-och-kurser/pagwg/?val=PAGWG23h) | DV1608 | Distans | [PAGWG22](http://edu.bth.se/utbildningsplaner/PAGWG_HT-23.pdf) | Mikael Roos |
 | Webbprogrammering och databaser 30hp | DV1608 | Distans |  | Mikael Roos |
 
 

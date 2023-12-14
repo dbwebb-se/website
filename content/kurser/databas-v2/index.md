@@ -242,11 +242,12 @@ Här kan du se en översikt av hur kurstillfället har valt att strukturera lär
 
 Här finner du även länkar till aktuella video streams och spellistor samt chatter och forum för handledning.
 
-* [Läromaterial vt23, lp3](./laromaterial-vt23lp3)
+* [Läromaterial vt24, lp3](./laromaterial-vt24lp3)
 
-<!--
+Arkiv:
+
+* [Läromaterial vt23, lp3](./laromaterial-vt23lp3)
 * [Läromaterial vt22, lp3](./laromaterial-vt22lp3)
--->
 
 
 
@@ -255,11 +256,12 @@ Lärarteam och intressenter {#team}
 
 Här kan du hitta detaljer om ett kurstillfälle och se lärarteamet som utför kurstillfället, deras roller och kontaktuppgifter tillsammans med de som "äger" kursen och kurstillfället och vilka studentgrupper som läser kursen samt övriga intressenter till kurstillfället.
 
-* [Lärarteam och intressenter vt23, lp3](./team-vt23lp3)
+* [Lärarteam och intressenter vt24, lp3](./team-vt24lp3)
 
-<!--
+Arkiv:
+
+* [Lärarteam och intressenter vt23, lp3](./team-vt23lp3)
 * [Lärarteam och intressenter vt22, lp3](./team-vt22lp3)
--->
 
 
 

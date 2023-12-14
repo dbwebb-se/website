@@ -6,7 +6,7 @@ revision:
 Att söka jobb
 ==================================
 
-OM du har svårt att få de jobben du söker så kommer här ett par tips om hur du kan tänka när du söker jobben.
+Om du har svårt att få de jobben du söker så kommer här ett par tips om hur du kan tänka när du söker jobben.
 
 
 

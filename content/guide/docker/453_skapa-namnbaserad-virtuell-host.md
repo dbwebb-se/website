@@ -17,7 +17,7 @@ $ touch vhosts/me.vlinux.se.conf
 $ touch Dockerfile
 ```
 
-Sedan är det dags att editera config-filen.
+Sedan är det dags att editera config-filen `vhosts/me.vlinux.se.conf`.
 
 
 ### Konfigurera den virtuella hosten {#config}

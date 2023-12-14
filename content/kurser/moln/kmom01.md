@@ -2,12 +2,15 @@
 author:
   - efo
 revision:
+    "2023-12-14": (B, efo) Bytte från VirtualBox till Docker inför VT24.
     "2021-11-30": (A, efo) Första utgåvan för kursen VT22.
 ...
-Kmom01: Virtualisering med VirtualBox
+Kmom01: Virtualisering med Docker
 ==================================
 
-Vi ska i detta kursmoment titta på hur vi kan installera ett annat operativsystem på din dator och använda det som en server. Detta tillvägagångssätt heter virtualisering och är en viktig del av hur molnet är uppbyggt. Virtualisering gör det möjligt att ha många "små datorer" på en stor och kraftfull server.
+Vi ska i detta kursmoment titta på hur vi kan installera ett annat operativsystem på din dator med hjälp av virtualiseringsprogramvaran Docker. Vi kommer använda sedan använda det som en webbserver.
+
+Detta tillvägagångssätt heter virtualisering och är en viktig del av hur molnet är uppbyggt. Virtualisering gör det möjligt att ha många "små datorer" på en stor och kraftfull server.
 
 
 
@@ -44,15 +47,14 @@ I kursen kommer vi behöva en katalog för att spara filer och kod. Jag rekommen
 
 Övningar förbereder inför de uppgifter som ska lämnas in.
 
-1. Som en del av labbmiljön har du redan [installerat Debian](guide/virtualbox/installera-os) i en VirtualBox. Det, tillsammans med installationen av VirtualBox är den stora biten i detta kursmomentet.
+1. Om du inte redan gjort det installera Docker som en del av [labbmiljön](kunskap/installera-virtualiseringsmiljon-docker).
 
-1. Installera [Guest Additions](guide/virtualbox/guest-additions) om du inte gjorde det under labbmiljön. Det kommer underlätta arbetet framöver.
-
-1. I kursen kommer vi använda en guide "[unix-tools](guide/unix-tools)". Gör alla delar av guiden **förutom** "Kom igång med tmux".
-
-1. Jobba igenom guiden "[Installera webbplatser med Apache Virtual Hosts](kunskap/installera-webbplatser-med-apache-name-based-virtual-hosts)".
-
-1. Om du vill lära dig mer om terminalen och ett par trevliga kommandon är artikeln "[20 steg för att komma i gång med Unix och terminalen](https://dbwebb.se/kunskap/20-steg-for-att-komma-i-gang-med-unix-och-terminalen)".
+1. Det finns en [guide för Docker](guide/docker) där vissa relevanta delar tas upp.
+   - [Introduktion](guide/docker/introduktion)
+   - [Kom igång](guide/docker/kom-igang)
+   - [Volymer](guide/docker/volymer)
+   - [Dockerfile](guide/docker/bygga-image)
+   - [Apache och virtual hosts](guide/docker/apache-vh)
 
 
 
@@ -60,7 +62,7 @@ I kursen kommer vi behöva en katalog för att spara filer och kod. Jag rekommen
 
 Dessa uppgifter skall utföras och lämnas in. Uppgifterna får utföras tillsammans i par. Skriv en kommentar i Canvas med namn på eventuell samarbetsstudent.
 
-1. Gör uppgiften "[Installera Debian och Apache i VirtualBox](uppgift/installera-debian-som-server-och-apache)".
+1. Gör uppgiften [Skapa en webbserver i Docker](uppgift/1311_skapa-en-webbserver-i-docker).
 
 
 
@@ -73,7 +75,7 @@ Läs [instruktionen om hur du skall redovisa](./../redovisa).
 
 Se till att följande frågor besvaras i redovisningstexten:
 
-1. Vad är fördelen med virtualisering till exempel VirtualBox?
+1. Vad är fördelen med virtualisering med Docker?
 1. Vi använder Apache som applikationsserver på vår "server". Vad är ditt första intryck av klient/server-modellen vi har använt i detta kursmoment?
 
 TIL är en akronym för “Today I Learned” vilket leksamt anspelar på att det finns alltid nya saker att lära sig, varje dag. Man brukar lyfta upp saker man lärt sig och där man kanske hajade till lite extra över dess nyttighet eller enkelhet, eller så var det bara en ny lärdom för dagen som man vill notera.

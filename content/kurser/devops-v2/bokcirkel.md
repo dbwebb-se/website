@@ -85,7 +85,8 @@ På sista mötet ska vi utöver de saker som vi har pratat om på de andra träf
 
 - Vad är era key takeaways från hela boken. Vad har ni lärt er som ni inte visste förut?
 - Hur definierar boken DevOps?
-- Vilken roll har mätningar och mätvärden i DevOps. Vilka mätvärden anser boken är viktiga och varför?
+<!-- - Vilken roll har mätningar och mätvärden i DevOps. Vilka mätvärden anser boken är viktiga och varför? -->
+<!-- Tog bort frågan för att Effective devops nämner inte direkt mätvärden. Är nog mer i devops handbook. -->
 - Fanns det delar i boken ni inte håller med om? Förklara er ståndpunkt.
 - Vilka utmaningar som finna när man implementerar DevOps på en arbetsplats presenterar boken? Hur överkommer man utmaningarna?
 - Hur lyfter boken vikten av samarbete och tvärfunktionella samarbeten?

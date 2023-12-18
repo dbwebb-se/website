@@ -71,9 +71,9 @@ Kursmoment {#kursmoment}
 Kursen är uppdelad i kursmoment där varje kursmoment består av av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke. Alla kursmoment skall redovisas enskilt individuellt genom att svra på ett antal frågor i slutet av varje kursmoment.
 
 
-### kmom01: Virtualisering med VirtualBox {#kmom01}
+### kmom01: Virtualisering med Docker {#kmom01}
 
-Du kommer igång med en labb- och utvecklingsmiljö som stödjer den utveckling vi ska göra i kursen. Vi installerar VirtualBox på vår egna dator och virtualiserar ett annat operativsystem i vår eget.
+Du kommer igång med en labb- och utvecklingsmiljö som stödjer den utveckling vi ska göra i kursen. Vi installerar Docker på vår egna dator och virtualiserar ett annat operativsystem i vår eget.
 
 [Instruktion till kursmoment 01](moln/kmom01).
 

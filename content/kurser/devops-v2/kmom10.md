@@ -37,7 +37,7 @@ För att uppnå godkänt behöver du demonstrerar följande:
 
 
 Rapporten ska vara på minst 4 sidor, skriven på engelska eller svenska, lämnas in på Canvas i pdf-format
-och måste vara formaterad enligt Eurographics konferensmall. Mallen finns för [Latex](https://www.overleaf.com/latex/templates/author-guidelines-and-template-for-eurographics-proceedings-manuscripts/rntmcbgtjqzg) och [Word](http://icat.vrsj.org/2015/files/icategve2015_word_templete.docx).
+och måste vara formaterad enligt Eurographics konferensmall. Mallen finns för [Latex](https://www.overleaf.com/latex/templates/author-guidelines-and-template-for-eurographics-proceedings-manuscripts/rntmcbgtjqzg) och [Word](kursmaterial/devops/Author_Guidelines_and_Template.docx).
 
 - Mallen visar inte vilka rubriker ni ska ha utan bara strukturen på dokumentet.
 - För referenser behöver ni inte följa mallen, ni kan göra som i [exjobb kursen](https://dbwebb.se/kurser/exjobb/guide/referenser).

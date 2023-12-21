@@ -16,9 +16,9 @@ Vi ska göra grunden till ett Yahtzee spel och börja med testning. För att kun
 
 <!--more-->
 
-<!-- [WARNING]
+[WARNING]
 Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING] -->
+[/WARNING]
 
 [INFO]
 

@@ -13,12 +13,6 @@ objektorienterad python.
 
 <!--more-->
 
-[INFO]
-
-Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.
-
-[/INFO]
-
 [FIGURE src=/image/oopython/kmom02/diagrams/fullExample_class.png?w=w2 caption="Ett exempel på ett klassdiagram i UML med 1 kund som kan göra 0 eller flera ordrar."]
 
 
@@ -99,19 +93,6 @@ Titta på följande:
 -------------------------------------------
 
 *(ca: 8-10 studietimmar)*
-
-
-
-###Labbmiljö {#labbmiljo}
-
-Installera labbmiljön för kursen.
-
-1. [Installera labbmiljön](oopython/labbmiljo) som behövs för kursen.
-
-1. [Installera kommandot `dbwebb`  samt kursrepot för kursen](dbwebb-cli/clone).
-
-Om detta är din första dbwebb-kurs så läser du också igenom hela [manual-sidan för kommandot `dbwebb`](dbwebb-cli).
-
 
 
 ###Övningar {#ovningar}

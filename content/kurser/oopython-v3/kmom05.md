@@ -16,6 +16,10 @@ Vi ska titta närmare på några av de vanligaste datastrukturerna och hur de fu
 
 Exceptions hjälper oss med att få reda på vad som gått fel. Det finns en hel del inbyggda exceptions som vi säkert stött på tidigare. Nu ska vi se hur vi skapar egna exceptions och på så sätt ta ett steg till mot att ha full kontroll över hur programmet ska fungera.
 
+[WARNING]
+Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
+[/WARNING]
+
 <!--more-->
 
 [INFO]

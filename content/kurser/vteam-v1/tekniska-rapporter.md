@@ -55,6 +55,8 @@ Instruktioner till hur man kan komma igång med ett Azure Container Registry. Az
 
 1. [Sign in using GitHub](https://github.com/kiwijos/vteam-github-oauth-study) "Sign in using GitHub". As a link. In your app. That let's users sign into the app using GitHub. That's the goal of this tech demo.
 
+1. [Användarvänligt gränssnitt](https://github.com/A-Norre/Teknisk-Rapport/blob/main/Teknisk_Rapport.md) För att kunna designa ett användarvänligt gränssnitt på en hemsida måste vi först bekanta oss med vad ett gränssnitt är och vad det huvudsakliga syftet för ett gränssnitt anses vara.
+
 
 
 2022 {#2022}

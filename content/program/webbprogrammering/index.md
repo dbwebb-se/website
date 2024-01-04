@@ -25,6 +25,54 @@ Det finns övergripande planering i Google kalender som riktar sig till de som g
 [Läs mer om kalendrarna](kalender).
 -->
 
+Programöversikt, planering och uppföljning av kurser {#followup}
+--------------------------------------------------------------
+
+Få en översikt av de kurser som ingår i din antagningsomgång till programmet och gör din egen uppföljning av ditt studieresultat i dessa handsnickrade excel-översikter av programmets kurser.
+
+<!-- denna information bör även kopieras över till kursfaqen -->
+
+### Webbprogrammering 120hp distans {#followup120}
+
+* [Antagen 2024](https://docs.google.com/spreadsheets/d/1wDeIvRmuYY2o0GBXnYWrEdKOZ-zVkD_5mZ18xx9lMOA/edit?usp=sharing)
+* [Antagen 2023](https://docs.google.com/spreadsheets/d/1G8wFw90ZfxFoSG3eMAG2kt3QCsycp8hqH0f6QMnpg90/edit?usp=sharing)
+* [Antagen 2022](https://docs.google.com/spreadsheets/d/1NaFXloCV0nsEMgTtr44q91PkBHXebwkmS0Eqxi-nj2c/edit?usp=sharing)
+* [Antagen 2021](https://docs.google.com/spreadsheets/d/1pKlRPVwqxpAyfaDdi-ERQC_jq5bxxdjEgEh1FPLC6Zo/edit?usp=sharing)
+* [Antagen 2020](https://docs.google.com/spreadsheets/d/1mIseONfKc2mM0u__o2-bOXY5zEnvcAtk5KjXPWqxLj4/edit?usp=sharing)
+* [Antagen 2019](https://docs.google.com/spreadsheets/d/1N4zZNRkPcaOH7a4Eco_kUpXymJF3s9Z6C3TFbbufajE/edit?usp=sharing)
+* [Antagen 2018](https://docs.google.com/spreadsheets/d/1CMt1SIhO8CaB5R5k2RbEfsbL0daqZhjPpbQJri3k5QM/edit?usp=sharing)
+* [Antagen 2017](https://docs.google.com/spreadsheets/d/1a_qFW8QfP1tGPI87bW-NJvXeCu99aQEC48jLx7h2gGs/edit?usp=sharing)
+* [Antagen 2016](https://docs.google.com/spreadsheets/d/1mgY1z7FLi-tJBJ5er14YYOhPrCxr_u95H7ogAnZj4YA/edit?usp=sharing)
+
+
+
+### Webbprogrammering 180hp campus {#followup180}
+
+* [Antagen 2024](https://docs.google.com/spreadsheets/d/1CFks-bUm2R-r2olqu-_BfUO2kjzCSPcwi39IFUpT20k/edit?usp=sharing)
+* [Antagen 2023](https://docs.google.com/spreadsheets/d/1xs5xx4FsePk3FCpcbLtCIoRLV7tRbdN_9b2Mld5WniE/edit?usp=sharing)
+* [Antagen 2022](https://docs.google.com/spreadsheets/d/1mOe2l5iGMpxRjRK4Tb3yHSys-aVyNLuaCI1ni_DesgA/edit?usp=sharing)
+* [Antagen 2021](https://docs.google.com/spreadsheets/d/1SiiXMBWIxBRUIBW7y56qEccrVZBOxLyWwaibyScB87Y/edit?usp=sharing)
+* [Antagen 2020](https://docs.google.com/spreadsheets/d/1-j2Tg90kRGwCN97wqljachAyZDsN6ct-9l6an1D2ehg/edit?usp=sharing)
+* [Antagen 2019](https://docs.google.com/spreadsheets/d/1Q9hQuoQ2J6cfZ0JGiGUU-mDr9iHZXgIN3qG5mRcNGxo/edit?usp=sharing)
+* [Antagen 2018](https://docs.google.com/spreadsheets/d/1uISBfMsOfx2fXWd8XSj3VIKbU4lmghRVKBjNyZ1OmJY/edit?usp=sharing)
+* [Antagen 2017](https://docs.google.com/spreadsheets/d/15wU6btyWTsK9F3I2TJINgduu_IfmCRbf2Wy46ayR9_0/edit?usp=sharing)
+* [Antagen 2016](https://docs.google.com/spreadsheets/d/1MXVzuA9VIw8hpDcIKl8zIhvyxx3mzOqB0aT5wD7jAWI/edit?usp=sharing)
+
+
+
+### Webbprogrammering och databaser 30hp {#webprog}
+
+* [Antagen 2021](https://docs.google.com/spreadsheets/d/1bE-8FE3LaiVE55gsrOUzVHuJ_QZDz3po1v2Lbr0R84E)
+* [Antagen 2020](https://docs.google.com/spreadsheets/d/17ROz2yigWiVgD4qpJcAQVl7ME_1kOIMt8pv8QOLbu7I/)
+* [Antagen 2019](https://docs.google.com/spreadsheets/d/1k4bW2SvbgrwxQmSE5iZ2Vrf9fYnkqObpY_D6WvRh-f4/edit?usp=sharing)
+
+
+
+### Webbutveckling och programmering 30hp {#webutv}
+
+* [Antagen 2020](https://docs.google.com/spreadsheets/d/1Y050giCqTqFJXM2MkrRREXfudAoJuKFOf2Hc3bAvz54/)
+
+
 
 Kurser per antagningsomgång {#kurserantagen}
 --------------------------------------------------------------
@@ -52,51 +100,6 @@ Kurser per antagningsomgång {#kurserantagen}
 * [Antagen HT2018](utbildning/webbprogrammering-180hp/2018/kurser)
 * [Antagen HT2017](utbildning/webbprogrammering-180hp/2017/kurser)
 * [Antagen HT2016](utbildning/webbprogrammering-180hp/2016/kurser)
-
-
-
-Programöversikt, planering och uppföljning av kurser {#followup}
---------------------------------------------------------------
-
-Få en översikt av de kurser som ingår i din antagningsomgång till programmet och gör din egen uppföljning av ditt studieresultat i dessa handsnickrade excel-översikter av programmets kurser.
-
-<!-- denna information bör även kopieras över till kursfaqen -->
-
-### Webbprogrammering 120hp distans {#followup120}
-
-* [Antagen 2022](https://docs.google.com/spreadsheets/d/1NaFXloCV0nsEMgTtr44q91PkBHXebwkmS0Eqxi-nj2c/edit?usp=sharing)
-* [Antagen 2021](https://docs.google.com/spreadsheets/d/1pKlRPVwqxpAyfaDdi-ERQC_jq5bxxdjEgEh1FPLC6Zo/edit?usp=sharing)
-* [Antagen 2020](https://docs.google.com/spreadsheets/d/1mIseONfKc2mM0u__o2-bOXY5zEnvcAtk5KjXPWqxLj4/edit?usp=sharing)
-* [Antagen 2019](https://docs.google.com/spreadsheets/d/1N4zZNRkPcaOH7a4Eco_kUpXymJF3s9Z6C3TFbbufajE/edit?usp=sharing)
-* [Antagen 2018](https://docs.google.com/spreadsheets/d/1CMt1SIhO8CaB5R5k2RbEfsbL0daqZhjPpbQJri3k5QM/edit?usp=sharing)
-* [Antagen 2017](https://docs.google.com/spreadsheets/d/1a_qFW8QfP1tGPI87bW-NJvXeCu99aQEC48jLx7h2gGs/edit?usp=sharing)
-* [Antagen 2016](https://docs.google.com/spreadsheets/d/1mgY1z7FLi-tJBJ5er14YYOhPrCxr_u95H7ogAnZj4YA/edit?usp=sharing)
-
-
-
-### Webbprogrammering 180hp campus {#followup180}
-
-* [Antagen 2022](https://docs.google.com/spreadsheets/d/1mOe2l5iGMpxRjRK4Tb3yHSys-aVyNLuaCI1ni_DesgA/edit?usp=sharing)
-* [Antagen 2021](https://docs.google.com/spreadsheets/d/1SiiXMBWIxBRUIBW7y56qEccrVZBOxLyWwaibyScB87Y/edit?usp=sharing)
-* [Antagen 2020](https://docs.google.com/spreadsheets/d/1-j2Tg90kRGwCN97wqljachAyZDsN6ct-9l6an1D2ehg/edit?usp=sharing)
-* [Antagen 2019](https://docs.google.com/spreadsheets/d/1Q9hQuoQ2J6cfZ0JGiGUU-mDr9iHZXgIN3qG5mRcNGxo/edit?usp=sharing)
-* [Antagen 2018](https://docs.google.com/spreadsheets/d/1uISBfMsOfx2fXWd8XSj3VIKbU4lmghRVKBjNyZ1OmJY/edit?usp=sharing)
-* [Antagen 2017](https://docs.google.com/spreadsheets/d/15wU6btyWTsK9F3I2TJINgduu_IfmCRbf2Wy46ayR9_0/edit?usp=sharing)
-* [Antagen 2016](https://docs.google.com/spreadsheets/d/1MXVzuA9VIw8hpDcIKl8zIhvyxx3mzOqB0aT5wD7jAWI/edit?usp=sharing)
-
-
-
-### Webbprogrammering och databaser 30hp {#webprog}
-
-* [Antagen 2021](https://docs.google.com/spreadsheets/d/1bE-8FE3LaiVE55gsrOUzVHuJ_QZDz3po1v2Lbr0R84E)
-* [Antagen 2020](https://docs.google.com/spreadsheets/d/17ROz2yigWiVgD4qpJcAQVl7ME_1kOIMt8pv8QOLbu7I/)
-* [Antagen 2019](https://docs.google.com/spreadsheets/d/1k4bW2SvbgrwxQmSE5iZ2Vrf9fYnkqObpY_D6WvRh-f4/edit?usp=sharing)
-
-
-
-### Webbutveckling och programmering 30hp {#webutv}
-
-* [Antagen 2020](https://docs.google.com/spreadsheets/d/1Y050giCqTqFJXM2MkrRREXfudAoJuKFOf2Hc3bAvz54/)
 
 
 

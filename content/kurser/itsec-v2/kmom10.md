@@ -105,7 +105,7 @@ Spara sårbarhetsanalysen i `kmom10/sårbarhetsanalys.pdf`.
 
 ### Krav 2: Säkerhetstestning med åtgärder {#k2}
 
-* Fortsätt med sårbarhetsanalysen på eshopen enligt samma kravspecifikation som i kmom05. För godkänt ska minst 3 st sårbarheter identifieras. Fortsätt skriva i  sårbarhetsanalysen från krav 1.    
+* Fortsätt med sårbarhetsanalysen på eshopen enligt samma kravspecifikation som i kmom05. Säkerhetstesterna ska göras på de 3 sårbarheterna som du hittar i krav 1. Fortsätt skriva i  sårbarhetsanalysen från krav 1.    
 Eftersom att appen är under utveckling så behöver du inte göra en kopia på databasen. Däremot ska du se till att testfallen rensar efter sig.
 
 * Implementera testfall för 3 olika sårbarheter, ca 3-5 per sårbarhet. Minst 10 totalt. 
@@ -133,7 +133,7 @@ Tyvärr har inte allt utveckling blivit klar och just nu behandlas alla använda
 
 * Implementera testfall för sårbarheterna, minst 6 testfall totalt. 
     * Valfritt testverktyg
-    * Dokumentera att testerna går fel. Kör gärna testdriven utveckling där du utvecklar testerna först.
+    * Kör gärna testdriven utveckling där du utvecklar testerna först. Om du gör det, så dokumentera att testerna går fel först. 
 
 * Implementera så säkert du kan och kör testerna igen. Dokumentera att testerna går rätt.
 

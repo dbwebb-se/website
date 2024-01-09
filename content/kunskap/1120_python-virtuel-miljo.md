@@ -113,11 +113,11 @@ Kommandot för deaktivering kan köras från vilken mapp som helst på datorn, m
 Nu när vi har en virtuell miljö vi kan installera paket i, tar vi pip installationerna ett steg längre och använder oss av en "[Requirements file](https://pip.pypa.io/en/stable/user_guide/#requirements-files)". Det är ett sätt att enkelt kunna specificera vilka externa paket, med version, som behövs för ett projekt. Vi har en i [OOPython kursen](https://github.com/dbwebb-se/oopython/blob/master/.requirements.txt), filen heter `.requirements.txt`, och innehåller följande:
 
 ```
-pylint == 2.15.4
 Flask == 2.2.2
+sentry-sdk == 1.39.1
 ```
 
-Det betyder att modulen Flask med en version som är kompatibel med 1.1.2 och modulen pylint med version kompatibel med 2.10.2 behövs. Vi installera enkelt de både paketen genom att skriva:
+Det betyder att modulen Flask med en version som är kompatibel med 2.2.2 och modulen sentry-sdk med version kompatibel med 1.39.1 behövs. Vi installera enkelt de både paketen genom att skriva:
     
 ```bash
 (.venv) $ pip3 install -r .requirements.txt
@@ -149,5 +149,3 @@ Avslutningsvis {#avslutning}
 --------------------------------------
 
 Kika på hemsidan för venv och requirement.txt för att lära dig mer om hur det fungerar.
-
-Har du frågor kring venv så finns det en särskild [forumtråd kopplad till denna artikeln](t/7008).

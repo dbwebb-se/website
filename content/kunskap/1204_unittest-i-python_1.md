@@ -3,6 +3,7 @@ author:
     - aar
     - grm
 revision:
+    "2024-01-09": (C, aar) Uppdaterat random exemplet så talet slumpas fram i klassen.
     "2023-01-10": (B, grm) Uppdaterat till kmom02.
     "2022-01-12": (A, grm) Första versionen, utgått från "unittest_i_python".
 category:
@@ -182,9 +183,9 @@ Aj, då det blev fel! Ändra från "bike" till "car" och testa igen.
 
 [FIGURE src=/image/oopython/kmom01/result_2_testcases.png caption="Resultat från python3 test.py."]
 
-### Testa med slumptal {#testa-med_slumptal}
+## Testa med slumptal {#testa-med_slumptal}
 
-När vi enhetstestar med slumptal, så vill vi inte behöva ändra i testfallet varje gång vi kör testen. Med hjälp av "random.seed()" så får vi samma slumpvärde varje gång vi kör testen.
+När vi enhetstestar kod med slumptal blir det genast svårare att skriva bra tester. Eftersom det slumpas nya tal varje gång kan vi inte veta i förväg vilket tal testerna ska förvänta sig. Som tur är finns det verktyg som kan hjälpa oss hantera detta. Ett av verktygen är funktionen [random.seed()](https://www.w3schools.com/python/ref_random_seed.asp) den gör att samma tal alltid slumpas när vi kör testen.
 
 ```python
 import random
@@ -195,9 +196,33 @@ print("Second number: ", random.randint(1, 100))
 
 ```
 
-Här blir första slumptalet 11 och andra slumptalet 46 varje gång. Testa gärna!
+Här blir första slumptalet `11` och andra slumptalet `46` varje gång. Testa gärna!
 
-Om vi vill att testa med slumptal i mer än ett testfall, så lägger vi det i en setup metod som körs före varje testfall. Så här ser hela testklassen ut med seed i en setup metod.
+
+Vi uppdaterar Car koden till följande för att lägga till att alla bilar får ett unik chassinummer, som slumpas fram när objektet skapas.
+
+```python
+import random # nytt
+
+class Car():
+    """ Car class that handles cars with model and price. """
+    wheels = 4
+
+    def __init__(self, model, price):
+        """ Constuctor """
+        self.model = model
+        self.price = price
+        self.vin_nr = random.randint(100,999) # nytt
+
+    def present_car(self):
+        """ Returns a string presenting the car """
+        return "This car is of model {m} and costs {p}$.".format(
+            m=self.model, p=self.price)
+```
+
+Om ni testar skapa ett objekt och skriva ut `vin_nr` kommer det bli ett nytt tal varje gång ni kör programmet. Vi kollar på hur vi hanterar det i testerna.
+
+I testerna lägger vi till metoden `setUp()` som automatiskt anropas före alla testfunktioner exekveras. I den anropar vi `random.seed()`.
 
 ```python
 #!/usr/bin/env python3
@@ -214,25 +239,87 @@ class TestCar(unittest.TestCase):
         """ Setup that runs before every testcase """
         random.seed("car")
 
+    ...
+```
+
+Nu kan vi lägga till ett testfall som kollar att Car objekt får ett chassinummer.
+
+I testkoden lägger vi till följande metod.
+
+```python
+class TestCar(unittest.TestCase):
+
+    ...
+
+    def test_vin_nr_set(self):
+        """ Test if object get a random vin number """
+        my_car = Car("Volvo", 50000) # Act
+        self.assertEqual(my_car.vin_nr, 0)# Assert
+
+```
+
+Vi kan inte i förväg veta vilket tal som kommer slumpas fram därför sätter vi bara något, jag valde `0`. Nu kör vi testerna en gång och då kommer det bli fel, för talet kommer inte vara 0. Men då får vi fram det talet som alltid kommer slumpas från och med nu, i testerna.
+
+Jag fick utskriften:
+
+```
+======================================================================
+FAIL: test_vin_nr_set (__main__.TestCar)
+Test if object get a random vin number
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/zeldah/git/dbwebb/oopython/me/kmom02/relations/test.py", line 28, in test_vin_nr_set
+    self.assertEqual(my_car.vin_nr, 0)# Assert
+AssertionError: 186 != 0
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+```
+
+Här ser vi att med vårt seed kommer första talet som slumpas från och med nu vara `186`. Då uppdaterar vi test koden och ersätter `0` med `186` och testar kör testerna igen. Nu ska alla bli godkända.
+
+```
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+```
+
+Här är hela testklassen.
+
+```python
+#!/usr/bin/env python3
+""" Module for testing the class Car """
+import random
+import unittest
+from src.car import Car
+
+class TestCar(unittest.TestCase):
+    """ Submodule for unittests, derives from unittest.TestCase """
+
+    def setUp(self): # 
+        """ Setup that runs before every testcase """
+        random.seed("car")
+
     def test_no_of_wheels_ok(self):
         """ Test if number of wheels is 4 """
         my_car = Car("Volvo", 50000) # Act
         self.assertEqual(my_car.wheels, 4)# Assert
-    
+
     def test_present_car_ok(self):
         """ Test if the string is correct from present_car """
         my_car = Car("Volvo", 50000) # Act
         self.assertEqual(my_car.present_car(),
-        "This bike is of model Volvo and costs 50000$.")# Assert
+            "This car is of model Volvo and costs 50000$.")# Assert
 
-    def test_random_numbers(self):
-        """ Test random numbers from 1 to 100 """
-        print("First number: ", random.randint(1, 100))
-        print("Second number: ", random.randint(1, 100))
-        # Assert random number 1 and 2
+    def test_vin_nr_set(self):
+        """ Test if object get a random vin number """
+        my_car = Car("Volvo", 50000) # Act
+        self.assertEqual(my_car.vin_nr, 186)# Assert
+
 ```
-
-
 
 ### Testa privata attribut och metoder {#testa-privat}
 
@@ -245,6 +332,6 @@ Ibland kan vi komma runt det genom att använda en `get_metod` för att läsa av
 Avslutningsvis {#avslutning}
 ------------------------------
 
-Detta var bara en kort introduktion om enhetstester i pythons *unittest*. Längre fram i kursen dyker vi ner mer i enhetstester.   
+Detta var bara en kort introduktion om enhetstester i pythons *unittest*. Längre fram i kursen dyker vi ner mer i enhetstester.
 
 Det är viktigt med tester för att upprätthålla kvalitet i koden. Det finns företag som kör med testdriven utveckling. Då utvecklar man först enhetstesterna utifrån kraven som finns på koden. Därefter utvecklas den vanliga koden och du kan testa din kod under utveckling.

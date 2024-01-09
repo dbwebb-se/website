@@ -62,7 +62,7 @@ Om du känner att du har tid och lust.
 1. [Python 3 Object-oriented Programming](kunskap/boken-python3-object-oriented-programming-v3)  
     * Ch 4 - Expecting the Unexpected.
 
-1. Kika på [Jinja2's dokumentation](http://jinja.pocoo.org/).
+1. Kika på [Jinja2's dokumentation](https://jinja.palletsprojects.com/en/latest/).
 
 
 
@@ -76,9 +76,9 @@ Om du känner att du har tid och lust.
 
 Genomför följande övning för att träna dig.
 
-1. Läs igenom artikeln om enhetstester "[Introduktion till enhetstester](kunskap/unittest-i-python_1)".
+1. Jobba igenom artikeln om enhetstester "[Introduktion till enhetstester](kunskap/unittest-i-python_1)".
 
-3. Introducera dig själv med pip och venv, "[Python pakethantering med venv](kunskap/python-virtuel-miljo)".
+3. Introducera dig själv med pip och venv, "[Python pakethantering med venv](kunskap/python-virtuel-miljo)". Om du inte gjorde det som del av labbmiljön.
 
 4. Kom igång och gör din första webbapplikation i Python tillsammans med övningen "[Flask och Jinja2](kunskap/flask-med-jinja2)".
 

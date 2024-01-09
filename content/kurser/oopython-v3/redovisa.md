@@ -14,7 +14,7 @@ Som ett sista steg i varje kursmoment skall ni lämna in veckans uppgifter. Gör
 Jobbar ensam {#ensam}
 ---------------------------------------
 
-Även om du jobbar ensam behöver du ha gå med i en grupp på Canvas innan du gör första inlämningen. Gör sen följande när du ska lämna in ett kursmoment.
+Även om du jobbar ensam **behöver** du ha gå med i en grupp på Canvas innan du gör första inlämningen. Gör sen följande när du ska lämna in ett kursmoment.
 
 ### steg 1 {#e_1}
 

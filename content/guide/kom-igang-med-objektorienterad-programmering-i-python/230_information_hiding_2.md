@@ -23,6 +23,8 @@ I första delen gick vi igenom skyddad eller private, i denna delen ska vi kolla
 Name mangling {#nameMangling}
 ------------------------------
 
+Notera, det är inte rekommenderat att använda name mangling för generell utveckling. Det är mer för avancerad klass strukturer. På StackOverflow finns en bra förklaring på hur man kan tänka kring privata attribut och name mangling, [Should I use name mangling in Python?](https://stackoverflow.com/questions/7456807/should-i-use-name-mangling-in-python/7456865#7456865).
+
 Vi utgår från koden i första delen och lägger till ett privat attribut för omsättning.
 
 [FIGURE src=/image/oopython/guide/vid-mov-priv-attr-property.png class="right" caption="Klassdiagram över Video och Movie med privat attribut."]

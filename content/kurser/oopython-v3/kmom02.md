@@ -16,10 +16,6 @@ Vi ska göra grunden till ett Yahtzee spel och börja med testning. För att kun
 
 <!--more-->
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 [INFO]
 
 Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.

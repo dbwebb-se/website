@@ -60,7 +60,11 @@ Denna klassen ska representera tärning.
 
 #### Metoderna {#die-met}
 
-- `__init__(value)` - `value` parametern ska ha ett default värde. Om man skickar med ett argument till `value` parametern i konstruktorn ska tärningen få det värdet. Om argumentet innehåller ett heltal som är större än `MAX_ROLL_VALUE`, tilldela `MAX_ROLL_VALUE` som värde på tärningen. Om argumentet innehåller ett heltal som är mindre än `MIN_ROLL_VALUE`, tilldela `MIN_ROLL_VALUE` som värde på tärningen. Om man **inte** skickar med ett argument ska det slumpas fram ett värde till tärningen.
+- `__init__(value)` - `value` parametern ska ha ett default värde. 
+    - Om man skickar med ett argument till `value` parametern i konstruktorn ska tärningen få det värdet. 
+        - Om argumentet innehåller ett heltal som är större än `MAX_ROLL_VALUE`, tilldela `MAX_ROLL_VALUE` som värde på tärningen. 
+        - Om argumentet innehåller ett heltal som är mindre än `MIN_ROLL_VALUE`, tilldela `MIN_ROLL_VALUE` som värde på tärningen. 
+    - Om man **inte** skickar med ett argument ska det slumpas fram ett värde till tärningen.
 - `get_name()` - ska returnera namnet på värdet tärningen har. En tärning med värdet 1 har namnet "one", värdet 2 har namnet "two" osv.
 - `get_value()` - ska returnera värdet på tärningen.
 - `roll()` - slumpa fram ett nytt värde på tärningen. Använd funktionen `randint` i modulen `random`. Eftersom att värden slumpas fram så kan en tärning få samma värde igen.
@@ -80,8 +84,13 @@ Denna klassen ska representera en spelhand som ska ha fem tärningar den kan spe
 
 #### Metoderna {#hand-met}
 
-- `__init__(dice_values)` - `values` parametern ska ha ett default värde. Om man skickar in ett argument till parmetern i konstruktorn, så ska argumentet vara en lista som innehåller fem heltal. De heltalen ska användas för att skapa en tärning med varje heltal. Om man inte skickar med ett argument så ska `dice` listan få fem Die objekt med slumpade värden.
-- `roll(indexes`) - `indexes` ska ha ett default värde. Om man inte skickar med ett argument till parametern ska metoden kasta om alla tärningar som finns i `dice` attributet. Om man skicka in ett argument till parametern ska det vara en lista med heltalen, heltalen ska vara index position för tärningar i `dice` listan. Då ska bara tärningarna med de index positionerna kastas om, de andra ska ha kvar sina värden.
+- `__init__(dice_values)` - `values` parametern ska ha ett default värde. 
+    - Om man skickar in ett argument till parmetern i konstruktorn, så ska argumentet vara en lista som innehåller fem heltal.
+        - De heltalen ska användas för att skapa en tärning med varje heltal. 
+    - Om man inte skickar med ett argument så ska `dice` listan få fem Die objekt med slumpade värden.
+- `roll(indexes`) - `indexes` ska ha ett default värde. 
+    - Om man skicka in ett argument till parametern ska det vara en lista med heltalen, heltalen ska vara index position för tärningar i `dice` listan. Då ska bara tärningarna med de index positionerna kastas om, de andra ska ha kvar sina värden.
+    - Om man inte skickar med ett argument till parametern ska metoden kasta om alla tärningar som finns i `dice` attributet. 
 - `__str__` - ska returnera en komma separerad sträng med värdet på alla tärningar i handen, t.ex. `"2, 4, 1, 5, 1"`.
 
 
@@ -98,23 +107,24 @@ Ni ska lägga grunden för ett Yahtzee spel i webbläsaren med hjälp av Flask. 
 
 1. Implementera koden för klassdiagrammen ovanför. Spara filerna i `me/kmom02/yahtzee1/src`.
 
-1. Skriv tester för Die klassen i `me/kmom02/yahtzee1/tests/test_die.py`. Testa följande saker i Die klassen:
+1. Skriv tester för Die klassen i `me/kmom02/yahtzee1/tests/test_die.py`. Tänk på att era tester ska verifiera att er kod utför det ni förväntar er. Det betyder att testerna ska verifiera att er kod har utfört något specifikt. T.ex. Ändrat eller skapat ett värde. Testa följande saker i Die klassen:
+    1. Använd er av `random.seed()` när ni testar funktionalitet som slumpar värden.
     1. Att skapa ett objekt utan skicka argument till konstruktorn.
     1. Att skapa ett objekt och skicka värde på tärningen till konstruktorn.
     1. Att skapa ett objekt och skicka ett otillåtet värde på tärningen, som till exempel 100, till konstruktorn.
     1. Att `roll()` slumpar nytt värde. Eftersom att värden slumpas fram så kan en tärning få samma värde igen.
     1. Att `get_name()` returnerar korrekt namn.
-    1. Att `__str__()` returnerar rätt värde som en sträng.
 
-1. Använd er av `random.seed()` när ni testar funktionalitet som slumpar värden.
-
-1. Startfilen ska heta `app.py` och vara körbar via `app.cgi`. `app.cgi` behöver bara fungera på studentservern.
+1. Startfilen ska heta `app.py` och vara körbar via `app.cgi`. `app.cgi` ska bara fungera på studentservern.
 
 1. Du har installerat modulerna Flask i en [virtuell miljö](kunskap/python-virtuel-miljo).
 
-1. Applikationen ska använda Bootstrap.
+1. Applikationen ska använda Bootstrap eller annat valfritt css ramverk.
 
-1. Applikationen ska ha routen `main`. I den routen ska ni skapa ett Hand objekt med fem slumpade tärningar och ni ska skicka in Hand objektet till `render_template()`. På routens sida ska ni visa värdet på handens fem tärningar med hjälp av bilderna som finns i [exampel/yahtzee/img](https://github.com/dbwebb-se/oopython/tree/master/example/yahtzee/img). Det finns en bild för varje tärningsslag mellan 1 och 6, med namnen one.png, two.png, three.png, four.png, five.png och six.png. T.ex. om handen slog tärningarna 1, 4, 2, 4, 4 så ska ni visa bilderna one.png, four.png, two.png, four.png och four.png.
+1. Applikationen ska ha routen `main`. 
+    - I den routen ska ni skapa ett Hand objekt med fem slumpade tärningar och ni ska skicka in **Hand objektet** till `render_template()`. 
+    - På routens sida ska ni visa värdet på handens fem tärningar med hjälp av bilderna som finns i [exampel/yahtzee/img](https://github.com/dbwebb-se/oopython/tree/master/example/yahtzee/img). 
+        - Det finns en bild för varje tärningsslag mellan 1 och 6, med namnen one.png, two.png, three.png, four.png, five.png och six.png. T.ex. om handen slog tärningarna 1, 4, 2, 4, 4 så ska ni visa bilderna one.png, four.png, two.png, four.png och four.png.
 
 1. Ni ska också ha routen `about` där ni på sidan skriva era namn och akronymer.
 

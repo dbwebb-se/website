@@ -3,6 +3,7 @@ author:
     - aar
     - grm
 revision:
+    "2024-01-15": (D, grm) Uppdaterat Vt24, mockning extra material nu.
     "2023-02-06": (C, grm) Uppdaterat till kmom04.
     "2022-01-29": (B, grm) Lagt till kodstruktur.
     "2022-01-27": (A, aar) Kopierat från intro-till-enhetstester.
@@ -252,9 +253,39 @@ Vi lägger till ett test som lyckas också.
 
 ```
 
+Testning i arbetslivet {#testning-i-arbetslivet}
+------------------------------
+
+Maries erfarenheter av testning i arbetslivet:
+Ute i arbetslivet är programmen eller systemen ni jobbar med mycket större och det är fler personer inblandade. Då är testningen jätteviktig. Testningen är ett sätt att verifiera att kraven på systemet fortfarande hålls när det läggs till eller tas bort funktionalitet eller när koden skrivs om.
+
+I testdriven utveckling eller TDD (Test Driven Development) så översätts kraven på programmet till testfall. Dessa utvecklas först och därefter skrivs koden. Likadant görs när det kommer nya krav på programmet. Då vet du att det alltid fungerar som tänkt. Det har du säkert märkt själv att du fixar en sak och då slutar något annat att fungera.
+
+Enhetstester är bra för att testa delar av koden, en enskild del. För att testa hur olika delar fungerar tillsammans använder vi integrationstester och med systemtester så testar hur ett komplett system eller program fungerar.
 
 
-### Testa metoder som anropar andra metoder eller övriga beroenden {#dependencies}
+Avslutningsvis {#avslutning}
+------------------------------
+
+Vi vill bara skriva värdefulla tester. Metoder som bara returnerar ett attribut utan någon logik eller metoder där vi inte kan påverka vad som sker, finns det inget jättestort värde att ha ett test för. Phone innehåller tre metoder av större värde att testa, det är `add_contact()`, `validate_number()` och `get_contact()`. Det är i dem vi har kod som faktiskt utför något.
+
+Många tycker att det är tråkigt och mycket tid. Jag känner ofta likadant när jag sitter med olika projekt, man vill ju bara skriva kod för ny funktionalitet, inte testa koden man redan har skrivit. Men nedanför hittar ni några tankar kring hur man ska prioritera sin tester. Om man verkligen ska testa all kod, då tar det längre tid att skriva testerna än själva koden.
+
+- Testa vanliga fall i koden. De testerna visar dig om din kod går sönder efter att du har ändrat något.
+
+- Testa edge cases i några av de med avancerade funktionerna som troligen innehåller fel.
+
+- När du hittar en bugg, skriv först ett test som kollar det innan du fixar koden så buggen inte finns kvar.
+
+- Lägg till edge case tester för mindre kritisk kod när du har tid att döda.
+
+Det här var lite om enhetstester och hur man kan gå tillväga för att testa sin kod. De flesta testerna är relativt självförklarande och kommer inte gås in djupare på. Läs gärna mer om enhetstester:  
+
+* [docs.python.org](https://docs.python.org/3.5/library/unittest.html)  
+
+* [docs.python-guide.org](http://docs.python-guide.org/en/latest/writing/tests/)
+
+### Mockning - Testa metoder som anropar andra metoder eller övriga beroenden EXTRA MATERIAL {#dependencies}
 
 Än så länge har vi inte haft några direkta beroenden i metoderna vi testar. När metoder börjar använda installerade moduler eller saker som beror på externa saker som vilket OS programmet körs på eller koppling mot en databas för att få tillbaka ett värde, då blir det genast jobbigare. Då behöver vi bli av med det beroendet när vi kör testerna, så metoderna kan testas i en miljö som inte har hela produktionsmiljön. Det är poängen med enhetstester, de ska gå snabbt att köra dem och man ska kunna köra dem i sin utvecklingsmiljö utan databaser och andra dependencies.
 
@@ -333,35 +364,3 @@ OK
 
 För de som vill ha mer info om Mock modulen kan jag rekommendera artikeln [An Introduction to Mocking in Python](https://www.toptal.com/python/an-introduction-to-mocking-in-python).
 
-
-Testning i arbetslivet {#testning-i-arbetslivet}
-------------------------------
-
-Maries erfarenheter av testning i arbetslivet:
-Ute i arbetslivet är programmen eller systemen ni jobbar med mycket större och det är fler personer inblandade. Då är testningen jätteviktig. Testningen är ett sätt att verifiera att kraven på systemet fortfarande hålls när det läggs till eller tas bort funktionalitet eller när koden skrivs om.
-
-I testdriven utveckling eller TDD (Test Driven Development) så översätts kraven på programmet till testfall. Dessa utvecklas först och därefter skrivs koden. Likadant görs när det kommer nya krav på programmet. Då vet du att det alltid fungerar som tänkt. Det har du säkert märkt själv att du fixar en sak och då slutar något annat att fungera.
-
-Enhetstester är bra för att testa delar av koden, en enskild del. För att testa hur olika delar fungerar tillsammans använder vi integrationstester och med systemtester så testar hur ett komplett system eller program fungerar.
-
-
-Avslutningsvis {#avslutning}
-------------------------------
-
-Vi vill bara skriva värdefulla tester. Metoder som bara returnerar ett attribut utan någon logik eller metoder där vi inte kan påverka vad som sker, finns det inget jättestort värde att ha ett test för. Phone innehåller tre metoder av större värde att testa, det är `add_contact()`, `validate_number()` och `get_contact()`. Det är i dem vi har kod som faktiskt utför något.
-
-Många tycker att det är tråkigt och mycket tid. Jag känner ofta likadant när jag sitter med olika projekt, man vill ju bara skriva kod för ny funktionalitet, inte testa koden man redan har skrivit. Men nedanför hittar ni några tankar kring hur man ska prioritera sin tester. Om man verkligen ska testa all kod, då tar det längre tid att skriva testerna än själva koden.
-
-- Testa vanliga fall i koden. De testerna visar dig om din kod går sönder efter att du har ändrat något.
-
-- Testa edge cases i några av de med avancerade funktionerna som troligen innehåller fel.
-
-- När du hittar en bugg, skriv först ett test som kollar det innan du fixar koden så buggen inte finns kvar.
-
-- Lägg till edge case tester för mindre kritisk kod när du har tid att döda.
-
-Det här var lite om enhetstester och hur man kan gå tillväga för att testa sin kod. De flesta testerna är relativt självförklarande och kommer inte gås in djupare på. Läs gärna mer om enhetstester:  
-
-* [docs.python.org](https://docs.python.org/3.5/library/unittest.html)  
-
-* [docs.python-guide.org](http://docs.python-guide.org/en/latest/writing/tests/)

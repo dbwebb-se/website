@@ -101,7 +101,7 @@ När vi inte längre vill jobba med den virtuella miljön behöver vi deaktivera
 # Stå i valfri mapp
 (.venv) $ deactivate
 $ which python3
-/usr/bin/pip3
+/usr/bin/python3
 ```
 
 Kommandot för deaktivering kan köras från vilken mapp som helst på datorn, man måste inte stå i roten.

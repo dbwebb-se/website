@@ -3,6 +3,7 @@ author:
     - aar
     - grm
 revision:
+    "2024-01-15": (B, grm) Uppdaterat vt24, mockning extrauppgift.
     "2022-01-21": (A, grm) Första upplagan.
 category:
     - oopython
@@ -107,7 +108,6 @@ Krav {#krav}
     - Hand klassen:
         - `roll()` - Att anropa med en lista som argument och kolla att det slår om rätt tärningar.
         - `roll()` - Att anropa utan argument och kolla att den slår om alla tärningar.
-        - `roll` - Använd er av mockning för att bli av med på beroendet `random.randint()` i Die klassen. Gör så att `randint` alltid returnerar 100. Kolla att handen innehåller fem tärningar med värdet 100.
         - `to_list()` - Att kolla att den returnerar en lista med tärningarnas värde.
     - Scoreboard klassen:
         - `add_points` - Lägg till poäng för en regel och kolla att blir rätt poäng.
@@ -136,7 +136,9 @@ Extrauppgift {#extra}
 
 1. Istället för att skriva ut ett felmeddelande när du väljer samma regel igen, så kan du designa ditt spel så att du inte kan välja samma regel igen. När en regel är vald, så ska inte den kunna väljas igen och vilken poäng nuvarande Hand är värde med regeln ska inte skrivas ut.
 
-
+1. Lägg till test mockning:
+    - Hand klassen:
+        - `roll` - Använd er av mockning för att bli av med på beroendet `random.randint()` i Die klassen. Gör så att `randint` alltid returnerar 100. Kolla att handen innehåller fem tärningar med värdet 100.
 
 Tips från coachen {#tips}
 -----------------------

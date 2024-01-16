@@ -62,7 +62,7 @@ I kursen kommer vi behöva en katalog för att spara filer och kod. Jag rekommen
 
 Dessa uppgifter skall utföras och lämnas in. Uppgifterna får utföras tillsammans i par. Skriv en kommentar i Canvas med namn på eventuell samarbetsstudent.
 
-1. Gör uppgiften [Skapa en webbserver i Docker](uppgift/1311_skapa-en-webbserver-i-docker).
+1. Gör uppgiften [Skapa en webbserver i Docker](uppgift/skapa-en-webbserver-i-docker).
 
 
 

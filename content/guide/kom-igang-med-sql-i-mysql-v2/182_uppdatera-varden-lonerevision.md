@@ -89,8 +89,8 @@ Skriv SQL för att genomföra följande ändringar:
 4. Gyllenroy och Alastor har hög frånvaro och har fått ett löneavdrag med 3 000.
 5. Alla lärare på avdelningen DIDD fick en extra lönebonus om 2%.
 6. Alla låglönade kvinnliga lärare, de som tjänar färre än 40 000, fick en lönejustering om extra 3%.
-7. Ge Snape, Minerva och Hagrid ett extra lönetillägg om 5 000 för extra arbete de utför åt Albus och öka deras kompetens med +1.
-8. Ge alla lärare en ökning om 2.2% men exkludera Albus, Snape, Minerva och Hagrid som redan fått tillräckligt.
+7. Ge Severus, Minerva och Hagrid ett extra lönetillägg om 5 000 för extra arbete de utför åt Albus och öka deras kompetens med +1.
+8. Ge alla lärare en ökning om 2.2% men exkludera Albus, Severus, Minerva och Hagrid som redan fått tillräckligt.
 
 Kontrollera nu den nya lönesumman och hur mycket % som lönesumman har ökat genom att göra rapporter med SELECT.
 

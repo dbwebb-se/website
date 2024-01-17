@@ -76,7 +76,7 @@ Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h stude
 
 ### Kmom01: Kom igång med objekt och UML {#kmom01}
 
-Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida med routes i ramverket Flask.
+Vi rivstartar med grundstrukturen för objekt och hur man kan visualisera upp klasser.
 
 [Instruktion till kursmoment 01](kurser/oopython-v3/kmom01).
 
@@ -84,23 +84,15 @@ Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida 
 
 ### Kmom02: Kom igång med Flask och testning {#kmom02}
 
-Vi rivstartar med grundstrukturen för objekt och hur man kan skapa en webbsida med routes i ramverket Flask.
+Vi kollar på hur vi kan skapa en webbsida med routes i ramverket Flask och hur man enhetstestar kod i Python.
 
 [Instruktion till kursmoment 02](kurser/oopython-v3/kmom02).
 
 
 
-### Kmom03: Klassrelationer {#kmom03}
+### Kmom03/kmom04: Mer om UML och enhetstester {#kmom04}
 
-Vi jobbar vidare med vår me-sida i Flask. Till det kikar vi klassrelationer.
-
-[Instruktion till kursmoment 03](kurser/oopython-v3/kmom03).
-
-
-
-### Kmom04: Mer om UML och enhetstester {#kmom04}
-
-Vi lär oss om mer UML diagram och enhetstester.
+Vi lär oss om mer objektorientering, UML diagram, enhetstester och Flask.
 
 
 [Instruktion till kursmoment 04](kurser/oopython-v3/kmom04).
@@ -230,9 +222,9 @@ Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens k
 
 | Kursens moment  | Ladok moment enligt kursplan  |
 |-----------------|-------------------------------|
-| Kmom01 - kmom03 | Uppgift 1 á 2.5hp             |
-| Kmom04 + kmom06 | Uppgift 2 á 2.5hp             |
-| Kmom07 - kmom10 | Projekt á 2.5hp               |
+| Kmom01 - kmom02 | Uppgift 1 á 2.5hp             |
+| Kmom03 + kmom05 | Uppgift 2 á 2.5hp             |
+| Kmom06 - kmom10 | Projekt á 2.5hp               |
 
 Läs mer om [rapportering av resultat](kurser/faq/resultatrapportering).
 

@@ -13,7 +13,7 @@ Kmom04: UML och unittest
 
 [FIGURE src=/image/oopython/kmom02/kmom02_top.jpg class="right"]
 
-Ni har redan tittat lite på UML och enhetstester men nu ska vi gräva lite djupare. Ni ska lära er ett nytt typ av diagram, Sekvensdiagram, och lära er med om enhetstester. Samtidigt som ni utvecklar vidare Yahtzee3.
+Ni har redan tittat lite på UML och enhetstester men nu ska vi gräva lite djupare. Ni ska lära er ett nytt typ av diagram, Sekvensdiagram, och lära er med om enhetstester. Samtidigt som ni utvecklar vidare Yahtzee3. Vi tar även ett steg till med Flaskapplikationen och ser hur vi hanterar fomulär med _GET_ och _POST_.
 
 [WARNING]
 Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
@@ -53,8 +53,6 @@ Läs följande:
 
 1. [The art of unit testing](http://artofunittesting.com/definition-of-a-unit-test/)  
 
-1. [UML notation](https://atomicobject.com/resources/oo-programming/uml-notation)
-
 1. [Visualizing program execution](https://atomicobject.com/resources/oo-programming/visualizing-program-execution)
 
 1. [UML basics på IBM](http://www.ibm.com/developerworks/rational/library/769.html)  
@@ -77,8 +75,6 @@ Titta på följande video:
 
 ###Lästips {#lastips}
 
-1. [UML class relationships](http://creately.com/blog/diagrams/class-diagram-relationships/)
-
 1. [OO development process](https://atomicobject.com/resources/oo-programming/oo-development-process)
 
 1. [CRC cards](https://atomicobject.com/resources/oo-programming/crc-cards)
@@ -97,12 +93,12 @@ Titta på följande video:
 
 Genomför följande övningar för att träna dig.
 
-1. "Mer objektorientering" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python)".
 
-1. "[Introduktion till sekvensdiagram](kunskap/intro_till_sekvensdiagram)".
+<!-- 1. "[Introduktion till sekvensdiagram](kunskap/intro_till_sekvensdiagram)". -->
 
-2. "[Mer om enhetstester](kunskap/unittest-i-python_2)".
+1. "[Mer om enhetstester](kunskap/unittest-i-python_2)".
 
+1. Jobba igenom artikeln som handlar om "[GET, POST i Flask](kunskap/flask-get-post-session)".
 
 
 ### Uppgifter {#uppgifter}
@@ -121,7 +117,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 <!-- 1. Gör uppgiften "[Bygg en bank med flask - Del 2](uppgift/bank_med_flask_del_tva)". Spara koden i `me/kmom03/bank2/`. -->
 
-1. Gör uppgiften "[Yahtzee3](uppgift/yahtzee3-v2)". Spara koden i mappen `me/kmom04/yahtzee3/`.
+1. Gör uppgiften "[Yahtzee3](uppgift/yahtzee3-v3)". Spara koden i mappen `me/kmom04/yahtzee3/`.
 
 
 ### Extra {#extra}

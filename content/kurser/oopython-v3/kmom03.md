@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2024-01-17": (F, aar) Delade upp så bara OO medan alla flask är i nästa kmom.
     "2023-01-27": (E, aar) Bytt ut uppgift och get/post övning.
     "2022-01-21": (D, aar) Bytt ut bank omt yahtzee2.
     "2021-01-18": (C, moc) Bytt ut frågorsport uppgift mot bank.
@@ -13,9 +14,9 @@ Kmom03: Arv och andra klassrelationer
 
 [FIGURE src=/image/oopython/kmom02/kmom02-class-relations.png class="right"]
 
-Kom igång med _arv_ och andra klassrelationer. Vi ska titta närmare på klassrelationer och hur de kan implementeras. När vi lär oss mer om klassrelationer behöver vi också lära oss hur vi visar det i klassdiagram. Vi tar även ett steg till med Flaskapplikationen och ser hur vi hanterar fomulär med _GET_ och _POST_.
+Kom igång med _arv_ och andra klassrelationer. Vi ska titta närmare på klassrelationer och hur de kan implementeras. När vi lär oss mer om klassrelationer behöver vi också lära oss hur vi visar det i klassdiagram.
 
-Vi ska fortsätta med Yahtzee uppgiften, i detta kursmomentet ska ni skapa klasser för att få poäng baserat på vilka tärningar som finns i en hand.
+Vi ska fortsätta med Yahtzee uppgiften, i detta kursmomentet ska ni skapa klasser för att få poäng baserat på vilka tärningar som finns i en hand. I kmom04 skriver vi Flask koden.
 
 [WARNING]
 Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
@@ -61,6 +62,10 @@ Läs följande:
 
 1. [Arv](https://atomicobject.com/resources/oo-programming/object-oriented-interitance)
 
+1. [Visualizing program execution](https://atomicobject.com/resources/oo-programming/visualizing-program-execution)
+
+1. [UML basics på IBM](http://www.ibm.com/developerworks/rational/library/769.html)  
+
 
 
 ###Video  {#video}
@@ -69,12 +74,15 @@ Titta på följande:
 
 1. Videoserien [Lär dig objektorienterad Python](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8cmKXE9Gw1Ra0GaYufGbN7) är tätt kopplat till kursmaterialet. Kika igenom videorna som börjar med 2.
 
-1. Titta på resten av [Object-oriented programming](https://www.youtube.com/watch?v=lbXsrHGhBAU) (7.45 och fram).  
+1. Titta på resten av [Object-oriented programming](https://www.youtube.com/watch?v=lbXsrHGhBAU) (7.45 och fram).
+
 
 
 ###Lästips {#lastips}
 
 1. [Objektorienterad programmering och klass relationer](https://python-textbok.readthedocs.io/en/1.0/Object_Oriented_Programming.html)
+
+1. [UML class relationships](http://creately.com/blog/diagrams/class-diagram-relationships/)
 
 
 
@@ -89,11 +97,12 @@ Titta på följande:
 
 Genomför följande övning för att träna dig.
 
-1. Läs igenom "Klass relationer" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python)".
+1. Jobba igenom "Klass relationer" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python)".
 
-1. Jobba igenom artikeln "[Hur vi visar olika relationer mellan klasser i ett klassdiagram](kunskap/relationer_klassdiagram)".
+1. Läs igenom artikeln "[Hur vi visar olika relationer mellan klasser i ett klassdiagram](kunskap/relationer_klassdiagram)".
 
-1. Läs igenom artikeln som handlar om "[GET, POST i Flask](kunskap/flask-get-post-session)".
+1. "Mer objektorientering" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python)".
+
 
 
 
@@ -103,21 +112,12 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Python med klass relationer](uppgift/python-med-klass-relationer)" (lab 2)
 
-1. Gör uppgiften "[Yahtzee2](uppgift/yahtzee2-v2)". Spara koden i mappen `me/kmom03/yahtzee2/`.
+1. Gör uppgiften "[Yahtzee2](uppgift/yahtzee2-v3)". Spara koden i mappen `me/kmom03/yahtzee2/`.
 
-<!-- 1. Gör uppgiften "[Yahtzee2](uppgift/yahtzee2)". Spara koden i mappen `me/kmom02/yahtzee2/`. -->
-<!-- 1. Gör uppgiften "[Bank med Flask](uppgift/bank_med_flask)". Spara koden i mappen `me/kmom02/bank/`. -->
-<!-- 1. Gör uppgiften "[Frågesport med Flask](uppgift/fragesport_med_flask)". Spara koden i mappen `me/kmom02/bank/`. -->
-<!-- 1. Gör uppgiften "[Skapa former](uppgift/skapa-former)". Spara koden i mappen `me/flask/`. -->
 
+**PS!** Det är inte någon inlämning denna veckan.
 
 
 ### Extra {#extra}
 
-Det finns inga extrauppgifter.
-
-
-Lämna in  {#resultat}
------------------------------------------------
-
-Läs [Lämna in och redovisa uppgift](./../redovisa) för att ta reda på hur ni lämna in era uppgifter när ni är klara.
+1. Jobba igenon "Extra material för de som vill lära sig mer" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python/extra)".

@@ -36,6 +36,19 @@ Nedan finns en liten video som visar hur det kan se ut när man är klar med Lag
 
 
 
+Veckans genomgång  {#genomgang}
+---------------------------------
+
+Nedan berättar Andreas om veckans övningar och uppgifter och visar lite tips och trix.
+
+[YOUTUBE src=BKYy78jPcek width=630 caption="Veckans genomgång del 1"]
+
+[YOUTUBE src=2bpb6krqBfw width=630 caption="Veckans genomgång del 2"]
+
+[YOUTUBE src=IaKrJ4BRWBs width=630 caption="Veckans genomgång del 3"]
+
+
+
 Läsanvisningar  {#lasanvisningar}
 ---------------------------------
 

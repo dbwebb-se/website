@@ -46,6 +46,15 @@ dbwebb init
 
 
 
+Veckans genomgång  {#genomgang}
+---------------------------------
+
+Nedan berättar Andreas om veckans övningar och uppgifter och visar lite tips och trix.
+
+[YOUTUBE src=eJ1iPwzU3Mc width=630 caption="Veckans genomgång"]
+
+
+
 Läsanvisningar  {#lasanvisningar}
 ---------------------------------
 

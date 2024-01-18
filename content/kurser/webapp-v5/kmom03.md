@@ -29,6 +29,15 @@ Så här kan det se ut när vi är klara.
 
 
 
+Veckans genomgång  {#genomgang}
+---------------------------------
+
+Nedan berättar Andreas om veckans övningar och uppgifter och visar lite tips och trix.
+
+[YOUTUBE src=x50ST50a9Z4 width=630 caption="Veckans genomgång"]
+
+
+
 Läsanvisningar  {#lasanvisningar}
 ---------------------------------
 

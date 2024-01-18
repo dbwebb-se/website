@@ -77,7 +77,7 @@ Du kan lista samtliga användare som finns skapade i databasen genom att söka u
 +-------------+-----------+
 ```
 
-Om du kör en äldre version (< 5.4) av MariaDB, eller om du kör MySQL, så finns informationen du behöver enligt artikeln "[mysql.user Table](https://mariadb.com/kb/en/mysqluser-table/)".
+Om du kör en äldre version (< 10.4) av MariaDB, eller om du kör MySQL, så finns informationen du behöver enligt artikeln "[mysql.user Table](https://mariadb.com/kb/en/mysqluser-table/)".
 
 
 

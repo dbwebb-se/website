@@ -132,7 +132,6 @@ Testkör och se källkod {#testa}
 
 Du kan testköra skriptet på följande platser. Glöm inte en avslutande `/`.
 
-* [dbwebb.se](repo/oopython/example/flask/cgi-minimal/app.cgi/)
 * [www.student.bth.se](http://www.student.bth.se/~mosstud/kurser/oopython/example/flask/cgi-minimal/app.cgi/)
 
 Du kan se [källkoden till exemplet i kursrepot för oopython](https://github.com/dbwebb-se/oopython/tree/master/example/flask/cgi-minimal).

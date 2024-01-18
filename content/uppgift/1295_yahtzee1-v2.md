@@ -111,7 +111,7 @@ Ni ska lägga grunden för ett Yahtzee spel i webbläsaren med hjälp av Flask. 
     1. Använd er av `random.seed()` när ni testar funktionalitet som slumpar värden.
     1. Att skapa ett objekt utan skicka argument till konstruktorn.
     1. Att skapa ett objekt och skicka värde på tärningen till konstruktorn.
-    1. Att skapa ett objekt och skicka ett otillåtet värde på tärningen, som till exempel 100, till konstruktorn.
+    1. Att skapa ett objekt och skicka ett otillåtet värde på tärningen, som till exempel 100, till konstruktorn. Verifiera att värdet på tärningen är `6`.
     1. Att `roll()` slumpar nytt värde. Eftersom att värden slumpas fram så kan en tärning få samma värde igen.
     1. Att `get_name()` returnerar korrekt namn.
 

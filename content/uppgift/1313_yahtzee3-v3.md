@@ -27,8 +27,7 @@ Ni har gått igenom hela guiden "[Kom igång med objekt](guide/kom-igang-med-obj
 
 Ni har jobbat igenom övningen "[Flask, POST och GET](kunskap/flask-get-post)".
 
-Ni har jobbat igenom övningen "[Introduktion till sekvensdiagram](kunskap/intro_till_sekvensdiagram)" och "[Mer om enhetstester](kunskap/unittest-i-python_2)".
-<!-- Ni har jobbat igenom övningen "[Introduktion till sekvensdiagram](kunskap/intro_till_sekvensdiagram)" och "[Mer om enhetstester](kunskap/unittest-i-python_2)". -->
+Ni har jobbat igenom övningen "[Mer om enhetstester](kunskap/unittest-i-python_2)".
 
 
 
@@ -37,7 +36,7 @@ Introduktion {#intro}
 
 Spelet ska följa de internationella reglerna och inte svenska reglerna. Här kan ni hitta [reglerna](https://gamerules.com/rules/yahtzee-dice-game/).
 
-Nytt i denna uppfiften är att lägga till checkboxar bredvid tärningarna för att på så sätt visa vilka som ska slås om. Vi vill också se en resultattavla med regler och poäng enligt bilden ovanför. Vi vill kunna välja regel, om du använder samma regel 2 gånger vill vi se ett felmeddelande. När du är klar, så vill vi se ett meddelande som säger att spelet är slut.
+Nytt i denna uppgift är att lägga till checkboxar bredvid tärningarna för att på så sätt visa vilka som ska slås om. Vi vill också se en resultattavla med regler och poäng enligt bilden ovanför. Vi vill kunna välja regel, om du använder samma regel 2 gånger vill vi se ett felmeddelande. När du är klar, så vill vi se ett meddelande som säger att spelet är slut.
 
 Era klasser ska uppfylla beskrivningarna nedanför. Beskrivningarna är vad som måste finnas, ni får och är **rekommenderade** att skapa ytterligare metoder och attribut där ni tycker att det behövs.
 
@@ -72,7 +71,7 @@ Kraven nedanför är för webbsidan.
 1. På webbsidan ska ni visa vilka regler som finns. Lägg till radiobuttons för de olika reglerna i ett formulär med en submit-knapp.
     - Här kan ni se hur man gör [radiobuttons i ett formulär](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio).
     - Bredvid en radiobutton för en viss regel ska namnet på regeln skrivas ut, t.ex. "Three of a kind".
-    - Tips! Istället för att skicka med poängsumman som `value` i formuläret, skicka med regelnsnamn. Det innebär att ni måste räkna ut poängen igen på severn.
+    - Tips! Istället för att skicka med poängsumman som `value` i formuläret, skicka med regelns namn. Det innebär att ni måste räkna ut poängen igen på severn.
     - Vid varje regel ska det också visas hur många poäng respektive regel är värd men nuvarande hand och om spelaren redan har använt regeln för att få poäng ska den poängen visas. Kolla på bilden för att se exempel på hur det kan se ut.
 
 1. Varje gång användaren använder formuläret för att få poäng för en regel, spara den totala poängsumman i session och visa upp den på sidan.

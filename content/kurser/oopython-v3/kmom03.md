@@ -76,6 +76,10 @@ Titta på följande:
 
 1. Titta på resten av [Object-oriented programming](https://www.youtube.com/watch?v=lbXsrHGhBAU) (7.45 och fram).
 
+1. Videos 12-22 i spellistan [Software Development Process: Part 2 of 3](https://www.youtube.com/watch?v=pZ9-ujSP_48&index=12&list=PLAwxTw4SYaPm8PAGH7ov2Bj-nG4sXgCtJ) om class diagrams. Det är många videor men de är bara mellan 1 och 3 minuter långa.
+
+1. Videom klassdiagram: [UML Class Diagram Tutorial](https://www.youtube.com/watch?v=UI6lqHOVHic)
+
 
 
 ###Lästips {#lastips}
@@ -115,7 +119,7 @@ Dessa uppgifter skall utföras och redovisas.
 1. Gör uppgiften "[Yahtzee2](uppgift/yahtzee2-v3)". Spara koden i mappen `me/kmom03/yahtzee2/`.
 
 
-**PS!** Det är inte någon inlämning denna veckan.
+**PS!** Det är inte någon inlämning denna veckan. Bara ett quiz!
 
 
 ### Extra {#extra}

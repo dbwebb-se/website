@@ -16,7 +16,7 @@ I denna uppgiften ska ni binda ihop Yahtzee spelet så att ni får ett fungerade
 
 [FIGURE src="/image/oopython/kmom03/yahtzee3.png" caption="Färdigt Yahtzee3"]
 
-I denna uppgiften vi styra upp hur många gånger man får kasta om tärningar och avgöra när spelet är slut.
+I denna uppgiften vi bygga gränssnittet för koden ni skrev i kmom03.
 
 
 
@@ -42,38 +42,6 @@ Nytt i denna uppfiften är att lägga till checkboxar bredvid tärningarna för 
 Era klasser ska uppfylla beskrivningarna nedanför. Beskrivningarna är vad som måste finnas, ni får och är **rekommenderade** att skapa ytterligare metoder och attribut där ni tycker att det behövs.
 
 [YOUTUBE src="dO_o01YomTM" caption="Andreas visar hur en färdig lösning kan se ut i Flask."]
-
-[FIGURE src="/image/oopython/kmom04/yahtzee3.png" caption="Klassdiagram för Yahtzee."]
-
-
-
-### Scoreboard {#scoreboard}
-
-Denna klassen ska innehålla hur många poäng spelaren har samlat på sig och vilka regler som spelaren har fått poäng för. Hur ni implementerar denna klassen är inte lika reglerat som i tidigare uppgifter. Ni får göra lite egna val.
-
-[FIGURE src="/image/oopython/kmom03/uml_scoreboard.png" caption="Klassen Scoreboard"]
-
-Metoderna i diagrammet **måste** finnas, i övrigt får ni själva bestämma hur klassen ska implementeras. Konstruktorn får ni själva bestämma vad som behövs för att skapa ett nytt objekt. Ni kan också lägga till fler metoder och attribut.
-
-#### Attribut {#attr}
-
-Det är upp till er själva vilka attribut ni vill ha. Datan som ska finnas i ett objekt är de olika reglerna och hur många poäng spelaren har fått för de olika reglerna.
-
-Attributet ni väljer att använda för att hålla poängen, ska vara **privat**.
-
-
-
-#### Metoder {#met}
-
-- `get_total_points()` - Metoden ska returnera hur många poäng spelaren har samlat på sig än så länge.
-
-- `add_points(rule_name, hand)` - Metoden ska lägga till poäng för en hand för en specifik regel. **Om** spelaren redan har fått poäng för den regeln ska ett `ValueError` lyftas och inga poäng ges.
-
-- `get_points(rule_name)` - Metoden ska returnera hur många poäng spelaren har fått för en regel. Om regeln inte har använts för att ge poäng, returnera `-1`.
-
-- `finished()` - Metoden ska returnera `True` om alla regler har använts en gång för att få poäng, annars `False`.
-
-- `from_dict(points)` - Det ska vara en **classmethod** som används för att skapa ett nytt Scoreboard objekt. Metoden ska ta emot en dictionary där nycklarna är namn på regler och värdena är hur många poäng som de reglerna har fått. Värdet `-1` används för att markera att en regel inte har använts för att få några poäng. Här finns ett exempel på en [dictionary som kan användas som argument](https://gist.github.com/AndreasArne/8e4bb6d5ca5392d4c9a763346c7e02dd). **Tips** skapa denna metoden tidigt, testerna använder sig av den för att skapa objekt att testa på.
 
 
 

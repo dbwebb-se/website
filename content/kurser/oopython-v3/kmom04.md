@@ -63,10 +63,6 @@ Läs följande:
 
 Titta på följande video:  
 
-1. Videos 12-22 i spellistan [Software Development Process: Part 2 of 3](https://www.youtube.com/watch?v=pZ9-ujSP_48&index=12&list=PLAwxTw4SYaPm8PAGH7ov2Bj-nG4sXgCtJ) om class diagrams. Det är många videor men de är bara mellan 1 och 3 minuter långa.
-
-1. Videom klassdiagram: [UML Class Diagram Tutorial](https://www.youtube.com/watch?v=UI6lqHOVHic)
-
 1. Video om unittester: [Python Functions 2: Unit Testing](https://www.youtube.com/watch?v=F7a0iUH6kVA)
 
 1. Längre video om testning i Python: [Testing is Fun in Python!](https://www.youtube.com/watch?v=Sb2tz9Hlbp8)
@@ -81,7 +77,6 @@ Titta på följande video:
 
 
 
-
 Övningar & Uppgifter  {#ovningar_uppgifter}
 -------------------------------------------
 
@@ -93,29 +88,22 @@ Titta på följande video:
 
 Genomför följande övningar för att träna dig.
 
-
-<!-- 1. "[Introduktion till sekvensdiagram](kunskap/intro_till_sekvensdiagram)". -->
-
 1. "[Mer om enhetstester](kunskap/unittest-i-python_2)".
 
 1. Jobba igenom artikeln som handlar om "[GET, POST i Flask](kunskap/flask-get-post-session)".
+
 
 
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 
-<!-- 1. Gör uppgiften "[Skapa objekt efter UML](uppgift/skapa-objekt-efter-uml)" -->
+1. Kopiera lab2 från kmom03. Om du gjorde labben i kmom03 behöver du inte göra mer. Det är för att labben ska följa med när vi rättar.
 
-<!-- 1. Gör uppgiften "[Skriv testfall för ett objekt](uppgift/skriv-testfall-for-ett-objekt)".   -->
-
-<!-- 1. Gör uppgiften "[Kortspelet War](uppgift/kortspelet-war)". Utför uppgiften i mappen `war`.   -->
-
-<!-- 1. Gör uppgiften "[Skapa sequence diagram](uppgift/skapa-sequence-diagram2)". Utför uppgiften i mappen `uml`.   -->
-
-<!-- 1. Gör uppgiften "[Skapa ett UML diagram](uppgift/skapa_ett_uml_diagram)".  -->
-
-<!-- 1. Gör uppgiften "[Bygg en bank med flask - Del 2](uppgift/bank_med_flask_del_tva)". Spara koden i `me/kmom03/bank2/`. -->
+    ```bash
+# stå i root katalogen för kursen
+    cp -r me/kmom03/lab2/. me/kmom04/lab2
+    ```
 
 1. Gör uppgiften "[Yahtzee3](uppgift/yahtzee3-v3)". Spara koden i mappen `me/kmom04/yahtzee3/`.
 

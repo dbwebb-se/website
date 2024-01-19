@@ -90,13 +90,18 @@ Vi kollar på hur vi kan skapa en webbsida med routes i ramverket Flask och hur 
 
 
 
-### Kmom03/kmom04: Mer om UML och enhetstester {#kmom04}
+### Kmom03: Klassrelationer och mer om UML {#kmom03}
 
-Vi lär oss om mer objektorientering, UML diagram, enhetstester och Flask.
+Vi lär oss om mer objektorientering och UML diagram.
 
+[Instruktion till kursmoment 03](kurser/oopython-v3/kmom03).
+
+
+### kmom04: Session och formulär med Flask {#kmom04}
+
+Vi lär oss mer enhetstester och Flask.
 
 [Instruktion till kursmoment 04](kurser/oopython-v3/kmom04).
-
 
 
 ### Kmom05: Datastrukturer {#kmom05}

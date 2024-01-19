@@ -3,23 +3,20 @@ author: aar
 category:
     - oopython
 revision:
+    "2024-01-19": (E, aar) Nya versionen som bygger mer på kmom03.
     "2022-01-28": (D, aar) Bytte från bank2 till yahtzee3.
     "2021-01-25": (C, moc) La in bank2 och ändrade war uppgiften till klassdiagram.
     "2019-01-19": (B, aar) Tog bort uppgifter om sekvensdiagram.
     "2017-12-13": (A, lew) New version for v2.
 ...
-Kmom04: UML och unittest
+Kmom04: Session och unittest
 ====================================
 
-[FIGURE src=/image/oopython/kmom02/kmom02_top.jpg class="right"]
-
-Ni har redan tittat lite på UML och enhetstester men nu ska vi gräva lite djupare. Ni ska lära er ett nytt typ av diagram, Sekvensdiagram, och lära er med om enhetstester. Samtidigt som ni utvecklar vidare Yahtzee3. Vi tar även ett steg till med Flaskapplikationen och ser hur vi hanterar fomulär med _GET_ och _POST_.
-
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
+I Flask lär vi oss hantera formulär med _GET_ och _POST_ och spara data i Session. Vi kollar också mer på enhetstestning.
 
 <!--more-->
+
+I Yahtzee bygger vi ett gränssnitt åt klasserna som skapades i kmom03 och bygger ihop det hela till ett fungerande spel.
 
 [INFO]
 Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.

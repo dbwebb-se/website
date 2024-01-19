@@ -18,10 +18,6 @@ Kom igång med _arv_ och andra klassrelationer. Vi ska titta närmare på klassr
 
 Vi ska fortsätta med Yahtzee uppgiften, i detta kursmomentet ska ni skapa klasser för att få poäng baserat på vilka tärningar som finns i en hand. I kmom04 skriver vi Flask koden.
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 <!--more-->
 
 [INFO]

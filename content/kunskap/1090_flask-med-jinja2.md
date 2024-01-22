@@ -434,18 +434,21 @@ Om vi nu drar igång servern och pekar webbläsaren på `localhost:5000/about`:
 Lägg till kod i routen {#lagg_till_kod_i_routen}
 ------------------------------
 
-Hur gör vi då för att skapa en instans av en klass och visa den infon i vår app? Vi använder oss av klassen Car från övningen "[Introduktion till enhetstester](kunskap/unittest-i-python_1)". Kopiera car.py till "my_app" så att den ligger i samma katalog som app.py.
+Hur gör vi då för att skapa en instans av en klass och visa den infon i vår app? Vi använder oss av klassen Car från övningen "[Introduktion till enhetstester](kunskap/unittest-i-python_1)". Kopiera car.py till "my_app" så att den ligger i en src katalog.
 
 Använd terminalen och stå i "my_app":
 ```bash
-$ cp ../../../example/unittest/car/src/car.py .
+$ mkdir src
+$ touch src/__init__.py
+$ cp ../../../example/unittest/car/src/car.py src/
 
 ```
 
 Nu uppdaterar vi `app.cy` och lägger in kod i metoden under route "/about".
 
 ```python
-from car import Car # Add afer flask import
+...
+from src.car import Car # Add after flask import
 
 @app.route("/about")
 def about():

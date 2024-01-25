@@ -103,6 +103,7 @@ Genomför följande övning för att träna dig.
 
 2. Läs igenom "Intro till guiden" och "Objekt och klasser" i guiden "[Kom igång med objektorienterad programmering i Python](guide/kom-igang-med-objektorienterad-programmering-i-python)".
 
+[FIGURE src=/image/oopython/kmom02/klassdiagram_bestandsdelar.png caption="Klassdiagrams olika beståndsdelar."]
 
 
 ###Uppgifter {#uppgifter}

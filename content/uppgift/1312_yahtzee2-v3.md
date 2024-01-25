@@ -87,7 +87,7 @@ Denna klassen ärver från `Rule` och representerar reglerna i övre delen, anta
 #### Metoderna {#same-value-rule-met}
 
 - `__init__(value: int, name:str)` - inga defaultvärden
-- `points(hand: Hand)` - ska ta emot ett Hand objekt som argument. Metoden ska räkna ut hur många av tärningarna som har samma värde som värdet i `value` och returnera vad det blir i poäng. T.ex. 3 för 3 stycken 1:or om det är i subklassen Ones.
+- `points(hand: Hand)` - ska ta emot ett Hand objekt som argument. Metoden ska räkna ut hur många av tärningarna som har samma värde som värdet i `value` och returnera vad det blir i poäng. T.ex. 4 för 2 stycken 2:or om det är i subklassen Twos.
 
 
 

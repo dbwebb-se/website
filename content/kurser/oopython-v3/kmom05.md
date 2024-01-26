@@ -16,14 +16,10 @@ Vi ska titta närmare på några av de vanligaste datastrukturerna och hur de fu
 
 Exceptions hjälper oss med att få reda på vad som gått fel. Det finns en hel del inbyggda exceptions som vi säkert stött på tidigare. Nu ska vi se hur vi skapar egna exceptions och på så sätt ta ett steg till mot att ha full kontroll över hur programmet ska fungera.
 
-[WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
-[/WARNING]
-
 <!--more-->
 
 [INFO]
-Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.
+Gör `dbwebb selfupdate` innan du startar med kursmomentet.
 [/INFO]
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
@@ -51,7 +47,7 @@ Läs följande:
 
 Läs följande:
 
-Det finns inga extra artiklar.  
+1. Börja läs [Bad Choices.](https://bookofbadchoices.com/index.html). Försök läsa klart den senast kmom07. Bra "bok" som förklara algoritmer på en enklare sätt.
 
 
 

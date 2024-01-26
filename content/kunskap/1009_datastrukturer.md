@@ -3,6 +3,7 @@ author:
     - aar
     - lew
 revision:
+    "2024-01-26": (D, aar) Uppdatera så attribut är privata.
     "2019-01-31": (C, aar) Tog bort sektionen om Heap.
     "2019-01-25": (B, aar) Bytte ut bilder och lite text.
     "2017-02-08": (A, lew) First version.
@@ -56,25 +57,25 @@ En implementation av en Stack kan se ut som följer:
 ```python
 class Stack:
     def __init__(self):
-        self.items = []
+        self._items = []
 
     def is_empty(self):
-        return self.items == []
+        return self._items == []
 
     def push(self, item):
-        self.items.append(item)
+        self._items.append(item)
 
     def pop(self):
         try:
-            return self.items.pop()
+            return self._items.pop()
         except IndexError:
             return "Empty list."
 
     def peek(self):
-        return self.items[len(self.items)-1]
+        return self._items[len(self._items)-1]
 
     def size(self):
-        return len(self.items)
+        return len(self._items)
 ```
 
 Att arbeta med stacken kan gå till så här:
@@ -127,26 +128,26 @@ En implementation av en Queue kan se ut som följer:
 ```python
 class Queue:
     def __init__(self):
-        self.items = []
+        self._items = []
 
     def is_empty(self):
-        return self.items == []
+        return self._items == []
 
     def enqueue(self, item):
-        self.items.append(item)
+        self._items.append(item)
 
     def dequeue(self):
         try:
-            return self.items.pop(0)
+            return self._items.pop(0)
 
         except IndexError:
             return "Empty list."
 
     def peek(self):
-        return self.items[0]
+        return self._items[0]
 
     def size(self):
-        return len(self.items)
+        return len(self._items)
 
 ```
 

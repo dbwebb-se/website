@@ -235,8 +235,6 @@ Rätta eventuella fel som dyker upp och validera igen. När det ser grönt ut s�
 Extrauppgift {#extra}
 -----------------------
 
-1. Regeln som ger högst möjliga poäng med nuvarande hand ska vara förvald i poänglistan.
-
 1. I Die klassen, gör om metoden `get_value()` till en get property med namnet `value`.
 
 

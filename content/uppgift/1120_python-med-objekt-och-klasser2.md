@@ -15,7 +15,7 @@ Träna på att skapa klasser och använda klass funktionalitet i Python.
 Förkunskaper {#forkunskaper}
 -----------------------
 
-Du har jobbat igenom artikeln "[Kom igång med objekt](kunskap/kom-igang-med-objekt)".
+Du har jobbat igenom artikeln "[Kom igång med objekt](guide/kom-igang-med-objektorienterad-programmering-i-python)".
 
 
 

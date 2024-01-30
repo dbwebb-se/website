@@ -28,7 +28,7 @@ Det finns ibland risker att oväntat hög användning av vissa tjänster ger kos
 
 Då är det vanligt att man tillgängliggör sådana tjänster genom ett [Api Management](https://azure.microsoft.com/sv-se/services/api-management/) så man exempelvis kan justera antalet anrop, sk. rate-limit, och det är så vi har gjort i detta fallet.
 
-Kursinstansen nås genom att låta sina requests gå via DV1615's Api Management. Det behövs en nyckel för att få access till tjänsten, lägg till den i request headers. API-nyckeln är hemlig och det är viktigt att ni inte delar med er av den till personer utanför kursen. Av den anledningen [finns nyckeln i Canvas](https://bth.instructure.com/courses/3951/pages/api-nyckel-till-api-management).
+Kursinstansen nås genom att låta sina requests gå via DV1615's Api Management. Det behövs en nyckel för att få access till tjänsten, lägg till den i request headers. API-nyckeln är hemlig och det är viktigt att ni inte delar med er av den till personer utanför kursen. Av den anledningen [finns nyckeln i Canvas](https://bth.instructure.com/courses/5501/pages/api-nyckel-till-api-management).
 
 
 
@@ -39,7 +39,7 @@ Nedan beskrivs de olika endpoints/url'er som finns i API-management för kursen.
 #### Vision - bildtolkning
 
 ```shell
-POST https://dv1615-apimanagement-lab.azure-api.net/vision/v2.0/analyze?visualFeatures=Tags
+POST https://dv1615-apimanagement-lab.azure-api.net/vision/v3.0/analyze?visualFeatures=Tags
 ```
 
 Body:
@@ -55,7 +55,7 @@ Body:
 #### Translate - Språköversättning
 
 ```shell
-POST https://dv1615-apimanagement-lab.azure-api.net/translate?api-version=3.0&from={språk att översätta från}&to={språk att översätta till}
+POST  https://dv1615-apimanagement-lab.azure-api.net/translator/text/v3.0/translate?from={språk att översätta från}&to={språk att översätta till}
 ```
 
 Body:
@@ -75,7 +75,7 @@ Body:
 #### Vision
 
 ```shell
-POST https://dv1615-apimanagement-lab.azure-api.net/vision/v2.0/analyze?visualFeatures=Tags
+POST https://dv1615-apimanagement-lab.azure-api.net/vision/v3.0/analyze?visualFeatures=Tags
 Header: Ocp-Apim-Subscription-Key: nyckel
 Body:
 {
@@ -86,7 +86,7 @@ Body:
 Exempel på hur man hade kunnat göra en POST i `requests`:
 
 ```python
-url = 'https://dv1615-apimanagement-lab.azure-api.net/vision/v2.0/analyze?visualFeatures=Tags'
+url = 'https://dv1615-apimanagement-lab.azure-api.net/vision/v3.0/analyze?visualFeatures=Tags'
 body = {'url':'https://www.passionforbaking.com/wp-content/uploads/2017/06/E95A8398-1024x683.jpg'}
 headers = {'Ocp-Apim-Subscription-Key': 'nyckel'}
 
@@ -123,7 +123,7 @@ Response:
 #### Translate
 
 ```shell
-POST https://dv1615-apimanagement-lab.azure-api.net/translate?api-version=3.0&from=en&to=sv
+POST https://dv1615-apimanagement-lab.azure-api.net/translator/text/v3.0/translate?from=en&to=sv
 Ocp-Apim-Subscription-Key: nyckel
 body:
 [

@@ -50,10 +50,6 @@ Läs följande:
 
 1. [The art of unit testing](http://artofunittesting.com/definition-of-a-unit-test/)  
 
-1. [Visualizing program execution](https://atomicobject.com/resources/oo-programming/visualizing-program-execution)
-
-1. [UML basics på IBM](http://www.ibm.com/developerworks/rational/library/769.html)  
-
 
 
 ###Video  {#video}

@@ -100,7 +100,7 @@ Vi kikar lite snabbt på `index.html` också. Kolla i "[Flask med Jinja2](kunska
         <div class="jumbotron">
             <h1>Welcome to a guessing game!</h1>
         </div>
-        <div class="row marketing">
+        <div class="row">
             <a href="{{ url_for('guess') }}"  class="btn btn-success btn-lg btn-block">Starta spelet!</a>
         </div>
     </div>
@@ -136,7 +136,7 @@ class Guess:
 
 ```
 
-Den har inte någon direkt funktionalitet utan den är där för att hålla data  strukturerat.
+Den har inte någon direkt funktionalitet utan den är där för att hålla data strukturerat.
 Nästa steg blir att skapa en klass för spellogiken, `GuessGame`.
 
 
@@ -223,7 +223,7 @@ Vi passar även på att fylla i `guess.html`
 
 <div class="container" role="main">
     <div class="container" style="min-height:20em">
-        <div class="row marketing">
+        <div class="row">
             {% include 'tables/show_guesses.html' %}
         </div>
     </div>
@@ -303,7 +303,7 @@ Vi lägger till formuläret i `guess.html`, tillsammans med en if-sats som kolla
 ```html
 ...
     <div class="container" style="min-height:20em">
-        <div class="row marketing">
+        <div class="row">
         {% include 'tables/show_guesses.html' %}
         {% if game.get_if_guessed_correct() %}
             <h2>Congratulations you guessed correctly: {{ game.get_correct_value() }}</h2>
@@ -423,7 +423,7 @@ Vi ändra var startknappen skickar användaren, i `index.html`.
 
 ```html
 ...
-        <div class="row marketing">
+        <div class="row">
             <a href="{{ url_for('init') }}"  class="btn btn-success btn-lg btn-block">Starta spelet!</a>
         </div>
 ...

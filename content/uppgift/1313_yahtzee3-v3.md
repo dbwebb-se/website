@@ -25,7 +25,7 @@ Förkunskaper {#forkunskaper}
 
 Ni har gått igenom hela guiden "[Kom igång med objekt](guide/kom-igang-med-objektorienterad-programmering-i-python)".
 
-Ni har jobbat igenom övningen "[Flask, POST och GET](kunskap/flask-get-post)".
+Ni har jobbat igenom övningen "[Flask, POST och GET](kunskap/flask-get-post-session)".
 
 Ni har jobbat igenom övningen "[Mer om enhetstester](kunskap/unittest-i-python_2)".
 

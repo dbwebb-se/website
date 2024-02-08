@@ -49,7 +49,7 @@ Krav {#krav}
 
 ### Krav för alla {#krav-alla}
 
-1. Kopiera er kod från `me/kmom03/yahtzee2` till `me/kmom04/yahtzee3`.
+1. Kopiera alla filer från `me/kmom03/yahtzee2` till `me/kmom04/yahtzee3`. **GLöm inte** klassdiagrammet.
 
 1. Lägg till tester för följande saker:
     - Hand klassen:

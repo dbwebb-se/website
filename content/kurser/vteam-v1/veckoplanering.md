@@ -29,6 +29,8 @@ TODO
 * Vissa länkar till de tekniska rapporterna kan vara brutna, kolla inför nästa år.
 * Checklista för individ, vad bör jag göra och vilka delar skall jag lämna in.
 
+* Hade behövts lite mer instruktioner kring OAuth och kanske lite mer om ett
+rekommenderat betalningssystem (Klarna etc). 
 
 LINKS
 

@@ -55,7 +55,6 @@ Krav {#krav}
     - Hand klassen:
         - `roll()` - Att anropa med en lista som argument och kolla att det slår om rätt tärningar.
         - `roll()` - Att anropa utan argument och kolla att den slår om alla tärningar.
-        - `to_list()` - Att kolla att den returnerar en lista med tärningarnas värde.
     - Scoreboard klassen:
         - `add_points` - Lägg till poäng för en regel och kolla att det blir rätt poäng.
         - `add_points` - Lägg till poäng för en regel som redan har poäng, kolla att exception lyfts.

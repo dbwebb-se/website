@@ -39,7 +39,7 @@ Era klasser ska uppfylla beskrivningarna nedanför. Beskrivningarna är vad som 
 
 [YOUTUBE src="Zze3YPVxUes" caption="Andreas visar hur en färdig lösning kan se ut."]
 
-[FIGURE src="/image/oopython/kmom05/yahtzee4.png" caption="Klassdiagram för Yahtzee."]
+[FIGURE src="/image/oopython/kmom05/yahtzee4_full.png" caption="Klassdiagram för Yahtzee."]
 
 
 
@@ -51,7 +51,7 @@ Vi ska skapa en egen datastruktur, en "Unordered list", som en klass. Unordered 
 
 Nedanför ser vi ett klassdiagram för en UnorderedList klass. Under diagrammet beskrivs varje metod. Diagrammet ska uppfyllas av er implementation.
 
-[FIGURE src=/image/oopython/kmom05/yahtzee4-unorderelist.png caption="klassdiagram för UnorderedList och Node"]
+[FIGURE src=/image/oopython/kmom05/yahtzee4_2l.png caption="klassdiagram för UnorderedList och Node"]
 
 - `__init__`: Skapa en tom lista.
 - `append`: Lägg till nytt element/nod sist i listan.
@@ -72,7 +72,7 @@ Nedanför ser vi ett klassdiagram för en UnorderedList klass. Under diagrammet 
 
 Denna klassen ska innehålla hur många poäng olika spelare har fått när de har spelat klart. Ni ska använda er av UnorderedList för att hålla namn och poäng för varje klart spel som har sparats.
 
-[FIGURE src="/image/oopython/kmom05/yahtzee4-leaderoard-unorderedlist.png" caption="Klassen Leaderboard"]
+[FIGURE src="/image/oopython/kmom05/yahtzee4_2r.png" caption="Klassen Leaderboard"]
 
 Metoderna i diagrammet **måste** finnas, i övrigt får ni själva bestämma hur klassen ska implementeras. Konstruktorn får ni själva bestämma vad som behövs för att skapa ett nytt objekt. Ni kan också lägga till fler metoder och attribut.
 

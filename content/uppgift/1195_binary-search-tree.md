@@ -27,7 +27,7 @@ Binary Search Tree {#bst}
 
 Vi ska skapa en egen datastruktur, ett "Binary Search Tree" (bst), som en klass. Nedanför ser vi ett klassdiagram för en bst klass. Under diagrammet beskrivs varje metod. Diagrammet ska uppfyllas av er implementation.
 
-[FIGURE src=/image/oopython/kmom06/bst.png caption="Klassdiagram för Binary Search Tree och Node klassen"]
+[FIGURE src=/image/oopython/kmom06/bst_v2.png caption="Klassdiagram för Binary Search Tree och Node klassen"]
 
 BinarySearchTree:
 
@@ -36,6 +36,7 @@ BinarySearchTree:
 * `inorder_traversal_print`: Skriver ut värdet i noderna i trädet i rätt ordning, lågt till högt. En rad per värde, t.ex. "1\n4\n2\n".
 * `get`: Returnera value från noden med nyckeln key. Om key inte finns i trädet lyft ett KeyError exception (det inbyggda).
 * `remove`: Ta bort nod med samma key, returnera värdet från noden. Om nod med key inte finns lyft KeyError exception (det inbyggda).
+* `size`: Returnera antalet noder i trädet. Skapa denna tidigt, testerna använde den.
 
 Node:
 

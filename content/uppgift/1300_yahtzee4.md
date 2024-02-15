@@ -105,28 +105,30 @@ Krav {#krav}
 
 1. Implementera `Node` klassen i `yahtzee4/src/node.py`.
 
+1. Implementera Exception klasserna `MissingIndex` och `MissingValue` i `yahtzee4/src/errors.py`
+
 1. Implementera `UnorderedList` klassen i `yahtzee4/src/unorderedlist.py`.
 
-1. Implementera `Leaderboard` klassen i  `yahtzee4/src/leaderboard.py`. Ett `UnorderedList` objekt ska användas för att hålla spelare och dess poäng. Tips, använd en tuple för att hålla namn och poäng som ett element.
+2. Implementera `Leaderboard` klassen i  `yahtzee4/src/leaderboard.py`. Ett `UnorderedList` objekt ska användas för att hålla spelare och dess poäng. Tips, använd en tuple för att hålla namn och poäng som ett element.
 
-1. Använd en fil för att spara data från `Leaderboard` klassen.
+3. Använd en fil för att spara data från `Leaderboard` klassen.
 
-1. När spelaren har använt alla regler och vunnit ska spelaren se hur många poäng den fick och få upp ett formulär där användaren kan skriva in sitt namn. Formuläret ska skickas till en route där namnet och dess poäng läggs till i ett `Leaderboard` objekt. Spara ner den uppdatera datan till fil.
+4. När spelaren har använt alla regler och vunnit ska spelaren se hur många poäng den fick och få upp ett formulär där användaren kan skriva in sitt namn. Formuläret ska skickas till en route där namnet och dess poäng läggs till i ett `Leaderboard` objekt. Spara ner den uppdatera datan till fil.
 
-1. Skapa en ny vy för att visa upp topplistan, använd en tabell för att visa namn och poäng spelare har fått. I er template fil **ska** ni jobba mot ett `UnorderedList` objekt, ni får inte plocka ut data från det, lägga i en vanlig lista och sen jobba mot den vanliga listan.
+5. Skapa en ny vy för att visa upp topplistan, använd en tabell för att visa namn och poäng spelare har fått. I er template fil **ska** ni jobba mot ett `UnorderedList` objekt, ni får inte plocka ut data från det, lägga i en vanlig lista och sen jobba mot den vanliga listan.
 
-1. I tabellen för topplistan ska man kunna välja att radera ett inlägg i topplistan, då ska det även tas bort från filen.
+6. I tabellen för topplistan ska man kunna välja att radera ett inlägg i topplistan, då ska det även tas bort från filen.
 
-1. I topplista vyn ska det skrivas ut hur många sparade inlägg som finns.
+7. I topplista vyn ska det skrivas ut hur många sparade inlägg som finns.
 
-1. Lägg till tester för följande saker. Kolla på [Testa exceptions](https://youtu.be/ePkZEOHhk-s) för att se hur man fångar exceptions i ett test:
+8. Lägg till tester för följande saker. Kolla på [Testa exceptions](https://youtu.be/ePkZEOHhk-s) för att se hur man fångar exceptions i ett test:
     - UnorderedList klassen:
         - `get()` - kolla att exception lyfts om index inte finns.
         - `get()` - kolla att rätt värde returneras om index finns.
         - `remove()` - kolla att exceptions lyfts om värde saknas.
         - `remove()` - kolla att listan är korrekt efter element har tagits bort om värdet finns.
 
-1. Testa, validera och publicera applikationen på studentservern.
+9.  Testa, validera och publicera applikationen på studentservern.
 
 
 

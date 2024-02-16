@@ -15,6 +15,12 @@ revision:
 Kmom10: Fria upplägget
 ==================================
 
+[WARNING]
+
+Kursmomentet uppdateras. Påbörja inte innan rutan är borta.
+
+[/WARNING]
+
 Du är en engagerad student och funderar på hur du kan nå ut och bidra till en förändring av omvärlden och säkra framtiden. Du känner en pulserande ådra av entreprenörskap i dig. Du bestämmer dig för att "bygga en webapp" som bidrar till förändring.
 
 Det finns en årlig tävling, ["Hack for Sweden"](https://www.digg.se/utveckling-av-digital-forvaltning/hack-for-sweden), där öppen data används för att bygga appar som fokuserar på nytänkande och innovation. I detta projekt kan du använda [en eller flera datakällor som publiceras via tävlingen](https://www.dataportal.se/) som källa till din webapp.

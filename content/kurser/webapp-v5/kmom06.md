@@ -12,6 +12,12 @@ revision:
 Kmom06: Mobila enheters styrkor
 ==================================
 
+[WARNING]
+
+Kursmomentet uppdateras. Påbörja inte innan rutan är borta.
+
+[/WARNING]
+
 Nu maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till möjligheten för att använda en kamera och ett bild-API för att spara bilderna.
 
 

@@ -7,6 +7,13 @@ revision:
 Kmom10: Tågtrafik upplägget
 ==================================
 
+[WARNING]
+
+Kursmomentet uppdateras. Påbörja inte innan rutan är borta.
+
+[/WARNING]
+
+
 [FIGURE src=image/webapp/v4/kajt.jpg?w=c5 class="right"]
 
 Detta projekt utvecklades i samarbete med Branschprogrammet Kapacitet i järnvägstrafiken – [KAJT](https://kajt.org/). Projektet baseras på öppen data från Trafikverket och handlar om att visualisera förseningar i tågtrafiken

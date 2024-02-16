@@ -3,13 +3,14 @@ author:
     - mos
     - efo
 revision:
+  "2023-04-03": (E, efo) Nytt i och med VT24.
   "2023-04-03": (E, efo) Nytt i och med webapp-v5.
   "2017-04-21": (D, efo) Förberedelser för webapp-v3.
   "2017-04-21": (C, efo) Ändringar inför släpp av kmom.
   "2017-03-17": (B, efo) Förberedelser för webapp-v2.
   "2015-12-11": (A, mos) Första utgåvan för kursen.
 ...
-Kmom06: Mobila enheters styrkor
+Kmom06: Real-tids kommunikation
 ==================================
 
 [WARNING]
@@ -18,7 +19,7 @@ Kursmomentet uppdateras. Påbörja inte innan rutan är borta.
 
 [/WARNING]
 
-Nu maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till möjligheten för att använda en kamera och ett bild-API för att spara bilderna.
+I detta kmom tittar vi på hur vi med hjälp av websockets kan kommunicera i real-tid mellan flera olika klienter. Vi gör det genom att bygga en kundtjänst chatt, där alla i kursen kan prata tillsammans.
 
 
 
@@ -28,7 +29,7 @@ Nu maximerar vi styrkorna i våra mobila enheter. Vi ska försöka lägga till m
 
 Så här kan det se ut när vi är klara med kursmoment 06.
 
-[YOUTUBE src=SDvsHIIIC_k width=630 caption="Lager appen i kursmoment 6."]
+
 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
@@ -38,24 +39,27 @@ Så här kan det se ut när vi är klara med kursmoment 06.
 Veckans genomgång  {#genomgang}
 ---------------------------------
 
-Nedan berättar Andreas om veckans övningar och uppgifter och visar lite tips och trix.
-
-[YOUTUBE src=PyyagAmR2Eg width=630 caption="Veckans genomgång"]
 
 
 
 Läsanvisningar  {#lasanvisningar}
 ---------------------------------
 
-*(ca: 2 studietimmar)*
+*(ca: 6-10 studietimmar)*
 
 
 
-### Video  {#video}
+### Artiklar {#artiklar}
 
-Titta på följande video.
+Läs följande artiklar för att få bakgrunden till övningar och uppgifter.
 
-1. Det finns en [videoserie](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_CbhJOudHjxkjYofM98kvh) kopplat till kursen, titta på videos som börjar på 6.
+1. Bekanta dig översiktligt med [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
+
+1. Bekanta dig med [socket.io](https://socket.io/).
+
+Du kan även med fördel titta på denna video:
+
+[YOUTUBE src=1BfCnjr_Vjg width=630 caption="WebSockets in 100 seconds and beyond."]
 
 
 
@@ -68,7 +72,7 @@ Titta på följande video.
 
 ### Övningar {#ovningar}
 
-1. Jobba igenom övningen "[Kamera i mobilen](kunskap/kamera-i-mobilen)". Spara eventuella testfiler i `me/kmom06/camera`.
+1. Jobba igenom övningen "[Real-tids chatt](kunskap/real-tids-chatt)". Spara eventuella testfiler i `me/kmom06/chat`.
 
 
 
@@ -76,7 +80,7 @@ Titta på följande video.
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften "[Lager appen del 6](uppgift/lager-appen-del-6b)". Spara dina filer i `me/lager`.
+1. Gör uppgiften "[Lager appen del 6](uppgift/lager-appen-del-6-v5)". Spara dina filer i `me/lager`.
 
 
 

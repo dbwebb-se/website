@@ -7,6 +7,7 @@ views:
             src: "image/snapvt18/bank2-account-actions.png?w=1100&h=300&cf&c=600,270,0,0&f=edgedetect"
 author: mos
 revision:
+    "2024-02-20": "(R, mos) Nya datum för tenta 2024."
     "2023-03-07": "(Q, mos) Nya datum för tenta 2023 och övningstentor för 2022."
     "2022-03-09": "(P, mos) Ny video för 2022 och v2."
     "2022-03-09": "(O, mos) Genomgången inför v2 och uppdaterade projektkrav."
@@ -92,11 +93,11 @@ Med en godkänd tentamen kan du nå ett slutbetyg om E-C.
 
 ### Planerade tentamen {#planerade}
 
-Följande tentamen är planerade för kursomgången våren 2023.
+Följande tentamen är planerade för kursomgången våren 2024.
 
-* Tenta (kmom10/try1): Torsdagen den 23:e mars, 2023.
-* Omtenta (kmom10/try2): Fredagen den 26:e maj, 2023.
-* Resttenta (kmom10/try3): Fredagen den 25:e augusti, 2023.
+* Tenta (kmom10/try1): Torsdagen den 21:e mars, 2024.
+* Omtenta (kmom10/try2): Onsdagen den 5:e juni, 2024.
+* Resttenta (kmom10/try3): Fredagen den 23:e augusti, 2024.
 
 Tentamen är distans och online. Ingen anmälan krävs.
 
@@ -104,7 +105,7 @@ Tentamen är distans och online. Ingen anmälan krävs.
 För campus mellan 9-14 i sal H430/H429. För distans 9-24. Ingen anmälan krävs.
 -->
 
-Nästkommande tillfällen för examination sker i samband med kurstillfället som är planerat till läsperiod 3, vårterminen 2023. Du kan omregistrera dig på det kurstillfället för att delta.
+Nästkommande tillfällen för examination sker i samband med nästa års kurstillfälle. Du kan omregistrera dig på det kurstillfället för att delta.
 
 Du kan även se planeringen för tentamen via `dbwebb exam ls` i kursrepot.
 

@@ -6,6 +6,7 @@ category:
     - sql
     - kurs databas
 revision:
+    "2024-02-20": "(G, mos) Lade tll stycke om variabler."
     "2022-03-09": "(F, mos) Delvis länka till manual i MariaDb om comp stat."
     "2019-02-11": "(E, mos) Genomgången, fler exempel och ny kodstandard."
     "2018-01-11": "(D, mos) Nytt stycke SHOW WARNINGS."
@@ -33,7 +34,7 @@ Förutsättning {#pre}
 
 Artiklen bygger löst vidare på det exemplet som beskrevs i artikeln "[Transaktioner i databas](kunskap/transaktioner-i-databas)".
 
-Exemplet visar hur du jobbar med lagrade procedurer i MySQL (och MariaDB).
+Exemplet visar hur du jobbar med lagrade procedurer i MySQL/MariaDB.
 
 SQLite stödjer inte lagrade procedurer.
 
@@ -115,6 +116,43 @@ WHERE
 COMMIT;
 
 SELECT * FROM account;
+```
+
+Det finns hårdkodade värde i skriptet ova, kan man göra något för att förbättra "kodens struktur"?
+
+
+
+Variabler i SQL skript {#var}
+--------------------------------------
+
+När man jobbar i ett SQL skript kan man skapa variabler som lever under tiden som skriptet exekveras. Man kan fylla variablerna med värden genom att läsa in data från databasen.
+
+Här är ett exempel på hur man kan flytta pengarna med hjälp av variabler. Kodens struktur blir lite bättre.
+
+```sql
+--
+-- Move using variables
+--
+SET @amount = 1.5;
+SET @from   = '1111';
+SET @to     = '2222';
+
+START TRANSACTION;
+
+SET @balance = (SELECT balance FROM account WHERE id = @from);
+
+UPDATE account SET balance = balance + @amount WHERE id = @to;
+UPDATE account SET balance = balance - @amount WHERE id = @from;
+
+COMMIT;
+
+SELECT * FROM account;
+```
+
+Vi har dock fortfarande inte en möjlighet att kontroller att balansen inte blir 0 på ett konto. Något i stil med följande IF-sats.
+
+```sql
+IF @balance < @amount THEN ROLLBACK;
 ```
 
 Vad kan en lagrad procedur göra för oss här?

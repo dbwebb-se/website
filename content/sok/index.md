@@ -19,7 +19,7 @@ Information om programmet på [BTH.se](https://www.bth.se/utbildning/program-och
 
 3-årigt campusprogram som ledar till en kandidatexamen.
 
-Länk till anmälan på [antagning.se](https://www.antagning.se/se/search?period=21&freeText=webbprogrammering&type=programs&publishers=bth&sortBy=relevance).
+Länk till anmälan på [antagning.se](https://www.antagning.se/se/search?period=21&freeText=Webbprogrammering+karlskrona&type=programs&publishers=bth).
 
 Information om programmet på [BTH.se](https://www.bth.se/utbildning/program-och-kurser/pagwe/).
 

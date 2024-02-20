@@ -143,10 +143,9 @@ Det finns ingen garanti för att nya tentamen kommer att följa exakt samma uppl
 
 Följande gamla tentor finns tillgängliga.
 
-<!--
 * 2023
-    * 
--->
+    * [El](./tentamen/el)
+    * [Rymd](./tentamen/rymd)
 
 * 2022
     * [Fiskodling](./tentamen/fiskodling)
@@ -156,11 +155,10 @@ Följande gamla tentor finns tillgängliga.
     * [Hund](./tentamen/hund)
     * [Vaccin](./tentamen/vaccin)
 
+<!--
 * 2020
     * [Vapen](./tentamen/vapen)
     * [Rock](./tentamen/rock)
-
-<!--
 
 * 2019
     * [Pingis](./tentamen/pingis)

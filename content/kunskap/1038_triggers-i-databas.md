@@ -31,7 +31,7 @@ Förutsättning {#pre}
 
 Artiklen bygger löst vidare på det exemplet som beskrevs i artikeln "[Lagrade procedurer i databas](kunskap/lagrade-procedurer-i-databas)".
 
-Artikeln visar grunderna i [triggers i MySQL](https://dev.mysql.com/doc/refman/5.7/en/triggers.html).
+Artikeln visar grunderna i [triggers i MySQL](https://dev.mysql.com/doc/refman/5.7/en/triggers.html) och MariaDB.
 
 Om du jobbar i [SQLite så fungerar triggers](https://www.sqlite.org/lang_createtrigger.html) även där.
 
@@ -181,7 +181,7 @@ Jag vill logga saker, men inte krångla alltför mycket.
 
 Uppdatera din procedur och provkör den för att se om du får något som loggas.
 
-Så här ser det ut för mig.
+Så här ser det ut för mig när jag tittar i loggtabellen.
 
 ```text
 +----+---------------------+-----------------+---------+---------+--------+
@@ -223,7 +223,7 @@ När du har skapat din trigger enligt ovan så kan du se att den körs, genom at
 CALL move_money('1111', '2222', 1.5);
 ```
 
-Utskriften kan se ut så här.
+Utskriften från loggtabellen kan se ut så här.
 
 ```text
 +----+---------------------+-----------------+---------+---------+--------+
@@ -419,5 +419,3 @@ Detta var grunderna i hur triggers fungerar och hur du skapar dem. Kanske kan tr
 Liksom lagrade procedurer erbjuder även triggers ett sätt att tänka i form av API mot en databas. Triggern kan ju utföra flera uppdateringar som användaren inte behöver fundera på.
 
 Det kan vara en nackdel när en databas blir alltför magisk och automatisk. Saker händer utan att man har koll på vad som sker. Felsökningen blir mer utmanande när man behöver ha koll på alla triggers som ligger i bakgrunden.
-
-Har du [tips, förslag eller frågor om artikeln](t/6293) så finns det en specifik forumtråd för det.

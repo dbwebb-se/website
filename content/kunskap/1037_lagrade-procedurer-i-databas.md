@@ -6,7 +6,7 @@ category:
     - sql
     - kurs databas
 revision:
-    "2024-02-20": "(G, mos) Lade tll stycke om variabler."
+    "2024-02-20": "(G, mos) Lade till stycke om variabler."
     "2022-03-09": "(F, mos) Delvis länka till manual i MariaDb om comp stat."
     "2019-02-11": "(E, mos) Genomgången, fler exempel och ny kodstandard."
     "2018-01-11": "(D, mos) Nytt stycke SHOW WARNINGS."
@@ -53,7 +53,7 @@ Låt oss kika på hur en lagrad procedur kan se ut, skriven med SQL och compound
 
 
 
-Exampel {#exempel}
+Exempel {#exempel}
 --------------------------------------
 
 Vi tar samma exempel vi använde i "[Transaktioner i databas](kunskap/transaktioner-i-databas)". Adam och Eva skall flytta pengar mellan varandra. SQL-koden för exemplet ser ut så här.
@@ -604,5 +604,3 @@ Avslutningsvis {#avslutning}
 Detta var grunderna i hur du kan jobba med lagrade procedurer som ett sätt att programmera i en databas. Kanske kan detta även vara ett sätt att bygga ett API mot en databas.
 
 Vill du se fler sätt att skapa API:er för databasen, och utföra programmering inuti databasen, så läser du om "[Triggers i databas](kunskap/triggers-i-databas)" som är en fristående fortsättning på denna artikeln.
-
-Har du [tips, förslag eller frågor om artikeln](t/6292) så finns det en specifik forumtråd för det.

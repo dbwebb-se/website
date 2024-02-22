@@ -52,7 +52,7 @@ Krav {#krav}
 
 1. Sorteringsalgoritmerna ska fungera oberoende av vilken data som sparas i UnorderedList. Algoritmerna ska inte ha någon kunskap om vilken data som finns listan.
 
-1. Använd din insertion sort för att sortera UnorderedList i topplista vyn. Sortera på antalet poäng.
+1. Använd din rekursiva insertion sort för att sortera UnorderedList i topplista vyn. Sortera på antalet poäng.
 
 1. Vid inlämning ska det finnas minst **3** inlägg i topplist filen. Så vi kan se att topplista vyn sorteras.
 

@@ -19,9 +19,10 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (08/10) ca 20+20+20 studietimmar.
 
-
 [WARNING]
-Kursmomentet är under utveckling. Börja inte med materialet innan denna gula ruta är borta!
+Projektet ska utföras individuellt!
+
+Ni som har jobbat i grupp ska inte göra det med projektet.
 [/WARNING]
 
 
@@ -70,6 +71,8 @@ Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
 Skriv din kod i katalogen `me/kmom10/spellchecker`.
 
+Filen som startar programmet ska heta `spellchecker.py`.
+
 
 
 #### Trie {#trie}
@@ -87,6 +90,7 @@ I er Trie måste det finnas metoder för att:
 - returnera alla ord baserat på ett prefix, prefixsökning. Metoden ska heta `prefix_search(prefix)` och ska ta emot ett argument som är en sträng.
     - T.ex. om argumentet är `"he"` ska metoden returnera en listan `["hej", "hel", "hett"]`, alla ord som börjar på prefixet.
     - Om det inte finns några ord med prefixet ska en tom lista returneras.
+    - Ni får **inte** lägga till alla ord i en lista och sen leta igenom listan. Ni **ska** iterera över noderna och jobba mot dem. 
 - klassmetoden `create_from_file()`, den ska returnera ett Trie objekt som innehåller alla orden från filen som ni ska läsa in vid start (`dictionary.txt` eller `frequency.txt`).
 - det ska gå att skapa ett tomt Trie objekt med `Trie()`.
 
@@ -105,6 +109,7 @@ På sidan ska det finnas val i navbaren till följande sidor:
 1. Ta ett ord som input och kolla om det finns i ordlistan (Trie objektet). Meddela användaren på sida om det fanns eller inte.
 
 1. En prefix sökning (auto-complete), användaren skriver in början av ett ord. Då ska sidan visa upp alla ord som har inputen som prefix.
+    - i formulärets input fält, efter att man börjat söka då ska föregående sökning vara för i fyll i formuläret. T.ex. När man går till sidan är fältet tomt, sen söker vi på "hel". Sidan laddas om och alla orden med "hel" som prefix visas och "hel" är för i fyllt i fältet. Då kan man lägga till "o" och sökningen blir "helo" osv.
 
 1. Skriv ut alla ord som finns i ordlistan, i bokstavsordning. Överst på sidan ska det också stå antalet ord som finns.
 
@@ -138,15 +143,6 @@ När du har kodat klart projektet, jämför hur din kod faktiskt blev med hur du
 Spara som `classdiagrams.png`. Ladda upp filen på Canvas inlämningsuppgiften.
 
 
-
-#### Sekvensdiagram {#sekvens}
-
-När du är färdigt med din kod, gör ett sekvensdiagram. Gör diagrammet för din "prefixsökning" metoden. Start punkten på digrammet ska vara att den metoden anropas.
-
-Lägg bilden i `spellchecker` mappen och döp den till `sequencediagram.png`.
-
-
-
 ### Krav 3: Testning {#k3}
 
 Skriv enhetstester för dina klasser. Spara testerna i filen `tests/test_trie.py`.
@@ -163,10 +159,11 @@ dbwebb test kmom10 # --extra för att testa krav 4-6
 dbwebb publish kmom10
 ```
 
-
 ### Krav 4: Baser utskrift för prefixsökning på word frequency (valfritt) {#k4}
 
 I detta kravet ska du använda filerna `frequency.txt` och `tiny_frequency.txt` för ordlistan. De filerna innehåller rättstavade engelska ord och hur vanliga de är. Varje rad innehåller ett ord och hur vanligt ordet är (ett float tal), separat med space. Ju högre siffra desto vanligare är ordet.
+
+Om ni gör detta kravet ska ni **inte** längre använda `dictionary.txt` och `tiny_dictionary.txt`.
 
 - Bygg ut din Node klass med ett attribut för frequency.
 - I din metod för att lägga till ord, när du markera en slut nod behöver du också lägga in frekvensen för ordet som noden marker.
@@ -182,9 +179,9 @@ I detta kravet ska du använda filerna `frequency.txt` och `tiny_frequency.txt` 
 
 Lägg till metoden `correct_spelling(word)` i Trie klassen som tar emot ett ord som argument. Metoden ska hitta ord som är stavade likadant där **en** bokstav i följd kan vara fel. T.ex. om argumentet är `"hkj"` ska metoden returnera listan `["hej", "hoj", "haj"]`. Argumentet har en bokstav som är fel. Metoden ska också klara av ord där det finns fler felstavade bokstäver men det finns minst en korrekt bokstäverna mellan de felstavade. T.ex. om argumentet är `"kplqo"` ska metoden returnera listan `["kollo"]`. Det finns två felstavade bokstäver men det är bara en bokstav åt gången.
 
-Metoden ska hitta alla ord som är lika långa som argumentet där enstaka bokstäver är fel. Det kan finnas flera bokstäver som är fel men det ska finnas minst en korrekt bokstav mellan dem. Den ska inte klara av att hitta ord där sista bokstaven är felaktig. T.ex. `"kollq"` matchar inte `"kollo"`. Om det inte finns några förslag ska en tom lista returneras. Om ordet är rättstavat ska en lista med enbart det ordet returneras. Listan som returneras ska vara sorterad i bokstavsordning.
+Metoden ska hitta alla ord som är lika långa som argumentet där enstaka bokstäver är fel. Det kan finnas flera bokstäver som är fel men det ska finnas minst en korrekt bokstav mellan dem. Den ska inte klara av att hitta ord där sista bokstaven är felaktig. T.ex. `"kollq"` matchar inte `"kollo"`. Om det inte finns några förslag ska en tom lista returneras. Om ordet är rättstavat ska en lista med enbart det ordet returneras. Listan som returneras ska vara **sorterad** i bokstavsordning.
 
-Exempel, en Trie med orden `beat, heat, beet, belt, debt, boot`, och sökordet `beot` ska returnera listan `['boot', 'beat', 'beet', 'belt', 'debt', 'heat']`.
+Exempel, en Trie med orden `beat, heat, beet, belt, debt, boot`, och sökordet `beot` ska returnera listan `['beat', 'beet', 'belt', 'boot', 'debt', 'heat']`.
 
 Ni får **inte** plocka ut alla ord i en lista och sen leta igenom den listan efter rättstavning. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och jobbar mot noderna för att kolla att kraven uppfylls. Utskriften ska **inte** begränsas till max 10.
 
@@ -194,11 +191,11 @@ Lägg till en sida där användaren kan få hjälp med rättstavning. Visa alla 
 
 ### Krav 6: Suffixsökning (valfritt) {#k6}
 
-Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en sträng som ska vara ett suffix. Metoden ska returnera en lista med alla ord som har argumentet som suffix. Om det inte finns några förslag ska en tom lista returneras. Listan som returneras ska vara sorterad i bokstavsordning.
+Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en sträng som ska vara ett suffix. Metoden ska returnera en lista med alla ord som har argumentet som suffix. Om det inte finns några förslag ska en tom lista returneras. Listan som returneras ska vara **sorterad** i bokstavsordning.
 
 T.ex. med argumentet `"ppa"` ska listan `["loppa"," "soppa"]` returneras.
 
-Ni får **inte** bygga ett nytt träd där ni lägger till alla ord i bakvänd ordning eller plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur och och jobbar mot noderna för att kolla att kraven uppfylls..
+Ni får **inte** bygga ett nytt träd där ni lägger till alla ord i bakvänd ordning **eller** plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur **nerifrån och upp** och jobbar mot noderna för att kolla att kraven uppfylls. Så ni måste första jobba er ner till slutnoderna och sen jobba er uppåt och på vägen upp kollar ni om noderna uppfyller kraven.
 
 Lägg till en sida där alla ord visas baserat på användarens input. Visa alla ord som hittas baserat på användarens input. Utskriften ska **inte** begränsas till max 10.
 

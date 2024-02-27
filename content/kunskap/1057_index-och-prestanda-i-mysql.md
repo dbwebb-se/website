@@ -28,9 +28,11 @@ Vi skall titta på index och hur de hjälper dig att optimera din databas. Vi se
 Förutsättning {#pre}
 -------------------------------
 
-Du har goda kunskaper i SQL och i MySQL.
+Du har goda kunskaper i SQL och i MySQL/MariaDB.
 
 En del av underlaget till denna artikel har utgått från [delen Optimization i manualen för MySQL](https://dev.mysql.com/doc/refman/8.0/en/optimization.html).
+
+Motsvarande information för MariaDB finner du i "[Optimization and Tuning](https://mariadb.com/kb/en/optimization-and-tuning/)".
 
 I ditt kursrepo för databas under `example/sql/index.sql` finns grunden till de exempel som används i artikeln.
 
@@ -39,10 +41,10 @@ I ditt kursrepo för databas under `example/sql/index.sql` finns grunden till de
 Skapa egen tabell för tester {#testabell}
 ------------------------------
 
-Gör så här för att skapa en egen tabell i din testdatabas, men dubbelkolla först i SQL-filen så du ser vad den gör.
+Gör så här för att skapa en egen tabell i din testdatabas 'dbwebb', men dubbelkolla först i SQL-filen så du ser vad den gör.
 
 ```text
-mysql --table -uuser -ppass dbwebb < example/sql/index.sql
+mysql --table dbwebb < example/sql/index.sql
 ```
 
 Koden ser ut ungefär så här.
@@ -923,4 +925,6 @@ Avslutningsvis {#avslutning}
 
 Du har nu fått en allmän genomgång av aspekter som kan påverka prestandan av din databas och fokus har varit på index. Vill du läsa mer så är manualen för MySQL och den delen som handlar om Optimization, en god punkt att fortsätta.
 
+<!--
 Artikeln har en [egen forumtråd](t/6375) där du kan ställa frågor eller bidra med tips och trix.
+-->

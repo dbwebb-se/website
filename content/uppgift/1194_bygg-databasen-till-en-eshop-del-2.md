@@ -60,7 +60,7 @@ Här kan du se ett exempel på en studentinlämning.
 
 Kom ihåg att vi använder en kodstandard som säger små bokstäver på tabeller, vyer, procedurer, triggers och kolumnnamn.
 
-Ett av de vanligaste felen som ger komplettering är att man mixat stora och små bokstäver i namngivningen av databasobjekten och man är sedan inte konsikvent när man använder databasen i skript eller i JavaScript koden.
+Ett av de vanligaste felen som ger komplettering är att man mixat stora och små bokstäver i namngivningen av databasobjekten och man är sedan inte konsekvent när man använder databasen i skript eller i JavaScript koden.
 
 
 
@@ -71,7 +71,11 @@ Ett vanligt fel när man definierar databasfunktioner är att man missar att ang
 > ERROR 1418 (HY000) at line XXX: This function has none of DETERMINISTIC, NO SQL, or READS SQL DATA in its declaration a
 nd binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)
 
-Får du detta felet så har dina databas-funktioner inte karaktäristik angiven. För detaljer kan du se forumet "[Error Code: 1418. This function has none of DETERMINISTIC...](t/8419)".
+Får du detta felet så har dina databas-funktioner inte karaktäristik angiven. Uppdatera din kod så att funktionen använder en relvant karaktäristik.
+
+<!--
+För detaljer kan du se forumet "[Error Code: 1418. This function has none of DETERMINISTIC...](t/8419)".
+-->
 
 
 

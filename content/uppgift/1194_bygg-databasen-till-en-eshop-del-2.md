@@ -222,7 +222,9 @@ Tips från coachen {#tips}
 
 1. Det finns en artikel som hanterar tips om [Använd TIMESTAMP för status i databastabellen](coachen/anvand-timestamp-for-status-i-databastabellen).
 
+<!--
 1. Det finns ett tips i forumet om "[Hur tänka kring funktionen order_status?](t/8449)".
+-->
 
 <!--
 Tips i forum om formulär SELECT/DROPDOWN.

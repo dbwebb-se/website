@@ -46,7 +46,7 @@ Inget att läsa.
 
 1. Läs vilka [fördelar som finns med BST över hash tables](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/).
 
-1. Läs om de olika [fördelarna med som finns för olika datastrukturer](http://careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/).
+1. Läs om de olika [fördelarna med som finns för olika datastrukturer](https://web.archive.org/web/20220129145702/https://www.careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/).
 
 
 

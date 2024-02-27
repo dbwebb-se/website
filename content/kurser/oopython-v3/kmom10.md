@@ -17,8 +17,8 @@ Upplägget är enligt följande:
 
 * Projektet och redovisning (20-60h)
 
-Totalt omfattar kursmomentet (08/10) ca 20+20+20 studietimmar.
 
+Totalt omfattar kursmomentet (08/10) ca 20+20+20 studietimmar.
 [WARNING]
 Projektet ska utföras individuellt!
 

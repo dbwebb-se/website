@@ -238,6 +238,10 @@ Du kan med GROUP_CONCAT skapa följande rapport, se kategorierna.
 +----+-------+-------+-------------+
 ```
 
+<!--
 I forumet finns ett tips om hur du kan hantera **optionella argument** i terminalklienten, se "[Kommando med optionella argument (eshop1/2)](t/8431)".
 
-Lycka till och hojta till i forumet om du behöver hjälp!
+-->
+
+Lycka till och hojta till i chatt om du behöver hjälp!
+

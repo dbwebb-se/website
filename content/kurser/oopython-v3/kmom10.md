@@ -71,7 +71,7 @@ Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
 Skriv din kod i katalogen `me/kmom10/spellchecker`.
 
-Filen som startar programmet ska heta `spellchecker.py`.
+Filen som startar programmet ska heta `app.py`.
 
 
 

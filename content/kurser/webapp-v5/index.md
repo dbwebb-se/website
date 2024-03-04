@@ -143,7 +143,7 @@ När man skapar en faktura är det bra att ha snygga och responsiva tabeller. S�
 
 
 
-### Kmom05: Karta och GPS {#kmom05}
+### Kmom05: Mobila enheters styrkor {#kmom05}
 
 Vi tar en titt på hur vi kan använda externa npm-moduler direkt i applikation när vi bygger en karta i appen. Sedan tittar vi på hur vi kan använda webbens inbyggda API:er för att hämta användarens GPS-position.
 
@@ -151,7 +151,7 @@ Vi tar en titt på hur vi kan använda externa npm-moduler direkt i applikation 
 
 
 
-### Kmom06: Mobila enheters styrkor {#kmom06}
+### Kmom06: Real-tids kommunikation {#kmom06}
 
 I detta kursmoment fortsätter vi att utnyttja styrkorna i våra mobila enheter. Vi tittar vidare på webbens inbyggda API:er och hur vi kan använda dessa för att skapa mer fullvärdiga webb applikationer.
 
@@ -159,9 +159,9 @@ I detta kursmoment fortsätter vi att utnyttja styrkorna i våra mobila enheter.
 
 
 
-###Kmom07/10: Projekt och examination {#kmom10}
+### Kmom07/10: Projekt och examination {#kmom10}
 
-Avslutningsvis gör du ett projekt enligt en specifikation. Projektet är det sista som du gör och tillsammans med alla redovisningar som finns på din me-sida så används detta som underlag för att examinera dig från kursen.
+Avslutningsvis gör du ett projekt enligt en specifikation. Projektet är det sista som du gör och används som underlag för att examinera dig från kursen.
 
 Projektet bygger på tidigare kursmoment och med dina nya erfarenheter skapar du en tillgänglig och användbar mobil applikation enligt specifikationen.
 

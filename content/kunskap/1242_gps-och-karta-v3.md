@@ -30,7 +30,7 @@ Vi kommer i detta exemplet använda leaflet.js för att visa upp en karta i vår
 ```bash
 # stå i me/kmom05/gps
 touch index.html main.js style.css
-mkdir components leaflet models
+mkdir components models
 touch components/map-view.js
 ```
 
@@ -125,25 +125,19 @@ Nu bör du kunna se en rubrik om du öppnar upp applikationen i webbläsaren.
 Leaflet {#leaflet}
 --------------------------------------
 
-Låt oss installera `leaflet` för att komma igång med kartan och kopiera lite filer så allt hamnar på rätt plats.
+Låt oss lägga till modulen `leaflet` för att komma igång med kartan. Vi använder ett Content Delivery Network (CDN) för detta ändamålet. Vi ser på [Leaflets hemsida](https://leafletjs.com/download.html) hur vi kan göra detta.
 
-```bash
-# stå i me/kmom05/gps
-npm init --yes
-npm install leaflet
-mkdir leaflet
-cp node_modules/leaflet/dist/leaflet.js leaflet/leaflet.min.js
-cp node_modules/leaflet/dist/leaflet.css leaflet/leaflet.min.css
-cp -r node_modules/leaflet/dist/images leaflet/
-cp ../../../example/gps-v5/leaflet/location.png leaflet/
+Vi lägger dessa två rader i `<head>`-delen av vår `index.html`-fil.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 ```
 
-Vi importerar sedan `leaflet.min.js` filen och då får vi tillgång till ett global objekt `L`. För att valideringen inte ska klaga lägger vi en kommentar längst upp i filen om att vi vet att globala variabeln finns. Vi lägger även till `<div id="map" class="map"></div>` som en del av `innerHTML` för vår komponent. I funktionen `renderMap` renderar vi sedan ut kartan och lägger till vilka **tiles** vi vill använda, **tiles** är de små kartbilder som tillsammans bygger ihop kartan i olika grader av in-zoomning.
+Vi bör nu (efter en omladdning) ha tillgång till ett global objekt `L`. För att valideringen inte ska klaga lägger vi en kommentar längst upp i filen om att vi vet att globala variabeln finns. Vi lägger även till `<div id="map" class="map"></div>` som en del av `innerHTML` för vår komponent. I funktionen `renderMap` renderar vi sedan ut kartan och lägger till vilka **tiles** vi vill använda, **tiles** är de små kartbilder som tillsammans bygger ihop kartan i olika grader av in-zoomning.
 
 ```javascript
 /* global L */
-
-import "../leaflet/leaflet.min.js";
 
 export default class MapView extends HTMLElement {
     constructor() {
@@ -169,15 +163,6 @@ export default class MapView extends HTMLElement {
 }
 ```
 
-Om vi laddar om sidan nu bör det bli heltokigt på riktigt, men kartbitar lite överallt på skärmen, så vi ser till att lägga till `leaflet.min.css` i `index.html` innan vår `style.css` fil.
-
-```html
-<link rel="stylesheet" href="leaflet/leaflet.min.css" />
-<link rel="stylesheet" href="style.css" />
-```
-
-Och nu bör det ser någorlunda vettigt ut med en karta som visar Karlskrona med omnejd.
-
 
 
 Markörer {#markorer}
@@ -200,8 +185,6 @@ Vi kan sedan importera denna funktion till vår komponent. Från `connectedCallb
 
 ```javascript
 /* global L */
-
-import "../leaflet/leaflet.min.js";
 
 import getCoordinates from "../models/nominatim.js";
 
@@ -255,12 +238,10 @@ Användarens plats {#plats}
 
 Sista pusselbiten vi behöver att få på plats är användarens position utritad på kartan. Vi kommer då använda oss av webbläsarens inbyggda möjlighet för att plocka ut användarens position. [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) beskriver hur det fungerar med att hämta ut användarens position.
 
-Vi lägger till ytterligare en metod i vår komponent `renderLocation`, som vi anropar från `renderMap`. I metoden frågar vi först om `geolocation` är tillgängligt i `navigator`-objektet som är den webbläsare vi ser sidan via. Sedan frågar vi `navigator` om nuvarande position och får tillbaka ett result som vi sedan ritar ut som en markör. Vi väljer att ändra utseendet på markören bara för att visa att den ena är positionen och den andra en vanlig markör.
+Vi lägger till ytterligare en metod i vår komponent `renderLocation`, som vi anropar från `renderMap`. I metoden frågar vi först om `geolocation` är tillgängligt i `navigator`-objektet som är den webbläsare vi ser sidan via. Sedan frågar vi `navigator` om nuvarande position och får tillbaka ett result som vi sedan ritar ut som en markör. Vi väljer att ändra utseendet på markören bara för att visa att den ena är positionen och den andra en vanlig markör. `location.png`-bilden kn du hitta i `example/gps-v5`-katalogen.
 
 ```javascript
 /* global L */
-
-import "../leaflet/leaflet.min.js";
 
 import getCoordinates from "../models/nominatim.js";
 
@@ -307,7 +288,7 @@ export default class MapView extends HTMLElement {
 
     renderLocation() {
         let locationMarker = L.icon({
-            iconUrl:      "leaflet/location.png",
+            iconUrl:      "location.png",
             iconSize:     [24, 24],
             iconAnchor:   [12, 12],
             popupAnchor:  [0, 0]

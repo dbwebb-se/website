@@ -37,272 +37,112 @@ Vi kommer i denna övningen använda oss av socket.io som är en modul för att 
 
 
 
-En chat komponent {#chat-component}
+En start {#start}
 --------------------------------------
 
-Vi börjar med att skapa filen `me/lager/router.js` som kommer innehålla komponenten som hanterar routingen i vår applikation. Vi skapar detta som en vid det här laget en "vanlig" web component. Jag lägger till lite kod så att vi ser att allting fungerar när vi lägger till den i `main.js` och sedan i `index.html`.
-
-```javascript
-export default class Router extends HTMLElement {
-    constructor() {
-        super();
-    }
-
-    // connect component
-    connectedCallback() {
-        this.innerHTML = "router-outlet";
-    }
-}
-```
-
-I `main.js` definierar vi sedan ett `customElement` som vi ger namnet `router-outlet`. Jag väljer att strukturera upp mina imports och komponenter genom att använda lite mellanrum, men det är enbart för min egen skull.
-
-```javascript
-// router import
-import Router from "./router.js";
-
-// component imports
-import LagerTitle from "./components/lager-title.js";
-import ProductList from "./components/product-list.js";
-import SingleProduct from "./components/single-product.js";
-
-customElements.define('router-outlet', Router);
-
-customElements.define('lager-title', LagerTitle);
-customElements.define('product-list', ProductList);
-customElements.define('single-product', SingleProduct);
-```
-
-I `index.html` tar vi bort alla andra komponenter och har bara `<router-outlet></router-outlet>`.
-
+Vi börjar med att lägga till `socket.io`-klienten i vår index.html, lägg den innan du laddar `main.js`-filen.
 
 ```html
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Lager-Components</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="main.js" defer></script>
-</head>
-<body>
-    <router-outlet></router-outlet>
-</body>
-</html>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
 ```
 
-När vi öppnar vår applikation nu ser vi bara texten **router-outlet** men nu vi är på gång.
-
-
-
-Definiera routes {#define}
---------------------------------------
-
-Till en början väljer vi att definiera våra routes direkt i konstruktorn i `Router` klassen. Jag definierar även en variabel för att hålla koll på nuvarande route. Längre ner i koden kommer vi dela upp komponenter och vyer (views) i två olika kataloger. Vyer är _web components_ men kommer mer vara en samling av andra små komponenter som tillsammans bygger ihop hela vyer. Varje route definieras utifrån nyckeln i objektet och det vi skriver där är det vi vill ska stå i adress fältet när vi vill besöka den specifika vyn som vi specificerar under `view`-attributet. `name` kommer i ett senare skede användas för att visas som text i navigationen.
+Sedan definierar vi ett `customElement` i `main.js` med följande kod:
 
 ```javascript
-export default class Router extends HTMLElement {
+import ChatForm from "./components/chat-form.js";
+
+customElements.define("chat-form", ChatForm);
+```
+
+Vilket gör det möjligt att använda oss av `<chat-form></chat-form>` i vår kod. Så låt oss ta en titt på den komponenten.
+
+
+
+Vår chatt-komponent {#component}
+--------------------------------------
+
+I komponenten börjar vi med att skriva ut ett fält för att skriva i, en knapp för att skicka meddelanden och en `div` för att kunna visa upp alla meddelanden, som kommer skickas båda från din klient och alla andras klienter.
+
+```javascript
+/* global io */
+
+export default class ChatForm extends HTMLElement {
     constructor() {
         super();
-
-        this.currentRoute = "";
-
-        this.allRoutes = {
-            "": {
-                view: "<products-view></products-view>",
-                name: "Lagerlista",
-            },
-            "packlist": {
-                view: "<packlist-view></packlist-view>",
-                name: "Plocklista",
-            }
-        };
     }
 
-    get routes() {
-        return this.allRoutes;
-    }
-
-    // connect component
     connectedCallback() {
-        this.innerHTML = "router-outlet";
+        this.innerHTML = `<textarea class="message-textarea" id="message-textarea"></textarea>
+
+        <button class="message-button" id="message-button">Send</button>
+
+        <h2>Sent messages</h2>
+        <div id="messages"></div>`;
+
+        window.addEventListener("load", () => {
+            this.init();
+        }, false);
+    }
+
+    init() {
+
     }
 }
 ```
 
-I ovanstående kod definierade jag även den publika `getter`-metod routes. Det gör att vi på ett enkelt sätt kan hämta ut alla routes, både inuti `Router` klassen men även från de instanser vi skapar.
+När vyn har laddats anropar vi sedan `init`-funktionen, som är den funktionen som kommer initiera socketen. Här börjar vi med att skapa socket objektet utifrån vår `io`-instans. Vi skickar här med URL'n till den server vi vill koppla oss mot. Sedan ser vi till att vi har tillgång till de element vi skapade i `connectedCallback` ovan.
 
-
-
-### Hantera ändringar i routes {#changes}
-
-Vi kommer i vår router utnyttja [hash-delen](https://developer.mozilla.org/en-US/docs/Web/API/URL/hash) av en URL för routingen, dvs det som kommer efter `#` i en URL. Och som av en händelse finns det ett `event` i webbläsaren `hashchange` som vi kan använda för detta.
-
-Jag har valt att dela upp det i tre delar, man hade säkert kunnat lösa det med en eller två metoder, men känns som detta kan ge större flexibilitet i framtiden. I `connectedCallback` ser vi till att skapa en `EventListener` för att lyssna på om `hash` ändras. När den gör det vill vi anropa `resolveRoute`, dock vi vill vi även göra det första gången sidan laddas så därför lägger vi även ett anrop utanför `EventListener`-delen. I `resolveRoute`-metoden plockar vi ut `location.hash` och tar bort `#` vilket då får bli vår `currentRoute`. Finns det ingen hash, blir det en tom sträng som vi har definierat ska vara routen för LagerSaldo sidan i `this.allRoutes`. Sedan renderar vi rutten med hjälp av att hämta ut komponenten/vyn vi vill visa. Om inte `this.currentRoute` finns i `this.allRoutes` ritar vi istället upp vyn `not-found`, där vi bara skriva ut att routen inte finns, antar ni vid detta läget kan skapa den själv.
+Varje gång knappen för att skicka meddelanden trycks vill vi skicka iväg ett meddelande till socket-servern. Det gör vi med `socket.emit` ([Dokumentation](https://socket.io/docs/v3/emit-cheatsheet/#client-side)), där första argumentet är ett namn för det event vi skickar och andra argumentet är värdet.
 
 ```javascript
-export default class Router extends HTMLElement {
-    constructor() {
-        super();
+init() {
+    const socket = io("https://lager-chat.emilfolino.se");
 
-        this.currentRoute = "";
+    const textarea = document.getElementById("message-textarea");
+    const button = document.getElementById("message-button");
+    const messages = document.getElementById("messages");
 
-        this.allRoutes = {
-            "": {
-                view: "<products-view></products-view>",
-                name: "Lagerlista",
-            },
-            "packlist": {
-                view: "<packlist-view></packlist-view>",
-                name: "Plocklista",
-            }
-        };
-    }
+    button.addEventListener("click", function(event) {
+        event.preventDefault();
 
-    get routes() {
-        return this.allRoutes;
-    }
-
-    // connect component
-    connectedCallback() {
-        window.addEventListener('hashchange', () => {
-            this.resolveRoute();
-        });
-
-        this.resolveRoute();
-    }
-
-    resolveRoute() {
-        this.currentRoute = location.hash.replace("#", "");
-
-        this.render();
-    }
-
-    render() {
-        this.innerHTML = this.routes[this.currentRoute].view || "<not-found></not-found>";
-    }
-}
-```
-
-
-
-Vyer att visa upp {#views}
---------------------------------------
-
-Låt oss då ta en titt på dessa vyer som vi vill visa upp när vi navigerar till en route. Jag väljer att skapa en katalog `views` så att jag håller isär rena komponenter och vyer som mer blir en samling av underliggande komponenter.
-
-Nedan syns filen `views/products.js` som i sin tur renderar ut lagersaldo listan med hjälp av de komponenter vi skapade i kmom01.
-
-```javascript
-export default class ProductsView extends HTMLElement {
-    // connect component
-    connectedCallback() {
-        this.innerHTML =    `<header class="header">
-                                <lager-title title="Produkt lista"></lager-title>
-                             </header>
-                             <main class="main">
-                                <product-list></product-list>
-                             </main>
-                             `;
-    }
-}
-```
-
-Se till att hålla vyerna ganska rena, så får logiken ligga i de enskilda komponenterna. Du bör utifrån detta exemplet lätta kunna skapa ytterligare vyer, till exempel den PlockLista vy som är uppgiften i detta kmom och som vi definierade i `this.allRoutes` i ovanstående `Router`-klass. Det kan vara smart att skapa den, även om den just nu bara innehåller en text så du ser att routern fungerar.
-
-
-
-Navigationen {#navigation}
---------------------------------------
-
-För att vi på ett enkelt sätt kan navigera mellan olika vyer skapar vi även en navigations-komponent. Även denna lägga vi i `me/lager` och vi lägger in den på precis samma sätt som `router-outlet`, både i `main.js` och i `index.html`.
-
-```html
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Lager-Components</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="main.js" defer></script>
-</head>
-<body>
-    <router-outlet></router-outlet>
-    <navigation-outlet></navigation-outlet>
-</body>
-</html>
-```
-
-Jag skapar då filen `navigation.js` med nedanstående klass i den filen. Här skapar vi en instans av `Router` och hämtar sedan ut de routes som finns. Sedan itererar vi över de och ritar ut menyn i ett `nav`-element.
-
-```javascript
-import Router from "./router.js";
-
-export default class Navigation extends HTMLElement {
-    constructor() {
-        super();
-
-        this.router = new Router();
-    }
-
-    // connect component
-    connectedCallback() {
-        const routes = this.router.routes;
-
-        let navigationLinks = "";
-
-        for (let path in routes) {
-            navigationLinks += `<a href='#${path}'>${routes[path].name}</a>`;
+        if (textarea.value) {
+            socket.emit('chat message', textarea.value);
+            textarea.value = '';
         }
+    });
 
-        this.innerHTML = `<nav>${navigationLinks}</nav>`;
-    }
+    socket.on('chat message', (msg) => {
+        const item = document.createElement('p');
+
+        item.textContent = msg;
+
+        messages.prepend(item);
+    });
 }
 ```
 
+För att vi även ska kunna ta emot meddelanden från socket-servern vill vi även skapa en "lyssnare" för `chat messsage` händelser. Vi använder `socket.on`-funktionen för detta. Callback-funktionen får här in meddelandet som argument och vi kan sedan använda det för att skriva ut det i `messages`-diven.
 
-### Styling av menyn {#styling}
 
-Tanken är att vi ska ha en navigationsmeny längst nere på skärmen, som vi känner igen det från många mobil-appar. Menyn ligger längst nere på skärmen för att underlätta för användaren av den mobila enheten. Nedan finns exempel på en meny längst ner i en mobil-app, till vänster syns det på android och till höger i iOS.
 
-[FIGURE src=image/webapp/ios-bottom-menu.jpeg?w=c7 class="right" caption="Meny längst ner på iOS."]
+Skicka objekt {#objects}
+--------------------------------------
 
-[FIGURE src=image/webapp/android-bottom-menu.png?w=c7 caption="Meny längst ner på android."]
+I kodexemplet skickar vi enbart en sträng som värde med hjälp av `emit`, men det går lika bra att skicka mer avancerade datatyper som till exempel objekt.
 
-Vi börjar med att placera menyn längst ner på skärmen och samtidigt fylla ut hela bredden genom att använda följande CSS.
+```javascript
+const message = {
+    sender: "Emil",
+    test: "Coolt med sockets!",
+};
 
-```css
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    overflow: hidden;
-    width: 100%;
-}
+socket.emit('chat message', message);
 ```
-
-Vi sätter positionen med värdet `fixed` och att vi vill ha den längst ner på skärmen med `bottom: 0;`. Vi använder `overflow: hidden;` för att inte få problem med scrolling där vi inte vill ha det. För att fördela länkarna jämt i menyn använder vi [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox). Flexbox är en förhållandevis ny teknik för att skapa 1-endimensionella layouter på ett enkelt sätt. I detta tillfälle använder vi följande attribut.
-
-```css
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-flow: row | nowrap;
-    justify-content: space-around;
-}
-```
-
-Vi anger att vår meny ska använda sig av flexbox med attributet `display: flex;`. Attributet `flex-flow: row | nowrap;` är kort notation för  `flex-direction: row;` och `flex-wrap: nowrap;` och vi vill här att länkarna ska lägga sig på en rad och med attributet `justify-content: space-around;` fördelar vi ut länkarna jämt i menyn. I exemplet nedan ser vi hur det kan se när man har lagt sin menyn längst ner på skärmen. Vi kommer använda flexbox under kursens gång så oroa dig inte om du inte känner att du har fullt koll på flexbox, vi kommer bygga vidare på flexbox i kursen.
-
 
 
 Avslutningsvis {#avslutning}
 --------------------------------------
 
-Vi har i denna övning tittat på hur vi kan skapa en router som enkelt låter oss navigera mellan olika vyer i vår applikation.
+Vi har i denna övning tittat på hur vi kan använda `socket.io` för att kommunicera i realtid mellan ett antal olika klienter.
+
+Exempelkod för denna övningen finns i kursrepot under [example/chat](https://github.com/dbwebb-se/webapp/tree/master/example/chat).

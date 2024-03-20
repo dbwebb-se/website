@@ -51,7 +51,7 @@ export default class CameraComponent extends HTMLElement {
 }
 ```
 
-Här skapar vi först instansvariabeln photoData. Den kommer innehålla själva fotot vi tar med kameran inbyggt i mobilen sedan. Sedan initierar vi den HTML vi behöver för att först få upp en video som vi sedan kan ta en bild ifrån och lägga i `canvas`-elementet.
+Här skapar vi först instansvariabeln `photoData`. Den kommer innehålla själva fotot vi tar med kameran inbyggt i mobilen eller en webkamera sedan. Sedan initierar vi den HTML vi behöver för att först få upp en video som vi sedan kan ta en bild ifrån och lägga i `canvas`-elementet.
 
 När sidan är laddat anropar vi sedan funktionen `startup` för att sätta upp kameran och initierar `EventListeners` på knapparna ovan. I funktionsanropet `navigator.mediaDevices.getUserMedia` får vi tillbaka en video-stream som vi sedan tilldelar till video-elementet och startar. När videon startar anropas eventet `canplay` som vi har skapat en `EventListener` för i startup. I den `EventListener` sätter vi även storleken på videon.
 
@@ -157,15 +157,9 @@ För att vi ska kunna spara undan bilderna behöver vi en plats att spara undan 
 
 ![Upload care key](image/webapp/webapp-uploadcare-key.png)
 
-Vi kan sedan installera `upload-client` som vi sedan kan använda för att ladda upp bilder till API:t.
+Vi importerar sedan `upload-client` längst upp i filen `components/camera.js` med raden `import { UploadClient } from "https://cdn.jsdelivr.net/npm/@uploadcare/upload-client@6.14.1/dist/esm/index.browser.mjs";`.
 
-```bash
-npm install @uploadcare/upload-client
-mkdir uploadcare
-cp node_modules/@uploadcare/upload-client/dist/esm/index.browser.mjs uploadcare/index.browser.min.js
-```
-
-Vi importerar sedan `upload-client` längst upp i filen `components/camera.js` med raden `import { UploadClient } from "../uploadcare/index.browser.min.js";`. De med skarpa ögen såg att vi hade lagt till en `eventListener` på `sendbutton` i `startup()`, den anropar funktionen `sendpicture`.
+De med skarpa ögen såg att vi hade lagt till en `eventListener` på `sendbutton` i `startup()`, den anropar funktionen `sendpicture`.
 
 ```javascript
 async sendpicture() {
@@ -180,7 +174,7 @@ async sendpicture() {
 }
 ```
 
-I ovanstående funktionen tar vi först och gör om vår dataUrl till en [blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob). Sedan initierar vi en `UploadClient` med vår API-nyckel vi kopierade från UploadCare-webbplatsen tidigare. Sedan laddar vi upp filen (kan ta en stund) och får tillbaka en url till bilden.
+I ovanstående funktion tar vi först och gör om vår dataUrl till en [blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob). Sedan initierar vi en `UploadClient` med vår API-nyckel vi kopierade från UploadCare-webbplatsen tidigare. Sedan laddar vi upp filen (kan ta en stund) och får tillbaka en url till bilden.
 
 
 

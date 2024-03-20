@@ -44,7 +44,7 @@ Så här kan det se ut när vi är klara med kursmoment 05 del 2.
 Veckans genomgångar  {#genomgang}
 ---------------------------------
 
-Nedan berättar Andreas om veckans övningar och uppgifter och visar lite tips och trix.
+Nedan berättar Andreas om veckans övningar och uppgifter och visar lite tips och trix. I genomgångarna använder Andreas `npm install` för att hämta Leaflet och Uploadcare filerna. Vi har dock ändrat det tillvägagångssättet i övningarna.
 
 [YOUTUBE src=2SoIrNSRAGs width=630 caption="Veckans genomgång del 1"]
 

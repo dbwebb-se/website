@@ -113,7 +113,7 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Lager appen del 1](uppgift/lager-appen-del-1)". Spara din kod i `me/lager`.
 
-Emil visar i nedanstående vide hur du gör en inläming i webapp.
+Emil visar i nedanstående video hur du gör en inlämning i webapp.
 
 [YOUTUBE src=lGk0n231zlg width=630 caption="En inlämning i webapp"]
 

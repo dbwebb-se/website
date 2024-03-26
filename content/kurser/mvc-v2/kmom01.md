@@ -4,7 +4,7 @@ views:
         region: flash
         template: default/image
         data:
-            src: "image/kurs/mvc/kmom01-symfony.png?w=1100&h=300&cf"
+            src: "image/kurs/mvc/symfony.png?w=1100&h=300&cf"
 author:
     - mos
 revision:

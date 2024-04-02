@@ -96,6 +96,8 @@ Börja med att utveckla dina klasser och testa dem i webbsidor enligt följande.
 
 1. Lägg till routen `session/delete` som raderar allt innehåll i sessionen. Det är dessutom bra att ha när du utvecklar och vill testa att du initierar sessionen på rätt sätt.
 
+1. Använd flash-meddelande för att ge användaren feedback om att "nu är sessionen raderad".
+
 1. Gör en förstasida `card` som länkar till samtliga undersidor för denna uppgiften. Detta är din "landningssida" för denna uppgiften. Placera länken till sidan i din navbar så den är lätt att nå.
 
 1. Kortleken skall hanteras i sessionen. Alla routes som är beroende av sessionen måste se till att det finns en giltig session, eller starta en sådan session.

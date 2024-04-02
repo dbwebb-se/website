@@ -3,6 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
+    "2024-04-02": "(D, mos) Förtydligade krav om sessionen."
     "2023-04-03": "(C, mos) Genomgången inför vt23."
     "2021-04-10": "(B, mos) Problemlösning blir optionell."
     "2021-04-03": "(A, mos) Första utgåvan i mvc-v1."
@@ -83,10 +84,6 @@ TODO
 
 * Kortlek med Joker?
 
-* Påminn om att sessionen måste initieras med en kortlek, även om man klickar direkt på en route som är beroende av det.
-
-* Lägg till om POST/GET på json routes som uppdaterar state.
-
 -->
 
 ### Skapa klasser och använd dem i webbsidor {#webb}
@@ -95,7 +92,13 @@ Börja med att utveckla dina klasser och testa dem i webbsidor enligt följande.
 
 1. Skapa en kontroller i Symfony där du kan skapa routes för denna delen av uppgiften.
 
+1. Gör en landningssida `session` som skriver ut innehållet i sessionen så det blir enkelt att debugga vad sessionen innehåller.
+
+1. Lägg till routen `session/delete` som raderar allt innehåll i sessionen. Det är dessutom bra att ha när du utvecklar och vill testa att du initierar sessionen på rätt sätt.
+
 1. Gör en förstasida `card` som länkar till samtliga undersidor för denna uppgiften. Detta är din "landningssida" för denna uppgiften. Placera länken till sidan i din navbar så den är lätt att nå.
+
+1. Kortleken skall hanteras i sessionen. Alla routes som är beroende av sessionen måste se till att det finns en giltig session, eller starta en sådan session.
 
 1. På din landdningssida, berätta kort om strukturen på dina klasser, vilka klasser har du och hur är de relaterade till varandra. Rita ett UML klass diagram och visa i sidan.
 
@@ -117,15 +120,13 @@ Börja med att utveckla dina klasser och testa dem i webbsidor enligt följande.
 
 Denna delen gäller främst JSON API krav.
 
-1. Skapa en landningssida för routen `api/` som visar en webbsida med en sammanställning av alla JSON routes som din webbplats erbjuder.
-
-1. Börja med att lägga till den route du skapade i kmom01 `api/quote`, länka till den och ge en kort förklaring av vad routen gör.
+1. Bygg vidare på din landningssida `api/` som visar en webbsida med en sammanställning av alla JSON routes som din webbplats erbjuder. Varje route skall ha en förklaring vad den gör.
 
 1. Skapa en kontroller i Symfony där du kan skapa routes för ett JSON API för denna delen av uppgiften.
 
 1. Skapa en route `GET api/deck` som returnerar en JSON struktur med hela kortleken sorterad per färg och värde.
 
-1. Skapa en route `POST api/deck/shuffle` som blandar kortleken och därefter returnerar en JSON struktur med kortleken.
+1. Skapa en route `POST api/deck/shuffle` som blandar kortleken och därefter returnerar en JSON struktur med kortleken. Den blandade kortleken sparas i sessionen.
 
 1. Skapa route `POST api/deck/draw` och `POST api/deck/draw/:number` som drar 1 eller `:number` kort från kortleken och visar upp dem i en JSON struktur samt antalet kort som är kvar i kortleken. Kortleken sparas i sessionen så om man anropar dem flera gånger så minskas antalet kort i kortleken.
 

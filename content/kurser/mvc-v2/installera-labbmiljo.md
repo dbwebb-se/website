@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2024-04-03": "(D, mos) Justerade versionsnummer på PHP."
     "2023-03-27": "(C, mos) Genomgången inför mvc-v2 och vt23."
     "2022-03-22": "(B, mos) Genomgången inför mvc-v2 och vt22."
     "2021-03-17": "(A, mos) Första utgåvan."
@@ -38,7 +39,7 @@ Så här ser det ut för mig.
 
 ```
 $ php --version
-PHP 8.2.4 (cli) (built: Mar 16 2023 14:34:48) (NTS)
+PHP 8.3.4 (cli) (built: Mar 16 2024 08:40:08) (NTS)
 
 $ composer --version
 Composer version 2.4.1 2022-08-20 11:44:50

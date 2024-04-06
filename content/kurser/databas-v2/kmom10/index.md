@@ -53,6 +53,9 @@ Kanske enbart fokusera på faktureringen i projektet. Kanske fokusera på att g�
 
 * Soft delete så att man kan radera produkter och ordrar, samt sätta olika status på dem. Finns som extrauppgift tidigare och kan vara en bra uppgift i projektet. Man får nog ta bort det som extrauppgift kanske...
 
+Projektet funkar rätt bra och de verkar nöjda. Dubbelkolla att all kod utvecklas för webbsen, man behöver inte ha så mycket fokus på terminalklienten i denna delen.
+
+Poängtera att databasen skall innehålla ordrar av olika status samt fakturor av olika status.
 -->
 
 

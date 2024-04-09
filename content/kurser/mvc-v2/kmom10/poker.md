@@ -2,6 +2,7 @@
 author:
     - mos
 revision:
+    "2024-04-09": "(C, mos) Bild och förtydligande krav på femkortspoker."
     "2023-05-16": "(B, mos) Uppdaterad inför vt23."
     "2022-05-06": "(A, mos) Första utgåvan mvc-v2."
 ...
@@ -51,14 +52,20 @@ Femkortspoker {#3}
 
 Du spelar traditionell [femkortspoker](https://en.wikipedia.org/wiki/Five-card_draw) mot datorn där man får fem kort och tre byten. Inför varje spel kan man satsa pengar i en pott.
 
+[FIGURE src="img/kurs/mvc/draw-poker-table.png"]
+
 Här är utmaning att skriva kod så att datorn kan få en bra hand. Men du kan naturligtvis göra det relativt enkelt och slumpmässigt.
 
 Utmaningen är också att bestämma vilken hand man har och om den handen vinner över motspelaren. Det bör bli en del logiskt kodande kring det och där kan man ha nytta av enhetstester.
 
+Du skall spela mot datorn.
+
 Förslag till optionella delar kan vara följande:
 
 * Gör flera varianter av intelligens till datorn, någon enkel och någon mer avancerad.
-* Gör ytterligare en spelare som kan vara med, en apa som spelar helt slumpmässigt.
+* Gör ytterligare en spelare som kan vara med.
+    * En apa som spelar helt slumpmässigt.
+    * Ytterligare en medspelare.
 * Visualisera statistik och tips till spelaren.
 * Gör satsningen flexibel så att man kan satsa efter varje byte.
 

@@ -13,12 +13,6 @@ revision:
 Kmom06: Real-tids kommunikation
 ==================================
 
-[WARNING]
-
-Kursmomentet uppdateras. Påbörja inte innan rutan är borta.
-
-[/WARNING]
-
 I detta kmom tittar vi på hur vi med hjälp av websockets kan kommunicera i real-tid mellan flera olika klienter. Vi gör det genom att bygga en kundtjänst chatt, där alla i kursen kan prata tillsammans.
 
 

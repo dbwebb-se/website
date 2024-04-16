@@ -65,7 +65,7 @@ rm -rf .git
 
 ### GitHub/GitLab {#github}
 
-Ladda upp ditt repo till en webbtjänst likt GitHub eller GitLab (eller motsvarande).
+Ladda upp ditt repo till en webbtjänst likt GitHub eller GitLab (eller motsvarande). Gör repot tillgängligt publikt. 
 
 Det mest lämpliga är att använda SSH-nycklar för att identifiera dig, det blir så mycket enklare än HTTPS där du behöver skriva lösenord varje gång du laddar upp repot.
 

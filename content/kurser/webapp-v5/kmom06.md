@@ -23,6 +23,7 @@ I detta kmom tittar vi på hur vi med hjälp av websockets kan kommunicera i rea
 
 Så här kan det se ut när vi är klara med kursmoment 06.
 
+[YOUTUBE src=5i44jkizxgU width=630 caption="Lager appen i kursmoment 6."]
 
 
 

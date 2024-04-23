@@ -71,6 +71,9 @@ När det gäller phpunit så är bland annat följande resurser intressanta att 
 För att kodtäckningen skall fungera behöver du installera Xdebug.
 
 * [Hemsidan för Xdebug](https://xdebug.org/)
+
+Föreläs om phpdoc, generering av dokumentation samt uml diagram och json docs.
+
 -->
 
 
@@ -120,14 +123,35 @@ Jobba gärna i grupp med dina studiekompisar, men skriv alltid din egen kod för
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
+1. Det finns en övning "[Document your PHP code](https://github.com/dbwebb-se/mvc/tree/main/example/phpdoc)" i ditt kursrepo under `example/phpdoc` som hjälper dig att komma igång med att automatiskt skapa dokumentation för din kod. Jobba igenom den och integrera `composer phpdoc` i ditt `me/report`.
+
+<!--
+generera dokumentation, uml  hur fixa uml klassdiagram?
+Kanske flytta det till kmom03 i fortsättningen?
+
+Hur dokumentera json api?
+-->
+
 1. Det finns en övning "[Get going with phpunit](https://github.com/dbwebb-se/mvc/tree/main/example/phpunit)" i ditt kursrepo under `example/phpunit` som hjälper dig att komma igång med phpunit och enhetstestning. Jobba igenom den och försök nå 100% kodtäckning samtidigt som du lär dig grunderna i enhetstestning.
 
 <!--
-* how to mock session & request
-* how to test controller
-
 * Använd coverage/dashboard.html för att prata om nyckeltal och CRAP score. 
 * Kanske tvinga tester på de metoder med högst CRAP?
+-->
+
+1. Denna övningen visar hur du installerar PHPUnit på det viset som Symfony rekommenderar att det görs tillsammans med en Symfony applikation. Du kan se hur man gör i övningen "[Run unittests with PHPUnit in Symfony](https://github.com/dbwebb-se/mvc/tree/main/example/phpunit-symfony)". Jobba igenom den och integrera `composer phpunit` i ditt `me/report`.
+
+
+
+### Extra övningar {#xovningar}
+
+Följande övningar är extra träning som kan hjälpa dig i längden. Titta igenom vad de innehåller och utför dem om du har tid och energi.
+
+1. Övningen "[PHPUnit how to mock object](https://github.com/dbwebb-se/mvc/tree/main/example/phpunit-mock)" finns i ditt kursrepo under `example/phpunit-mock` och den visar hur du kan mocka ett objekt under enhetstestning för att underlätta testning av kod som har slumpmässigt beteende eller om dina klasser har beroenden som du vill undvika och avgränsa vid enhetstestning.
+
+<!--
+* how to test controller
+* how to mock session & request
 -->
 
 
@@ -136,14 +160,7 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. Det finns en övning "[Document your PHP code](https://github.com/dbwebb-se/mvc/tree/main/example/phpdoc)" i ditt kursrepo under `example/example/phpdoc` som hjälper dig att komma igång med att automatiskt skapa dokumentation för din kod. Jobba igenom den och integrera `composer phpdoc` i ditt `me/report`.
-
 1. Lös uppgiften "[Enhetstesta dina klasser med PHPUnit i Symfony](uppgift/enhetstesta-dina-klasser-med-phpunit-i-symfony)".
-
-<!--
-generera dokumentation, uml  hur fixa uml klassdiagram?
-Kanske flytta det till kmom03 i fortsättningen?
--->
 
 
 

@@ -3,6 +3,7 @@ author:
     - mos
     - efo
 revision:
+  "2024-04-24": (F, aar) Ny genomgångs video.
   "2023-04-03": (E, efo) Nytt i och med VT24.
   "2023-04-03": (E, efo) Nytt i och med webapp-v5.
   "2017-04-21": (D, efo) Förberedelser för webapp-v3.
@@ -34,7 +35,9 @@ Så här kan det se ut när vi är klara med kursmoment 06.
 Veckans genomgång  {#genomgang}
 ---------------------------------
 
+Andreas jobba igenom övningen.
 
+[YOUTUBE src=F3sf4-fOw5U width=630 caption="Veckans genomgång"]
 
 
 Läsanvisningar  {#lasanvisningar}

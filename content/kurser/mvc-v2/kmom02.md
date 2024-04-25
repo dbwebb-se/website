@@ -22,7 +22,11 @@ Vi skall programmera med objektorienterade konstruktioner för att bygga ett ant
 <!--
 TODO
 
-* Uppdatera kort-uppgiften så att det blir mer ett "spel" där man visar hela kortleken, man kan blanda och sortera, visa hur många kort som är kvar i leken, vilka som är slängda och vilka som ligger på bordet. Det skall bli en webbsida där man kan testa allt via flera knappar. Poängtera även så att både arv och komposition finns inkluderade i koden som krävs.
+* Uppdatera kort-uppgiften så att det blir mer ett "spel" där man visar hela kortleken, man kan blanda och sortera, visa hur många kort som är kvar i leken, vilka som är slängda och vilka som ligger på bordet. Det skall bli en webbsida där man kan testa allt via flera knappar.
+* Poängtera även så att både arv och komposition finns inkluderade i koden som krävs.
+* Tydliggör att api-delen skall jobba mot samma "session".
+* Tydliggör att varje del i api-delen skall vara klickbar så man kan testa.
+* Tydliggör vilken katalog/namespace där modellklasserna skall ligga, samt namn på kontroller-klassen (för att underlätta testning och ge ledning till kodens struktur)
 
 -->
 

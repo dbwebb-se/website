@@ -20,6 +20,15 @@ Vi tar hjälp av allmän problemlösning i form av top-down/bottom-up, pseudokod
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **40 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
+<!--
+TODO
+
+* Kortspelet, fuska genom att visa hela kortleken, eller visa bara nästa kort.
+* Beräkna om kortleken är "het" eller inte.
+* Tydliggör vilken katalog/namespace där modellklasserna skall ligga, samt namn på kontroller-klassen (för att underlätta testning och ge ledning till kodens struktur)
+ 
+-->
+
 
 
 Läs & Studera  {#lasanvisningar}

@@ -20,9 +20,9 @@ Vi skall programmera med objektorienterade konstruktioner för att bygga ett ant
 
 
 <!--
+TODO
 
-Till våren 2023 jobba igenom detta kmom som stoppar upp många.
-Eventuellt ge 10/20 h ytterligare?
+* Uppdatera kort-uppgiften så att det blir mer ett "spel" där man visar hela kortleken, man kan blanda och sortera, visa hur många kort som är kvar i leken, vilka som är slängda och vilka som ligger på bordet. Det skall bli en webbsida där man kan testa allt via flera knappar. Poängtera även så att både arv och komposition finns inkluderade i koden som krävs.
 
 -->
 

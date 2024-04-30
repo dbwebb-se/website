@@ -20,6 +20,10 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
 
+Genomgång av projektet
+
+[YOUTUBE src=gV2xmBEFh90 width=630 caption="Projektet i webapp."]
+
 
 
 Bedömning och betygsättning {#bedomning}

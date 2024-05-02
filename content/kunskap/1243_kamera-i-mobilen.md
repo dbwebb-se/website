@@ -44,9 +44,7 @@ export default class CameraComponent extends HTMLElement {
         <canvas id="canvas"></canvas>
         `;
 
-        window.addEventListener("load", () => {
-            this.startup();
-        }, false);
+        this.startup();
     }
 }
 ```

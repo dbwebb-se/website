@@ -79,9 +79,7 @@ export default class ChatForm extends HTMLElement {
         <h2>Sent messages</h2>
         <div id="messages"></div>`;
 
-        window.addEventListener("load", () => {
-            this.init();
-        }, false);
+        this.init();
     }
 
     init() {

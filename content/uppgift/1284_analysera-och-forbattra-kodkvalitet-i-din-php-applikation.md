@@ -53,6 +53,11 @@ Inför denna uppgiften definierar vi de sex C:na om kodkvalitet (6C). Du kan se 
 
 Din undersökning om kodkvalitet på din egen kod kan utgå från dessa "mättal". Men glöm inte bort att det finns fler mättal som kan vara intressanta.
 
+Om du vill kan du utöka 6C till 7C med följande som hanteras av dina rapporter från dina statiska kodlinters.
+
+* Code smell
+
+
 
 
 ### Om uppgiften {#om}

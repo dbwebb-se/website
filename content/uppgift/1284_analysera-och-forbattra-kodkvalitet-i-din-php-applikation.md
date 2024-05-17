@@ -3,7 +3,7 @@ author: mos
 category:
     - kurs mvc
 revision:
-    "2023-05-09": "(C, mos) lade till övning om mättal."
+    "2023-05-09": "(C, mos) Lade till övning om mättal."
     "2023-05-08": "(B, mos) Genomgången inför vt23."
     "2022-05-02": "(A, mos) Första utgåvan."
 ...
@@ -59,7 +59,6 @@ Om du vill kan du utöka 6C till 7C med följande som hanteras av dina rapporter
 
 
 
-
 ### Om uppgiften {#om}
 
 Uppgiften handlar dels om att göra din egen analys av kodkvalitet med hjälp av phpmetrics och Scrutinizer.
@@ -82,7 +81,6 @@ Kraven är uppdelade i sektioner.
 <!--
 Samla rå mätdata som en deluppgift
 
-Fixa så att phpunit kan integreras med phpmetrics
 
 * Använd CRAP score från phpmetrics som en input till rapporten
 

@@ -30,10 +30,11 @@ Programöversikt, planering och uppföljning av kurser {#followup}
 
 Få en översikt av de kurser som ingår i din antagningsomgång till programmet och gör din egen uppföljning av ditt studieresultat i dessa handsnickrade excel-översikter av programmets kurser.
 
-<!-- denna information bör även kopieras över till kursfaqen -->
+<!-- denna information bör även kopieras över till kursfaqen, eller flyttas dit -->
 
 ### Webbprogrammering 120hp distans {#followup120}
 
+* [Antagen 2025](https://docs.google.com/spreadsheets/d/1YLYqq6Wk_UXcgrVTWxsIo__8TPvlQjFHw7r2SxacoKY/edit?usp=sharing)
 * [Antagen 2024](https://docs.google.com/spreadsheets/d/1wDeIvRmuYY2o0GBXnYWrEdKOZ-zVkD_5mZ18xx9lMOA/edit?usp=sharing)
 * [Antagen 2023](https://docs.google.com/spreadsheets/d/1G8wFw90ZfxFoSG3eMAG2kt3QCsycp8hqH0f6QMnpg90/edit?usp=sharing)
 * [Antagen 2022](https://docs.google.com/spreadsheets/d/1NaFXloCV0nsEMgTtr44q91PkBHXebwkmS0Eqxi-nj2c/edit?usp=sharing)
@@ -48,6 +49,7 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 
 ### Webbprogrammering 180hp campus {#followup180}
 
+* [Antagen 2025](https://docs.google.com/spreadsheets/d/1CFks-bUm2R-r2olqu-_BfUO2kjzCSPcwi39IFUpT20k/edit?usp=sharing)
 * [Antagen 2024](https://docs.google.com/spreadsheets/d/1CFks-bUm2R-r2olqu-_BfUO2kjzCSPcwi39IFUpT20k/edit?usp=sharing)
 * [Antagen 2023](https://docs.google.com/spreadsheets/d/1xs5xx4FsePk3FCpcbLtCIoRLV7tRbdN_9b2Mld5WniE/edit?usp=sharing)
 * [Antagen 2022](https://docs.google.com/spreadsheets/d/1mOe2l5iGMpxRjRK4Tb3yHSys-aVyNLuaCI1ni_DesgA/edit?usp=sharing)
@@ -60,6 +62,61 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 
 
 
+Utbildningsplaner {#utbildningsplan}
+--------------------------------------------------------------
+
+Utbildningsplanen är det formella dokumentet som styr upplägget för en antagningsomgång.
+
+
+
+### Webbprogrammering 120hp distans {#uplan120}
+
+* [Utbildningsplan PAGWG antagen HT2024](http://edu.bth.se/utbildningsplaner/PAGWG_HT-24.pdf)
+* [Utbildningsplan PAGWG antagen HT2023](http://edu.bth.se/utbildningsplaner/PAGWG_HT-23.pdf)
+* [Utbildningsplan PAGWG antagen HT2022](http://edu.bth.se/utbildningsplaner/PAGWG_HT-22.pdf)
+* [Utbildningsplan PAGWG antagen HT2021](http://edu.bth.se/utbildningsplaner/PAGWG_HT-21.pdf)
+* [Utbildningsplan PAGWG antagen HT2020](http://edu.bth.se/utbildningsplaner/PAGWG_HT-20.pdf)
+* [Utbildningsplan PAGWG antagen HT2019](http://edu.bth.se/utbildningsplaner/PAGWG_HT-19.pdf)
+* [Utbildningsplan PAGWG antagen HT2018](http://edu.bth.se/utbildningsplaner/PAGWG_HT-18.pdf)
+* [Utbildningsplan PAGWG antagen HT2017](http://edu.bth.se/utbildningsplaner/PAGWG_HT-17.pdf)
+* [Utbildningsplan PAGWH antagen HT2016](http://edu.bth.se/utbildningsplaner/PAGWH_HT-16.pdf)
+
+
+
+### Webbprogrammering 180hp campus {#uplan180}
+
+* [Utbildningsplan PAGWE antagen HT2024](http://edu.bth.se/utbildningsplaner/PAGWE_HT-24.pdf)
+* [Utbildningsplan PAGWE antagen HT2023](http://edu.bth.se/utbildningsplaner/PAGWE_HT-23.pdf)
+* [Utbildningsplan PAGWE antagen HT2022](http://edu.bth.se/utbildningsplaner/PAGWE_HT-22.pdf)
+* [Utbildningsplan PAGWE antagen HT2021](http://edu.bth.se/utbildningsplaner/PAGWE_HT-21.pdf)
+* [Utbildningsplan PAGWE antagen HT2020](http://edu.bth.se/utbildningsplaner/PAGWE_HT-20.pdf)
+* [Utbildningsplan PAGWE antagen HT2019](http://edu.bth.se/utbildningsplaner/PAGWE_HT-19.pdf)
+* [Utbildningsplan PAGWE antagen HT2018](http://edu.bth.se/utbildningsplaner/PAGWE_HT-18.pdf)
+* [Utbildningsplan PAGWE antagen HT2017](http://edu.bth.se/utbildningsplaner/PAGWE_HT-17.pdf)
+* [Utbildningsplan PAGWE antagen HT2016](http://edu.bth.se/utbildningsplaner/PAGWE_HT-16.pdf)
+* [Utbildningsplan PAGWE antagen HT2015](http://edu.bth.se/utbildningsplaner/PAGWE_HT-15.pdf)
+* [Utbildningsplan PAGWE antagen HT2014](http://edu.bth.se/utbildningsplaner/PAGWE_HT-14.pdf)
+* [Utbildningsplan PAGWE antagen HT2013](http://edu.bth.se/utbildningsplaner/PAGWE_HT-13.pdf)
+* [Utbildningsplan PAGWE antagen HT2012](http://edu.bth.se/utbildningsplaner/PAGWE_HT-12.pdf)
+
+
+
+### Webb, Internet och Programvaruteknik 180hp {#uplanpagwi}
+
+* [Utbildningsplan PAGWI antagen HT2011](http://edu.bth.se/utbildningsplaner/PAGWI_HT-11.pdf)
+* [Utbildningsplan PAGWI antagen HT2010](http://edu.bth.se/utbildningsplaner/PAGWI_HT-10.pdf)
+* [Utbildningsplan PAGWI antagen HT2009](http://edu.bth.se/utbildningsplaner/PAGWI_HT-09.pdf)
+
+
+
+### Webb, Internet och Programvaruteknik 120hp {#uplanpagwp}
+
+* [Utbildningsplan PAGWP antagen HT2010](http://edu.bth.se/utbildningsplaner/PAGWP_HT-10.pdf)
+* [Utbildningsplan PAGWP antagen HT2009](http://edu.bth.se/utbildningsplaner/PAGWP_HT-09.pdf)
+
+
+
+<!--
 ### Webbprogrammering och databaser 30hp {#webprog}
 
 * [Antagen 2021](https://docs.google.com/spreadsheets/d/1bE-8FE3LaiVE55gsrOUzVHuJ_QZDz3po1v2Lbr0R84E)
@@ -71,8 +128,9 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 ### Webbutveckling och programmering 30hp {#webutv}
 
 * [Antagen 2020](https://docs.google.com/spreadsheets/d/1Y050giCqTqFJXM2MkrRREXfudAoJuKFOf2Hc3bAvz54/)
+-->
 
-
+<!--
 
 Kurser per antagningsomgång {#kurserantagen}
 --------------------------------------------------------------
@@ -102,55 +160,9 @@ Kurser per antagningsomgång {#kurserantagen}
 * [Antagen HT2016](utbildning/webbprogrammering-180hp/2016/kurser)
 
 
+-->
 
-Utbildningsplaner {#utbildningsplan}
---------------------------------------------------------------
-
-Utbildningsplanen är det formella dokumentet som styr upplägget för en antagningsomgång.
-
-
-
-### Webbprogrammering 120hp distans {#uplan120}
-
-* [Utbildningsplan PAGWG antagen HT2021](http://edu.bth.se/utbildningsplaner/PAGWG_HT-21.pdf)
-* [Utbildningsplan PAGWG antagen HT2020](http://edu.bth.se/utbildningsplaner/PAGWG_HT-20.pdf)
-* [Utbildningsplan PAGWG antagen HT2019](http://edu.bth.se/utbildningsplaner/PAGWG_HT-19.pdf)
-* [Utbildningsplan PAGWG antagen HT2018](http://edu.bth.se/utbildningsplaner/PAGWG_HT-18.pdf)
-* [Utbildningsplan PAGWG antagen HT2017](http://edu.bth.se/utbildningsplaner/PAGWG_HT-17.pdf)
-* [Utbildningsplan PAGWH antagen HT2016](http://edu.bth.se/utbildningsplaner/PAGWH_HT-16.pdf)
-
-
-
-### Webbprogrammering 180hp campus {#uplan180}
-
-* [Utbildningsplan PAGWE antagen HT2021](http://edu.bth.se/utbildningsplaner/PAGWE_HT-21.pdf)
-* [Utbildningsplan PAGWE antagen HT2020](http://edu.bth.se/utbildningsplaner/PAGWE_HT-20.pdf)
-* [Utbildningsplan PAGWE antagen HT2019](http://edu.bth.se/utbildningsplaner/PAGWE_HT-19.pdf)
-* [Utbildningsplan PAGWE antagen HT2018](http://edu.bth.se/utbildningsplaner/PAGWE_HT-18.pdf)
-* [Utbildningsplan PAGWE antagen HT2017](http://edu.bth.se/utbildningsplaner/PAGWE_HT-17.pdf)
-* [Utbildningsplan PAGWE antagen HT2016](http://edu.bth.se/utbildningsplaner/PAGWE_HT-16.pdf)
-* [Utbildningsplan PAGWE antagen HT2015](http://edu.bth.se/utbildningsplaner/PAGWE_HT-15.pdf)
-* [Utbildningsplan PAGWE antagen HT2014](http://edu.bth.se/utbildningsplaner/PAGWE_HT-14.pdf)
-* [Utbildningsplan PAGWE antagen HT2013](http://edu.bth.se/utbildningsplaner/PAGWE_HT-13.pdf)
-* [Utbildningsplan PAGWE antagen HT2012](http://edu.bth.se/utbildningsplaner/PAGWE_HT-12.pdf)
-
-
-
-### Webb, Internet och Programvaruteknik 180hp {#uplanpagwi}
-
-* [Utbildningsplan PAGWI antagen HT2011](http://edu.bth.se/utbildningsplaner/PAGWI_HT-11.pdf)
-* [Utbildningsplan PAGWI antagen HT2010](http://edu.bth.se/utbildningsplaner/PAGWI_HT-10.pdf)
-* [Utbildningsplan PAGWI antagen HT2009](http://edu.bth.se/utbildningsplaner/PAGWI_HT-09.pdf)
-
-
-
-### Webb, Internet och Programvaruteknik 120hp {#uplanpagwp}
-
-* [Utbildningsplan PAGWP antagen HT2010](http://edu.bth.se/utbildningsplaner/PAGWP_HT-10.pdf)
-* [Utbildningsplan PAGWP antagen HT2009](http://edu.bth.se/utbildningsplaner/PAGWP_HT-09.pdf)
-
-
-
+<!--
 Programöversikt {#program}
 --------------------------------------------------------------
 
@@ -201,7 +213,7 @@ Eget arbetsmaterial (äldre) {#egetmaterial}
 * [Kursplanering hela programmet, utvecklingsmaterial](wip/distans)
 * [Kursplanering hela programmet, innan 2016](wip/oversikt)
 
-
+-->
 
 <!--
 OBSOLETE från HT2018

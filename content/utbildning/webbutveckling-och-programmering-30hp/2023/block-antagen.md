@@ -2,7 +2,6 @@
 
 Kurspaketet tar in nya studenter varje höst och går på halvfart under ett läsår (höst/vår).
 
-* [Antagningsomgång 2024](./2024)
 * [Antagningsomgång 2023](./2023)
 * [Antagningsomgång 2022](./2022)
 * [Antagningsomgång 2021](./2021)

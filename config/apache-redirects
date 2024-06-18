@@ -350,10 +350,9 @@ Redirect /phpmvc /kurser/phpmvc
 
 Redirect /vlinux /kurser/vlinux-v1
 Redirect /vlinux-v1 /kurser/vlinux-v1
-Redirect /kurser/vlinux-v1/studieplan https://docs.google.com/spreadsheets/d/1-OjOOB-vFuVzFgZwh3-nQM1Om_saFuhhHnkqdi0IeWA/edit?usp=sharing
-Redirect /kurser/vlinux-v1/lektionsplan https://docs.google.com/spreadsheets/d/12btkIp1TnEM2776Ru2K4ncXvxaEiy0KPwHrUbxtr46A/edit?usp=sharing
+Redirect /kurser/vlinux-v1/studieplan https://docs.google.com/spreadsheets/d/1GWYdTq1On5AxHfP7rrXH8tt9LafbnOnNn1pohPzjykI/edit?usp=sharing
+Redirect /kurser/vlinux-v1/lektionsplan https://docs.google.com/spreadsheets/d/1IliR-qa-rxTdzVcJuOL8jwyGyCmRR8kM4Iz7YYgNcvo/edit?usp=sharing
 Redirect /forum/utbildning/vlinux /forum/viewforum.php?f=82
-
 # unix
 
 Redirect /unix /kurser/unix

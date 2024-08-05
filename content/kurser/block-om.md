@@ -1,4 +1,4 @@
-#### Läsår 2022/2023
+#### Kurser läsår
 
 [FIGURE src="/image/snapvt16/bth-kvall.jpg?w=c10&h=100&cf"]
 

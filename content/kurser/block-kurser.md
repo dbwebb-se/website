@@ -1,4 +1,4 @@
-#### [Kurser läsår 2022/2023](https://dbwebb.se/kurser)
+#### [Kurser läsår](https://dbwebb.se/kurser)
 
 [FIGURE src="https://dbwebb.se/image/snapvt16/bth-kvall.jpg?w=c10&h=100&cf" caption="Studera, natt som dag."]
 

@@ -1,6 +1,7 @@
 ---
 author: mos
 revision:
+    "2024-08-05": "(E, mos) Lade till introvecka 2024."
     "2023-06-12": "(D, mos) Lade till introvecka 2023."
     "2022-08-16": "(C, mos) Lade till introvecka 2022."
     "2021-06-22": "(B, mos) Lade till introvecka 2021 och gamla veckor."
@@ -22,10 +23,11 @@ Planering för introveckan {#plan}
 
 Här kan du se planering för introduktionsveckan.
 
-* [Introduktionsveckan hösten 2023](introduktionsveckan-2023)
+* [Introduktionsveckan hösten 2024](introduktionsveckan-2024)
 
 Här är äldre versioner av introduktionsveckorna.
 
+* [Introduktionsveckan hösten 2023](introduktionsveckan-2023)
 * [Introduktionsveckan hösten 2022](introduktionsveckan-2022)
 * [Introduktionsveckan hösten 2021](introduktionsveckan-2021)
 * [Introduktionsveckan hösten 2020](introduktionsveckan-2020)

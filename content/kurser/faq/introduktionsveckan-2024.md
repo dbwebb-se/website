@@ -145,7 +145,7 @@ På **tisdagen** är det kursstarter.
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
 | 10-11 | mos    | webtec | Kursintroduktion | [Inspelad](https://youtu.be/K7F5IVgK1bg) samt [optionell träff i zoom för frågor](https://bth.zoom.us/j/4200421337) |
-| 11-12 | aar    | python | Kursintroduktion | [Inspelad](https://youtu.be/NJDGtST0EF4) [del 2](https://www.youtube.com/watch?v=S5txR6aFhmw), [zoom](https://bth.zoom.us/j/8535967236) |
+| 11-12 | aar    | python | Kursintroduktion | [Inspelad](https://youtu.be/NJDGtST0EF4) [del 2](https://www.youtube.com/watch?v=S5txR6aFhmw), samt [optionell träff i zoom för frågor](https://bth.zoom.us/j/8535967236) |
 | 13-14 | efo    | alla   | Introduktion till datavetenskap | H430, [zoom](https://bth.zoom.us/j/4569558656) |
 
 Vi startar lugnt så använd tiden för att förbereda dig inför onsdagen.

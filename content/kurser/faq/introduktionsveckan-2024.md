@@ -168,8 +168,8 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
 | 09-10 | klw    | alla   | Introduktion till terminalen | [Inspelad](https://www.youtube.com/watch?v=wojCiz4JDuU), [Zoom](https://bth.zoom.us/j/4569558656) |
-| 09-10 | klw    | alla   | Labbmiljö dbwebb-cli | [Inspelad](https://www.youtube.com/watch?v=ttxe_6Vyvss), [Zoom](https://bth.zoom.us/j/4569558656) |
-| 10-11 | aar    | python | Intro till Python | [Inspelad](https://youtu.be/Xa3vgo_91XI), [Zoom](https://bth.zoom.us/j/4569558656) |
+| 10-11 | klw    | alla   | Labbmiljö dbwebb-cli | [Inspelad](https://www.youtube.com/watch?v=ttxe_6Vyvss), [Zoom](https://bth.zoom.us/j/4569558656) |
+| 11-12 | aar    | python | Intro till Python | [Inspelad](https://youtu.be/Xa3vgo_91XI), [Zoom](https://bth.zoom.us/j/4569558656) |
 
 
 

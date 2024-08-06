@@ -5,6 +5,7 @@ category:
     - python
     - labbmiljö
 revision:
+    "2024-08-06": (F, aar) Tog bort Alternativa sätt att installera python. Vi vill inte ha det installerat utanför WSL.
     "2022-08-17": (E, aar) Flyttade ner cygwin instruktionen, då bash är standard på windows.
     "2021-01-19": (D, aar) La till länk till kändda fel FAQ på github issues.
     "2017-05-30": (C, mos) Uppdaterad inför ht17.
@@ -95,15 +96,6 @@ Hello World
 ```
 
 *$-tecknet ovan representerar prompten och är inte en del av kommandot.*
-
-
-
-Alternativt sätt att installera Python {#alt}
--------------------------------
-
-Via [hemsidan för Python](https://www.python.org/downloads/) kan du ladda ned senaste versionen av Python och installera det. Det kan ge dig en senare version av Python än den version som du får installerad via pakethanteraren.
-
-Kom ihåg att det är version 3 av Python som vi använder.
 
 
 

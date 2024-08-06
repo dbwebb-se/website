@@ -27,17 +27,12 @@ Vi börjar skriva de första enkla programmen för att komma underfund med hur P
 
 <!-- [FIGURE src=/image/snapht14/python-mos-me-page.png?w=w2 caption="Mikaels me-sida i Python som cgi-skript."] -->
 
-Ditt första Python-program.
-
-[ASCIINEMA src=122865 caption="Kör ditt första Python-program."]
-
-
-Så här kan det se ut när du är klar med Plane uppgiften.
+Så här kan det se ut när du är klar med kmom01 uppgiften Plane.
 
 [YOUTUBE src=7qifosdyfe8 caption="Så här kan det se ut när du är klar med Plane uppgiften."]
 
 
-[YOUTUBE src=NvpjX99ayzQ caption="Genomgång av kmom01."]
+[YOUTUBE src=NvpjX99ayzQ caption="Genomgång av kmom01 (2023)."]
 
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>

@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2024-08-06": "(B, aar) Försökt förtydliga."
     "2022-08-17": "(A, aar) Kopierad från webtec-v2."
 ...
 Installera kursens labbmiljö
@@ -21,6 +22,7 @@ Det första du behöver göra är att installera en labbmiljö för kursen. Om d
 
 1. [Installera labbmiljön](./../labbmiljo) som behövs för kursen.
 
+2. Jobba igenom "Kom igång med kommandot dbwebb" som finns nedanför.
 
 
 Kom igång med kommandot dbwebb {#dbwebbcli}
@@ -30,9 +32,7 @@ Kommandot, eller verktyget, dbwebb, är ett terminalprogram, skrivet i Bash, som
 
 **dbwebb kommandot är samma för alla dbwebb kurser. Om du har installerat dbwebb kommandot kan du hoppas över steg 1 och 2.**
 
-Det finns en guide som visar hur du kommer igång, [guiden om dbwebb-cli](https://dbwebb.se/dbwebb-cli).
-
-Kenneth visar dig hur du kan jobba igenom guiden.
+I videon nedanför visar Kenneth dig hur du kan jobba igenom [guiden om dbwebb-cli](https://dbwebb.se/dbwebb-cli). Under videon finns också en punktlista med de viktiga stegen i guiden.
 
 [YOUTUBE src=ttxe_6Vyvss width=700 caption="Kenneth visar hur du kommer igång med dbwebb-cli som en del av labbmiljön."]
 

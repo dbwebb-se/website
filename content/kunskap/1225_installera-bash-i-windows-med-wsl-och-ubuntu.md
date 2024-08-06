@@ -12,6 +12,7 @@ category:
     - windows
     - bash
 revision:
+    "2024-08-06": "(H, aar) la till stycke om vanliga fel och att man ska kolla att användarnamn inte är root."
     "2022-08-17": "(G, mos) Om wsl redan är installerat, lade till video."
     "2022-08-16": "(F, mos) Uppdaterad till senaste installationsrutinen för WSL."
     "2020-04-29": "(E, mos) Lade till unzip som kommando att installera (krävs av composer)."
@@ -62,8 +63,6 @@ Om du har äldre version av Windows så rekommenderas att du uppdaterar tll sena
 
 Alternativet är att välja ett annat sätt att installera WSL, för detaljer se dess dokumentationen i "[Install Linux on Windows with WSL](https://docs.microsoft.com/en-us/windows/wsl/install)".
 
-Ett annat alternativ är att köra Cygwin som terminal, se artikeln "[Installera Unix-terminalen Cygwin på Windows](kunskap/installera-unix-terminalen-cygwin-pa-windows)".
-
 
 
 Installera Bash {#install}
@@ -81,8 +80,18 @@ Du kan nu installera allt du behöver för att köra Windows Subsystem for Linux
 wsl --install
 ```
 
-Detta kommando kommer att aktivera de funktioner som krävs för att köra WSL och installera Ubuntu-distributionen av Linux.
+Detta kommando kommer att aktivera de funktioner som krävs för att köra WSL och installera Ubuntu-distributionen av Linux. Programmet kommer efterfråga att du ska skapa ett nytt konto, skriv in ett användarnamn och lösenord när det efterfrågas. Använd inte mellanslag i namn eller lösenord.
 
+#### Vanliga fel {$fel}
+
+Det är ganska vanligt att man får fel när man kör kommandot ovanför. Här kan ni se de fel vi har stött på tidigare och lösningar på dem.
+
+- [Error: 0x80370114 The operation could not be started because a required feature is not installed](https://github.com/dbwebb-se/python/issues/44#issuecomment-1688061083)
+- [Error : 0x80004002 - No such interface supported](https://github.com/dbwebb-se/python/issues/44#issuecomment-1689479751)
+- [Failed to attach disk, ERROR_FILE_NOT_FOUND](https://github.com/dbwebb-se/python/issues/44#issuecomment-1691101806)
+- [Error : 0x80370102 - Enable virtualization i BIOS](https://github.com/dbwebb-se/python/issues/44#issuecomment-1691142414)
+
+Om ditt fel inte finns med i listan kan du kolla om det finns med här [Kända fel och lösningar](https://github.com/dbwebb-se/python/issues/44). Om det inte finns där heller, skriv och be om hjälp i Discord chatten.
 
 
 ### Jag har redan wsl installerat {#wslinstalled}
@@ -109,11 +118,11 @@ När processen med att installera din Linux-distribution med WSL är klar, öppn
 
 Du kan nu starta ubuntu Debian genom att köra kommandot `ubuntu` via sökfältet eller via `Windows key + R`.
 
-Första gången ombeds du att skapa en användare med lösenord, gör det.
-
-Därefter är Ubuntu installerat och klart. Du har nu en Linux-terminal, en bash terminal, i din Windows.
+Du har nu en Linux-terminal, en bash terminal, i din Windows.
 
 [FIGURE src=image/snap22/ubuntu_start.png?w=w3 caption="Du har nu en bash-terminal med Ubuntu i Windows."]
+
+**OBS** Om det står något i stil med `root@desktop:~#` (det är `root` du ska ha utkik efter) istället för användarnamnet du valde (på bilden är det `mos`), då behöver du göra om installationen så att ditt användarnamn skapas. Avinstallera WSL genom att öppna CMD eller Powershell och kör kommandot `wsl --unregister Ubuntu`. Gör sen om installationen och skriv in användarnamn och lösenord när det efterfrågas.
 
 
 

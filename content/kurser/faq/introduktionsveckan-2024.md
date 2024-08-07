@@ -104,7 +104,7 @@ För att erbjuda flexibilitet så kan ni utföra uppropen per distans via följa
 
 Här är [formulär där du kan göra upprop till din utbildning](https://forms.gle/VEUNK7BCUwZjjVYVA).
 
-Glöm inte att du även måste registrera dig på de kurser du skall gå. När du kommer åt kursmaterialet i Canvas så vet du att det fungerar.
+Glöm inte att du även måste registrera dig i [Ladok för studenter](https://www.student.ladok.se/student/app/studentwebb/) på de kurser du skall gå. När du kommer åt kursmaterialet i Canvas så vet du att det fungerar.
 
 
 

@@ -11,30 +11,57 @@ revision:
 Fusk och Disciplinnämnden
 ==================================
 
-Plagiering, fusk, att medvetet försöka vilseleda --- är olika benämningar på otillåtna medel när man studerar på dessa kurser.
+Vi tycker att interaktioner mellan klasskamrater och andra är positivt och förbättra studenters lärande. Det finns dock en gräns mellan att be om hjälp från någon annan och att lämna in någon annans arbete. Därför har vi en policy som hjälper er studenter att veta när ni börjar passerar den gränsen.
 
-Att kopiera andras kod/lösningar är plagiering. Programmering handlar om logik och struktur, det måste finnas individualitet i studentens kod som visar att studenten har skrivit den och förstår den. Att bara ändra variabelnamn, kommentarer och utskrifter räknas inte som att man har skrivit koden själv, vilket är att medvetet försöka vilseleda.
+### Policy 
+Essensen av allt arbete som du lämnar in till denna kurs måste vara ditt eget. Om inte annat anges är samarbete på bedömningar (t.ex. uppgifter, labbar eller quiz) inte tillåtet förutom i den utsträckning att du kan be klasskamrater och andra om hjälp så länge den hjälpen inte innebär att någon annan gör ditt arbete åt dig. Generellt sett, när du ber om hjälp, kan du visa ditt arbete för andra, men du får inte se deras. Så länge du och de respekterar denna policys andra begränsningar.
 
-Skicka inte hela filer och lösningar till era studiekamrater, även den som delar koden kan bli fälld för plagiering. Ni tänker det bästa om dem och att de inte bara ska kopiera din kod rakt av. Det händer väldigt ofta att kod kopieras rakt av utan att de säger det.
+#### Ångerklausul
+Om du begår någon handling som inte är rimliga, men du uppmärksammar kursens ledare genom att skicka ett e-postmeddelande till kursansvarig inom 72 timmar, kan vi välja att enbart underkänna din inlämning istället för att göra en anmälan till disciplinnämnden. Förutom i fall av upprepade handlingar.
 
-ChatGPT kan vara ett väldigt bra verktyg, men det kan också vara dåligt. Så fort man ber ChatGPT producera kod åt en är man inne på farligt vatten. Om ni gör det så betyder det troligen att minst en annan studiekamrat också gör det. Då riskerar ni att få samma kod som varandra av ChatGPT, och då fastnar ni i plagiering. Ett bättre sätt att använda ChatGPT är att be den förklara kod ni redan har skrivit, kod ni har hittat på nätet men inte förstår, eller kod som vi har visat på föreläsningar eller i övningar. Använd den som en hjälplärare, inte som en kodare. Det är ni som ska vara kodare.
+Nedan följer tumregler som karaktäriserar handlingar som vi anser vara rimliga och orimliga. Om du är osäker på om någon handling är rimlig, utför den inte förrän du har frågat och fått godkänt skriftligen av kursens ledare. Handlingar som anses orimliga av kursen anmäls till disciplinnämnden och relaterade inlämningar betygsätt med underkänt betyg. Vad disciplinnämnden innebär kan du läsa om [längre ner](#namnden).
+
+#### Rimligt
+- Kommunicera med klasskamrater om bedömningar och korrekt citera dessa diskussioner.
+- Diskutera kursens material med andra för att förstå det bättre.
+- Hjälpa en klasskamrat att identifiera en bugg i deras kod, genom att visa, kompilera eller köra deras kod.
+- Inkorporera några rader kod som du hittar online eller någon annanstans i din egen kod, förutsatt att dessa rader inte själva är lösningar på tilldelat arbete och att du citerar radernas ursprung.
+- Skicka eller visa kod som du har skrivit till någon, möjligen en klasskamrat, så att de kan hjälpa dig att identifiera och fixa en bugg. Här får man vara medveten om att den andra studenten kan välja att ta din kod och lämna in som sin egna utan att du är medveten om det. Då blir båda fällda i disciplinnämnden. Detta är en ganska vanlig företeelse.
+- Lämna in samma eller liknande arbete till denna kurs som du tidigare har lämnat in till denna kurs.
+- Vända dig till webben eller någon annanstans för instruktioner utöver kursens egna, för referenser och för lösningar på tekniska svårigheter, men inte för direkta lösningar på tilldelat arbete.
+- Använda [CS50:s AI-baserade programvara](https://cs50.ai/) för att ställa frågor, men inte presentera dess svar som dina egna. Du kan läsa mer om att [använda AI nedanför](#ai).
+- Diskutera fram lösningar med andra med hjälp av diagram eller pseudokod men inte faktisk kod.
+- Arbeta med (och till och med betala) en handledare för att hjälpa dig med kursen, förutsatt att handledaren inte gör ditt arbete åt dig.
+
+#### Inte rimligt
+- Få tillgång till en lösning på någon bedömning innan du (åter)lämnar in ditt eget arbete.
+- Få tillgång till eller försöka få tillgång till, utan tillstånd, ett konto som inte är ditt eget.
+- Be en klasskamrat att se deras lösning på någon bedömning innan du (åter)lämnar in ditt eget arbete.
+- Upptäcka men inte avslöja för kursens ledare buggar i kursens programvara som påverkar poäng.
+- Underlåta att citera (som med kommentarer) ursprunget till kod eller tekniker som du upptäcker utanför kursens egna lektioner och integrerar i ditt eget arbete, även om du respekterar denna policys andra begränsningar.
+- Underlåta att citera (som med kommentarer) ursprunget till kod eller tekniker som du upptäcker utanför kursens egna lektioner och integrerar i ditt eget arbete, även om du respekterar denna policys andra begränsningar.
+- Ge eller visa en klasskamrat en lösning på en bedömning när det är de, och inte du, som har svårt att lösa den.
+- Manipulera eller försöka manipulera poäng artificiellt, genom att utnyttja buggar eller formler i kursens programvara.
+- Betala eller erbjuda att betala en individ för arbete som du kan lämna in som (del av) ditt eget.
+- Söka efter eller be om direkta lösningar på bedömningar online eller någon annanstans.
+- Dela upp en bedömnings arbetsbelastning med en annan individ och kombinera ert arbete.
+- Lämna in (efter att eventuellt ha modifierat) en annan individs arbete utöver de få rader som tillåts här.
+- Använda tredjeparts AI-baserad programvara (inklusive ChatGPT, GitHub Copilot, nya Bing, etc.), förutom CS50, som föreslår svar eller kodrader.
+
 
 Varför ska man inte plagiera kod? För då lär ni er inte hur man skriver den. Det kan vara jobbigt när inlämningsdatumet närmar sig och man har inte lyckats lösa uppgiften. Då är det lätt att be någon om "hjälp", man har kanske tanken att man ska bara kolla lite och få inspiration. Men om man inte stannar där utan kopierar hela lösningar då har ni missat allt ni ska lära er. I efterkommande uppgifter och kurser förväntas ni att kunna sakerna som vi lär er i denna uppgift/kursen. Då förskjuter ni bara problemet, för då kan ni inte det som behövs i nästa uppgift/kurs. Ett annat problem med att "få inspiration" av annan kod är att när ni väl har sett koden så kan ni inte skriva den på något annat sätt. Eftersom ni inte förstår koden tillräckligt bra för att skriva den själv, då kan ni troligen inte heller skriva om lösningen ni får inspiration av.
 
-Vad ska ni göra istället när detta problem uppstår? Be era lärare om hjälp, säg till dem att ni börjar halka efter och inte förstår vad ni ska göra i uppgiften eller hur den ska lösas. Vi vill att ni ska lära er och lyckas lösa uppgifterna.
+Vad ska ni göra istället när detta problem uppstår? Be era lärare om hjälp, säg till dem att ni börjar halka efter och inte förstår vad ni ska göra i uppgiften eller hur den ska lösas. Vi vill att ni ska lära er och lyckas lösa uppgifterna själva.
 
-Men detta sagt vill vi **inte** att ni **inte** ska hjälpa varandra. Det är jättebra att diskutera lösningar och kod och samarbeta med andra, man lär sig mycket av det. Men det är viktigt att komma ihåg att ni ska skriva er egen kod. Det finns jättemånga olika sätt att lösa samma problem på. Att fråga om hjälp i Discord-chatten eller berätta för någon där hur ni har löst en del av en uppgift gör inte att ni fastnar i plagiering. Det är bara när man har hela filer som ser likadana ut som man gör det.
+Men detta sagt vill vi **inte** att ni **inte** ska hjälpa varandra. Det är jättebra att diskutera lösningar och kod och samarbeta med andra, man lär sig mycket av det. Men det är viktigt att komma ihåg att ni ska skriva er egen kod. Det finns jättemånga olika sätt att lösa samma problem på. Att fråga om hjälp i Discord-chatten eller berätta för någon där hur ni har löst en del av en uppgift gör inte att ni fastnar i plagiering. Det är främst när man har hela filer som ser likadana ut som man gör det.
 
 Om en studiekamrat frågar er om att få se en fil eller en lösning och ni inte känner er bekväma med det, säg till dem att fråga lärarna om hjälp istället.
 
-Om det inte står att en uppgift ska göras tillsammans ska varje student skriva sin kod/text själv.
-
-> Att förstå och kunna tillämpa programmeringskoncept är nyckeln till att bli en kompetent och självständig utvecklare.
 
 
+### Använda AI
+AI kan vara ett väldigt bra verktyg, men det kan också vara dåligt. Så fort man ber AI producera kod åt en är man ute på farligt vatten. Om ni gör det betyder det troligen att minst en annan studiekamrat också gör det. Då riskerar ni att få samma kod som varandra av AI, och då fastnar ni i plagiering. Ett bättre sätt att använda AI är att be den förklara kod ni redan har skrivit, kod ni har hittat på nätet men inte förstår, eller kod som vi har visat på föreläsningar eller i övningar. Använd den som en hjälplärare, inte som en kodare. Det är ni som ska vara kodare.
 
-Får man använda AI som hjälpmedel {#ai}
------------------------------------
 
 ChatGPT ger följande svar på frågan "Hur ska programmeringsstudenter använda dig på bästa sätt utan att fuska?" vilket jag tycker är ett väldigt bra svar.
 
@@ -56,12 +83,24 @@ ChatGPT ger följande svar på frågan "Hur ska programmeringsstudenter använda
 >
 >Slutligen, använd AI som ett komplement till din inlärning och inte som en ersättning för din egen ansträngning. Att förstå och kunna tillämpa programmeringskoncept är nyckeln till att bli en kompetent och självständig utvecklare.
 
+Det finns dock flera acceptabla användningsområden för GenAI i programmatiska uppgifter, inklusive:
+
+- Generera korta dokumentationssträngar och typanvisningar.
+- Hitta exempel och förklaringar för syntaktiska former (t.ex. hur man använder for-loopar; hur man tilldelar variabler direkt från en array eller ett objekt; hur man konstruerar en list comprehension; hur man avlägsnar en optional, och så vidare). Be AI:n om hur man gör, inte din slutliga kod.
+- Tolkar felmeddelanden, eftersom dessa kan vara ganska kryptiska!
+- Generera enhetstester för edge cases.
+- När den hittar något du har missat, gör en mental eller skriftlig anteckning så att du kan hitta dessa fall själv nästa gång.
+- Brainstorma nya idéer för appar.
+
+[INFO]
+ANVÄND teknologier som AI för att förbättra ✅, öka ✅ och accelerera ✅ ditt lärande; ANVÄND ALDRIG teknologi för att undvika ❌ lärande.
+[/INFO]
 
 
 Misstanke om medveten vilseledning {#misstanke}
 -----------------------------------
 
-När vi uppmärksammar misstanke om medveten vilseledning så gör vi en egen undersökning och försöker se omfattning samt om vi kan styrka misstanken. Om vi finner misstanken styrkt så resulterar det i ett informationsmail till studenten och en anmälan till disciplinnämnden.
+När vi uppmärksammar misstanke om medveten vilseledning så gör vi en egen undersökning och försöker se omfattning samt om vi kan styrka misstanken. Om vi finner misstanken styrkt så resulterar det i ett informationsmejl till studenten och en anmälan till disciplinnämnden.
 
 Normalt handlar det om vilseledning som kan styrkas i en större omfattning.
 
@@ -100,13 +139,13 @@ Otillåtna hjälpmedel kan ha använts utan att kraven för disciplinära åtgä
 
 
 
-###Disciplinära åtgärder {#atgarder}
+### Disciplinära åtgärder {#atgarder}
 
 De disciplinära åtgärder som kan komma i fråga vid förseelse är varning eller avstängning (enl. 10 kap 2 § HF). Disciplinära åtgärder får, enligt HF, inte vidtas senare än två år efter det att en förseelse har begåtts.
 
 
 
-####Varning {#varning}
+#### Varning {#varning}
 
 Varning meddelas antingen av rektor eller av disciplinnämnden, om ärendet hänskjutits dit.
 
@@ -114,17 +153,10 @@ Om rektor beslutar att utdela varning, kan studenten begära att beslutet ska un
 
 
 
-###Avstängning {#avstangning}
+### Avstängning {#avstangning}
 
 Ett beslut om avstängning meddelas av disciplinnämnden och ska tillämpas genast, om annat inte föreskrivs i beslutet. Avstängning får ske under en eller flera perioder, dock högst sex månader. Ett beslut om avstängning innebär att studenten under tiden för avstängningen inte får delta i någon form av verksamhet inom ramen för utbildningen vid högskolan, d.v.s. förbud att delta i föreläsningar, seminarier, laborationer, examination, handledning eller dyl. Ett beslut om avstängning innebär också att studenten inte får använda högskolans IT-resurser samt vistas i högskolans lokaler.
 
 När en student blir avstängd meddelas bl.a. berörd sektion, IT-avdelningen, Studerandeavdelningen vid högskolan och Centrala studiestödsnämnden (CSN).
 
 Studenten kan överklaga ett beslut om avstängning och varning av disciplinnämnden hos Förvaltningsrätten.
-
-
-
-Mer funderingar? {#fraga}
------------------------------------
-
-Har du frågor och funderingar kring detta så kan du ställa dem i forumet som har en [tråd kopplad till detta dokumentet](/t/5909).

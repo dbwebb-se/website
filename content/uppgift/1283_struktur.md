@@ -32,6 +32,8 @@ Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du an
 
 Förbered uppgiften genom att kopiera in mappen `example/structure` till containern och ställ dig i den mappen.
 
+[INFO]Du ska utföra alla kommandon inifrån containern[/INFO]
+
 
 Krav {#krav}
 -----------------------
@@ -57,7 +59,7 @@ Krav {#krav}
 4 directories, 9 files
 ```
 
-2. Du får inte skapa någon fil eller mapp utan allt finns någonstans i den kopierade mappen (vissa är även dolda).
+2. **Du får inte skapa någon fil eller mapp** utan allt finns någonstans i den kopierade mappen (vissa är även dolda).
 
 3. Varje kommando du kör lägger du även i filen `answers.bash`. Ett kommando per rad och filen ska inte innehålla något annat. Alla kommandon ska utgå ifrån att du står i den kopierade mappen.
 

@@ -31,7 +31,7 @@ Nedan följer tumregler som karaktäriserar handlingar som vi anser vara rimliga
 - Skicka eller visa kod som du har skrivit till någon, möjligen en klasskamrat, så att de kan hjälpa dig att identifiera och fixa en bugg. Här får man vara medveten om att den andra studenten kan välja att ta din kod och lämna in som sin egna utan att du är medveten om det. Då blir båda fällda i disciplinnämnden. Detta är en ganska vanlig företeelse.
 - Lämna in samma eller liknande arbete till denna kurs som du tidigare har lämnat in till denna kurs.
 - Vända dig till webben eller någon annanstans för instruktioner utöver kursens egna, för referenser och för lösningar på tekniska svårigheter, men **inte** för direkta lösningar på tilldelat arbete.
-- Använda [CS50:s AI-baserade programvara](https://cs50.ai/) för att ställa frågor, men inte presentera dess svar som dina egna. Du kan läsa mer om att [använda AI nedanför](#ai).
+- Använda [CS50:s AI-baserade programvara](https://cs50.ai/) för att ställa frågor, men inte presentera dess svar som dina egna. Anledningen till att den är OK att använda är att den är tillsagd att fungera som en hjälplärare och inte ge er kodlösning på era uppgifter. Den finns även som [plugin i VSCode](https://marketplace.visualstudio.com/items?itemName=CS50.ddb50).Du kan läsa mer om att [använda AI nedanför](#ai).
 - Diskutera fram lösningar med andra med hjälp av diagram eller pseudokod men **inte faktisk kod**.
 - Arbeta med (och till och med betala) en handledare för att hjälpa dig med kursen, förutsatt att handledaren inte gör ditt arbete åt dig.
 

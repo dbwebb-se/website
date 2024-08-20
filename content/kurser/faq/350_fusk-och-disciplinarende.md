@@ -3,6 +3,7 @@ author:
     - aar
     - mos
 revision:
+    "2024-08-20": (E, AAR) Omskriven baserat på CS50 och annat material.
     "2023-10-16": (D, AAR) La till stycke om AI och skrev om text om vad som är tillåtet samarbete.
     "2021-12-17": (C, AAR) Förtydligade att studenter ska skriva koden själva men kan samarbeta för att komma fram till en lösning.
     "2020-11-27": (B, AAR) Uppdaterade förklaring av vad som utgör plagiering/kopiering av kod.
@@ -24,7 +25,7 @@ Nedan följer tumregler som karaktäriserar handlingar som vi anser vara rimliga
 
 
 #### Rimligt
-- Kommunicera med klasskamrater om uppgifter och korrekt citera dessa diskussioner.
+- Kommunicera med klasskamrater om uppgifter.
 - Diskutera kursens material med andra för att förstå det bättre.
 - Hjälpa en klasskamrat att identifiera en bugg i deras kod, genom att visa, kompilera eller köra **deras** kod.
 - Inkorporera några rader kod som du hittar online eller någon annanstans i din egen kod, förutsatt att dessa rader inte själva är lösningar på tilldelat arbete och att du **citerar** radernas ursprung.

@@ -99,6 +99,8 @@ Det finns dock flera acceptabla användningsområden för AI i programmatiska up
 ANVÄND teknologier som AI för att förbättra ✅, öka ✅ och accelerera ✅ ditt lärande; ANVÄND ALDRIG teknologi för att undvika ❌ lärande.
 [/INFO]
 
+<!--
+referenser [CS50 honesty](https://cs50.harvard.edu/x/2024/honesty/), [Ray](https://cs.lmu.edu/~ray/classes/dsa/syllabus/) och våra egna tidigare texter. -->
 
 Misstanke om medveten vilseledning {#misstanke}
 -----------------------------------

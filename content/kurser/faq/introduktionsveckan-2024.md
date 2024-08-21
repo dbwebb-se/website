@@ -91,9 +91,9 @@ När det är klart är vi nöjda. Det är veckans huvudsakliga fokus. Om du lös
 Informationsmaterial {#infomat}
 -----------------------------------
 
-Här är ett dokument som är bra att kika igenom som ny student.
+Här är ett dokument som är bra att kika igenom som ny0 student.
 
-* [Så här funkar det på BTH](https://bthse-my.sharepoint.com/:b:/g/personal/mos_bth_se/ERAsH1Rh7TlOtpBer4je5iEBmhjTGso6E_AeRrvjnhXfiw)
+* [Så här funkar det på BTH](https://bthse-my.sharepoint.com/:b:/g/personal/mos_bth_se/ETdU6U0GfCBJpCVw3JDLW70BEsjLuW2qQgSngmuZoARZ3g?e=CuHIeD)
 
 
 

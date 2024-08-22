@@ -15,7 +15,7 @@ Fusk och Disciplinnämnden
 Vi tycker att interaktioner mellan klasskamrater och andra är positivt och förbättrar studenters lärande. Det finns dock en gräns mellan att be om hjälp från någon annan och att lämna in någon annans arbete. Därför har vi en policy som hjälper er studenter att veta när ni börjar passera den gränsen.
 
 ### Policy 
-Essensen av allt arbete som du lämnar in till våra kurser måste vara ditt eget. Om inget annat anges är samarbete på bedömningar (t.ex. uppgifter, labbar eller quiz) inte tillåtet förutom i den utsträckning att du kan be klasskamrater och andra om hjälp så länge den hjälpen inte innebär att någon annan gör ditt arbete åt dig. Generellt sett, **när du ber om hjälp**, kan du visa ditt arbete för andra, men du får inte se deras. Så länge du och de respekterar denna policys andra begränsningar.
+Essensen av allt arbete som du lämnar in till våra kurser måste vara ditt eget. Om inget annat anges är samarbete på inlämningar (t.ex. uppgifter, labbar eller quiz) inte tillåtet förutom i den utsträckning att du kan be klasskamrater och andra om hjälp så länge den hjälpen inte innebär att någon annan gör ditt arbete åt dig. Generellt sett, **när du ber om hjälp**, kan du visa ditt arbete för andra, men du får inte se deras. Så länge du och de respekterar denna policys andra begränsningar. Det är också bra att veta, att ge bort en lösning till någon annan är underlag för fällande dom i disciplinnämnden. Det är inte bara personen som lämnar in inlämningen som är ansvarig.
 
 #### Ångerklausul
 Om du begår någon handling som inte är rimlig, men du uppmärksammar kursens ledare genom att skicka ett e-postmeddelande till kursansvarig inom 72 timmar, kan vi välja att enbart underkänna din inlämning istället för att göra en anmälan till disciplinnämnden. Förutom i fall av upprepade handlingar.
@@ -39,16 +39,16 @@ Nedan följer tumregler som karaktäriserar handlingar som vi anser vara rimliga
 
 
 #### Inte rimligt
-- Få tillgång till en lösning från någon annan på en bedömning innan du (åter)lämnar in ditt eget arbete.
+- Få tillgång till en lösning från någon annan på en inlämning innan du (åter)lämnar in ditt eget arbete.
 - Få tillgång till eller försöka få tillgång till, utan tillstånd, ett konto som inte är ditt eget.
-- Be en klasskamrat att se deras lösning på någon bedömning innan du (åter)lämnar in ditt eget arbete.
-- Ge eller visa en klasskamrat en lösning på en bedömning när det är de, och inte du, som har svårt att lösa den.
+- Be en klasskamrat att se deras lösning på någon inlämning innan du (åter)lämnar in ditt eget arbete.
+- Ge eller visa en klasskamrat en lösning på en inlämning när det är de, och inte du, som har svårt att lösa den.
 - Upptäcka men inte avslöja för kursens ledare buggar i kursens programvara som påverkar poäng/godkänt.
 - Underlåta att citera (som med kommentarer) ursprunget till kod eller tekniker som du upptäcker utanför kursens egna lektioner och integrerar i ditt eget arbete, även om du respekterar denna policys andra begränsningar.
 - Manipulera eller försöka manipulera poäng artificiellt, genom att utnyttja buggar eller formler i kursens programvara.
 - Betala eller erbjuda att betala en individ för arbete som du kan lämna in som (del av) ditt eget.
-- Söka efter eller be om direkta lösningar på bedömningar online eller någon annanstans.
-- Dela upp en bedömnings arbetsbelastning med en annan individ och kombinera ert arbete. Om det är en individuell uppgift.
+- Söka efter eller be om direkta lösningar på inlämningar online eller någon annanstans.
+- Dela upp en inlämnings arbetsbelastning med en annan individ och kombinera ert arbete. Om det är en individuell uppgift.
 - Lämna in (efter att eventuellt ha modifierat) en annan individs arbete utöver de få rader som tillåts här.
 - Använda tredjeparts AI-baserad programvara (inklusive ChatGPT, GitHub Copilot, nya Bing, etc.), förutom CS50, som föreslår svar eller kodrader.
 

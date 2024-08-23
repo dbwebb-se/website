@@ -12,6 +12,7 @@ category:
     - windows
     - bash
 revision:
+    "2024-08-23": "(I, mos) Genomgången och uppdaterad inför ht24."
     "2024-08-06": "(H, aar) la till stycke om vanliga fel och att man ska kolla att användarnamn inte är root."
     "2022-08-17": "(G, mos) Om wsl redan är installerat, lade till video."
     "2022-08-16": "(F, mos) Uppdaterad till senaste installationsrutinen för WSL."
@@ -24,7 +25,7 @@ revision:
 Installera Bash i Windows med WSL och Ubuntu
 ==================================
 
-[FIGURE src=image/snapvt19/windows-cowsay.png?w=c5&a=0,70,60,0 class="right"]
+[FIGURE src=image/kunskap/installera-wsl/cowsay.png?w=c5 class="right"]
 
 Så här gör du för att installera Bash med Ubuntu i Windows via WSL samt tar hjälp av pakethanteraren och installerar det som behövs för att komma igång med kurserna.
 
@@ -35,18 +36,19 @@ Så här gör du för att installera Bash med Ubuntu i Windows via WSL samt tar 
 Mer information {#pre}
 -------------------------------
 
-Denna artikel är förkortad till att ange hur man installerar WSL och Ubuntu för att få tillgång till en Bash terminal i Windows. Artikeln bygger på informationen som finns att läsa i "[Windows Subsystem for Linux Documentation](https://docs.microsoft.com/en-us/windows/wsl/)". Om du tappar bort dig eller behöver extra information så kan du gå och läsa den artikeln i lugn och ro.
+Denna artikel bygger på informationen som finns att läsa i "[Windows Subsystem for Linux Documentation](https://docs.microsoft.com/en-us/windows/wsl/)". Om du tappar bort dig eller behöver extra information så kan du gå och läsa den större artikeln i lugn och ro.
 
-Här kommer den snabba vägen som är ett utdrag från artikeln "[Install Linux on Windows with WSL](https://docs.microsoft.com/en-us/windows/wsl/install)".
+Läs vidare för den "snabba vägen" att komma igång med Bash/WSL i Windows.
 
 
-
+<!-- 
 Översikt av artikeln {#video}
 ---------------------------------
 
 Det finns en video som visar hur Mikael jobbar igenom delar av denna artikel. Du kan titta igenom videon som ett komplement när du själv jobbar igenom artikeln.
 
 [YOUTUBE src="njUTrRS6uiU" width=700 caption="Mikael jobbar igenom huvuddelarna i denna artikel."]
+-->
 
 
 
@@ -65,22 +67,30 @@ Alternativet är att välja ett annat sätt att installera WSL, för detaljer se
 
 
 
-Installera Bash {#install}
+Installera WSL {#install}
 -------------------------------
 
-Bash finns med i din Windows installation men du behöver sätta på det på följande sätt.
+WSL finns med i din Windows installation men du behöver initiera det på följande sätt.
 
 
 
 ### Installera kommandot wsl {#wsl}
 
-Du kan nu installera allt du behöver för att köra Windows Subsystem for Linux (WSL) genom att ange detta kommando i en administratörs PowerShell eller Windows kommandotolk och sedan starta om din maskin.
+Kommandot `wsl.exe` behövs för att aktivera de funktioner som krävs för att köra WSL och för att installera Ubuntu-distributionen av Linux inuti Windows.
+
+Starta terminalen PowerShell och kör följande kommando för att initiera kommandot `wsl.exe`.
 
 ```
 wsl --install
 ```
 
-Detta kommando kommer att aktivera de funktioner som krävs för att köra WSL och installera Ubuntu-distributionen av Linux. Programmet kommer efterfråga att du ska skapa ett nytt konto, skriv in ett användarnamn och lösenord när det efterfrågas. Använd inte mellanslag i namn eller lösenord.
+Den kan se ut så här, precis innan du startar installationen genom att trycka ENTER.
+
+[FIGURE src=image/kunskap/installera-wsl/wsl-install.png?w=w3 caption="Skriv in kommandot för att installera wsl i PowerShell."]
+
+När kommandot är klart så startar du om din maskin.
+
+
 
 #### Vanliga fel {$fel}
 
@@ -91,38 +101,55 @@ Det är ganska vanligt att man får fel när man kör kommandot ovanför. Här k
 - [Failed to attach disk, ERROR_FILE_NOT_FOUND](https://github.com/dbwebb-se/python/issues/44#issuecomment-1691101806)
 - [Error : 0x80370102 - Enable virtualization i BIOS](https://github.com/dbwebb-se/python/issues/44#issuecomment-1691142414)
 
-Om ditt fel inte finns med i listan kan du kolla om det finns med här [Kända fel och lösningar](https://github.com/dbwebb-se/python/issues/44). Om det inte finns där heller, skriv och be om hjälp i Discord chatten.
+Om ditt fel inte finns med i listan kan du kolla om det finns med här [Kända fel och lösningar](https://github.com/dbwebb-se/python/issues/44).
+
+Hittar du inte din felkod eller ditt problem så letar du vidare i "[Troubleshooting Windows Subsystem for Linux: Installation issues](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)". Sök efter din felkod.
+
+Du kan även skriva i Discord chatten, men se alltid om du kan hitta en referens till din felkod först.
 
 
-### Jag har redan wsl installerat {#wslinstalled}
 
-Ovan kommando fungerar endast om du inte redan har installerat wsl. Om det är installerat så kommer du istället få fram en hjälptext till hur du använder kommandot. Om du då vill installera en specific distribution av Linux så kan du först kolla vilka som finns tillgängliga och sedan kan du installera just den distributionen.
+### Installera Ubuntu i WSL {#installubuntu}
 
-Visa vilka distributioner som finns.
+När maskinen har bootat kan du återigen öppna PowerShell och köra följande kommandon för att se att processen gick bra.
 
 ```
 wsl --list --online
 ```
 
-Installera till exmpel distributionen för Ubuntu.
+Det kan se ut ungefär så här.
+
+[FIGURE src=image/kunskap/installera-wsl/wsl-list-online.png?w=w3 caption="WSL är installerat och du kan nu installera Linux distributionen Ubuntu."]
+
+Vi väljer att installera distributionen för Ubuntu.
 
 ```
 wsl --install --distribution Ubuntu
 ```
 
+[FIGURE src=image/kunskap/installera-wsl/wsl-install-ubuntu.png?w=w3 caption="Förberedd för att installera distributionen Ubuntu i WSL."]
+
+I slutet av processen skall du skapa en användare och ett lösenord i Ubuntu. Detta är din specifika användare inuti Ubuntu och har inget att göra med din Windows-användare. Välj ett kort användarnamn och ett kort lösenord så blir det smidigt att använda. Använd inte mellanslag eller svenska tecken i användarnamnet.
+
+[FIGURE src=image/kunskap/installera-wsl/wsl-install-ubuntu-done.png?w=w3 caption="Så här ser resultatet ut när du är klar med att installera Ubuntu i WSL."]
+
+Om det står något i stil med `root@desktop:~#` (det är `root` du ska ha utkik efter) istället för användarnamnet du valde (på bilden är det `mos`), då behöver du göra om installationen så att ditt användarnamn skapas korrekt. Avinstallera först WSL genom att öppna PowerShell och kör kommandot `wsl --unregister Ubuntu`. Gör sen om installationen och skriv in användarnamn och lösenord när det efterfrågas.
+
+Nu är du klar med installationen av Ubuntu i WSL i Windows och du har tillgång till en bash-terminal som krävs för kurserna.
 
 
-### Konfigurera användare och lösenord i Ubuntu {#user}
 
-När processen med att installera din Linux-distribution med WSL är klar, öppna Ubuntu med hjälp av Start-menyn.
+### Starta Ubuntu {#start}
 
-Du kan nu starta ubuntu Debian genom att köra kommandot `ubuntu` via sökfältet eller via `Windows key + R`.
+Du kan nu starta Ubuntu genom att köra kommandot `ubuntu` via sökfältet eller via `Windows key + R`.
+
+Det kan se ut så här.
+
+[FIGURE src=image/kunskap/installera-wsl/start-ubuntu.png?w=w3 caption="Nu har du tillgång till en bash terminal, via Ubuntu och WSL."]
 
 Du har nu en Linux-terminal, en bash terminal, i din Windows.
 
-[FIGURE src=image/snap22/ubuntu_start.png?w=w3 caption="Du har nu en bash-terminal med Ubuntu i Windows."]
-
-**OBS** Om det står något i stil med `root@desktop:~#` (det är `root` du ska ha utkik efter) istället för användarnamnet du valde (på bilden är det `mos`), då behöver du göra om installationen så att ditt användarnamn skapas. Avinstallera WSL genom att öppna CMD eller Powershell och kör kommandot `wsl --unregister Ubuntu`. Gör sen om installationen och skriv in användarnamn och lösenord när det efterfrågas.
+Fortsätt nu att konfigurera din terminal.
 
 
 
@@ -149,13 +176,7 @@ Det tar en liten stund att uppgradera.
 
 ### Copy & paste mellan Windows och terminalen {#copypaste}
 
-När du vill kopiera från Windows till terminalen kan du markera texten i Windows-applikationen och trycka `ctrl-c`, för att pasta texten till terminalen kan du klicka på högerknappen på musen.
-
-Ett annat bra alternativ är att använda `shift-ctrl-c` och `shift-ctrl-v` där du kan kopiera text i terminalen och pasta till terminalen eller till en Windows applikation, tex webbläsaren. Du sätter på det genom att högerklicka på terminalfönstrets övre del och väljer "Properties" i menyn. Du får då fram följande ruta och du skall klicka i för "shift-ctrl-c / v". Gör även ändringen i menyvalet för "Defaults" så behåller du ändringen till nästa terminalfönster som du öppnar.
-
-[FIGURE src=image/snap22/ubuntu_copy_paste.png caption="Klicka för valet med shift-ctrl-c och v för copy och paste."]
-
-När du är i en Windows applikation använder du "som vanligt" `ctrl-c` och `ctrl-v`, men när du vill göra det i bash-terminalen så lägger du till en `shift` framför.
+När du vill kopiera text mellan Windows och terminalen kan du markera texten och trycka `ctrl-c`, för att pasta texten kan du trycka `ctrl-v`.
 
 
 
@@ -164,7 +185,7 @@ När du är i en Windows applikation använder du "som vanligt" `ctrl-c` och `ct
 Vi skall installera ett par paket som gör din vardag enklare. Det är paket som används i kurserna och vi vill försäkra oss om att de är installerade.
 
 ```text
-sudo apt install wget curl ssh rsync git vim unzip
+sudo apt install wget curl ssh rsync git unzip
 ```
 
 Här är en kort förklaring till de olika kommandona.
@@ -176,8 +197,7 @@ Här är en kort förklaring till de olika kommandona.
 | ssh      | SSH klient och server, används för att koppla upp mot externa servrar. |
 | rsync    | Kopiera/synka innehåll i kataloger, lokalt och mellan servrar. |
 | git      | Klient till versionshanteringssystemet git. |
-| vim      | Texteditor för terminalen, alternativ till vi. |
-| unzip    | Zippar upp filer. |
+| unzip    | Zippar upp filer som är paketerade. |
 
 
 
@@ -216,16 +236,16 @@ curl --help
 För att testa pakethanteraren kan du installera paketet `cowsay` som är ett litet skoj-paket.
 
 ```text
-sudo apt-get install cowsay
+sudo apt install cowsay
 ```
 
 Nu kan vi köra programmet.
 
 ```text
-cowsay "Hej alla webbprogrammerare!"
+cowsay "Hej alla programmerare!"
 ```
 
-[FIGURE src=image/snap22/ubuntu_cowsay.png?w=w3 caption="Nu är du redo för Linux med en bash-terminal på Windows."]
+[FIGURE src=image/kunskap/installera-wsl/cowsay.png?w=w3 caption="Kul med terminalprogram i bash med Ubuntu och WSL."]
 
 Vill du vet mer om programmet så öppnar du dess manualsida.
 
@@ -236,32 +256,70 @@ Vill du vet mer om programmet så öppnar du dess manualsida.
 
 När du är i terminalen kan du öppna vissa Windows-applikationer som till exempel filväljaren och texteditorn. Det kan vara ett bra hjälpmedel att öppna dem i den katalogen där man står för tillfället.
 
-Prova att öppna filväljaren i din hemmakatalog, glöm inte punkten som refererar till den katalog du för tillfället står i.
+
+
+### Öppna Explorer från terminalen {#explorer}
+
+Prova att öppna filväljaren i den katalog du står i terminalen, punkten refererar till den katalog du för tillfället står i.
 
 ```text
 explorer.exe .
 ```
 
-[FIGURE src=image/snap22/ubuntu_start_explorer.png?w=w3 caption="Skriv kommandot i terminalen."]
+Du kan även prova att flytta till din hemmakatalog och skriva ut nuvarande sökväg till katalogen där du befinner dig.
+
+Flytta till din hemmakatalog i WSL.
+
+```
+cd
+```
+
+Visa sökvägen till den katalog där du nu befinner dig i.
+
+```
+pwd
+```
+
+Det kan se ut så här.
+
+[FIGURE src=image/kunskap/installera-wsl/open-explorer.png?w=w3 caption="Öppna explorer för att se filträdet inuti WSL."]
 
 Nu öppnas filväljaren och visar filerna i katalogen samt en sökväg till dem.
 
-[FIGURE src=image/snap22/explorer_open_from_ubuntu.png?w=w3 caption="Filväljaren explorer öppnar ett fönster och visar filerna i terminalen."]
+[FIGURE src=image/kunskap/installera-wsl/explorer.png?w=w3 caption="Nu kan du gå igenom filerna och filträdet som finns i WSL."]
+
+Om du inte ser filändelser eller dolda filer och kataloger i din Explorer så kan du behöva konfigurera det via "Options -> View" och klicka i enligt följande.
+
+* Klicka i
+    * "Display the full path in the title bar"
+    * "Show hidden files, folders and drives"
+* Klicka bort
+    * "Hide extensions for known filetypes"
+
+Via explorer kan du enkelt kopiera filer och kataloger mellan filstrukturen i Windows och filstrukturen i WSL.
+
 
 
 ### Öppna VSCode från terminalen {#open-vscode}
 
-För att kunna öppna VSCode från terminalen behöver du installera ett tillägg i VSCode.
+Se till att du har installerat Visual Studio Code och att du kan öppna den som en Windowsapplikation. Om du installerar vscode så behöver du även starta om terminalen så att den kan hitta kommandot.
+
+<!--
+GAMMAL INFO?
+För att öppna VSCode från terminalen behöver du installera ett tillägg i VSCode.
 
 [FIGURE src=image/vscode/vscode-wsl.png?w=w3 caption="Installera Remote - WSL i VSCode."]
 
 Gör som bilden visar, gå till fliken för tillägg, sök på "wsl" och installera "Remote - WSL". Efter det behöver du starta om terminalen.
+-->
 
-När du har startat terminalen igen kan du skriva som nedanför för att öppna mappen du står i, i vscode. Första gången du gör det kommer den installera verktyget.
+Nu kan du starta vscode inuti WSL så här. Första gången du gör det kommer den installera det som behövs och det tar lite längre tid.
 
 ```text
 code .
 ```
+
+Nu kan du redigera filer som ligger inuti din WSL instans.
 
 
 
@@ -296,9 +354,7 @@ pwd
 ls -l
 ```
 
-[FIGURE src=image/snap22/ubuntu_cd_mnt.png?w=w3 caption="Flytta till katalogen /mnt och se vilka filer som ligger där."]
-
-Sökvägen till min hemmakatalog i Windows blir då `/mnt/c/Users/mos/` om min Windowsanvändare heter "mos".
+Sökvägen till min hemmakatalog i Windows blir då `/mnt/c/Users/mos/` om min Windowsanvändare heter "mos" och om jag har en engelsk installation av Windows.
 
 
 
@@ -319,9 +375,7 @@ ln -s /mnt/c/Users/mos/ winhome
 ls -l
 ```
 
-[FIGURE src=image/snap22/ubuntu_winhome.png?w=w3 caption="Skapa en symbolisk länk för att göra det enkelt att nå din Windows användares filer."]
-
-Nu kan jag enkelt nå mina filer som ligger hos min Windows-användare.
+Nu kan jag enkelt nå mina filer som ligger hos min Windows-användare samt eventuellt kopiera över en backup till min Windows-katalog.
 
 ```text
 # Flytta till min windows home, när jag står i min Linux hemmakatalog
@@ -342,15 +396,22 @@ cd
 rm winhome
 ```
 
-När du jobbar med kurserna rekommenderas det att du sparar alla filerna i ubuntu miljön. Det gör det enklast att nå dem via både WSL och texteditorn.
+När du jobbar med kurserna rekommenderas det att du sparar alla filerna i WSL miljön. Det gör det enklast att nå dem via både WSL och texteditorn. Men se till att du har backup på filerna och att du kopierar dem till ett säkert ställa, om något går fel.
 
 
+
+Avslutningsvis {#avslutning}
+------------------------------
+
+Det finns mycket att lära om WSL, Bash och Ubuntu. Lek runt med din terminal för att lära dig hur det fungerar.
+
+
+<!--
 
 Bra att ha {#braattha}
 ------------------------------
 
 Följande tips kan göra din bekantskap lite trevligare med Linux och bash-terminalen för Windows.
-
 
 
 ### Tabba men utan ljud {#tab}
@@ -396,14 +457,7 @@ source .bashrc
 [FIGURE src=image/snap22/ubuntu_source_bashrc.png?w=w3 caption="Aktivera ändringen genom att sourca konfigurationsfilen .bashrc."]
 
 Nu bör beepet försvinna när du använder tab-tangenten. Nu kan du tabba på.
-
-
-
-Avslutningsvis {#avslutning}
-------------------------------
-
-Det finns mycket att lära om WSL, Bash och Ubuntu. Men detta är en bra start.
-
+-->
 
 <!--
 ### Sudo utan lösenord {#sudo}

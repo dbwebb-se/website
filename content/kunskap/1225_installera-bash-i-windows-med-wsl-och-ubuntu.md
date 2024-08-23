@@ -92,7 +92,7 @@ När kommandot är klart så startar du om din maskin.
 
 
 
-#### Vanliga fel {$fel}
+#### Vanliga fel {#fel}
 
 Det är ganska vanligt att man får fel när man kör kommandot ovanför. Här kan ni se de fel vi har stött på tidigare och lösningar på dem.
 
@@ -318,6 +318,10 @@ Nu kan du starta vscode inuti WSL så här. Första gången du gör det kommer d
 ```text
 code .
 ```
+
+Det kan se ut så här.
+
+[FIGURE src=image/kunskap/installera-wsl/code.png?w=w3 caption="Nu kan du titta och redigera filerna som finns i WSL via vscode."]
 
 Nu kan du redigera filer som ligger inuti din WSL instans.
 

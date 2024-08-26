@@ -41,11 +41,11 @@ Välkommen till introveckan {#valkommen}
 
 Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokumentet och det som händer i introveckan. Pratar han långsamt så speedar du upp honom till 1,5 gånger hastigheten via inställningarna i YouTube.
 
-*Video kommer i augusti, veckan innan introveckan startar.*
-
 <!--
-[YOUTUBE src="tL3aFmSpJoU" width=700 caption="Mikael hälsar välkommen till introveckan 2023."]
+*Video kommer i augusti, veckan innan introveckan startar.*
 -->
+
+[YOUTUBE src="Prv5pbpiocg" width=700 caption="Mikael hälsar välkommen till introveckan 2023."]
 
 Samtliga videor från introveckan sparas i spellistan "[Introveckan augusti 2024](https://www.youtube.com/playlist?list=PLKtP9l5q3ce95186_0yawgoZIOSlsy_wV)" på youtube.
 

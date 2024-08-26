@@ -45,7 +45,7 @@ Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokum
 *Video kommer i augusti, veckan innan introveckan startar.*
 -->
 
-[YOUTUBE src="Prv5pbpiocg" width=700 caption="Mikael hälsar välkommen till introveckan 2023."]
+[YOUTUBE src="Prv5pbpiocg" width=700 caption="Mikael hälsar välkommen till introveckan."]
 
 Samtliga videor från introveckan sparas i spellistan "[Introveckan augusti 2024](https://www.youtube.com/playlist?list=PLKtP9l5q3ce95186_0yawgoZIOSlsy_wV)" på youtube.
 

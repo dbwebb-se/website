@@ -122,7 +122,7 @@ Det kan vara en bra idé att alltid starta editorn på detta sätt, från rooten
 
 Du kan nu redigera exempelprogrammet och lägga till en utskrift av ditt eget namn. Sedan kan du pröva att lägga till lite ASCII art (bilder gjorda med ASCII-tecken) och skriva ut det. Bild-googla "ASCII art" så hittar du exempel på bilder du kan använda.
 
-Så här ser det ut när Kenneth kör igenom övningen från början till slut.
+Så här ser det ut när Kenneth kör igenom övningen från början till slut. **PS** Ett litet fel i videon. Kenneth lägger filen i `hello` mappen, ni ska lägga den i `plane` mappen.
 
 [YOUTUBE src=Qw57psOiLio width=630 caption="Kenneth kör igenom det första exempelprogrammet med Python med sitt namn."]
 

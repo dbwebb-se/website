@@ -34,7 +34,7 @@ Vi ska inte gå in i mapparna/filerna och pilla utan vi använder Dockers CLI oc
 
 Istället för ett id kan vi använda namnet på containern. Om vi inte har satt det själva autogenereras ett namn. Hur kan man se den informationen då? Först behöver vi en startad container! Ubuntu har ett eget repository där de huserar ett antal images vi kan använda. Det finns images i olika storlekar och en grundregel är att utgå ifrån en nedbantad version och sedan fylla på själv med det man vill ha och behöver. När vi kör kommandot `run <username/imagename>` letar docker först lokalt och om det inte återfinns där letas det på Docker Hub där den laddas ner om den hittas.
 
-`$ docker run --rm -it ubuntu:22.04`
+`$ docker run --rm -it ubuntu:24.04`
 
 Flaggan `-it` gör att vi får ett interaktivt shell att jobba med. (Se `docker run --help`).  
 Flaggan `--rm` rensar automatiskt upp efter oss när vi stänger containern. Om vi vill att containern ska köras i bakgrunden, kan vi lägga till flaggan `-d` (detach).
@@ -44,7 +44,7 @@ Flaggan `--rm` rensar automatiskt upp efter oss när vi stänger containern. Om 
 ```bash
 $ docker ps
 CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS                     NAMES
-5490e0ab02da   ubuntu:22.04            "bash"                   9 seconds ago   Up 8 seconds                             nostalgic_mccarthy
+5490e0ab02da   ubuntu:24.04            "bash"                   9 seconds ago   Up 8 seconds                             nostalgic_mccarthy
 ```
 
 Du kan behöva scrolla åt höger för att se allt. Här får vi fram id, image, givet kommando och vilka namn containrarna har. På ovan container kan man då köra tex:

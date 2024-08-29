@@ -10,7 +10,7 @@ Kopiera in filer
 Vi kan kopiera in egna filer och mappar till en Docker container. Om vi har ett program vi vill kunna köra i containern behöver de kunna nås inifrån containern. Ett sätt är att använda `COPY` kommandot i Dockerfile.
 
 ```
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 WORKDIR scripts
 

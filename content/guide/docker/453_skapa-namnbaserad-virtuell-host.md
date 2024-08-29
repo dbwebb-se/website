@@ -57,7 +57,7 @@ Vi fyller på filen med följande konfiguration, editera den så den blir din eg
 Nu har vi en tom Dockerfile och en Apache2 configfil. Vi editerar Dockerfile och kopierar in configen till rätt plats:
 
 ```text
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update && apt install -y apache2
 

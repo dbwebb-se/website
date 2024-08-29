@@ -44,7 +44,7 @@ Vi kan även publicera en image till Docker Hub. Vi kan med fördel då även ta
 ```
 $ docker images
 REPOSITORY                  TAG                  IMAGE ID            CREATED             SIZE
-ubuntu                      22.04                f0b07b45d05b        7 days ago          77.9MB
+ubuntu                      24.04                f0b07b45d05b        7 days ago          77.9MB
 ```
 
 Låt säga att jag vill ha den här versionen på Docker Hub. Jag kan då tagga den så jag vet vilken version det är:

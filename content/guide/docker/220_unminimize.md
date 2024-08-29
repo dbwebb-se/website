@@ -7,7 +7,7 @@ revision:
 unminimize {#unminimize}
 =======================
 
-En image kommer som oftast så nedbantad den kan vara för att spara på diskutrymme. Tanken är ju att det ska vara så kompakt som möjligt och enbart innehålla det som behövs. När vi laddar ner imagen, i vårt fall `ubuntu:22.04` är den väldigt liten, ca 70mb. Den innehåller till exempel ingenting som en användare behöver då grundtanken inte är att man ska logga in med olika användare. Vi vill dock kunna använda delar som "manualen" (`man`). Vi kan köra ett kommando som packar upp imagen och installerar de delar som behövs:
+En image kommer som oftast så nedbantad den kan vara för att spara på diskutrymme. Tanken är ju att det ska vara så kompakt som möjligt och enbart innehålla det som behövs. När vi laddar ner imagen, i vårt fall `ubuntu:24.04` är den väldigt liten, ca 70mb. Den innehåller till exempel ingenting som en användare behöver då grundtanken inte är att man ska logga in med olika användare. Vi vill dock kunna använda delar som "manualen" (`man`). Vi kan köra ett kommando som packar upp imagen och installerar de delar som behövs:
 
 ```console
 $ unminimize

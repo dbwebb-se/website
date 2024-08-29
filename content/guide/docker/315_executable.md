@@ -24,7 +24,7 @@ De olika instruktionerna kan skrivas på två olika sätt: *shell form* eller *e
 När vi använder shell form kommer kommandot exekveras i `/bin/sh -c`.
 
 ```
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update
 
@@ -42,7 +42,7 @@ ENTRYPOINT echo "Hello dbwebb"
 Den här formen är att föredra för CMD och ENTRYPOINT. Om vi inte specificerar ett shell med exec form kommer inget shell att användas då vi kallar på det exekverbara programmet direkt.
 
 ```
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update
 
@@ -54,7 +54,7 @@ ENTRYPOINT ["/bin/echo", "Hello dbwebb"]
 Vill vi använda till exempel bash som shell kan vi specificera det:
 
 ```
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update
 
@@ -68,7 +68,7 @@ ENTRYPOINT ["/bin/bash", "-c", "echo Hello dbwebb"]
 Vi kan även kombinera formerna och via CMD ge parametrar till ENTRYPOINT.
 
 ```
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update
 

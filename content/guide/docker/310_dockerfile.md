@@ -16,11 +16,11 @@ Filen `Dockerfile` används för att strukturera hur en image ska byggas. Det ä
 Vi börjar med att titta på en väldigt enkel Dockerfile. Den kan skapas med `$ touch Dockerfile`.
 
 ```
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 ```
 
-Det var det...Om vi skulle bygga den här imagen kommer den att utgå ifrån imagen *ubuntu:22.04*, tack vare nyckelordet `FROM`, och skapa en ny image åt oss. Vi vill ju gärna ge vår egna image ett namn. Vi använder build-kommandot och lägger på flaggan `-t`:
+Det var det...Om vi skulle bygga den här imagen kommer den att utgå ifrån imagen *ubuntu:24.04*, tack vare nyckelordet `FROM`, och skapa en ny image åt oss. Vi vill ju gärna ge vår egna image ett namn. Vi använder build-kommandot och lägger på flaggan `-t`:
 
 
 ```bash

@@ -13,7 +13,7 @@ Det enda vi behöver är containerns id.
 ```bash
 $ docker ps
 CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS                     NAMES
-5490e0ab02da   ubuntu:22.04            "bash"                   9 seconds ago   Up 8 seconds                             nostalgic_mccarthy
+5490e0ab02da   ubuntu:24.04            "bash"                   9 seconds ago   Up 8 seconds                             nostalgic_mccarthy
 ```
 
 

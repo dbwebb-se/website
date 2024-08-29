@@ -9,7 +9,7 @@ revision:
 Vi behöver webbservern Apache. Så här installerar du Apache och testar att det fungerar. Vi börjar med att skapa en Dockerfile med följande innehåll:
 
 ```text
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update && apt install -y apache2
 

@@ -10,7 +10,7 @@ Installera program via Dockerfile
 Vi vet att vi kan exekvera kommandon via instruktionen `RUN`. Vi använder det för att köra ytterligare kommandon i containern. Låt säga att vi vill installera *nano*, *cowsay*, *fortune* och *bsdmainutils* som används för `cal` kommandot.
 
 ```
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt update && \
     apt -y install nano \

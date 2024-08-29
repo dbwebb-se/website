@@ -28,7 +28,7 @@ Min tanke är att vi i den mappen ska ha script som vi kan arbeta med i vår egn
 Vi lägger till egen flagga till vårt run-kommando: `-v`:
 
 ```console
-$ docker run -it -v $(pwd)/share:/inside ubuntu:22.04
+$ docker run -it -v $(pwd)/share:/inside ubuntu:24.04
 ```
 
 Flaggan -v talar om att vi vill använda volymer. Det sätts i formatet `källa:mål`.  

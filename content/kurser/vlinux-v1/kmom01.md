@@ -79,7 +79,7 @@ _(ca: 6-10 studietimmar)_
 
 ### Uppgifter {#uppgifter}
 
-Dessa uppgifter skall utföras och redovisas. När du ska exekvera delar i en container är det: `docker run -it ubuntu:22.04` som gäller.
+Dessa uppgifter skall utföras och redovisas. När du ska exekvera delar i en container är det: `docker run -it ubuntu:24.04` som gäller.
 
 1. Gör uppgiften "[Kommandon 1](uppgift/kommandon-1)" för att komma igång med containern, terminalen och linuxmiljön. Spara filerna i mappen `kmom01/commands`.
 

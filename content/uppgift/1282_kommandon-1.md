@@ -25,7 +25,7 @@ Varje krav ska resultera i en rad i filen. Du ska lägga till det kommando du an
 
 Ett tips är att kommandot `cal` blir tillgängligt om man installerar `bsdmainutils`: `$ apt install bsdmainutils`.
 
-[INFO]Du ska utföra alla kommandon inifrån containern[/INFO]
+[INFO]Du ska utföra alla kommandon inifrån containern. Spara kommandona lokalt i filen "info.bash".[/INFO]
 
 ## Krav {#krav}
 

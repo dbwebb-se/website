@@ -30,7 +30,7 @@ Använd [guiden för Docker](guide/docker). Du bör klara dig med informationen 
 
 ## Krav {#krav}
 
-1. Skapa en Dockerfile `script/Dockerfile` som använder sig av imagen `ubuntu:22.04`.
+1. Skapa en Dockerfile `script/Dockerfile` som använder sig av imagen `ubuntu:24.04`.
 
 1. Kopiera in ditt egna `script/commands.bash` in i containern, till arbetsmappen `kmom02`.
 

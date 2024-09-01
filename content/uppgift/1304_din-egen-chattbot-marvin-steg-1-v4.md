@@ -119,7 +119,7 @@ input: 1
     ```
 
 
-1. Menyval **7**: Gör så att Marvin kan validera personnummer med hjälp av Luhnalgoritmen. Algoritmen funkar på så sätt att varannan siffra multipliceras med 2 och 1, med start på första siffran i personnumret. Om något tal vid multiplikationen blir större än 9 ersätts det talet med dess siffersumma. Därefter summeras alla tal och om summan är jämt delbar med 10 så är kontrollsiffran korrekt. Om personnumret validerar ska Marvin skriva ut `Valid` annars `Not valid`. Koden ska klara av personnummer med och utan `-` innan de fyra sista siffrorna och om för får eller för många siffror skickas med ska det bli "Not Valid".
+1. Menyval **7**: Gör så att Marvin kan validera personnummer med hjälp av Luhnalgoritmen. Algoritmen funkar på så sätt att varannan siffra multipliceras med 2 och 1, med start på första siffran i personnumret. Om något tal vid multiplikationen blir större än 9 ersätts det talet med dess siffersumma. Därefter summeras alla tal och om summan är jämt delbar med 10 så är kontrollsiffran korrekt. Om personnumret validerar ska Marvin skriva ut `Valid` annars `Not valid`. Koden ska klara av personnummer med och utan `-` innan de fyra sista siffrorna och om för får eller för många siffror skickas med ska det bli `Not valid`.
 
     ```
    8  1 1 2 1 8  9  8 7  6

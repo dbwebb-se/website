@@ -839,10 +839,12 @@ Kom nu ihåg att alltid dubbelkolla att din sida validerar. Hamnar du i trubbel 
 Om HTML-entiteter {#htmlentities}
 --------------------------------------
 
+<!--
 Varför används `&amp;` istället för tecknet `&` när vi länkar till Unicorn ovan?
 Du kan testa att ändra din kod och enbart skriva `&`. Validera den sedan i Unicorn. Du får då ett felmeddelande som säger:
 
 > **`&` did not start a character reference. (`&` probably should have been escaped as `&amp;`.)**
+--->
 
 Tecknet `&` har en speciell betydelse i HTML och därför kan det ibland behöva ersättas med sin motsvarande HTML entitet `&amp;`. Annars validerar inte HTML-koden, den är inte helt korrekt.
 

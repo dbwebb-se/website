@@ -234,13 +234,13 @@ Vårt program del 1 {#program-del1}
 
 Programmet vi ska skapa har ett syfte: att skriva ut en hälsning. Vilken kod behövs för att uppnå det? Vi behöver en hälsning, alltså ett värde, som måste vara en sträng eftersom hälsningen ska innehålla bokstäver. Sen behöver vi möjligheten att skriva ut värdet i terminalen.
 
-Gå till kurskatalogen i din terminal och skapa en ny fil som heter "greeting.py". Öppna sedan filen med atom. Vi använder kommandot `touch` för att skapa filen.
+Gå till kurskatalogen i din terminal och skapa en ny fil som heter "greeting.py". Öppna sedan filen med VSCode. Vi använder kommandot `touch` för att skapa filen.
 
 ```bash
 # Gå till ditt kursrepo python
 $ cd me/kmom01/hello
 $ touch greeting.py
-$ atom .
+$ code .
 ```
 
 Skriv följande kod i filen.

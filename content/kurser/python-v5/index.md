@@ -5,6 +5,7 @@ author:
     - efo
     - aar
 revision:
+    "2024-09-04": (M, aar) Tagit bort texter om redovisningstext.
     "2023-08-18": (L, aar) Uppdaterade mål så det stämmer med nya kursplanen.
     "2023-06-15": (K, aar) Skapade v5 för byta redovisningstext till quiz.
     "2022-05-13": (J, mos) Not om ny kurskod.
@@ -104,7 +105,7 @@ Efter genomförd kurs skall studenten:
 Kursmoment {#kursmoment}
 ------------------------
 
-Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h studerande i form av programmering, undersökning, läsande, övningar, uppgifter, redovisning och eftertanke. Alla kursmoment skall redovisas och du samlar alla redovisningar i din me-sida.
+Kursen är uppdelad i kursmoment där varje kursmoment uppskattas till 20h studerande i form av programmering, undersökning, läsande, övningar och uppgifter.
 
 
 
@@ -158,7 +159,7 @@ Du kommer även lära dig hur man kan läsa information från en fil samt att la
 
 ###Kmom07/10: Individuell examination {#kmom10}
 
-Avslutningsvis gör du en individuell examination enligt en specifikation. Den individuella examinationen är det sista du gör och tillsammans med alla redovisningar som finns på din me-sida så används detta som underlag för att examinera dig från kursen.
+Avslutningsvis gör du en individuell examination enligt en specifikation. Den individuella examinationen är det sista du gör. Tillsammans med alla resultatet från de quiz du gjort används detta som underlag för att examinera dig från kursen.
 
 [Instruktion till kursmoment 10](kurser/python-v5/kmom10).
 

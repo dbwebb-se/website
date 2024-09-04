@@ -90,6 +90,7 @@ Först ställer vi oss i rooten av kursrepot. Sedan kopierar vi filen `example/h
 
 ```bash
 # Gå till ditt kursrepo python
+$ cd ../../
 $ cp -i example/hello/hello.py me/kmom01/plane
 ```
 

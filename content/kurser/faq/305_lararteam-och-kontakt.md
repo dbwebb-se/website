@@ -28,6 +28,7 @@ Lärarteamet består av:
 | ![Emil](image/lararteam/emil.jpg?w=100&h=100&cf)                        | Emil&nbsp;Folino        | efobth | efo@bth.se, [BTH](https://www.bth.se/?s=efo&searchtype=employee), [GitHub](https://github.com/emilfolino), [LinkedIn](https://se.linkedin.com/in/emil-folino-23a7002a)                                                                    |
 | ![Marie](image/lararteam/marie.jpg?w=100&h=100&cf)                      | Marie&nbsp;Grahn        | Marie  | grm@bth.se, [BTH](https://www.bth.se/?s=grm&searchtype=employee), [GitHub](https://github.com/epkmagr), [LinkedIn](https://se.linkedin.com/in/marie-grahn-32548811a/)                                                                     |
 | ![Bo](image/lararteam/bo.jpg?w=100&h=100&cf)                      | Bo&nbsp;Peterson        |   | bpe@bth.se, [BTH](https://www.bth.se/staff/bo-peterson-bpe/) |
+| ![Betty](image/lararteam/betty.jpg?w=100&h=100&cf) | Betty&nbsp;Bergqvist        | bbe    | bbe@bth.se, [BTH](https://www.bth.se/staff/betty-bergqist-bbe/), [GitHub](https://github.com/bbebth)                                                  |
 
 <!--
 | ![Niklas](https://s.gravatar.com/avatar/433d481f73525926b51c863a41f69d59?s=100) | Niklas&nbsp;Andersson | Aurora | nik@bth.se, [BTH](https://www.bth.se/?s=nik&searchtype=employee), [GitHub](https://github.com/AuroraBTH), [Linkedin](https://www.linkedin.com/in/niklas-andersson-37a29a153/) |

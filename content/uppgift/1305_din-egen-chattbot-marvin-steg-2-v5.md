@@ -68,7 +68,7 @@ elif choice == "1":
 
     Importera `marvin1.py` i `main.py` och strukturera om koden för de gamla menyvalen så att de läggs i en varsin funktion, med **nedanstående namn**. Dessa funktionerna har i `dbwebb test` utöver sitt menyval som tag också "marvin1" som tag.
     * Menyval 1 - `greet`
-    * Menyval 2 - `celcius_to_fahrenheit`
+    * Menyval 2 - `celsius_to_fahrenheit`
     * Menyval 3 - `points_to_grade`
     * Menyval 4 - `sum_and_average`
     * Menyval 5 - `hyphen_string`

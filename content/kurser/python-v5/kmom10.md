@@ -9,6 +9,11 @@ revision:
 Kmom10: Projekt och examination
 ==================================
 
+[WARNING]
+Kursmomentet är underutveckling.
+
+Påbörja inte förens denna gula rutan är borta.
+[/WARNING]
 
 [INFO]
 Innan du startar med projektet, kör `dbwebb update` och `dbwebb init`

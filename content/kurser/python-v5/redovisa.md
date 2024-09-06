@@ -5,7 +5,7 @@ revision:
     "2023-06-15": (B, aar) Bytt från redovisningstext till quiz.
     "2021-06-18": (A, aar) Första utgåva för automaträttning.
 ...
-Lämna in och redovisa
+Lämna in
 ==================================
 
 Som ett sista steg i varje kursmoment skall ni lämna in veckans uppgifter. Gör så här.
@@ -28,7 +28,7 @@ Kör testerna med kommandot `dbwebb test` på kursmomentet du lämnar in. Du kan
 dbwebb test <kmom> # ersätt med ditt kmom, t.ex. kmom01. dbwebb test kmom01
 ```
 
-Det kommandot kommer validera din kod, rätta labben och uppgiften. Om allt blir grönt är du klar och redo att ladda upp koden. Om någon del är röd behöver du göra om den delen, köra om testerna och kolla att det är grönt. När det är grönt är du redo att skriva redovisningstext.
+Det kommandot kommer validera din kod, rätta labben och uppgiften. Om allt blir grönt är du klar och redo att ladda upp koden. Om någon del är röd behöver du göra om den delen, köra om testerna och kolla att det är grönt. När det är grönt är du redo att lämna in.
 
 
 
@@ -42,16 +42,14 @@ Ladda upp din kurskatalog med alla dina övningar genom att göra följande komm
 dbwebb publish me
 ```
 
-Den **länken** som visas i utskriften av kommandot, är länken till din **me-sida**. Där kan du se ditt publicerade resultat.
-
-Rätta eventuella fel som dyker upp. Det som du laddar upp skall vara felfritt.
+Den **länken** som visas i utskriften av kommandot, är länken till din kod på studentservern.
 
 
 
 Lämna in på Canvas {#canvas}
 ---------------------------------------
 
-Gå till kursens sida på [Canvas](https://www.bth.se/canvas/) och utför det quiz med samma namn som kursmomentet du ska lämna in. Lämna sen in uppgiften, i textrutan skicka med länk till din me-sida, den som skrivs ut när du gör `dbwebb publish`. Nu är det bara att vänta på att det rättas.
+Gå till kursens sida på [Canvas](https://www.bth.se/canvas/) och utför det quiz med samma namn som kursmomentet du ska lämna in. Lämna sen in uppgiften, i textrutan skicka med din länk till studentservern, den som skrivs ut när du gör `dbwebb publish`. Nu är det bara att vänta på att det rättas.
 
 
 

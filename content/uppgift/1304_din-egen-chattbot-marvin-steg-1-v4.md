@@ -54,7 +54,7 @@ Krav {#krav}
 Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval **1 och 2** kan man då använda `--tags=1,2`, för Menyval **a1** `--tags=a1` osv.
 [/INFO]
 
-1. Sök på bilder på [Asciiworld](http://www.asciiworld.com/) (eller motsvarande) och hitta din egen bild på "Marvin". Lägg in din bild i programmet och ersätt den med bilden på Marvin.
+1. Sök på bilder på [Asciiart](https://www.asciiart.eu/) (eller motsvarande) och hitta din egen bild på "Marvin". Lägg in din bild i programmet och ersätt den med bilden på Marvin.
 
 
 1. Organisera din kod i `if`-satsen inuti `while`-loopen. Samla all kod i filen `marvin.py`. Se till att dina menyval har samma siffra som det står i kraven.

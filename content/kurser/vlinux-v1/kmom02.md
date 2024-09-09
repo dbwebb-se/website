@@ -51,7 +51,7 @@ Genomför följande övningar.
 
 Dessa uppgifter skall utföras och redovisas.
 
-1. Gör uppgiften [Lab 1](uppgift/linux-lab-1-introduktion-till-bash) för att träna upp grundläggande färdigheter i bash och hantering av filsystem. Här jobbar du i mappen `kmom02/bash1`.
+1. Gör uppgiften [Lab 1](uppgift/linux-lab-1-introduktion-till-bash) för att träna upp grundläggande färdigheter i bash och hantering av filsystem. Här jobbar du i mappen `kmom02/bash1`. Testa din labb i containern, antingen kopiera in den eller som en volym.
 
 1. Gör uppgiften "[Bash-script med argument options](uppgift/ett-bash-script-med-options-command-arguments)". Spara arbetet i mappen `kmom02/script`.
 

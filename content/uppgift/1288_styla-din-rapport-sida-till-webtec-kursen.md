@@ -76,6 +76,9 @@ Utför följande krav.
 * Mer jobb? 
 * Ny sida galleri med sex-12 olika bilder i en flexbox med tre kolumner och två rader.
 * Tre kolumners layout vore att bygga på det som finns i övningen?
+
+* Responsivitet?
+
 -->
 
 

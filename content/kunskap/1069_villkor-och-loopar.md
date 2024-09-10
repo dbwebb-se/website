@@ -351,4 +351,4 @@ Vi har i denna övning tittat på konstruktioner i python som låter oss styra f
 
 `if`, `for` och `while` konstruktioner finns i de flesta programmeringsspråken. Dessa konstruktioner används för att styra flödet av data och utgör stora delar av de program vi kommer skriva i resten av kursen och vidare fram i programmet.
 
-Alla kodexempel från denna övningen finns i kursrepot för [python-kursen](https://github.com/dbwebb-se/python/tree/master/example/flow) och här på [dbwebb](https://dbwebb.se/repo/python/example/flow).
+Alla kodexempel från denna övningen finns i kursrepot för [python-kursen](https://github.com/dbwebb-se/python/tree/master/example/flow).

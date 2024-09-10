@@ -155,4 +155,6 @@ För er som vill öva mer, ni kan använda er av sidorna som finns under [koda k
 Lämna in  {#resultat}
 -----------------------------------------------
 
+För att kunna lämna in på Canvas måste ni får alla rätt på quizzet `Fusk policy. Måste få alla rätt, oändlig med försök`. Kolla sen länken nedanför för att se hur ni lämnar in era uppgifter.
+
 Läs [Lämna in och redovisa uppgift](./../redovisa) för att ta reda på hur ni lämna in era uppgifter när ni är klara.

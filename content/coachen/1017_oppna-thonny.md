@@ -2,6 +2,7 @@
 author: aar, grm
 category: python
 revision:
+    "2024-09-11": "(B, grm) La till Mac."
     "2024-09-10": "(A, aar) Första versionen."
 ...
 
@@ -36,7 +37,7 @@ Nu är Thonny tillgängligt från terminalen och vi kan gå vidare till [öppna 
 
 ### Mac {#mac}
 
-Starta Thonny och högerklicka på ikonen för att kolla om Thonny ligger under **Applications** där de flest program hamnar på Mac.
+Starta Thonny och högerklicka på ikonen för att kolla om Thonny ligger under **Applications** där de flesta program hamnar på Mac.
 
 [FIGURE src=image/kunskap/thonny/rightClickOnThonnyIconMac.png caption="Hitta Thonny i Finder på Mac."]
 

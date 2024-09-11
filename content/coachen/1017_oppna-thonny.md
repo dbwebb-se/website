@@ -1,13 +1,14 @@
 ---
-author: aar
+author: aar, grm
 category: python
 revision:
     "2024-09-10": "(A, aar) Första versionen."
 ...
+
 Hur man öppnar Thonny i en specifik mapp från terminalen
 ==========================================
 
-När vi startar Thonny utgår den alltid från vår användrmapp. Men oftast vill vi starta Thonny i en specifik mapp, till exempel där vi har vår kod. Det går inte att göra exakt som med t.ex. VSCode men nästan. Här ska vi lära oss hur vi kan göra det.
+När vi startar Thonny utgår den alltid från vår användarmapp. Men oftast vill vi starta Thonny i en specifik mapp, till exempel där vi har vår kod. Det går inte att göra exakt som med t.ex. VSCode men nästan. Här ska vi lära oss hur vi kan göra det.
 
 ## Förberedelser
 
@@ -35,13 +36,27 @@ Nu är Thonny tillgängligt från terminalen och vi kan gå vidare till [öppna 
 
 ### Mac {#mac}
 
-*Kommer sernare*.
+Starta Thonny och högerklicka på ikonen för att kolla om Thonny ligger under **Applications** där de flest program hamnar på Mac.
+
+[FIGURE src=image/kunskap/thonny/rightClickOnThonnyIconMac.png caption="Hitta Thonny i Finder på Mac."]
+
+Klicka på "Options" och sen "Show in Finder" och då startas Finder.
+
+[FIGURE src=image/kunskap/thonny/thonnyInApplicationsMac.png caption="Verifiera att Thonny är installerat under Applications på Mac."]
+
+Öppna en terminal, lägg till raden `alias thonny='/Applications/Thonny.app/Contents/MacOS/thonny'` och spara filen.
+
+[FIGURE src=image/kunskap/thonny/thonnyAliasMac.png caption="Gör ett alias till Thonny appen på Mac."]
+
+Kör `source ~/.zshrc`.
+
+Nu är Thonny tillgängligt från terminalen och vi kan gå vidare till [öppna Thonny från terminalen](#pppna-fran-terminalen).
 
 ## Öppna Thonny från terminalen {#pppna-fran-terminalen}
 
 För att öppna Thonny i en specifik mapp behöver vi starta Thonny med en fil som ligger i den mappen. Öppna terminalen och skriv `thonny.exe <sökvägen till FILEN>.py`. Det går inte att öppna en mapp utan man öppnar **en fil**.
 
-[FIGURE src=image/kunskap/thonny/6_oppna.png caption="Öppna Thonny från temrinalen."]
+[FIGURE src=image/kunskap/thonny/6_oppna.png caption="Öppna Thonny från terminalen."]
 
 När Thonny öppnas kommer filen öppnas men mappen som är öppen är fortfarande användarmappen som vanligt.
 

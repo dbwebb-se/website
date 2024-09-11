@@ -23,7 +23,7 @@ Resurser för att komplettera, bredda eller fördjupa föreläsningen.
 
 W3C
 
-* [CSS homepage](https://www.w3.org/Style/CSS/Overview.en.htm)
+* [CSS homepage](https://www.w3.org/Style/CSS/Overview.en.html)
 * [CSS current snapshot specification](https://www.w3.org/TR/CSS/)
 * [CSS 2.1 specification](https://www.w3.org/TR/CSS2/) with the basics of CSS.
 * [CSS validator](http://www.css-validator.org/)

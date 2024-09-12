@@ -71,13 +71,13 @@ Dessa uppgifter skall utföras och redovisas.
 ```console
 $ pwd
 /home/klw/dbwebb-kurser/vlinux/me/kmom03
-$ bash dockerhub.bash "mysite1"
+$ bash dockerhub.bash "vhosts/mysite1"
 ```
 
 ```console
 $ pwd
 /home/klw/dbwebb-kurser/vlinux/me/kmom03/vhosts
-$ bash dockerhub.bash "vhosts/mysite1"
+$ bash dockerhub.bash "mysite1"
 ```
 Man ska med andra ord skicka in sökvägen som argument. Scriptet ska enbart fånga upp och använda det.
 

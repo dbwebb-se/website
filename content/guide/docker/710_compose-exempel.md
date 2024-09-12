@@ -47,7 +47,6 @@ Nu kan vi se innehållet i index.html i webbläsaren via `localhost:8080`.
 Vi skapar nu en fil, `docker-compose.yml` och försöker mappa den mot run-kommandot ovan:
 
 ```
-version: "3"
 services:
     server:
         image: username/imagename:tag
@@ -65,9 +64,9 @@ Om vi hade behövt konfigurera den image vi utgår ifrån kan vi välja att bygg
 Nåväl, istället för att behöva skriva långa run-kommandon kan vi nu starta containern med:
 
 ```
-$ docker-compose up
+$ docker compose up
 ```
 
 Vill vi köra servern i bakgrunden lägger vi på flaggan `-d`.
 
-Vi går vidare och kikar på hur docker-compose fungerar med nätverk.
+Vi går vidare och kikar på hur docker compose fungerar med nätverk.

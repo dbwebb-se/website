@@ -6,7 +6,7 @@ revision:
 Compose och nätverk via ip-adress
 =======================
 
-Vi fortsätter med föregående exempel. Vi vill nu ha en container till som kan köra skript och använda curl för att nå servern via dess ip-adress. Vi kan själva bestämma ett subnät och tilldela ip-adresser. Det skapas automatiskt ett nätverk melan de services som vi start samtidigt med kommandot `$ docker-compose up`, men för att vi ska se hur det går till, specificerar vi det själva. Vi börjar från slutet med filen docker-compose.yml. Fil strukturen ser nu ut så här:
+Vi fortsätter med föregående exempel. Vi vill nu ha en container till som kan köra skript och använda curl för att nå servern via dess ip-adress. Vi kan själva bestämma ett subnät och tilldela ip-adresser. Det skapas automatiskt ett nätverk melan de services som vi start samtidigt med kommandot `$ docker compose up`, men för att vi ska se hur det går till, specificerar vi det själva. Vi börjar från slutet med filen docker-compose.yml. Fil strukturen ser nu ut så här:
 
 ```
 .
@@ -32,7 +32,6 @@ Vi delar upp filerna så servern och klienten bor i varsin mapp med tillhörande
 Den färdiga compose-filen ser ut så här:
 
 ```
-version: "3"
 networks:
     dbwebb:
         ipam:
@@ -107,16 +106,16 @@ CMD ["bash", "myscript.bash"]
 
 När vi har byggt våra images kan vi hoppa till docker-compose.yml. Det finns några tillhörande kommandon:
 
-* `$ docker-compose up` startar alla services som är definierade.
-* `$ docker-compose up <service>` startar upp den angivna services.
-* `$ docker-compose down` stänger ner alla services. Först stängs containrarna ned, sedan tas de bort och till sist tas nätverket bort. Mycket stiligt.
-* `$ docker-compose up -d <service>` startar services i bakgrunden.
-* `$ docker-compose up -d` startar alla services i bakgrunden.
+* `$ docker compose up` startar alla services som är definierade.
+* `$ docker compose up <service>` startar upp den angivna services.
+* `$ docker compose down` stänger ner alla services. Först stängs containrarna ned, sedan tas de bort och till sist tas nätverket bort. Mycket stiligt.
+* `$ docker compose up -d <service>` startar services i bakgrunden.
+* `$ docker compose up -d` startar alla services i bakgrunden.
 
 Vi gör bäst i att köra servern i bakgrunden och sedan starta upp klienten:
 
 ```
-$ docker-compose up -d server
+$ docker compose up -d server
 Creating network "compose_dbwebb" with the default driver
 Creating simple-server ... done
 ```
@@ -126,7 +125,7 @@ Vi är åter i vår terminal och kan starta klienten. Servern ligger och snurrar
 Nu kan vi sparka igång klienten:
 
 ```
-$ docker-compose up client
+$ docker compose up client
 Recreating simple-client ... done
 Attaching to simple-client
 simple-client |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -139,7 +138,7 @@ simple-client |     <meta charset="utf-8">
 simple-client |     <title>Started with docker-compose</title>
 simple-client | </head>
 simple-client | <body>
-simple-client |     <h1>Hello! I am started with docker-compose up</h1>
+simple-client |     <h1>Hello! I am started with docker compose up</h1>
 simple-client | </body>
 simple-client | </html>
 simple-client exited with code 0
@@ -148,7 +147,7 @@ simple-client exited with code 0
 Allt fungerar och när vi stänger ned, görs det snyggt och prydligt:
 
 ```
-$ docker-compose down
+$ docker compose down
 Stopping simple-server ... done
 Removing simple-client ... done
 Removing simple-server ... done

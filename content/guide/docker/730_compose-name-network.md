@@ -45,10 +45,10 @@ Här talar vi om att servicen "server" ska vara nåbar via namnet "myserver". Nu
 Nu kan vi starta som vanligt med:
 
 ```
-$ docker-compose up -d server
+$ docker compose up -d server
 ...
-$ docker-compose up client
+$ docker compose up client
 ...
-$ docker-compose down
+$ docker compose down
 ...
 ```

@@ -45,7 +45,7 @@ Klicka på "Options" och sen "Show in Finder" och då startas Finder.
 
 [FIGURE src=image/kunskap/thonny/thonnyInApplicationsMac.png caption="Verifiera att Thonny är installerat under Applications på Mac."]
 
-Öppna en terminal, lägg till raden `alias thonny='/Applications/Thonny.app/Contents/MacOS/thonny'` och spara filen.
+Öppna en terminal och skriv `code .zshrc` (i hemmakatalogen). Lägg till raden `alias thonny='/Applications/Thonny.app/Contents/MacOS/thonny'` i filen ".zshrc" och spara filen.
 
 [FIGURE src=image/kunskap/thonny/thonnyAliasMac.png caption="Gör ett alias till Thonny appen på Mac."]
 

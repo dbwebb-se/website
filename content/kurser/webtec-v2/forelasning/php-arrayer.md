@@ -13,7 +13,7 @@ Videon är 33 minuter lång.
 
 [YOUTUBE src="XjGu01licX4" width=700 caption="PHP - Array."]
 
-Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/docs/lecture/L12-php-array/slide.html).
+Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/lecture/L12-php-array/slide.html).
 
 Exempelprogram finns i kursrepot under [`example/php/array`](https://github.com/dbwebb-se/webtec/tree/main/example/php/array).
 

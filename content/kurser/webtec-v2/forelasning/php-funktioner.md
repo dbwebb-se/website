@@ -13,7 +13,7 @@ Videon är 32 minuter lång.
 
 [YOUTUBE src="DipnZ7lD2d8" width=700 caption="PHP - Funktioner"]
 
-Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/docs/lecture/L13-php-function/slide.html).
+Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/lecture/L13-php-function/slide.html).
 
 Exempelprogram finns i kursrepot under [`example/php/function`](https://github.com/dbwebb-se/webtec/tree/main/example/php/function).
 

@@ -12,7 +12,7 @@ Videon är 59 minuter lång.
 
 [YOUTUBE src="Rzpl9mrJ05w" width=700 caption="CSS (med Mikael)."]
 
-Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/lecture/L03-css/slide.html).
+Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/docs/lecture/L03-css/slide.html).
 
 
 

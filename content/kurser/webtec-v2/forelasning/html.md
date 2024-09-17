@@ -12,7 +12,7 @@ Videon är 1:08h lång.
 
 [YOUTUBE src="8QMveCqpegw" width=700 caption="HTML (med Mikael)."]
 
-Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/lecture/L02-html/slide.html).
+Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/docs/lecture/L02-html/slide.html).
 
 
 

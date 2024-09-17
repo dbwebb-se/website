@@ -12,7 +12,7 @@ Videon är 46 minuter lång.
 
 [YOUTUBE src="FcoriRzjYw4" width=700 caption="Responsiv webbdesign."]
 
-Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/lecture/L06-responsive-web-design/slide.html).
+Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/docs/lecture/L06-responsive-web-design/slide.html).
 
 
 

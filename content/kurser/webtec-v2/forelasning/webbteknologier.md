@@ -13,7 +13,7 @@ Videon är 44 minuter lång.
 
 [YOUTUBE src="FC_hVXmu7QM" width=700 caption="Webbteknologier - introduktion (med Mikael)."]
 
-Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/lecture/L01-web-technologies/slide.html).
+Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/docs/lecture/L01-web-technologies/slide.html).
 
 
 

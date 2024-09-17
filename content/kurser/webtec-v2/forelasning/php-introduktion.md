@@ -13,7 +13,7 @@ Videon är 1:13h lång.
 
 [YOUTUBE src="XtlpCMNySVs" width=700 caption="PHP en introduktion."]
 
-Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/lecture/L11-php-introduction/slide.html).
+Du kan själv bläddra igenom [de HTML slides som används i presentationen](https://dbwebb-se.github.io/webtec/docs/lecture/L11-php-introduction/slide.html).
 
 
 

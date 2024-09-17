@@ -230,63 +230,6 @@ Om du undrar hur man kan lösa den eller har fastnat kan du kolla på videon dä
 
 [YOUTUBE src=huygMa6EbU0 caption="Andreas löser problemställningen."]
 
-#### For-loop med enumerate {#for-enum}
-
-Vi kan med `for`-loopen iterera över en sträng för att få ett tecken i taget.
-
-```python
-result = ""
-string = "Python"
-print("The letters in " + string + " are: ")
-for character in string:
-    result += character + ","    
-print(result)
-
-#ger utskriften P, y, t, h, o, n,
-```
-Ibland vill vi, i samband med att vi itererar över ex-vis en sträng, även hålla ordning på vilken iteration i ordningen det är. För att lösa detta finns funktionen `enumerate()`. Denna funktion lägger till en räknare och ger som resultatet ett sk. uppräkningsbart objekt (eng enumerated object), dvs ett objekt som innehåller två delar ett heltal (räknaren) och elementet (i en sträng blir det ett tecken).
-
-```python
-...
-for counter, element in enumerate(the_string)
-    pass
-
-# counter kommer att ges värdet 0 och räknas upp med 1 för varje iteration
-# element kommer att ges ett tecken i taget med start på det första (som finns på position/index 0)
-```
-
-Fundera över vilken utskrift vi får om vi exekverar
-
-```python
-the_string = "abc"
-result = ""
-for counter, element in enumerate(the_string):
-    result += str(counter) + "," + element + "\n"
-print(result)
-```
-Svaret är:   
-0,a  
-1,b  
-2,c  
-
-Anta att vi har behov av att bestämma och presentera de positioner/index där det finns mellanslag dvs ' ', i en sträng. Då kan vi t.ex lösa detta genom att använda `enumerate()`-funktionen i samband med `for`-loopen.
-
-
-```python
-result = ""
-string = "This is an example of using enumerate"
-for index, character in enumerate(string):
-    if character == ' ':
-        result += str(index) + " "
-print(result)
-
-#ger utskriften 4 7 10 18 21 27 
-```
-
-Lös uppgiften att givet ett inmatat lösenord bestämma vilka positioner/index som det finns något av specialtecknen @, £, $, #, %, &, ?, !, *. Du ska skapa en sträng som innehåller varje special-tecken tillsammans med dess index.   
-Ex-vis om lösenordet är "&df3#!bj6!" ska den resulterande strängen vara "&:0 #:4 !:5 !:9 "
-
-[YOUTUBE src=lyNRsqTACgI width=700 caption="Betty visar hur man hittar specialtecken i lösenord"]
 
 
 While-loop {#while}

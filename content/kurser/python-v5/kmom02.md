@@ -98,7 +98,10 @@ Titta på följande:
 
 1. Jobba igenom artikeln/övningen "[Villkor och loopar](kunskap/villkor-och-loopar)" för att öva in hur vi kan styra flödet i våra program. De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom02/flow`.
 
+1. Följ och arbeta igenom "[FizzBuzz med pseudokod](kunskap/fizzbuzz-med-pseudokod)" för att se hur man kan bryta ner ett problem i delproblem och formulera lösningar i pseudokod som slutligen översätts till Python.
+  
 1. Läs igenom artikeln/övningen "[Felhantering i Python](kunskap/felhantering_python)". Vänta med att läsa denna artikeln till andra veckan i kmom02 eller när du börjar bli klar med Marvin uppgiften. I den lär du dig att hantera fel som uppstår under exekvering och förhindra ditt program från att krascha.
+
 
 
 

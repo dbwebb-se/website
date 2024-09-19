@@ -147,7 +147,7 @@ elif choice == "1":
     input: "910813"     output: "910813-2201".
     ```
 
- Eftersom tre siffror slumpas fram kommer ni inte få samma sista som i exemplet. Men om ni använder det i menyval 7 ska det vara ett giltigt personnumer
+ Eftersom tre siffror slumpas fram kommer ni inte få samma sista som i exemplet. Men om ni använder det i menyval 7 ska det vara ett giltigt personnummer
 
 
 
@@ -226,7 +226,24 @@ För att inkludera dina extrauppgifter i testerna behöver du skicka med option 
     input: "rom"        output: "No match"
     ```
 
+* Menyval **b2** - `ssn extended`: Marvin ska kunna generera de 4 sista siffrorna i ett personnummer där tredje siffran i den avslutande delen av personnumret (NNXN) ska anpassas efter könet på personen. Siffran ska fortfarande slumpas men med tilläggskravet att om det är en kvinna ska den tredje siffra vara jämn och om det är en man ska den istället vara udda. Ändra parameterlistan till `create_ssn` så att det förutom födelsedatum (som är första parametern) även har en andra parameter för kön med default-argumentet `None`. Denna parameter har värdet `"M"` eller `"m"` om födelsedatumet tillhör en man och `"K"` eller `"k"` om det tillhör en kvinna. Observera att all inmatning sker i main.
 
+
+ Exempel:
+
+    ```python
+
+    input: "910813"
+    input: "M"     output: "910813-5531".
+
+    input: "661204"
+    input: "K"     output: "661204-9247".
+
+    ```
+
+ Eftersom tre siffror slumpas fram (med kravet på udda/jämnt beroende på kön för tredje siffran) kommer ni inte få samma sista som i exemplet. Men om ni använder det i menyval 7 ska det vara ett giltigt personnummer
+
+ 
 Tips från coachen {#tips}
 -----------------------
 

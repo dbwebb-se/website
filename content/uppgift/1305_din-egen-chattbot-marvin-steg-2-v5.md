@@ -226,7 +226,8 @@ För att inkludera dina extrauppgifter i testerna behöver du skicka med option 
     input: "rom"        output: "No match"
     ```
 
-* Menyval **b2** - `ssn extended`: Marvin ska kunna generera de 4 sista siffrorna i ett personnummer där tredje siffran i den avslutande delen av personnumret (NNXN) ska anpassas efter könet på personen. Siffran ska fortfarande slumpas men med tilläggskravet att om det är en kvinna ska den tredje siffra vara jämn och om det är en man ska den istället vara udda. Ändra parameterlistan till `create_ssn` så att det förutom födelsedatum (som är första parametern) även har en andra parameter för kön med default-argumentet `None`. Denna parameter har värdet `"M"` eller `"m"` om födelsedatumet tillhör en man och `"K"` eller `"k"` om det tillhör en kvinna. Observera att all inmatning sker i main.
+* Menyval **b2** - `ssn extended`: I Sverige finns det två juridiska kön som tilldelas vid födsel. Det påverkar den näst sista siffran i ens personnummer. Marvin ska kunna generera de 4 sista siffrorna i ett personnummer där tredje siffran i den avslutande delen av personnumret (NNXN) ska anpassas efter könet på personen. Siffran ska fortfarande slumpas men med tilläggskravet att om det är en kvinna ska den tredje siffra vara jämn och om det är en man ska den istället vara udda.  
+Ändra parameterlistan till `create_ssn` så att det förutom födelsedatum (som är första parametern) även har en andra parameter för kön med default-argumentet `None`. Denna parameter har värdet `"M"` eller `"m"` om födelsedatumet tillhör en man och `"K"` eller `"k"` om det tillhör en kvinna. Observera att all inmatning sker i main.
 
 
  Exempel:

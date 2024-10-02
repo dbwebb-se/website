@@ -66,9 +66,9 @@ cd kmom04/marvin3
 6. Skapa funktionen `swap` som skall ta emot tre argument, den första är ryggsäcken, den andra och tredje är själva sakerna som skall byta plats. Funktionen skall returnera den uppdaterade ryggsäcken. I `main.py` skall du lägga till stöd för kommandot **"inv swap"** enligt tabellen nedan. Om allt gick bra skall du skriva ut ett passande meddelande som innehåller **sakerna som bytte plats**. Meddelandet skall skivas ut i funktionen och inte main programmet.
     - Tags: `swap`
 
-7. Felhantering. Lägg till felhantering för kommandona **"inv drop"**, **"inv swap"** och **"inv pick"** som ändrar utsikten och det värdet som skall returneras. Om en sak man vill kasta eller byta plats på inte finns i ryggsäcken skall du skriva ett passande felmeddelande som innehåller ordet **"Error"** och saken som inte existerar i ryggsäcken. **Tips** Använd dig av `try-except`. 
+7. Felhantering. Lägg till felhantering för kommandona **"inv drop"**, **"inv swap"** och **"inv pick"** som ändrar utskriften. Om en sak man vill kasta eller byta plats på inte finns i ryggsäcken skall du skriva ett passande felmeddelande som innehåller ordet **"Error"** **och** saken som inte existerar i ryggsäcken. **Tips** Använd dig av `try-except`. 
 
-    Om man anger ett för högt index i pick kommandot skall den inte plocka upp något. Du skall istället skriva ut ett passande meddelande som innehåller ordet "Error" och den givna positionen.
+    Om man anger ett för högt index i pick kommandot skall den inte plocka upp något. Du skall istället skriva ut ett passande meddelande som innehåller ordet "Error" **och** den givna positionen.
 
     När ett av dessa fel uppstår skall funktionerna returnera den originella ryggsäcken.
 

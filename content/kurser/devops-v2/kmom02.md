@@ -10,7 +10,11 @@ Kmom02: Configuration Management och Continuous Deployment
 Vi fortsätter med att kolla in fler sätt att automatisera flöden. Vi lär oss Ansible för Configuration Management (CM) och Infrastructure as Code (IaC). Tillsammans med Ansible och GitHub Actions ska vi också utveckla vår Continuous Delivery till Continuous Deployment (också CD).
 
 <!-- more -->
+[WARNIGN]
+Kursmomentet är under uppdatering!
 
+Påbörja inte förens denna gula ruta är borta!
+[/WARNIGN]
 [FIGURE src="https://www.gocd.org/assets/images/blog/continous-delivery-vs-deployment-infographic/continuous-delivery-vs-continuous-deployment-infographic-305dd620.png"]
 
 

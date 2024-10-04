@@ -13,7 +13,11 @@ Kmom07/10: Rapport
 Vi avslutar kursen med att ni individuellt skriver en rapport. Rapporten är det sista som du gör och tillsammans med alla redovisningar används detta som underlag för att examinera dig från kursen.
 
 <!-- more -->
+[WARNIGN]
+Kursmomentet är under uppdatering!
 
+Påbörja inte förens denna gula ruta är borta!
+[/WARNIGN]
 [YOUTUBE src="8gwCFcGxOYE" caption="Andreas introducerar rapporten."]
 
 

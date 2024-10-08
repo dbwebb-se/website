@@ -37,6 +37,8 @@ Du kan grunderna i Pythons stränghantering och du har gjort den [första delen]
 Krav {#krav}
 -----------------------
 [INFO]
+Ni får inte använda listor för att lösa uppgifterna.
+
 Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval **9** kan man då använda `--tags=9`, för Menyval **b1** `--tags=b1` osv.
 [/INFO]
 

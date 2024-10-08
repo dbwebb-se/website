@@ -51,6 +51,8 @@ Nu kan du börja jobba.
 Krav {#krav}
 -----------------------
 [INFO]
+Ni får inte använda listor eller skapa egna funktioner för att lösa uppgifterna.
+
 Taggarna för varje uppgift motsvarar själva menyvalet. För att testa Menyval **1 och 2** kan man då använda `--tags=1,2`, för Menyval **a1** `--tags=a1` osv.
 [/INFO]
 

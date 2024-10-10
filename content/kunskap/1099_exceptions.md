@@ -161,7 +161,7 @@ Notera att vi inte fångar felen i samma funktion som vi lyfter dem i.
 
 
 
-# It is easier to ask for forgiveness than permission {#ask-forgivness}
+## It is easier to ask for forgiveness than permission {#ask-forgivness}
 
 Vi går lite överkurs och kollar på ett sätt att skriva kod som kallas för "It is easier to ask for forgiveness than permission" (EAFP) kontra "Look before you leap" (LBYL) vilket de flesta är vana vid.
 

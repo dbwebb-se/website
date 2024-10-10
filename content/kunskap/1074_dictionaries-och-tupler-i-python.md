@@ -180,7 +180,7 @@ warehouse_deluxe = {
     "gul lök" : { "stock" : 42, "price" : 5 }
 }
 
-for key in sorted(warehouse_deluxe.keys()):
+for key in sorted(warehouse_deluxe):
     print(key, warehouse_deluxe[key]["price"])
 
 # skriver ut:
@@ -189,6 +189,8 @@ for key in sorted(warehouse_deluxe.keys()):
 # krossade tomater 10
 # köttfärs 50
 ```
+
+Notera att jag tog bort `.keys()` vid sorteringen. När en dictionary används i en iteration används automatisk nycklarna så här behöver vi inte skriva `.keys()` explicit.
 
 För de som är intresserade finns ett litet exempel i Pythons [dokumentation för dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries).
 
@@ -211,7 +213,7 @@ warehouse_deluxe["röd lök"]["stock"] = 7
 warehouse_deluxe["röd lök"]["price"] = 9
 warehouse_deluxe["röd lök"]["ids"] = (6314, "D04")
 
-for key in sorted(warehouse_deluxe.keys()):
+for key in sorted(warehouse_deluxe):
     print("{product} costs {price} and we have {stock} in stock. It has barcode {barcode} and location {location_id}.".format(
         product=key,
         price=warehouse_deluxe[key]["price"],

@@ -6,6 +6,7 @@ author:
     - nik
     - grm
 revision:
+    "2024-10-11": "(F, grm) Uppdatering HT24."
     "2022-08-09": "(E, grm) Komplettering HT22."
     "2021-11-10": "(D, grm) Komplettering HT21."
     "2021-10-01": "(C, lew) Uppdaterad inför LP2 HT21."
@@ -15,9 +16,9 @@ revision:
 Kmom01: Orientering
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT24. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Kursmomentet ger en översiktlig orientering i området informationssäkerhet vilket involverar dels en kategorisering av området samt genomgång av central terminologi. Fokus ligger på de säkerhetskoncept som har relevans inom webbutveckling. Dessutom involverar den översiktliga orienteringen att ge studenterna en förståelse för säkerhetskonceptens möjligheter och begränsningar inom området webbutveckling.
 
@@ -44,9 +45,8 @@ Föreläsningar  {#forelasningar}
 
 *(ca: 4 studietimmar)*
 
-* 10:15 (2023-10-30) H430, med Martin om introduktion till säkerhet del 1.
+* Måndag 10:15 (2024-11-04) H430, med Marie om introduktion till säkerhet & etik.
 
-* <strong>NY TID 10:15</strong> (2023-11-06) H430, med Martin om introduktion till säkerhet del 2.
 
 <!--
 * 10:00 (2021-11-01) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633))
@@ -89,7 +89,6 @@ Uppgifter (individuellt) {#uppgifter}
 
 1. Gör uppgiften "[Skriv ett referat](uppgift/skriv-ett-referat)".
 1. Gör Kmom01 quiz.
-
 
 
 Resultat & Redovisning  {#resultat_redovisning}

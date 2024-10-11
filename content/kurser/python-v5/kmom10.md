@@ -115,19 +115,27 @@ Användarens input:
 
 ###### Ord {#words}
 
-Räkna ut ord precision med `antal rättstavade ord / totalt antal ord i texten`. Om användaren skriver in fler ord än vad som efterfrågas, då ska antalet rättstavade ord minskas med ett för varje extra ord som är skrivit. T.ex. om testet skriver ut 5 ord som användaren ska skriva av och användaren skriver in sju ord där två av orden också är felstavade. Då blir uträkningen `5-2-2 = 1`, `1/5` vilket ger `20%` precision. Notera att **det är case-sensitive, `a != A`**
+Räkna ut ord precision med `antal rättstavade ord / totalt antal ord i texten`. Om användaren skriver in fler ord än vad som efterfrågas, då ska ni ignorera de extra orden. T.ex. om testet skriver ut 5 ord och användaren skriver in sju ord där två av andra ord är felstavade. Då blir uträkningen `5-2 = 3` (minus 2 för de felstavade orden), `3/5` vilket ger `60%` precision. Notera att **det är case-sensitive, `a != A`**
 
 ###### Tecken {#chars}
 
-Räkna ut och skriv ut tecken precision med `antalet rättstavade tecken / total antal tecken i texten`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord. Om användaren skriver in fler tecken än vad som är med i det efterfrågade ordet ska varje extra tecken sänka antalet rättstavade tecken med ett. Precis som för orden.
+Räkna ut och skriv ut tecken precision med `antalet rättstavade tecken / total antal tecken i texten`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord. Om användaren skriver in fler tecken än vad som efterfrågas, då ska ni ignorera de extra tecknen. Precis som för orden.
 
 Räkna också ut hur många gånger varje korrekt tecken blev felskrivet. **Utgå** från de korrekta tecknen när du du kollar om de är rätt, **inte** användarens input. Det är inte tecknet användaren skriver in som ska räknas utan tecknet användaren skulle skriva in men inte gjorde, som ska räknas ut.
 
 T.ex. om programmet skriver ut:  
 `hej På dig Igelkott` och användaren skriver in:  
-`he jpå Dig Igelkorr`. Då blir följande tecken fel , "j" i "hej", "P" och "å" i "På", "d" i "dig" och "t" två gånger i "Igelkott". Notera att **det är case-sensitive, `a != A`**. Det blir följande fel, t 2, j 1, P 1, å 1, och d 1. Eftersom vi jämför per ord och ignorerar mellanslag blir "å" fel i ordet "På". Då jämför vi "På" med "jpå" vilket gör att "P" blir "j", "å" blir "p"  och "å" i input är extra tecken. Det är 10 rättstavningar av 16, ett tecken för mycket och precisionen blir då `(10 - 1) / 16 = 56.2%`.
+`he jpå Dig Igelkorr`. Då blir följande tecken fel , `j` i `hej`, `P` och `å` i `På`, `d` i `dig` och `t` två gånger i `Igelkott`. Notera att **det är case-sensitive, `a != A`**. Det blir följande fel:
 
-Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet i utskriften. Tecknet som skrevs fel flest gånger ska skrivas ut först. Skriv också ut precisionen.
+t 2  
+P 1  
+d 1  
+j 1  
+å 1  
+
+Eftersom vi jämför per ord och ignorerar mellanslag blir `å` fel i ordet `På`. Då jämför vi `På` med `jpå` vilket gör att `P` blir `j`, `å` blir `p`  och `å` i input är extra tecken. Det är 10 korrekt stavade av 16, ett tecken för mycket och precisionen blir då `10 / 16 = 62.5%`.
+
+Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet felstavningar och i andrahand bokstavsordning. Tecknet som skrevs fel flest gånger ska skrivas ut först. Skriv också ut precisionen.
 
 
 
@@ -150,24 +158,44 @@ På sista raden skriver användaren inte in något utan trycker bara på Enter p
 
 Det ger följande prestation:
 ```python
-Ordprecision: 23.08% # (4-1) / 13
-Teckenprecision: 31.82% # (23-9) / 44
+Ordprecision: 30.77% # 4 / 13
+Teckenprecision: 47.72% # 21 / 44
 Felstavade tecken:  
-   s: 3  
    a: 3  
-   y: 2  
-   n: 2  
-   i: 2  
+   s: 3  
    e: 2  
-   r: 1  
-   o: 1  
-   m: 1  
-   d: 1  
-   M: 1  
-   D: 1  
+   i: 2  
+   n: 2  
+   y: 2  
    A: 1  
+   D: 1  
+   M: 1  
+   d: 1  
+   m: 1  
+   o: 1  
+   r: 1  
 ```
 
+###### Uträkning {#calc}
+
+Utskrift `Hello my name is Andreas`  
+Input &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Hellå m name andreas`
+
+**Ord**: Endast `name` är rättstavat. `is` jämförs här med `andreas` eftersom det är fjärde ordet användaren skriver in. `Andreas` kan inte jämföras med något och räknas därför som felstavat. Så 1 rättstavat och 4 felstavade.  
+**Tecken**: Följande felstavningar finns, `o` i `Hello`, `y` i `my` (eftersom det saknas en bokstav), `i` och `s` i `is` (eftersom användaren skrev in `andreas` som input) och alla bokstäver i `Andreas` är fel. Så 9 rättstavade och 11 fel.
+
+
+Utskrift `What is your name`  
+Input &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`What is your nameaa ko`
+
+**Ord**: Endast `name` är felstavat. Vi ignorerar `ko` eftersom det är ett extra ord. Så 3 rättstavat och 1 felstavat.  
+**Tecken**: Det finns inte några felstavningar. Vi ignorerar `aa` och `ko` eftersom de är extra. Så 14 rättstavade och 0 fel.
+
+Utskrift `My name is Da`  
+Input &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``
+
+**Ord**: Alla ord är felstavade eftersom användaren inte skrev in några. Så 0 rättstavad och 4 felstavade.  
+**Tecken**: Alla tecken är felstavade eftersom användaren inte skrev in några. Så 0 rättstavade och 10 fel.
 
 
 #### kodstruktur {#kodstruktur}
@@ -208,6 +236,9 @@ För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användare
 
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
+Skriv ut [Gross WPM](#gwpm), [Net WPM](#nwpm) och vilken [djurkategori](category) användaren fick.
+
+
 #### Gross WPM {#gwpm}
 
 Räkna ut gross words per minute, `antal skrivna ord / minuter`. Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
@@ -226,24 +257,25 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 
 | Net wpm | Djur |
 |---------|---------|
-| 0 - 10| Sengångare |
-| 10 - 20| Snigel |
-| 20 - 30| Sjöko |
-| 30 - 40| Människa |
-| 40 - 50| Gasell  |
-| 50 - 60| Struts |
-| 60 - 70| Gepard |
-| 70 - 80| Svärdfisk |
-| 80 - 90| Sporrgås |
-| 90 - 100| Taggstjärtseglare |
-| 100 - 120| Kungsörn |
-|  > 120| Pilgrimsfalk |
+| 0 - 10| Sloth |
+| 10 - 20| Snail |
+| 20 - 30| Manatee |
+| 30 - 40| Human |
+| 40 - 50| Gazelle  |
+| 50 - 60| Ostrich |
+| 60 - 70| Cheetah |
+| 70 - 80| Swordfish |
+| 80 - 90| Spur-winged goose |
+| 90 - 100| White-throated needletail |
+| 100 - 120| Golden eagle |
+|  > 120| Peregrine falcon |
 
 
 ### Krav 5: Sortera precisionsutskriften (optionell) {#k5}
 
 När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
 
+Nytt, histogram över rätt och fel bokstäver. Kom på något mer.
 
 
 ### Krav 6: Skrivtest med slumpade tecken (optionell) {#k6}

@@ -52,7 +52,7 @@ Samla alla dina filer för projektet i ditt kursrepo under `me/kmom10/bthloggen`
 
 Redovisningstexten skriver du som vanligt i `me/redovisa`.
 
-### Krav 1 Regex för att konvertera loggfil till JSON {#k1}
+### Krav 1 Regex för att konvertera loggfil till JSON (10p) {#k1}
 
 Administrationen har fixat ett utdrag ur loggen. Du behöver plocka ut ip- och webbadresserna till en JSON-fil.
 
@@ -96,7 +96,7 @@ Döp ditt Bash-script till `bthloggen/log2json.bash`. När skriptet körs så sk
 
 Använd ett onlineverktyg, tex [jsonlint](https://jsonlint.com/), för att kontrollera att du producerat JSON som validerar.
 
-### Krav 2 Server för att servera loggen {#k2}
+### Krav 2 Server för att servera loggen (10p) {#k2}
 
 Här jobbar du i mappen `bthloggen/server/`.
 
@@ -115,7 +115,7 @@ Skapa en fil, `docker-compose.yml`, i mappen `bthloggen/` som kan starta service
 
 Mappen `data/`, som innehåller logg-filen ska läggas till som en volym i docker-compose. Den ska ligga i samma mapp som docker-compose.yml. 
 
-### Krav 3 Bashscript för att testa servern {#k3}
+### Krav 3 Bashscript för att testa servern (10p) {#k3}
 
 Här jobbar du i mappen `bthloggen/client/`.
 
@@ -157,7 +157,7 @@ Nedan ser du ett exempel på hur krav 1-3 kan fungera.
 
 [ASCIINEMA src=252509 caption="Exempel på krav 1-3"]
 
-### Krav 4: Mer data (optionell) {#k4}
+### Krav 4: Mer data (optionell, 10p) {#k4}
 
 Utöka ditt skript `log2json.bash` så man får ut även datumet och klockslaget för varje rad. Lägg till dem i JSON-filen och se till så servern stöder filtrering på dem. Uppdatera även klient(erna). Glöm heller inte lägga till det i hjälptexten i `bthloggen.bash`.
 
@@ -197,7 +197,7 @@ Ett exempel är alltså `/data?month=Aug&day=17&time=14:36` som kan ge resultate
 ]
 ```
 
-### Krav 5: Webbklient (optionell) {#k5}
+### Krav 5: Webbklient (optionell, 20p) {#k5}
 
 Här jobbar du i mappen `bthloggen/webbclient/`.
 

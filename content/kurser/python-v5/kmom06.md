@@ -4,6 +4,7 @@ author:
     - aar
     - efo
 revision:
+    "2024-10-14": (P,bbe) lag till övning om relativa och absluta sökvägar
     "2020-09-04": (O, aar) Släppt för HT20.
     "2020-05-15": (N, aar) Flyttade moduler/filer från 04 till 06 inför V3 HT20.
     "2019-06-14": (M, efo) Ändrade så kmom05 blir 04.
@@ -105,6 +106,9 @@ Genomför övningarna för att träna inför uppgifterna.
 1. Jobba igenom artikeln/övningen "[Att läsa filer som strängar i Python](kunskap/att-lasa-filer-i-python-strings-v2)". De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom06/file`.
 
 1. Jobba igenom artikeln/övningen "[Att läsa filer till en lista i Python](kunskap/att-lasa-filer-i-python-v2)". De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom06/file`.
+
+1. Jobba igenom artikeln/övningen "[Absoluta och relativa sökvägar](kunskap/filer-absolut-och-relativ-sökväg)". De exempelprogram du gör kan du spara i ditt kursrepo under `me/kmom06/file`.
+
 
 
 ### Uppgifter {#uppgifter}

@@ -16,7 +16,11 @@ Påbörja inte förens denna gula rutan är borta.
 [/WARNING]
 
 [INFO]
-Innan du startar med projektet, kör `dbwebb update` och `dbwebb init`
+Innan du startar med projektet, kör `dbwebb update` och `dbwebb init`.
+
+**Tips** före du börjar med projektet, gå tillbaka och titta igenom vad det är du har gjort i tidigare kursmoment i kursen. Uppfriska minnet, tänk hur långt du har kommit och hur mycket du har lärt er.
+
+Efter det börjar du med att läsa igenom projektet och lägg upp en plan, före du börjar koda. Vad ska du göra? Hur kan du göra det? Har du gjort något liknande delproblem tidigare?
 [/INFO]
 
 Detta kursmoment avslutar och examinerar kursen.
@@ -60,7 +64,7 @@ De tre första kraven är obligatoriska och måste lösas för att få godkänt 
 
 Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
-Lägg din kod i `kmom10/typing`. Din kod ska validera i python för att få godkänt.
+Lägg din kod **i** `kmom10/typing`. Din kod ska validera i python för att få godkänt.
 
 Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska ni räkna ut hur bra det gick och visa upp det. 
 
@@ -112,6 +116,7 @@ Användarens input:
 
 "På", "Er" och "Idag" blir fel för att "På" saknas, då matchas "På" till "er", "Er" till "idag" och "Idag" saknar ord att matcha mot. Varje ny rad ska "börja om". Andra raden blir 100% rätt.
 
+**Alla uträkningar** ska vara avrundade till två decimaler.
 
 ###### Ord {#words}
 
@@ -159,7 +164,7 @@ På sista raden skriver användaren inte in något utan trycker bara på Enter p
 Det ger följande prestation:
 ```python
 Ordprecision: 30.77% # 4 / 13
-Teckenprecision: 47.72% # 21 / 44
+Teckenprecision: 52.27% # 23 / 44
 Felstavade tecken:  
    a: 3  
    s: 3  
@@ -198,6 +203,83 @@ Input &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``
 **Tecken**: Alla tecken är felstavade eftersom användaren inte skrev in några. Så 0 rättstavade och 10 fel.
 
 
+##### Utskrift {#utskrft}
+I utskriften under ett aktivt skrivtest ska användarens prestation kontinuerligt skrivas ut. I uträkningen anta att alla kommande rader (de som inte användaren har blivit ombedd att skriva in än) är korrekta. T.ex.
+
+```python
+Ord: 100% # 13/13
+Tecken: 100% # 44/44
+Felstavade tecken:
+------------
+Hello my name is Andreas
+$ Hellå m name andreas
+```
+Ovanför visas första utskriften i skrivtestet, alltså före användaren har skrivit någon input. Då utgår vi från att användaren har 100% rätt på allt. När användaren sen skriver in svaret och får fel då ska vi uppdatera med faktiskt uträkning av precision. Det efter `$` är vad användaren skriver in och här har vi fel så vid nästa utskrift räknas prestanda ut med den felaktiga raden och alla efterkommando radera räknas som rätt.
+
+```python
+Ord: 69.23% # 9/13, det var 4 felstavade ord i användarens input
+Tecken: 75% # 33/44. det var 11 felstavade tecken i användarens input
+Felstavade tecken:
+s: 2
+A: 1
+a: 1
+e: 1
+d: 1
+i: 1
+n: 1
+o: 1
+r: 1
+y: 1
+------------
+What is your name
+$ What is your nameaa ko
+```
+Här är uträkningen gjord med användarens input för först raden medan uträkningen antar att efter följande rader är korrekta.
+
+```python
+Ord: 61.54% # 8/13, det var 4 felstavade ord i första input och 1 i föregående input
+Tecken: 75% # 33/44. det var 11 felstavade tecken i första input och 0 i föregående input
+Felstavade tecken:
+s: 2
+A: 1
+a: 1
+e: 1
+d: 1
+i: 1
+n: 1
+o: 1
+r: 1
+y: 1
+------------
+My name is Da
+$ ""
+```
+I uträkningen här används användarens input för rad 1 och 2 medan vi antar att rad 3 är korrekt. Detta är sista input raden och efter detta kommer utskriften med uträkningen för alla input.
+
+```python
+Skrivtestet är avklarat! Här är din prestation.
+
+Ord: 30.77% # 4/13, det var 4 felstavade ord i första input, 1 i andra input och 4 fel i sista
+Tecken: 52.27% # 23/44. det var 11 felstavade tecken i första input, 0 i andra input och 10 i sista
+Felstavade tecken:
+a: 3
+s: 3
+e: 2
+i: 2
+n: 2
+y: 2
+A: 1
+D: 1
+M: 1
+d: 1
+m: 1
+o: 1
+r: 1
+```
+
+**Era utskrifter** måste inte se ut exakt som min, men er utskrift måste innehålla användarens prestation.
+
+
 #### kodstruktur {#kodstruktur}
 
 Din kod ska skrivas i minst två filer. Programmet ska utgå från `main.py` och du måste skapa minst en till modul som du har kod i.
@@ -206,6 +288,7 @@ Din kod **ska** skrivas i funktioner. Vi godkänner inte kod som ligger utanför
 
 Du får **inte** installera moduler med `pip`. Du får bara importera moduler som vi använt i kursen tidigare och `time` modulen. Om du vill använda någon annan modul, kontakta kursansvarig och fråga om det är OK.
 
+Du får **inte** skriva objektorienterad kod.
 
 
 #### Väl fungerande program {#fungera}
@@ -236,7 +319,7 @@ För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användare
 
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
-Skriv ut [Gross WPM](#gwpm), [Net WPM](#nwpm) och vilken [djurkategori](category) användaren fick.
+Inkludera [Gross WPM](#gwpm) och [Net WPM](#nwpm) i den **kontinuerliga utskriften** under ett skrivtest. Inkludera **endast** [djurkategori](category) i den slutliga prestations utskriften.
 
 
 #### Gross WPM {#gwpm}
@@ -273,9 +356,8 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 
 ### Krav 5: Sortera precisionsutskriften (optionell) {#k5}
 
-När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
+När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. Sorteringen på svårighetsnivå ska vara i ordningen `hard --> medium --> easy`. Du ska **inte** plocka ut varje svårighetsgrad för sig och sortera den. Alla data ska ligga i en datastruktur och sorteras med **ett** `sort()` anrop. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
 
-Nytt, histogram över rätt och fel bokstäver. Kom på något mer.
 
 
 ### Krav 6: Skrivtest med slumpade tecken (optionell) {#k6}
@@ -294,11 +376,11 @@ Redovisning {#redovisning}
 
     2. Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?
 
-    3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
+    3. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? På en skala 1-10, vilket betyg ger du kursen?
 
 2. Glöm inte att bifoga länken till projektet på studentservern (alternativ bara din akronym).
 
-3. Spela in en redovisningsvideo och lägg länken till videon i en kommentar på din inlämning i Canvas. Efter du har gjort inlämningen på Canvas lägg videon som en mediakommentar på din inlämning. Läs mer om hur du kan [spela in en redovisningsvideo](kurser/faq/presentation).
+3. Spela in en redovisningsvideo där du visar din kod och visar att du förstår den. Övertyga oss om att det är du som har skrivit koden. Du ska inte visa hur du kör programmet. Efter du har gjort inlämningen på Canvas lägg till videon som en mediakommentar på din inlämning. 
 
 4. Se till att samtliga kursmoment validerar i "dbwebb validate/publish".
 

@@ -187,7 +187,7 @@ cd kmom05/marvin4
                             }
     ```
 
-    Funktionen `print_country_data(data)` ska ta emot en dictionary med data om ett land och skriva ut den. Formatera utskriften av datan enligt:
+    Funktionen `print_country_data(data)` ska ta emot en dictionary med data om ett land som argument och skriva ut den. Formatera utskriften av datan enligt:
 
     ```bash
 

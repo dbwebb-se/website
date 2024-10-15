@@ -18,9 +18,9 @@ Påbörja inte förens denna gula rutan är borta.
 [INFO]
 Innan du startar med projektet, kör `dbwebb update` och `dbwebb init`.
 
-**Tips** före du börjar med projektet, gå tillbaka och titta igenom vad det är du har gjort i tidigare kursmoment i kursen. Uppfriska minnet, tänk hur långt du har kommit och hur mycket du har lärt er.
+**Tips** innan du börjar med projektet, repetera vad du har gjort i tidigare kursmoment. Fräscha upp minnet, tänk på hur långt du har kommit och hur mycket du har lärt er.
 
-Efter det börjar du med att läsa igenom projektet och lägg upp en plan, före du börjar koda. Vad ska du göra? Hur kan du göra det? Har du gjort något liknande delproblem tidigare?
+Läs först igenom projektet och lägg upp en plan. Vad ska du göra? Hur kan du göra det? Har du gjort något liknande delproblem tidigare? Därefter börjar du koda.
 [/INFO]
 
 Detta kursmoment avslutar och examinerar kursen.
@@ -28,8 +28,10 @@ Detta kursmoment avslutar och examinerar kursen.
 Upplägget är enligt följande:
 
 * Projektet och redovisning (20-36h)
+* Projektet ska utföras **individuellt**
+* Ni ska implementera koden med konstruktioner ni har lärt er i kursen. Alltså ska ni inte t.ex. inte använda list comprehension eller klasser.
 
-Totalt omfattar kursmomentet (07/10) ca 20+16 studietimmar. Du kan själv styra din arbetsinsats genom att välja vilka optionella delar du utför.
+Totalt omfattar kursmomentet (07/10) ca 20+16 studietimmar. Du kan själv styra din arbetsinsats genom att välja vilka valfria delar du utför.
 
 
 
@@ -50,7 +52,7 @@ När du har lämnat in projektet bedöms det tillsammans med dina tidigare redov
 Projektidé och upplägg {#upplagg}
 --------------------------------------------------------------------
 
-Du ska utveckla ett program för att öva på att skriva snabbt på ett tangentbord. Det finns många webbsidor som erbjuder det redan, t.ex. [https://www.keybr.com/](https://www.keybr.com/), men vi ska skapa ett program för terminalen. **PS** Det finns inga tester för projektet. Det är upp till er att tolka och implementera kraven.
+Du ska utveckla ett program för att öva på att skriva snabbt på ett tangentbord. Det finns många webbsidor som erbjuder det redan, t.ex. [https://www.keybr.com/](https://www.keybr.com/), men vi ska skapa ett program för terminalen. **PS** Det finns inga tester för projektet. Det är upp till dig att tolka och implementera kraven.
 
 [YOUTUBE src=RLKUPG4-btI caption="Andreas visar hur projektet kan se ut när det är klart.]
 
@@ -58,15 +60,15 @@ Du ska utveckla ett program för att öva på att skriva snabbt på ett tangentb
 Projektspecifikation {#projspec}
 --------------------------------------------------------------------
 
-Utveckla och leverera projektet enligt följande specifikationen. Saknas info i specen så kan du själv välja väg, dokumentera dina val i redovisningstexten.
+Utveckla och leverera projektet enligt följande specifikation. Saknas info i specen så kan du själv välja väg, dokumentera dina val i redovisningstexten.
 
-De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg.
+De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven är valfria krav. Lös de valfria kraven för att samla poäng och därmed nå högre betyg.
 
 Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
 Lägg din kod **i** `kmom10/typing`. Din kod ska validera i python för att få godkänt.
 
-Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska ni räkna ut hur bra det gick och visa upp det. 
+Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska du räkna ut hur bra det gick och visa upp det. 
 
 
 
@@ -92,17 +94,17 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 #### Vad ett skrivtest är {#skrivtest}
 
-För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv därefter ut andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om ni är osäkra på hur det ska gå till. När testet är klart ska ni skriva ut hur bra användaren [presterade](#performance).
+För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv därefter ut andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om du är osäker på hur det ska gå till. När testet är klart ska du skriva ut hur bra användaren [presterade](#performance).
 
-Efter det ska ni be användaren skriva in sitt namn och så ska ni spara namnet och användarens ordprecision i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken ordprecision de fick.
+Efter det ska du be användaren skriva in sitt namn och då ska du spara namnet och användarens ordprecision i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken ordprecision de fick.
 
 
 
 ##### Räkna ut prestation {#performance}
 
-När ni ska jämföra resultat utgår vi från orden, orden är separerade med mellanslag. Punkttecken har ingen speciellt betydelse, tänk på dem som vilka bokstäver som helst i ett ord. T.ex. strängen "hej. p-å dig" innehåller tre ord, "hej.", "p-å" och "dig".
+När du ska jämföra resultat utgår vi från orden, orden är separerade med mellanslag. Punkttecken har ingen speciellt betydelse, tänk på dem som vilka bokstäver som helst i ett ord. T.ex. strängen "hej. p-å dig" innehåller tre ord, "hej.", "p-å" och "dig".
 
-Skilj också på raderna, om användaren skriver in ett ord för lite eller för mycket vill vi inte att det ska på verka alla ord efteråt. Det påverkar alla ord efteråt i samma input men det ska inte påverkar order i input efteråt. T.ex.
+Skilj också på raderna, om användaren skriver in ett ord för lite eller för mycket på en rad så vill vi inte att det ska på verka orden på de följande raderna. T.ex.
 
 Rätt text:
 
@@ -120,11 +122,11 @@ Användarens input:
 
 ###### Ord {#words}
 
-Räkna ut ord precision med `antal rättstavade ord / totalt antal ord i texten`. Om användaren skriver in fler ord än vad som efterfrågas, då ska ni ignorera de extra orden. T.ex. om testet skriver ut 5 ord och användaren skriver in sju ord där två av andra ord är felstavade. Då blir uträkningen `5-2 = 3` (minus 2 för de felstavade orden), `3/5` vilket ger `60%` precision. Notera att **det är case-sensitive, `a != A`**
+Räkna ut ordprecision med `antal rättstavade ord / totalt antal ord i texten`. Om användaren skriver in fler ord än vad som efterfrågas, då ska du ignorera de extra orden. T.ex. om testet skriver ut 5 ord och användaren skriver in sju ord där två av andra ord är felstavade. Då blir uträkningen `5-2 = 3` (minus 2 för de felstavade orden), `3/5` vilket ger `60%` precision. Notera att **det är case-sensitive, `a != A`**
 
 ###### Tecken {#chars}
 
-Räkna ut och skriv ut tecken precision med `antalet rättstavade tecken / total antal tecken i texten`. För att räkna vilka tecken som är rätt. Dela först upp texten i ord (dela på mellanslag) och sen jämför tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord. Om användaren skriver in fler tecken än vad som efterfrågas, då ska ni ignorera de extra tecknen. Precis som för orden.
+Räkna ut och skriv ut teckenprecision med `antalet rättstavade tecken / total antal tecken i texten`. För att räkna vilka tecken som är rätt; dela först upp texten i ord (dela på mellanslag) och jämför sen tecken för tecken i orden. Det innebär att mellanslag inte räknas som ett tecken, det är en separator för ord. Om användaren skriver in fler tecken än vad som efterfrågas, då ska du ignorera de extra tecknen. Precis som för orden.
 
 Räkna också ut hur många gånger varje korrekt tecken blev felskrivet. **Utgå** från de korrekta tecknen när du du kollar om de är rätt, **inte** användarens input. Det är inte tecknet användaren skriver in som ska räknas utan tecknet användaren skulle skriva in men inte gjorde, som ska räknas ut.
 
@@ -146,7 +148,7 @@ Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet fel
 
 ###### Exempel {#exempel}
 
-Här kan ni se ett exempel med input från användaren.
+Här kan du se ett exempel med input från användaren.
 
 Text från filen:
 > "Hello my name is Andreas"  
@@ -204,7 +206,7 @@ Input &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``
 
 
 ##### Utskrift {#utskrft}
-I utskriften under ett aktivt skrivtest ska användarens prestation kontinuerligt skrivas ut. I uträkningen anta att alla kommande rader (de som inte användaren har blivit ombedd att skriva in än) är korrekta. T.ex.
+I utskriften under ett aktivt skrivtest ska användarens prestation kontinuerligt skrivas ut. Anta att alla kommande rader (de som inte användaren har blivit ombedd att skriva in än) är korrekta. T.ex.
 
 ```python
 Ord: 100% # 13/13
@@ -214,7 +216,7 @@ Felstavade tecken:
 Hello my name is Andreas
 $ Hellå m name andreas
 ```
-Ovanför visas första utskriften i skrivtestet, alltså före användaren har skrivit någon input. Då utgår vi från att användaren har 100% rätt på allt. När användaren sen skriver in svaret och får fel då ska vi uppdatera med faktiskt uträkning av precision. Det efter `$` är vad användaren skriver in och här har vi fel så vid nästa utskrift räknas prestanda ut med den felaktiga raden och alla efterkommando radera räknas som rätt.
+Ovanför visas första utskriften i skrivtestet, alltså före användaren har skrivit någon input. Då utgår vi från att användaren har 100% rätt på allt. När användaren sen skriver in svaret och får fel då ska vi uppdatera med faktiskt uträkning av precision. Det efter `$` är vad användaren skriver in och här har vi fel så vid nästa utskrift räknas prestanda med den felaktiga raden och allt efter det räknas som rätt.
 
 ```python
 Ord: 69.23% # 9/13, det var 4 felstavade ord i användarens input
@@ -234,7 +236,7 @@ y: 1
 What is your name
 $ What is your nameaa ko
 ```
-Här är uträkningen gjord med användarens input för först raden medan uträkningen antar att efter följande rader är korrekta.
+Här är uträkningen gjord med användarens input för först raden medan uträkningen antar att efterföljande rader är korrekta.
 
 ```python
 Ord: 61.54% # 8/13, det var 4 felstavade ord i första input och 1 i föregående input
@@ -254,7 +256,7 @@ y: 1
 My name is Da
 $ ""
 ```
-I uträkningen här används användarens input för rad 1 och 2 medan vi antar att rad 3 är korrekt. Detta är sista input raden och efter detta kommer utskriften med uträkningen för alla input.
+I uträkningen här används användarens input för rad 1 och 2 medan vi antar att rad 3 är korrekt. Detta är sista inputraden och efter detta kommer utskriften med uträkningen för alla input.
 
 ```python
 Skrivtestet är avklarat! Här är din prestation.
@@ -277,10 +279,10 @@ o: 1
 r: 1
 ```
 
-**Era utskrifter** måste inte se ut exakt som min, men er utskrift måste innehålla användarens prestation.
+**Era utskrifter** måste inte se ut exakt som min, men din utskrift måste innehålla användarens prestation.
 
 
-#### kodstruktur {#kodstruktur}
+#### Kodstruktur {#kodstruktur}
 
 Din kod ska skrivas i minst två filer. Programmet ska utgå från `main.py` och du måste skapa minst en till modul som du har kod i.
 
@@ -319,7 +321,7 @@ För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användare
 
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
-Inkludera [Gross WPM](#gwpm) och [Net WPM](#nwpm) i den **kontinuerliga utskriften** under ett skrivtest. Inkludera **endast** [djurkategori](category) i den slutliga prestations utskriften.
+Inkludera [Gross WPM](#gwpm) och [Net WPM](#nwpm) i den **kontinuerliga utskriften** under ett skrivtest. Inkludera **endast** [djurkategori](#category) i den slutliga prestations utskriften.
 
 
 #### Gross WPM {#gwpm}
@@ -336,7 +338,7 @@ Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minut
 
 #### Kategori {#category}
 
-Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilken net WPM den fick. När användaren är färdig med ett test visa vilken djur den är. Nedanför hittar ni vilka djur som representerar vilka net WPM. 
+Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilken net WPM den fick. När användaren är färdig med ett test visa vilken djur den är. Nedanför hittar du vilka djur som representerar vilka net WPM. 
 
 | Net wpm | Djur |
 |---------|---------|
@@ -356,7 +358,10 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 
 ### Krav 5: Sortera precisionsutskriften (optionell) {#k5}
 
-När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet var. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. Sorteringen på svårighetsnivå ska vara i ordningen `hard --> medium --> easy`. Du ska **inte** plocka ut varje svårighetsgrad för sig och sortera den. Alla data ska ligga i en datastruktur och sorteras med **ett** `sort()` anrop. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
+När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet hade. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. Sorteringen på svårighetsnivå ska vara i ordningen `hard --> medium --> easy`. Du ska **inte** plocka ut varje svårighetsgrad för sig och sortera den. Alla data ska ligga i en datastruktur och sorteras med **ett** `sort()` anrop. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
+Skapa datastruktur, jobba med data så sorteringen blir korrekt.
+
+5P för annan sorterings lösning.
 
 
 
@@ -380,7 +385,10 @@ Redovisning {#redovisning}
 
 2. Glöm inte att bifoga länken till projektet på studentservern (alternativ bara din akronym).
 
-3. Spela in en redovisningsvideo där du visar din kod och visar att du förstår den. Övertyga oss om att det är du som har skrivit koden. Du ska inte visa hur du kör programmet. Efter du har gjort inlämningen på Canvas lägg till videon som en mediakommentar på din inlämning. 
+3. Spela in en redovisningsvideo där du visar din kod och visar att du förstår den. 
+    - Övertyga oss om att det är du som har skrivit koden. Du ska inte visa hur du kör programmet.
+    - Videon ska vara MAX 10 min lång.
+    - Efter du har gjort inlämningen på Canvas lägg till videon som en mediakommentar på din inlämning. 
 
 4. Se till att samtliga kursmoment validerar i "dbwebb validate/publish".
 

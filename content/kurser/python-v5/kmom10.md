@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2024-10-15": "(E, aar) Uppdaterat krav för HT24."
     "2023-09-29": "(D, aar) Lagt till video och exempel."
     "2023-09-15": "(C, aar) Släppt utan uppdaterad video."
     "2022-10-13": "(B, aar) Uppdaterade hur man räknar poäng."
@@ -8,12 +9,6 @@ revision:
 ...
 Kmom10: Projekt och examination
 ==================================
-
-[WARNING]
-Kursmomentet är underutveckling.
-
-Påbörja inte förens denna gula rutan är borta.
-[/WARNING]
 
 [INFO]
 Innan du startar med projektet, kör `dbwebb update` och `dbwebb init`.
@@ -30,6 +25,7 @@ Upplägget är enligt följande:
 * Projektet och redovisning (20-36h)
 * Projektet ska utföras **individuellt**
 * Ni ska implementera koden med konstruktioner ni har lärt er i kursen. Alltså ska ni inte t.ex. inte använda list comprehension eller klasser.
+    *  Om du är osäker, fråga kursansvarig!
 
 Totalt omfattar kursmomentet (07/10) ca 20+16 studietimmar. Du kan själv styra din arbetsinsats genom att välja vilka valfria delar du utför.
 
@@ -54,7 +50,7 @@ Projektidé och upplägg {#upplagg}
 
 Du ska utveckla ett program för att öva på att skriva snabbt på ett tangentbord. Det finns många webbsidor som erbjuder det redan, t.ex. [https://www.keybr.com/](https://www.keybr.com/), men vi ska skapa ett program för terminalen. **PS** Det finns inga tester för projektet. Det är upp till dig att tolka och implementera kraven.
 
-[YOUTUBE src=RLKUPG4-btI caption="Andreas visar hur projektet kan se ut när det är klart.]
+[YOUTUBE src=D_cOARnYooQ caption="Andreas visar hur projektet kan se ut när det är klart.]
 
 
 Projektspecifikation {#projspec}
@@ -135,14 +131,14 @@ T.ex. om programmet skriver ut:
 `he jpå Dig Igelkorr`. Då blir följande tecken fel , `j` i `hej`, `P` och `å` i `På`, `d` i `dig` och `t` två gånger i `Igelkott`. Notera att **det är case-sensitive, `a != A`**. Det blir följande fel:
 
 t 2  
-P 1  
-d 1  
-j 1  
 å 1  
+j 1  
+d 1  
+P 1  
 
 Eftersom vi jämför per ord och ignorerar mellanslag blir `å` fel i ordet `På`. Då jämför vi `På` med `jpå` vilket gör att `P` blir `j`, `å` blir `p`  och `å` i input är extra tecken. Det är 10 korrekt stavade av 16, ett tecken för mycket och precisionen blir då `10 / 16 = 62.5%`.
 
-Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet felstavningar och i andrahand bokstavsordning. Tecknet som skrevs fel flest gånger ska skrivas ut först. Skriv också ut precisionen.
+Utskriften ska bestå av vilka tecken som blev fel, **sorterat** på antalet felstavningar och i andrahand på tecknet. Tecknet som skrevs fel flest gånger ska skrivas ut först. Skriv också ut precisionen.
 
 
 
@@ -168,19 +164,19 @@ Det ger följande prestation:
 Ordprecision: 30.77% # 4 / 13
 Teckenprecision: 52.27% # 23 / 44
 Felstavade tecken:  
-   a: 3  
    s: 3  
-   e: 2  
-   i: 2  
-   n: 2  
+   a: 3  
    y: 2  
-   A: 1  
-   D: 1  
-   M: 1  
-   d: 1  
-   m: 1  
-   o: 1  
+   n: 2  
+   i: 2  
+   e: 2  
    r: 1  
+   o: 1  
+   m: 1  
+   d: 1  
+   M: 1  
+   D: 1  
+   A: 1  
 ```
 
 ###### Uträkning {#calc}
@@ -205,7 +201,7 @@ Input &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``
 **Tecken**: Alla tecken är felstavade eftersom användaren inte skrev in några. Så 0 rättstavade och 10 fel.
 
 
-##### Utskrift {#utskrft}
+##### Utskrift {#utskrift}
 I utskriften under ett aktivt skrivtest ska användarens prestation kontinuerligt skrivas ut. Anta att alla kommande rader (de som inte användaren har blivit ombedd att skriva in än) är korrekta. T.ex.
 
 ```python
@@ -220,18 +216,18 @@ Ovanför visas första utskriften i skrivtestet, alltså före användaren har s
 
 ```python
 Ord: 69.23% # 9/13, det var 4 felstavade ord i användarens input
-Tecken: 75% # 33/44. det var 11 felstavade tecken i användarens input
+Tecken: 75.0% # 33/44. det var 11 felstavade tecken i användarens input
 Felstavade tecken:
 s: 2
-A: 1
-a: 1
+y: 1
+r: 1
+o: 1
+n: 1
+i: 1
 e: 1
 d: 1
-i: 1
-n: 1
-o: 1
-r: 1
-y: 1
+a: 1
+A: 1
 ------------
 What is your name
 $ What is your nameaa ko
@@ -240,18 +236,18 @@ Här är uträkningen gjord med användarens input för först raden medan uträ
 
 ```python
 Ord: 61.54% # 8/13, det var 4 felstavade ord i första input och 1 i föregående input
-Tecken: 75% # 33/44. det var 11 felstavade tecken i första input och 0 i föregående input
+Tecken: 75.0% # 33/44. det var 11 felstavade tecken i första input och 0 i föregående input
 Felstavade tecken:
 s: 2
-A: 1
-a: 1
+y: 1
+r: 1
+o: 1
+n: 1
+i: 1
 e: 1
 d: 1
-i: 1
-n: 1
-o: 1
-r: 1
-y: 1
+a: 1
+A: 1
 ------------
 My name is Da
 $ ""
@@ -264,22 +260,22 @@ Skrivtestet är avklarat! Här är din prestation.
 Ord: 30.77% # 4/13, det var 4 felstavade ord i första input, 1 i andra input och 4 fel i sista
 Tecken: 52.27% # 23/44. det var 11 felstavade tecken i första input, 0 i andra input och 10 i sista
 Felstavade tecken:
-a: 3
-s: 3
-e: 2
-i: 2
-n: 2
-y: 2
-A: 1
-D: 1
-M: 1
-d: 1
-m: 1
-o: 1
-r: 1
+   s: 3  
+   a: 3  
+   y: 2  
+   n: 2  
+   i: 2  
+   e: 2  
+   r: 1  
+   o: 1  
+   m: 1  
+   d: 1  
+   M: 1  
+   D: 1  
+   A: 1  
 ```
 
-**Era utskrifter** måste inte se ut exakt som min, men din utskrift måste innehålla användarens prestation.
+**Dina utskrifter** måste inte se ut exakt som min, men din utskrift måste innehålla användarens prestation.
 
 
 #### Kodstruktur {#kodstruktur}
@@ -289,8 +285,6 @@ Din kod ska skrivas i minst två filer. Programmet ska utgå från `main.py` och
 Din kod **ska** skrivas i funktioner. Vi godkänner inte kod som ligger utanför funktioner i det globala scopet, förutom enstaka variabler. Tänk på att skriva [DRY kod](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). För långa upprepade kodsnuttar ger minuspoäng.
 
 Du får **inte** installera moduler med `pip`. Du får bara importera moduler som vi använt i kursen tidigare och `time` modulen. Om du vill använda någon annan modul, kontakta kursansvarig och fråga om det är OK.
-
-Du får **inte** skriva objektorienterad kod.
 
 
 #### Väl fungerande program {#fungera}
@@ -321,19 +315,28 @@ För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användare
 
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
-Inkludera [Gross WPM](#gwpm) och [Net WPM](#nwpm) i den **kontinuerliga utskriften** under ett skrivtest. Inkludera **endast** [djurkategori](#category) i den slutliga prestations utskriften.
+Inkludera [Gross WPM](#gwpm), [Net WPM](#nwpm) och [Accuracy](#accuracy) i den **kontinuerliga utskriften** under ett skrivtest och slutliga utskriften. Inkludera **endast** [djurkategori](#category) i den slutliga prestations utskriften.
 
 
 #### Gross WPM {#gwpm}
 
-Räkna ut gross words per minute, `antal skrivna ord / minuter`. Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
+Räkna ut gross words per minute, `antal skrivna ord / minuter`. I `antal skrivna ord` ingår alla ord som användaren har skrivit, även extra ord (om användaren skriver fler än efterfrågat).
+
+Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
 
 
 #### Net WPM {#nwpm}
 
-Räkna ut net words per minute, `gross wpm - (antal felskrivna ord / minuter)`. I "felskrivna ord" **inkludera** ord som användaren har skrivit för mycket.
+Räkna ut net words per minute, `gross wpm - (antal felskrivna ord / minuter)`. I `felskrivna ord` ingår alla ord som användaren har skrivit som inte är korrekt (felstavade + extra).
 
 Avrunda minuter uppåt om det tog X minuter och över 30 sekunder. T.ex. 3 minuter och 33 sekunder blir 4 minuter. Om det är under 30 sekunder avrunda ner. T.ex. 2 minuter och 15 sek blir 2 minuter. Allt under 1 minut avrundas upp till en minut.
+
+
+
+#### Accuracy {#accuracy}
+
+Räkna ut accuracy, det procentuella förhållande mellan Gross WPM och Net WPM. Uträkningen är `(net / gross) * 100`.
+
 
 
 #### Kategori {#category}
@@ -342,9 +345,9 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 
 | Net wpm | Djur |
 |---------|---------|
-| 0 - 10| Sloth |
-| 10 - 20| Snail |
-| 20 - 30| Manatee |
+| 0 - 5  | Sloth |
+| 5 - 15 | Snail |
+| 15 - 30| Manatee |
 | 30 - 40| Human |
 | 40 - 50| Gazelle  |
 | 50 - 60| Ostrich |
@@ -358,11 +361,13 @@ Ge användaren ett djur som representerar hur snabbt de skrev, baserat på vilke
 
 ### Krav 5: Sortera precisionsutskriften (optionell) {#k5}
 
-När du skriver en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet hade. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. Sorteringen på svårighetsnivå ska vara i ordningen `hard --> medium --> easy`. Du ska **inte** plocka ut varje svårighetsgrad för sig och sortera den. Alla data ska ligga i en datastruktur och sorteras med **ett** `sort()` anrop. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
-Skapa datastruktur, jobba med data så sorteringen blir korrekt.
+När du sparar en användares resultat till `score.txt` ska du också spara vilken svårighetsnivå testet hade. För menyval 4, när du gör utskriften av resultaten ska utskriften vara grupperad efter svårighetsnivå och sorterad efter högst precision. Sorteringen på svårighetsnivå ska vara i ordningen `hard --> medium --> easy`. PS. Tänk på att när du sorterar precision ska det vara som decimaltal och inte strängar.
 
-5P för annan sorterings lösning.
+#### 10p
+För att få 10 extrapoäng ska hela sorteringen ske med ett anrop till `sort()`. Med det menas att grupperingen av svårighetsnivåerna och sortering efter högst precision sker med ett `sort()` anrop. Du ska **inte** plocka ut varje svårighetsgrad för sig och sortera den. Alla data ska ligga i en datastruktur och sorteras med **ett** `sort()` anrop. Du får själv välja hur du bygger upp datastrukturen och vilken data du inkluderar.
 
+#### 5p
+Du får 5 extrapoäng om du sorterar de olika svårighetsnivåerna för sig med flera `sort()` anrop.
 
 
 ### Krav 6: Skrivtest med slumpade tecken (optionell) {#k6}

@@ -24,8 +24,9 @@ Upplägget är enligt följande:
 
 * Projektet och redovisning (20-36h)
 * Projektet ska utföras **individuellt**
-* Ni ska implementera koden med konstruktioner ni har lärt er i kursen. Alltså ska ni inte t.ex. inte använda list comprehension eller klasser.
-    *  Om du är osäker, fråga kursansvarig!
+* Du ska implementera koden med konstruktioner du har lärt er i kursen. Alltså ska du inte t.ex. inte använda klasser.
+    * Angående list comprehension, om du använder det måste du i redovisningstexten förklara vad du gör i den och hur du hade kunnat skriva den utan list comprehension.
+    * Om du är osäker, fråga kursansvarig!
 
 Totalt omfattar kursmomentet (07/10) ca 20+16 studietimmar. Du kan själv styra din arbetsinsats genom att välja vilka valfria delar du utför.
 

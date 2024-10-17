@@ -1,10 +1,11 @@
 ---
 author:
+    - grm
     - atb
     - mbo
     - lew
     - nik
-    - grm
+
 revision:
     "2024-10-11": "(F, grm) Uppdatering HT24."
     "2022-08-09": "(E, grm) Komplettering HT22."

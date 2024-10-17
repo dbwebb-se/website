@@ -1,11 +1,12 @@
 ---
 author:
-    - nik
     - grm
+    - nik
     - programutvecklingsprojekt
 category:
     - kurs/itsec
 revision:
+    "2024-10-16": "(F, grm) Intervju istället för diskussion HT24."
     "2022-05-20": "(E, grm) Komplettering HT22."
     "2021-11-10": "(D, grm) Komplettering HT21."
     "2020-05-27": (C, nik) Uppdaterad med bland annat LaTeX mall
@@ -31,7 +32,7 @@ Nice-to-have länkar {#nice-to-have}
 Scenario {#scenario}
 -----------------------
 
-Företaget du jobbar på ska göra en webbplats med känslig information åt företaget Dbwebb AB. Du är en duktig webbprogrammerare redan men vad vet du om privat information och hur hanterar du den. För att vidga dina vyer och lära dig mer om privat information så intervjuar du 2 personer. Det är ditt jobb att intervjua 2 personer och ta reda på vad de tycker och kan om privat information. Du ska samanställa åsikterna från de du intervjuar med dina åsikter i ett dokument, en Reflektion. 
+Företaget du jobbar på ska göra en webbplats med känslig information åt företaget Dbwebb AB. Du är en duktig webbprogrammerare redan men vad vet du om privat information och hur hanterar du den. För att vidga dina vyer och lära dig mer om privat information så intervjuar du 2 personer. Det är ditt jobb att intervjua 2 personer och ta reda på vad de tycker och kan om privat information. Du ska samanställa åsikterna från de du intervjuar med dina åsikter i ett dokument, en Reflektion.
 
 
 Intervju {#intervju}
@@ -49,8 +50,7 @@ Du förbereder intervjuerna och du behöver minst ha med dessa frågor:
 
 Diskutera gärna lite med den du intervjuar. Innan du gör intervjuerna så tänker du igenom dina svar på frågorna för att ha något att jämföra med sen i Reflektionen. Intervjufrågor och svar lägger du i sin helhet i ett Appendix till Reflektionen. Appendixet bör bli ca 2-3 sidor långt.
 
-Inled Appendixet med en kort beskrivning av personerna du intervjuar och diskuterar med, till exempel ålder, kön, yrke, relation till datorer och it-säkerhet eller liknande för att ge läsaren en uppfattning om vad det är för person. Sen skriver du första frågan och under den redovisar du vad person 1 svarar, vad person 2 och så vidare. Appendixet ska alltså återspegla intervjun. Du ska redovisa vad de du intervjuar svarar. Svarar personerna “för kort” få du be dem utveckla eller förklara mer.
-
+Inled Appendixet med en kort beskrivning av personerna du intervjuar och diskuterar med, till exempel ålder, kön, yrke, relation till datorer och it-säkerhet eller liknande för att ge läsaren en uppfattning om vad det är för person. Därefter skriver du första frågan och under den redovisar du vad person 1 svarar, vad person 2 och så vidare. Appendixet ska alltså återspegla intervjun. Du ska redovisa vad de du intervjuar svarar. Svarar personerna “för kort” få du be dem utveckla eller förklara mer.
 
 Reflektion (självständig) {#reflektion}
 -----------------------

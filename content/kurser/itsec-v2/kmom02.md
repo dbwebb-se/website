@@ -1,10 +1,11 @@
 ---
 author:
+    - grm
     - atb
     - mbo
     - lew
     - nik
-    - grm
+
 revision:
     "2022-05-20": "(E, grm) Komplettering HT22."
     "2021-11-10": "(D, grm) Komplettering HT21."
@@ -27,24 +28,21 @@ Kursmomentet ger en introduktion till konceptet privacy genom att förklara cent
 
 
 
-Föreläsningar & Seminarium {#forelasningar}
+Föreläsningar {#forelasningar}
 ---------------------------------
 
 *(ca: 4 studietimmar)*
 
 Föreläsningar:
 
-* 10:15 (2023-11-07) H430, med Martin om introduktion till säkerhet del 2.
+* 10:15 (2024-11-11) H430, blir en gästföreläsning med Martin från KnowIt om Privacy & OWASP Top 10
 
-* <strong>NY TID 10:15 (2023-11-09)</strong> C245, med Martin om etik och privacy.
 
 <!-- * 10:00 (2021-11-08) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633)) -->
 
-Obligatoriskt seminarie kring privacy: Om du inte deltar i seminariet, så kommer du att få en uppgift skickat till dig via Canvas efter seminariet.
+<!-- Obligatoriskt seminarie kring privacy: Om du inte deltar i seminariet, så kommer du att få en uppgift skickat till dig via Canvas efter seminariet.
 
-* 10:15-12:00 (2022-11-11) H430
-
-<!-- * 10:00-12:00 (2021-11-12) via Zoom ([Kenneth, Marie](https://bth.zoom.us/j/6772303809)) -->
+* 10:15-12:00 (2022-11-11) H430 -->
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -70,8 +68,8 @@ Uppgifter  {#uppgifter}
 *(ca: 6-10 studietimmar)*
 
 1. Gör uppgiften "[Vad är privat egentligen?](uppgift/intervju-vad-ar-privat-egentligen)". (individuellt)
-1. Gör uppgiften "[Knäck lösenord](uppgift/john-the-ripper)" (individuellt)
-1. Gör Kmom02 quiz (individuellt).
+2. Gör uppgiften "[Knäck lösenord](uppgift/john-the-ripper)" (individuellt)
+3. Gör Kmom02 quiz (individuellt).
 
 <!-- 1. Fyll på med redovisningstexten i din me-sida. -->
 

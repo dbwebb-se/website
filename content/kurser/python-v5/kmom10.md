@@ -53,19 +53,23 @@ Du ska utveckla ett program för att öva på att skriva snabbt på ett tangentb
 
 [YOUTUBE src=D_cOARnYooQ caption="Andreas visar hur projektet kan se ut när det är klart.]
 
+**PS** Det är två fel i videon. 
+- I den kontinuerliga utskriften av Gross- och Net-WPM utgick Andreas ifrån att att alla ord redan var skrivna och korrekt. Ni ska räkna på det faktiska antalet ord som användaren har skrivit in. Det innebär att i första utskriften borde det bli 0.
+- När Andreas kör menyval 4 står det fel resultat för testat han körde. det står att han fick 56% men det ska vara 60%, hans ordprecision.
+
 
 Projektspecifikation {#projspec}
 --------------------------------------------------------------------
 
-Utveckla och leverera projektet enligt följande specifikation. Saknas info i specen så kan du själv välja väg, dokumentera dina val i redovisningstexten.
+Utveckla och leverera projektet enligt följande specifikation. Saknas info i specen så kan du själv välja väg och dokumentera dina val i redovisningstexten.
 
 De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven är valfria krav. Lös de valfria kraven för att samla poäng och därmed nå högre betyg.
 
 Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
-Lägg din kod **i** `kmom10/typing`. Din kod ska validera i python för att få godkänt.
+Lägg din kod **i** `me/kmom10/typing`. Din kod ska validera i python för att få godkänt.
 
-Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in alla rader då ska du räkna ut hur bra det gick och visa upp det. 
+Du ska implementera ett program för tangentbordsträning. Programmet går ut på att visa användaren en rad åt gången som användaren ska skriva in så snabbt som möjligt. När användaren har skrivit in en rad och efter att alla rader är skrivna då ska du räkna ut hur bra det gick och visa upp det. 
 
 
 
@@ -91,7 +95,7 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 #### Vad ett skrivtest är {#skrivtest}
 
-För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut första raden, vänta på att användaren skriver in samma rad, skriv därefter ut andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om du är osäker på hur det ska gå till. När testet är klart ska du skriva ut hur bra användaren [presterade](#performance).
+För menyval 1-3, ett test går ut på att läsa alla rader från filen, skriv ut hur bra användaren [presterar](#performance) och första raden, vänta på att användaren skriver in samma rad, skriv därefter ut hur bra användaren presterar och andra raden, vänta på att användaren skriver in samma rad och så vidare tills alla rader har gåtts igenom. Kolla på videon ovanför om du är osäker på hur det ska gå till. När testet är klart ska du skriva ut igen hur bra användaren [presterade](#performance).
 
 Efter det ska du be användaren skriva in sitt namn och då ska du spara namnet och användarens ordprecision i filen `score.txt`. Filen `score.txt` ska innehålla alla som kört ett test och vilken ordprecision de fick.
 
@@ -317,6 +321,8 @@ För menyval 1-3, lägg till att räkna ut hur lång tid det tar för användare
 Använd dig av modulen [time](https://docs.python.org/3/library/time.html) för att mäta tiden.
 
 Inkludera [Gross WPM](#gwpm), [Net WPM](#nwpm) och [Accuracy](#accuracy) i den **kontinuerliga utskriften** under ett skrivtest och slutliga utskriften. Inkludera **endast** [djurkategori](#category) i den slutliga prestations utskriften.
+
+I den kontinuerliga utskriften ska du inte förutsätta att användaren har skrivit alla korrekt utan räkna på det faktiska antalet bokstäver användaren har skrivit. Det betyder att i första utskriften ska du räkna med att användaren har skrivit 0 ord. **PS** Det är fel i videon, där räknade jag med att användaren redan hade skrivit alla ord.
 
 
 #### Gross WPM {#gwpm}

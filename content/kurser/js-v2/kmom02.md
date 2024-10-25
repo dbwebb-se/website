@@ -7,9 +7,9 @@ revision:
 
 # Kmom02: Moduler
 
-<!-- [WARNING]
+[WARNING]
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING] -->
+[/WARNING]
 
 Vi skall nu koda mer JavaScript. Vi bekantar oss med fler konstruktioner i språket och tar en titt på hur vi kan dela upp koden i moduler som i sin tur importerar och exporterar koden.
 

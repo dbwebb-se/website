@@ -7,6 +7,11 @@ revision:
 
 # Kmom04: Mer DOM och Events
 
+
+[WARNING]
+Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
+[/WARNING]
+
 Nu har vi blivit lite varma i kläderna och ska ta et djupare kliv in i DOM manipuleringen. Vi ska arbeta med fler former och fler events. Självklart ska vi även arbeta med moduler.
 
 <!--more-->

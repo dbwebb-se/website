@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2024-10-25": "(C, lew) Uppdaterad inför HT24."
   "2023-11-15": (B, lew) Genomgång inför ht23.
   "2021-11-19": (A, lew) Genomgång inför ht20.
 ...
@@ -64,6 +65,7 @@ $ dbwebb test kmom04
 Du validerar koden med npm scripten:
 
 ```console
+$ cd me
 $ npm run eslint --what=public
 $ npm run stylelint --what=public
 $ npm run htmlhint --what=public

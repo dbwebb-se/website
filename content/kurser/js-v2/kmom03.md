@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2024-10-25": "(D, lew) Uppdaterad inför ht24."
   "2023-11-07": (C, lew) Uppdaterad inför ht23.
   "2022-11-09": (B, lew) Uppdaterad inför ht22.
   "2021-06-03": (A, lew) Ny version inför ht21.
@@ -59,6 +60,16 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 
 ```console
 $ dbwebb test kmom03
+```
+
+### Validera koden {#validate}
+
+Du validerar kursmoment 03 med:
+```console
+$ cd me
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
 ```
 
 ### Publicera din kod {#publish}

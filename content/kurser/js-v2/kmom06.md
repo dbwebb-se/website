@@ -75,6 +75,7 @@ $ npm run jsdoc --what=public
 Du validerar koden med npm scripten:
 
 ```console
+$ cd me
 $ npm run eslint --what=public
 $ npm run stylelint --what=public
 $ npm run htmlhint --what=public

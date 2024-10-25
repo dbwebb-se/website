@@ -71,6 +71,19 @@ Dessa uppgifter skall utföras och redovisas.
 4. Sikta på 4-5 minuter.
 
 
+
+### Validera din kod {#validate}
+
+Du validerar koden med npm scripten:
+
+```console
+$ cd me
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
+```
+
+
 ### Publicera {#publish}
 
 Glöm inte att publicera kursmomentet.

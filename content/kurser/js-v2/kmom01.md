@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2024-10-25": "(D, lew) Uppdaterad inför HT24."
   "2023-10-26": "(C, lew) Uppdaterad inför HT23."
   "2022-10-18": "(B, lew) Uppdaterad inför HT22."
   "2021-05-12": "(A, lew) Ny version inför HT21."
@@ -62,7 +63,7 @@ Senare i kursen behöver du ha en del baskunskaper i HTML och CSS. Om du känner
 
 - [HTML](https://youtu.be/8QMveCqpegw)
 - [CSS](https://youtu.be/Rzpl9mrJ05w)
-- [Snabbintro till HTML/CSS](https://youtu.be/e7e-sSyryoQ?si=Oc8bUxfMsGo0E_2N)
+- [Snabbintro till HTML/CSS](https://youtu.be/e7e-sSyryoQ?si=aq9Ci-DEx4d5ALJ_)
 
 <!--
 1. Videoserien [Lär dig JavaScript](https://www.youtube.com/playlist?list=PLKtP9l5q3ce_YXUQlr5aAzJ406vSsmeMT) är tätt kopplat till kursmaterialet. Kika igenom serien under kursens gång. -->
@@ -77,7 +78,7 @@ Jobba igenom följande.
 
 1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/components/01). Se även till så du har labbmiljön installerad.
 
-1. Titta på [videon för kmom01](https://www.youtube.com/watch?v=ZfK9H6555xo&list=PLKtP9l5q3ce_RgMHdPs3y2jOSwj3FEQtA) 
+1. Titta på [videon för kmom01](https://youtu.be/ZfK9H6555xo?si=uvtPzhMCdnv2WYY5) 
 
 ### Uppgifter {#uppgifter}
 
@@ -96,6 +97,17 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 
 ```console
 $ dbwebb test kmom01
+```
+
+### Validera koden {#validate}
+
+Du validerar kursmoment 01 med:
+```console
+$ cd me
+$ npm run eslint --what=kmom01
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhint --what=public
 ```
 
 ### Publicera din kod {#publish}

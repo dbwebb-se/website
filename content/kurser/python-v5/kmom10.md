@@ -386,7 +386,7 @@ Lägg till menyval 5, i det menyvalet ska användaren välja ett antal sekunder 
 Redovisning {#redovisning}
 -------------------------------------------------------------------
 
-1. I inlämningen på Canvas, skriv följande:
+1. I textrutan vid inlämningen på Canvas, skriv följande:
 
     1. För varje krav du implementerat, dvs 1-3, 4, 5, 6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.
        - Berätta om din kodstruktur och hur du tänkte när du organiserade din kod.
@@ -399,8 +399,10 @@ Redovisning {#redovisning}
 
 3. Spela in en redovisningsvideo där du visar din kod och visar att du förstår den. 
     - Övertyga oss om att det är du som har skrivit koden. Du ska inte visa hur du kör programmet.
+        - Välj ut delar av koden som är mer avancerade och förklara hur koden funkar och hur du har tänkt när du designade den.
+        - Koden i main.py är troligen inte så intressant att visa upp, gissningsvis är det bara en klassisk meny med while-loop.
     - Videon ska vara MAX 10 min lång.
-    - Efter du har gjort inlämningen på Canvas lägg till videon som en mediakommentar på din inlämning. 
+    - Efter du har gjort inlämningen på Canvas lägg till videon som en mediakommentar på din inlämning.
 
 4. Se till att samtliga kursmoment validerar i "dbwebb validate/publish".
 

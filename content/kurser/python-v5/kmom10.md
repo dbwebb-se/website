@@ -123,7 +123,7 @@ Användarens input:
 
 ###### Ord {#words}
 
-Räkna ut ordprecision med `antal rättstavade ord / totalt antal ord i texten`. Om användaren skriver in fler ord än vad som efterfrågas, då ska du ignorera de extra orden. T.ex. om testet skriver ut 5 ord och användaren skriver in sju ord där två av andra ord är felstavade. Då blir uträkningen `5-2 = 3` (minus 2 för de felstavade orden), `3/5` vilket ger `60%` precision. Notera att **det är case-sensitive, `a != A`**
+Räkna ut ordprecision med `antal rättstavade ord / totalt antal ord i texten`. Om användaren skriver in fler ord än vad som efterfrågas, då ska du ignorera de extra orden. T.ex. om testet skriver ut 5 ord och användaren skriver in sju ord där två av de fem första orden är felstavade. Då blir uträkningen `5-2 = 3` (minus 2 för de felstavade orden), `3/5` vilket ger `60%` precision. Notera att **det är case-sensitive, `a != A`**
 
 ###### Tecken {#chars}
 

@@ -16,9 +16,9 @@ revision:
 Kmom02: Privacy
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT24. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Kursmomentet ger en introduktion till konceptet privacy genom att förklara centrala definitioner. Särskilt belyses avvägningen mellan privacy och att som slutanvändare dela med sig av sin information för att möjliggöra diverse IT-baserade tjänster. Därutöver kommer exempel på vanliga privacy-förbättrande tekniker förklaras. Slutligen ges exempel på omfattande attacker som påverkat slutanvändarnas privacy negativt samt förslag på relevanta mekanismer för att försvåra dessa attacker.
 
@@ -61,6 +61,9 @@ Läs &amp; Studera  {#lasanvisningar}
 * Mozilla har ett kort [blogginlägg](https://blog.mozilla.org/firefox/what-is-a-web-tracker/) där de beskriver vad en web tracker är.
 
 * Mozilla har även ett kort [blogginlägg](https://blog.mozilla.org/firefox/cross-site-tracking-lets-unpack-that/) kring Cross-Site Tracking.
+
+* Hur ser Försvarsmakten på [cybersäkerhet](https://www.forsvarsmakten.se/saker)?
+  
 
 Uppgifter  {#uppgifter}
 -------------------------------------------

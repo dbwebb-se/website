@@ -11,11 +11,11 @@ Det är en fullspäckat kurs där vi ska lära oss många ny verktyg och koncept
 
 <!-- more -->
 
-[WARNIGN]
+[WARNING]
 Kursmomentet är under uppdatering!
 
 Påbörja inte förens denna gula ruta är borta!
-[/WARNIGN]
+[/WARNING]
 
 Kmom01 är två veckor långt!
 

@@ -10,11 +10,11 @@ Kmom03: DevSecOps
 Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på development och operations teams men även security behöver inkluderas för att det ska bli ett bra resultat. I detta kursmoment ska vi kolla på hur vi kan inkludera säkerhet i hela utvecklingsprocessen, så att alla blir ansvariga för säkerhet i ett projekt.
 
 <!-- more -->
-[WARNIGN]
+[WARNING]
 Kursmomentet är under uppdatering!
 
 Påbörja inte förens denna gula ruta är borta!
-[/WARNIGN]
+[/WARNING]
 [FIGURE src="img/devops/devops-security.png" caption="Hur det inte ska se ut när man kör devops."]
 
 Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.

@@ -12,11 +12,11 @@ Kmom06: Container orchestration
 Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera trycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället börjar ni med att läsa på om container orchestration.
 
 <!-- more -->
-[WARNIGN]
+[WARNING]
 Kursmomentet är under uppdatering!
 
 Påbörja inte förens denna gula ruta är borta!
-[/WARNIGN]
+[/WARNING]
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
 
 [INFO]

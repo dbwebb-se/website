@@ -10,11 +10,11 @@ Kmom05: Valfritt verktyg
 Nu ska ni få välja själva ett verktyg att undersöka hur det funkar och passar in i devops.
 
 <!-- more -->
-[WARNIGN]
+[WARNING]
 Kursmomentet är under uppdatering!
 
 Påbörja inte förens denna gula ruta är borta!
-[/WARNIGN]
+[/WARNING]
 
 Uppgifter  {#uppgifter}
 -------------------------------------------

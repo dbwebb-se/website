@@ -115,9 +115,11 @@ Läs [instruktionen till kursmoment 02](./kmom02).
 
 
 
-### Kmom03: Continuous Security {#kmom03}
+### Kmom03: Continuous Security + valfritt verktyg {#kmom03}
 
 Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på development och operations teams men även security behöver inkluderas för att det ska bli ett bra resultat. I detta kursmoment ska vi kolla på hur vi kan inkludera säkerhet i hela utvecklingsprocessen, så att alla blir ansvariga för säkerhet i ett projekt.
+
+Ni får också själva välja ett verktyg ni vill testa integrera i er Microblog. Det ska resultera i en teknisk rapport där ni förklarar hur man kan integrera verktyget och hur det hänger ihop med devops.
 
 Läs [instruktionen till kursmoment 03](./kmom03).
 
@@ -131,15 +133,7 @@ Läs [instruktionen till kursmoment 04](./kmom04).
 
 
 
-### Kmom05: Valfritt verktyg {#kmom05}
-
-Ni får själva välja ett verktyg ni vill testa integrera i er Microblog. Det ska resultera i en teknisk rapport där ni förklarar hur man kan integrera verktyget och hur det hänger ihop med devops.
-
-Läs [instruktionen till kursmoment 05](./kmom05).
-
-
-
-### Kmom06: Container orchestration {#kmom06}
+### Kmom05: Container orchestration {#kmom06}
 
 Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera tycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället  börjar ni läsa på om container orchestration.
 
@@ -147,7 +141,7 @@ Läs [instruktionen till kursmoment 06](./kmom06).
 
 
 
-### Kmom07/10: Uppsats {#kmom10}
+### Kmom06/10: Uppsats {#kmom10}
 
 Avslutningsvis skriver du en uppsats. Uppsatsen är det sista som du gör och tillsammans med alla redovisningar används detta som underlag för att examinera dig från kursen.
 

@@ -43,7 +43,7 @@ Du kör Windows, macOS eller en linuxdistribution, du är bekant med terminalen 
 
 
 
-Installera på Windows (inklusive Cygwin) {#windows}
+<!-- Installera på Windows (inklusive Cygwin) {#windows}
 -------------------------------
 
 Gå till [nedladdningssidan för Node](https://nodejs.org/en/download/). Ladda ned installationsprogrammet och installera.
@@ -65,7 +65,7 @@ Du kommer även åt programmen via din Cygwin-terminal, om du har Cygwin install
 
 Öppna din Cygwin-terminal så kan det se ut så här.
 
-[FIGURE src=image/snapvt19/cygwin-node-npm-version.png?w=w3 caption="Node och npm går även att nå från Cygwin."]
+[FIGURE src=image/snapvt19/cygwin-node-npm-version.png?w=w3 caption="Node och npm går även att nå från Cygwin."] -->
 
 
 
@@ -83,7 +83,7 @@ Först hämtar jag installationsprogrammen, så att pakethanteraren vet vad som 
 ```text
 # Using Debian, as root
 sudo bash
-curl -sL https://deb.nodesource.com/setup_18.x | bash -
+curl -sL https://deb.nodesource.com/setup_20.x | bash -
 apt-get install -y nodejs
 ```
 
@@ -153,7 +153,7 @@ Sist jag installerade på Debian 9 (januari 2019, v10 av Node) så var instrukti
 
 ```text
 # Using Debian, as root
-curl -sL https://deb.nodesource.com/setup_18.x | bash -
+curl -sL https://deb.nodesource.com/setup_20.x | bash -
 apt-get install -y nodejs
 ```
 

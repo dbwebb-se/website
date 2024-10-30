@@ -46,7 +46,7 @@ Labbmiljön  {#labbmiljo}
 
 
 
-Den korta varianten är att du behöver [installera labbmiljön](./../labbmiljo). **Vilket innebär de tre artiklarna** [Webbserver, PHP och databaser](./../labbmiljo/webbserver), [PHP i pathen](./../labbmiljo/php-i-pathen) och [PHP och Composer](./../labbmiljo/composer). "[Installera nodejs och npm](labbmiljo/node-och-npm)" för att `dbwebb test` kommandot kan fungera.
+Den korta varianten är att du behöver [installera labbmiljön](./../labbmiljo). **Vilket innebär de tre artiklarna** [Webbserver, PHP och databaser](./../labbmiljo/webbserver), [PHP](./../labbmiljo/php) och [PHP och Composer](./../labbmiljo/php-composer). "[Installera nodejs och npm](labbmiljo/node-och-npm)" för att `dbwebb test` kommandot kan fungera.
 
 Sedan uppdaterar du [dbwebb-cli](dbwebb-cli), klonar och initierar kursrepot.
 

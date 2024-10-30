@@ -403,6 +403,7 @@ Redovisning {#redovisning}
         - Koden i main.py är troligen inte så intressant att visa upp, gissningsvis är det bara en klassisk meny med while-loop.
     - Videon ska vara MAX 10 min lång.
     - Efter du har gjort inlämningen på Canvas lägg till videon som en mediakommentar på din inlämning.
+    - FÖr att spela in kan du använda t.ex. [OBS Studio](https://obsproject.com/) eller Zoom. Om du vill använda OBS så finns här en video som [visar hur man gör](https://www.youtube.com/watch?v=vw1pt4-1dFU).
 
 4. Se till att samtliga kursmoment validerar i "dbwebb validate/publish".
 

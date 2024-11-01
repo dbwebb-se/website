@@ -61,8 +61,6 @@ Tänk på och anteckna följande saker när ni läser boken. Använd det som und
 - Något ni redan har erfarenhet av som du kan dela med dig av dina erfarenheter.
 - Övriga saker som ni vill prata om.
 
-Inför första träffen (när ni läser del 1 i boken) ska ni också notera hur boken presenterar DevOps historia och utveckling. Hur har området ändrats genom åren?
-
 
 
 ## Att diskutera på mötet {#meeting}

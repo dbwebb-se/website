@@ -217,6 +217,9 @@ Uppgifter  {#uppgifter}
 
     - När ni är klara med det, skapa en ny release i git. CD kedjan ska bygga och publicerar en ny image med funktionaliteten.
 
+1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Om ni får komplettering på en inlämning öka versionen.
+
+
 1. Välj en av era servrar som produktionsserver.
 
     - Installera Docker på er server.

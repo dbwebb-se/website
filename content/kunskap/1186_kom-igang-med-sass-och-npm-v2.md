@@ -114,14 +114,6 @@ I kursen så använder vi oss enbart utav stylelint som validering. Vi installer
         "stylelint-config-sass-guidelines"
     ],
     "rules": {
-        "indentation": [
-            4,
-            {
-                "except": [
-                    "value"
-                ]
-            }
-        ],
         "at-rule-no-unknown": null,
         "selector-max-compound-selectors": 5
     },
@@ -266,7 +258,7 @@ Laddar vi om sidan så bör vi ha förlorat vår föregående style men ha en ba
 
 ### Import kommer att fasas ut {#import}
 
-[SASS kommer att fasa ut @import](https://sass-lang.com/documentation/at-rules/import/). Ett av problemen med import är att allt som importeras blir tillgängligt i ett globalt scope, vilket kan leda till att man av misstag har variabler med samma namn. Istället för att använda `@import` kan man använda t.ex. `@forward` eller `@use`. 
+[SASS kommer att fasa ut @import](https://sass-lang.com/documentation/at-rules/import/). Ett av problemen med import är att allt som importeras blir tillgängligt i ett globalt scope, vilket kan leda till att man av misstag har variabler med samma namn. Istället för att använda `@import` kan man använda t.ex. `@forward` eller `@use`.
 
 [INFO]
 **Tips ifrån coachen:** Skapa en SASS-modul utav mobilnavigeringen, så som vi gjorde med blockquote och code. Glöm inte att importera den!

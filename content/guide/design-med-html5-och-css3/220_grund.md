@@ -6,7 +6,7 @@ revision:
 Grund
 =======================
 
-Vi vill alltid ha en bra grund att stå på när vi ska göra bra läsbara och användbara hemsidor. Så vi baserar vår grund på öppen källkods projektet [Typography Handbook](http://typographyhandbook.com/). Under sektionen Relative Units finns följande grund för typsnitt på webben.
+Vi vill alltid ha en bra grund att stå på när vi ska göra bra läsbara och användbara hemsidor. Så vi baserar vår grund på öppen källkods projektet [Typography Handbook](http://web.archive.org/web/20220317080753/https://typographyhandbook.com/). Under sektionen Relative Units finns följande grund för typsnitt på webben.
 
 ```css
 html {

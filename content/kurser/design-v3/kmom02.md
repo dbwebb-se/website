@@ -115,7 +115,7 @@ Hållbarhet {#hallbarhet}
 
 Vi fortsätter fokusera på perspektivet *hållbarhet* och vilken roll vi som programmerare har i den sammanhangen.
 
-På canvas finns videon "[Downsides of digital](https://bth.instructure.com/courses/5435/pages/downsides-of-digital)" där professor Jeffrey Sachs berättar om vissa av nackdelarna med Internet energianvändning.
+På canvas finns videon "[Downsides of digital](https://bth.instructure.com/courses/6133/pages/downsides-of-digital)" där professor Jeffrey Sachs berättar om vissa av nackdelarna med Internet energianvändning.
 
 
 

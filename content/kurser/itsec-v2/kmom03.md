@@ -5,10 +5,11 @@ author:
     - nik
     - grm
 revision:
-    "2022-05-25": "(F, grm) Komplettering HT22."
-    "2021-11-10": "(G, grm) Komplettering HT21."
-    "2021-10-01": "(F, lew Uppdatering inför HT21."
-    "2020-11-25": "(E, mos) Förtydliga om redovisningen."
+    "2024-11-12": "(H, grm) Komplettering HT24."
+    "2022-05-25": "(G, grm) Komplettering HT22."
+    "2021-11-10": "(F, grm) Komplettering HT21."
+    "2021-10-01": "(E, lew Uppdatering inför HT21."
+    "2020-11-25": "(D, mos) Förtydliga om redovisningen."
     "2020-11-20": "(C, mos) Lade till tips om CTF-kanaler."
     "2020-11-16": "(B, mos) Läsanvisningar om hacker writeups."
     "2020-11-01": "(A, mos) Utkast inför ht20."
@@ -16,9 +17,9 @@ revision:
 Kmom03: Attacker
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT24. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 När man som webbprogrammerare blir utsatt för en attack så är det lätt att hålla sig för skratt. En attack kan vara lättsam som en skämtsam och lekfull XSS där någon bara vill säga att de "ägde din webbplats". I artikeln "[Grundregel 1A i Cross Site Scripting (XSS) - Lita inte på någon](https://dbwebb.se/blogg/grundregel-1a-i-cross-site-scripting-xss-lita-inte-pa-nagon)" visas effekten av ett sådant exempel där någon litade på någon och det slutade med att studentföreningens webbplats gjordes till ett litet skämt.
 
@@ -45,9 +46,8 @@ Föreläsningar &amp; Laborationer {#forelasningar}
 
 Kursvecka 3 (Fokus på teori), föreläsningar:
 
-* 10:15 (2023-11-13) H430, med Victor om hot.
+* 10:15 (2024-11-18) H430, med Victor om hot.
 
-* 10:15 (2023-11-17) H430, med Victor om attacker.
 
 <!--
 Hur hantera attaker när de är ett faktum?
@@ -59,9 +59,9 @@ Snabb på att rätta felen?
 klick, ransomware, social attacks
 -->
 
-Kursvecka 4 (Fokus på praktik/attacker), laboration:
+Kursvecka 4 (Fokus på praktik/attacker), föreläsningar och laboration:
 
-* 10:15 (2023-11-20) H430, med Marie laboration, attacker
+* 10:15 (2024-11-25) H430, med Victor om attacker.
 
 * 10:15 (2023-11-24) H430, eget arbete
 
@@ -89,6 +89,8 @@ om att införa säkerhetsåtgärder för att skydda information i informationssy
 
 * Läs igenom artikeln "[TimThumb Attacks: The Scale of Legacy Malware Infections](https://blog.sucuri.net/2019/08/timthumb-attacks-the-scale-of-legacy-malware-infections.html)" som berättar historien om hur ett litet PHP-script för att skala om bilder blev ett stort säkerhetshål för "remote code execution" i WordPress.
 
+* I det här blogginlägget beskrivs en RCE (Remote Code Execution) bugg i en nodejs-modul "[Hacking Node Serialize](https://blog.websecurify.com/2017/02/hacking-node-serialize)" och genom att skapa en exploit som öppnar en terminal på en annan dator.
+
 * I artikeln "[Type Juggling and PHP Object Injection, and SQLi, Oh My!](https://foxglovesecurity.com/2017/02/07/type-juggling-and-php-object-injection-and-sqli-oh-my/)" visas hur man gör en exploit på en "loose comparisom `==`" och "`unserialize()` user supplied data" i PHP frameworket Expression Engine. Läs den som ett exempel på hur en attackerare tänker och funderar när den försöker hitta svagheter i ett system.
 
 * En annan variant är vi kan lära från en hacker writeup är "Finding Vulnerabilities in Core WordPress: A Bug Hunter’s Trilogy" som steg för steg når längre in i systemet. Börja med att läsa del I för att få en insyn i vad det handlar om, finner du det intressant så kan du fortsätta läsa de andra delarna.
@@ -113,7 +115,7 @@ Titta på följande videor.
 
 1. Möt en hackare, "[Detectify | Meet the Hacker - Fredrik Nordberg Almroth](https://www.youtube.com/watch?v=ERXWb0KjMRo)". En 6 minuter video där vi får träffa en "hackare" som ger oss sina bästa tips.
 
-1. Titta på denna videoserie med 2-minuters avsnitt som förklarar "[OWASP Top 10 Vulnerabilities Explained](https://www.youtube.com/playlist?list=PLbKl_RtocZetEzdHyZCgZHwaUHjE_jeQT)" från Detectify.
+1. Titta på denna videoserie med 2-minuters avsnitt som förklarar "[OWASP Top 10 Vulnerabilities Explained](https://www.youtube.com/playlist?list=PLbKl_RtocZetEzdHyZCgZHwaUHjE_jeQT)" från Detectify på ett intressant och informativt sätt.
 
 1. (Extra) Om du vill ha mer förklaringar till en eller flera av OWASP Top Ten så kan du kika i videoserien (10 minuters avsnitt) "[OWASP Top Ten - 2021](https://www.youtube.com/playlist?list=PLyqga7AXMtPOguwtCCXGZUKvd2CDCmUgQ)" från F5 DevCentral.
 
@@ -131,11 +133,12 @@ Här är en video från LiveOverflow som kan ge dig insikt i hur dessa writeups 
 
 Följande är tips på bra kanaler och på ett par spellistor som fokuserar på webbapplikationer.
 
-1. Första tipset är [kanalen LiveOverflow](https://www.youtube.com/c/LiveOverflowCTF).
-    * [Spellista: LiveOverflow Web Hacking](https://www.youtube.com/playlist?list=PLhixgUqwRTjx2BmNF5-GddyqZcizwLLGP)
-
 1. Det andra tipset är [kanalen John Hammond](https://www.youtube.com/user/RootOfTheNull)
     * [Spellista: Web Security](https://www.youtube.com/playlist?list=PL1H1sBF1VAKX9Mz0UVU2eR7EdGmtb5XJK)
+
+1. Första tipset är en spellista från LiveOverflow med webbattacker:
+    * [Spellista: LiveOverflow Web Hacking](https://www.youtube.com/playlist?list=PLhixgUqwRTjx2BmNF5-GddyqZcizwLLGP)
+
 
 Glöm inte att även andra typer av CTF:er kan ge stor behållning av allmänt tänk inom programutveckling och säkerhet.
 
@@ -177,7 +180,7 @@ Extrauppgifter  {#extra}
 
 1) Fortsätt gör utmaningar i Juice shop. Redovisa dina framgångar med en ny skärmdump.
 
-2) Träna på lösenordshantering genom att förbättra lösenordshanteringen i appen [Super Secure User Storage](/uppgift/losenordshantering). Redovisa dina framgångar genom att berätta om dem i en fil eller i textfältet när du redovisar kmom03.
+<!-- 2) Träna på lösenordshantering genom att förbättra lösenordshanteringen i appen [Super Secure User Storage](/uppgift/losenordshantering). Redovisa dina framgångar genom att berätta om dem i en fil eller i textfältet när du redovisar kmom03. -->
 
 
 Resultat & Redovisning  {#resultat_redovisning}

@@ -63,7 +63,7 @@ Kursvecka 4 (Fokus på praktik/attacker), föreläsningar och laboration:
 
 * 10:15 (2024-11-25) H430, med Victor om attacker.
 
-* 10:15 (2023-11-24) H430, eget arbete
+* 10:15 (2023-11-29) H430, hacklabb (eget arbete)
 
 
 Läs &amp; Studera  {#lasanvisningar}

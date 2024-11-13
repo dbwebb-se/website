@@ -10,11 +10,7 @@ Kmom02: Configuration Management och Continuous Deployment
 Vi fortsätter med att kolla in fler sätt att automatisera flöden. Vi lär oss Ansible för Configuration Management (CM) och Infrastructure as Code (IaC). Tillsammans med Ansible och GitHub Actions ska vi också utveckla vår Continuous Delivery till Continuous Deployment (också CD).
 
 <!-- more -->
-[WARNING]
-Kursmomentet är under uppdatering!
 
-Påbörja inte förens denna gula ruta är borta!
-[/WARNING]
 [FIGURE src="https://www.gocd.org/assets/images/blog/continous-delivery-vs-deployment-infographic/continuous-delivery-vs-continuous-deployment-infographic-305dd620.png"]
 
 Kmom02 är två veckor långt!
@@ -55,11 +51,16 @@ Ansible är ett verktyg för att automatisera serverkonfiguration. Läs om följ
 
 ### Läs och titta {#ansible-read}
 
-- [Ansibles grundkoncept](https://docs.ansible.com/ansible/latest/network/getting_started/basic_concepts.html).
+
+- [What Is Ansible](https://www.youtube.com/watch?v=1id6ERvfozo).
 
 - Introduktion till att [använda Ansible](https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks).
 
 - Ansible [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html).
+
+Jag har fått som kommentar att studenterna vill ha mer Ansible material så här är två olika spellistor för de som vill har mer om Ansible. Ni kan testa skippa dem och jobba vidare. Om ni upplever att ni behöver lära er mer så kan ni gå tillbaka till någon av dessa spellistor.
+- [Getting Started with Ansible](https://www.youtube.com/watch?v=3RiVKs8GHYQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+- [Ansible 101](https://www.jeffgeerling.com/blog/2020/ansible-101-jeff-geerling-youtube-streaming-series)
 
 
 
@@ -76,13 +77,13 @@ De har använt denna som referens material https://github.com/ansible/workshops
 
 Än så länge har vi manuellt kör kommandon på servern. Nu ska vi uppgradera oss och göra detta i Ansible istället.
 
-Först, [installer Azure-CLI](./../labbmiljo/azure-cli) och lägg till `-r deploy.txt` i `requirements/dev.txt`. Installera Ansible paketen med `make install-dev``.`
+Först, [installer Azure-CLI](./../labbmiljo/azure-cli) och lägg till `-r deploy.txt` i `requirements/dev.txt`. Installera Ansible paketen med `make install-dev`.
 
 ### Läs och titta {#code-read}
 
-- Kolla på videorna med `30x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot, [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
+- Kolla på videorna med `20x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot, [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
 
-- Om ni vill hänga med och skriva 10-first-minutes själva så kan ni kolla på videorna med "31x" i namnet. Videorna är lite utdaterade när det kommer till hur man exekverar filerna Då pratar jag om AWS men om ni har kollat på de andra videorna så vet ni hur man exekverar filerna.
+- Om ni vill hänga med och skriva 10-first-minutes själva så kan ni kolla på videorna med "21x" i namnet. Videorna är lite utdaterade när det kommer till hur man exekverar filerna Då pratar jag om AWS men om ni har kollat på de andra videorna så vet ni hur man exekverar filerna.
 
 
 
@@ -135,6 +136,8 @@ Den ny strukturen är att vi har en egen VM för databasen och två olika VM's f
 
 ### Läs och titta {#cloud-read}
 
+- [Nginx Tutorial for Beginners](https://www.youtube.com/watch?v=9t9Mp0BGnyI).
+- [Beginner’s Guide to NGINX Configuration Files](https://medium.com/adrixus/beginners-guide-to-nginx-configuration-files-527fcd6d5efd).
 - [Nginx load balancer](https://nginx.org/en/docs/http/load_balancing.html).
 
 I länken ovanför skriver de inte att vi inte kan lägga ett `http` block i ett annat `http` block. Vilket vi gör om vi bara skapar en ny host i `/etc/nginx/sites-available`. Detta gör att vi måste ändra på config filen `/etc/nginx/nginx.conf`. Hur vi gör det finns i en länk bland uppgifterna.
@@ -158,6 +161,10 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 Uppgifter  {#uppgifter}
 -------------------------------------------
+
+[INFO]
+Tips. När ni jobbar med Ansible koden, använd er av [dokumentationen](https://docs.ansible.com/ansible/latest/) för att hitta moduler och hur de funkar! Den är bra.
+[/INFO]
 
 1. Uppdatera provision Playbook så att fyra servrar skapas.
   - En `loadbalancer`, en `database` och två `appserver`, en som heter `appserver1` och en `appserver2`.

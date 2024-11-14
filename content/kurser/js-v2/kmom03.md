@@ -10,9 +10,9 @@ revision:
 # Kmom03: DOM och events
 
 
-[WARNING]
+<!-- [WARNING]
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
+[/WARNING] -->
 
 Nu är det dags att ta JavaScript koden ett stort kliv rakt in i webbläsaren. Det är ju trots allt där vi kommer hantera den största delen av den JavaScript vi kommer skriva.
 
@@ -30,7 +30,7 @@ Läs följande (översiktligt):
 
 ### Video {#video}
 
-Det finns en uppsättning videor som är kopplade till uppgiften. 
+Det finns en uppsättning videor som är kopplade till uppgiften.
 Kika på videor om DOM och Events i spellistan [Kom igång med js](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c).
 
 

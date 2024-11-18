@@ -35,6 +35,15 @@ När du är klar så sprider du studien och gör dig redo för att eventuellt up
 
 
 
+2024 {#2024}
+-----------------------
+
+Här följer tekniska studier (och liknande) som utfördes under 2024.
+
+1. [Submodules vs. monorepo](https://github.com/augustlevinson/report-submodules). This report explores two common approaches: gathering all services in a single monorepo vs. using multiple GitHub repositories as submodules in a parent repository, including basic setup instructions.
+
+
+
 2023 {#2023}
 -----------------------
 

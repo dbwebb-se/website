@@ -28,6 +28,8 @@ Därefter välj "Name server".
 
 [FIGURE src="/image/devops/tech-options.png" caption=".tech name servers"]
 
-Uppdatera därefter värdena med servrarna som ni har fått från Azure.
+Ersätt därefter värdena med servrarna som ni har fått från Azure.
 
 [FIGURE src="/image/devops/tech-dns.png" caption="Uppdatera DNS"]
+
+De servrar som är med från början ska ersättas av de ni får från Azure.

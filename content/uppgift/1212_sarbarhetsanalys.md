@@ -31,8 +31,9 @@ Analys {#analys}
 
 Du ska analysera applikationen utifrån de metoder och tekniker som nämns under föreläsningarna. Utgå ifrån att det är blackbox testing, dvs att du inte har tillgång till koden. Bortse ifrån säkerhetsbrister som baseras på hur miljön är uppsatt, t.ex. att HTTPS inte används i en lokal utvecklingsmiljö.
 
-Applikationen jobbar emot en SQLite-databas, om du av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen. Gör gärna SQL-injektion på databasen med SQLmap, för [mer här](https://sqlmap.org/). Då får du veta vilken databas det är och innehållet med tabeller och data.
+Applikationen jobbar emot en databas, om du av någon anledning behöver återställa den så är det bara kopiera över den ifrån katalogen example igen. Testa gärna att göra SQL-injektion på databasen med [SQLmap](https://sqlmap.org/). Kanske får du veta vilken databas det är och innehållet med tabeller och data. Det är i vilket fall bra att känna till sqlmap. Det finns en film under kapitlet "Usage" som visar hur sqlmap kan användas.
 
+Prova gärna [Wappalyzer i din webbläsare](https://www.wappalyzer.com/). Det bör ge dig programmeringsspråk och webbserver.
 
 Mall sårbarhetsanalys {#mall}
 -----------------------
@@ -64,7 +65,11 @@ Börja med att kopiera in mappen med applikationen till er me-katalog:
 $ cp -r example/bank-app me/kmom04
 ```
 
-Gå till me/kmom04/bank-app och kör applikationen lokalt med `npm install && npm start`. Eller om du vill använda docker, så starta applikationen med `docker-compose up -d`. 
+**OBS - titta inte på koden! Det gör vi i kmom05!**
+
+Gå till me/kmom04/bank-app och kör applikationen lokalt med `npm install && npm start`. Ignorera varningar för "deprecated", de spelar ingen roll.
+
+Om du hellre vill använda docker, så starta applikationen med `docker-compose up -d`. 
 
 ### Lämna in
 

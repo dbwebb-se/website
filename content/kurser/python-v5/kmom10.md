@@ -89,7 +89,7 @@ I `example/typing` finns det tre filer med texter i olika svårighetsgrader, lä
 
 "4". Skriv ut resultatlistan som du har sparat i `score.txt`, sorterad på högst precision.
 
-"q". Ansluta programmet.
+"q". Avsluta programmet.
 
 
 

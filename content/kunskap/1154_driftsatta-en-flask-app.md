@@ -249,7 +249,18 @@ sudo service nginx restart
 
 ### HTTPS {#https}
 
-Följ avsnittet om HTTPS i [Nodejs API med express](https://dbwebb.se/kunskap/nodejs-api-med-express#https) för att konfigurera HTTPS. Det kommer lägga till saker och ändra i vår nginx konfig fil. När certbot frågar om ni vill skicka vidare alla request till HTTPS säg ja.
+Då vi är medvetna om våra användares privatliv vill vi att alla anslutningar till våra tjänster och services sker över HTTPS, som krypterar den data som skickas. Vi behöver därför installera ett certifikat. Vi väljer att använda ett certifikat från [Let's Encrypt](https://letsencrypt.org/) och vi installerar det med tjänsten [Certbot](https://certbot.eff.org/) då vi har tillgång till serverns CLI.
+
+```
+sudo apt update
+sudo apt install python3-certbot-nginx
+```
+
+Vi startar verktyget genom att köra kommandot 
+```
+sudo certbot --nginx
+```
+Vi får då välja för vilka domäner och subdomäner vi vill installera certifikat. Efter att vi har vald domänerna får vi frågan om vi vill omdirigera all trafik till HTTPS istället för HTTP och det svarar vi ja till.
 
 Nu är vi nästan klara vi behöver bara lägga till vidarebefordringen till Gunicorn servern och statiska filer.
 

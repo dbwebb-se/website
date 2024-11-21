@@ -257,9 +257,11 @@ sudo apt install python3-certbot-nginx
 ```
 
 Vi startar verktyget genom att köra kommandot 
+
 ```
 sudo certbot --nginx
 ```
+
 Vi får då välja för vilka domäner och subdomäner vi vill installera certifikat. Efter att vi har vald domänerna får vi frågan om vi vill omdirigera all trafik till HTTPS istället för HTTP och det svarar vi ja till.
 
 Nu är vi nästan klara vi behöver bara lägga till vidarebefordringen till Gunicorn servern och statiska filer.

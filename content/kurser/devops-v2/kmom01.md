@@ -210,7 +210,7 @@ Uppgifter  {#uppgifter}
 1. Sätt upp Continuous Delivery i Actions.
 
     - Skapa ett nytt workflow (separat fil) som bygger och pushar er Docker image till DockerHub men bara om testerna från CI passerar. Ni uppnår det genom att från det nya workflow:et återanvända det som tester koden.
-    - CD kedjan ska bara köras vid ny release, inte varje kommit.
+    - CD kedjan ska bara köras vid ny tagg, inte varje kommit.
     - Ni får **inte** använda latest taggen, ni ska ha unika taggar för varje ny release. T.ex. använd er semantiska version som tagg.
 
 1. Lägg till funktionaliteten att följa andras blogginlägg. Jobba igenom [Kom igång med followers](kunskap/kom-igang-med-followers). 

@@ -68,7 +68,7 @@ Följ kraven i reflektionen.
 * Om intervjuerna har fått er att fundera kring hur du hanterar er data (både privat och som utvecklare), lyft gärna detta.
 * I slutet av reflektionen lägger du ett Appendix med intervjuerna. Låt Appendix starta på en ny sida.
 
-Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/qfdtffsgbspf) som du kan använda. Länken är till en read-only version, för att skapa er egna så trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller kraven ovan. Mallen behöver uppdateras med Appendix och ta bort stycket med "Gruppmedlemmar".
+Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/zffqhppqyjpr#311d91) som du kan använda. Länken är till en read-only version, för att skapa er egna så trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller kraven ovan.
 
 
 <!-- Publicera {#publicera}

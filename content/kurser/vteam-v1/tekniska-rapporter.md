@@ -42,6 +42,10 @@ Här följer tekniska studier (och liknande) som utfördes under 2024.
 
 1. [Submodules vs. monorepo](https://github.com/augustlevinson/report-submodules). This report explores two common approaches: gathering all services in a single monorepo vs. using multiple GitHub repositories as submodules in a parent repository, including basic setup instructions.
 
+1. [Flutter webbapp och val av utvecklingsport](https://discord.com/channels/118332969004957705/1027546182257496066/1309119328783695933). Rapporten kommer gå igenom hur man kommer igång med Flutter som webbapplikation och väljer port för utveckling av appen.
+
+1. [Node.js with Express vs. Flask](https://github.com/PWKarlsson/technical-report-REST-APIs). The purpose of this report is to compare two popular framworks for building REST APIs, Node.js with Express (JavaScript-based) and Flask (Python-based). It will go through their setup processes, how they are built and some of their pros and cons.
+
 
 
 2023 {#2023}

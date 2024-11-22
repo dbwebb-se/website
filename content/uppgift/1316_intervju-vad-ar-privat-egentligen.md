@@ -33,7 +33,7 @@ Nice-to-have länkar {#nice-to-have}
 Scenario {#scenario}
 -----------------------
 
-Företaget du jobbar på ska göra en webbplats med känslig information åt företaget Dbwebb AB. Du är en duktig webbprogrammerare redan men vad vet du om privat information och hur hanterar du den. För att vidga dina vyer och lära dig mer om privat information så intervjuar du 2 personer. Det är ditt jobb att ta reda på vad de tycker och kan om privat information. Du ska samanställa åsikterna från de du intervjuar med dina åsikter i ett dokument, en Reflektion. Detta dokument ska vara underlag till en rapport om hur känslig information ska hanteras på webbplatsen. Uppdraget med rapporten vill gärna Dbwebb AB ha.
+Företaget du jobbar på ska göra en webbplats med känslig information åt företaget Dbwebb AB. Du är en duktig webbprogrammerare redan men vad vet du om privat information och hur hanterar du den. För att vidga dina vyer och lära dig mer om privat information så intervjuar du 2 personer. Det är ditt jobb att ta reda på vad de tycker och kan om privat information. Du ska sammanställa åsikterna från de du intervjuar med dina åsikter i ett dokument, en Reflektion. Detta dokument ska vara underlag till en rapport om hur känslig information ska hanteras på webbplatsen. Uppdraget med rapporten vill gärna Dbwebb AB ha.
 
 
 Intervju {#intervju}
@@ -65,10 +65,10 @@ Följ kraven i reflektionen.
 * Reflektionen ska vara ca 1-2 sidor (exklusive försättsbladet, storlek 11 för brödtexten, 1 sida är ca 600 ord).
 * Texten kan skrivas på svenska eller engelska.
 * Använd stycken för att dela upp texten och försök att skriva det som en sammanhängande text.
-* Om diskussionen har fått er att fundera kring hur du hanterar er data (både privat och som utvecklare), lyft gärna detta.
-* I slutet av reflektionen skriver du ett stycke med namnen på dina gruppmedlemmar.
+* Om intervjuerna har fått er att fundera kring hur du hanterar er data (både privat och som utvecklare), lyft gärna detta.
+* I slutet av reflektionen lägger du ett Appendix med intervjuerna. Låt Appendix starta på en ny sida.
 
-Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/qfdtffsgbspf) som du kan använda. Länken är till en read-only version, för att skapa er egna så trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller kraven ovan.
+Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/qfdtffsgbspf) som du kan använda. Länken är till en read-only version, för att skapa er egna så trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller kraven ovan. Mallen behöver uppdateras med Appendix och ta bort stycket med "Gruppmedlemmar".
 
 
 <!-- Publicera {#publicera}

@@ -14,34 +14,30 @@ revision:
 v06 - Teknikval
 =========================
 
-Lämna in de teknikval ni gjort för projektet och berätta kort om hur ni kommer att implementera systemet.
+Fortsätt jobba med implementationen och lämna in de teknikval ni gjort för projektet och berätta kort om hur ni kommer att implementera systemet.
 
-<!--stop-->
+Glöm inte att integrera era delsystem så tidigt som möjligt.
+
+<!--more-->
 
 
 
 Föreläsning {#flas}
 -------------------------
 
-<!--
-Denna veckan blir det ingen Q&A session, istället finns det två videor/föreläsningar att titta på och en liten mini-uppgift som gäller att besvara frågan.
+Denna veckan blir det ingen måndags-session, istället finns det ett par videor/föreläsningar att titta på och en liten mini-uppgift som gäller att besvara frågan.
 
 > "Vad innebär "vacker kod" och är det något vi kan applicera i vårt projekt?"
 
-1. Video 1 "[The concept of Good and Clean Code](https://www.youtube.com/watch?v=drkATTaqEiw)"
-1. Video 2 "[Software philosophies and principles](https://www.youtube.com/watch?v=xLCHREF5I-I)"
-
-Mini-uppgiften löser du i 'Reflektera över "Good and Clean Code"'.
-
--->
+* Utför uppgiften "[Good and Clean Code](./../assignment/good-and-clean-code)".
 
 
 
 Uppgifter {#uppgift}
 -------------------------
 
-* Utför implementation.
-* Gör teknikval, dokumentera och lämna in.
+* Jobba på med implementation.
+* Gör [teknikval](./../assignment/technical-implementation), dokumentera och lämna in.
 * Tekniska rapporter
 
 
@@ -51,3 +47,6 @@ Torsdag standup
 
 Här kommer några tips om hur du kan status checka vad ni gör i gruppen.
 
+* Har ni testat alla tekniker så här långt så ni vet att de fungerar?
+* Har ni byggt prototyper för att testa?
+* Fungerar alla era delsystem inuti era docker containrar?

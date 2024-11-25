@@ -22,9 +22,7 @@ TODO
 CHANGE
 
 * Fixa in mer bilder i slide presentationen
-
 * Förbättra docker-exemplet, inkludera dokumentation.
-
 * Projektplanering med GitHub project?
 
 -->

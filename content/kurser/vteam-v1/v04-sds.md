@@ -46,7 +46,7 @@ Uppgifter {#uppgift}
 -------------------------
 
 * Färdigställ SDS och lämna in.
-* Gör riskanalys.
+* Gör riskanalys och lämna in nästa vecka.
 * Tekniska rapporter
 
 

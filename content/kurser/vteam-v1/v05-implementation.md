@@ -14,7 +14,7 @@ revision:
 v05 - Implementation
 =========================
 
-Påbörja implementationsfasen av projektet och implementera systemet enligt SDS.
+Påbörja implementationsfasen av projektet och implementera systemet enligt SDS. Gör era teknikval påbörja implementationen och förbered er på att integrera delsystemen. Jobba med Git, GitHub och Docker som verktyg.
 
 <!--
 TODO
@@ -38,7 +38,9 @@ Föreläsning {#flas}
 Uppgifter {#uppgift}
 -------------------------
 
-* Utför implementation.
+* Påbörja och utför implementation.
+* Förbered och utför teknikval.
+* Lämna in riskanalys.
 * Tekniska rapporter
 
 
@@ -54,3 +56,4 @@ Här kommer några tips om hur du kan status checka vad ni gör i gruppen och om
 * När planerar ni er första integration internt i gruppen?
 * Har gruppen en plan för hur man kommuncerar resten av projektet?
 * Hur tar gruppen hand om saker som faller mellan stolarna?
+* Vilka risker kan vi kategorisera som de viktigaste att ha koll på?

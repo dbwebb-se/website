@@ -46,6 +46,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2024.
 
 1. [Node.js with Express vs. Flask](https://github.com/PWKarlsson/technical-report-REST-APIs). The purpose of this report is to compare two popular framworks for building REST APIs, Node.js with Express (JavaScript-based) and Flask (Python-based). It will go through their setup processes, how they are built and some of their pros and cons.
 
+1. [How to Sketch a User Interface with the Requirements Specification in Mind (using Figma and MockFlow)](https://github.com/olbr22/technical-report-sketch-user-interface?tab=readme-ov-file).  I'm demonstrating how I would sketch a user interface design based on the requirements I have. I hope this inspires you to start sketching.
+
 
 
 2023 {#2023}

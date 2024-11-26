@@ -227,9 +227,9 @@ Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens k
 
 | Kursens moment           | Ladok moment enligt kursplan  |
 |--------------------------|-------------------------------|
-| Kmom01 + kmom02 + kmom03 | Inlämningsuppgift 1 á 2.5hp   |
-| Kmom04 + kmom05 + kmom06 | Inlämningsuppgift 2 á 2.5hp   |
-| Kmom07 - kmom10          | Inlämningsuppgift 3 á 2.5hp   |
+| Kmom01 + kmom02 + kmom03 + bokcirkel 1-2 | Inlämningsuppgift 1 á 2.5hp   |
+| Kmom04 + kmom05 + kmom06 + bokcirkel 3-5| Inlämningsuppgift 2 á 2.5hp   |
+| Kmom07 - kmom10 + bokcirkel 6  | Inlämningsuppgift 3 á 2.5hp   |
 
 Den sista inlämningen bestämmer kursens slutbetyg vilket utfärdas när samtliga moment godkänts.
 

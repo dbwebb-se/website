@@ -48,6 +48,10 @@ Här följer tekniska studier (och liknande) som utfördes under 2024.
 
 1. [How to Sketch a User Interface with the Requirements Specification in Mind (using Figma and MockFlow)](https://github.com/olbr22/technical-report-sketch-user-interface?tab=readme-ov-file).  Denna rapport demonstrerar användningen av två webbaserade verktyg, Figma och MockFlow, för att skissa användargränssnitt. Användargränssnittet skissas enligt kravspecifikation i båda verktygen för att illustrera att det är möjligt att uppnå en trevlig och funktionell visualisering oberoende av vilket verktyg som används.
 
+1. [Kvalitetssäkrad kodutveckling med GitHub: Branch-strategier och GitHub regler](https://docs.google.com/document/d/e/2PACX-1vQSWqzsXf3U61n5erQQ-MnDbpX3Ofnnf29tHtOUjEBG9e-R-rr8-oCOObm1AMrtenYs-JG2tx4hvv2R/pub) Denna tekniska rapport syftar till att övergripande presentera hur GitHub och GIT kan användas för att åstadkomma bra samarbete och högre kodkvalité.
+
+1. [Färgteori](https://docs.google.com/document/d/1gKO0AX7I4J5QqDgdJp3-eqe9GaS5AFuZaa4HHtJPb8w/edit?tab=t.0) Syftet med den här rapporten är att kartlägga och beskriva hur olika val, färg, typsnitt, placering och andra aspekter av en applikation kan förändra användarens upplevelse och beteende på hemsidan.
+
 
 
 2023 {#2023}

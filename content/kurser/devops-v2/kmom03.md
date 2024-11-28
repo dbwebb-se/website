@@ -4,10 +4,12 @@ author:
 revision:
     "2023-11-17": "(A, aar) Första versionen."
 ...
-Kmom03: DevSecOps
+Kmom03: DevSecOps och valfritt verktyg
 ==================================
 
 Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på development och operations teams men även security behöver inkluderas för att det ska bli ett bra resultat. I detta kursmoment ska vi kolla på hur vi kan inkludera säkerhet i hela utvecklingsprocessen, så att alla blir ansvariga för säkerhet i ett projekt.
+
+Ni ska också välja ett valfritt verktyg att undersöka hur det funkar och passar in i devops.
 
 <!-- more -->
 [WARNING]
@@ -36,7 +38,7 @@ Målet med DevSecOps är att alla behöver tänka på och är ansvariga för sä
 
 ### Test-driven security {#tds}
 
-Vi lägga in automatiska säkerhetskontroller i vår CI/CD kedja, men vi jobbar inte med säkerhet så vi har inte kunskapen att utföra säkerhetstester på vårt projekt. Som tur är finns det många projekt andra människor och företag har gjort som testar säkerhet i olika aspekter på olika system.
+Vi vill lägga in automatiska säkerhetskontroller i vår CI/CD kedja, men vi jobbar inte med säkerhet så vi har inte kunskapen att utföra säkerhetstester på vårt projekt. Som tur är finns det många projekt andra människor och företag har gjort som testar säkerhet i olika aspekter på olika system.
 
 
 
@@ -55,45 +57,10 @@ När det kommer till att göra Docker säkrare finns det väldigt mycket man kan
 
 Det finns några olika verktyg för att skanna Docker images, Docker runtime och inställningar i Docker host. 
 
-Den nämner dock inte [Docker Bench Security](https://github.com/docker/docker-bench-security) vilket är Dockers egna verktyg för att skanna olika delar av Docker.
-
 ###### Läs och titta {#dockerscan-read}
 
 - [Docker Image Security Scanning: What It Can and Can't Do](https://resources.whitesourcesoftware.com/blog-whitesource/docker-image-security-scanning)
 - Länken ovanför nämner fler olika verktyg, men den nämner inte Dockers egna verktyg, [Docker Bench Security](https://github.com/docker/docker-bench-security). För att se allt man "behöver" göra på sin server rekommenderar jag att ni logga in på en appserver och kör verktyget. Då får ni upp en lång lista på saker man borde fixa på en server som kör Docker.
-
-
-<!-- ##### Docker Bench for Security {#bench}
-
-Docker har byggt ihop några skript som kollar basic säkerhet i Docker konfiguration och images. Projektet kallas för [Docker Bench Security](https://github.com/docker/docker-bench-security) och det kollar många av sakerna som tas upp dokumenten jag länkade ovanför. Docker Bench Security är en bra start för säkerhet i Docker men det är inte en fullstädning lösning.
-
-Jobba igenom guiden [Using Docker Bench Security to configure Docker to best practices](https://developers.hp.com/epic-stories/blog/docker-bench-security-container-hardening-and-auditing-host-security) för att fixa basic konfiguration på servrarna för att lösa många av varningarna. Logga in på er AppServer och kör kommandona där när ni jobbar igenom guiden. OBS! Läs igenom nedanstående info innan ni börjar med guiden, det rättar saker som inte funkar för oss, guiden kommer inte lösa alla felen ni har och den är skriven för Alpine os så t.ex. behöver ni skriva `apt-get` istället för `apk` när ni ska installera något.
-
-- När ni ska konfigurera `auditd` ska ni skriva reglerna i filen `/etc/audit/rules.d/audit.rules`.  
-- När ni i guiden ska konfigurera Docker Daemon skippa följande två rader:
-
-```
-"log-driver": "syslog",
-"disable-legacy-registry": true,
-"userns-remap": "default"
-```
-
-Vi vill inte sätta log-driver för att vi har inte en extern log server att skicka dem till, `disable-legacy-registry` är [deprecated i nyare versioner av Docker](https://docs.docker.com/engine/deprecated/#interacting-with-v1-registries). Efter att ni startat om Docker deamon efter ny config kan det vara så att microblog containern inte startar automatiskt så ni får starta den manuellt.
-
-- Använd `sudo less /var/log/syslog  |  grep docker` för att Docker felmededelande vid restart. kan också tillägga att om man försöker starta om Docker för ofta får man error. Då är det bara att vänta en stund innan man försöker igen.
-
-Jobba igenom guiden nu.
-
-Efter guiden hade jag kvar följande fel:
-
-- 1.1, vi struntar i denna.
-- 2.11
-- 2.12
-- 4.6
-
-
-
-https://github.com/freach/docker-image-policy-plugin whitelist docker images för pull -->
 
 
 
@@ -119,7 +86,7 @@ Static/Dynamic/Interactive Application Security Testing syftat på olika ställe
 - [SAST vs. DAST](https://www.synopsys.com/blogs/software-security/sast-vs-dast-difference/) för en jämförelse av de två och vad de är bra på.
 - [Interactive Application Security Testing ](https://snyk.io/learn/application-security/iast-interactive-application-security-testing/).
 
-I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST och [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) för att utföra DAST på Microbloggen.
+I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST. Vi skippar DAST. Ett vanligt verktyg för DAST är [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project). Det hade hittat förbättringar i er Nginx config. Om någon vill testa så har Mozilla ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna mot er produktionsmiljö.
 
 
 
@@ -141,7 +108,7 @@ Vi borde kontrollera följande:
 
 - Kontrollera rättigheterna användare har. Vi kan inte göra detta då vi har studentkonton, vi har inte tillgång till [Role based access controll (RBAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview). Med det kan man kontrollera vem som har rättigheter att skapa/ändra/radera resurser. Vi skulle t.ex. kunna skapa en ny användare som används av `gather_instances.yml` playbooken och den användaren har bara rättigheter att läsa data från Azure. Då hade vi inte varit lika sårbara om vi hade råkat läcka credentials.
 
-Det finns olika verktyg för att verifiera konfigurationer i molntjänster, men igen är vi begränsade för att vi har studentkonto och inte kan sätta roller och kontrollera subscriptions. Ett populärt open-source verktyg är [ScoutSuite](https://github.com/nccgroup/ScoutSuite) men vi kan inte använda det.
+Det finns olika verktyg för att verifiera konfigurationer i molntjänster, men vi är igen begränsade för att vi har studentkonto och inte kan sätta roller och kontrollera subscriptions. Ett populärt open-source verktyg är [ScoutSuite](https://github.com/nccgroup/ScoutSuite) men vi kan inte använda det.
 
 Vi nöjer oss med att veta att vi borde göra det, för att vi inte kan på grund av begränsningarna med studentkonton.
 
@@ -155,7 +122,7 @@ Vi kan och ska förbättra våra security groups, som det ser ut nu kan vem som 
 
 #### Produktionsmiljön {#prod_miljo}
 
-Det finns en hel del vi kan göra med servrarna i produktion. SSH är en viktig del i vårt arbetsflöde, Ansible behöver kunna SSH:a in till varje server för att konfigurera dem och vi gör det för att felsöka och testa saker. Dock så är vår SSH setup inte särskilt säker, även om vi har stängt av root och password login vilket är steg 1.
+Det finns en hel del vi kan göra med servrarna i produktion. SSH är en viktig del i vårt arbetsflöde, Ansible behöver kunna SSH:a in till varje server för att konfigurera dem och vi gör det för att felsöka och testa saker. Dock så är vår SSH setup inte särskilt säker, även om vi har stängt av root- och password-login vilket är steg 1.
 
 I vår struktur kan man SSH:a in till varje server från vilken IP som helst. En säkrare struktur än vad vi har är att ha en bastion/access node som fungerar som ingång till hela produktions infrastrukturen. Då hade vi skapat en till instans som endast är till för att ge tillgång till resten av servrarna. Servern hade haft en security group så att man kan SSH:a till den från vilken IP som helst. På övriga servrar sätter vi security groups som bara tillåter SSH kopplingar från bastion nodens IP. Vi kommer inte att skapa en bastion node då vi har begränsat med resurser men med en större budget hade vi gjort detta.
 
@@ -220,17 +187,13 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 
 
-Uppgifter  {#uppgifter}
+devsecops uppgifter  {#uppgifter}
 -------------------------------------------
 
 1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
-1. Fixa minst 5 varningar från [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) testerna.
-    - Kör Zap's [Baseline tester](https://www.zaproxy.org/docs/docker/baseline-scan/) på er produktionsmiljö för att hitta fel.
-        - Mozilla har ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna.
-    - Uppdatera er Nginx konfiguration i Ansible med lösningarna.
-1. Uppdatera Security groups bara tillåter de ip-adresser som behöver tillgång till specifika portar.
+1. Uppdatera Security groups så att de bara tillåter de ip-adresser som behöver tillgång till specifika portar.
     - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats och lägg till att köra `gather_instances` mellan skapa instanser och skapa security groups. Annars har vi inte tillgång till instansernas IP vi precis skapade.
-    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 får koppla upp sig till mysql porten på database.
+    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 få koppla upp sig till mysql porten på database.
     - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`.
 1. Förbättra SSH konfigurationen.
     - Använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) för att hitta förbättringar. Kör det på er domännamn. Alla servrar ska ha samma konfiguration, därför behöver vi bara köra det mot en.
@@ -238,22 +201,52 @@ Uppgifter  {#uppgifter}
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen.
 
 
+Valfritt verktyg uppgift {#valfritt}
+-------------------------------------------
+Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog.
+
+Studien ska bestå av tre delar.
+
+- Förklara vad verktyget är och vad det gör.
+- Instruktioner på hur man inkorporerar verktyget i Microblog.
+- Reflektera över hur verktyget passar in i och relaterar till devops.
+
+Skapa **inte** ett eget repo för studien utan uppdatera koden i ert repo så verktyget fungerar för er och skapa ett dokument eller en ny README fil med er text.
+
+
+
+## Exempel på verktyg {#exempel}
+
+Ni kan testa en mer avancerad CD strategi (det är inte ett verktyg direkt men det funkar ändå) eller Log management verktyget Loki. Via Github student pack får ni tillgång till många relevant verktyg, här är exempel på några jag hittade när jag kollade:
+
+- New relic
+- Datadog
+- Sentry
+- Lambdatest
+- Blackfire.io
+- Honeybadge
+- Doppler
+- ConfigCAT
+
+Det går också bra att välja något helt annat verktyg, så länge ni kan relatera det till devops.
+
+**Obs!** välj inte prometheus eller grafana. De kommer vi använda i nästa kursmoment.
+
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------
 
-Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
-
+[INFO]
+På Canvas är detta en gruppinlämning. Svara på frågorna tillsammans och skicka med en länk till er tekniska rapport.
+[/INFO]
 Se till att följande frågor besvaras i texten:
 
 1. Vilka fel hittade ni när ni implementerade [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions?
 
-2. Ändrade ni något i er kod efter ni kört Bandit? Använder ni `# nosec` för att ignorera någon kod eller skippa något test? Varför?
+1. Ändrade ni något i er kod efter ni kört Bandit? Använder ni `# nosec` för att ignorera någon kod eller skippa något test? Varför?
 
-3. Beskriv vilka Zap varningar ni fixade och hur ni löste dem.
+1. Hur skulle ni definiera DevSecOps och dess roll inom devops?
 
-4. Hur skulle du definiera DevSecOps och dess roll inom devops?
+1. Var skulle ni säga att vi har den största säkerhets risken i vårt system och infrastruktur?
 
-5. Var skulle du säga att vi har den största säkerhets risken i vårt system och infrastruktur?
-
-6. Veckans TIL?
+1. Hur var storleken på kursmomentet? Var det lagom, för mycket eller för lite?

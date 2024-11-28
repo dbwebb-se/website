@@ -36,4 +36,4 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
 
 5. Skapa ett nytt workflow I Github Actions som kör Bandit, Trivy och Dockler på samma sätt som beskrivet ovanför.
     - Ert nya workflow ska köras före era CD workflow och måste passera för att ni ska pusha er Docker image och driftsätta den.
-    - Det finns en färdig `dockle` Action man kan använda men ni ska inte göra det. Den söker även er "base image" men vi vill inte det och jag har inte hittat något sätt att stänga av det. Kör istället som vanligt via docker.
+    - Det finns en färdig `dockle` Action man kan använda men ni ska inte göra det. Den söker även er "base image", vi vill inte det och jag har inte hittat något sätt att stänga av det. Kör istället som vanligt via docker.

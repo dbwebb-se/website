@@ -38,7 +38,7 @@ Prova gärna [Wappalyzer i din webbläsare](https://www.wappalyzer.com/). Det b�
 Mall sårbarhetsanalys {#mall}
 -----------------------
 
-Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/jmbktjvfxvff) som du kan använda. Länken är till en read-only version, för att skapa er egna behöver du vara inloggade och sen trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller nedanstående krav:
+Det finns en LaTeX mall tillgänglig [här](https://www.overleaf.com/read/mmjgxndgkbkv#674488) som du kan använda. Länken är till en read-only version, för att skapa er egna behöver du vara inloggade och sen trycker du "Menu" och sen "Copy Project". Det går givetvis att använda valfritt program, så länge man uppfyller nedanstående krav:
 
 1. Försättsblad med titel, ert namn och datum.
 2. Innehållsförteckning.

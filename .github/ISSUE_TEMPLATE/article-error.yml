@@ -11,7 +11,7 @@ body:
     id: url
     attributes:
       label: Link to the error
-      description: You should not need to edit this.
+      description: You should not need to edit this if you used the report button.
       placeholder: https://dbwebb.se
       value: "https://dbwebb.se"
     validations:
@@ -29,7 +29,7 @@ body:
     attributes:
       render: bash
       label: The marked text
-      description: You should not need to edit this.
+      description: You should not need to edit this if you used the report button.
       placeholder: Text
     validations:
       required: true

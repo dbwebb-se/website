@@ -9,9 +9,9 @@ revision:
 # Kmom05: Web API
 
 
-[WARNING]
+<!-- [WARNING]
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
+[/WARNING] -->
 
 När vi använder JavaScript i webbläsaren kan vi använda färdiga API:er som ger oss möjlighet att bygga våra webbsidor och applikationer på nya sätt. Vi ska i det här kursmomentet ta en närmare titt på två av dem.
 
@@ -35,13 +35,13 @@ Där finns en hel del listade API:er. I detta kursmoment ska vi titta närmare p
 
 _(ca: 12-16 studietimmar)_
 
-###Övningar {#ovningar}
+### Övningar {#ovningar}
 
 Genomför övningarna för att träna inför uppgifterna.
 
 1. Gå igenom artiklarna i [kursrepot](https://github.com/dbwebb-se/js-v2/tree/master/components/05) för kursmoment 5.
 
-###Uppgifter {#uppgifter}
+### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
 

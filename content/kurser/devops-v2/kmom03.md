@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2024-11-29": "(B, aar) Hopslagning av devsecops och valfritt verktyg till ett kmom."
     "2023-11-17": "(A, aar) Första versionen."
 ...
 Kmom03: DevSecOps och valfritt verktyg
@@ -12,11 +13,9 @@ Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på d
 Ni ska också välja ett valfritt verktyg att undersöka hur det funkar och passar in i devops.
 
 <!-- more -->
-[WARNING]
-Kursmomentet är under uppdatering!
-
-Påbörja inte förens denna gula ruta är borta!
-[/WARNING]
+[INFO]
+Detta kmom är en vecka långt, **inte** två!
+[/INFO]
 [FIGURE src="img/devops/devops-security.png" caption="Hur det inte ska se ut när man kör devops."]
 
 Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.
@@ -30,8 +29,8 @@ Målet med DevSecOps är att alla behöver tänka på och är ansvariga för sä
 ### Läs och titta {#devsecops-read}
 
 <!-- - [The “What” “How” and “Why” of DevSecOps](https://www.newcontext.com/what-is-devsecops/) -->
-- [The “What” “How” and “Why” of DevSecOps](https://web.archive.org/web/20220618115729/https://newcontext.com/what-is-devsecops/)
-- [What is DevSecOps?](https://www.atlassian.com/continuous-delivery/principles/devsecops)
+<!-- - [The “What” “How” and “Why” of DevSecOps](https://web.archive.org/web/20220618115729/https://newcontext.com/what-is-devsecops/)   -->
+<!-- - [What is DevSecOps?](https://www.atlassian.com/continuous-delivery/principles/devsecops)   -->
 - kapitel 1 "Securing devops", 1.1-1.3, i [Securing Devops](http://tinyurl.com/usyps42) (länken går till en E-bok version) för en introduktion till Continuous Security.
 
 
@@ -70,7 +69,7 @@ I vårt projekt använder vi oss av många externa paket både i Python koden f�
 
 ##### Läs och titta {#depscan-read}
 
-- [Dependency and Container Scanning](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/dependency-container-scanning/dependency_container_scanning/)
+- [Dependency and Container Scanning](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/dependency-and-container-scanning/)
 - I uppgiften ska ni använda [Trivy](https://github.com/aquasecurity/trivy) och [Dockle](https://github.com/goodwithtech/dockle).
 
 
@@ -128,12 +127,17 @@ I vår struktur kan man SSH:a in till varje server från vilken IP som helst. En
 
 ##### Läs och titta {#prod-read}
 
-- [What is a bastion host?](https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/)
+<!-- - [What is a bastion host?](https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/) -->
+- [What is a bastion host?](https://web.archive.org/web/20240419114655/https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/)
 
 
 ##### SSH {#ssh}
 
 När vi ändå är inne på SSH kopplingar så kan vi konfigurera säkrare kopplingar på servrarna. Vi börjar med att använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) verktyg för att skanna SSH konfigurationen på våra servrar. Kör följande kommando lokalt på er dator.
+
+[INFO]
+Verktyget är deprecated men det gör inte något. Det funkar fortfarande bra för att skanna en server. Verktyget utvecklas inte vidare bara.
+[/INFO]
 
 ```
 docker run -it mozilla/ssh_scan /app/bin/ssh_scan -t <domain>
@@ -167,7 +171,7 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 
 ### Läs och titta {#cicd-read}
 
-- [How Secure Is Your CICD Pipeline?](https://www.weave.works/blog/how-secure-is-your-cicd-pipeline)
+- [How Secure Is Your CICD Pipeline?](https://web.archive.org/web/20231207091423/https://www.weave.works/blog/how-secure-is-your-cicd-pipeline)
 - [Ultimate guide to CI/CD security and DevSecOps](https://circleci.com/blog/security-best-practices-for-ci-cd/) 
 
 
@@ -230,7 +234,7 @@ Ni kan testa en mer avancerad CD strategi (det är inte ett verktyg direkt men d
 
 Det går också bra att välja något helt annat verktyg, så länge ni kan relatera det till devops.
 
-**Obs!** välj inte prometheus eller grafana. De kommer vi använda i nästa kursmoment.
+**Obs!** välj inte prometheus eller grafana. Vi kommer använda de i nästa kursmoment.
 
 
 Resultat & Redovisning  {#resultat_redovisning}

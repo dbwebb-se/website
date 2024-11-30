@@ -79,7 +79,7 @@ function createOpenButton() {
     setLeftOpenMenuBtn(openMenuBtn);
     document.body.appendChild(openMenuBtn);
 
-    // Create the menu container
+    // Create the menu containerw
     const menu = document.createElement('div');
     menu.innerHTML = `
        <div class="text" style="
@@ -116,6 +116,7 @@ function createOpenButton() {
     // Create the close button
     document.body.appendChild(menu);
     const closeMenuBtn = document.getElementsByClassName('closeButton')[0];
+    closeMenuBtn.style.width = "23px";
 
     // Create the other buttons
     const textButton = document.getElementsByClassName('reportTextButton')[0];

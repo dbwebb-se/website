@@ -1,7 +1,6 @@
 /**
  * @preserve Setup Button for reporting errors in articles.
  * @author Andreas Arnesson <AndreasArne@GitHub>
- * @see {@link https://github.com/mosbth/responsive-menu}
  */
 
 function getSelectionElement() {

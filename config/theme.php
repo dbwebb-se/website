@@ -26,7 +26,7 @@ return [
 
             // JavaScript
             //"javascripts" => [],
-            "javascripts" => ["js-src/theme/responsive-menu.min.js?v=2016-11-28"],
+            "javascripts" => ["js-src/theme/responsive-menu.min.js?v=2016-11-28", "js-src/issue.js"],
         ],
     ],
 

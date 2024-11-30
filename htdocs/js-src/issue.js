@@ -1,3 +1,9 @@
+/**
+ * @preserve Setup Button for reporting errors in articles.
+ * @author Andreas Arnesson <AndreasArne@GitHub>
+ * @see {@link https://github.com/mosbth/responsive-menu}
+ */
+
 function getSelectionElement() {
     let selection = null;
 
@@ -16,12 +22,12 @@ function findAnchor(element) {
                 return child.href;
             }
         }
-        element = element.previousElementSibling;
+        element = element.previousElementSibling ?? element.parentElement;
     }
     return window.location.href;
 }
 
-function createIsssueForText() {
+function createIssueForText() {
 
     const selection = getSelectionElement();
     const text = encodeURIComponent(selection.toString());
@@ -29,13 +35,13 @@ function createIsssueForText() {
     const title = encodeURIComponent(`[Error] in article: ${document.title}`);
     const labels = encodeURIComponent("error in article");
     
-    createIssue(title, link, text, labels);
+    openIssue(title, link, text, labels);
 };
 
-function createIssue(title, link, text, labels){
+function openIssue(title, link, text, labels){
     let assignees;
 
-    let url = `https://github.com/Webprogrammering-Lab/python-base/issues/new?template=article-error.yml&url=${link}&copied-text=${text}&title=${title}&labels=${labels}`; //&assignees=${assignees}`;
+    let url = `https://github.com/dbwebb-se/website/issues/new?template=article-error.yml&url=${link}&copied-text=${text}&title=${title}&labels=${labels}`; //&assignees=${assignees}`;
     
     window.open(url, '_blank');
 }
@@ -58,7 +64,7 @@ function setPosMenu(menu, openMenuBtn) {
     }
 }
 
-function createPopUp() {
+function createOpenButton() {
     // Create the button to open the menu
     const openMenuBtn = document.createElement('button');
     openMenuBtn.textContent = '⚠';
@@ -134,17 +140,11 @@ function createPopUp() {
     textButton.addEventListener('click', () => {
         
         menu.style.display = 'none';
-        createIsssueForText();
+        createIssueForText();
     });
 }
 
-let issue = {
-    name: "Rapportera fel",
-    action: function () {
-        createPopUp();
-    },
-};
 
-
-
-export default issue;
+!function () {
+    createOpenButton()
+}();

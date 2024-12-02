@@ -52,6 +52,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2024.
 
 1. [Färgteori](https://docs.google.com/document/d/1gKO0AX7I4J5QqDgdJp3-eqe9GaS5AFuZaa4HHtJPb8w/edit?tab=t.0) Syftet med den här rapporten är att kartlägga och beskriva hur olika val, färg, typsnitt, placering och andra aspekter av en applikation kan förändra användarens upplevelse och beteende på hemsidan.
 
+1. [Load testing three popular API frameworks](https://github.com/Challe-P/report-load-tests) This report aims to test how three popular API frameworks in three different programming languages compare when load tested. The frameworks I've chosen are FastAPI, written in Python, Express, written in JavaScript and Laravel, written in PHP.
+
 
 
 2023 {#2023}

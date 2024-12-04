@@ -137,10 +137,12 @@ När vi ändå är inne på SSH kopplingar så kan vi konfigurera säkrare koppl
 
 [INFO]
 Verktyget är deprecated men det gör inte något. Det funkar fortfarande bra för att skanna en server. Verktyget utvecklas inte vidare bara.
+
+De har har också tagit bort deras docker image från Docker Hub så vi kan inte använda deras. Men som tur är har någon forkat repot och lagt upp en ny docker image.
 [/INFO]
 
 ```
-docker run -it mozilla/ssh_scan /app/bin/ssh_scan -t <domain>
+docker run -it threatpatrols/sshscanfork /app/bin/ssh_scan -t <domain>
 ```
 
 Alla servrar borde ha samma SSH konfiguration så det räcker att köra den mot er load balancer. Man får rätt mycket text utskriven men det viktiga är vad den skriver för `recommendation`, jag fick följande:

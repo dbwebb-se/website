@@ -14,9 +14,9 @@ revision:
 Kmom05: Säkerhetstestning
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT24. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Mjukvarutest ökar kvaliteten i den mjukvara som skrivs, men hur fungerar det med säkerhetstest. I detta kursmomentet, som bygger på sårbarhetsanalyser, går vi igenom vad säkerhetstester innebär och vad man behöver tänka på.
 
@@ -28,7 +28,7 @@ Föreläsning  {#forelasningar}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2023-12-04) H430, med Anton om säkerhetstänket vid testning samt Marie med säkerhetstestning praktiskt.
+* 10.15 (2023-12-09) H430, med Marie om säkerhetstestning
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -45,7 +45,7 @@ Förkunskapskrav {#forkunskapskrav}
 
 Du har utfört uppgifterna [Sårbarhetsanalys](/uppgift/sarbarhetsanalys).
 
-Du har medverkat på föreläsningen med Anton där han går igenom ämnet.
+Du har medverkat på föreläsningen med Marie om sårbarhetsanalys och säkerhetstestning eller tagit del av presentationerna i efterhand.
 
 
 Tekniker  {#tekniker}
@@ -65,7 +65,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2023-12-08) H430, med Marie Säkerhetstestning, se uppgiften nedan
+* 10.15 (2023-12-13) H430, med Marie Säkerhetstestning, se uppgiften nedan
 
 
 Uppgifter  {#uppgifter}

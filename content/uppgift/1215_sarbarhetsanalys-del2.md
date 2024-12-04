@@ -40,7 +40,7 @@ $ cp -r example/bank-app me/kmom05
 Uppgifter {#uppgifter}
 ---------------------------------
 
-Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återupprepa tills du antingen har löst de sårbarheter du noterat eller tills tiden för kursmomentet tar slut.
+Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återupprepa tills du antingen har löst de sårbarheter du noterat eller tills tiden för kursmomentet tar slut. Välj ut minst 3 olika sårbarheter som du vill åtgärda.
 
 ### Systemets funktionalitet {#funktionalitet}
 

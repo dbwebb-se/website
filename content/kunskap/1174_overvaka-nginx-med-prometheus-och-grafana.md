@@ -68,15 +68,15 @@ $ docker run \
 
 Konfigurera Prometheus {#configure_prom}
 ---------------------------------------------------------
-Nästa steg för att få igång detta är att konfigurera prometheus. Detta görs genom att lägga till ett nytt jobb i [prometheus.yml](https://devconnected.com/complete-node-exporter-mastery-with-prometheus/#b_Installing_Prometheus):
+Nästa steg för att få igång detta är att konfigurera var prometheus ska hämta data. Detta görs genom att lägga till ett nytt jobb i [prometheus.yml](https://devconnected.com/complete-node-exporter-mastery-with-prometheus/#b_Installing_Prometheus):
 
 ```yml
 scrape_configs: 
   - job_name: nginx
-    metrics_path: /prometheus
-    scrape_interval: 30s
+    metrics_path: /prometheus # sökvägen som exportern ovanför skapar, -web.telemetry-path=/prometheus 
+    scrape_interval: 30s # hur ofta prometheus ska skrapa data
     static_configs: 
-    - targets: ["<domännamn>:9113"]
+    - targets: ["<domännamn>:9113"] # domän och port som exportern finns på
 ```
 
 Starta om prometheus, för mig räckte det att skicka en POST `curl -X POST http://localhost:9090/-/reload` men fungerar inte det kan ni testa `sudo killall -HUP prometheus` som skickar en `SIGHUP` signal till prometheusprocessen och laddar om sina konfigurationer.

@@ -13,11 +13,9 @@ Nu när vi har ett system uppe och rullande behöver vi veta när något går fe
 
 
 <!-- more -->
-[WARNING]
-Kursmomentet är under uppdatering!
-
-Påbörja inte förens denna gula ruta är borta!
-[/WARNING]
+[INFO]
+Detta kmom är en vecka långt, **inte** två!
+[/INFO]
 
 [FIGURE src="https://upload.wikimedia.org/wikipedia/commons/d/d2/IoT_environmental_monitoring_system_solution_-_Overview.jpg" caption="Överblick av olika delar som kan ingå i ett system med övervakning."]
 
@@ -119,7 +117,7 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 1. Uppdatera era appservrar så de kör er nya Docker image som innehåller flask exportören.
 
-1. Vi borde ha en exportör för MySQL men tidigare år har den funkat dåligt. Installera istället en Node exporter på databas VM:en. Då får vi alla fall lite koll på hur servern mår. Gör det via Ansible koden.
+1. Vi borde ha en exportör för MySQL men tidigare år har den funkat dåligt, därför skippar vi den.
 
 1. Konfigurera en exportör för Nginx. I övningen [Övervaka nginx med Prometheus och Grafana](kunskap/overvaka-nginx-med-prometheus-och-grafana) kan ni se hur man gör.
 
@@ -127,7 +125,7 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 1. Lägg till dashboard i Grafana för alla exportörer. Använd Ansible modulen [dashboards](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_dashboard_module.html) för att lägga till den från Ansible. Det går inte att koppla ihop er dashboard och datasource i Ansible koden. Modulerna saknar stöd för det. Bara skapa dem via Ansible och sen får ni koppla ihop dem manuellt.
 
-1. Skapa ett valfritt larm, ett sätt att aktivera det och att avaktivera det. Larmet ska skickas till `https://webhook.site`. I redovisningstexten, skriv hur man kan aktivera och avaktivera larmet. Samt länk till er webhook sida där man kan se larmet. 
+1. I microblogen lägga till en knapp som genererar ett fel. Skapa ett larm, som kopplas till det felet. Larmet ska skickas till `https://webhook.site`. I redovisningstexten, skriv hur man kan aktivera och avaktivera larmet. Samt länk till er webhook sida där man kan se larmet. 
 
 1. Lägg till en Reverse Proxy i er [Nginx konfiguration till Grafana och Grafana konfiguration](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f). Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
 

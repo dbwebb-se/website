@@ -1,12 +1,15 @@
 ---
 author:
     - nik
+    - efo
 category:
     - design
     - pico
 revision:
+    "2024-12-05": (B, efo) Uppdaterad HT2024.
     "2020-11-19": (A, nik) Skapad inför HT2020.
 ...
+
 Sätt upp session i Pico
 ==================================
 
@@ -245,6 +248,112 @@ För slippa behöva köra två kommandon uppdaterar jag mina script i `package.j
 ```
 
 Jag kan då köra `npm run style` för att bygga både mitt ljusa och mörka tema och jag har även uppdaterat min watch så den kollar båda filerna efter ändringar. Och vi kan köra `npm run style-min` för att bygga de komprimerade `.min.css` filerna. Se till att köra rätt script för att bygga det Stylesheet du har laddat i din `header.twig`.
+
+
+
+@use och @forward {#use}
+--------------------------------------
+
+Då `@import` börjar närma sig pensionsåldern och har blivit _deprecated_, tittar vi i detta stycke på hur vi kan ersätta `@import` från ovan.
+
+Vi skapar först en `variables`-katalog i vår scss katalog i temat vi vill jobba med, i detta exempel använder jag `kmom02` som tema namn. Jag skapar alltså katalogen `me/portfolio/themes/scss/variables`. I `variables`-katalogen skapar jag två filer `_index.scss` och `_variables.scss`. Jag har i detta exempel filträdet:
+
+```bash
+├── blockquotes.scss
+├── code.scss
+├── container.scss
+├── footer.scss
+├── gallery.scss
+├── header.scss
+├── style-dark.scss
+├── style.scss
+├── tables.scss
+├── technology.scss
+├── typography.scss
+└── variables
+    ├── _index.scss
+    └── _variables.scss
+```
+
+I filen `variables.scss` definierar jag mina variabler och använder nyckelordet `!default` för att i ett senare skede kunna skriva över dessa variabler.
+
+```scss
+// themes/kmom02/variables/_variables.scss
+$main-background-color: #fff !default;
+$main-font-color: #333 !default;
+```
+
+I filen använder vi nyckelordet `@forward` för att "vidarebefordra" våra variabler och göra de tillgängliga i andra filer.
+
+```scss
+// themes/kmom02/variables/_index.scss
+@forward 'variables';
+```
+
+Nu kan vi i `style.scss`-filen använda våra variabler genom att ladda in de globalt med hjälp av `as *`.
+
+```scss
+// themes/kmom02/style.scss
+@use 'variables' as *;
+
+@use 'typography';
+@use 'container';
+
+@use 'header';
+@use 'footer';
+
+@use 'blockquotes';
+@use 'code';
+
+@use 'technology';
+@use 'tables';
+
+@use 'gallery';
+```
+
+Sedan kan vi i till exempel `typography.scss` använda variablarna genom att även ladda de där.
+
+```scss
+// themes/kmom02/typography.scss
+@use 'variables' as *;
+
+body {
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+    color: $main-font-color;
+}
+
+p {
+    font-size: 1.4em;
+    margin-bottom: 1.96rem;
+}
+```
+
+För att sedan skapa det mörka temat har vi filen `style-dark.scss`. Här börjar vi med att använda konstruktionen `with` för att skriva över våra variabler för det mörka temat.
+
+```scss
+// themes/kmom02/style-dark.scss
+@use 'variables' as * with (
+    $main-background-color: #333,
+    $main-font-color: #fff
+);
+
+@use 'typography';
+@use 'container';
+
+@use 'header';
+@use 'footer';
+
+@use 'blockquotes';
+@use 'code';
+
+@use 'technology';
+@use 'tables';
+
+@use 'gallery';
+```
+
+När vi nu kompilerar om våra stylesheet bör vi alltså få olika värden för de två variabler beroende på vilken av de resulterande filerna vi kollar i.
 
 
 

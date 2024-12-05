@@ -54,6 +54,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2024.
 
 1. [Load testing three popular API frameworks](https://github.com/Challe-P/report-load-tests) This report aims to test how three popular API frameworks in three different programming languages compare when load tested. The frameworks I've chosen are FastAPI, written in Python, Express, written in JavaScript and Laravel, written in PHP.
 
+1. [A Comparison of Common Styling Methods in React](https://github.com/mayaaedlund/styling-in-react) This study examines four popular styling methods - Normal CSS, CSS Modules, CSS-in-JS and Tailwind CSS. The aim is to compare them and discuss their advantages and disadvantages to provide recommendations for different types of projects.
+
 
 
 2023 {#2023}

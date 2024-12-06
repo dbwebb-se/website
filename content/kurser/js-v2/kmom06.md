@@ -21,9 +21,9 @@ Vi har lärt oss att använda moduler för att strukturera vår kod och dela upp
 
 <small><i>(Detta är instruktionen för kursmomentet och omfattar det som skall göras inom ramen för kursmomentet. Momentet omfattar cirka **20 studietimmar** inklusive läsning, arbete med övningar och uppgifter, felsökning, problemlösning, redovisning och eftertanke. Läs igenom hela kursmomentet innan du börjar jobba. Om möjligt -- planera och prioritera var du vill lägga tiden.)</i></small>
 
-## Läsanvisningar {#lasanvisningar}
+<!-- ## Läsanvisningar {#lasanvisningar}
 
-_(ca: 4-6 studietimmar)_
+_(ca: 4-6 studietimmar)_ -->
 
 <!--
 Läs följande.

@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2024-12-06": (C, lew) Uppdaterad version inför ht24.
   "2023-11-20": (B, lew) Uppdaterad version inför ht23.
   "2021-12-03": (A, lew) Ny version inför ht21.
 ...
@@ -8,9 +9,9 @@ revision:
 # Kmom06: Objekt
 
 
-[WARNING]
+<!-- [WARNING]
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
+[/WARNING] -->
 
 Vi har lärt oss att använda moduler för att strukturera vår kod och dela upp den i mindre delar. Vi ska i det här momentet fortsätta med en modulstruktur med hjälp av objekt. Till vår hjälp har vi en grund i form av ett halvfärdigt "hänga gubben" spel.
 
@@ -50,6 +51,9 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Gör uppgiften "[Hangman](https://github.com/dbwebb-se/js-v2/blob/master/components/06/assignment-1.md)". Jobba i mappen `public/`.
 
+[INFO]
+Kraven har uppdaterats för uppgiften så det kan saknas något i videon nedan. Dubbelkolla mot kraven i uppgiften. Det är de som gäller.
+[/INFO]
 
 [YOUTUBE src=LJ0RN4Gl6Ig width=639 caption="Hur kan det se ut när det är klart"]
 

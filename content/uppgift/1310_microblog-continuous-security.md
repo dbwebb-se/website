@@ -25,7 +25,7 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
     - Använda `target`:
         - `image` för att söka igenom er Microblog produktions image.
             - Använd `scanners`, `vuln,secret,config`.
-        - `fs` för att söka igenom hela repo mappen. Ni kan exkludera `.venv` mappen.
+        - `fs` för att söka igenom hela repo mappen. Ni kan exkludera `.venv` mappen. **OBS** detta kommando funkar inte på MacOS. För att köra det på Mac, lägg till det i er CI kedja och se resultatet.
             - Använd `scanners`, `vuln,secret,config`.
     - Lägg till make kommando för båda `target`.
     - Lös felen som hittas.

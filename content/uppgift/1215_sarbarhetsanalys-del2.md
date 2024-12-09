@@ -40,7 +40,7 @@ $ cp -r example/bank-app me/kmom05
 Uppgifter {#uppgifter}
 ---------------------------------
 
-Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återupprepa tills du antingen har löst de sårbarheter du noterat eller tills tiden för kursmomentet tar slut. Välj ut minst 3 olika sårbarheter som du vill åtgärda.
+Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återupprepa tills du antingen har löst de sårbarheter du noterat eller tills tiden för kursmomentet tar slut. Välj ut minst 3 olika sårbarheter som du vill åtgärda. Minst 10 testfall och några fler om ni jobbar två och två.
 
 ### Systemets funktionalitet {#funktionalitet}
 
@@ -56,7 +56,7 @@ Dokumentera dina tester i ett eget kapitel. Berätta vilka testfall du gjorde oc
 
 ### Skriv testfall {#testfall}
 
-Skriv godtyckligt antal testfall (3+) per sårbarhet som demonstrerar hur man kan utnyttja sårbarheten och hur beteendet borde vara när det det fungerar som det ska. Först ska testfallen gå fel, visa rött, och det redovisar du med en skärmdump eller liknande i Appendix. Dessa testfall ska vara gröna när du sedan har åtgärdat sårbarheten. Redovisa även testfallen när de går rätt med en skärmdump eller liknande i Appendix. 
+Skriv godtyckligt antal testfall (3+) per sårbarhet som demonstrerar hur man kan utnyttja sårbarheten och hur beteendet borde vara när det det fungerar som det ska. Först ska testfallen gå fel, visa rött, och det redovisar du med en skärmdump eller liknande i Appendix. Dessa testfall ska vara gröna när du sedan har åtgärdat sårbarheten. Redovisa även testfallen när de går rätt med en skärmdump eller liknande i Appendix.
 
 Minimum 9 testfall totalt. Försök att testa olika delar av appen!
 

@@ -159,7 +159,7 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈
 
 $ helm install ingress-nginx ingress-nginx/ingress-nginx \
-  --version 4.8.4 \
+  --version 4.11.3 \
   --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-load-balancer-health-probe-request-path"=/healthz # installerar ingressen i vårt kluster, sätter upp resurserna.
 NAME: nginx
 LAST DEPLOYED: Wed Dec  1 14:23:02 2021

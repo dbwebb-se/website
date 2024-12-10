@@ -2,6 +2,7 @@
 author: mos
 category: labbmiljo
 revision:
+  "2024-12-10": (F, aar) Uppdatera instruktion för nya wsl inte har pip3 förinstallerat.
   "2022-01-12": (E, aar) Uppdaterade hur installerar pip.
   "2021-01-16": (D, aar) La till stycke om gcc problem i cygwin.
   "2021-01-07": (C, aar) Flyttade runt stycken då pip kommer för installerat i nyare versioner av python.
@@ -30,7 +31,7 @@ Som ett exempel på hur det kan se ut när en referens görs till att du *"kan i
 Så här står det där.
 
 ```bash
-pip install <paket>
+pip3 install <paket>
 ```
 
 Nåväl, först behöver vi installera PIP.
@@ -41,8 +42,6 @@ Använda PIP {#pip}
 --------------------------------------
 
 Från och med Python 3.4 så ska pip följa med python installationen. Försök kolla vilken version av pip som är installerat. Om kommandot inte finns hoppa ner till [Installera PIP för Python 3](#installera) för att installera det.
-
-När ni använder pip kommandot kommer troligen flera av er få en warning om att det finns en nya version tillgänglig. Ni kan ignorera felet eller köra kommandot för att uppdater pip, vilket som funkar.
 
 
 
@@ -59,7 +58,14 @@ Vi kör python 3 och därför använder vi `pip3` som kommando.
 Om du inte har pip3 installerat kan du installera det med `python3 -m ensurepip --upgrade".
 
 
+### Installera pip {#installera}
 
+På Mac kommer pip3 förinstallerat med Python 3.
+
+#### Linux/WSL {#wsl}
+
+Kör kommandot `sudo apt install python3-pip`.
+<!-- 
 ###Uppdatera pip och setuptools {#pip2}
 
 Innan ni börjar använda pip är det bra att uppdatera det och en modul som används för att installera andra moduler.
@@ -106,7 +112,7 @@ Du kan även se alla moduler som är installerade.
 
 ```
 pip3 list
-```
+``` -->
 
 
 

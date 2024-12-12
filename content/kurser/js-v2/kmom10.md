@@ -1,6 +1,7 @@
 ---
 author: lew
 revision:
+  "2024-12-12": (D, lew) Uppdaterad inför ht24.
   "2023-12-06": (C, lew) Uppdaterad inför ht23.
   "2022-12-08": (B, lew) Uppdaterad inför ht22.
   "2021-12-10": (A, lew) Uppdaterad inför ht21.
@@ -8,9 +9,9 @@ revision:
 
 # Kmom10: Projekt och examination
 
-[WARNING]
+<!-- [WARNING]
 Kursmomentet är under uppdatering och är klart när den här gula rutan är borta.
-[/WARNING]
+[/WARNING] -->
 
 Detta kursmoment avslutar och examinerar kursen.
 
@@ -50,15 +51,15 @@ Dessa uppgifter skall utföras och redovisas.
 
 1. Börja med att visa upp en idhandling och ditt ansikte så vi vet att du är du.
 
-2. Berätta om projektet och visa upp vad du har gjort.
+2. Berätta om projektet och visa upp vad du har gjort. Kör igenom kraven.
 
-3. Lyft fram delar som du har jobbat mycket med eller som du är stolt över.
+3. Lyft fram delar i koden som du har jobbat mycket med eller som du är stolt över. Visa att du har kontroll över koden.
 
 4. Försök hålla presentationen som en demo i arbetslivet, det är bra träning.
 
 5. Sikta på 4-5 minuter.
 
-6. Lägg till videon som en kommentar i Canvas eller på annat ställe där den är skyddad, lägg inte upp den på Youtube. Dubbelkolla så länken till videon fungerar.
+6. Lägg till videon som en kommentar i Canvas eller på annat ställe där den är skyddad, lägg inte upp den på Youtube. **Dubbelkolla så länken till videon fungerar.**
 
 ### Krav på presentation (campus) {#krav-pres}
 

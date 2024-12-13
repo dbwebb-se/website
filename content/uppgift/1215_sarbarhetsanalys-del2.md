@@ -37,10 +37,9 @@ $ cp -r example/bank-app me/kmom05
 
 <!-- *Det går bra att ta bort applikationen från din kmom04 mapp, så slipper du att den tar plats på studentservern* -->
 
-Uppgifter {#uppgifter}
----------------------------------
+## Uppgifter {#uppgifter}
 
-Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återupprepa tills du antingen har löst de sårbarheter du noterat eller tills tiden för kursmomentet tar slut. Välj ut minst 3 olika sårbarheter som du vill åtgärda. Minst 10 testfall och några fler om ni jobbar två och två.
+Utifrån din rapport, välj ut en sårbarhet och lös följande delar. Återupprepa tills du antingen har löst de sårbarheter du noterat eller tills tiden för kursmomentet tar slut. Välj ut minst 3 olika sårbarheter som du vill åtgärda. Minst 9 testfall och några fler om ni jobbar två och två.
 
 ### Systemets funktionalitet {#funktionalitet}
 
@@ -52,7 +51,7 @@ I kapitlet Metod lägger du ett stycke eller ett underkapitel där du beskriver 
 
 ### Uppdatera rapport med testfall {#uppdatera_testfall}
 
-Dokumentera dina tester i ett eget kapitel. Berätta vilka testfall du gjorde och varför. 
+Dokumentera dina tester i ett eget kapitel. Berätta vilka testfall du gjorde och varför.
 
 ### Skriv testfall {#testfall}
 
@@ -64,7 +63,7 @@ Testerna ska gå att köras via `npm test`. Om testerna körs på ett annat sät
 
 ### Uppdatera rapport med åtgärder {#uppdatera_atgarder}
 
-Lägg till ett nytt kapitel i din rapport ifrån kmom04 där du noterar för varje sårbarhet vilka ändringar du gör och i vilka filer. Inled med ett kort stycke där du berättar hur många sårbarheter du åtgärdade. Var det någon sårbarhet som var svår att lösa antingen att testa eller åtgärda? Skriv en kommentar om det.   
+Lägg till ett nytt kapitel i din rapport ifrån kmom04 där du noterar för varje sårbarhet vilka ändringar du gör och i vilka filer. Inled med ett kort stycke där du berättar hur många sårbarheter du åtgärdade. Var det någon sårbarhet som var svår att lösa antingen att testa eller åtgärda? Skriv en kommentar om det.
 Skapa en ny tabell som sammanfattar vilka sårbarheter du åtgärdat, vad din ursprungliga estimation var och hur lång tid det faktiskt tog att åtgärda. Kommentera dina estimat.
 
 ### Åtgärda sårbarheterna {#atgarda}
@@ -72,7 +71,6 @@ Skapa en ny tabell som sammanfattar vilka sårbarheter du åtgärdat, vad din ur
 Åtgärda sårbarheterna. Om du märker av att det behövs fler tester så skriver du dit fler testfall. Kör gärna om alla dina tester när du åtgärdat en sårbarhet så att du inte "lagar sönder" något annat.
 
 Se till att era tester blir gröna med `npm test`.
-
 
 Publicera {#Publicera}
 ---------------------------------

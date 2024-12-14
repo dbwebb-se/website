@@ -133,11 +133,11 @@ Läs [instruktionen till kursmoment 04](./kmom04).
 
 
 
-### Kmom05: Container orchestration {#kmom06}
+### Kmom05: Container orchestration {#kmom05}
 
 Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera tycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället  börjar ni läsa på om container orchestration.
 
-Läs [instruktionen till kursmoment 06](./kmom06).
+Läs [instruktionen till kursmoment 05](./kmom05).
 
 
 

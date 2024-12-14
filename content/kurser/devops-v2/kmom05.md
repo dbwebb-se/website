@@ -7,7 +7,7 @@ revision:
     "2020-12-04": "(B, aar) Bytt AWS till Minikube."
     "2019-10-15": "(A, aar) Första versionen."
 ...
-Kmom06: Container orchestration
+Kmom05: Container orchestration
 ==================================
 
 Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera trycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället börjar ni med att läsa på om container orchestration.

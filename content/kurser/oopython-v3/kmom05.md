@@ -17,7 +17,11 @@ Vi ska titta närmare på några av de vanligaste datastrukturerna och hur de fu
 Exceptions hjälper oss med att få reda på vad som gått fel. Det finns en hel del inbyggda exceptions som vi säkert stött på tidigare. Nu ska vi se hur vi skapar egna exceptions och på så sätt ta ett steg till mot att ha full kontroll över hur programmet ska fungera.
 
 <!--more-->
+[WARNING]
+Kursmomentet är under uppdatering!
 
+Påbörja inte fören denna gula ruta är borta!
+[/WARNING]
 [INFO]
 Gör `dbwebb selfupdate` innan du startar med kursmomentet.
 [/INFO]

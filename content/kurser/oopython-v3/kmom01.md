@@ -13,6 +13,11 @@ objektorienterad python.
 
 <!--more-->
 
+[WARNING]
+Kursmomentet är under uppdatering!
+
+Påbörja inte fören denna gula ruta är borta!
+[/WARNING]
 [FIGURE src=/image/oopython/kmom02/diagrams/fullExample_class.png?w=w2 caption="Ett exempel på ett klassdiagram i UML med 1 kund som kan göra 0 eller flera ordrar."]
 
 

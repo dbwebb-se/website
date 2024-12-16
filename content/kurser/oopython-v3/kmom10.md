@@ -16,7 +16,11 @@ Detta kursmoment avslutar och examinerar kursen.
 Upplägget är enligt följande:
 
 * Projektet och redovisning (20-60h)
+[WARNING]
+Kursmomentet är under uppdatering!
 
+Påbörja inte fören denna gula ruta är borta!
+[/WARNING]
 
 Totalt omfattar kursmomentet (08/10) ca 20+20+20 studietimmar.
 [WARNING]

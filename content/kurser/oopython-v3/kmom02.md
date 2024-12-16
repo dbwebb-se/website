@@ -15,7 +15,11 @@ Kmom02: Kom igång med Flask och testning
 Vi ska göra grunden till ett Yahtzee spel och börja med testning. För att kunna presentera spelet på en webbsida så kommer vi att arbeta med ett mini-ramverk, "Flask". Vi kommer jobba mer med Flask-appen genom kursens gång, samt titta på mer tekniker och strukturer angående objektorienterad programmering.
 
 <!--more-->
+[WARNING]
+Kursmomentet är under uppdatering!
 
+Påbörja inte fören denna gula ruta är borta!
+[/WARNING]
 [INFO]
 
 Gör `dbwebb update` och `dbwebb init` innan ni börjar jobba med kursmomentet.

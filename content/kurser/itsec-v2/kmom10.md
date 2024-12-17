@@ -79,6 +79,7 @@ Om du inte har en fungerande Dockermiljö kan du installera paketen med `compose
 ```bash
 # Om du får problem med docker, ta ner, rensa och starta om 
 $ docker compose down -v
+# Rensa image och volymer för eshopen och mariadb i docker
 $ docker compose up -d
 # Om du får problem i terminalen, rensa, installera om och start om 
 $ npm run clean-all

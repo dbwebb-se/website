@@ -13,11 +13,7 @@ Kmom06/10: Rapport
 Vi avslutar kursen med att ni individuellt skriver en rapport. Rapporten är det sista som du gör och tillsammans med alla redovisningar används detta som underlag för att examinera dig från kursen.
 
 <!-- more -->
-[WARNING]
-Kursmomentet är under uppdatering!
 
-Påbörja inte förens denna gula ruta är borta!
-[/WARNING]
 [YOUTUBE src="8gwCFcGxOYE" caption="Andreas introducerar rapporten."]
 
 
@@ -53,7 +49,7 @@ Betyget UX kan kompletteras till G eller skickas in i nästa omgång för ny bed
 
 Skapa också ett separat dokument där du skriver feedback på rapporten och kursen, svara på följande:
 
-1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? På en skala 1-10, vilket betyg ger du kursen?
+1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? På en skala 1-10, vilket betyg ger du kursen?
 
 
 
@@ -61,7 +57,7 @@ Skapa också ett separat dokument där du skriver feedback på rapporten och kur
 
 - [DevOps](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7458761&isnumber=7458753), kort överblick av devops och hur det relaterar till verktyg.
 
-- [A Survey of DevOps Concepts and Challenges](https://doi.org/10.1145/3359981),  litteratur undersökning av devops. Innehåller många referenser till många andra arbeten.
+- [A Survey of DevOps Concepts and Challenges](https://doi.org/10.1145/3359981), litteratur undersökning av devops. Innehåller många referenser till många andra arbeten.
 
 - [Effective Devops](http://tinyurl.com/y6jy5x8u)
 
@@ -94,7 +90,5 @@ vetenskaplig/teknisk rapport
 ### Video {#video}
 
 Det finns generellt kursmaterial i video form.
-
-1. Kursen innehåller föreläsningar som spelas in och därefter läggs i spellistan "[devops streams ht22](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8t5NnxhZIJC69_FL55FzNV)".
 
 1. I "[kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78)" hittar du alla videor som är kopplade till kursmomentet, de börjar på 7xx i namnet.

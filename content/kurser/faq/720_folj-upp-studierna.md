@@ -44,6 +44,8 @@ Här är dokumenten per antagningsomgång, man följer normalt alltid en antagni
 
 ### Webbprogrammering 120hp distans {#followup120}
 
+* [Antagen 2025](https://docs.google.com/spreadsheets/d/1YLYqq6Wk_UXcgrVTWxsIo__8TPvlQjFHw7r2SxacoKY/edit?usp=sharing)
+* [Antagen 2024](https://docs.google.com/spreadsheets/d/1wDeIvRmuYY2o0GBXnYWrEdKOZ-zVkD_5mZ18xx9lMOA/edit?usp=sharing)
 * [Antagen 2023](https://docs.google.com/spreadsheets/d/1IRQ0GarDvuhwAv0VFsX1cvDCr9Pky-NY6lQ91bh1S4w/edit?usp=sharing)
 * [Antagen 2022](https://docs.google.com/spreadsheets/d/1zMFVSC1VN2zzvngc0Y03VK4luoDqJsq7JOjbcenqRno/)
 * [Antagen 2021](https://docs.google.com/spreadsheets/d/1pKlRPVwqxpAyfaDdi-ERQC_jq5bxxdjEgEh1FPLC6Zo/edit?usp=sharing)
@@ -57,6 +59,8 @@ Här är dokumenten per antagningsomgång, man följer normalt alltid en antagni
 
 ### Webbprogrammering 180hp campus {#followup180}
 
+* [Antagen 2025](https://docs.google.com/spreadsheets/d/1_IBe03JTbciLu8YJfhRjVartz86fA3EqUQHTN5-pYQo/edit?usp=sharing)
+* [Antagen 2024](https://docs.google.com/spreadsheets/d/1CFks-bUm2R-r2olqu-_BfUO2kjzCSPcwi39IFUpT20k/edit?usp=sharing)
 * [Antagen 2023](https://docs.google.com/spreadsheets/d/12sUvPNI97dfuF9jzuBWHs-4uj2-U9Bq7izvzsY8VaGo/edit?usp=sharing)
 * [Antagen 2022](https://docs.google.com/spreadsheets/d/1OcDmdD5VBzNZLae6uHhSipKwLrXdF_nHP9OZUXhCoPw/edit?usp=sharing)
 * [Antagen 2021](https://docs.google.com/spreadsheets/d/1SiiXMBWIxBRUIBW7y56qEccrVZBOxLyWwaibyScB87Y/edit?usp=sharing)

@@ -98,11 +98,11 @@ Med en godkänd tentamen kan du nå ett slutbetyg om E-C.
 
 <!-- Visa endast dessa datum i Canvas -->
 
-Följande tentamen är planerade för kursomgången våren 2024.
+Följande tentamen är planerade för kursomgången våren 2025.
 
-* Tenta (kmom10/try1): Torsdagen den 21 mars, 2024.
-* Omtenta (kmom10/try2): Onsdagen den 5 juni, 2024.
-* Resttenta (kmom10/try3): Fredagen den 23 augusti, 2024.
+* Tenta (kmom10/try1): Torsdagen den 27 mars, 2025.
+* Omtenta (kmom10/try2): Torsdagen den 5 juni, 2025.
+* Resttenta (kmom10/try3): Torsdagen den 28 augusti, 2025.
 
 Tentamen är distans och online. Ingen anmälan krävs.
 

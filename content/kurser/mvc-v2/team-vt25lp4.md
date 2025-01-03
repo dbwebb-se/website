@@ -29,7 +29,7 @@ Följande är lärarteamet för kursen.
 
 | Bild    | Vem         | Roll | Kontakt och info |
 |---------|-------------|-------|------------------|
-| ![Mikael](https://mikaelroos.se/image/mos-tjaro.jpg?w=100&h=100&cf) | Mikael&nbsp;Roos (mos) | Examinator, kursansvarig, lärare | mos@bth.se, [BTH](https://www.bth.se/?s=mos&searchtype=employee), [mikaelroos.se](https://mikaelroos.se) |
+| ![Mikael](https://dbwebb.se/image/mikael-roos/mos-tjaro.jpg?w=100&h=100&cf&a=27,12,18,10) | Mikael&nbsp;Roos (mos) | Examinator, kursansvarig, lärare | mos@bth.se, [BTH](https://www.bth.se/?s=mos&searchtype=employee), [mikaelroos.se](https://mikaelroos.se) |
 | ![Marie](image/lararteam/marie.jpg?w=100&h=100&cf) | Marie&nbsp;Grahn (grm) | Lärare | grm@bth.se, [BTH](https://www.bth.se/?s=grm&searchtype=employee) |
 
 Dessutom tillkommer ett antal lärarassistener som hjälper till med rättning och handledning.

@@ -199,7 +199,7 @@ Följande två böcker kan läsas i sin helhet under kursens gång. En bok om da
 * **[Databasteknik](kunskap/boken-databasteknik)** -- Radron-McCarthy och Risch  
     Komplett med det man vill veta om databasteknik, både grunder, modellering och SQL. En databasbok helt enkelt.
 
-* **[JavaScript for impatient programmers (ES2021 edition)](https://exploringjs.com/impatient-js/index.html)** -- Axel Rauschmayer  
+* **[Exploring JavaScript](https://exploringjs.com/js/index.html)** -- Axel Rauschmayer  
     En bok om att komma igång med JavaScript som programmeringsspråk. Fungerar för nya programmerare såväl som för de som redan kan ett eller ett par programmeringsspråk.
 
 

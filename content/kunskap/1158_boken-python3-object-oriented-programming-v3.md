@@ -10,7 +10,7 @@ Boken: Python 3 Object-oriented Programming
 
 [FIGURE src=/image/oopython/bok/python3-object-oriented-programming-v3.png?a=60,10,10,10&w=c5 class="right"]
 
-En relativt ny bok (2018) som tar upp grunderna i Python 3 samt går in på objekt-orientering och klasser.
+En som tar upp grunderna i Python 3 samt går in på objekt-orientering och klasser.
 
 <!--more-->
 
@@ -33,6 +33,6 @@ Om Boken {#om-boken}
 
 [BOOK isbn=9781789615852]  
 
-Boken finns som [ebook via PacktPub](https://www.packtpub.com/application-development/python-3-object-oriented-programming-third-edition).
+Boken finns tillgänglig som ebook i BTH länken ovanför.
 
 Vi har tidigare använt andra utgåvan av boken, information om den kan ni hitta [här](kunskap/boken-python3-object-oriented-programming).

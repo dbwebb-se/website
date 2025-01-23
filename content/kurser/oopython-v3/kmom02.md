@@ -85,6 +85,12 @@ Genomför följande övning för att träna dig.
 
 Dessa uppgifter skall utföras och redovisas.
 
+[INFO]
+Ni får inte använda lambda-funktioner i era lösning.
+
+Om ni använder list-comprehension behöver det finnas en kommentar med kod där ni löser det med en for-loop.
+[/INFO]
+
 1. Gör uppgiften "[Grunden för ett Yahtzee spel](uppgift/yahtzee1-v2)".
 
 

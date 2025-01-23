@@ -69,6 +69,12 @@ De tre första kraven är obligatoriska och måste lösas för att få godkänt 
 
 Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
+[INFO]
+Ni får inte använda lambda-funktioner i era lösning.
+
+Om ni använder list-comprehension behöver det finnas en kommentar med kod där ni löser det med en for-loop.
+[/INFO]
+
 
 
 ### Krav 1: Grunden {#k1}

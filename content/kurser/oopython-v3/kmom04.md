@@ -94,6 +94,11 @@ Genomför följande övningar för att träna dig.
 ### Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
+[INFO]
+Ni får inte använda lambda-funktioner i era lösning.
+
+Om ni använder list-comprehension behöver det finnas en kommentar med kod där ni löser det med en for-loop.
+[/INFO]
 
 1. Kopiera lab2 från kmom03. Om du gjorde labben i kmom03 behöver du inte göra mer. Det är för att labben ska följa med när vi rättar.
 

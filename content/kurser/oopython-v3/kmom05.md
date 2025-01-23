@@ -100,6 +100,12 @@ Genomför följande övning för att träna dig.
 
 Dessa uppgifter skall utföras och redovisas.
 
+[INFO]
+Ni får inte använda lambda-funktioner i era lösning.
+
+Om ni använder list-comprehension behöver det finnas en kommentar med kod där ni löser det med en for-loop.
+[/INFO]
+
 TIPS! När ni implementerar er lista och kö kan ni använda [Treevizer](https://pypi.org/project/treevizer/) för att skapa bilder av node strukturerna.
 
 

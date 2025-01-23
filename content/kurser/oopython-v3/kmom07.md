@@ -88,6 +88,11 @@ Titta på följande:
 ###Uppgifter {#uppgifter}
 
 Dessa uppgifter skall utföras och redovisas.
+[INFO]
+Ni får inte använda lambda-funktioner i era lösning.
+
+Om ni använder list-comprehension behöver det finnas en kommentar med kod där ni löser det med en for-loop.
+[/INFO]
 
 1. Valfritt, gör labben "[Dictionaries i Python](uppgift/python-med-dictionaries-i-oopython)"
 

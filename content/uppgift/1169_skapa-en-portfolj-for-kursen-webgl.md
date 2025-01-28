@@ -72,7 +72,7 @@ cp -ri example/portfolio me
 <!-- 1. Du kan uppdatera stylesheet och eventuellt JavaScript i katalogerna `portfolio/style` och `portfolio/js`. Det är inte nödvändigt, gör det om du vill och känner att du har tid. Du kan även göra om din me-sida till en webbplats baserad på PHP. -->
 
 ```text
-dbwebb publish redovisa
+dbwebb publish me
 ```
 
 

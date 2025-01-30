@@ -85,10 +85,10 @@ Denna klassen ska representera en spelhand som ska ha fem tärningar den kan spe
 #### Metoderna {#hand-met}
 
 - `__init__(dice_values)` - `values` parametern ska ha ett default värde. 
+    - Om man inte skickar med ett argument så ska `dice` listan få fem Die objekt med slumpade värden.
     - Om man skickar in ett argument till parmetern i konstruktorn, så ska argumentet vara en lista som innehåller fem heltal.
         - De heltalen ska användas för att skapa en tärning med varje heltal. 
-    - Om man inte skickar med ett argument så ska `dice` listan få fem Die objekt med slumpade värden.
-- `roll(indexes`) - `indexes` ska ha ett default värde. 
+- `roll(indexes)` - `indexes` ska ha ett default värde. 
     - Om man skicka in ett argument till parametern ska det vara en lista med heltalen, heltalen ska vara index position för tärningar i `dice` listan. Då ska bara tärningarna med de index positionerna kastas om, de andra ska ha kvar sina värden.
     - Om man inte skickar med ett argument till parametern ska metoden kasta om alla tärningar som finns i `dice` attributet. 
 - `__str__` - ska returnera en komma separerad sträng med värdet på alla tärningar i handen, t.ex. `"2, 4, 1, 5, 1"`.

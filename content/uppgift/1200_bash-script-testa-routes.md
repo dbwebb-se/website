@@ -19,7 +19,7 @@ Förkunskaper {#forkunskaper}
 
 Du har genomfört uppgiften "[Webbserver i Docker](uppgift/webbserver-i-docker)".
 
-Du har genomfört uppgiften "[Bash-script med argument options](uppgift/ett-bash-script-med-options-command-arguments)" från kursmoment 03.
+Du har genomfört uppgiften "[Bash-script med argument options](uppgift/ett-bash-script-med-options-command-arguments)" från kursmoment 02.
 
 Du har läst kurslitteraturen och skaffat dig grundläggande kunskaper om bash.
 
@@ -28,7 +28,7 @@ Du har läst kurslitteraturen och skaffat dig grundläggande kunskaper om bash.
 Introduktion {#intro}
 -----------------------
 
-Du ska skapa, likt förra kursmomentet, ett Bash script som med argument kan ge svar från din server. Du kan med andra ord återanvända en hel del från kursmoment 03.
+Du ska skapa, likt förra kursmomentet, ett Bash script som med argument kan ge svar från din server. Du kan med andra ord återanvända en hel del från kursmoment 02.
 
 Vi kan använda Curl för att hämta resultatet av ett sidanrop. För mer info kan du kika i manualen `$ man curl` eller Curl's hjälptext `$ curl --help`. Du kommer behöva ett fåtal options för att komma i mål med kursmomentet.
 
@@ -79,7 +79,7 @@ $ dbwebb validate client
 $ dbwebb publish client
 ```
 
-Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut så är du klar.  
+Rätta eventuella fel som dyker upp och publicera igen. När det ser grönt ut så är du klar.
 
 
 

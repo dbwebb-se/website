@@ -31,7 +31,7 @@ Gå till din kurskatalog i terminalen.
 dbwebb create lab2
 ```
 
-Materialet till labben ligger nu i din kurskatalog i `me/kmom02/lab2` enligt följande.
+Materialet till labben ligger nu i din kurskatalog i `me/kmom03/lab2` enligt följande.
 
 | Fil                | Innehåll                                                              |
 |--------------------|-----------------------------------------------------------------------|

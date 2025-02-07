@@ -15,11 +15,6 @@ Kmom04: Session och unittest
 I Flask lär vi oss hantera formulär med _GET_ och _POST_ och spara data i Session. Vi kollar också mer på enhetstestning.
 
 <!--more-->
-[WARNING]
-Kursmomentet är under uppdatering!
-
-Påbörja inte fören denna gula ruta är borta!
-[/WARNING]
 I Yahtzee bygger vi ett gränssnitt åt klasserna som skapades i kmom03 och bygger ihop det hela till ett fungerande spel.
 
 [INFO]

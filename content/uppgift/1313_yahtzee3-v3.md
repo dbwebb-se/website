@@ -65,7 +65,7 @@ Kraven nedanför är för webbsidan.
 
 1. Lägg till en route `reset` som nollställer sessionen och därmed startar om spelet. Lägg till den i navbaren.
 
-1. På webbsidan ska det gå att kasta om specifika tärningar. T.ex. kasta om tärning 1 och 3, då ska tärningarna 2, 4 och 5 inte kastas om. Använd ett formulär med checkboxes. Spara tärningars värde i session med `to_list()`.
+1. På webbsidan ska det gå att kasta om specifika tärningar. T.ex. kasta om tärning 1 och 3, då ska tärningarna 2, 4 och 5 inte kastas om. Använd ett formulär med checkboxes. Spara tärningars värde i session med `to_list()`. Tips! Här kan ni läsa om att [hämta data från checkboxes](https://www.geeksforgeeks.org/get-the-value-of-a-checkbox-in-flask/).
 
 1. På webbsidan ska ni visa vilka regler som finns. Lägg till radiobuttons för de olika reglerna i ett formulär med en submit-knapp.
     - Här kan ni se hur man gör [radiobuttons i ett formulär](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio).

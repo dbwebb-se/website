@@ -39,7 +39,7 @@ Era klasser ska uppfylla beskrivningarna nedanför. Beskrivningarna är vad som 
 
 Klassdiagram över klasserna ni ska skapa. **Dia** och **Hand** är tomma för de klassdiagrammen ska ni fylla i själva.
 
-[FIGURE src="/image/oopython/kmom03/yahtzee2-v2.png" caption="Klassen Rule, dess subklasser och Scoreboard"]
+[FIGURE src="/image/oopython/kmom03/yahtzee2-v3.png" caption="Klassen Rule, dess subklasser och Scoreboard"]
 
 PS. Jag har lagt en kompositions pil mellan Rule och Scoreboard, ni måste inte göra en sån implementation jag ritade den för att visa att Scoreboard behöver objekt från alla regel klasser. Egentligen borde det vara en pil både från Scoreboard och Hand till varje regel klass men jag det blir för rörigt då, därför har jag bara dragit till Rule klassen.
 

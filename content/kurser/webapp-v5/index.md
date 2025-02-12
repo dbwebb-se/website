@@ -8,6 +8,19 @@ revision:
 Kursen webapp (v5)
 ==================================
 
+[WARNING]
+
+**Påbörja inte kursen**
+
+Kursen utvecklas under vårterminen 2025 och kursmaterial kommer att publiceras på annan webbplats.
+
+[/WARNING]
+
+
+
+
+
+
 Kursen **Webbapplikationer för mobila enheter**, a.k.a. *webapp*, lär dig hur du bygger applikationer för mobila enheter och läsplattor med HTML, CSS och JavaScript.
 
 

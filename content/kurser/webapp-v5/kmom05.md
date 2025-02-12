@@ -13,6 +13,14 @@ revision:
 Kmom05: Mobila enheters styrkor
 ==================================
 
+[WARNING]
+
+**Påbörja inte kursen**
+
+Kursen utvecklas under vårterminen 2025 och kursmaterial kommer att publiceras på annan webbplats.
+
+[/WARNING]
+
 I detta kursmoment börjar vi till fullo att utnyttja styrkorna i våra mobila enheter. Vi kopplar in GPS och enhetens kamera för att skapa en fulländad applikation, som utnyttjar flera av de möjligheter vi har på en mobil plattform.
 
 

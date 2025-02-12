@@ -8,6 +8,14 @@ revision:
 Kmom10: Projekt och examination
 ==================================
 
+[WARNING]
+
+**Påbörja inte kursen**
+
+Kursen utvecklas under vårterminen 2025 och kursmaterial kommer att publiceras på annan webbplats.
+
+[/WARNING]
+
 [FIGURE src=image/webapp/v4/kajt.jpg?w=c5 class="right"]
 
 Detta projekt utvecklas i samarbete med Branschprogrammet Kapacitet i järnvägstrafiken – [KAJT](https://kajt.org/). Projektet baseras på öppen data från Trafikverket och handlar om att visualisera förseningar i tågtrafiken

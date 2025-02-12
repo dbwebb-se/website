@@ -11,6 +11,14 @@ revision:
 Kmom03: Formulär och CRUD
 ==================================
 
+[WARNING]
+
+**Påbörja inte kursen**
+
+Kursen utvecklas under vårterminen 2025 och kursmaterial kommer att publiceras på annan webbplats.
+
+[/WARNING]
+
 I detta kursmoment fortsätter vi med att utveckla våra GUI komponenter från tidigare kursmoment. Vi skapar lättanvända formulärfält med hjälp av HTML5 och kopplar ihop fälten i formulär som är lätta att använda på små skärmar där kontext och möjligheten att skriva snabbt och enkelt saknas. I vår applikation lägger vi till möjligheten att skapa data via formulär.
 
 

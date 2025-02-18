@@ -389,6 +389,6 @@ Tilldela `new_node` till `current_node.next` så vi har en komplett lista igen. 
 Avslutningsvis {#avslutning}
 ------------------------------
 
-Nu har ni lärt er några olika datastrukturer, de har olika för och nackdelar som spelar roll när man ska välja en. Kolla igenom [Choosing the Right Data Structure to solve problems](http://careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/) för att se vilka olika för- och nackdelar datastrukturerna som ni läst om har.
+Nu har ni lärt er några olika datastrukturer, de har olika för och nackdelar som spelar roll när man ska välja en. Kolla igenom [Choosing the Right Data Structure to solve problems](https://www.geeksforgeeks.org/how-to-recognize-which-data-structure-to-use-in-a-question/) för att se vilka olika för- och nackdelar datastrukturerna som ni läst om har.
 
 Det finns som sagt många sorters datastrukturer. För en lista kan du kika på: [List of datastructures](https://en.wikipedia.org/wiki/List_of_data_structures). Här har vi tagit upp tre utav de vanligaste. Hoppas du har fått en liten insikt i hur de fungerar.

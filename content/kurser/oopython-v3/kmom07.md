@@ -14,15 +14,6 @@ Kmom07: Datastrukturen träd
 Vi jobbar vidare med datastrukturer, algoritmer och rekursion genom att kolla på träd strukturer. Mer specifikt ska vi lära oss skapa ett Binärt sökträd och skapa algoritmer som kan traversera trädet rekursivt.
 
 <!--more-->
-[WARNING]
-Kursmomentet är under uppdatering!
-
-Påbörja inte fören denna gula ruta är borta!
-[/WARNING]
-[INFO]
-
-Gör `dbwebb update` och `dbwebb init` innan du startar med kursmomentet.
-[/INFO]
 
 [FIGURE src=/image/oopython/kmom06/bst.svg caption="Ett binärt sökträd."]
 

@@ -64,6 +64,8 @@ Metod referenser {#references}
 
 [4] Hevner, Alan R., Salvatore T. March, Jinsoo Park, and Sudha Ram. Design science in information systems research. MIS quarterly (2004): 75-105. [https://doi.org/10.2307/25148625](https://doi.org/10.2307/25148625)
 
+[4] E. Knauss, "Constructive Master's Thesis Work in Industry: Guidelines for Applying Design Science Research," 2021 IEEE/ACM 43rd International Conference on Software Engineering: Software Engineering Education and Training (ICSE-SEET), Madrid, ES, 2021, pp. 110-121, doi: 10.1109/ICSE-SEET52601.2021.00021.
+
 
 
 Avslutningsvis {#avslutning}

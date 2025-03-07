@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2025-03-07": (G, aar) Förtydligade klassdiagrammet och krav 6. La till krav om comprehensions ger poängavdrag.
     "2023-03-01": (F, aar) Bytte från terminal program till Flask och nya extrauppgifter.
     "2021-03-10": (E, aar) La till referensmaterial om Trie.
     "2020-03-10": (D, aar) La till i krav att spela in video som distans.
@@ -16,17 +17,12 @@ Detta kursmoment avslutar och examinerar kursen.
 Upplägget är enligt följande:
 
 * Projektet och redovisning (20-60h)
-[WARNING]
-Kursmomentet är under uppdatering!
-
-Påbörja inte fören denna gula ruta är borta!
-[/WARNING]
 
 Totalt omfattar kursmomentet (08/10) ca 20+20+20 studietimmar.
 [WARNING]
 Projektet ska utföras individuellt!
 
-Ni som har jobbat i grupp ska inte göra det med projektet.
+Ni som har jobbat i grupp ska inte göra det med projektet. Ni behöver **inte** lämna er grupp på Canvas.
 [/WARNING]
 
 
@@ -71,8 +67,6 @@ Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
 [INFO]
 Ni får inte använda lambda-funktioner i era lösning.
-
-Om ni använder list-comprehension behöver det finnas en kommentar med kod där ni löser det med en for-loop.
 [/INFO]
 
 
@@ -83,7 +77,7 @@ Skriv din kod i katalogen `me/kmom10/spellchecker`.
 
 Filen som startar programmet ska heta `app.py`.
 
-
+**Varje list/dict comprehension eller generator uttryck som saknar kommentar med vanlig for-loop ger 1 poäng avdrag!**
 
 #### Trie {#trie}
 
@@ -144,9 +138,9 @@ Webbsidan ska fungera på studentservern!
 
 Klassdiagrammet ska lämnas in före du börjar koda projektet. Det finns en separat inlämning på Canvas för klassdiagrammet. **Du behöver inte vänta på att få godkänt innan du fortsätter med att programmera, det viktiga är att du har lämnat in det före.**
 
-Gör ett klassdiagram, lämna in det och sen börjar du koda projektet.
+Gör ett komplett klassdiagram, lämna in det och sen börjar du koda projektet.
 
-Det gör inget om koden skiljer sig från diagrammen när du är klar med projektet. Det blir inte alltid som man tänker sig.
+Det gör inget om koden skiljer sig från diagrammen när du är klar med projektet. Det blir inte alltid som man tänker sig. **Men** det ska vara ett komplett klassdiagram med relationspilar, kardinalitet och lämpliga statiska/privata/publika/instansa attribut och metoder.
 
 När du har kodat klart projektet, jämför hur din kod faktiskt blev med hur du tänkte dig att det skulle fungera. I redovisningstexten skriver du hur din kod förhåller sig till diagrammet.
 
@@ -203,11 +197,17 @@ Lägg till en sida där användaren kan få hjälp med rättstavning. Visa alla 
 
 Lägg till metoden `suffix_search(suffix)` i Trie klassen som tar emot en sträng som ska vara ett suffix. Metoden ska returnera en lista med alla ord som har argumentet som suffix. Om det inte finns några förslag ska en tom lista returneras. Listan som returneras ska vara **sorterad** i bokstavsordning.
 
-T.ex. med argumentet `"ppa"` ska listan `["loppa"," "soppa"]` returneras.
+T.ex. med argumentet `"ppa"` ska listan `["loppa","möhippa", "soppa"]` returneras.
 
-Ni får **inte** bygga ett nytt träd där ni lägger till alla ord i bakvänd ordning **eller** plocka ut alla ord i en lista och sen leta igenom den listan efter suffix. Ni **ska** skriva en rekursiv metod som letar igenom er nuvarande trädstruktur **nerifrån och upp** och jobbar mot noderna för att kolla att kraven uppfylls. Så ni måste första jobba er ner till slutnoderna och sen jobba er uppåt och på vägen upp kollar ni om noderna uppfyller kraven.
+För full poäng på kravet ska ni implementera en [post order traversal](https://www.geeksforgeeks.org/postorder-traversal-of-binary-tree/) rekursiv metod som jobbar mot noderna för att kolla om suffixet är uppfyllt.
 
 Lägg till en sida där alla ord visas baserat på användarens input. Visa alla ord som hittas baserat på användarens input. Utskriften ska **inte** begränsas till max 10.
+
+Exempel på lösningar som ger 0 poäng:
+
+- Ni bygger ett nytt träd där ni lägger till alla ord i bakvänd ordning.
+- Ni plockar ut alla ord i en lista/sträng och sen leta igenom den listan/strängen efter suffixet. T.ex. om man bygger upp en sträng och använder `.endswith()`.
+- Ni använder parent attribute för att jobba er upp i trädet och kollar om parent noderna blir suffixet.
 
 
 

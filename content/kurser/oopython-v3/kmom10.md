@@ -94,7 +94,9 @@ I er Trie måste det finnas metoder för att:
 - returnera alla ord baserat på ett prefix, prefixsökning. Metoden ska heta `prefix_search(prefix)` och ska ta emot ett argument som är en sträng.
     - T.ex. om argumentet är `"he"` ska metoden returnera en listan `["hej", "hel", "hett"]`, alla ord som börjar på prefixet.
     - Om det inte finns några ord med prefixet ska en tom lista returneras.
-    - Ni får **inte** lägga till alla ord i en lista och sen leta igenom listan. Ni **ska** iterera över noderna och jobba mot dem. 
+    - Ni får **inte** lägga till alla ord i en lista och sen leta igenom listan. 
+    - Ni får **inte** lägga orden i strängar och sen kolla om strängen har rätt prefix. T.ex. använda `.starswith()`.
+    - Ni **ska** iterera över noderna och jobba mot dem för att avgöra om det är rätt prefix. 
 - klassmetoden `create_from_file()`, den ska returnera ett Trie objekt som innehåller alla orden från filen som ni ska läsa in vid start (`dictionary.txt` eller `frequency.txt`).
 - det ska gå att skapa ett tomt Trie objekt med `Trie()`.
 

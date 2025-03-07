@@ -206,8 +206,9 @@ Lägg till en sida där alla ord visas baserat på användarens input. Visa alla
 Exempel på lösningar som ger 0 poäng:
 
 - Ni bygger ett nytt träd där ni lägger till alla ord i bakvänd ordning.
-- Ni plockar ut alla ord i en lista/sträng och sen leta igenom den listan/strängen efter suffixet. T.ex. om man bygger upp en sträng och använder `.endswith()` på strängen för att kolla om suffixet är uppnått.
 - Ni använder parent attribute för att jobba er upp i trädet och kollar om parent noderna blir suffixet.
+- Ni plockar ut alla ord i en lista/sträng och sen leta igenom den listan/strängen efter suffixet. T.ex. om man bygger upp en sträng och använder `.endswith()` på strängen för att kolla om suffixet är uppnått.
+    - Ni kommer behöva använda en lista och strängar för att spara orden ni hittar men det ska inte vara en del av hur ni hittar vilka ord som har suffixet. Det ska göras genom att kolla värdet i noderna.
 
 
 

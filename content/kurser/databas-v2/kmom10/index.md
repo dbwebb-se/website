@@ -146,17 +146,28 @@ Det finns ingen garanti för att nya tentamen kommer att följa exakt samma uppl
 
 Följande gamla tentor finns tillgängliga.
 
+<!--
+* 2024
+    * [AI](./tentamen/ai) 
+-->
+
 * 2023
     * [El](./tentamen/el)
+<!--
     * [Rymd](./tentamen/rymd)
+-->
 
 * 2022
+<!--
     * [Fiskodling](./tentamen/fiskodling)
+-->
     * [Förmögenhet](./tentamen/formogenhet)
 
 * 2021
     * [Hund](./tentamen/hund)
+<!--
     * [Vaccin](./tentamen/vaccin)
+-->
 
 <!--
 * 2020

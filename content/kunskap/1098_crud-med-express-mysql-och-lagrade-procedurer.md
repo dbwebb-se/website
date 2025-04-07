@@ -706,5 +706,3 @@ Avslutningsvis {#avslutning}
 --------------------------------------
 
 Detta var en introduktion för att komma igång CRUD konceptet i Express och MySQL. Det visades upp en kodstruktur som var enkelt att uppdatera med de olika delarna i CRUD och slutresultatet blev att alla delar av kontohanteringen kunde administreras via det grafiska gränssnittet.
-
-Denna artikel har en [egen forumtråd](t/7231) som du kan ställa frågor i, eller ge tips.

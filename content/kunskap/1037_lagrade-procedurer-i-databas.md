@@ -377,10 +377,10 @@ Jag valde att omsluta koden i IF-satsen, det finns nämligen ingen `RETURN` i en
 
 
 
-Compount statement {#compstat}
+Compound statement {#compstat}
 --------------------------------------
 
-Ovan är DECLARE och IF-sats är exempel på kod som är ett compound statement. För att se fler konstruktioner som går att använda så har manualen ett stycke om [Compount-Statement Synax](https://dev.mysql.com/doc/refman/8.0/en/sql-syntax-compound-statements.html).
+Ovan är DECLARE och IF-sats är exempel på kod som är ett compound statement. För att se fler konstruktioner som går att använda så har manualen ett stycke om [Compound-Statement Synax](https://dev.mysql.com/doc/refman/8.0/en/sql-syntax-compound-statements.html).
 
 Du kan läsa om variabler, hur de kan deklareas, sättas med ett hårdkodat värde eller få ett värde från en SQL-sats.
 

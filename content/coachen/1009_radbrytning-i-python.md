@@ -56,11 +56,6 @@ Det fungerar också för operation. [Pep8](https://legacy.python.org/dev/peps/pe
 Vi kollar även på hur det ser ut med backslash. Om man använder backslash är det viktigt att det inte är något space efter backslashet.
 
 ```python
-long_string = "The Wheel of Time turns, and ages come and pass, leaving memories that become legend."\
-               " Legends fade to myth, and even myth is long forgotten when the Age that gave it birth comes again."\
-               " In one Age, called the third age by some, an Age yet to come, an age long pass,"\
-               " a wind rose in the Mountains of Mist."
-
 if x == 10 \
         or x > 0 \
         or x < 100:

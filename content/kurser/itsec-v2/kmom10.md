@@ -27,9 +27,9 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 30+50 studietimmar.
 
-<!-- [WARNING]
-Kursen uppdateras inför HT24. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING] -->
+[WARNING]
+Kursen uppdateras inför HT25. Är "gula rutan" borta är det fritt fram att börja.
+[/WARNING]
 
 ## Bedömning och betygsättning {#bedomning}
 

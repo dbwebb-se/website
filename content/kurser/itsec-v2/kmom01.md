@@ -17,9 +17,9 @@ revision:
 Kmom01: Orientering
 ==================================
 
-<!-- [WARNING]
-Kursen uppdateras inför HT24. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING] -->
+[WARNING]
+Kursen uppdateras inför HT25. Är "gula rutan" borta är det fritt fram att börja.
+[/WARNING]
 
 Kursmomentet ger en översiktlig orientering i området informationssäkerhet vilket involverar dels en kategorisering av området samt genomgång av central terminologi. Fokus ligger på de säkerhetskoncept som har relevans inom webbutveckling. Dessutom involverar den översiktliga orienteringen att ge studenterna en förståelse för säkerhetskonceptens möjligheter och begränsningar inom området webbutveckling.
 

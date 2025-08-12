@@ -179,7 +179,7 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 | Tid   | Lärare   | Grupp  | Vad | Var |
 |-------|----------|--------|-----|-----|
 | 09-10 | klw      | alla   | Introduktion till terminalen | [Inspelad](https://www.youtube.com/watch?v=wojCiz4JDuU), [Zoom](https://bth.zoom.us/j/4569558656) |
-| 10-11 | bbr, grm | alla   | Labbmiljö dbwebb-cli | [Inspelad](https://www.youtube.com/watch?v=ttxe_6Vyvss), [Zoom](https://bth.zoom.us/j/4569558656) |
+| 10-11 | bbr, grm | alla   | Kom igång med Git & GitHub |  |
 | 11-12 | aar      | python | Intro till Python | [Inspelad](https://youtu.be/Xa3vgo_91XI), [Zoom](https://bth.zoom.us/j/4569558656) |
 
 Se schemat för eventuella aktiviteter på eftermiddagen.
@@ -194,8 +194,8 @@ Campusstudenter träffar Kenneth i H429/H430 och distansstudenter träffar Mikae
 
 | Tid   | Lärare   | Grupp  | Vad | Var |
 |-------|----------|--------|-----|-----|
-| 09-10 | grm, mos | webtec | Labbmiljö webb | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
-| 10-11 | grm, mos | webtec | Skapa webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
+| 09-10 | klw, mos | webtec | Kom igång webtec, del 1 | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
+| 10-11 | klw, mos | webtec | Kom igång webtec, del 2 | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
 
 <!--
 | 11-12 | grm, mos | webtec | Publicera webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |

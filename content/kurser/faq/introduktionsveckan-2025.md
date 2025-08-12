@@ -1,4 +1,5 @@
 ---
+
 author: mos
 revision:
     "2025-08-06": "(J, mos) Kopia och uppdaterad inför ht25, detaljer för kp borttaget."
@@ -21,14 +22,12 @@ Detta dokument innehåller information och detaljer för introveckan för studen
 
 <!--more-->
 
-
-
 Schema {#schema}
 -----------------------------------
 
 BTH presenterar [information om introveckan på sin webbplats](https://www.bth.se/student/ny-student/introduktionsaktiviteter). Där finner du även information om studentaktiviteter som börjar helgen innan introveckan.
 
-Schemat för introveckan via schema.bth.se. 
+Schemat för introveckan via schema.bth.se.
 
 * [Webbprogrammering 180hp campus](https://cloud.timeedit.net/bth/web/sched1/riq66Q07699Z6YQy0Q74Z5Z66QZ290054Yo3Y0gQ20og767X6qQ5.html)
 * [Webbprogrammering 120hp distans](https://cloud.timeedit.net/bth/web/sched1/riq66Q08699Z6YQy0Q74Z5Z66QZ290054Yo3Y0gQ20og767X6qQ5.html)
@@ -39,8 +38,6 @@ Schemat för introveckan via schema.bth.se.
 -->
 
 Det förekommer även inspelade tillfällen som inte är schemalagda, läs vidare i detta dokumentet för att se detaljer om dem.
-
-
 
 Välkommen till introveckan {#valkommen}
 -----------------------------------
@@ -54,14 +51,10 @@ Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokum
 
 Samtliga videor från introveckan sparas i spellistan "[Introveckan augusti 2025](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8tD8m8WgcTbqux32BUror9)" på youtube.
 
-
-
 Välkomstvideor {#valvideo}
 -----------------------------------
 
 Det finns en videoserie med lite blandade välkomstvideos, "[Välkommen till Webbprogrammering hösten 2025](https://www.youtube.com/playlist?list=PLKtP9l5q3ce9nj5Jt99VxfP4dznrlMZJg)". Kika igenom den serien för information, träffa lärarna, se tips och trix inför terminsstarten.
-
-
 
 <!--
 Vem deltar på introveckan? {#ni}
@@ -81,8 +74,6 @@ Under introveckan är det två kurser som startar, python och webtec. Webbprogra
 Introduktionsveckan sker på campus för campusprogrammet och på distans för övriga utbildningar.
 -->
 
-
-
 <!--
 Vad lär vi oss under introveckan? {#lara}
 -----------------------------------
@@ -95,16 +86,12 @@ Under introveckan presenteras det allmän info och fokus är på att installera 
 När det är klart är vi nöjda. Det är veckans huvudsakliga fokus. Om du löser det på egen hand så är det också okey. Då kan du ägna veckan åt att socialisera dig med dina studiekompisar.
 -->
 
-
-
 Informationsmaterial {#infomat}
 -----------------------------------
 
 Här är ett dokument som är bra att kika igenom som ny student.
 
 * [Så här funkar det på BTH](https://bthse-my.sharepoint.com/:b:/g/personal/mos_bth_se/ETdU6U0GfCBJpCVw3JDLW70BEsjLuW2qQgSngmuZoARZ3g?e=CuHIeD)
-
-
 
 Upprop online {#upprop}
 -----------------------------------
@@ -115,21 +102,15 @@ Här är [formulär där du kan göra upprop till din utbildning](https://forms.
 
 Glöm inte att du även måste registrera dig i [Ladok för studenter](https://www.student.ladok.se/student/app/studentwebb/) på de kurser du skall gå. När du kommer åt kursmaterialet i Canvas så vet du att det fungerar.
 
-
-
 Studentkåren {#skar}
 -----------------------------------
 
 Efter klockan 15 är det kåraktiviteter och socialisering under hela veckan.
 
-
-
 Planering {#plan}
 -----------------------------------
 
 Här följer en översikt av introveckans kursrelaterade aktiviteter.
-
-
 
 ### Måndag: Uppropsdagen {#man-upprop}
 
@@ -143,8 +124,6 @@ Efter träffen bjuds det på lättare förtäring i samband med "Mingel med stö
 
 Efter lunch är det en föreläsning om studieteknik (campus/distans).
 
-
-
 #### Tisdag: Kursaktiviteter {#tisdag}
 
 På **tisdagen** är det kursstarter.
@@ -152,20 +131,18 @@ På **tisdagen** är det kursstarter.
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
 | 09-10 | mos    | webtec | Kursintroduktion | [Optionell träff i zoom för frågor](https://bth.zoom.us/j/4200421337) |
-| 10-11 | aar    | python | Kursintroduktion | [Inspelad](https://youtu.be/NJDGtST0EF4) [del 2](https://www.youtube.com/watch?v=S5txR6aFhmw), samt [optionell träff i zoom för frågor](https://bth.zoom.us/j/8535967236) |
+| 10-11 | aar    | python | Kursintroduktion | [optionell träff i zoom för frågor](https://bth.zoom.us/j/8535967236) |
 | 11-12 | aar    | alla   | Labbmiljö |  Detaljer om den kurs-gemensamma labbmiljön |
 
 Se schemat för eventuella aktiviteter på eftermiddagen.
 
 <!--
 | 13-14 | efo    | alla   | Introduktion till datavetenskap | H430, [zoom](https://bth.zoom.us/j/4569558656) |
---> 
+-->
 
 <!--
 efo studieteknik/bli-skit-bra-på-det-du-gör föreläsningen
 -->
-
-
 
 #### Onsdag: Kursaktiviteter {#onsdag}
 
@@ -184,8 +161,6 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 
 Se schemat för eventuella aktiviteter på eftermiddagen.
 
-
-
 #### Torsdag: Kursaktiviteter {#torsdag}
 
 **Torsdagen** är enbart för webtec-kursen och fokuserar på labbmiljön för kursen.
@@ -203,8 +178,6 @@ Campusstudenter träffar Kenneth i H429/H430 och distansstudenter träffar Mikae
 
 Se schemat för eventuella aktiviteter på eftermiddagen.
 
-
-
 ### Fredag: Labbsal & föreläsningar {#labbsal}
 
 Så här långt bör du ha kommit igång med labbmiljön för kurserna du deltar i, annars fortsätter du tills du är klar, för att ligga rätt i startblocken inför nästa vecka då allt börjar "på riktigt".
@@ -218,8 +191,6 @@ För att bli duktig på studieteknik erbjuds följande föreläsningar under fre
 
 "Föreläsning: Studieteknik" klockan 10:15-11:00 i Multisal J504 och föreläsningen sänds via [bth.zoom.us](bth.zoom.us).
 -->
-
-
 
 Är introveckan obligatorisk? {#obli}
 -----------------------------------

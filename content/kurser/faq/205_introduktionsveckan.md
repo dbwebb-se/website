@@ -23,10 +23,11 @@ Planering för introveckan {#plan}
 
 Här kan du se planering för introduktionsveckan.
 
-* [Introduktionsveckan hösten 2024](introduktionsveckan-2024)
+* [Introduktionsveckan hösten 2025](introduktionsveckan-2025)
 
 Här är äldre versioner av introduktionsveckorna.
 
+* [Introduktionsveckan hösten 2024](introduktionsveckan-2024)
 * [Introduktionsveckan hösten 2023](introduktionsveckan-2023)
 * [Introduktionsveckan hösten 2022](introduktionsveckan-2022)
 * [Introduktionsveckan hösten 2021](introduktionsveckan-2021)

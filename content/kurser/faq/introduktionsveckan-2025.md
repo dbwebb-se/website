@@ -152,10 +152,11 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 * En texteditor (förslaget är Visual Studio Code)
 * En bash terminal med pakethanterare (Mac & Linux har redan en, Windows rekommenderar vi WSL/Ubuntu).
 * Versionshanteringssystemet Git.
+* Det kan vara bra att ha tittat igenom videon för [introduktionen till terminalen](https://youtu.be/AO1lJzR25Yg).
 
 | Tid   | Lärare   | Grupp  | Vad | Var |
 |-------|----------|--------|-----|-----|
-| 09-10 | klw      | alla   | Introduktion till terminalen | [Inspelad](https://www.youtube.com/watch?v=wojCiz4JDuU), [Zoom](https://bth.zoom.us/j/4569558656) |
+| 09-10 | klw      | alla   | Introduktion till terminalen | [Inspelad](https://youtu.be/AO1lJzR25Yg), [Zoom](https://bth.zoom.us/j/4569558656) |
 | 10-11 | bbr, grm | alla   | Kom igång med Git & GitHub |  |
 | 11-12 | aar      | python | Intro till Python | [Inspelad](https://youtu.be/Xa3vgo_91XI), [Zoom](https://bth.zoom.us/j/4569558656) |
 

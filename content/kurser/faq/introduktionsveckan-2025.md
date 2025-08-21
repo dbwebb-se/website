@@ -91,7 +91,7 @@ Informationsmaterial {#infomat}
 
 Här är ett dokument som är bra att kika igenom som ny student.
 
-* [Så här funkar det på BTH](https://bthse-my.sharepoint.com/:b:/g/personal/mos_bth_se/ETdU6U0GfCBJpCVw3JDLW70BEsjLuW2qQgSngmuZoARZ3g?e=CuHIeD)
+* [Så här funkar det på BTH](https://drive.google.com/file/d/1pcsSOyHjGsrfjR49S_C2pqfzCQ5vP74a/view?usp=sharing)
 
 Upprop online {#upprop}
 -----------------------------------

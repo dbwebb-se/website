@@ -131,8 +131,8 @@ På **tisdagen** är det kursstarter.
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
 | 09-10 | mos    | webtec | Kursintroduktion | [Optionell träff i zoom för frågor](https://bth.zoom.us/j/4200421337) |
-| 10-11 | aar    | python | Kursintroduktion | [optionell träff i zoom för frågor](https://bth.zoom.us/j/8535967236) |
-| 11-12 | aar    | alla   | Labbmiljö |  Detaljer om den kurs-gemensamma labbmiljön |
+| 10-11 | aar    | python | Kursintroduktion | [Kursintroduktions video](https://bth-python.github.io/website/laromaterial/forelasning/kursintroduktion/) [Introduktion Till Canvas Och Länkar](https://youtu.be/Ekzsauq7Kv8) [optionell träff i zoom för frågor](https://bth.zoom.us/j/8535967236) |
+| 11-12 | aar    | alla   | Labbmiljö |  Detaljer om den [kurs-gemensamma labbmiljön](https://bth-python.github.io/website/laromaterial/labbmiljo/) |
 
 Se schemat för eventuella aktiviteter på eftermiddagen.
 
@@ -156,9 +156,9 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 
 | Tid   | Lärare   | Grupp  | Vad | Var |
 |-------|----------|--------|-----|-----|
-| 09-10 | klw      | alla   | Introduktion till terminalen | [Inspelad](https://youtu.be/AO1lJzR25Yg), [Zoom](https://bth.zoom.us/j/4569558656) |
+| 09-10 | klw      | alla   | Introduktion till terminalen | [Inspelad](https://youtu.be/AO1lJzR25Yg), |
 | 10-11 | bbr, grm | alla   | Kom igång med Git & GitHub |  |
-| 11-12 | aar      | python | Intro till Python | [Inspelad](https://youtu.be/Xa3vgo_91XI), [Zoom](https://bth.zoom.us/j/4569558656) |
+| 11-12 | aar      | python | Python specifik labbmiljö| [Python labbmiljö](https://bth-python.github.io/website/laromaterial/labbmiljo/uv/), [kursrepo](https://bth-python.github.io/website/laromaterial/kursrepo/), [utvecklingsmiljö](https://bth-python.github.io/website/laromaterial/kursrepo-utvecklingsmiljo/)|
 
 Se schemat för eventuella aktiviteter på eftermiddagen.
 

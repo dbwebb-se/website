@@ -130,7 +130,7 @@ På **tisdagen** är det kursstarter.
 
 | Tid   | Lärare | Grupp  | Vad | Var |
 |-------|--------|--------|-----|-----|
-| 09-10 | mos    | webtec | Kursintroduktion | [Optionell träff i zoom för frågor](https://bth.zoom.us/j/4200421337) |
+| 09-10 | mos, klw | webtec | Kursintroduktion | Kenneth träffar campus i salen och [Mikael finns i zoom för distansgänget](https://bth.zoom.us/j/4200421337) |
 | 10-11 | aar    | python | Kursintroduktion | [Kursintroduktions video](https://bth-python.github.io/website/laromaterial/forelasning/kursintroduktion/) [Introduktion Till Canvas Och Länkar](https://youtu.be/Ekzsauq7Kv8) [optionell träff i zoom för frågor](https://bth.zoom.us/j/8535967236) |
 | 11-12 | aar    | alla   | Labbmiljö |  Detaljer om den [kurs-gemensamma labbmiljön](https://bth-python.github.io/website/laromaterial/labbmiljo/) |
 

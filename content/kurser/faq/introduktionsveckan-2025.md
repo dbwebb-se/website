@@ -170,8 +170,8 @@ Campusstudenter träffar Kenneth i H429/H430 och distansstudenter träffar Mikae
 
 | Tid   | Lärare   | Grupp  | Vad | Var |
 |-------|----------|--------|-----|-----|
-| 09-10 | klw, mos | webtec | Kom igång webtec, del 1 | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
-| 10-11 | klw, mos | webtec | Kom igång webtec, del 2 | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |
+| 09-10 | klw, mos | webtec | Kom igång webtec, del 1 | Kenneth träffar campus i salen och [Mikael finns i zoom för distansgänget](https://bth.zoom.us/j/4200421337) |
+| 10-11 | klw, mos | webtec | Kom igång webtec, del 2 | Kenneth träffar campus i salen och [Mikael finns i zoom för distansgänget](https://bth.zoom.us/j/4200421337) |
 
 <!--
 | 11-12 | grm, mos | webtec | Publicera webbsida | H430, inspelad, [zoom](https://bth.zoom.us/j/4200421337) |

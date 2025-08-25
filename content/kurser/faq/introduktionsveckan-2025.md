@@ -42,14 +42,21 @@ Det förekommer även inspelade tillfällen som inte är schemalagda, läs vidar
 Välkommen till introveckan {#valkommen}
 -----------------------------------
 
+<!--
 Mikael hälsar dig välkommen till introveckan och pratar dig igenom detta dokumentet och det som händer i introveckan. Pratar han långsamt så speedar du upp honom till 1,5 gånger hastigheten via inställningarna i YouTube.
+-->
 
+<!--
 *Video kommer i augusti, i inledningen av introveckan.*
+-->
 
-<!-- [YOUTUBE src="Prv5pbpiocg" width=700 caption="Mikael hälsar välkommen till introveckan."]
+<!--
+[YOUTUBE src="gNBD2UMp5Z0" width=700 caption="Mikael hälsar välkommen till introveckan (inspelning från zoom-träff med distansgänget)."]
 -->
 
 Samtliga videor från introveckan sparas i spellistan "[Introveckan augusti 2025](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8tD8m8WgcTbqux32BUror9)" på youtube.
+
+
 
 Välkomstvideor {#valvideo}
 -----------------------------------

@@ -164,7 +164,7 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 | Tid   | Lärare   | Grupp  | Vad | Var |
 |-------|----------|--------|-----|-----|
 | 09-10 | klw      | alla   | Introduktion till terminalen | [Inspelad](https://youtu.be/AO1lJzR25Yg), |
-| 10-11 | bbr, grm | alla   | Kom igång med Git & GitHub |  |
+| 10-11 | bbr, grm | alla   | Kom igång med Git & GitHub | [Git introduktion](./../../../content/labbmiljo/312_git_intro_ht25.md) |
 | 11-12 | aar      | python | Python specifik labbmiljö| [Python labbmiljö](https://bth-python.github.io/website/laromaterial/labbmiljo/uv/), [kursrepo](https://bth-python.github.io/website/laromaterial/kursrepo/), [utvecklingsmiljö](https://bth-python.github.io/website/laromaterial/kursrepo-utvecklingsmiljo/)|
 
 Se schemat för eventuella aktiviteter på eftermiddagen.

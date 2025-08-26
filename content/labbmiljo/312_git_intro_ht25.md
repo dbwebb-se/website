@@ -1,6 +1,6 @@
 ---
 ...
-Git
+Git introduktion
 ==================================
 
 Versionshanteringverktyget Git används till och från i kurserna. Du behöver ha det installerat på din dator. På vissa Mac OS så finns Git redan förinstallerat,  så behöver du inte göra något.
@@ -52,6 +52,8 @@ Fyll i:
 
 Klicka på **Create account**
 
+Här är en video som går igenom hur du [skapar konto på GitHub](https://youtu.be/MD2Sknqj-RA).
+
 ### 3. Skapa SSH-nyckel (terminalen)
 
 1. Generera ett nyckelpar  
@@ -68,7 +70,12 @@ Klicka på **New SSH key**
 Klistra in under **Key** och namnge under **Title**  
 Klicka på **Add SSH key**  
 
-4. Testa nyckeln genom **ssh -T git@github.com**
+4. Testa nyckeln genom **ssh -T git@github.com**  
+Om du får frågan om du säkert vill fortsätta och kan svara "yes/no/[fingerprints]), så svara **yes** så läggs det till en fil som heter "known_hosts" i din .ssh katalog.  
+Kör om **ssh -T git@github.com** så bör det funka och du ska se:  
+Hi <användarnamn>! You.....  
+
+Här är en video om hur du [skapar SSH nycklar och lägger till dem på GitHub](https://youtu.be/nNVa0xGc9h0).
 
 ## Klona ett repo (terminalen)
 
@@ -88,22 +95,41 @@ Klona ett befintligt repo som finns på GitHub genom att skapa en lokal kopia.
 
 ## Skapa ett repo lokalt och koppla mot GitHub (terminalen)
 
-1. Initiera ett nytt lokalt Git-repo som heter mitt-projekt  
+### Remote på GitHub
+
+Vi börjar med att skapa ett nytt repo remote på GitHub.
+
+1. Klicka på **Repositories** i navbaren överst.
+
+2. Klicka på den gröna knappen **New** överst till höger.
+3. Välj **Owner**, till exempel "abcd25"
+4. Ange **Repository name**, till exempel "mitt-projekt"
+5. Fyll i en kort beskrivning, som till exempel "Testing"
+6. Klicka på gröna knappen **Create repository** längst ner till höger.
+
+### Lokalt repo
+
+Vi fortsätter med att skapa ett repo lokalt på din dator.
+
+1. Initiera ett nytt lokalt Git-repo som heter "mitt-projekt"  
 **git init mitt-projekt**
 
-2. Lägg till en fil (ex. README) till exempel via VS Code
+2. Lägg till en fil (ex. README) till exempel via VS Code.  
+   Kolla status med **git status**
 
-3. Lägg till filen i repot  
-**git add README.md**
+3. Lägg till filen i repot och kolla status  
+**git add README.md**  
+Kolla status med **git status**
 
 4. Gör en första commit  
-**git commit -m "First commit"**
+**git commit -m "First commit"**  
+Kolla status med **git status**
 
-5. Koppla ditt lokala repo till ett remote repo (ex. GitHub/GitLab)  
-**git remote add origin https://github.com/<användarnamn>/mitt-projekt.git**  
+5. Skapa en huvud-branch (gren) som heter main  
+**git branch -M main**
 
-6. Skapa en huvud-branch (gren) som heter main  
-**git branch -M main** 
+6. Koppla ditt lokala repo till ett remote repo (ex. GitHub/GitLab)  
+**git remote add origin https://github.com/<användarnamn>/mitt-projekt.git**   
 
 7. Skicka upp till remote-repot första gången  
 **git push -u origin main**  
@@ -111,7 +137,7 @@ Klona ett befintligt repo som finns på GitHub genom att skapa en lokal kopia.
 
 Nu kan du titta i repot på GitHub och se att filen syns där.
 
-Här är en video som går igenom [skapa ett repo lokalt och koppla mot GitHub](). <i>Kommer snart</i>
+Här är en video som går igenom [skapa ett repo lokalt och koppla mot GitHub](https://youtu.be/e0zo13dBg4E).
 
 ## Guide Git och GitHub
 

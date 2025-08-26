@@ -93,7 +93,7 @@ Klona ett befintligt repo som finns på GitHub genom att skapa en lokal kopia.
      
 5. Avsluta med att göra quizzet i repot intro-veckan på GitHub.
 
-## Skapa ett repo lokalt och koppla mot GitHub (terminalen)
+## Skapa ett repo lokalt och koppla mot GitHub
 
 ### Remote på GitHub
 
@@ -107,7 +107,7 @@ Vi börjar med att skapa ett nytt repo remote på GitHub.
 5. Fyll i en kort beskrivning, som till exempel "Testing"
 6. Klicka på gröna knappen **Create repository** längst ner till höger.
 
-### Lokalt repo
+### Lokalt repo (terminalen)
 
 Vi fortsätter med att skapa ett repo lokalt på din dator.
 
@@ -135,7 +135,9 @@ Kolla status med **git status**
 **git push -u origin main**  
 (framöver behöver du bara skriva **git push**)
 
-Nu kan du titta i repot på GitHub och se att filen syns där.
+### Remote på GitHub
+
+Nu kan du titta i repot på GitHub och se att filen syns där. Ladda om sidan så ska README.md dyka upp där.
 
 Här är en video som går igenom [skapa ett repo lokalt och koppla mot GitHub](https://youtu.be/e0zo13dBg4E).
 

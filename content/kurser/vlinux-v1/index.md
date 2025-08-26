@@ -12,9 +12,9 @@ revision:
 Kursen vlinux (v1)
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT23. Är "gula rutan" borta under kursmomentet är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Kursen **Operativsystemet Linux och virtualiseringstekniker**, a.k.a. *vlinux*, och syftet med kursen är att studenten ska lära sig operativsystemet Linux och dess beståndsdelar såsom processer, filsystemet och terminalen. Kursens fokusområden ligger även i operativsystemets uppbyggnad, programhantering och serverhantering samt att programmera i språket Bash. Studenten ska även lära sig hantera virtualiseringstekniken Docker.
 

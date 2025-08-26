@@ -62,7 +62,7 @@ Läs följande:
 
 ### Video {#video}
 
-Till kursen finns en [videoserie](https://www.youtube.com/watch?v=KVWoU1FZ-d8&list=PLKtP9l5q3ce9Q0l7kYJq3weH6l8Y-GuSt). Titta på videorna som börjar med 01.
+Till kursen finns en [videoserie](https://www.youtube.com/watch?v=KVWoU1FZ-d8&list=PLKtP9l5q3ce9MRzu_Yb35Vc7yqbQZi7j-). Titta på videorna som börjar med 01.
 
 ## Övningar & Uppgifter {#ovningar_uppgifter}
 

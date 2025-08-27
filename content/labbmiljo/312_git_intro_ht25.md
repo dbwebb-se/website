@@ -3,9 +3,9 @@
 Git introduktion
 ==================================
 
-Versionshanteringverktyget Git används till och från i kurserna. Du behöver ha det installerat på din dator. På vissa Mac OS så finns Git redan förinstallerat,  så behöver du inte göra något.
+Versionshanteringverktyget Git används till och från i kurserna. Du behöver ha det installerat på din dator. Oftast finns Git redan förinstallerat, så behöver du inte göra något.
 
-Men om du har en nyare version av Mac OS som Ventura, så behöver du installera Git. Kolla guiden nedan.
+<!-- Video om git -->
 
 ## Repository (repo)
 
@@ -20,28 +20,32 @@ Du arbetar med filer och mappar (ändrar, lägger till och tar bort) i det lokal
 
 ## Förutsättningar
 
-1. Installera och konfigurera Git på din dator
+1. Kontrollera om Git är installerat och konfigurera Git på din dator
 2. Skapa ett konto på GitHub
 3. Skapa SSH-nyckel som används för att identifiera dig på GitHub utan att behöva skriva användarnamn och lösenord varje gång.
 
-### 1. Installera och konfigurera Git på din dator (terminalen)
+### 1. Kontrollera om Git är installerat och konfigurera Git på din dator (terminalen)
 
-- Kontrollera om Git är installerat
-**git \-\-version**
-**git**
+- Kontrollera om Git är installerat  
+Kolla versionen: **git \-\-version**  
+Se hjälpsidan: **git**
 
 - Installera  
 Windows/Linus: **sudo apt install git**  
 Mac: **brew install git**
 
-- Konfigurera
-**git config \-\-list**  
+- Konfigurera    
 **git config \-\-global user.name "Ditt Namn"**  
 **git config \-\-global user.email "abcd25@student.bth.se"**
 
+- Kolla konfigureringen  
+**git config \-\-list**  
+
+<!-- Video om konfigurering -->
+
 ### 2. Skapa ett konto på GitHub
 
-Länk till github : **https://github.com/**
+Länk till github : **https://github.dykacom/**
 
 Klicka på **Sign up**  
 Fyll i:   
@@ -62,7 +66,7 @@ Här är en video som går igenom hur du [skapar konto på GitHub](https://youtu
 2. Kopiera din publika nyckel med VS Code  
 **code ~/.ssh/id_ed25519.pub** (öppna i VS Code)  
 **kopiera innehållet** (som bland annat innehåller din email adress, abcd25@student.bth.se)
-
+dyka
 3. Lägg till den publika nyckeln på GitHub   
 Gå till din användare på GitHub (klicka på din bild/avatar)  
 Klicka på **Settings -> SSH and GPG key**  
@@ -79,19 +83,18 @@ Här är en video om hur du [skapar SSH nycklar och lägger till dem på GitHub]
 
 ## Klona ett repo (terminalen)
 
-Klona ett befintligt repo som finns på GitHub genom att skapa en lokal kopia.  
-**git clone https://github.com/<användarnamn>/<repo-namn>.git**  
+Klona ett befintligt repo som finns på GitHub genom att skapa en lokal kopia.   
 
 1. Navigera till den mapp du där du vill placera lokala repot (kopian)
 
 2. Klona repot som heter intro-veckan med:  
 **git clone https://github.com/dbwebb-se/intro-veckan.git**  
 
-3. Titta runt i repot intro-veckan på GitHub.
+1. Titta runt i repot intro-veckan på GitHub.
  
-4. Prova Git-kommandona [status](https://youtu.be/nVZMcg6J5Zw), [add](https://youtu.be/uYmVWYd4jFk) och [commit](https://youtu.be/CPes0GyKls8) i terminalen. OBS, du kan inte göra [push](https://youtu.be/96ob-H4mXwI). Klicka på länkarna för att se en video.
+2. Prova Git-kommandona [status](https://youtu.be/nVZMcg6J5Zw), [add](https://youtu.be/uYmVWYd4jFk) och [commit](https://youtu.be/CPes0GyKls8) i terminalen. OBS, du kan inte göra [push](https://youtu.be/96ob-H4mXwI). Klicka på länkarna för att se en video.
      
-5. Avsluta med att göra quizzet i repot intro-veckan på GitHub.
+3. Avsluta med att göra quizzet i repot intro-veckan på GitHub.
 
 ## Skapa ett repo lokalt och koppla mot GitHub
 
@@ -103,7 +106,7 @@ Vi börjar med att skapa ett nytt repo remote på GitHub.
 
 2. Klicka på den gröna knappen **New** överst till höger.
 3. Välj **Owner**, till exempel "abcd25"
-4. Ange **Repository name**, till exempel "mitt-projekt"
+4. Ange **Repository name**, använd gärna "mitt-projekt"
 5. Fyll i en kort beskrivning, som till exempel "Testing"
 6. Klicka på gröna knappen **Create repository** längst ner till höger.
 
@@ -112,24 +115,28 @@ Vi börjar med att skapa ett nytt repo remote på GitHub.
 Vi fortsätter med att skapa ett repo lokalt på din dator.
 
 1. Initiera ett nytt lokalt Git-repo som heter "mitt-projekt"  
-**git init mitt-projekt**
+**git init mitt-projekt**  
+Kolla att repot skapades och gå till katalogen "mitt-projekt"  
+**ls -l**  
+**cd mitt-projekt**
 
-2. Lägg till en fil (ex. README) till exempel via VS Code.  
+2. Lägg till en fil (ex. README) till exempel via VS Code eller via terminalen. Lägg till texten "#Repot mitt-projekt" i README.md.    
    Kolla status med **git status**
 
 3. Lägg till filen i repot och kolla status  
 **git add README.md**  
-Kolla status med **git status**
+Kolla status med **git status** och se att filen README.md är tillagd i repot.
 
-4. Gör en första commit  
+4. Gör en första commit och skapa en version av repot med README.md  
 **git commit -m "First commit"**  
-Kolla status med **git status**
+Kolla status med **git status** och se att du fått
 
 5. Skapa en huvud-branch (gren) som heter main  
-**git branch -M main**
+**git branch -M main**  
+Kolla status med **git status** och se att du är på branchen "main"
 
 6. Koppla ditt lokala repo till ett remote repo (ex. GitHub/GitLab)  
-**git remote add origin git@github.com/<användarnamn>/mitt-projekt.git**   
+**git remote add origin git@github.com:<användarnamn>/mitt-projekt.git**   
 
 7. Skicka upp till remote-repot första gången  
 **git push -u origin main**  
@@ -137,7 +144,7 @@ Kolla status med **git status**
 
 ### Remote på GitHub
 
-Nu kan du titta i repot på GitHub och se att filen syns där. Ladda om sidan så ska README.md dyka upp där.
+Nu kan du titta i repot på GitHub och se att filen syns där. Laddar du om webbsidan med GitHub så dyker README.md upp där.
 
 Här är en video som går igenom [skapa ett repo lokalt och koppla mot GitHub](https://youtu.be/e0zo13dBg4E).
 

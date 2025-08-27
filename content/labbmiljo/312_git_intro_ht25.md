@@ -129,7 +129,7 @@ Kolla status med **git status**
 **git branch -M main**
 
 6. Koppla ditt lokala repo till ett remote repo (ex. GitHub/GitLab)  
-**git remote add origin https://github.com/<användarnamn>/mitt-projekt.git**   
+**git remote add origin git@github.com/<användarnamn>/mitt-projekt.git**   
 
 7. Skicka upp till remote-repot första gången  
 **git push -u origin main**  

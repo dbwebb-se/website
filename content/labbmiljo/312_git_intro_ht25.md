@@ -5,7 +5,7 @@ Git introduktion
 
 Versionshanteringverktyget Git används till och från i kurserna. Du behöver ha det installerat på din dator. Oftast finns Git redan förinstallerat, så behöver du inte göra något.
 
-<!-- Video om git -->
+Här är en video som intoducerar [Git och GitHub](https://youtu.be/sZLuL0Gy3_s).
 
 ## Repository (repo)
 

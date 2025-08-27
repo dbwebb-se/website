@@ -1,4 +1,4 @@
----
+⁸---
 ...
 Git introduktion
 ==================================
@@ -27,7 +27,7 @@ Du arbetar med filer och mappar (ändrar, lägger till och tar bort) i det lokal
 ### 1. Installera och konfigurera Git på din dator (terminalen)
 
 - Kontrollera om Git är installerat
-**git --version**
+**git \-\-version**
 **git**
 
 - Installera  
@@ -35,9 +35,9 @@ Windows/Linus: **sudo apt install git**
 Mac: **brew install git**
 
 - Konfigurera
-**git config --list**  
-**git config --global user.name "Ditt Namn"**  
-**git config --global user.email "abcd25@student.bth.se"**
+**git config \-\-list**  
+**git config \-\-global user.name "Ditt Namn"**  
+**git config \-\-global user.email "abcd25@student.bth.se"**
 
 ### 2. Skapa ett konto på GitHub
 

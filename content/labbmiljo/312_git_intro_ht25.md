@@ -90,7 +90,8 @@ Klona ett befintligt repo som finns på GitHub genom att skapa en lokal kopia.
 2. Klona repot som heter intro-veckan med:  
 **git clone https://github.com/dbwebb-se/intro-veckan.git**  
 
-1. Titta runt i repot intro-veckan på GitHub.
+1. Titta runt i repot intro-veckan på GitHub (länk: https://github.com/dbwebb-se/intro-veckan.git). Det ser ut så här:  
+![repot på GitHub](https://dbwebb.se/img/labbmiljo/mitt-projekt.png)
  
 2. Prova Git-kommandona [status](https://youtu.be/nVZMcg6J5Zw), [add](https://youtu.be/uYmVWYd4jFk) och [commit](https://youtu.be/CPes0GyKls8) i terminalen. OBS, du kan inte göra [push](https://youtu.be/96ob-H4mXwI). Klicka på länkarna för att se en video.
      
@@ -140,6 +141,8 @@ Kolla status med **git status** och se att du är på branchen "main"
 
 7. Skicka upp till remote-repot första gången  
 **git push -u origin main**  
+
+
 (framöver behöver du bara skriva **git push**)
 
 ### Remote på GitHub
@@ -150,4 +153,4 @@ Här är en video som går igenom [skapa ett repo lokalt och koppla mot GitHub](
 
 ## Guide Git och GitHub
 
-Här är en [guide till hur du använder Git och GitHub](./../guide/git/100_vad-ar-git.md).
+Här är en [guide till hur du använder Git och GitHub](https://dbwebb.se/guide/git/vad-ar-git).

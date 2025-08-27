@@ -160,6 +160,7 @@ Inför **onsdagen** bör du på egen hand ha installerat följande delar av den 
 * En bash terminal med pakethanterare (Mac & Linux har redan en, Windows rekommenderar vi WSL/Ubuntu).
 * Versionshanteringssystemet Git.
 * Det kan vara bra att ha tittat igenom videon för [introduktionen till terminalen](https://youtu.be/AO1lJzR25Yg).
+* [Guiden och övningen för terminalen](https://bth-webtec.github.io/website/ovrigt/terminalen/)
 
 | Tid   | Lärare   | Grupp  | Vad | Var |
 |-------|----------|--------|-----|-----|

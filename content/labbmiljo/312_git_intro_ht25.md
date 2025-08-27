@@ -91,11 +91,12 @@ Klona ett befintligt repo som finns på GitHub genom att skapa en lokal kopia.
 **git clone https://github.com/dbwebb-se/intro-veckan.git**  
 
 1. Titta runt i repot intro-veckan på GitHub (länk: https://github.com/dbwebb-se/intro-veckan.git). Det ser ut så här:  
-![repot mitt-projekt på GitHub](https://dbwebb.se/img/labbmiljo/mitt-projekt.png)
+<!-- ![repot mitt-projekt på GitHub](https://dbwebb.se/img/labbmiljo/mitt-projekt.png) -->
+[FIGURE src=/img/mitt-projekt.png caption="Repot mitt-projekt på GitHub."]
  
-2. Prova Git-kommandona [status](https://youtu.be/nVZMcg6J5Zw), [add](https://youtu.be/uYmVWYd4jFk) och [commit](https://youtu.be/CPes0GyKls8) i terminalen. OBS, du kan inte göra [push](https://youtu.be/96ob-H4mXwI). Klicka på länkarna för att se en video.
+1. Prova Git-kommandona [status](https://youtu.be/nVZMcg6J5Zw), [add](https://youtu.be/uYmVWYd4jFk) och [commit](https://youtu.be/CPes0GyKls8) i terminalen. OBS, du kan inte göra [push](https://youtu.be/96ob-H4mXwI). Klicka på länkarna för att se en video.
      
-3. Avsluta med att göra quizzet i repot intro-veckan på GitHub.
+2. Avsluta med att göra quizzet i repot intro-veckan på GitHub.
 
 ## Skapa ett repo lokalt och koppla mot GitHub
 

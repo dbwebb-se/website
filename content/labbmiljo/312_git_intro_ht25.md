@@ -41,7 +41,7 @@ Mac: **brew install git**
 - Kolla konfigureringen  
 **git config \-\-list**  
 
-<!-- Video om konfigurering -->
+Här är en video som visar hur du [kollar Git installationen och konfigurerar Git](https://youtu.be/5oFjvDjhgDU).
 
 ### 2. Skapa ett konto på GitHub
 

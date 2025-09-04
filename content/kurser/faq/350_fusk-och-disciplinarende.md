@@ -121,7 +121,7 @@ Om du blir anmäld kommer disciplinnämnden att kontakta dig för att höra din 
 Disciplinnämnden {#namnden}
 -----------------------------------
 
-Du kan läsa om [vilka som sitter i disciplinnämnden](https://www.bth.se/om-bth/organisation/disciplinnamnd/) och på samma sida ser du när de sammanträder.
+Du kan läsa om [vilka som sitter i disciplinnämnden](https://www.bth.se/om-bth/organisation/beslutande-forum/disciplinnamnd) och på samma sida ser du när de sammanträder.
 
 Här följer svar på en del vanliga frågor rörande disciplinnämndens arbete.
 

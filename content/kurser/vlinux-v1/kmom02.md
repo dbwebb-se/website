@@ -63,7 +63,11 @@ Dessa uppgifter skall utföras och redovisas.
 
 ### dockerhub.bash {#dockerhub-bash}
 
-1. Skapa ett script `kmom02/dockerhub.bash` som vid exekvering kör din publicerade image. Se till så filen är exekverbar och så containern stänger ner sig efter exekvering.
+1. Skapa ett script `kmom02/dockerhub.bash` som vid exekvering kör din publicerade image. Se till så filen är exekverbar och så containern stänger ner sig efter exekvering. 
+
+[INFO]
+Om du har en Mac med M1/M2 chip bör du lägga till `--plaform=linux/arm64` i ditt docker run kommando.
+[/INFO]
 
 ### Testa din inlämning {#test}
 

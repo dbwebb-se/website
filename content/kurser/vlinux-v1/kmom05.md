@@ -74,6 +74,10 @@ Dessa uppgifter skall utföras och redovisas.
    - Klient-containern ska starta i Bash och i den arbetsmappen du har skriptet i.
    - Stoppa den/de containrar som är igång och ta bort nätverket.
 
+[INFO]
+Om du har en Mac med M1/M2 chip bör du lägga till `--plaform=linux/arm64` i ditt docker run kommando.
+[/INFO]
+
 [YOUTUBE src=yGp75cN7RD8 width=639 caption="Har du fått med alla delar?"]
 
 ### Testa din inlämning {#test}

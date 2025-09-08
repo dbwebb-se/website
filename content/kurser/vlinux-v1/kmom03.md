@@ -89,6 +89,10 @@ Man ska med andra ord skicka in sökvägen som argument. Scriptet ska enbart få
 
 1. Lägg till hosten via `docker run`. Den ska heta `mysite.vlinux.se`.
 
+[INFO]
+Om du har en Mac med M1/M2 chip bör du lägga till `--plaform=linux/arm64` i ditt docker run kommando.
+[/INFO]
+
 [YOUTUBE src=WtWR8WMtHzw width=639 caption="Har du fått med alla delar?"]
 
 ### Testa din inlämning {#test}

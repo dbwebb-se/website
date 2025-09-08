@@ -78,6 +78,10 @@ $ bash dockerhub.bash "data"
 
 5. Containern ska ha namnet "myserver" (--name).
 
+[INFO]
+Om du har en Mac med M1/M2 chip bör du lägga till `--plaform=linux/arm64` i ditt docker run kommando.
+[/INFO]
+
 [YOUTUBE src=bKkWw9b09Uw width=639 caption="Har du fått med alla delar?"]
 
 ### Testa din inlämning {#test}

@@ -73,6 +73,7 @@ $ pwd
 /home/klw/dbwebb-kurser/vlinux/me/kmom03
 $ bash dockerhub.bash "vhosts/mysite1"
 ```
+Eller:
 
 ```console
 $ pwd
@@ -81,13 +82,17 @@ $ bash dockerhub.bash "mysite1"
 ```
 Man ska med andra ord skicka in sökvägen som argument. Scriptet ska enbart fånga upp och använda det.
 
-1. Containern ska kunna nås via port 8080 (-p).
+1. Containern ska kunna nås via port 8080 (`-p`).
 
-1. Containern ska köras i bakgrunden (-d).
+1. Containern ska köras i bakgrunden (`-d`).
 
-1. Containern ska ha namnet "mysite" (--name).
+1. Containern ska ha namnet "mysite" (`--name`).
+
+1. Glöm inte `--rm`.
 
 1. Lägg till hosten via `docker run`. Den ska heta `mysite.vlinux.se`.
+
+1. Filen ska **enbart** innehålla ett kommando som krävs för att köra er publicerade image. Vi ska inte installera något från den här filen.
 
 [INFO]
 Om du har en Mac med M1/M2 chip bör du lägga till `--plaform=linux/arm64` i ditt docker run kommando.

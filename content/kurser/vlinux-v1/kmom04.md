@@ -72,11 +72,11 @@ $ bash dockerhub.bash "data"
 ```
 
 
-3. Containern ska kunna nås via miljövariablen DBWEBB_PORT om den är satt - annars port 8080 (-p).
+3. Containern ska kunna nås via miljövariablen DBWEBB_PORT om den är satt - annars port 8080 (`-p`).
 
-4. Containern ska köras i bakgrunden (-d).
+4. Containern ska köras i bakgrunden (`-d`).
 
-5. Containern ska ha namnet "myserver" (--name).
+5. Containern ska ha namnet "myserver" (`--name`).
 
 [INFO]
 Om du har en Mac med M1/M2 chip bör du lägga till `--plaform=linux/arm64` i ditt docker run kommando.

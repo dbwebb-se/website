@@ -90,6 +90,8 @@ Man ska med andra ord skicka in sökvägen som argument. Scriptet ska enbart få
 
 1. Glöm inte `--rm`.
 
+1. Gör **inte** `unminimize` i containern, det tar onödig plats och behövs inte.
+
 1. Lägg till hosten via `docker run`. Den ska heta `mysite.vlinux.se`.
 
 1. Filen ska **enbart** innehålla ett kommando som krävs för att köra er publicerade image. Vi ska inte installera något från den här filen.

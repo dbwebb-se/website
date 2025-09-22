@@ -16,9 +16,9 @@ revision:
 Kmom02: Privacy
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT25. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Kursmomentet ger en introduktion till konceptet privacy genom att förklara centrala definitioner. Särskilt belyses avvägningen mellan privacy och att som slutanvändare dela med sig av sin information för att möjliggöra diverse IT-baserade tjänster. Därutöver kommer exempel på vanliga privacy-förbättrande tekniker förklaras. Slutligen ges exempel på omfattande attacker som påverkat slutanvändarnas privacy negativt samt förslag på relevanta mekanismer för att försvåra dessa attacker.
 
@@ -35,7 +35,7 @@ Föreläsningar {#forelasningar}
 
 Föreläsningar:
 
-* 10:15 (2024-11-11) H430, blir en gästföreläsning med Martin från KnowIt om Privacy & OWASP Top 10
+* 10:15 (2024-11-10) H430, blir en gästföreläsning med Martin från KnowIt om Privacy & OWASP Top 10
 
 
 <!-- * 10:00 (2021-11-08) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633)) -->

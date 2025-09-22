@@ -17,9 +17,9 @@ revision:
 Kmom01: Orientering
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT25. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Kursmomentet ger en översiktlig orientering i området informationssäkerhet vilket involverar dels en kategorisering av området samt genomgång av central terminologi. Fokus ligger på de säkerhetskoncept som har relevans inom webbutveckling. Dessutom involverar den översiktliga orienteringen att ge studenterna en förståelse för säkerhetskonceptens möjligheter och begränsningar inom området webbutveckling.
 
@@ -46,7 +46,7 @@ Föreläsningar  {#forelasningar}
 
 *(ca: 4 studietimmar)*
 
-* Måndag 10:15 (2024-11-04) H430, med Marie om introduktion till säkerhet & etik.
+* Måndag 10:15 (2024-11-03) H430, med Marie om introduktion till säkerhet & etik.
 
 
 <!--

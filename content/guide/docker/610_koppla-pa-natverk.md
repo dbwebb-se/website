@@ -33,7 +33,7 @@ Vi kikar på hur vi ansluter en container till som använder servern via dess ip
 Vi utgår från ett enkelt Bash-skript som kopieras in i en container. Bash-skriptet gör en [curl](https://curl.haxx.se/) till servern. Dockerfilen för klienten ser ut på följande sätt:
 
 ```
-FROM debian:stretch-slim
+FROM ubuntu:24.04
 
 RUN apt-get update && \
     apt-get install -y curl

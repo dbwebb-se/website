@@ -10,20 +10,7 @@ Vi går igenom hur vi kan installera Flask och jobba med en server i Python.
 
 *Se till att skapa en arbetsmapp lokalt så du inte är i tex roten. Vi kommer kopiera filer med `.` vilket tar alla filer i nuvarande mapp.*
 
-Även här behöver vi lite struktur innan vi kör igång:
 
-```
-$ touch app.py Dockerfile requirements.txt
-```
-
-### requirements.txt {#requirements}
-
-Vi kan använda filen *requirements.txt* för att specificera vad vi vill installera i containern. Nu är det bara Flask så den blir väldigt liten:
-
-```
-Flask
-
-```
 
 
 ### app.py {#app}
@@ -48,18 +35,16 @@ if __name__ == '__main__':
 
 ### Dockerfile {#dockerfile}
 
-Det vi inte sett innan är **ENTRYPOINT**. Det fungerar likt `CMD`, förutom att om vi lägger till kommandon när vi kör `$ docker run ...` kommer inte ENTRYPOINT att ignoreras. Vi använder även pip3 för att installera det som behövs. Vi hade säker kunna hitta någon passande image med både Python och Flask installerat, men var är det roliga i det?
+Här kan vi köra **ENTRYPOINT**. Det fungerar likt `CMD`, förutom att om vi lägger till kommandon när vi kör `$ docker run ...` kommer inte ENTRYPOINT att ignoreras. Vi hade säker kunna hitta någon passande image med både Python och Flask installerat, men var är det roliga i det?
 
 ```
-FROM debian:stretch-slim
+FROM ubuntu:24.04
 
 RUN apt-get update && \
-    apt-get install -y python3-pip python3-dev build-essential
+    apt-get install -y python3-pip python3-dev python3-flask build-essential
 COPY . /app
 
 WORKDIR /app
-
-RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["python3"]
 

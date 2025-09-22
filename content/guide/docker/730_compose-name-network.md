@@ -9,7 +9,6 @@ Compose och nätverk via namngivning
 Vi kan återigen slippa krångla med ip-adresser. Vi kan i compose-filen länka till en annan service. Vi tar bort en del från "network" och lägger till en länk under klienten:
 
 ```
-version: "3"
 networks:
     dbwebb:
 services:

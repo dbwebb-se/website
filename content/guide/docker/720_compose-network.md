@@ -88,7 +88,7 @@ curl 172.28.0.6
 Vi skapar en Dockerfile i `client/`-mappen och fyller den med lite informaton:
 
 ```
-FROM debian:stretch-slim
+FROM ubuntu:24.04
 
 RUN apt-get update && \
     apt-get -y install curl

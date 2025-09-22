@@ -15,7 +15,7 @@ Vi tar en hel del saker på en gång nu. Vi utgår från föregående kapitel, n
 Vi har en server vars Dockerfil ser ut så här:
 
 ```
-FROM debian:stretch-slim
+FROM ubuntu:24.04
 
 RUN apt-get update && \
     apt-get -y install apache2

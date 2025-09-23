@@ -110,6 +110,16 @@ Du kan köra vissa tester på din inlämning och se om de delarna uppfyller krav
 $ dbwebb test kmom03
 ```
 
+
+### Publicera {#publish}
+
+Glöm inte att publicera allt så alla filer följer med.
+
+```console
+$ dbwebb publish kmom03
+```
+
+
 ## Resultat & Redovisning {#resultat_redovisning}
 
 _(ca: 1-2 studietimmar)_

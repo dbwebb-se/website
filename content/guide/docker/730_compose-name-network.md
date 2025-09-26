@@ -28,11 +28,14 @@ services:
         container_name: "simple-client"
         networks:
             dbwebb:
-        links:
-            - server:myserver
+       # links: # Could be deprecated
+       #     - server:myserver
 ```
 
-Vi kan se:
+
+
+[INFO]
+Nedan kan vara utdaterat...
 
 ```
 links:
@@ -40,6 +43,7 @@ links:
 ```
 
 Här talar vi om att servicen "server" ska vara nåbar via namnet "myserver". Nu uppdaterar vi skriptet och kör `curl myserver` och bygger om imagen.
+[/INFO]
 
 Nu kan vi starta som vanligt med:
 

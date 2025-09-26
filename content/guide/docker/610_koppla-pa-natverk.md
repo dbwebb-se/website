@@ -83,7 +83,6 @@ Det kan vara lite pilligt att hålla på med ip-adresser hit och dit. Vi har ju 
 Vi uppdaterar Bash-skriptet och byter ut ip-adressen till `curl server:1337` där *server* är det tänkta namnet på containern. Vi bygger om imagen och i klientens `docker run`-kommando lägger vi till ett option:
 
 ```
-$ docker run -it --name myclient --net dbwebb --link myserver:server username/imagename:tag
+$ docker run -it --name myclient --net dbwebb username/imagename:tag
 ```
 
-Vi länkar containerns namn med dess ip-adress med hjälp av *--link containername:identifier*.

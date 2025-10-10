@@ -1,4 +1,5 @@
 ---
+
 author:
     - aar
 revision:
@@ -13,14 +14,17 @@ Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på d
 Ni ska också välja ett valfritt verktyg att undersöka hur det funkar och passar in i devops.
 
 <!-- more -->
+
+[WARNING]
+Materialet är inte redo. Vänta på att den gula rutan försvinner.
+[/WARNING]
+
 [INFO]
 Detta kmom är en vecka långt, **inte** två!
 [/INFO]
 [FIGURE src="img/devops/devops-security.png" caption="Hur det inte ska se ut när man kör devops."]
 
 Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.
-
-
 
 ### Vad är DevSecOps {#devsecops}
 
@@ -33,13 +37,9 @@ Målet med DevSecOps är att alla behöver tänka på och är ansvariga för sä
 <!-- - [What is DevSecOps?](https://www.atlassian.com/continuous-delivery/principles/devsecops)   -->
 - kapitel 1 "Securing devops", 1.1-1.3, i [Securing Devops](http://tinyurl.com/usyps42) (länken går till en E-bok version) för en introduktion till Continuous Security.
 
-
-
 ### Test-driven security {#tds}
 
 Vi vill lägga in automatiska säkerhetskontroller i vår CI/CD kedja, men vi jobbar inte med säkerhet så vi har inte kunskapen att utföra säkerhetstester på vårt projekt. Som tur är finns det många projekt andra människor och företag har gjort som testar säkerhet i olika aspekter på olika system.
-
-
 
 #### Docker {#docker}
 
@@ -50,18 +50,14 @@ När det kommer till att göra Docker säkrare finns det väldigt mycket man kan
 - [Docker security cheat sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
 - [Container security best practices](https://logz.io/blog/container-security-best-practices/)
 
-
-
 ##### Docker image security scanning {#docker_scan}
 
-Det finns några olika verktyg för att skanna Docker images, Docker runtime och inställningar i Docker host. 
+Det finns några olika verktyg för att skanna Docker images, Docker runtime och inställningar i Docker host.
 
 ###### Läs och titta {#dockerscan-read}
 
 - [Docker Image Security Scanning: What It Can and Can't Do](https://resources.whitesourcesoftware.com/blog-whitesource/docker-image-security-scanning)
 - Länken ovanför nämner fler olika verktyg, men den nämner inte Dockers egna verktyg, [Docker Bench Security](https://github.com/docker/docker-bench-security). För att se allt man "behöver" göra på sin server rekommenderar jag att ni logga in på en appserver och kör verktyget. Då får ni upp en lång lista på saker man borde fixa på en server som kör Docker.
-
-
 
 #### Dependency Scanning {#dep_scan}
 
@@ -72,8 +68,6 @@ I vårt projekt använder vi oss av många externa paket både i Python koden f�
 - [Dependency and Container Scanning](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/dependency-and-container-scanning/)
 - I uppgiften ska ni använda [Trivy](https://github.com/aquasecurity/trivy) och [Dockle](https://github.com/goodwithtech/dockle).
 
-
-
 #### SAST vs. DAST vs. IAST {#ast}
 
 Säkerhetshål kan uppstå många ställen i en applikation och då finns det många sätt vi kan försöka hitta säkerhetshålen.
@@ -83,17 +77,13 @@ Static/Dynamic/Interactive Application Security Testing syftat på olika ställe
 ##### Läs och titta {#depscan-read}
 
 - [SAST vs. DAST](https://www.synopsys.com/blogs/software-security/sast-vs-dast-difference/) för en jämförelse av de två och vad de är bra på.
-- [Interactive Application Security Testing ](https://snyk.io/learn/application-security/iast-interactive-application-security-testing/).
+- [Interactive Application Security Testing](https://snyk.io/learn/application-security/iast-interactive-application-security-testing/).
 
 I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST. Vi skippar DAST. Ett vanligt verktyg för DAST är [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project). Det hade hittat förbättringar i er Nginx config. Om någon vill testa så har Mozilla ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna mot er produktionsmiljö.
-
-
 
 ### Infrastruktur Security {#infrastruktur}
 
 Produktionsmiljön, CI/CD och molntjänsten vi använder kan vi också göra säkrare. Vi är dock begränsade i vad vi kan göra i och med att vi har studentkonton.
-
-
 
 #### Azure {#azure}
 
@@ -111,13 +101,9 @@ Det finns olika verktyg för att verifiera konfigurationer i molntjänster, men 
 
 Vi nöjer oss med att veta att vi borde göra det, för att vi inte kan på grund av begränsningarna med studentkonton.
 
-
-
 ##### Security Groups {#sg}
 
 Vi kan och ska förbättra våra security groups, som det ser ut nu kan vem som helst koppla upp sig till de olika portarna som är öppna på våra servrar. Det är onödigt när vi vet vilka IP-addresser alla servrarna har. Vi kan inte göra det på ett bra sätt som det ser ut nu, för att vi kör rollen för SGs före vi skapar servrarna i Ansible. Vi behöver skapa servrarna först så att vi kan använda deras IP när vi skapar SGs. Det ska ni fixa i uppgiften.
-
-
 
 #### Produktionsmiljön {#prod_miljo}
 
@@ -129,7 +115,6 @@ I vår struktur kan man SSH:a in till varje server från vilken IP som helst. En
 
 <!-- - [What is a bastion host?](https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/) -->
 - [What is a bastion host?](https://web.archive.org/web/20240419114655/https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/)
-
 
 ##### SSH {#ssh}
 
@@ -164,8 +149,7 @@ Scannern tycker att jag borde ta bort gamla algoritmer som inte längre är säk
 
 - Ändra följande rad `Subsystem sftp  /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO` till `Subsystem sftp  /usr/lib/openssh/sftp-server -f AUTHPRIV -l INFO`. Filvägen till sftp-servern är fel, och då klagar Ansible om det inte är konfigurerat rätt.
 
-Kör ssh_scan igen och kolla att ni inte har några rekommendationer kvar. 
-
+Kör ssh_scan igen och kolla att ni inte har några rekommendationer kvar.
 
 #### Hur säker är vår CI/CD pipeline? {#cicd}
 
@@ -174,15 +158,11 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 ### Läs och titta {#cicd-read}
 
 - [How Secure Is Your CICD Pipeline?](https://web.archive.org/web/20231207091423/https://www.weave.works/blog/how-secure-is-your-cicd-pipeline)
-- [Ultimate guide to CI/CD security and DevSecOps](https://circleci.com/blog/security-best-practices-for-ci-cd/) 
-
-
+- [Ultimate guide to CI/CD security and DevSecOps](https://circleci.com/blog/security-best-practices-for-ci-cd/)
 
 ### Lästips {#lastips}
 
 1. [Zapping the top 10](https://www.zaproxy.org/docs/guides/zapping-the-top-10-2021/), hur ni kan använda Zap för att testa OWASP10 sårbarheterna.
-
-
 
 Läsanvisningar {#read}
 --------------------------
@@ -190,8 +170,6 @@ Läsanvisningar {#read}
 Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 
 Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
-
-
 
 devsecops uppgifter  {#uppgifter}
 -------------------------------------------
@@ -206,9 +184,9 @@ devsecops uppgifter  {#uppgifter}
 
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen.
 
-
 Valfritt verktyg uppgift {#valfritt}
 -------------------------------------------
+
 Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog.
 
 Studien ska bestå av tre delar.
@@ -218,8 +196,6 @@ Studien ska bestå av tre delar.
 - Reflektera över hur verktyget passar in i och relaterar till devops.
 
 Skapa **inte** ett eget repo för studien utan uppdatera koden i ert repo så verktyget fungerar för er och skapa ett dokument eller en ny README fil med er text.
-
-
 
 ## Exempel på verktyg {#exempel}
 
@@ -237,7 +213,6 @@ Ni kan testa en mer avancerad CD strategi (det är inte ett verktyg direkt men d
 Det går också bra att välja något helt annat verktyg, så länge ni kan relatera det till devops.
 
 **Obs!** välj inte prometheus eller grafana. Vi kommer använda de i nästa kursmoment.
-
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------

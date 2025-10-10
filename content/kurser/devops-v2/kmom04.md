@@ -1,4 +1,5 @@
 ---
+
 author:
     - aar
 revision:
@@ -11,20 +12,21 @@ Kmom04: Monitoring
 
 Nu när vi har ett system uppe och rullande behöver vi veta när något går fel, vi ska övervaka hela produktionsmiljön och alla dess delar.
 
-
 <!-- more -->
+
+[WARNING]
+Materialet är inte redo. Vänta på att den gula rutan försvinner.
+[/WARNING]
+
 [INFO]
 Detta kmom är en vecka långt, **inte** två!
 [/INFO]
 
 [FIGURE src="https://upload.wikimedia.org/wikipedia/commons/d/d2/IoT_environmental_monitoring_system_solution_-_Overview.jpg" caption="Överblick av olika delar som kan ingå i ett system med övervakning."]
 
-
-
 <!-- https://old.reddit.com/r/devops/comments/afqye3/whats_your_monitoring_and_alerting_stack_look_like/
 https://itnext.io/deploy-elk-stack-in-docker-to-monitor-containers-c647d7e2bfcd
  -->
-
 
 ### Monitoring {#monitoring}
 
@@ -35,8 +37,6 @@ När system ligger utspridda på virtuelle servrar jorden runt är det inte lät
 - Microsofts förklaring av [Monitoring](https://docs.microsoft.com/en-us/azure/devops/learn/what-is-monitoring).
 
 - [Monitoring in a DevOps world](https://queue.acm.org/detail.cfm?id=3178371).
-
-
 
 ### Log management {#log}
 
@@ -50,8 +50,6 @@ Log management är processen av att samla in, lagra, hantera och analysera logga
 
 - en snabb överblick av [ELK stack](https://www.guru99.com/elk-stack-tutorial.html) för en överblick av ett av de mest populära systemen för Log management.
 
-
-
 ### Application performance monitoring (APM) {#apm}
 
 APM kan även kallas Application Performance Management (också APM), enligt vissa är det skillnad. APM är att övervaka, hantera och diagnosera prestanda, tillgänglighet och användare upplevelse av applikationer. Avancerade program används för att göra om data till "business value".
@@ -59,8 +57,6 @@ APM kan även kallas Application Performance Management (också APM), enligt vis
 #### Läs och titta {#apm-read}
 
 - [What is application performace monitoring](https://www.eginnovations.com/blog/what-is-application-performance-monitoring/).
-
-
 
 ### Observability {#observability}
 
@@ -71,8 +67,6 @@ På senare år har det även börjat talas mycket om Observability vilket hänge
 - [Observability sv. Monitoring](https://dzone.com/articles/observability-vs-monitoring).
 
 - Om ni vill kan ni även kolla på [What Does the Future Hold for Observability?](https://www.youtube.com/watch?v=MkSdvPdS1oA).
-
-
 
 ### Prometheus och Grafana {#prometheus}
 
@@ -85,8 +79,6 @@ Vi ska använda oss av [Prometheus](https://prometheus.io/), ett väldigt popul�
 - [Alerting Best practice](https://prometheus.io/docs/practices/alerting/)
 - [Operatorer i Prometheus](https://prometheus.io/docs/prometheus/latest/querying/operators/)
 
-
-
 #### Att göra {#prometheus-do}
 
 Nu ska ni starta upp prometheus, grafana och koppla ihop dem.
@@ -95,8 +87,6 @@ Nu ska ni starta upp prometheus, grafana och koppla ihop dem.
 
 - Kolla på videorna 410-413 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12). PS i video 412 körs det på produktionsservrar men ni kan göra det lokalt som med allt annat, det är likadant.
 
-
-
 Läsanvisningar {#read}
 --------------------------
 
@@ -104,10 +94,7 @@ Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 
 Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
 
-
-
 ### Uppgifter {#uppgifter}
-
 
 1. Utöka Ansible provisioning koden så att ni skapar en till server som heter och har typen `monitoring`.
     - **Öppna passande portar i security groups.**
@@ -125,7 +112,7 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 1. Lägg till dashboard i Grafana för alla exportörer. Använd Ansible modulen [dashboards](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_dashboard_module.html) för att lägga till den från Ansible. Det går inte att koppla ihop er dashboard och datasource i Ansible koden. Modulerna saknar stöd för det. Bara skapa dem via Ansible och sen får ni koppla ihop dem manuellt.
 
-1. I microblogen lägga till en knapp som genererar ett fel. Skapa ett larm, som kopplas till det felet. Larmet ska skickas till `https://webhook.site`. I redovisningstexten, skriv hur man kan aktivera och avaktivera larmet. Samt länk till er webhook sida där man kan se larmet. 
+1. I microblogen lägga till en knapp som genererar ett fel. Skapa ett larm, som kopplas till det felet. Larmet ska skickas till `https://webhook.site`. I redovisningstexten, skriv hur man kan aktivera och avaktivera larmet. Samt länk till er webhook sida där man kan se larmet.
 
 1. Lägg till en Reverse Proxy i er [Nginx konfiguration till Grafana och Grafana konfiguration](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f). Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
 
@@ -135,8 +122,6 @@ Extrauppgift {#extra}
 --------------------------
 
 Om ni får tid över, testa log management verktyget [Loki](https://grafana.com/oss/loki/). Försök få loggar från Nginx eller microbloggen till Grafana med hjälp av Loki.
-
-
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------

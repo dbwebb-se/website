@@ -1,4 +1,5 @@
 ---
+
 author:
     - aar
 revision:
@@ -14,17 +15,19 @@ Vi avslutar kursen med att ni individuellt skriver en rapport. Rapporten är det
 
 <!-- more -->
 
+[WARNING]
+Materialet är inte redo. Vänta på att den gula rutan försvinner.
+[/WARNING]
+
 [YOUTUBE src="8gwCFcGxOYE" caption="Andreas introducerar rapporten."]
-
-
 
 För att uppnå godkänt behöver du demonstrerar följande:
 
 - kunna redogöra för vad devops är, både det praktiska och filosofiska/kulturella.
-    - bl.a. blamelessness, kontinuerlig lärande och postmortems.
-    - reflektera över vad boken tycker devops är och innehåller.
-        - om det är något ni inte håller med om eller om ni kan hitta referenser som motsäger den.
-        - välj ut saker som ni tror är viktigast för uppnå devops.
+  - bl.a. blamelessness, kontinuerlig lärande och postmortems.
+  - reflektera över vad boken tycker devops är och innehåller.
+    - om det är något ni inte håller med om eller om ni kan hitta referenser som motsäger den.
+    - välj ut saker som ni tror är viktigast för uppnå devops.
 
 - Kunna förhålla sig till devops begrepp och relatera till hur de används och kan kopplas till verktyg.
 
@@ -33,8 +36,6 @@ För att uppnå godkänt behöver du demonstrerar följande:
 - Utförd rapport (innehåll, stavning, formatering, grammatik, logisk struktur, referenser).
 
 - Använd **minst** 2 [vetenskapliga](https://libguides.lub.lu.se/c.php?g=679734&p=4846592) referenser.
-
-
 
 Rapporten ska vara på minst 4 sidor, skriven på engelska eller svenska, lämnas in på Canvas i pdf-format
 och måste vara formaterad enligt Eurographics konferensmall. Mallen finns för [Latex](https://www.overleaf.com/latex/templates/author-guidelines-and-template-for-eurographics-proceedings-manuscripts/rntmcbgtjqzg) och [Word](kursmaterial/devops/Author_Guidelines_and_Template.docx).
@@ -46,12 +47,9 @@ och måste vara formaterad enligt Eurographics konferensmall. Mallen finns för 
 Alla inlämningar körs genom en [plagieringskontroll](https://dbwebb.se/kurser/exjobb/guide/plagieringskontroll).  
 Betyget UX kan kompletteras till G eller skickas in i nästa omgång för ny bedömning.  
 
-
 Skapa också ett separat dokument där du skriver feedback på rapporten och kursen, svara på följande:
 
 1. Avsluta med ett sista stycke med dina tankar om kursen och vad du anser om materialet och handledningen (ca 5-10 meningar). Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. Är du nöjd/missnöjd? På en skala 1-10, vilket betyg ger du kursen?
-
-
 
 ### Tips på litteratur {#literatur}
 
@@ -84,8 +82,6 @@ https://ieeexplore.ieee.org/document/7458761
 sammanfatta fördelar och nackdelar från litteratur.
 vetenskaplig/teknisk rapport
 -->
-
-
 
 ### Video {#video}
 

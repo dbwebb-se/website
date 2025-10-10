@@ -1,4 +1,5 @@
 ---
+
 author:
     - aar
 revision:
@@ -10,7 +11,9 @@ Kmom02: Configuration Management och Continuous Deployment
 Vi fortsätter med att kolla in fler sätt att automatisera flöden. Vi lär oss Ansible för Configuration Management (CM) och Infrastructure as Code (IaC). Tillsammans med Ansible och GitHub Actions ska vi också utveckla vår Continuous Delivery till Continuous Deployment (också CD).
 
 <!-- more -->
-
+[WARNING]
+Materialet är inte redo. Vänta på att den gula rutan försvinner.
+[/WARNING]
 [FIGURE src="https://www.gocd.org/assets/images/blog/continous-delivery-vs-deployment-infographic/continuous-delivery-vs-continuous-deployment-infographic-305dd620.png"]
 
 Kmom02 är två veckor långt!
@@ -27,8 +30,6 @@ Ni i gruppen vars server inte är kopplad till det inlämnade domännamnet för 
 Den som har resurserna som är "inlämnad" för kmom01 kan radera de resurserna så fort ni har fått godkänt.
 [/INFO]
 
-
-
 ## Infrastructure as Code och Configuration Management {#iac-cm}
 
 Infrastructure as Code (IaC) innebär att behandla sin infrastruktur (servrar) som software, det ska vara definierat i kod och versionshanterat. Configuration Management (CM) är typ samma sak fast med fokus på mjukvaran som körs på servrarna. Att skapa använda, installera program och konfigurera dem ska göras via kod.
@@ -41,16 +42,11 @@ Infrastructure as Code (IaC) innebär att behandla sin infrastruktur (servrar) s
 
 - [When to use which IaC/CM tool](https://medium.com/cloudnativeinfra/when-to-use-which-infrastructure-as-code-tool-665af289fbde).
 
-
-
-
 ## Ansible {#ansible}
 
 Ansible är ett verktyg för att automatisera serverkonfiguration. Läs om följande artiklar om Ansible.
 
-
 ### Läs och titta {#ansible-read}
-
 
 - [What Is Ansible](https://www.youtube.com/watch?v=1id6ERvfozo).
 
@@ -59,10 +55,9 @@ Ansible är ett verktyg för att automatisera serverkonfiguration. Läs om följ
 - Ansible [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html).
 
 Jag har fått som kommentar att studenterna vill ha mer Ansible material så här är två olika spellistor för de som vill har mer om Ansible. Ni kan testa skippa dem och jobba vidare. Om ni upplever att ni behöver lära er mer så kan ni gå tillbaka till någon av dessa spellistor.
+
 - [Getting Started with Ansible](https://www.youtube.com/watch?v=3RiVKs8GHYQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 - [Ansible 101](https://www.jeffgeerling.com/blog/2020/ansible-101-jeff-geerling-youtube-streaming-series)
-
-
 
 ### Att göra {#ansible-do}
 
@@ -70,8 +65,6 @@ Jag har fått som kommentar att studenterna vill ha mer Ansible material så hä
 <!-- Koden för killercoda https://github.com/irixjp/katacoda-scenarios
 De har använt denna som referens material https://github.com/ansible/workshops
 -->
-
-
 
 ## Bekanta er med Ansible koden {#ansible-code}
 
@@ -84,8 +77,6 @@ Först, [installer Azure-CLI](./../labbmiljo/azure-cli) och lägg till `-r deplo
 - Kolla på videorna med `20x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot, [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78).
 
 - Om ni vill hänga med och skriva 10-first-minutes själva så kan ni kolla på videorna med "21x" i namnet. Videorna är lite utdaterade när det kommer till hur man exekverar filerna Då pratar jag om AWS men om ni har kollat på de andra videorna så vet ni hur man exekverar filerna.
-
-
 
 ## Continuous Deployment (CD) {#cd}
 
@@ -122,8 +113,6 @@ För att använda nyckeln i ett workflow behöver ni:
 
 Då används den SSH nyckeln automatiskt när ni SSH:ar från Actions.
 
-
-
 ### Ny struktur i molnet {#cloud}
 
 I uppgifterna ska ni öka antalet servrar som används för produktionsmiljön. Om det Microbloggen blir en superhit och ni får jättemånga användare, då är nog er billiga VM för dålig för att hantera all trafik. En lösning är att köpa en större VM och fortsätta ha allt på den. En annan lösning är att dela upp de olika delarna på flera VM's. Då blir det också lättare om vi skulle behöva utöka ännu mer i framtiden.
@@ -142,13 +131,9 @@ Den ny strukturen är att vi har en egen VM för databasen och två olika VM's f
 
 I länken ovanför skriver de inte att vi inte kan lägga ett `http` block i ett annat `http` block. Vilket vi gör om vi bara skapar en ny host i `/etc/nginx/sites-available`. Detta gör att vi måste ändra på config filen `/etc/nginx/nginx.conf`. Hur vi gör det finns i en länk bland uppgifterna.
 
-
-
 ## Lästips {#lastips}
 
-1. Hur man kan hantera flera [användare på produktionsservern med Ansible](https://www.cogini.com/blog/managing-user-accounts-with-ansible/). 
-
-
+1. Hur man kan hantera flera [användare på produktionsservern med Ansible](https://www.cogini.com/blog/managing-user-accounts-with-ansible/).
 
 Läsanvisningar {#read}
 --------------------------
@@ -156,8 +141,6 @@ Läsanvisningar {#read}
 Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 
 Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
-
-
 
 Uppgifter  {#uppgifter}
 -------------------------------------------
@@ -167,25 +150,26 @@ Tips. När ni jobbar med Ansible koden, använd er av [dokumentationen](https://
 [/INFO]
 
 1. Uppdatera provision Playbook så att fyra servrar skapas.
-  - En `loadbalancer`, en `database` och två `appserver`, en som heter `appserver1` och en `appserver2`.
-  - Appservrarna ska dela security group.
-  - Lägg till två subdomäner där de går till varsin `appserver`. De ska heta `appserver1.<domännamn>` och `appserver2.<domännamn>`.
+
+- En `loadbalancer`, en `database` och två `appserver`, en som heter `appserver1` och en `appserver2`.
+- Appservrarna ska dela security group.
+- Lägg till två subdomäner där de går till varsin `appserver`. De ska heta `appserver1.<domännamn>` och `appserver2.<domännamn>`.
 
 1. Uppdatera 10-first-minutes Playbook så att alla gruppmedlemmars SSH-nycklar läggs till i authorized_keys. I modulen [ansible-role-users](https://github.com/cogini/ansible-role-users/blob/master/tasks/main.yml#L108) kan ni se ett exempel på hur man kan göra det. Då behöver ni ladda upp allas **publika** nycklar i ert repo. Det är säkert att ladda upp de publika nycklarna. De kan inte användas för att återskapa den privata.
 
 1. Sätt upp [Microbloggen med Ansible](uppgift/microblog-ansible).
 
 1. Implementera en Continuous Deployment strategi med Ansible och Github Actions.
-  - Vid ny release ska Actions köra Ansible playbooks som gör en valbar CD strategi för att driftsätta den nya versionen.
-    - Er strategi ska inte ha någon downtime, så ni kan inte använda Recreate Deployment Strategy.
-    - Från GitHub Actions kan ni inte koppla upp er mot Azure och köra `gather_instances`. Därför la vi till att skapa subdomänerna i första uppgiften.
-    - I filen `ansible/hosts`, lägg till ny hosts som går till `appserver1.<domännamn>` och `appserver2.<domännamn>`. Då kan ni använda de hosts i er nya CD Playbook. Ni får lägga till fler hosts om det behövs. PS. Namnge inte dem till samma groups/hosts namn som gather_instances skriptet ger.
-  - En avslutande del i er CD playbook ska verifiera att rätt version av Microblog körs på produktionsservrarna.
+
+- Vid ny release ska Actions köra Ansible playbooks som gör en valbar CD strategi för att driftsätta den nya versionen.
+  - Er strategi ska inte ha någon downtime, så ni kan inte använda Recreate Deployment Strategy.
+  - Från GitHub Actions kan ni inte koppla upp er mot Azure och köra `gather_instances`. Därför la vi till att skapa subdomänerna i första uppgiften.
+  - I filen `ansible/hosts`, lägg till ny hosts som går till `appserver1.<domännamn>` och `appserver2.<domännamn>`. Då kan ni använda de hosts i er nya CD Playbook. Ni får lägga till fler hosts om det behövs. PS. Namnge inte dem till samma groups/hosts namn som gather_instances skriptet ger.
+- En avslutande del i er CD playbook ska verifiera att rätt version av Microblog körs på produktionsservrarna.
 
 1. På Microbloggen, lägg till en ny route som visar vilken version av appen som körs på servern.
-  - Lägg till ett test som testar att det routen fungerar.
 
-
+- Lägg till ett test som testar att det routen fungerar.
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------

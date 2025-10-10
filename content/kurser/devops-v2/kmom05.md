@@ -1,4 +1,5 @@
 ---
+
 author:
     - aar
 revision:
@@ -13,6 +14,11 @@ Kmom05: Container orchestration
 Er Microblog har fått många nya användare och ni behöver utöka er infrastruktur för att hantera trycket på servrarna. Ni börjar med att utöka hur ni använder Ansible och startar upp fler servrar och containrar på servrarna. Dock märker ni snabbt att det är krångligt och Ansible är inte gjort för att användas till detta. Istället börjar ni med att läsa på om container orchestration.
 
 <!-- more -->
+
+[WARNING]
+Materialet är inte redo. Vänta på att den gula rutan försvinner.
+[/WARNING]
+
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
 
 [INFO]
@@ -29,7 +35,6 @@ I detta kursmomentet ska ni jobba individuellt, ni får fortfarande diskutera oc
 
 Vi kommer använda oss utav Kubernetes (K8s) för container orchestration men det är bra att känna till vilka andra verktyg som finns och lite om vad som skiljer dem åt.
 
-
 ### Container Orchestration {#co}
 
 Container orchestration är det övergripandet namnet på verktyg som hantera livscykeln för många containers.
@@ -37,8 +42,6 @@ Container orchestration är det övergripandet namnet på verktyg som hantera li
 #### Läs och titta {#co-read}
 
 - [What Is Container Orchestration?](https://web.archive.org/web/20210125081227/https://blog.newrelic.com/engineering/container-orchestration-explained/)
-
-
 
 ### Kubernetes {#k8s}
 
@@ -60,8 +63,6 @@ Om det inte var pedagogiskt nog förklaring av Kubernetes kan jag rekommendera f
 
 - Jobba igenom modul 1-6 i [Learn Kubernetes basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/). För att få en bättre förståelse för grunderna i K8s (Kubernetes) och hur man kan interagera med det.
 
-
-
 #### Kubernetes yaml {#yaml}
 
 Det finns två sätt att hantera objekt (pods, deployments, etc...) i K8s, imperative och declarative. I imperative kör vi kommandon i terminalen för att jobba mot ett K8s kluster, som ni gjorde i Kubernetes basics, och i declarative skriver vi konfiguration i filer och kör mot klustret.
@@ -70,13 +71,10 @@ Vi vill givetvis jobba declarative för att då kan vi spara konfigurationen i G
 
 [FIGURE src="http://assets.digitalocean.com/articles/comics/imperative-declarative-k8s.jpg" caption="digitalocean förklarar [imperativ vs declarative](https://www.digitalocean.com/community/tutorials/imperative-vs-declarative-kubernetes-management-a-digitalocean-comic)"]
 
-
 ##### Läs och titta {#k8s-read}
 
 - [För och nackdelar med deklarativ vs imperativ](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/).
 - För att se hur K8s strukturerar yaml filer läs [Kubernetes deployment tutorial](https://devopscube.com/kubernetes-deployment-tutorial/). Ni behöver bara läsa, inte jobba igenom.
-
-
 
 ### Stateless applications {#statless}
 
@@ -89,8 +87,6 @@ K8s bygger på virtualisering och containrar, vilket i grunden är stateless. Vi
 #### Att göra {#stateless-do}
 
 - Jobba igenom [Deploying PHP Guestbook application with Redis](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/).
-
-
 
 ### Stateful applications {#stateful}
 
@@ -106,17 +102,13 @@ Kolla på följande videos om volymer i Kubernetes.
 
 [YOUTUBE src="OulmwTYTauI" caption="Kubernetes Volumes 2: Understanding Persistent Volume (PV) and Persistent Volume Claim (PVC)"]
 
-
 - Läs [StatefulSet Basics](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/).
-
 
 #### Att göra {#stateful-do}
 
 - Jobba igenom [Deploying WordPress and MySQL with Persistent Volumes](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/).
 
-
-
-### Designa för Kubernetes {#design} 
+### Designa för Kubernetes {#design}
 
 Ni har nu titta lite på hur en applikations design/arkitektur påverkar hur lätt det är att köra den i K8s. Det finns så klart flera saker som är bra att tänka på när man skapa sin applikation men även hur man sätter upp den i K8s.
 
@@ -125,8 +117,6 @@ Ni har nu titta lite på hur en applikations design/arkitektur påverkar hur lä
 - [Architecting Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/architecting-applications-for-kubernetes) tar upp lite om hur man ska tänka runt applikationen men även hur man använder K8s.
 
 - [Modernizing Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes) handlar  om hur man kan skriva om en applikation för att den ska fungera bättre för K8s.
-
-
 
 ### Kubernetes i Azure {#aks}
 
@@ -138,21 +128,15 @@ Ni ska nu jobba igenom en artikel som går igenom hur vi sätter upp ett kluster
 
 - Jobba igenom [Sätt upp ett Kubernetes kluster i AKS med HTTPS](kunskap/aks-kluster-https).
 
-
-
 ### Microblog i Kubernetes {#microblog}
 
 Nu ska ni sätta upp Microbloggen i Kubernetes. Skapa ett nytt kluster i AKS med samma inställningar som ni gjorde sist, i videon. Arbetet är uppdelat i tre sektioner nedanför. Spara alla filer i `kubernetes/` mappen.
-
-
 
 #### Mysql i Kubernetes {#mysql}
 
 Jobba igenom [Mysql i Kubernetes](kunskap/mysql_i_kubernetes) för att sätta upp en Mysql server i ert kluster. Den förutsätter att ni har skapat klustret och kopplat kubectl till det.
 
 Ni behöver inte köra någon SQL kod då Migrations i Flask sköter det när vi startar Microblogen.
-
-
 
 #### Microblog deployment {#microblog}
 
@@ -187,8 +171,6 @@ Ett tips är att lägga till en `livenessProbe`, på containern i er Deployment.
 
 När ni kan se er microblog via webbläsaren med ett domännamn är ni klara.
 
-
-
 #### Automatisk skalning av er deployment {#autoscaling}
 
 När ni har fått upp microblogen och kopplat på er domän ska ni testa att automatiskt skala er Microblog deployment, med hjälp av [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
@@ -203,20 +185,15 @@ Jobba sen med i följande video för att testa på att skala er deployment.
 
 [YOUTUBE src=webuyGs-spQ  caption="Autoscale ett kubernetes kluster med HPA."]
 
-
-
 #### Testa olika driftsättningsstrategier i Kubernetes {#drift}
 
 Om ni vill och har tid över kan ni testa olika driftsättningsstrategier med Kubernetes. Jag har inte hunnit testa dem än, så jag vet inte om det funkar (men det borde göra det).
 
 - [Deployment Strategies In Kubernetes](https://auth0.com/blog/deployment-strategies-in-kubernetes/)
 
-
 [INFO]
 När ni har gjort det **ska** ni radera ert AKS kluster i Azure, ni behöver bara lämna in filerna för rättning.
 [/INFO]
-
-
 
 ### Kubernetes i produktion {#production}
 
@@ -232,8 +209,6 @@ Kolla på "Running Kubernetes in Production: A Million Ways to Crash Your Cluste
 
 [YOUTUBE src="pKFQuED_2kg" caption="Running Kubernetes in Production: A Million Ways to Crash Your Cluster"]
 
-
-
 Uppgifter  {#uppgifter}
 -------------------------------------------
 
@@ -245,15 +220,12 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 3. Försäkra dig om att du har pushat repot med din senaste kod.
 
-
-
 Läsanvisningar {#las}
 --------------------------
 
 Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 
 Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
-
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------

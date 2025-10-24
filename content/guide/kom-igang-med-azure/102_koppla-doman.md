@@ -1,4 +1,5 @@
 ---
+
 author: aar
 revision:
     "2023-10-24": "(A, aar) Första versionen."
@@ -11,7 +12,7 @@ Det underlättar dessutom om vi har ett domännamn som vi kan länka till en ser
 När du har fixat en domän, kolla på videon för att koppla ditt domännamn till servern du skapade ovanför i Azure.
 
 [INFO]
-I videon används sidan namecheap för domännamn. Ni använder .tech. För att se hur det funkar i .tech. Kolla på bilderna nedanför.
+I videon används sidan namecheap för domännamn. Om du använder .tech. Kolla på bilderna nedanför.
 [/INFO]
 
 [YOUTUBE src="CNSAT9n0554" caption="102 Koppla domän till Azure."]

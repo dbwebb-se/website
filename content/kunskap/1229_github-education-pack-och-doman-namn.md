@@ -31,7 +31,7 @@ När du är verifierad via GitHub får du tillgång till en mängd erbjudande p�
 En domän till din server {#domain}
 --------------------------------------
 
-Som en del av Github Education Pack får du som student även ett domän-namn på top-domänen .me från registratorn [namecheap gratis under ett år](https://education.github.com/pack/offers?sort=popularity&tag=Domains). Om du vill använda en annan registrator är det fritt fram. Tidigare år hade några studenter problem att få namecheap att fungera, då använde de .TECH istället.
+Som en del av Github Education Pack får du som student även ett domän-namn på top-domänen .me från registratorn [namecheap gratis under ett år](https://education.github.com/pack?sort=popularity&tag=Domains). Om du vill använda en annan registrator är det fritt fram. Tidigare år hade några studenter problem att få namecheap att fungera, då använde de .TECH istället.
 
 ### Namecheap {#namecheap}
 

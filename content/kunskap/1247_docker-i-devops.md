@@ -7,14 +7,11 @@ revision:
 Docker {#docker}
 ==================================
 
-
 En snabb översikten av vad Docker är kan vi hitta på [Dockers egna webbsida](https://www.docker.com/resources/what-container). Docker är en container teknologi som liknar en avskalad virtuella maskin. Vad tillför det till oss som utvecklare?
 
 Docker låter utvecklare att utveckla och driftsätta applikationer i virtuella container miljöer. Detta ska göra att en applikation kan köras på exakt samma sätt utan kompabilitets problem oberoende av vilken dator/server den körs på, så länge Docker är installerat. Att applikationen kan köras oberoende av systemet gör att applikationen blir lättare att använda, utveckla, underhålla och driftsätta.
 
 [FIGURE src="https://pics.me.me/it-works-on-my-machine-then-well-ship-your-machine-62072263.png"]
-
-
 
 ## Docker terminologi {#terminologi}
 
@@ -28,8 +25,6 @@ Docker låter utvecklare att utveckla och driftsätta applikationer i virtuella 
 - **Docker Engine**: Skapar och kör Containers.
 - **Docker Client**: Huvud interfacet för Docker.
 
-
-
 ## Öva på Docker {#ova}
 
 Kolla på följande video för en kort introduktion till Docker och hur vi kan använda det.
@@ -40,12 +35,9 @@ Om ni redan har läst kursen vlinux kan ni gå vidare till nästa steg. Annars j
 
 - [Docker](guide/docker/introduktion)
 
-Om ni vill öva mer på Docker så finns det många [Docker övningar på killercoda](https://killercoda.com/comp-killercoda/course/Docker%20Tutorials%20(Without%20Click-and-Execute)).
-
+Om ni vill öva mer på Docker så finns det många [Docker övningar på killercoda](https://killercoda.com/docker).
 
 **Läs om** [Docker latest tag](https://vsupalov.com/docker-latest-tag/), ett annat hett ämne inom Docker är om man ska använda `latest` taggen för att köra images eller ej.
-
-
 
 ## Docker i devops {#devops}
 
@@ -53,17 +45,13 @@ Docker är väldigt populärt inom devops världen av många anledningar, läs o
 
 - [Docker and the Three Ways of DevOps](https://drive.google.com/file/d/1mAmfW6cilWNx_osvhsImSoH1bmZ__Tbe/view?usp=sharing)
 
-
-
 ## Databas i Docker {#db_docker}
 
 Att köra sin databas i Docker har länge varit debatterat, många är emot men fler och fler börjar tycka att det är OK. Jag är för att köra databasen in Docker så länge man lägger data mappen som en volym så att datan inte skrivs över när vi startar om containern.
 
-- Läsa om argumenten i [Should You Run Your Database in Docker?](https://vsupalov.com/database-in-docker/). 
+- Läsa om argumenten i [Should You Run Your Database in Docker?](https://vsupalov.com/database-in-docker/).
 
 MySQL sparar sin data i mappen `/var/lib/mysql` så när ni kör er databas container i produktion gör den mappen till en volym på host systemet. Så att datan i databasen inte försvinner när vi stänger ned containern.
-
-
 
 ## Spara konfiguration som kod {#konfig_kod}
 

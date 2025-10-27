@@ -44,7 +44,7 @@ Vi kommer att utöka vad som ingår i labbmiljön under kursen.
 
 #### Att göra {#dev-do}
 
-- [installera labbmiljön](./../labbmiljo). Det är rekommenderat att ha minst python version 3.8. Det finns ett problem med 3.11 så om ni har det byt till en högre eller lägre version.
+- [installera labbmiljön](./../labbmiljo). Det är rekommenderat att ha minst python version 3.10. Det finns ett problem med 3.11 så om ni har det byt till en högre eller lägre version.
 
 ### Produktions miljö {#prod}
 

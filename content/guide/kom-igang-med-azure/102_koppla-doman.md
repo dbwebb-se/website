@@ -17,6 +17,14 @@ I videon används sidan namecheap för domännamn. Om du använder .tech. Kolla 
 
 [YOUTUBE src="CNSAT9n0554" caption="102 Koppla domän till Azure."]
 
+`1:00` i videon när er DNS zone är skapad, klicka på `Record sets` för att komma till samma vy som i videon.
+
+[FIGURE src="/image/devops/find-recordsets.png" caption="Hitta till Record sets"]
+
+`3:00` i videon när ni ska koppla er DNS till serverns IP. Skippa att lägga till IP adressen. Gör istället ett alias till IP resursen.
+
+[FIGURE src="/image/devops/dns-alias.png" caption="DNS alias till IP"]
+
 ### .tech {#tech}
 
 I Azure funkar det likadant som i videon, så kolla på den. När videon visar namecheap ska ni göra samma sak i .tech.

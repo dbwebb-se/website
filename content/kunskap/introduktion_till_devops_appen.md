@@ -1,4 +1,5 @@
 ---
+
 author: aar
 category: devops
 revision:
@@ -14,22 +15,14 @@ Introduktion till projektet vi ska jobba med i hela kursen. Vi ska titta på lit
 
 Vi behöver ett projekt/en app att jobba med när vi ska lära oss devops. Jag har redan skapat en blog som du ska använda och jobba vidare med i kursen. Bloggen baseras på [The Flask mega tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). I den genomgången visar Miguel hur man skapar en blog i Flask från grunden till att driftsätta den.
 
-
-
 ## Appen {#appen}
 
 Koden för appen är redan klar och finns i repot [devops](https://github.com/dbwebb-se/microblog), börja med att **forka** och klona din fork av repot. För att forka repot, klicka på knappen `Fork' uppe till vänster på Github sidan.
 
-
 Här följer några videos som du kan kolla på för att sätta upp bloggen, få en uppfattning av hur den fungerar och hur koden ser ut. Använd även [The Flask mega tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) för att förstå koden.
 
 [INFO]
-Ni kan behöva uppdatera pip3 för att kunna installera paketen som behövs.
-
-```
-python3 -m pip install --upgrade pip  
-python3 -m pip install --upgrade setuptools
-```
+Kommandon i filen ska köras lokalt på er dator. Inte på er VM.
 [/INFO]
 
 [YOUTUBE src="PUigbi1lGQU" caption="110 Introduktion till app strukturen och repot."]
@@ -37,8 +30,6 @@ python3 -m pip install --upgrade setuptools
 [YOUTUBE src="cHWrwQQlEjY" caption="111 Genomgång av appens kod."]
 
 [YOUTUBE src="kB5UvNxuHxo" caption="112 Genomgång av koden för testerna."]
-
-
 
 ## Länkar till allt som appen är byggd med {#lankar}
 

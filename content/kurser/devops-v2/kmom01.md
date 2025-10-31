@@ -3,6 +3,7 @@
 author:
     - aar
 revision:
+    "2025-10-31": "(B, aar) Flyttat Azure delarna till kmom02"
     "2023-10-24": "(A, aar) Ny version inför v2. Sammanslagning av kmom01 och kmom02"
 ...
 Kmom01: Introduktion till devops och Docker
@@ -16,9 +17,10 @@ Det är en fullspäckat kurs där vi ska lära oss många ny verktyg och koncept
 Innan ni börjar jobba med materialet fixa ["GitHub Education Pack och ett domännamn"](kunskap/github-education-pack-och-doman-namn). Det kan ta ett tag innan det blir godkänt.
 [/INFO]
 
-[WARNING]
+<!-- [WARNING]
 Materialet är inte redo. Vänta på att den gula rutan försvinner.
-[/WARNING]
+[/WARNING] -->
+
 
 Kmom01 är två veckor långt!
 
@@ -46,7 +48,7 @@ Vi kommer att utöka vad som ingår i labbmiljön under kursen.
 
 - [installera labbmiljön](./../labbmiljo). Det är rekommenderat att ha minst python version 3.10. Det finns ett problem med 3.11 så om ni har det byt till en högre eller lägre version.
 
-### Produktions miljö {#prod}
+<!-- ### Produktions miljö {#prod}
 
 När man jobbar enligt devops ska saker ofta gå snabbt och automatiskt, då underlättar det om man snabbt och enkelt kan starta upp och stänga ner servrar. Därför ska vi använda oss av en molntjänst, mer specifikt [Microsoft Azure](https://azure.microsoft.com/en-us/). OBS! logga inte in via den länken.
 
@@ -64,7 +66,7 @@ För att komma åt varandras servrar har ni ett par alternativ:
 - Dela era SSH filer med varandra. Inte jättesäkert men OK för oss.
 - Skapa en extra användare för varandra på servrarna. Proffsigaste alternativet, men då måste man tänka på att användarna behöver samma rättigheter. Det bli mer att tänka på längre fram.
 
-Om något går fel på servern när ni jobbar med resten av materialen så ni behöver skapa om servern i Azure. Då kan ni använda er av [skripten i repot](https://github.com/dbwebb-se/microblog/tree/master/scripts) för att snabbt göra de 10 första minuterna på en server, så slipper ni göra det manuellt igen.
+Om något går fel på servern när ni jobbar med resten av materialen så ni behöver skapa om servern i Azure. Då kan ni använda er av [skripten i repot](https://github.com/dbwebb-se/microblog/tree/master/scripts) för att snabbt göra de 10 första minuterna på en server, så slipper ni göra det manuellt igen. -->
 
 ## Appen {#app}
 
@@ -198,13 +200,13 @@ Uppgifter  {#uppgifter}
 
 1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Om ni får komplettering på en inlämning öka versionen.
 
-1. Välj en av era servrar som produktionsserver.
+<!-- 1. Välj en av era servrar som produktionsserver.
 
     - Installera Docker på er server.
     - Driftsätt er nya Docker imagen på den.
     - Koppla er image mot en MySQL Docker container. Tänk på att data ska ligga som en volym. Så att all data inte försvinner vid en omstart.
     - Sätt upp [Nginx med HTTPS](kunskap/driftsatta-en-flask-app#conf_nginx) så man kommer åt er Microblog via ett av era domännamn.
-    <!-- nginx i docker med https https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71 -->
+    nginx i docker med https https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71 -->
 
 [YOUTUBE src=LOULXBE3iAE caption="Hur det kan se ut när det är klart"]
 

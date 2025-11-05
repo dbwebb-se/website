@@ -39,7 +39,7 @@ Tips. Utse en i gruppen som är ansvarig (eller dela ansvaret...?) till att varj
 Zoom-träff för diskussion och frågestund {#2}
 -------------------------
 
-På torsdagens eftermiddag, normalt kl 13-15, träffas vi alla i zoom för att stämma av läget och se hur det går för teamen och vilka frågeställningar som finns. 
+På torsdagens eftermiddag, träffas vi alla i zoom för att stämma av läget och se hur det går för teamen och vilka frågeställningar som finns. 
 
 Vi försöker hjälpas åt för att besvara frågorna och vi pratar om hur man bäst går framåt. De grupper som vill ha direkt feedback kan ge länkar till tex SDS:en.
 

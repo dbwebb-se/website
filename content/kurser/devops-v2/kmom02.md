@@ -1,16 +1,16 @@
 ---
-
 author:
-    - aar
+  - aar
 revision:
-    "2023-11-10": "(A, aar) Ny versionen inför V2."
+  "2023-11-10": "(A, aar) Ny versionen inför V2."
 ...
-Kmom02: Configuration Management och Continuous Deployment
-==================================
+
+# Kmom02: Configuration Management och Continuous Deployment
 
 Vi fortsätter med att kolla in fler sätt att automatisera flöden. Vi lär oss Ansible för Configuration Management (CM) och Infrastructure as Code (IaC). Tillsammans med Ansible och GitHub Actions ska vi också utveckla vår Continuous Delivery till Continuous Deployment (också CD).
 
 <!-- more -->
+
 [WARNING]
 Materialet är inte redo. Vänta på att den gula rutan försvinner.
 [/WARNING]
@@ -18,25 +18,17 @@ Materialet är inte redo. Vänta på att den gula rutan försvinner.
 
 Kmom02 är två veckor långt!
 
-Nästa steg i vår miljö är att utöka antalet servrar från en till fyra. Vi ska bygga en klassisk webbapp struktur, en server för databasen, flera för appen och en som load balancer (Nginx, fungerade som proxy tidigare). Med systemet vi har nu, att kopiera bash filer till servern och exekvera manuellt är inte hållbart inom devops. Vi ska utnyttja kraften av Configuration Management verktyget Ansible för att uppnå denna strukturen på att hållbart sätt. Vi flyttar över funktionaliteten från bash skripten till Ansible, som kan utföra samma sak på flera servrar samtidigt. Vi ska skapa och stänga ner servrar med ett kommando, installera och konfigurera dem och tillslut ha ett kommando för att sätta upp hela produktionsmiljön, från zero to hero!
+Nästa steg i vår miljö är att sätta upp fyra VMs i Azure. Vi ska bygga en klassisk webbapp struktur, en server för databasen, flera för appen och en som load balancer (Nginx, fungerade som proxy tidigare). Vi ska utnyttja kraften av Configuration Management verktyget Ansible för att på ett hållbart sätt konfigurera våra servrar.Ansible kan jobba mot flera servrar samtidigt. Vi ska skapa och stänga ner servrar med ett kommando, installera och konfigurera dem och tillslut ha ett kommando för att sätta upp hela produktionsmiljön, från zero to hero!
 
 [INFO]
 Innan ni sätter igång med kursmomentet kolla att ert Microblog repo är synkat med originalet, [Syncing a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
 [/INFO]
 
-[INFO]
-Ni i gruppen vars server inte är kopplad till det inlämnade domännamnet för gruppen i kmom01, ta bort era gamla VMs och resurser. På Azure portalen, gå till `All resources` och radera allt **utom** er "DNS zone" och "SSH key"!
-
-Den som har resurserna som är "inlämnad" för kmom01 kan radera de resurserna så fort ni har fått godkänt.
-[/INFO]
-
 ## Infrastructure as Code och Configuration Management {#iac-cm}
 
-Infrastructure as Code (IaC) innebär att behandla sin infrastruktur (servrar) som software, det ska vara definierat i kod och versionshanterat. Configuration Management (CM) är typ samma sak fast med fokus på mjukvaran som körs på servrarna. Att skapa använda, installera program och konfigurera dem ska göras via kod.
+Infrastructure as Code (IaC) innebär att behandla sin infrastruktur (servrar) som mjukvara, det ska vara definierat i kod och versionshanterat. Configuration Management (CM) är typ samma sak fast med fokus på mjukvaran som körs på servrarna. Att skapa använda, installera program och konfigurera dem ska göras via kod.
 
 ### Läs och titta {#cm-read}
-
-- [Why use IaC](https://medium.com/cloudnativeinfra/why-use-infrastructure-as-code-881ccd6c4290).
 
 - [An introduction to Congifuration Management](https://www.digitalocean.com/community/tutorials/an-introduction-to-configuration-management).
 
@@ -101,14 +93,14 @@ Kopiera utskriften och lägg till som en SECRET i ert repo på GitHub.
 För att använda nyckeln i ett workflow behöver ni:
 
 ```yml
-    - name: Setup SSH 
-      shell: bash
-      run: |
-        eval `ssh-agent -s`
-        mkdir -p /home/runner/.ssh/
-        touch /home/runner/.ssh/id_rsa
-        echo -e "${{secrets.SSH_PRIVATE_KEY}}" > /home/runner/.ssh/id_rsa
-        chmod 700 /home/runner/.ssh/id_rsa
+- name: Setup SSH
+  shell: bash
+  run: |
+    eval `ssh-agent -s`
+    mkdir -p /home/runner/.ssh/
+    touch /home/runner/.ssh/id_rsa
+    echo -e "${{secrets.SSH_PRIVATE_KEY}}" > /home/runner/.ssh/id_rsa
+    chmod 700 /home/runner/.ssh/id_rsa
 ```
 
 Då används den SSH nyckeln automatiskt när ni SSH:ar från Actions.
@@ -121,7 +113,7 @@ Den ny strukturen är att vi har en egen VM för databasen och två olika VM's f
 
 [FIGURE src="image/devops/azure-structure.png" caption="VM struktur på Azure."]
 
-*På bilden har loadbalancer och databasen speciella ikoner men det är fortfarande vanliga VM's vi ska använda.*
+_På bilden har loadbalancer och databasen speciella ikoner men det är fortfarande vanliga VM's vi ska använda._
 
 ### Läs och titta {#cloud-read}
 
@@ -135,15 +127,13 @@ I länken ovanför skriver de inte att vi inte kan lägga ett `http` block i ett
 
 1. Hur man kan hantera flera [användare på produktionsservern med Ansible](https://www.cogini.com/blog/managing-user-accounts-with-ansible/).
 
-Läsanvisningar {#read}
---------------------------
+## Läsanvisningar {#read}
 
 Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 
 Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
 
-Uppgifter  {#uppgifter}
--------------------------------------------
+## Uppgifter {#uppgifter}
 
 [INFO]
 Tips. När ni jobbar med Ansible koden, använd er av [dokumentationen](https://docs.ansible.com/ansible/latest/) för att hitta moduler och hur de funkar! Den är bra.
@@ -171,8 +161,7 @@ Tips. När ni jobbar med Ansible koden, använd er av [dokumentationen](https://
 
 - Lägg till ett test som testar att det routen fungerar.
 
-Resultat & Redovisning  {#resultat_redovisning}
------------------------------------------------
+## Resultat & Redovisning {#resultat_redovisning}
 
 Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
 

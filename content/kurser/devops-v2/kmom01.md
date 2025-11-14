@@ -21,7 +21,6 @@ Innan ni börjar jobba med materialet fixa ["GitHub Education Pack och ett domä
 Materialet är inte redo. Vänta på att den gula rutan försvinner.
 [/WARNING] -->
 
-
 Kmom01 är två veckor långt!
 
 ## Vad är devops? {#devops}
@@ -47,26 +46,6 @@ Vi kommer att utöka vad som ingår i labbmiljön under kursen.
 #### Att göra {#dev-do}
 
 - [installera labbmiljön](./../labbmiljo). Det är rekommenderat att ha minst python version 3.10. Det finns ett problem med 3.11 så om ni har det byt till en högre eller lägre version.
-
-<!-- ### Produktions miljö {#prod}
-
-När man jobbar enligt devops ska saker ofta gå snabbt och automatiskt, då underlättar det om man snabbt och enkelt kan starta upp och stänga ner servrar. Därför ska vi använda oss av en molntjänst, mer specifikt [Microsoft Azure](https://azure.microsoft.com/en-us/). OBS! logga inte in via den länken.
-
-#### Att göra {#prod-do}
-
-Jobba igenom:
-
-- [Kom igång med Azure](guide/kom-igang-med-azure).
-
-- [Första 10 minuter på en server](kunskap/10-forsta-minuterna-pa-en-server).
-
-För att komma åt varandras servrar har ni ett par alternativ:
-
-- Lägg till varandras SSH filer som authenticated. Lättaste alternativet.
-- Dela era SSH filer med varandra. Inte jättesäkert men OK för oss.
-- Skapa en extra användare för varandra på servrarna. Proffsigaste alternativet, men då måste man tänka på att användarna behöver samma rättigheter. Det bli mer att tänka på längre fram.
-
-Om något går fel på servern när ni jobbar med resten av materialen så ni behöver skapa om servern i Azure. Då kan ni använda er av [skripten i repot](https://github.com/dbwebb-se/microblog/tree/master/scripts) för att snabbt göra de 10 första minuterna på en server, så slipper ni göra det manuellt igen. -->
 
 ## Appen {#app}
 

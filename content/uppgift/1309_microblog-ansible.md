@@ -18,6 +18,7 @@ Efter kraven finns lite hjälp för att lösa er Playbooks.
 1. Skapa en Ansible playbook för att starta en MySQL databas i en Docker container på en server. Den ska köra på host "database".
   - Installera docker
   - Starta en MySQL container.
+  - OBS! datan ska ligga i en volym så att den inte raderas om containerns startas om.
 1. Skapa en  Ansible Playbook för att starta er Microblog container. Den ska köras på host "appserver", alltså ska den köras på både appserver1 och appserver2.
   - Installera docker
   - Starta en Microblog container som kopplas till MySQL containern som körs på host database.

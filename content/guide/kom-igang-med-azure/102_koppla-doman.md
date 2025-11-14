@@ -12,10 +12,8 @@ Det underlättar dessutom om vi har ett domännamn som vi kan länka till en ser
 När du har fixat en domän, kolla på videon för att koppla ditt domännamn till servern du skapade ovanför i Azure.
 
 [INFO]
-I videon används sidan namecheap för domännamn. Om du använder .tech. Kolla på bilderna nedanför.
+I videon används sidan namecheap för domännamn. Om du använder .tech. Läs [.tech](#tech).
 [/INFO]
-
-[YOUTUBE src="CNSAT9n0554" caption="102 Koppla domän till Azure."]
 
 `1:00` i videon när er DNS zone är skapad, klicka på `Record sets` för att komma till samma vy som i videon.
 
@@ -24,6 +22,9 @@ I videon används sidan namecheap för domännamn. Om du använder .tech. Kolla 
 `3:00` i videon när ni ska koppla er DNS till serverns IP. Skippa att lägga till IP adressen. Gör istället ett alias till IP resursen.
 
 [FIGURE src="/image/devops/dns-alias.png" caption="DNS alias till IP"]
+
+[YOUTUBE src="CNSAT9n0554" caption="102 Koppla domän till Azure."]
+
 
 ### .tech {#tech}
 

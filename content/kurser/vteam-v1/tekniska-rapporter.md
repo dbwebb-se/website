@@ -35,6 +35,17 @@ När du är klar så sprider du studien och gör dig redo för att eventuellt up
 
 
 
+2025 {#2025}
+-----------------------
+
+Här följer tekniska studier (och liknande) som utfördes under 2025.
+
+1. [En jämförelse mellan SQL och NoSQL-databaser](https://github.com/21mmslak/SQL-vs-noSQL). Här kommer en tekniskrapport som jämför SQL och NoSQL-databaser.
+
+1. [NPM vs PNPM vs YARN](https://github.com/hildingen/vteam-npm-vs-pnpm-vs-yarn). The purpose of this report is to test and compare the three most popular package managers in Javascript npm (Node package manager), pnpm (Performant npm) and yarn.
+
+
+
 2024 {#2024}
 -----------------------
 

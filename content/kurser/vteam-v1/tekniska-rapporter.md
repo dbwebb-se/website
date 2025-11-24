@@ -46,6 +46,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2025.
 
 1. [JSON-Server Technical Guide](https://github.com/JSDevCode/report-json-server). This is an example repository and a technical guide for running a JSON-server as a mock API. It provides a simple setup to quickly test REST API calls without a real backend.
 
+1. [One client - two applications (Progressive Web App)](https://github.com/KristofferOhlund/pwa-sample). The purpose of this document is to demonstrate a simple approach for transforming an ordinary web application into a Progressive Web App (PWA), and how the content of the application can be separated depending on whether the user is accessing it through a browser or via the installed app.
+
 
 
 2024 {#2024}

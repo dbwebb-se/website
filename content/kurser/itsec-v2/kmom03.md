@@ -46,7 +46,7 @@ Föreläsningar &amp; Laborationer {#forelasningar}
 
 Kursvecka 3 (Fokus på teori), föreläsningar:
 
-* 10:15 (2024-11-18) H430, med Victor om hot.
+* 10:15 (2025-11-17) H430, med Victor om hot.
 
 
 <!--
@@ -61,9 +61,9 @@ klick, ransomware, social attacks
 
 Kursvecka 4 (Fokus på praktik/attacker), föreläsningar och laboration:
 
-* 10:15 (2024-11-25) H430, med Victor om attacker.
+* 10:15 (2025-11-24) H430, med Victor om attacker.
 
-* 10:15 (2023-11-29) H430, hacklabb (eget arbete)
+* 10:15 (2025-11-28) H430, hacklabb (eget arbete)
 
 
 Läs &amp; Studera  {#lasanvisningar}

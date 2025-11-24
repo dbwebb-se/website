@@ -44,6 +44,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2025.
 
 1. [NPM vs PNPM vs YARN](https://github.com/hildingen/vteam-npm-vs-pnpm-vs-yarn). The purpose of this report is to test and compare the three most popular package managers in Javascript npm (Node package manager), pnpm (Performant npm) and yarn.
 
+1. [JSON-Server Technical Guide](https://github.com/JSDevCode/report-json-server). This is an example repository and a technical guide for running a JSON-server as a mock API. It provides a simple setup to quickly test REST API calls without a real backend.
+
 
 
 2024 {#2024}

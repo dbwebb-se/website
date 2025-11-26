@@ -99,6 +99,7 @@ Först, [installer Azure-CLI](./../labbmiljo/azure-cli) om du inte gjorde det i 
 
 - Kolla på videorna med `20x`i namnet för att bekanta er med vad som finns i Ansible mappen i Microblog repot, [kursen devops](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78). Några saker kan skilja sig från koden som visas i videorna men det ska inte vara några stora ändringar.
 
+  - PS. Skippa inte videorna!
   - Videorna prata inte om koden som ligger i `deploy_lb`. Den får ni läsa och förstå själva.
 
 - Om ni vill hänga med och skriva 10-first-minutes själva så kan ni kolla på videorna med "21x" i namnet. Videorna är lite utdaterade när det kommer till hur man exekverar filerna. Då pratar jag om AWS men om ni har kollat på de andra videorna så vet ni hur man exekverar filerna.
@@ -112,7 +113,8 @@ Först, [installer Azure-CLI](./../labbmiljo/azure-cli) om du inte gjorde det i 
    - Lägg till två subdomäner som går till varsin `appserver`. De ska heta `appserver1.<domännamn>` och `appserver2.<domännamn>`.
    - Skapa en hosts fil och lägg till subdomänerna som hosts. PS. Namnge inte dem till samma groups/hosts namn som gather_instances skriptet ger.
 
-1. - Uppdatera "10-first-minutes" Playbook så att alla gruppmedlemmars SSH-nycklar läggs till i authorized_keys. I modulen [ansible-role-users](https://github.com/cogini/ansible-role-users/blob/master/tasks/main.yml#L108) kan ni se ett exempel på hur man kan göra det. Då behöver ni ladda upp allas **publika** nycklar i ert repo. Det är säkert att ladda upp de publika nycklarna. De kan inte användas för att återskapa den privata.
+1. Uppdatera "10-first-minutes" Playbook så att alla gruppmedlemmars SSH-nycklar läggs till i authorized_keys. I modulen [ansible-role-users](https://github.com/cogini/ansible-role-users/blob/master/tasks/main.yml#L108) kan ni se ett exempel på hur man kan göra det. Då behöver ni ladda upp allas **publika** nycklar i ert repo. Det är säkert att ladda upp de publika nycklarna. De kan inte användas för att återskapa den privata.
+   - PS. Tänkt på att köra gather_instances.yml med 10-first-minutes för att hitta vilka VMs som finns.
    - Kör "10-first-minuets" mot alla fyra VMs.
 
 ## Sätta upp Nginx som en Load balancer {#nginx}

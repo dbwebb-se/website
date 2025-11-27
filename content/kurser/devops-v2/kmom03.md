@@ -1,23 +1,19 @@
 ---
-
 author:
-    - aar
+  - aar
 revision:
-    "2024-11-29": "(B, aar) Hopslagning av devsecops och valfritt verktyg till ett kmom."
-    "2023-11-17": "(A, aar) Första versionen."
+  "2025-11-27": "(C, aar) Tog bort ssh_scan. Är deprecated"
+  "2024-11-29": "(B, aar) Hopslagning av devsecops och valfritt verktyg till ett kmom."
+  "2023-11-17": "(A, aar) Första versionen."
 ...
-Kmom03: DevSecOps och valfritt verktyg
-==================================
+
+# Kmom03: DevSecOps och valfritt verktyg
 
 Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på development och operations teams men även security behöver inkluderas för att det ska bli ett bra resultat. I detta kursmoment ska vi kolla på hur vi kan inkludera säkerhet i hela utvecklingsprocessen, så att alla blir ansvariga för säkerhet i ett projekt.
 
 Ni ska också välja ett valfritt verktyg att undersöka hur det funkar och passar in i devops.
 
 <!-- more -->
-
-[WARNING]
-Materialet är inte redo. Vänta på att den gula rutan försvinner.
-[/WARNING]
 
 [INFO]
 Detta kmom är en vecka långt, **inte** två!
@@ -26,7 +22,13 @@ Detta kmom är en vecka långt, **inte** två!
 
 Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.
 
-### Vad är DevSecOps {#devsecops}
+## Läsanvisningar {#read}
+
+Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
+
+Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
+
+## Vad är DevSecOps {#devsecops}
 
 Målet med DevSecOps är att alla behöver tänka på och är ansvariga för säkerheten hos en produkt. Säkerhet behöver vara en del av hela utvecklingsprocessen. Mycket inom devops handlar om automation och där vill vi även ha med säkerheten, manuell kontroll av säkerhet ska vara ett undantag inte regeln. DevSecOps har fått ett eget namn för att det är först på senare år som man börjat med att få in säkerhetstänket, det var med inte riktigt i början av devops.
 
@@ -35,6 +37,7 @@ Målet med DevSecOps är att alla behöver tänka på och är ansvariga för sä
 <!-- - [The “What” “How” and “Why” of DevSecOps](https://www.newcontext.com/what-is-devsecops/) -->
 <!-- - [The “What” “How” and “Why” of DevSecOps](https://web.archive.org/web/20220618115729/https://newcontext.com/what-is-devsecops/)   -->
 <!-- - [What is DevSecOps?](https://www.atlassian.com/continuous-delivery/principles/devsecops)   -->
+
 - kapitel 1 "Securing devops", 1.1-1.3, i [Securing Devops](http://tinyurl.com/usyps42) (länken går till en E-bok version) för en introduktion till Continuous Security.
 
 ### Test-driven security {#tds}
@@ -67,6 +70,7 @@ I vårt projekt använder vi oss av många externa paket både i Python koden f�
 
 - [Dependency and Container Scanning](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/dependency-and-container-scanning/)
 - I uppgiften ska ni använda [Trivy](https://github.com/aquasecurity/trivy) och [Dockle](https://github.com/goodwithtech/dockle).
+- Som en sidospår bör ni också läsa om [Secrets management](https://microsoft.github.io/code-with-engineering-playbook/CI-CD/dev-sec-ops/secrets-management/).
 
 #### SAST vs. DAST vs. IAST {#ast}
 
@@ -114,32 +118,12 @@ I vår struktur kan man SSH:a in till varje server från vilken IP som helst. En
 ##### Läs och titta {#prod-read}
 
 <!-- - [What is a bastion host?](https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/) -->
+
 - [What is a bastion host?](https://web.archive.org/web/20240419114655/https://www.learningjournal.guru/article/public-cloud-infrastructure/what-is-bastion-host-server/)
 
 ##### SSH {#ssh}
 
-När vi ändå är inne på SSH kopplingar så kan vi konfigurera säkrare kopplingar på servrarna. Vi börjar med att använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) verktyg för att skanna SSH konfigurationen på våra servrar. Kör följande kommando lokalt på er dator.
-
-[INFO]
-Verktyget är deprecated men det gör inte något. Det funkar fortfarande bra för att skanna en server. Verktyget utvecklas inte vidare bara.
-
-De har har också tagit bort deras docker image från Docker Hub så vi kan inte använda deras. Men som tur är har någon forkat repot och lagt upp en ny docker image.
-[/INFO]
-
-```
-docker run -it threatpatrols/sshscanfork /app/bin/ssh_scan -t <domain>
-```
-
-Alla servrar borde ha samma SSH konfiguration så det räcker att köra den mot er load balancer. Man får rätt mycket text utskriven men det viktiga är vad den skriver för `recommendation`, jag fick följande:
-
-```
-"recommendations": [
-  "Remove these key exchange algorithms: diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, diffie-hellman-group14-sha1",
-  "Remove these MAC algorithms: umac-64-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, hmac-sha1"
-],
-```
-
-Scannern tycker att jag borde ta bort gamla algoritmer som inte längre är säkra. Istället för att in och leta efter vilka algoritmer vi använder och hur vi stänger av dem så kan tänker jag att vi använder oss Mozillas moderna openSSH konfigurationer. På [guidelines/openssh](https://infosec.mozilla.org/guidelines/openssh) finns det färdiga konfigurations filer för säkrare SSH.
+När vi ändå är inne på SSH kopplingar så kan vi konfigurera säkrare kopplingar på servrarna. Konfigurationen som följer med vid installationen är utdaterad och innehåller algoritmer som inte längre är säkra.
 
 ###### Att göra {#ssh-do}
 
@@ -164,28 +148,20 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 
 1. [Zapping the top 10](https://www.zaproxy.org/docs/guides/zapping-the-top-10-2021/), hur ni kan använda Zap för att testa OWASP10 sårbarheterna.
 
-Läsanvisningar {#read}
---------------------------
-
-Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
-
-Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
-
-devsecops uppgifter  {#uppgifter}
--------------------------------------------
+## devsecops uppgifter {#uppgifter}
 
 1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
 1. Uppdatera Security groups så att de bara tillåter de ip-adresser som behöver tillgång till specifika portar.
-    - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats och lägg till att köra `gather_instances` mellan skapa instanser och skapa security groups. Annars har vi inte tillgång till instansernas IP vi precis skapade.
-    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 få koppla upp sig till mysql porten på database.
-    - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`.
+   - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats och lägg till att köra `gather_instances` mellan skapa instanser och skapa security groups. Annars har vi inte tillgång till instansernas IP vi precis skapade.
+   - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 få koppla upp sig till mysql porten på database.
+   - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`.
 1. Förbättra SSH konfigurationen.
-    - Använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) för att hitta förbättringar. Kör det på er domännamn. Alla servrar ska ha samma konfiguration, därför behöver vi bara köra det mot en.
+
+   - Använda [Mozillas ssh_scan](https://github.com/mozilla/ssh_scan) för att hitta förbättringar. Kör det på er domännamn. Alla servrar ska ha samma konfiguration, därför behöver vi bara köra det mot en.
 
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen.
 
-Valfritt verktyg uppgift {#valfritt}
--------------------------------------------
+## Valfritt verktyg uppgift {#valfritt}
 
 Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog.
 
@@ -194,6 +170,7 @@ Studien ska bestå av tre delar.
 - Förklara vad verktyget är och vad det gör.
 - Instruktioner på hur man inkorporerar verktyget i Microblog.
 - Reflektera över hur verktyget passar in i och relaterar till devops.
+- Skicka med screenshots på hur programmet funkar.
 
 Skapa **inte** ett eget repo för studien utan uppdatera koden i ert repo så verktyget fungerar för er och skapa ett dokument eller en ny README fil med er text.
 
@@ -214,8 +191,7 @@ Det går också bra att välja något helt annat verktyg, så länge ni kan rela
 
 **Obs!** välj inte prometheus eller grafana. Vi kommer använda de i nästa kursmoment.
 
-Resultat & Redovisning  {#resultat_redovisning}
------------------------------------------------
+## Resultat & Redovisning {#resultat_redovisning}
 
 [INFO]
 På Canvas är detta en gruppinlämning. Svara på frågorna tillsammans och skicka med en länk till er tekniska rapport.

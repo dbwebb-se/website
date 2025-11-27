@@ -48,6 +48,14 @@ Här följer tekniska studier (och liknande) som utfördes under 2025.
 
 1. [One client - two applications (Progressive Web App)](https://github.com/KristofferOhlund/pwa-sample). The purpose of this document is to demonstrate a simple approach for transforming an ordinary web application into a Progressive Web App (PWA), and how the content of the application can be separated depending on whether the user is accessing it through a browser or via the installed app.
 
+1. [Frontend User/Admin Services — Deployment report](https://github.com/SparkRunners/main-repo/blob/main/deployment.md). This report describes the deployment process for the Frontend User and Admin Services of the SparkRunner project. Both services are built with React and Vite, and are hosted on GitHub Pages.
+
+1. [Docker Environment Setup – Technical report](https://github.com/SparkRunners/main-repo/blob/main/docker-env-setup.md). This document provides a concise technical overview of how to configure and operate the shared Docker-based development environment for the project. It outlines the required folder structure, repository setup process, daily development workflow, and procedures for testing changes within the containerized environment. 
+
+1. [AI genererad kod eller mänskligt skriven kod](https://github.com/didrikva/Teknisk-rapport). Syftet med rapporten är att jämföra och analysera fördelar samt nackdelar med kod skriven av en AI tjänst som exempelvis ChatGPT eller Co-Pilot, kontra kod skriven av en människa.
+
+1. [React vs Alternativ för att Bygga ett Administrativt Webbgränssnitt](https://github.com/melissa-uzum/technical-report-vteam). Syftet med denna tekniska studie är att jämföra React med Vue och Svelte för att identifiera vilket ramverk som bäst lämpar sig för SparkRunners administrativa webbgränssnitt. Fokus ligger på kartvyer, API-integrationer och en modulär SPA-arkitektur.
+
 
 
 2024 {#2024}

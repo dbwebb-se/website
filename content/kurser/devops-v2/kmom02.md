@@ -169,7 +169,9 @@ När ni ska implementera er CD strategi behöver ni kunna logga in med SSH från
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
-Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
+[INFO]
+På Canvas är detta en gruppinlämning. Svara på frågorna tillsammans och skicka med en länk till ert repo.
+[/INFO]
 
 1. Vad menas med Idempotency inom CM och IaC?
 

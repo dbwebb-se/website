@@ -13,9 +13,9 @@ revision:
 Kmom04: Sårbarhetsanalys
 ==================================
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT25. Är "gula rutan" borta är det fritt fram att börja.
-[/WARNING]
+[/WARNING] -->
 
 Risk- och sårbarhetsanalysmomentet omfattar en introduktion till olika metoder för att modellera applikationers beteende, metoder för att genomföra sårbarhetsanalyser och attackscenarier. Vidare introduceras även riskanalys och riskhantering för att sätta sårbarheter i kontext.
 
@@ -37,7 +37,7 @@ Föreläsning  {#forelasningar}
 
 *(ca: 2 studietimmar)*
 
-* 10:15 (2024-12-02) H430, med Marie om sårbarhetsanalys.
+* 10:15 (2025-12-01) H430, med Marie om sårbarhetsanalys.
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -68,7 +68,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10:15 (2024-12-06) H430, med Marie Sårbarhetsanalys, se uppgiften nedan
+* 10:15 (2025-12-05) H430, med Marie Sårbarhetsanalys, se uppgiften nedan
 
 <!-- * 10.00 (2021-12-03) via Zoom (länk på Canvas) -->
 

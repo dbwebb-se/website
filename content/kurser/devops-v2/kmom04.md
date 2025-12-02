@@ -2,6 +2,7 @@
 author:
   - aar
 revision:
+  "2025-12-02": "(D, aar) Inkluderat del om använda AI för monitoring strategi."
   "2023-11-24": "(C, aar) Släppt för HT23."
   "2020-11-19": "(B, aar) Släppt för HT20."
   "2019-10-15": "(A, aar) Första versionen."
@@ -13,9 +14,9 @@ Nu när vi har ett system uppe och rullande behöver vi veta när något går fe
 
 <!-- more -->
 
-[WARNING]
+<!-- [WARNING]
 Materialet är inte redo. Vänta på att den gula rutan försvinner.
-[/WARNING]
+[/WARNING] -->
 
 [INFO]
 Detta kmom är en vecka långt, **inte** två!
@@ -100,15 +101,25 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 
 ### Uppgifter {#uppgifter}
 
+Del 1.
+
 1. Utöka Ansible provisioning koden så att ni skapar en till server som heter och har typen `monitoring`.
 
-   - **Öppna passande portar i security groups.**
+    - **Öppna passande portar i security groups.**
 
 1. Skriv Ansible kod som installerar och startar Prometheus, Grafana och Alertmanager på den nya VM instansen.
 
-   - Använd er av modulen [Grafana datasources](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_datasource_module.html) för att lägga till prometheus som datakälla
+    - Använd er av modulen [Grafana datasources](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_datasource_module.html) för att lägga till prometheus som datakälla
 
 1. Lägg till en Reverse Proxy i er [Nginx konfiguration till Grafana och Grafana konfiguration](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f). Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
+
+Del 2.
+
+1. Ta hjälp av AI för att skapa en monitoring strategi och implementer den i er Microblog. Fel som uppstår i appen ska fångas och visualiseras i Grafana. När ett fel uppstår ska ett alarm skickas till [https://webhook.site](https://webhook.site).
+
+1. Implementer en ny feature i Microbloggen som genererar ett fel så att jag kan testa att er monitoring funkar.
+
+1. Skapa en guide som visar hur jag triggar felet och kan se det i grafana och Alert:et. Förklara hur ni har implementerat monitoring i er kod.
 
 <!-- 1. Uppdatera era appservrar så de kör er nya Docker image som innehåller flask exportören. -->
 
@@ -117,19 +128,8 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 <!-- 1. Konfigurera en exportör för Nginx. I övningen [Övervaka nginx med Prometheus och Grafana](kunskap/overvaka-nginx-med-prometheus-och-grafana) kan ni se hur man gör. -->
 
 <!-- 1. Konfigurera Prometheus så den hämtar data från alla exportörer. -->
-
-Del 2.
-
-Använd AI.
-Uppdatera Flask kod så att den kan generera ett fel. Skapa ett sätt så att det går att manuellt att trigga felet från webbsidan. Det ska sen gå att spåra felet i Grafana. Att se var felet uppstår och hur ofta det inträffar.
-
-När felet uppstår ska ett Alert skickas. Ni kan använda `https://webhook.site` för att ta emot och visa det.
-
-Skapa en guide som visar hur jag triggar felet och kan se det i grafana och Alert:et.
-
-1. Lägg till dashboard i Grafana för alla exportörer. Använd Ansible modulen [dashboards](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_dashboard_module.html) för att lägga till den från Ansible. Det går inte att koppla ihop er dashboard och datasource i Ansible koden. Modulerna saknar stöd för det. Bara skapa dem via Ansible och sen får ni koppla ihop dem manuellt.
-
-1. I microblogen lägga till en knapp som genererar ett fel. Skapa ett larm, som kopplas till det felet. Larmet ska skickas till `https://webhook.site`. I redovisningstexten, skriv hur man kan aktivera och avaktivera larmet. Samt länk till er webhook sida där man kan se larmet.
+<!--
+1. Lägg till dashboard i Grafana för alla exportörer. Använd Ansible modulen [dashboards](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_dashboard_module.html) för att lägga till den från Ansible. Det går inte att koppla ihop er dashboard och datasource i Ansible koden. Modulerna saknar stöd för det. Bara skapa dem via Ansible och sen får ni koppla ihop dem manuellt. -->
 
 **Glöm inte att öppna portar i Azure!**
 
@@ -151,8 +151,12 @@ Se till att följande frågor besvaras i texten:
 
 4. Beskriv Observability och försök koppla det till ovanstående frågor.
 
-5. Hur kan jag aktivera och avaktivera er larm? Skicka med länk till webhook.site.
+5. Testade ni Loki? Fick ni ihop det, i så fall tror du att man hade hunnit med det i kursmomentet?
 
-6. Testade ni Loki? Fick ni ihop det, i så fall tror du att man hade hunnit med det i kursmomentet?
+6. **Skicka med er guide.**
 
-7. Skriv inloggning till er grafana sida.
+7. **Skicka med länk till er webhook.site.**
+
+8. **Skriv inloggning till er grafana sida.**
+
+9. Hur var storleken på kursmomentet?

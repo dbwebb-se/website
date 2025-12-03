@@ -38,12 +38,11 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
     - Lös de fel som hittas.
     - Kör det med:
     ```
-    $ export DOCKLE_LATEST=$(
-    curl --silent "https://api.github.com/repos/goodwithtech/dockle/releases/latest" | \
-    grep '"tag_name":' | \
-    sed -E 's/.*"v([^"]+)".*/\1/' \
-    )
-    $ docker run --rm goodwithtech/dockle:v${DOCKLE_LATEST} [YOUR_IMAGE_NAME]
+    VERSION=$(curl --silent 'https:\/\/api.github.com/repos/goodwithtech/dockle/releases/latest' | \
+	grep '"tag_name":' | \
+	sed -E 's/.*"v([^"]+)".*/\1/') \
+	&& docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \
+	goodwithtech/dockle:v${VERSION} <YOUR_IMAGE_NAME>
     ```
 
 

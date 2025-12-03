@@ -24,15 +24,28 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
 3. Använd skanner verktyget [Trivy](https://github.com/aquasecurity/trivy) för att hitta möjliga säkerhetshål.
     - Använda `target`:
         - `image` för att söka igenom er Microblog produktions image.
-            - Använd `scanners`, `vuln,secret,config`.
-        - `fs` för att söka igenom hela repo mappen. Ni kan exkludera `.venv` mappen. **OBS** detta kommando funkar inte på MacOS. För att köra det på Mac, lägg till det i er CI kedja och se resultatet.
-            - Använd `scanners`, `vuln,secret,config`.
+            - Bygg först er image lokalt för att köra trivy på den.
+            - Kör med `docker run -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image --scanners vuln,secret,misconfig --no-progress --severity HIGH,CRITICAL --exit-code 1 <er docker container>`.
+                - Ersätt `<er docker container>` med namnet på er container, t.ex. `local-microblog:latest`
+        - `fs` för att söka igenom hela repo mappen. Ni kan exkludera `.venv` mappen.
+            - I terminalen stå i ert repo och kör med `@docker run --rm -v .:/repo -w /repo aquasec/trivy:latest fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --exit-code 1	--no-progress --skip-dirs .venv,venv .`
+         <!-- **OBS** detta kommando funkar inte på MacOS. För att köra det på Mac, lägg till det i er CI kedja och se resultatet. -->
     - Lägg till make kommando för båda `target`.
     - Lös felen som hittas.
 
 4. Använd Docker lint verktyget [Dockle](https://github.com/goodwithtech/dockle) för att hitta möjliga säkerhetshål i er produktions image.
     - Lägg till make kommando som kör Dockle på er produktions image.
     - Lös de fel som hittas.
+    - Kör det med:
+    ```
+    $ export DOCKLE_LATEST=$(
+    curl --silent "https://api.github.com/repos/goodwithtech/dockle/releases/latest" | \
+    grep '"tag_name":' | \
+    sed -E 's/.*"v([^"]+)".*/\1/' \
+    )
+    $ docker run --rm goodwithtech/dockle:v${DOCKLE_LATEST} [YOUR_IMAGE_NAME]
+    ```
+
 
 5. Skapa ett nytt workflow I Github Actions som kör Bandit, Trivy och Dockler på samma sätt som beskrivet ovanför.
     - Ert nya workflow ska köras före era CD workflow och måste passera för att ni ska pusha er Docker image och driftsätta den.

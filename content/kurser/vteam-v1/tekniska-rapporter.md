@@ -56,6 +56,8 @@ Här följer tekniska studier (och liknande) som utfördes under 2025.
 
 1. [React vs Alternativ för att Bygga ett Administrativt Webbgränssnitt](https://github.com/melissa-uzum/technical-report-vteam). Syftet med denna tekniska studie är att jämföra React med Vue och Svelte för att identifiera vilket ramverk som bäst lämpar sig för SparkRunners administrativa webbgränssnitt. Fokus ligger på kartvyer, API-integrationer och en modulär SPA-arkitektur.
 
+1. [Github Flow - The simplest guide in the galaxy](https://github.com/KenZan00/simple-github-flow-guide). In the first part of this guide, I am actually going to present you with the absolutely simplest and most minimal approach presentation of the github-flow. I am also later, presenting a bit more for the curious developer or hobbyist coder. If you are “small team developing”, make it easier for you, not harder.
+
 
 
 2024 {#2024}

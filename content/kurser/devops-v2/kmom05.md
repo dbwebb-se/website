@@ -33,9 +33,19 @@ PS! Om ni har fått kmom04 rättat, radera alla era resurser på Azure förutom 
 I detta kursmomentet ska ni jobba individuellt, ni får fortfarande diskutera och hjälpa varandra. Men eftersom ni bara har ett repo för gruppen behöver vi strukturera filerna i mappar. Filerna ni producerar ska läggas i mappen "kubernetes". Skapa en undermapp per gruppmedlem med ert namn och lägga era filer i dem. T.ex. för mig hade det blivit "kubernetes/andreas/fil.yml".
 [/INFO]
 
-Vi kommer använda oss utav Kubernetes (K8s) för container orchestration men det är bra att känna till vilka andra verktyg som finns och lite om vad som skiljer dem åt.
+## Läsanvisningar {#las}
 
-### Container Orchestration {#co}
+Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
+
+Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
+
+[INFO]
+Notera att det finns fler frågor för sista bokcirkeln, längst ner i dokumentet.
+[/INFO]
+
+## Container Orchestration {#co}
+
+Vi kommer använda oss utav Kubernetes (K8s) för container orchestration men det är bra att känna till vilka andra verktyg som finns och lite om vad som skiljer dem åt.
 
 Container orchestration är det övergripandet namnet på verktyg som hantera livscykeln för många containers.
 
@@ -220,12 +230,7 @@ Följande uppgifter skall utföras och resultatet skall redovisas via me-sidan.
 
 3. Försäkra dig om att du har pushat repot med din senaste kod.
 
-Läsanvisningar {#las}
---------------------------
 
-Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
-
-Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
 
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------

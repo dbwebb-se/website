@@ -15,9 +15,9 @@ Er Microblog har fått många nya användare och ni behöver utöka er infrastru
 
 <!-- more -->
 
-[WARNING]
+<!-- [WARNING]
 Materialet är inte redo. Vänta på att den gula rutan försvinner.
-[/WARNING]
+[/WARNING] -->
 
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
 

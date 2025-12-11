@@ -66,11 +66,7 @@ Skapa ett kluster på AKS {#aks}
 
 Jobba igenom videon nedanför och skapa ett kluster.
 
-[WARNING]
-I videon nedanför används fel typ av VM, de är inte längre tillgängliga för oss. I "Node pools" stege, när jag väljer `B2ms` ska ni istället välja `D2als_v6`.
-[/WARNING]
-
-[YOUTUBE src=UgJSHskSnkU caption="Skapa ett AKS kluster"]
+[YOUTUBE src=gT8kF4nCYE0 caption="Skapa ett AKS kluster"]
 
 När ni har skapat ett kluster ska vi göra så att vi kommer åt det med kubectl.
 

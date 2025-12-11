@@ -4,6 +4,7 @@ category:
     - devops
     - kubernetes
 revision:
+    "2025-12-11": (B, aar) Bytte kuard till kubernetes-bootcamp.
     "2021-12-03": (A, aar) Första revisionen.
 ...
 Sätt upp ett Kubernetes kluster i AKS med HTTPS
@@ -260,7 +261,7 @@ spec:
         app: kuard
     spec:
       containers:
-      - image: gcr.io/kuar-demo/kuard-amd64:1
+      - image: gcr.io/google-samples/kubernetes-bootcamp:v1
         imagePullPolicy: Always
         name: kuard
         ports:
@@ -299,7 +300,7 @@ spec:
 Aktivera det med:
 
 ```
-$ kubectl apply -f 002-service.yaml 
+$ kubectl apply -f 02-service.yml
 service/kuard created
 
 $ kubectl get svc
@@ -343,7 +344,7 @@ spec:
 Kör nu följande för att aktivera den:
 
 ```
-$ kubectl apply -f 003-ingress.yaml 
+$ kubectl apply -f 03-ingress.yml
 ingress.networking.k8s.io/kuard created
 
 $ kubectl get ingress
@@ -586,7 +587,7 @@ Nu borde vi ha grunden för att få igång HTTPS för klustret.
 Öppna `03-ingress.yml` och avkommentera raden `# cert-manager.io/issuer: "letsencrypt-staging"`. Aktivera sen er uppdaterade Ingress, cert-manager kommer då se annotationen för staging och aktivera er staging Issuer. Det kommer skapa ett fejk certifikat som läggs i er secret.
 
 ```
-$ kubectl apply -f 003-ingress.yaml 
+$ kubectl apply -f 03-ingress.yml
 ingress.networking.k8s.io/kuard configured
 
 $ kubectl get certificate
@@ -731,7 +732,7 @@ Nu är ni redo att skapa certifikatet på riktigt och aktivera HTTPS.
 Öppna `03-ingress.yaml` igen, på raden vi avkommenterade, byt ut `staging` mot `prod`. Aktivera er Ingress igen.
 
 ```
-$ kubectl apply -f 003-ingress.yaml 
+$ kubectl apply -f 03-ingress.yml
 ingress.networking.k8s.io/kuard configured
 ```
 

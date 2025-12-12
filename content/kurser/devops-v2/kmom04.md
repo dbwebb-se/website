@@ -139,7 +139,9 @@ Om ni får tid över, testa log management verktyget [Loki](https://grafana.com/
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
-Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
+[INFO]
+På Canvas är detta en gruppinlämning. Svara på frågorna tillsammans.
+[/INFO]
 
 Se till att följande frågor besvaras i texten:
 

@@ -27,10 +27,10 @@ Upplägget är enligt följande:
 
 Totalt omfattar kursmomentet (07/10) ca 30+50 studietimmar.
 
-[WARNING]
+<!-- [WARNING]
 Kursen uppdateras inför HT25. Är "gula rutan" borta är det fritt fram att börja.
 [/WARNING]
-
+ -->
 ## Bedömning och betygsättning {#bedomning}
 
 När du lämnat in projektet bedöms det tillsammans med dina tidigare redovisade kursmoment och du får ett slutbetyg på kursen. Läs om [grunderna för bedömning och betygsättning](kurser/faq/bedomning-och-betygsattning-quiz).

@@ -15,9 +15,9 @@ Vi avslutar kursen med att ni individuellt skriver en rapport. Rapporten är det
 
 <!-- more -->
 
-[WARNING]
+<!-- [WARNING]
 Materialet är inte redo. Vänta på att den gula rutan försvinner.
-[/WARNING]
+[/WARNING] -->
 
 [YOUTUBE src="8gwCFcGxOYE" caption="Andreas introducerar rapporten."]
 

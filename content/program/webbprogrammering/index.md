@@ -34,6 +34,7 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 
 ### Webbprogrammering 120hp distans {#followup120}
 
+* [Antagen 2026](https://docs.google.com/spreadsheets/d/1kzOyUxSAc-HeIXtgwn6dv44N25gPTdFvT6Cim6h6xZo/edit?usp=sharing)
 * [Antagen 2025](https://docs.google.com/spreadsheets/d/1YLYqq6Wk_UXcgrVTWxsIo__8TPvlQjFHw7r2SxacoKY/edit?usp=sharing)
 * [Antagen 2024](https://docs.google.com/spreadsheets/d/1wDeIvRmuYY2o0GBXnYWrEdKOZ-zVkD_5mZ18xx9lMOA/edit?usp=sharing)
 * [Antagen 2023](https://docs.google.com/spreadsheets/d/1G8wFw90ZfxFoSG3eMAG2kt3QCsycp8hqH0f6QMnpg90/edit?usp=sharing)
@@ -49,6 +50,9 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 
 ### Webbprogrammering 180hp campus {#followup180}
 
+<!--
+* [Antagen 2026](https://docs.google.com/spreadsheets/d/1_IBe03JTbciLu8YJfhRjVartz86fA3EqUQHTN5-pYQo/edit?usp=sharing)
+-->
 * [Antagen 2025](https://docs.google.com/spreadsheets/d/1_IBe03JTbciLu8YJfhRjVartz86fA3EqUQHTN5-pYQo/edit?usp=sharing)
 * [Antagen 2024](https://docs.google.com/spreadsheets/d/1CFks-bUm2R-r2olqu-_BfUO2kjzCSPcwi39IFUpT20k/edit?usp=sharing)
 * [Antagen 2023](https://docs.google.com/spreadsheets/d/1xs5xx4FsePk3FCpcbLtCIoRLV7tRbdN_9b2Mld5WniE/edit?usp=sharing)

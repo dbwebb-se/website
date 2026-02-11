@@ -53,6 +53,7 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 <!--
 * [Antagen 2026](https://docs.google.com/spreadsheets/d/1_IBe03JTbciLu8YJfhRjVartz86fA3EqUQHTN5-pYQo/edit?usp=sharing)
 -->
+
 * [Antagen 2025](https://docs.google.com/spreadsheets/d/1_IBe03JTbciLu8YJfhRjVartz86fA3EqUQHTN5-pYQo/edit?usp=sharing)
 * [Antagen 2024](https://docs.google.com/spreadsheets/d/1CFks-bUm2R-r2olqu-_BfUO2kjzCSPcwi39IFUpT20k/edit?usp=sharing)
 * [Antagen 2023](https://docs.google.com/spreadsheets/d/1xs5xx4FsePk3FCpcbLtCIoRLV7tRbdN_9b2Mld5WniE/edit?usp=sharing)

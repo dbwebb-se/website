@@ -17,7 +17,7 @@ Examination 27 mars 2026
 Detta är den individuella examinationen som är en del av kmom10.
 
 <!--
-Du kan läsa detta dokumentet i webbläsaren via länken "[Examination](https://dbwebb.se/kurser/databas-v1/kmom10/tentamen/rock3)"
+Du kan läsa detta dokumentet i webbläsaren via länken "[Examination](https://dbwebb.se/kurser/databas-v2/kmom10/tentamen/rock3)"
 -->
 
 Uppgifterna skall lösas individuellt och du får inte be om hjälp, prata, diskutera eller chatta med någon (förutom läraren). Fråga läraren om något är oklart med uppgifterna. Du kan använda kursens Discord-kanal eller mail/meddelande för att ställa allmänna frågor till läraren.

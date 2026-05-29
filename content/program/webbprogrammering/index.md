@@ -34,6 +34,7 @@ Få en översikt av de kurser som ingår i din antagningsomgång till programmet
 
 ### Webbprogrammering 120hp distans {#followup120}
 
+* [Antagen 2027](https://docs.google.com/spreadsheets/d/1K4ziCwjVjpFV9-5VznSwf6BmcCpfyR5r-RvSiAJwOEc/edit?usp=sharing)
 * [Antagen 2026](https://docs.google.com/spreadsheets/d/1kzOyUxSAc-HeIXtgwn6dv44N25gPTdFvT6Cim6h6xZo/edit?usp=sharing)
 * [Antagen 2025](https://docs.google.com/spreadsheets/d/1YLYqq6Wk_UXcgrVTWxsIo__8TPvlQjFHw7r2SxacoKY/edit?usp=sharing)
 * [Antagen 2024](https://docs.google.com/spreadsheets/d/1wDeIvRmuYY2o0GBXnYWrEdKOZ-zVkD_5mZ18xx9lMOA/edit?usp=sharing)

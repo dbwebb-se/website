@@ -5,6 +5,7 @@ author:
     - nik
     - grm
 revision:
+    "2026-09-11": "(G, grm) Uppdatering HT26."
     "2024-11-12": "(H, grm) Komplettering HT24."
     "2022-05-25": "(G, grm) Komplettering HT22."
     "2021-11-10": "(F, grm) Komplettering HT21."
@@ -44,9 +45,15 @@ Föreläsningar &amp; Laborationer {#forelasningar}
 
 *(ca: 8-10 studietimmar)*
 
-Kursvecka 3 (Fokus på teori), föreläsningar:
+Kursvecka 3 (Fokus på teori), seminarie:
 
-* 10:15 (2025-11-17) H430, med Victor om hot.
+* 10:15 (2026-11-16) H430 eller valfri plats, eget arbete om hot.
+* Läs presentationen om hot
+* Fundera på följande:
+  * Vad är ett hot (threat) inom cybersäkerhet?
+  * Vad är skillnaden mellan ett hot och en sårbarhet?
+  * Vilka är de vanligaste hotaktörerna (threat agents)?
+  *  Vilka tre faktorer måste finnas för att en sårbarhet ska kunna utnyttjas?
 
 
 <!--
@@ -61,9 +68,9 @@ klick, ransomware, social attacks
 
 Kursvecka 4 (Fokus på praktik/attacker), föreläsningar och laboration:
 
-* 10:15 (2025-11-24) H430, med Victor om attacker.
+* 10:15 (2026-11-23) H430, med Gästföreläsning från Knowit om attacker. **OBS Gästföreläsning**
 
-* 10:15 (2025-11-28) H430, hacklabb (eget arbete)
+* 10:15 (2026-11-27) H430 eller valfri plats, hacklabb (eget arbete)
 
 
 Läs &amp; Studera  {#lasanvisningar}

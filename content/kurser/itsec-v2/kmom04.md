@@ -4,6 +4,7 @@ author:
     - nik
     - grm
 revision:
+    "2026-09-11": "(G, grm) Uppdatering HT26."
     "2024-11-19": "(E, grm) Uppdatering HT24."
     "2022-11-23": "(D, grm) Komplettering HT22."
     "2021-11-10": "(C, grm) Komplettering HT21."
@@ -37,7 +38,7 @@ Föreläsning  {#forelasningar}
 
 *(ca: 2 studietimmar)*
 
-* 10:15 (2025-12-01) H430, med Marie om sårbarhetsanalys.
+* 10:15 (2026-11-30) H430, med Marie om sårbarhetsanalys.
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -68,7 +69,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10:15 (2025-12-05) H430, med Marie Sårbarhetsanalys, se uppgiften nedan
+* 10:15 (2026-12-04) H430, med Marie Sårbarhetsanalys, se uppgiften nedan
 
 <!-- * 10.00 (2021-12-03) via Zoom (länk på Canvas) -->
 

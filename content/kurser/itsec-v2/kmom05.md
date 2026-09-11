@@ -4,6 +4,7 @@ author:
     - nik
     - grm
 revision:
+    "2026-09-11": "(G, grm) Uppdatering HT26."
     "2022-05-24": "(E, grm) Komplettering HT22."
     "2021-11-10": "(D, grm) Komplettering HT21."
     "2021-10-01": "(C, lew) Uppdaterad inför HT21"
@@ -28,7 +29,7 @@ Föreläsning  {#forelasningar}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2025-12-08) H430, med Marie om säkerhetstestning
+* 10.15 (2026-12-07) H430, med Marie om säkerhetstestning
 
 
 Läs &amp; Studera  {#lasanvisningar}
@@ -65,7 +66,7 @@ Laboration  {#laboration}
 
 *(ca: 2 studietimmar)*
 
-* 10.15 (2025-12-12) H430, med Marie Säkerhetstestning, se uppgiften nedan
+* 10.15 (2026-12-11) H430, med Marie Säkerhetstestning, se uppgiften nedan
 
 
 Uppgifter  {#uppgifter}

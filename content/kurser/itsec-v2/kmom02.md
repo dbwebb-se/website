@@ -7,6 +7,7 @@ author:
     - nik
 
 revision:
+    "2026-09-11": "(G, grm) Uppdatering HT26."
     "2022-05-20": "(E, grm) Komplettering HT22."
     "2021-11-10": "(D, grm) Komplettering HT21."
     "2021-10-01": "(C, lew) Uppdaterad inför LP2 HT21."
@@ -33,9 +34,16 @@ Föreläsningar {#forelasningar}
 
 *(ca: 4 studietimmar)*
 
-Föreläsningar:
+Veckans föreläsning blir ett seminarie:
 
-* 10:15 (2024-11-10) H430, blir en gästföreläsning med Martin från KnowIt om Privacy & OWASP Top 10
+* 10:15 (2026-11-09) H430 eller valfri plats, seminarie med eget arbete om Privacy & OWASP Top 10.
+* Läs igenom presentationen som Martin Vesterlund gjort när han jobbade på Knowit.
+* Fundera på följande:
+  * Samlar vi in mer persondata än vad som faktiskt behövs för vårt syfte?
+  * Vilka integritetsrisker finns i våra lösningar idag, och har vi identifierat dem systematiskt? PIA? LINDDUN?
+  * Vilken av OWASP Top 10-riskerna är mest relevant för våra applikationer?
+  * Hur väl följer våra system principerna om "Least Privilege" och "Zero Trust"?
+ 
 
 
 <!-- * 10:00 (2021-11-08) via Zoom ([Martin Boldt](https://bth.zoom.us/j/67269425633)) -->
@@ -53,7 +61,7 @@ Läs &amp; Studera  {#lasanvisningar}
 * Läs i boken [Computer Security](/kunskap/boken-computer-security)
     * Kapitel 18
 * Läs vidare i boken [Beyond Fear](/kunskap/boken-beyond-fear).
-
+blir en gästföreläsning med Martin från KnowIt
 * Läs mer om GDPR på [EUs sida](https://gdpr.eu/) eller hos [Integritetsskyddsmyndigheten](https://www.imy.se/verksamhet/dataskydd//).
 
 * Läs mer om [Privacy Enhancing Technologies (PET)](https://www.priv.gc.ca/en/opc-actions-and-decisions/research/explore-privacy-research/2017/pet_201711/).

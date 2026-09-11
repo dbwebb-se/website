@@ -7,6 +7,7 @@ author:
     - nik
 
 revision:
+    "2026-09-11": "(G, grm) Uppdatering HT26."
     "2024-10-11": "(F, grm) Uppdatering HT24."
     "2022-08-09": "(E, grm) Komplettering HT22."
     "2021-11-10": "(D, grm) Komplettering HT21."
@@ -46,7 +47,7 @@ Föreläsningar  {#forelasningar}
 
 *(ca: 4 studietimmar)*
 
-* Måndag 10:15 (2024-11-03) H430, med Marie om introduktion till säkerhet & etik.
+* Måndag 10:15 (2026-11-02) H430, med Marie om introduktion till säkerhet & etik.
 
 
 <!--

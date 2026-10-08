@@ -33,7 +33,7 @@ Det första steget i att skapa en container för Microblog är att bygga en *ima
 
 ```dockerfile
 FROM python:3.8-alpine
-RUN adduser -D microblog
+RUN adduser -D -u 1000 microblog
 
 WORKDIR /home/microblog
 
@@ -46,12 +46,12 @@ COPY requirements.txt microblog.py boot.sh ./
 RUN python -m venv .venv
 RUN .venv/bin/pip3 install -r requirements.txt
 
-ENV FLASK_APP microblog.py
+ENV FLASK_APP=microblog.py
 
 RUN chmod +x boot.sh
 RUN chown -R microblog:microblog ./
 
-USER microblog
+USER 1000
 
 EXPOSE 5000
 ENTRYPOINT ["./boot.sh"]
@@ -60,7 +60,7 @@ ENTRYPOINT ["./boot.sh"]
 Varje rad i en *Dockerfile* är ett eget kommando som körs vid installationen. `FROM` anger den container image som vår nya image ska byggas på. Oftast börjar man från en existerande image och anpassar den till sitt projekt. Imagen innehåller ett namn och en tagg, separerade med ett kolon. Taggen används som en versionshantering vilket gör att en container image kan ha mer än bara en variant. Namnet på vår image är *python*, vilket är den officiella Dockerimagen för Python. Taggarna för den här imagen låter dig ange vilken version av python man vill köra och vilket operativsystem den skall ligga på. Taggen `3.8-alpine` väljer en Python v3.8 installerad på Alpine Linux. Alpine Linux-distributionen används ofta istället för andra populära distors som Ubuntu på grund av dess minimala storlek. Är du nyfiken kan man se vilka taggar som finns tillgängliga för Python-imagen på [Pythons image repository](https://hub.docker.com/_/python?tab=tags)
 
 
-`RUN` exekverar ett kommando inuti i containern, liknande när man skriver något i terminalen. Många dockerfiler gör misstaget och använder sig av default användaren (`root`) vilket inte är bra säkerhetsmässigt. Så för att begränsa åtkomsten lägger vi till en ny användare `microblog` med hjälp av `adduser -D` kommandot.
+`RUN` exekverar ett kommando inuti i containern, liknande när man skriver något i terminalen. Många dockerfiler gör misstaget och använder sig av default användaren (`root`) vilket inte är bra säkerhetsmässigt. Så för att begränsa åtkomsten lägger vi till en ny användare `microblog` med hjälp av `adduser -D` kommandot. Vi ger användaren ett numeriskt id, `-u 1000`, för att kunna ange den med id längre ner. hadolint (som vi kör längre ner) vill att `USER` anges med ett numeriskt id.
 
 
 `WORKDIR` skapar och sätter standardkatalog där applikationen ska installeras. När vi skapade `microblog` -användaren ovan skapades det redan en hemkatalog automatiskt, så jag väljer att göra denna mappen till vår *working directory*. Den nya mappen kommer att gälla för alla återstående kommandon i våran *Dockerfile*, och även senare när containern körs.
@@ -76,14 +76,14 @@ Utöver våra *requirements* lägger vi också till `migrations` som hanterar da
 
 `ENV` kommandot definierar vår containers miljövariabler. Vi behöver ställa in variabeln `FLASK_APP` som används när `flask` skall köras.
 
-Med hjälp av `USER` kommandot sätter vi den nya `microblog` -användare som standardanvändare för alla kommande kommandon, detta kommer även gällas när containern startas.
+Med hjälp av `USER` kommandot sätter vi den nya `microblog` -användaren, med id `1000`, som standardanvändare för alla kommande kommandon, detta kommer även gällas när containern startas.
 
 `EXPOSE` konfigurerar porten som vår container skall använda för sin server. Detta är nödvändigt så att Docker kan konfigurera nätverket i containern. Jag har valt 5000 som är standardporten för `flask`, men det kan vara vilken port som helst.
 
 Slutligen definierar kommandot `ENTRYPOINT` vad som ska köras när containern startas. Detta är kommandot som startar våran webbserver. För att det skall vara lite mer väl organiserat skapar vi ett separat skript `boot.sh`, som vi kopierade till containern tidigare.
 
 
-I *boot.sh* lägger vi till följande:
+Skapa filen `boot.sh` i roten av repot, i samma mapp som `microblog.py`. Dockerfilen kopierar den därifrån. I *boot.sh* lägger vi till följande:
 ```bash
 #!/bin/sh
 
@@ -116,7 +116,7 @@ Vill man se en lista av alla images som existerar lokalt kan man göra det med `
 $ docker images
 REPOSITORY    TAG          IMAGE ID        CREATED              SIZE
 microblog     1.0.0-prod       54a47d0c27cf    About a minute ago   216MB
-python        3.6-alpine   a6beab4fa70b    9 months ago         88.7MB
+python        3.8-alpine   a6beab4fa70b    9 months ago         88.7MB
 ```
 
 Lista kommer att innehålla den nya imagen och även den bas imagen som den byggdes på. Varje gång du gör ändringar i programmet kan du uppdatera container imagen genom att köra byggkommandot igen.
@@ -237,13 +237,13 @@ Validera Dockerfile {#validate}
 Som med all annan kod vi skriver finns det så klart en linter/validator till koden i Dockerfiles. Vi ska använda [hadolint](https://github.com/hadolint/hadolint). Det finns olika sätt att installera den, men det lättaste är att använda deras docker container. Testa validera er kod med följande kommando.
 
 ```
-docker run --rm -i hadolint/hadolint < docker/Dockerfile_prod
+docker run --rm -i hadolint/hadolint:v2.15.1 < docker/Dockerfile_prod
 
-DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
-DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
+-:13 DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
+-:18 DL3059 info: Multiple consecutive `RUN` instructions. Consider consolidation.
 ```
 
-Du borde få samma fel som jag fick. Vi kan skriva om koden så det blir ett RUN kommando istället, i nyare versioner av Docker finns det stöd för [HereDoc](https://phoenixnap.com/kb/bash-heredoc). Med det kan vi skriva flera rader i RUN. 
+Du borde få samma fel som jag fick. Radnumren kan skilja sig. hadolint avslutar med felkod även för meddelanden på nivån `info`, så åtgärda alla meddelanden. Om ni får fler meddelanden än ovan, t.ex. `DL3066` om `USER`, kolla att ni har följt Dockerfilen ovan. Vi kan skriva om koden så det blir ett RUN kommando istället, i nyare versioner av Docker finns det stöd för [HereDoc](https://phoenixnap.com/kb/bash-heredoc). Med det kan vi skriva flera rader i RUN. 
 
 
 Istället för:

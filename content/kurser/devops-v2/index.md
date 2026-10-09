@@ -85,9 +85,9 @@ Vi startar kmom01 med att bekanta oss med koden på ett redan påbörjat projekt
 
 Läs [instruktionen till kursmoment 01](./kmom01).
 
-### Kmom02: Configuration Management och Continuous Deployment {#kmom03}
+### Kmom02: Configuration Management och Continuous Deployment {#kmom02}
 
-Vi behöver servrar för att driftsätta projektet och ska ska använda oss av [Azure](https://azure.microsoft.com/) för att hosta servrar i molnet. Projektet driftsätter i vi produktion med Docker. Vi lär oss CM verktyget Ansible och använder det för att enkelt kunna skapa nya servrar och driftsätta vår kod.
+Vi behöver servrar för att driftsätta projektet och ska använda oss av [Azure](https://azure.microsoft.com/) för att hosta servrar i molnet. Projektet driftsätter vi i produktion med Docker. Vi lär oss CM verktyget Ansible och använder det för att enkelt kunna skapa nya servrar och driftsätta vår kod.
 
 Läs [instruktionen till kursmoment 02](./kmom02).
 

@@ -9,7 +9,7 @@ revision:
 
 # Kmom02: Configuration Management och Continuous Deployment
 
-I kmom01 fixade ni en utvecklingsmiljö och CI/CD. I detta kmom ska vi sätta upp en produktionsmiljö och ut utveckla CD kedjan till Continues Deployment.
+I kmom01 fixade ni en utvecklingsmiljö och CI/CD. I detta kmom ska vi sätta upp en produktionsmiljö och utveckla CD kedjan till Continuous Deployment.
 
 <!-- more -->
 

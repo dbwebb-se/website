@@ -107,7 +107,7 @@ Vi nöjer oss med att veta att vi borde göra det, för att vi inte kan på grun
 
 ##### Security Groups {#sg}
 
-Vi kan och ska förbättra våra security groups, som det ser ut nu kan vem som helst koppla upp sig till de olika portarna som är öppna på våra servrar. Det är onödigt när vi vet vilka IP-addresser alla servrarna har. Vi kan inte göra det på ett bra sätt som det ser ut nu, för att vi kör rollen för SGs före vi skapar servrarna i Ansible. Vi behöver skapa servrarna först så att vi kan använda deras IP när vi skapar SGs. Det ska ni fixa i uppgiften.
+Vi kan och ska förbättra våra security groups, som det ser ut nu kan vem som helst koppla upp sig till de olika portarna som är öppna på våra servrar. Det är onödigt när vi vet vilka IP-addresser alla servrarna har. Vi kan inte göra det på ett bra sätt som det ser ut nu, för att vi kör rollen för SGs före vi skapar servrarna i Ansible. Port 3306 till databasen är just nu öppen för alla på load balancer VM:en. Vi behöver skapa servrarna först så att vi kan använda deras IP när vi skapar SGs. Det ska ni fixa i uppgiften.
 
 #### Produktionsmiljön {#prod_miljo}
 
@@ -151,7 +151,7 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
 1. Uppdatera Security groups så att de bara tillåter de ip-adresser som behöver tillgång till specifika portar.
     - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats och lägg till att köra `gather_instances` mellan skapa instanser och skapa security groups. Annars har vi inte tillgång till instansernas IP vi precis skapade.
-    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 få koppla upp sig till mysql porten på database.
+    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 få koppla upp sig till mysql porten (3306). Databasen körs på load balancer VM:en, så regeln för 3306 ligger i load balancerns security group, medan 22, 80 och 443 fortsätter vara öppna för alla IP's.
     - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`.
 
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen.

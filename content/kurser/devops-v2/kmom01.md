@@ -3,13 +3,14 @@
 author:
     - aar
 revision:
+    "2026-10-08": "(C, aar) Ersatt followers med en /version route, tagit bort commit mall och CHANGELOG, dev container som labbmiljö."
     "2025-10-31": "(B, aar) Flyttat Azure delarna till kmom02"
     "2023-10-24": "(A, aar) Ny version inför v2. Sammanslagning av kmom01 och kmom02"
 ...
 Kmom01: Introduktion till devops och Docker
 ==================================
 
-Det är en fullspäckat kurs där vi ska lära oss många ny verktyg och koncept. I kursen ska vi lära oss både om det kulturella inom devops men även det praktiska. Vi börjar med att skaffa en produktionsmiljö och bekantar oss med ett påbörjat projekt som ska kopplas till en CI kedja och driftsätta manuellt.
+Det är en fullspäckad kurs där vi ska lära oss många nya verktyg och koncept. I kursen ska vi lära oss både om det kulturella inom devops men även det praktiska. Vi börjar med att bekanta oss med ett påbörjat projekt, packa in det i Docker och koppla det till en CI/CD kedja som bygger och publicerar en ny version varje gång vi släpper en.
 
 <!-- more -->
 
@@ -37,15 +38,22 @@ I videon nedanför får vi en kortare genomgång som fokuserar mer på arbetsfl�
 
 ## Miljö {#env}
 
-Tanken är att vi ska jobba med ett projekt igenom hela kursen och då behöver vi verktyg och program för att jobba med koden. Vi kommer ha både en lokal utvecklingsmiljö och en produktionsmiljö.
+Tanken är att vi ska jobba med ett projekt igenom hela kursen och då behöver vi verktyg och program för att jobba med koden. Vi börjar med en lokal utvecklingsmiljö. En produktionsmiljö kommer i kmom02.
 
 ### Lokal utvecklingsmiljö {#dev}
 
-Vi kommer att utöka vad som ingår i labbmiljön under kursen.
+Alla verktyg ni behöver finns färdiginstallerade, med bestämda versioner, i en dev container som följer med i Microblog repot. Då slipper ni installera och versionshantera Python, make med flera själva. Vi utökar vad som finns i dev containern under kursen, när vi kommer till ett kursmoment som behöver fler verktyg.
 
 #### Att göra {#dev-do}
 
-- [installera labbmiljön](./../labbmiljo). Det är rekommenderat att ha minst python version 3.10. Det finns ett problem med 3.11 så om ni har det byt till en högre eller lägre version.
+- Följ [labbmiljön](./../labbmiljo) och starta dev containern, enligt avsnittet "Dev container". **Klona repot inuti WSL** om ni använder Windows.
+- Kör alla kommandon i kursen i VS Codes terminal, den körs i containern.
+
+[INFO]
+Appen och Docker containrarna ni startar körs på er dator, inte i dev containern. Webbläsaren på er dator når dem på `localhost:<port>`, men `curl localhost:<port>` i terminalen i VS Code gör inte det.
+[/INFO]
+
+Om dev containern inte fungerar för er finns en reservlösning i [labbmiljön](./../labbmiljo), där ni installerar verktygen själva.
 
 ## Appen {#app}
 
@@ -63,7 +71,7 @@ I kursen ska ni packa in er kod i en Docker container för att underlätta utvec
 
 - [Docker i devops](kunskap/docker-i-devops).
 
-### Att göra {#prod-do}
+### Att göra {#docker-do}
 
 Jobba igenom:
 
@@ -102,19 +110,15 @@ Vi kan se Continuous Delivery som steget efter Continuous Integration. I CI har 
 
 ## Hur vi jobbar med repot {#git}
 
-Ni ska jobba enligt GitHub Flow i ert repo. Det betyder att ni ska ha feature branches, gör pull requests och göra code reviews. För att underlätta det ska ni också fokusera på bra commit meddelanden.
+Ni ska jobba enligt GitHub Flow i ert repo. Det betyder att ni ska ha feature branches, göra pull requests och göra code reviews. För att underlätta det ska ni också skriva bra commit meddelanden.
 
 ### Läs och titta {#git-read}
 
 - [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
 
-- [The seven rules of a great Git commit message](https://chris.beams.io/posts/git-commit/#seven-rules).
-
-- [Keeping Git Commit Messages Consistent with a Custom Template](https://dev.to/timmybytes/keeping-git-commit-messages-consistent-with-a-custom-template-1jkm).
+- [The seven rules of a great Git commit message](https://chris.beams.io/posts/git-commit/#seven-rules). Använd reglerna när ni skriver commit meddelanden.
 
 - [Semantisk versionshantering](https://semver.org/lang/sv/), en bra versionsstandard för projekt.
-
-- [CHANGELOG](https://keepachangelog.com/en/1.0.0/), håll koll på vad som ändras mellan versionerna i ett projekt.
 
 ## Lästips {#lastips}
 
@@ -141,14 +145,13 @@ Uppgifter  {#uppgifter}
 -------------------------------------------
 
 1. Jobba i ert repo enligt [Hur vi jobbar med repot](#git-read). Det betyder att
-    - Ni ska ha feature branches och när ni är klara med en del gör ni pull request till main den andra av er ska göra code review.
-    - Ni ska ha en template för commit meddelanden.
+    - Ni ska ha feature branches och när ni är klara med en del gör ni pull request till huvudbranchen (`master`), den andra av er ska göra code review.
+    - Ni ska skriva bra commit meddelanden.
     - Ni ska följa semantisk versionshantering.
-    - Ni ska ha en CHANGELOG.
 
-1. Skapa en Dockerfile för Microblog. Om ni redan har jobbat igenom [Docker](#docker) delen så är den klar. Lägg filen i mappen `docker`.
+1. Skapa en Dockerfile för Microblog. Om ni redan har jobbat igenom [Docker](#docker) delen så är den klar. Lägg filen i mappen `docker`. Filen `boot.sh` från guiden ligger i roten av repot.
 
-    - Validera filen med  `make validate-docker`.
+    - Validera filen med  `make validate-docker`. Kommandot använder hadolint. Det kan klaga på saker som guiden inte nämner, läs regeln i meddelandet och rätta Dockerfilen. Passar en regel inte kan ni stänga av den för en rad med en kommentar, t.ex. `# hadolint ignore=DL3018`. Skriv då varför.
     - Skapa en compose fil, `docker-compose.yml`, i root mappen av ert repo. Lägg till en service som startar prod containern mot en MySQL container.
 
         - Kommandot `docker-compose up prod` ska starta en MySQL och en microblog container.
@@ -159,33 +162,34 @@ Uppgifter  {#uppgifter}
         - mapparna `app` och `tests` ska inte kopieras in utan ligga som volymer.
         - installera `requirements/test.txt` Istället för `prod.txt`.
         - skapa en nytt skript som körs vid uppstart. Det ska köra `make test`, så alla tester körs.
+        - imagen behöver innehålla `make` (i Alpine installeras det med `apk add make`) och filerna som `make test` använder: `Makefile`, `pytest.ini`, `.pylintrc` och `.coveragerc`.
     - Validera Docker filen med  `make validate-docker`.
     - Lägg till en ny service i `docker-compose.yml` som kör test containern. Den ska gå att starta med `docker-compose up test`.
     - Om ni vill, ändra så testerna körs mot en MySQL server istället för SQLite.
 
-1. Sätt upp Continuous Integration. Koppla ditt repo till GitHub Actions. När du gör en commit ska Actions köra alla unittester, integrationtester och validera koden.
+1. Sätt upp Continuous Integration. Koppla ditt repo till GitHub Actions. När du gör en push, till vilken branch som helst, ska Actions köra alla unittester, integrationtester och validera koden och Dockerfilerna (`make validate-docker`).
 
+    - Använd `ubuntu-24.04` som `runs-on`, inte `ubuntu-latest`. Då ändras inte bygget av sig självt när GitHub byter Ubuntu version.
+    - Workflow:et ska köras vid push till en branch men inte när ni pushar en tagg. Då körs testerna bara en gång vid en release, CD workflow:et kör dem själv.
     - Lägg till en Actions [badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge) i README filen för repot.
 
 1. Sätt upp Continuous Delivery i Actions.
 
     - Skapa ett nytt workflow (separat fil) som bygger och pushar er Docker image till DockerHub men bara om testerna från CI passerar. Ni uppnår det genom att från det nya workflow:et återanvända det som tester koden.
     - CD kedjan ska bara köras vid ny tagg, inte varje kommit.
-    - Ni får **inte** använda latest taggen, ni ska ha unika taggar för varje ny release. T.ex. använd er semantiska version som tagg.
+    - Ni får **inte** använda latest taggen, ni ska ha unika taggar för varje ny release. T.ex. använd er semantiska version som tagg. En git tagg `v11.0.1` ska ge imagen `<användarnamn>/microblog:11.0.1`.
+    - Användarnamn och lösenord till DockerHub sparar ni som secrets i GitHub, inte i koden.
+    - Workflow:et ska skicka versionen till bygget som build argument `APP_VERSION`, se nästa uppgift.
 
-1. Lägg till funktionaliteten att följa andras blogginlägg. Jobba igenom [Kom igång med followers](kunskap/kom-igang-med-followers).
+1. Lägg till en route, `/version`, i Microblog som visar vilken version av appen som körs.
 
-    - När ni är klara med det, skapa en ny release i git. CD kedjan ska bygga och publicerar en ny image med funktionaliteten.
+    - Routen ska gå att anropa utan att logga in. Svaret är bara versionen som text, t.ex. `11.0.1`.
+    - Versionen ska komma från miljövariabeln `APP_VERSION`, som ni läser i `app/config.py`. Finns den inte ska svaret vara `unknown`.
+    - Skriv tester för routen i `tests/integration/main/`. Testa både standardvärdet och ett satt värde.
+    - Imagen ska ta emot versionen som ett build argument (`ARG APP_VERSION` i Dockerfilen) och sätta miljövariabeln. I `docker-compose.yml` kan ni skicka med `APP_VERSION` som build argument, ge den ett standardvärde.
+    - Skapa en ny release (se nästa uppgift). CD kedjan ska bygga och publicera en ny image. Starta imagen från DockerHub och kontrollera att `/version` visar versionen från taggen.
 
-1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Om ni får komplettering på en inlämning öka versionen.
-
-<!-- 1. Välj en av era servrar som produktionsserver.
-
-    - Installera Docker på er server.
-    - Driftsätt er nya Docker imagen på den.
-    - Koppla er image mot en MySQL Docker container. Tänk på att data ska ligga som en volym. Så att all data inte försvinner vid en omstart.
-    - Sätt upp [Nginx med HTTPS](kunskap/driftsatta-en-flask-app#conf_nginx) så man kommer åt er Microblog via ett av era domännamn.
-    nginx i docker med https https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71 -->
+1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Taggen ska börja med `v`, t.ex. `v11.0.0`. Skapa också en release på GitHub för taggen och beskriv i release notes vad som har ändrats. Om ni får komplettering på en inlämning öka versionen.
 
 [YOUTUBE src=LOULXBE3iAE caption="Hur det kan se ut när det är klart"]
 

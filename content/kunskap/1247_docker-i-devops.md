@@ -61,15 +61,8 @@ En typisk sån sak är att bygga/köra Docker images. Att bygga/starta en image 
 
 För Docker använder vi [docker-compose](https://docs.docker.com/compose/) i detta syftet.
 
-Läs att använda [docker compose i produktion](https://docs.docker.com/compose/production/).
+Läs att använda [docker compose i produktion](https://docs.docker.com/compose/how-tos/production/).
 
-För att docker-compose ska klara av att hantera `<<-EOF` i Dockerfile, vilket vi använder för Microblog, behöver ni sätta följande miljövariabler:
+Compose följer med när ni installerar Docker och finns redan i dev containern. Vi använder kommandot `docker-compose` i kursen, `docker compose` gör samma sak. Nya versioner av Docker och Compose bygger med BuildKit som standard, så `<<-EOF` i en Dockerfile, som vi använder för Microblog, fungerar utan att ni behöver sätta några miljövariabler.
 
-```
-export DOCKER_BUILDKIT=1
-export COMPOSE_DOCKER_CLI_BUILD=1
-```
-
-Om ni jobbade igenom hela docker guiden längre upp borde ni ha det installerat. Annars jobba igenom följande guide för att installera.
-
-- [docker-compose](guide/docker/installera-compose).
+Saknar ni Compose, följ guiden [Installera Compose](guide/docker/installera-compose).

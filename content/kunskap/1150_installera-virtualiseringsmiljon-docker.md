@@ -20,13 +20,13 @@ Webbplatsen för Docker innehåller en del där du kan ladda hem och installera 
 
 * Windows
     - [Installera Bash i Windows med WSL och Ubuntu](/kunskap/installera-bash-i-windows-med-wsl-och-ubuntu)
-    - [Installera Docker](https://docs.docker.com/docker-for-windows/install/) 
+    - [Installera Docker](https://docs.docker.com/desktop/setup/install/windows-install/) 
 
-* [MacOs](https://docs.docker.com/docker-for-mac/install/)
+* [MacOs](https://docs.docker.com/desktop/setup/install/mac-install/)
 
-* [Linux (Debian)](https://docs.docker.com/install/linux/docker-ce/debian/)
+* [Linux (Debian)](https://docs.docker.com/engine/install/debian/)
 
-* [Linux (Ubuntu)](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+* [Linux (Ubuntu)](https://docs.docker.com/engine/install/ubuntu/)
 
 Docker är en virtualiseringsmiljö så den kräver att din datorn är kapabel att köra vissa virtualiseringstekniker.
 
@@ -37,7 +37,10 @@ Du behöver bekanta dig med [dokumentationen för Docker](https://docs.docker.co
 Tips vid installation
 ---------------------------------
 
-Nu har du förhoppningsvis installerat Docker CE. Det kan såklart krångla med installationen så här samlar vi lite tips och trix når något går snett. Om du inte väljer att installera Docker för Linux kan det vara bra att tänka på följande.
+Nu har du förhoppningsvis installerat Docker CE. Det kan såklart krångla med installationen så här samlar vi lite tips och trix när något går snett.
+
+- Windows och Mac: Docker Desktop måste vara igång när du använder Docker.
+- Windows med WSL: får du felet `The command 'docker' could not be found in this WSL 2 distro` behöver du slå på WSL integrationen. Öppna Docker Desktop, gå till Settings, Resources, WSL integration och slå på den för din distro, t.ex. Ubuntu. Starta sen om terminalen.
 
 
 
@@ -48,13 +51,17 @@ Nu är Docker (förhoppningsvis) installerat. Det är lika bra att dubbelkolla..
 
 ```bash
 $ docker --version
-Docker version 20.10.13, build a224086
+Docker version 28.5.2, build ecc6942
 ```
+
+Versionsnumret kan skilja sig, en nyare version är bra.
 
 ```bash
 $ which docker
 /usr/bin/docker
 ```
+
+Sökvägen kan se annorlunda ut, t.ex. i WSL.
 
 Bra då vet vi var vi har det installerat och att kommandot `docker` fungerar. Vi kör vår första container:
 

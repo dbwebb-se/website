@@ -82,13 +82,6 @@ Jag har fått som kommentar att studenterna vill ha mer Ansible material så hä
 - [Getting Started with Ansible](https://www.youtube.com/watch?v=3RiVKs8GHYQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 - [Ansible 101](https://www.jeffgeerling.com/blog/2020/ansible-101-jeff-geerling-youtube-streaming-series)
 
-### Att göra {#ansible-do}
-
-- Gör fyra scenario på Killerkoda för att lära er Ansible, [Ansible 101](https://killercoda.com/ansible). Gör de som heter "Ansible 10X(2.11) English", det är fyra stycken.
-<!-- Koden för killercoda https://github.com/irixjp/katacoda-scenarios
-De har använt denna som referens material https://github.com/ansible/workshops
--->
-
 ## Bekanta er med Ansible koden {#ansible-code}
 
 Låt oss kolla på Ansible koden som redan finns i Microblog repot.

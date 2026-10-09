@@ -130,10 +130,6 @@ Ni ska jobba enligt GitHub Flow i ert repo. Det betyder att ni ska ha feature br
 
 - [Multistage builds](https://docs.docker.com/develop/develop-images/multistage-build/), för vår app är detta kanske inte nödvändigt men det är väldigt bra att känna till.
 
-- [Best practices](https://www.wintellect.com/security-best-practices-for-docker-images/) för Docker.
-
-- [Building Your Production Tech Stack for Docker Container Platform](https://dockercon2018.hubs.vidyard.com/watch/k3Cv676wmxAwYDxbvcgcgC), video från DockerCon 2018.
-
 Läsanvisningar {#read}
 --------------------------
 

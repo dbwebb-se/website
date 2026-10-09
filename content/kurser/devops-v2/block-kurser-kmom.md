@@ -1,8 +1,8 @@
 #### [devops (v2)](kurser/devops)
 
-* [01: Vad är DevOps?](kurser/devops-v2/kmom01)
-* [02: CI/CD/Molnet?](kurser/devops-v2/kmom02)
-* [03: IaC/CM](kurser/devops-v2/kmom03)
+* [01: Introduktion till devops och Docker](kurser/devops-v2/kmom01)
+* [02: Configuration Management och Continuous Deployment](kurser/devops-v2/kmom02)
+* [03: DevSecOps och valfritt verktyg](kurser/devops-v2/kmom03)
 * [04: Monitoring](kurser/devops-v2/kmom04)
-* [05: Swarm/Kubernetes](kurser/devops-v2/kmom05)
-* [07/10: Examination](kurser/devops-v2/kmom10)
+* [05: Container orchestration](kurser/devops-v2/kmom05)
+* [06/10: Rapport](kurser/devops-v2/kmom10)

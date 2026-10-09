@@ -5,5 +5,4 @@
 * [03: IaC/CM](kurser/devops-v2/kmom03)
 * [04: Monitoring](kurser/devops-v2/kmom04)
 * [05: Swarm/Kubernetes](kurser/devops-v2/kmom05)
-* [06: Säkerhet/Staging?](kurser/devops-v2/kmom06)
 * [07/10: Examination](kurser/devops-v2/kmom10)

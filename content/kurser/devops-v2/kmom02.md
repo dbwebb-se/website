@@ -216,6 +216,8 @@ På Canvas är detta en gruppinlämning. Svara på frågorna tillsammans och ski
 
 1. Om du fick välja fritt hur skulle du vilja bygga upp CD kedjan?
 
+1. Databasen körs på samma VM som load balancern för att spara kostnader. Varför borde databasen ha en egen VM, och vilka risker finns med att dela VM?
+
 1. Hur var storleken på kursmomentet?
 
 1. Veckans TIL?

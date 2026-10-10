@@ -88,14 +88,14 @@ Vi ska använda oss av [Prometheus](https://prometheus.io/), ett väldigt popul�
 
 #### Att göra {#prometheus-do}
 
-Ni behöver inte skriva konfigurationen för Prometheus, Alertmanager och Grafana själva. Den finns färdig i mappen `monitoring/` i Microblog-repot (hämta den från [startrepot](https://github.com/dbwebb-se/microblog) om er fork inte har den). Er uppgift är att köra den, läsa den och förstå vad varje del gör.
+Ni behöver inte skriva konfigurationen för Prometheus, Alertmanager och Grafana själva. Den finns färdig i mappen `monitoring/` i Microblog-repot (saknas den i er fork, hämta den från [startrepot](https://github.com/dbwebb-se/microblog)). Er uppgift är att köra den, läsa den och förstå vad varje del gör.
 
 - Kolla på videorna 401-403 och 410-413 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12) för att se hur de olika delarna hänger ihop. Videorna visar äldre versioner och sätter upp allt för hand, så följ inte kommandona exakt, det ni ska köra står nedan.
 
-Hela övervakningen körs lokalt på er dator, inte på en VM. Den startas med en profil i `docker-compose.yml`:
+Hela övervakningen körs lokalt på er dator, inte på en VM. Den startas genom att lägga till filen `monitoring/docker-compose.yml` till er egen `docker-compose.yml` (den kräver att er tjänst för appen heter `prod`):
 
 ```
-docker compose --profile monitoring up -d --build prod prometheus alertmanager grafana
+docker compose -f docker-compose.yml -f monitoring/docker-compose.yml up -d --build prod prometheus alertmanager grafana
 ```
 
 | Tjänst | Adress | Vad den gör |
@@ -105,7 +105,7 @@ docker compose --profile monitoring up -d --build prod prometheus alertmanager g
 | Alertmanager | <http://localhost:9093> | Tar emot larm från Prometheus och skickar dem vidare. |
 | Grafana | <http://localhost:3000> | Dashboards. Logga in med `admin` / `admin`. Prometheus är redan inlagd som datakälla. |
 
-Appen exponerar sina mätvärden med [prometheus-flask-exporter](https://github.com/rycus86/prometheus_flask_exporter), den är redan inlagd i `app/__init__.py`. Den räknar bland annat alla requests per statuskod i `flask_http_request_total`.
+Appen måste själv exponera sina mätvärden. Det gör ni med [prometheus-flask-exporter](https://github.com/rycus86/prometheus_flask_exporter) (se Uppgift 1 nedan). Den räknar bland annat alla requests per statuskod i `flask_http_request_total`.
 
 [INFO]
 Räknare i Prometheus (som `flask_http_request_total`) finns inte förrän det första felet har hänt. Reglerna i `monitoring/rules.yml` är skrivna så att de klarar det. Om ni skriver egna regler med `increase()` eller `rate()` märker ni det: de behöver två mätpunkter och larmar därför inte vid det första felet.
@@ -115,6 +115,8 @@ Räknare i Prometheus (som `flask_http_request_total`) finns inte förrän det f
 
 Del 1.
 
+1. Lägg till exportören i appen: `prometheus-flask-exporter==0.23.2` i `requirements/prod.txt`, och i `app/__init__.py` importera `PrometheusMetrics` från `prometheus_flask_exporter`, skapa `metrics = PrometheusMetrics.for_app_factory()` bredvid `db` och de andra tilläggen och anropa `metrics.init_app(app)` i `create_app`. Bygg om imagen. Appen svarar nu på `/metrics`.
+
 1. Starta övervakningen med kommandot ovan. Öppna Prometheus, gå till *Status* → *Targets* och kontrollera att `microblog` är `UP`. Öppna Grafana och kontrollera att datakällan Prometheus fungerar (menyn *Data sources*).
 
 1. Läs `monitoring/prometheus.yml`, `monitoring/rules.yml` och `monitoring/alertmanager.yml` samt de nya tjänsterna i `docker-compose.yml`. Ni ska kunna förklara vad varje del gör i er redovisning.
@@ -123,7 +125,7 @@ Del 1.
 
 Del 2.
 
-1. Ta hjälp av AI för att skapa en monitoring strategi för Microblog. Fel som uppstår i appen ska fångas och visualiseras i Grafana. När ett fel uppstår ska ett larm skickas till webhook.site. Basen finns redan (exportören och reglerna), AI:n ska hjälpa er avgöra vad mer som är värt att övervaka och hur ni visar det.
+1. Ta hjälp av AI för att skapa en monitoring strategi för Microblog. Fel som uppstår i appen ska fångas och visualiseras i Grafana. När ett fel uppstår ska ett larm skickas till webhook.site. Basen finns redan (exportören och reglerna i `rules.yml`), AI:n ska hjälpa er avgöra vad mer som är värt att övervaka och hur ni visar det.
 
 1. Implementera en ny feature i Microblog som genererar ett fel, till exempel en route som kastar ett undantag.
 

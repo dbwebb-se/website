@@ -4,6 +4,7 @@ category:
     - devops
     - kubernetes
 revision:
+    "2026-10-10": (C, aar) AKS skapas med az cli och policyns nodstorlek, cert-manager v1.21.2.
     "2025-12-11": (B, aar) Bytte kuard till kubernetes-bootcamp.
     "2021-12-03": (A, aar) Första revisionen.
 ...
@@ -67,6 +68,14 @@ Skapa ett kluster på AKS {#aks}
 Jobba igenom videon nedanför och skapa ett kluster.
 
 [YOUTUBE src=gT8kF4nCYE0 caption="Skapa ett AKS kluster"]
+
+Videon är från 2021 och portalen ser annorlunda ut idag. Ni kan skapa samma kluster från terminalen:
+
+```
+az aks create --resource-group <resursgrupp> --name <klusternamn> --location northeurope --node-count 1 --node-vm-size Standard_B2ms --tier free --no-ssh-key
+```
+
+Skolans Azure policy tillåter bara den gratis nivån (`--tier free`) och noder av typen `Standard_B2ms`, andra storlekar ger felet `RequestDisallowedByPolicy`. Det tar ungefär fem minuter. Resursgruppen är samma som ni använde för VM:arna i kmom02.
 
 När ni har skapat ett kluster ska vi göra så att vi kommer åt det med kubectl.
 
@@ -424,7 +433,7 @@ Vi ska nu installer en [cert-manager](https://cert-manager.io/docs/) den lägger
 Kör följande kommando för att installera:
 
 ```
-$ kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.8.0/cert-manager.yaml
+$ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.21.2/cert-manager.yaml
 customresourcedefinition.apiextensions.k8s.io/certificaterequests.cert-manager.io created
 customresourcedefinition.apiextensions.k8s.io/certificates.cert-manager.io created
 customresourcedefinition.apiextensions.k8s.io/challenges.acme.cert-manager.io created

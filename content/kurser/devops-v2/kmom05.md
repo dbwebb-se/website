@@ -3,6 +3,7 @@
 author:
     - aar
 revision:
+    "2026-10-10": "(F, aar) Klustret skapas som i guiden, installera ingress och cert-manager igen, HPA kräver resource requests, liveness, dubbla ankare."
     "2024-12-10": "(E, aar) Flyttat till kmom05 från kmom06."
     "2021-12-03": "(C, aar) Bytt Minikube till AKS."
     "2020-12-04": "(B, aar) Bytt AWS till Minikube."
@@ -22,11 +23,9 @@ Materialet är inte redo. Vänta på att den gula rutan försvinner.
 [FIGURE src="https://miro.medium.com/max/660/1*Mdj9wylSl0wqJ9sB0ENbRA.png" caption="Hur det är att lära sig kubernetes."]
 
 [INFO]
-PS! Om ni har fått kmom04 rättat, radera alla era resurser på Azure förutom er DNS zone.
-
 Innan ni sätter igång med kursmomentet kolla att ert Microblog repo är synkat med originalet, [Syncing a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
 
-PS! Om ni har fått kmom04 rättat, radera alla era resurser på Azure förutom er DNS zone.
+PS! Om ni har fått kmom04 rättat, radera alla era VM:ar och övriga resurser på Azure (för kmom02-03) förutom er DNS zone och SSH nyckel.
 [/INFO]
 
 [INFO]
@@ -40,7 +39,7 @@ Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
 Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
 
 [INFO]
-Notera att det finns fler frågor för sista bokcirkeln, längst ner i dokumentet.
+Notera att det finns fler frågor för sista bokcirkeln, på sidan [bokcirkel](./../bokcirkel).
 [/INFO]
 
 ## Container Orchestration {#co}
@@ -81,7 +80,7 @@ Vi vill givetvis jobba declarative för att då kan vi spara konfigurationen i G
 
 [FIGURE src="http://assets.digitalocean.com/articles/comics/imperative-declarative-k8s.jpg" caption="digitalocean förklarar [imperativ vs declarative](https://www.digitalocean.com/community/tutorials/imperative-vs-declarative-kubernetes-management-a-digitalocean-comic)"]
 
-##### Läs och titta {#k8s-read}
+##### Läs och titta {#yaml-read}
 
 - [För och nackdelar med deklarativ vs imperativ](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/).
 - För att se hur K8s strukturerar yaml filer läs [Kubernetes deployment tutorial](https://devopscube.com/kubernetes-deployment-tutorial/). Ni behöver bara läsa, inte jobba igenom.
@@ -140,7 +139,7 @@ Ni ska nu jobba igenom en artikel som går igenom hur vi sätter upp ett kluster
 
 ### Microblog i Kubernetes {#microblog}
 
-Nu ska ni sätta upp Microbloggen i Kubernetes. Skapa ett nytt kluster i AKS med samma inställningar som ni gjorde sist, i videon. Arbetet är uppdelat i tre sektioner nedanför. Spara alla filer i `kubernetes/` mappen.
+Nu ska ni sätta upp Microbloggen i Kubernetes. Skapa ett nytt kluster i AKS på samma sätt som i guiden. Ni behöver också installera ingress-nginx och cert-manager i det nya klustret och skapa era Issuers igen, och peka om er DNS record till den nya externa IP:n. Arbetet är uppdelat i tre sektioner nedanför. Spara alla filer i `kubernetes/` mappen.
 
 #### Mysql i Kubernetes {#mysql}
 
@@ -148,7 +147,7 @@ Jobba igenom [Mysql i Kubernetes](kunskap/mysql_i_kubernetes) för att sätta up
 
 Ni behöver inte köra någon SQL kod då Migrations i Flask sköter det när vi startar Microblogen.
 
-#### Microblog deployment {#microblog}
+#### Microblog deployment {#microblog-deploy}
 
 Nästa steg är att skapa en deployment för Microblogen. Ni borde ha lärt er tillräckligt för att skapa en `service`,  `deployment` och `ingress` för Microblogen. Er microblog deployment ska ha 2 replicas, så att det alltid finns två pods rullande som kan hantera trafik. Ni ska komma åt er Microblog med ert domännamn och använda HTTPS.
 
@@ -168,7 +167,7 @@ kubectl logs <pod-name>
 kubectl describe ingress
 ```
 
-Ett tips är att lägga till en `livenessProbe`, på containern i er Deployment. Det används av K8s för att kolla om containern är redo att användas. K8s kommer pinga `/` och kolla vad den får tillbaka för status kod, alla mellan 200 och 399 så tolkas det som att containern mår bra och kan användas.
+Ett tips är att lägga till en `livenessProbe`, på containern i er Deployment. Det används av K8s för att kolla om containern lever, och startar om den om den inte gör det. K8s kommer pinga `/` och kolla vad den får tillbaka för status kod, alla mellan 200 och 399 så tolkas det som att containern mår bra.
 
 ```
        ...
@@ -191,7 +190,7 @@ När ni har fått upp microblogen och kopplat på er domän ska ni testa att aut
 
 #### Att göra {#scale-do}
 
-Jobba sen med i följande video för att testa på att skala er deployment.
+Jobba sen med i följande video för att testa på att skala er deployment. Autoscalern räknar CPU i procent av det containern har begärt, så containern i er deployment måste ha en `resources.requests.cpu`, annars visar HPA `<unknown>` och skalar aldrig.
 
 [YOUTUBE src=webuyGs-spQ  caption="Autoscale ett kubernetes kluster med HPA."]
 

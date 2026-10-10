@@ -123,7 +123,7 @@ Ansible och Azure CLI finns i er dev container. Synka ert repo med originalet (s
    - Skapa en hosts fil och lägg till subdomänerna som hosts. Namnge inte hostarna i provisioning playbook till samma namn som grupperna som `gather_instances` skapar (`appserver`, `loadbalancer`, `database`). Då matchar `hosts: loadbalancer` fel host och er load balancer får aldrig något deployat, utan något felmeddelande.
 
 1. Uppdatera "10-first-minutes" Playbook så att alla gruppmedlemmars SSH-nycklar läggs till i authorized_keys. I modulen [ansible-role-users](https://github.com/cogini/ansible-role-users/blob/master/tasks/main.yml#L108) kan ni se ett exempel på hur man kan göra det. Då behöver ni ladda upp allas **publika** nycklar i ert repo. Det är säkert att ladda upp de publika nycklarna. De kan inte användas för att återskapa den privata.
-   - Tips. `pub_ssh_key_location` används av provisioneringen och ska vara en enda fil. Lägg gruppens nycklar som en fil per person i en egen mapp och läs dem med `with_fileglob` i 10-first-minutes.
+   - Tips. `pub_ssh_key_location` används av provisioneringen och ska vara en enda fil. Lägg gruppens nycklar som en fil per person i en egen mapp och låt 10-first-minutes läsa in alla filer i mappen.
    - PS. Tänk på att köra gather_instances.yml med 10-first-minutes för att hitta vilka VMs som finns.
    - Kör "10-first-minutes" mot alla tre VMs.
 
@@ -176,15 +176,15 @@ När ni ska implementera er CD strategi behöver ni kunna logga in med SSH från
 
 ### Deploy efter publish {#cd-order}
 
-En deploy ska bara köras när Docker imagen är publicerad. Ett eget workflow som triggas av samma tag kör parallellt med publish och deployar en image som inte finns än. Lägg istället deploy som ett jobb i samma workflow som publish, med `needs: publish`. Versionen kan ni skicka mellan jobben som ett `output`.
+En deploy ska bara köras när Docker imagen är publicerad. Ett eget workflow som triggas av samma tag kör parallellt med publish och deployar en image som inte finns än. Lägg istället deploy som ett jobb i samma workflow som publish, som väntar på att publish är klart. Hur ni skickar versionen mellan jobben får ni lista ut.
 
 ### Starta om efter stop {#restart}
 
-När ni stoppar och startar VM's:arna startar inte Docker containrar som saknar restart policy om. Sätt `restart_policy: unless-stopped` på containrarna i era playbooks.
+När ni stoppar och startar VM's:arna startar inte Docker containrar som saknar restart policy om. Sätt en restart policy på containrarna i era playbooks.
 
 ### Rolling update {#rolling}
 
-Om ni väljer rolling update, använd `serial: 1` i playbooken så att bara en server uppdateras åt gången. Misslyckas den första stannar playbooken och den andra servern har kvar den gamla versionen.
+Om ni väljer rolling update, begränsa i playbooken så att bara en server uppdateras åt gången (leta efter ett nyckelord i Ansibles dokumentation). Misslyckas den första stannar playbooken och den andra servern har kvar den gamla versionen.
 
 ## Lästips {#lastips}
 

@@ -132,9 +132,9 @@ När vi ändå är inne på SSH kopplingar så kan vi konfigurera säkrare koppl
 
 I uppgiften ska ni lägga den rekommenderade konfigurationen i `10-first-minutes` som en Ansible template. Mozilla har en guide med färdiga konfigurationer, [guidelines/openssh](https://infosec.mozilla.org/guidelines/openssh). Ni ska använda `Modern (OpenSSH 6.7+)`. Några saker att tänka på:
 
-- Konfigurationen ersätter hela `/etc/ssh/sshd_config`. Använd `template` modulen med `validate: '/usr/sbin/sshd -t -f %s'` så att Ansible inte skriver en trasig fil och låser ute er.
-- Sökvägen till sftp-servern i guiden är fel för Ubuntu. Använd `Subsystem sftp /usr/lib/openssh/sftp-server -f AUTHPRIV -l INFO`, annars klagar Ansible.
-- Lägg till `UsePAM yes`, annars får ni ingen riktig inloggningssession på Ubuntu.
+- Konfigurationen ersätter hela `/etc/ssh/sshd_config`. Använd `template` modulen med dess `validate` parameter och `sshd -t` så att Ansible inte skriver en trasig fil och låser ute er.
+- Sökvägen till sftp-servern i guiden är fel för Ubuntu. Ta reda på rätt sökväg på servern, annars klagar Ansible.
+- Mozillas konfiguration saknar något som Ubuntu behöver för en riktig inloggningssession (PAM). Läs i `man sshd_config`.
 - Lägg inte `AllowUsers deploy` i templaten så länge ert play loggar in som `azureuser`, då låser ni ute er själva mitt i playbooken. Det finns redan ett steg som lägger till den raden i slutet av rollen.
 
 #### Hur säker är vår CI/CD pipeline? {#cicd}
@@ -155,7 +155,7 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
 1. Uppdatera Security groups så att de bara tillåter de ip-adresser som behöver tillgång till specifika portar.
     - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Övriga portar ska bara ta emot trafik från de virtuella maskiner som ska använda dem. Bara appservrarna ska få koppla upp sig till mysql porten (3306), den ligger i load balancerns security group eftersom databasen körs på load balancer VM:en. Bara load balancern ska nå port 8000 på appservrarna.
-    - I `roles/security_groups/vars/main.yml` finns variablerna `app_sources` och `lb_sources` med IP adresserna (med `/32`) som regeln ska tillåta. Byt ut `0.0.0.0/0` i de regler som ska stängas mot rätt variabel. Läs i filen hur variablerna är gjorda och förklara varför de har ett värde före `gather_instances`.
+    - I `roles/security_groups/vars/main.yml` finns variablerna `app_sources` och `lb_sources` med IP adresserna (med `/32`) som regeln ska tillåta. Använd dem i de regler som ska stängas. Läs i filen hur variablerna är gjorda och förklara varför de har ett värde före `gather_instances`.
     - Kör hela `site.yml` och kontrollera att sidan fungerar och att ni kan registrera en användare (då pratar appservrarna med databasen). Kontrollera att reglerna stängt portarna, t.ex. med `nc -zv -w 5 <ip> 3306` från er egen dator, den ska inte få kontakt.
 
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen, se [SSH](#ssh).

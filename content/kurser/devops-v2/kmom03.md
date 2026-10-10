@@ -61,7 +61,7 @@ Det finns några olika verktyg för att skanna Docker images, Docker runtime och
 ###### Läs och titta {#dockerscan-read}
 
 - [Docker Image Security Scanning: What It Can and Can't Do](https://resources.whitesourcesoftware.com/blog-whitesource/docker-image-security-scanning)
-- Länken ovanför nämner fler olika verktyg, men den nämner inte Dockers egna verktyg, [Docker Bench Security](https://github.com/docker/docker-bench-security). För att se allt man "behöver" göra på sin server rekommenderar jag att ni logga in på en appserver och kör verktyget. Då får ni upp en lång lista på saker man borde fixa på en server som kör Docker.
+- Länken ovanför nämner fler olika verktyg, men den nämner inte Dockers egna verktyg, [Docker Bench Security](https://github.com/docker/docker-bench-security). För att se allt man "behöver" göra på sin server rekommenderar jag att ni logga in på en appserver och kör verktyget. Då får ni upp en lång lista på saker man borde fixa på en server som kör Docker. Instruktioner för hur man kör det finns i repots README, i korthet `git clone` av repot på servern och sen `sudo sh docker-bench-security.sh`. Läs bara resultatet, ni behöver inte fixa det som hittas.
 
 #### Dependency Scanning {#dep_scan}
 
@@ -81,10 +81,10 @@ Static/Dynamic/Interactive Application Security Testing syftat på olika ställe
 
 ##### Läs och titta {#depscan-read}
 
-- [SAST vs. DAST](https://www.synopsys.com/blogs/software-security/sast-vs-dast-difference/) för en jämförelse av de två och vad de är bra på.
+- [SAST vs. DAST](https://www.blackduck.com/blog/sast-vs-dast-difference/) för en jämförelse av de två och vad de är bra på.
 - [Interactive Application Security Testing](https://snyk.io/learn/application-security/iast-interactive-application-security-testing/).
 
-I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST. Vi skippar DAST. Ett vanligt verktyg för DAST är [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project). Det hade hittat förbättringar i er Nginx config. Om någon vill testa så har Mozilla ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna mot er produktionsmiljö.
+I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST. Vi skippar DAST. Ett vanligt verktyg för DAST är [Zap](https://www.zaproxy.org/). Det hade hittat förbättringar i er Nginx config. Om någon vill testa så har Mozilla ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna mot er produktionsmiljö.
 
 ### Infrastruktur Security {#infrastruktur}
 
@@ -165,12 +165,12 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 
 [WARNING]
 Denna uppgiften är valfri, eftersom det har varit mycket problem med uppgifterna så har jag valt att göra denna valfri. Jag hoppas att lite fler av er kommer ikapp i kursen.
-[!WARNING]
+[/WARNING]
 
 
 Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog.
 
-Studien ska bestå av tre delar.
+Studien ska bestå av fyra delar.
 
 - Förklara vad verktyget är och vad det gör.
 - Instruktioner på hur man inkorporerar verktyget i Microblog.

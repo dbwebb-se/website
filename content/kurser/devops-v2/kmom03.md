@@ -2,6 +2,7 @@
 author:
   - aar
 revision:
+  "2026-10-09": "(D, aar) Tre VM's, security groups och SSH konfiguration som Ansible kod, Trivy tips."
   "2025-11-27": "(C, aar) Tog bort ssh_scan. Är deprecated"
   "2024-11-29": "(B, aar) Hopslagning av devsecops och valfritt verktyg till ett kmom."
   "2023-11-17": "(A, aar) Första versionen."
@@ -60,7 +61,7 @@ Det finns några olika verktyg för att skanna Docker images, Docker runtime och
 ###### Läs och titta {#dockerscan-read}
 
 - [Docker Image Security Scanning: What It Can and Can't Do](https://resources.whitesourcesoftware.com/blog-whitesource/docker-image-security-scanning)
-- Länken ovanför nämner fler olika verktyg, men den nämner inte Dockers egna verktyg, [Docker Bench Security](https://github.com/docker/docker-bench-security). För att se allt man "behöver" göra på sin server rekommenderar jag att ni logga in på en appserver och kör verktyget. Då får ni upp en lång lista på saker man borde fixa på en server som kör Docker.
+- Länken ovanför nämner fler olika verktyg, men den nämner inte Dockers egna verktyg, [Docker Bench Security](https://github.com/docker/docker-bench-security). För att se allt man "behöver" göra på sin server rekommenderar jag att ni logga in på en appserver och kör verktyget. Då får ni upp en lång lista på saker man borde fixa på en server som kör Docker. Instruktioner för hur man kör det finns i repots README, i korthet `git clone` av repot på servern och sen `sudo sh docker-bench-security.sh`. Läs bara resultatet, ni behöver inte fixa det som hittas.
 
 #### Dependency Scanning {#dep_scan}
 
@@ -80,10 +81,10 @@ Static/Dynamic/Interactive Application Security Testing syftat på olika ställe
 
 ##### Läs och titta {#depscan-read}
 
-- [SAST vs. DAST](https://www.synopsys.com/blogs/software-security/sast-vs-dast-difference/) för en jämförelse av de två och vad de är bra på.
+- [SAST vs. DAST](https://www.blackduck.com/blog/sast-vs-dast-difference/) för en jämförelse av de två och vad de är bra på.
 - [Interactive Application Security Testing](https://snyk.io/learn/application-security/iast-interactive-application-security-testing/).
 
-I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST. Vi skippar DAST. Ett vanligt verktyg för DAST är [Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project). Det hade hittat förbättringar i er Nginx config. Om någon vill testa så har Mozilla ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna mot er produktionsmiljö.
+I uppgifter ska ni använda [Bandit](https://github.com/PyCQA/bandit) för SAST. Vi skippar DAST. Ett vanligt verktyg för DAST är [Zap](https://www.zaproxy.org/). Det hade hittat förbättringar i er Nginx config. Om någon vill testa så har Mozilla ett [blogginlägg](https://blog.mozilla.org/security/2017/01/25/setting-a-baseline-for-web-security-controls/) där de förklarar hur ni kan köra Zap med baseline testerna mot er produktionsmiljö.
 
 ### Infrastruktur Security {#infrastruktur}
 
@@ -107,7 +108,9 @@ Vi nöjer oss med att veta att vi borde göra det, för att vi inte kan på grun
 
 ##### Security Groups {#sg}
 
-Vi kan och ska förbättra våra security groups, som det ser ut nu kan vem som helst koppla upp sig till de olika portarna som är öppna på våra servrar. Det är onödigt när vi vet vilka IP-addresser alla servrarna har. Vi kan inte göra det på ett bra sätt som det ser ut nu, för att vi kör rollen för SGs före vi skapar servrarna i Ansible. Vi behöver skapa servrarna först så att vi kan använda deras IP när vi skapar SGs. Det ska ni fixa i uppgiften.
+Vi kan och ska förbättra våra security groups, som det ser ut nu kan vem som helst koppla upp sig till de olika portarna som är öppna på våra servrar. Port 3306 till databasen på load balancer VM:en och port 8000 på app servrarna är öppna för hela internet. Det är onödigt när vi vet vilka IP-adresser alla servrarna har.
+
+Regler som bygger på servrarnas IP adresser kan inte skapas innan servrarna finns. Därför körs rollen för security groups två gånger. Första gången, när VM's skapas, är reglerna öppna för alla. Sen körs `gather_instances.yml` och rollen igen med IP adresserna i `groups`, då stängs reglerna. Playbooken `security_groups.yml` gör den andra körningen och finns med i `site.yml` efter `gather_instances`.
 
 #### Produktionsmiljön {#prod_miljo}
 
@@ -127,11 +130,12 @@ När vi ändå är inne på SSH kopplingar så kan vi konfigurera säkrare koppl
 
 ###### Att göra {#ssh-do}
 
-- Kopiera konfigurationen för `Modern (OpenSSH 6.7+)` från [guidelines/openssh](https://infosec.mozilla.org/guidelines/openssh), SSH:a in på load balancern och ersätt ssh konfigurationen i `/etc/ssh/sshd_config` med den nya.
+I uppgiften ska ni lägga den rekommenderade konfigurationen i `10-first-minutes` som en Ansible template. Mozilla har en guide med färdiga konfigurationer, [guidelines/openssh](https://infosec.mozilla.org/guidelines/openssh). Ni ska använda `Modern (OpenSSH 6.7+)`. Några saker att tänka på:
 
-- Lägg till raden `AllowUsers deploy`.
-
-- Ändra följande rad `Subsystem sftp  /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO` till `Subsystem sftp  /usr/lib/openssh/sftp-server -f AUTHPRIV -l INFO`. Filvägen till sftp-servern är fel, och då klagar Ansible om det inte är konfigurerat rätt.
+- Konfigurationen ersätter hela `/etc/ssh/sshd_config`. Använd `template` modulen med `validate: '/usr/sbin/sshd -t -f %s'` så att Ansible inte skriver en trasig fil och låser ute er.
+- Sökvägen till sftp-servern i guiden är fel för Ubuntu. Använd `Subsystem sftp /usr/lib/openssh/sftp-server -f AUTHPRIV -l INFO`, annars klagar Ansible.
+- Lägg till `UsePAM yes`, annars får ni ingen riktig inloggningssession på Ubuntu.
+- Lägg inte `AllowUsers deploy` i templaten så länge ert play loggar in som `azureuser`, då låser ni ute er själva mitt i playbooken. Det finns redan ett steg som lägger till den raden i slutet av rollen.
 
 #### Hur säker är vår CI/CD pipeline? {#cicd}
 
@@ -150,22 +154,23 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 
 1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
 1. Uppdatera Security groups så att de bara tillåter de ip-adresser som behöver tillgång till specifika portar.
-    - I Ansible, ändra så Security Groups rollen körs efter att VM's har skapats och lägg till att köra `gather_instances` mellan skapa instanser och skapa security groups. Annars har vi inte tillgång till instansernas IP vi precis skapade.
-    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Ändra så övriga portar bara tar emot trafik från de andra virtuella maskinerna som ska använda dem. T.ex. ska bara appserver1 och appserver2 få koppla upp sig till mysql porten på database.
-    - För att sätta en specifik ip, ändra `0.0.0.0/0` till `{{ groups["<host>"][0] }}/32`.
+    - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Övriga portar ska bara ta emot trafik från de virtuella maskiner som ska använda dem. Bara appservrarna ska få koppla upp sig till mysql porten (3306), den ligger i load balancerns security group eftersom databasen körs på load balancer VM:en. Bara load balancern ska nå port 8000 på appservrarna.
+    - I `roles/security_groups/vars/main.yml` finns variablerna `app_sources` och `lb_sources` med IP adresserna (med `/32`) som regeln ska tillåta. Byt ut `0.0.0.0/0` i de regler som ska stängas mot rätt variabel. Läs i filen hur variablerna är gjorda och förklara varför de har ett värde före `gather_instances`.
+    - Kör hela `site.yml` och kontrollera att sidan fungerar och att ni kan registrera en användare (då pratar appservrarna med databasen). Kontrollera att reglerna stängt portarna, t.ex. med `nc -zv -w 5 <ip> 3306` från er egen dator, den ska inte få kontakt.
 
-1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen.
+1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen, se [SSH](#ssh).
+    - Kontrollera att ni kan logga in som `deploy` med er nyckel och att `ssh azureuser@<ip>` och inloggning med lösenord nekas.
 
 ## Valfritt verktyg uppgift {#valfritt}
 
 [WARNING]
 Denna uppgiften är valfri, eftersom det har varit mycket problem med uppgifterna så har jag valt att göra denna valfri. Jag hoppas att lite fler av er kommer ikapp i kursen.
-[!WARNING]
+[/WARNING]
 
 
 Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog.
 
-Studien ska bestå av tre delar.
+Studien ska bestå av fyra delar.
 
 - Förklara vad verktyget är och vad det gör.
 - Instruktioner på hur man inkorporerar verktyget i Microblog.

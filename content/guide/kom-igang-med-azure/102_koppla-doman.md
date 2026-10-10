@@ -9,7 +9,7 @@ Domännamn {#domain}
 
 Det underlättar dessutom om vi har ett domännamn som vi kan länka till en server. Om du inte redan har ett kolla in artikeln ["GitHub Education Pack och ett domännamn"](kunskap/github-education-pack-och-doman-namn).
 
-När du har fixat en domän, kolla på videon för att koppla ditt domännamn till servern du skapade ovanför i Azure.
+När du har fixat en domän, kolla på videon för att skapa en DNS zone i Azure och koppla ditt domännamn till den.
 
 [INFO]
 I videon används sidan namecheap för domännamn. Om du använder .tech. Läs [.tech](#tech).
@@ -19,9 +19,7 @@ I videon används sidan namecheap för domännamn. Om du använder .tech. Läs [
 
 [FIGURE src="/image/devops/find-recordsets.png" caption="Hitta till Record sets"]
 
-`3:00` i videon när ni ska koppla er DNS till serverns IP. Skippa att lägga till IP adressen. Gör istället ett alias till IP resursen.
-
-[FIGURE src="/image/devops/dns-alias.png" caption="DNS alias till IP"]
+`3:00` i videon när ni ska koppla er DNS till serverns IP. **Sluta titta här.** Ni skapar ingen server för hand och ska inte lägga till någon post, det gör Ansible när den skapar servrarna.
 
 [YOUTUBE src="CNSAT9n0554" caption="102 Koppla domän till Azure."]
 

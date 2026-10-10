@@ -85,9 +85,9 @@ Vi startar kmom01 med att bekanta oss med koden på ett redan påbörjat projekt
 
 Läs [instruktionen till kursmoment 01](./kmom01).
 
-### Kmom02: Configuration Management och Continuous Deployment {#kmom03}
+### Kmom02: Configuration Management och Continuous Deployment {#kmom02}
 
-Vi behöver servrar för att driftsätta projektet och ska ska använda oss av [Azure](https://azure.microsoft.com/) för att hosta servrar i molnet. Projektet driftsätter i vi produktion med Docker. Vi lär oss CM verktyget Ansible och använder det för att enkelt kunna skapa nya servrar och driftsätta vår kod.
+Vi behöver servrar för att driftsätta projektet och ska använda oss av [Azure](https://azure.microsoft.com/) för att hosta servrar i molnet. Projektet driftsätter vi i produktion med Docker. Vi lär oss CM verktyget Ansible och använder det för att enkelt kunna skapa nya servrar och driftsätta vår kod.
 
 Läs [instruktionen till kursmoment 02](./kmom02).
 
@@ -115,7 +115,7 @@ Läs [instruktionen till kursmoment 05](./kmom05).
 
 Avslutningsvis skriver du en uppsats. Uppsatsen är det sista som du gör och tillsammans med alla redovisningar används detta som underlag för att examinera dig från kursen.
 
-Läs [instruktionen till kursmoment 07/10](./kmom10).
+Läs [instruktionen till kursmoment 06/10](./kmom10).
 
 ## Kurslitteratur {#litteratur}
 
@@ -173,8 +173,8 @@ Enligt kursplanen finns ett antal ladokmoment och de är kopplade till kursens k
 | Kursens moment                           | Ladok moment enligt kursplan |
 | ---------------------------------------- | ---------------------------- |
 | Kmom01 + kmom02 + kmom03 + bokcirkel 1-2 | Inlämningsuppgift 1 á 2.5hp  |
-| Kmom04 + kmom05 + kmom06 + bokcirkel 3-5 | Inlämningsuppgift 2 á 2.5hp  |
-| Kmom07 - kmom10 + bokcirkel 6            | Inlämningsuppgift 3 á 2.5hp  |
+| Kmom04 + kmom05 + bokcirkel 3-5          | Inlämningsuppgift 2 á 2.5hp  |
+| Kmom06/10 + bokcirkel 6                  | Inlämningsuppgift 3 á 2.5hp  |
 
 Den sista inlämningen bestämmer kursens slutbetyg vilket utfärdas när samtliga moment godkänts.
 

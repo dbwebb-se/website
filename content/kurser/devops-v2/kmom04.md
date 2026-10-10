@@ -115,7 +115,7 @@ Räknare i Prometheus (som `flask_http_request_total`) finns inte förrän det f
 
 Del 1.
 
-1. Lägg till exportören i appen: `prometheus-flask-exporter==0.23.2` i `requirements/prod.txt`, och i `app/__init__.py` importera `PrometheusMetrics` från `prometheus_flask_exporter`, skapa `metrics = PrometheusMetrics.for_app_factory()` bredvid `db` och de andra tilläggen och anropa `metrics.init_app(app)` i `create_app`. Bygg om imagen. Appen svarar nu på `/metrics`.
+1. Få appen att exponera mätvärden på `/metrics` med hjälp av [prometheus-flask-exporter](https://github.com/rycus86/prometheus_flask_exporter). Appen använder en application factory, så leta efter det som passar den i dokumentationen. Pinna versionen. Bygg om imagen och kontrollera att `/metrics` svarar.
 
 1. Starta övervakningen med kommandot ovan. Öppna Prometheus, gå till *Status* → *Targets* och kontrollera att `microblog` är `UP`. Öppna Grafana och kontrollera att datakällan Prometheus fungerar (menyn *Data sources*).
 

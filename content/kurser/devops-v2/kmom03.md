@@ -134,7 +134,7 @@ I uppgiften ska ni lägga den rekommenderade konfigurationen i `10-first-minutes
 
 - Konfigurationen ersätter hela `/etc/ssh/sshd_config`. Använd `template` modulen med dess `validate` parameter och `sshd -t` så att Ansible inte skriver en trasig fil och låser ute er.
 - Sökvägen till sftp-servern i guiden är fel för Ubuntu. Ta reda på rätt sökväg på servern, annars klagar Ansible.
-- Mozillas konfiguration saknar något som Ubuntu behöver för en riktig inloggningssession (PAM). Läs i `man sshd_config`.
+- Lägg till `UsePAM yes`, annars får ni ingen riktig inloggningssession på Ubuntu.
 - Lägg inte `AllowUsers deploy` i templaten så länge ert play loggar in som `azureuser`, då låser ni ute er själva mitt i playbooken. Det finns redan ett steg som lägger till den raden i slutet av rollen.
 
 #### Hur säker är vår CI/CD pipeline? {#cicd}

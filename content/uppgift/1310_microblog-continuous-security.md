@@ -60,7 +60,7 @@ Trivy kommer hitta många fel i produktions imagen, mer än vad ni kan lösa gen
 Efter uppgraderingen går inte allt som förut:
 
 - Något som koden importerar från Werkzeug finns inte längre. Läs felmeddelandet och Werkzeugs ändringslogg.
-- Werkzeug 3 gör längre lösenords hashar (scrypt) än kolumnen `password_hash` rymmer. Enhetstesterna använder SQLite och märker inget, men registrering mot MySQL ger `500 Data too long`. **Testa därför alltid att registrera en användare och logga in mot den riktiga produktions imagen med `docker compose up`** efter en uppgradering. Ni måste lösa det på något sätt, antingen i hashningen eller i databasen.
+- Werkzeug 3 gör längre lösenords hashar (scrypt) än kolumnen `password_hash` rymmer. Enhetstesterna använder SQLite och märker inget, men registrering mot MySQL ger `500 Data too long`. **Testa därför alltid att registrera en användare och logga in mot den riktiga produktions imagen med `docker compose up`** efter en uppgradering. Ni kan lösa det genom att välja hash metod, `generate_password_hash(password, method="pbkdf2:sha256")`, eller genom att göra kolumnen längre med en migration.
 
 `fs` skanningen kommer också hitta att `.devcontainer/Dockerfile` inte har något `USER`. Dev containern startar som root men kör som användaren `dev` (se `remoteUser` i `devcontainer.json`), så det är inget fel för oss, och att lägga till `USER` i filen gör att ni tappar tillgången till Docker. Läs i Trivys dokumentation hur ni ignorerar en enskild finding och skriv en kommentar om varför.
 

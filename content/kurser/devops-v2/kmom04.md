@@ -2,6 +2,7 @@
 author:
   - aar
 revision:
+  "2026-10-10": "(E, aar) Monitoring körs lokalt med docker compose, färdig konfiguration, redovisning med skärmdumpar."
   "2025-12-02": "(D, aar) Inkluderat del om använda AI för monitoring strategi."
   "2023-11-24": "(C, aar) Släppt för HT23."
   "2020-11-19": "(B, aar) Släppt för HT20."
@@ -87,55 +88,60 @@ Vi ska använda oss av [Prometheus](https://prometheus.io/), ett väldigt popul�
 
 #### Att göra {#prometheus-do}
 
-Nu ska ni starta upp prometheus, grafana och koppla ihop dem.
+Ni behöver inte skriva konfigurationen för Prometheus, Alertmanager och Grafana själva. Den finns färdig i mappen `monitoring/` i Microblog-repot (saknas den i er fork, hämta den från [startrepot](https://github.com/dbwebb-se/microblog)). Er uppgift är att köra den, läsa den och förstå vad varje del gör.
 
-- Kolla på videorna 401-403 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12). Gör det lokalt på er dator för att testa få det att fungera.
+- Kolla på videorna 401-403 och 410-413 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12) för att se hur de olika delarna hänger ihop. Videorna visar äldre versioner och sätter upp allt för hand, så följ inte kommandona exakt, det ni ska köra står nedan.
 
-- Kolla på videorna 410-413 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12). PS i video 412 körs det på produktionsservrar men ni kan göra det lokalt som med allt annat, det är likadant.
+Hela övervakningen körs lokalt på er dator, inte på en VM. Den startas genom att lägga till filen `monitoring/docker-compose.yml` till er egen `docker-compose.yml` (den kräver att er tjänst för appen heter `prod`):
 
-## Läsanvisningar {#read}
+```
+docker compose -f docker-compose.yml -f monitoring/docker-compose.yml up -d --build prod prometheus alertmanager grafana
+```
 
-Läsanvisningar hittar ni på sidan [bokcirkel](./../bokcirkel).
+| Tjänst | Adress | Vad den gör |
+|--------|--------|-------------|
+| Microblog | <http://localhost:8000> | Appen. `/metrics` visar de mätvärden Prometheus hämtar. |
+| Prometheus | <http://localhost:9090> | Hämtar mätvärden var 5:e sekund, utvärderar reglerna i `monitoring/rules.yml`. |
+| Alertmanager | <http://localhost:9093> | Tar emot larm från Prometheus och skickar dem vidare. |
+| Grafana | <http://localhost:3000> | Dashboards. Logga in med `admin` / `admin`. Prometheus är redan inlagd som datakälla. |
 
-Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när vi träffas för bokcirkeln.
+Appen måste själv exponera sina mätvärden. Det gör ni med [prometheus-flask-exporter](https://github.com/rycus86/prometheus_flask_exporter) (se Uppgift 1 nedan). Den räknar bland annat alla requests per statuskod i `flask_http_request_total`.
+
+[INFO]
+Räknare i Prometheus (som `flask_http_request_total`) finns inte förrän det första felet har hänt. Reglerna i `monitoring/rules.yml` är skrivna så att de klarar det. Om ni skriver egna regler med `increase()` eller `rate()` märker ni det: de behöver två mätpunkter och larmar därför inte vid det första felet.
+[/INFO]
 
 ### Uppgifter {#uppgifter}
 
 Del 1.
 
-1. Utöka Ansible provisioning koden så att ni skapar en till server som heter och har typen `monitoring`.
+1. Få appen att exponera mätvärden på `/metrics` med hjälp av [prometheus-flask-exporter](https://github.com/rycus86/prometheus_flask_exporter). Appen använder en application factory, så leta efter det som passar den i dokumentationen. Pinna versionen. Bygg om imagen och kontrollera att `/metrics` svarar.
 
-    - **Öppna passande portar i security groups.**
+1. Starta övervakningen med kommandot ovan. Öppna Prometheus, gå till *Status* → *Targets* och kontrollera att `microblog` är `UP`. Öppna Grafana och kontrollera att datakällan Prometheus fungerar (menyn *Data sources*).
 
-1. Skriv Ansible kod som installerar och startar Prometheus, Grafana och Alertmanager på den nya VM instansen.
+1. Läs `monitoring/prometheus.yml`, `monitoring/rules.yml` och `monitoring/alertmanager.yml` samt de nya tjänsterna i `docker-compose.yml`. Ni ska kunna förklara vad varje del gör i er redovisning.
 
-    - Använd er av modulen [Grafana datasources](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_datasource_module.html) för att lägga till prometheus som datakälla
-
-1. Lägg till en Reverse Proxy i er [Nginx konfiguration till Grafana och Grafana konfiguration](https://gist.github.com/AndreasArne/1b729078e53004303c511390f44dee7f). Länka till er grafana sida, `<domain>/grafana` i er redovisningstext och skriv inloggs uppgifter.
+1. Skapa en egen unik adress på [https://webhook.site](https://webhook.site) och lägg in den i `monitoring/alertmanager.yml`. Starta om Alertmanager (`docker compose restart alertmanager`).
 
 Del 2.
 
-1. Ta hjälp av AI för att skapa en monitoring strategi och implementer den i er Microblog. Fel som uppstår i appen ska fångas och visualiseras i Grafana. När ett fel uppstår ska ett alarm skickas till [https://webhook.site](https://webhook.site).
+1. Ta hjälp av AI för att skapa en monitoring strategi för Microblog. Fel som uppstår i appen ska fångas och visualiseras i Grafana. När ett fel uppstår ska ett larm skickas till webhook.site. Basen finns redan (exportören och reglerna i `rules.yml`), AI:n ska hjälpa er avgöra vad mer som är värt att övervaka och hur ni visar det.
 
-1. Implementer en ny feature i Microbloggen som genererar ett fel så att jag kan testa att er monitoring funkar.
+1. Implementera en ny feature i Microblog som genererar ett fel, till exempel en route som kastar ett undantag.
 
-1. Skapa en guide som visar hur jag triggar felet och kan se det i grafana och Alert:et. Förklara hur ni har implementerat monitoring i er kod.
+1. Skapa en dashboard i Grafana med minst en panel som visar felen.
 
-<!-- 1. Uppdatera era appservrar så de kör er nya Docker image som innehåller flask exportören. -->
+1. Trigga felet och ta tre skärmdumpar: felet i appen, samma fel i en panel i Grafana, och larmet när det kommer in på webhook.site. **Alla tre skärmdumparna måste visa klockslag och datum** så att vi kan se att händelserna hör ihop.
 
-<!-- 1. Vi borde ha en exportör för MySQL men tidigare år har den funkat dåligt, därför skippar vi den. -->
+[INFO]
+Larmet skickas av Alertmanager upp till 30 sekunder efter att felet har hänt, och meddelandet att larmet är löst kommer några minuter efter det.
+[/INFO]
 
-<!-- 1. Konfigurera en exportör för Nginx. I övningen [Övervaka nginx med Prometheus och Grafana](kunskap/overvaka-nginx-med-prometheus-och-grafana) kan ni se hur man gör. -->
-
-<!-- 1. Konfigurera Prometheus så den hämtar data från alla exportörer. -->
-<!--
-1. Lägg till dashboard i Grafana för alla exportörer. Använd Ansible modulen [dashboards](https://docs.ansible.com/ansible/latest/collections/community/grafana/grafana_dashboard_module.html) för att lägga till den från Ansible. Det går inte att koppla ihop er dashboard och datasource i Ansible koden. Modulerna saknar stöd för det. Bara skapa dem via Ansible och sen får ni koppla ihop dem manuellt. -->
-
-**Glöm inte att öppna portar i Azure!**
+Allt körs lokalt, ni behöver inte öppna några portar eller starta några VM:ar i Azure för den här uppgiften.
 
 ## Extrauppgift {#extra}
 
-Om ni får tid över, testa log management verktyget [Loki](https://grafana.com/oss/loki/). Försök få loggar från Nginx eller microbloggen till Grafana med hjälp av Loki.
+Om ni får tid över, testa log management verktyget [Loki](https://grafana.com/oss/loki/). Försök få loggar från microbloggen till Grafana med hjälp av Loki.
 
 ## Resultat & Redovisning {#resultat_redovisning}
 
@@ -155,10 +161,10 @@ Se till att följande frågor besvaras i texten:
 
 5. Testade ni Loki? Fick ni ihop det, i så fall tror du att man hade hunnit med det i kursmomentet?
 
-6. **Skicka med er guide.**
+6. **Skicka med den korta texten om hur AI hjälpte er med monitoring strategin: vad AI:n föreslog och vad ni ändrade.**
 
-7. **Skicka med länk till er webhook.site.**
+7. **Skicka med de tre skärmdumparna (felet i appen, felet i Grafana, larmet på webhook.site). Alla ska visa klockslag och datum.**
 
-8. **Skriv inloggning till er grafana sida.**
+8. Förklara kort vad `prometheus.yml`, `rules.yml` och `alertmanager.yml` gör.
 
 9. Hur var storleken på kursmomentet?

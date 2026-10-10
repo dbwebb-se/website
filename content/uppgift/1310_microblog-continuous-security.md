@@ -54,16 +54,16 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
 
 Trivy kommer hitta många fel i produktions imagen, mer än vad ni kan lösa genom att ändra någon enstaka rad. Det är meningen, det är så det ser ut i verkligheten när man inte uppdaterar. Felen kommer från två ställen:
 
-- **Base imagen** (`FROM python:3.8-alpine`). Python 3.8 och dess Alpine version är gamla. Byt till en nyare och använd en tag med fast version, t.ex. `python:3.12.15-alpine3.24`. Gör det i både `Dockerfile_prod` och `Dockerfile_test` så att ni testar på samma Python som ni kör i produktion.
-- **Python paketen** i `requirements/prod.txt`. Flask och Werkzeug är för gamla. Uppgradera dem och de paket som hänger ihop med dem (Flask-Login, Flask-SQLAlchemy med SQLAlchemy, Flask-Migrate, Flask-WTF, Flask-Moment, email_validator och python-dotenv). Flask 3.0.3 och Werkzeug 3.0.3 fungerar. Läs i `pip` felmeddelandena och i paketens ändringsloggar vilka versioner som passar ihop. Sätt också fasta versioner på `gunicorn` och `pymysql` i `requirements.txt`.
+- **Base imagen** (`FROM python:3.8-alpine`). Python 3.8 och dess Alpine version är gamla. Byt till en nyare och använd en tag med fast version (Python version och Alpine version). Gör det i både `Dockerfile_prod` och `Dockerfile_test` så att ni testar på samma Python som ni kör i produktion.
+- **Python paketen** i `requirements/prod.txt`. Flask och Werkzeug är för gamla. Uppgradera dem och de paket som hänger ihop med dem. Läs `pip` felmeddelandena och paketens ändringsloggar för att se vilka versioner som passar ihop. Sätt också fasta versioner på `gunicorn` och `pymysql` i `requirements.txt`.
 
 Efter uppgraderingen går inte allt som förut:
 
-- `werkzeug.urls.url_parse` finns inte längre. Använd `urllib.parse.urlparse` istället.
+- Något som koden importerar från Werkzeug finns inte längre. Läs felmeddelandet och Werkzeugs ändringslogg.
 - Werkzeug 3 gör längre lösenords hashar (scrypt) än kolumnen `password_hash` rymmer. Enhetstesterna använder SQLite och märker inget, men registrering mot MySQL ger `500 Data too long`. **Testa därför alltid att registrera en användare och logga in mot den riktiga produktions imagen med `docker compose up`** efter en uppgradering. Ni kan lösa det genom att välja hash metod, `generate_password_hash(password, method="pbkdf2:sha256")`, eller genom att göra kolumnen längre med en migration.
 
-`fs` skanningen kommer också hitta att `.devcontainer/Dockerfile` inte har något `USER`. Dev containern startar som root men kör som användaren `dev` (se `remoteUser` i `devcontainer.json`), så det är inget fel för oss, och att lägga till `USER` i filen gör att ni tappar tillgången till Docker. Lägg istället en fil som heter `.trivyignore` i repot med en rad, `DS-0002`, och en kommentar om varför.
+`fs` skanningen kommer också hitta att `.devcontainer/Dockerfile` inte har något `USER`. Dev containern startar som root men kör som användaren `dev` (se `remoteUser` i `devcontainer.json`), så det är inget fel för oss, och att lägga till `USER` i filen gör att ni tappar tillgången till Docker. Läs i Trivys dokumentation hur ni ignorerar en enskild finding och skriv en kommentar om varför.
 
 ### Dockle {#dockle-tips}
 
-Dockle kan rapportera `DKL-DI-0004` (`apk add` utan `--no-cache`) på ett lager som kommer från `python` base imagen, trots att `--no-cache` används. Det är en false-positive. Ignorera den med `-i DKL-DI-0004` och skriv en kommentar om varför. Ni kan lämna `INFO` raderna (content trust, HEALTHCHECK) som de är.
+Dockle kan rapportera `DKL-DI-0004` (`apk add` utan `--no-cache`) på ett lager som kommer från `python` base imagen, trots att `--no-cache` används. Det är en false-positive. Ignorera just den, läs i Dockles README hur, och skriv en kommentar om varför. Ni kan lämna `INFO` raderna (content trust, HEALTHCHECK) som de är.

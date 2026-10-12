@@ -33,7 +33,7 @@ I kmom01:
 - Docker CLI, Buildx och Compose. Du kan använda både `docker compose` och `docker-compose`.
 - Git, make och en ssh klient.
 
-De exakta versionerna står i `.devcontainer/devcontainer.json`. Vi lägger till fler verktyg i containern kursmoment för kursmoment. Kursmomentets text säger när du ska bygga om containern, med kommandot `Dev Containers: Rebuild Container`.
+De exakta versionerna står i `.devcontainer/devcontainer.json`. Containern har verktygen för hela kursen. Om vi uppdaterar den under kursen säger kursmomentets text det, och då bygger du om containern med kommandot `Dev Containers: Rebuild Container`.
 
 ## Så fungerar det {#fungerar}
 

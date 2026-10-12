@@ -42,7 +42,7 @@ Tanken är att vi ska jobba med ett projekt igenom hela kursen och då behöver 
 
 ### Lokal utvecklingsmiljö {#dev}
 
-Alla verktyg ni behöver finns färdiginstallerade, med bestämda versioner, i en dev container som följer med i Microblog repot. Då slipper ni installera och versionshantera Python, make med flera själva. Vi utökar vad som finns i dev containern under kursen, när vi kommer till ett kursmoment som behöver fler verktyg.
+Alla verktyg ni behöver finns färdiginstallerade, med bestämda versioner, i en dev container som följer med i Microblog repot. Då slipper ni installera och versionshantera Python, make med flera själva. Den innehåller också verktygen för resten av kursen (Ansible, Azure CLI, kubectl och helm), ni behöver inte installera något mer senare.
 
 #### Att göra {#dev-do}
 

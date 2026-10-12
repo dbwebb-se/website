@@ -102,7 +102,7 @@ Jag har fått som kommentar att studenterna vill ha mer Ansible material så hä
 
 Låt oss kolla på Ansible koden som redan finns i Microblog repot.
 
-Ansible och Azure CLI finns i er dev container. Synka ert repo med originalet (se rutan ovanför), bygg om dev containern (`Dev Containers: Rebuild Container`) och kör `make install-dev` om det inte gjordes automatiskt.
+Ansible och Azure CLI finns i er dev container.
 
 ### Läs och titta {#code-read}
 

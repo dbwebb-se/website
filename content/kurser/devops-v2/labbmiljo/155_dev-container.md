@@ -23,17 +23,19 @@ Allt annat finns i containern.
 2. Öppna mappen i VS Code. Om du använder WSL, öppna den från WSL terminalen med `code .`.
 3. Välj "Reopen in Container" när VS Code frågar, eller kör `Dev Containers: Reopen in Container` i kommandopaletten.
 
-Första gången tar det några minuter. Då byggs imagen och Python paketen installeras. Terminalen i VS Code körs i containern, kör alla kommandon i kursen där.
+Första gången tar det några minuter. Då byggs imagen och Python paketen (inklusive Ansible) installeras. Terminalen i VS Code körs i containern, kör alla kommandon i kursen där.
 
 ## Vad finns i containern {#innehall}
 
-I kmom01:
-
-- Python 3.11, med en virtuell miljö i mappen `venv` och paketen för att köra testerna.
+- Python 3.11, med en virtuell miljö i mappen `venv`. Python paketen installeras dit första gången containern skapas (`make install-dev`): paketen för att köra testerna, Ansible med ansible-lint och Azure paketen Ansible använder.
 - Docker CLI, Buildx och Compose. Du kan använda både `docker compose` och `docker-compose`.
 - Git, make och en ssh klient.
+- Azure CLI (`az`) för kmom02 och framåt. Inloggningen sparas mellan ombyggnader.
+- `kubectl` och `helm` för kmom05. Konfigurationen till klustret sparas mellan ombyggnader.
 
-De exakta versionerna står i `.devcontainer/devcontainer.json`. Vi lägger till fler verktyg i containern kursmoment för kursmoment. Kursmomentets text säger när du ska bygga om containern, med kommandot `Dev Containers: Rebuild Container`.
+Ändras filerna i `requirements/` (till exempel en ny Ansible version) räcker det inte att bygga om containern, kör också `make install-dev`.
+
+De exakta versionerna står i `.devcontainer/devcontainer.json`. Containern har verktygen för hela kursen. Om vi uppdaterar den under kursen säger kursmomentets text det, och då bygger du om containern med kommandot `Dev Containers: Rebuild Container`.
 
 ## Så fungerar det {#fungerar}
 

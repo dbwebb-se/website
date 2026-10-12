@@ -4,6 +4,7 @@ category:
     - devops
     - kubernetes
 revision:
+    "2026-10-12": (D, aar) az, kubectl och helm finns i kursens dev container.
     "2026-10-10": (C, aar) AKS skapas med az cli och policyns nodstorlek, cert-manager v1.21.2.
     "2025-12-11": (B, aar) Bytte kuard till kubernetes-bootcamp.
     "2021-12-03": (A, aar) Första revisionen.
@@ -31,7 +32,7 @@ Du har en förståelse över hur kubernetes fungerar. Du vet vad följande saker
 Installera verktyg {#install}
 -------------------------------
 
-Vi behöver lite verktyg för att lyckas med detta.
+Vi behöver lite verktyg för att lyckas med detta. Om ni använder kursens dev container finns `az`, `kubectl` och `helm` redan i den och ni kan hoppa över installationen, men ni behöver köra `az login` (se nedan). Instruktionerna är för er som inte använder dev containern.
 
 ### az cli {#az}
 

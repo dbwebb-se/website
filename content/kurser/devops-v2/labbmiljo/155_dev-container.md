@@ -12,7 +12,7 @@ Kursens utvecklingsmiljö är en dev container: en Docker container med verktyge
 
 - En terminal. Windows använder WSL med Ubuntu, se avsnittet Terminal ovan.
 - Git.
-- Docker. Docker Desktop måste vara igång när du jobbar.
+- Docker. (På Windows måste Docker Desktop vara igång när du jobbar).
 - Visual Studio Code med tillägget [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
 Allt annat finns i containern.
@@ -23,7 +23,7 @@ Allt annat finns i containern.
 2. Öppna mappen i VS Code. Om du använder WSL, öppna den från WSL terminalen med `code .`.
 3. Välj "Reopen in Container" när VS Code frågar, eller kör `Dev Containers: Reopen in Container` i kommandopaletten.
 
-Första gången tar det några minuter. Då byggs imagen och Python paketen (inklusive Ansible) installeras. Terminalen i VS Code körs i containern, kör alla kommandon i kursen där.
+Första gången tar det några minuter. Då byggs imagen och Python paketen installeras. Terminalen i VS Code körs i containern, kör alla kommandon i kursen där.
 
 ## Vad finns i containern {#innehall}
 

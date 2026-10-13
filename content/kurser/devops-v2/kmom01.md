@@ -3,6 +3,7 @@
 author:
     - aar
 revision:
+    "2026-10-13": "(D, aar) Redovisningen ber om DockerHub användarnamn istället för domännamn."
     "2026-10-08": "(C, aar) Ersatt followers med en /version route, tagit bort commit mall och CHANGELOG, dev container som labbmiljö."
     "2025-10-31": "(B, aar) Flyttat Azure delarna till kmom02"
     "2023-10-24": "(A, aar) Ny version inför v2. Sammanslagning av kmom01 och kmom02"
@@ -196,7 +197,7 @@ Uppgifter  {#uppgifter}
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------
 
-Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
+Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och ert DockerHub användarnamn.
 
 Se till att följande frågor besvaras i texten:
 

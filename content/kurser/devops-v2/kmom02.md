@@ -52,7 +52,6 @@ _På bilden har loadbalancer och databasen speciella ikoner men det är fortfara
 Jobba igenom:
 
 - [Kom igång med Azure](guide/kom-igang-med-azure). I guiden visas hur ni skapar en VM manuellt. Det ska ni inte göra, vi skapar VM's med Ansible kod istället. Det är dock bra att veta hur man gör det manuellt.
-- [Förbered Azure](guide/kom-igang-med-azure/103_forbered-azure). Där skapar ni en SSH nyckel, en DNS zone för ert domännamn och loggar in med Azure CLI.
 
 ### Kostnad {#cost}
 

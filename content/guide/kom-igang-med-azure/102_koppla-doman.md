@@ -19,9 +19,10 @@ I videon används sidan namecheap för domännamn. Om du använder .tech. Läs [
 
 [FIGURE src="/image/devops/find-recordsets.png" caption="Hitta till Record sets"]
 
-`3:00` i videon när ni ska koppla er DNS till serverns IP. **Sluta titta här.** Ni skapar ingen server för hand och ska inte lägga till någon post, det gör Ansible när den skapar servrarna.
 
 [YOUTUBE src="CNSAT9n0554" caption="102 Koppla domän till Azure."]
+
+<! skapa ny video som visar vad som ska raderas och inte.>
 
 
 ### .tech {#tech}

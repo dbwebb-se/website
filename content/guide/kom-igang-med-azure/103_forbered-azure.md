@@ -6,23 +6,12 @@ revision:
 Förbered Azure {#prepare}
 =======================
 
-Innan ni kan köra Ansible koden mot Azure behöver ni en SSH nyckel, en DNS zone för ert domännamn och en inloggning från dev containern. Resten, VM's, nätverk och DNS poster, skapar Ansible.
+Innan ni kan köra Ansible koden mot Azure behöver ni en SSH nyckel och en inloggning från dev containern. Resten, VM's, nätverk och DNS poster, skapar Ansible.
 
 ### SSH nyckel {#ssh-key}
 
-Ansible lägger er publika SSH nyckel på alla VM's som skapas. Skapa en nyckel på din dator (i en dev container ligger `~/.ssh` på din riktiga dator, så nyckeln finns kvar om containern byggs om).
+Ansible lägger er publika SSH nyckel på alla VM's som skapas. När ni jobbade med i videon som skapade en VM skapade ni en SSH nyckel och fick två filer, `~/.ssh/azure` (privat, dela den aldrig) och `~/.ssh/azure.pub` (publik). Sökvägen till den publika nyckeln ska i `ansible/group_vars/all.yml` stå i `pub_ssh_key_location`.
 
-```bash
-ssh-keygen -t ed25519 -f ~/.ssh/azure
-```
-
-Ni får två filer, `~/.ssh/azure` (privat, dela den aldrig) och `~/.ssh/azure.pub` (publik). Sökvägen till den publika nyckeln ska i `ansible/group_vars/all.yml` stå i `pub_ssh_key_location`.
-
-### DNS zone {#dns-zone}
-
-Skapa en DNS zone och koppla ert domännamn till Azure, se [Domännamn](kom-igang-med-azure/102_koppla-doman). Ansible skapar DNS posterna (`@`, `www`, `appserver1` och `appserver2`) när den skapar servrarna, ni behöver bara skapa zonen och peka domänen på Azures name servers.
-
-DNS posterna ligger kvar i zonen när ni raderar servrarna, då pekar de på en IP som inte finns längre. Det är ok. När ni skapar servrarna igen ersätter Ansible dem med den nya IP adressen.
 
 ### Logga in {#login}
 

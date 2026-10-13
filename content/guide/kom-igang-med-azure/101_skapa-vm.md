@@ -7,10 +7,10 @@ revision:
 Så skapar man en VM {#create-vm}
 =======================
 
-Titta på videon för att se hur man skapar en VM i Azure, och hur Azure portalen ser ut. Ni ska **inte** skapa någon VM själva, det gör vi med Ansible kod i kursen. Gör bara det som står i [Förbered Azure](kom-igang-med-azure/103_forbered-azure).
+I videon nedanför får ni se hur man skapar en VM i Azure via webbläsaren. I kursen kommer vi främst göra det via kod med verktyget Ansible.
 
-Logga in på [Azure](https://portal.azure.com/#home) med ditt studentinlogg för att kunna kolla runt.
+För att bekanta er med Azure och VM's kan ni kolla på videon och göra det som visas.
+
+Logga in på [Azure](https://portal.azure.com/#home) med ditt studentinlogg för att komma åt Azure.
 
 [YOUTUBE src="K9bVG34SyXM" caption="101 Skapa server på Azure."]
-
-I videon skapas också en SSH nyckel i Azure. Ansible koden behöver en SSH nyckel på din dator istället, hur ni skapar den står nedanför.

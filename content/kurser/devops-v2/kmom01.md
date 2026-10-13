@@ -144,7 +144,7 @@ Kolla i [lektionsplanen](https://dbwebb.se/devops/lektionsplan) för att se när
 Uppgifter  {#uppgifter}
 -------------------------------------------
 
-1. Jobba i ert repo enligt [Hur vi jobbar med repot](#git-read). Det betyder att
+1. Jobba i ert repo enligt [Hur vi jobbar med repot](#git). Det betyder att
     - Ni ska ha feature branches och när ni är klara med en del gör ni pull request till huvudbranchen (`master`), den andra av er ska göra code review.
     - Ni ska skriva bra commit meddelanden.
     - Ni ska följa semantisk versionshantering.

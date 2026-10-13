@@ -3,6 +3,7 @@
 author:
     - aar
 revision:
+    "2026-10-13": "(D, aar) Redovisningen ber om DockerHub användarnamn istället för domännamn. Produktions Dockerfilen ska heta docker/Dockerfile_prod."
     "2026-10-08": "(C, aar) Ersatt followers med en /version route, tagit bort commit mall och CHANGELOG, dev container som labbmiljö."
     "2025-10-31": "(B, aar) Flyttat Azure delarna till kmom02"
     "2023-10-24": "(A, aar) Ny version inför v2. Sammanslagning av kmom01 och kmom02"
@@ -149,7 +150,7 @@ Uppgifter  {#uppgifter}
     - Ni ska skriva bra commit meddelanden.
     - Ni ska följa semantisk versionshantering.
 
-1. Skapa en Dockerfile för Microblog. Om ni redan har jobbat igenom [Docker](#docker) delen så är den klar. Lägg filen i mappen `docker`. Filen `boot.sh` från guiden ligger i roten av repot.
+1. Skapa en Dockerfile för Microblog. Om ni redan har jobbat igenom [Docker](#docker) delen så är den klar. Filen ska heta `docker/Dockerfile_prod`. Filen `boot.sh` från guiden ligger i roten av repot.
 
     - Validera filen med  `make validate-docker`. Kommandot använder hadolint. Det kan klaga på saker som guiden inte nämner, läs regeln i meddelandet och rätta Dockerfilen. Passar en regel inte kan ni stänga av den för en rad med en kommentar, t.ex. `# hadolint ignore=DL3018`. Skriv då varför.
     - Skapa en compose fil, `docker-compose.yml`, i root mappen av ert repo. Lägg till en service som startar prod containern mot en MySQL container.
@@ -196,7 +197,7 @@ Uppgifter  {#uppgifter}
 Resultat & Redovisning  {#resultat_redovisning}
 -----------------------------------------------
 
-Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och domännamn till microblog sidan.
+Svara på nedanstående frågor individuellt, lämna in på Canvas tillsammans med länken till ert gemensamma GitHub-repo och ert DockerHub användarnamn.
 
 Se till att följande frågor besvaras i texten:
 

@@ -4,6 +4,7 @@ category:
     - devops
     - docker
 revision:
+    "2026-10-14": (D, aar) Uppdaterade exempelutskrifterna, testade med Docker 28.
     "2022-11-03": (C, aar) La till heredoc och logs.
     "2021-11-09": (B, aar) Updaterade python version för att bli av med gcc problem.
     "2020-10-25": (A, moc) Skapad inför HT2020.
@@ -114,12 +115,13 @@ Vill man se en lista av alla images som existerar lokalt kan man göra det med `
 
 ```bash
 $ docker images
-REPOSITORY    TAG          IMAGE ID        CREATED              SIZE
-microblog     1.0.0-prod       54a47d0c27cf    About a minute ago   216MB
-python        3.8-alpine   a6beab4fa70b    9 months ago         88.7MB
+REPOSITORY   TAG          IMAGE ID       CREATED          SIZE
+microblog    1.0.0-prod   73394a2d3fe1   9 seconds ago    156MB
+microblog    prod         73394a2d3fe1   9 seconds ago    156MB
+python       3.8-alpine   cd39247b02f9   2 years ago      47.4MB
 ```
 
-Lista kommer att innehålla den nya imagen och även den bas imagen som den byggdes på. Varje gång du gör ändringar i programmet kan du uppdatera container imagen genom att köra byggkommandot igen.
+Listan kommer att innehålla den nya imagen (med båda taggarna vi satte, de är samma image) och även bas imagen som den byggdes på. Din lista har troligen fler rader och andra id:n och storlekar. Varje gång du gör ändringar i programmet kan du uppdatera container imagen genom att köra byggkommandot igen.
 
 
 
@@ -130,7 +132,7 @@ Efter att container imagen är byggd kan vi starta den med kommandot `docker run
 
 ```bash
 $ docker run --name microblog -d -p 8000:5000 --rm microblog:1.0.0-prod
-021da2e1e0d390320248abf97dfbbe7b27c70fefed113d5a41bb67a68522e91c
+d1c8ddd0613477b9d008ec33174254bcbf955946f35f22c338312f127c1cca57
 ```
 
 Kolla att du kommer åt webbsidan i webbläsaren med `localhost:8000`. Om något är fel kan du kolla loggarna med `docker logs microblog`.
@@ -147,15 +149,15 @@ Om man vill se vilka containers som är körandes kan man använda `docker ps`:
 
 ```bash
 $ docker ps
-CONTAINER ID  IMAGE             COMMAND      PORTS                   NAMES
-021da2e1e0d3  microblog:1.0.0-prod  "./boot.sh"  0.0.0.0:8000->5000/tcp  microblog
+CONTAINER ID   IMAGE                  COMMAND       PORTS                                         NAMES
+d1c8ddd06134   microblog:1.0.0-prod   "./boot.sh"   0.0.0.0:8000->5000/tcp, [::]:8000->5000/tcp   microblog
 ```
 
 Om man nu vill stoppa containern kan man använda `docker stop` följt av dess ID:
 
 ```bash
-$ docker stop 021da2e1e0d3
-021da2e1e0d3
+$ docker stop d1c8ddd06134
+d1c8ddd06134
 ```
 
 Om du kommer ihåg finns det ett antal alternativ i programmets konfiguration som kommer från miljövariabler. Till exempel importeras flasks "hemliga nyckel" och "databas URL" från miljövariabler. I `docker run` -exemplet ovan har vi inte ställt in någon av dessa, så alla konfigurations alternativ kommer att använda sina standard värden.

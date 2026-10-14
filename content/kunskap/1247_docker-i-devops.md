@@ -12,6 +12,8 @@ En snabb översikten av vad Docker är kan vi hitta på [Dockers egna webbsida](
 
 Docker låter utvecklare att utveckla och driftsätta applikationer i virtuella container miljöer. Detta ska göra att en applikation kan köras på exakt samma sätt utan kompabilitets problem oberoende av vilken dator/server den körs på, så länge Docker är installerat. Att applikationen kan köras oberoende av systemet gör att applikationen blir lättare att använda, utveckla, underhålla och driftsätta.
 
+[FIGURE src="https://www.dreamhost.com/blog/wp-content/smush-webp/2024/03/but-it-works-on-my-machine-meme1.png.webp"]
+
 ## Docker terminologi {#terminologi}
 
 - **Image**: En image är typ ett exekverbart paket som innehåller allt som behövs för att köra applikationen, det inkluderar konfigurationsfiler, miljövariabler och bibliotek.

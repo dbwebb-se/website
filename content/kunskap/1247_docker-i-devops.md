@@ -1,6 +1,7 @@
 ---
 author: aar
 revision:
+    "2026-10-14": (B, aar) Tog bort en död bild, kontrollerade länkar och påståendena om Compose och BuildKit.
     "2023-10-24": (A, aar) Första versionen.
 ...
 
@@ -10,8 +11,6 @@ Docker {#docker}
 En snabb översikten av vad Docker är kan vi hitta på [Dockers egna webbsida](https://www.docker.com/resources/what-container). Docker är en container teknologi som liknar en avskalad virtuella maskin. Vad tillför det till oss som utvecklare?
 
 Docker låter utvecklare att utveckla och driftsätta applikationer i virtuella container miljöer. Detta ska göra att en applikation kan köras på exakt samma sätt utan kompabilitets problem oberoende av vilken dator/server den körs på, så länge Docker är installerat. Att applikationen kan köras oberoende av systemet gör att applikationen blir lättare att använda, utveckla, underhålla och driftsätta.
-
-[FIGURE src="https://pics.me.me/it-works-on-my-machine-then-well-ship-your-machine-62072263.png"]
 
 ## Docker terminologi {#terminologi}
 

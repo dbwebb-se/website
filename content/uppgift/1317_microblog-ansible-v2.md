@@ -33,6 +33,8 @@ Efter kraven finns lite hjälp för att lösa er Playbooks.
 
 I Ansible, i era playbooks använd host namnet `database` för installationen av databasen, `appserver` för era servrar med Microblog och `loadbalancer` för Nginx.
 
+När ni stoppar och startar VM's:arna startar inte Docker containrar som saknar restart policy om. Sätt en restart policy på containrarna i era playbooks.
+
 Ni kan använda `ansible-lint` för att få tips på hur ni bör skriva er Ansible kod. Ni kan använda `-x <list of rules>` för att exkludera regler.
 
 **Tips** Skapa en roll som bara installerar Docker. Den kan ni återanvända för `appserver` och `database`. Ansibles modul `community.docker.docker_container` kräver Python paketet `docker` på servern, installera apt paketet `python3-docker` tillsammans med `docker.io`.
@@ -56,6 +58,14 @@ När ni ska koppla Flask appen till databasen behöver ni IP addressen för data
 
 Ni hittar loggfilerna för Nginx i `/var/log/nginx`. Om en konfig fil inte fungerar kan ni köra `nginx -t` för att validera den.
 
-Certbot och HTTPS är redan gjort i rollen `deploy_lb`. Läs om `certbot_staging` i [kmom02](kurser/devops/kmom02#certbot).
-
 Tänk på att ni kan använda `sudo nginx -t` som `validate` steg, på tasks i Ansible, för att validera er Nginx konfiguration.
+
+Certbot och HTTPS är redan gjort i rollen `deploy_lb`. Läs om `certbot_staging` nedanför.
+
+
+
+#### Certifikat och Let's Encrypt {#certbot}
+
+Load balancern får sitt HTTPS certifikat av Let's Encrypt via certbot. Let's Encrypt ger bara 5 riktiga certifikat per vecka för samma domän, och varje ny load balancer VM begär ett nytt. Bygger ni om miljön flera gånger tar certifikaten slut och då går det inte att få fler på en vecka.
+
+Därför finns variabeln `certbot_staging` i `ansible/group_vars/all.yml`. Är den `true` (standard) begär certbot ett test-certifikat, som inte har någon gräns men som webbläsare och `curl` inte litar på. Är den `false` begär den ett riktigt. Bygg och testa med `true`. Sätt den till `false` en gång när allt funkar, då byts testcertifikatet ut mot ett riktigt. Ett riktigt certifikat ersätts aldrig. Ni behöver läsa koden i `deploy_lb` för att förstå hur det går till, den ska ni kunna förklara.

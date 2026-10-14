@@ -153,11 +153,7 @@ Nu ska ni själva implementera playbooks för att sätta upp microbloggen på b�
 
 1. Sätt upp [Microbloggen med Ansible](uppgift/microblog-ansible-v2).
 
-### Certifikat och Let's Encrypt {#certbot}
 
-Load balancern får sitt HTTPS certifikat av Let's Encrypt via certbot. Let's Encrypt ger bara 5 riktiga certifikat per vecka för samma domän, och varje ny load balancer VM begär ett nytt. Bygger ni om miljön flera gånger tar certifikaten slut och då går det inte att få fler på en vecka.
-
-Därför finns variabeln `certbot_staging` i `ansible/group_vars/all.yml`. Är den `true` (standard) begär certbot ett test-certifikat, som inte har någon gräns men som webbläsare och `curl` inte litar på. Är den `false` begär den ett riktigt. Bygg och testa med `true`. Sätt den till `false` en gång när allt funkar, då byts testcertifikatet ut mot ett riktigt. Ett riktigt certifikat ersätts aldrig. Ni behöver läsa koden i `deploy_lb` för att förstå hur det går till, den ska ni kunna förklara.
 
 ## Continuous Deployment (CD) {#cd}
 
@@ -177,13 +173,7 @@ När ni ska implementera er CD strategi behöver ni kunna logga in med SSH från
 
 En deploy ska bara köras när Docker imagen är publicerad. Ett eget workflow som triggas av samma tag kör parallellt med publish och deployar en image som inte finns än. Lägg istället deploy som ett jobb i samma workflow som publish, som väntar på att publish är klart. Hur ni skickar versionen mellan jobben får ni lista ut.
 
-### Starta om efter stop {#restart}
 
-När ni stoppar och startar VM's:arna startar inte Docker containrar som saknar restart policy om. Sätt en restart policy på containrarna i era playbooks.
-
-### Rolling update {#rolling}
-
-Om ni väljer rolling update, begränsa i playbooken så att bara en server uppdateras åt gången (leta efter ett nyckelord i Ansibles dokumentation). Misslyckas den första stannar playbooken och den andra servern har kvar den gamla versionen.
 
 ## Lästips {#lastips}
 

@@ -3,6 +3,7 @@
 author:
     - aar
 revision:
+    "2026-10-14": "(E, aar) Ingen release på GitHub, bara taggen."
     "2026-10-13": "(D, aar) Redovisningen ber om DockerHub användarnamn istället för domännamn. Produktions Dockerfilen ska heta docker/Dockerfile_prod."
     "2026-10-08": "(C, aar) Ersatt followers med en /version route, tagit bort commit mall och CHANGELOG, dev container som labbmiljö."
     "2025-10-31": "(B, aar) Flyttat Azure delarna till kmom02"
@@ -171,14 +172,14 @@ Uppgifter  {#uppgifter}
 1. Sätt upp Continuous Integration. Koppla ditt repo till GitHub Actions. När du gör en push, till vilken branch som helst, ska Actions köra alla unittester, integrationtester och validera koden och Dockerfilerna (`make validate-docker`).
 
     - Använd `ubuntu-24.04` som `runs-on`, inte `ubuntu-latest`. Då ändras inte bygget av sig självt när GitHub byter Ubuntu version.
-    - Workflow:et ska köras vid push till en branch men inte när ni pushar en tagg. Då körs testerna bara en gång vid en release, CD workflow:et kör dem själv.
+    - Workflow:et ska köras vid push till en branch men inte när ni pushar en tagg. Då körs testerna bara en gång vid en ny tagg, CD workflow:et kör dem själv.
     - Lägg till en Actions [badge](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge) i README filen för repot.
 
 1. Sätt upp Continuous Delivery i Actions.
 
     - Skapa ett nytt workflow (separat fil) som bygger och pushar er Docker image till DockerHub men bara om testerna från CI passerar. Ni uppnår det genom att från det nya workflow:et återanvända det som tester koden.
     - CD kedjan ska bara köras vid ny tagg, inte varje kommit.
-    - Ni får **inte** använda latest taggen, ni ska ha unika taggar för varje ny release. T.ex. använd er semantiska version som tagg. En git tagg `v11.0.1` ska ge imagen `<användarnamn>/microblog:11.0.1`.
+    - Ni får **inte** använda latest taggen, ni ska ha unika taggar för varje ny version. T.ex. använd er semantiska version som tagg. En git tagg `v11.0.1` ska ge imagen `<användarnamn>/microblog:11.0.1`.
     - Användarnamn och lösenord till DockerHub sparar ni som secrets i GitHub, inte i koden.
     - Workflow:et ska skicka versionen till bygget som build argument `APP_VERSION`, se nästa uppgift.
 
@@ -188,9 +189,9 @@ Uppgifter  {#uppgifter}
     - Versionen ska komma från miljövariabeln `APP_VERSION`, som ni läser i `app/config.py`. Finns den inte ska svaret vara `unknown`.
     - Skriv tester för routen i `tests/integration/main/`. Testa både standardvärdet och ett satt värde.
     - Imagen ska ta emot versionen som ett build argument (`ARG APP_VERSION` i Dockerfilen) och sätta miljövariabeln. I `docker-compose.yml` kan ni skicka med `APP_VERSION` som build argument, ge den ett standardvärde.
-    - Skapa en ny release (se nästa uppgift). CD kedjan ska bygga och publicera en ny image. Starta imagen från DockerHub och kontrollera att `/version` visar versionen från taggen.
+    - Skapa en ny tagg (se nästa uppgift). CD kedjan ska bygga och publicera en ny image. Starta imagen från DockerHub och kontrollera att `/version` visar versionen från taggen.
 
-1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Taggen ska börja med `v`, t.ex. `v11.0.0`. Skapa också en release på GitHub för taggen och beskriv i release notes vad som har ändrats. Om ni får komplettering på en inlämning öka versionen.
+1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Taggen ska börja med `v`, t.ex. `v11.0.0`. Om ni får komplettering på en inlämning öka versionen.
 
 [YOUTUBE src=LOULXBE3iAE caption="Hur det kan se ut när det är klart"]
 

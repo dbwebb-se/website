@@ -88,7 +88,7 @@ Vi ska använda oss av [Prometheus](https://prometheus.io/), ett väldigt popul�
 
 #### Att göra {#prometheus-do}
 
-Ni behöver inte skriva konfigurationen för Prometheus, Alertmanager och Grafana själva. Den finns färdig i mappen `monitoring/` i Microblog-repot (saknas den i er fork, hämta den från [startrepot](https://github.com/dbwebb-se/microblog)). Er uppgift är att köra den, läsa den och förstå vad varje del gör.
+Ni behöver inte skriva konfigurationen för Prometheus, Alertmanager och Grafana själva. Den finns färdig i mappen `monitoring/` i Microblog-repot. Er uppgift är att köra den, läsa den och förstå vad varje del gör.
 
 - Kolla på videorna 401-403 och 410-413 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12) för att se hur de olika delarna hänger ihop. Videorna visar äldre versioner och sätter upp allt för hand, så följ inte kommandona exakt, det ni ska köra står nedan.
 

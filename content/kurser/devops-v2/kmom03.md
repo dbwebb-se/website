@@ -161,12 +161,9 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen, se [SSH](#ssh).
     - Kontrollera att ni kan logga in som `deploy` med er nyckel och att `ssh azureuser@<ip>` och inloggning med lösenord nekas.
 
+
+
 ## Valfritt verktyg uppgift {#valfritt}
-
-[WARNING]
-Denna uppgiften är valfri, eftersom det har varit mycket problem med uppgifterna så har jag valt att göra denna valfri. Jag hoppas att lite fler av er kommer ikapp i kursen.
-[/WARNING]
-
 
 Välj ut ett valfritt verktyg som relaterar till devops och skriv en teknisk studie, likt den som görs i [vteams](https://dbwebb.se/kurser/vteam-v1/tekniska-rapporter), om hur man kan använda verktyget i Microblog.
 

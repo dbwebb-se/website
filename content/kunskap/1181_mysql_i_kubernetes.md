@@ -7,6 +7,7 @@ category:
     - kubernetes
     - mysql
 revision:
+    "2026-10-18": (B, aar) Rubriken sa att base64 skyddar lösenord, förklarar att det inte gör det.
     "2020-12-03": (A, moc) Skapad inför HT2020.
 ...
 
@@ -17,10 +18,14 @@ Vi läste tidigare att det inte är så bra att köra en databas i K8s, men vi g
 <!--more-->
 
 
-Skydda lösenord med Secrets {#losenord}
+Lösenord i Secrets {#losenord}
 --------------------------------------------------------
 
 Vi börjar med att skapa en [secret](https://kubernetes.io/docs/concepts/configuration/secret/) file då vi kommer sätta lösenord i deployments filerna. Vi behöver ett root lösenord och en lösenord åt Microblogen.
+
+[WARNING]
+Base64 är en kodning, inte kryptering. Alla som ser filen, eller kör `kubectl get secret -o yaml`, kan avkoda värdena med `base64 --decode`. En Secret skyddar alltså inte lösenordet i sig, det är åtkomsten till klustret som gör det. Skriv aldrig ett riktigt lösenord i en fil ni pushar till ett publikt repo. Ert kluster raderas efter kursmomentet, så använd lösenord som ni inte använder någon annanstans.
+[/WARNING]
 
 ```
 echo -n "my-super-secret-root-password" | base64

@@ -4,6 +4,7 @@ category:
     - devops
     - kubernetes
 revision:
+    "2026-10-18": (E, aar) Demo appen heter kubernetes-bootcamp i text och utskrifter (objektnamnen kuard är kvar).
     "2026-10-12": (D, aar) az, kubectl och helm finns i kursens dev container.
     "2026-10-10": (C, aar) AKS skapas med az cli och policyns nodstorlek, cert-manager v1.21.2.
     "2025-12-11": (B, aar) Bytte kuard till kubernetes-bootcamp.
@@ -12,7 +13,7 @@ revision:
 Sätt upp ett Kubernetes kluster i AKS med HTTPS
 ==================================
 
-[FIGURE src=/image/devops/sucess.png caption="kuard i webbläsaren"]
+[FIGURE src=/image/devops/sucess.png caption="Demo appen i webbläsaren"]
 
 Nu ska vi lära oss att sätta upp ett Kubernetes kluster i Azure med deras AKS tjänst. I klustret startar vi upp en simpel demo app och kopplar på HTTPS med hjälp av en [Nginx ingress](https://kubernetes.github.io/ingress-nginx) och en [Cert-manager](https://cert-manager.io).
 
@@ -246,7 +247,7 @@ Gå in på Azure och DNS zone, uppdatera era A records till att peka på er exte
 
 ### Driftsätt demo appen {#deploy}
 
-Vi kommer använda oss av demo appen [kuard](https://github.com/kubernetes-up-and-running/kuard) för att testa få igång allt. Jag förväntar mig att hi har koll på hur yml filerna ser ut för kubernetes och kommer därför inte förklara innehåller nedanför jätte mycket.
+Vi kommer använda oss av demo appen [kubernetes-bootcamp](https://kubernetes.io/docs/tutorials/kubernetes-basics/) för att testa få igång allt. Objekten i guiden heter `kuard`, det är ett namn kvar från en tidigare demo app och har inget med appen att göra. Jag förväntar mig att hi har koll på hur yml filerna ser ut för kubernetes och kommer därför inte förklara innehåller nedanför jätte mycket.
 
 Vi börjar med en deployment för själva appen. Lägg följande innehåll i filen `01-deployment.yml`
 
@@ -385,42 +386,9 @@ Ni kan också testa det från terminalen med `curl -kivL http://<domän>` eller 
 alternativt
 
 ```
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>KUAR Demo</title>
-
-  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/styles.css">
-
-  <script>
-var pageContext = {"hostname":"kuard-5cd5556bc9-mml79","addrs":["10.244.0.10"],"version":"v0.8.1-1","versionColor":"hsl(18,100%,50%)","requestDump":"GET / HTTP/1.1\r\nHost: arnesson.tech\r\nAccept: */*\r\nUser-Agent: curl/7.74.0\r\nX-Forwarded-For: 10.244.0.1\r\nX-Forwarded-Host: arnesson.tech\r\nX-Forwarded-Port: 443\r\nX-Forwarded-Proto: https\r\nX-Forwarded-Scheme: https\r\nX-Real-Ip: 10.244.0.1\r\nX-Request-Id: 8d31add9483d046f572171216e7f01b7\r\nX-Scheme: https","requestProto":"HTTP/1.1","requestAddr":"10.244.0.8:48746"}
-  </script>
-</head>
-
-
-<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-<symbol id="icon-power" viewBox="0 0 32 32">
-<title>power</title>
-<path class="path1" d="M12 0l-12 16h12l-8 16 28-20h-16l12-12z"></path>
-</symbol>
-<symbol id="icon-notification" viewBox="0 0 32 32">
-<title>notification</title>
-<path class="path1" d="M16 3c-3.472 0-6.737 1.352-9.192 3.808s-3.808 5.72-3.808 9.192c0 3.472 1.352 6.737 3.808 9.192s5.72 3.808 9.192 3.808c3.472 0 6.737-1.352 9.192-3.808s3.808-5.72 3.808-9.192c0-3.472-1.352-6.737-3.808-9.192s-5.72-3.808-9.192-3.808zM16 0v0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16zM14 22h4v4h-4zM14 6h4v12h-4z"></path>
-</symbol>
-</defs>
-</svg>
-
-<body>
-  <div id="root"></div>
-  <script src="/built/bundle.js" type="text/javascript"></script>
-</body>
-</html>
-* Connection #1 to host arnesson.tech left intact
+...
+Hello Kubernetes bootcamp! | Running on: kuard-5cd5556bc9-mml79 | v=1
+* Connection #1 to host <domännamn> left intact
 ```
 
 Nu är ni redo att skaffa certifikat för HTTPS.
@@ -773,7 +741,7 @@ Om det tar tid kan ni kolla om `kubectl describe order` och `kubectl describe ch
 
 That's it! Nu kan ni gå till er domän i webbläsaren och ni borde mötas av en liknande vy. Om ni får fel kan det vara så att Microsoft's DNS inte har uppdaterats. Gå till `https://www.nslookup.io/website-to-ip-lookup/` och skriva in er domän. Kolla att den är kopplad till rätt IP. Om den inte är det dubbelkolla att ni har sparat ändringen i Azure annars är det bara att vänta. Ni kan också testa en annan webbläsare eller `wget <er domän> && cat index.html`.
 
-[FIGURE src=/image/devops/sucess.png caption="kuard i webbläsaren"]
+[FIGURE src=/image/devops/sucess.png caption="Demo appen i webbläsaren"]
 
 
 

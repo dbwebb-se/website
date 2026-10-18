@@ -3,6 +3,7 @@
 author:
     - aar
 revision:
+    "2026-10-18": "(G, aar) Lista över det som behövs från tidigare kmom innan Microblog i Kubernetes."
     "2026-10-10": "(F, aar) Klustret skapas som i guiden, installera ingress och cert-manager igen, HPA kräver resource requests, liveness, dubbla ankare."
     "2024-12-10": "(E, aar) Flyttat till kmom05 från kmom06."
     "2021-12-03": "(C, aar) Bytt Minikube till AKS."
@@ -138,6 +139,15 @@ Ni ska nu jobba igenom en artikel som går igenom hur vi sätter upp ett kluster
 - Jobba igenom [Sätt upp ett Kubernetes kluster i AKS med HTTPS](kunskap/aks-kluster-https).
 
 ### Microblog i Kubernetes {#microblog}
+
+[INFO]
+Det här behöver ni ha från tidigare kmom innan ni börjar:
+
+- Er Microblog image på Docker Hub, `<ert användarnamn>/microblog:<version>`, med en fast version (från CD kedjan i kmom01).
+- Er domän och DNS zonen i Azure (den ska ni ha kvar).
+- En e-postadress till Let's Encrypt.
+- `az`, `kubectl` och `helm` finns i er dev container.
+[/INFO]
 
 Nu ska ni sätta upp Microbloggen i Kubernetes. Skapa ett nytt kluster i AKS på samma sätt som i guiden. Ni behöver också installera ingress-nginx och cert-manager i det nya klustret och skapa era Issuers igen, och peka om er DNS record till den nya externa IP:n. Arbetet är uppdelat i tre sektioner nedanför. Spara alla filer i `kubernetes/` mappen.
 

@@ -2,6 +2,7 @@
 author:
   - aar
 revision:
+    "2026-10-18": "(D, aar) Förklarar varningen om host pattern provisioning vid syntax-check."
   "2026-10-09": "(C, aar) Tre VM's istället för fyra, stop/start playbooks, certbot staging, Azure förberedelser i egen guide, version route flyttad till kmom01, mer hjälp med vanliga fel."
   "2025-11-14": "(B, aar) Flyttat runt texten och gjort om för att de inte skapar någon VM i kmom01. Ger mer färdig kod."
   "2023-11-09": "(A, aar) Första versionen."
@@ -64,6 +65,8 @@ Skapa och radera hela miljön med `terminate_instances.yml` och `site.yml` tar u
 
 [INFO]
 Playbooks skriver många rader `FAILED - RETRYING` när de väntar på att Azure ska bli klart. Det är normalt, Ansible försöker bara igen. Det är först när det står `fatal` eller `failed=1` som något är fel.
+
+På samma sätt är varningen `Could not match supplied host pattern, ignoring: provisioning` ofarlig. Den kommer när ni kör `--syntax-check`, för servrarna i gruppen `provisioning` skapas av playbooken först när den körs.
 [/INFO]
 
 ## Infrastructure as Code och Configuration Management {#iac-cm}

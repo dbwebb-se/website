@@ -4,6 +4,7 @@ category:
     - devops
     - docker
 revision:
+    "2026-10-18": (E, aar) Förklarar att Python 3.8 är gammalt med flit och att --link är gammalt.
     "2026-10-14": (D, aar) Uppdaterade exempelutskrifterna, testade med Docker 28.
     "2022-11-03": (C, aar) La till heredoc och logs.
     "2021-11-09": (B, aar) Updaterade python version för att bli av med gcc problem.
@@ -31,6 +32,10 @@ Det första steget i att skapa en container för Microblog är att bygga en *ima
 
 
 `docker/Dockerfile_prod` för Microblog:
+
+[INFO]
+Imagen `python:3.8-alpine` är gammal med flit, den passar de gamla paketen i `requirements`. I kmom03 skannar ni imagen med Trivy, då hittas säkerhetsproblem i den och ni byter till en nyare.
+[/INFO]
 
 ```dockerfile
 FROM python:3.8-alpine
@@ -205,6 +210,10 @@ $ docker run --name microblog -d -p 8000:5000 --rm -e SECRET_KEY=my-secret-key \
 ```
 
 I loggarna för microblogen kan du se om kopplingen mellan microblog och mysql fungerar, `docker logs microblog`. Om där inte är något fel så funkar det.
+
+[INFO]
+`--link` är en gammal funktion i Docker som inte längre utvecklas. Ni använder den här för att det är det enklaste sättet att koppla ihop två containrar för hand. I nästa uppgift gör ni samma sak med Docker Compose, som sköter nätverket mellan containrarna åt er.
+[/INFO]
 
 `--link` berättar för Docker att göra en annan container är tillgänglig. Argumentet innehåller två namn åtskilda av ett kolon. Den första delen är namnet eller ID på containern som ska länkas, i det här fallet den som heter `mysql` som vi skapade ovan. Den andra delen definierar ett host-namn som kan användas och hänvisar till den vi länkar. Här använder jag `dbserver` som representerar databasservern.
 

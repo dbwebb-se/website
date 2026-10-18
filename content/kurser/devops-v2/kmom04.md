@@ -2,6 +2,7 @@
 author:
   - aar
 revision:
+    "2026-10-18": "(F, aar) Påminnelse om att exportören måste läggas till före stacken startas."
   "2026-10-10": "(E, aar) Monitoring körs lokalt med docker compose, färdig konfiguration, redovisning med skärmdumpar."
   "2025-12-02": "(D, aar) Inkluderat del om använda AI för monitoring strategi."
   "2023-11-24": "(C, aar) Släppt för HT23."
@@ -91,6 +92,10 @@ Vi ska använda oss av [Prometheus](https://prometheus.io/), ett väldigt popul�
 Ni behöver inte skriva konfigurationen för Prometheus, Alertmanager och Grafana själva. Den finns färdig i mappen `monitoring/` i Microblog-repot. Er uppgift är att köra den, läsa den och förstå vad varje del gör.
 
 - Kolla på videorna 401-403 och 410-413 i spellistan [kursen devops](https://www.youtube.com/watch?v=u84GyxLGdEo&list=PLKtP9l5q3ce8s67TUj2qS85C4g1pbrx78&index=12) för att se hur de olika delarna hänger ihop. Videorna visar äldre versioner och sätter upp allt för hand, så följ inte kommandona exakt, det ni ska köra står nedan.
+
+[INFO]
+Appen exponerar ingen `/metrics` förrän ni har gjort Uppgift 1 nedan (lägg till exportören och bygg om imagen). Gör den först, kör sedan kommandot här.
+[/INFO]
 
 Hela övervakningen körs lokalt på er dator, inte på en VM. Den startas genom att lägga till filen `monitoring/docker-compose.yml` till er egen `docker-compose.yml` (den kräver att er tjänst för appen heter `prod`):
 

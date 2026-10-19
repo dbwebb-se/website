@@ -2,6 +2,7 @@
 author:
   - aar
 revision:
+    "2026-10-19": "(F, aar) Om att köra om 10-first-minutes på servrar som redan är körda."
     "2026-10-18": "(E, aar) Rad om att Trivy-delen är större än de andra verktygen."
   "2026-10-09": "(D, aar) Tre VM's, security groups och SSH konfiguration som Ansible kod, Trivy tips."
   "2025-11-27": "(C, aar) Tog bort ssh_scan. Är deprecated"
@@ -137,6 +138,7 @@ I uppgiften ska ni lägga den rekommenderade konfigurationen i `10-first-minutes
 - Sökvägen till sftp-servern i guiden är fel för Ubuntu. Ta reda på rätt sökväg på servern, annars klagar Ansible.
 - Lägg till `UsePAM yes`, annars får ni ingen riktig inloggningssession på Ubuntu.
 - Lägg inte `AllowUsers deploy` i templaten så länge ert play loggar in som `azureuser`, då låser ni ute er själva mitt i playbooken. Det finns redan ett steg som lägger till den raden i slutet av rollen.
+- `10-first-minutes` loggar in som `azureuser`, som tas bort i slutet av rollen. På servrar som redan är körda går det därför inte att köra om rollen som den är. Bygg om miljön med `site.yml`, eller byt `remote_user` till `deploy` i playbooken.
 
 #### Hur säker är vår CI/CD pipeline? {#cicd}
 

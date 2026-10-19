@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2026-10-18": "(C, aar) Minnestips för MySQL på load balancer VM:en."
     "2026-10-09": "(B, aar) Databasen körs på load balancer VM:en, restart policy, python3-docker, certbot staging."
     "2025-11-14": "(A, aar) Första versionen."
 ...
@@ -46,6 +47,8 @@ Ni kan använda `ansible-lint` för att få tips på hur ni bör skriva er Ansib
 När ni startar MySQL containern kan ni **inte** använda hashade lösenord, MySQL klara inte av det. De måste vara i plain-text. 
 
 När ni startar containern skicka också med `MYSQL_ROOT_PASSWORD=<password>` som environment variabel, ni kommer använda det längre fram. MySQL kräver också att ni sätter databasens namn, användare och lösenord för användaren, se dokumentationen för [mysql](https://hub.docker.com/_/mysql) imagen. Lösenorden hamnar i klartext i er kod, så använd inte samma lösenord som ni använder någon annanstans.
+
+Load balancer VM:en har bara 1 GB minne och delar det med Nginx, Docker och MySQL. MySQL 5.7 använder mycket minne som standard och första starten, när databasen skapas, kan få VM:en att sluta svara (SSH får timeout). Starta containern med flaggorna `--performance-schema=off --innodb-buffer-pool-size=64M --max-connections=50` (som `command` till containern). Rollen `10-first-minutes` lägger också till en swapfil av samma skäl. Första starten tar en stund, vänta tills MySQL går att logga in på med appens användare innan ni startar appen.
 
 
 

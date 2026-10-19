@@ -2,6 +2,7 @@
 author:
   - aar
 revision:
+    "2026-10-18": "(E, aar) Rad om att Trivy-delen är större än de andra verktygen."
   "2026-10-09": "(D, aar) Tre VM's, security groups och SSH konfiguration som Ansible kod, Trivy tips."
   "2025-11-27": "(C, aar) Tog bort ssh_scan. Är deprecated"
   "2024-11-29": "(B, aar) Hopslagning av devsecops och valfritt verktyg till ett kmom."
@@ -153,6 +154,7 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
 ## devsecops uppgifter {#uppgifter}
 
 1. Implementera [Kontinuerlig säkerhet](uppgift/microblog-continuous-security) i Github Actions.
+    - Trivy kommer hitta många fel i Microblog, det är meningen. Ni byter bas-image och uppgraderar paketen (en testad lista finns, se uppgiften), och rättar sedan det som går sönder i koden. Testa mot MySQL efteråt. Det tar längre tid än de andra verktygen, börja med det tidigt i veckan.
 1. Uppdatera Security groups så att de bara tillåter de ip-adresser som behöver tillgång till specifika portar.
     - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Övriga portar ska bara ta emot trafik från de virtuella maskiner som ska använda dem. Bara appservrarna ska få koppla upp sig till mysql porten (3306), den ligger i load balancerns security group eftersom databasen körs på load balancer VM:en. Bara load balancern ska nå port 8000 på appservrarna.
     - I `roles/security_groups/vars/main.yml` finns variablerna `app_sources` och `lb_sources` med IP adresserna (med `/32`) som regeln ska tillåta. Använd dem i de regler som ska stängas. Läs i filen hur variablerna är gjorda och förklara varför de har ett värde före `gather_instances`.

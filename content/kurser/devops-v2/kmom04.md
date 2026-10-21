@@ -3,11 +3,11 @@ author:
   - aar
 revision:
     "2026-10-18": "(F, aar) Påminnelse om att exportören måste läggas till före stacken startas."
-  "2026-10-10": "(E, aar) Monitoring körs lokalt med docker compose, färdig konfiguration, redovisning med skärmdumpar."
-  "2025-12-02": "(D, aar) Inkluderat del om använda AI för monitoring strategi."
-  "2023-11-24": "(C, aar) Släppt för HT23."
-  "2020-11-19": "(B, aar) Släppt för HT20."
-  "2019-10-15": "(A, aar) Första versionen."
+    "2026-10-10": "(E, aar) Monitoring körs lokalt med docker compose, färdig konfiguration, redovisning med skärmdumpar."
+    "2025-12-02": "(D, aar) Inkluderat del om använda AI för monitoring strategi."
+    "2023-11-24": "(C, aar) Släppt för HT23."
+    "2020-11-19": "(B, aar) Släppt för HT20."
+    "2019-10-15": "(A, aar) Första versionen."
 ...
 
 # Kmom04: Monitoring

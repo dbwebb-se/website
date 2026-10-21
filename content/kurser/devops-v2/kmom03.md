@@ -4,10 +4,10 @@ author:
 revision:
     "2026-10-19": "(F, aar) Om att köra om 10-first-minutes på servrar som redan är körda."
     "2026-10-18": "(E, aar) Rad om att Trivy-delen är större än de andra verktygen."
-  "2026-10-09": "(D, aar) Tre VM's, security groups och SSH konfiguration som Ansible kod, Trivy tips."
-  "2025-11-27": "(C, aar) Tog bort ssh_scan. Är deprecated"
-  "2024-11-29": "(B, aar) Hopslagning av devsecops och valfritt verktyg till ett kmom."
-  "2023-11-17": "(A, aar) Första versionen."
+    "2026-10-09": "(D, aar) Tre VM's, security groups och SSH konfiguration som Ansible kod, Trivy tips."
+    "2025-11-27": "(C, aar) Tog bort ssh_scan. Är deprecated"
+    "2024-11-29": "(B, aar) Hopslagning av devsecops och valfritt verktyg till ett kmom."
+    "2023-11-17": "(A, aar) Första versionen."
 ...
 
 # Kmom03: DevSecOps och valfritt verktyg

@@ -33,6 +33,7 @@ COPY htdocs htdocs
 COPY script script
 COPY docker/error_reporting.php config/error_reporting.php
 COPY docker/php.ini /usr/local/etc/php/conf.d/zz-prod.ini
+COPY docker/prepend.php /usr/local/lib/prepend.php
 COPY docker/apache.conf /etc/apache2/sites-enabled/000-dbwebb.conf
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 

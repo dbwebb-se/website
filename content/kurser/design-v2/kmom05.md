@@ -55,7 +55,7 @@ Behöver bilderna vara likadana på en desktop och en mobil? Ibland vill man ski
 
 Vi har många frågeställningar om bilder, men låt se om vi kan bringa klarhet i några av dem.
 
-[FIGURE src="image/snapht18/kabbe.jpg?w=200&cf&sharpen&crop=150,100,730,255&f=grayscale&f1=contrast,-15&sharpen&convolve=draw:emboss" class="center" caption="Som sagt, bilder."]
+[FIGURE src="image/snapht18/kabbe.jpg?w=200&cf&sharpen&crop=150,100,730,255&f=grayscale&f1=contrast,-15&sharpen&convolve=emboss" class="center" caption="Som sagt, bilder."]
 
 Innan du påbörjar kursmomentet så kan du ta en sväng ut i skogen, eller staden, ta med din kamera och fota loss lite. Så får du lite material att lägga upp på din redovisa-sida.
 

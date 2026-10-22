@@ -1,0 +1,16 @@
+.git
+.github
+vendor
+cache
+log
+backup
+build
+theme
+node_modules
+Makefile
+docker-compose.yml
+README.md
+# Not used in the container: submodules, the forum and the lab link.
+htdocs/repo
+htdocs/forum
+htdocs/lab

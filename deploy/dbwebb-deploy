@@ -1,0 +1,48 @@
+#!/bin/bash
+# Deploy dbwebb.se: update the clone in /srv/dbwebb/src, build the image, restart the container.
+# Run as root, normally via sudo from the forced command of the deploy user (see deploy/README.md).
+# Rolls back to the previous image if the new container does not become healthy.
+#   dbwebb-deploy              fetch origin/master first (what CD does)
+#   dbwebb-deploy --no-fetch   build what is in /srv/dbwebb/src as it is
+set -euo pipefail
+cd /srv/dbwebb/src
+if [ "${1:-}" != "--no-fetch" ]; then
+    git fetch -q --depth 1 origin master
+    git reset -q --hard FETCH_HEAD
+    git clean -fdq
+fi
+[ -f Dockerfile ] || { echo "No Dockerfile in /srv/dbwebb/src" >&2; exit 1; }
+
+docker build -q -t dbwebb:new .
+docker image inspect dbwebb:local >/dev/null 2>&1 && docker tag dbwebb:local dbwebb:prev
+
+run() {
+    docker rm -f dbwebb >/dev/null 2>&1 || true
+    docker run -d --name dbwebb --restart unless-stopped \
+        --read-only --cap-drop ALL --security-opt no-new-privileges:true \
+        --memory 640m --pids-limit 150 \
+        --log-opt max-size=10m --log-opt max-file=3 \
+        --tmpfs /tmp:mode=1777 --tmpfs /var/run/apache2:uid=33,gid=33 --tmpfs /var/lock/apache2:uid=33,gid=33 \
+        --tmpfs /app/cache/anax:uid=33,gid=33,size=256m \
+        -v dbwebb-cimage:/app/cache/cimage \
+        -p 127.0.0.1:8282:8080 "$1" >/dev/null
+}
+healthy() {
+    for _ in $(seq 1 30); do
+        sleep 1
+        [ "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8282/om)" = 200 ] && return 0
+    done
+    return 1
+}
+
+run dbwebb:new
+if healthy; then
+    docker tag dbwebb:new dbwebb:local
+    docker image prune -f >/dev/null
+    echo "Deployed $(git rev-parse --short HEAD) as $(docker image inspect -f '{{.Id}}' dbwebb:local | cut -c8-19)"
+else
+    echo "New container not healthy, rolling back" >&2
+    docker logs dbwebb 2>&1 | tail -5 >&2
+    docker image inspect dbwebb:prev >/dev/null 2>&1 && { run dbwebb:prev; docker tag dbwebb:prev dbwebb:local; }
+    exit 1
+fi

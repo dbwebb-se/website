@@ -23,8 +23,9 @@ The Caddy site for the container is a plain `reverse_proxy 127.0.0.1:8282`.
 
 On push to master, `.github/workflows/deploy.yml` builds the image on GitHub, pushes it to
 `ghcr.io/dbwebb-se/website:<sha>` (and `:latest`) and runs `dbwebb-deploy <sha>` on the host over SSH, which pulls
-that image and restarts the container (with rollback). The package must be **public** so the host can pull without a token
-(the repo is public too, and the image holds nothing that is not in the repo).
+that image and restarts the container (with rollback). The package is private (the organization does not allow public packages), so the deploy job sends its short-lived
+`GITHUB_TOKEN` on stdin and the host uses it for that one pull only. The package must be linked to this repo (it is, when
+pushed from the workflow) so the token can read it.
 
 The SSH key is restricted to `command="/usr/local/bin/dbwebb-deploy-ssh",restrict`, a wrapper that only accepts a
 40 character commit sha, and a sudoers rule allows the deploy user to run only `/usr/local/sbin/dbwebb-deploy`:

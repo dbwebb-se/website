@@ -2,14 +2,21 @@
 # Deploy dbwebb.se: update the clone in /srv/dbwebb/src, build the image, restart the container.
 # Run as root, normally via sudo from the forced command of the deploy user (see deploy/README.md).
 # Rolls back to the previous image if the new container does not become healthy.
-#   dbwebb-deploy <commit-sha>  pull the image CI built (ghcr.io/dbwebb-se/website:<sha>), what CD does
+#   dbwebb-deploy <commit-sha>  pull the image CI built (ghcr.io/dbwebb-se/website:<sha>), what CD does;
+#                               a registry token is read from stdin
 #   dbwebb-deploy               fetch origin/master and build the image here
 #   dbwebb-deploy --no-fetch    build what is in /srv/dbwebb/src as it is
 set -euo pipefail
 IMAGE=ghcr.io/dbwebb-se/website
 cd /srv/dbwebb/src
 if [[ "${1:-}" =~ ^[0-9a-f]{40}$ ]]; then
-    docker pull -q "$IMAGE:$1" >/dev/null
+    # The package is private (the organization does not allow public ones). CD sends the short-lived
+    # GITHUB_TOKEN of the running job on stdin; it is used for this pull only and never stored.
+    read -r token
+    cfg=$(mktemp -d)
+    trap 'rm -rf "$cfg"' EXIT
+    printf '%s' "$token" | DOCKER_CONFIG="$cfg" docker login ghcr.io -u github-actions --password-stdin >/dev/null
+    DOCKER_CONFIG="$cfg" docker pull -q "$IMAGE:$1" >/dev/null
     docker tag "$IMAGE:$1" dbwebb:new
 else
     if [ "${1:-}" != "--no-fetch" ]; then

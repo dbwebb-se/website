@@ -3,6 +3,7 @@ name: Deploy to do6
 # Builds the image here, pushes it to ghcr.io/dbwebb-se/website and asks do6 to pull it and restart
 # the dbwebb.se container. The deploy key can only run /usr/local/bin/dbwebb-deploy-ssh (forced
 # command, no shell), which accepts nothing but a commit sha.
+# The short-lived GITHUB_TOKEN of this run is sent on stdin so the host can pull the private image.
 on:
   push:
     branches: [master]
@@ -37,6 +38,8 @@ jobs:
   deploy:
     needs: image
     runs-on: ubuntu-latest
+    permissions:
+      packages: read
     steps:
       - name: Prepare ssh
         env:
@@ -51,5 +54,6 @@ jobs:
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "$SSH_USER@$SSH_HOST" "${{ github.sha }}"
+          printf '%s\n' "$TOKEN" | ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "$SSH_USER@$SSH_HOST" "${{ github.sha }}"

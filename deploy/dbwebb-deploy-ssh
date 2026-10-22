@@ -1,0 +1,5 @@
+#!/bin/bash
+# Forced command for the CD key: pass on only a commit sha to dbwebb-deploy.
+sha="${SSH_ORIGINAL_COMMAND:-}"
+[[ "$sha" =~ ^[0-9a-f]{40}$ ]] || { echo "Expected a 40 character commit sha" >&2; exit 1; }
+exec sudo /usr/local/sbin/dbwebb-deploy "$sha"

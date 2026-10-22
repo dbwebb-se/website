@@ -2,18 +2,24 @@
 # Deploy dbwebb.se: update the clone in /srv/dbwebb/src, build the image, restart the container.
 # Run as root, normally via sudo from the forced command of the deploy user (see deploy/README.md).
 # Rolls back to the previous image if the new container does not become healthy.
-#   dbwebb-deploy              fetch origin/master first (what CD does)
-#   dbwebb-deploy --no-fetch   build what is in /srv/dbwebb/src as it is
+#   dbwebb-deploy <commit-sha>  pull the image CI built (ghcr.io/dbwebb-se/website:<sha>), what CD does
+#   dbwebb-deploy               fetch origin/master and build the image here
+#   dbwebb-deploy --no-fetch    build what is in /srv/dbwebb/src as it is
 set -euo pipefail
+IMAGE=ghcr.io/dbwebb-se/website
 cd /srv/dbwebb/src
-if [ "${1:-}" != "--no-fetch" ]; then
-    git fetch -q --depth 1 origin master
-    git reset -q --hard FETCH_HEAD
-    git clean -fdq
+if [[ "${1:-}" =~ ^[0-9a-f]{40}$ ]]; then
+    docker pull -q "$IMAGE:$1" >/dev/null
+    docker tag "$IMAGE:$1" dbwebb:new
+else
+    if [ "${1:-}" != "--no-fetch" ]; then
+        git fetch -q --depth 1 origin master
+        git reset -q --hard FETCH_HEAD
+        git clean -fdq
+    fi
+    [ -f Dockerfile ] || { echo "No Dockerfile in /srv/dbwebb/src" >&2; exit 1; }
+    docker build -q -t dbwebb:new .
 fi
-[ -f Dockerfile ] || { echo "No Dockerfile in /srv/dbwebb/src" >&2; exit 1; }
-
-docker build -q -t dbwebb:new .
 docker image inspect dbwebb:local >/dev/null 2>&1 && docker tag dbwebb:local dbwebb:prev
 
 run() {
@@ -39,7 +45,7 @@ run dbwebb:new
 if healthy; then
     docker tag dbwebb:new dbwebb:local
     docker image prune -f >/dev/null
-    echo "Deployed $(git rev-parse --short HEAD) as $(docker image inspect -f '{{.Id}}' dbwebb:local | cut -c8-19)"
+    echo "Deployed ${1:-$(git rev-parse HEAD)} as $(docker image inspect -f '{{.Id}}' dbwebb:local | cut -c8-19)"
 else
     echo "New container not healthy, rolling back" >&2
     docker logs dbwebb 2>&1 | tail -5 >&2

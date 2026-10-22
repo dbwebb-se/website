@@ -21,6 +21,15 @@ The Caddy site for the container is a plain `reverse_proxy 127.0.0.1:8282`.
 
 ## Continuous deploy
 
-A GitHub Action can run `dbwebb-deploy` over SSH with a key restricted to that one command
-(`command="sudo /usr/local/sbin/dbwebb-deploy",restrict`), and a sudoers rule that allows only that script.
-The host pulls the repo itself (the repo is public), so nothing large is uploaded.
+On push to master, `.github/workflows/deploy.yml` builds the image on GitHub, pushes it to
+`ghcr.io/dbwebb-se/website:<sha>` (and `:latest`) and runs `dbwebb-deploy <sha>` on the host over SSH, which pulls
+that image and restarts the container (with rollback). The package must be **public** so the host can pull without a token
+(the repo is public too, and the image holds nothing that is not in the repo).
+
+The SSH key is restricted to `command="/usr/local/bin/dbwebb-deploy-ssh",restrict`, a wrapper that only accepts a
+40 character commit sha, and a sudoers rule allows the deploy user to run only `/usr/local/sbin/dbwebb-deploy`:
+
+    sudo install -o root -g root -m 755 deploy/dbwebb-deploy /usr/local/sbin/dbwebb-deploy
+    sudo install -o root -g root -m 755 deploy/dbwebb-deploy-ssh /usr/local/bin/dbwebb-deploy-ssh
+
+`dbwebb-deploy` without arguments still builds on the host from a fresh clone, as a fallback.

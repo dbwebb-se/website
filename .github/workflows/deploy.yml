@@ -1,8 +1,8 @@
 name: Deploy to do6
 
-# Asks do6 to pull master, build the image and restart the dbwebb.se container.
-# The deploy key can only run /usr/local/sbin/dbwebb-deploy (forced command, no shell).
-# Nothing is uploaded: the host fetches the (public) repo itself.
+# Builds the image here, pushes it to ghcr.io/dbwebb-se/website and asks do6 to pull it and restart
+# the dbwebb.se container. The deploy key can only run /usr/local/bin/dbwebb-deploy-ssh (forced
+# command, no shell), which accepts nothing but a commit sha.
 on:
   push:
     branches: [master]
@@ -11,7 +11,31 @@ on:
 concurrency: deploy
 
 jobs:
+  image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/dbwebb-se/website:${{ github.sha }}
+            ghcr.io/dbwebb-se/website:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
   deploy:
+    needs: image
     runs-on: ubuntu-latest
     steps:
       - name: Prepare ssh
@@ -23,9 +47,9 @@ jobs:
           printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-      - name: Build and restart
+      - name: Pull and restart
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
         run: |
-          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "$SSH_USER@$SSH_HOST"
+          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "$SSH_USER@$SSH_HOST" "${{ github.sha }}"

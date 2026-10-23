@@ -8,6 +8,9 @@ on:
   push:
     branches: [master]
   workflow_dispatch:
+  # Weekly rebuild on the latest php:8.4-apache, so PHP security patches arrive without a content change.
+  schedule:
+    - cron: '23 3 * * 0'
 
 concurrency: deploy
 
@@ -28,6 +31,7 @@ jobs:
       - uses: docker/build-push-action@v6
         with:
           context: .
+          pull: true
           push: true
           tags: |
             ghcr.io/dbwebb-se/website:${{ github.sha }}

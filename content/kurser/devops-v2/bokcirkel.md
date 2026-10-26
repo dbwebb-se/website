@@ -39,14 +39,14 @@ Upplägg {#upplag}
 Inför en träff ska ni läsa relevant del av boken och anteckna det som står under [När ni läser boken](#reading). När vi träffas och har bokcirkel delas ni in i grupper om 3-4 studenter och diskuterar det som står under [Att diskutera på mötet](#meeting). På sista träffen när ni har läst hela boken ska ni diskutera några extra frågor som står under [Extra saker att diskutera på sista mötet](#last).
 
 
-| Del i boken att läsa | Veckan vi träffas och pratar om den |
-|-------------|------------------------------------|
-| Part I. What is Devops? | vecka 2 |
-| Part II. Collaboration | vecka 3 |
-| Part III. Affinity | vecka 4 |
-| Part IV. Tools | vecka 5 |
-| Part V Scaling | vecka 6 |
-| Part VI. Bridging Devops Cultures | vecka 7 |
+| Del i boken att läsa | Veckan vi träffas och pratar om den | Anteckning |
+|-------------|------------------------------------|----------------|
+| Part I. What is Devops? | vecka 2 | |
+| Part II. Collaboration | vecka 3 | |
+| Part III. Affinity | vecka 5 | Notera att ni har två veckor på er att läsa detta kapitel |
+| Part IV. Tools | vecka 6 | |
+| Part V Scaling | vecka 7 | |
+| Part VI. Bridging Devops Cultures | - | Vi skippar detta kapitel, det är mest repetition |
 
 
 

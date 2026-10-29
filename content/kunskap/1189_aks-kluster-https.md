@@ -4,6 +4,7 @@ category:
     - devops
     - kubernetes
 revision:
+    "2026-10-29": (F, aar) Noden Standard_B2ls_v2 och Azure CLI 2.91.0 eller nyare.
     "2026-10-18": (E, aar) Demo appen heter kubernetes-bootcamp i text och utskrifter (objektnamnen kuard är kvar).
     "2026-10-12": (D, aar) az, kubectl och helm finns i kursens dev container.
     "2026-10-10": (C, aar) AKS skapas med az cli och policyns nodstorlek, cert-manager v1.21.2.
@@ -74,10 +75,12 @@ Jobba igenom videon nedanför och skapa ett kluster.
 Videon är från 2021 och portalen ser annorlunda ut idag. Ni kan skapa samma kluster från terminalen:
 
 ```
-az aks create --resource-group <resursgrupp> --name <klusternamn> --location northeurope --node-count 1 --node-vm-size Standard_B2ms --tier free --no-ssh-key
+az aks create --resource-group <resursgrupp> --name <klusternamn> --location northeurope --node-count 1 --node-vm-size Standard_B2ls_v2 --tier free --no-ssh-key
 ```
 
-Skolans Azure policy tillåter bara den gratis nivån (`--tier free`) och noder av typen `Standard_B2ms`, andra storlekar ger felet `RequestDisallowedByPolicy`. Det tar ungefär fem minuter. Resursgruppen är samma som ni använde för VM:arna i kmom02.
+Skolans Azure policy tillåter bara den gratis nivån (`--tier free`). Noden `Standard_B2ls_v2` (2 vCPU, 4 GB) räcker för MySQL, Microblog och ingressen. Det tar ungefär fem minuter. Resursgruppen är samma som ni använde för VM:arna i kmom02.
+
+Använd Azure CLI 2.91.0 eller nyare, den version som finns i er dev container (`az version`). Med en äldre version, till exempel 2.72.0, fick vi `RequestDisallowedByPolicy` (`Allowed Kubernetes Tier`) trots att `--tier free` var med. Får ni det felet, kör kommandot i dev containern. Policyn har ändrats mellan terminerna, står det en annan storlek i felmeddelandet än `Standard_B2ls_v2`, använd den.
 
 När ni har skapat ett kluster ska vi göra så att vi kommer åt det med kubectl.
 

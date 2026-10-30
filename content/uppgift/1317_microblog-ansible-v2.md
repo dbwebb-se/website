@@ -61,8 +61,6 @@ När ni ska koppla Flask appen till databasen behöver ni IP addressen för data
 
 Ni hittar loggfilerna för Nginx i `/var/log/nginx`. Om en konfig fil inte fungerar kan ni köra `nginx -t` för att validera den.
 
-Tänk på att ni kan använda `sudo nginx -t` som `validate` steg, på tasks i Ansible, för att validera er Nginx konfiguration.
-
 Certbot och HTTPS är redan gjort i rollen `deploy_lb`. Läs om `certbot_staging` nedanför.
 
 

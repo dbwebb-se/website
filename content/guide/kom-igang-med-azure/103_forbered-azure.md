@@ -12,6 +12,8 @@ Innan ni kan köra Ansible koden mot Azure behöver ni en SSH nyckel och en inlo
 
 Ansible lägger er publika SSH nyckel på alla VM's som skapas. När ni jobbade med i videon som skapade en VM skapade ni en SSH nyckel och fick två filer, `~/.ssh/azure` (privat, dela den aldrig) och `~/.ssh/azure.pub` (publik). Sökvägen till den publika nyckeln ska i `ansible/group_vars/all.yml` stå i `pub_ssh_key_location`.
 
+Har ni ingen nyckel, skapa en med `ssh-keygen -t ed25519 -f ~/.ssh/azure`. Det ger de två filerna ovan.
+
 
 ### Logga in {#login}
 

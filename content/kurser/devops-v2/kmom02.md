@@ -66,7 +66,7 @@ Skapa och radera hela miljön med `terminate_instances.yml` och `site.yml` tar u
 [INFO]
 Playbooks skriver många rader `FAILED - RETRYING` när de väntar på att Azure ska bli klart. Det är normalt, Ansible försöker bara igen. Det är först när det står `fatal` eller `failed=1` som något är fel.
 
-På samma sätt är varningen `Could not match supplied host pattern, ignoring: provisioning` ofarlig. Den kommer när ni kör `--syntax-check`, för servrarna i gruppen `provisioning` skapas av playbooken först när den körs.
+På samma sätt är varningen `Could not match supplied host pattern, ignoring: provisioning` ofarlig. Den kommer när ni kör `--syntax-check`, för servrarna i gruppen `provisioning` skapas av playbooken först när den körs. Får ni samma varning för `loadbalancer`, `database` eller `appserver` när ni kör en playbook på riktigt har `gather_instances` inte körts, och playbooken gör ingenting.
 [/INFO]
 
 ## Infrastructure as Code och Configuration Management {#iac-cm}
@@ -190,7 +190,7 @@ En deploy ska bara köras när Docker imagen är publicerad. Ett eget workflow s
 
    - Vid ny tag ska Actions köra Ansible playbooks som gör en valbar CD strategi för att driftsätta den nya versionen.
    - Er strategi ska inte ha någon downtime, så ni kan inte använda Recreate Deployment Strategy.
-   - En avslutande del i er CD playbook ska verifiera att rätt version av Microblog körs på produktionsservrarna. Använd routen `/version` som ni skapade i kmom01 och jämför med taggen.
+   - En avslutande del i er CD playbook ska verifiera att rätt version av Microblog körs på produktionsservrarna. Använd routen `/version` som ni skapade i kmom01 och jämför med taggen. Använder ni `delegate_to: localhost` för anropet ärver det `become` från er play, och dev containern har ingen `sudo`. Sätt `become: false` på uppgiften.
 
 ## Resultat & Redovisning {#resultat_redovisning}
 

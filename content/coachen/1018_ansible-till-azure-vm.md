@@ -66,4 +66,5 @@ Några saker att tänka på:
 - Under `on:` i workflow filen ska ni ha tag triggern från publish, inte push eller pull request.
 - Playbooken som körs mot servrarna pratar bara SSH, den behöver inte Azure collection. Ska ni köra en playbook som pratar med Azure behöver ni installera collection och logga in, det gör ni inte här.
 - `ansible.cfg` har `host_key_checking = False`, så GitHub Actions frågar inte om serverns host key. Det är bekvämt men gör att ni inte upptäcker om någon annan svarar på domännamnet.
-- Skicka lösenord och andra hemligheter till playbooken från secrets (`-e db_password="$DB_PASSWORD"`), inte i filer i repot.
+- Skicka lösenord och andra hemligheter till CD playbooken från secrets (`-e db_password="$DB_PASSWORD"`), inte som en ny fil i repot.
+- Databasen skapas med ett lösenord och appen loggar in med ett annat om de inte får samma värde. Använd samma lösenord i `DB_PASSWORD` som när ni skapade databasen, annars startar inte appen och ni får `Access denied` i containerns logg.

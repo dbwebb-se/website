@@ -149,7 +149,7 @@ Uppgifter  {#uppgifter}
 
 1. Skapa en Dockerfile för Microblog. Om ni redan har jobbat igenom [Docker](#docker) delen så är den klar. Filen ska heta `docker/Dockerfile_prod`. Filen `boot.sh` från guiden ligger i roten av repot.
 
-    - Validera filen med  `make validate-docker`. Kommandot använder hadolint. Det kan klaga på saker som guiden inte nämner, läs regeln i meddelandet och rätta Dockerfilen. Passar en regel inte kan ni stänga av den för en rad med en kommentar, t.ex. `# hadolint ignore=DL3018`. Skriv då varför.
+    - Validera filen med  `make validate-docker`. Kommandot använder hadolint. Det kan klaga på saker som guiden inte nämner, läs regeln i meddelandet och rätta Dockerfilen. Passar en regel inte kan ni stänga av den för en rad med en kommentar, t.ex. `# hadolint ignore=DL3018`. Kommentaren måste ligga direkt före raden den gäller, skriv varför på en rad ovanför.
     - Skapa en compose fil, `docker-compose.yml`, i root mappen av ert repo. Lägg till en service som startar prod containern mot en MySQL container.
 
         - Kommandot `docker-compose up prod` ska starta en MySQL och en microblog container.
@@ -189,7 +189,7 @@ Uppgifter  {#uppgifter}
     - Imagen ska ta emot versionen som ett build argument (`ARG APP_VERSION` i Dockerfilen) och sätta miljövariabeln. I `docker-compose.yml` kan ni skicka med `APP_VERSION` som build argument, ge den ett standardvärde.
     - Skapa en ny tagg (se nästa uppgift). CD kedjan ska bygga och publicera en ny image. Starta imagen från DockerHub och kontrollera att `/version` visar versionen från taggen.
 
-1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Taggen ska börja med `v`, t.ex. `v11.0.0`. Om ni får komplettering på en inlämning öka versionen.
+1. Tagga repot, följ semantiska versionshantering fast börja på siffran **11.0.0**. Jag har redan taggar detta repo och då kan ni inte börja på 0. Taggen ska börja med `v`, t.ex. `v11.0.0`. Om ni får komplettering på en inlämning öka versionen. Merga först er pull request, tagga sen `master`.
 
 [YOUTUBE src=bZa_2CbGz9c caption="Hur det kan se ut när det är klart"]
 

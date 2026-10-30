@@ -278,16 +278,7 @@ EOF
 
 #### Aktivera HereDoc {#heredoc}
 
-Om du har tillräckligt ny version av Docker räcker det med att lägga till `# syntax=docker/dockerfile:1.4` överst i din Dockerfile. Sen kan du skriva om koden och bygga din image igen. Om du får felet.... har du en för gammal version av Docker.
-
-Om du har en äldre version av Docker behöver du också sätta miljövariabeln `export DOCKER_BUILDKIT=1` innan du gör `build`. Det aktiverar ett bygg verktyg med mer funktionalitet. Men det funkar inte om du måste ha med `sudo` när du kör docker kommandon. För att slippa köra `sudo` behöver du lägga till din använda i dockers användargrupp. Gör det med:
-
-```
-sudo usermod -aG docker <användare>
-su - <användare>
-```
-
-Nu borde `docker build` med HereDoc i Dockerfile fungera.
+Om du har tillräckligt ny version av Docker räcker det med att lägga till `# syntax=docker/dockerfile:1.4` överst i din Dockerfile. Sen kan du skriva om koden och bygga din image igen. I dev containern fungerar det direkt. Klagar bygget på syntaxen har du en för gammal version av Docker, uppdatera den.
 
 
 En lista över hadolint's möjliga fel hittar du under [rules](https://github.com/hadolint/hadolint#rules), där finns också förslag på lösningar.

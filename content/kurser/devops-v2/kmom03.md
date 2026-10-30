@@ -161,6 +161,7 @@ Det är inte bara vår kod som behöver vara säker, även vår CI/CD infrastruk
     - Bara portarna 22, 80 och 443 ska alla IP's kunna koppla upp sig mot. Övriga portar ska bara ta emot trafik från de virtuella maskiner som ska använda dem. Bara appservrarna ska få koppla upp sig till mysql porten (3306), den ligger i load balancerns security group eftersom databasen körs på load balancer VM:en. Bara load balancern ska nå port 8000 på appservrarna.
     - I `roles/security_groups/vars/main.yml` finns variablerna `app_sources` och `lb_sources` med IP adresserna (med `/32`) som regeln ska tillåta. Använd dem i de regler som ska stängas. Läs i filen hur variablerna är gjorda och förklara varför de har ett värde före `gather_instances`.
     - Kör hela `site.yml` och kontrollera att sidan fungerar och att ni kan registrera en användare (då pratar appservrarna med databasen). Kontrollera att reglerna stängt portarna, t.ex. med `nc -zv -w 5 <ip> 3306` från er egen dator, den ska inte få kontakt.
+    - Kontrollen av `/version` som ni skrev i kmom02 körs från er dator mot `<ip>:8000`. När port 8000 bara släpper in load balancern når den inte fram, och `site.yml` stannar efter första appservern så att sidan ligger nere. Ändra kontrollen så att den körs på servern mot `localhost:8000`.
 
 1. Uppdatera Ansible rollen `10-first-minutes` så att alla servrar använder den rekommenderade SSH konfigurationen, se [SSH](#ssh).
     - Kontrollera att ni kan logga in som `deploy` med er nyckel och att `ssh azureuser@<ip>` och inloggning med lösenord nekas.

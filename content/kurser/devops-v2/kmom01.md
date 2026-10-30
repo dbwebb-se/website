@@ -159,10 +159,12 @@ Uppgifter  {#uppgifter}
     - Vid start ska container köra `make test` och sen stänga ner.
         - mapparna `app` och `tests` ska inte kopieras in utan ligga som volymer.
         - installera `requirements/test.txt` Istället för `prod.txt`.
-        - skapa en nytt skript som körs vid uppstart. Det ska köra `make test`, så alla tester körs.
+        - containern kör som root och skriver `__pycache__` i era volymer. Då får ni filer som ni inte kan ta bort själva om testerna misslyckas. Sätt miljövariabeln `PYTHONDONTWRITEBYTECODE=1` i imagen för att undvika det.
+        - skapa en nytt skript som körs vid uppstart, t.ex. `docker/test.sh`. Det ska köra `make test`, så alla tester körs.
         - imagen behöver innehålla `make` (i Alpine installeras det med `apk add make`) och filerna som `make test` använder: `Makefile`, `pytest.ini`, `.pylintrc` och `.coveragerc`.
     - Validera Docker filen med  `make validate-docker`.
     - Lägg till en ny service i `docker-compose.yml` som kör test containern. Den ska gå att starta med `docker-compose up test`.
+    - `docker-compose up` ger exit-kod 0 även om testerna i containern misslyckas. Använder ni det i CI blir pipelinen grön trots felande tester. Använd `--exit-code-from test` eller `docker-compose run` för att få med felkoden.
     - Om ni vill, ändra så testerna körs mot en MySQL server istället för SQLite.
 
 1. Sätt upp Continuous Integration. Koppla ditt repo till GitHub Actions. När du gör en push, till vilken branch som helst, ska Actions köra alla unittester, integrationtester och validera koden och Dockerfilerna (`make validate-docker`).

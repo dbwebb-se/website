@@ -31,7 +31,8 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
             - Kör med `docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:<version> image --scanners vuln,secret,misconfig --no-progress --severity HIGH,CRITICAL --exit-code 1 <er docker image>`.
                 - Ersätt `<er docker image>` med namnet på er image, t.ex. `microblog:prod`.
         - `fs` för att söka igenom hela repo mappen.
-            - Stå i ert repo och kör med `docker run --rm -v "$(pwd)":/repo -w /repo aquasec/trivy:<version> fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --exit-code 1 --no-progress --skip-dirs .venv,venv .`
+            - Stå i ert repo och kör med `docker run --rm -v "$(pwd)":/repo -w /repo aquasec/trivy:<version> fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --exit-code 1 --no-progress --skip-dirs .venv,venv,kubernetes .`
+            - Mappen `kubernetes` skippas. Den kommer först i kmom05 och innehåller manifest från guiderna, som Trivy annars klagar på.
     - Lägg till make kommando för båda `target`.
     - Lös felen som hittas, se [Trivy hittar många fel](#trivy-tips).
 
@@ -55,7 +56,7 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
 
 Trivy kommer hitta många fel i produktions imagen, mer än vad ni kan lösa genom att ändra någon enstaka rad. Det är meningen, det är så det ser ut i verkligheten när man inte uppdaterar. Felen kommer från två ställen:
 
-- **Base imagen** (`FROM python:3.8-alpine`). Python 3.8 och dess Alpine version är gamla. Byt till en nyare och använd en tag med fast version (Python version och Alpine version). Gör det i både `Dockerfile_prod` och `Dockerfile_test` så att ni testar på samma Python som ni kör i produktion.
+- **Base imagen** (`FROM python:3.8-alpine`). Python 3.8 och dess Alpine version är gamla. Byt till en nyare och använd en tag med fast version (Python version och Alpine version). Gör det i både `Dockerfile_prod` och `Dockerfile_test` så att ni testar på samma Python som ni kör i produktion. Samma gäller Python versionen som ert CI workflow använder (`python-version` i `setup-python`).
 - **Python paketen** i `requirements/prod.txt`. Flask och Werkzeug är för gamla. Uppgradera dem och de paket som hänger ihop med dem. Läs `pip` felmeddelandena och paketens ändringsloggar för att se vilka versioner som passar ihop. Sätt också fasta versioner på `gunicorn` och `pymysql` i `requirements.txt`.
   - Vill ni slippa leta versioner finns en testad lista i `requirements/prod-upgrade.txt` i Microblog-repot (synka er fork). Byt ut paketen i `prod.txt` mot dem. Listan ändrar inte koden, det som går sönder efter uppgraderingen rättar ni själva, och ni ska kunna förklara varför Trivy hittade de gamla versionerna.
 

@@ -71,6 +71,10 @@ Om det inte var pedagogiskt nog förklaring av Kubernetes kan jag rekommendera f
 
 #### Att göra {#k8s-do}
 
+[INFO]
+Övningarna i Learn Kubernetes basics, PHP Guestbook och WordPress gör ni i Minikube, inte i AKS. Installera [Minikube](https://minikube.sigs.k8s.io/docs/start/) på er egen dator, utanför dev containern och VS Code. Använd `kubectl` som följer med Minikube, kör `minikube kubectl -- <kommando>` eller skapa aliaset som [Minikubes guide](https://minikube.sigs.k8s.io/docs/start/) beskriver.
+[/INFO]
+
 - Jobba igenom modul 1-6 i [Learn Kubernetes basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/). För att få en bättre förståelse för grunderna i K8s (Kubernetes) och hur man kan interagera med det.
 
 #### Kubernetes yaml {#yaml}

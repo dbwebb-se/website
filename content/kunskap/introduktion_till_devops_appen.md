@@ -17,7 +17,7 @@ Vi behöver ett projekt/en app att jobba med när vi ska lära oss devops. Jag h
 
 ## Appen {#appen}
 
-Koden för appen är redan klar och finns i repot [devops](https://github.com/dbwebb-se/microblog), börja med att **forka** och klona din fork av repot. För att forka repot, klicka på knappen `Fork' uppe till vänster på Github sidan.
+Koden för appen är redan klar och finns i repot [devops](https://github.com/dbwebb-se/microblog), börja med att **forka** och klona din fork av repot. För att forka repot, klicka på knappen `Fork` uppe till höger på Github sidan.
 
 Här följer några videos som du kan kolla på för att sätta upp bloggen, få en uppfattning av hur den fungerar och hur koden ser ut. Använd även [The Flask mega tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) för att förstå koden.
 

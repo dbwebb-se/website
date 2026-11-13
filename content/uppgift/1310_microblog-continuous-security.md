@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2026-11-13": "(D, aar) Tips om OS paket i base imagen."
     "2026-10-18": "(C, aar) Genväg: testad lista med paketversioner i requirements/prod-upgrade.txt."
     "2026-10-09": "(B, aar) Fästa versioner, make kommandon, exit koder och tips för uppgraderingen som Trivy kräver."
     "2023-11-17": "(A, aar) Första versionen."
@@ -59,6 +60,7 @@ Trivy kommer hitta många fel i produktions imagen, mer än vad ni kan lösa gen
 - **Base imagen** (`FROM python:3.8-alpine`). Python 3.8 och dess Alpine version är gamla. Byt till en nyare och använd en tag med fast version (Python version och Alpine version). Gör det i både `Dockerfile_prod` och `Dockerfile_test` så att ni testar på samma Python som ni kör i produktion. Samma gäller Python versionen som ert CI workflow använder (`python-version` i `setup-python`).
 - **Python paketen** i `requirements/prod.txt`. Flask och Werkzeug är för gamla. Uppgradera dem och de paket som hänger ihop med dem. Läs `pip` felmeddelandena och paketens ändringsloggar för att se vilka versioner som passar ihop. Sätt också fasta versioner på `gunicorn` och `pymysql` i `requirements.txt`.
   - Vill ni slippa leta versioner finns en testad lista i `requirements/prod-upgrade.txt` i Microblog-repot (synka er fork). Byt ut paketen i `prod.txt` mot dem. Listan ändrar inte koden, det som går sönder efter uppgraderingen rättar ni själva, och ni ska kunna förklara varför Trivy hittade de gamla versionerna.
+  - Listan gäller Python paketen. Trivy kan också hitta fel i operativsystemets paket i base imagen, de rättar ni i er Dockerfile (t.ex. med `apk --no-cache upgrade`).
 
 Efter uppgraderingen går inte allt som förut:
 

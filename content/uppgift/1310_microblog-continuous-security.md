@@ -2,7 +2,7 @@
 author:
     - aar
 revision:
-    "2026-11-13": "(D, aar) Tips om OS paket i base imagen."
+    "2026-11-13": "(D, aar) Tips om OS paket i base imagen, ignore filer och Makefile."
     "2026-10-18": "(C, aar) Genväg: testad lista med paketversioner i requirements/prod-upgrade.txt."
     "2026-10-09": "(B, aar) Fästa versioner, make kommandon, exit koder och tips för uppgraderingen som Trivy kräver."
     "2023-11-17": "(A, aar) Första versionen."
@@ -34,6 +34,7 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
         - `fs` för att söka igenom hela repo mappen.
             - Stå i ert repo och kör med `docker run --rm -v "$(pwd)":/repo -w /repo aquasec/trivy:<version> fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --exit-code 1 --no-progress --skip-dirs .venv,venv,kubernetes .`
             - Mappen `kubernetes` skippas. Den kommer först i kmom05 och innehåller manifest från guiderna, som Trivy annars klagar på.
+            - I en Makefile tolkas `$(...)` av Make, inte av shellet. Använd `$(CURDIR)` eller `$$(pwd)` i stället för `$(pwd)`.
     - Lägg till make kommando för båda `target`.
     - Lös felen som hittas, se [Trivy hittar många fel](#trivy-tips).
 
@@ -72,3 +73,5 @@ Efter uppgraderingen går inte allt som förut:
 ### Dockle {#dockle-tips}
 
 Dockle kan rapportera `DKL-DI-0004` (`apk add` utan `--no-cache`) på ett lager som kommer från `python` base imagen, trots att `--no-cache` används. Det är en false-positive. Ignorera just den, läs i Dockles README hur, och skriv en kommentar om varför. Ni kan lämna `INFO` raderna (content trust, HEALTHCHECK) som de är.
+
+Ignore-filer läses bara om verktyget hittar dem. Kontrollera att filen finns monterad i containern och att kommandot pekar ut den (t.ex. `--ignorefile` hos Trivy), annars händer ingenting.

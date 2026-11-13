@@ -2,6 +2,7 @@
 author:
     - aar
 revision:
+    "2026-11-13": "(D, aar) Tips om OS paket i base imagen, ignore filer och Makefile."
     "2026-10-18": "(C, aar) Genväg: testad lista med paketversioner i requirements/prod-upgrade.txt."
     "2026-10-09": "(B, aar) Fästa versioner, make kommandon, exit koder och tips för uppgraderingen som Trivy kräver."
     "2023-11-17": "(A, aar) Första versionen."
@@ -33,6 +34,7 @@ Ni ska använda olika verktyg för att hitta säkerhetsproblem i Microbloggen oc
         - `fs` för att söka igenom hela repo mappen.
             - Stå i ert repo och kör med `docker run --rm -v "$(pwd)":/repo -w /repo aquasec/trivy:<version> fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --exit-code 1 --no-progress --skip-dirs .venv,venv,kubernetes .`
             - Mappen `kubernetes` skippas. Den kommer först i kmom05 och innehåller manifest från guiderna, som Trivy annars klagar på.
+            - I en Makefile tolkas `$(...)` av Make, inte av shellet. Använd `$(CURDIR)` eller `$$(pwd)` i stället för `$(pwd)`.
     - Lägg till make kommando för båda `target`.
     - Lös felen som hittas, se [Trivy hittar många fel](#trivy-tips).
 
@@ -59,6 +61,7 @@ Trivy kommer hitta många fel i produktions imagen, mer än vad ni kan lösa gen
 - **Base imagen** (`FROM python:3.8-alpine`). Python 3.8 och dess Alpine version är gamla. Byt till en nyare och använd en tag med fast version (Python version och Alpine version). Gör det i både `Dockerfile_prod` och `Dockerfile_test` så att ni testar på samma Python som ni kör i produktion. Samma gäller Python versionen som ert CI workflow använder (`python-version` i `setup-python`).
 - **Python paketen** i `requirements/prod.txt`. Flask och Werkzeug är för gamla. Uppgradera dem och de paket som hänger ihop med dem. Läs `pip` felmeddelandena och paketens ändringsloggar för att se vilka versioner som passar ihop. Sätt också fasta versioner på `gunicorn` och `pymysql` i `requirements.txt`.
   - Vill ni slippa leta versioner finns en testad lista i `requirements/prod-upgrade.txt` i Microblog-repot (synka er fork). Byt ut paketen i `prod.txt` mot dem. Listan ändrar inte koden, det som går sönder efter uppgraderingen rättar ni själva, och ni ska kunna förklara varför Trivy hittade de gamla versionerna.
+  - Listan gäller Python paketen. Trivy kan också hitta fel i operativsystemets paket i base imagen, de rättar ni i er Dockerfile (t.ex. med `apk --no-cache upgrade`).
 
 Efter uppgraderingen går inte allt som förut:
 
@@ -70,3 +73,5 @@ Efter uppgraderingen går inte allt som förut:
 ### Dockle {#dockle-tips}
 
 Dockle kan rapportera `DKL-DI-0004` (`apk add` utan `--no-cache`) på ett lager som kommer från `python` base imagen, trots att `--no-cache` används. Det är en false-positive. Ignorera just den, läs i Dockles README hur, och skriv en kommentar om varför. Ni kan lämna `INFO` raderna (content trust, HEALTHCHECK) som de är.
+
+Ignore-filer läses bara om verktyget hittar dem. Kontrollera att filen finns monterad i containern och att kommandot pekar ut den (t.ex. `--ignorefile` hos Trivy), annars händer ingenting.

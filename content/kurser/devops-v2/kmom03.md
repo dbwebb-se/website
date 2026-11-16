@@ -16,11 +16,16 @@ Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på d
 
 Ni ska också välja ett valfritt verktyg att undersöka hur det funkar och passar in i devops.
 
+[WARNING]
+Detta kmom är under arbete. Påbörja inte.
+[/WARNING]
+
 <!-- more -->
 
 [INFO]
 Detta kmom är en vecka långt, **inte** två!
 [/INFO]
+
 [FIGURE src="img/devops/devops-security.png" caption="Hur det inte ska se ut när man kör devops."]
 
 Vi har redan gjort några saker för att förbättra vår säkerhet, vi har stängt av ssh inloggning som root användare, vi har en ny användare i database bara för microbloggen, vi pushar inte Azure credentials till GitHub och vi sparar känslig information som behövs till Actions som hemlig miljövariabler. Nu ska vi gå vidare med att aktivt leta efter säkerhetsrisk.

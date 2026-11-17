@@ -65,7 +65,7 @@ Tänk på och anteckna följande saker när ni läser boken. Använd det som und
 
 ## Att diskutera på mötet {#meeting}
 
-När ni träffas i bokcirkeln gå varvet runt och prata om de saker ni antecknade när ni läste boken. Ta en punkt åt gången så ni kan diskutera, inte bara läsa från pappret och gå vidare.
+När ni träffas i bokcirkeln ta en punkt åt gången och gå varvet runt och prata om de saker ni antecknade när ni läste boken.
 
 Prata också om vad era key takeaways är från den delen av boken ni har läst.
 

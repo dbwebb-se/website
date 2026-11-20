@@ -24,7 +24,7 @@ Du har gjort uppgiften "[Lager appen del 1](uppgift/lager-appen-del-1)" och kan 
 Exempelkod {#example}
 --------------------------------------
 
-Exempelkod för denna övningen finns i kursrepot under [example/web-component-starter-del2](https://github.com/dbwebb-se/webapp/tree/master/example/web-component-starter-del2).
+Exempelkod för denna övningen finns **ännu inte** i kursrepot under [example/web-component-starter-del2](https://github.com/dbwebb-se/webapp/tree/master/example/web-component-starter-del2).
 
 Om du skriver nedanstående kod i `me/lager` katalogen kan du återanvända koden i uppgiften "[Lager appen del 2](uppgift/lager-appen-del-2)".
 
@@ -212,6 +212,25 @@ export default class ProductsView extends HTMLElement {
 
 Se till att hålla vyerna ganska rena, så får logiken ligga i de enskilda komponenterna. Du bör utifrån detta exemplet lätta kunna skapa ytterligare vyer, till exempel den PlockLista vy som är uppgiften i detta kmom och som vi definierade i `this.allRoutes` i ovanstående `Router`-klass. Det kan vara smart att skapa den, även om den just nu bara innehåller en text så du ser att routern fungerar.
 
+Vyn behöver registreras i `main.js`.
+
+```javascript
+// router import
+import Router from "./router.js";
+
+// component imports
+import LagerTitle from "./components/lager-title.js";
+import ProductList from "./components/product-list.js";
+import ProductsView from "./views/products.js";
+import SingleProduct from "./components/single-product.js";
+
+customElements.define('router-outlet', Router);
+
+customElements.define('lager-title', LagerTitle);
+customElements.define('product-list', ProductList);
+customElements.define('products-view', ProductsView);
+customElements.define('single-product', SingleProduct);
+```
 
 
 Navigationen {#navigation}
@@ -293,7 +312,7 @@ Vi sätter positionen med värdet `fixed` och att vi vill ha den längst ner på
     overflow: hidden;
     width: 100%;
     display: flex;
-    flex-flow: row | nowrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
 }
 ```

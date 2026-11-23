@@ -15,6 +15,6 @@ Logga in på [Azure](https://portal.azure.com/#home) med ditt studentinlogg för
 
 [INFO]
 I videon används `Standard_B1S` som storlek på virtuella maskinen. Den finns inte längre, nu ska ni använda `Standard_B2ts_v2` istället.
-[!INFO]
+[/INFO]
 
 [YOUTUBE src="K9bVG34SyXM" caption="101 Skapa server på Azure."]

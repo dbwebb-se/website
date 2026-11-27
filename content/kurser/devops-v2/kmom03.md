@@ -16,10 +16,6 @@ Devops handlar om att brygga kommunikationsbarriärer, det är stort fokus på d
 
 Ni ska också välja ett valfritt verktyg att undersöka hur det funkar och passar in i devops.
 
-[WARNING]
-Detta kmom är under arbete. Påbörja inte.
-[/WARNING]
-
 <!-- more -->
 
 [INFO]
